@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chọn Mục - Chinese Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="lesson-options-page">
+    <div class="lesson-options-container">
+      <div class="lesson-options-content">
+        <h1 class="options-title" id="lessonTitle">
+          Bài 01 你学了多张时间汉语了
+        </h1>
+        <p class="options-subtitle">Chọn mục để học</p>
+
+        <button
+          class="back-btn-options"
+          onclick="goBackToLessons()"
+        >
+          ← Quay lại danh sách bài
+        </button>
+
+        <div class="options-grid">
+          <button
+            class="option-card vocabulary"
+            id="vocabularyCard"
+            onclick="goToContent('vocabulary')"
+          >
+            <span class="option-card-icon" id="vocabularyIcon">📚</span>
+            <span class="option-card-title" id="vocabularyTitle">Ôn tập từ vựng</span>
+            <span class="option-card-desc" id="vocabularyDesc">Học các từ vựng mới</span>
+          </button>
+
+          <button
+            class="option-card listening"
+            id="listeningCard"
+            onclick="goToContent('listening')"
+          >
+            <span class="option-card-icon" id="listeningIcon">🎧</span>
+            <span class="option-card-title" id="listeningTitle">Ôn tập đoạn nghe</span>
+            <span class="option-card-desc" id="listeningDesc">Luyện nghe và hiểu</span>
+          </button>
+
+          <button
+            class="option-card grammar"
+            id="grammarCard"
+            onclick="goToContent('grammar')"
+            hidden
+          >
+            <span class="option-card-icon" id="grammarIcon">📝</span>
+            <span class="option-card-title" id="grammarTitle">Cấu trúc</span>
+            <span class="option-card-desc" id="grammarDesc">Học cấu trúc câu và ngữ pháp</span>
+          </button>
+
+          <button class="option-card review" id="reviewCard" onclick="goToReview()">
+            <span class="option-card-icon" id="reviewIcon">✅</span>
+            <span class="option-card-title" id="reviewTitle">Ôn tập ví dụ</span>
+            <span class="option-card-desc" id="reviewDesc">10 bài kiểm tra - 32 câu/bài</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function getURLParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+
+      function goToContent(content) {
+        const lesson = getURLParam("lesson") || "01";
+        const subject = getURLParam("subject");
+        const subjectParam = subject ? `&subject=${subject}` : "";
+        if (subject === "speaking") {
+          if (content === "vocabulary") {
+            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=paragraph`;
+            return;
+          }
+          if (content === "grammar") {
+            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=grammar`;
+            return;
+          }
+          if (content === "example") {
+            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=example`;
+            return;
+          }
+        }
+        if (content === "vocabulary" && subject !== "writing") {
+          window.location.href = `vocabulary.html?lesson=${lesson}${subjectParam}`;
+          return;
+        }
+        if (content === "listening" && subject !== "writing") {
+          window.location.href = `review.html?lesson=${lesson}&content=${content}${subjectParam}`;
+          return;
+        }
+        window.location.href = `typing.html?lesson=${lesson}&content=${content}${subjectParam}`;
+      }
+
+      function goToReview() {
+        const lesson = getURLParam("lesson") || "01";
+        const subject = getURLParam("subject");
+        const subjectParam = subject ? `&subject=${subject}` : "";
+        window.location.href = `review.html?lesson=${lesson}${subjectParam}`;
+      }
+
+      function goToParagraphReview() {
+        const lesson = getURLParam("lesson") || "01";
+        window.location.href = `review.html?lesson=${lesson}&subject=writing&content=paragraph`;
+      }
+
+      function goToGrammarReview() {
+        const lesson = getURLParam("lesson") || "01";
+        window.location.href = `review.html?lesson=${lesson}&subject=writing&content=grammar`;
+      }
+
+      function goBackToLessons() {
+        const subject = getURLParam("subject");
+        window.location.href =
+          subject === "writing"
+            ? "lessons.html?subject=writing"
+            : subject === "speaking"
+              ? "lessons.html?subject=speaking"
+              : "lessons.html";
+      }
+
+      // Set lesson title
+      const lesson = getURLParam("lesson") || "01";
+      const subject = getURLParam("subject");
+      const lessonNumber = String(Number(lesson));
+      document.getElementById("lessonTitle").textContent =
+        subject === "writing" || subject === "speaking"
+          ? `Bài ${lessonNumber}`
+          : `Bài ${lesson} 你学了多张时间汉语了`;
+
+      if (subject === "writing") {
+        document.getElementById("vocabularyCard").onclick = () => goToReview();
+        document.getElementById("vocabularyIcon").textContent = "✅";
+        document.getElementById("vocabularyTitle").textContent = "Ôn tập ví dụ";
+        document.getElementById("vocabularyDesc").textContent =
+          "Luyện ví dụ theo bài";
+
+        document.getElementById("listeningIcon").textContent = "📄";
+        document.getElementById("listeningTitle").textContent =
+          "Ôn tập đoạn văn";
+        document.getElementById("listeningDesc").textContent =
+          "Luyện đọc và hiểu đoạn văn";
+        document.getElementById("listeningCard").onclick = () =>
+          goToParagraphReview();
+
+        document.getElementById("grammarCard").hidden = false;
+        document.getElementById("grammarCard").onclick = () =>
+          goToGrammarReview();
+
+        document.getElementById("reviewCard").hidden = true;
+      } else if (subject === "speaking") {
+        const isLessonFive = lessonNumber === "5";
+        document.getElementById("vocabularyIcon").textContent = "📄";
+        document.getElementById("vocabularyTitle").textContent = "Ôn tập đoạn văn";
+        document.getElementById("vocabularyDesc").textContent =
+          isLessonFive ? "1 bài kiểm tra - 27 câu/bài" : "1 bài kiểm tra - 25 câu/bài";
+        document.getElementById("vocabularyCard").onclick = () => goToContent("vocabulary");
+
+        document.getElementById("listeningIcon").textContent = "🧩";
+        document.getElementById("listeningTitle").textContent = "Ôn tập cấu trúc";
+        document.getElementById("listeningDesc").textContent =
+          "2 bài kiểm tra - 25 câu/bài";
+        document.getElementById("listeningCard").onclick = () => goToContent("grammar");
+
+        document.getElementById("reviewIcon").textContent = "🧪";
+        document.getElementById("reviewTitle").textContent = "Ôn tập ví dụ";
+        document.getElementById("reviewDesc").textContent =
+          isLessonFive ? "10 bài kiểm tra - 11 câu/bài" : "10 bài kiểm tra - 25 câu/bài";
+        document.getElementById("reviewCard").onclick = () => goToContent("example");
+
+        document.getElementById("grammarCard").hidden = true;
+      }
+    </script>
+  </body>
+</html>

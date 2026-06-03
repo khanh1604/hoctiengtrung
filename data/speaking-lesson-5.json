@@ -1,0 +1,392 @@
+{
+  "example": [],
+  "grammar": [
+    {
+      "chinese": "你最近身体怎么样？",
+      "pinyin": "Nǐ zuìjìn shēntǐ zěnmeyàng?",
+      "vietnamese": "Sức khỏe dạo này của bạn thế nào?"
+    },
+    {
+      "chinese": "今天的天气怎么样？",
+      "pinyin": "Jīntiān de tiānqì zěnmeyàng?",
+      "vietnamese": "Thời tiết hôm nay thế nào?"
+    },
+    {
+      "chinese": "这部电影怎么样？",
+      "pinyin": "Zhè bù diànyǐng zěnmeyàng?",
+      "vietnamese": "Bộ phim này thế nào?"
+    },
+    {
+      "chinese": "你的汉语学得怎么样？",
+      "pinyin": "Nǐ de Hànyǔ xué de zěnmeyàng?",
+      "vietnamese": "Tiếng Trung của bạn học thế nào rồi?"
+    },
+    {
+      "chinese": "我们明天去游泳，怎么样？",
+      "pinyin": "Wǒmen míngtiān qù yóuyǒng, zěnmeyàng?",
+      "vietnamese": "Ngày mai chúng ta đi bơi nhé, thấy thế nào?"
+    },
+    {
+      "chinese": "这家餐厅的菜怎么样？",
+      "pinyin": "Zhè jiā cāntīng de cài zěnmeyàng?",
+      "vietnamese": "Món ăn của nhà hàng này thế nào?"
+    },
+    {
+      "chinese": "你的新工作怎么样？",
+      "pinyin": "Nǐ de xīn gōngzuò zěnmeyàng?",
+      "vietnamese": "Công việc mới của bạn thế nào?"
+    },
+    {
+      "chinese": "你觉得这件衣服怎么样？",
+      "pinyin": "Nǐ juéde zhè jiàn yīfu zěnmeyàng?",
+      "vietnamese": "Bạn thấy bộ quần áo này thế nào?"
+    },
+    {
+      "chinese": "我们坐火车去，怎么样？",
+      "pinyin": "Wǒmen zuò huǒchē qù, zěnmeyàng?",
+      "vietnamese": "Chúng ta đi bằng tàu hỏa nhé, được không?"
+    },
+    {
+      "chinese": "计划进展得怎么样？",
+      "pinyin": "Jìhuà jìnzhǎn de zěnmeyàng?",
+      "vietnamese": "Kế hoạch tiến triển thế nào rồi?"
+    },
+    {
+      "chinese": "这个西瓜挺甜的。",
+      "pinyin": "Zhège xīguā tǐng tián de.",
+      "vietnamese": "Quả dưa hấu này khá ngọt."
+    },
+    {
+      "chinese": "今天挺冷的，多穿点衣服。",
+      "pinyin": "Jīntiān tǐng lěng de, duō chuān diǎn yīfu.",
+      "vietnamese": "Hôm nay khá lạnh, mặc nhiều áo vào một chút."
+    },
+    {
+      "chinese": "他的汉语说得挺流利的。",
+      "pinyin": "Tā de Hànyǔ shuō de tǐng liúlì de.",
+      "vietnamese": "Tiếng Trung của anh ấy nói khá lưu loát."
+    },
+    {
+      "chinese": "这件衣服挺漂亮的。",
+      "pinyin": "Zhè jiàn yīfu tǐng piàoliang de.",
+      "vietnamese": "Bộ quần áo này khá đẹp."
+    },
+    {
+      "chinese": "最近我挺忙的。",
+      "pinyin": "Zuìjìn wǒ tǐng máng de.",
+      "vietnamese": "Dạo này tôi khá bận."
+    },
+    {
+      "chinese": "我觉得这个考试挺难的。",
+      "pinyin": "Wǒ juéde zhège kǎoshì tǐng nán de.",
+      "vietnamese": "Tôi thấy kỳ thi này khá khó."
+    },
+    {
+      "chinese": "那家店的东西挺便宜的。",
+      "pinyin": "Nà jiā diàn de dōngxi tǐng piányi de.",
+      "vietnamese": "Đồ của cửa hàng đó khá rẻ."
+    },
+    {
+      "chinese": "我们的培训班不错的。",
+      "pinyin": "Wǒmen de péixùnbān bùcuò de.",
+      "vietnamese": "Khóa đào tạo của chúng tôi khá tốt."
+    },
+    {
+      "chinese": "他这个人挺热情的。",
+      "pinyin": "Tā zhège rén tǐng rèqíng de.",
+      "vietnamese": "Anh ấy là một người khá nhiệt tình."
+    },
+    {
+      "chinese": "这本小说挺有意思的。",
+      "pinyin": "Zhè běn xiǎoshuō tǐng yǒuyìsi de.",
+      "vietnamese": "Cuốn tiểu thuyết này khá thú vị."
+    },
+    {
+      "chinese": "我是去年结婚的。",
+      "pinyin": "Wǒ shì qùnián jiéhūn de.",
+      "vietnamese": "Tôi kết hôn vào năm ngoái. (Thời gian)"
+    },
+    {
+      "chinese": "他是从新加坡来的。",
+      "pinyin": "Tā shì cóng Xīnjiāpō lái de.",
+      "vietnamese": "Anh ấy đến từ Singapore. (Địa điểm xuất phát)"
+    },
+    {
+      "chinese": "我们是坐飞机来北京的。",
+      "pinyin": "Wǒmen shì zuò fēijī lái Běijīng de.",
+      "vietnamese": "Chúng tôi đến Bắc Kinh bằng máy bay. (Phương thức)"
+    },
+    {
+      "chinese": "他是大学毕业的。",
+      "pinyin": "Tā shì dàxué bìyè de.",
+      "vietnamese": "Anh ấy là tốt nghiệp đại học đấy. (Bối cảnh)"
+    },
+    {
+      "chinese": "这本书是谁写的？",
+      "pinyin": "Zhè běn shū shì shéi xiě de?",
+      "vietnamese": "Cuốn sách này là ai viết vậy? (Tác giả)"
+    },
+    {
+      "chinese": "我不是来玩的，我是来工作的。",
+      "pinyin": "Wǒ bù shì lái wán de, wǒ shì lái gōngzuò de.",
+      "vietnamese": "Tôi không phải đến để chơi, tôi đến để làm việc. (Mục đích)"
+    },
+    {
+      "chinese": "你是什么时候到的？",
+      "pinyin": "Nǐ shì shénme shíhou dào de?",
+      "vietnamese": "Bạn đến từ bao giờ thế? (Thời gian)"
+    },
+    {
+      "chinese": "这件衣服是在哪儿买的？",
+      "pinyin": "Zhè jiàn yīfu shì zài nǎr mǎi de?",
+      "vietnamese": "Bộ quần áo này mua ở đâu vậy? (Địa điểm)"
+    },
+    {
+      "chinese": "他们是怎么认识的？",
+      "pinyin": "Tāmen shì zěnme rènshi de?",
+      "vietnamese": "Họ quen nhau như thế nào? (Cách thức)"
+    },
+    {
+      "chinese": "这封信是寄给他的。",
+      "pinyin": "Zhè fēng xìn shì jì gěi tā de.",
+      "vietnamese": "Bức thư này là gửi cho anh ấy. (Đối tượng)"
+    },
+    {
+      "chinese": "你喝茶或者喝咖啡都可以。",
+      "pinyin": "Nǐ hē chá huòzhě hē kāfēi dōu kěyǐ.",
+      "vietnamese": "Bạn uống trà hoặc cà phê đều được."
+    },
+    {
+      "chinese": "我周末喜欢在家看书或者听音乐。",
+      "pinyin": "Wǒ zhōumò xǐhuan zài jiā kàn shū huòzhě tīng yīnyuè.",
+      "vietnamese": "Cuối tuần tôi thích ở nhà đọc sách hoặc nghe nhạc."
+    },
+    {
+      "chinese": "我们可以坐汽车或者骑车去郊游。",
+      "pinyin": "Wǒmen kěyǐ zuò qìchē huòzhě qí chē qù jiāoyóu.",
+      "vietnamese": "Chúng ta có thể đi xe buýt hoặc đạp xe đi dã ngoại."
+    },
+    {
+      "chinese": "今天晚上我想吃包子或者面条。",
+      "pinyin": "Jīntiān wǎnshang wǒ xiǎng chī bāozi huòzhě miàntiáo.",
+      "vietnamese": "Tối nay tôi muốn ăn bánh bao hoặc mì."
+    },
+    {
+      "chinese": "你可以给我发微信或者打电话。",
+      "pinyin": "Nǐ kěyǐ gěi wǒ fā Wēixìn huòzhě dǎ diànhuà.",
+      "vietnamese": "Bạn có thể gửi WeChat hoặc gọi điện cho tôi."
+    },
+    {
+      "chinese": "下个月我打算去北京或者上海旅游。",
+      "pinyin": "Xià gè yuè wǒ dǎsuàn qù Běijīng huòzhě Shànghǎi lǚyóu.",
+      "vietnamese": "Tháng sau tôi dự định đi du lịch Bắc Kinh hoặc Thượng Hải."
+    },
+    {
+      "chinese": "遇到困难时，你可以问老师或者问同学。",
+      "pinyin": "Yù dào kùnnan shí, nǐ kěyǐ wèn lǎoshī huòzhě wèn tóngxué.",
+      "vietnamese": "Khi gặp khó khăn, bạn có thể hỏi thầy cô hoặc hỏi bạn học."
+    },
+    {
+      "chinese": "找时间或者找机会，我们见个面吧。",
+      "pinyin": "Zhǎo shíjiān huòzhě zhǎo jīhuì, wǒmen jiàn ge miàn ba.",
+      "vietnamese": "Tìm thời gian hoặc tìm cơ hội, chúng ta gặp nhau một chút đi."
+    },
+    {
+      "chinese": "我想买一件蓝色或者白色的衬衫。",
+      "pinyin": "Wǒ xiǎng mǎi yí jiàn lán sè huòzhě bái sè de chènshān.",
+      "vietnamese": "Tôi muốn mua một chiếc áo sơ mi màu xanh lam hoặc màu trắng."
+    },
+    {
+      "chinese": "你可以坐地铁或者坐出租车去机场。",
+      "pinyin": "Nǐ kěyǐ zuò dìtiě huòzhě zuò chūzūchē qù jīchǎng.",
+      "vietnamese": "Bạn có thể đi tàu điện ngầm hoặc đi taxi đến sân bay."
+    },
+    {
+      "chinese": "外面下雨了，你最好带一把伞。",
+      "pinyin": "Wàimiàn xià yǔ le, nǐ zuìhǎo dài yì bǎ sǎn.",
+      "vietnamese": "Bên ngoài mưa rồi, tốt nhất bạn nên mang theo một cái ô."
+    },
+    {
+      "chinese": "你感冒了，最好去医院看看。",
+      "pinyin": "Nǐ gǎnmào le, nǐ zuìhǎo qù yīyuàn kànkan.",
+      "vietnamese": "Bạn bị cảm rồi, tốt nhất là đi bệnh viện khám xem."
+    },
+    {
+      "chinese": "明天的会议很重要，你最好别迟到。",
+      "pinyin": "Míngtiān de huìyì hěn zhòngyào, nǐ zuìhǎo bié chídào.",
+      "vietnamese": "Cuộc họp ngày mai rất quan trọng, tốt nhất bạn đừng đến muộn."
+    },
+    {
+      "chinese": "学习汉语，最好每天都坚持练习。",
+      "pinyin": "Xuéxí Hànyǔ, zuìhǎo měitiān dōu jiānchí liànxí.",
+      "vietnamese": "Học tiếng Trung, tốt nhất là ngày nào cũng kiên trì luyện tập."
+    },
+    {
+      "chinese": "骑自行车去最好，这样很方便。",
+      "pinyin": "Qí zìxíngchē qù zuìhǎo, zhèyàng hěn fāngbiàn.",
+      "vietnamese": "Đi xe đạp là tốt nhất, như vậy rất tiện lợi."
+    },
+    {
+      "chinese": "这件事你最好听听父母的意见。",
+      "pinyin": "Zhè jiàn shì nǐ zuìhǎo tīngting fùmǔ de yìjiàn.",
+      "vietnamese": "Chuyện này tốt nhất bạn nên nghe theo ý kiến của bố mẹ."
+    },
+    {
+      "chinese": "天气太热了，我们最好傍晚再出门。",
+      "pinyin": "Tiānqì tài rè le, wǒmen zuìhǎo bàngwǎn zài chūmén.",
+      "vietnamese": "Thời tiết nóng quá, tốt nhất chúng ta đợi chiều tối hãy ra ngoài."
+    },
+    {
+      "chinese": "生病的时候，最好多喝热水、多休息。",
+      "pinyin": "Shēngbìng de shíhou, zuìhǎo duō hē rèshuǐ, duō xiūxi.",
+      "vietnamese": "Khi bị ốm, tốt nhất nên uống nhiều nước ấm và nghỉ ngơi nhiều."
+    },
+    {
+      "chinese": "去旅游以前，最好先做个计划。",
+      "pinyin": "Qù lǚyóu yǐqián, zuìhǎo xiān zuò ge jìhuà.",
+      "vietnamese": "Trước khi đi du lịch, tốt nhất nên lập một kế hoạch trước."
+    },
+    {
+      "chinese": "这里不能停车，你最好把车停在前面。",
+      "pinyin": "Zhèlǐ bùnéng tíngchē, nǐ zuìhǎo bǎ chē tíng zài qiánmiàn.",
+      "vietnamese": "Ở đây không được đỗ xe, tốt nhất bạn nên đỗ xe ở phía trước."
+    }
+  ],
+  "paragraph": [
+    {
+      "chinese": "你们的培训怎么样？",
+      "pinyin": "Nǐmen de péixùn zěnmeyàng?",
+      "vietnamese": "Khóa đào tạo của các cậu thế nào rồi?"
+    },
+    {
+      "chinese": "挺不错的，每天都有很多东西要学。",
+      "pinyin": "Tǐng bùcuò de, měitiān dōu yǒu hěnduō dōngxi yào xué.",
+      "vietnamese": "Khá tốt, mỗi ngày đều có rất nhiều thứ phải học."
+    },
+    {
+      "chinese": "认识新朋友了吗？",
+      "pinyin": "Rènshi xīn péngyou le ma?",
+      "vietnamese": "Cậu đã quen bạn mới chưa?"
+    },
+    {
+      "chinese": "当然。对了，我手机上有我们的照片。",
+      "pinyin": "Dāngrán. Duìle, wǒ shǒujī shàng yǒu wǒmen de zhàopiàn.",
+      "vietnamese": "Đương nhiên rồi. À đúng rồi, trên điện thoại của tớ có ảnh của chúng tớ này."
+    },
+    {
+      "chinese": "让我看看。",
+      "pinyin": "Ràng wǒ kànkan.",
+      "vietnamese": "Cho tớ xem với."
+    },
+    {
+      "chinese": "你看，中间这个是王云龙，是从新加坡来的；左边这个是卡尔，",
+      "pinyin": "Nǐ kàn, zhōngjiān zhège shì Wáng Yúnlóng, shì cóng Xīnjiāpō lái de; zuǒbian zhège shì Kǎ'ěr,",
+      "vietnamese": "Cậu nhìn xem, người ở giữa này là Vương Vân Long, đến từ Singapore; người bên trái này là Karl,"
+    },
+    {
+      "chinese": "卡尔也长得真帅。",
+      "pinyin": "Kǎ'ěr yě zhǎng de zhēn shuài.",
+      "vietnamese": "Karl trông đẹp trai thật đấy."
+    },
+    {
+      "chinese": "对，还特别聪明。他们说，他是英国剑桥大学毕业的。",
+      "pinyin": "Duì, hái tèbié cōngming. Tāmen shuō, tā shì Yīngguó Jiànqiáo Dàxué bìyè de.",
+      "vietnamese": "Đúng vậy, lại còn đặc biệt thông minh nữa. Họ nói cậu ấy tốt nghiệp Đại học Cambridge của Anh."
+    },
+    {
+      "chinese": "哎，后边这位美女是谁？",
+      "pinyin": "Ài, hòubian zhè wèi měinǚ shì shéi?",
+      "vietnamese": "Ơ, người đẹp phía sau này là ai thế?"
+    },
+    {
+      "chinese": "这位是……，噢，她是今天刚到的，我还不知道她叫什么名字，好像也是韩国来的。",
+      "pinyin": "Zhè wèi shi..., ō, tā shì jīntiān gāng dào de, wǒ hái bù zhīdào tā jiào shénme míngzi, hǎoxiàng yě shì Hánguó lái de.",
+      "vietnamese": "Vị này là..., cô ấy là người vừa mới đến hôm nay, tớ vẫn chưa biết cô ấy tên là gì, hình như cũng đến từ Hàn Quốc."
+    },
+    {
+      "chinese": "有机会的话，一定介绍我们认识一下。",
+      "pinyin": "Yǒu jīhuì de huà, yídìng jièshào wǒmen rènshi yíxià.",
+      "vietnamese": "Nếu có cơ hội, nhất định phải giới thiệu chúng tớ làm quen một chút nhé."
+    },
+    {
+      "chinese": "好，没问题。",
+      "pinyin": "Hǎo, méi wèntí.",
+      "vietnamese": "Được chứ, không thành vấn đề."
+    },
+    {
+      "chinese": "友美，你周末有没有时间？",
+      "pinyin": "Yǒuměi, nǐ zhōumò yǒu méiyǒu shíjiān?",
+      "vietnamese": "Tomomi, cuối tuần này cậu có thời gian không?"
+    },
+    {
+      "chinese": "这个周末？有空儿，什么事？",
+      "pinyin": "Zhège zhōumò? Yǒu kòngr, shénme shì?",
+      "vietnamese": "Cuối tuần này à? Tớ rảnh, có chuyện gì thế?"
+    },
+    {
+      "chinese": "我和几个朋友想去郊外看看，你有兴趣吗？",
+      "pinyin": "Wǒ hé jǐ ge péngyou xiǎng qù jiāowài kànkan, nǐ yǒu xìngqù ma?",
+      "vietnamese": "Tớ và mấy người bạn muốn đi ra ngoại ô chơi một chút, cậu có hứng thú không?"
+    },
+    {
+      "chinese": "好啊，你们打算怎么去？",
+      "pinyin": "Hǎo a, nǐmen dǎsuàn zěnme qù?",
+      "vietnamese": "Được chứ, các cậu định đi bằng phương tiện gì?"
+    },
+    {
+      "chinese": "坐公共汽车或者骑车，都行。",
+      "pinyin": "Zuò gōnggòng qìchē huòzhě qí chē, dōu xíng.",
+      "vietnamese": "Đi xe buýt hoặc đi xe đạp, đều được cả."
+    },
+    {
+      "chinese": "最好骑车，这样方便，想在哪儿停就在哪儿停，看一看都可以。",
+      "pinyin": "Zuìhǎo qí chē, zhèyàng fāngbiàn, xiǎng zài nǎr tíng jiù zài nǎr tíng, kàn yi kàn dōu kěyǐ.",
+      "vietnamese": "Tốt nhất là đi xe đạp, như vậy vừa tiện, muốn dừng ở đâu thì dừng ở đó, ngắm một chút cũng được."
+    },
+    {
+      "chinese": "好，听你的。对了，还记得我们培训班的那位美女吗？",
+      "pinyin": "Hǎo, tīng nǐ de. Duìle, hái jìde wǒmen péixùnbān de nà wèi měinǚ ma?",
+      "vietnamese": "Được, nghe theo cậu. À đúng rồi, cậu còn nhớ người đẹp ở lớp đào tạo của chúng ta không?"
+    },
+    {
+      "chinese": "嗯，照片上的那个，当然记得。",
+      "pinyin": "Ō, zhàopiàn shàng de nàge, dāngrán jìde.",
+      "vietnamese": "À, người ở trong ảnh đó hả, đương nhiên là nhớ rồi."
+    },
+    {
+      "chinese": "她也和我们一起去。",
+      "pinyin": "Tā yě hé wǒmen yìqǐ qù.",
+      "vietnamese": "Cô ấy cũng đi cùng chúng tớ đấy."
+    },
+    {
+      "chinese": "真的，太棒了！你现在知道她的名字了吗？",
+      "pinyin": "Zhēnde, tài bàng le! Nǐ xiànzài zhīdào tā de míngzi le ma?",
+      "vietnamese": "Thật sao, tuyệt quá! Bây giờ cậu đã biết tên cô ấy chưa?"
+    },
+    {
+      "chinese": "她叫金智慧，学新闻的。",
+      "pinyin": "Tā jiào Jīn Zhìhuì, xué xīnwén de.",
+      "vietnamese": "Cô ấy tên là Kim Ji-hye, học ngành báo chí."
+    },
+    {
+      "chinese": "她是记者？",
+      "pinyin": "Tā shì jìzhě?",
+      "vietnamese": "Cô ấy là phóng viên à?"
+    },
+    {
+      "chinese": "不是，她是一家韩国汽车公司派来的，好像在公司广告部或者公关部工作。",
+      "pinyin": "Bù shì, tā shì yì jiā Hánguó qìchē gōngsī pài lái de, hǎoxiàng zài gōngsī guǎnggào bù huòzhě gōngguān bù gōngzuò.",
+      "vietnamese": "Không phải, cô ấy là do một công ty ô tô Hàn Quốc cử đến, hình như làm việc ở phòng quảng cáo hoặc phòng quan hệ công chúng."
+    },
+    {
+      "chinese": "哦。那周末我们出去玩儿，你一定介绍我们认识。",
+      "pinyin": "Ō. Nà zhōumò wǒmen chūqù wánr, nǐ yídìng jièshào wǒmen rènshi.",
+      "vietnamese": "Ồ. Vậy cuối tuần chúng ta đi chơi, cậu nhất định phải giới thiệu cho chúng tớ làm quen nhé."
+    },
+    {
+      "chinese": "当然，放心吧。",
+      "pinyin": "Dāngrán, fàngxīn ba.",
+      "vietnamese": "Đương nhiên rồi, yên tâm đi."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Import Dữ Liệu - Chinese Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="import-page">
+    <div class="import-container">
+      <div class="import-content">
+        <h1 class="import-title">Import Dữ Liệu Ôn Tập</h1>
+        <p class="import-desc">
+          Upload file Excel (nghe1.xlsx) để tạo dữ liệu kiểm tra
+        </p>
+
+        <div class="import-form">
+          <input type="file" id="fileInput" accept=".xlsx,.xls" />
+          <button id="processBtn" class="import-btn">Xử Lý Dữ Liệu</button>
+        </div>
+
+        <div id="status" class="status-message"></div>
+        <div id="preview" class="preview-section"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.min.js"></script>
+    <script>
+      const fileInput = document.getElementById("fileInput");
+      const processBtn = document.getElementById("processBtn");
+      const statusDiv = document.getElementById("status");
+      const previewDiv = document.getElementById("preview");
+
+      processBtn.addEventListener("click", () => {
+        if (!fileInput.files.length) {
+          statusDiv.textContent = "❌ Vui lòng chọn file Excel";
+          statusDiv.className = "status-message error";
+          return;
+        }
+
+        const file = fileInput.files[0];
+        const reader = new FileReader();
+
+        reader.onload = (event) => {
+          try {
+            const data = event.target.result;
+            const workbook = XLSX.read(data, { type: "array" });
+            const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+            const rows = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+            // 10 bài × 32 câu: mỗi nhóm 10 dòng lấy 1 câu (bài 1→dòng 1, bài 2→dòng 2, ...)
+            const testData = {};
+            for (let testNum = 1; testNum <= 10; testNum++) {
+              testData[testNum] = [];
+              for (let j = 0; j < 32; j++) {
+                const rowIndex = j * 10 + (testNum - 1);
+                const row = rows[rowIndex];
+                if (!row || !row.length) continue;
+                testData[testNum].push({
+                  chinese: row[0] || "",
+                  pinyin: row[1] || "",
+                  vietnamese: row[2] || "",
+                });
+              }
+            }
+
+            const firstCount = testData[1]?.length || 0;
+            if (firstCount < 32) {
+              statusDiv.textContent = `⚠️ Chỉ có ${firstCount} câu/bài (cần 32). File cần ít nhất 320 dòng!`;
+              statusDiv.className = "status-message warning";
+              return;
+            }
+
+            // Lưu vào localStorage
+            localStorage.setItem("reviewTestData", JSON.stringify(testData));
+
+            statusDiv.textContent =
+              "✅ Đã import thành công! 10 bài × 32 câu (mỗi nhóm 10 dòng lấy 1 câu)";
+            statusDiv.className = "status-message success";
+
+            // Hiển thị preview
+            showPreview(testData);
+          } catch (error) {
+            statusDiv.textContent = `❌ Lỗi: ${error.message}`;
+            statusDiv.className = "status-message error";
+          }
+        };
+
+        reader.readAsArrayBuffer(file);
+      });
+
+      function showPreview(testData) {
+        let html = "<h3>Preview Dữ Liệu:</h3>";
+        for (let testNum = 1; testNum <= 10; testNum++) {
+          const questions = testData[testNum];
+          html += `<div class="test-preview">
+            <h4>Bài Kiểm Tra ${String(testNum).padStart(2, "0")} (${questions.length} câu)</h4>
+            <div class="questions-preview">`;
+
+          questions.slice(0, 3).forEach((q, idx) => {
+            html += `<div class="question-item">
+              <strong>Câu ${idx + 1}:</strong> ${q.vietnamese}
+              <br><small>Hán: ${q.chinese}, Pinyin: ${q.pinyin}</small>
+            </div>`;
+          });
+
+          if (questions.length > 3) {
+            html += `<div class="question-item">... và ${questions.length - 3} câu khác</div>`;
+          }
+
+          html += "</div></div>";
+        }
+
+        previewDiv.innerHTML = html;
+      }
+    </script>
+  </body>
+</html>

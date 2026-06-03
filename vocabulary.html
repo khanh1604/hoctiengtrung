@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ôn tập từ vựng - Chinese Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="vocabulary-page">
+    <main class="vocabulary-shell">
+      <header class="vocabulary-header">
+        <button class="vocab-back-btn" type="button" onclick="goBack()">← Quay lại</button>
+        <div>
+          <h1 id="vocabularyTitle">Bài 01 - Ôn tập từ vựng</h1>
+          <p id="vocabularySubtitle">Danh sách từ mới</p>
+        </div>
+      </header>
+
+      <section class="vocabulary-grid" id="vocabularyGrid" aria-live="polite"></section>
+      <nav class="vocab-pagination" aria-label="Phân trang từ vựng">
+        <button class="vocab-page-btn" id="prevVocabPage" type="button">← Trang trước</button>
+        <span class="vocab-page-status" id="vocabPageStatus">Trang 1/1</span>
+        <button class="vocab-page-btn" id="nextVocabPage" type="button">Trang sau →</button>
+      </nav>
+    </main>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const lesson = params.get("lesson") || "01";
+      const subject = params.get("subject") || "listening";
+      const pageSize = 16;
+      let vocabularyItems = [];
+      let currentPage = 1;
+
+      function getLessonKey() {
+        return String(Number(lesson));
+      }
+
+      function escapeHtml(text) {
+        return String(text || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function goBack() {
+        window.location.href = `lesson-options.html?lesson=${lesson}&subject=${subject}`;
+      }
+
+      function speakChinese(text) {
+        if (!("speechSynthesis" in window) || !text) return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "zh-CN";
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+      }
+
+      function renderVocabulary() {
+        const grid = document.getElementById("vocabularyGrid");
+        const totalPages = Math.max(1, Math.ceil(vocabularyItems.length / pageSize));
+        const start = (currentPage - 1) * pageSize;
+        const items = vocabularyItems.slice(start, start + pageSize);
+        grid.innerHTML = "";
+
+        if (!items.length) {
+          grid.innerHTML = '<p class="vocab-empty">Chưa có dữ liệu từ vựng cho bài này.</p>';
+          return;
+        }
+
+        items.forEach((item) => {
+          const card = document.createElement("article");
+          card.className = "vocab-card";
+          card.innerHTML = `
+            <div class="vocab-card-main">
+              <div class="vocab-word-row">
+                <h2>${escapeHtml(item.chinese)}</h2>
+                <button class="vocab-sound-btn" type="button" aria-label="Nghe ${escapeHtml(item.chinese)}">🔊</button>
+              </div>
+              <p class="vocab-pinyin">${escapeHtml(item.pinyin)} <span>[ ${escapeHtml(item.sinoVietnamese)} ]</span></p>
+              <p class="vocab-meaning">${escapeHtml(item.vietnamese)}</p>
+            </div>
+          `;
+
+          card
+            .querySelector(".vocab-sound-btn")
+            .addEventListener("click", () => speakChinese(item.chinese));
+          grid.appendChild(card);
+        });
+
+        document.getElementById("vocabPageStatus").textContent =
+          `Trang ${currentPage}/${totalPages}`;
+        document.getElementById("prevVocabPage").disabled = currentPage === 1;
+        document.getElementById("nextVocabPage").disabled = currentPage === totalPages;
+      }
+
+      function changePage(delta) {
+        const totalPages = Math.max(1, Math.ceil(vocabularyItems.length / pageSize));
+        currentPage = Math.min(totalPages, Math.max(1, currentPage + delta));
+        renderVocabulary();
+      }
+
+      async function loadVocabulary() {
+        const res = await fetch("data/listening-vocabulary.json");
+        if (!res.ok) throw new Error("Không tải được dữ liệu từ vựng");
+        const data = await res.json();
+        const items = data[lesson] || data[getLessonKey()] || [];
+        vocabularyItems = items;
+        currentPage = 1;
+        document.getElementById("vocabularyTitle").textContent =
+          `Bài ${String(Number(lesson)).padStart(2, "0")} - Ôn tập từ vựng`;
+        document.getElementById("vocabularySubtitle").textContent =
+          `${items.length} từ mới`;
+        renderVocabulary();
+      }
+
+      document
+        .getElementById("prevVocabPage")
+        .addEventListener("click", () => changePage(-1));
+      document
+        .getElementById("nextVocabPage")
+        .addEventListener("click", () => changePage(1));
+
+      loadVocabulary().catch((err) => {
+        document.getElementById("vocabularyGrid").innerHTML =
+          `<p class="vocab-empty">Lỗi: ${escapeHtml(err.message)}</p>`;
+      });
+    </script>
+  </body>
+</html>

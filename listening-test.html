@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ôn tập đoạn nghe - Chinese Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="listening-test-page">
+    <main class="listening-shell">
+      <header class="listening-header">
+        <button class="listening-back-btn" type="button" onclick="goBack()">← Quay lại</button>
+        <div class="listening-header-copy">
+          <h1 id="listeningTitle">Bài 01 - Phần 1-4</h1>
+          <p id="listeningSubtitle">4 câu trắc nghiệm</p>
+        </div>
+      </header>
+
+      <section class="listening-layout">
+        <article class="listening-main">
+          <div class="listen-progress">
+            <div class="listen-progress-label" id="questionLabel">Câu 1/4</div>
+            <div class="listen-progress-track" aria-hidden="true">
+              <div class="listen-progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+
+          <div class="listen-audio-card">
+            <audio id="audioPlayer" controls preload="metadata"></audio>
+          </div>
+
+          <div class="listen-question-card">
+            <div class="listen-question-title" id="questionPrompt">Chọn câu đúng theo bài nghe</div>
+            <div class="listen-options" id="optionsWrap"></div>
+          </div>
+
+          <div class="listen-actions">
+            <button class="listen-nav-btn" id="prevBtn" type="button">← Trước</button>
+            <button class="listen-nav-btn reset" id="resetBtn" type="button">Làm lại từ đầu</button>
+            <button class="listen-nav-btn primary" id="nextBtn" type="button" disabled>Tiếp theo →</button>
+          </div>
+        </article>
+
+        <aside class="listen-side">
+          <section class="listen-panel" id="resultPanel">
+            <div class="listen-panel-title">Kết quả</div>
+            <div class="listen-panel-body" id="resultBody">Chọn A hoặc B để xem kết quả.</div>
+          </section>
+
+          <section class="listen-panel">
+            <div class="listen-panel-title">Câu nghe</div>
+            <div class="listen-panel-body" id="transcriptBody">-</div>
+          </section>
+
+          <section class="listen-panel">
+            <div class="listen-panel-title">Giải thích</div>
+            <div class="listen-panel-body" id="explanationBody">-</div>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const lesson = params.get("lesson") || "01";
+      const section = params.get("section") || "1-4";
+
+      const audioPlayer = document.getElementById("audioPlayer");
+      const optionsWrap = document.getElementById("optionsWrap");
+      const questionLabel = document.getElementById("questionLabel");
+      const progressFill = document.getElementById("progressFill");
+      const questionPrompt = document.getElementById("questionPrompt");
+      const resultBody = document.getElementById("resultBody");
+      const transcriptBody = document.getElementById("transcriptBody");
+      const explanationBody = document.getElementById("explanationBody");
+      const prevBtn = document.getElementById("prevBtn");
+      const resetBtn = document.getElementById("resetBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      let questions = [];
+      let currentIndex = 0;
+      const answers = [];
+
+      function escapeHtml(text) {
+        return String(text || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function goBack() {
+        window.location.href = `review.html?lesson=${lesson}&subject=listening&content=listening`;
+      }
+
+      function getCurrentQuestion() {
+        return questions[currentIndex];
+      }
+
+      function updateProgress() {
+        const total = questions.length || 1;
+        const percent = Math.round(((currentIndex + 1) / total) * 100);
+        questionLabel.textContent = `Câu ${currentIndex + 1}/${total}`;
+        progressFill.style.width = `${percent}%`;
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = !answers[currentIndex];
+        nextBtn.textContent = currentIndex === questions.length - 1 ? "Hoàn thành →" : "Tiếp theo →";
+      }
+
+      function renderResult() {
+        const current = getCurrentQuestion();
+        const answer = answers[currentIndex];
+
+        if (!current) return;
+
+        if (!answer) {
+          resultBody.innerHTML = '<div class="listen-result neutral">Chọn A hoặc B để xem kết quả.</div>';
+          transcriptBody.textContent = "-";
+          explanationBody.textContent = "-";
+          return;
+        }
+
+        const isCorrect = answer === current.correct;
+        resultBody.innerHTML = `
+          <div class="listen-result ${isCorrect ? "correct" : "wrong"}">
+            <div class="listen-result-title">${isCorrect ? "Trả lời đúng" : "Trả lời chưa đúng"}</div>
+            <div class="listen-result-row">Đáp án đúng: <strong>${escapeHtml(current.correct)}</strong></div>
+            <div class="listen-result-row">Bạn chọn: <strong>${escapeHtml(answer)}</strong></div>
+          </div>
+        `;
+        transcriptBody.innerHTML = `
+          <div class="listen-transcript-zh">${escapeHtml(current.transcript)}</div>
+          <div class="listen-transcript-vi">${escapeHtml(current.transcriptVietnamese)}</div>
+        `;
+        explanationBody.textContent = current.explanation;
+      }
+
+      function renderQuestion() {
+        const current = getCurrentQuestion();
+        if (!current) return;
+
+        questionPrompt.textContent = current.prompt;
+        optionsWrap.innerHTML = "";
+
+        [
+          ["A", current.optionA],
+          ["B", current.optionB],
+        ].forEach(([letter, option]) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "listen-option";
+          btn.innerHTML = `
+            <span class="listen-option-letter">${letter}</span>
+            <span class="listen-option-text">
+              <span class="listen-option-zh">${escapeHtml(option.chinese)}</span>
+              <span class="listen-option-vi">${escapeHtml(option.vietnamese)}</span>
+            </span>
+          `;
+          btn.disabled = Boolean(answers[currentIndex]);
+          if (answers[currentIndex]) {
+            if (answers[currentIndex] === letter) btn.classList.add("selected");
+            if (letter === current.correct) btn.classList.add("correct");
+            if (answers[currentIndex] !== current.correct && answers[currentIndex] === letter) btn.classList.add("wrong");
+          }
+          btn.addEventListener("click", () => {
+            if (answers[currentIndex]) return;
+            answers[currentIndex] = letter;
+            renderQuestion();
+            renderResult();
+            updateProgress();
+          });
+          optionsWrap.appendChild(btn);
+        });
+
+        renderResult();
+        updateProgress();
+      }
+
+      function nextQuestion() {
+        if (currentIndex < questions.length - 1) {
+          currentIndex += 1;
+          renderQuestion();
+          return;
+        }
+
+        window.location.href = `review.html?lesson=${lesson}&subject=listening&content=listening`;
+      }
+
+      function prevQuestion() {
+        if (currentIndex > 0) {
+          currentIndex -= 1;
+          renderQuestion();
+        }
+      }
+
+      function resetListeningTest() {
+        currentIndex = 0;
+        answers.length = 0;
+        audioPlayer.currentTime = 0;
+        audioPlayer.pause();
+        renderQuestion();
+      }
+
+      async function loadListeningTest() {
+        const res = await fetch("data/listening-lesson-1-4.json");
+        if (!res.ok) throw new Error("Không tải được dữ liệu bài nghe");
+        const data = await res.json();
+        const lessonData = data[section];
+        if (!lessonData) throw new Error("Không có dữ liệu cho phần này");
+
+        questions = lessonData.questions || [];
+        audioPlayer.src = lessonData.audio;
+        document.getElementById("listeningTitle").textContent = `Bài ${String(Number(lesson)).padStart(2, "0")} - Phần ${section}`;
+        document.getElementById("listeningSubtitle").textContent = `${questions.length} câu trắc nghiệm`;
+        if (!questions.length) throw new Error("Phần này chưa có câu hỏi");
+        renderQuestion();
+      }
+
+      prevBtn.addEventListener("click", prevQuestion);
+      resetBtn.addEventListener("click", resetListeningTest);
+      nextBtn.addEventListener("click", nextQuestion);
+
+      loadListeningTest().catch((err) => {
+        document.querySelector(".listening-main").innerHTML = `<p class="listen-error">Lỗi: ${escapeHtml(err.message)}</p>`;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Mode - Chinese Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="typing-page">
+    <div class="card">
+      <div class="top">
+        <div class="lesson">Bài 01</div>
+
+        <div class="info">
+          <span>Còn lại: <b>32</b></span>
+          <span>EXP: <b class="exp">0</b></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+
+      <div class="completion-note"></div>
+
+      <h1 class="question">Cô ấy đang dạy học.</h1>
+
+      <input type="text" placeholder="Nhập chữ Hán..." class="answer-input" />
+
+      <div class="answer-feedback" hidden></div>
+
+      <div class="button-row">
+        <button class="check-btn">Kiểm tra (Enter)</button>
+        <button class="sound-btn">🔊</button>
+      </div>
+
+      <div class="secondary-button-row">
+        <button class="reset-btn" type="button" onclick="resetToStart()">
+          Làm lại từ đầu
+        </button>
+      </div>
+
+      <button class="tool-btn">⚙ Tùy chỉnh giọng đọc và tốc độ</button>
+
+      <div class="custom-panel" id="customPanel">
+        <h2>Tùy chỉnh giọng đọc</h2>
+        <div class="custom-row">
+          <label for="voiceSelect">Giọng đọc</label>
+          <select id="voiceSelect"></select>
+        </div>
+        <div class="custom-row">
+          <label for="speedRange"
+            >Tốc độ: <span id="speedValue">1.0</span>x</label
+          >
+          <input
+            type="range"
+            id="speedRange"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="1"
+          />
+        </div>
+        <button class="custom-close-btn" id="customCloseBtn">
+          Đóng tùy chỉnh
+        </button>
+      </div>
+
+      <button class="back-btn" onclick="goBackToReview()">
+        ← Quay lại danh sách bài kiểm tra
+      </button>
+    </div>
+
+    <script>
+      function goBackToReview() {
+        const params = new URLSearchParams(window.location.search);
+        const lesson = params.get("lesson") || "01";
+        const subject = params.get("subject");
+        const content = params.get("content");
+        const subjectParam = subject ? `&subject=${subject}` : "";
+        const contentParam = content ? `&content=${content}` : "";
+        window.location.href = `review.html?lesson=${lesson}${subjectParam}${contentParam}`;
+      }
+
+      function resetToStart() {
+        const params = new URLSearchParams(window.location.search);
+        const lesson = params.get("lesson") || "01";
+        const test = params.get("test") || "1";
+        const subject = params.get("subject") || "";
+        const content = params.get("content") || "";
+        const storagePrefix = `${subject ? `${subject}-` : ""}${content ? `${content}-` : ""}`;
+        const progressKey = `typingProgress-${storagePrefix}${lesson}-${test}`;
+
+        localStorage.removeItem(progressKey);
+        sessionStorage.setItem("currentQuestion", "0");
+        sessionStorage.setItem("currentTest", test);
+        sessionStorage.setItem(`typingExp-${storagePrefix}${lesson}-${test}`, "0");
+        sessionStorage.setItem(`typingReset-${storagePrefix}${lesson}-${test}`, "1");
+        window.location.reload();
+      }
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

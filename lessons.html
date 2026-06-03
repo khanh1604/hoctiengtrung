@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Bài Học - Chinese Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="lessons-page">
+    <div class="lessons-container">
+      <div class="lessons-content">
+        <h1 class="lessons-title" id="lessonsTitle">上听力课</h1>
+        <p class="lessons-subtitle">Chọn mục để học</p>
+
+        <button
+          class="back-to-level-btn"
+          onclick="window.location.href = 'choose-level.html'"
+        >
+          ← chọn lại môn học
+        </button>
+
+        <div class="pagination-bar">
+          <button
+            class="page-btn"
+            id="prevPage"
+            onclick="changePage(currentPage - 1)"
+          >
+            ← 1
+          </button>
+          <div class="page-indicators">
+            <button
+              class="page-indicator"
+              id="page1Btn"
+              onclick="changePage(1)"
+            >
+              Trang 1
+            </button>
+            <button
+              class="page-indicator"
+              id="page2Btn"
+              onclick="changePage(2)"
+            >
+              Trang 2
+            </button>
+          </div>
+          <button
+            class="page-btn"
+            id="nextPage"
+            onclick="changePage(currentPage + 1)"
+          >
+            2 →
+          </button>
+        </div>
+
+        <div class="lessons-grid" id="lessonsGrid"></div>
+      </div>
+    </div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const subject = params.get("subject") || "listening";
+      const isWriting = subject === "writing";
+      const isSpeaking = subject === "speaking";
+      const totalItems = isWriting ? 15 : 12;
+      const itemsPerPage = 12;
+      var currentPage = 1;
+
+      if (isWriting) {
+        document.getElementById("lessonsTitle").textContent = "Môn Viết";
+      } else if (isSpeaking) {
+        document.getElementById("lessonsTitle").textContent = "Môn Nói";
+      }
+
+      const lessonItems = Array.from({ length: totalItems }, (_, idx) => {
+        const first = idx * 2 + 1;
+        const second = first + 1;
+        const pad = (n) => String(n).padStart(2, "0");
+        const writingLesson = idx + 1;
+
+        if (isWriting) {
+          return {
+            title: `Bài ${writingLesson}`,
+            unlocked: writingLesson <= 3,
+            href: `lesson-options.html?lesson=${pad(writingLesson)}&subject=${subject}`,
+            progress: `Tiến độ: 0/32`,
+          };
+        }
+
+        if (isSpeaking) {
+          return {
+            title: `Bài ${pad(idx + 1)}`,
+            unlocked: true,
+            href: `lesson-options.html?lesson=${pad(idx + 1)}&subject=${subject}`,
+            progress: `Tiến độ: 0/13`,
+          };
+        }
+
+        const unlockedFirst = true;
+        const unlockedSecond = true;
+        const unlocked = unlockedFirst || unlockedSecond;
+        let href = null;
+        if (unlockedFirst) {
+          href =
+            first === 1
+              ? `lesson-options.html?lesson=${pad(first)}&subject=${subject}`
+              : `typing.html?lesson=${pad(first)}&subject=${subject}`;
+        } else if (unlockedSecond) {
+          href =
+            second === 1
+              ? `lesson-options.html?lesson=${pad(second)}&subject=${subject}`
+              : `typing.html?lesson=${pad(second)}&subject=${subject}`;
+        }
+
+        return {
+          title: `Bài ${pad(first)}-${pad(second)}`,
+          lessons: [first, second],
+          unlocked,
+          href,
+          progress: `Tiến độ: 0/32`,
+        };
+      });
+
+      function updatePagination() {
+        const totalPages = Math.ceil(lessonItems.length / itemsPerPage);
+        const prevBtn = document.getElementById("prevPage");
+        const nextBtn = document.getElementById("nextPage");
+        const page1Btn = document.getElementById("page1Btn");
+        const page2Btn = document.getElementById("page2Btn");
+
+        prevBtn.disabled = currentPage === 1;
+        nextBtn.disabled = currentPage === totalPages;
+        page1Btn.classList.toggle("active-page", currentPage === 1);
+        page2Btn.classList.toggle("active-page", currentPage === 2);
+        page2Btn.style.display = totalPages > 1 ? "" : "none";
+      }
+
+      function changePage(page) {
+        const totalPages = Math.ceil(lessonItems.length / itemsPerPage);
+        currentPage = Math.max(1, Math.min(totalPages, page));
+        renderPairs();
+      }
+
+      function renderPairs() {
+        const grid = document.getElementById("lessonsGrid");
+        const start = (currentPage - 1) * itemsPerPage;
+        const pageItems = lessonItems.slice(start, start + itemsPerPage);
+        grid.innerHTML = "";
+
+        pageItems.forEach((pair) => {
+          const button = document.createElement("button");
+          button.className = pair.unlocked
+            ? "lesson-btn unlocked"
+            : "lesson-btn locked";
+
+          if (pair.unlocked && pair.href) {
+            button.addEventListener("click", () => {
+              window.location.href = pair.href;
+            });
+          } else {
+            button.disabled = true;
+          }
+
+          const label = document.createElement("span");
+          label.className = "lesson-number";
+          label.textContent = pair.title;
+          button.appendChild(label);
+
+          const progress = document.createElement("span");
+          progress.className = "lesson-progress";
+          progress.textContent = pair.progress;
+          button.appendChild(progress);
+
+          grid.appendChild(button);
+        });
+
+        updatePagination();
+      }
+
+      renderPairs();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ôn tập - Chinese Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="review-page">
+    <div class="review-container">
+      <div class="review-content">
+        <h1 class="review-title" id="reviewTitle">Bài 01 - Ôn tập</h1>
+        <p class="review-subtitle">Chọn bài kiểm tra để ôn tập</p>
+
+        <button
+          class="back-btn-review"
+          onclick="goBackToLessonOptions()"
+        >
+          ← Quay lại
+        </button>
+
+        <div class="review-grid" id="reviewGrid"></div>
+      </div>
+    </div>
+
+    <!-- Restart confirmation modal -->
+    <div id="restartModal" class="modal" hidden>
+      <div class="modal-backdrop"></div>
+      <div class="modal-panel">
+        <h3 id="modalTitle">Bắt đầu lại bài kiểm tra</h3>
+        <p id="modalMessage">Bạn có muốn bắt đầu lại bài này không?</p>
+        <div class="modal-actions">
+          <button id="modalCancel" class="btn">Hủy</button>
+          <button id="modalRestart" class="btn primary">Bắt đầu lại</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function getLessonParam() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("lesson") || "01";
+      }
+
+      function getSubjectParam() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("subject") || "";
+      }
+
+      function getContentParam() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("content") || "";
+      }
+
+      function splitIntoParts(items, partCount) {
+        const base = Math.floor(items.length / partCount);
+        const extra = items.length % partCount;
+        let start = 0;
+
+        return Array.from({ length: partCount }, (_, idx) => {
+          const size = base + (idx < extra ? 1 : 0);
+          const end = start + size;
+          const part = items.slice(start, end);
+          start = end;
+          return part;
+        }).filter((part) => part.length > 0);
+      }
+
+      const lesson = getLessonParam();
+      const subject = getSubjectParam();
+      const content = getContentParam();
+      const subjectParam = subject ? `&subject=${subject}` : "";
+      const contentParam = content ? `&content=${content}` : "";
+      const storagePrefix = `${subject ? `${subject}-` : ""}${content ? `${content}-` : ""}`;
+      let tests = Array.from({ length: 10 }, (_, i) => ({
+        number: i + 1,
+        total: subject === "writing" && i + 1 === 2 ? 14 : 32,
+        label: `Bài Kiểm Tra ${String(i + 1).padStart(2, "0")}`,
+      }));
+
+      const listeningLessonOneSections = ["1-4", "1-5-1", "1-5-2", "1-6-1", "1-6-2"];
+
+      function getWritingGrammarItems(data) {
+        const lessonKey = String(Number(lesson));
+        const grammar = data.grammar || data.grammarTests || {};
+        return grammar[lesson] || grammar[lessonKey] || [];
+      }
+
+      function getWritingExampleItems(data) {
+        const lessonKey = String(Number(lesson));
+        const examples = data.examples || data.exampleTests || {};
+        return examples[lesson] || examples[lessonKey] || [];
+      }
+
+      function splitWritingItemsIntoTests(items) {
+        return Array.isArray(items)
+          ? Array.isArray(items[0])
+            ? items
+            : Array.from({ length: 4 }, (_, idx) =>
+                items.slice(idx * 20, (idx + 1) * 20),
+              )
+          : Object.keys(items || {})
+              .sort((a, b) => Number(a) - Number(b))
+              .map((key) => items[key]);
+      }
+
+      function parseTabSeparatedVocabulary(text) {
+        return String(text || "")
+          .split(/\r?\n/)
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .map((line) => {
+            const parts = line.split(/\t+/);
+            return {
+              chinese: parts[0] || "",
+              pinyin: parts[1] || "",
+              vietnamese: parts[2] || "",
+            };
+          });
+      }
+
+      function splitIntoFixedGroups(items, groupSize) {
+        const groups = [];
+        for (let i = 0; i < items.length; i += groupSize) {
+          groups.push(items.slice(i, i + groupSize));
+        }
+        return groups;
+      }
+
+      async function loadSpeakingLessonData() {
+        if (String(Number(lesson)) === "5") {
+          const res = await fetch("data/speaking-lesson-5.json");
+          if (!res.ok) throw new Error("Không tải được dữ liệu môn nói");
+          return res.json();
+        }
+
+        const res = await fetch("data/speaking-lesson-4-raw.txt");
+        if (!res.ok) throw new Error("Không tải được dữ liệu môn nói");
+        const rawText = await res.text();
+        return { __rawText: rawText };
+      }
+
+      function goBackToLessonOptions() {
+        window.location.href = `lesson-options.html?lesson=${lesson}${subjectParam}`;
+      }
+
+      async function loadParagraphTests() {
+        const res = await fetch("data/writing-tests.json");
+        if (!res.ok) throw new Error("Không tải được dữ liệu môn viết");
+
+        const data = await res.json();
+        const lessonKey = String(Number(lesson));
+        const items = data[lesson] || data[lessonKey] || [];
+        tests = [
+          {
+            number: 1,
+            total: items.length,
+            label: "Đoạn văn 01",
+          },
+        ];
+      }
+
+      function loadListeningTests() {
+        if (String(Number(lesson)) !== "1") return;
+
+        tests = listeningLessonOneSections.map((label, idx) => ({
+          number: idx + 1,
+          total: label === "1-4" ? 4 : 32,
+          label: `Phần ${label}`,
+          section: label,
+        }));
+      }
+
+      async function loadExampleTests() {
+        const res = await fetch("data/writing-tests.json");
+        if (!res.ok) throw new Error("Không tải được dữ liệu môn viết");
+
+        const data = await res.json();
+        const groups = splitWritingItemsIntoTests(getWritingExampleItems(data));
+
+        tests = groups.slice(0, 4).map((group, idx) => ({
+          number: idx + 1,
+          total: group.length || 20,
+          label: `Ví dụ ${String(idx + 1).padStart(2, "0")}`,
+        }));
+
+        if (!tests.length) {
+          tests = Array.from({ length: 4 }, (_, idx) => ({
+            number: idx + 1,
+            total: 20,
+            label: `Ví dụ ${String(idx + 1).padStart(2, "0")}`,
+          }));
+        }
+      }
+
+      async function loadGrammarTests() {
+        const res = await fetch("data/writing-tests.json");
+        if (!res.ok) throw new Error("Không tải được dữ liệu môn viết");
+
+        const data = await res.json();
+        const groups = splitWritingItemsIntoTests(getWritingGrammarItems(data));
+
+        tests = groups.slice(0, 4).map((group, idx) => ({
+          number: idx + 1,
+          total: group.length || 20,
+          label: `Cấu trúc ${String(idx + 1).padStart(2, "0")}`,
+        }));
+
+        if (!tests.length) {
+          tests = Array.from({ length: 4 }, (_, idx) => ({
+            number: idx + 1,
+            total: 20,
+            label: `Cấu trúc ${String(idx + 1).padStart(2, "0")}`,
+          }));
+        }
+      }
+
+      async function loadSpeakingExampleTests() {
+        const data = await loadSpeakingLessonData();
+        const lessonNum = String(Number(lesson));
+        const size = lessonNum === "5" ? 11 : 25;
+        const items = lessonNum === "5" ? (data.example || []) : parseTabSeparatedVocabulary(data.__rawText || "");
+        const groups = splitIntoFixedGroups(items, size);
+
+        tests = Array.from({ length: Math.min(10, groups.length) }, (_, idx) => {
+          const start = idx * size + 1;
+          const end = start + size - 1;
+          return {
+            number: idx + 1,
+            total: size,
+            label: `Bài ${String(idx + 1).padStart(2, "0")} (${start}-${end})`,
+            hasData: true,
+          };
+        });
+      }
+
+      async function loadSpeakingGrammarTests() {
+        const data = await loadSpeakingLessonData();
+        const lessonNum = String(Number(lesson));
+        const items = lessonNum === "5" ? (data.grammar || []) : parseTabSeparatedVocabulary(data.__rawText || "");
+        const groups = splitIntoFixedGroups(items, 25);
+
+        tests = Array.from({ length: Math.min(2, groups.length) }, (_, idx) => ({
+          number: idx + 1,
+          total: 25,
+          label: `Cấu trúc ${String(idx + 1).padStart(2, "0")} (${idx * 25 + 1}-${idx * 25 + 25})`,
+          hasData: true,
+        }));
+      }
+
+      async function loadSpeakingParagraphTests() {
+        const data = await loadSpeakingLessonData();
+        const lessonNum = String(Number(lesson));
+        const paragraphItems = lessonNum === "5" ? (data.paragraph || []) : parseTabSeparatedVocabulary(data.__rawText || "");
+        tests = [
+          {
+            number: 1,
+            total: paragraphItems.length || 25,
+            label: "Ôn tập đoạn văn",
+            hasData: true,
+          },
+        ];
+      }
+
+      function renderReview() {
+        const grid = document.getElementById("reviewGrid");
+        grid.innerHTML = "";
+
+        tests.forEach((test) => {
+          const progressKey = `typingProgress-${storagePrefix}${lesson}-${test.number}`;
+          let stored = null;
+          try {
+            stored = JSON.parse(localStorage.getItem(progressKey) || "null");
+          } catch (e) {
+            stored = null;
+          }
+
+          const completed =
+            stored && typeof stored.correctCount === "number"
+              ? stored.correctCount
+              : 0;
+          const totalForDisplay = Math.max(1, test.total || 0);
+          const done =
+            stored &&
+            typeof stored.currentIndex === "number" &&
+            stored.currentIndex >= totalForDisplay;
+
+          const pct = Math.round(((completed || 0) / totalForDisplay) * 100);
+          const unavailable = test.hasData === false;
+                    const progressText = unavailable
+            ? "Chưa có dữ liệu"
+            : `Hoàn thành ${completed}/${totalForDisplay}`;
+          const button = document.createElement("button");
+          button.className = "review-test-btn";
+          button.innerHTML = `
+            <span class="test-number">${test.label}</span>
+            <span class="test-progress">${progressText}</span>
+            <div class="tile-progress">
+              <div class="tile-progress-bar" style="width:${pct}%;"></div>
+            </div>
+          `;
+          if (unavailable) button.disabled = true;
+
+          button.onclick = () => {
+            if (unavailable) return;
+
+            let prev = null;
+            try {
+              prev = JSON.parse(localStorage.getItem(progressKey) || "null");
+            } catch (e) {
+              prev = null;
+            }
+            sessionStorage.setItem("currentQuestion", "0");
+            sessionStorage.setItem("currentTest", test.number);
+            sessionStorage.setItem(
+              `typingExp-${storagePrefix}${lesson}-${test.number}`,
+              "0",
+            );
+            sessionStorage.setItem(
+              `typingReset-${storagePrefix}${lesson}-${test.number}`,
+              "1",
+            );
+
+            if (subject === "speaking" && content === "example") {
+              window.location.href = `typing.html?lesson=${lesson}&test=${test.number}&subject=speaking&content=example`;
+              return;
+            }
+
+            if (subject !== "writing" && content === "listening" && test.section === "1-4") {
+              window.location.href = `listening-test.html?lesson=${lesson}&section=${test.section}${subjectParam}`;
+              return;
+            }
+
+            window.location.href = `typing.html?lesson=${lesson}&test=${test.number}${subjectParam}${contentParam}`;
+          };
+
+          grid.appendChild(button);
+        });
+
+        document.getElementById("reviewTitle").textContent =
+          content === "paragraph"
+            ? `Bài ${String(Number(lesson))} - Ôn tập đoạn văn`
+            : content === "grammar"
+              ? `Bài ${String(Number(lesson))} - Ôn tập cấu trúc`
+            : subject === "speaking" && content === "example"
+              ? `Bài ${String(Number(lesson))} - Ôn tập ví dụ`
+            : subject === "speaking" && content === "paragraph"
+              ? `Bài ${String(Number(lesson))} - Ôn tập đoạn văn`
+            : subject !== "writing" && content === "listening"
+              ? `Bài ${String(Number(lesson))} - Ôn tập đoạn nghe`
+            : subject === "writing"
+              ? `Bài ${String(Number(lesson))} - Ôn tập ví dụ`
+            : `Bài ${lesson} - Ôn tập`;
+      }
+
+      if (subject !== "writing" && content === "listening") {
+        loadListeningTests();
+        renderReview();
+      } else if (subject === "speaking" && content === "grammar") {
+        loadSpeakingGrammarTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if (subject === "speaking" && content === "example") {
+        loadSpeakingExampleTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if (subject === "speaking" && content === "paragraph") {
+        loadSpeakingParagraphTests().then(renderReview);
+      } else if (subject === "writing" && content === "paragraph") {
+        loadParagraphTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="empty-state">Lỗi: ${err.message}</p>`;
+          });
+      } else if (subject === "writing" && content === "grammar") {
+        loadGrammarTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if (subject === "writing") {
+        loadExampleTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else {
+        renderReview();
+      }
+    </script>
+  </body>
+</html>

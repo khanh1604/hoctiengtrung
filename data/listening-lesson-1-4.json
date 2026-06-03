@@ -1,0 +1,71 @@
+{
+  "1-4": {
+    "audio": "assets/audio/01-4.mp3",
+    "questions": [
+      {
+        "number": 1,
+        "prompt": "Chọn câu đúng theo bài nghe",
+        "optionA": {
+          "chinese": "我打算学两年汉语。",
+          "vietnamese": "Tôi dự định học tiếng Trung 2 năm."
+        },
+        "optionB": {
+          "chinese": "我已经学两年汉语了。",
+          "vietnamese": "Tôi đã học tiếng Trung được 2 năm rồi."
+        },
+        "correct": "B",
+        "transcript": "我学了两年汉语了。",
+        "transcriptVietnamese": "Tôi đã học tiếng Trung được 2 năm rồi.",
+        "explanation": "已经...了 diễn tả việc đã hoàn thành. 打算 là dự định, chưa xảy ra."
+      },
+      {
+        "number": 2,
+        "prompt": "Chọn câu đúng theo bài nghe",
+        "optionA": {
+          "chinese": "交照片的时间是这个星期三。",
+          "vietnamese": "Thời gian nộp ảnh là thứ Tư tuần này."
+        },
+        "optionB": {
+          "chinese": "最晚这个星期三交照片。",
+          "vietnamese": "Muộn nhất thứ Tư tuần này phải nộp ảnh."
+        },
+        "correct": "B",
+        "transcript": "这个星期三以前交照片。",
+        "transcriptVietnamese": "Nộp ảnh trước thứ Tư tuần này.",
+        "explanation": "星期三以前 = trước thứ Tư. 最晚星期三交 = chậm nhất thứ Tư phải nộp."
+      },
+      {
+        "number": 3,
+        "prompt": "Chọn câu đúng theo bài nghe",
+        "optionA": {
+          "chinese": "我们说了两分钟到三分钟。",
+          "vietnamese": "Chúng tôi nói chuyện từ 2 đến 3 phút."
+        },
+        "optionB": {
+          "chinese": "我们说了二三十分钟。",
+          "vietnamese": "Chúng tôi nói chuyện khoảng 20 đến 30 phút."
+        },
+        "correct": "A",
+        "transcript": "我们说了两三分钟。",
+        "transcriptVietnamese": "Chúng tôi nói chuyện khoảng 2 đến 3 phút.",
+        "explanation": "两三分钟 = khoảng 2-3 phút. 二三十分钟 = khoảng 20-30 phút."
+      },
+      {
+        "number": 4,
+        "prompt": "Chọn câu đúng theo bài nghe",
+        "optionA": {
+          "chinese": "现在五点五分。",
+          "vietnamese": "Bây giờ là 5 giờ 5 phút."
+        },
+        "optionB": {
+          "chinese": "现在四点五十五。",
+          "vietnamese": "Bây giờ là 4 giờ 55 phút."
+        },
+        "correct": "B",
+        "transcript": "现在差五分五点。",
+        "transcriptVietnamese": "Còn 5 phút nữa là 5 giờ.",
+        "explanation": "差五分五点 = 4:55. 五点五分 = 5:05."
+      }
+    ]
+  }
+}
