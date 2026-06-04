@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phân Xạ Tiếng Trung - Chinese Learning</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js" defer></script>
   </head>
 
   <body class="menu-page">
@@ -16,8 +17,18 @@
           <button class="upgrade-btn">Đăng xuất</button>
         </div>
         <div class="nav-buttons">
-          <button class="nav-btn upgrade">📚 Nâng Cấp</button>
-          <button class="nav-btn dropdown">🌙 Bóng Đêm ▼</button>
+          <button class="nav-btn upgrade" id="openUpgradeModal">📚 Nâng Cấp</button>
+          <button
+            class="nav-btn theme-toggle-btn"
+            id="themeToggleButton"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="theme-toggle-label" id="themeToggleLabel">🌙 Bóng Đêm</span>
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+          </button>
         </div>
       </div>
 
@@ -37,8 +48,8 @@
 
           <button class="option-btn word-bank">
             <span class="option-icon">🧩</span>
-            <span class="option-title">Word Bank</span>
-            <span class="option-desc">Sắp xếp các mảnh ghép thành câu/từ</span>
+            <span class="option-title">đọc đoạn văn</span>
+            <span class="option-desc">luyện đọc đoạn văn ngắn thực tế</span>
           </button>
         </div>
 
@@ -50,5 +61,191 @@
         </div>
       </div>
     </div>
+    <div class="pro-modal" id="proModal" hidden>
+      <div class="pro-modal-backdrop" data-close-upgrade></div>
+      <div class="pro-modal-panel" role="dialog" aria-modal="true" aria-labelledby="proModalTitle">
+        <button class="pro-modal-close" type="button" data-close-upgrade>×</button>
+        <div class="pro-modal-hero">
+          <h2 id="proModalTitle">🚀 Nâng Cấp Tài Khoản PRO</h2>
+          <p>Mở khóa toàn bộ bài học · Học không giới hạn</p>
+        </div>
+
+        <div class="pro-modal-body pro-plan-step" id="proPlanStep">
+          <h3><span>1</span> Chọn gói phù hợp với bạn:</h3>
+          <div class="pro-plan-list">
+            <button class="pro-plan" type="button" data-plan="Gói 1 Tháng" data-price="89.000đ" data-content="PRO 1 THANG">
+              <span>
+                <strong>Gói 1 Tháng</strong>
+                <small>300.000đ</small>
+              </span>
+              <span class="pro-price">
+                <b>89.000đ</b>
+                <em>Tiết kiệm ~70%</em>
+              </span>
+            </button>
+
+            <button class="pro-plan" type="button" data-plan="Gói 3 Tháng" data-price="234.000đ" data-content="PRO 3 THANG">
+              <span>
+                <strong>Gói 3 Tháng</strong>
+                <small>900.000đ</small>
+              </span>
+              <span class="pro-price">
+                <b>234.000đ</b>
+                <em>Tiết kiệm ~74%</em>
+              </span>
+            </button>
+
+            <button class="pro-plan" type="button" data-plan="Gói 6 Tháng" data-price="567.000đ" data-content="PRO 6 THANG">
+              <span>
+                <strong>Gói 6 Tháng</strong>
+                <small>1.800.000đ</small>
+              </span>
+              <span class="pro-price">
+                <b>567.000đ</b>
+                <em>Tiết kiệm ~69%</em>
+              </span>
+            </button>
+
+            <button class="pro-plan is-popular is-selected" type="button" data-plan="Gói 12 Tháng" data-price="789.000đ" data-content="PRO 12 THANG">
+              <span class="pro-tag">PHỔ BIẾN NHẤT</span>
+              <span>
+                <strong>Gói 12 Tháng</strong>
+                <small>3.600.000đ</small>
+              </span>
+              <span class="pro-price">
+                <b>789.000đ</b>
+                <em>Tiết kiệm ~78%</em>
+              </span>
+            </button>
+          </div>
+
+          <button class="pro-submit" type="button">Đăng Ký PRO →</button>
+          <p class="pro-note">* Tài khoản được nâng cấp trong 10 phút – 1 ngày. Không hoàn tiền.</p>
+        </div>
+
+        <div class="pro-modal-body pro-transfer-step" id="proTransferStep" hidden>
+          <h3><span>✓</span> Hướng dẫn chuyển khoản:</h3>
+          <div class="transfer-box">
+            <p>💰 Số tiền: <strong id="transferAmount">89.000đ</strong></p>
+            <p>👤 Chủ tài khoản: <b>Trần Đình Khánh</b></p>
+            <p>🏦 STK: <button class="copy-value" type="button" data-copy="1048483852">1048483852</button> <small>(nhấn để copy)</small></p>
+            <p>📝 Nội dung: <button class="copy-value" id="transferContent" type="button" data-copy="Gmail đăng ký của bạn">Gmail đăng ký của bạn</button></p>
+          </div>
+
+          <h3 class="qr-title">📲 Gửi bill xác nhận qua Zalo cho admin:</h3>
+          <div class="qr-box">
+            <figure>
+              <img src="img/zaloimg.png" alt="QR Zalo xác nhận chuyển khoản" />
+              <figcaption>QR Zalo</figcaption>
+            </figure>
+            <figure>
+              <img src="img/qrthanhtoan.png" alt="QR thanh toán" />
+              <figcaption>QR thanh toán</figcaption>
+            </figure>
+            <p>Quét mã QR bằng camera điện thoại<br />để mở Zalo và nhắn bill cho admin</p>
+          </div>
+
+          <button class="transfer-done" type="button">✅ Đã chuyển khoản xong</button>
+          <button class="transfer-back" id="backToPlans" type="button">← Quay lại chọn gói</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const themeToggleButton = document.getElementById("themeToggleButton");
+      const themeToggleLabel = document.getElementById("themeToggleLabel");
+      const openUpgradeModal = document.getElementById("openUpgradeModal");
+      const proModal = document.getElementById("proModal");
+      const proPlanStep = document.getElementById("proPlanStep");
+      const proTransferStep = document.getElementById("proTransferStep");
+      const proSubmit = document.querySelector(".pro-submit");
+      const transferAmount = document.getElementById("transferAmount");
+      const transferContent = document.getElementById("transferContent");
+      const transferDone = document.querySelector(".transfer-done");
+      const backToPlans = document.getElementById("backToPlans");
+      const savedTheme = localStorage.getItem("menuTheme") || "dark";
+
+      function applyMenuTheme(theme) {
+        const isLight = theme === "light";
+        document.body.classList.toggle("light-theme", isLight);
+        themeToggleButton?.classList.toggle("is-light", isLight);
+        themeToggleButton?.setAttribute("aria-pressed", String(isLight));
+        if (themeToggleLabel) {
+          themeToggleLabel.textContent = isLight ? "☀️ Nền Sáng" : "🌙 Bóng Đêm";
+        }
+        localStorage.setItem("menuTheme", theme);
+      }
+
+      applyMenuTheme(savedTheme);
+
+      themeToggleButton?.addEventListener("click", () => {
+        applyMenuTheme(
+          document.body.classList.contains("light-theme") ? "dark" : "light",
+        );
+      });
+
+      function setUpgradeModal(open) {
+        if (!proModal) return;
+        proModal.hidden = !open;
+        document.body.classList.toggle("modal-open", open);
+        if (open) showPlanStep();
+      }
+
+      function showPlanStep() {
+        if (proPlanStep) proPlanStep.hidden = false;
+        if (proTransferStep) proTransferStep.hidden = true;
+      }
+
+      function showTransferStep(planButton) {
+        const price = planButton.dataset.price || "89.000Ä‘";
+        const content = "Gmail đăng ký của bạn";
+        if (transferAmount) transferAmount.textContent = price;
+        if (transferContent) {
+          transferContent.textContent = content;
+          transferContent.dataset.copy = content;
+        }
+        if (proPlanStep) proPlanStep.hidden = true;
+        if (proTransferStep) proTransferStep.hidden = false;
+      }
+
+      function selectPlan(planButton) {
+        document.querySelectorAll(".pro-plan").forEach((button) => {
+          button.classList.toggle("is-selected", button === planButton);
+        });
+      }
+
+      openUpgradeModal?.addEventListener("click", () => setUpgradeModal(true));
+      proModal?.addEventListener("click", (event) => {
+        if (event.target.closest("[data-close-upgrade]")) {
+          setUpgradeModal(false);
+          return;
+        }
+
+        const planButton = event.target.closest(".pro-plan");
+        if (planButton) {
+          selectPlan(planButton);
+          showTransferStep(planButton);
+          return;
+        }
+
+        const copyButton = event.target.closest(".copy-value");
+        if (copyButton) {
+          navigator.clipboard?.writeText(
+            copyButton.dataset.copy || copyButton.textContent.trim(),
+          );
+        }
+      });
+      proSubmit?.addEventListener("click", () => {
+        const selectedPlan =
+          document.querySelector(".pro-plan.is-selected") ||
+          document.querySelector(".pro-plan.is-popular") ||
+          document.querySelector(".pro-plan");
+        if (selectedPlan) showTransferStep(selectedPlan);
+      });
+      transferDone?.addEventListener("click", () => setUpgradeModal(false));
+      backToPlans?.addEventListener("click", showPlanStep);
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") setUpgradeModal(false);
+      });
+    </script>
   </body>
 </html>

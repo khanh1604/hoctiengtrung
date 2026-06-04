@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh Sách Bài Học - Chinese Learning</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js" defer></script>
   </head>
 
   <body class="lessons-page">
@@ -64,7 +65,16 @@
       const isSpeaking = subject === "speaking";
       const totalItems = isWriting ? 15 : 12;
       const itemsPerPage = 12;
+      const availableListeningLessons = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+      const availableSpeakingLessons = new Set([4, 5]);
+      const availableWritingLessons = new Set([2]);
       var currentPage = 1;
+
+      function hasLessonData(lessonNumber) {
+        if (isWriting) return availableWritingLessons.has(lessonNumber);
+        if (isSpeaking) return availableSpeakingLessons.has(lessonNumber);
+        return availableListeningLessons.has(lessonNumber);
+      }
 
       if (isWriting) {
         document.getElementById("lessonsTitle").textContent = "Môn Viết";
@@ -79,25 +89,28 @@
         const writingLesson = idx + 1;
 
         if (isWriting) {
+          const unlocked = hasLessonData(writingLesson);
           return {
             title: `Bài ${writingLesson}`,
-            unlocked: writingLesson <= 3,
-            href: `lesson-options.html?lesson=${pad(writingLesson)}&subject=${subject}`,
-            progress: `Tiến độ: 0/32`,
+            unlocked,
+            href: unlocked ? `lesson-options.html?lesson=${pad(writingLesson)}&subject=${subject}` : null,
+            progress: unlocked ? `Tiến độ: 0/32` : "Chưa có dữ liệu",
           };
         }
 
         if (isSpeaking) {
+          const speakingLesson = idx + 1;
+          const unlocked = hasLessonData(speakingLesson);
           return {
-            title: `Bài ${pad(idx + 1)}`,
-            unlocked: true,
-            href: `lesson-options.html?lesson=${pad(idx + 1)}&subject=${subject}`,
-            progress: `Tiến độ: 0/13`,
+            title: `Bài ${pad(speakingLesson)}`,
+            unlocked,
+            href: unlocked ? `lesson-options.html?lesson=${pad(speakingLesson)}&subject=${subject}` : null,
+            progress: unlocked ? `Tiến độ: 0/13` : "Chưa có dữ liệu",
           };
         }
 
-        const unlockedFirst = true;
-        const unlockedSecond = true;
+        const unlockedFirst = hasLessonData(first);
+        const unlockedSecond = hasLessonData(second);
         const unlocked = unlockedFirst || unlockedSecond;
         let href = null;
         if (unlockedFirst) {
@@ -117,7 +130,7 @@
           lessons: [first, second],
           unlocked,
           href,
-          progress: `Tiến độ: 0/32`,
+          progress: unlocked ? `Tiến độ: 0/32` : "Chưa có dữ liệu",
         };
       });
 

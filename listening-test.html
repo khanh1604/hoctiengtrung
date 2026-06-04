@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập đoạn nghe - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=listen-mobile-20260604" />
+    <script src="theme.js" defer></script>
   </head>
   <body class="listening-test-page">
     <main class="listening-shell">
@@ -27,6 +28,11 @@
 
           <div class="listen-audio-card">
             <audio id="audioPlayer" controls preload="metadata"></audio>
+            <div class="listen-passage-tools" id="passageTools" hidden>
+              <button class="listen-tool-btn" id="readPassageBtn" type="button">Đọc đoạn văn</button>
+              <button class="listen-tool-btn" id="translatePassageBtn" type="button">Dịch</button>
+              <div class="listen-passage-translation" id="passageTranslation" hidden></div>
+            </div>
           </div>
 
           <div class="listen-question-card">
@@ -76,8 +82,13 @@
       const prevBtn = document.getElementById("prevBtn");
       const resetBtn = document.getElementById("resetBtn");
       const nextBtn = document.getElementById("nextBtn");
+      const passageTools = document.getElementById("passageTools");
+      const readPassageBtn = document.getElementById("readPassageBtn");
+      const translatePassageBtn = document.getElementById("translatePassageBtn");
+      const passageTranslation = document.getElementById("passageTranslation");
 
       let questions = [];
+      let passage = null;
       let currentIndex = 0;
       const answers = [];
 
@@ -96,6 +107,21 @@
 
       function getCurrentQuestion() {
         return questions[currentIndex];
+      }
+
+      function normalizeAnswer(text) {
+        return String(text || "")
+          .trim()
+          .replace(/\s+/g, "")
+          .replace(/[，。！？、,.!?]/g, "");
+      }
+
+      function isAnswerCorrect(current, answer) {
+        if (!current) return false;
+        if (current.type === "fill") {
+          return normalizeAnswer(answer) === normalizeAnswer(current.correct);
+        }
+        return answer === current.correct;
       }
 
       function updateProgress() {
@@ -121,12 +147,14 @@
           return;
         }
 
-        const isCorrect = answer === current.correct;
+        const isCorrect = isAnswerCorrect(current, answer);
+        const correctText = current.type === "fill" ? current.correct : current.correct;
         resultBody.innerHTML = `
           <div class="listen-result ${isCorrect ? "correct" : "wrong"}">
             <div class="listen-result-title">${isCorrect ? "Trả lời đúng" : "Trả lời chưa đúng"}</div>
-            <div class="listen-result-row">Đáp án đúng: <strong>${escapeHtml(current.correct)}</strong></div>
+            <div class="listen-result-row">Đáp án đúng: <strong>${escapeHtml(correctText)}</strong></div>
             <div class="listen-result-row">Bạn chọn: <strong>${escapeHtml(answer)}</strong></div>
+            ${current.completeSentence ? `<div class="listen-result-row">Câu hoàn chỉnh: <strong>${escapeHtml(current.completeSentence)}</strong></div>` : ""}
           </div>
         `;
         transcriptBody.innerHTML = `
@@ -136,13 +164,39 @@
         explanationBody.textContent = current.explanation;
       }
 
+      function resetAudioToStart() {
+        if (!audioPlayer) return;
+        audioPlayer.pause();
+        try {
+          audioPlayer.currentTime = 0;
+        } catch (error) {
+          audioPlayer.addEventListener("loadedmetadata", () => {
+            audioPlayer.currentTime = 0;
+          }, { once: true });
+        }
+      }
+
       function renderQuestion() {
         const current = getCurrentQuestion();
         if (!current) return;
 
-        questionPrompt.textContent = current.prompt;
+        questionPrompt.innerHTML = `
+          <span class="listen-question-zh">${escapeHtml(current.prompt)}</span>
+          ${current.promptVietnamese ? `<span class="listen-question-vi">${escapeHtml(current.promptVietnamese)}</span>` : ""}
+        `;
         optionsWrap.innerHTML = "";
 
+        if (current.type === "fill") {
+          renderFillQuestion(current);
+        } else {
+          renderChoiceQuestion(current);
+        }
+
+        renderResult();
+        updateProgress();
+      }
+
+      function renderChoiceQuestion(current) {
         [
           ["A", current.optionA],
           ["B", current.optionB],
@@ -159,9 +213,10 @@
           `;
           btn.disabled = Boolean(answers[currentIndex]);
           if (answers[currentIndex]) {
-            if (answers[currentIndex] === letter) btn.classList.add("selected");
+            const isChosen = answers[currentIndex] === letter;
+            if (isChosen) btn.classList.add("selected");
             if (letter === current.correct) btn.classList.add("correct");
-            if (answers[currentIndex] !== current.correct && answers[currentIndex] === letter) btn.classList.add("wrong");
+            if (!isAnswerCorrect(current, answers[currentIndex]) && isChosen) btn.classList.add("wrong");
           }
           btn.addEventListener("click", () => {
             if (answers[currentIndex]) return;
@@ -172,9 +227,64 @@
           });
           optionsWrap.appendChild(btn);
         });
+      }
 
-        renderResult();
-        updateProgress();
+      function renderFillQuestion(current) {
+        const wrap = document.createElement("div");
+        wrap.className = "listen-fill-wrap";
+        wrap.innerHTML = `
+          <input class="listen-fill-input" id="fillAnswerInput" type="text" autocomplete="off" placeholder="Nhập đáp án tiếng Trung" />
+          <button class="listen-fill-submit" id="fillSubmitBtn" type="button">Kiểm tra</button>
+        `;
+        optionsWrap.appendChild(wrap);
+
+        const input = document.getElementById("fillAnswerInput");
+        const submit = document.getElementById("fillSubmitBtn");
+        if (answers[currentIndex]) {
+          input.value = answers[currentIndex];
+          input.disabled = true;
+          submit.disabled = true;
+          wrap.classList.add(isAnswerCorrect(current, answers[currentIndex]) ? "correct" : "wrong");
+        }
+
+        const submitAnswer = () => {
+          const value = input.value.trim();
+          if (!value || answers[currentIndex]) return;
+          answers[currentIndex] = value;
+          renderQuestion();
+          renderResult();
+          updateProgress();
+        };
+
+        submit.addEventListener("click", submitAnswer);
+        input.addEventListener("keydown", (event) => {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            submitAnswer();
+          }
+        });
+        input.focus();
+      }
+
+      function speakPassage() {
+        if (!passage || !passage.chinese) return;
+        passageTranslation.hidden = false;
+        passageTranslation.innerHTML = `
+          <div class="listen-passage-zh">${escapeHtml(passage.chinese)}</div>
+          <div class="listen-passage-vi">${escapeHtml(passage.vietnamese || "")}</div>
+        `;
+        translatePassageBtn.textContent = "Ẩn dịch";
+      }
+
+      function togglePassageTranslation() {
+        if (!passage || !passage.vietnamese) return;
+        const isHidden = passageTranslation.hidden;
+        passageTranslation.hidden = !isHidden;
+        passageTranslation.innerHTML = `
+          <div class="listen-passage-zh">${escapeHtml(passage.chinese || "")}</div>
+          <div class="listen-passage-vi">${escapeHtml(passage.vietnamese)}</div>
+        `;
+        translatePassageBtn.textContent = isHidden ? "Ẩn dịch" : "Dịch";
       }
 
       function nextQuestion() {
@@ -197,8 +307,7 @@
       function resetListeningTest() {
         currentIndex = 0;
         answers.length = 0;
-        audioPlayer.currentTime = 0;
-        audioPlayer.pause();
+        resetAudioToStart();
         renderQuestion();
       }
 
@@ -210,9 +319,22 @@
         if (!lessonData) throw new Error("Không có dữ liệu cho phần này");
 
         questions = lessonData.questions || [];
-        audioPlayer.src = lessonData.audio;
+        passage = lessonData.passage || null;
+        if (lessonData.audio) {
+          audioPlayer.hidden = false;
+          audioPlayer.src = lessonData.audio;
+        } else {
+          audioPlayer.hidden = true;
+          audioPlayer.removeAttribute("src");
+        }
+        passageTools.hidden = !passage;
+        passageTranslation.hidden = true;
+        translatePassageBtn.textContent = "Dịch";
         document.getElementById("listeningTitle").textContent = `Bài ${String(Number(lesson)).padStart(2, "0")} - Phần ${section}`;
-        document.getElementById("listeningSubtitle").textContent = `${questions.length} câu trắc nghiệm`;
+        document.getElementById("listeningSubtitle").textContent =
+          lessonData.title
+            ? `${lessonData.title} | ${questions.length} câu luyện nghe`
+            : `${questions.length} câu luyện nghe`;
         if (!questions.length) throw new Error("Phần này chưa có câu hỏi");
         renderQuestion();
       }
@@ -220,6 +342,8 @@
       prevBtn.addEventListener("click", prevQuestion);
       resetBtn.addEventListener("click", resetListeningTest);
       nextBtn.addEventListener("click", nextQuestion);
+      readPassageBtn.addEventListener("click", speakPassage);
+      translatePassageBtn.addEventListener("click", togglePassageTranslation);
 
       loadListeningTest().catch((err) => {
         document.querySelector(".listening-main").innerHTML = `<p class="listen-error">Lỗi: ${escapeHtml(err.message)}</p>`;

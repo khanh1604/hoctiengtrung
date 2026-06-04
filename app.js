@@ -171,7 +171,60 @@
       const match = voices.find((v) => v.voiceURI === voiceURI);
       if (match) return match;
     }
-    return voices.find((v) => v.lang && v.lang.startsWith("zh")) || voices[0];
+    const preferredVoices = getLimitedVoiceOptions(voices);
+    return preferredVoices[0]?.voice || voices.find((v) => v.lang && v.lang.startsWith("zh")) || voices[0];
+  }
+
+  function findVoiceByLang(voices, langPrefix, usedVoiceURIs) {
+    const exact = voices.find(
+      (voice) =>
+        voice.lang &&
+        voice.lang.toLowerCase().startsWith(langPrefix.toLowerCase()) &&
+        !usedVoiceURIs.has(voice.voiceURI),
+    );
+    if (!exact) return null;
+    usedVoiceURIs.add(exact.voiceURI);
+    return exact;
+  }
+
+  function getLimitedVoiceOptions(voices) {
+    const usedVoiceURIs = new Set();
+    const options = [
+      {
+        label: "Tiếng Trung 1",
+        voice: findVoiceByLang(voices, "zh-CN", usedVoiceURIs),
+        fallbackLang: "zh-CN",
+      },
+      {
+        label: "Tiếng Trung 2",
+        voice:
+          findVoiceByLang(voices, "zh-TW", usedVoiceURIs) ||
+          findVoiceByLang(voices, "zh-HK", usedVoiceURIs) ||
+          findVoiceByLang(voices, "zh", usedVoiceURIs),
+        fallbackLang: "zh-TW",
+      },
+      {
+        label: "Tiếng Trung 3",
+        voice: findVoiceByLang(voices, "zh", usedVoiceURIs),
+        fallbackLang: "zh-CN",
+      },
+      {
+        label: "Tiếng Việt",
+        voice: findVoiceByLang(voices, "vi", usedVoiceURIs),
+        fallbackLang: "vi-VN",
+      },
+    ];
+
+    return options.map((option, idx) => {
+      const value = option.voice
+        ? option.voice.voiceURI
+        : `fallback-${option.fallbackLang}-${idx}`;
+      return {
+        ...option,
+        value,
+        lang: option.voice?.lang || option.fallbackLang,
+      };
+    });
   }
 
   const progressKey = `typingProgress-${storagePrefix}${lesson}-${testNum}`;
@@ -273,7 +326,9 @@
       window.speechSynthesis.cancel();
     } catch (e) {}
     const utt = new SpeechSynthesisUtterance(String(text || ""));
-    utt.lang = preferredLang;
+    const selectedLang =
+      voiceSelect?.selectedOptions?.[0]?.dataset?.lang || preferredLang;
+    utt.lang = selectedLang;
     utt.rate = settings.rate;
     const voices = window.speechSynthesis.getVoices();
     if (voices && voices.length) {
@@ -286,23 +341,26 @@
   function populateVoiceOptions() {
     if (!voiceSelect) return;
     const voices = window.speechSynthesis.getVoices();
-    if (!voices || !voices.length) return;
 
     const saved = getSavedVoiceSettings();
     voiceSelect.innerHTML = "";
 
-    voices.forEach((voice) => {
+    getLimitedVoiceOptions(voices || []).forEach((voiceOption) => {
       const option = document.createElement("option");
-      option.value = voice.voiceURI;
-      option.textContent = `${voice.name} (${voice.lang})`;
-      if (voice.voiceURI === saved.voiceURI) {
+      option.value = voiceOption.value;
+      option.dataset.lang = voiceOption.lang;
+      option.textContent = `${voiceOption.label} (${voiceOption.lang})`;
+      if (voiceOption.value === saved.voiceURI) {
         option.selected = true;
       }
       voiceSelect.appendChild(option);
     });
 
-    if (!voiceSelect.value && voices.length) {
-      voiceSelect.value = getSelectedVoice(voices).voiceURI;
+    const hasSavedOption = Array.from(voiceSelect.options).some(
+      (option) => option.value === saved.voiceURI,
+    );
+    if (!hasSavedOption && voiceSelect.options.length) {
+      voiceSelect.value = voiceSelect.options[0].value;
     }
   }
 
@@ -372,7 +430,7 @@
       const lessonNum = String(Number(lesson));
       if (lessonNum === "5") {
         const exampleItems = allData.example || [];
-        const groups = splitIntoGroups(exampleItems, 11);
+        const groups = splitIntoGroups(exampleItems, 20);
         return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
       }
       if (lessonNum !== "4") return [];
@@ -448,7 +506,7 @@
         ? "data/writing-tests.json"
         : subject === "speaking"
           ? Number(lesson) === 5
-            ? "data/speaking-lesson-5.json"
+            ? `data/speaking-lesson-5.json?v=${Date.now()}`
             : "data/speaking-lesson-4-raw.txt"
           : "data/nghe1-tests.json";
     const res = await fetch(dataFile);
@@ -460,7 +518,7 @@
         if (content === "example") {
           speakingExampleTestCount = Math.min(
             10,
-            splitIntoGroups(lessonData.example || [], 11).length,
+            splitIntoGroups(lessonData.example || [], 20).length,
           );
         }
         questions = getTestQuestions(lessonData);

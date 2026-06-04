@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập - Chinese Learning</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js" defer></script>
   </head>
 
   <body class="review-page">
@@ -130,7 +131,7 @@
 
       async function loadSpeakingLessonData() {
         if (String(Number(lesson)) === "5") {
-          const res = await fetch("data/speaking-lesson-5.json");
+          const res = await fetch(`data/speaking-lesson-5.json?v=${Date.now()}`);
           if (!res.ok) throw new Error("Không tải được dữ liệu môn nói");
           return res.json();
         }
@@ -166,7 +167,7 @@
 
         tests = listeningLessonOneSections.map((label, idx) => ({
           number: idx + 1,
-          total: label === "1-4" ? 4 : 32,
+          total: label === "1-4" ? 4 : label === "1-5-1" ? 7 : 32,
           label: `Phần ${label}`,
           section: label,
         }));
@@ -219,7 +220,7 @@
       async function loadSpeakingExampleTests() {
         const data = await loadSpeakingLessonData();
         const lessonNum = String(Number(lesson));
-        const size = lessonNum === "5" ? 11 : 25;
+        const size = lessonNum === "5" ? 20 : 25;
         const items = lessonNum === "5" ? (data.example || []) : parseTabSeparatedVocabulary(data.__rawText || "");
         const groups = splitIntoFixedGroups(items, size);
 
@@ -327,7 +328,7 @@
               return;
             }
 
-            if (subject !== "writing" && content === "listening" && test.section === "1-4") {
+            if (subject !== "writing" && content === "listening" && ["1-4", "1-5-1"].includes(test.section)) {
               window.location.href = `listening-test.html?lesson=${lesson}&section=${test.section}${subjectParam}`;
               return;
             }

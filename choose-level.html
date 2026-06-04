@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chọn Cấp Độ - Chinese Learning</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js" defer></script>
   </head>
 
   <body class="level-page">
     <div class="level-container">
       <div class="level-content">
-        <h1 class="level-title">Chào Mừng đến Với FTU</h1>
+        <h1 class="level-title">欢迎来到 FTC</h1>
 
         <button
           class="back-to-menu-btn"
@@ -36,41 +37,28 @@
             class="level-btn"
             onclick="window.location.href = 'typing.html?level=hsk3'"
           >
-            <span>Môn đọc</span>
+            <span>Môn đọc 初级阅读</span>
           </button>
           <button
             class="level-btn"
             onclick="window.location.href = 'lessons.html?subject=writing'"
           >
-            <span>Môn Viết</span>
+            <span>Môn Viết 中级写作</span>
           </button>
-          <button
-            class="level-btn"
-            onclick="window.location.href = 'typing.html?level=hsk5'"
-          >
+          <button class="level-btn locked" disabled>
             <span>HSK5</span>
           </button>
-          <button
-            class="level-btn"
-            onclick="window.location.href = 'typing.html?level=hsk6'"
-          >
+          <button class="level-btn locked" disabled>
             <span>HSK6</span>
           </button>
-          <button
-            class="level-btn"
-            onclick="window.location.href = 'typing.html?level=dialog'"
-          >
+          <button class="level-btn locked" disabled>
             <span>Tiếng Trung giao tiếp</span>
           </button>
-          <button
-            class="level-btn"
-            onclick="window.location.href = 'typing.html?level=work'"
-          >
+          <button class="level-btn locked" disabled>
             <span>Tiếng Trung cho người đi làm</span>
           </button>
         </div>
       </div>
-    </div>
     </div>
   </body>
 </html>

@@ -67,5 +67,113 @@
         "explanation": "差五分五点 = 4:55. 五点五分 = 5:05."
       }
     ]
+  },
+  "1-5-1": {
+    "title": "你看通知了吗？",
+    "audio": "assets/audio/1-5-1.mp3",
+    "passage": {
+      "chinese": "你看通知了吗？你看通知了吗？没有，什么通知啊？留学生办公室说，每个人要交两张照片。为什么交照片呢？学校要给我们初级班的学生办理学生证和借书卡。什么时候交啊？这个星期五以前。多长时间能办好呢？大概四五天吧。",
+      "vietnamese": "Bạn xem thông báo chưa? Bạn xem thông báo chưa? Chưa, thông báo gì thế? Văn phòng du học sinh nói, mỗi người phải nộp hai tấm ảnh. Tại sao lại phải nộp ảnh thế? Nhà trường muốn làm thẻ sinh viên và thẻ mượn sách cho học sinh lớp sơ cấp chúng ta. Khi nào nộp thế? Trước thứ Sáu tuần này. Bao lâu thì làm xong nhỉ? Khoảng bốn năm ngày gì đó."
+    },
+    "questions": [
+      {
+        "type": "choice",
+        "number": 1,
+        "prompt": "女的看了留学生办公室的通知了吗？",
+        "promptVietnamese": "Người nữ đã xem thông báo của Văn phòng du học sinh chưa?",
+        "optionA": {
+          "chinese": "看了",
+          "vietnamese": "Đã xem"
+        },
+        "optionB": {
+          "chinese": "没看",
+          "vietnamese": "Chưa xem"
+        },
+        "correct": "B",
+        "transcript": "没有，什么通知啊？",
+        "transcriptVietnamese": "Chưa có, thông báo gì vậy?",
+        "explanation": "Người nói: Nữ\nCâu gốc: \"没有，什么通知啊？\"\nDịch nghĩa: Chưa có, thông báo gì vậy?"
+      },
+      {
+        "type": "choice",
+        "number": 2,
+        "prompt": "每个人要交几张照片？",
+        "promptVietnamese": "Mỗi người phải nộp mấy tấm ảnh?",
+        "optionA": {
+          "chinese": "两张",
+          "vietnamese": "Hai tấm"
+        },
+        "optionB": {
+          "chinese": "三张",
+          "vietnamese": "Ba tấm"
+        },
+        "correct": "A",
+        "transcript": "留学生办公室说，每个人要交两张照片。",
+        "transcriptVietnamese": "Văn phòng du học sinh nói, mỗi người phải nộp hai tấm ảnh.",
+        "explanation": "Người nói: Nam\nCâu gốc: \"留学生办公室说，每个人要交两张照片。\"\nDịch nghĩa: Văn phòng du học sinh nói, mỗi người phải nộp hai tấm ảnh."
+      },
+      {
+        "type": "choice",
+        "number": 3,
+        "prompt": "学生证和借书卡多长时间能办好？",
+        "promptVietnamese": "Thẻ sinh viên và thẻ mượn sách bao lâu thì làm xong?",
+        "optionA": {
+          "chinese": "三四天",
+          "vietnamese": "Ba bốn ngày"
+        },
+        "optionB": {
+          "chinese": "四五天",
+          "vietnamese": "Bốn năm ngày"
+        },
+        "correct": "B",
+        "transcript": "大概四五天吧。",
+        "transcriptVietnamese": "Khoảng bốn năm ngày gì đó.",
+        "explanation": "Người nói: Nam\nCâu gốc: \"大概四五天吧。\"\nDịch nghĩa: Khoảng bốn năm ngày gì đó."
+      },
+      {
+        "type": "fill",
+        "number": 4,
+        "prompt": "你看留学生办公室的（    ）了吗？",
+        "promptVietnamese": "Bạn xem (  ) của Văn phòng du học sinh chưa?",
+        "correct": "通知",
+        "completeSentence": "你看留学生办公室的通知了吗？",
+        "transcript": "你看通知了吗？",
+        "transcriptVietnamese": "Bạn xem thông báo chưa?",
+        "explanation": "Người nói: Nam\nCâu gốc: \"你看通知了吗？\"\nDịch nghĩa: Bạn xem thông báo chưa?"
+      },
+      {
+        "type": "fill",
+        "number": 5,
+        "prompt": "每个人要交（    ）照片。",
+        "promptVietnamese": "Mỗi người phải nộp (  ) ảnh.",
+        "correct": "两张",
+        "completeSentence": "每个人要交两张照片。",
+        "transcript": "留学生办公室说，每个人要交两张照片。",
+        "transcriptVietnamese": "Văn phòng du học sinh nói, mỗi người phải nộp hai tấm ảnh.",
+        "explanation": "Người nói: Nam\nCâu gốc: \"留学生办公室说，每个人要交两张照片。\"\nDịch nghĩa: Văn phòng du học sinh nói, mỗi người phải nộp hai tấm ảnh."
+      },
+      {
+        "type": "fill",
+        "number": 6,
+        "prompt": "这个星期五（    ）交照片。",
+        "promptVietnamese": "Nộp ảnh (  ) thứ Sáu tuần này.",
+        "correct": "以前",
+        "completeSentence": "这个星期五以前交照片。",
+        "transcript": "这个星期五以前。",
+        "transcriptVietnamese": "Trước thứ Sáu tuần này.",
+        "explanation": "Người nói: Nam\nCâu gốc: \"这个星期五以前。\"\nDịch nghĩa: Trước thứ Sáu tuần này."
+      },
+      {
+        "type": "fill",
+        "number": 7,
+        "prompt": "大概（    ）天能办好。",
+        "promptVietnamese": "Khoảng (  ) ngày thì làm xong.",
+        "correct": "四五",
+        "completeSentence": "大概四五天能办好。",
+        "transcript": "大概四五天吧。",
+        "transcriptVietnamese": "Khoảng bốn năm ngày gì đó.",
+        "explanation": "Người nói: Nam\nCâu gốc: \"大概四五天吧。\"\nDịch nghĩa: Khoảng bốn năm ngày gì đó."
+      }
+    ]
   }
 }

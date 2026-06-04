@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chọn Mục - Chinese Learning</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js" defer></script>
   </head>
 
   <body class="lesson-options-page">
@@ -171,8 +172,9 @@
         document.getElementById("reviewIcon").textContent = "🧪";
         document.getElementById("reviewTitle").textContent = "Ôn tập ví dụ";
         document.getElementById("reviewDesc").textContent =
-          isLessonFive ? "10 bài kiểm tra - 11 câu/bài" : "10 bài kiểm tra - 25 câu/bài";
+          isLessonFive ? "10 bài kiểm tra - 20 câu/bài" : "10 bài kiểm tra - 25 câu/bài";
         document.getElementById("reviewCard").onclick = () => goToContent("example");
+        document.getElementById("reviewCard").hidden = false;
 
         document.getElementById("grammarCard").hidden = true;
       }
