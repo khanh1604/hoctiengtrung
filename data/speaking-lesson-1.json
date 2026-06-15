@@ -1,0 +1,2553 @@
+﻿{
+    "grammar":  [
+                    {
+                        "type":  "structure",
+                        "title":  "让 + Người + Động từ",
+                        "pattern":  "让 + Người + Động từ",
+                        "meaning":  "bảo/để ai làm gì",
+                        "usage":  "Dùng khi nhờ, yêu cầu hoặc cho phép ai đó làm một việc.",
+                        "vietnamese":  "Thầy giáo bảo chúng tôi về nhà làm bài tập.",
+                        "chinese":  "老师让我们回家做作业。",
+                        "pinyin":  "Lǎoshī ràng wǒmen huí jiā zuò zuòyè.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "老师让我们回家做作业。",
+                                             "pinyin":  "Lǎoshī ràng wǒmen huí jiā zuò zuòyè.",
+                                             "vietnamese":  "Thầy giáo bảo chúng tôi về nhà làm bài tập."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "对 + Người/Sự việc + 来说",
+                        "pattern":  "对 + Người/Sự việc + 来说",
+                        "meaning":  "đối với... mà nói",
+                        "usage":  "Dùng để nêu quan điểm hoặc phạm vi đánh giá.",
+                        "vietnamese":  "Đối với tôi, tiếng Trung rất khó.",
+                        "chinese":  "对我来说，汉语很难。",
+                        "pinyin":  "Duì wǒ lái shuō, Hànyǔ hěn nán.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "对我来说，汉语很难。",
+                                             "pinyin":  "Duì wǒ lái shuō, Hànyǔ hěn nán.",
+                                             "vietnamese":  "Đối với tôi, tiếng Trung rất khó."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "已经 + Động từ/Tính từ + 了",
+                        "pattern":  "已经 + Động từ/Tính từ + 了",
+                        "meaning":  "đã... rồi",
+                        "usage":  "Diễn tả hành động hoặc trạng thái đã xảy ra hoặc đã thay đổi.",
+                        "vietnamese":  "Tôi ăn cơm rồi.",
+                        "chinese":  "我已经吃饭了。",
+                        "pinyin":  "Wǒ yǐjīng chī fàn le.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我已经吃饭了。",
+                                             "pinyin":  "Wǒ yǐjīng chī fàn le.",
+                                             "vietnamese":  "Tôi ăn cơm rồi."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "什么都 + Động từ/Tính từ",
+                        "pattern":  "什么都 + Động từ/Tính từ",
+                        "meaning":  "cái gì cũng...",
+                        "usage":  "Biểu thị toàn bộ phạm vi.",
+                        "vietnamese":  "Anh ấy cái gì cũng biết.",
+                        "chinese":  "他什么都知道。",
+                        "pinyin":  "Tā shénme dōu zhīdào.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "他什么都知道。",
+                                             "pinyin":  "Tā shénme dōu zhīdào.",
+                                             "vietnamese":  "Anh ấy cái gì cũng biết."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "好好儿 + Động từ",
+                        "pattern":  "好好儿 + Động từ",
+                        "meaning":  "làm... cho tốt",
+                        "usage":  "Nhấn mạnh làm việc nghiêm túc, cẩn thận.",
+                        "vietnamese":  "Bạn phải học hành cho tốt.",
+                        "chinese":  "你要好好儿学习。",
+                        "pinyin":  "Nǐ yào hǎohāor xuéxí.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "你要好好儿学习。",
+                                             "pinyin":  "Nǐ yào hǎohāor xuéxí.",
+                                             "vietnamese":  "Bạn phải học hành cho tốt."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "要是...的话，...",
+                        "pattern":  "要是...的话，...",
+                        "meaning":  "nếu... thì...",
+                        "usage":  "Câu giả định điều kiện.",
+                        "vietnamese":  "Nếu ngày mai mưa thì chúng tôi sẽ không đi.",
+                        "chinese":  "要是明天下雨的话，我们就不去。",
+                        "pinyin":  "Yàoshi míngtiān xià yǔ de huà, wǒmen jiù bú qù.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "要是明天下雨的话，我们就不去。",
+                                             "pinyin":  "Yàoshi míngtiān xià yǔ de huà, wǒmen jiù bú qù.",
+                                             "vietnamese":  "Nếu ngày mai mưa thì chúng tôi sẽ không đi."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "能 + Động từ",
+                        "pattern":  "能 + Động từ",
+                        "meaning":  "có thể",
+                        "usage":  "Chỉ khả năng hoặc sự cho phép.",
+                        "vietnamese":  "Bạn có thể giúp tôi không?",
+                        "chinese":  "你能帮我吗？",
+                        "pinyin":  "Nǐ néng bāng wǒ ma?",
+                        "examples":  [
+                                         {
+                                             "chinese":  "你能帮我吗？",
+                                             "pinyin":  "Nǐ néng bāng wǒ ma?",
+                                             "vietnamese":  "Bạn có thể giúp tôi không?"
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "最重要的是 + ...",
+                        "pattern":  "最重要的是 + ...",
+                        "meaning":  "điều quan trọng nhất là...",
+                        "usage":  "Dùng để nhấn mạnh nội dung chính.",
+                        "vietnamese":  "Điều quan trọng nhất là sức khỏe.",
+                        "chinese":  "最重要的是身体健康。",
+                        "pinyin":  "Zuì zhòngyào de shì shēntǐ jiànkāng.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "最重要的是身体健康。",
+                                             "pinyin":  "Zuì zhòngyào de shì shēntǐ jiànkāng.",
+                                             "vietnamese":  "Điều quan trọng nhất là sức khỏe."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "哪儿都 + Động từ/Tính từ",
+                        "pattern":  "哪儿都 + Động từ/Tính từ",
+                        "meaning":  "đâu cũng...",
+                        "usage":  "Chỉ phạm vi toàn bộ địa điểm.",
+                        "vietnamese":  "Tôi đâu cũng không muốn đi.",
+                        "chinese":  "我哪儿都不想去。",
+                        "pinyin":  "Wǒ nǎr dōu bù xiǎng qù.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我哪儿都不想去。",
+                                             "pinyin":  "Wǒ nǎr dōu bù xiǎng qù.",
+                                             "vietnamese":  "Tôi đâu cũng không muốn đi."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "做 + Ai + 的导游",
+                        "pattern":  "做 + Ai + 的导游",
+                        "meaning":  "làm hướng dẫn viên cho ai",
+                        "usage":  "Cấu trúc sở hữu với 的.",
+                        "vietnamese":  "Tôi muốn làm hướng dẫn viên cho các bạn.",
+                        "chinese":  "我想做你们的导游。",
+                        "pinyin":  "Wǒ xiǎng zuò nǐmen de dǎoyóu.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我想做你们的导游。",
+                                             "pinyin":  "Wǒ xiǎng zuò nǐmen de dǎoyóu.",
+                                             "vietnamese":  "Tôi muốn làm hướng dẫn viên cho các bạn."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "来 + Địa điểm + Động từ",
+                        "pattern":  "来 + Địa điểm + Động từ",
+                        "meaning":  "đến để...",
+                        "usage":  "Chỉ mục đích khi đến đâu đó.",
+                        "vietnamese":  "Tôi đến Trung Quốc học tiếng Hán.",
+                        "chinese":  "我来中国学习汉语。",
+                        "pinyin":  "Wǒ lái Zhōngguó xuéxí Hànyǔ.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我来中国学习汉语。",
+                                             "pinyin":  "Wǒ lái Zhōngguó xuéxí Hànyǔ.",
+                                             "vietnamese":  "Tôi đến Trung Quốc học tiếng Hán."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "后来 + 怎么样 + 了",
+                        "pattern":  "后来 + 怎么样 + 了",
+                        "meaning":  "sau đó thế nào rồi?",
+                        "usage":  "Hỏi kết quả hoặc tình hình tiếp theo.",
+                        "vietnamese":  "Sau đó thế nào rồi?",
+                        "chinese":  "后来怎么样了？",
+                        "pinyin":  "Hòulái zěnmeyàng le?",
+                        "examples":  [
+                                         {
+                                             "chinese":  "后来怎么样了？",
+                                             "pinyin":  "Hòulái zěnmeyàng le?",
+                                             "vietnamese":  "Sau đó thế nào rồi?"
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "跟 + Người + 联系",
+                        "pattern":  "跟 + Người + 联系",
+                        "meaning":  "liên lạc với...",
+                        "usage":  "Diễn tả việc giữ liên lạc.",
+                        "vietnamese":  "Tôi sẽ liên lạc với bạn.",
+                        "chinese":  "我会跟你联系。",
+                        "pinyin":  "Wǒ huì gēn nǐ liánxì.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我会跟你联系。",
+                                             "pinyin":  "Wǒ huì gēn nǐ liánxì.",
+                                             "vietnamese":  "Tôi sẽ liên lạc với bạn."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "很长时间没 + Động từ + 了",
+                        "pattern":  "很长时间没 + Động từ + 了",
+                        "meaning":  "lâu rồi chưa...",
+                        "usage":  "Diễn tả khoảng thời gian dài chưa làm việc gì.",
+                        "vietnamese":  "Tôi lâu rồi chưa gặp anh ấy.",
+                        "chinese":  "我很长时间没见他了。",
+                        "pinyin":  "Wǒ hěn cháng shíjiān méi jiàn tā le.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我很长时间没见他了。",
+                                             "pinyin":  "Wǒ hěn cháng shíjiān méi jiàn tā le.",
+                                             "vietnamese":  "Tôi lâu rồi chưa gặp anh ấy."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "来 + V + (mục đích)",
+                        "pattern":  "来 + V + (mục đích)",
+                        "meaning":  "đến để làm gì",
+                        "usage":  "Dùng để diễn tả mục đích của việc đến một nơi nào đó. Sau 来 thường là động từ hoặc cụm động từ chỉ việc cần làm.",
+                        "vietnamese":  "Tôi đến tham gia khóa đào tạo tiếng Hán.",
+                        "chinese":  "我来参加汉语培训。",
+                        "pinyin":  "Wǒ lái cānjiā Hànyǔ péixùn.",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我来参加汉语培训。",
+                                             "pinyin":  "Wǒ lái cānjiā Hànyǔ péixùn.",
+                                             "vietnamese":  "Tôi đến tham gia khóa đào tạo tiếng Hán."
+                                         }
+                                     ]
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "老师让我们复习生词。",
+                          "pinyin":  "Lǎoshī ràng wǒmen fùxí shēngcí.",
+                          "vietnamese":  "Giáo viên bảo chúng tôi ôn từ mới."
+                      },
+                      {
+                          "chinese":  "妈妈让我早点睡觉。",
+                          "pinyin":  "Māma ràng wǒ zǎodiǎn shuìjiào.",
+                          "vietnamese":  "Mẹ bảo tôi đi ngủ sớm."
+                      },
+                      {
+                          "chinese":  "医生让我多休息。",
+                          "pinyin":  "Yīshēng ràng wǒ duō xiūxi.",
+                          "vietnamese":  "Bác sĩ bảo tôi nghỉ ngơi nhiều hơn."
+                      },
+                      {
+                          "chinese":  "老板让他去上海出差。",
+                          "pinyin":  "Lǎobǎn ràng tā qù Shànghǎi chūchāi.",
+                          "vietnamese":  "Sếp bảo anh ấy đi công tác Thượng Hải."
+                      },
+                      {
+                          "chinese":  "同学让我帮他买书。",
+                          "pinyin":  "Tóngxué ràng wǒ bāng tā mǎi shū.",
+                          "vietnamese":  "Bạn học nhờ tôi mua sách giúp."
+                      },
+                      {
+                          "chinese":  "爸爸让我学开车。",
+                          "pinyin":  "Bàba ràng wǒ xué kāichē.",
+                          "vietnamese":  "Bố bảo tôi học lái xe."
+                      },
+                      {
+                          "chinese":  "奶奶让我陪她散步。",
+                          "pinyin":  "Nǎinai ràng wǒ péi tā sànbù.",
+                          "vietnamese":  "Bà bảo tôi đi dạo cùng bà."
+                      },
+                      {
+                          "chinese":  "导游让大家集合。",
+                          "pinyin":  "Dǎoyóu ràng dàjiā jíhé.",
+                          "vietnamese":  "Hướng dẫn viên bảo mọi người tập trung."
+                      },
+                      {
+                          "chinese":  "朋友让我别担心。",
+                          "pinyin":  "Péngyou ràng wǒ bié dānxīn.",
+                          "vietnamese":  "Bạn bảo tôi đừng lo lắng."
+                      },
+                      {
+                          "chinese":  "经理让我们按时完成工作。",
+                          "pinyin":  "Jīnglǐ ràng wǒmen ànshí wánchéng gōngzuò.",
+                          "vietnamese":  "Quản lý yêu cầu chúng tôi hoàn thành công việc đúng hạn."
+                      },
+                      {
+                          "chinese":  "我已经吃饭了。",
+                          "pinyin":  "Wǒ yǐjīng chīfàn le.",
+                          "vietnamese":  "Tôi ăn cơm rồi."
+                      },
+                      {
+                          "chinese":  "他已经毕业了。",
+                          "pinyin":  "Tā yǐjīng bìyè le.",
+                          "vietnamese":  "Anh ấy tốt nghiệp rồi."
+                      },
+                      {
+                          "chinese":  "我已经看过这个电影了。",
+                          "pinyin":  "Wǒ yǐjīng kàn guo zhège diànyǐng le.",
+                          "vietnamese":  "Tôi đã xem bộ phim này rồi."
+                      },
+                      {
+                          "chinese":  "她已经回家了。",
+                          "pinyin":  "Tā yǐjīng huí jiā le.",
+                          "vietnamese":  "Cô ấy đã về nhà rồi."
+                      },
+                      {
+                          "chinese":  "我们已经出发了。",
+                          "pinyin":  "Wǒmen yǐjīng chūfā le.",
+                          "vietnamese":  "Chúng tôi đã xuất phát rồi."
+                      },
+                      {
+                          "chinese":  "我的身体已经恢复了。",
+                          "pinyin":  "Wǒ de shēntǐ yǐjīng huīfù le.",
+                          "vietnamese":  "Sức khỏe của tôi đã hồi phục rồi."
+                      },
+                      {
+                          "chinese":  "他已经找到工作了。",
+                          "pinyin":  "Tā yǐjīng zhǎodào gōngzuò le.",
+                          "vietnamese":  "Anh ấy đã tìm được việc rồi."
+                      },
+                      {
+                          "chinese":  "我已经习惯这里的生活了。",
+                          "pinyin":  "Wǒ yǐjīng xíguàn zhèlǐ de shēnghuó le.",
+                          "vietnamese":  "Tôi đã quen với cuộc sống ở đây rồi."
+                      },
+                      {
+                          "chinese":  "天气已经暖和了。",
+                          "pinyin":  "Tiānqì yǐjīng nuǎnhuo le.",
+                          "vietnamese":  "Thời tiết đã ấm lên rồi."
+                      },
+                      {
+                          "chinese":  "她已经能流利地说汉语了。",
+                          "pinyin":  "Tā yǐjīng néng liúlì de shuō Hànyǔ le.",
+                          "vietnamese":  "Cô ấy đã có thể nói tiếng Trung lưu loát rồi."
+                      },
+                      {
+                          "chinese":  "他什么都知道。",
+                          "pinyin":  "Tā shénme dōu zhīdào.",
+                          "vietnamese":  "Anh ấy cái gì cũng biết."
+                      },
+                      {
+                          "chinese":  "我什么都喜欢吃。",
+                          "pinyin":  "Wǒ shénme dōu xǐhuan chī.",
+                          "vietnamese":  "Tôi cái gì cũng thích ăn."
+                      },
+                      {
+                          "chinese":  "她什么都会做。",
+                          "pinyin":  "Tā shénme dōu huì zuò.",
+                          "vietnamese":  "Cô ấy cái gì cũng biết làm."
+                      },
+                      {
+                          "chinese":  "孩子什么都想问。",
+                          "pinyin":  "Háizi shénme dōu xiǎng wèn.",
+                          "vietnamese":  "Đứa trẻ cái gì cũng muốn hỏi."
+                      },
+                      {
+                          "chinese":  "我什么都明白了。",
+                          "pinyin":  "Wǒ shénme dōu míngbai le.",
+                          "vietnamese":  "Tôi cái gì cũng hiểu rồi."
+                      },
+                      {
+                          "chinese":  "他什么都不怕。",
+                          "pinyin":  "Tā shénme dōu bú pà.",
+                          "vietnamese":  "Anh ấy chẳng sợ gì cả."
+                      },
+                      {
+                          "chinese":  "奶奶什么都记得。",
+                          "pinyin":  "Nǎinai shénme dōu jìde.",
+                          "vietnamese":  "Bà cái gì cũng nhớ."
+                      },
+                      {
+                          "chinese":  "她什么都准备好了。",
+                          "pinyin":  "Tā shénme dōu zhǔnbèi hǎo le.",
+                          "vietnamese":  "Cô ấy chuẩn bị mọi thứ xong rồi."
+                      },
+                      {
+                          "chinese":  "我什么都没看见。",
+                          "pinyin":  "Wǒ shénme dōu méi kànjiàn.",
+                          "vietnamese":  "Tôi chẳng nhìn thấy gì cả."
+                      },
+                      {
+                          "chinese":  "他什么都愿意帮助别人。",
+                          "pinyin":  "Tā shénme dōu yuànyì bāngzhù biérén.",
+                          "vietnamese":  "Anh ấy sẵn sàng giúp đỡ người khác trong mọi việc."
+                      },
+                      {
+                          "chinese":  "要是下雨的话，我就不去了。",
+                          "pinyin":  "Yàoshi xiàyǔ dehuà, wǒ jiù bú qù le.",
+                          "vietnamese":  "Nếu trời mưa thì tôi không đi nữa."
+                      },
+                      {
+                          "chinese":  "要是有时间的话，我们一起吃饭吧。",
+                          "pinyin":  "Yàoshi yǒu shíjiān dehuà, wǒmen yìqǐ chīfàn ba.",
+                          "vietnamese":  "Nếu có thời gian thì cùng ăn cơm nhé."
+                      },
+                      {
+                          "chinese":  "要是身体不舒服的话，应该去医院。",
+                          "pinyin":  "Yàoshi shēntǐ bù shūfu dehuà, yīnggāi qù yīyuàn.",
+                          "vietnamese":  "Nếu không khỏe thì nên đi bệnh viện."
+                      },
+                      {
+                          "chinese":  "要是你愿意的话，可以跟我一起去。",
+                          "pinyin":  "Yàoshi nǐ yuànyì dehuà, kěyǐ gēn wǒ yìqǐ qù.",
+                          "vietnamese":  "Nếu bạn đồng ý thì có thể đi cùng tôi."
+                      },
+                      {
+                          "chinese":  "要是找不到的话，给我打电话。",
+                          "pinyin":  "Yàoshi zhǎo bú dào dehuà, gěi wǒ dǎ diànhuà.",
+                          "vietnamese":  "Nếu không tìm thấy thì gọi điện cho tôi."
+                      },
+                      {
+                          "chinese":  "要是堵车的话，我们会迟到。",
+                          "pinyin":  "Yàoshi dǔchē dehuà, wǒmen huì chídào.",
+                          "vietnamese":  "Nếu tắc đường thì chúng ta sẽ đến muộn."
+                      },
+                      {
+                          "chinese":  "要是考得好的话，我请你吃饭。",
+                          "pinyin":  "Yàoshi kǎo de hǎo dehuà, wǒ qǐng nǐ chīfàn.",
+                          "vietnamese":  "Nếu thi tốt tôi sẽ mời bạn ăn cơm."
+                      },
+                      {
+                          "chinese":  "要是明天暖和的话，我们去爬山。",
+                          "pinyin":  "Yàoshi míngtiān nuǎnhuo dehuà, wǒmen qù páshān.",
+                          "vietnamese":  "Nếu ngày mai trời ấm thì chúng ta đi leo núi."
+                      },
+                      {
+                          "chinese":  "要是需要帮助的话，请联系我。",
+                          "pinyin":  "Yàoshi xūyào bāngzhù dehuà, qǐng liánxì wǒ.",
+                          "vietnamese":  "Nếu cần giúp đỡ thì hãy liên hệ tôi."
+                      },
+                      {
+                          "chinese":  "要是没问题的话，我们现在出发。",
+                          "pinyin":  "Yàoshi méi wèntí dehuà, wǒmen xiànzài chūfā.",
+                          "vietnamese":  "Nếu không có vấn đề gì thì chúng ta xuất phát ngay."
+                      },
+                      {
+                          "chinese":  "对我来说，汉语很有意思。",
+                          "pinyin":  "Duì wǒ láishuō, Hànyǔ hěn yǒu yìsi.",
+                          "vietnamese":  "Đối với tôi, tiếng Trung rất thú vị."
+                      },
+                      {
+                          "chinese":  "对学生来说，学习最重要。",
+                          "pinyin":  "Duì xuésheng láishuō, xuéxí zuì zhòngyào.",
+                          "vietnamese":  "Đối với học sinh, học tập là quan trọng nhất."
+                      },
+                      {
+                          "chinese":  "对老人来说，健康最重要。",
+                          "pinyin":  "Duì lǎorén láishuō, jiànkāng zuì zhòngyào.",
+                          "vietnamese":  "Đối với người già, sức khỏe là quan trọng nhất."
+                      },
+                      {
+                          "chinese":  "对年轻人来说，机会很重要。",
+                          "pinyin":  "Duì niánqīngrén láishuō, jīhuì hěn zhòngyào.",
+                          "vietnamese":  "Đối với người trẻ, cơ hội rất quan trọng."
+                      },
+                      {
+                          "chinese":  "对我来说，这不难。",
+                          "pinyin":  "Duì wǒ láishuō, zhè bù nán.",
+                          "vietnamese":  "Đối với tôi, điều này không khó."
+                      },
+                      {
+                          "chinese":  "对外国人来说，汉字比较难。",
+                          "pinyin":  "Duì wàiguórén láishuō, hànzì bǐjiào nán.",
+                          "vietnamese":  "Đối với người nước ngoài, chữ Hán khá khó."
+                      },
+                      {
+                          "chinese":  "对孩子来说，游戏很有吸引力。",
+                          "pinyin":  "Duì háizi láishuō, yóuxì hěn yǒu xīyǐnlì.",
+                          "vietnamese":  "Đối với trẻ em, trò chơi rất hấp dẫn."
+                      },
+                      {
+                          "chinese":  "对公司来说，人才很重要。",
+                          "pinyin":  "Duì gōngsī láishuō, réncái hěn zhòngyào.",
+                          "vietnamese":  "Đối với công ty, nhân tài rất quan trọng."
+                      },
+                      {
+                          "chinese":  "对老师来说，学生的进步最开心。",
+                          "pinyin":  "Duì lǎoshī láishuō, xuésheng de jìnbù zuì kāixīn.",
+                          "vietnamese":  "Đối với giáo viên, sự tiến bộ của học sinh là điều vui nhất."
+                      },
+                      {
+                          "chinese":  "对农村来说，环境是最大的优势。",
+                          "pinyin":  "Duì nóngcūn láishuō, huánjìng shì zuì dà de yōushì.",
+                          "vietnamese":  "Đối với nông thôn, môi trường là ưu thế lớn nhất."
+                      },
+                      {
+                          "chinese":  "最重要的是身体健康。",
+                          "pinyin":  "Zuì zhòngyào de shì shēntǐ jiànkāng.",
+                          "vietnamese":  "Điều quan trọng nhất là sức khỏe."
+                      },
+                      {
+                          "chinese":  "最重要的是坚持学习。",
+                          "pinyin":  "Zuì zhòngyào de shì jiānchí xuéxí.",
+                          "vietnamese":  "Điều quan trọng nhất là kiên trì học tập."
+                      },
+                      {
+                          "chinese":  "最重要的是不要放弃。",
+                          "pinyin":  "Zuì zhòngyào de shì búyào fàngqì.",
+                          "vietnamese":  "Điều quan trọng nhất là đừng bỏ cuộc."
+                      },
+                      {
+                          "chinese":  "最重要的是按时完成工作。",
+                          "pinyin":  "Zuì zhòngyào de shì ànshí wánchéng gōngzuò.",
+                          "vietnamese":  "Điều quan trọng nhất là hoàn thành công việc đúng hạn."
+                      },
+                      {
+                          "chinese":  "最重要的是多休息。",
+                          "pinyin":  "Zuì zhòngyào de shì duō xiūxi.",
+                          "vietnamese":  "Điều quan trọng nhất là nghỉ ngơi nhiều."
+                      },
+                      {
+                          "chinese":  "最重要的是保持好心情。",
+                          "pinyin":  "Zuì zhòngyào de shì bǎochí hǎo xīnqíng.",
+                          "vietnamese":  "Điều quan trọng nhất là giữ tâm trạng tốt."
+                      },
+                      {
+                          "chinese":  "最重要的是学会沟通。",
+                          "pinyin":  "Zuì zhòngyào de shì xuéhuì gōutōng.",
+                          "vietnamese":  "Điều quan trọng nhất là học cách giao tiếp."
+                      },
+                      {
+                          "chinese":  "最重要的是注意安全。",
+                          "pinyin":  "Zuì zhòngyào de shì zhùyì ānquán.",
+                          "vietnamese":  "Điều quan trọng nhất là chú ý an toàn."
+                      },
+                      {
+                          "chinese":  "最重要的是相信自己。",
+                          "pinyin":  "Zuì zhòngyào de shì xiāngxìn zìjǐ.",
+                          "vietnamese":  "Điều quan trọng nhất là tin vào bản thân."
+                      },
+                      {
+                          "chinese":  "最重要的是养成好习惯。",
+                          "pinyin":  "Zuì zhòngyào de shì yǎngchéng hǎo xíguàn.",
+                          "vietnamese":  "Điều quan trọng nhất là hình thành thói quen tốt."
+                      },
+                      {
+                          "chinese":  "我给朋友做导游。",
+                          "pinyin":  "Wǒ gěi péngyou zuò dǎoyóu.",
+                          "vietnamese":  "Tôi làm hướng dẫn viên cho bạn tôi."
+                      },
+                      {
+                          "chinese":  "他给外国人做导游。",
+                          "pinyin":  "Tā gěi wàiguórén zuò dǎoyóu.",
+                          "vietnamese":  "Anh ấy làm hướng dẫn viên cho người nước ngoài."
+                      },
+                      {
+                          "chinese":  "暑假我给家人做导游。",
+                          "pinyin":  "Shǔjià wǒ gěi jiārén zuò dǎoyóu.",
+                          "vietnamese":  "Kỳ nghỉ hè tôi làm hướng dẫn viên cho gia đình."
+                      },
+                      {
+                          "chinese":  "她经常给游客做导游。",
+                          "pinyin":  "Tā jīngcháng gěi yóukè zuò dǎoyóu.",
+                          "vietnamese":  "Cô ấy thường làm hướng dẫn viên cho du khách."
+                      },
+                      {
+                          "chinese":  "我想给朋友做导游。",
+                          "pinyin":  "Wǒ xiǎng gěi péngyou zuò dǎoyóu.",
+                          "vietnamese":  "Tôi muốn làm hướng dẫn viên cho bạn bè."
+                      },
+                      {
+                          "chinese":  "他给同学做导游介绍北京。",
+                          "pinyin":  "Tā gěi tóngxué zuò dǎoyóu jièshào Běijīng.",
+                          "vietnamese":  "Anh ấy làm hướng dẫn viên giới thiệu Bắc Kinh cho bạn học."
+                      },
+                      {
+                          "chinese":  "哥哥给我们做导游。",
+                          "pinyin":  "Gēge gěi wǒmen zuò dǎoyóu.",
+                          "vietnamese":  "Anh trai làm hướng dẫn viên cho chúng tôi."
+                      },
+                      {
+                          "chinese":  "我第一次给外国朋友做导游。",
+                          "pinyin":  "Wǒ dì yī cì gěi wàiguó péngyou zuò dǎoyóu.",
+                          "vietnamese":  "Đây là lần đầu tôi làm hướng dẫn viên cho bạn nước ngoài."
+                      },
+                      {
+                          "chinese":  "导游给游客介绍景点。",
+                          "pinyin":  "Dǎoyóu gěi yóukè jièshào jǐngdiǎn.",
+                          "vietnamese":  "Hướng dẫn viên giới thiệu danh lam thắng cảnh cho du khách."
+                      },
+                      {
+                          "chinese":  "她会给来中国的朋友做导游。",
+                          "pinyin":  "Tā huì gěi lái Zhōngguó de péngyou zuò dǎoyóu.",
+                          "vietnamese":  "Cô ấy sẽ làm hướng dẫn viên cho bạn bè đến Trung Quốc."
+                      },
+                      {
+                          "chinese":  "后来怎么样了？",
+                          "pinyin":  "Hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau đó thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "他后来怎么样了？",
+                          "pinyin":  "Tā hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau đó anh ấy thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "你们后来怎么样了？",
+                          "pinyin":  "Nǐmen hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau đó các bạn thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "感冒以后后来怎么样了？",
+                          "pinyin":  "Gǎnmào yǐhòu hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau khi bị cảm thì thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "医生检查以后后来怎么样了？",
+                          "pinyin":  "Yīshēng jiǎnchá yǐhòu hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau khi bác sĩ kiểm tra thì thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "你们见面以后后来怎么样了？",
+                          "pinyin":  "Nǐmen jiànmiàn yǐhòu hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau khi gặp mặt thì thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "他住院以后后来怎么样了？",
+                          "pinyin":  "Tā zhùyuàn yǐhòu hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau khi nhập viện thì thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "比赛结束以后后来怎么样了？",
+                          "pinyin":  "Bǐsài jiéshù yǐhòu hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau khi trận đấu kết thúc thì thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "申请工作以后后来怎么样了？",
+                          "pinyin":  "Shēngqǐng gōngzuò yǐhòu hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau khi xin việc thì thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "发生这件事以后后来怎么样了？",
+                          "pinyin":  "Fāshēng zhè jiàn shì yǐhòu hòulái zěnmeyàng le?",
+                          "vietnamese":  "Sau khi xảy ra việc này thì thế nào rồi?"
+                      },
+                      {
+                          "chinese":  "我很长时间没见他了。",
+                          "pinyin":  "Wǒ hěn cháng shíjiān méi jiàn tā le.",
+                          "vietnamese":  "Tôi lâu rồi chưa gặp anh ấy."
+                      },
+                      {
+                          "chinese":  "很长时间没回家了。",
+                          "pinyin":  "Hěn cháng shíjiān méi huí jiā le.",
+                          "vietnamese":  "Lâu rồi chưa về nhà."
+                      },
+                      {
+                          "chinese":  "我很长时间没说汉语了。",
+                          "pinyin":  "Wǒ hěn cháng shíjiān méi shuō Hànyǔ le.",
+                          "vietnamese":  "Tôi lâu rồi chưa nói tiếng Trung."
+                      },
+                      {
+                          "chinese":  "她很长时间没来上课了。",
+                          "pinyin":  "Tā hěn cháng shíjiān méi lái shàngkè le.",
+                          "vietnamese":  "Cô ấy lâu rồi chưa đến lớp."
+                      },
+                      {
+                          "chinese":  "我很长时间没运动了。",
+                          "pinyin":  "Wǒ hěn cháng shíjiān méi yùndòng le.",
+                          "vietnamese":  "Tôi lâu rồi chưa tập thể dục."
+                      },
+                      {
+                          "chinese":  "他很长时间没联系我了。",
+                          "pinyin":  "Tā hěn cháng shíjiān méi liánxì wǒ le.",
+                          "vietnamese":  "Anh ấy lâu rồi chưa liên lạc với tôi."
+                      },
+                      {
+                          "chinese":  "我们很长时间没见面了。",
+                          "pinyin":  "Wǒmen hěn cháng shíjiān méi jiànmiàn le.",
+                          "vietnamese":  "Chúng tôi lâu rồi chưa gặp mặt."
+                      },
+                      {
+                          "chinese":  "奶奶很长时间没出门了。",
+                          "pinyin":  "Nǎinai hěn cháng shíjiān méi chūmén le.",
+                          "vietnamese":  "Bà lâu rồi chưa ra ngoài."
+                      },
+                      {
+                          "chinese":  "我很长时间没看电影了。",
+                          "pinyin":  "Wǒ hěn cháng shíjiān méi kàn diànyǐng le.",
+                          "vietnamese":  "Tôi lâu rồi chưa xem phim."
+                      },
+                      {
+                          "chinese":  "他很长时间没去农村了。",
+                          "pinyin":  "Tā hěn cháng shíjiān méi qù nóngcūn le.",
+                          "vietnamese":  "Anh ấy lâu rồi chưa về nông thôn."
+                      },
+                      {
+                          "chinese":  "我来中国学习汉语。",
+                          "pinyin":  "Wǒ lái Zhōngguó xuéxí Hànyǔ.",
+                          "vietnamese":  "Tôi đến Trung Quốc học tiếng Trung."
+                      },
+                      {
+                          "chinese":  "他来学校找老师。",
+                          "pinyin":  "Tā lái xuéxiào zhǎo lǎoshī.",
+                          "vietnamese":  "Anh ấy đến trường tìm giáo viên."
+                      },
+                      {
+                          "chinese":  "我来图书馆看书。",
+                          "pinyin":  "Wǒ lái túshūguǎn kàn shū.",
+                          "vietnamese":  "Tôi đến thư viện đọc sách."
+                      },
+                      {
+                          "chinese":  "她来医院检查身体。",
+                          "pinyin":  "Tā lái yīyuàn jiǎnchá shēntǐ.",
+                          "vietnamese":  "Cô ấy đến bệnh viện kiểm tra sức khỏe."
+                      },
+                      {
+                          "chinese":  "我们来公园散步。",
+                          "pinyin":  "Wǒmen lái gōngyuán sànbù.",
+                          "vietnamese":  "Chúng tôi đến công viên đi dạo."
+                      },
+                      {
+                          "chinese":  "他来超市买东西。",
+                          "pinyin":  "Tā lái chāoshì mǎi dōngxi.",
+                          "vietnamese":  "Anh ấy đến siêu thị mua đồ."
+                      },
+                      {
+                          "chinese":  "朋友来我家做客。",
+                          "pinyin":  "Péngyou lái wǒ jiā zuòkè.",
+                          "vietnamese":  "Bạn đến nhà tôi chơi."
+                      },
+                      {
+                          "chinese":  "她来办公室联系经理。",
+                          "pinyin":  "Tā lái bàngōngshì liánxì jīnglǐ.",
+                          "vietnamese":  "Cô ấy đến văn phòng liên hệ với quản lý."
+                      },
+                      {
+                          "chinese":  "我来北京参加培训。",
+                          "pinyin":  "Wǒ lái Běijīng cānjiā péixùn.",
+                          "vietnamese":  "Tôi đến Bắc Kinh tham gia khóa đào tạo."
+                      },
+                      {
+                          "chinese":  "游客来中国旅游。",
+                          "pinyin":  "Yóukè lái Zhōngguó lǚyóu.",
+                          "vietnamese":  "Du khách đến Trung Quốc du lịch."
+                      },
+                      {
+                          "chinese":  "我经常跟老师联系。",
+                          "pinyin":  "Wǒ jīngcháng gēn lǎoshī liánxì.",
+                          "vietnamese":  "Tôi thường xuyên liên lạc với giáo viên."
+                      },
+                      {
+                          "chinese":  "请跟我联系。",
+                          "pinyin":  "Qǐng gēn wǒ liánxì.",
+                          "vietnamese":  "Hãy liên lạc với tôi."
+                      },
+                      {
+                          "chinese":  "他跟家人联系了。",
+                          "pinyin":  "Tā gēn jiārén liánxì le.",
+                          "vietnamese":  "Anh ấy đã liên lạc với gia đình."
+                      },
+                      {
+                          "chinese":  "我想跟经理联系。",
+                          "pinyin":  "Wǒ xiǎng gēn jīnglǐ liánxì.",
+                          "vietnamese":  "Tôi muốn liên lạc với quản lý."
+                      },
+                      {
+                          "chinese":  "她每天跟朋友联系。",
+                          "pinyin":  "Tā měitiān gēn péngyou liánxì.",
+                          "vietnamese":  "Cô ấy mỗi ngày đều liên lạc với bạn bè."
+                      },
+                      {
+                          "chinese":  "请先跟导游联系。",
+                          "pinyin":  "Qǐng xiān gēn dǎoyóu liánxì.",
+                          "vietnamese":  "Hãy liên hệ với hướng dẫn viên trước."
+                      },
+                      {
+                          "chinese":  "我已经跟老师联系过了。",
+                          "pinyin":  "Wǒ yǐjīng gēn lǎoshī liánxì guo le.",
+                          "vietnamese":  "Tôi đã liên hệ với giáo viên rồi."
+                      },
+                      {
+                          "chinese":  "他很长时间没跟我联系了。",
+                          "pinyin":  "Tā hěn cháng shíjiān méi gēn wǒ liánxì le.",
+                          "vietnamese":  "Anh ấy đã lâu không liên lạc với tôi."
+                      },
+                      {
+                          "chinese":  "需要帮助的话，请跟我联系。",
+                          "pinyin":  "Xūyào bāngzhù dehuà, qǐng gēn wǒ liánxì.",
+                          "vietnamese":  "Nếu cần giúp đỡ hãy liên hệ với tôi."
+                      },
+                      {
+                          "chinese":  "我们通过微信联系。",
+                          "pinyin":  "Wǒmen tōngguò Wēixìn liánxì.",
+                          "vietnamese":  "Chúng tôi liên lạc qua WeChat."
+                      },
+                      {
+                          "chinese":  "我来学习汉语。",
+                          "pinyin":  "Wǒ lái xuéxí Hànyǔ.",
+                          "vietnamese":  "Tôi đến để học tiếng Trung."
+                      },
+                      {
+                          "chinese":  "她来买衣服。",
+                          "pinyin":  "Tā lái mǎi yīfu.",
+                          "vietnamese":  "Cô ấy đến để mua quần áo."
+                      },
+                      {
+                          "chinese":  "我来参加培训。",
+                          "pinyin":  "Wǒ lái cānjiā péixùn.",
+                          "vietnamese":  "Tôi đến tham gia khóa đào tạo."
+                      },
+                      {
+                          "chinese":  "他来找朋友。",
+                          "pinyin":  "Tā lái zhǎo péngyou.",
+                          "vietnamese":  "Anh ấy đến tìm bạn."
+                      },
+                      {
+                          "chinese":  "我们来旅游。",
+                          "pinyin":  "Wǒmen lái lǚyóu.",
+                          "vietnamese":  "Chúng tôi đến du lịch."
+                      },
+                      {
+                          "chinese":  "她来上课。",
+                          "pinyin":  "Tā lái shàngkè.",
+                          "vietnamese":  "Cô ấy đến học."
+                      },
+                      {
+                          "chinese":  "我来复习功课。",
+                          "pinyin":  "Wǒ lái fùxí gōngkè.",
+                          "vietnamese":  "Tôi đến để ôn bài."
+                      },
+                      {
+                          "chinese":  "他们来开会。",
+                          "pinyin":  "Tāmen lái kāihuì.",
+                          "vietnamese":  "Họ đến để họp."
+                      },
+                      {
+                          "chinese":  "我来检查身体。",
+                          "pinyin":  "Wǒ lái jiǎnchá shēntǐ.",
+                          "vietnamese":  "Tôi đến để kiểm tra sức khỏe."
+                      },
+                      {
+                          "chinese":  "游客来参观博物馆。",
+                          "pinyin":  "Yóukè lái cānguān bówùguǎn.",
+                          "vietnamese":  "Du khách đến tham quan bảo tàng."
+                      },
+                      {
+                          "chinese":  "哪儿都可以买到水果。",
+                          "pinyin":  "Nǎr dōu kěyǐ mǎidào shuǐguǒ.",
+                          "vietnamese":  "Đâu cũng có thể mua được trái cây."
+                      },
+                      {
+                          "chinese":  "哪儿都很方便。",
+                          "pinyin":  "Nǎr dōu hěn fāngbiàn.",
+                          "vietnamese":  "Đâu cũng rất thuận tiện."
+                      },
+                      {
+                          "chinese":  "他哪儿都去过。",
+                          "pinyin":  "Tā nǎr dōu qù guo.",
+                          "vietnamese":  "Anh ấy đã đi khắp nơi rồi."
+                      },
+                      {
+                          "chinese":  "我哪儿都找不到。",
+                          "pinyin":  "Wǒ nǎr dōu zhǎo bu dào.",
+                          "vietnamese":  "Tôi tìm khắp nơi mà không thấy."
+                      },
+                      {
+                          "chinese":  "她哪儿都认识人。",
+                          "pinyin":  "Tā nǎr dōu rènshi rén.",
+                          "vietnamese":  "Cô ấy đi đâu cũng quen người."
+                      },
+                      {
+                          "chinese":  "哪儿都能看到年轻人。",
+                          "pinyin":  "Nǎr dōu néng kàndào niánqīngrén.",
+                          "vietnamese":  "Đâu cũng có thể thấy người trẻ."
+                      },
+                      {
+                          "chinese":  "哪儿都一样热闹。",
+                          "pinyin":  "Nǎr dōu yíyàng rènào.",
+                          "vietnamese":  "Đâu cũng náo nhiệt như nhau."
+                      },
+                      {
+                          "chinese":  "他哪儿都不想去。",
+                          "pinyin":  "Tā nǎr dōu bù xiǎng qù.",
+                          "vietnamese":  "Anh ấy chẳng muốn đi đâu cả."
+                      },
+                      {
+                          "chinese":  "这种食品哪儿都能买到。",
+                          "pinyin":  "Zhè zhǒng shípǐn nǎr dōu néng mǎidào.",
+                          "vietnamese":  "Loại thực phẩm này đâu cũng mua được."
+                      },
+                      {
+                          "chinese":  "节日期间哪儿都很多人。",
+                          "pinyin":  "Jiérì qījiān nǎr dōu hěn duō rén.",
+                          "vietnamese":  "Trong dịp lễ, đâu đâu cũng đông người."
+                      },
+                      {
+                          "chinese":  "我能说汉语。",
+                          "pinyin":  "Wǒ néng shuō Hànyǔ.",
+                          "vietnamese":  "Tôi có thể nói tiếng Trung."
+                      },
+                      {
+                          "chinese":  "你能帮助我吗？",
+                          "pinyin":  "Nǐ néng bāngzhù wǒ ma?",
+                          "vietnamese":  "Bạn có thể giúp tôi không?"
+                      },
+                      {
+                          "chinese":  "他能开车。",
+                          "pinyin":  "Tā néng kāichē.",
+                          "vietnamese":  "Anh ấy có thể lái xe."
+                      },
+                      {
+                          "chinese":  "我今天不能去上课。",
+                          "pinyin":  "Wǒ jīntiān bù néng qù shàngkè.",
+                          "vietnamese":  "Hôm nay tôi không thể đi học."
+                      },
+                      {
+                          "chinese":  "她能听懂老师的话。",
+                          "pinyin":  "Tā néng tīng dǒng lǎoshī de huà.",
+                          "vietnamese":  "Cô ấy có thể hiểu lời giáo viên."
+                      },
+                      {
+                          "chinese":  "我能自己解决这个问题。",
+                          "pinyin":  "Wǒ néng zìjǐ jiějué zhège wèntí.",
+                          "vietnamese":  "Tôi có thể tự giải quyết vấn đề này."
+                      },
+                      {
+                          "chinese":  "你能来参加运动会吗？",
+                          "pinyin":  "Nǐ néng lái cānjiā yùndònghuì ma?",
+                          "vietnamese":  "Bạn có thể đến tham gia đại hội thể thao không?"
+                      },
+                      {
+                          "chinese":  "他能找到那家饭店。",
+                          "pinyin":  "Tā néng zhǎodào nà jiā fàndiàn.",
+                          "vietnamese":  "Anh ấy có thể tìm được nhà hàng đó."
+                      },
+                      {
+                          "chinese":  "我们明天能见面。",
+                          "pinyin":  "Wǒmen míngtiān néng jiànmiàn.",
+                          "vietnamese":  "Ngày mai chúng ta có thể gặp mặt."
+                      },
+                      {
+                          "chinese":  "奶奶现在能用电脑发邮件了。",
+                          "pinyin":  "Nǎinai xiànzài néng yòng diànnǎo fā yóujiàn le.",
+                          "vietnamese":  "Bây giờ bà có thể dùng máy tính gửi email rồi."
+                      },
+                      {
+                          "chinese":  "你要好好儿学习。",
+                          "pinyin":  "Nǐ yào hǎohāor xuéxí.",
+                          "vietnamese":  "Bạn phải học hành chăm chỉ."
+                      },
+                      {
+                          "chinese":  "请好好儿休息。",
+                          "pinyin":  "Qǐng hǎohāor xiūxi.",
+                          "vietnamese":  "Hãy nghỉ ngơi thật tốt."
+                      },
+                      {
+                          "chinese":  "好好儿照顾身体。",
+                          "pinyin":  "Hǎohāor zhàogu shēntǐ.",
+                          "vietnamese":  "Hãy chăm sóc sức khỏe thật tốt."
+                      },
+                      {
+                          "chinese":  "你应该好好儿复习。",
+                          "pinyin":  "Nǐ yīnggāi hǎohāor fùxí.",
+                          "vietnamese":  "Bạn nên ôn tập thật tốt."
+                      },
+                      {
+                          "chinese":  "请好好儿听老师讲课。",
+                          "pinyin":  "Qǐng hǎohāor tīng lǎoshī jiǎngkè.",
+                          "vietnamese":  "Hãy nghe giảng thật cẩn thận."
+                      },
+                      {
+                          "chinese":  "我会好好儿准备考试。",
+                          "pinyin":  "Wǒ huì hǎohāor zhǔnbèi kǎoshì.",
+                          "vietnamese":  "Tôi sẽ chuẩn bị kỳ thi thật tốt."
+                      },
+                      {
+                          "chinese":  "你们要好好儿合作。",
+                          "pinyin":  "Nǐmen yào hǎohāor hézuò.",
+                          "vietnamese":  "Các bạn phải hợp tác thật tốt."
+                      },
+                      {
+                          "chinese":  "孩子们正在好好儿做作业。",
+                          "pinyin":  "Háizimen zhèngzài hǎohāor zuò zuòyè.",
+                          "vietnamese":  "Bọn trẻ đang làm bài tập rất chăm chỉ."
+                      },
+                      {
+                          "chinese":  "请好好儿考虑一下。",
+                          "pinyin":  "Qǐng hǎohāor kǎolǜ yíxià.",
+                          "vietnamese":  "Hãy suy nghĩ thật kỹ."
+                      },
+                      {
+                          "chinese":  "我想好好儿学汉语。",
+                          "pinyin":  "Wǒ xiǎng hǎohāor xué Hànyǔ.",
+                          "vietnamese":  "Tôi muốn học tiếng Trung thật tốt."
+                      },
+                      {
+                          "chinese":  "老师让我们复习生词。",
+                          "pinyin":  "Lǎoshī ràng wǒmen fùxí shēngcí.",
+                          "vietnamese":  "Giáo viên bảo chúng tôi ôn từ mới."
+                      },
+                      {
+                          "chinese":  "妈妈让我早点睡觉。",
+                          "pinyin":  "Māma ràng wǒ zǎodiǎn shuìjiào.",
+                          "vietnamese":  "Mẹ bảo tôi đi ngủ sớm."
+                      },
+                      {
+                          "chinese":  "医生让我多休息。",
+                          "pinyin":  "Yīshēng ràng wǒ duō xiūxi.",
+                          "vietnamese":  "Bác sĩ bảo tôi nghỉ ngơi nhiều hơn."
+                      },
+                      {
+                          "chinese":  "老板让他去上海出差。",
+                          "pinyin":  "Lǎobǎn ràng tā qù Shànghǎi chūchāi.",
+                          "vietnamese":  "Sếp bảo anh ấy đi công tác Thượng Hải."
+                      },
+                      {
+                          "chinese":  "同学让我帮他买书。",
+                          "pinyin":  "Tóngxué ràng wǒ bāng tā mǎi shū.",
+                          "vietnamese":  "Bạn học nhờ tôi mua sách giúp."
+                      },
+                      {
+                          "chinese":  "爸爸让我学开车。",
+                          "pinyin":  "Bàba ràng wǒ xué kāichē.",
+                          "vietnamese":  "Bố bảo tôi học lái xe."
+                      },
+                      {
+                          "chinese":  "奶奶让我陪她散步。",
+                          "pinyin":  "Nǎinai ràng wǒ péi tā sànbù.",
+                          "vietnamese":  "Bà bảo tôi đi dạo cùng bà."
+                      },
+                      {
+                          "chinese":  "导游让大家集合。",
+                          "pinyin":  "Dǎoyóu ràng dàjiā jíhé.",
+                          "vietnamese":  "Hướng dẫn viên bảo mọi người tập trung."
+                      },
+                      {
+                          "chinese":  "朋友让我别担心。",
+                          "pinyin":  "Péngyou ràng wǒ bié dānxīn.",
+                          "vietnamese":  "Bạn bảo tôi đừng lo lắng."
+                      },
+                      {
+                          "chinese":  "经理让我们按时完成工作。",
+                          "pinyin":  "Jīnglǐ ràng wǒmen ànshí wánchéng gōngzuò.",
+                          "vietnamese":  "Quản lý yêu cầu chúng tôi hoàn thành công việc đúng hạn."
+                      }
+                  ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "嗯",
+                           "pinyin":  "hēi",
+                           "partOfSpeech":  "int.",
+                           "vietnamese":  "ừ, vâng"
+                       },
+                       {
+                           "chinese":  "好久",
+                           "pinyin":  "hǎojiǔ",
+                           "partOfSpeech":  "adj.",
+                           "vietnamese":  "lâu"
+                       },
+                       {
+                           "chinese":  "好",
+                           "pinyin":  "hǎo",
+                           "partOfSpeech":  "adv.",
+                           "vietnamese":  "rất, khá"
+                       },
+                       {
+                           "chinese":  "参加",
+                           "pinyin":  "cānjiā",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "tham gia"
+                       },
+                       {
+                           "chinese":  "培训",
+                           "pinyin":  "péixùn",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "đào tạo, tập huấn"
+                       },
+                       {
+                           "chinese":  "刚",
+                           "pinyin":  "gāng",
+                           "partOfSpeech":  "adv.",
+                           "vietnamese":  "vừa mới"
+                       },
+                       {
+                           "chinese":  "对了",
+                           "pinyin":  "duì le",
+                           "partOfSpeech":  "adv.",
+                           "vietnamese":  "đúng rồi, à đúng rồi"
+                       },
+                       {
+                           "chinese":  "申请",
+                           "pinyin":  "shēngqǐng",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "xin, đăng ký"
+                       },
+                       {
+                           "chinese":  "后来",
+                           "pinyin":  "hòulái",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "sau này, về sau"
+                       },
+                       {
+                           "chinese":  "让",
+                           "pinyin":  "ràng",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "để, bảo, cho phép"
+                       },
+                       {
+                           "chinese":  "联系",
+                           "pinyin":  "liánxì",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "liên lạc"
+                       },
+                       {
+                           "chinese":  "见面",
+                           "pinyin":  "jiànmiàn",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "gặp mặt"
+                       },
+                       {
+                           "chinese":  "哪儿",
+                           "pinyin":  "nǎr",
+                           "partOfSpeech":  "pron.",
+                           "vietnamese":  "đâu, chỗ nào"
+                       },
+                       {
+                           "chinese":  "习惯",
+                           "pinyin":  "xíguàn",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "quen, quen với"
+                       },
+                       {
+                           "chinese":  "生活",
+                           "pinyin":  "shēnghuó",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "sống, sinh hoạt"
+                       },
+                       {
+                           "chinese":  "什么",
+                           "pinyin":  "shénme",
+                           "partOfSpeech":  "pron.",
+                           "vietnamese":  "cái gì"
+                       },
+                       {
+                           "chinese":  "导游",
+                           "pinyin":  "dǎoyóu",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "hướng dẫn viên du lịch"
+                       },
+                       {
+                           "chinese":  "带",
+                           "pinyin":  "dài",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "mang, dẫn"
+                       },
+                       {
+                           "chinese":  "好好儿",
+                           "pinyin":  "hǎohāor",
+                           "partOfSpeech":  "adv.",
+                           "vietnamese":  "cẩn thận, tử tế"
+                       },
+                       {
+                           "chinese":  "事",
+                           "pinyin":  "shì",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "việc, chuyện"
+                       },
+                       {
+                           "chinese":  "的话",
+                           "pinyin":  "dehuà",
+                           "partOfSpeech":  "part.",
+                           "vietnamese":  "nếu, nếu như"
+                       },
+                       {
+                           "chinese":  "陪",
+                           "pinyin":  "péi",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "đi cùng,陪 cùng"
+                       },
+                       {
+                           "chinese":  "充电器",
+                           "pinyin":  "chōngdiànqì",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "bộ sạc"
+                       },
+                       {
+                           "chinese":  "电池",
+                           "pinyin":  "diànchí",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "pin"
+                       },
+                       {
+                           "chinese":  "熟悉",
+                           "pinyin":  "shúxī",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "quen thuộc"
+                       },
+                       {
+                           "chinese":  "得",
+                           "pinyin":  "děi",
+                           "partOfSpeech":  "aux.",
+                           "vietnamese":  "phải, cần phải"
+                       },
+                       {
+                           "chinese":  "转",
+                           "pinyin":  "zhuǎn",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "chuyển, đổi xe"
+                       }
+                   ],
+    "paragraph":  [
+                      [
+                          {
+                              "chinese":  "友美：嘿，这不是铃木吗？你什么时候也来北京了？",
+                              "pinyin":  "Yǒuměi: Hēi, zhè bú shì Língmù ma? Nǐ shénme shíhou yě lái Běijīng le?",
+                              "vietnamese":  "Ôi, đây chẳng phải là Suzuki sao? Khi nào bạn cũng đến Bắc Kinh vậy?"
+                          },
+                          {
+                              "chinese":  "铃木：友美，好久不见。我来参加汉语培训，前天刚到。",
+                              "pinyin":  "Língmù: Yǒuměi, hǎojiǔ bú jiàn. Wǒ lái cānjiā Hànyǔ péixùn, qiántián gāng dào.",
+                              "vietnamese":  "Yumi, lâu rồi không gặp. Mình đến tham gia khóa đào tạo tiếng Hán, hôm kia mới tới."
+                          },
+                          {
+                              "chinese":  "友美：真没想到在这儿见到你。来北京培训多长时间？",
+                              "pinyin":  "Yǒuměi: Zhēn méi xiǎngdào zài zhèr jiàndào nǐ. Lái Běijīng péixùn duō cháng shíjiān?",
+                              "vietnamese":  "Thật không ngờ gặp bạn ở đây. Bạn đến Bắc Kinh đào tạo trong bao lâu?"
+                          },
+                          {
+                              "chinese":  "铃木：一共三个月，在北京两个月，香港一个月。",
+                              "pinyin":  "Língmù: Yígòng sān gè yuè, zài Běijīng liǎng gè yuè, Xiānggǎng yí gè yuè.",
+                              "vietnamese":  "Tổng cộng ba tháng, ở Bắc Kinh hai tháng, ở Hồng Kông một tháng."
+                          },
+                          {
+                              "chinese":  "友美：对了，我来的时候，你妹妹也在申请来中国，后来怎么样了？",
+                              "pinyin":  "Yǒuměi: Duì le, wǒ lái de shíhou, nǐ mèimei yě zài shēnqǐng lái Zhōngguó, hòulái zěnmeyàng le?",
+                              "vietnamese":  "À đúng rồi, lúc mình đến đây, em gái bạn cũng đang xin sang Trung Quốc, sau đó thế nào rồi?"
+                          },
+                          {
+                              "chinese":  "铃木：她现在在西安学习汉语，昨天打电话，她还让我跟你联系呢。",
+                              "pinyin":  "Língmù: Tā xiànzài zài Xī\u0027ān xuéxí Hànyǔ, zuótiān dǎ diànhuà, tā hái ràng wǒ gēn nǐ liánxì ne.",
+                              "vietnamese":  "Bây giờ cô ấy đang học tiếng Hán ở Tây An. Hôm qua gọi điện, cô ấy còn bảo mình liên lạc với bạn nữa."
+                          },
+                          {
+                              "chinese":  "友美：真的吗？我和她也很长时间没见面了。",
+                              "pinyin":  "Yǒuměi: Zhēn de ma? Wǒ hé tā yě hěn cháng shíjiān méi jiànmiàn le.",
+                              "vietnamese":  "Thật sao? Mình và cô ấy cũng đã lâu rồi chưa gặp nhau."
+                          },
+                          {
+                              "chinese":  "铃木：哎，你去过西安吗？",
+                              "pinyin":  "Língmù: Āi, nǐ qùguo Xī\u0027ān ma?",
+                              "vietnamese":  "Này, bạn đã từng đến Tây An chưa?"
+                          },
+                          {
+                              "chinese":  "友美：还没有，来了这么长时间，每天都在上课，我哪儿都没去过。",
+                              "pinyin":  "Yǒuměi: Hái méiyǒu, lái le zhème cháng shíjiān, měitiān dōu zài shàngkè, wǒ nǎr dōu méi qùguo.",
+                              "vietnamese":  "Chưa. Đến đây lâu như vậy rồi mà ngày nào cũng học, mình chưa đi đâu cả."
+                          },
+                          {
+                              "chinese":  "铃木：那咱们找机会一起去吧。",
+                              "pinyin":  "Língmù: Nà zánmen zhǎo jīhuì yìqǐ qù ba.",
+                              "vietnamese":  "Vậy chúng ta tìm dịp cùng đi nhé."
+                          },
+                          {
+                              "chinese":  "友美：好啊。",
+                              "pinyin":  "Yǒuměi: Hǎo a.",
+                              "vietnamese":  "Được đấy."
+                          }
+                      ],
+                      [
+                          {
+                              "chinese":  "你妹妹在西安怎么样？对那儿习惯了吗？",
+                              "pinyin":  "Nǐ mèimei zài Xī\u0027ān zěnmeyàng? Duì nàr xíguàn le ma?",
+                              "vietnamese":  "Em gái bạn ở Tây An thế nào? Đã quen với cuộc sống ở đó chưa?"
+                          },
+                          {
+                              "chinese":  "她说已经习惯了，学习啊、生活啊，什么都很方便，她很喜欢西安。",
+                              "pinyin":  "Tā shuō yǐjīng xíguàn le, xuéxí a, shēnghuó a, shénme dōu hěn fāngbiàn, tā hěn xǐhuan Xī\u0027ān.",
+                              "vietnamese":  "Cô ấy nói đã quen rồi, học tập và sinh hoạt đều rất thuận tiện, cô ấy rất thích Tây An."
+                          },
+                          {
+                              "chinese":  "真想去看看她。",
+                              "pinyin":  "Zhēn xiǎng qù kànkan tā.",
+                              "vietnamese":  "Thật muốn đến thăm cô ấy."
+                          },
+                          {
+                              "chinese":  "可以啊，我们一起去，让我妹妹做咱们的导游。",
+                              "pinyin":  "Kěyǐ a, wǒmen yìqǐ qù, ràng wǒ mèimei zuò zánmen de dǎoyóu.",
+                              "vietnamese":  "Được thôi, chúng ta cùng đi, để em gái mình làm hướng dẫn viên cho chúng ta."
+                          },
+                          {
+                              "chinese":  "对，让她带我们好好儿玩儿玩儿。",
+                              "pinyin":  "Duì, ràng tā dài wǒmen hǎohāor wánr wanr.",
+                              "vietnamese":  "Đúng rồi, để cô ấy dẫn chúng ta đi chơi thật vui."
+                          },
+                          {
+                              "chinese":  "没问题。哎，你现在有事吗？",
+                              "pinyin":  "Méi wèntí. Āi, nǐ xiànzài yǒu shì ma?",
+                              "vietnamese":  "Không vấn đề gì. Này, bây giờ bạn có bận không?"
+                          },
+                          {
+                              "chinese":  "怎么，你现在就要去吗？",
+                              "pinyin":  "Zěnme, nǐ xiànzài jiù yào qù ma?",
+                              "vietnamese":  "Sao thế? Bây giờ bạn định đi luôn à?"
+                          },
+                          {
+                              "chinese":  "不是。要是你没事的话，能陪我去买东西吗？",
+                              "pinyin":  "Bú shì. Yàoshi nǐ méi shì dehuà, néng péi wǒ qù mǎi dōngxi ma?",
+                              "vietnamese":  "Không phải. Nếu bạn không bận, có thể đi mua đồ cùng mình được không?"
+                          },
+                          {
+                              "chinese":  "可以啊，你打算买什么？",
+                              "pinyin":  "Kěyǐ a, nǐ dǎsuàn mǎi shénme?",
+                              "vietnamese":  "Được thôi, bạn định mua gì?"
+                          },
+                          {
+                              "chinese":  "吃的、用的，什么都要买。最重要的是先买充电器和电池。",
+                              "pinyin":  "Chī de, yòng de, shénme dōu yào mǎi. Zuì zhòngyào de shì xiān mǎi chōngdiànqì hé diànchí.",
+                              "vietnamese":  "Đồ ăn, đồ dùng, cái gì cũng phải mua. Quan trọng nhất là mua sạc và pin trước."
+                          },
+                          {
+                              "chinese":  "那我们去超市吧。",
+                              "pinyin":  "Nà wǒmen qù chāoshì ba.",
+                              "vietnamese":  "Vậy chúng ta đi siêu thị nhé."
+                          },
+                          {
+                              "chinese":  "好啊。我哪儿都不认识，什么地方都不熟悉。你得带我好好儿转转。",
+                              "pinyin":  "Hǎo a. Wǒ nǎr dōu bú rènshi, shénme dìfang dōu bú shúxi. Nǐ děi dài wǒ hǎohāor zhuànzhuan.",
+                              "vietnamese":  "Được. Mình không quen nơi nào cả, chỗ nào cũng không rành. Bạn phải dẫn mình đi tham quan nhé."
+                          },
+                          {
+                              "chinese":  "好，我先做你的导游吧。",
+                              "pinyin":  "Hǎo, wǒ xiān zuò nǐ de dǎoyóu ba.",
+                              "vietnamese":  "Được, trước tiên mình làm hướng dẫn viên cho bạn nhé."
+                          }
+                      ]
+                  ],
+    "example":  [
+                    {
+                        "chinese":  "嗯，我知道了。",
+                        "pinyin":  "Hēi, wǒ zhīdào le.",
+                        "vietnamese":  "Vâng, tôi biết rồi."
+                    },
+                    {
+                        "chinese":  "嗯，我马上过去。",
+                        "pinyin":  "Hēi, wǒ mǎshàng guòqù.",
+                        "vietnamese":  "Vâng, tôi sẽ qua ngay."
+                    },
+                    {
+                        "chinese":  "嗯，这个办法不错。",
+                        "pinyin":  "Hēi, zhège bànfǎ búcuò.",
+                        "vietnamese":  "Ừ, cách này không tệ."
+                    },
+                    {
+                        "chinese":  "嗯，你说得有道理。",
+                        "pinyin":  "Hēi, nǐ shuō de yǒu dàolǐ.",
+                        "vietnamese":  "Ừ, bạn nói có lý."
+                    },
+                    {
+                        "chinese":  "嗯，我考虑一下。",
+                        "pinyin":  "Hēi, wǒ kǎolǜ yíxià.",
+                        "vietnamese":  "Vâng, tôi sẽ suy nghĩ một chút."
+                    },
+                    {
+                        "chinese":  "我们好久没见面了。",
+                        "pinyin":  "Wǒmen hǎojiǔ méi jiànmiàn le.",
+                        "vietnamese":  "Chúng ta lâu rồi không gặp."
+                    },
+                    {
+                        "chinese":  "好久没下雨了。",
+                        "pinyin":  "Hǎojiǔ méi xiàyǔ le.",
+                        "vietnamese":  "Lâu rồi không mưa."
+                    },
+                    {
+                        "chinese":  "他好久没联系我了。",
+                        "pinyin":  "Tā hǎojiǔ méi liánxì wǒ le.",
+                        "vietnamese":  "Anh ấy lâu rồi không liên lạc với tôi."
+                    },
+                    {
+                        "chinese":  "我好久没回家了。",
+                        "pinyin":  "Wǒ hǎojiǔ méi huí jiā le.",
+                        "vietnamese":  "Tôi lâu rồi chưa về nhà."
+                    },
+                    {
+                        "chinese":  "好久没听到这首歌了。",
+                        "pinyin":  "Hǎojiǔ méi tīngdào zhè shǒu gē le.",
+                        "vietnamese":  "Lâu rồi không nghe bài hát này."
+                    },
+                    {
+                        "chinese":  "今天的天气好冷。",
+                        "pinyin":  "Jīntiān de tiānqì hǎo lěng.",
+                        "vietnamese":  "Hôm nay trời rất lạnh."
+                    },
+                    {
+                        "chinese":  "这件衣服好漂亮。",
+                        "pinyin":  "Zhè jiàn yīfu hǎo piàoliang.",
+                        "vietnamese":  "Bộ quần áo này rất đẹp."
+                    },
+                    {
+                        "chinese":  "你中文说得好流利。",
+                        "pinyin":  "Nǐ Zhōngwén shuō de hǎo liúlì.",
+                        "vietnamese":  "Bạn nói tiếng Trung rất lưu loát."
+                    },
+                    {
+                        "chinese":  "这里的风景好美。",
+                        "pinyin":  "Zhèlǐ de fēngjǐng hǎo měi.",
+                        "vietnamese":  "Phong cảnh ở đây rất đẹp."
+                    },
+                    {
+                        "chinese":  "这个孩子好聪明。",
+                        "pinyin":  "Zhège háizi hǎo cōngming.",
+                        "vietnamese":  "Đứa trẻ này rất thông minh."
+                    },
+                    {
+                        "chinese":  "我参加了学校的比赛。",
+                        "pinyin":  "Wǒ cānjiā le xuéxiào de bǐsài.",
+                        "vietnamese":  "Tôi tham gia cuộc thi của trường."
+                    },
+                    {
+                        "chinese":  "你参加运动会吗？",
+                        "pinyin":  "Nǐ cānjiā yùndònghuì ma?",
+                        "vietnamese":  "Bạn có tham gia hội thao không?"
+                    },
+                    {
+                        "chinese":  "他报名参加汉语培训班。",
+                        "pinyin":  "Tā bàomíng cānjiā Hànyǔ péixùnbān.",
+                        "vietnamese":  "Anh ấy đăng ký tham gia lớp đào tạo tiếng Trung."
+                    },
+                    {
+                        "chinese":  "我想参加这次活动。",
+                        "pinyin":  "Wǒ xiǎng cānjiā zhè cì huódòng.",
+                        "vietnamese":  "Tôi muốn tham gia hoạt động lần này."
+                    },
+                    {
+                        "chinese":  "很多人参加了会议。",
+                        "pinyin":  "Hěn duō rén cānjiā le huìyì.",
+                        "vietnamese":  "Nhiều người đã tham gia cuộc họp."
+                    },
+                    {
+                        "chinese":  "虽然很忙，但是我还是参加了。",
+                        "pinyin":  "Suīrán hěn máng, dànshì wǒ háishì cānjiā le.",
+                        "vietnamese":  "Tuy bận nhưng tôi vẫn tham gia."
+                    },
+                    {
+                        "chinese":  "我第一次参加这样的比赛。",
+                        "pinyin":  "Wǒ dì yī cì cānjiā zhèyàng de bǐsài.",
+                        "vietnamese":  "Đây là lần đầu tôi tham gia cuộc thi như vậy."
+                    },
+                    {
+                        "chinese":  "参加活动以后，我认识了很多朋友。",
+                        "pinyin":  "Cānjiā huódòng yǐhòu, wǒ rènshi le hěn duō péngyou.",
+                        "vietnamese":  "Sau khi tham gia hoạt động, tôi quen nhiều bạn."
+                    },
+                    {
+                        "chinese":  "只要有时间，我就会参加。",
+                        "pinyin":  "Zhǐyào yǒu shíjiān, wǒ jiù huì cānjiā.",
+                        "vietnamese":  "Chỉ cần có thời gian tôi sẽ tham gia."
+                    },
+                    {
+                        "chinese":  "他不但参加了比赛，而且得了第一名。",
+                        "pinyin":  "Tā búdàn cānjiā le bǐsài, érqiě dé le dì yī míng.",
+                        "vietnamese":  "Anh ấy không những tham gia mà còn đạt giải nhất."
+                    },
+                    {
+                        "chinese":  "公司安排我们参加培训。",
+                        "pinyin":  "Gōngsī ānpái wǒmen cānjiā péixùn.",
+                        "vietnamese":  "Công ty sắp xếp chúng tôi tham gia đào tạo."
+                    },
+                    {
+                        "chinese":  "新员工需要培训。",
+                        "pinyin":  "Xīn yuángōng xūyào péixùn.",
+                        "vietnamese":  "Nhân viên mới cần được đào tạo."
+                    },
+                    {
+                        "chinese":  "培训已经开始了。",
+                        "pinyin":  "Péixùn yǐjīng kāishǐ le.",
+                        "vietnamese":  "Buổi đào tạo đã bắt đầu."
+                    },
+                    {
+                        "chinese":  "我刚参加完培训。",
+                        "pinyin":  "Wǒ gāng cānjiā wán péixùn.",
+                        "vietnamese":  "Tôi vừa hoàn thành khóa đào tạo."
+                    },
+                    {
+                        "chinese":  "培训内容很有意思。",
+                        "pinyin":  "Péixùn nèiróng hěn yǒu yìsi.",
+                        "vietnamese":  "Nội dung đào tạo rất thú vị."
+                    },
+                    {
+                        "chinese":  "他去北京接受培训。",
+                        "pinyin":  "Tā qù Běijīng jiēshòu péixùn.",
+                        "vietnamese":  "Anh ấy đến Bắc Kinh để đào tạo."
+                    },
+                    {
+                        "chinese":  "经过培训以后，他进步很快。",
+                        "pinyin":  "Jīngguò péixùn yǐhòu, tā jìnbù hěn kuài.",
+                        "vietnamese":  "Sau đào tạo, anh ấy tiến bộ rất nhanh."
+                    },
+                    {
+                        "chinese":  "公司每个月都会组织培训。",
+                        "pinyin":  "Gōngsī měi gè yuè dōu huì zǔzhī péixùn.",
+                        "vietnamese":  "Công ty mỗi tháng đều tổ chức đào tạo."
+                    },
+                    {
+                        "chinese":  "为了提高水平，我参加了培训班。",
+                        "pinyin":  "Wèile tígāo shuǐpíng, wǒ cānjiā le péixùnbān.",
+                        "vietnamese":  "Để nâng cao trình độ, tôi tham gia lớp tập huấn."
+                    },
+                    {
+                        "chinese":  "培训结束后要考试。",
+                        "pinyin":  "Péixùn jiéshù hòu yào kǎoshì.",
+                        "vietnamese":  "Sau khi kết thúc đào tạo sẽ phải thi."
+                    },
+                    {
+                        "chinese":  "我刚到家。",
+                        "pinyin":  "Wǒ gāng dào jiā.",
+                        "vietnamese":  "Tôi vừa về đến nhà."
+                    },
+                    {
+                        "chinese":  "他刚吃完饭。",
+                        "pinyin":  "Tā gāng chī wán fàn.",
+                        "vietnamese":  "Anh ấy vừa ăn cơm xong."
+                    },
+                    {
+                        "chinese":  "我刚看见他。",
+                        "pinyin":  "Wǒ gāng kànjiàn tā.",
+                        "vietnamese":  "Tôi vừa nhìn thấy anh ấy."
+                    },
+                    {
+                        "chinese":  "你来的时候，我刚睡着。",
+                        "pinyin":  "Nǐ lái de shíhou, wǒ gāng shuìzháo.",
+                        "vietnamese":  "Lúc bạn đến, tôi vừa ngủ thiếp đi."
+                    },
+                    {
+                        "chinese":  "我刚收到你的邮件。",
+                        "pinyin":  "Wǒ gāng shōudào nǐ de yóujiàn.",
+                        "vietnamese":  "Tôi vừa nhận được email của bạn."
+                    },
+                    {
+                        "chinese":  "他刚学汉语三个月。",
+                        "pinyin":  "Tā gāng xué Hànyǔ sān gè yuè.",
+                        "vietnamese":  "Anh ấy mới học tiếng Trung được 3 tháng."
+                    },
+                    {
+                        "chinese":  "我刚准备出门，你就来了。",
+                        "pinyin":  "Wǒ gāng zhǔnbèi chūmén, nǐ jiù lái le.",
+                        "vietnamese":  "Tôi vừa chuẩn bị ra ngoài thì bạn đến."
+                    },
+                    {
+                        "chinese":  "刚开始的时候，我一句话也听不懂。",
+                        "pinyin":  "Gāng kāishǐ de shíhou, wǒ yí jù huà yě tīngbudǒng.",
+                        "vietnamese":  "Lúc mới bắt đầu, tôi không hiểu câu nào cả."
+                    },
+                    {
+                        "chinese":  "我们刚认识不久。",
+                        "pinyin":  "Wǒmen gāng rènshi bù jiǔ.",
+                        "vietnamese":  "Chúng tôi mới quen nhau không lâu."
+                    },
+                    {
+                        "chinese":  "他刚下飞机就给我打电话了。",
+                        "pinyin":  "Tā gāng xià fēijī jiù gěi wǒ dǎ diànhuà le.",
+                        "vietnamese":  "Anh ấy vừa xuống máy bay đã gọi cho tôi."
+                    },
+                    {
+                        "chinese":  "对了，你明天有空吗？",
+                        "pinyin":  "Duì le, nǐ míngtiān yǒu kòng ma?",
+                        "vietnamese":  "À đúng rồi, ngày mai bạn rảnh không?"
+                    },
+                    {
+                        "chinese":  "对了，我忘了告诉你一件事。",
+                        "pinyin":  "Duì le, wǒ wàng le gàosu nǐ yí jiàn shì.",
+                        "vietnamese":  "À đúng rồi, tôi quên nói với bạn một chuyện."
+                    },
+                    {
+                        "chinese":  "对了，这是你的手机吗？",
+                        "pinyin":  "Duì le, zhè shì nǐ de shǒujī ma?",
+                        "vietnamese":  "À đúng rồi, đây có phải điện thoại của bạn không?"
+                    },
+                    {
+                        "chinese":  "对了，你申请签证了吗？",
+                        "pinyin":  "Duì le, nǐ shēngqǐng qiānzhèng le ma?",
+                        "vietnamese":  "À đúng rồi, bạn xin visa chưa?"
+                    },
+                    {
+                        "chinese":  "对了，老师让你去办公室。",
+                        "pinyin":  "Duì le, lǎoshī ràng nǐ qù bàngōngshì.",
+                        "vietnamese":  "À đúng rồi, giáo viên bảo bạn đến văn phòng."
+                    },
+                    {
+                        "chinese":  "我想申请这份工作。",
+                        "pinyin":  "Wǒ xiǎng shēngqǐng zhè fèn gōngzuò.",
+                        "vietnamese":  "Tôi muốn ứng tuyển công việc này."
+                    },
+                    {
+                        "chinese":  "他申请了奖学金。",
+                        "pinyin":  "Tā shēngqǐng le jiǎngxuéjīn.",
+                        "vietnamese":  "Anh ấy đã xin học bổng."
+                    },
+                    {
+                        "chinese":  "申请签证需要很多材料。",
+                        "pinyin":  "Shēngqǐng qiānzhèng xūyào hěn duō cáiliào.",
+                        "vietnamese":  "Xin visa cần nhiều giấy tờ."
+                    },
+                    {
+                        "chinese":  "我已经申请成功了。",
+                        "pinyin":  "Wǒ yǐjīng shēngqǐng chénggōng le.",
+                        "vietnamese":  "Tôi đã đăng ký thành công."
+                    },
+                    {
+                        "chinese":  "她正在申请去中国留学。",
+                        "pinyin":  "Tā zhèngzài shēngqǐng qù Zhōngguó liúxué.",
+                        "vietnamese":  "Cô ấy đang xin đi du học Trung Quốc."
+                    },
+                    {
+                        "chinese":  "如果你想参加，就要先申请。",
+                        "pinyin":  "Rúguǒ nǐ xiǎng cānjiā, jiù yào xiān shēngqǐng.",
+                        "vietnamese":  "Nếu muốn tham gia thì phải đăng ký trước."
+                    },
+                    {
+                        "chinese":  "我申请了很多公司。",
+                        "pinyin":  "Wǒ shēngqǐng le hěn duō gōngsī.",
+                        "vietnamese":  "Tôi đã nộp đơn vào nhiều công ty."
+                    },
+                    {
+                        "chinese":  "他申请以后很快就通过了。",
+                        "pinyin":  "Tā shēngqǐng yǐhòu hěn kuài jiù tōngguò le.",
+                        "vietnamese":  "Sau khi nộp đơn anh ấy nhanh chóng được duyệt."
+                    },
+                    {
+                        "chinese":  "为了提高收入，他申请了兼职工作。",
+                        "pinyin":  "Wèile tígāo shōurù, tā shēngqǐng le jiānzhí gōngzuò.",
+                        "vietnamese":  "Để tăng thu nhập, anh ấy xin việc làm thêm."
+                    },
+                    {
+                        "chinese":  "不但可以网上申请，而且手续很简单。",
+                        "pinyin":  "Búdàn kěyǐ wǎngshàng shēngqǐng, érqiě shǒuxù hěn jiǎndān.",
+                        "vietnamese":  "Không những có thể đăng ký online mà thủ tục còn đơn giản."
+                    },
+                    {
+                        "chinese":  "后来我才知道真相。",
+                        "pinyin":  "Hòulái wǒ cái zhīdào zhēnxiàng.",
+                        "vietnamese":  "Sau này tôi mới biết sự thật."
+                    },
+                    {
+                        "chinese":  "后来他搬家了。",
+                        "pinyin":  "Hòulái tā bānjiā le.",
+                        "vietnamese":  "Sau đó anh ấy chuyển nhà."
+                    },
+                    {
+                        "chinese":  "我们后来成了好朋友。",
+                        "pinyin":  "Wǒmen hòulái chéng le hǎo péngyou.",
+                        "vietnamese":  "Sau này chúng tôi trở thành bạn tốt."
+                    },
+                    {
+                        "chinese":  "开始很难，后来就习惯了。",
+                        "pinyin":  "Kāishǐ hěn nán, hòulái jiù xíguàn le.",
+                        "vietnamese":  "Ban đầu rất khó, sau đó thì quen."
+                    },
+                    {
+                        "chinese":  "后来发生了什么事？",
+                        "pinyin":  "Hòulái fāshēng le shénme shì?",
+                        "vietnamese":  "Sau đó đã xảy ra chuyện gì?"
+                    },
+                    {
+                        "chinese":  "他后来去了北京工作。",
+                        "pinyin":  "Tā hòulái qù le Běijīng gōngzuò.",
+                        "vietnamese":  "Sau này anh ấy đến Bắc Kinh làm việc."
+                    },
+                    {
+                        "chinese":  "后来我联系到了他。",
+                        "pinyin":  "Hòulái wǒ liánxì dào le tā.",
+                        "vietnamese":  "Sau đó tôi đã liên lạc được với anh ấy."
+                    },
+                    {
+                        "chinese":  "后来天气越来越冷。",
+                        "pinyin":  "Hòulái tiānqì yuèláiyuè lěng.",
+                        "vietnamese":  "Sau đó thời tiết càng ngày càng lạnh."
+                    },
+                    {
+                        "chinese":  "后来老师给了我很多帮助。",
+                        "pinyin":  "Hòulái lǎoshī gěi le wǒ hěn duō bāngzhù.",
+                        "vietnamese":  "Sau này giáo viên đã giúp tôi rất nhiều."
+                    },
+                    {
+                        "chinese":  "虽然开始失败了，但是后来成功了。",
+                        "pinyin":  "Suīrán kāishǐ shībài le, dànshì hòulái chénggōng le.",
+                        "vietnamese":  "Mặc dù ban đầu thất bại nhưng sau đó đã thành công."
+                    },
+                    {
+                        "chinese":  "老师让我回答问题。",
+                        "pinyin":  "Lǎoshī ràng wǒ huídá wèntí.",
+                        "vietnamese":  "Giáo viên bảo tôi trả lời câu hỏi."
+                    },
+                    {
+                        "chinese":  "妈妈不让我出去玩。",
+                        "pinyin":  "Māma bù ràng wǒ chūqu wán.",
+                        "vietnamese":  "Mẹ không cho tôi ra ngoài chơi."
+                    },
+                    {
+                        "chinese":  "请让我想一想。",
+                        "pinyin":  "Qǐng ràng wǒ xiǎng yì xiǎng.",
+                        "vietnamese":  "Hãy để tôi suy nghĩ một chút."
+                    },
+                    {
+                        "chinese":  "他让我帮他买东西。",
+                        "pinyin":  "Tā ràng wǒ bāng tā mǎi dōngxi.",
+                        "vietnamese":  "Anh ấy nhờ tôi mua đồ giúp."
+                    },
+                    {
+                        "chinese":  "这件事让我很高兴。",
+                        "pinyin":  "Zhè jiàn shì ràng wǒ hěn gāoxìng.",
+                        "vietnamese":  "Chuyện này khiến tôi rất vui."
+                    },
+                    {
+                        "chinese":  "老板让我们加班。",
+                        "pinyin":  "Lǎobǎn ràng wǒmen jiābān.",
+                        "vietnamese":  "Sếp bảo chúng tôi tăng ca."
+                    },
+                    {
+                        "chinese":  "请让一下。",
+                        "pinyin":  "Qǐng ràng yíxià.",
+                        "vietnamese":  "Xin nhường đường một chút."
+                    },
+                    {
+                        "chinese":  "这部电影让我感动得哭了。",
+                        "pinyin":  "Zhè bù diànyǐng ràng wǒ gǎndòng de kū le.",
+                        "vietnamese":  "Bộ phim này làm tôi cảm động đến phát khóc."
+                    },
+                    {
+                        "chinese":  "老师让我们先讨论，再回答。",
+                        "pinyin":  "Lǎoshī ràng wǒmen xiān tǎolùn, zài huídá.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi thảo luận trước rồi trả lời."
+                    },
+                    {
+                        "chinese":  "他的努力让大家很佩服。",
+                        "pinyin":  "Tā de nǔlì ràng dàjiā hěn pèifú.",
+                        "vietnamese":  "Sự cố gắng của anh ấy khiến mọi người khâm phục."
+                    },
+                    {
+                        "chinese":  "我昨天联系了他。",
+                        "pinyin":  "Wǒ zuótiān liánxì le tā.",
+                        "vietnamese":  "Hôm qua tôi đã liên lạc với anh ấy."
+                    },
+                    {
+                        "chinese":  "请跟我联系。",
+                        "pinyin":  "Qǐng gēn wǒ liánxì.",
+                        "vietnamese":  "Hãy liên lạc với tôi."
+                    },
+                    {
+                        "chinese":  "我们一直保持联系。",
+                        "pinyin":  "Wǒmen yìzhí bǎochí liánxì.",
+                        "vietnamese":  "Chúng tôi luôn giữ liên lạc."
+                    },
+                    {
+                        "chinese":  "我联系不上他。",
+                        "pinyin":  "Wǒ liánxì bú shàng tā.",
+                        "vietnamese":  "Tôi không liên lạc được với anh ấy."
+                    },
+                    {
+                        "chinese":  "你可以通过微信联系我。",
+                        "pinyin":  "Nǐ kěyǐ tōngguò Wēixìn liánxì wǒ.",
+                        "vietnamese":  "Bạn có thể liên lạc với tôi qua WeChat."
+                    },
+                    {
+                        "chinese":  "他已经联系到客户了。",
+                        "pinyin":  "Tā yǐjīng liánxì dào kèhù le.",
+                        "vietnamese":  "Anh ấy đã liên hệ được khách hàng rồi."
+                    },
+                    {
+                        "chinese":  "如果有问题，请及时联系我。",
+                        "pinyin":  "Rúguǒ yǒu wèntí, qǐng jíshí liánxì wǒ.",
+                        "vietnamese":  "Nếu có vấn đề hãy liên hệ với tôi kịp thời."
+                    },
+                    {
+                        "chinese":  "毕业以后，我们还经常联系。",
+                        "pinyin":  "Bìyè yǐhòu, wǒmen hái jīngcháng liánxì.",
+                        "vietnamese":  "Sau khi tốt nghiệp chúng tôi vẫn thường xuyên liên lạc."
+                    },
+                    {
+                        "chinese":  "我先联系导游，再联系酒店。",
+                        "pinyin":  "Wǒ xiān liánxì dǎoyóu, zài liánxì jiǔdiàn.",
+                        "vietnamese":  "Tôi liên hệ hướng dẫn viên trước rồi mới liên hệ khách sạn."
+                    },
+                    {
+                        "chinese":  "虽然很久没见面，但是我们一直有联系。",
+                        "pinyin":  "Suīrán hěn jiǔ méi jiànmiàn, dànshì wǒmen yìzhí yǒu liánxì.",
+                        "vietnamese":  "Mặc dù lâu rồi không gặp nhưng chúng tôi vẫn liên lạc với nhau."
+                    },
+                    {
+                        "chinese":  "我们明天见面吧。",
+                        "pinyin":  "Wǒmen míngtiān jiànmiàn ba.",
+                        "vietnamese":  "Ngày mai chúng ta gặp nhau nhé."
+                    },
+                    {
+                        "chinese":  "好久没见面了。",
+                        "pinyin":  "Hǎojiǔ méi jiànmiàn le.",
+                        "vietnamese":  "Lâu rồi không gặp nhau."
+                    },
+                    {
+                        "chinese":  "第一次见面的时候，我有点儿紧张。",
+                        "pinyin":  "Dì yī cì jiànmiàn de shíhou, wǒ yǒudiǎnr jǐnzhāng.",
+                        "vietnamese":  "Lần đầu gặp mặt tôi hơi căng thẳng."
+                    },
+                    {
+                        "chinese":  "我们是在北京见面的。",
+                        "pinyin":  "Wǒmen shì zài Běijīng jiànmiàn de.",
+                        "vietnamese":  "Chúng tôi gặp nhau ở Bắc Kinh."
+                    },
+                    {
+                        "chinese":  "见面以后，我们聊了很长时间。",
+                        "pinyin":  "Jiànmiàn yǐhòu, wǒmen liáo le hěn cháng shíjiān.",
+                        "vietnamese":  "Sau khi gặp mặt, chúng tôi nói chuyện rất lâu."
+                    },
+                    {
+                        "chinese":  "虽然经常联系，但是很少见面。",
+                        "pinyin":  "Suīrán jīngcháng liánxì, dànshì hěn shǎo jiànmiàn.",
+                        "vietnamese":  "Mặc dù thường xuyên liên lạc nhưng ít gặp mặt."
+                    },
+                    {
+                        "chinese":  "我希望有机会跟他见面。",
+                        "pinyin":  "Wǒ xīwàng yǒu jīhuì gēn tā jiànmiàn.",
+                        "vietnamese":  "Tôi hy vọng có cơ hội gặp anh ấy."
+                    },
+                    {
+                        "chinese":  "我们约好周末见面。",
+                        "pinyin":  "Wǒmen yuē hǎo zhōumò jiànmiàn.",
+                        "vietnamese":  "Chúng tôi hẹn gặp nhau vào cuối tuần."
+                    },
+                    {
+                        "chinese":  "见面的时候别忘了带护照。",
+                        "pinyin":  "Jiànmiàn de shíhou bié wàng le dài hùzhào.",
+                        "vietnamese":  "Lúc gặp mặt đừng quên mang hộ chiếu."
+                    },
+                    {
+                        "chinese":  "要是有时间的话，我们出来见个面吧。",
+                        "pinyin":  "Yàoshi yǒu shíjiān dehuà, wǒmen chūlái jiàn ge miàn ba.",
+                        "vietnamese":  "Nếu có thời gian thì chúng ta gặp nhau nhé."
+                    },
+                    {
+                        "chinese":  "你住在哪儿？",
+                        "pinyin":  "Nǐ zhù zài nǎr?",
+                        "vietnamese":  "Bạn sống ở đâu?"
+                    },
+                    {
+                        "chinese":  "洗手间在哪儿？",
+                        "pinyin":  "Xǐshǒujiān zài nǎr?",
+                        "vietnamese":  "Nhà vệ sinh ở đâu?"
+                    },
+                    {
+                        "chinese":  "你想去哪儿旅游？",
+                        "pinyin":  "Nǐ xiǎng qù nǎr lǚyóu?",
+                        "vietnamese":  "Bạn muốn đi du lịch ở đâu?"
+                    },
+                    {
+                        "chinese":  "你从哪儿学会中文的？",
+                        "pinyin":  "Nǐ cóng nǎr xuéhuì Zhōngwén de?",
+                        "vietnamese":  "Bạn học tiếng Trung từ đâu vậy?"
+                    },
+                    {
+                        "chinese":  "不知道去哪儿的话，可以问导游。",
+                        "pinyin":  "Bù zhīdào qù nǎr dehuà, kěyǐ wèn dǎoyóu.",
+                        "vietnamese":  "Nếu không biết đi đâu thì có thể hỏi hướng dẫn viên."
+                    },
+                    {
+                        "chinese":  "我已经习惯这里的生活了。",
+                        "pinyin":  "Wǒ yǐjīng xíguàn zhèlǐ de shēnghuó le.",
+                        "vietnamese":  "Tôi đã quen với cuộc sống ở đây rồi."
+                    },
+                    {
+                        "chinese":  "他习惯早起。",
+                        "pinyin":  "Tā xíguàn zǎoqǐ.",
+                        "vietnamese":  "Anh ấy quen dậy sớm."
+                    },
+                    {
+                        "chinese":  "我不习惯吃太辣的菜。",
+                        "pinyin":  "Wǒ bù xíguàn chī tài là de cài.",
+                        "vietnamese":  "Tôi không quen ăn đồ quá cay."
+                    },
+                    {
+                        "chinese":  "刚来的时候不习惯，现在好多了。",
+                        "pinyin":  "Gāng lái de shíhou bù xíguàn, xiànzài hǎo duō le.",
+                        "vietnamese":  "Lúc mới đến chưa quen, giờ đỡ hơn nhiều rồi."
+                    },
+                    {
+                        "chinese":  "你习惯坐地铁上班吗？",
+                        "pinyin":  "Nǐ xíguàn zuò dìtiě shàngbān ma?",
+                        "vietnamese":  "Bạn có quen đi làm bằng tàu điện ngầm không?"
+                    },
+                    {
+                        "chinese":  "我习惯一边听音乐一边学习。",
+                        "pinyin":  "Wǒ xíguàn yìbiān tīng yīnyuè yìbiān xuéxí.",
+                        "vietnamese":  "Tôi quen vừa nghe nhạc vừa học."
+                    },
+                    {
+                        "chinese":  "他很快就习惯了新的工作环境。",
+                        "pinyin":  "Tā hěn kuài jiù xíguàn le xīn de gōngzuò huánjìng.",
+                        "vietnamese":  "Anh ấy nhanh chóng quen với môi trường làm việc mới."
+                    },
+                    {
+                        "chinese":  "如果不习惯的话，可以慢慢适应。",
+                        "pinyin":  "Rúguǒ bù xíguàn dehuà, kěyǐ mànman shìyìng.",
+                        "vietnamese":  "Nếu chưa quen thì có thể thích nghi từ từ."
+                    },
+                    {
+                        "chinese":  "我越来越习惯用中文交流了。",
+                        "pinyin":  "Wǒ yuèláiyuè xíguàn yòng Zhōngwén jiāoliú le.",
+                        "vietnamese":  "Tôi ngày càng quen giao tiếp bằng tiếng Trung."
+                    },
+                    {
+                        "chinese":  "虽然刚开始不习惯，但是后来喜欢上了。",
+                        "pinyin":  "Suīrán gāng kāishǐ bù xíguàn, dànshì hòulái xǐhuan shàng le.",
+                        "vietnamese":  "Tuy ban đầu chưa quen nhưng sau này lại thích."
+                    },
+                    {
+                        "chinese":  "我的生活很充实。",
+                        "pinyin":  "Wǒ de shēnghuó hěn chōngshí.",
+                        "vietnamese":  "Cuộc sống của tôi rất phong phú."
+                    },
+                    {
+                        "chinese":  "他已经习惯中国的生活了。",
+                        "pinyin":  "Tā yǐjīng xíguàn Zhōngguó de shēnghuó le.",
+                        "vietnamese":  "Anh ấy đã quen với cuộc sống ở Trung Quốc."
+                    },
+                    {
+                        "chinese":  "留学生活很有意思。",
+                        "pinyin":  "Liúxué shēnghuó hěn yǒu yìsi.",
+                        "vietnamese":  "Cuộc sống du học rất thú vị."
+                    },
+                    {
+                        "chinese":  "城市生活和农村生活很不一样。",
+                        "pinyin":  "Chéngshì shēnghuó hé nóngcūn shēnghuó hěn bù yíyàng.",
+                        "vietnamese":  "Cuộc sống thành phố và nông thôn rất khác nhau."
+                    },
+                    {
+                        "chinese":  "我希望过简单的生活。",
+                        "pinyin":  "Wǒ xīwàng guò jiǎndān de shēnghuó.",
+                        "vietnamese":  "Tôi hy vọng có cuộc sống đơn giản."
+                    },
+                    {
+                        "chinese":  "生活水平越来越高了。",
+                        "pinyin":  "Shēnghuó shuǐpíng yuèláiyuè gāo le.",
+                        "vietnamese":  "Mức sống ngày càng cao hơn."
+                    },
+                    {
+                        "chinese":  "除了工作以外，他很享受生活。",
+                        "pinyin":  "Chúle gōngzuò yǐwài, tā hěn xiǎngshòu shēnghuó.",
+                        "vietnamese":  "Ngoài công việc ra, anh ấy rất tận hưởng cuộc sống."
+                    },
+                    {
+                        "chinese":  "现代生活离不开网络。",
+                        "pinyin":  "Xiàndài shēnghuó líbukāi wǎngluò.",
+                        "vietnamese":  "Cuộc sống hiện đại không thể thiếu Internet."
+                    },
+                    {
+                        "chinese":  "为了改善生活，他换了一份工作。",
+                        "pinyin":  "Wèile gǎishàn shēnghuó, tā huàn le yí fèn gōngzuò.",
+                        "vietnamese":  "Để cải thiện cuộc sống, anh ấy đổi việc."
+                    },
+                    {
+                        "chinese":  "虽然生活很忙，但是他每天坚持运动。",
+                        "pinyin":  "Suīrán shēnghuó hěn máng, dànshì tā měitiān jiānchí yùndòng.",
+                        "vietnamese":  "Dù cuộc sống bận rộn nhưng anh ấy vẫn kiên trì tập thể dục mỗi ngày."
+                    },
+                    {
+                        "chinese":  "你在看什么？",
+                        "pinyin":  "Nǐ zài kàn shénme?",
+                        "vietnamese":  "Bạn đang xem gì vậy?"
+                    },
+                    {
+                        "chinese":  "你想吃什么？",
+                        "pinyin":  "Nǐ xiǎng chī shénme?",
+                        "vietnamese":  "Bạn muốn ăn gì?"
+                    },
+                    {
+                        "chinese":  "发生了什么事？",
+                        "pinyin":  "Fāshēng le shénme shì?",
+                        "vietnamese":  "Đã xảy ra chuyện gì vậy?"
+                    },
+                    {
+                        "chinese":  "你最喜欢什么运动？",
+                        "pinyin":  "Nǐ zuì xǐhuan shénme yùndòng?",
+                        "vietnamese":  "Bạn thích môn thể thao nào nhất?"
+                    },
+                    {
+                        "chinese":  "不管遇到什么困难，都不要放弃。",
+                        "pinyin":  "Bùguǎn yùdào shénme kùnnan, dōu búyào fàngqì.",
+                        "vietnamese":  "Dù gặp khó khăn gì cũng đừng từ bỏ."
+                    },
+                    {
+                        "chinese":  "她是一名导游。",
+                        "pinyin":  "Tā shì yì míng dǎoyóu.",
+                        "vietnamese":  "Cô ấy là một hướng dẫn viên du lịch."
+                    },
+                    {
+                        "chinese":  "导游带我们参观了故宫。",
+                        "pinyin":  "Dǎoyóu dài wǒmen cānguān le Gùgōng.",
+                        "vietnamese":  "Hướng dẫn viên dẫn chúng tôi tham quan Cố Cung."
+                    },
+                    {
+                        "chinese":  "我想当一名导游。",
+                        "pinyin":  "Wǒ xiǎng dāng yì míng dǎoyóu.",
+                        "vietnamese":  "Tôi muốn trở thành hướng dẫn viên du lịch."
+                    },
+                    {
+                        "chinese":  "导游会说好几种语言。",
+                        "pinyin":  "Dǎoyóu huì shuō hǎo jǐ zhǒng yǔyán.",
+                        "vietnamese":  "Hướng dẫn viên biết nói nhiều thứ tiếng."
+                    },
+                    {
+                        "chinese":  "有问题的话，可以问导游。",
+                        "pinyin":  "Yǒu wèntí dehuà, kěyǐ wèn dǎoyóu.",
+                        "vietnamese":  "Nếu có vấn đề có thể hỏi hướng dẫn viên."
+                    },
+                    {
+                        "chinese":  "导游给我们介绍了当地文化。",
+                        "pinyin":  "Dǎoyóu gěi wǒmen jièshào le dāngdì wénhuà.",
+                        "vietnamese":  "Hướng dẫn viên giới thiệu văn hóa địa phương cho chúng tôi."
+                    },
+                    {
+                        "chinese":  "这位导游非常热情。",
+                        "pinyin":  "Zhè wèi dǎoyóu fēicháng rèqíng.",
+                        "vietnamese":  "Vị hướng dẫn viên này rất nhiệt tình."
+                    },
+                    {
+                        "chinese":  "导游让大家准时集合。",
+                        "pinyin":  "Dǎoyóu ràng dàjiā zhǔnshí jíhé.",
+                        "vietnamese":  "Hướng dẫn viên yêu cầu mọi người tập trung đúng giờ."
+                    },
+                    {
+                        "chinese":  "除了带团旅游以外，导游还要处理很多事情。",
+                        "pinyin":  "Chúle dài tuán lǚyóu yǐwài, dǎoyóu hái yào chǔlǐ hěn duō shìqing.",
+                        "vietnamese":  "Ngoài dẫn đoàn du lịch ra, hướng dẫn viên còn phải xử lý nhiều việc."
+                    },
+                    {
+                        "chinese":  "如果想了解当地历史，最好请一位导游。",
+                        "pinyin":  "Rúguǒ xiǎng liǎojiě dāngdì lìshǐ, zuìhǎo qǐng yí wèi dǎoyóu.",
+                        "vietnamese":  "Nếu muốn tìm hiểu lịch sử địa phương thì tốt nhất nên thuê một hướng dẫn viên."
+                    },
+                    {
+                        "chinese":  "请带上你的护照。",
+                        "pinyin":  "Qǐng dài shàng nǐ de hùzhào.",
+                        "vietnamese":  "Hãy mang theo hộ chiếu của bạn."
+                    },
+                    {
+                        "chinese":  "我忘了带手机。",
+                        "pinyin":  "Wǒ wàng le dài shǒujī.",
+                        "vietnamese":  "Tôi quên mang điện thoại."
+                    },
+                    {
+                        "chinese":  "他带我去了一家中国餐厅。",
+                        "pinyin":  "Tā dài wǒ qù le yì jiā Zhōngguó cāntīng.",
+                        "vietnamese":  "Anh ấy dẫn tôi đến một nhà hàng Trung Quốc."
+                    },
+                    {
+                        "chinese":  "出门的时候别忘了带伞。",
+                        "pinyin":  "Chūmén de shíhou bié wàng le dài sǎn.",
+                        "vietnamese":  "Khi ra ngoài đừng quên mang ô."
+                    },
+                    {
+                        "chinese":  "导游带我们参观了很多地方。",
+                        "pinyin":  "Dǎoyóu dài wǒmen cānguān le hěn duō dìfang.",
+                        "vietnamese":  "Hướng dẫn viên dẫn chúng tôi tham quan nhiều nơi."
+                    },
+                    {
+                        "chinese":  "妈妈带着孩子去公园玩。",
+                        "pinyin":  "Māma dàizhe háizi qù gōngyuán wán.",
+                        "vietnamese":  "Mẹ dẫn con đi công viên chơi."
+                    },
+                    {
+                        "chinese":  "只要带身份证就可以办理手续。",
+                        "pinyin":  "Zhǐyào dài shēnfènzhèng jiù kěyǐ bànlǐ shǒuxù.",
+                        "vietnamese":  "Chỉ cần mang CMND là có thể làm thủ tục."
+                    },
+                    {
+                        "chinese":  "他把电脑带到公司去了。",
+                        "pinyin":  "Tā bǎ diànnǎo dài dào gōngsī qù le.",
+                        "vietnamese":  "Anh ấy đã mang máy tính đến công ty."
+                    },
+                    {
+                        "chinese":  "这份工作给我带来了很多机会。",
+                        "pinyin":  "Zhè fèn gōngzuò gěi wǒ dàilái le hěn duō jīhuì.",
+                        "vietnamese":  "Công việc này mang lại cho tôi nhiều cơ hội."
+                    },
+                    {
+                        "chinese":  "学习汉语给我的生活带来了很大的变化。",
+                        "pinyin":  "Xuéxí Hànyǔ gěi wǒ de shēnghuó dàilái le hěn dà de biànhuà.",
+                        "vietnamese":  "Việc học tiếng Trung đã mang lại thay đổi lớn cho cuộc sống của tôi."
+                    },
+                    {
+                        "chinese":  "你要好好儿学习。",
+                        "pinyin":  "Nǐ yào hǎohāor xuéxí.",
+                        "vietnamese":  "Bạn phải học hành chăm chỉ."
+                    },
+                    {
+                        "chinese":  "我们应该好好儿休息一下。",
+                        "pinyin":  "Wǒmen yīnggāi hǎohāor xiūxi yíxià.",
+                        "vietnamese":  "Chúng ta nên nghỉ ngơi tử tế một chút."
+                    },
+                    {
+                        "chinese":  "请你好好儿考虑这个问题。",
+                        "pinyin":  "Qǐng nǐ hǎohāor kǎolǜ zhège wèntí.",
+                        "vietnamese":  "Hãy suy nghĩ kỹ vấn đề này."
+                    },
+                    {
+                        "chinese":  "孩子病了，你得好好儿照顾他。",
+                        "pinyin":  "Háizi bìng le, nǐ děi hǎohāor zhàogù tā.",
+                        "vietnamese":  "Đứa trẻ bị bệnh rồi, bạn phải chăm sóc nó cẩn thận."
+                    },
+                    {
+                        "chinese":  "考试前我要好好儿复习。",
+                        "pinyin":  "Kǎoshì qián wǒ yào hǎohāor fùxí.",
+                        "vietnamese":  "Trước kỳ thi tôi phải ôn tập nghiêm túc."
+                    },
+                    {
+                        "chinese":  "我想跟你好好儿谈一谈。",
+                        "pinyin":  "Wǒ xiǎng gēn nǐ hǎohāor tán yì tán.",
+                        "vietnamese":  "Tôi muốn nói chuyện nghiêm túc với bạn."
+                    },
+                    {
+                        "chinese":  "他把房间好好儿打扫了一遍。",
+                        "pinyin":  "Tā bǎ fángjiān hǎohāor dǎsǎo le yí biàn.",
+                        "vietnamese":  "Anh ấy đã dọn phòng cẩn thận một lượt."
+                    },
+                    {
+                        "chinese":  "身体不舒服的话，就在家好好儿休息。",
+                        "pinyin":  "Shēntǐ bù shūfu dehuà, jiù zài jiā hǎohāor xiūxi.",
+                        "vietnamese":  "Nếu không khỏe thì hãy nghỉ ngơi tử tế ở nhà."
+                    },
+                    {
+                        "chinese":  "老师让我们好好儿准备比赛。",
+                        "pinyin":  "Lǎoshī ràng wǒmen hǎohāor zhǔnbèi bǐsài.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi chuẩn bị cuộc thi thật tốt."
+                    },
+                    {
+                        "chinese":  "机会来了，你一定要好好儿把握。",
+                        "pinyin":  "Jīhuì lái le, nǐ yídìng yào hǎohāor bǎwò.",
+                        "vietnamese":  "Khi cơ hội đến, bạn nhất định phải nắm bắt thật tốt."
+                    },
+                    {
+                        "chinese":  "我有一件事想告诉你。",
+                        "pinyin":  "Wǒ yǒu yí jiàn shì xiǎng gàosu nǐ.",
+                        "vietnamese":  "Tôi có một chuyện muốn nói với bạn."
+                    },
+                    {
+                        "chinese":  "今天公司里的事很多。",
+                        "pinyin":  "Jīntiān gōngsī lǐ de shì hěn duō.",
+                        "vietnamese":  "Hôm nay công việc trong công ty rất nhiều."
+                    },
+                    {
+                        "chinese":  "这件事跟我没关系。",
+                        "pinyin":  "Zhè jiàn shì gēn wǒ méi guānxi.",
+                        "vietnamese":  "Chuyện này không liên quan đến tôi."
+                    },
+                    {
+                        "chinese":  "发生什么事了？",
+                        "pinyin":  "Fāshēng shénme shì le?",
+                        "vietnamese":  "Đã xảy ra chuyện gì vậy?"
+                    },
+                    {
+                        "chinese":  "小事一桩，不用客气。",
+                        "pinyin":  "Xiǎoshì yì zhuāng, búyòng kèqi.",
+                        "vietnamese":  "Chuyện nhỏ thôi, không cần khách sáo."
+                    },
+                    {
+                        "chinese":  "做事要认真。",
+                        "pinyin":  "Zuò shì yào rènzhēn.",
+                        "vietnamese":  "Làm việc phải nghiêm túc."
+                    },
+                    {
+                        "chinese":  "这件事让我学到了很多。",
+                        "pinyin":  "Zhè jiàn shì ràng wǒ xuédào le hěn duō.",
+                        "vietnamese":  "Chuyện này giúp tôi học được rất nhiều điều."
+                    },
+                    {
+                        "chinese":  "不管遇到什么事，都不要着急。",
+                        "pinyin":  "Bùguǎn yùdào shénme shì, dōu búyào zháojí.",
+                        "vietnamese":  "Dù gặp chuyện gì cũng đừng nóng vội."
+                    },
+                    {
+                        "chinese":  "除了学习以外，我还有很多事要做。",
+                        "pinyin":  "Chúle xuéxí yǐwài, wǒ hái yǒu hěn duō shì yào zuò.",
+                        "vietnamese":  "Ngoài việc học ra, tôi còn nhiều việc phải làm."
+                    },
+                    {
+                        "chinese":  "他做事既认真又负责。",
+                        "pinyin":  "Tā zuòshì jì rènzhēn yòu fùzé.",
+                        "vietnamese":  "Anh ấy làm việc vừa nghiêm túc vừa có trách nhiệm."
+                    },
+                    {
+                        "chinese":  "有时间的话，我们一起吃饭吧。",
+                        "pinyin":  "Yǒu shíjiān dehuà, wǒmen yìqǐ chīfàn ba.",
+                        "vietnamese":  "Nếu có thời gian thì chúng ta cùng ăn cơm nhé."
+                    },
+                    {
+                        "chinese":  "不懂的话，可以问老师。",
+                        "pinyin":  "Bù dǒng dehuà, kěyǐ wèn lǎoshī.",
+                        "vietnamese":  "Nếu không hiểu thì có thể hỏi giáo viên."
+                    },
+                    {
+                        "chinese":  "天气好的话，我想出去走走。",
+                        "pinyin":  "Tiānqì hǎo dehuà, wǒ xiǎng chūqu zǒuzou.",
+                        "vietnamese":  "Nếu thời tiết đẹp, tôi muốn ra ngoài đi dạo."
+                    },
+                    {
+                        "chinese":  "需要帮助的话，请联系我。",
+                        "pinyin":  "Xūyào bāngzhù dehuà, qǐng liánxì wǒ.",
+                        "vietnamese":  "Nếu cần giúp đỡ hãy liên hệ với tôi."
+                    },
+                    {
+                        "chinese":  "去中国的话，你得准备签证。",
+                        "pinyin":  "Qù Zhōngguó dehuà, nǐ děi zhǔnbèi qiānzhèng.",
+                        "vietnamese":  "Nếu đi Trung Quốc thì bạn phải chuẩn bị visa."
+                    },
+                    {
+                        "chinese":  "身体不舒服的话，就早点儿休息。",
+                        "pinyin":  "Shēntǐ bù shūfu dehuà, jiù zǎodiǎnr xiūxi.",
+                        "vietnamese":  "Nếu không khỏe thì nghỉ ngơi sớm đi."
+                    },
+                    {
+                        "chinese":  "不会说的话，可以先写下来。",
+                        "pinyin":  "Bú huì shuō dehuà, kěyǐ xiān xiě xiàlái.",
+                        "vietnamese":  "Nếu không biết nói thì có thể viết ra trước."
+                    },
+                    {
+                        "chinese":  "要是下雨的话，比赛就取消。",
+                        "pinyin":  "Yàoshi xiàyǔ dehuà, bǐsài jiù qǔxiāo.",
+                        "vietnamese":  "Nếu trời mưa thì cuộc thi sẽ bị hủy."
+                    },
+                    {
+                        "chinese":  "有机会的话，我想去北京看看。",
+                        "pinyin":  "Yǒu jīhuì dehuà, wǒ xiǎng qù Běijīng kànkan.",
+                        "vietnamese":  "Nếu có cơ hội tôi muốn đến Bắc Kinh xem thử."
+                    },
+                    {
+                        "chinese":  "方便的话，请尽快回复我。",
+                        "pinyin":  "Fāngbiàn dehuà, qǐng jǐnkuài huífù wǒ.",
+                        "vietnamese":  "Nếu thuận tiện, hãy trả lời tôi sớm."
+                    },
+                    {
+                        "chinese":  "我陪妈妈去买东西。",
+                        "pinyin":  "Wǒ péi māma qù mǎi dōngxi.",
+                        "vietnamese":  "Tôi đi mua đồ cùng mẹ."
+                    },
+                    {
+                        "chinese":  "谢谢你陪我聊天。",
+                        "pinyin":  "Xièxie nǐ péi wǒ liáotiān.",
+                        "vietnamese":  "Cảm ơn bạn đã trò chuyện cùng tôi."
+                    },
+                    {
+                        "chinese":  "她陪朋友去医院。",
+                        "pinyin":  "Tā péi péngyou qù yīyuàn.",
+                        "vietnamese":  "Cô ấy đi bệnh viện cùng bạn."
+                    },
+                    {
+                        "chinese":  "周末我陪奶奶散步。",
+                        "pinyin":  "Zhōumò wǒ péi nǎinai sànbù.",
+                        "vietnamese":  "Cuối tuần tôi đi dạo cùng bà."
+                    },
+                    {
+                        "chinese":  "我想陪孩子多一点儿时间。",
+                        "pinyin":  "Wǒ xiǎng péi háizi duō yìdiǎnr shíjiān.",
+                        "vietnamese":  "Tôi muốn dành nhiều thời gian hơn cho con."
+                    },
+                    {
+                        "chinese":  "他陪我参加面试。",
+                        "pinyin":  "Tā péi wǒ cānjiā miànshì.",
+                        "vietnamese":  "Anh ấy đi cùng tôi tham gia phỏng vấn."
+                    },
+                    {
+                        "chinese":  "生病的时候，家人一直陪着我。",
+                        "pinyin":  "Shēngbìng de shíhou, jiārén yìzhí péizhe wǒ.",
+                        "vietnamese":  "Khi bị bệnh, gia đình luôn ở bên tôi."
+                    },
+                    {
+                        "chinese":  "如果你一个人害怕，我可以陪你。",
+                        "pinyin":  "Rúguǒ nǐ yí gè rén hàipà, wǒ kěyǐ péi nǐ.",
+                        "vietnamese":  "Nếu bạn sợ ở một mình, tôi có thể ở cùng bạn."
+                    },
+                    {
+                        "chinese":  "虽然很忙，但是他经常陪父母。",
+                        "pinyin":  "Suīrán hěn máng, dànshì tā jīngcháng péi fùmǔ.",
+                        "vietnamese":  "Dù bận nhưng anh ấy thường ở cùng bố mẹ."
+                    },
+                    {
+                        "chinese":  "爷爷喜欢有人陪他说话。",
+                        "pinyin":  "Yéye xǐhuan yǒu rén péi tā shuōhuà.",
+                        "vietnamese":  "Ông thích có người trò chuyện cùng mình."
+                    },
+                    {
+                        "chinese":  "我的充电器坏了。",
+                        "pinyin":  "Wǒ de chōngdiànqì huài le.",
+                        "vietnamese":  "Bộ sạc của tôi bị hỏng rồi."
+                    },
+                    {
+                        "chinese":  "你带充电器了吗？",
+                        "pinyin":  "Nǐ dài chōngdiànqì le ma?",
+                        "vietnamese":  "Bạn có mang bộ sạc không?"
+                    },
+                    {
+                        "chinese":  "我忘了带手机充电器。",
+                        "pinyin":  "Wǒ wàng le dài shǒujī chōngdiànqì.",
+                        "vietnamese":  "Tôi quên mang bộ sạc điện thoại."
+                    },
+                    {
+                        "chinese":  "请问这里有充电器吗？",
+                        "pinyin":  "Qǐngwèn zhèlǐ yǒu chōngdiànqì ma?",
+                        "vietnamese":  "Xin hỏi ở đây có bộ sạc không?"
+                    },
+                    {
+                        "chinese":  "我得买一个新的充电器。",
+                        "pinyin":  "Wǒ děi mǎi yí gè xīn de chōngdiànqì.",
+                        "vietnamese":  "Tôi phải mua một bộ sạc mới."
+                    },
+                    {
+                        "chinese":  "充电器放在哪儿了？",
+                        "pinyin":  "Chōngdiànqì fàng zài nǎr le?",
+                        "vietnamese":  "Bộ sạc để ở đâu rồi?"
+                    },
+                    {
+                        "chinese":  "他的充电器跟我的一样。",
+                        "pinyin":  "Tā de chōngdiànqì gēn wǒ de yíyàng.",
+                        "vietnamese":  "Bộ sạc của anh ấy giống của tôi."
+                    },
+                    {
+                        "chinese":  "出差的时候别忘了带充电器。",
+                        "pinyin":  "Chūchāi de shíhou bié wàng le dài chōngdiànqì.",
+                        "vietnamese":  "Khi đi công tác đừng quên mang bộ sạc."
+                    },
+                    {
+                        "chinese":  "我把充电器借给朋友了。",
+                        "pinyin":  "Wǒ bǎ chōngdiànqì jiè gěi péngyou le.",
+                        "vietnamese":  "Tôi đã cho bạn mượn bộ sạc."
+                    },
+                    {
+                        "chinese":  "因为没有充电器，所以手机关机了。",
+                        "pinyin":  "Yīnwèi méiyǒu chōngdiànqì, suǒyǐ shǒujī guānjī le.",
+                        "vietnamese":  "Vì không có bộ sạc nên điện thoại đã tắt nguồn."
+                    },
+                    {
+                        "chinese":  "我的手机电池快没电了。",
+                        "pinyin":  "Wǒ de shǒujī diànchí kuài méi diàn le.",
+                        "vietnamese":  "Pin điện thoại của tôi sắp hết rồi."
+                    },
+                    {
+                        "chinese":  "这块电池还能用吗？",
+                        "pinyin":  "Zhè kuài diànchí hái néng yòng ma?",
+                        "vietnamese":  "Cục pin này còn dùng được không?"
+                    },
+                    {
+                        "chinese":  "我需要换一块新电池。",
+                        "pinyin":  "Wǒ xūyào huàn yí kuài xīn diànchí.",
+                        "vietnamese":  "Tôi cần thay một cục pin mới."
+                    },
+                    {
+                        "chinese":  "电池已经充满了。",
+                        "pinyin":  "Diànchí yǐjīng chōng mǎn le.",
+                        "vietnamese":  "Pin đã được sạc đầy rồi."
+                    },
+                    {
+                        "chinese":  "遥控器里的电池没电了。",
+                        "pinyin":  "Yáokòngqì lǐ de diànchí méi diàn le.",
+                        "vietnamese":  "Pin trong điều khiển từ xa đã hết điện."
+                    },
+                    {
+                        "chinese":  "出门前最好检查一下电池。",
+                        "pinyin":  "Chūmén qián zuìhǎo jiǎnchá yíxià diànchí.",
+                        "vietnamese":  "Trước khi ra ngoài tốt nhất nên kiểm tra pin."
+                    },
+                    {
+                        "chinese":  "因为电池太旧了，所以手机经常自动关机。",
+                        "pinyin":  "Yīnwèi diànchí tài jiù le, suǒyǐ shǒujī jīngcháng zìdòng guānjī.",
+                        "vietnamese":  "Vì pin quá cũ nên điện thoại thường tự tắt máy."
+                    },
+                    {
+                        "chinese":  "我刚买的电池已经用完了。",
+                        "pinyin":  "Wǒ gāng mǎi de diànchí yǐjīng yòng wán le.",
+                        "vietnamese":  "Cục pin tôi vừa mua đã dùng hết rồi."
+                    },
+                    {
+                        "chinese":  "这种电池不仅便宜，而且很耐用。",
+                        "pinyin":  "Zhè zhǒng diànchí bùjǐn piányi, érqiě hěn nàiyòng.",
+                        "vietnamese":  "Loại pin này không những rẻ mà còn rất bền."
+                    },
+                    {
+                        "chinese":  "为了防止手机没电，我总会带备用电池。",
+                        "pinyin":  "Wèile fángzhǐ shǒujī méi diàn, wǒ zǒng huì dài bèiyòng diànchí.",
+                        "vietnamese":  "Để tránh điện thoại hết pin, tôi luôn mang pin dự phòng."
+                    },
+                    {
+                        "chinese":  "我对这里的环境很熟悉。",
+                        "pinyin":  "Wǒ duì zhèlǐ de huánjìng hěn shúxī.",
+                        "vietnamese":  "Tôi rất quen thuộc với môi trường ở đây."
+                    },
+                    {
+                        "chinese":  "你熟悉这条路吗？",
+                        "pinyin":  "Nǐ shúxī zhè tiáo lù ma?",
+                        "vietnamese":  "Bạn có quen đường này không?"
+                    },
+                    {
+                        "chinese":  "他对中国文化越来越熟悉了。",
+                        "pinyin":  "Tā duì Zhōngguó wénhuà yuèláiyuè shúxī le.",
+                        "vietnamese":  "Anh ấy ngày càng quen thuộc với văn hóa Trung Quốc."
+                    },
+                    {
+                        "chinese":  "我刚来这里，还不太熟悉。",
+                        "pinyin":  "Wǒ gāng lái zhèlǐ, hái bú tài shúxī.",
+                        "vietnamese":  "Tôi mới đến đây nên vẫn chưa quen lắm."
+                    },
+                    {
+                        "chinese":  "她熟悉公司的所有业务。",
+                        "pinyin":  "Tā shúxī gōngsī de suǒyǒu yèwù.",
+                        "vietnamese":  "Cô ấy thông thạo mọi nghiệp vụ của công ty."
+                    },
+                    {
+                        "chinese":  "工作一段时间以后，我就熟悉流程了。",
+                        "pinyin":  "Gōngzuò yí duàn shíjiān yǐhòu, wǒ jiù shúxī liúchéng le.",
+                        "vietnamese":  "Sau khi làm việc một thời gian, tôi đã quen quy trình."
+                    },
+                    {
+                        "chinese":  "如果不熟悉情况的话，不要急着做决定。",
+                        "pinyin":  "Rúguǒ bù shúxī qíngkuàng dehuà, búyào jízhe zuò juédìng.",
+                        "vietnamese":  "Nếu chưa nắm rõ tình hình thì đừng vội quyết định."
+                    },
+                    {
+                        "chinese":  "他不仅熟悉英语，而且会说法语。",
+                        "pinyin":  "Tā bùjǐn shúxī Yīngyǔ, érqiě huì shuō Fǎyǔ.",
+                        "vietnamese":  "Anh ấy không những giỏi tiếng Anh mà còn biết tiếng Pháp."
+                    },
+                    {
+                        "chinese":  "导游对当地历史非常熟悉。",
+                        "pinyin":  "Dǎoyóu duì dāngdì lìshǐ fēicháng shúxī.",
+                        "vietnamese":  "Hướng dẫn viên rất am hiểu lịch sử địa phương."
+                    },
+                    {
+                        "chinese":  "为了尽快熟悉新工作，我每天都认真学习。",
+                        "pinyin":  "Wèile jǐnkuài shúxī xīn gōngzuò, wǒ měitiān dōu rènzhēn xuéxí.",
+                        "vietnamese":  "Để nhanh chóng quen với công việc mới, tôi học tập nghiêm túc mỗi ngày."
+                    },
+                    {
+                        "chinese":  "我得早点儿睡觉。",
+                        "pinyin":  "Wǒ děi zǎodiǎnr shuìjiào.",
+                        "vietnamese":  "Tôi phải đi ngủ sớm hơn."
+                    },
+                    {
+                        "chinese":  "你得认真学习汉语。",
+                        "pinyin":  "Nǐ děi rènzhēn xuéxí Hànyǔ.",
+                        "vietnamese":  "Bạn phải học tiếng Trung nghiêm túc."
+                    },
+                    {
+                        "chinese":  "明天考试，我得复习。",
+                        "pinyin":  "Míngtiān kǎoshì, wǒ děi fùxí.",
+                        "vietnamese":  "Ngày mai thi, tôi phải ôn bài."
+                    },
+                    {
+                        "chinese":  "我得先回家一趟。",
+                        "pinyin":  "Wǒ děi xiān huí jiā yí tàng.",
+                        "vietnamese":  "Tôi phải về nhà một chuyến trước."
+                    },
+                    {
+                        "chinese":  "你要去中国的话，得申请签证。",
+                        "pinyin":  "Nǐ yào qù Zhōngguó dehuà, děi shēngqǐng qiānzhèng.",
+                        "vietnamese":  "Nếu muốn đi Trung Quốc thì phải xin visa."
+                    },
+                    {
+                        "chinese":  "身体不舒服就得去医院。",
+                        "pinyin":  "Shēntǐ bù shūfu jiù děi qù yīyuàn.",
+                        "vietnamese":  "Không khỏe thì phải đi bệnh viện."
+                    },
+                    {
+                        "chinese":  "为了通过考试，我得每天练习。",
+                        "pinyin":  "Wèile tōngguò kǎoshì, wǒ děi měitiān liànxí.",
+                        "vietnamese":  "Để thi đậu, tôi phải luyện tập mỗi ngày."
+                    },
+                    {
+                        "chinese":  "想提高口语水平，就得多说汉语。",
+                        "pinyin":  "Xiǎng tígāo kǒuyǔ shuǐpíng, jiù děi duō shuō Hànyǔ.",
+                        "vietnamese":  "Muốn nâng cao khẩu ngữ thì phải nói tiếng Trung nhiều hơn."
+                    },
+                    {
+                        "chinese":  "事情很多，我们得抓紧时间。",
+                        "pinyin":  "Shìqing hěn duō, wǒmen děi zhuājǐn shíjiān.",
+                        "vietnamese":  "Việc rất nhiều, chúng ta phải tranh thủ thời gian."
+                    },
+                    {
+                        "chinese":  "不管遇到什么困难，都得坚持下去。",
+                        "pinyin":  "Bùguǎn yùdào shénme kùnnan, dōu děi jiānchí xiàqù.",
+                        "vietnamese":  "Dù gặp khó khăn gì cũng phải kiên trì tiếp tục."
+                    },
+                    {
+                        "chinese":  "我想出去转转。",
+                        "pinyin":  "Wǒ xiǎng chūqu zhuànzhuan.",
+                        "vietnamese":  "Tôi muốn ra ngoài đi dạo một chút."
+                    },
+                    {
+                        "chinese":  "周末我们去商场转转吧。",
+                        "pinyin":  "Zhōumò wǒmen qù shāngchǎng zhuànzhuan ba.",
+                        "vietnamese":  "Cuối tuần chúng ta đi dạo trung tâm thương mại nhé."
+                    },
+                    {
+                        "chinese":  "吃完饭以后，我喜欢出去转一转。",
+                        "pinyin":  "Chī wán fàn yǐhòu, wǒ xǐhuan chūqu zhuàn yí zhuàn.",
+                        "vietnamese":  "Sau khi ăn cơm xong, tôi thích ra ngoài đi dạo."
+                    },
+                    {
+                        "chinese":  "他一个人在公园里转了半天。",
+                        "pinyin":  "Tā yí gè rén zài gōngyuán lǐ zhuàn le bàntiān.",
+                        "vietnamese":  "Anh ấy đi dạo trong công viên nửa ngày."
+                    },
+                    {
+                        "chinese":  "我们先去附近转转，然后再回家。",
+                        "pinyin":  "Wǒmen xiān qù fùjìn zhuànzhuan, ránhòu zài huí jiā.",
+                        "vietnamese":  "Chúng tôi đi dạo quanh đây trước rồi mới về nhà."
+                    },
+                    {
+                        "chinese":  "这条路一直走，到前面右转。",
+                        "pinyin":  "Zhè tiáo lù yìzhí zǒu, dào qiánmiàn yòu zhuǎn.",
+                        "vietnamese":  "Cứ đi thẳng đường này, đến phía trước thì rẽ phải."
+                    },
+                    {
+                        "chinese":  "过了银行以后左转就到了。",
+                        "pinyin":  "Guò le yínháng yǐhòu zuǒ zhuǎn jiù dào le.",
+                        "vietnamese":  "Qua ngân hàng rồi rẽ trái là tới."
+                    },
+                    {
+                        "chinese":  "导游带我们在古城里转了一圈。",
+                        "pinyin":  "Dǎoyóu dài wǒmen zài gǔchéng lǐ zhuàn le yì quān.",
+                        "vietnamese":  "Hướng dẫn viên dẫn chúng tôi dạo một vòng trong cổ thành."
+                    },
+                    {
+                        "chinese":  "心情不好的时候，我会出去转转。",
+                        "pinyin":  "Xīnqíng bù hǎo de shíhou, wǒ huì chūqu zhuànzhuan.",
+                        "vietnamese":  "Khi tâm trạng không tốt, tôi sẽ ra ngoài đi dạo."
+                    },
+                    {
+                        "chinese":  "如果有时间的话，我们一起去西湖转转。",
+                        "pinyin":  "Rúguǒ yǒu shíjiān dehuà, wǒmen yìqǐ qù Xīhú zhuànzhuan.",
+                        "vietnamese":  "Nếu có thời gian, chúng ta cùng đi dạo ở Tây Hồ nhé."
+                    }
+                ]
+}

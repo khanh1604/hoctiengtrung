@@ -46,6 +46,17 @@
 
           <button
             class="option-card grammar"
+            id="structureCard"
+            onclick="goToContent('grammar')"
+            hidden
+          >
+            <span class="option-card-icon" id="structureIcon">🧩</span>
+            <span class="option-card-title" id="structureTitle">Cấu trúc</span>
+            <span class="option-card-desc" id="structureDesc">Học mẫu câu và ví dụ</span>
+          </button>
+
+          <button
+            class="option-card grammar"
             id="grammarCard"
             onclick="goToContent('grammar')"
             hidden
@@ -59,6 +70,17 @@
             <span class="option-card-icon" id="reviewIcon">✅</span>
             <span class="option-card-title" id="reviewTitle">Ôn tập ví dụ</span>
             <span class="option-card-desc" id="reviewDesc">10 bài kiểm tra - 32 câu/bài</span>
+          </button>
+
+          <button
+            class="option-card grammar"
+            id="exerciseCard"
+            onclick="goToContent('exercise')"
+            hidden
+          >
+            <span class="option-card-icon" id="exerciseIcon">✍️</span>
+            <span class="option-card-title" id="exerciseTitle">Bài tập</span>
+            <span class="option-card-desc" id="exerciseDesc">6 mục bài tập</span>
           </button>
         </div>
       </div>
@@ -74,6 +96,28 @@
         const lesson = getURLParam("lesson") || "01";
         const subject = getURLParam("subject");
         const subjectParam = subject ? `&subject=${subject}` : "";
+        if (subject === "writing") {
+          if (content === "vocabulary") {
+            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=paragraph`;
+            return;
+          }
+          if (content === "words") {
+            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=grammar`;
+            return;
+          }
+          if (content === "grammar") {
+            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=grammar`;
+            return;
+          }
+          if (content === "structure") {
+            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=grammar`;
+            return;
+          }
+          if (content === "example") {
+            window.location.href = `review.html?lesson=${lesson}&subject=writing`;
+            return;
+          }
+        }
         if (subject === "speaking") {
           if (content === "vocabulary") {
             window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=paragraph`;
@@ -83,8 +127,42 @@
             window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=grammar`;
             return;
           }
+          if (content === "words") {
+            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=words`;
+            return;
+          }
+          if (content === "structure") {
+            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=structure`;
+            return;
+          }
           if (content === "example") {
             window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=example`;
+            return;
+          }
+        }
+        if (subject === "hanyu3") {
+          if (content === "vocabulary") {
+            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=paragraph`;
+            return;
+          }
+          if (content === "words") {
+            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=words`;
+            return;
+          }
+          if (content === "grammar") {
+            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=grammar`;
+            return;
+          }
+          if (content === "structure") {
+            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=structure`;
+            return;
+          }
+          if (content === "example") {
+            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=example`;
+            return;
+          }
+          if (content === "exercise") {
+            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=exercise`;
             return;
           }
         }
@@ -96,12 +174,22 @@
           window.location.href = `review.html?lesson=${lesson}&content=${content}${subjectParam}`;
           return;
         }
+        if (content === "example" && subject === "listening") {
+          window.location.href = `review.html?lesson=${lesson}&content=example${subjectParam}`;
+          return;
+        }
         window.location.href = `typing.html?lesson=${lesson}&content=${content}${subjectParam}`;
       }
 
       function goToReview() {
         const lesson = getURLParam("lesson") || "01";
         const subject = getURLParam("subject");
+        if (subject === "listening") {
+          const lessonNumber = String(Number(lesson));
+          const contentPart = lessonNumber === "1" ? "" : "&content=example";
+          window.location.href = `review.html?lesson=${lesson}&subject=listening${contentPart}`;
+          return;
+        }
         const subjectParam = subject ? `&subject=${subject}` : "";
         window.location.href = `review.html?lesson=${lesson}${subjectParam}`;
       }
@@ -123,6 +211,8 @@
             ? "lessons.html?subject=writing"
             : subject === "speaking"
               ? "lessons.html?subject=speaking"
+              : subject === "hanyu3"
+                ? "lessons.html?subject=hanyu3"
               : "lessons.html";
       }
 
@@ -130,53 +220,148 @@
       const lesson = getURLParam("lesson") || "01";
       const subject = getURLParam("subject");
       const lessonNumber = String(Number(lesson));
+      const listeningLessonTitles = {
+        "1": "Bài 01 你学了多长时间汉语了",
+        "3": "Bài 03-04 我很想家",
+        "5": "Bài 05-06 你也听听吧",
+        "7": "Bài 07-08 你吃去哦这个菜吗",
+        "9": "Bài 09-10 鸡蛋4块一斤",
+        "11": "Bài 11-12 我的手机没电了",
+        "13": "Bài 13-14 你怎么了",
+        "15": "Bài 15-16 你哪儿也没去",
+        "17": "Bài 17-18 买一送一",
+        "19": "Bài 19-20 太短了",
+        "21": "Bài 21-22 她刚从银行回来",
+        "23": "Bài 23-24 很多女人都喜欢逛商场",
+      };
       document.getElementById("lessonTitle").textContent =
         subject === "writing" || subject === "speaking"
+          || subject === "hanyu3"
           ? `Bài ${lessonNumber}`
-          : `Bài ${lesson} 你学了多张时间汉语了`;
+          : listeningLessonTitles[lessonNumber] || `Bài ${lesson}`;
 
       if (subject === "writing") {
-        document.getElementById("vocabularyCard").onclick = () => goToReview();
-        document.getElementById("vocabularyIcon").textContent = "✅";
-        document.getElementById("vocabularyTitle").textContent = "Ôn tập ví dụ";
+        document.getElementById("vocabularyIcon").textContent = "📘";
+        document.getElementById("vocabularyTitle").textContent = "Ôn tập bài khóa";
         document.getElementById("vocabularyDesc").textContent =
-          "Luyện ví dụ theo bài";
-
-        document.getElementById("listeningIcon").textContent = "📄";
-        document.getElementById("listeningTitle").textContent =
-          "Ôn tập đoạn văn";
-        document.getElementById("listeningDesc").textContent =
           "Luyện đọc và hiểu đoạn văn";
-        document.getElementById("listeningCard").onclick = () =>
-          goToParagraphReview();
+        document.getElementById("vocabularyCard").onclick = () => goToContent("vocabulary");
+
+        document.getElementById("listeningIcon").textContent = "📚";
+        document.getElementById("listeningTitle").textContent = "Từ mới và cấu trúc";
+        document.getElementById("listeningDesc").textContent =
+          "Ôn từ/cụm từ và mẫu câu";
+        document.getElementById("listeningCard").onclick = () => goToContent("words");
+
+        document.getElementById("structureCard").hidden = true;
+        document.getElementById("structureIcon").textContent = "🧩";
+        document.getElementById("structureTitle").textContent = "Cấu trúc";
+        document.getElementById("structureDesc").textContent =
+          "Ôn mẫu câu và cách dùng";
+        document.getElementById("structureCard").onclick = () => goToContent("grammar");
 
         document.getElementById("grammarCard").hidden = false;
-        document.getElementById("grammarCard").onclick = () =>
-          goToGrammarReview();
+        document.getElementById("grammarIcon").textContent = "📝";
+        document.getElementById("grammarTitle").textContent = "Kiểm tra cấu trúc";
+        document.getElementById("grammarDesc").textContent =
+          "Luyện kiểm tra mẫu câu";
+        document.getElementById("grammarCard").onclick = () => goToContent("structure");
 
-        document.getElementById("reviewCard").hidden = true;
+        document.getElementById("reviewIcon").textContent = "⚡";
+        document.getElementById("reviewTitle").textContent = "Luyện theo bài văn 200 chữ";
+        document.getElementById("reviewDesc").textContent =
+          "Luyện viết theo bài văn";
+        document.getElementById("reviewCard").onclick = () => goToContent("example");
+        document.getElementById("reviewCard").hidden = false;
       } else if (subject === "speaking") {
         const isLessonFive = lessonNumber === "5";
-        document.getElementById("vocabularyIcon").textContent = "📄";
-        document.getElementById("vocabularyTitle").textContent = "Ôn tập đoạn văn";
+        document.getElementById("vocabularyIcon").textContent = "📘";
+        document.getElementById("vocabularyTitle").textContent = "Ôn tập bài khóa";
         document.getElementById("vocabularyDesc").textContent =
           isLessonFive ? "1 bài kiểm tra - 27 câu/bài" : "1 bài kiểm tra - 25 câu/bài";
         document.getElementById("vocabularyCard").onclick = () => goToContent("vocabulary");
 
-        document.getElementById("listeningIcon").textContent = "🧩";
-        document.getElementById("listeningTitle").textContent = "Ôn tập cấu trúc";
+        document.getElementById("listeningIcon").textContent = "📚";
+        document.getElementById("listeningTitle").textContent = "Từ mới";
         document.getElementById("listeningDesc").textContent =
-          "2 bài kiểm tra - 25 câu/bài";
-        document.getElementById("listeningCard").onclick = () => goToContent("grammar");
+          "Học từ mới theo bài";
+        document.getElementById("listeningCard").onclick = () => goToContent("words");
 
-        document.getElementById("reviewIcon").textContent = "🧪";
-        document.getElementById("reviewTitle").textContent = "Ôn tập ví dụ";
+        document.getElementById("structureCard").hidden = false;
+        document.getElementById("structureIcon").textContent = "🧩";
+        document.getElementById("structureTitle").textContent = "Cấu trúc";
+        document.getElementById("structureDesc").textContent =
+          "Học mẫu câu và ví dụ";
+        document.getElementById("structureCard").onclick = () => goToContent("grammar");
+
+        document.getElementById("grammarCard").hidden = false;
+        document.getElementById("grammarIcon").textContent = "📝";
+        document.getElementById("grammarTitle").textContent = "Kiểm tra cấu trúc";
+        document.getElementById("grammarDesc").textContent =
+          "Luyện kiểm tra mẫu câu";
+        document.getElementById("grammarCard").onclick = () => goToContent("structure");
+
+        document.getElementById("reviewIcon").textContent = "⚡";
+        document.getElementById("reviewTitle").textContent = "Kiểm tra phản xạ";
         document.getElementById("reviewDesc").textContent =
           isLessonFive ? "10 bài kiểm tra - 20 câu/bài" : "10 bài kiểm tra - 25 câu/bài";
         document.getElementById("reviewCard").onclick = () => goToContent("example");
         document.getElementById("reviewCard").hidden = false;
+      } else if (subject === "hanyu3") {
+        document.getElementById("vocabularyIcon").textContent = "📘";
+        document.getElementById("vocabularyTitle").textContent = "Ôn tập bài khóa";
+        document.getElementById("vocabularyDesc").textContent = "Luyện đọc và hiểu bài khóa";
+        document.getElementById("vocabularyCard").onclick = () => goToContent("vocabulary");
 
-        document.getElementById("grammarCard").hidden = true;
+        document.getElementById("listeningIcon").textContent = "📚";
+        document.getElementById("listeningTitle").textContent = "Từ mới";
+        document.getElementById("listeningDesc").textContent = "Học từ mới theo bài";
+        document.getElementById("listeningCard").onclick = () => goToContent("words");
+
+        document.getElementById("structureCard").hidden = false;
+        document.getElementById("structureIcon").textContent = "🧩";
+        document.getElementById("structureTitle").textContent = "Cấu trúc";
+        document.getElementById("structureDesc").textContent = "Học mẫu câu và ví dụ";
+        document.getElementById("structureCard").onclick = () => goToContent("grammar");
+
+        document.getElementById("grammarCard").hidden = false;
+        document.getElementById("grammarIcon").textContent = "📝";
+        document.getElementById("grammarTitle").textContent = "Kiểm tra cấu trúc";
+        document.getElementById("grammarDesc").textContent = "Luyện kiểm tra mẫu câu";
+        document.getElementById("grammarCard").onclick = () => goToContent("structure");
+
+        document.getElementById("reviewIcon").textContent = "⚡";
+        document.getElementById("reviewTitle").textContent = "Kiểm tra phản xạ";
+        document.getElementById("reviewDesc").textContent = "Luyện phản xạ câu";
+        document.getElementById("reviewCard").onclick = () => goToContent("example");
+        document.getElementById("reviewCard").hidden = false;
+
+        document.getElementById("exerciseCard").hidden = false;
+        document.getElementById("exerciseIcon").textContent = "✍️";
+        document.getElementById("exerciseTitle").textContent = "Bài tập";
+        document.getElementById("exerciseDesc").textContent = "6 mục bài tập";
+        document.getElementById("exerciseCard").onclick = () => goToContent("exercise");
+      } else {
+        const listeningExampleCounts = {
+          "1": "10 bài kiểm tra - 32 câu/bài",
+          "3": "13 bài kiểm tra - 20 câu/bài",
+          "5": "12 bài kiểm tra - 20 câu/bài",
+          "7": "13 bài kiểm tra - 20 câu/bài",
+          "9": "15 bài kiểm tra - 20 câu/bài",
+          "11": "13 bài kiểm tra - 20 câu/bài",
+          "13": "14 bài kiểm tra - 20 câu/bài",
+          "15": "16 bài kiểm tra - 20 câu/bài",
+          "17": "15 bài kiểm tra - 20 câu/bài",
+          "19": "16 bài kiểm tra - 20 câu/bài",
+          "21": "15 bài kiểm tra - 20 câu/bài",
+          "23": "14 bài kiểm tra - 20 câu/bài",
+        };
+        document.getElementById("reviewCard").onclick =
+          lessonNumber === "1" ? () => goToReview() : () => goToContent("example");
+        document.getElementById("reviewDesc").textContent =
+          listeningExampleCounts[lessonNumber] || "Chưa có dữ liệu";
+        document.getElementById("reviewCard").disabled =
+          !listeningExampleCounts[lessonNumber];
       }
     </script>
   </body>

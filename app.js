@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   let totalQuestions = 32;
 
   const questionEl = document.querySelector(".question");
@@ -40,6 +40,9 @@
   let showingResult = false;
   let finished = false;
   let speakingExampleTestCount = 10;
+  let speakingParagraphTestCount = 1;
+  let speakingStructureTestCount = 1;
+  let hanyu3ExerciseTestCount = 6;
 
   if (lessonEl) {
     lessonEl.textContent = `Bài ${lesson} - Kiểm tra ${String(testNum).padStart(2, "0")}`;
@@ -55,10 +58,68 @@
 
   function normalizeQuestion(item) {
     return {
+      type: item.type || item.kind || "",
+      title: item.title || item.name || "",
+      pattern: item.pattern || item.structure || item.formula || "",
+      meaning: item.meaning || item.explanation || "",
+      usage: item.usage || item.note || "",
       vietnamese: item.vietnamese || item.vi || "",
       chinese: item.chinese || item.zh || "",
       pinyin: item.pinyin || item.py || "",
+      examples: Array.isArray(item.examples)
+        ? item.examples.map((example) => ({
+            chinese: example.chinese || example.zh || "",
+            pinyin: example.pinyin || example.py || "",
+            vietnamese: example.vietnamese || example.vi || "",
+          }))
+        : [],
     };
+  }
+
+  function hasStructureDetails(q) {
+    return Boolean(
+      q.title || q.pattern || q.meaning || q.usage || q.examples?.length,
+    );
+  }
+
+  function renderExampleList(examples) {
+    if (!examples?.length) return "";
+    return `
+      <div class="structure-examples">
+        <div class="structure-section-title">Ví dụ</div>
+        ${examples
+          .map(
+            (example) => `
+              <div class="structure-example">
+                <strong>${escapeHtml(example.chinese)}</strong>
+                ${example.pinyin ? `<span>${escapeHtml(example.pinyin)}</span>` : ""}
+                ${example.vietnamese ? `<small>${escapeHtml(example.vietnamese)}</small>` : ""}
+              </div>
+            `,
+          )
+          .join("")}
+      </div>
+    `;
+  }
+
+  function renderQuestionPrompt(q) {
+    if (!hasStructureDetails(q)) {
+      questionEl.textContent = q.vietnamese;
+      return;
+    }
+
+    const title = q.title || q.vietnamese || "Cấu trúc";
+    questionEl.innerHTML = `
+      <div class="structure-card">
+        <div class="structure-kicker">Từ vựng và cấu trúc</div>
+        <div class="structure-title">${escapeHtml(title)}</div>
+        ${q.pattern ? `<div class="structure-pattern">${escapeHtml(q.pattern)}</div>` : ""}
+        ${q.meaning ? `<p class="structure-meaning">${escapeHtml(q.meaning)}</p>` : ""}
+        ${q.usage ? `<p class="structure-usage">${escapeHtml(q.usage)}</p>` : ""}
+        ${renderExampleList(q.examples)}
+        ${q.vietnamese ? `<div class="structure-task">${escapeHtml(q.vietnamese)}</div>` : ""}
+      </div>
+    `;
   }
 
   function parseTabSeparatedVocabulary(text) {
@@ -85,16 +146,10 @@
   }
 
   function normalizeAnswer(text) {
-    const s = String(text || "")
-      .trim()
-      .replace(/\s+/g, "");
-
-    if (subject === "writing") {
-      return s.replace(/[^\p{L}\p{N}\p{Script=Han}]/gu, "").toLowerCase();
-    }
-
-    const noPunct = s.replace(/[。，！？,.!?、；："'“”「」【】]+$/g, "");
-    return noPunct.toLowerCase();
+    return String(text || "")
+      .normalize("NFKC")
+      .replace(/[^\p{L}\p{N}\p{Script=Han}]/gu, "")
+      .toLowerCase();
   }
 
   function getComparableChars(text) {
@@ -240,6 +295,7 @@
     const forceReset = sessionStorage.getItem(resetKey) === "1";
     if (forceReset) {
       sessionStorage.removeItem(resetKey);
+      localStorage.removeItem(progressKey);
       currentIndex = 0;
       exp = 0;
       sessionStorage.setItem("currentQuestion", "0");
@@ -426,14 +482,13 @@
       }
     }
 
-    if (subject === "speaking" && content === "example") {
+    if ((subject === "speaking" || subject === "hanyu3") && content === "example") {
       const lessonNum = String(Number(lesson));
-      if (lessonNum === "5") {
+      if (!allData.__rawText) {
         const exampleItems = allData.example || [];
         const groups = splitIntoGroups(exampleItems, 20);
         return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
       }
-      if (lessonNum !== "4") return [];
 
       const rawText = allData.__rawText || "";
       const items = parseTabSeparatedVocabulary(rawText);
@@ -441,31 +496,48 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if (subject === "speaking" && content === "grammar") {
+    if (subject === "listening" && content === "example") {
+      const lessonKey = String(Number(lesson));
+      const items = allData[lesson] || allData[lessonKey] || [];
+      const groups = splitIntoGroups(items, 20);
+      return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
+    }
+
+    if ((subject === "speaking" || subject === "hanyu3") && (content === "grammar" || content === "structure")) {
       const lessonNum = String(Number(lesson));
-      if (lessonNum === "5") {
-        const grammarItems = allData.grammar || [];
-        const groups = splitIntoGroups(grammarItems, 25);
+      if (!allData.__rawText) {
+        const grammarItems = content === "structure"
+          ? allData.structure || []
+          : allData.grammar || allData.structure || [];
+        const groupSize = content === "structure" ? 20 : 25;
+        const groups = splitIntoGroups(grammarItems, groupSize);
         return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
       }
-      if (lessonNum !== "4") return [];
 
+      const rawText = allData.__rawText || "";
+      const items = parseTabSeparatedVocabulary(rawText);
+      const groups = splitIntoGroups(items, content === "structure" ? 20 : 25);
+      return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
+    }
+
+    if ((subject === "speaking" || subject === "hanyu3") && content === "paragraph") {
+      const lessonNum = String(Number(lesson));
+      if (!allData.__rawText) {
+        const paragraphGroups = getSpeakingParagraphGroups(allData);
+        return (paragraphGroups[Number(testNum) - 1] || []).map(normalizeQuestion);
+      }
       const rawText = allData.__rawText || "";
       const items = parseTabSeparatedVocabulary(rawText);
       const groups = splitIntoGroups(items, 25);
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if (subject === "speaking" && content === "paragraph") {
-      const lessonNum = String(Number(lesson));
-      if (lessonNum === "5") {
-        const paragraphItems = allData.paragraph || [];
-        return paragraphItems.map(normalizeQuestion);
+    if (subject === "hanyu3" && content === "exercise") {
+      const exerciseItems = allData.exercise || [];
+      if (Array.isArray(exerciseItems[0])) {
+        return (exerciseItems[Number(testNum) - 1] || []).map(normalizeQuestion);
       }
-      if (lessonNum !== "4") return [];
-      const rawText = allData.__rawText || "";
-      const items = parseTabSeparatedVocabulary(rawText);
-      const groups = splitIntoGroups(items, 25);
+      const groups = splitIntoGroups(exerciseItems, 20);
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
@@ -487,6 +559,13 @@
     }).filter((part) => part.length > 0);
   }
 
+  function getSpeakingParagraphGroups(data) {
+    const items = data.paragraph || [];
+    if (!Array.isArray(items) || !items.length) return [];
+    if (Array.isArray(items[0])) return items;
+    return [items];
+  }
+
   function loadFromStorage() {
     try {
       const raw = localStorage.getItem("reviewTestData");
@@ -499,26 +578,72 @@
   }
 
   async function loadQuestions() {
-    if (subject === "listening" && loadFromStorage()) return;
+    if (subject === "listening" && content !== "example" && loadFromStorage()) return;
 
     const dataFile =
       subject === "writing"
         ? "data/writing-tests.json"
+        : subject === "listening" && content === "example"
+          ? "data/listening-example-tests.json"
+        : subject === "hanyu3"
+          ? `data/hanyu3-lesson-${Number(lesson)}.json?v=${Date.now()}`
         : subject === "speaking"
-          ? Number(lesson) === 5
-            ? `data/speaking-lesson-5.json?v=${Date.now()}`
-            : "data/speaking-lesson-4-raw.txt"
+          ? Number(lesson) === 4
+            ? "data/speaking-lesson-4-raw.txt"
+            : `data/speaking-lesson-${Number(lesson)}.json?v=${Date.now()}`
           : "data/nghe1-tests.json";
     const res = await fetch(dataFile);
     if (!res.ok) throw new Error("Không tải được dữ liệu câu hỏi");
 
+    if (subject === "hanyu3") {
+      const lessonData = await res.json();
+      if (content === "example") {
+        speakingExampleTestCount = Math.max(
+          1,
+          splitIntoGroups(lessonData.example || [], 20).length,
+        );
+      }
+      if (content === "paragraph") {
+        speakingParagraphTestCount = Math.max(
+          1,
+          getSpeakingParagraphGroups(lessonData).length,
+        );
+      }
+      if (content === "structure") {
+        speakingStructureTestCount = Math.max(
+          1,
+          splitIntoGroups(lessonData.structure || [], 20).length,
+        );
+      }
+      if (content === "exercise") {
+        const exerciseItems = lessonData.exercise || [];
+        hanyu3ExerciseTestCount = Array.isArray(exerciseItems[0])
+          ? Math.max(6, exerciseItems.length)
+          : Math.max(6, splitIntoGroups(exerciseItems, 20).length);
+      }
+      questions = getTestQuestions(lessonData);
+      return;
+    }
+
     if (subject === "speaking") {
-      if (Number(lesson) === 5) {
+      if (Number(lesson) !== 4) {
         const lessonData = await res.json();
         if (content === "example") {
-          speakingExampleTestCount = Math.min(
-            10,
+          speakingExampleTestCount = Math.max(
+            1,
             splitIntoGroups(lessonData.example || [], 20).length,
+          );
+        }
+        if (content === "paragraph") {
+          speakingParagraphTestCount = Math.max(
+            1,
+            getSpeakingParagraphGroups(lessonData).length,
+          );
+        }
+        if (content === "structure") {
+          speakingStructureTestCount = Math.max(
+            1,
+            splitIntoGroups(lessonData.structure || [], 20).length,
           );
         }
         questions = getTestQuestions(lessonData);
@@ -527,9 +652,21 @@
 
       const rawText = await res.text();
       if (content === "example") {
-        speakingExampleTestCount = Math.min(
-          10,
+        speakingExampleTestCount = Math.max(
+          1,
           splitIntoGroups(parseTabSeparatedVocabulary(rawText), 25).length,
+        );
+      }
+      if (content === "paragraph") {
+        speakingParagraphTestCount = Math.max(
+          1,
+          splitIntoGroups(parseTabSeparatedVocabulary(rawText), 25).length,
+        );
+      }
+      if (content === "structure") {
+        speakingStructureTestCount = Math.max(
+          1,
+          splitIntoGroups(parseTabSeparatedVocabulary(rawText), 20).length,
         );
       }
       questions = getTestQuestions({ __rawText: rawText, paragraph: [] });
@@ -657,7 +794,7 @@
     clearFeedback();
 
     const q = getCurrentQuestion();
-    questionEl.textContent = q.vietnamese;
+    renderQuestionPrompt(q);
     questionEl.dataset.chinese = q.chinese;
     questionEl.dataset.pinyin = q.pinyin;
 
@@ -731,6 +868,19 @@
     if (checkBtn.disabled) return;
     if (finished) {
       const nextTestNum = Number(testNum) + 1;
+      const listeningExampleTestCounts = {
+        3: 13,
+        5: 12,
+        7: 13,
+        9: 15,
+        11: 13,
+        13: 14,
+        15: 16,
+        17: 15,
+        19: 16,
+        21: 15,
+        23: 14,
+      };
       const maxTests =
         subject === "writing" && content === "paragraph"
           ? 1
@@ -738,16 +888,20 @@
           ? 4
               : subject === "writing" && !content
               ? 4
-              : subject === "speaking" && content === "paragraph" && (Number(lesson) === 4 || Number(lesson) === 5)
-                ? 1
+              : (subject === "speaking" || subject === "hanyu3") && content === "paragraph"
+                ? Math.max(1, speakingParagraphTestCount)
+              : (subject === "speaking" || subject === "hanyu3") && content === "structure"
+                ? Math.max(1, speakingStructureTestCount)
               : subject === "speaking" && content === "grammar" && (Number(lesson) === 4 || Number(lesson) === 5)
                 ? 2
-              : subject === "speaking" && content === "example" && Number(lesson) === 5
+              : (subject === "speaking" || subject === "hanyu3") && content === "example"
                 ? Math.max(1, speakingExampleTestCount)
-              : subject === "speaking" && content === "example" && Number(lesson) === 4
-                ? Math.max(1, speakingExampleTestCount)
+              : subject === "hanyu3" && content === "exercise"
+                ? Math.max(6, hanyu3ExerciseTestCount)
               : subject !== "writing" && content === "listening" && Number(lesson) === 1
                 ? 5
+              : subject === "listening" && content === "example"
+                ? listeningExampleTestCounts[Number(lesson)] || 1
               : 10;
       if (nextTestNum > maxTests) {
         // no more tests: go back to review
@@ -832,3 +986,4 @@
       questionEl.textContent = `Lỗi: ${err.message}`;
     });
 })();
+

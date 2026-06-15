@@ -1,0 +1,414 @@
+﻿{
+    "vocabulary":  [
+                       {
+                           "chinese":  "照",
+                           "pinyin":  "zhào",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "chụp (ảnh)"
+                       },
+                       {
+                           "chinese":  "洗",
+                           "pinyin":  "xǐ",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "rửa ảnh, tráng ảnh"
+                       },
+                       {
+                           "chinese":  "闭",
+                           "pinyin":  "bì",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "đóng, khép lại"
+                       },
+                       {
+                           "chinese":  "油画",
+                           "pinyin":  "yóuhuà",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "tranh sơn dầu"
+                       },
+                       {
+                           "chinese":  "放大",
+                           "pinyin":  "fàngdà",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "phóng to"
+                       },
+                       {
+                           "chinese":  "倍",
+                           "pinyin":  "bèi",
+                           "partOfSpeech":  "m.",
+                           "vietnamese":  "lần (gấp bao nhiêu lần)"
+                       },
+                       {
+                           "chinese":  "公分",
+                           "pinyin":  "gōngfēn",
+                           "partOfSpeech":  "m.",
+                           "vietnamese":  "centimet (cm)"
+                       },
+                       {
+                           "chinese":  "差（一）点儿",
+                           "pinyin":  "chà (yì) diǎnr",
+                           "partOfSpeech":  "adv.",
+                           "vietnamese":  "suýt nữa, gần như"
+                       },
+                       {
+                           "chinese":  "碰",
+                           "pinyin":  "pèng",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "gặp phải, đụng phải"
+                       },
+                       {
+                           "chinese":  "起",
+                           "pinyin":  "qǐ",
+                           "partOfSpeech":  "m.",
+                           "vietnamese":  "vụ, lần (dùng cho sự việc)"
+                       },
+                       {
+                           "chinese":  "事故",
+                           "pinyin":  "shìgù",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "tai nạn, sự cố"
+                       },
+                       {
+                           "chinese":  "整",
+                           "pinyin":  "zhěng",
+                           "partOfSpeech":  "adj.",
+                           "vietnamese":  "toàn bộ, nguyên vẹn"
+                       },
+                       {
+                           "chinese":  "眼镜",
+                           "pinyin":  "yǎnjìng",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "kính mắt"
+                       },
+                       {
+                           "chinese":  "别提了",
+                           "pinyin":  "bié tí le",
+                           "partOfSpeech":  "expr.",
+                           "vietnamese":  "đừng nhắc nữa"
+                       },
+                       {
+                           "chinese":  "倒霉",
+                           "pinyin":  "dǎoméi",
+                           "partOfSpeech":  "adj.",
+                           "vietnamese":  "xui xẻo"
+                       },
+                       {
+                           "chinese":  "摔跤",
+                           "pinyin":  "shuāijiāo",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "ngã, té ngã"
+                       },
+                       {
+                           "chinese":  "摔",
+                           "pinyin":  "shuāi",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "ngã, làm rơi"
+                       },
+                       {
+                           "chinese":  "掉",
+                           "pinyin":  "diào",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "rơi, rớt"
+                       },
+                       {
+                           "chinese":  "地上",
+                           "pinyin":  "dìshang",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "trên mặt đất"
+                       },
+                       {
+                           "chinese":  "上班",
+                           "pinyin":  "shàngbān",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "đi làm"
+                       },
+                       {
+                           "chinese":  "下班",
+                           "pinyin":  "xiàbān",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "tan làm"
+                       },
+                       {
+                           "chinese":  "保证",
+                           "pinyin":  "bǎozhèng",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "bảo đảm"
+                       },
+                       {
+                           "chinese":  "遵守",
+                           "pinyin":  "zūnshǒu",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "tuân thủ"
+                       },
+                       {
+                           "chinese":  "规则",
+                           "pinyin":  "guīzé",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "quy tắc"
+                       },
+                       {
+                           "chinese":  "造成",
+                           "pinyin":  "zàochéng",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "gây ra"
+                       },
+                       {
+                           "chinese":  "拥挤",
+                           "pinyin":  "yōngjǐ",
+                           "partOfSpeech":  "adj./v.",
+                           "vietnamese":  "đông đúc, chen chúc"
+                       },
+                       {
+                           "chinese":  "主要",
+                           "pinyin":  "zhǔyào",
+                           "partOfSpeech":  "adj.",
+                           "vietnamese":  "chủ yếu, chính"
+                       },
+                       {
+                           "chinese":  "原因",
+                           "pinyin":  "yuányīn",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "nguyên nhân"
+                       },
+                       {
+                           "chinese":  "之一",
+                           "pinyin":  "zhīyī",
+                           "partOfSpeech":  "expr.",
+                           "vietnamese":  "một trong những"
+                       },
+                       {
+                           "chinese":  "引起",
+                           "pinyin":  "yǐnqǐ",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "gây ra, dẫn đến"
+                       },
+                       {
+                           "chinese":  "赶快",
+                           "pinyin":  "gǎnkuài",
+                           "partOfSpeech":  "adv.",
+                           "vietnamese":  "nhanh lên"
+                       },
+                       {
+                           "chinese":  "发展",
+                           "pinyin":  "fāzhǎn",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "phát triển"
+                       }
+                   ],
+    "grammar":  [
+                    {
+                        "type":  "structure",
+                        "title":  "不怎么样",
+                        "pattern":  "不怎么样",
+                        "meaning":  "Không được tốt lắm",
+                        "usage":  "Dùng để đánh giá không tốt, thể hiện sự không hài lòng",
+                        "chinese":  "这个菜不怎么样。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "这个菜不怎么样。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "Adj + 了（一）点儿",
+                        "pattern":  "Adj + 了（一）点儿",
+                        "meaning":  "Hơi quá..., hơn mức phù hợp một chút",
+                        "usage":  "Thể hiện mức độ không phù hợp, thường mang ý không hài lòng",
+                        "chinese":  "颜色深了一点儿。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "颜色深了一点儿。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "别提了",
+                        "pattern":  "别提了",
+                        "meaning":  "Đừng nhắc nữa",
+                        "usage":  "Dùng khi gặp chuyện không vui, không muốn nhắc lại",
+                        "chinese":  "嗨，别提了，昨天又拉肚子了。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "嗨，别提了，昨天又拉肚子了。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "差（一）点儿 + V",
+                        "pattern":  "差（一）点儿 + V",
+                        "meaning":  "Suýt nữa thì... (nhưng không xảy ra)",
+                        "usage":  "Dùng với việc xấu, không mong muốn",
+                        "chinese":  "我差点儿迟到。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我差点儿迟到。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "差（一）点儿没 + V",
+                        "pattern":  "差（一）点儿没 + V",
+                        "meaning":  "Suýt nữa thì... (nhưng không xảy ra)",
+                        "usage":  "Nghĩa giống mẫu trên",
+                        "chinese":  "我差点儿没迟到。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我差点儿没迟到。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "差（一）点儿 + V",
+                        "pattern":  "差（一）点儿 + V",
+                        "meaning":  "Suýt đạt được nhưng cuối cùng không đạt",
+                        "usage":  "Dùng với việc tốt, mong muốn",
+                        "chinese":  "去年他差点儿就考上了。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "去年他差点儿就考上了。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "差（一）点儿没 + V",
+                        "pattern":  "差（一）点儿没 + V",
+                        "meaning":  "Cuối cùng đã đạt được",
+                        "usage":  "Dùng với việc tốt, mong muốn",
+                        "chinese":  "我差点儿没考上大学。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我差点儿没考上大学。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "Adj + 得很",
+                        "pattern":  "Adj + 得很",
+                        "meaning":  "Rất..., vô cùng...",
+                        "usage":  "Bổ ngữ mức độ, nhấn mạnh cao",
+                        "chinese":  "今天倒霉得很。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "今天倒霉得很。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "受事主语 + V",
+                        "pattern":  "受事主语 + V",
+                        "meaning":  "Câu bị động ý nghĩa",
+                        "usage":  "Chủ ngữ là đối tượng chịu tác động nhưng không dùng 被",
+                        "chinese":  "我的眼镜摔坏了。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我的眼镜摔坏了。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "Lượng từ lặp (量词重叠)",
+                        "pattern":  "Lượng từ lặp (量词重叠)",
+                        "meaning":  "Mỗi, từng",
+                        "usage":  "Danh lượng từ hoặc động lượng từ lặp lại",
+                        "chinese":  "我们班的同学个个都很努力。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我们班的同学个个都很努力。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "一年比一年 + Adj",
+                        "pattern":  "一年比一年 + Adj",
+                        "meaning":  "Càng ngày càng...",
+                        "usage":  "Mức độ thay đổi theo thời gian",
+                        "chinese":  "有汽车的人一年比一年多。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "有汽车的人一年比一年多。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "一天比一天 + Adj",
+                        "pattern":  "一天比一天 + Adj",
+                        "meaning":  "Ngày càng...",
+                        "usage":  "Diễn tả sự thay đổi tăng dần",
+                        "chinese":  "我一天比一天胖。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我一天比一天胖。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    }
+                ],
+    "paragraph":  [
+
+                  ],
+    "structure":  [
+
+                  ],
+    "example":  [
+
+                ],
+    "exercise":  [
+
+                 ]
+}

@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập đoạn nghe - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css?v=listen-mobile-20260604" />
+    <link rel="stylesheet" href="style.css?v=listen-breadcrumb-20260605" />
     <script src="theme.js" defer></script>
   </head>
   <body class="listening-test-page">
     <main class="listening-shell">
+      <nav class="listening-breadcrumb" aria-label="Đường dẫn">
+        <a href="index.html">Trang chủ</a>
+        <span aria-hidden="true">›</span>
+        <a href="lessons.html">Khóa học tiếng Trung sơ cấp</a>
+        <span aria-hidden="true">›</span>
+        <a id="breadcrumbLesson" href="#">Bài 01</a>
+        <span aria-hidden="true">›</span>
+        <span id="breadcrumbSection">Phần 1-4</span>
+      </nav>
       <header class="listening-header">
         <button class="listening-back-btn" type="button" onclick="goBack()">← Quay lại</button>
         <div class="listening-header-copy">
@@ -54,7 +63,7 @@
           </section>
 
           <section class="listen-panel">
-            <div class="listen-panel-title">Câu nghe</div>
+            <div class="listen-panel-title" id="transcriptPanelTitle">Câu nghe</div>
             <div class="listen-panel-body" id="transcriptBody">-</div>
           </section>
 
@@ -77,6 +86,7 @@
       const progressFill = document.getElementById("progressFill");
       const questionPrompt = document.getElementById("questionPrompt");
       const resultBody = document.getElementById("resultBody");
+      const transcriptPanelTitle = document.getElementById("transcriptPanelTitle");
       const transcriptBody = document.getElementById("transcriptBody");
       const explanationBody = document.getElementById("explanationBody");
       const prevBtn = document.getElementById("prevBtn");
@@ -101,6 +111,40 @@
           .replace(/'/g, "&#039;");
       }
 
+      const pinyinMap = {
+        "你": "nǐ", "好": "hǎo", "有": "yǒu", "什": "shén", "么": "me", "事": "shì", "儿": "r",
+        "看": "kàn", "通": "tōng", "知": "zhī", "了": "le", "吗": "ma", "没": "méi", "啊": "a",
+        "留": "liú", "学": "xué", "生": "shēng", "办": "bàn", "公": "gōng", "室": "shì",
+        "说": "shuō", "每": "měi", "个": "gè", "人": "rén", "要": "yào", "交": "jiāo",
+        "两": "liǎng", "张": "zhāng", "照": "zhào", "片": "piàn", "为": "wèi", "呢": "ne",
+        "校": "xiào", "给": "gěi", "我": "wǒ", "们": "men", "初": "chū", "级": "jí",
+        "班": "bān", "理": "lǐ", "证": "zhèng", "和": "hé", "借": "jiè", "书": "shū",
+        "卡": "kǎ", "候": "hòu", "这": "zhè", "星": "xīng", "期": "qī", "五": "wǔ",
+        "以": "yǐ", "前": "qián", "多": "duō", "长": "cháng", "时": "shí", "间": "jiān",
+        "大": "dà", "概": "gài", "四": "sì", "天": "tiān", "吧": "ba", "是": "shì",
+        "哪": "nǎ", "国": "guó", "女": "nǚ", "男": "nán", "美": "měi", "韩": "hán",
+        "打": "dǎ", "算": "suàn", "延": "yán", "习": "xí", "半": "bàn", "年": "nián",
+        "请": "qǐng", "填": "tián", "一": "yī", "表": "biǎo", "格": "gé", "姓": "xìng",
+        "名": "míng", "护": "hù", "号": "hào", "码": "mǎ", "汉": "hàn", "语": "yǔ",
+        "已": "yǐ", "经": "jīng", "最": "zuì", "晚": "wǎn", "分": "fēn", "钟": "zhōng",
+        "到": "dào", "二": "èr", "十": "shí", "现": "xiàn", "在": "zài", "点": "diǎn",
+        "差": "chà"
+      };
+
+      function isCjkChar(char) {
+        return /[\u3400-\u9fff]/.test(char);
+      }
+
+      function renderPinyinText(text) {
+        return Array.from(String(text || ""))
+          .map((char) => {
+            const pinyin = pinyinMap[char];
+            if (!isCjkChar(char) || !pinyin) return escapeHtml(char);
+            return `<span class="pinyin-char" data-pinyin="${escapeHtml(pinyin)}" tabindex="0">${escapeHtml(char)}</span>`;
+          })
+          .join("");
+      }
+
       function goBack() {
         window.location.href = `review.html?lesson=${lesson}&subject=listening&content=listening`;
       }
@@ -121,7 +165,15 @@
         if (current.type === "fill") {
           return normalizeAnswer(answer) === normalizeAnswer(current.correct);
         }
+        if (current.type === "truefalse") {
+          return answer === current.correct;
+        }
         return answer === current.correct;
+      }
+
+      function getAnswerLabel(current, answer) {
+        if (!current || current.type !== "truefalse") return answer;
+        return answer === "true" ? "✓ Đúng" : answer === "false" ? "✗ Sai" : answer;
       }
 
       function updateProgress() {
@@ -141,27 +193,59 @@
         if (!current) return;
 
         if (!answer) {
-          resultBody.innerHTML = '<div class="listen-result neutral">Chọn A hoặc B để xem kết quả.</div>';
-          transcriptBody.textContent = "-";
+          const neutralText =
+            current.type === "fill"
+              ? "Nhập đáp án để xem kết quả."
+              : current.type === "truefalse"
+                ? "Chọn Đúng hoặc Sai để xem kết quả."
+                : "Chọn A hoặc B để xem kết quả.";
+          resultBody.innerHTML = `<div class="listen-result neutral">${neutralText}</div>`;
+          if (isQuestionPanelSection()) {
+            renderTranscriptPanel(current);
+          } else {
+            transcriptPanelTitle.textContent = "Câu nghe";
+            transcriptBody.textContent = "-";
+          }
           explanationBody.textContent = "-";
           return;
         }
 
         const isCorrect = isAnswerCorrect(current, answer);
-        const correctText = current.type === "fill" ? current.correct : current.correct;
+        const correctText = getAnswerLabel(current, current.correct);
+        const answerText = getAnswerLabel(current, answer);
         resultBody.innerHTML = `
           <div class="listen-result ${isCorrect ? "correct" : "wrong"}">
             <div class="listen-result-title">${isCorrect ? "Trả lời đúng" : "Trả lời chưa đúng"}</div>
-            <div class="listen-result-row">Đáp án đúng: <strong>${escapeHtml(correctText)}</strong></div>
-            <div class="listen-result-row">Bạn chọn: <strong>${escapeHtml(answer)}</strong></div>
-            ${current.completeSentence ? `<div class="listen-result-row">Câu hoàn chỉnh: <strong>${escapeHtml(current.completeSentence)}</strong></div>` : ""}
+            <div class="listen-result-row">Đáp án đúng: <strong>${renderPinyinText(correctText)}</strong></div>
+            <div class="listen-result-row">Bạn chọn: <strong>${renderPinyinText(answerText)}</strong></div>
+            ${current.completeSentence ? `<div class="listen-result-row">Câu hoàn chỉnh: <strong>${renderPinyinText(current.completeSentence)}</strong></div>` : ""}
           </div>
         `;
-        transcriptBody.innerHTML = `
-          <div class="listen-transcript-zh">${escapeHtml(current.transcript)}</div>
-          <div class="listen-transcript-vi">${escapeHtml(current.transcriptVietnamese)}</div>
-        `;
+        renderTranscriptPanel(current);
         explanationBody.textContent = current.explanation;
+      }
+
+      function isQuestionPanelSection() {
+        return /\d+-(5|6)-\d+/.test(section);
+      }
+
+      function renderTranscriptPanel(current) {
+        if (!current) {
+          transcriptBody.textContent = "-";
+          return;
+        }
+
+        const isQuestionPanel = isQuestionPanelSection();
+        transcriptPanelTitle.textContent = isQuestionPanel ? "Câu hỏi" : "Câu nghe";
+        transcriptBody.innerHTML = isQuestionPanel
+          ? `
+            <div class="listen-transcript-zh">${renderPinyinText(current.prompt)}</div>
+            ${current.promptVietnamese ? `<div class="listen-transcript-vi">${escapeHtml(current.promptVietnamese)}</div>` : ""}
+          `
+          : `
+            <div class="listen-transcript-zh">${renderPinyinText(current.transcript)}</div>
+            <div class="listen-transcript-vi">${escapeHtml(current.transcriptVietnamese)}</div>
+          `;
       }
 
       function resetAudioToStart() {
@@ -181,13 +265,15 @@
         if (!current) return;
 
         questionPrompt.innerHTML = `
-          <span class="listen-question-zh">${escapeHtml(current.prompt)}</span>
+          <span class="listen-question-zh">${renderPinyinText(current.prompt)}</span>
           ${current.promptVietnamese ? `<span class="listen-question-vi">${escapeHtml(current.promptVietnamese)}</span>` : ""}
         `;
         optionsWrap.innerHTML = "";
 
         if (current.type === "fill") {
           renderFillQuestion(current);
+        } else if (current.type === "truefalse") {
+          renderTrueFalseQuestion(current);
         } else {
           renderChoiceQuestion(current);
         }
@@ -207,7 +293,7 @@
           btn.innerHTML = `
             <span class="listen-option-letter">${letter}</span>
             <span class="listen-option-text">
-              <span class="listen-option-zh">${escapeHtml(option.chinese)}</span>
+              <span class="listen-option-zh">${renderPinyinText(option.chinese)}</span>
               <span class="listen-option-vi">${escapeHtml(option.vietnamese)}</span>
             </span>
           `;
@@ -221,6 +307,39 @@
           btn.addEventListener("click", () => {
             if (answers[currentIndex]) return;
             answers[currentIndex] = letter;
+            renderQuestion();
+            renderResult();
+            updateProgress();
+          });
+          optionsWrap.appendChild(btn);
+        });
+      }
+
+      function renderTrueFalseQuestion(current) {
+        [
+          ["true", "✓", "Đúng"],
+          ["false", "✗", "Sai"],
+        ].forEach(([value, mark, label]) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "listen-option listen-truefalse-option";
+          btn.innerHTML = `
+            <span class="listen-option-letter">${mark}</span>
+            <span class="listen-option-text">
+              <span class="listen-option-zh">${label}</span>
+              <span class="listen-option-vi">${value === "true" ? "Phát biểu đúng" : "Phát biểu sai"}</span>
+            </span>
+          `;
+          btn.disabled = Boolean(answers[currentIndex]);
+          if (answers[currentIndex]) {
+            const isChosen = answers[currentIndex] === value;
+            if (isChosen) btn.classList.add("selected");
+            if (value === current.correct) btn.classList.add("correct");
+            if (!isAnswerCorrect(current, answers[currentIndex]) && isChosen) btn.classList.add("wrong");
+          }
+          btn.addEventListener("click", () => {
+            if (answers[currentIndex]) return;
+            answers[currentIndex] = value;
             renderQuestion();
             renderResult();
             updateProgress();
@@ -270,7 +389,7 @@
         if (!passage || !passage.chinese) return;
         passageTranslation.hidden = false;
         passageTranslation.innerHTML = `
-          <div class="listen-passage-zh">${escapeHtml(passage.chinese)}</div>
+          <div class="listen-passage-zh">${renderPinyinText(passage.chinese)}</div>
           <div class="listen-passage-vi">${escapeHtml(passage.vietnamese || "")}</div>
         `;
         translatePassageBtn.textContent = "Ẩn dịch";
@@ -281,7 +400,7 @@
         const isHidden = passageTranslation.hidden;
         passageTranslation.hidden = !isHidden;
         passageTranslation.innerHTML = `
-          <div class="listen-passage-zh">${escapeHtml(passage.chinese || "")}</div>
+          <div class="listen-passage-zh">${renderPinyinText(passage.chinese || "")}</div>
           <div class="listen-passage-vi">${escapeHtml(passage.vietnamese)}</div>
         `;
         translatePassageBtn.textContent = isHidden ? "Ẩn dịch" : "Dịch";
@@ -330,10 +449,14 @@
         passageTools.hidden = !passage;
         passageTranslation.hidden = true;
         translatePassageBtn.textContent = "Dịch";
-        document.getElementById("listeningTitle").textContent = `Bài ${String(Number(lesson)).padStart(2, "0")} - Phần ${section}`;
-        document.getElementById("listeningSubtitle").textContent =
+        const sectionLesson = section.split("-")[0] || lesson;
+        document.getElementById("listeningTitle").textContent = `Bài ${String(Number(sectionLesson)).padStart(2, "0")} - Phần ${section}`;
+        document.getElementById("breadcrumbLesson").textContent = `Bài ${String(Number(lesson)).padStart(2, "0")}`;
+        document.getElementById("breadcrumbLesson").href = `lesson-options.html?lesson=${String(Number(lesson)).padStart(2, "0")}&subject=listening`;
+        document.getElementById("breadcrumbSection").textContent = `Phần ${section}`;
+        document.getElementById("listeningSubtitle").innerHTML =
           lessonData.title
-            ? `${lessonData.title} | ${questions.length} câu luyện nghe`
+            ? `${renderPinyinText(lessonData.title)} | ${questions.length} câu luyện nghe`
             : `${questions.length} câu luyện nghe`;
         if (!questions.length) throw new Error("Phần này chưa có câu hỏi");
         renderQuestion();
@@ -344,6 +467,24 @@
       nextBtn.addEventListener("click", nextQuestion);
       readPassageBtn.addEventListener("click", speakPassage);
       translatePassageBtn.addEventListener("click", togglePassageTranslation);
+
+      document.addEventListener("pointerdown", (event) => {
+        const target = event.target.closest(".pinyin-char");
+        if (!target) return;
+        event.preventDefault();
+        event.stopPropagation();
+        document.querySelectorAll(".pinyin-char.is-active").forEach((item) => {
+          if (item !== target) item.classList.remove("is-active");
+        });
+        target.classList.toggle("is-active");
+      }, true);
+
+      document.addEventListener("pointerdown", (event) => {
+        if (event.target.closest(".pinyin-char")) return;
+        document.querySelectorAll(".pinyin-char.is-active").forEach((item) => {
+          item.classList.remove("is-active");
+        });
+      });
 
       loadListeningTest().catch((err) => {
         document.querySelector(".listening-main").innerHTML = `<p class="listen-error">Lỗi: ${escapeHtml(err.message)}</p>`;

@@ -1,0 +1,382 @@
+﻿{
+    "vocabulary":  [
+                       {
+                           "chinese":  "会议厅",
+                           "pinyin":  "huìyìtīng",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "phòng hội nghị"
+                       },
+                       {
+                           "chinese":  "厅",
+                           "pinyin":  "tīng",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "sảnh, hội trường"
+                       },
+                       {
+                           "chinese":  "中心",
+                           "pinyin":  "zhōngxīn",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "trung tâm"
+                       },
+                       {
+                           "chinese":  "服务员",
+                           "pinyin":  "fúwùyuán",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "nhân viên phục vụ"
+                       },
+                       {
+                           "chinese":  "长",
+                           "pinyin":  "zhǎng",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "lớn lên, phát triển"
+                       },
+                       {
+                           "chinese":  "个子",
+                           "pinyin":  "gèzi",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "vóc dáng, chiều cao"
+                       },
+                       {
+                           "chinese":  "左右",
+                           "pinyin":  "zuǒyòu",
+                           "partOfSpeech":  "aux.",
+                           "vietnamese":  "khoảng, chừng"
+                       },
+                       {
+                           "chinese":  "戴",
+                           "pinyin":  "dài",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "đeo (mũ, kính, đồng hồ...)"
+                       },
+                       {
+                           "chinese":  "着",
+                           "pinyin":  "zhe",
+                           "partOfSpeech":  "part.",
+                           "vietnamese":  "trợ từ chỉ trạng thái tiếp diễn"
+                       },
+                       {
+                           "chinese":  "副",
+                           "pinyin":  "fù",
+                           "partOfSpeech":  "m.",
+                           "vietnamese":  "đôi, cặp"
+                       },
+                       {
+                           "chinese":  "穿",
+                           "pinyin":  "chuān",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "mặc"
+                       },
+                       {
+                           "chinese":  "西服",
+                           "pinyin":  "xīfú",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "âu phục, vest"
+                       },
+                       {
+                           "chinese":  "裙子",
+                           "pinyin":  "qúnzi",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "váy"
+                       },
+                       {
+                           "chinese":  "干",
+                           "pinyin":  "gàn",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "làm"
+                       },
+                       {
+                           "chinese":  "主持人",
+                           "pinyin":  "zhǔchírén",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "người dẫn chương trình"
+                       },
+                       {
+                           "chinese":  "主持",
+                           "pinyin":  "zhǔchí",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "chủ trì, dẫn dắt"
+                       },
+                       {
+                           "chinese":  "小伙子",
+                           "pinyin":  "xiǎohuǒzi",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "chàng trai trẻ"
+                       },
+                       {
+                           "chinese":  "扛",
+                           "pinyin":  "káng",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "vác, khiêng trên vai"
+                       },
+                       {
+                           "chinese":  "摄像机",
+                           "pinyin":  "shèxiàngjī",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "máy quay phim"
+                       },
+                       {
+                           "chinese":  "麦克风",
+                           "pinyin":  "màikèfēng",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "micro"
+                       },
+                       {
+                           "chinese":  "讲话",
+                           "pinyin":  "jiǎnghuà",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "phát biểu, nói chuyện"
+                       },
+                       {
+                           "chinese":  "墙",
+                           "pinyin":  "qiáng",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "bức tường"
+                       },
+                       {
+                           "chinese":  "喜",
+                           "pinyin":  "xǐ",
+                           "partOfSpeech":  "adj.",
+                           "vietnamese":  "vui mừng"
+                       },
+                       {
+                           "chinese":  "婚礼",
+                           "pinyin":  "hūnlǐ",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "lễ cưới"
+                       },
+                       {
+                           "chinese":  "热闹",
+                           "pinyin":  "rènao",
+                           "partOfSpeech":  "adj.",
+                           "vietnamese":  "náo nhiệt"
+                       },
+                       {
+                           "chinese":  "挂",
+                           "pinyin":  "guà",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "treo"
+                       },
+                       {
+                           "chinese":  "灯笼",
+                           "pinyin":  "dēnglong",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "đèn lồng"
+                       },
+                       {
+                           "chinese":  "摆",
+                           "pinyin":  "bǎi",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "bày, đặt"
+                       },
+                       {
+                           "chinese":  "新娘",
+                           "pinyin":  "xīnniáng",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "cô dâu"
+                       },
+                       {
+                           "chinese":  "棉袄",
+                           "pinyin":  "mián’ǎo",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "áo bông"
+                       },
+                       {
+                           "chinese":  "新郎",
+                           "pinyin":  "xīnláng",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "chú rể"
+                       },
+                       {
+                           "chinese":  "帅",
+                           "pinyin":  "shuài",
+                           "partOfSpeech":  "adj.",
+                           "vietnamese":  "đẹp trai"
+                       },
+                       {
+                           "chinese":  "领带",
+                           "pinyin":  "lǐngdài",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "cà vạt"
+                       },
+                       {
+                           "chinese":  "热情",
+                           "pinyin":  "rèqíng",
+                           "partOfSpeech":  "adj.",
+                           "vietnamese":  "nhiệt tình"
+                       },
+                       {
+                           "chinese":  "客人",
+                           "pinyin":  "kèrén",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "khách"
+                       },
+                       {
+                           "chinese":  "倒",
+                           "pinyin":  "dào",
+                           "partOfSpeech":  "v.",
+                           "vietnamese":  "rót"
+                       },
+                       {
+                           "chinese":  "不停",
+                           "pinyin":  "bùtíng",
+                           "partOfSpeech":  "adv.",
+                           "vietnamese":  "không ngừng"
+                       },
+                       {
+                           "chinese":  "气氛",
+                           "pinyin":  "qìfēn",
+                           "partOfSpeech":  "n.",
+                           "vietnamese":  "bầu không khí"
+                       }
+                   ],
+    "grammar":  [
+                    {
+                        "type":  "structure",
+                        "title":  "V + 着",
+                        "pattern":  "V + 着",
+                        "meaning":  "Đang..., trong trạng thái...",
+                        "usage":  "Biểu thị hành động hoặc trạng thái tiếp diễn",
+                        "chinese":  "同学们走着，说着，笑着。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "同学们走着，说着，笑着。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "V + 着 + O",
+                        "pattern":  "V + 着 + O",
+                        "meaning":  "Đang mang/trong trạng thái có O",
+                        "usage":  "Sau hành động, trạng thái vẫn tiếp tục tồn tại",
+                        "chinese":  "她穿着一件红西服。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "她穿着一件红西服。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "Địa điểm + V + 着 + O",
+                        "pattern":  "Địa điểm + V + 着 + O",
+                        "meaning":  "Nơi nào đó đang có vật ở trạng thái nào đó",
+                        "usage":  "Miêu tả trạng thái tồn tại",
+                        "chinese":  "墙上贴着红双喜字。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "墙上贴着红双喜字。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "没（有）+ V + 着",
+                        "pattern":  "没（有）+ V + 着",
+                        "meaning":  "Không ở trong trạng thái đó",
+                        "usage":  "Dạng phủ định của 着",
+                        "chinese":  "老师没在前面坐着。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "老师没在前面坐着。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "V + 着 + 没有？",
+                        "pattern":  "V + 着 + 没有？",
+                        "meaning":  "Có đang... không?",
+                        "usage":  "Dạng chính phản vấn của 着",
+                        "chinese":  "里边开着会没有？",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "里边开着会没有？",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "V₁ + 着 + V₂",
+                        "pattern":  "V₁ + 着 + V₂",
+                        "meaning":  "Vừa... vừa... / trong trạng thái... mà...",
+                        "usage":  "着 đứng trước động từ thứ hai để mô tả cách thức thực hiện hành động thứ hai",
+                        "chinese":  "她笑着对我说。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "她笑着对我说。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "正在/正/在 + V + 着",
+                        "pattern":  "正在/正/在 + V + 着",
+                        "meaning":  "Đang...",
+                        "usage":  "Nhấn mạnh hành động đang diễn ra",
+                        "chinese":  "我正在躺着看书呢。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我正在躺着看书呢。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "V + 着 + 呢",
+                        "pattern":  "V + 着 + 呢",
+                        "meaning":  "Đang... đấy",
+                        "usage":  "Nhấn mạnh trạng thái đang tiếp diễn",
+                        "chinese":  "他站着呢。",
+                        "pinyin":  "",
+                        "vietnamese":  "",
+                        "examples":  [
+                                         {
+                                             "chinese":  "他站着呢。",
+                                             "pinyin":  "",
+                                             "vietnamese":  ""
+                                         }
+                                     ]
+                    }
+                ],
+    "paragraph":  [
+
+                  ],
+    "structure":  [
+
+                  ],
+    "example":  [
+
+                ],
+    "exercise":  [
+
+                 ]
+}

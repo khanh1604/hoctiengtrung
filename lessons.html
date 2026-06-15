@@ -63,23 +63,36 @@
       const subject = params.get("subject") || "listening";
       const isWriting = subject === "writing";
       const isSpeaking = subject === "speaking";
-      const totalItems = isWriting ? 15 : 12;
+      const isHanyu3 = subject === "hanyu3";
+      const totalItems = isWriting ? 15 : isHanyu3 ? 10 : 12;
       const itemsPerPage = 12;
-      const availableListeningLessons = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-      const availableSpeakingLessons = new Set([4, 5]);
-      const availableWritingLessons = new Set([2]);
+      const availableListeningLessons = new Set(
+        Array.from({ length: 24 }, (_, idx) => idx + 1),
+      );
+      const availableSpeakingLessons = new Set(
+        Array.from({ length: 12 }, (_, idx) => idx + 1),
+      );
+      const availableWritingLessons = new Set(
+        Array.from({ length: 15 }, (_, idx) => idx + 1),
+      );
+      const availableHanyu3Lessons = new Set(
+        Array.from({ length: 10 }, (_, idx) => idx + 1),
+      );
       var currentPage = 1;
 
       function hasLessonData(lessonNumber) {
         if (isWriting) return availableWritingLessons.has(lessonNumber);
         if (isSpeaking) return availableSpeakingLessons.has(lessonNumber);
+        if (isHanyu3) return availableHanyu3Lessons.has(lessonNumber);
         return availableListeningLessons.has(lessonNumber);
       }
 
       if (isWriting) {
         document.getElementById("lessonsTitle").textContent = "Môn Viết";
       } else if (isSpeaking) {
-        document.getElementById("lessonsTitle").textContent = "Môn Nói";
+        document.getElementById("lessonsTitle").textContent = "口语";
+      } else if (isHanyu3) {
+        document.getElementById("lessonsTitle").textContent = "Giáo trình Hán ngữ quyển 3";
       }
 
       const lessonItems = Array.from({ length: totalItems }, (_, idx) => {
@@ -94,7 +107,7 @@
             title: `Bài ${writingLesson}`,
             unlocked,
             href: unlocked ? `lesson-options.html?lesson=${pad(writingLesson)}&subject=${subject}` : null,
-            progress: unlocked ? `Tiến độ: 0/32` : "Chưa có dữ liệu",
+            progress: unlocked ? "" : "Chưa có dữ liệu",
           };
         }
 
@@ -105,7 +118,18 @@
             title: `Bài ${pad(speakingLesson)}`,
             unlocked,
             href: unlocked ? `lesson-options.html?lesson=${pad(speakingLesson)}&subject=${subject}` : null,
-            progress: unlocked ? `Tiến độ: 0/13` : "Chưa có dữ liệu",
+            progress: unlocked ? "" : "Chưa có dữ liệu",
+          };
+        }
+
+        if (isHanyu3) {
+          const hanyuLesson = idx + 1;
+          const unlocked = hasLessonData(hanyuLesson);
+          return {
+            title: `Bài ${pad(hanyuLesson)}`,
+            unlocked,
+            href: unlocked ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}` : null,
+            progress: unlocked ? "" : "Chưa có dữ liệu",
           };
         }
 
@@ -114,15 +138,9 @@
         const unlocked = unlockedFirst || unlockedSecond;
         let href = null;
         if (unlockedFirst) {
-          href =
-            first === 1
-              ? `lesson-options.html?lesson=${pad(first)}&subject=${subject}`
-              : `typing.html?lesson=${pad(first)}&subject=${subject}`;
+          href = `lesson-options.html?lesson=${pad(first)}&subject=${subject}`;
         } else if (unlockedSecond) {
-          href =
-            second === 1
-              ? `lesson-options.html?lesson=${pad(second)}&subject=${subject}`
-              : `typing.html?lesson=${pad(second)}&subject=${subject}`;
+          href = `lesson-options.html?lesson=${pad(second)}&subject=${subject}`;
         }
 
         return {
@@ -130,7 +148,7 @@
           lessons: [first, second],
           unlocked,
           href,
-          progress: unlocked ? `Tiến độ: 0/32` : "Chưa có dữ liệu",
+          progress: unlocked ? "" : "Chưa có dữ liệu",
         };
       });
 
@@ -179,10 +197,12 @@
           label.textContent = pair.title;
           button.appendChild(label);
 
-          const progress = document.createElement("span");
-          progress.className = "lesson-progress";
-          progress.textContent = pair.progress;
-          button.appendChild(progress);
+          if (pair.progress) {
+            const progress = document.createElement("span");
+            progress.className = "lesson-progress";
+            progress.textContent = pair.progress;
+            button.appendChild(progress);
+          }
 
           grid.appendChild(button);
         });
