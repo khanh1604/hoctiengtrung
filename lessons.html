@@ -63,8 +63,9 @@
       const subject = params.get("subject") || "listening";
       const isWriting = subject === "writing";
       const isSpeaking = subject === "speaking";
+      const isHanyu1 = subject === "hanyu1";
       const isHanyu3 = subject === "hanyu3";
-      const totalItems = isWriting ? 15 : isHanyu3 ? 10 : isSpeaking ? 12 : 24;
+      const totalItems = isWriting ? 15 : isHanyu1 ? 15 : isHanyu3 ? 10 : isSpeaking ? 12 : 24;
       const itemsPerPage = 12;
       const availableListeningLessons = new Set(
         Array.from({ length: 24 }, (_, idx) => idx + 1),
@@ -77,6 +78,9 @@
       );
       const availableHanyu3Lessons = new Set(
         Array.from({ length: 10 }, (_, idx) => idx + 1),
+      );
+      const availableHanyu1Lessons = new Set(
+        Array.from({ length: 15 }, (_, idx) => idx + 1),
       );
       const writingLessonNames = [
         ["我的朋友——李明", "Bạn của tôi — Lý Minh"],
@@ -126,6 +130,7 @@
       function hasLessonData(lessonNumber) {
         if (isWriting) return availableWritingLessons.has(lessonNumber);
         if (isSpeaking) return availableSpeakingLessons.has(lessonNumber);
+        if (isHanyu1) return availableHanyu1Lessons.has(lessonNumber);
         if (isHanyu3) return availableHanyu3Lessons.has(lessonNumber);
         return availableListeningLessons.has(lessonNumber);
       }
@@ -134,6 +139,8 @@
         document.getElementById("lessonsTitle").textContent = "中级写作（I）";
       } else if (isSpeaking) {
         document.getElementById("lessonsTitle").textContent = "口语";
+      } else if (isHanyu1) {
+        document.getElementById("lessonsTitle").textContent = "Giáo trình Hán ngữ quyển 1";
       } else if (isHanyu3) {
         document.getElementById("lessonsTitle").textContent = "Giáo trình Hán ngữ quyển 3";
       }
@@ -163,6 +170,17 @@
             unlocked,
             href: unlocked ? `lesson-options.html?lesson=${pad(speakingLesson)}&subject=${subject}` : null,
             progress: unlocked ? "" : "Chưa có dữ liệu",
+          };
+        }
+
+        if (isHanyu1) {
+          const hanyuLesson = idx + 1;
+          const unlocked = hasLessonData(hanyuLesson);
+          return {
+            title: `BÃ i ${pad(hanyuLesson)}`,
+            unlocked,
+            href: unlocked ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}` : null,
+            progress: unlocked ? "" : "ChÆ°a cÃ³ dá»¯ liá»‡u",
           };
         }
 
@@ -394,6 +412,31 @@
             listHref: "lessons.html?subject=writing",
             lessons: writingLessonNames,
             actionLabel: "Luyện viết",
+          },
+          hanyu1: {
+            label: "Giáo trình Hán Ngữ",
+            title: "Hán Ngữ Quyển 1",
+            subtitle: "Nhập môn tiếng Trung: từ mới, bài khóa và cấu trúc",
+            icon: "📖",
+            listHref: "lessons.html?subject=hanyu1",
+            lessons: [
+              ["你好！", "Xin chào!"],
+              ["汉语不太难", "Tiếng Hán không khó lắm"],
+              ["明天见", "Hẹn gặp ngày mai"],
+              ["你去哪儿？", "Bạn đi đâu?"],
+              ["这是王老师", "Đây là thầy/cô Vương"],
+              ["我学习汉语", "Tôi học tiếng Hán"],
+              ["你吃什么？", "Bạn ăn gì?"],
+              ["苹果一斤多少钱？", "Táo một cân bao nhiêu tiền?"],
+              ["我换人民币", "Tôi đổi Nhân dân tệ"],
+              ["他住哪儿？", "Anh ấy sống ở đâu?"],
+              ["我们都是留学生", "Chúng tôi đều là lưu học sinh"],
+              ["你在哪儿学习？", "Bạn học ở đâu?"],
+              ["这是不是中药？", "Đây có phải là thuốc Đông y không?"],
+              ["你的车是新的还是旧的", "Xe của bạn mới hay cũ?"],
+              ["Bài 15", "Giáo trình Hán ngữ quyển 1"],
+            ],
+            actionLabel: "Học bài",
           },
           hanyu3: {
             label: "Gi\u00e1o tr\u00ecnh H\u00e1n Ng\u1eef",

@@ -894,7 +894,7 @@
         const practiceContents = new Set(["paragraph", "structure", "example"]);
         if (
           !(
-            (subject === "speaking" || subject === "hanyu3" || subject === "writing" || subject === "listening") &&
+            (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3" || subject === "writing" || subject === "listening") &&
             practiceContents.has(content)
           )
         ) {
@@ -908,7 +908,7 @@
           lesson,
           test,
           subjectLabel:
-            subject === "hanyu3"
+            (subject === "hanyu1" || subject === "hanyu3")
               ? "Hán Ngữ"
               : subject === "writing"
                 ? "Viết"

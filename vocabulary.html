@@ -264,7 +264,7 @@
 
       function getSubjectLabel() {
         if (subject === "speaking") return "Khẩu ngữ";
-        if (subject === "hanyu3") return "Hán Ngữ";
+        if (subject === "hanyu1" || subject === "hanyu3") return "Hán Ngữ";
         if (subject === "writing") return "Viết";
         if (subject === "listening") return "Nghe hiểu";
         return "Học tập";
@@ -504,8 +504,8 @@
 
       async function loadVocabulary() {
         let items = [];
-        if (subject === "hanyu3") {
-          const allLessons = await fetchJson(`data/hanyu3-lessons.json?v=${Date.now()}`);
+        if (subject === "hanyu1" || subject === "hanyu3") {
+          const allLessons = await fetchJson(`data/${subject}-lessons.json?v=${Date.now()}`);
           const data = allLessons[String(Number(lesson))] || {};
           items = data.vocabulary || data.words || data.newWords || [];
         } else if (subject === "speaking") {

@@ -291,6 +291,16 @@
             listHref: "lessons.html?subject=hanyu3",
           };
         }
+        if (subject === "hanyu1") {
+          return {
+            label: "Giáo trình Hán Ngữ",
+            course: "Hán Ngữ Quyển 1",
+            icon: "📖",
+            total: 15,
+            desc: "nhập môn tiếng Trung",
+            listHref: "lessons.html?subject=hanyu1",
+          };
+        }
         return {
           label: "Nghe hiểu",
           course: "初级听力（II）",
@@ -1928,8 +1938,9 @@
 
       async function loadSpeakingLessonData() {
         const lessonNum = String(Number(lesson));
-        if (subject === "hanyu3") {
-          const res = await fetch(`data/hanyu3-lessons.json?v=${Date.now()}`);
+        if (subject === "hanyu1" || subject === "hanyu3") {
+          const bookNumber = subject === "hanyu1" ? "1" : "3";
+          const res = await fetch(`data/hanyu${bookNumber}-lessons.json?v=${Date.now()}`);
           if (!res.ok) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ quyển 3");
           const allLessons = await res.json();
           const lessonData = allLessons[lessonNum];
@@ -2061,7 +2072,7 @@
 
       async function loadSpeakingExampleTests() {
         const data = await loadSpeakingLessonData();
-        const size = 20;
+        const size = subject === "hanyu1" ? 10 : 20;
         const items = data.__rawText ? parseTabSeparatedVocabulary(data.__rawText || "") : (data.example || []);
         const groups = splitIntoFixedGroups(items, size);
 
@@ -2165,7 +2176,7 @@
       }
 
       function renderReview() {
-        if ((subject === "speaking" || subject === "hanyu3" || subject === "listening") && content === "example") {
+        if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3" || subject === "listening") && content === "example") {
           renderReflexReview();
           return;
         }
@@ -2293,7 +2304,7 @@
             );
             localStorage.removeItem(progressKey);
 
-            if ((subject === "speaking" || subject === "hanyu3") && content === "example") {
+            if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "example") {
               window.location.href = `typing.html?lesson=${lesson}&test=${test.number}&subject=${subject}&content=example`;
               return;
             }
@@ -2328,15 +2339,15 @@
               ? `Bài ${String(Number(lesson))} - Kiểm tra phản xạ`
             : subject === "speaking" && content === "paragraph"
               ? `Bài ${String(Number(lesson))} - Ôn tập bài khóa`
-            : subject === "hanyu3" && content === "words"
+            : (subject === "hanyu1" || subject === "hanyu3") && content === "words"
               ? `Bài ${String(Number(lesson))} - Từ mới`
-            : subject === "hanyu3" && content === "structure"
+            : (subject === "hanyu1" || subject === "hanyu3") && content === "structure"
               ? `Bài ${String(Number(lesson))} - Kiểm tra cấu trúc`
-            : subject === "hanyu3" && content === "example"
+            : (subject === "hanyu1" || subject === "hanyu3") && content === "example"
               ? `Bài ${String(Number(lesson))} - Kiểm tra phản xạ`
             : subject === "hanyu3" && content === "exercise"
               ? `Bài ${String(Number(lesson))} - Bài tập`
-            : subject === "hanyu3" && content === "paragraph"
+            : (subject === "hanyu1" || subject === "hanyu3") && content === "paragraph"
               ? `Bài ${String(Number(lesson))} - Ôn tập bài khóa`
             : subject !== "writing" && content === "listening"
               ? `Bài ${String(Number(lesson))} - Bài tập nghe`
@@ -2354,8 +2365,15 @@
         const hero = document.querySelector(".speaking-hero");
         const totalTests = tests.length;
         const totalQuestions = tests.reduce((sum, test) => sum + (test.total || 0), 0);
+        const questionsPerTest = subject === "hanyu1" ? 10 : 20;
         let completedTests = 0;
         let activeTests = 0;
+        setTimeout(() => {
+          const heroSubtitle = document.querySelector(".speaking-hero-subtitle");
+          if (heroSubtitle) {
+            heroSubtitle.textContent = `${totalTests} bài kiểm tra - mỗi bài ${questionsPerTest} câu`;
+          }
+        }, 0);
 
         document.body.classList.add("reflex-review-page");
         setReviewHeader("Kiểm tra phản xạ", `${totalTests} bài kiểm tra - mỗi bài 20 câu`);
@@ -2502,26 +2520,26 @@
             document.getElementById("reviewGrid").innerHTML =
               `<p class="review-subtitle">${err.message}</p>`;
           });
-      } else if ((subject === "speaking" || subject === "hanyu3") && content === "grammar") {
+      } else if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "grammar") {
         loadSpeakingStructureCards()
           .catch((err) => {
             document.getElementById("reviewGrid").innerHTML =
               `<p class="review-subtitle">${err.message}</p>`;
           });
-      } else if ((subject === "speaking" || subject === "hanyu3") && content === "words") {
+      } else if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "words") {
         loadSpeakingWordCards()
           .catch((err) => {
             document.getElementById("reviewGrid").innerHTML =
               `<p class="review-subtitle">${err.message}</p>`;
           });
-      } else if ((subject === "speaking" || subject === "hanyu3") && content === "structure") {
+      } else if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "structure") {
         loadSpeakingGrammarTests()
           .then(renderReview)
           .catch((err) => {
             document.getElementById("reviewGrid").innerHTML =
               `<p class="review-subtitle">${err.message}</p>`;
           });
-      } else if ((subject === "speaking" || subject === "hanyu3") && content === "example") {
+      } else if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "example") {
         loadSpeakingExampleTests()
           .then(renderReview)
           .catch((err) => {
@@ -2535,7 +2553,7 @@
             document.getElementById("reviewGrid").innerHTML =
               `<p class="review-subtitle">${err.message}</p>`;
           });
-      } else if ((subject === "speaking" || subject === "hanyu3") && content === "paragraph") {
+      } else if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "paragraph") {
         loadSpeakingParagraphTests().then(renderReview);
       } else if (subject === "hanyu3" && content === "exercise") {
         loadHanyu3ExerciseTests()

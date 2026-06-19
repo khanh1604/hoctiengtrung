@@ -140,28 +140,28 @@
             return;
           }
         }
-        if (subject === "hanyu3") {
+        if (subject === "hanyu1" || subject === "hanyu3") {
           if (content === "vocabulary") {
-            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=paragraph`;
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=paragraph`;
             return;
           }
           if (content === "words") {
-            window.location.href = `vocabulary.html?lesson=${lesson}&subject=hanyu3`;
+            window.location.href = `vocabulary.html?lesson=${lesson}&subject=${subject}`;
             return;
           }
           if (content === "grammar") {
-            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=grammar`;
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=grammar`;
             return;
           }
           if (content === "structure") {
-            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=structure`;
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=structure`;
             return;
           }
           if (content === "example") {
-            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=example`;
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=example`;
             return;
           }
-          if (content === "exercise") {
+          if (subject === "hanyu3" && content === "exercise") {
             window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=exercise`;
             return;
           }
@@ -209,8 +209,8 @@
             ? "lessons.html?subject=writing"
             : subject === "speaking"
               ? "lessons.html?subject=speaking"
-              : subject === "hanyu3"
-                ? "lessons.html?subject=hanyu3"
+              : subject === "hanyu1" || subject === "hanyu3"
+                ? `lessons.html?subject=${subject}`
               : "lessons.html";
       }
 
@@ -261,6 +261,23 @@
         "9": ["\u94a5\u5319\u5fd8\u62d4\u4e0b\u6765\u4e86", "Qu\u00ean r\u00fat ch\u00eca kh\u00f3a ra r\u1ed3i."],
         "10": ["\u4f1a\u8bae\u5385\u7684\u95e8\u5f00\u7740\u5462", "C\u1eeda ph\u00f2ng h\u1ed9i ngh\u1ecb \u0111ang m\u1edf \u0111\u1ea5y."],
       };
+      const hanyu1LessonTitles = {
+        "1": ["你好！", "Xin chào!"],
+        "2": ["汉语不太难", "Tiếng Hán không khó lắm"],
+        "3": ["明天见", "Hẹn gặp ngày mai"],
+        "4": ["你去哪儿？", "Bạn đi đâu?"],
+        "5": ["这是王老师", "Đây là thầy/cô Vương"],
+        "6": ["我学习汉语", "Tôi học tiếng Hán"],
+        "7": ["你吃什么？", "Bạn ăn gì?"],
+        "8": ["苹果一斤多少钱？", "Táo một cân bao nhiêu tiền?"],
+        "9": ["我换人民币", "Tôi đổi Nhân dân tệ"],
+        "10": ["他住哪儿？", "Anh ấy sống ở đâu?"],
+        "11": ["我们都是留学生", "Chúng tôi đều là lưu học sinh"],
+        "12": ["你在哪儿学习？", "Bạn học ở đâu?"],
+        "13": ["这是不是中药？", "Đây có phải là thuốc Đông y không?"],
+        "14": ["你的车是新的还是旧的", "Xe của bạn mới hay cũ?"],
+        "15": ["Bài 15", "Giáo trình Hán ngữ quyển 1"],
+      };
       const listeningLessonTitles = {
         "1": ["你学了多长时间汉语了", "Bạn học tiếng Trung được bao lâu rồi?"],
         "2": ["请问，留学生宿舍怎么走", "Xin hỏi, ký túc xá lưu học sinh đi đường nào?"],
@@ -289,7 +306,7 @@
       };
       document.getElementById("lessonTitle").textContent =
         subject === "writing" || subject === "speaking"
-          || subject === "hanyu3"
+          || subject === "hanyu1" || subject === "hanyu3"
           ? `Bài ${lessonNumber}`
           : `Bài ${String(Number(lesson)).padStart(2, "0")} ${listeningLessonTitles[lessonNumber]?.[0] || ""}`;
 
@@ -525,6 +542,89 @@
               action: "example",
             },
           ],
+        });
+      } else if (subject === "hanyu1") {
+        const hanyu1OptionItems = [
+          ...(lessonNumber >= 2 && lessonNumber <= 14
+            ? [{
+                icon: "💬",
+                title: "Ôn tập bài khóa",
+                desc: "Luyện đọc và hiểu bài khóa",
+                action: "vocabulary",
+              }]
+            : []),
+          ...(lessonNumber >= 1 && lessonNumber <= 14
+            ? [{
+                icon: "📚",
+                title: "Từ mới",
+                desc: "Học từ mới theo bài",
+                action: "words",
+              }]
+            : []),
+          ...(lessonNumber >= 10 && lessonNumber <= 14
+            ? [{
+                icon: "🧩",
+                title: "Cấu trúc",
+                desc: "Học mẫu câu và ví dụ",
+                action: "grammar",
+              }]
+            : []),
+          ...(lessonNumber >= 10 && lessonNumber <= 15
+            ? [{
+                icon: "🎯",
+                title: "Kiểm tra cấu trúc",
+                desc: "Luyện kiểm tra mẫu câu",
+                action: "structure",
+              }]
+            : []),
+          {
+            icon: "⚡",
+            title: "Kiểm tra phản xạ",
+            desc: "Mỗi bài kiểm tra 10 câu",
+            action: "example",
+          },
+        ];
+        renderSpeakingLessonOptions({
+          subjectKey: "hanyu1",
+          subjectLabel: "Giáo trình Hán Ngữ",
+          courseTitle: "Hán Ngữ Quyển 1",
+          courseDesc: "nhập môn tiếng Trung",
+          heroIcon: "📖",
+          lessonTotal: 15,
+          titlePair: hanyu1LessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Giáo trình Hán ngữ quyển 1"],
+          optionItems: [
+            {
+              icon: "💬",
+              title: "Ôn tập bài khóa",
+              desc: "Luyện đọc và hiểu bài khóa",
+              action: "vocabulary",
+            },
+            {
+              icon: "📚",
+              title: "Từ mới",
+              desc: "Học từ mới theo bài",
+              action: "words",
+            },
+            {
+              icon: "🧩",
+              title: "Cấu trúc",
+              desc: "Học mẫu câu và ví dụ",
+              action: "grammar",
+            },
+            {
+              icon: "🎯",
+              title: "Kiểm tra cấu trúc",
+              desc: "Luyện kiểm tra mẫu câu",
+              action: "structure",
+            },
+            {
+              icon: "⚡",
+              title: "Kiểm tra phản xạ",
+              desc: "Mỗi bài kiểm tra 10 câu",
+              action: "example",
+            },
+          ],
+          optionItems: hanyu1OptionItems,
         });
       } else if (subject === "hanyu3") {
         renderSpeakingLessonOptions({

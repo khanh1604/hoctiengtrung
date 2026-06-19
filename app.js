@@ -32,7 +32,7 @@
   const resetKey = `typingReset-${storagePrefix}${lesson}-${testNum}`;
   const practiceActivityContents = new Set(["paragraph", "structure", "example"]);
   const isReflexTyping =
-    (subject === "speaking" || subject === "hanyu3" || subject === "writing" || subject === "listening") &&
+    (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3" || subject === "writing" || subject === "listening") &&
     practiceActivityContents.has(content);
   const reflexCurrentEl = document.querySelector(".reflex-current");
   const reflexDoneEl = document.querySelector(".reflex-done");
@@ -546,17 +546,18 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu3") && content === "example") {
+    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "example") {
       const lessonNum = String(Number(lesson));
+      const exampleGroupSize = subject === "hanyu1" ? 10 : 20;
       if (!allData.__rawText) {
         const exampleItems = allData.example || [];
-        const groups = splitIntoGroups(exampleItems, 20);
+        const groups = splitIntoGroups(exampleItems, exampleGroupSize);
         return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
       }
 
       const rawText = allData.__rawText || "";
       const items = parseTabSeparatedVocabulary(rawText);
-      const groups = splitIntoGroups(items, 20);
+      const groups = splitIntoGroups(items, exampleGroupSize);
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
@@ -567,7 +568,7 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu3") && (content === "grammar" || content === "structure")) {
+    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && (content === "grammar" || content === "structure")) {
       const lessonNum = String(Number(lesson));
       if (!allData.__rawText) {
         const grammarItems = content === "structure"
@@ -584,7 +585,7 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu3") && content === "paragraph") {
+    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "paragraph") {
       const lessonNum = String(Number(lesson));
       if (!allData.__rawText) {
         const paragraphGroups = getSpeakingParagraphGroups(allData);
@@ -688,22 +689,23 @@
         ? "data/writing-tests.json"
         : subject === "listening" && content === "example"
           ? "data/listening-example-tests.json"
-        : subject === "hanyu3"
-          ? `data/hanyu3-lessons.json?v=${Date.now()}`
+        : (subject === "hanyu1" || subject === "hanyu3")
+          ? `data/${subject}-lessons.json?v=${Date.now()}`
         : subject === "speaking"
           ? `data/speaking-lesson-${Number(lesson)}.json?v=${Date.now()}`
           : "data/nghe1-tests.json";
     const res = await fetch(dataFile);
     if (!res.ok) throw new Error("Không tải được dữ liệu câu hỏi");
 
-    if (subject === "hanyu3") {
+    if (subject === "hanyu1" || subject === "hanyu3") {
       const allLessons = await res.json();
       const lessonData = allLessons[String(Number(lesson))];
-      if (!lessonData) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ quyển 3");
+      if (!lessonData) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ");
       if (content === "example") {
+        const exampleGroupSize = subject === "hanyu1" ? 10 : 20;
         speakingExampleTestCount = Math.max(
           1,
-          splitIntoGroups(lessonData.example || [], 20).length,
+          splitIntoGroups(lessonData.example || [], exampleGroupSize).length,
         );
       }
       if (content === "paragraph") {
@@ -1081,13 +1083,13 @@
                       [],
                   ).length,
                 )
-              : (subject === "speaking" || subject === "hanyu3") && content === "paragraph"
+              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "paragraph"
                 ? Math.max(1, speakingParagraphTestCount)
-              : (subject === "speaking" || subject === "hanyu3") && content === "structure"
+              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "structure"
                 ? Math.max(1, speakingStructureTestCount)
               : subject === "speaking" && content === "grammar" && (Number(lesson) === 4 || Number(lesson) === 5)
                 ? 2
-              : (subject === "speaking" || subject === "hanyu3") && content === "example"
+              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "example"
                 ? Math.max(1, speakingExampleTestCount)
               : subject === "hanyu3" && content === "exercise"
                 ? Math.max(6, hanyu3ExerciseTestCount)
