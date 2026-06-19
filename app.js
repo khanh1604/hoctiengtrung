@@ -30,6 +30,23 @@
   const storagePrefix = `${subject ? `${subject}-` : ""}${content ? `${content}-` : ""}`;
   const expKey = `typingExp-${storagePrefix}${lesson}-${testNum}`;
   const resetKey = `typingReset-${storagePrefix}${lesson}-${testNum}`;
+  const practiceActivityContents = new Set(["paragraph", "structure", "example"]);
+  const isReflexTyping =
+    (subject === "speaking" || subject === "hanyu3" || subject === "writing" || subject === "listening") &&
+    practiceActivityContents.has(content);
+  const reflexCurrentEl = document.querySelector(".reflex-current");
+  const reflexDoneEl = document.querySelector(".reflex-done");
+  const reflexAccuracyEl = document.querySelector(".reflex-accuracy");
+  const reflexQuestionGrid = document.getElementById("reflexQuestionGrid");
+  const reflexPrevBtn = document.querySelector(".reflex-prev-btn");
+  const reflexNextBtn = document.querySelector(".reflex-next-btn");
+  const reflexFlagBtn = document.querySelector(".reflex-flag-btn");
+  const reflexDonut = document.querySelector(".reflex-donut");
+  const reflexDonutCount = document.querySelector(".reflex-donut-count");
+  const reflexRightCount = document.querySelector(".reflex-right-count");
+  const reflexWrongCount = document.querySelector(".reflex-wrong-count");
+  const reflexLeftCount = document.querySelector(".reflex-left-count");
+  const reflexSideAccuracy = document.querySelector(".reflex-side-accuracy");
 
   let questions = [];
   let currentIndex = parseInt(
@@ -40,12 +57,22 @@
   let showingResult = false;
   let finished = false;
   let speakingExampleTestCount = 10;
+  let listeningExampleTestCount = 1;
   let speakingParagraphTestCount = 1;
   let speakingStructureTestCount = 1;
   let hanyu3ExerciseTestCount = 6;
+  let answerStates = [];
+  let flaggedQuestions = new Set();
 
   if (lessonEl) {
-    lessonEl.textContent = `Bài ${lesson} - Kiểm tra ${String(testNum).padStart(2, "0")}`;
+    const testLabel = String(testNum).padStart(2, "0");
+    const activityTitle =
+      content === "paragraph"
+        ? `Ôn tập bài khóa ${testLabel}`
+        : content === "structure"
+          ? `Luyện tập cấu trúc ${testLabel}`
+          : `Bài ${lesson} - Kiểm tra ${testLabel}`;
+    lessonEl.textContent = activityTitle;
   }
 
   function escapeHtml(text) {
@@ -57,14 +84,18 @@
   }
 
   function normalizeQuestion(item) {
+    const explanation = item.explanation || item.meaning || "";
+    const completed = item.completed || item.fullSentence || "";
     return {
       type: item.type || item.kind || "",
       title: item.title || item.name || "",
       pattern: item.pattern || item.structure || item.formula || "",
-      meaning: item.meaning || item.explanation || "",
+      meaning: completed
+        ? `${completed}${item.meaning ? `\n${item.meaning}` : ""}${explanation ? `\n${explanation}` : ""}`
+        : explanation,
       usage: item.usage || item.note || "",
-      vietnamese: item.vietnamese || item.vi || "",
-      chinese: item.chinese || item.zh || "",
+      vietnamese: item.question || item.vietnamese || item.vi || "",
+      chinese: item.answer || item.chinese || item.zh || "",
       pinyin: item.pinyin || item.py || "",
       examples: Array.isArray(item.examples)
         ? item.examples.map((example) => ({
@@ -141,6 +172,15 @@
     const groups = [];
     for (let i = 0; i < items.length; i += groupSize) {
       groups.push(items.slice(i, i + groupSize));
+    }
+    return groups;
+  }
+
+  function splitIntoParts(items, partCount) {
+    const groups = [];
+    const size = Math.ceil((items || []).length / partCount);
+    for (let i = 0; i < partCount; i++) {
+      groups.push((items || []).slice(i * size, (i + 1) * size));
     }
     return groups;
   }
@@ -283,6 +323,7 @@
   }
 
   const progressKey = `typingProgress-${storagePrefix}${lesson}-${testNum}`;
+  const flagKey = `typingFlags-${storagePrefix}${lesson}-${testNum}`;
 
   function loadProgressState() {
     let stored = null;
@@ -369,6 +410,21 @@
     sessionStorage.setItem("currentQuestion", String(state.currentIndex));
   }
 
+  function loadFlagState() {
+    if (!isReflexTyping) return;
+    try {
+      const saved = JSON.parse(localStorage.getItem(flagKey) || "[]");
+      flaggedQuestions = new Set(Array.isArray(saved) ? saved : []);
+    } catch (e) {
+      flaggedQuestions = new Set();
+    }
+  }
+
+  function saveFlagState() {
+    if (!isReflexTyping) return;
+    localStorage.setItem(flagKey, JSON.stringify(Array.from(flaggedQuestions)));
+  }
+
   function getEvaluationText() {
     if (exp >= totalQuestions) return `Giỏi (${totalQuestions}/${totalQuestions} đúng)`;
     return `Khá (${exp}/${totalQuestions} đúng)`;
@@ -445,10 +501,28 @@
       return lessonItems.map(normalizeQuestion);
     }
 
-    if (subject === "writing" && content === "grammar") {
+    if (subject === "writing" && (content === "grammar" || content === "structure")) {
       const lessonKey = String(Number(lesson));
       const grammar = allData.grammar || allData.grammarTests || {};
-      const items = grammar[lesson] || grammar[lessonKey] || [];
+      const structure = allData.structure || allData.structureTests || {};
+      const structureItems = structure[lesson] || structure[lessonKey] || [];
+      const grammarItems = grammar[lesson] || grammar[lessonKey] || [];
+      const items =
+        content === "structure" && Array.isArray(structureItems) && structureItems.length
+          ? structureItems
+          : content === "structure" && Array.isArray(grammarItems)
+            ? grammarItems.filter(
+                (item) =>
+                  !item.partOfSpeech &&
+                  (item.title ||
+                    item.pattern ||
+                    item.meaning ||
+                    item.usage ||
+                    item.examples),
+              )
+            : Array.isArray(grammarItems)
+              ? grammarItems.filter((item) => item && !item.partOfSpeech)
+              : grammarItems;
 
       if (Array.isArray(items)) {
         if (Array.isArray(items[0])) {
@@ -467,19 +541,9 @@
       const lessonKey = String(Number(lesson));
       const examples = allData.examples || allData.exampleTests || {};
       const items = examples[lesson] || examples[lessonKey] || [];
+      const groups = splitWritingExamplesIntoReadings(items);
 
-      if (Array.isArray(items)) {
-        if (Array.isArray(items[0])) {
-          return (items[Number(testNum) - 1] || []).map(normalizeQuestion);
-        }
-
-        const start = (Number(testNum) - 1) * 20;
-        const exampleQuestions = items.slice(start, start + 20);
-        if (exampleQuestions.length) return exampleQuestions.map(normalizeQuestion);
-      } else {
-        const groupedItems = items[testNum] || items[String(Number(testNum))] || [];
-        if (groupedItems.length) return groupedItems.map(normalizeQuestion);
-      }
+      return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
     if ((subject === "speaking" || subject === "hanyu3") && content === "example") {
@@ -492,7 +556,7 @@
 
       const rawText = allData.__rawText || "";
       const items = parseTabSeparatedVocabulary(rawText);
-      const groups = splitIntoGroups(items, 25);
+      const groups = splitIntoGroups(items, 20);
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
@@ -524,7 +588,8 @@
       const lessonNum = String(Number(lesson));
       if (!allData.__rawText) {
         const paragraphGroups = getSpeakingParagraphGroups(allData);
-        return (paragraphGroups[Number(testNum) - 1] || []).map(normalizeQuestion);
+        const group = paragraphGroups[Number(testNum) - 1] || [];
+        return getParagraphGroupLines(group).map(normalizeQuestion);
       }
       const rawText = allData.__rawText || "";
       const items = parseTabSeparatedVocabulary(rawText);
@@ -536,6 +601,13 @@
       const exerciseItems = allData.exercise || [];
       if (Array.isArray(exerciseItems[0])) {
         return (exerciseItems[Number(testNum) - 1] || []).map(normalizeQuestion);
+      }
+      if (exerciseItems[0] && (Array.isArray(exerciseItems[0].questions) || exerciseItems[0].title)) {
+        const exercise = exerciseItems[Number(testNum) - 1] || {};
+        if (Array.isArray(exercise.questions)) {
+          return exercise.questions.map(normalizeQuestion);
+        }
+        return [];
       }
       const groups = splitIntoGroups(exerciseItems, 20);
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
@@ -563,7 +635,38 @@
     const items = data.paragraph || [];
     if (!Array.isArray(items) || !items.length) return [];
     if (Array.isArray(items[0])) return items;
+    if (items[0] && (Array.isArray(items[0].lines) || items[0].title || items[0].type)) return items;
+    if (subject === "hanyu3") return splitIntoParts(items, 3);
     return [items];
+  }
+
+  function getParagraphGroupLines(group) {
+    if (Array.isArray(group)) return group;
+    if (group && Array.isArray(group.value)) return group.value;
+    if (group && Array.isArray(group.lines)) return group.lines;
+    return [];
+  }
+
+  function splitWritingExamplesIntoReadings(items) {
+    if (!Array.isArray(items)) {
+      return Object.keys(items || {})
+        .sort((a, b) => Number(a) - Number(b))
+        .map((key) => items[key]);
+    }
+    if (Array.isArray(items[0])) return items;
+    if (!items.length) return [];
+
+    const readingCount = 9;
+    const groupSize = Math.ceil(items.length / readingCount);
+    return Array.from({ length: readingCount }, (_, idx) =>
+      items.slice(idx * groupSize, (idx + 1) * groupSize),
+    ).filter((group) => group.length);
+  }
+
+  function countWritingPracticeGroups(items) {
+    if (!Array.isArray(items)) return Object.keys(items || {}).length;
+    if (Array.isArray(items[0])) return items.length;
+    return Math.ceil(items.length / 20);
   }
 
   function loadFromStorage() {
@@ -586,17 +689,17 @@
         : subject === "listening" && content === "example"
           ? "data/listening-example-tests.json"
         : subject === "hanyu3"
-          ? `data/hanyu3-lesson-${Number(lesson)}.json?v=${Date.now()}`
+          ? `data/hanyu3-lessons.json?v=${Date.now()}`
         : subject === "speaking"
-          ? Number(lesson) === 4
-            ? "data/speaking-lesson-4-raw.txt"
-            : `data/speaking-lesson-${Number(lesson)}.json?v=${Date.now()}`
+          ? `data/speaking-lesson-${Number(lesson)}.json?v=${Date.now()}`
           : "data/nghe1-tests.json";
     const res = await fetch(dataFile);
     if (!res.ok) throw new Error("Không tải được dữ liệu câu hỏi");
 
     if (subject === "hanyu3") {
-      const lessonData = await res.json();
+      const allLessons = await res.json();
+      const lessonData = allLessons[String(Number(lesson))];
+      if (!lessonData) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ quyển 3");
       if (content === "example") {
         speakingExampleTestCount = Math.max(
           1,
@@ -617,7 +720,9 @@
       }
       if (content === "exercise") {
         const exerciseItems = lessonData.exercise || [];
-        hanyu3ExerciseTestCount = Array.isArray(exerciseItems[0])
+        hanyu3ExerciseTestCount = exerciseItems[0]?.title
+          ? Math.max(6, exerciseItems.length)
+          : Array.isArray(exerciseItems[0])
           ? Math.max(6, exerciseItems.length)
           : Math.max(6, splitIntoGroups(exerciseItems, 20).length);
       }
@@ -626,54 +731,35 @@
     }
 
     if (subject === "speaking") {
-      if (Number(lesson) !== 4) {
-        const lessonData = await res.json();
-        if (content === "example") {
-          speakingExampleTestCount = Math.max(
-            1,
-            splitIntoGroups(lessonData.example || [], 20).length,
-          );
-        }
-        if (content === "paragraph") {
-          speakingParagraphTestCount = Math.max(
-            1,
-            getSpeakingParagraphGroups(lessonData).length,
-          );
-        }
-        if (content === "structure") {
-          speakingStructureTestCount = Math.max(
-            1,
-            splitIntoGroups(lessonData.structure || [], 20).length,
-          );
-        }
-        questions = getTestQuestions(lessonData);
-        return;
-      }
-
-      const rawText = await res.text();
+      const lessonData = await res.json();
       if (content === "example") {
         speakingExampleTestCount = Math.max(
           1,
-          splitIntoGroups(parseTabSeparatedVocabulary(rawText), 25).length,
+          splitIntoGroups(lessonData.example || [], 20).length,
         );
       }
       if (content === "paragraph") {
         speakingParagraphTestCount = Math.max(
           1,
-          splitIntoGroups(parseTabSeparatedVocabulary(rawText), 25).length,
+          getSpeakingParagraphGroups(lessonData).length,
         );
       }
       if (content === "structure") {
         speakingStructureTestCount = Math.max(
           1,
-          splitIntoGroups(parseTabSeparatedVocabulary(rawText), 20).length,
+          splitIntoGroups(lessonData.structure || [], 20).length,
         );
       }
-      questions = getTestQuestions({ __rawText: rawText, paragraph: [] });
+      questions = getTestQuestions(lessonData);
       return;
     }
 
     const allData = await res.json();
+    if (subject === "listening" && content === "example") {
+      const lessonKey = String(Number(lesson));
+      const items = allData[lesson] || allData[lessonKey] || [];
+      listeningExampleTestCount = Math.max(1, splitIntoGroups(items, 20).length);
+    }
     questions = getTestQuestions(allData);
   }
 
@@ -691,27 +777,88 @@
 
   function updateProgress() {
     if (!progressBar) return;
-    const pct = Math.min(100, (exp / totalQuestions) * 100);
+    const pct = isReflexTyping
+      ? Math.min(100, ((Math.min(currentIndex + 1, totalQuestions)) / totalQuestions) * 100)
+      : Math.min(100, (exp / totalQuestions) * 100);
     progressBar.style.width = `${pct}%`;
     if (completionNote) {
       if (currentIndex >= totalQuestions) {
         completionNote.textContent = `Hoàn thành: ${getEvaluationText()}`;
       } else {
-        completionNote.textContent = `Đã đúng: ${exp}/${totalQuestions}`;
+        completionNote.textContent = isReflexTyping
+          ? `${Math.round(pct)}% hoàn thành`
+          : `Đã đúng: ${exp}/${totalQuestions}`;
       }
     }
+    updateReflexStats();
+    renderReflexQuestionGrid();
+  }
+
+  function getReflexDoneCount() {
+    return answerStates.filter(Boolean).length;
+  }
+
+  function getReflexWrongCount() {
+    return answerStates.filter((state) => state === "wrong").length;
+  }
+
+  function updateReflexStats() {
+    if (!isReflexTyping || !totalQuestions) return;
+    const doneCount = getReflexDoneCount();
+    const wrongCount = getReflexWrongCount();
+    const currentDisplay = Math.min(currentIndex + 1, totalQuestions);
+    const accuracy = doneCount ? Math.round((exp / doneCount) * 100) : 0;
+
+    if (reflexCurrentEl) {
+      reflexCurrentEl.textContent = `${String(currentDisplay).padStart(2, "0")}/${totalQuestions}`;
+    }
+    if (reflexDoneEl) reflexDoneEl.textContent = String(doneCount);
+    if (reflexAccuracyEl) reflexAccuracyEl.textContent = `${accuracy}%`;
+    if (reflexDonutCount) reflexDonutCount.textContent = `${doneCount}/${totalQuestions}`;
+    if (reflexDonut) {
+      const rightPct = totalQuestions ? (exp / totalQuestions) * 100 : 0;
+      const wrongEndPct = totalQuestions
+        ? ((exp + wrongCount) / totalQuestions) * 100
+        : 0;
+      reflexDonut.style.setProperty("--right", `${rightPct}%`);
+      reflexDonut.style.setProperty("--wrong-end", `${wrongEndPct}%`);
+    }
+    if (reflexRightCount) reflexRightCount.textContent = String(exp);
+    if (reflexWrongCount) reflexWrongCount.textContent = String(wrongCount);
+    if (reflexLeftCount) reflexLeftCount.textContent = String(Math.max(0, totalQuestions - doneCount));
+    if (reflexSideAccuracy) reflexSideAccuracy.textContent = `${accuracy}%`;
+  }
+
+  function renderReflexQuestionGrid() {
+    if (!isReflexTyping || !reflexQuestionGrid || !totalQuestions) return;
+    reflexQuestionGrid.innerHTML = "";
+    questions.forEach((_, index) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = String(index + 1).padStart(2, "0");
+      button.className = "reflex-question-dot";
+      if (index === currentIndex) button.classList.add("is-current");
+      if (flaggedQuestions.has(index)) button.classList.add("is-flagged");
+      if (answerStates[index] === "correct") button.classList.add("is-correct");
+      if (answerStates[index] === "wrong") button.classList.add("is-wrong");
+      button.addEventListener("click", () => {
+        currentIndex = index;
+        showQuestion();
+      });
+      reflexQuestionGrid.appendChild(button);
+    });
   }
 
   function setCheckMode() {
     showingResult = false;
-    checkBtn.textContent = "Kiểm tra (Enter)";
+    checkBtn.textContent = isReflexTyping ? "Kiểm tra" : "Kiểm tra (Enter)";
     checkBtn.classList.remove("next-btn");
     checkBtn.disabled = false;
   }
 
   function setNextMode() {
     showingResult = true;
-    checkBtn.textContent = "Tiếp theo (Enter)";
+    checkBtn.textContent = isReflexTyping ? "Câu tiếp theo" : "Tiếp theo (Enter)";
     checkBtn.classList.add("next-btn");
     checkBtn.disabled = false;
   }
@@ -733,13 +880,35 @@
     feedbackEl.innerHTML = message;
   }
 
-  function showCorrectResult() {
+  function showCorrectResult(q) {
     if (answerInput) answerInput.classList.add("input-correct");
+    if (isReflexTyping && q) {
+      showFeedback(
+        "correct",
+        `<strong>Kết quả: Đúng</strong>
+         <div class="reflex-result-answer">${escapeHtml(q.chinese)}</div>
+         <small>${escapeHtml(q.pinyin)}</small>`,
+      );
+      return;
+    }
     showFeedback("correct", "✓ Chính xác!");
   }
 
   function showWrongResult(q, userAnswer) {
     if (answerInput) answerInput.classList.add("input-wrong");
+    if (isReflexTyping) {
+      showFeedback(
+        "wrong",
+        `<strong>Kết quả: Sai</strong>
+         <div class="result-row">
+           <span class="answer-label">Bạn đã nhập:</span>
+           <span class="answer-user">${highlightWrongParts(userAnswer, q.chinese)}</span>
+         </div>
+         <div class="reflex-result-answer">${escapeHtml(q.chinese)}</div>
+         <small>${escapeHtml(q.pinyin)}</small>`,
+      );
+      return;
+    }
     showFeedback(
       "wrong",
       `<div class="result-row">
@@ -800,6 +969,9 @@
 
     const remaining = Math.max(0, totalQuestions - currentIndex);
     if (remainingEl) remainingEl.textContent = String(remaining);
+    if (reflexFlagBtn) {
+      reflexFlagBtn.classList.toggle("is-active", flaggedQuestions.has(currentIndex));
+    }
 
     updateProgress();
     saveProgressState();
@@ -845,14 +1017,24 @@
     if (answerInput) answerInput.disabled = true;
 
     if (isCorrect) {
-      exp += 1;
+      if (isReflexTyping) {
+        if (answerStates[currentIndex] !== "correct") exp += 1;
+        answerStates[currentIndex] = "correct";
+      } else {
+        exp += 1;
+      }
       updateExpDisplay();
-      showCorrectResult();
+      showCorrectResult(q);
       // speak the correct answer on success for reinforcement
       if (q.chinese || q.pinyin) {
         speakText(q.chinese || q.pinyin, "zh-CN");
       }
     } else {
+      if (isReflexTyping) {
+        if (answerStates[currentIndex] === "correct") exp = Math.max(0, exp - 1);
+        answerStates[currentIndex] = "wrong";
+        updateExpDisplay();
+      }
       showWrongResult(q, userAnswer);
       // speak the correct answer when the response is wrong
       if (q.chinese || q.pinyin) {
@@ -862,32 +1044,43 @@
 
     setNextMode();
     saveProgressState(currentIndex + 1);
+    updateReflexStats();
+    renderReflexQuestionGrid();
   }
 
   function onMainAction() {
     if (checkBtn.disabled) return;
     if (finished) {
       const nextTestNum = Number(testNum) + 1;
-      const listeningExampleTestCounts = {
-        3: 13,
-        5: 12,
-        7: 13,
-        9: 15,
-        11: 13,
-        13: 14,
-        15: 16,
-        17: 15,
-        19: 16,
-        21: 15,
-        23: 14,
-      };
       const maxTests =
         subject === "writing" && content === "paragraph"
           ? 1
-          : subject === "writing" && content === "grammar"
-          ? 4
+        : subject === "writing" && (content === "grammar" || content === "structure")
+          ? Math.max(
+              1,
+              countWritingPracticeGroups(
+                (
+                  content === "structure"
+                    ? (lessonData.structure || lessonData.structureTests || {})
+                    : (lessonData.grammar || lessonData.grammarTests || {})
+                )[lesson] ||
+                  (
+                    content === "structure"
+                      ? (lessonData.structure || lessonData.structureTests || {})
+                      : (lessonData.grammar || lessonData.grammarTests || {})
+                  )[String(Number(lesson))] ||
+                  [],
+              ),
+            )
               : subject === "writing" && !content
-              ? 4
+              ? Math.max(
+                  9,
+                  splitWritingExamplesIntoReadings(
+                    (lessonData.examples || lessonData.exampleTests || {})[lesson] ||
+                      (lessonData.examples || lessonData.exampleTests || {})[String(Number(lesson))] ||
+                      [],
+                  ).length,
+                )
               : (subject === "speaking" || subject === "hanyu3") && content === "paragraph"
                 ? Math.max(1, speakingParagraphTestCount)
               : (subject === "speaking" || subject === "hanyu3") && content === "structure"
@@ -901,7 +1094,7 @@
               : subject !== "writing" && content === "listening" && Number(lesson) === 1
                 ? 5
               : subject === "listening" && content === "example"
-                ? listeningExampleTestCounts[Number(lesson)] || 1
+                ? Math.max(1, listeningExampleTestCount)
               : 10;
       if (nextTestNum > maxTests) {
         // no more tests: go back to review
@@ -923,12 +1116,52 @@
 
   if (soundBtn) {
     soundBtn.addEventListener("click", () => {
+      if (isReflexTyping) {
+        const q = getCurrentQuestion();
+        if (q?.chinese || q?.pinyin) speakText(q.chinese || q.pinyin, "zh-CN");
+        return;
+      }
       const text =
         (questionEl &&
           (questionEl.dataset.chinese || questionEl.dataset.pinyin)) ||
         (questionEl && questionEl.textContent) ||
         "";
       if (text) speakText(text, "zh-CN");
+    });
+  }
+
+  if (reflexPrevBtn) {
+    reflexPrevBtn.addEventListener("click", () => {
+      if (!questions.length || currentIndex <= 0) return;
+      currentIndex -= 1;
+      showQuestion();
+    });
+  }
+
+  if (reflexNextBtn) {
+    reflexNextBtn.addEventListener("click", () => {
+      if (!questions.length) return;
+      if (showingResult) {
+        nextQuestion();
+        return;
+      }
+      if (currentIndex < questions.length - 1) {
+        currentIndex += 1;
+        showQuestion();
+      }
+    });
+  }
+
+  if (reflexFlagBtn) {
+    reflexFlagBtn.addEventListener("click", () => {
+      if (!questions.length) return;
+      if (flaggedQuestions.has(currentIndex)) {
+        flaggedQuestions.delete(currentIndex);
+      } else {
+        flaggedQuestions.add(currentIndex);
+      }
+      saveFlagState();
+      renderReflexQuestionGrid();
     });
   }
 
@@ -979,7 +1212,16 @@
         return;
       }
       totalQuestions = questions.length;
+      if (isReflexTyping) {
+        answerStates = Array.from({ length: totalQuestions });
+        loadFlagState();
+      }
       loadProgressState();
+      if (isReflexTyping && currentIndex > 0) {
+        for (let i = 0; i < currentIndex; i += 1) {
+          answerStates[i] = i < exp ? "correct" : "answered";
+        }
+      }
       showQuestion();
     })
     .catch((err) => {

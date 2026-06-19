@@ -1,64 +1,19 @@
 <!doctype html>
-<html>
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chọn Cấp Độ - Chinese Learning</title>
+    <title>FTC - Chuyển hướng</title>
+    <meta http-equiv="refresh" content="0; url=index.html" />
     <link rel="stylesheet" href="style.css" />
-    <script src="theme.js" defer></script>
+    <link rel="stylesheet" href="css/redirect.css" />
   </head>
-
-  <body class="level-page">
-    <div class="level-container">
-      <div class="level-content">
-        <h1 class="level-title">欢迎来到 FTC</h1>
-
-        <button
-          class="back-to-menu-btn"
-          onclick="window.location.href = 'index.html'"
-        >
-          ← Chọn lại chế độ học
-        </button>
-
-        <div class="levels-list">
-          <button
-            class="level-btn"
-            onclick="window.location.href = 'lessons.html'"
-          >
-            <span>初级听力(II) Nghe Hiểu</span>
-          </button>
-          <button
-            class="level-btn"
-            onclick="window.location.href = 'lessons.html?subject=speaking'"
-          >
-            <span>初级口语（II）</span>
-          </button>
-          <button
-            class="level-btn"
-            onclick="window.location.href = 'lessons.html?subject=hanyu3'"
-          >
-            <span>Giáo trình hán ngữ quyển 3(đọc)</span>
-          </button>
-          <button
-            class="level-btn"
-            onclick="window.location.href = 'lessons.html?subject=writing'"
-          >
-            <span>中级写作(I) Viết</span>
-          </button>
-          <button class="level-btn locked" disabled>
-            <span>HSK5</span>
-          </button>
-          <button class="level-btn locked" disabled>
-            <span>HSK6</span>
-          </button>
-          <button class="level-btn locked" disabled>
-            <span>Tiếng Trung giao tiếp</span>
-          </button>
-          <button class="level-btn locked" disabled>
-            <span>Tiếng Trung cho người đi làm</span>
-          </button>
-        </div>
-      </div>
-    </div>
+  <body>
+    <main class="redirect-card">
+      <h1>Đang mở trang chủ FTC</h1>
+      <p>Trang chọn cấp độ đã được gộp vào trang chủ.</p>
+      <a href="index.html">Về trang chủ</a>
+    </main>
+    <script src="js/redirect.js" defer></script>
   </body>
 </html>

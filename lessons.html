@@ -64,7 +64,7 @@
       const isWriting = subject === "writing";
       const isSpeaking = subject === "speaking";
       const isHanyu3 = subject === "hanyu3";
-      const totalItems = isWriting ? 15 : isHanyu3 ? 10 : 12;
+      const totalItems = isWriting ? 15 : isHanyu3 ? 10 : isSpeaking ? 12 : 24;
       const itemsPerPage = 12;
       const availableListeningLessons = new Set(
         Array.from({ length: 24 }, (_, idx) => idx + 1),
@@ -78,6 +78,49 @@
       const availableHanyu3Lessons = new Set(
         Array.from({ length: 10 }, (_, idx) => idx + 1),
       );
+      const writingLessonNames = [
+        ["我的朋友——李明", "Bạn của tôi — Lý Minh"],
+        ["来到中国", "Đến Trung Quốc"],
+        ["上班族的一天", "Một ngày của dân công sở (người đi làm)"],
+        ["第一印象可靠吗", "Ấn tượng đầu tiên có đáng tin không?"],
+        ["我的故乡", "Quê hương của tôi"],
+        ["我的恋爱史", "Lịch sử tình trường (Chuyện tình yêu) của tôi"],
+        ["搬家", "Chuyển nhà"],
+        ["到底发生了什么事", "Rốt cuộc đã xảy ra chuyện gì?"],
+        ["关于出行方式的调查", "Khảo sát về phương thức di chuyển (đi lại)"],
+        ["愉快的周末", "Cuối tuần vui vẻ"],
+        ["橘子皮的用途", "Công dụng của vỏ quýt"],
+        ["语言学家赵元任", "Nhà ngôn ngữ học Triệu Nguyên Nhiệm"],
+        ["如果我是公司老板", "Nếu tôi là sếp (ông chủ) công ty"],
+        ["一件小事", "Một việc nhỏ (Một câu chuyện nhỏ)"],
+        ["你真是个好孩子", "Con/Cháu đúng là một đứa trẻ ngoan"],
+      ];
+      const listeningLessonNames = [
+        ["你学了多长时间汉语了", "Bạn học tiếng Trung được bao lâu rồi?"],
+        ["请问，留学生宿舍怎么走", "Xin hỏi, ký túc xá lưu học sinh đi đường nào?"],
+        ["我很想家", "Tôi rất nhớ nhà"],
+        ["你是什么时候来的", "Bạn đến từ khi nào?"],
+        ["你也听听吧", "Bạn cũng nghe thử đi"],
+        ["我们大学有好几个学生食堂", "Trường đại học của chúng tôi có mấy cái nhà ăn sinh viên liền"],
+        ["你吃过这个菜吗", "Bạn đã từng ăn món này chưa?"],
+        ["我们还没想好租不租呢", "Chúng tôi vẫn chưa nghĩ kỹ xem có thuê hay không nữa"],
+        ["鸡蛋 4 块一斤", "Trứng gà 4 tệ một cân"],
+        ["我有一个好主意", "Tôi có một ý kiến hay / một chủ ý tốt"],
+        ["我的手机没电了", "Điện thoại của tôi hết pin rồi"],
+        ["孙子教我学电脑", "Cháu trai dạy tôi học máy tính"],
+        ["你怎么了", "Bạn bị làm sao thế? / Bạn làm sao vậy?"],
+        ["我还有一道题没做呢", "Tôi vẫn còn một câu hỏi chưa làm"],
+        ["就要期中考试了", "Sắp thi giữa kỳ rồi"],
+        ["我哪儿也没去", "Tôi chẳng đi đâu cả"],
+        ["买一送一", "Mua một tặng một"],
+        ["她比以前胖多了", "Cô ấy béo hơn trước nhiều rồi"],
+        ["太短了", "Ngắn quá rồi"],
+        ["“See a doctor” 用汉语怎么说", "Cụm từ \"See a doctor\" nói bằng tiếng Trung như thế nào?"],
+        ["他刚从银行回来", "Anh ấy vừa từ ngân hàng trở về"],
+        ["在北京坐公共汽车", "Đi xe buýt ở Bắc Kinh"],
+        ["很多女人都喜欢逛商场", "Rất nhiều phụ nữ đều thích đi lượn trung tâm thương mại"],
+        ["第一次坐飞机", "Lần đầu tiên đi máy bay"],
+      ];
       var currentPage = 1;
 
       function hasLessonData(lessonNumber) {
@@ -88,7 +131,7 @@
       }
 
       if (isWriting) {
-        document.getElementById("lessonsTitle").textContent = "Môn Viết";
+        document.getElementById("lessonsTitle").textContent = "中级写作（I）";
       } else if (isSpeaking) {
         document.getElementById("lessonsTitle").textContent = "口语";
       } else if (isHanyu3) {
@@ -103,8 +146,9 @@
 
         if (isWriting) {
           const unlocked = hasLessonData(writingLesson);
+          const lessonName = writingLessonNames[idx];
           return {
-            title: `Bài ${writingLesson}`,
+            title: lessonName ? `Bài ${writingLesson} - ${lessonName[0]}` : `Bài ${writingLesson}`,
             unlocked,
             href: unlocked ? `lesson-options.html?lesson=${pad(writingLesson)}&subject=${subject}` : null,
             progress: unlocked ? "" : "Chưa có dữ liệu",
@@ -133,21 +177,13 @@
           };
         }
 
-        const unlockedFirst = hasLessonData(first);
-        const unlockedSecond = hasLessonData(second);
-        const unlocked = unlockedFirst || unlockedSecond;
-        let href = null;
-        if (unlockedFirst) {
-          href = `lesson-options.html?lesson=${pad(first)}&subject=${subject}`;
-        } else if (unlockedSecond) {
-          href = `lesson-options.html?lesson=${pad(second)}&subject=${subject}`;
-        }
-
+        const listeningLesson = idx + 1;
+        const unlocked = hasLessonData(listeningLesson);
+        const lessonName = listeningLessonNames[idx];
         return {
-          title: `Bài ${pad(first)}-${pad(second)}`,
-          lessons: [first, second],
+          title: lessonName ? `Bài ${pad(listeningLesson)} - ${lessonName[0]}` : `Bài ${pad(listeningLesson)}`,
           unlocked,
-          href,
+          href: unlocked ? `lesson-options.html?lesson=${pad(listeningLesson)}&subject=${subject}` : null,
           progress: unlocked ? "" : "Chưa có dữ liệu",
         };
       });
@@ -210,7 +246,273 @@
         updatePagination();
       }
 
-      renderPairs();
+      function renderSpeakingCoursePage() {
+        const lessonNames = [
+          ["我哪儿都没去过", "Tôi chưa từng đi đâu cả."],
+          ["晚上早点儿睡", "Buổi tối hãy đi ngủ sớm một chút."],
+          ["咱们去爬山吧", "Chúng ta đi leo núi nhé."],
+          ["我帮你拿上去吧", "Để tôi giúp bạn mang lên trên nhé."],
+          ["他是从新加坡来的", "Anh ấy đến từ Singapore."],
+          ["这个颜色挺适合你的", "Màu này khá hợp với bạn."],
+          ["越快越好", "Càng nhanh càng tốt."],
+          ["虽然听不懂，但是我喜欢", "Mặc dù không hiểu, nhưng tôi thích."],
+          ["我怎么也睡不着", "Dù thế nào tôi cũng không ngủ được."],
+          ["地铁比公共汽车快", "Tàu điện ngầm nhanh hơn xe buýt."],
+          ["去药店不如去医院", "Đi hiệu thuốc không bằng đi bệnh viện."],
+          ["家家都是新房子", "Nhà nào cũng là nhà mới."],
+        ];
+
+        document.body.classList.add("speaking-course-page");
+        document.querySelector(".lessons-container").innerHTML = `
+          <aside class="speaking-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <nav class="speaking-nav" aria-label="Điều hướng khóa học">
+              <a href="index.html">⌂ Trang chủ</a>
+              <a class="is-active" href="lessons.html?subject=speaking">▣ Học tập</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thử HSK</button>
+              <button disabled>AI hội thoại</button>
+              <button disabled>Từ vựng</button>
+              <button disabled>Thống kê</button>
+              <button disabled>Cài đặt</button>
+            </nav>
+          </aside>
+
+          <main class="speaking-main">
+            <div class="speaking-breadcrumb">
+              <a href="index.html">← Học tập</a>
+              <span>›</span>
+              <span>Khẩu ngữ</span>
+              <span>›</span>
+              <strong>初级口语（II）</strong>
+            </div>
+
+            <section class="speaking-layout">
+              <div class="speaking-primary">
+                <header class="speaking-hero">
+                  <div class="speaking-hero-art" aria-hidden="true">🎙</div>
+                  <div class="speaking-hero-copy">
+                    <h1>初级口语（II）</h1>
+                    <p>Luyện nói sơ cấp - phần 2</p>
+                    <span>Đã học 0/12 bài</span>
+                    <div class="speaking-zero-progress" aria-hidden="true">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="speaking-hero-stats">
+                    <strong>12</strong><span>bài học</span>
+                  </div>
+                </header>
+
+                <div class="speaking-tabs" aria-label="Mục khóa học">
+                  <button class="is-active" type="button">☷ Bài học</button>
+                </div>
+
+                <div class="speaking-lesson-list" id="speakingLessonList"></div>
+              </div>
+
+              <aside class="speaking-aside">
+                <article class="speaking-side-card">
+                  <h2>Tiến độ khóa học</h2>
+                  <div class="speaking-ring"><strong>0%</strong></div>
+                  <p>Đã học 0/12 bài</p>
+                  <ul>
+                    <li><span></span>0 bài đã hoàn thành</li>
+                    <li><span></span>12 bài chưa học</li>
+                  </ul>
+                </article>
+
+                <article class="speaking-side-card">
+                  <h2>Gợi ý học hôm nay</h2>
+                  <button type="button" disabled>Tiếp tục bài 01 <small>0%</small></button>
+                  <button type="button" disabled>Ôn tập bài học <small>0 bài</small></button>
+                  <button type="button" disabled>Luyện nói <small>0</small></button>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
+
+        const list = document.getElementById("speakingLessonList");
+        lessonNames.forEach(([chinese, vietnamese], index) => {
+          const lessonNumber = index + 1;
+          const padLesson = String(lessonNumber).padStart(2, "0");
+          const row = document.createElement("button");
+          row.className = "speaking-lesson-row";
+          row.type = "button";
+          row.innerHTML = `
+            <span class="speaking-lesson-index">${padLesson}</span>
+            <strong>${chinese}</strong>
+            <em>${vietnamese}</em>
+            <b>0%</b>
+          `;
+          row.addEventListener("click", () => {
+            window.location.href = `lesson-options.html?lesson=${padLesson}&subject=speaking`;
+          });
+          list.appendChild(row);
+        });
+      }
+
+      function renderUnifiedCoursePage() {
+        const courseInfoMap = {
+          speaking: {
+            label: "Khẩu ngữ",
+            title: "初级口语（II）",
+            subtitle: "Luyện nói sơ cấp - phần 2",
+            icon: "🎙",
+            listHref: "lessons.html?subject=speaking",
+            actionLabel: "Luyện nói",
+            lessons: [
+              ["我哪儿都没去过", "Tôi chưa từng đi đâu cả."],
+              ["晚上早点儿睡", "Buổi tối hãy đi ngủ sớm một chút."],
+              ["咱们去爬山吧", "Chúng ta đi leo núi nhé."],
+              ["我帮你拿上去吧", "Để tôi giúp bạn mang lên trên nhé."],
+              ["他是从新加坡来的", "Anh ấy đến từ Singapore."],
+              ["这个颜色挺适合你的", "Màu này khá hợp với bạn."],
+              ["越快越好", "Càng nhanh càng tốt."],
+              ["虽然听不懂，但是我喜欢", "Mặc dù không hiểu, nhưng tôi thích."],
+              ["我怎么也睡不着", "Dù thế nào tôi cũng không ngủ được."],
+              ["地铁比公共汽车快", "Tàu điện ngầm nhanh hơn xe buýt."],
+              ["去药店不如去医院", "Đi hiệu thuốc không bằng đi bệnh viện."],
+              ["家家都是新房子", "Nhà nào cũng là nhà mới."],
+            ],
+          },
+          listening: {
+            label: "Nghe hiểu",
+            title: "初级听力（II）",
+            subtitle: "Luyện nghe hiểu sơ cấp - phần 2",
+            icon: "🎧",
+            listHref: "lessons.html?subject=listening",
+            lessons: listeningLessonNames,
+            actionLabel: "Luyện nghe",
+          },
+          writing: {
+            label: "Viết",
+            title: "中级写作（I）",
+            subtitle: "Luyện viết theo chủ đề",
+            icon: "✍️",
+            listHref: "lessons.html?subject=writing",
+            lessons: writingLessonNames,
+            actionLabel: "Luyện viết",
+          },
+          hanyu3: {
+            label: "Gi\u00e1o tr\u00ecnh H\u00e1n Ng\u1eef",
+            title: "H\u00e1n Ng\u1eef Quy\u1ec3n 3",
+            subtitle: "T\u1eeb m\u1edbi, c\u1ea5u tr\u00fac v\u00e0 b\u00e0i kh\u00f3a",
+            icon: "\ud83d\udcd6",
+            listHref: "lessons.html?subject=hanyu3",
+            lessons: [
+              ["\u6211\u6bd4\u4f60\u8ddf\u559c\u6b22\u97f3\u4e50", "T\u00f4i th\u00edch \u00e2m nh\u1ea1c h\u01a1n b\u1ea1n."],
+              ["\u6211\u4eec\u90a3\u513f\u7684\u51ac\u5929\u8ddf\u5317\u4eac\u4e00\u6837\u51b7", "M\u00f9a \u0111\u00f4ng \u1edf ch\u1ed7 ch\u00fang t\u00f4i l\u1ea1nh nh\u01b0 B\u1eafc Kinh."],
+              ["\u51ac\u5929\u5feb\u8981\u5230\u4e86", "M\u00f9a \u0111\u00f4ng s\u1eafp \u0111\u1ebfn r\u1ed3i."],
+              ["\u5feb\u4e0a\u6765\u5427\uff0c\u8981\u5f00\u8f66\u4e86", "Mau l\u00ean \u0111i, xe s\u1eafp ch\u1ea1y r\u1ed3i."],
+              ["\u6211\u542c\u8fc7\u94a2\u7434\u534f\u594f\u66f2\u300a\u9ec4\u6cb3\u300b", "T\u00f4i t\u1eebng nghe b\u1ea3n concerto piano Ho\u00e0ng H\u00e0."],
+              ["\u6211\u662f\u8ddf\u65c5\u6e38\u56e2\u4e00\u8d77\u6765\u7684", "T\u00f4i \u0111\u1ebfn c\u00f9ng \u0111o\u00e0n du l\u1ecbch."],
+              ["\u6211\u7684\u62a4\u7167\u4f60\u4f60\u627e\u4e86\u6ca1\u6709", "B\u1ea1n \u0111\u00e3 t\u00ecm th\u1ea5y h\u1ed9 chi\u1ebfu c\u1ee7a t\u00f4i ch\u01b0a?"],
+              ["\u6211\u7684\u773c\u955c\u6454\u574f\u4e86", "K\u00ednh c\u1ee7a t\u00f4i b\u1ecb r\u01a1i h\u1ecfng r\u1ed3i."],
+              ["\u94a5\u5319\u5fd8\u62d4\u4e0b\u6765\u4e86", "Qu\u00ean r\u00fat ch\u00eca kh\u00f3a ra r\u1ed3i."],
+              ["\u4f1a\u8bae\u5385\u7684\u95e8\u5f00\u7740\u5462", "C\u1eeda ph\u00f2ng h\u1ed9i ngh\u1ecb \u0111ang m\u1edf \u0111\u1ea5y."],
+            ],
+            actionLabel: "H\u1ecdc b\u00e0i",
+          },
+        };
+        const courseInfo = courseInfoMap[subject] || courseInfoMap.listening;
+
+        document.body.classList.add("speaking-course-page");
+        document.querySelector(".lessons-container").innerHTML = `
+          <aside class="speaking-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <nav class="speaking-nav" aria-label="Điều hướng khóa học">
+              <a href="index.html">⌂ Trang chủ</a>
+              <a class="is-active" href="${courseInfo.listHref}">▣ Học tập</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thử HSK</button>
+              <button disabled>AI hội thoại</button>
+              <button disabled>Từ vựng</button>
+              <button disabled>Thống kê</button>
+              <button disabled>Cài đặt</button>
+            </nav>
+          </aside>
+
+          <main class="speaking-main">
+            <div class="speaking-breadcrumb">
+              <a href="index.html">← Học tập</a>
+              <span>›</span>
+              <span>${courseInfo.label}</span>
+              <span>›</span>
+              <strong>${courseInfo.title}</strong>
+            </div>
+
+            <section class="speaking-layout">
+              <div class="speaking-primary">
+                <header class="speaking-hero">
+                  <div class="speaking-hero-art" aria-hidden="true">${courseInfo.icon}</div>
+                  <div class="speaking-hero-copy">
+                    <h1>${courseInfo.title}</h1>
+                    <p>${courseInfo.subtitle}</p>
+                    <span>Đã học 0/${totalItems} bài</span>
+                    <div class="speaking-zero-progress" aria-hidden="true">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="speaking-hero-stats">
+                    <strong>${totalItems}</strong><span>bài học</span>
+                  </div>
+                </header>
+
+                <div class="speaking-tabs" aria-label="Mục khóa học">
+                  <button class="is-active" type="button">☷ Bài học</button>
+                </div>
+
+                <div class="speaking-lesson-list" id="speakingLessonList"></div>
+              </div>
+
+              <aside class="speaking-aside">
+                <article class="speaking-side-card">
+                  <h2>Tiến độ khóa học</h2>
+                  <div class="speaking-ring"><strong>0%</strong></div>
+                  <p>Đã học 0/${totalItems} bài</p>
+                  <ul>
+                    <li><span></span>0 bài đã hoàn thành</li>
+                    <li><span></span>${totalItems} bài chưa học</li>
+                  </ul>
+                </article>
+
+                <article class="speaking-side-card">
+                  <h2>Gợi ý học hôm nay</h2>
+                  <button type="button" disabled>Tiếp tục bài 01 <small>0%</small></button>
+                  <button type="button" disabled>Ôn tập bài học <small>0 bài</small></button>
+                  <button type="button" disabled>${courseInfo.actionLabel} <small>0</small></button>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
+
+        const list = document.getElementById("speakingLessonList");
+        lessonItems.forEach((item, index) => {
+          const padLesson = String(index + 1).padStart(2, "0");
+          const preset = courseInfo.lessons?.[index];
+          const row = document.createElement("button");
+          row.className = "speaking-lesson-row";
+          row.type = "button";
+          row.disabled = !item.unlocked || !item.href;
+          row.innerHTML = `
+            <span class="speaking-lesson-index">${padLesson}</span>
+            <strong>${preset ? preset[0] : item.title}</strong>
+            <em>${preset ? preset[1] : courseInfo.subtitle}</em>
+            <b>0%</b>
+          `;
+          if (item.unlocked && item.href) {
+            row.addEventListener("click", () => {
+              window.location.href = item.href;
+            });
+          }
+          list.appendChild(row);
+        });
+      }
+
+      renderUnifiedCoursePage();
     </script>
   </body>
 </html>

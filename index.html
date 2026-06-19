@@ -1,251 +1,308 @@
-<!doctype html>
-<html>
+﻿<!doctype html>
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phân Xạ Tiếng Trung - Chinese Learning</title>
+    <title>FTC - Học tiếng Trung</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="theme.js" defer></script>
+    <link rel="stylesheet" href="css/dashboard.css" />
   </head>
 
-  <body class="menu-page">
-    <div class="menu-container">
-      <div class="header">
-        <div class="user-info">
-          <span class="user-name">trandinhkhanh1...</span>
-          <span class="badge">FREE</span>
-          <button class="upgrade-btn">Đăng xuất</button>
+  <body class="ftc-dashboard">
+    <div class="ftc-shell">
+      <aside class="ftc-sidebar">
+        <div class="brand">
+          <span class="brand-mark">FTC</span>
+          <!-- <span>
+            <strong>FTC</strong>
+            <small>Học tiếng Trung thông minh</small>
+          </span> -->
         </div>
-        <div class="nav-buttons">
-          <button class="nav-btn upgrade" id="openUpgradeModal">📚 Nâng Cấp</button>
-          <button
-            class="nav-btn theme-toggle-btn"
-            id="themeToggleButton"
-            type="button"
-            aria-pressed="false"
+
+        <nav class="nav-stack" aria-label="Điều hướng chính">
+          <a class="nav-item is-active" href="index.html"
+            ><span class="nav-icon">🏠</span>Trang chủ</a
           >
-            <span class="theme-toggle-label" id="themeToggleLabel">🌙 Bóng Đêm</span>
-            <span class="theme-toggle-track" aria-hidden="true">
-              <span class="theme-toggle-thumb"></span>
+          <a class="nav-item" href="lessons.html?subject=hanyu3"
+            ><span class="nav-icon">📚</span>Giáo trình Hán Ngữ</a
+          >
+          <a class="nav-item" href="lessons.html?subject=speaking"
+            ><span class="nav-icon">🎙️</span>Khẩu ngữ</a
+          >
+          <a class="nav-item" href="lessons.html"
+            ><span class="nav-icon">🎧</span>Nghe hiểu</a
+          >
+          <a class="nav-item" href="lessons.html?subject=writing"
+            ><span class="nav-icon">✍️</span>Viết</a
+          >
+        </nav>
+
+        <section class="tool-panel" aria-label="Công cụ học tập đã vô hiệu hóa">
+          <p class="tool-title">Công cụ học tập</p>
+          <button class="tool-item" type="button" disabled>Flashcard</button>
+          <button class="tool-item" type="button" disabled>Từ vựng</button>
+          <button class="tool-item" type="button" disabled>AI hội thoại</button>
+          <button class="tool-item" type="button" disabled>Thi thử HSK</button>
+          <button class="tool-item" type="button" disabled>Thống kê</button>
+        </section>
+
+        <div class="vip-box">
+          <strong>Nâng cấp VIP</strong>
+          <p>
+            Tính năng học tập đang được vô hiệu hóa theo thiết lập hiện tại.
+          </p>
+        </div>
+      </aside>
+
+      <main class="ftc-main">
+        <header class="topbar">
+          <div class="welcome">
+            <h1>欢迎来到 <span>FTC</span></h1>
+            <p>Chọn khóa học và bắt đầu từ một màn hình duy nhất.</p>
+          </div>
+
+          <div class="profile-chip">
+            <span class="avatar" aria-hidden="true">人</span>
+            <span>
+              <strong>Xin chào, Học viên</strong>
+              <small>Lv. 0 · 0 / 0 EXP</small>
+              <span class="zero-bar"><span></span></span>
             </span>
-          </button>
-        </div>
-      </div>
-
-      <div class="menu-content">
-        <h1 class="menu-title">Chuyên Ngành Ngôn Ngữ Trung FTC</h1>
-        <p class="menu-subtitle">Bạn muốn học theo phương pháp nào?</p>
-
-        <div class="options-container">
-          <button
-            class="option-btn typing-mode"
-            onclick="window.location.href = 'choose-level.html'"
-          >
-            <span class="option-icon">⌨️</span>
-            <span class="option-title">Typing</span>
-            <span class="option-desc">Dịch từ tiếng Việt--thành chữ hán</span>
-          </button>
-
-          <button class="option-btn word-bank">
-            <span class="option-icon">🧩</span>
-            <span class="option-title">đọc đoạn văn</span>
-            <span class="option-desc">luyện đọc đoạn văn ngắn thực tế</span>
-          </button>
-        </div>
-
-        <div class="leaderboard">
-          <div class="leaderboard-header">
-            <span class="leaderboard-title">🏆 Bảng Xếp Hạng</span>
-            <button class="leaderboard-icon">🔍</button>
+            <button
+              class="theme-switch"
+              id="themeToggleButton"
+              type="button"
+              aria-pressed="false"
+              title="Đổi sáng/tối"
+            >
+              <span id="themeToggleLabel">Bóng đêm</span>
+              <span class="theme-switch-track" aria-hidden="true">
+                <span class="theme-switch-thumb"></span>
+              </span>
+            </button>
           </div>
-        </div>
-      </div>
+        </header>
+
+        <section class="stat-grid" aria-label="Chỉ số học tập">
+          <article class="stat-card">
+            <small>Ngày học liên tục</small>
+            <strong>0</strong>
+          </article>
+          <article class="stat-card">
+            <small>EXP hiện có</small>
+            <strong>0</strong>
+          </article>
+          <article class="stat-card">
+            <small>Cấp độ hiện tại</small>
+            <strong>0</strong>
+          </article>
+          <article class="stat-card">
+            <small>Bài học hôm nay</small>
+            <strong>0</strong>
+          </article>
+        </section>
+
+        <section class="course-grid" aria-label="Danh sách khóa học">
+          <article class="course-panel panel-blue">
+            <h2>Giáo trình Hán Ngữ</h2>
+            <div class="course-list">
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>Hán Ngữ Quyển 1</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>Hán Ngữ Quyển 2</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link" href="lessons.html?subject=hanyu3">
+                <span>
+                  <strong>Hán Ngữ Quyển 3</strong>
+                  <small>Đọc hiểu · 0 bài đã học</small>
+                </span>
+                <span>›</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>Hán Ngữ Quyển 4</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>Hán Ngữ Quyển 5</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>Hán Ngữ Quyển 6</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="course-panel panel-green">
+            <h2>Khẩu ngữ</h2>
+            <div class="course-list">
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>初 级 口 语（I）</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link" href="lessons.html?subject=speaking">
+                <span>
+                  <strong>初 级 口 语（II）</strong>
+                  <small>Luyện nói · 0 bài đã học</small>
+                </span>
+                <span>›</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>中 级 口 语（I）</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>中 级 口 语（II）</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>高 级 口 语</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="course-panel panel-violet">
+            <h2>Nghe hiểu</h2>
+            <div class="course-list">
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>初 级 听 力（I）</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link" href="lessons.html">
+                <span>
+                  <strong>初 级 听 力（II）</strong>
+                  <small>Luyện nghe · 0 bài đã học</small>
+                </span>
+                <span>›</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>中 级 听 力（I）</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>中 级 听 力（II）</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>高 级 听 力</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="course-panel panel-amber">
+            <h2>Viết</h2>
+            <div class="course-list">
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>初 级写作</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link" href="lessons.html?subject=writing">
+                <span>
+                  <strong>中 级 写 作（I）</strong>
+                  <small>Luyện viết · 0 bài đã học</small>
+                </span>
+                <span>›</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>中级写作（II）</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+              <a class="course-link is-disabled" href="#">
+                <span>
+                  <strong>高 级写作</strong>
+                  <small>0 bài · đang khóa</small>
+                </span>
+                <span>0</span>
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid" aria-label="Thông tin học tập">
+          <article class="info-card">
+            <h3>Tiến độ học tập</h3>
+            <div class="progress-ring">
+              <span>
+                <strong>0%</strong>
+                <small>0 / 0 bài</small>
+              </span>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Công cụ học tập</h3>
+            <div class="disabled-tool-grid">
+              <button class="disabled-tool" disabled>Flashcard</button>
+              <button class="disabled-tool" disabled>Từ vựng</button>
+              <button class="disabled-tool" disabled>AI</button>
+              <button class="disabled-tool" disabled>Ghi chú</button>
+              <button class="disabled-tool" disabled>Luyện nghe</button>
+              <button class="disabled-tool" disabled>HSK</button>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Gợi ý hôm nay</h3>
+            <div class="check-list">
+              <span><b>Học từ mới</b><em>0</em></span>
+              <span><b>Làm bài nghe</b><em>0</em></span>
+              <span><b>Luyện nói</b><em>0</em></span>
+              <span><b>Viết đoạn văn</b><em>0</em></span>
+            </div>
+          </article>
+        </section>
+      </main>
     </div>
-    <div class="pro-modal" id="proModal" hidden>
-      <div class="pro-modal-backdrop" data-close-upgrade></div>
-      <div class="pro-modal-panel" role="dialog" aria-modal="true" aria-labelledby="proModalTitle">
-        <button class="pro-modal-close" type="button" data-close-upgrade>×</button>
-        <div class="pro-modal-hero">
-          <h2 id="proModalTitle">🚀 Nâng Cấp Tài Khoản PRO</h2>
-          <p>Mở khóa toàn bộ bài học · Học không giới hạn</p>
-        </div>
-
-        <div class="pro-modal-body pro-plan-step" id="proPlanStep">
-          <h3><span>1</span> Chọn gói phù hợp với bạn:</h3>
-          <div class="pro-plan-list">
-            <button class="pro-plan" type="button" data-plan="Gói 1 Tháng" data-price="89.000đ" data-content="PRO 1 THANG">
-              <span>
-                <strong>Gói 1 Tháng</strong>
-                <small>300.000đ</small>
-              </span>
-              <span class="pro-price">
-                <b>89.000đ</b>
-                <em>Tiết kiệm ~70%</em>
-              </span>
-            </button>
-
-            <button class="pro-plan" type="button" data-plan="Gói 3 Tháng" data-price="234.000đ" data-content="PRO 3 THANG">
-              <span>
-                <strong>Gói 3 Tháng</strong>
-                <small>900.000đ</small>
-              </span>
-              <span class="pro-price">
-                <b>234.000đ</b>
-                <em>Tiết kiệm ~74%</em>
-              </span>
-            </button>
-
-            <button class="pro-plan" type="button" data-plan="Gói 6 Tháng" data-price="567.000đ" data-content="PRO 6 THANG">
-              <span>
-                <strong>Gói 6 Tháng</strong>
-                <small>1.800.000đ</small>
-              </span>
-              <span class="pro-price">
-                <b>567.000đ</b>
-                <em>Tiết kiệm ~69%</em>
-              </span>
-            </button>
-
-            <button class="pro-plan is-popular is-selected" type="button" data-plan="Gói 12 Tháng" data-price="789.000đ" data-content="PRO 12 THANG">
-              <span class="pro-tag">PHỔ BIẾN NHẤT</span>
-              <span>
-                <strong>Gói 12 Tháng</strong>
-                <small>3.600.000đ</small>
-              </span>
-              <span class="pro-price">
-                <b>789.000đ</b>
-                <em>Tiết kiệm ~78%</em>
-              </span>
-            </button>
-          </div>
-
-          <button class="pro-submit" type="button">Đăng Ký PRO →</button>
-          <p class="pro-note">* Tài khoản được nâng cấp trong 10 phút – 1 ngày. Không hoàn tiền.</p>
-        </div>
-
-        <div class="pro-modal-body pro-transfer-step" id="proTransferStep" hidden>
-          <h3><span>✓</span> Hướng dẫn chuyển khoản:</h3>
-          <div class="transfer-box">
-            <p>💰 Số tiền: <strong id="transferAmount">89.000đ</strong></p>
-            <p>👤 Chủ tài khoản: <b>Trần Đình Khánh</b></p>
-            <p>🏦 STK: <button class="copy-value" type="button" data-copy="1048483852">1048483852</button> <small>(nhấn để copy)</small></p>
-            <p>📝 Nội dung: <button class="copy-value" id="transferContent" type="button" data-copy="Gmail đăng ký của bạn">Gmail đăng ký của bạn</button></p>
-          </div>
-
-          <h3 class="qr-title">📲 Gửi bill xác nhận qua Zalo cho admin:</h3>
-          <div class="qr-box">
-            <figure>
-              <img src="img/zaloimg.png" alt="QR Zalo xác nhận chuyển khoản" />
-              <figcaption>QR Zalo</figcaption>
-            </figure>
-            <figure>
-              <img src="img/qrthanhtoan.png" alt="QR thanh toán" />
-              <figcaption>QR thanh toán</figcaption>
-            </figure>
-            <p>Quét mã QR bằng camera điện thoại<br />để mở Zalo và nhắn bill cho admin</p>
-          </div>
-
-          <button class="transfer-done" type="button">✅ Đã chuyển khoản xong</button>
-          <button class="transfer-back" id="backToPlans" type="button">← Quay lại chọn gói</button>
-        </div>
-      </div>
-    </div>
-    <script>
-      const themeToggleButton = document.getElementById("themeToggleButton");
-      const themeToggleLabel = document.getElementById("themeToggleLabel");
-      const openUpgradeModal = document.getElementById("openUpgradeModal");
-      const proModal = document.getElementById("proModal");
-      const proPlanStep = document.getElementById("proPlanStep");
-      const proTransferStep = document.getElementById("proTransferStep");
-      const proSubmit = document.querySelector(".pro-submit");
-      const transferAmount = document.getElementById("transferAmount");
-      const transferContent = document.getElementById("transferContent");
-      const transferDone = document.querySelector(".transfer-done");
-      const backToPlans = document.getElementById("backToPlans");
-      const savedTheme = localStorage.getItem("menuTheme") || "dark";
-
-      function applyMenuTheme(theme) {
-        const isLight = theme === "light";
-        document.body.classList.toggle("light-theme", isLight);
-        themeToggleButton?.classList.toggle("is-light", isLight);
-        themeToggleButton?.setAttribute("aria-pressed", String(isLight));
-        if (themeToggleLabel) {
-          themeToggleLabel.textContent = isLight ? "☀️ Nền Sáng" : "🌙 Bóng Đêm";
-        }
-        localStorage.setItem("menuTheme", theme);
-      }
-
-      applyMenuTheme(savedTheme);
-
-      themeToggleButton?.addEventListener("click", () => {
-        applyMenuTheme(
-          document.body.classList.contains("light-theme") ? "dark" : "light",
-        );
-      });
-
-      function setUpgradeModal(open) {
-        if (!proModal) return;
-        proModal.hidden = !open;
-        document.body.classList.toggle("modal-open", open);
-        if (open) showPlanStep();
-      }
-
-      function showPlanStep() {
-        if (proPlanStep) proPlanStep.hidden = false;
-        if (proTransferStep) proTransferStep.hidden = true;
-      }
-
-      function showTransferStep(planButton) {
-        const price = planButton.dataset.price || "89.000Ä‘";
-        const content = "Gmail đăng ký của bạn";
-        if (transferAmount) transferAmount.textContent = price;
-        if (transferContent) {
-          transferContent.textContent = content;
-          transferContent.dataset.copy = content;
-        }
-        if (proPlanStep) proPlanStep.hidden = true;
-        if (proTransferStep) proTransferStep.hidden = false;
-      }
-
-      function selectPlan(planButton) {
-        document.querySelectorAll(".pro-plan").forEach((button) => {
-          button.classList.toggle("is-selected", button === planButton);
-        });
-      }
-
-      openUpgradeModal?.addEventListener("click", () => setUpgradeModal(true));
-      proModal?.addEventListener("click", (event) => {
-        if (event.target.closest("[data-close-upgrade]")) {
-          setUpgradeModal(false);
-          return;
-        }
-
-        const planButton = event.target.closest(".pro-plan");
-        if (planButton) {
-          selectPlan(planButton);
-          showTransferStep(planButton);
-          return;
-        }
-
-        const copyButton = event.target.closest(".copy-value");
-        if (copyButton) {
-          navigator.clipboard?.writeText(
-            copyButton.dataset.copy || copyButton.textContent.trim(),
-          );
-        }
-      });
-      proSubmit?.addEventListener("click", () => {
-        const selectedPlan =
-          document.querySelector(".pro-plan.is-selected") ||
-          document.querySelector(".pro-plan.is-popular") ||
-          document.querySelector(".pro-plan");
-        if (selectedPlan) showTransferStep(selectedPlan);
-      });
-      transferDone?.addEventListener("click", () => setUpgradeModal(false));
-      backToPlans?.addEventListener("click", showPlanStep);
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") setUpgradeModal(false);
-      });
-    </script>
+    <script src="js/dashboard.js" defer></script>
   </body>
 </html>

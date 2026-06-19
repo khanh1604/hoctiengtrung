@@ -38,6 +38,25 @@
       </div>
     </div>
 
+    <div class="structure-detail-popover" id="structureDetailPopover" hidden>
+      <button class="structure-detail-backdrop" id="structureDetailBackdrop" type="button" aria-label="Đóng chi tiết cấu trúc"></button>
+      <article class="structure-detail-panel" role="dialog" aria-modal="true" aria-labelledby="structurePopoverTitle">
+        <button class="structure-detail-close" id="structureDetailClose" type="button" aria-label="Đóng">×</button>
+        <div class="structure-popover-heading">
+          <span class="structure-detail-kicker">Cấu trúc</span>
+          <h2 id="structurePopoverTitle"></h2>
+          <p id="structurePopoverPattern"></p>
+          <div class="structure-importance-detail" id="structurePopoverImportance" hidden></div>
+        </div>
+        <div class="structure-popover-info">
+          <div><span>Ý nghĩa</span><strong id="structurePopoverMeaning"></strong></div>
+          <div><span>Cách dùng</span><strong id="structurePopoverUsage"></strong></div>
+        </div>
+        <h3>Ví dụ minh họa</h3>
+        <div class="structure-popover-examples" id="structurePopoverExamples"></div>
+      </article>
+    </div>
+
     <script>
       function getLessonParam() {
         const params = new URLSearchParams(window.location.search);
@@ -74,43 +93,326 @@
       const subjectParam = subject ? `&subject=${subject}` : "";
       const contentParam = content ? `&content=${content}` : "";
       const storagePrefix = `${subject ? `${subject}-` : ""}${content ? `${content}-` : ""}`;
+      const writingLessonNames = [
+        ["我的朋友——李明", "Bạn của tôi — Lý Minh"],
+        ["来到中国", "Đến Trung Quốc"],
+        ["上班族的一天", "Một ngày của dân công sở (người đi làm)"],
+        ["第一印象可靠吗", "Ấn tượng đầu tiên có đáng tin không?"],
+        ["我的故乡", "Quê hương của tôi"],
+        ["我的恋爱史", "Lịch sử tình trường (Chuyện tình yêu) của tôi"],
+        ["搬家", "Chuyển nhà"],
+        ["到底发生了什么事", "Rốt cuộc đã xảy ra chuyện gì?"],
+        ["关于出行方式的调查", "Khảo sát về phương thức di chuyển (đi lại)"],
+        ["愉快的周末", "Cuối tuần vui vẻ"],
+        ["橘子皮的用途", "Công dụng của vỏ quýt"],
+        ["语言学家赵元任", "Nhà ngôn ngữ học Triệu Nguyên Nhiệm"],
+        ["如果我是公司老板", "Nếu tôi là sếp (ông chủ) công ty"],
+        ["一件小事", "Một việc nhỏ (Một câu chuyện nhỏ)"],
+        ["你真是个好孩子", "Con/Cháu đúng là một đứa trẻ ngoan"],
+      ];
       let tests = Array.from({ length: 10 }, (_, i) => ({
         number: i + 1,
         total: subject === "writing" && i + 1 === 2 ? 14 : 32,
         label: `Bài Kiểm Tra ${String(i + 1).padStart(2, "0")}`,
       }));
 
-      const listeningSectionGroups = {
-        "1": ["1-4", "1-5-1", "1-5-2", "1-6-1", "1-6-2", "2-4", "2-5-1", "2-5-2", "2-6-1", "2-6-2"],
-        "2": ["2-4", "2-5-1", "2-5-2", "2-6-1", "2-6-2"],
-        "3": ["3-4", "3-5-1", "3-5-2", "3-6-1", "3-6-2", "4-4", "4-5-1", "4-5-2", "4-6-1", "4-6-2"],
-        "4": ["4-4", "4-5-1", "4-5-2", "4-6-1", "4-6-2"],
-        "5": ["5-4", "5-5-1", "5-5-2", "5-6-1", "5-6-2", "6-4", "6-5-1", "6-5-2", "6-6-1", "6-6-2"],
-        "6": ["6-4", "6-5-1", "6-5-2", "6-6-1", "6-6-2"],
-        "7": ["7-4", "7-5-1", "7-5-2", "7-6-1", "7-6-2", "8-4", "8-5-1", "8-5-2", "8-6-1", "8-6-2"],
-        "8": ["8-4", "8-5-1", "8-5-2", "8-6-1", "8-6-2"],
-        "9": ["9-4", "9-5-1", "9-5-2", "9-6-1", "9-6-2", "10-4", "10-5-1", "10-5-2", "10-6-1", "10-6-2"],
-        "10": ["10-4", "10-5-1", "10-5-2", "10-6-1", "10-6-2"],
-        "11": ["11-4", "11-5-1", "11-5-2", "11-6-1", "11-6-2", "12-4", "12-5-1", "12-5-2", "12-6-1", "12-6-2"],
-        "12": ["12-4", "12-5-1", "12-5-2", "12-6-1", "12-6-2"],
-        "13": ["13-4", "13-5-1", "13-5-2", "13-6-1", "13-6-2", "14-4", "14-5-1", "14-5-2", "14-6-1", "14-6-2"],
-        "14": ["14-4", "14-5-1", "14-5-2", "14-6-1", "14-6-2"],
-        "15": ["15-4", "15-5-1", "15-5-2", "15-6-1", "15-6-2", "16-4", "16-5-1", "16-5-2", "16-6-1", "16-6-2"],
-        "16": ["16-4", "16-5-1", "16-5-2", "16-6-1", "16-6-2"],
-        "17": ["17-4", "17-5-1", "17-5-2", "17-6-1", "17-6-2", "18-4", "18-5-1", "18-5-2", "18-6-1", "18-6-2"],
-        "18": ["18-4", "18-5-1", "18-5-2", "18-6-1", "18-6-2"],
-        "19": ["19-4", "19-5-1", "19-5-2", "19-6-1", "19-6-2", "20-4", "20-5-1", "20-5-2", "20-6-1", "20-6-2"],
-        "20": ["20-4", "20-5-1", "20-5-2", "20-6-1", "20-6-2"],
-        "21": ["21-4", "21-5-1", "21-5-2", "21-6-1", "21-6-2", "22-4", "22-5-1", "22-5-2", "22-6-1", "22-6-2"],
-        "22": ["22-4", "22-5-1", "22-5-2", "22-6-1", "22-6-2"],
-        "23": ["23-4", "23-4-1", "23-4-2", "23-5-1", "23-5-2", "24-4", "24-5-1", "24-5-2", "24-6-1", "24-6-2"],
-        "24": ["24-4", "24-5-1", "24-5-2", "24-6-1", "24-6-2"],
-      };
+      function getWritingLessonName() {
+        return writingLessonNames[Number(lesson) - 1] || null;
+      }
+
+      function replaceKnownMojibake(value) {
+        return String(value)
+          .replaceAll("\u00e2\u2020\u0090", "←")
+          .replaceAll("\u00e2\u2020\u0092", "→")
+          .replaceAll("\u00e2\u20ac\u00ba", "›")
+          .replaceAll("\u00e2\u2013\u00a3", "▣")
+          .replaceAll("\u00e2\u2014\u017d", "◎")
+          .replaceAll("\u00e2\u0161\u00a1", "⚡")
+          .replaceAll("\u00e2\u0152\u201a", "⌂")
+          .replaceAll("\u00f0\u0178\u017d\u2122", "🎙")
+          .replaceAll("\u00f0\u0178\u201c\u2013", "📖")
+          .replaceAll("\u00f0\u0178\u017d\u00a7", "🎧")
+          .replaceAll("\u00e2\u0153\u008d\u00ef\u00b8\u008f", "✍️");
+      }
+
+      function decodeMojibakeOnce(value) {
+        const windows1252Bytes = {
+          "€": 0x80,
+          "‚": 0x82,
+          "ƒ": 0x83,
+          "„": 0x84,
+          "…": 0x85,
+          "†": 0x86,
+          "‡": 0x87,
+          "ˆ": 0x88,
+          "‰": 0x89,
+          "Š": 0x8a,
+          "‹": 0x8b,
+          "Œ": 0x8c,
+          "Ž": 0x8e,
+          "‘": 0x91,
+          "’": 0x92,
+          "“": 0x93,
+          "”": 0x94,
+          "•": 0x95,
+          "–": 0x96,
+          "—": 0x97,
+          "˜": 0x98,
+          "™": 0x99,
+          "š": 0x9a,
+          "›": 0x9b,
+          "œ": 0x9c,
+          "ž": 0x9e,
+          "Ÿ": 0x9f,
+        };
+
+        try {
+          const bytes = Uint8Array.from(Array.from(value), (char) => {
+            if (windows1252Bytes[char] !== undefined) return windows1252Bytes[char];
+            const code = char.charCodeAt(0);
+            return code <= 255 ? code : code & 255;
+          });
+          const decoded = new TextDecoder("utf-8").decode(bytes);
+          return decoded.includes("\uFFFD") ? value : decoded;
+        } catch (error) {
+          return value;
+        }
+      }
+
+      function fixMojibakeText(text) {
+        let value = replaceKnownMojibake(text ?? "");
+        const mojibakePattern = /(\u00c3|\u00c2|\u00c4|\u00c6|\u00e2|\u00f0\u0178|\u00e5|\u00e7|\u00ef\u00bc|\u00e1[\u00ba\u00bb]|\u00e8[\u00af-\u00bf])/;
+        if (!mojibakePattern.test(value)) return value;
+
+        for (let i = 0; i < 3; i += 1) {
+          const decoded = replaceKnownMojibake(decodeMojibakeOnce(value));
+          if (!decoded || decoded === value) break;
+          value = decoded;
+          if (!mojibakePattern.test(value)) break;
+        }
+
+        if (mojibakePattern.test(value)) {
+          value = value
+            .split(/(\s+)/)
+            .map((token) => {
+              if (!mojibakePattern.test(token)) return token;
+
+              let fixedToken = token;
+              for (let i = 0; i < 3; i += 1) {
+                const decoded = replaceKnownMojibake(decodeMojibakeOnce(fixedToken));
+                if (!decoded || decoded === fixedToken) break;
+                fixedToken = decoded;
+                if (!mojibakePattern.test(fixedToken)) break;
+              }
+              return fixedToken;
+            })
+            .join("");
+        }
+
+        return replaceKnownMojibake(value);
+      }
+
+      function fixMojibakeIn(root = document.body) {
+        if (!root) return;
+        document.title = fixMojibakeText(document.title);
+
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+        const textNodes = [];
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+        textNodes.forEach((node) => {
+          const fixed = fixMojibakeText(node.nodeValue);
+          if (fixed !== node.nodeValue) node.nodeValue = fixed;
+        });
+
+        if (!root.querySelectorAll) return;
+        root.querySelectorAll("[placeholder],[aria-label],[title]").forEach((element) => {
+          ["placeholder", "aria-label", "title"].forEach((attr) => {
+            if (!element.hasAttribute(attr)) return;
+            const current = element.getAttribute(attr);
+            const fixed = fixMojibakeText(current);
+            if (fixed !== current) element.setAttribute(attr, fixed);
+          });
+        });
+      }
+
+      function installMojibakeFixer() {
+        const root = document.body;
+        if (!root || root.dataset.mojibakeFixerInstalled === "true") return;
+        root.dataset.mojibakeFixerInstalled = "true";
+
+        let scheduled = false;
+        const observer = new MutationObserver(() => {
+          if (scheduled) return;
+          scheduled = true;
+          requestAnimationFrame(() => {
+            fixMojibakeIn(root);
+            scheduled = false;
+          });
+        });
+
+        observer.observe(root, {
+          attributes: true,
+          childList: true,
+          characterData: true,
+          subtree: true,
+        });
+        fixMojibakeIn(root);
+      }
+
+      function getReviewSubjectInfo() {
+        if (subject === "speaking") {
+          return {
+            label: "Khẩu ngữ",
+            course: "初级口语（II）",
+            icon: "🎙",
+            total: 12,
+            desc: "luyện nói giao tiếp",
+            listHref: "lessons.html?subject=speaking",
+          };
+        }
+        if (subject === "writing") {
+          return {
+            label: "Viết",
+            course: "中级写作（I）",
+            icon: "✍️",
+            total: 15,
+            desc: "luyện viết",
+            listHref: "lessons.html?subject=writing",
+          };
+        }
+        if (subject === "hanyu3") {
+          return {
+            label: "Giáo trình Hán Ngữ",
+            course: "Hán Ngữ Quyển 3",
+            icon: "📖",
+            total: 10,
+            desc: "đọc hiểu và ngữ pháp",
+            listHref: "lessons.html?subject=hanyu3",
+          };
+        }
+        return {
+          label: "Nghe hiểu",
+          course: "初级听力（II）",
+          icon: "🎧",
+          total: 12,
+          desc: "luyện nghe hiểu",
+          listHref: "lessons.html?subject=listening",
+        };
+      }
+
+      function applyReviewDashboardLayout() {
+        const info = getReviewSubjectInfo();
+        const padLesson = String(Number(lesson)).padStart(2, "0");
+
+        document.body.classList.add("speaking-review-list-page");
+        document.querySelector(".review-container").innerHTML = `
+          <aside class="speaking-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <nav class="speaking-nav" aria-label="Điều hướng danh sách bài">
+              <a href="index.html">⌂ Trang chủ</a>
+              <a class="is-active" href="${info.listHref}">▣ Học tập</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thử HSK</button>
+              <button disabled>AI hội thoại</button>
+              <button disabled>Từ vựng</button>
+              <button disabled>Thống kê</button>
+            </nav>
+          </aside>
+
+          <main class="speaking-main">
+            <div class="speaking-breadcrumb">
+              <a href="lesson-options.html?lesson=${padLesson}${subjectParam}">← Bài ${padLesson}</a>
+              <span>›</span>
+              <span>${info.label}</span>
+              <span>›</span>
+              <strong id="reviewBreadcrumbTitle">Danh sách bài</strong>
+            </div>
+
+            <section class="speaking-layout">
+              <div class="speaking-primary">
+                <header class="speaking-hero speaking-option-hero">
+                  <div class="speaking-hero-art" aria-hidden="true">${info.icon}</div>
+                  <div class="speaking-hero-copy">
+                    <span class="speaking-lesson-badge">Bài ${padLesson}</span>
+                    <h1 id="reviewTitle">Bài ${padLesson} - Ôn tập</h1>
+                    <p id="reviewSubtitle">Chọn bài để học</p>
+                    <div class="speaking-option-meta">
+                      <span>▣ danh sách bài</span>
+                      <span>◎ ${info.desc}</span>
+                    </div>
+                    <div class="speaking-zero-progress" aria-hidden="true">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="speaking-hero-stats">
+                    <strong>0%</strong><span>tiến độ</span>
+                  </div>
+                </header>
+
+                <button class="back-btn-review modern-back-btn" onclick="goBackToLessonOptions()">
+                  ← Quay lại
+                </button>
+
+                <div class="review-grid speaking-review-grid" id="reviewGrid"></div>
+              </div>
+
+              <aside class="speaking-aside">
+                <article class="speaking-side-card">
+                  <h2>Tiến độ khóa học</h2>
+                  <div class="speaking-ring"><strong>0%</strong></div>
+                  <p>Đã học 0/${info.total} bài</p>
+                  <ul>
+                    <li><span></span>0 bài đã hoàn thành</li>
+                    <li><span></span>${info.total} bài chưa học</li>
+                  </ul>
+                </article>
+
+                <article class="speaking-side-card">
+                  <h2>Gợi ý học hôm nay</h2>
+                  <button type="button" disabled>Tiếp tục bài ${padLesson} <small>0%</small></button>
+                  <button type="button" disabled>Ôn tập bài học <small>0 mục</small></button>
+                  <button type="button" disabled>Luyện tập <small>0</small></button>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
+        fixMojibakeIn(document.querySelector(".review-container"));
+      }
+
+      installMojibakeFixer();
+      applyReviewDashboardLayout();
+
+      function setReviewHeader(title, subtitle = "Chọn bài để bắt đầu") {
+        const titleEl = document.getElementById("reviewTitle");
+        const subtitleEl = document.getElementById("reviewSubtitle") || document.querySelector(".review-subtitle");
+        const breadcrumbTitle = document.getElementById("reviewBreadcrumbTitle");
+
+        if (titleEl) titleEl.textContent = title;
+        if (subtitleEl) subtitleEl.textContent = subtitle;
+        if (breadcrumbTitle) breadcrumbTitle.textContent = title;
+        fixMojibakeIn(document.querySelector(".review-container"));
+      }
+
+      const listeningSectionOrder = ["4", "4-1", "4-2", "5-1", "5-2", "6-1", "6-2"];
 
       function getWritingGrammarItems(data) {
         const lessonKey = String(Number(lesson));
         const grammar = data.grammar || data.grammarTests || {};
-        return grammar[lesson] || grammar[lessonKey] || [];
+        const items = grammar[lesson] || grammar[lessonKey] || [];
+        return Array.isArray(items)
+          ? items.filter((item) => item && !item.partOfSpeech)
+          : [];
+      }
+
+      function getWritingStructureItems(data) {
+        const lessonKey = String(Number(lesson));
+        const structure = data.structure || data.structureTests || {};
+        const items = structure[lesson] || structure[lessonKey] || [];
+        if (Array.isArray(items) && items.length) return items;
+
+        return getWritingGrammarItems(data);
       }
 
       function getWritingExampleItems(data) {
@@ -120,15 +422,178 @@
       }
 
       function splitWritingItemsIntoTests(items) {
-        return Array.isArray(items)
-          ? Array.isArray(items[0])
-            ? items
-            : Array.from({ length: 4 }, (_, idx) =>
-                items.slice(idx * 20, (idx + 1) * 20),
-              )
-          : Object.keys(items || {})
+        if (Array.isArray(items)) {
+          if (Array.isArray(items[0])) return items;
+          const groupSize = 20;
+          return Array.from({ length: Math.ceil(items.length / groupSize) }, (_, idx) =>
+            items.slice(idx * groupSize, (idx + 1) * groupSize),
+          );
+        }
+
+        return Object.keys(items || {})
               .sort((a, b) => Number(a) - Number(b))
               .map((key) => items[key]);
+      }
+
+      function splitWritingExamplesIntoReadings(items) {
+        if (!Array.isArray(items)) {
+          return Object.keys(items || {})
+            .sort((a, b) => Number(a) - Number(b))
+            .map((key) => items[key]);
+        }
+        if (Array.isArray(items[0])) return items;
+        if (!items.length) return [];
+
+        const readingCount = 9;
+        const groupSize = Math.ceil(items.length / readingCount);
+        return Array.from({ length: readingCount }, (_, idx) =>
+          items.slice(idx * groupSize, (idx + 1) * groupSize),
+        ).filter((group) => group.length);
+      }
+
+      let writingReferenceGroups = [];
+      let writingReferenceWords = [];
+
+      function getWritingReferenceTitle(group, index) {
+        const first = Array.isArray(group) ? group[0] : null;
+        return first?.title || first?.heading || `Bài đọc hiểu ${String(index + 1).padStart(2, "0")}`;
+      }
+
+      function getWritingReferenceText(group, key) {
+        return (Array.isArray(group) ? group : [])
+          .map((item) => item?.[key])
+          .filter(Boolean)
+          .join("\n");
+      }
+
+      function renderWritingReferenceReader(testNumber = 1) {
+        const index = Math.max(0, Number(testNumber) - 1);
+        const group = writingReferenceGroups[index] || [];
+        const currentTitle = getWritingReferenceTitle(group, index);
+        const chineseText = getWritingReferenceText(group, "chinese");
+        const pinyinText = getWritingReferenceText(group, "pinyin");
+        const vietnameseText = getWritingReferenceText(group, "vietnamese");
+        const learnedCount = Number(localStorage.getItem(`writingReferenceRead-${lesson}`) || 0);
+        const noteKey = `writingReferenceNote-${lesson}-${testNumber}`;
+        const noteValue = localStorage.getItem(noteKey) || "";
+        const writingWords = writingReferenceWords.slice(0, 8);
+
+        setReviewHeader("Tham khảo đoạn văn", "9 bài văn mẫu - chữ Hán - pinyin - nghĩa Việt");
+        const grid = document.getElementById("reviewGrid");
+        grid.className = "writing-reference-reader";
+        grid.innerHTML = `
+          <aside class="writing-reference-list">
+            ${writingReferenceGroups
+              .map((itemGroup, idx) => {
+                const itemTitle = getWritingReferenceTitle(itemGroup, idx);
+                const read = localStorage.getItem(`writingReferenceRead-${lesson}-${idx + 1}`) === "1";
+                return `
+                  <button class="writing-reference-item ${idx === index ? "is-active" : ""}" type="button" data-index="${idx}">
+                    <span>${String(idx + 1).padStart(2, "0")}</span>
+                    <strong>${escapeHtml(itemTitle)}</strong>
+                    <em>${read ? "đã đọc" : "mới"}</em>
+                  </button>
+                `;
+              })
+              .join("")}
+          </aside>
+          <section class="writing-reference-main">
+            <div class="writing-reference-hero">
+              <div>
+                <span>Tham khảo đoạn văn</span>
+                <h2>${escapeHtml(currentTitle)}</h2>
+                <p>${escapeHtml(getWritingLessonName()?.[0] || "中级写作（I）")}</p>
+              </div>
+              <div class="writing-reference-stats">
+                <strong>${writingReferenceGroups.length || 9}</strong><small>bài</small>
+                <strong>${Math.max(learnedCount, 0)}</strong><small>đã đọc</small>
+              </div>
+            </div>
+            <article class="writing-reference-card">
+              <div class="writing-reference-toolbar">
+                <button class="writing-reference-play" type="button">▶</button>
+                <button class="writing-reference-mark" type="button">Lưu bài</button>
+                <label><input id="toggleReferencePinyin" type="checkbox" checked /> Hiện pinyin</label>
+                <label><input id="toggleReferenceMeaning" type="checkbox" checked /> Hiện nghĩa Việt</label>
+              </div>
+              <section>
+                <h3>Bài văn</h3>
+                <div class="writing-reference-chinese">${renderReadingText(chineseText || "Chưa có dữ liệu bài văn.")}</div>
+              </section>
+              <section class="writing-reference-pinyin">
+                <h3>Pinyin</h3>
+                <div>${renderReadingText(pinyinText || "Đang bổ sung.")}</div>
+              </section>
+              <section class="writing-reference-meaning">
+                <h3>Nghĩa Việt</h3>
+                <div>${renderReadingText(vietnameseText || "Đang bổ sung.")}</div>
+              </section>
+            </article>
+          </section>
+          <aside class="writing-reference-side">
+            <article>
+              <div class="writing-reference-side-head">
+                <h3>Ghi chú của tôi</h3>
+                <button class="writing-reference-save-note" type="button">Lưu</button>
+              </div>
+              <textarea id="writingReferenceNote" placeholder="Ghi lại mẫu câu hay, từ mới, ý cần nhớ...">${escapeHtml(noteValue)}</textarea>
+            </article>
+            <article>
+              <div class="writing-reference-side-head">
+                <h3>Từ mới trong bài</h3>
+              </div>
+              <ol class="writing-reference-words">
+                ${
+                  writingWords.length
+                    ? writingWords
+                        .map(
+                          (word) => `
+                            <li>
+                              <strong>${escapeHtml(word.chinese)}</strong>
+                              <span>${escapeHtml(word.pinyin || "")}</span>
+                              <small>${escapeHtml(word.vietnamese || word.meaning || "")}</small>
+                            </li>
+                          `,
+                        )
+                        .join("")
+                    : "<li><small>Chưa có danh sách từ mới riêng.</small></li>"
+                }
+              </ol>
+            </article>
+            <article>
+              <div class="writing-reference-side-head">
+                <h3>Mẹo ghi nhớ</h3>
+              </div>
+              <ul class="writing-reference-tips">
+                <li>Đọc chữ Hán trước, sau đó bật pinyin để kiểm tra.</li>
+                <li>Gạch ý chính theo từng đoạn trước khi học thuộc.</li>
+                <li>Ghi lại 2-3 câu có thể dùng lại khi viết.</li>
+              </ul>
+            </article>
+          </aside>
+        `;
+
+        grid.querySelectorAll(".writing-reference-item").forEach((button) => {
+          button.addEventListener("click", () => renderWritingReferenceReader(Number(button.dataset.index) + 1));
+        });
+        grid.querySelector(".writing-reference-play")?.addEventListener("click", () => speakChinese(chineseText));
+        grid.querySelector(".writing-reference-mark")?.addEventListener("click", () => {
+          localStorage.setItem(`writingReferenceRead-${lesson}-${testNumber}`, "1");
+          const totalRead = writingReferenceGroups.filter((_, idx) =>
+            localStorage.getItem(`writingReferenceRead-${lesson}-${idx + 1}`) === "1",
+          ).length;
+          localStorage.setItem(`writingReferenceRead-${lesson}`, String(totalRead));
+          renderWritingReferenceReader(testNumber);
+        });
+        grid.querySelector(".writing-reference-save-note")?.addEventListener("click", () => {
+          localStorage.setItem(noteKey, document.getElementById("writingReferenceNote")?.value || "");
+        });
+        grid.querySelector("#toggleReferencePinyin")?.addEventListener("change", (event) => {
+          grid.querySelector(".writing-reference-pinyin").hidden = !event.target.checked;
+        });
+        grid.querySelector("#toggleReferenceMeaning")?.addEventListener("change", (event) => {
+          grid.querySelector(".writing-reference-meaning").hidden = !event.target.checked;
+        });
       }
 
       function parseTabSeparatedVocabulary(text) {
@@ -150,6 +615,15 @@
         const groups = [];
         for (let i = 0; i < items.length; i += groupSize) {
           groups.push(items.slice(i, i + groupSize));
+        }
+        return groups;
+      }
+
+      function splitIntoParts(items, partCount) {
+        const groups = [];
+        const size = Math.ceil((items || []).length / partCount);
+        for (let i = 0; i < partCount; i++) {
+          groups.push((items || []).slice(i * size, (i + 1) * size));
         }
         return groups;
       }
@@ -185,10 +659,182 @@
         const items = data.paragraph || [];
         if (!Array.isArray(items) || !items.length) return [];
         if (Array.isArray(items[0])) return items;
+        if (items[0] && (Array.isArray(items[0].lines) || items[0].title || items[0].type)) return items;
+        if (subject === "hanyu3") return splitIntoParts(items, 3);
         return [items];
       }
 
+      function isReadingPassage(group) {
+        if (group && !Array.isArray(group) && group.type) {
+          return group.type === "reading";
+        }
+        return Boolean(
+            group &&
+            !Array.isArray(group) &&
+            !Array.isArray(group.value) &&
+            (Array.isArray(group.lines) || group.chinese),
+        );
+      }
+
+      function getParagraphGroupLines(group) {
+        if (Array.isArray(group)) return group;
+        if (group && Array.isArray(group.value)) return group.value;
+        if (group && Array.isArray(group.lines)) return group.lines;
+        return [];
+      }
+
+      function getParagraphGroupTotal(group) {
+        if (isReadingPassage(group)) {
+          return Array.isArray(group.lines) ? group.lines.length : 1;
+        }
+        return getParagraphGroupLines(group).length;
+      }
+
+      function getParagraphGroupTitle(group, idx) {
+        const fallback = `Ôn tập bài khóa ${String(idx + 1).padStart(2, "0")}`;
+        if (!group || Array.isArray(group)) return fallback;
+        return group.title || group.name || group.heading || fallback;
+      }
+
+      function renderReadingText(text) {
+        return String(text || "")
+          .split(/\n+/)
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .map((line) => `<p>${escapeHtml(line)}</p>`)
+          .join("");
+      }
+
+      function getReadingPassageText(group, field) {
+        if (Array.isArray(group.lines)) {
+          return group.lines.map((line) => line[field]).filter(Boolean).join("\n");
+        }
+        return group[field] || "";
+      }
+
+      async function renderReadingPassage(testNumber) {
+        const data = await loadSpeakingLessonData();
+        const group = getSpeakingParagraphGroups(data)[Number(testNumber) - 1];
+        if (!isReadingPassage(group)) return;
+
+        const grid = document.getElementById("reviewGrid");
+        grid.className = "reading-detail-wrap";
+        grid.innerHTML = `
+          <button class="structure-back-btn reading-back-btn" type="button">← Danh sách bài khóa</button>
+          <article class="reading-detail-card">
+            <h2>${escapeHtml(group.title || `${testNumber}. Đoạn văn ${testNumber}`)}</h2>
+            <section class="reading-section">
+              <h3>Tiếng Trung:</h3>
+              <div class="reading-section-body reading-chinese">
+                ${renderReadingText(getReadingPassageText(group, "chinese"))}
+              </div>
+            </section>
+            <section class="reading-section">
+              <h3>Phiên âm:</h3>
+              <div class="reading-section-body">
+                ${renderReadingText(getReadingPassageText(group, "pinyin"))}
+              </div>
+            </section>
+            <section class="reading-section">
+              <h3>Nghĩa:</h3>
+              <div class="reading-section-body">
+                ${renderReadingText(getReadingPassageText(group, "vietnamese"))}
+              </div>
+            </section>
+          </article>
+        `;
+        grid.querySelector(".reading-back-btn").onclick = async () => {
+          await loadSpeakingParagraphTests();
+          renderReview();
+        };
+      }
+
       let speakingWordItems = [];
+
+      function getWordText(item) {
+        return item.chinese || item.word || item.title || "";
+      }
+
+      function getWordHanViet(item) {
+        return (
+          item.hanViet ||
+          item.hanviet ||
+          item.sinoVietnamese ||
+          item.sinoVietnameseReading ||
+          item.han_viet ||
+          "Đang bổ sung"
+        );
+      }
+
+      function buildGeneratedWordExamples(item) {
+        const word = getWordText(item);
+        const meaning = item.vietnamese || item.meaning || "từ này";
+        const pos = String(item.partOfSpeech || "").toLowerCase();
+        if (!word) return [];
+
+        if (pos.includes("v")) {
+          return [
+            {
+              chinese: `我想${word}。`,
+              pinyin: "",
+              vietnamese: `Tôi muốn ${meaning}.`,
+            },
+            {
+              chinese: `老师让我们${word}。`,
+              pinyin: "",
+              vietnamese: `Giáo viên bảo chúng tôi ${meaning}.`,
+            },
+          ];
+        }
+
+        if (pos.includes("adj")) {
+          return [
+            {
+              chinese: `这里很${word}。`,
+              pinyin: "",
+              vietnamese: `Ở đây rất ${meaning}.`,
+            },
+            {
+              chinese: `我觉得这个很${word}。`,
+              pinyin: "",
+              vietnamese: `Tôi thấy cái này rất ${meaning}.`,
+            },
+          ];
+        }
+
+        if (pos.includes("adv")) {
+          return [
+            {
+              chinese: `他${word}来了。`,
+              pinyin: "",
+              vietnamese: `Anh ấy ${meaning} đến rồi.`,
+            },
+            {
+              chinese: `我${word}知道了。`,
+              pinyin: "",
+              vietnamese: `Tôi ${meaning} biết rồi.`,
+            },
+          ];
+        }
+
+        return [
+          {
+            chinese: `这是${word}。`,
+            pinyin: "",
+            vietnamese: `Đây là ${meaning}.`,
+          },
+          {
+            chinese: `我学习“${word}”这个词。`,
+            pinyin: "",
+            vietnamese: `Tôi học từ “${meaning}”.`,
+          },
+        ];
+      }
+
+      function getWordExamples(item) {
+        const examples = Array.isArray(item.examples) ? item.examples : [];
+        return examples.length ? examples.slice(0, 2) : buildGeneratedWordExamples(item).slice(0, 2);
+      }
 
       function renderSpeakingWordList() {
         const grid = document.getElementById("reviewGrid");
@@ -211,7 +857,7 @@
             ${item.vietnamese ? `<span class="structure-list-meaning">${escapeHtml(item.vietnamese)}</span>` : ""}
             <span class="structure-list-sound" aria-hidden="true">🔊</span>
           `;
-          card.onclick = () => speakChinese(item.chinese || item.word);
+          card.onclick = () => renderSpeakingStructureDetail(item, renderSpeakingWordList);
           card.querySelector(".structure-list-sound").onclick = (event) => {
             event.stopPropagation();
             speakChinese(item.chinese || item.word);
@@ -223,7 +869,7 @@
       async function loadSpeakingWordCards() {
         let data;
         const lessonNum = String(Number(lesson));
-        if (lessonNum === "4") {
+        if (false) {
           const res = await fetch(`data/speaking-lesson-4.json?v=${Date.now()}`);
           if (res.ok) {
             data = await res.json();
@@ -234,36 +880,51 @@
           data = await loadSpeakingLessonData();
         }
         speakingWordItems = getSpeakingWordItems(data);
-        document.getElementById("reviewTitle").textContent =
-          `Bài ${String(Number(lesson))} - Từ mới`;
-        document.querySelector(".review-subtitle").textContent =
-          "Chọn từ để nghe phát âm";
+        setReviewHeader(
+          `Bài ${String(Number(lesson))} - Từ mới`,
+          "Chọn từ để nghe phát âm",
+        );
         renderSpeakingWordList();
       }
 
-      function renderSpeakingStructureDetail(item) {
+      function renderSpeakingStructureDetail(item, backRenderer = renderSpeakingStructureList) {
         const grid = document.getElementById("reviewGrid");
+        const isWordItem = Boolean(item.partOfSpeech);
         const firstExample = item.examples?.[0] || {};
-        const exampleChinese = item.chinese || firstExample.chinese || "";
+        const wordExamples = isWordItem ? getWordExamples(item) : [];
+        const exampleChinese = item.chinese || item.word || firstExample.chinese || "";
         const examplePinyin = item.pinyin || firstExample.pinyin || "";
-        const exampleVietnamese = item.vietnamese || firstExample.vietnamese || "";
-        const examples = item.examples?.length
+        const exampleVietnamese = item.vietnamese || item.meaning || firstExample.vietnamese || "";
+        const examples = isWordItem
+          ? wordExamples
+          : item.examples?.length
           ? item.examples
           : [{ chinese: exampleChinese, pinyin: examplePinyin, vietnamese: exampleVietnamese }];
+        const hanViet = isWordItem ? getWordHanViet(item) : "";
 
         grid.className = "structure-detail-wrap";
         grid.innerHTML = `
-          <button class="structure-back-btn" type="button">← Danh sách cấu trúc</button>
+          <button class="structure-back-btn" type="button">← Danh sách</button>
           <article class="structure-detail-card">
-            <div class="structure-detail-kicker">CẤU TRÚC</div>
+            <div class="structure-detail-kicker">${isWordItem ? "TỪ MỚI" : "CẤU TRÚC"}</div>
             <div class="structure-detail-title-row">
-              <h2>${escapeHtml(item.title || item.pattern || item.chinese)}</h2>
-              <button class="structure-sound-btn" type="button" aria-label="Nghe cấu trúc">🔊</button>
+              <h2>${escapeHtml(item.title || item.pattern || getWordText(item))}</h2>
+              <button class="structure-sound-btn" type="button" aria-label="Nghe">🔊</button>
             </div>
             ${item.pattern ? `<div class="structure-detail-pattern">${escapeHtml(item.pattern)}</div>` : ""}
+            ${isWordItem && item.pinyin ? `<div class="structure-detail-pattern">${escapeHtml(item.pinyin)}${item.partOfSpeech ? ` [ ${escapeHtml(item.partOfSpeech)} ]` : ""}</div>` : ""}
+            ${
+              isWordItem
+                ? `<div class="word-detail-info-grid">
+                    <div><span>Nghĩa</span><strong>${escapeHtml(exampleVietnamese)}</strong></div>
+                    <div><span>Hán Việt</span><strong>${escapeHtml(hanViet)}</strong></div>
+                    <div><span>Từ loại</span><strong>${escapeHtml(item.partOfSpeech || "Đang bổ sung")}</strong></div>
+                  </div>`
+                : ""
+            }
             ${item.meaning ? `<p class="structure-detail-meaning"><strong>${escapeHtml(item.meaning)}</strong></p>` : ""}
             ${item.usage ? `<p class="structure-detail-usage">${escapeHtml(item.usage)}</p>` : ""}
-            <div class="structure-detail-example-title">Ví dụ</div>
+            <div class="structure-detail-example-title">${isWordItem ? "Ví dụ minh họa" : "Ví dụ"}</div>
             <div class="structure-detail-examples">
               ${examples
                 .filter((example) => example.chinese || example.pinyin || example.vietnamese)
@@ -278,19 +939,879 @@
                 )
                 .join("")}
             </div>
-            ${exampleVietnamese ? `<div class="structure-detail-task">${escapeHtml(exampleVietnamese)}</div>` : ""}
           </article>
         `;
 
-        grid.querySelector(".structure-back-btn").onclick = () => renderSpeakingStructureList();
+        grid.querySelector(".structure-back-btn").onclick = () => backRenderer();
         grid.querySelector(".structure-sound-btn").onclick = () => speakChinese(exampleChinese || item.pattern);
       }
 
-      let speakingStructureItems = [];
+      function getStructureExamples(item) {
+        const examples = Array.isArray(item.examples) ? item.examples : [];
+        if (examples.length) return examples.slice(0, 2);
 
-      function renderSpeakingStructureList() {
+        const text = item.pattern || item.structure || item.title || item.chinese || "";
+        const example = item.example || item.exampleChinese || item.chinese || "";
+        const pinyin = item.examplePinyin || item.pinyin || "";
+        const vietnamese = item.exampleVietnamese || item.translation || item.vietnamese || item.meaning || "";
+        if (example && example !== text) {
+          return [{ chinese: example, pinyin, vietnamese }];
+        }
+
+        return [
+          {
+            chinese: text || "请看这个结构。",
+            pinyin: pinyin || "",
+            vietnamese: vietnamese || "Hãy xem cấu trúc này.",
+          },
+        ];
+      }
+
+      function normalizeStructureKey(value) {
+        return String(value || "")
+          .toLowerCase()
+          .replace(/[（）()，,.\s]/g, "")
+          .replace(/độngtừ|v\/adj|địađiểm|người|sựviệc|tínhtừ|ai|mụcđích/g, "")
+          .replace(/\.\.\./g, "");
+      }
+
+      function getStructureImportance(item) {
+        const candidates = [item.title, item.pattern, item.structure, item.formula, item.chinese]
+          .filter(Boolean)
+          .map((value) => normalizeStructureKey(value));
+        const text = normalizeStructureKey(
+          [item.title, item.pattern, item.structure, item.formula, item.chinese].filter(Boolean).join(" "),
+        );
+        const hanyu3RulesByLesson = {
+          1: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Câu hỏi lựa chọn: A hay B", exact: "A 还是 B" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Đưa ra lựa chọn sau khi suy nghĩ: thôi thì...", exact: "还是 + Động từ + 吧" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Đối với..., dùng nhiều trong viết và nói", exact: "对于……" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Cấu trúc so sánh cơ bản nhất", exact: "A 比 B + Adj" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Hơn một chút", exact: "A 比 B + Adj + 一点儿/一些" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Hơn rất nhiều", exact: "A 比 B + Adj + 得多/多了" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Không bằng...", exact: "B 没有 A + Adj" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "So sánh mức độ làm việc gì, nên học kỹ", exact: "A 比 B + Verb + 得 + Adj" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Biến thể quan trọng của mẫu trên, học sau mẫu A 比 B + V + 得 + Adj", exact: "A + Verb + 得 + 比 B + Adj" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Càng hơn / hơn nữa", exact: "更 + Adj" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Nhất", exact: "最 + Adj" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Hơn bao nhiêu", exact: "A 比 B + Adj + 数量补语" },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Nghĩa vẫn, hoặc dùng để chọn", exact: "还是 + V/Adj/N" },
+            { order: 14, level: 2, label: "Quan trọng", reason: "A không bằng B như vậy", exact: "A 没有 B（这么/那么）+ Adj" },
+            { order: 15, level: 2, label: "Quan trọng", reason: "A bằng B như vậy", exact: "A 有 B（这么/那么）+ Adj" },
+            { order: 16, level: 2, label: "Quan trọng", reason: "Không hẳn hơn B", exact: "A 不比 B + Adj" },
+            { order: 17, level: 2, label: "Quan trọng", reason: "Thật là...", exact: "真 + Adj" },
+            { order: 18, level: 2, label: "Quan trọng", reason: "Thật là... quá", exact: "好 + Adj + 啊" },
+            { order: 19, level: 2, label: "Quan trọng", reason: "Biết bao / thật là...", exact: "多 + Adj + 啊" },
+            { order: 20, level: 1, label: "Quan trọng vừa", reason: "Câu đệm giao tiếp", exact: "怎么说呢" },
+            { order: 21, level: 1, label: "Quan trọng vừa", reason: "Mẫu viết trang trọng", exact: "与……做比较" },
+            { order: 22, level: 1, label: "Quan trọng vừa", reason: "Cấu trúc đơn giản, dễ hiểu", exact: "有时候……但……" },
+          ],
+          2: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "So sánh giống nhau / bằng nhau, dùng rất nhiều", exact: "A 跟 B 一样" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "So sánh khác nhau", exact: "A 跟 B 不一样" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "So sánh cụ thể về tính chất hoặc hành động", exact: "跟……一样 + V/Adj" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nâng cao, giống 不仅……而且……", exact: "不但……而且……" },
+            { order: 5, level: 2, label: "Quan trọng", reason: "Nghĩa gần giống 不一样, nhưng ít dùng hơn", exact: "A 不跟 B 一样" },
+            { order: 6, level: 2, label: "Quan trọng", reason: "So sánh về một phương diện cụ thể", exact: "A 跟 B + Danh từ + 一样" },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Làm định ngữ, dùng trong câu dài", exact: "跟……一样/不一样 + 的 + N" },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Bản nhấn mạnh hơn của 不但……而且……", exact: "不但……而且还……" },
+            { order: 9, level: 1, label: "Quan trọng vừa", reason: "Câu giao tiếp, không phải ngữ pháp lớn", exact: "好了" },
+          ],
+          3: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Đến lúc nên làm gì rồi, dùng rất nhiều", exact: "该 + V + 了" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Biểu thị thay đổi / hoàn thành, cực quan trọng", exact: "V + 了" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Không còn làm gì nữa", exact: "不 + V + 了" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Sắp làm gì / sắp xảy ra", exact: "要 + V + 了" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Sắp sửa, thời gian rất gần", exact: "就要 + V + 了" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Sắp... rồi", exact: "快要 + V + 了" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Sắp... rồi, rất hay dùng", exact: "快 + V + 了" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Trạng ngữ chỉ cách làm: làm một cách...", exact: "Adj/Adv + 地 + V" },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Nhấn mạnh đã... rồi, thường dùng trong khẩu ngữ", exact: "都 + Thời gian/Số lượng + 了" },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Nhấn mạnh trạng thái: còn... lắm / đang... đấy", exact: "Adj/V + 着呢" },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Câu phản vấn khẩu ngữ: làm gì mà...", exact: "V + 什么 + 呢" },
+            { order: 12, level: 1, label: "Quan trọng vừa", reason: "Mẫu khẩu ngữ: có chuyện gì thế", exact: "有什么 + N + 啦" },
+            { order: 13, level: 1, label: "Quan trọng vừa", reason: "Câu không chủ ngữ, cần nhận biết nhưng không khó", exact: "无主语句" },
+          ],
+          4: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Câu phản vấn rất hay dùng: chẳng phải... sao?", exact: "不是……吗？" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Động tác hướng về người nói", exact: "V + 来" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Động tác rời xa người nói", exact: "V + 去" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Mang/lấy vật gì đến đây", exact: "V + O + 来" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Mang/lấy vật gì đi", exact: "V + O + 去" },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Đến/đi một nơi nào đó", exact: "Địa điểm + 来 / 去" },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Đi đến/đi khỏi một địa điểm", exact: "V + Địa điểm + 来 / 去" },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Mang/lấy đến, nhưng cần chú ý vị trí tân ngữ", exact: "V + 来 + O" },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Mang/lấy đi, nhưng cần chú ý vị trí tân ngữ", exact: "V + 去 + O" },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Lượng từ chỉ lượt/chuyến đi", exact: "趟" },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Lượng từ chỉ tiếng/lần phát ra âm thanh", exact: "声" },
+            { order: 12, level: 1, label: "Quan trọng vừa", reason: "Câu giao tiếp lịch sự", exact: "慢走" },
+          ],
+          5: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Đã từng làm gì", exact: "V + 过" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Chưa từng làm gì", exact: "没/没有 + V + 过" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Hỏi đã từng... chưa", exact: "V + 过 + O + 没有？" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ số lượng/số lần", exact: "V + 了/过 + 数量补语" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Lần", exact: "次" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Lượt, lần trọn vẹn", exact: "遍" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Thứ nhất, thứ hai...", exact: "第 + Số từ / Lượng từ" },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Cực kỳ, vô cùng", exact: "Adj/V + 极了" },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Không... chút nào", exact: "一……也/都……不/没" },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Làm một chút", exact: "V + 了 + 一下" },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Làm hai lượt", exact: "V + 了/过 + 两遍" },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Đi một chuyến", exact: "V + 一趟" },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Nói/kêu một tiếng", exact: "V + 一声" },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Cấu trúc số lần có tân ngữ", exact: "人称代词 + V + O + 一次" },
+            { order: 15, level: 1, label: "Quan trọng vừa", reason: "Cần nhận biết, không quá khó", exact: "地名/人名 + V + 一次" },
+            { order: 16, level: 1, label: "Quan trọng vừa", reason: "Trợ từ khẩu ngữ", exact: "呀" },
+            { order: 17, level: 1, label: "Quan trọng vừa", reason: "Ít dùng hơn, thường cần số/lượng từ đi kèm", exact: "第 + Danh từ" },
+          ],
+          6: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Cấu trúc trọng điểm HSK3-HSK4, nhấn mạnh thời gian, địa điểm, cách thức, người thực hiện", exact: "是……的" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Phủ định của 是……的", exact: "不是……的" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Dạng rút gọn của 是……的 khi nhấn mạnh hành động đã xảy ra", exact: "V + 的 + O" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Vừa... đã... / hễ... là..., dùng cực nhiều", exact: "一……就……" },
+            { order: 5, level: 2, label: "Quan trọng", reason: "Dùng để miêu tả tự nhiên hơn", exact: "AA tính từ lặp lại" },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Tạo sắc thái sinh động, thường gặp trong miêu tả", exact: "AABB tính từ lặp lại" },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Làm trạng ngữ: làm một cách...", exact: "AABB + 地 + V" },
+          ],
+          7: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Cấu trúc đặc trưng của tiếng Trung, rất hay gặp", exact: "Chủ-vị làm vị ngữ 主谓谓语句" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Dạng cụ thể của chủ-vị làm vị ngữ", exact: "N1 + N2 + V" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Đặt/để ở đâu, bổ ngữ kết quả quan trọng", exact: "V + 在" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Làm xong, làm hoàn chỉnh", exact: "V + 好" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Làm thành, biến thành", exact: "V + 成" },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Làm được, đạt mục đích, hay gặp trong khẩu ngữ", exact: "V + 着 zháo" },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Theo tôi thấy / tôi nghĩ rằng", exact: "我看" },
+            { order: 8, level: 1, label: "Quan trọng vừa", reason: "Từ vựng khẩu ngữ: rất lâu, khá lâu", exact: "半天" },
+          ],
+          8: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Suýt nữa thì..., cấu trúc hay gặp nhưng dễ nhầm", exact: "差（一）点儿 + V" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nghĩa thay đổi theo loại động từ, cần học kỹ", exact: "差（一）点儿没 + V" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Câu lấy tân ngữ làm chủ ngữ, rất đặc trưng tiếng Trung", exact: "受事主语 + V" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Lượng từ lặp: mỗi/từng, hay gặp trong miêu tả", exact: "量词重叠" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Năm này qua năm khác càng...", exact: "一年比一年 + Adj" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Ngày càng...", exact: "一天比一天 + Adj" },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Hơi quá mức một chút", exact: "Adj + 了（一）点儿" },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Rất..., vô cùng...", exact: "Adj + 得很" },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Không tốt lắm", exact: "不怎么样" },
+            { order: 10, level: 1, label: "Quan trọng vừa", reason: "Câu khẩu ngữ: đừng nhắc nữa", exact: "别提了" },
+          ],
+          9: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Đi/lên về phía người nói", exact: "V + 上来" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Đi/lên xa người nói", exact: "V + 上去" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Đi/xuống về phía người nói", exact: "V + 下来" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Đi/xuống xa người nói", exact: "V + 下去" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Đi/vào về phía người nói", exact: "V + 进来" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Đi/vào xa người nói", exact: "V + 进去" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Đi/ra về phía người nói", exact: "V + 出来" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Đi/ra xa người nói", exact: "V + 出去" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Quay về phía người nói", exact: "V + 回来" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Quay về nơi khác / xa người nói", exact: "V + 回去" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Đi/qua/lại phía người nói", exact: "V + 过来" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Đi/qua sang phía bên kia / xa người nói", exact: "V + 过去" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Đứng dậy / bắt đầu / hướng lên", exact: "V + 起来" },
+          ],
+          10: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Trạng thái đang duy trì", exact: "V + 着" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Đang mang/có/giữ một vật trong trạng thái nào đó", exact: "V + 着 + O" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Câu tồn hiện: nơi nào đó có vật đang ở trạng thái nào", exact: "Địa điểm + V + 着 + O" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Vừa... vừa... / trong trạng thái... mà làm gì", exact: "V₁ + 着 + V₂" },
+            { order: 5, level: 2, label: "Quan trọng", reason: "Không ở trong trạng thái đó", exact: "没/没有 + V + 着" },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Hỏi có đang ở trạng thái đó không", exact: "V + 着 + 没有？" },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Đang làm gì, nhấn mạnh tiếp diễn", exact: "正在/正/在 + V + 着" },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Đang... đấy / còn... đấy", exact: "V + 着 + 呢" },
+          ],
+        };
+        const rulesByLesson = {
+          1: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Dùng rất nhiều: bảo/để/cho ai làm gì", tests: ["让+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nói quan điểm: đối với... mà nói", tests: ["对+来说"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Cực hay dùng để nói đã... rồi", tests: ["已经+", "+了"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Cấu trúc quét toàn bộ: cái gì cũng...", tests: ["什么都+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc điều kiện: nếu... thì...", tests: ["要是", "的话"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Trợ động từ cơ bản: có thể, có khả năng", tests: ["能+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Hay dùng trong khẩu ngữ: làm gì cho tốt/cẩn thận", tests: ["好好儿+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Dùng nhiều khi trình bày ý chính", tests: ["最重要的是+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Biến thể quan trọng của 什么都: đâu cũng...", tests: ["哪儿都+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Cụm cố định hay dùng: liên lạc với ai", tests: ["跟+", "+联系"] },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Cấu trúc thời gian thực tế: lâu rồi chưa...", tests: ["很长时间没+", "+了"] },
+            { order: 12, level: 1, label: "Quan trọng vừa", reason: "Dùng để nói mục đích: đến đâu để làm gì", tests: ["来++"] },
+            { order: 13, level: 1, label: "Quan trọng vừa", reason: "Gần giống cấu trúc 来 + Địa điểm + Động từ, có thể học chung", tests: ["来+v+"] },
+            { order: 14, level: 1, label: "Quan trọng vừa", reason: "Cụm cụ thể, không phải cấu trúc lớn", tests: ["做+", "+的导游"] },
+            { order: 15, level: 1, label: "Ít quan trọng hơn", reason: "Mẫu câu giao tiếp, không phải ngữ pháp trọng tâm", tests: ["后来+", "怎么样+", "+了"] },
+          ],
+          2: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Câu xin phép / hỏi có được không, dùng cực nhiều", tests: ["可以吗"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Mẫu trả lời giao tiếp cơ bản", tests: ["当然可以"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Câu hỏi tại sao, cực kỳ quan trọng", tests: ["为什么+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói thói quen, rất hay gặp", tests: ["习惯+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc khuyên / đề nghị ai làm gì", tests: ["建议"] },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Khẩu ngữ rất hay dùng: làm gì sớm một chút", tests: ["早点儿+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Cấu trúc hễ đến... thì..., dùng tốt trong hội thoại", tests: ["到+", "+就"] },
+            { order: 8, level: 1, label: "Quan trọng mở rộng", reason: "Thành ngữ hay, nhưng không phải ngữ pháp lõi", tests: ["入乡随俗"] },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Diễn tả phải / cần phải, dùng rất nhiều", tests: ["要+"] },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Nói cảm nhận, suy nghĩ, quan điểm", tests: ["觉得+"] },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Cấu trúc vừa... vừa..., rất hay ra bài", tests: ["一边", "一边"] },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ trình độ, trọng điểm HSK3-HSK4", tests: ["得+adj"] },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Câu nhắc nhở rất thực tế", tests: ["别忘了+"] },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Diễn tả gần như / hầu như", tests: ["差不多+"] },
+            { order: 15, level: 2, label: "Quan trọng", reason: "Phó từ tần suất: thỉnh thoảng", tests: ["偶尔+"] },
+            { order: 16, level: 1, label: "Quan trọng vừa", reason: "Khẩu ngữ, dùng để nói điều lo sợ", tests: ["就怕+"] },
+          ],
+          3: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Dùng nhiều để nói càng ngày càng...", tests: ["越来越+", "+了"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cấu trúc sắp... rồi, rất hay dùng", tests: ["快要+", "+了"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Câu khuyên/ngăn: đừng...", tests: ["别+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói lời khuyên, nghĩa vụ: nên...", tests: ["应该+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc điều kiện cơ bản: nếu... thì...", tests: ["如果", "就"] },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Câu lịch sự: mời/vui lòng", tests: ["请+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Mẫu đối xứng, hay dùng trong miêu tả", tests: ["不a不b"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Câu giao tiếp: được rồi/ổn rồi", tests: ["可以了"] },
+          ],
+          4: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Hỏi cách làm: làm sao / bằng cách nào", tests: ["怎么+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cấu trúc trọng điểm HSK3-HSK4, rất hay ra bài", tests: ["把+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Nói cảm nhận, suy nghĩ: cảm thấy / thấy rằng...", tests: ["觉得+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Cấu trúc phủ định toàn bộ: không ai...", tests: ["谁都不+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh phủ định: hoàn toàn không...", tests: ["一点儿也不+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Quy tắc gốc để hiểu bổ ngữ xu hướng", tests: ["来/去"] },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ xu hướng thường gặp", tests: ["上来"] },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ xu hướng thường gặp", tests: ["上去"] },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ xu hướng thường gặp", tests: ["进来"] },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ xu hướng thường gặp", tests: ["进去"] },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Câu hỏi giao tiếp: có cần... không?", tests: ["要+", "+吗"] },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Nói việc sắp xảy ra rất nhanh", tests: ["马上就+", "+了"] },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Khuyên ai đừng làm nữa", tests: ["别+", "+了"] },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Mẫu câu điều kiện khẩu ngữ", tests: ["没事的话"] },
+            { order: 15, level: 2, label: "Quan trọng", reason: "Cấu trúc thực tế: tốt cho ai/cái gì", tests: ["对+", "+好"] },
+            { order: 16, level: 1, label: "Quan trọng vừa", reason: "Cụm giao tiếp: đỡ hơn nhiều rồi", tests: ["好多了"] },
+          ],
+          5: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Miêu tả ngoại hình, rất hay dùng", tests: ["长得+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Diễn tả suy đoán: hình như, có vẻ", tests: ["好像+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Hỏi/giới thiệu quê quán, nguồn gốc", tests: ["从+", "+来的"] },
+            { order: 4, level: 2, label: "Quan trọng", reason: "Phó từ mức độ: rất/đặc biệt", tests: ["特别+"] },
+            { order: 5, level: 2, label: "Quan trọng", reason: "Mẫu điều kiện giao tiếp tự nhiên", tests: ["有机会的话"] },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Cụm giao tiếp: giới thiệu ai làm quen", tests: ["介绍+", "+认识"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Cụm khẩu ngữ: có thời gian rảnh", tests: ["有空儿"] },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Dùng nhiều để nói nhớ ai/cái gì/nhớ làm gì", tests: ["记得+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Câu giao tiếp thường dùng: cứ yên tâm", tests: ["放心吧"] },
+            { order: 10, level: 1, label: "Quan trọng vừa", reason: "Cụm bị động/ngữ cảnh cụ thể: được cử đến", tests: ["派来的"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Từ nối hội thoại: à đúng rồi", tests: ["对了"] },
+          ],
+          6: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Diễn tả hành động liên tục / luôn luôn", tests: ["一直+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nói trạng thái thay đổi qua lại: lúc thì... lúc thì...", tests: ["一会儿", "一会儿"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Nghĩa là phải, dùng nhiều trong khẩu ngữ", tests: ["得+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Diễn tả hơi..., thường dùng với nghĩa không tích cực", tests: ["有点儿+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh phủ định: hoàn toàn không...", tests: ["一点儿也不+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Cấu trúc so sánh cơ bản: A hơn B", tests: ["a比b+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Nói cái gì hợp với ai/cái gì", tests: ["适合+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Khá, tương đối, dùng nhiều khi miêu tả", tests: ["比较+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Có nhiều nghĩa: liền, sẽ, ngay, thì...", tests: ["就+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Mẫu giao tiếp: xem có... hay không", tests: ["看看有没有+"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Dùng để nói nhất, nhưng dạng này dễ học", tests: ["最+"] },
+          ],
+          7: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Hỏi bao lâu, dùng cực nhiều", tests: ["多长时间"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nói khoảng chừng, rất hay dùng", tests: ["大概+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Nói trong vòng / không quá", tests: ["以内"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói hành động xảy ra ngay", tests: ["马上+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc trọng điểm: càng... càng...", tests: ["越", "越"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Vừa... vừa..., dùng để miêu tả hai đặc điểm", tests: ["又", "又"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Chắc chắn sẽ / chắc chắn là...", tests: ["肯定+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Câu hỏi suy đoán: có... không nhỉ?", tests: ["会不会+", "+呢"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Câu lịch sự: vui lòng... một chút", tests: ["请+", "+一下"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Cụm công việc: cử người làm gì", tests: ["派人+"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Muộn nhất là...", tests: ["最晚+"] },
+            { order: 12, level: 1, label: "Quan trọng vừa", reason: "Từ vựng/cụm danh từ, không phải cấu trúc lớn", tests: ["联系方式"] },
+            { order: 13, level: 1, label: "Quan trọng vừa", reason: "Cấu trúc cơ bản, đã gặp nhiều lần", tests: ["可以+"] },
+          ],
+          8: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ khả năng: làm gì hiểu được", tests: ["得懂"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Phủ định của bổ ngữ khả năng: không hiểu được", tests: ["不懂"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nhượng bộ: tuy... nhưng...", tests: ["虽然", "但是"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói sở thích / hứng thú với cái gì", tests: ["对+", "+感兴趣"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Nói mục đích: để / vì", tests: ["为了+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ trình độ, trọng điểm HSK3-HSK4", tests: ["得+adj"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Làm thêm lần nữa / thêm nữa", tests: ["再+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Câu ước muốn: giá mà... thì tốt", tests: ["要是", "就好了"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Chuyên / đặc biệt làm gì", tests: ["专门+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Không có cơ hội làm gì", tests: ["没机会+"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Đã gặp nhiều, nhưng vẫn dùng nhiều", tests: ["特别+"] },
+            { order: 12, level: 1, label: "Quan trọng vừa", reason: "Cụm cụ thể: mời từ đâu đến", tests: ["从+", "+请来"] },
+          ],
+          9: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Trạng thái đang duy trì, trọng điểm HSK3-HSK4", tests: ["v+着"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh làm thế nào cũng không...", tests: ["怎么也", "不"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Mãi đến... mới..., rất hay dùng", tests: ["才"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Hễ... là... / vừa... thì..., cấu trúc trọng điểm", tests: ["一", "就"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Phải làm gì, khẩu ngữ rất hay dùng", tests: ["得+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Nên / chắc là, dùng nhiều", tests: ["应该+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Hình như / có vẻ như", tests: ["好像+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Vốn định làm gì", tests: ["原来+", "+打算"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Nhờ / mời ai làm gì", tests: ["请+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Đành phải làm gì", tests: ["只好+"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Cụm từ vựng: ngủ nướng", tests: ["睡懒觉"] },
+          ],
+          10: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Trình tự hành động: trước... rồi...", tests: ["先", "然后"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cần phải / phải làm gì", tests: ["要+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Lựa chọn: hoặc", tests: ["或者"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói khoảng chừng", tests: ["大约+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Từ đâu đến đâu / từ lúc nào đến lúc nào", tests: ["从", "到"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nâng cao: không những... mà còn...", tests: ["不仅", "而且"] },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Làm gì cho ai / đưa cho ai cái gì", tests: ["给+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Dùng nhiều khi đi xe, hỏi đường", tests: ["到", "下车"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Câu điều kiện thực tế", tests: ["不堵车的话"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Càng... càng tốt", tests: ["越", "越好"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Cụm chỉ đường: qua... là đến...", tests: ["过", "就是"] },
+          ],
+          11: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Mẫu hỏi lịch sự, dùng rất nhiều", tests: ["请问+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Diễn tả hành động/trạng thái kéo dài", tests: ["一直+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Nói suy đoán: hình như", tests: ["好像+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "So sánh A không bằng B", tests: ["不如"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nhượng bộ: tuy... nhưng...", tests: ["虽然", "但是"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Nói mục đích: vì/để", tests: ["为了+"] },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh: nhất định phải", tests: ["一定要+"] },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Nói hy vọng, mong muốn", tests: ["希望+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Nối ý: hơn nữa, ngoài ra", tests: ["而且"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Nói quá..., rất thường gặp", tests: ["太+"] },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Không đồng ý làm gì / với việc gì", tests: ["不同意+"] },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Bổ ngữ kết quả: ngã xuống / đổ xuống", tests: ["倒+了"] },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Nhất định sẽ làm gì", tests: ["一定+"] },
+            { order: 14, level: 1, label: "Quan trọng vừa", reason: "Cụm theo ngữ cảnh học tập", tests: ["上+", "+的课"] },
+            { order: 15, level: 1, label: "Quan trọng vừa", reason: "Cụm kể tai nạn/va chạm", tests: ["和+", "+撞在一起"] },
+          ],
+          12: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "So sánh giống nhau, dùng rất nhiều", tests: ["跟+", "+一样"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nói gần như / hầu như", tests: ["差不多+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Lựa chọn hoặc, cấu trúc cơ bản", tests: ["或者"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh chỉ có..., rất hay gặp", tests: ["只有+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Tự mình làm gì", tests: ["自己+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Miêu tả hai đặc điểm: vừa... vừa...", tests: ["又", "又"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Nói đa số / phần lớn", tests: ["大多+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Động từ cảm xúc thường dùng", tests: ["羡慕+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Nói thói quen thông thường", tests: ["一般都+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Nói ngày nào cũng làm gì", tests: ["天天+"] },
+            { order: 11, level: 1, label: "Quan trọng mở rộng", reason: "Câu cảm thán ước muốn", tests: ["要是", "该多好啊"] },
+          ],
+        };
+        const writingRulesByLesson = {
+          1: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Tuy... nhưng..., cấu trúc nối câu trọng tâm", exact: "虽然……但是……" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Vì... nên..., cấu trúc nguyên nhân kết quả", exact: "因为……所以……" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Đã làm gì trong bao lâu", exact: "V + 了 + Thời lượng" },
+            { order: 4, level: 2, label: "Quan trọng", reason: "Những... nào", exact: "哪些 + N" },
+            { order: 5, level: 2, label: "Quan trọng", reason: "Chỗ nào / nơi nào", exact: "什么地方 + V" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Làm thử / làm một chút", exact: "V 一 V" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Có thể làm gì", exact: "可以 + V" },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Đặc biệt là...", exact: "特别是 + N/VP" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Cùng với ai làm gì", exact: "跟 + Người + 一起 + V" },
+          ],
+          2: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Vừa mới... đã..., dùng nhiều trong kể chuyện", exact: "刚……就……" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Trình tự hành động: trước... rồi...", exact: "先……再……" },
+            { order: 3, level: 2, label: "Quan trọng", reason: "Từ nối nhưng, dễ dùng", exact: "可是" },
+            { order: 4, level: 2, label: "Quan trọng", reason: "Hóa ra... nên..., dùng khi phát hiện nguyên nhân", exact: "原来……所以……" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Giúp ai đó, giao tiếp rất hay dùng", exact: "帮……忙" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ kết quả: làm xong/làm ổn", exact: "V + 好" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Không hiểu được: 听不懂, 看不懂", exact: "V + 不 + 懂" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Làm sai rồi", exact: "V + 错 + 了" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Không đạt được kết quả: tìm không thấy, mua không được", exact: "V + 不 + 到" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Câu 把 xử lý tân ngữ + kết quả vị trí", exact: "把 + O + V + 在 + nơi chốn" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Động tác tạo ra kết quả ở vị trí nào đó", exact: "V + 在 + nơi chốn" },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Từ đâu đi/ra ngoài", exact: "从 + nơi chốn + V + 出来" },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Một lát, thời gian ngắn", exact: "一会儿" },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Lúc này/khi đó, hay dùng khi kể chuyện", exact: "这时" },
+            { order: 15, level: 2, label: "Quan trọng", reason: "Phát ra một tiếng: 叫了一声, 喊了一声", exact: "V + 了 + 一声" },
+          ],
+          3: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Đã... rồi, dùng cực nhiều", exact: "已经……了" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Sắp... rồi", exact: "快……了" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Vẫn còn...", exact: "还 + V/Adj" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Trạng thái đang duy trì", exact: "V + 着" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Làm thêm/lại làm gì", exact: "再 + V + một chút/thời gian" },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Kể trình tự hành động", exact: "……后，……，然后……" },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Nhanh chóng làm gì", exact: "很快 + V" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Suýt nữa thì..., dễ gặp và dễ nhầm", exact: "差点儿 + 就 + V + 了" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Cuối cùng cũng...", exact: "终于 + V/Adj + 了" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Tuy... nhưng...", exact: "虽然……但是/但……" },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Có một số... cần phải...", exact: "有一些 + N + 要 + V" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Làm gì cho ai", exact: "给 + người + V + O" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Cùng/với ai làm gì", exact: "跟 + người + V" },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Một... như thế này/như vậy", exact: "这样的 + N" },
+          ],
+          4: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Văn viết, trang trọng hơn 因为", exact: "由于 + nguyên nhân，……" },
+            { order: 2, level: 2, label: "Quan trọng", reason: "Nghe nói rằng..., dùng khi dẫn thông tin", exact: "据说，……" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Rốt cuộc..., nhấn mạnh câu hỏi", exact: "到底 + câu hỏi" },
+            { order: 4, level: 2, label: "Quan trọng", reason: "Xem ra..., đưa ra phán đoán", exact: "看来，……" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh phủ định: không hẳn/hoàn toàn không", exact: "并 + 不 / 没有 / 非 / 无" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Nếu... thì..., cấu trúc điều kiện trọng tâm", exact: "如果……就……" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Có thể sẽ..., phỏng đoán khả năng", exact: "可能 + V / 会 + V" },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Có lẽ..., mức độ không chắc chắn", exact: "也许 + câu" },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Tuy nhiên..., văn viết", exact: "然而，……" },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Còn/mà/trong khi..., nối ý đối lập hoặc so sánh", exact: "而……" },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Nhưng, thế nhưng", exact: "可 / 可是" },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Để lại ấn tượng cho ai", exact: "给 + người + 留下 + 印象" },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Hình thành cách nhìn đối với...", exact: "形成 + 对……的看法" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Tin vào..., tin rằng...", exact: "相信 + N / 相信 + câu" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Không phải là..., phủ định có nhấn mạnh", exact: "并不是……" },
+          ],
+          5: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Khắp nơi đều..., dùng nhiều khi miêu tả", exact: "到处都……" },
+            { order: 2, level: 2, label: "Quan trọng", reason: "Khá là..., tương đối..., thiên về văn viết hơn 比较", exact: "相当 + Adj" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Vừa... vừa..., cấu trúc trọng tâm", exact: "一边……一边……" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Đang làm một lúc thì..., hay dùng khi kể chuyện", exact: "V 着 V 着，就……" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Trạng thái kéo dài, thuộc nhóm 着", exact: "V 着 + N" },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Đặc biệt là..., giống 特别是 nhưng trang trọng hơn", exact: "尤其是……" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Không chỉ vì..., mà còn vì..., dùng tốt trong viết đoạn văn", exact: "不仅是因为……更是因为……" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Để..., vì mục đích...", exact: "为了 + mục đích" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Tuy... nhưng...", exact: "虽然……但是……" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Càng hơn / hơn nữa", exact: "更 + Adj/V" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "So với..., dùng nhiều trong so sánh", exact: "和……相比" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Trở thành...", exact: "成为 + N" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Cấu trúc lượng từ cơ bản", exact: "一 + lượng từ + N" },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Quanh năm / bốn mùa, cụm cố định", exact: "一年四季" },
+          ],
+          6: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Thứ tự lần: lần thứ mấy", exact: "第 + số + 次" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Từ lúc nào bắt đầu", exact: "从……开始" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Không kìm/không nhịn được", exact: "V + 不住" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Cuối cùng cũng làm được", exact: "终于 + V + 了" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Mãi mới làm gì", exact: "才 + V" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Khó khăn lắm mới làm được", exact: "好不容易 + V" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Không có gì hơn...", exact: "没有……比……更……" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Không có chút nào", exact: "一点儿 + N + 也没有" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Không hẳn / không thật sự", exact: "并不 + Adj/V" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Nếu... thì...", exact: "如果……就……" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Ở cùng / bên nhau với ai", exact: "和……在一起" },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Tổng cộng đã từng làm bao nhiêu lần", exact: "一共 + V + 过 + số lượng + 次" },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Thế là, vì vậy", exact: "于是，……" },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Nối ý đối lập hoặc chuyển ý", exact: "而……" },
+            { order: 15, level: 2, label: "Quan trọng", reason: "Yêu ai, phải lòng ai", exact: "爱上 + người" },
+          ],
+          7: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Hài lòng / không hài lòng với...", exact: "对……满意 / 不满意" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Xa/gần nơi nào", exact: "离 + địa điểm + 远/近" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Mất bao lâu là đến", exact: "走路/坐车 + thời gian + 就能到" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Có thể làm gì", exact: "可以 + V" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Câu 把 đặt vật ở vị trí nào", exact: "把 + O + V + 在 + nơi chốn" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Lúc thì... lúc thì...", exact: "一会儿……一会儿……" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Nguyên nhân - kết quả", exact: "因为……所以……" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Làm xong", exact: "V + 完" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Cụm 的 làm định ngữ / danh hóa", exact: "Adj/V + 的" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Có lúc..., có lúc...", exact: "有时……，有时……" },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Dưới sự giúp đỡ của...", exact: "在……帮助下" },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Hơn nữa", exact: "而且……" },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Miêu tả vị trí trước/sau/bên cạnh", exact: "Nơi chốn + 前面/后面/旁边 + 是/有 + N" },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Miêu tả bên trái/phải cửa", exact: "门口的右边/左边有……" },
+            { order: 15, level: 2, label: "Quan trọng", reason: "Mời ai đến đâu làm gì", exact: "请 + người + 来 + nơi + V" },
+            { order: 16, level: 2, label: "Quan trọng", reason: "Nơi đặt là vật gì", exact: "地方 + 放的是 + N" },
+          ],
+          8: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Cùng ai làm gì", exact: "和……一起 + V" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ trình độ: rất...", exact: "V + 得 + 很 + Adj" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Không ngờ, vậy mà", exact: "竟然……" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Động tác xảy ra ở đâu", exact: "V + 在 + địa điểm" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Chưa đến / không đủ số lượng", exact: "不到 + số lượng" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Lại... rồi", exact: "又……了" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Làm thử / làm một chút", exact: "V 一 V" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Rốt cuộc...?", exact: "到底……？" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Tuy... nhưng...", exact: "虽然……但/但是……" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Chưa từng bao giờ", exact: "从来没 + V过" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Lẽ nào...?", exact: "难道……？" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Hay là...?", exact: "还是……？" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Cho dù... cũng...", exact: "即使……也……" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Không thể động đậy / không di chuyển được", exact: "V + 不动" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Chỉ có thể...", exact: "只能……" },
+            { order: 16, level: 3, label: "Rất quan trọng", reason: "Trạng thái đang duy trì", exact: "V + 着" },
+            { order: 17, level: 3, label: "Rất quan trọng", reason: "Cuối cùng...", exact: "终于……" },
+            { order: 18, level: 3, label: "Rất quan trọng", reason: "Đi về phía trước", exact: "往前走" },
+            { order: 19, level: 3, label: "Rất quan trọng", reason: "Từ đâu đi ra", exact: "从……出来" },
+            { order: 20, level: 3, label: "Rất quan trọng", reason: "Đành phải...", exact: "只好……" },
+            { order: 21, level: 3, label: "Rất quan trọng", reason: "Muốn dùng 把 để...", exact: "想把……" },
+            { order: 22, level: 3, label: "Rất quan trọng", reason: "Đuổi A khỏi B", exact: "把 A 从 B 赶走" },
+            { order: 23, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh không có gì cả", exact: "可……什么也不……" },
+            { order: 24, level: 2, label: "Quan trọng", reason: "Có thể vì...", exact: "可能因为……" },
+            { order: 25, level: 2, label: "Quan trọng", reason: "Cứ như vậy...", exact: "就这样……" },
+            { order: 26, level: 2, label: "Quan trọng", reason: "Quả thực giống như...", exact: "简直像……" },
+            { order: 27, level: 2, label: "Quan trọng", reason: "Có ích gì chứ?", exact: "……有什么用呢？" },
+            { order: 28, level: 2, label: "Quan trọng", reason: "Có thể sắp...", exact: "可能要……了" },
+            { order: 29, level: 2, label: "Quan trọng", reason: "Nhưng vẫn...", exact: "但是还是……" },
+            { order: 30, level: 2, label: "Quan trọng", reason: "Lại qua một khoảng thời gian", exact: "又过了 + thời gian" },
+            { order: 31, level: 2, label: "Quan trọng", reason: "Cho dù... cũng hơn...", exact: "即使……也比……" },
+            { order: 32, level: 2, label: "Quan trọng", reason: "Không biết vì sao", exact: "不知道为什么……" },
+            { order: 33, level: 2, label: "Quan trọng", reason: "Ở giữa...", exact: "在……中间" },
+            { order: 34, level: 2, label: "Quan trọng", reason: "Đi qua bên cạnh...", exact: "从……身边通过" },
+          ],
+          9: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Từ... có thể thấy...", exact: "从……中可以看出……" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Chiếm số lượng / phần trăm", exact: "占 + số lượng / phần trăm" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Điều đáng chú ý là...", exact: "值得注意的是……" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Tuy... nhưng...", exact: "虽然……但……" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "So sánh hơn", exact: "A 比 B + Adj" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Có liên quan đến...", exact: "和……有关" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Có bao nhiêu phần trăm người...", exact: "有 + phần trăm + 的人 + V" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Nếu..., có thể sẽ...", exact: "如果……，可能会……" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Làm cho A càng...", exact: "让 + A + 更加 + Adj" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Dùng 把 đặt A ở đâu", exact: "把 + A + V在 + địa điểm" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Ngoài... còn...", exact: "除了……，还有……" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Vừa... vừa... còn...", exact: "既……又……还……" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Có thể làm gì", exact: "能 + V" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Để..., nên...", exact: "为了……，应该……" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Chỉ cần... thì sẽ...", exact: "只要……就会……" },
+            { order: 16, level: 3, label: "Rất quan trọng", reason: "Ngày càng nhiều...", exact: "越来越多的 + N" },
+            { order: 17, level: 3, label: "Rất quan trọng", reason: "Có lợi cho...", exact: "对……有利" },
+            { order: 18, level: 2, label: "Quan trọng", reason: "Người lựa chọn...", exact: "选择……的" },
+            { order: 19, level: 2, label: "Quan trọng", reason: "Lần lượt chiếm...", exact: "分别占……" },
+            { order: 20, level: 2, label: "Quan trọng", reason: "Những điều trên cho thấy...", exact: "以上……告诉我们……" },
+            { order: 21, level: 2, label: "Quan trọng", reason: "Cái trước..., cái sau...", exact: "前者……，后者……" },
+            { order: 22, level: 2, label: "Quan trọng", reason: "Chỉ thấp hơn... một chút", exact: "只比……低……" },
+            { order: 23, level: 2, label: "Quan trọng", reason: "Đương nhiên..., cũng..., nhưng...", exact: "当然……，也……，但……" },
+            { order: 24, level: 2, label: "Quan trọng", reason: "Lãng phí vào...", exact: "浪费在……上" },
+            { order: 25, level: 2, label: "Quan trọng", reason: "Cả hai cộng lại chiếm...", exact: "二者一共占……" },
+            { order: 26, level: 2, label: "Quan trọng", reason: "Nếu... không quá...", exact: "如果……不是太……" },
+            { order: 27, level: 2, label: "Quan trọng", reason: "Là một lựa chọn rất tốt", exact: "是一个很好的选择" },
+            { order: 28, level: 2, label: "Quan trọng", reason: "Tiết kiệm được tiền/phí", exact: "省下 + tiền/phí" },
+            { order: 29, level: 2, label: "Quan trọng", reason: "Cố gắng làm gì", exact: "努力 + V" },
+            { order: 30, level: 2, label: "Quan trọng", reason: "Đủ...", exact: "足够 + Adj" },
+          ],
+          10: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Nói chung là...", exact: "一般来说，……" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cái... nhất chính là...", exact: "最 + Adj + 的 + N + 就是……" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Bắt đầu từ...", exact: "从……就开始了" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Không cần làm gì", exact: "不用 + V" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Còn có thể làm gì", exact: "还可以 + V" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Có hứng thú với...", exact: "对……感兴趣" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Chọn làm gì vào thời gian/địa điểm nào", exact: "选择在 + thời gian/địa điểm + V" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Đã từng làm gì", exact: "曾经 + V过" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Chuyên / đặc biệt làm gì", exact: "专门 + V" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Đồng thời..., cũng...", exact: "在……的同时，……也……" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Có lúc..., có lúc...", exact: "有时候……，有时候……" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Gần giống / xấp xỉ", exact: "和……差不多" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Tuy... nhưng...", exact: "虽然……但……" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Chưa bao giờ / không bao giờ", exact: "从来不 / 从来不会 + V" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Nếu..., nhất định sẽ...", exact: "如果……，……一定会……" },
+            { order: 16, level: 3, label: "Rất quan trọng", reason: "Mang theo đồ vật", exact: "带上 + đồ vật" },
+            { order: 17, level: 3, label: "Rất quan trọng", reason: "Đi đâu làm gì một chút", exact: "去 + nơi + V V" },
+            { order: 18, level: 3, label: "Rất quan trọng", reason: "Chuẩn bị cho...", exact: "为……作准备" },
+            { order: 19, level: 2, label: "Quan trọng", reason: "Vì vậy...", exact: "所以……" },
+            { order: 20, level: 2, label: "Quan trọng", reason: "Cộng thêm..., tổng cộng là...", exact: "加上……，一共是……" },
+            { order: 21, level: 2, label: "Quan trọng", reason: "Từ thứ Hai đến thứ Sáu", exact: "周一到周五" },
+            { order: 22, level: 2, label: "Quan trọng", reason: "Đương nhiên có thể..., nhưng...", exact: "当然可以……，但……" },
+            { order: 23, level: 2, label: "Quan trọng", reason: "Thông thường sẽ không...", exact: "一般不会 + V" },
+            { order: 24, level: 2, label: "Quan trọng", reason: "Chuẩn vị / chính gốc", exact: "地道的 + N" },
+            { order: 25, level: 2, label: "Quan trọng", reason: "Dưới sự hướng dẫn của...", exact: "在……的指导下" },
+            { order: 26, level: 2, label: "Quan trọng", reason: "Các loại... đều có", exact: "各种……都有" },
+            { order: 27, level: 2, label: "Quan trọng", reason: "Phần lớn mọi người...", exact: "大部分人……" },
+            { order: 28, level: 2, label: "Quan trọng", reason: "Có thể là để...", exact: "可能是为了……" },
+            { order: 29, level: 2, label: "Quan trọng", reason: "Phần nhiều là để...", exact: "多半是为了……" },
+            { order: 30, level: 2, label: "Quan trọng", reason: "Chỉ là một cách...", exact: "只是……的一种方式" },
+            { order: 31, level: 2, label: "Quan trọng", reason: "Ngoài ra...", exact: "此外，……" },
+            { order: 32, level: 2, label: "Quan trọng", reason: "Lên / dùng phương tiện", exact: "V上 + phương tiện" },
+          ],
+          11: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Không những... mà còn...", exact: "不但……而且……" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Còn hơn cả...", exact: "比……还……" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Dùng 把 + kết quả", exact: "把 + N + V + C" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Làm sạch", exact: "V + 干净" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Làm khô", exact: "V + 干" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Là có thể làm được rồi", exact: "就可以 + V了" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Phù hợp với...", exact: "对……合适" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Có thể làm gì", exact: "可以 + V" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Làm thành...", exact: "V + 成 + N" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Có thể chỉ dùng..., cũng có thể...", exact: "可以只用……，也可以……" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Không chỉ... mà còn...", exact: "不仅……而且……" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Khiến người trở nên...", exact: "让 + 人 + 变得 + Adj" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Cho vào...", exact: "放入 + N" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Có tác dụng đối với...", exact: "对……具有……作用" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Nếu..., có thể...", exact: "如果……，可以……" },
+            { order: 16, level: 3, label: "Rất quan trọng", reason: "Hơn nhiều", exact: "V + 多了" },
+            { order: 17, level: 3, label: "Rất quan trọng", reason: "Thêm vào...", exact: "加上……" },
+            { order: 18, level: 3, label: "Rất quan trọng", reason: "Làm thành...", exact: "做成 + N" },
+            { order: 19, level: 3, label: "Rất quan trọng", reason: "Tiếp tục làm xuống / duy trì", exact: "V + 下去" },
+            { order: 20, level: 3, label: "Rất quan trọng", reason: "Không phải càng... càng tốt", exact: "不是……越……越好" },
+            { order: 21, level: 3, label: "Rất quan trọng", reason: "Nhiều nhất chỉ có thể...", exact: "最多只能 + V" },
+            { order: 22, level: 3, label: "Rất quan trọng", reason: "Làm nhiều quá ngược lại...", exact: "V多了反而……" },
+            { order: 23, level: 3, label: "Rất quan trọng", reason: "Có hại cho...", exact: "对……有害" },
+            { order: 24, level: 2, label: "Quan trọng", reason: "Nhưng...", exact: "可是……" },
+            { order: 25, level: 2, label: "Quan trọng", reason: "Sau đây tôi giới thiệu...", exact: "下面我就给你介绍……" },
+            { order: 26, level: 2, label: "Quan trọng", reason: "Mấy loại...", exact: "几种 + N" },
+            { order: 27, level: 2, label: "Quan trọng", reason: "Ngâm trong...", exact: "泡在 + nơi/chất lỏng + 中" },
+            { order: 28, level: 2, label: "Quan trọng", reason: "Sau một khoảng thời gian", exact: "时间 + 后" },
+            { order: 29, level: 2, label: "Quan trọng", reason: "Không chỉ... mà còn có tác dụng...", exact: "不仅……而且……具有……作用" },
+            { order: 30, level: 2, label: "Quan trọng", reason: "Vì... là đủ rồi", exact: "因为……就够了" },
+          ],
+          12: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Được gọi là...", exact: "被称为……" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Phàm là... đều...", exact: "凡是……都……" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Gần như đều...", exact: "几乎都……" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Cho rằng... là...", exact: "认为……是……" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Chỉ cần... đều...", exact: "只要……都……" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Ngay cả... cũng...", exact: "连……都……" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Bất kỳ...", exact: "任何 + N" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Tưởng rằng...", exact: "以为……" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Thế là...", exact: "于是……" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Không bằng...", exact: "可不如……" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Mỗi khi... đều...", exact: "每到……，……都……" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Đã có thể...", exact: "已经能 + V" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Không ngờ, vậy mà", exact: "竟 / 竟然……" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Gọi ai là...", exact: "称 + 人 + 为 / 称 + 人 + N" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Theo... nhìn nhận", exact: "在……看来，……" },
+            { order: 16, level: 3, label: "Rất quan trọng", reason: "Thật ra...", exact: "其实……" },
+            { order: 17, level: 3, label: "Rất quan trọng", reason: "Không phải... mà là...", exact: "不是……而是……" },
+            { order: 18, level: 3, label: "Rất quan trọng", reason: "Cái... nhất", exact: "最 + Adj + 的 + N" },
+            { order: 19, level: 3, label: "Rất quan trọng", reason: "Yêu thích...", exact: "爱好 + N / V" },
+            { order: 20, level: 3, label: "Rất quan trọng", reason: "Đã viết bao nhiêu...", exact: "写过 + số lượng + N" },
+            { order: 21, level: 2, label: "Quan trọng", reason: "Sinh vào...", exact: "生于……" },
+            { order: 22, level: 2, label: "Quan trọng", reason: "Và / đồng thời", exact: "并 + V" },
+            { order: 23, level: 2, label: "Quan trọng", reason: "Nhận được / chịu...", exact: "受到……" },
+            { order: 24, level: 2, label: "Quan trọng", reason: "Cười với ai một chút", exact: "对……笑了笑" },
+            { order: 25, level: 2, label: "Quan trọng", reason: "Dùng... và... trò chuyện", exact: "用……和……聊天儿" },
+            { order: 26, level: 2, label: "Quan trọng", reason: "Sau khi bài diễn giảng kết thúc", exact: "演讲结束后，……" },
+            { order: 27, level: 2, label: "Quan trọng", reason: "Một loại...", exact: "一种 + N" },
+            { order: 28, level: 2, label: "Quan trọng", reason: "Lĩnh vực... nhất", exact: "最 + Adj + 的 + 领域" },
+            { order: 29, level: 2, label: "Quan trọng", reason: "Đồng thời còn...", exact: "同时还……" },
+          ],
+          13: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Nếu tôi là..., tôi sẽ...", exact: "如果我是……，我会……" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Mỗi một...", exact: "每一个 + N" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Cố gắng làm gì", exact: "努力去 + V" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Dựa vào / căn cứ theo", exact: "根据……" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Nghĩ cách làm gì", exact: "想办法 + V" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Xuất hiện...", exact: "出现 + N" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Cho ai cái gì", exact: "给 + 人 + N" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Chứ không phải...", exact: "而不是……" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Luôn luôn / kéo dài", exact: "一直 + V" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Ngoài... còn...", exact: "除了……，还……" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Giúp ai làm gì", exact: "帮助 + người + V" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Để..., tôi sẽ...", exact: "为了……，我会……" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Nếu... thì sẽ...", exact: "如果……就会……" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Làm gì rất...", exact: "V + 得 + 非常 + Adj" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Ngày càng...", exact: "越来越 + Adj" },
+            { order: 16, level: 3, label: "Rất quan trọng", reason: "Ngược lại...", exact: "相反，……" },
+            { order: 17, level: 3, label: "Rất quan trọng", reason: "Tạo ảnh hưởng đối với...", exact: "对……产生……影响" },
+            { order: 18, level: 3, label: "Rất quan trọng", reason: "Khiến bản thân trở nên...", exact: "让自己变得……" },
+            { order: 19, level: 3, label: "Rất quan trọng", reason: "Thường thường...", exact: "往往 + V / Adj" },
+            { order: 20, level: 3, label: "Rất quan trọng", reason: "Tương đối dễ...", exact: "比较容易 + V" },
+            { order: 21, level: 3, label: "Rất quan trọng", reason: "Để làm gì", exact: "来 + V" },
+            { order: 22, level: 3, label: "Rất quan trọng", reason: "Tuy..., nhưng nếu...", exact: "虽然……但如果……" },
+            { order: 23, level: 3, label: "Rất quan trọng", reason: "Sinh ra thành kiến với...", exact: "对……产生偏见" },
+            { order: 24, level: 3, label: "Rất quan trọng", reason: "Để tất cả cùng làm gì", exact: "让 + 所有人 + 一起来 + V" },
+            { order: 25, level: 3, label: "Rất quan trọng", reason: "Trở thành...", exact: "成为 + N" },
+            { order: 26, level: 3, label: "Rất quan trọng", reason: "Nếu không đạt được...", exact: "如果达不到，……" },
+            { order: 27, level: 2, label: "Quan trọng", reason: "Sắp xếp...", exact: "安排 + N" },
+            { order: 28, level: 2, label: "Quan trọng", reason: "Vì... mà mắc lỗi", exact: "因为……犯错误" },
+            { order: 29, level: 2, label: "Quan trọng", reason: "Có một số...", exact: "有的 + N" },
+            { order: 30, level: 2, label: "Quan trọng", reason: "Có khó khăn", exact: "有困难" },
+            { order: 31, level: 2, label: "Quan trọng", reason: "Trò chuyện với... một chút", exact: "和……聊一聊" },
+            { order: 32, level: 2, label: "Quan trọng", reason: "Xây dựng quan hệ", exact: "建立……关系" },
+            { order: 33, level: 2, label: "Quan trọng", reason: "Giữa... và...", exact: "与……之间" },
+            { order: 34, level: 2, label: "Quan trọng", reason: "Xây dựng nên...", exact: "建立起……" },
+            { order: 35, level: 2, label: "Quan trọng", reason: "Giữa đôi bên", exact: "彼此之间" },
+            { order: 36, level: 2, label: "Quan trọng", reason: "Ảnh hưởng tiêu cực", exact: "负面影响" },
+            { order: 37, level: 2, label: "Quan trọng", reason: "Có / mang...", exact: "具有 + N" },
+            { order: 38, level: 2, label: "Quan trọng", reason: "Một bộ / một hệ thống", exact: "一套 + N" },
+            { order: 39, level: 2, label: "Quan trọng", reason: "Hoàn toàn dựa vào...", exact: "完全依靠……" },
+            { order: 40, level: 2, label: "Quan trọng", reason: "Và đồng thời...", exact: "并 + V" },
+            { order: 41, level: 2, label: "Quan trọng", reason: "Một người quyết định", exact: "一个人说了算" },
+          ],
+          14: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Hẹn xong / đã hẹn với...", exact: "和……约好" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Làm gì ở đâu", exact: "在 + địa điểm + V" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Từ... đến...", exact: "从……到……" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Chưa tới / không đến...", exact: "不到 + thời gian/số lượng" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Đi/vào địa điểm", exact: "V进 + địa điểm" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Vừa... thì...", exact: "一 V，就……" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Làm một lát", exact: "V了 一会儿" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Chẳng bao lâu", exact: "不一会儿" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Hình như...", exact: "好像……" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Đang làm một lúc thì...", exact: "V着 V着，……" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Có cái..., có cái...", exact: "有的……，有的……，有的……" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Tiếp đó...", exact: "接着 + V" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Nhưng lại...", exact: "却……" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Vẫn còn...", exact: "仍然 + V / Adj" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Không thể tiếp tục làm", exact: "V + 不下去" },
+            { order: 16, level: 3, label: "Rất quan trọng", reason: "Một lát sau", exact: "过了一会儿" },
+            { order: 17, level: 3, label: "Rất quan trọng", reason: "Không ngừng làm gì", exact: "不断地 + V" },
+            { order: 18, level: 3, label: "Rất quan trọng", reason: "Rốt cuộc...?", exact: "到底……？" },
+            { order: 19, level: 3, label: "Rất quan trọng", reason: "Lẽ nào... sao?", exact: "难道……吗？" },
+            { order: 20, level: 3, label: "Rất quan trọng", reason: "Chưa từng bao giờ", exact: "从来没有 + V过" },
+            { order: 21, level: 3, label: "Rất quan trọng", reason: "Không ngờ...", exact: "没想到……" },
+            { order: 22, level: 3, label: "Rất quan trọng", reason: "Bắt đầu / hướng lên / trạng thái", exact: "V起来" },
+            { order: 23, level: 3, label: "Rất quan trọng", reason: "Nói không chừng sẽ...", exact: "说不定会 + V" },
+            { order: 24, level: 3, label: "Rất quan trọng", reason: "Không có bất kỳ...", exact: "没有任何 + N" },
+            { order: 25, level: 3, label: "Rất quan trọng", reason: "Phải làm gì", exact: "得 + V" },
+            { order: 26, level: 2, label: "Quan trọng", reason: "Làm gì từ rất sớm", exact: "早早儿地 + V" },
+            { order: 27, level: 2, label: "Quan trọng", reason: "Ở chỗ...", exact: "在……处" },
+            { order: 28, level: 2, label: "Quan trọng", reason: "Nhìn về phía... một cái", exact: "向……看一眼" },
+            { order: 29, level: 2, label: "Quan trọng", reason: "Ngoài..., không có...", exact: "除了……，没有……" },
+            { order: 30, level: 2, label: "Quan trọng", reason: "Nơi ít người", exact: "人少的地方" },
+            { order: 31, level: 2, label: "Quan trọng", reason: "Đột nhiên cảm thấy...", exact: "突然觉得……" },
+            { order: 32, level: 2, label: "Quan trọng", reason: "Có không ít người...", exact: "有不少人 + V" },
+            { order: 33, level: 2, label: "Quan trọng", reason: "Vừa giữ/trạng thái vừa làm", exact: "V着 + O + V" },
+            { order: 34, level: 2, label: "Quan trọng", reason: "Điều này khiến người ta hơi...", exact: "这让人有点儿……" },
+            { order: 35, level: 2, label: "Quan trọng", reason: "Bằng phương thức...", exact: "以……方式" },
+            { order: 36, level: 2, label: "Quan trọng", reason: "Thật muốn...", exact: "真想 + V" },
+            { order: 37, level: 2, label: "Quan trọng", reason: "Chỉ là... mà thôi", exact: "只是……罢了" },
+            { order: 38, level: 2, label: "Quan trọng", reason: "Nếu..., là...", exact: "如果……，是……的" },
+            { order: 39, level: 2, label: "Quan trọng", reason: "Có lẽ chỉ là... mà thôi", exact: "也许只是……罢了" },
+          ],
+          15: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Tất cả... đều...", exact: "所有的……都……" },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Đúng là...", exact: "真是……" },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Trong mắt...", exact: "在……眼中" },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "... mới là...", exact: "……才是……" },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cái gì là...?", exact: "什么是……呢？" },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Nói cách khác...", exact: "也就是说，……" },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Làm việc theo...", exact: "按照……去做事" },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Chứ không phải theo...", exact: "而不是按照……" },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Chính là / dùng để giải thích", exact: "就是 + V / câu giải thích" },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Bắt buộc phải là...", exact: "必须是……" },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Chưa tới số lượng", exact: "不到 + số lượng" },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Cuộc khảo sát này chứng minh đầy đủ...", exact: "这项调查充分说明……" },
+            { order: 13, level: 3, label: "Rất quan trọng", reason: "Quả thực là...", exact: "的确是……" },
+            { order: 14, level: 3, label: "Rất quan trọng", reason: "Trở thành mục tiêu...", exact: "成为……的目标" },
+            { order: 15, level: 3, label: "Rất quan trọng", reason: "Theo đuổi...", exact: "追求 + N" },
+            { order: 16, level: 3, label: "Rất quan trọng", reason: "Hoàn toàn theo...", exact: "完全按照……" },
+            { order: 17, level: 3, label: "Rất quan trọng", reason: "Cái cần là...", exact: "需要的是……" },
+            { order: 18, level: 3, label: "Rất quan trọng", reason: "Có sức sáng tạo / tưởng tượng / cá tính", exact: "有创造力 / 有想象力 / 有个性" },
+            { order: 19, level: 3, label: "Rất quan trọng", reason: "Có thể làm gì", exact: "能 + V" },
+            { order: 20, level: 3, label: "Rất quan trọng", reason: "Hợp tác với...", exact: "与……合作" },
+            { order: 21, level: 3, label: "Rất quan trọng", reason: "Tuy nhiên... lại...", exact: "然而，……却……" },
+            { order: 22, level: 3, label: "Rất quan trọng", reason: "Cái thật sự cần là...", exact: "真正需要的是……" },
+            { order: 23, level: 2, label: "Quan trọng", reason: "Biểu hiện...", exact: "表现了……" },
+            { order: 24, level: 2, label: "Quan trọng", reason: "Tức là...", exact: "即……" },
+            { order: 25, level: 2, label: "Quan trọng", reason: "Có một khảo sát về...", exact: "有一项关于……的调查" },
+            { order: 26, level: 2, label: "Quan trọng", reason: "Rất có thể nói rõ vấn đề", exact: "很能说明问题" },
+            { order: 27, level: 2, label: "Quan trọng", reason: "Khi được hỏi đến...", exact: "在被问到……时" },
+            { order: 28, level: 2, label: "Quan trọng", reason: "Trả lời câu hỏi này", exact: "回答了这一问题" },
+            { order: 29, level: 2, label: "Quan trọng", reason: "Trong đó có...", exact: "其中有……" },
+            { order: 30, level: 2, label: "Quan trọng", reason: "Trong mắt đa số...", exact: "在大多数……的眼中" },
+            { order: 31, level: 2, label: "Quan trọng", reason: "Trong cuộc sống...", exact: "在生活中……" },
+            { order: 32, level: 2, label: "Quan trọng", reason: "Đầy những...", exact: "充满……的 + N" },
+            { order: 33, level: 2, label: "Quan trọng", reason: "Có lẽ...", exact: "或许……" },
+          ],
+        };
+        const rules = subject === "hanyu3"
+          ? (hanyu3RulesByLesson[Number(lesson)] || [])
+          : subject === "writing"
+            ? (writingRulesByLesson[Number(lesson)] || [])
+            : (rulesByLesson[Number(lesson)] || rulesByLesson[1]);
+
+        return rules.find((rule) => {
+          if (rule.exact) return candidates.includes(normalizeStructureKey(rule.exact));
+          return rule.tests.every((part) => text.includes(normalizeStructureKey(part)));
+        }) || null;
+      }
+
+      function getStructureSortOrder(item, fallbackIndex) {
+        const importance = getStructureImportance(item);
+        return importance ? importance.order : 1000 + fallbackIndex;
+      }
+
+      function compareStructuresByImportance(a, b) {
+        const importanceA = getStructureImportance(a.item);
+        const importanceB = getStructureImportance(b.item);
+        const levelA = importanceA ? importanceA.level : 0;
+        const levelB = importanceB ? importanceB.level : 0;
+
+        if (levelA !== levelB) return levelB - levelA;
+
+        const orderA = importanceA ? importanceA.order : 1000 + a.index;
+        const orderB = importanceB ? importanceB.order : 1000 + b.index;
+        if (orderA !== orderB) return orderA - orderB;
+
+        return a.index - b.index;
+      }
+
+      function renderStructureStars(importance) {
+        if (!importance) return "";
+        return "⭐".repeat(importance.level);
+      }
+
+      function openStructureDetailPopover(item) {
+        const popover = document.getElementById("structureDetailPopover");
+        const title = item.title || item.pattern || item.structure || item.chinese || "Cấu trúc";
+        const pattern = item.pattern || item.structure || item.formula || item.chinese || "";
+        const meaning = item.meaning || item.vietnamese || item.translation || "Đang bổ sung";
+        const usage = item.usage || item.explanation || item.note || item.description || "Đang bổ sung";
+        const examples = getStructureExamples(item);
+        const importance = getStructureImportance(item);
+        const importanceEl = document.getElementById("structurePopoverImportance");
+
+        document.getElementById("structurePopoverTitle").textContent = title;
+        document.getElementById("structurePopoverPattern").textContent = pattern;
+        document.getElementById("structurePopoverMeaning").textContent = meaning;
+        document.getElementById("structurePopoverUsage").textContent = usage;
+        if (importanceEl) {
+          importanceEl.hidden = !importance;
+          importanceEl.innerHTML = importance
+            ? `<span>${renderStructureStars(importance)}</span><strong>${escapeHtml(importance.label)}</strong>`
+            : "";
+        }
+        document.getElementById("structurePopoverExamples").innerHTML = examples
+          .filter((example) => example.chinese || example.pinyin || example.vietnamese)
+          .map(
+            (example) => `
+              <div class="structure-popover-example">
+                ${example.chinese ? `<strong>${escapeHtml(example.chinese)}</strong>` : ""}
+                ${example.pinyin ? `<span>${escapeHtml(example.pinyin)}</span>` : ""}
+                ${example.vietnamese ? `<small>${escapeHtml(example.vietnamese)}</small>` : ""}
+                ${example.analysis ? `<small class="structure-example-analysis">${escapeHtml(example.analysis)}</small>` : ""}
+              </div>
+            `,
+          )
+          .join("");
+
+        popover.hidden = false;
+        document.body.classList.add("structure-detail-open");
+        fixMojibakeIn(popover);
+      }
+
+      function closeStructureDetailPopover() {
+        const popover = document.getElementById("structureDetailPopover");
+        if (popover) popover.hidden = true;
+        document.body.classList.remove("structure-detail-open");
+      }
+
+      let speakingStructureItems = [];
+      let structureSearchQuery = "";
+      let structureCurrentPage = 1;
+      const structurePageSize = 8;
+
+      function getStructureSearchText(item) {
+        return [
+          item.title,
+          item.pattern,
+          item.structure,
+          item.formula,
+          item.chinese,
+          item.pinyin,
+          item.meaning,
+          item.vietnamese,
+          item.usage,
+          item.explanation,
+          item.note,
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+      }
+
+      function renderSpeakingStructureList(keepSearchFocus = false) {
+        if (subject === "writing" && content === "words") {
+          setReviewHeader(
+            `Bài ${String(Number(lesson))} - Cấu trúc`,
+            "Chọn một cấu trúc để xem giải thích và ví dụ",
+          );
+        }
         const grid = document.getElementById("reviewGrid");
-        grid.className = "structure-list-grid";
+        grid.className = "structure-list-panel";
         grid.innerHTML = "";
 
         if (!speakingStructureItems.length) {
@@ -298,30 +1819,88 @@
           return;
         }
 
-        speakingStructureItems.forEach((item, index) => {
+        const sortedItems = speakingStructureItems
+          .map((item, index) => ({ item, index }))
+          .sort(compareStructuresByImportance);
+
+        const query = structureSearchQuery.trim().toLowerCase();
+        const filteredItems = sortedItems.filter(({ item }) => !query || getStructureSearchText(item).includes(query));
+        const totalPages = Math.max(1, Math.ceil(filteredItems.length / structurePageSize));
+        structureCurrentPage = Math.min(Math.max(1, structureCurrentPage), totalPages);
+        const start = (structureCurrentPage - 1) * structurePageSize;
+        const pageItems = filteredItems.slice(start, start + structurePageSize);
+
+        grid.innerHTML = `
+          <div class="structure-list-toolbar">
+            <label class="structure-search">
+              <span>⌕</span>
+              <input id="structureSearchInput" type="search" placeholder="Tìm cấu trúc..." value="${escapeHtml(structureSearchQuery)}" />
+            </label>
+            <div class="structure-page-controls">
+              <button id="structurePrevPage" type="button" ${structureCurrentPage === 1 ? "disabled" : ""}>← Trang trước</button>
+              <span>Trang ${structureCurrentPage}/${totalPages}</span>
+              <button id="structureNextPage" type="button" ${structureCurrentPage === totalPages ? "disabled" : ""}>Trang sau →</button>
+            </div>
+          </div>
+          <div class="structure-list-grid" id="structureListGrid"></div>
+        `;
+
+        const listGrid = document.getElementById("structureListGrid");
+        if (!pageItems.length) {
+          listGrid.innerHTML = '<p class="review-subtitle structure-empty">Không tìm thấy cấu trúc phù hợp.</p>';
+        }
+
+        pageItems.forEach(({ item }, index) => {
           const card = document.createElement("button");
           card.className = "structure-list-card";
           card.type = "button";
+          const secondary = item.pattern || item.pinyin || "";
+          const meaning = item.meaning || item.vietnamese || "";
+          const importance = getStructureImportance(item);
           card.innerHTML = `
             <span class="structure-list-index">${String(index + 1).padStart(2, "0")}</span>
+            ${
+              importance
+                ? `<span class="structure-importance-badge" title="${escapeHtml(importance.label)}">${renderStructureStars(importance)}</span>`
+                : ""
+            }
             <span class="structure-list-title">${escapeHtml(item.title || item.pattern || item.chinese)}</span>
-            ${item.pattern ? `<span class="structure-list-pattern">${escapeHtml(item.pattern)}</span>` : ""}
-            ${item.meaning ? `<span class="structure-list-meaning">${escapeHtml(item.meaning)}</span>` : ""}
+            ${secondary ? `<span class="structure-list-pattern">${escapeHtml(secondary)}${item.partOfSpeech ? ` [ ${escapeHtml(item.partOfSpeech)} ]` : ""}</span>` : ""}
+            ${meaning ? `<span class="structure-list-meaning">${escapeHtml(meaning)}</span>` : ""}
             <span class="structure-list-sound" aria-hidden="true">🔊</span>
           `;
-          card.onclick = () => renderSpeakingStructureDetail(item);
+          card.onclick = () => openStructureDetailPopover(item);
           card.querySelector(".structure-list-sound").onclick = (event) => {
             event.stopPropagation();
             speakChinese(item.chinese || item.pattern);
           };
-          grid.appendChild(card);
+          listGrid.appendChild(card);
         });
+
+        document.getElementById("structureSearchInput").addEventListener("input", (event) => {
+          structureSearchQuery = event.target.value;
+          structureCurrentPage = 1;
+          renderSpeakingStructureList(true);
+        });
+        document.getElementById("structurePrevPage").addEventListener("click", () => {
+          structureCurrentPage -= 1;
+          renderSpeakingStructureList();
+        });
+        document.getElementById("structureNextPage").addEventListener("click", () => {
+          structureCurrentPage += 1;
+          renderSpeakingStructureList();
+        });
+        if (keepSearchFocus) {
+          const searchInput = document.getElementById("structureSearchInput");
+          searchInput.focus();
+          searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
+        }
       }
 
       async function loadSpeakingStructureCards() {
         let data;
         const lessonNum = String(Number(lesson));
-        if (lessonNum === "4") {
+        if (false) {
           const res = await fetch(`data/speaking-lesson-4.json?v=${Date.now()}`);
           if (res.ok) {
             data = await res.json();
@@ -332,31 +1911,36 @@
           data = await loadSpeakingLessonData();
         }
         speakingStructureItems = getSpeakingStructureItems(data);
-        document.getElementById("reviewTitle").textContent =
-          `Bài ${String(Number(lesson))} - Cấu trúc`;
-        document.querySelector(".review-subtitle").textContent =
-          "Chọn một cấu trúc để xem giải thích và ví dụ";
+        setReviewHeader(
+          `Bài ${String(Number(lesson))} - Cấu trúc`,
+          "Chọn một cấu trúc để xem giải thích và ví dụ",
+        );
+        setReviewHeader(
+          `Bài ${String(Number(lesson))} - Cấu trúc`,
+          "Chọn một cấu trúc để xem giải thích và ví dụ",
+        );
+        setReviewHeader(
+          `Bài ${String(Number(lesson))} - Cấu trúc`,
+          "Chọn một cấu trúc để xem giải thích và ví dụ",
+        );
         renderSpeakingStructureList();
       }
 
       async function loadSpeakingLessonData() {
         const lessonNum = String(Number(lesson));
         if (subject === "hanyu3") {
-          const res = await fetch(`data/hanyu3-lesson-${lessonNum}.json?v=${Date.now()}`);
+          const res = await fetch(`data/hanyu3-lessons.json?v=${Date.now()}`);
           if (!res.ok) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ quyển 3");
-          return res.json();
+          const allLessons = await res.json();
+          const lessonData = allLessons[lessonNum];
+          if (!lessonData) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ quyển 3");
+          return lessonData;
         }
 
-        if (lessonNum !== "4") {
-          const res = await fetch(`data/speaking-lesson-${lessonNum}.json?v=${Date.now()}`);
-          if (!res.ok) throw new Error("Không tải được dữ liệu môn nói");
-          return res.json();
-        }
+        const res = await fetch(`data/speaking-lesson-${lessonNum}.json?v=${Date.now()}`);
+        if (res.ok) return res.json();
 
-        const res = await fetch("data/speaking-lesson-4-raw.txt");
-        if (!res.ok) throw new Error("Không tải được dữ liệu môn nói");
-        const rawText = await res.text();
-        return { __rawText: rawText };
+        throw new Error("Không tải được dữ liệu môn nói");
       }
 
       function goBackToLessonOptions() {
@@ -370,30 +1954,35 @@
         const data = await res.json();
         const lessonKey = String(Number(lesson));
         const items = data[lesson] || data[lessonKey] || [];
+        const writingLessonName = getWritingLessonName();
         tests = [
           {
             number: 1,
             total: items.length,
-            label: "Đoạn văn 01",
+            label: writingLessonName ? writingLessonName[0] : "Đoạn văn 01",
           },
         ];
       }
 
       async function loadListeningTests() {
         const lessonKey = String(Number(lesson));
-        const sections = listeningSectionGroups[lessonKey] || [];
         const res = await fetch(`data/listening-lesson-1-4.json?v=${Date.now()}`);
         if (!res.ok) throw new Error("Không tải được dữ liệu bài nghe");
         const data = await res.json();
+        const existingSections = Object.keys(data).filter((key) => key.startsWith(`${lessonKey}-`));
+        const sections = listeningSectionOrder
+          .map((suffix) => `${lessonKey}-${suffix}`)
+          .filter((key) => existingSections.includes(key));
 
         tests = sections.map((label, idx) => {
           const total = Array.isArray(data[label]?.questions)
             ? data[label].questions.length
             : 0;
+          const title = data[label]?.title ? `${label} ${data[label].title}` : label;
           return {
             number: idx + 1,
             total,
-            label: `Phần ${label}`,
+            label: title,
             section: label,
             hasData: total > 0,
           };
@@ -405,19 +1994,28 @@
         if (!res.ok) throw new Error("Không tải được dữ liệu môn viết");
 
         const data = await res.json();
-        const groups = splitWritingItemsIntoTests(getWritingExampleItems(data));
+        const groups = splitWritingExamplesIntoReadings(getWritingExampleItems(data));
+        writingReferenceGroups = groups;
+        speakingStructureItems = getWritingGrammarItems(data);
+        const lessonKey = String(Number(lesson));
+        const grammarItems = (data.grammar || data.grammarTests || {})[lesson] ||
+          (data.grammar || data.grammarTests || {})[lessonKey] ||
+          [];
+        writingReferenceWords = Array.isArray(grammarItems)
+          ? grammarItems.filter((item) => item && item.partOfSpeech)
+          : [];
 
-        tests = groups.slice(0, 4).map((group, idx) => ({
+        tests = groups.map((group, idx) => ({
           number: idx + 1,
           total: group.length || 20,
-          label: `Ví dụ ${String(idx + 1).padStart(2, "0")}`,
+          label: `Bài đọc hiểu ${String(idx + 1).padStart(2, "0")}`,
         }));
 
         if (!tests.length) {
-          tests = Array.from({ length: 4 }, (_, idx) => ({
+          tests = Array.from({ length: 9 }, (_, idx) => ({
             number: idx + 1,
             total: 20,
-            label: `Ví dụ ${String(idx + 1).padStart(2, "0")}`,
+            label: `Bài đọc hiểu ${String(idx + 1).padStart(2, "0")}`,
           }));
         }
       }
@@ -427,26 +2025,43 @@
         if (!res.ok) throw new Error("Không tải được dữ liệu môn viết");
 
         const data = await res.json();
-        const groups = splitWritingItemsIntoTests(getWritingGrammarItems(data));
+        const groups = splitWritingItemsIntoTests(getWritingStructureItems(data));
 
-        tests = groups.slice(0, 4).map((group, idx) => ({
+        tests = groups.map((group, idx) => ({
           number: idx + 1,
           total: group.length || 20,
-          label: `Cấu trúc ${String(idx + 1).padStart(2, "0")}`,
+          label: `Bài kiểm tra ${String(idx + 1).padStart(2, "0")}`,
         }));
 
         if (!tests.length) {
           tests = Array.from({ length: 4 }, (_, idx) => ({
             number: idx + 1,
             total: 20,
-            label: `Cấu trúc ${String(idx + 1).padStart(2, "0")}`,
+            label: `Bài kiểm tra ${String(idx + 1).padStart(2, "0")}`,
           }));
         }
       }
 
+      async function loadWritingWordStructureCards() {
+        const res = await fetch("data/writing-tests.json");
+        if (!res.ok) throw new Error("Không tải được dữ liệu môn viết");
+
+        const data = await res.json();
+        speakingStructureItems = getWritingGrammarItems(data);
+        setReviewHeader(
+          `Bài ${String(Number(lesson))} - Cấu trúc`,
+          "Chọn một cấu trúc để xem giải thích và ví dụ",
+        );
+        setReviewHeader(
+          `Bài ${String(Number(lesson))} - Từ mới và cấu trúc`,
+          "Chọn một mục để xem chi tiết và nghe phát âm",
+        );
+        renderSpeakingStructureList();
+      }
+
       async function loadSpeakingExampleTests() {
         const data = await loadSpeakingLessonData();
-        const size = data.__rawText ? 25 : 20;
+        const size = 20;
         const items = data.__rawText ? parseTabSeparatedVocabulary(data.__rawText || "") : (data.example || []);
         const groups = splitIntoFixedGroups(items, size);
 
@@ -456,7 +2071,7 @@
           return {
             number: idx + 1,
             total: groups[idx].length,
-            label: `Bài ${String(idx + 1).padStart(2, "0")} (${start}-${end})`,
+            label: `Bài kiểm tra ${String(idx + 1).padStart(2, "0")} (${start}-${end})`,
             hasData: true,
           };
         });
@@ -467,15 +2082,23 @@
         const items = data.exercise || [];
         const groups = Array.isArray(items[0])
           ? items
+          : items[0] && (items[0].title || Array.isArray(items[0].questions))
+            ? items
           : splitIntoFixedGroups(items, 20);
 
         tests = groups.length
-          ? groups.map((group, idx) => ({
-              number: idx + 1,
-              total: group.length,
-              label: `Bài tập ${String(idx + 1).padStart(2, "0")}`,
-              hasData: group.length > 0,
-            }))
+          ? groups.map((group, idx) => {
+              const isExerciseObject = group && !Array.isArray(group) && (group.title || group.questions);
+              const total = isExerciseObject
+                ? (Array.isArray(group.questions) ? group.questions.length : 0)
+                : group.length;
+              return {
+                number: idx + 1,
+                total,
+                label: isExerciseObject ? (group.title || `Bài tập ${String(idx + 1).padStart(2, "0")}`) : `Bài tập ${String(idx + 1).padStart(2, "0")}`,
+                hasData: total > 0,
+              };
+            })
           : Array.from({ length: 6 }, (_, idx) => ({
               number: idx + 1,
               total: 0,
@@ -499,7 +2122,7 @@
           return {
             number: idx + 1,
             total: group.length || 20,
-            label: `Bài ${String(idx + 1).padStart(2, "0")} (${start}-${end})`,
+            label: `Bài kiểm tra ${String(idx + 1).padStart(2, "0")} (${start}-${end})`,
             hasData: group.length > 0,
           };
         });
@@ -514,12 +2137,14 @@
             : (data.grammar || data.structure || []);
         const groupSize = content === "structure" ? 20 : 25;
         const groups = splitIntoFixedGroups(items, groupSize);
-        const labelPrefix = content === "structure" ? "Kiểm tra cấu trúc" : "Từ vựng và cấu trúc";
+        const labelPrefix = content === "structure" ? "Bài kiểm tra" : "Từ vựng và cấu trúc";
 
         tests = groups.map((group, idx) => ({
           number: idx + 1,
           total: group.length,
-          label: `${labelPrefix} ${String(idx + 1).padStart(2, "0")} (${idx * groupSize + 1}-${idx * groupSize + group.length})`,
+          label: content === "structure"
+            ? `${labelPrefix} ${String(idx + 1).padStart(2, "0")}`
+            : `${labelPrefix} ${String(idx + 1).padStart(2, "0")} (${idx * groupSize + 1}-${idx * groupSize + group.length})`,
           hasData: true,
         }));
       }
@@ -529,17 +2154,32 @@
         const paragraphGroups = data.__rawText
           ? splitIntoGroups(parseTabSeparatedVocabulary(data.__rawText || ""), 25)
           : getSpeakingParagraphGroups(data);
-        tests = (paragraphGroups.length ? paragraphGroups : [[]]).map((group, idx) => ({
+        const fallbackGroups = subject === "hanyu3" ? [[], [], []] : [[]];
+        tests = (paragraphGroups.length ? paragraphGroups : fallbackGroups).map((group, idx) => ({
           number: idx + 1,
-          total: group.length,
-          label: `Ôn tập bài khóa ${String(idx + 1).padStart(2, "0")}`,
-          hasData: group.length > 0,
+          total: getParagraphGroupTotal(group),
+          label: getParagraphGroupTitle(group, idx),
+          hasData: getParagraphGroupTotal(group) > 0,
+          isReading: isReadingPassage(group),
         }));
       }
 
       function renderReview() {
+        if ((subject === "speaking" || subject === "hanyu3" || subject === "listening") && content === "example") {
+          renderReflexReview();
+          return;
+        }
+
         const grid = document.getElementById("reviewGrid");
-        grid.className = "review-grid";
+        const isPracticeActivityList =
+          ["paragraph", "structure", "example", "exercise"].includes(content) ||
+          (subject === "listening" && content === "listening") ||
+          (subject === "writing" && !content);
+        grid.className = isPracticeActivityList
+          ? "reflex-test-list practice-activity-list"
+          : document.body.classList.contains("speaking-review-list-page")
+            ? "review-grid speaking-review-grid"
+            : "review-grid";
         grid.innerHTML = "";
 
         tests.forEach((test) => {
@@ -560,25 +2200,80 @@
             stored &&
             typeof stored.currentIndex === "number" &&
             stored.currentIndex >= totalForDisplay;
+          const active =
+            stored &&
+            typeof stored.currentIndex === "number" &&
+            stored.currentIndex > 0 &&
+            !done;
 
           const pct = Math.round(((completed || 0) / totalForDisplay) * 100);
           const unavailable = test.hasData === false;
-                    const progressText = unavailable
+          const progressText = unavailable
             ? "Chưa có dữ liệu"
-            : `Hoàn thành ${completed}/${totalForDisplay}`;
+            : test.isReading
+              ? `${test.total} dòng đọc hiểu`
+              : `Hoàn thành ${completed}/${totalForDisplay}`;
           const button = document.createElement("button");
-          button.className = "review-test-btn";
-          button.innerHTML = `
-            <span class="test-number">${test.label}</span>
-            <span class="test-progress">${progressText}</span>
-            <div class="tile-progress">
-              <div class="tile-progress-bar" style="width:${pct}%;"></div>
-            </div>
-          `;
+          button.className = isPracticeActivityList
+            ? `reflex-test-card practice-activity-list-card tone-${((test.number || 1) % 10) || 10}${active ? " is-active" : ""}${done ? " is-done" : ""}`
+            : "review-test-btn";
+          button.innerHTML = isPracticeActivityList
+            ? `
+              <span class="reflex-test-index">${String(test.number).padStart(2, "0")}</span>
+              <span class="reflex-test-body">
+                <strong>${test.label}</strong>
+                <small>${test.isReading ? `${test.total || 0} dòng đọc hiểu` : `${test.total || 0} câu`}</small>
+                <em>${done ? "Đã hoàn thành" : active ? "Đang làm" : unavailable ? "Chưa có dữ liệu" : "Chưa làm"}</em>
+              </span>
+              <span class="reflex-test-action">${active ? "Tiếp tục" : done ? "Làm lại" : "Bắt đầu"}</span>
+            `
+            : `
+              <span class="test-number">${test.label}</span>
+              <span class="test-progress">${progressText}</span>
+              <div class="tile-progress">
+                <div class="tile-progress-bar" style="width:${pct}%;"></div>
+              </div>
+            `;
+          if (isPracticeActivityList) {
+            const metaEl = button.querySelector(".reflex-test-body small");
+            const stateEl = button.querySelector(".reflex-test-body em");
+            const actionEl = button.querySelector(".reflex-test-action");
+            if (metaEl) {
+              metaEl.textContent = test.isReading
+                ? `${test.total || 0} d\u00f2ng \u0111\u1ecdc hi\u1ec3u`
+                : `${test.total || 0} c\u00e2u`;
+            }
+            if (stateEl) {
+              stateEl.textContent = done
+                ? "\u0110\u00e3 ho\u00e0n th\u00e0nh"
+                : active
+                  ? "\u0110ang l\u00e0m"
+                  : unavailable
+                    ? "Ch\u01b0a c\u00f3 d\u1eef li\u1ec7u"
+                    : "Ch\u01b0a l\u00e0m";
+            }
+            if (actionEl) {
+              actionEl.textContent = active
+                ? "Ti\u1ebfp t\u1ee5c"
+                : done
+                  ? "L\u00e0m l\u1ea1i"
+                  : "B\u1eaft \u0111\u1ea7u";
+            }
+          }
           if (unavailable) button.disabled = true;
 
           button.onclick = () => {
             if (unavailable) return;
+
+            if (content === "paragraph" && test.isReading) {
+              renderReadingPassage(test.number);
+              return;
+            }
+
+            if (subject === "writing" && !content) {
+              renderWritingReferenceReader(test.number);
+              return;
+            }
 
             let prev = null;
             try {
@@ -614,9 +2309,15 @@
           grid.appendChild(button);
         });
 
-        document.getElementById("reviewTitle").textContent =
-          content === "paragraph"
+        const reviewTitleText =
+          subject === "writing" && content === "paragraph" && getWritingLessonName()
+            ? `Bài ${String(Number(lesson))} - ${getWritingLessonName()[0]}`
+          : content === "paragraph"
             ? `Bài ${String(Number(lesson))} - Ôn tập bài khóa`
+            : subject === "writing" && content === "words"
+              ? `Bài ${String(Number(lesson))} - Từ mới và cấu trúc`
+            : subject === "writing" && content === "structure"
+              ? `Bài ${String(Number(lesson))} - Kiểm tra cấu trúc`
             : subject === "speaking" && content === "words"
               ? `Bài ${String(Number(lesson))} - Từ mới`
             : content === "grammar"
@@ -638,13 +2339,161 @@
             : subject === "hanyu3" && content === "paragraph"
               ? `Bài ${String(Number(lesson))} - Ôn tập bài khóa`
             : subject !== "writing" && content === "listening"
-              ? `Bài ${String(Number(lesson))} - Ôn tập đoạn nghe`
+              ? `Bài ${String(Number(lesson))} - Bài tập nghe`
             : subject === "listening" && content === "example"
-              ? `Bài ${String(Number(lesson))} - Ôn tập ví dụ`
+              ? `Bài ${String(Number(lesson))} - Kiểm tra phản xạ`
             : subject === "writing"
-              ? `Bài ${String(Number(lesson))} - Ôn tập ví dụ`
+              ? `Bài ${String(Number(lesson))} - Tham khảo bài văn`
             : `Bài ${lesson} - Ôn tập`;
+        setReviewHeader(reviewTitleText, "Chọn bài để bắt đầu");
       }
+
+      function renderReflexReview() {
+        const grid = document.getElementById("reviewGrid");
+        const aside = document.querySelector(".speaking-aside");
+        const hero = document.querySelector(".speaking-hero");
+        const totalTests = tests.length;
+        const totalQuestions = tests.reduce((sum, test) => sum + (test.total || 0), 0);
+        let completedTests = 0;
+        let activeTests = 0;
+
+        document.body.classList.add("reflex-review-page");
+        setReviewHeader("Kiểm tra phản xạ", `${totalTests} bài kiểm tra - mỗi bài 20 câu`);
+
+        tests.forEach((test) => {
+          const progressKey = `typingProgress-${storagePrefix}${lesson}-${test.number}`;
+          let stored = null;
+          try {
+            stored = JSON.parse(localStorage.getItem(progressKey) || "null");
+          } catch (e) {
+            stored = null;
+          }
+          const totalForDisplay = Math.max(1, test.total || 0);
+          if (stored && typeof stored.currentIndex === "number" && stored.currentIndex >= totalForDisplay) {
+            completedTests += 1;
+          } else if (stored && typeof stored.currentIndex === "number" && stored.currentIndex > 0) {
+            activeTests += 1;
+          }
+        });
+
+        const pct = totalTests ? Math.round((completedTests / totalTests) * 100) : 0;
+
+        if (hero) {
+          hero.classList.add("reflex-hero");
+          const art = hero.querySelector(".speaking-hero-art");
+          if (art) art.textContent = "⚡";
+          const meta = hero.querySelector(".speaking-option-meta");
+          if (meta) {
+            meta.innerHTML = `
+              <span>▣ ${totalTests} bài kiểm tra</span>
+              <span>☷ ${totalQuestions} câu hỏi</span>
+              <span>◉ ${completedTests}/${totalTests} đã hoàn thành</span>
+              <span>⚡ 0% tốc độ phản xạ TB</span>
+            `;
+          }
+          const stat = hero.querySelector(".speaking-hero-stats");
+          if (stat) stat.innerHTML = `<strong>${pct}%</strong><span>tiến độ</span>`;
+        }
+
+        if (aside) {
+          aside.innerHTML = `
+            <article class="speaking-side-card reflex-progress-card">
+              <h2>Tiến độ kiểm tra</h2>
+              <div class="speaking-ring"><strong>${pct}%</strong></div>
+              <ul>
+                <li><span></span>${completedTests} Đã hoàn thành</li>
+                <li><span></span>${activeTests} Đang làm</li>
+                <li><span></span>${Math.max(0, totalTests - completedTests - activeTests)} Chưa làm</li>
+              </ul>
+              <button type="button" disabled>Xem thống kê chi tiết →</button>
+            </article>
+
+            <article class="speaking-side-card reflex-rules-card">
+              <h2>Quy tắc kiểm tra</h2>
+              <ol>
+                <li><strong>Nghe câu hỏi</strong><small>Lắng nghe kỹ câu hỏi từ audio</small></li>
+                <li><strong>Trả lời nhanh</strong><small>Trả lời trong thời gian ngắn nhất</small></li>
+                <li><strong>Kiểm tra đáp án</strong><small>Xem đáp án và giải thích chi tiết</small></li>
+                <li><strong>Luyện tập lại</strong><small>Ôn tập để cải thiện tốc độ</small></li>
+              </ol>
+            </article>
+
+            <article class="speaking-side-card reflex-suggestion-card">
+              <h2>Gợi ý học hôm nay</h2>
+              <button type="button" disabled>Hoàn thành 2 bài kiểm tra <small>Nâng cao phản xạ giao tiếp</small></button>
+              <p>Giữ chuỗi 3 ngày để duy trì thói quen nhé!</p>
+            </article>
+          `;
+        }
+
+        grid.className = "reflex-test-list practice-activity-list";
+        grid.innerHTML = "";
+
+        tests.forEach((test, idx) => {
+          const progressKey = `typingProgress-${storagePrefix}${lesson}-${test.number}`;
+          let stored = null;
+          try {
+            stored = JSON.parse(localStorage.getItem(progressKey) || "null");
+          } catch (e) {
+            stored = null;
+          }
+
+          const totalForDisplay = Math.max(1, test.total || 0);
+          const done =
+            stored &&
+            typeof stored.currentIndex === "number" &&
+            stored.currentIndex >= totalForDisplay;
+          const active =
+            stored &&
+            typeof stored.currentIndex === "number" &&
+            stored.currentIndex > 0 &&
+            !done;
+          const unavailable = test.hasData === false;
+
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `reflex-test-card practice-activity-list-card tone-${(idx % 10) + 1}${active ? " is-active" : ""}${done ? " is-done" : ""}`;
+          button.disabled = unavailable;
+          button.innerHTML = `
+            <span class="reflex-test-index">${String(test.number).padStart(2, "0")}</span>
+            <span class="reflex-test-body">
+              <strong>Bài kiểm tra ${String(test.number).padStart(2, "0")}</strong>
+              <small>☷ ${test.total || 0} câu <span>◷ 8-10 phút</span></small>
+              <em>${done ? "Đã hoàn thành" : active ? "Đang làm" : unavailable ? "Chưa có dữ liệu" : "Chưa làm"}</em>
+            </span>
+            <span class="reflex-test-action">${active ? "Tiếp tục" : done ? "Làm lại" : "Bắt đầu"}</span>
+          `;
+
+          button.onclick = () => {
+            if (unavailable) return;
+
+            sessionStorage.setItem("currentQuestion", "0");
+            sessionStorage.setItem("currentTest", test.number);
+            sessionStorage.setItem(
+              `typingExp-${storagePrefix}${lesson}-${test.number}`,
+              "0",
+            );
+            sessionStorage.setItem(
+              `typingReset-${storagePrefix}${lesson}-${test.number}`,
+              "1",
+            );
+            localStorage.removeItem(progressKey);
+            window.location.href = `typing.html?lesson=${lesson}&test=${test.number}&subject=${subject}&content=example`;
+          };
+
+          grid.appendChild(button);
+        });
+      }
+
+      document
+        .getElementById("structureDetailBackdrop")
+        ?.addEventListener("click", closeStructureDetailPopover);
+      document
+        .getElementById("structureDetailClose")
+        ?.addEventListener("click", closeStructureDetailPopover);
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeStructureDetailPopover();
+      });
 
       if (subject !== "writing" && content === "listening") {
         loadListeningTests()
@@ -702,7 +2551,13 @@
             document.getElementById("reviewGrid").innerHTML =
               `<p class="empty-state">Lỗi: ${err.message}</p>`;
           });
-      } else if (subject === "writing" && content === "grammar") {
+      } else if (subject === "writing" && content === "words") {
+        loadWritingWordStructureCards()
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if (subject === "writing" && (content === "grammar" || content === "structure")) {
         loadGrammarTests()
           .then(renderReview)
           .catch((err) => {
@@ -711,7 +2566,7 @@
           });
       } else if (subject === "writing") {
         loadExampleTests()
-          .then(renderReview)
+          .then(() => renderWritingReferenceReader(1))
           .catch((err) => {
             document.getElementById("reviewGrid").innerHTML =
               `<p class="review-subtitle">${err.message}</p>`;

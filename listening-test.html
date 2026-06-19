@@ -8,68 +8,158 @@
     <script src="theme.js" defer></script>
   </head>
   <body class="listening-test-page">
+    <aside class="speaking-sidebar listening-course-sidebar">
+      <a class="speaking-logo" href="index.html">FTC</a>
+      <nav class="speaking-nav" aria-label="Điều hướng bài nghe">
+        <a href="index.html">⌂ Trang chủ</a>
+        <a class="is-active" href="lessons.html?subject=listening">▣ Học tập</a>
+        <button disabled>Flashcard</button>
+        <button disabled>Thi thử HSK</button>
+        <button disabled>AI hội thoại</button>
+        <button disabled>Từ vựng</button>
+        <button disabled>Thống kê</button>
+        <button disabled>Cài đặt</button>
+      </nav>
+    </aside>
+
     <main class="listening-shell">
       <nav class="listening-breadcrumb" aria-label="Đường dẫn">
-        <a href="index.html">Trang chủ</a>
+        <a id="breadcrumbBack" href="#">← Học tập</a>
         <span aria-hidden="true">›</span>
-        <a href="lessons.html">Khóa học tiếng Trung sơ cấp</a>
+        <a href="lessons.html?subject=listening">Nghe hiểu</a>
         <span aria-hidden="true">›</span>
         <a id="breadcrumbLesson" href="#">Bài 01</a>
         <span aria-hidden="true">›</span>
         <span id="breadcrumbSection">Phần 1-4</span>
       </nav>
-      <header class="listening-header">
-        <button class="listening-back-btn" type="button" onclick="goBack()">← Quay lại</button>
-        <div class="listening-header-copy">
-          <h1 id="listeningTitle">Bài 01 - Phần 1-4</h1>
-          <p id="listeningSubtitle">4 câu trắc nghiệm</p>
-        </div>
-      </header>
-
       <section class="listening-layout">
-        <article class="listening-main">
-          <div class="listen-progress">
-            <div class="listen-progress-label" id="questionLabel">Câu 1/4</div>
-            <div class="listen-progress-track" aria-hidden="true">
+        <header class="listening-header">
+          <div class="listening-hero-art" aria-hidden="true">⚡</div>
+          <div class="listening-header-copy">
+            <h1 id="listeningTitle">Bài 01 - Phần 1-4</h1>
+            <p id="listeningSubtitle">4 câu trắc nghiệm</p>
+            <div class="listening-hero-stats" aria-label="Tiến độ bài nghe">
+              <div>
+                <span>Câu hiện tại</span>
+                <strong id="questionLabel">01/04</strong>
+              </div>
+              <div>
+                <span>Đã làm</span>
+                <strong id="answeredCount">0</strong>
+              </div>
+              <div>
+                <span>Đúng</span>
+                <strong id="correctCount">0</strong>
+              </div>
+              <div>
+                <span>Tỷ lệ đúng</span>
+                <strong id="accuracyRate">0%</strong>
+              </div>
+            </div>
+            <div
+              class="listen-progress-track listening-hero-progress"
+              aria-hidden="true"
+            >
               <div class="listen-progress-fill" id="progressFill"></div>
             </div>
+            <div class="listening-hero-percent" id="heroPercent">
+              0% hoàn thành
+            </div>
           </div>
+        </header>
 
+        <article class="listening-main">
           <div class="listen-audio-card">
             <audio id="audioPlayer" controls preload="metadata"></audio>
             <div class="listen-passage-tools" id="passageTools" hidden>
-              <button class="listen-tool-btn" id="readPassageBtn" type="button">Đọc đoạn văn</button>
-              <button class="listen-tool-btn" id="translatePassageBtn" type="button">Dịch</button>
-              <div class="listen-passage-translation" id="passageTranslation" hidden></div>
+              <button class="listen-tool-btn" id="readPassageBtn" type="button">
+                Đọc đoạn văn
+              </button>
+              <button
+                class="listen-tool-btn"
+                id="translatePassageBtn"
+                type="button"
+              >
+                Hiện nghĩa
+              </button>
+              <div
+                class="listen-passage-translation"
+                id="passageTranslation"
+                hidden
+              ></div>
             </div>
           </div>
 
           <div class="listen-question-card">
-            <div class="listen-question-title" id="questionPrompt">Chọn câu đúng theo bài nghe</div>
+            <div class="listen-question-toolbar">
+              <span id="questionMeta">Câu hỏi</span>
+              <button
+                class="listen-flag-btn"
+                id="flagQuestionBtn"
+                type="button"
+              >
+                ⚑ Cắm cờ
+              </button>
+            </div>
+            <div class="listen-question-title" id="questionPrompt">
+              Chọn câu đúng theo bài nghe
+            </div>
             <div class="listen-options" id="optionsWrap"></div>
           </div>
 
           <div class="listen-actions">
-            <button class="listen-nav-btn" id="prevBtn" type="button">← Trước</button>
-            <button class="listen-nav-btn reset" id="resetBtn" type="button">Làm lại từ đầu</button>
-            <button class="listen-nav-btn primary" id="nextBtn" type="button" disabled>Tiếp theo →</button>
+            <button class="listen-nav-btn" id="prevBtn" type="button">
+              ← Trước
+            </button>
+            <button class="listen-nav-btn reset" id="resetBtn" type="button">
+              Làm lại từ đầu
+            </button>
+            <button
+              class="listen-nav-btn primary"
+              id="nextBtn"
+              type="button"
+              disabled
+            >
+              Tiếp theo →
+            </button>
           </div>
         </article>
 
-        <aside class="listen-side">
-          <section class="listen-panel" id="resultPanel">
-            <div class="listen-panel-title">Kết quả</div>
-            <div class="listen-panel-body" id="resultBody">Chọn A hoặc B để xem kết quả.</div>
+        <aside class="listen-tool-side">
+          <section class="listen-panel listen-question-index-card">
+            <div class="listen-panel-title">Câu đã đặt cờ</div>
+            <div class="listen-question-nav" id="questionNav"></div>
           </section>
 
-          <section class="listen-panel">
-            <div class="listen-panel-title" id="transcriptPanelTitle">Câu nghe</div>
-            <div class="listen-panel-body" id="transcriptBody">-</div>
+          <section class="listen-panel listen-helper-card">
+            <div class="listen-panel-title">Mẹo làm bài</div>
+            <ul>
+              <li>Nghe kỹ câu hỏi trước khi chọn đáp án.</li>
+              <li>Chú ý các từ chỉ thời gian, địa điểm, số lượng.</li>
+              <li>Có thể nghe lại 2 lần trước khi trả lời.</li>
+            </ul>
           </section>
 
-          <section class="listen-panel">
-            <div class="listen-panel-title">Giải thích</div>
-            <div class="listen-panel-body" id="explanationBody">-</div>
+          <!-- <section class="listen-panel listen-helper-card">
+            <div class="listen-panel-title">Phím tắt</div>
+            <ul>
+              <li><kbd>1</kbd> Chọn A / Đúng</li>
+              <li><kbd>2</kbd> Chọn B / Sai</li>
+              <li><kbd>←</kbd> Câu trước</li>
+              <li><kbd>→</kbd> Câu tiếp theo</li>
+            </ul>
+          </section> -->
+
+          <section
+            class="listen-panel listen-answer-explanation-panel"
+            id="answerExplanationPanel"
+          >
+            <div class="listen-panel-title" id="transcriptPanelTitle">
+              Đáp án & giải thích
+            </div>
+            <div class="listen-panel-body" id="explanationBody">
+              Trả lời câu hỏi để xem đáp án và giải thích.
+            </div>
           </section>
         </aside>
       </section>
@@ -83,24 +173,38 @@
       const audioPlayer = document.getElementById("audioPlayer");
       const optionsWrap = document.getElementById("optionsWrap");
       const questionLabel = document.getElementById("questionLabel");
+      const answeredCount = document.getElementById("answeredCount");
+      const correctCount = document.getElementById("correctCount");
+      const accuracyRate = document.getElementById("accuracyRate");
+      const heroPercent = document.getElementById("heroPercent");
       const progressFill = document.getElementById("progressFill");
       const questionPrompt = document.getElementById("questionPrompt");
-      const resultBody = document.getElementById("resultBody");
-      const transcriptPanelTitle = document.getElementById("transcriptPanelTitle");
-      const transcriptBody = document.getElementById("transcriptBody");
+      const questionMeta = document.getElementById("questionMeta");
+      const flagQuestionBtn = document.getElementById("flagQuestionBtn");
+      const transcriptPanelTitle = document.getElementById(
+        "transcriptPanelTitle",
+      );
+      const answerExplanationPanel = document.getElementById(
+        "answerExplanationPanel",
+      );
       const explanationBody = document.getElementById("explanationBody");
+      const questionNav = document.getElementById("questionNav");
       const prevBtn = document.getElementById("prevBtn");
       const resetBtn = document.getElementById("resetBtn");
       const nextBtn = document.getElementById("nextBtn");
       const passageTools = document.getElementById("passageTools");
       const readPassageBtn = document.getElementById("readPassageBtn");
-      const translatePassageBtn = document.getElementById("translatePassageBtn");
+      const translatePassageBtn = document.getElementById(
+        "translatePassageBtn",
+      );
       const passageTranslation = document.getElementById("passageTranslation");
 
       let questions = [];
       let passage = null;
+      let isPassageMeaningVisible = false;
       let currentIndex = 0;
       const answers = [];
+      const flaggedQuestions = new Set();
 
       function escapeHtml(text) {
         return String(text || "")
@@ -112,23 +216,105 @@
       }
 
       const pinyinMap = {
-        "你": "nǐ", "好": "hǎo", "有": "yǒu", "什": "shén", "么": "me", "事": "shì", "儿": "r",
-        "看": "kàn", "通": "tōng", "知": "zhī", "了": "le", "吗": "ma", "没": "méi", "啊": "a",
-        "留": "liú", "学": "xué", "生": "shēng", "办": "bàn", "公": "gōng", "室": "shì",
-        "说": "shuō", "每": "měi", "个": "gè", "人": "rén", "要": "yào", "交": "jiāo",
-        "两": "liǎng", "张": "zhāng", "照": "zhào", "片": "piàn", "为": "wèi", "呢": "ne",
-        "校": "xiào", "给": "gěi", "我": "wǒ", "们": "men", "初": "chū", "级": "jí",
-        "班": "bān", "理": "lǐ", "证": "zhèng", "和": "hé", "借": "jiè", "书": "shū",
-        "卡": "kǎ", "候": "hòu", "这": "zhè", "星": "xīng", "期": "qī", "五": "wǔ",
-        "以": "yǐ", "前": "qián", "多": "duō", "长": "cháng", "时": "shí", "间": "jiān",
-        "大": "dà", "概": "gài", "四": "sì", "天": "tiān", "吧": "ba", "是": "shì",
-        "哪": "nǎ", "国": "guó", "女": "nǚ", "男": "nán", "美": "měi", "韩": "hán",
-        "打": "dǎ", "算": "suàn", "延": "yán", "习": "xí", "半": "bàn", "年": "nián",
-        "请": "qǐng", "填": "tián", "一": "yī", "表": "biǎo", "格": "gé", "姓": "xìng",
-        "名": "míng", "护": "hù", "号": "hào", "码": "mǎ", "汉": "hàn", "语": "yǔ",
-        "已": "yǐ", "经": "jīng", "最": "zuì", "晚": "wǎn", "分": "fēn", "钟": "zhōng",
-        "到": "dào", "二": "èr", "十": "shí", "现": "xiàn", "在": "zài", "点": "diǎn",
-        "差": "chà"
+        你: "nǐ",
+        好: "hǎo",
+        有: "yǒu",
+        什: "shén",
+        么: "me",
+        事: "shì",
+        儿: "r",
+        看: "kàn",
+        通: "tōng",
+        知: "zhī",
+        了: "le",
+        吗: "ma",
+        没: "méi",
+        啊: "a",
+        留: "liú",
+        学: "xué",
+        生: "shēng",
+        办: "bàn",
+        公: "gōng",
+        室: "shì",
+        说: "shuō",
+        每: "měi",
+        个: "gè",
+        人: "rén",
+        要: "yào",
+        交: "jiāo",
+        两: "liǎng",
+        张: "zhāng",
+        照: "zhào",
+        片: "piàn",
+        为: "wèi",
+        呢: "ne",
+        校: "xiào",
+        给: "gěi",
+        我: "wǒ",
+        们: "men",
+        初: "chū",
+        级: "jí",
+        班: "bān",
+        理: "lǐ",
+        证: "zhèng",
+        和: "hé",
+        借: "jiè",
+        书: "shū",
+        卡: "kǎ",
+        候: "hòu",
+        这: "zhè",
+        星: "xīng",
+        期: "qī",
+        五: "wǔ",
+        以: "yǐ",
+        前: "qián",
+        多: "duō",
+        长: "cháng",
+        时: "shí",
+        间: "jiān",
+        大: "dà",
+        概: "gài",
+        四: "sì",
+        天: "tiān",
+        吧: "ba",
+        是: "shì",
+        哪: "nǎ",
+        国: "guó",
+        女: "nǚ",
+        男: "nán",
+        美: "měi",
+        韩: "hán",
+        打: "dǎ",
+        算: "suàn",
+        延: "yán",
+        习: "xí",
+        半: "bàn",
+        年: "nián",
+        请: "qǐng",
+        填: "tián",
+        一: "yī",
+        表: "biǎo",
+        格: "gé",
+        姓: "xìng",
+        名: "míng",
+        护: "hù",
+        号: "hào",
+        码: "mǎ",
+        汉: "hàn",
+        语: "yǔ",
+        已: "yǐ",
+        经: "jīng",
+        最: "zuì",
+        晚: "wǎn",
+        分: "fēn",
+        钟: "zhōng",
+        到: "dào",
+        二: "èr",
+        十: "shí",
+        现: "xiàn",
+        在: "zài",
+        点: "diǎn",
+        差: "chà",
       };
 
       function isCjkChar(char) {
@@ -143,6 +329,38 @@
             return `<span class="pinyin-char" data-pinyin="${escapeHtml(pinyin)}" tabindex="0">${escapeHtml(char)}</span>`;
           })
           .join("");
+      }
+
+      function splitPassageSentences(text, isChinese = false) {
+        const source = String(text || "").replace(/\s+/g, " ").trim();
+        if (!source) return [];
+        const pattern = isChinese
+          ? /[^。！？!?；;]+[。！？!?；;]?/g
+          : /[^.!?]+[.!?]?/g;
+        const parts = source.match(pattern) || [source];
+        return parts.map((part) => part.trim()).filter(Boolean);
+      }
+
+      function renderPassageLines(text, options = {}) {
+        const sentences = splitPassageSentences(text, options.chinese);
+        const renderer = options.chinese ? renderPinyinText : escapeHtml;
+        return sentences
+          .map(
+            (sentence) =>
+              `<p class="listen-passage-line">${renderer(sentence)}</p>`,
+          )
+          .join("");
+      }
+
+      function renderPassageBlock(showMeaning = true) {
+        return `
+          <div class="listen-passage-zh">${renderPassageLines(passage?.chinese || "", { chinese: true })}</div>
+          ${
+            showMeaning
+              ? `<div class="listen-passage-vi">${renderPassageLines(passage?.vietnamese || "")}</div>`
+              : ""
+          }
+        `;
       }
 
       function goBack() {
@@ -173,17 +391,90 @@
 
       function getAnswerLabel(current, answer) {
         if (!current || current.type !== "truefalse") return answer;
-        return answer === "true" ? "✓ Đúng" : answer === "false" ? "✗ Sai" : answer;
+        return answer === "true"
+          ? "✓ Đúng"
+          : answer === "false"
+            ? "✗ Sai"
+            : answer;
       }
 
       function updateProgress() {
         const total = questions.length || 1;
         const percent = Math.round(((currentIndex + 1) / total) * 100);
-        questionLabel.textContent = `Câu ${currentIndex + 1}/${total}`;
+        const answeredTotal = answers.filter(Boolean).length;
+        const correctTotal = answers.reduce((sum, answer, index) => {
+          return answer && isAnswerCorrect(questions[index], answer)
+            ? sum + 1
+            : sum;
+        }, 0);
+        const accuracy = answeredTotal
+          ? Math.round((correctTotal / answeredTotal) * 100)
+          : 0;
+        questionLabel.textContent = `${String(currentIndex + 1).padStart(2, "0")}/${String(total).padStart(2, "0")}`;
+        if (answeredCount) answeredCount.textContent = String(answeredTotal);
+        if (correctCount) correctCount.textContent = String(correctTotal);
+        if (accuracyRate) accuracyRate.textContent = `${accuracy}%`;
+        if (heroPercent) heroPercent.textContent = `${percent}% hoàn thành`;
         progressFill.style.width = `${percent}%`;
         prevBtn.disabled = currentIndex === 0;
         nextBtn.disabled = !answers[currentIndex];
-        nextBtn.textContent = currentIndex === questions.length - 1 ? "Hoàn thành →" : "Tiếp theo →";
+        nextBtn.textContent =
+          currentIndex === questions.length - 1
+            ? "Hoàn thành →"
+            : "Tiếp theo →";
+        renderQuestionNav();
+      }
+
+      function updateQuestionChrome() {
+        const total = questions.length || 0;
+        const isFlagged = flaggedQuestions.has(currentIndex);
+        if (questionMeta)
+          questionMeta.textContent = `Câu ${currentIndex + 1}/${total}`;
+        if (flagQuestionBtn) {
+          flagQuestionBtn.classList.toggle("is-flagged", isFlagged);
+          flagQuestionBtn.textContent = isFlagged ? "⚑ Đã cắm cờ" : "⚑ Cắm cờ";
+          flagQuestionBtn.setAttribute("aria-pressed", String(isFlagged));
+        }
+      }
+
+      function toggleCurrentFlag() {
+        if (flaggedQuestions.has(currentIndex)) {
+          flaggedQuestions.delete(currentIndex);
+        } else {
+          flaggedQuestions.add(currentIndex);
+        }
+        updateQuestionChrome();
+        renderQuestionNav();
+      }
+
+      function renderQuestionNav() {
+        if (!questionNav) return;
+        questionNav.innerHTML = "";
+        questions.forEach((_, index) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.innerHTML = `
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            ${flaggedQuestions.has(index) ? '<span class="listen-nav-flag">⚑</span>' : ""}
+          `;
+          btn.className = [
+            "listen-question-nav-btn",
+            index === currentIndex ? "is-current" : "",
+            flaggedQuestions.has(index) ? "is-flagged" : "",
+            answers[index]
+              ? isAnswerCorrect(questions[index], answers[index])
+                ? "is-correct"
+                : "is-wrong"
+              : "",
+          ]
+            .filter(Boolean)
+            .join(" ");
+          btn.addEventListener("click", () => {
+            currentIndex = index;
+            renderQuestion();
+          });
+          questionNav.appendChild(btn);
+        });
       }
 
       function renderResult() {
@@ -193,51 +484,28 @@
         if (!current) return;
 
         if (!answer) {
-          const neutralText =
-            current.type === "fill"
-              ? "Nhập đáp án để xem kết quả."
-              : current.type === "truefalse"
-                ? "Chọn Đúng hoặc Sai để xem kết quả."
-                : "Chọn A hoặc B để xem kết quả.";
-          resultBody.innerHTML = `<div class="listen-result neutral">${neutralText}</div>`;
-          if (isQuestionPanelSection()) {
-            renderTranscriptPanel(current);
-          } else {
-            transcriptPanelTitle.textContent = "Câu nghe";
-            transcriptBody.textContent = "-";
-          }
-          explanationBody.textContent = "-";
+          if (answerExplanationPanel)
+            answerExplanationPanel.classList.add("is-waiting");
+          explanationBody.innerHTML = `<div class="listen-explain-muted">Trả lời câu hỏi để xem đáp án và giải thích.</div>`;
           return;
         }
 
-        const isCorrect = isAnswerCorrect(current, answer);
-        const correctText = getAnswerLabel(current, current.correct);
-        const answerText = getAnswerLabel(current, answer);
-        resultBody.innerHTML = `
-          <div class="listen-result ${isCorrect ? "correct" : "wrong"}">
-            <div class="listen-result-title">${isCorrect ? "Trả lời đúng" : "Trả lời chưa đúng"}</div>
-            <div class="listen-result-row">Đáp án đúng: <strong>${renderPinyinText(correctText)}</strong></div>
-            <div class="listen-result-row">Bạn chọn: <strong>${renderPinyinText(answerText)}</strong></div>
-            ${current.completeSentence ? `<div class="listen-result-row">Câu hoàn chỉnh: <strong>${renderPinyinText(current.completeSentence)}</strong></div>` : ""}
-          </div>
-        `;
-        renderTranscriptPanel(current);
-        explanationBody.textContent = current.explanation;
+        renderExplanationPanel(current, answer);
       }
 
       function isQuestionPanelSection() {
         return /\d+-(5|6)-\d+/.test(section);
       }
 
-      function renderTranscriptPanel(current) {
+      function renderExplanationPanel(current, answer) {
         if (!current) {
-          transcriptBody.textContent = "-";
+          explanationBody.textContent = "-";
           return;
         }
 
         const isQuestionPanel = isQuestionPanelSection();
-        transcriptPanelTitle.textContent = isQuestionPanel ? "Câu hỏi" : "Câu nghe";
-        transcriptBody.innerHTML = isQuestionPanel
+        const sourceTitle = isQuestionPanel ? "Câu hỏi trong bài" : "Câu nghe";
+        const sourceHtml = isQuestionPanel
           ? `
             <div class="listen-transcript-zh">${renderPinyinText(current.prompt)}</div>
             ${current.promptVietnamese ? `<div class="listen-transcript-vi">${escapeHtml(current.promptVietnamese)}</div>` : ""}
@@ -246,6 +514,42 @@
             <div class="listen-transcript-zh">${renderPinyinText(current.transcript)}</div>
             <div class="listen-transcript-vi">${escapeHtml(current.transcriptVietnamese)}</div>
           `;
+        const answerHtml = answer
+          ? `
+            <div class="listen-answer-row">
+              <div class="listen-answer-row-title">✓ Đáp án đúng</div>
+              <div class="listen-answer-badge">${renderPinyinText(getAnswerLabel(current, current.correct))}</div>
+            </div>
+            ${
+              current.completeSentence
+                ? `
+              <div class="listen-answer-section">
+                <div class="listen-explain-label">Câu hoàn chỉnh</div>
+                <div class="listen-transcript-zh">${renderPinyinText(current.completeSentence)}</div>
+              </div>
+            `
+                : ""
+            }
+            <div class="listen-answer-section">
+              <div class="listen-answer-section-title">💡 Giải thích</div>
+              <div class="listen-explain-text">${escapeHtml(current.explanation || "-")}</div>
+            </div>
+          `
+          : `<div class="listen-explain-muted">Trả lời câu hỏi để xem đáp án và giải thích.</div>`;
+
+        transcriptPanelTitle.textContent = "Đáp án & giải thích";
+        if (answerExplanationPanel)
+          answerExplanationPanel.classList.remove("is-waiting");
+        explanationBody.innerHTML = `
+          <div class="listen-answer-section">
+            <div class="listen-answer-section-title">🎧 ${sourceTitle}</div>
+            <div class="listen-source-card">
+              <span class="listen-source-icon">🔊</span>
+              <div class="listen-source-copy">${sourceHtml}</div>
+            </div>
+          </div>
+          ${answerHtml}
+        `;
       }
 
       function resetAudioToStart() {
@@ -254,9 +558,13 @@
         try {
           audioPlayer.currentTime = 0;
         } catch (error) {
-          audioPlayer.addEventListener("loadedmetadata", () => {
-            audioPlayer.currentTime = 0;
-          }, { once: true });
+          audioPlayer.addEventListener(
+            "loadedmetadata",
+            () => {
+              audioPlayer.currentTime = 0;
+            },
+            { once: true },
+          );
         }
       }
 
@@ -280,6 +588,7 @@
 
         renderResult();
         updateProgress();
+        updateQuestionChrome();
       }
 
       function renderChoiceQuestion(current) {
@@ -302,7 +611,8 @@
             const isChosen = answers[currentIndex] === letter;
             if (isChosen) btn.classList.add("selected");
             if (letter === current.correct) btn.classList.add("correct");
-            if (!isAnswerCorrect(current, answers[currentIndex]) && isChosen) btn.classList.add("wrong");
+            if (!isAnswerCorrect(current, answers[currentIndex]) && isChosen)
+              btn.classList.add("wrong");
           }
           btn.addEventListener("click", () => {
             if (answers[currentIndex]) return;
@@ -335,7 +645,8 @@
             const isChosen = answers[currentIndex] === value;
             if (isChosen) btn.classList.add("selected");
             if (value === current.correct) btn.classList.add("correct");
-            if (!isAnswerCorrect(current, answers[currentIndex]) && isChosen) btn.classList.add("wrong");
+            if (!isAnswerCorrect(current, answers[currentIndex]) && isChosen)
+              btn.classList.add("wrong");
           }
           btn.addEventListener("click", () => {
             if (answers[currentIndex]) return;
@@ -363,7 +674,11 @@
           input.value = answers[currentIndex];
           input.disabled = true;
           submit.disabled = true;
-          wrap.classList.add(isAnswerCorrect(current, answers[currentIndex]) ? "correct" : "wrong");
+          wrap.classList.add(
+            isAnswerCorrect(current, answers[currentIndex])
+              ? "correct"
+              : "wrong",
+          );
         }
 
         const submitAnswer = () => {
@@ -387,23 +702,24 @@
 
       function speakPassage() {
         if (!passage || !passage.chinese) return;
+        isPassageMeaningVisible = true;
         passageTranslation.hidden = false;
-        passageTranslation.innerHTML = `
-          <div class="listen-passage-zh">${renderPinyinText(passage.chinese)}</div>
-          <div class="listen-passage-vi">${escapeHtml(passage.vietnamese || "")}</div>
-        `;
-        translatePassageBtn.textContent = "Ẩn dịch";
+        passageTranslation.innerHTML = renderPassageBlock(isPassageMeaningVisible);
+        translatePassageBtn.textContent = "Ẩn nghĩa";
       }
 
       function togglePassageTranslation() {
         if (!passage || !passage.vietnamese) return;
-        const isHidden = passageTranslation.hidden;
-        passageTranslation.hidden = !isHidden;
-        passageTranslation.innerHTML = `
-          <div class="listen-passage-zh">${renderPinyinText(passage.chinese || "")}</div>
-          <div class="listen-passage-vi">${escapeHtml(passage.vietnamese)}</div>
-        `;
-        translatePassageBtn.textContent = isHidden ? "Ẩn dịch" : "Dịch";
+        if (passageTranslation.hidden) {
+          isPassageMeaningVisible = true;
+          passageTranslation.hidden = false;
+        } else {
+          isPassageMeaningVisible = !isPassageMeaningVisible;
+        }
+        passageTranslation.innerHTML = renderPassageBlock(isPassageMeaningVisible);
+        translatePassageBtn.textContent = isPassageMeaningVisible
+          ? "Ẩn nghĩa"
+          : "Hiện nghĩa";
       }
 
       function nextQuestion() {
@@ -426,6 +742,7 @@
       function resetListeningTest() {
         currentIndex = 0;
         answers.length = 0;
+        flaggedQuestions.clear();
         resetAudioToStart();
         renderQuestion();
       }
@@ -448,12 +765,19 @@
         }
         passageTools.hidden = !passage;
         passageTranslation.hidden = true;
-        translatePassageBtn.textContent = "Dịch";
+        isPassageMeaningVisible = false;
+        translatePassageBtn.textContent = "Hiện nghĩa";
         const sectionLesson = section.split("-")[0] || lesson;
-        document.getElementById("listeningTitle").textContent = `Bài ${String(Number(sectionLesson)).padStart(2, "0")} - Phần ${section}`;
-        document.getElementById("breadcrumbLesson").textContent = `Bài ${String(Number(lesson)).padStart(2, "0")}`;
-        document.getElementById("breadcrumbLesson").href = `lesson-options.html?lesson=${String(Number(lesson)).padStart(2, "0")}&subject=listening`;
-        document.getElementById("breadcrumbSection").textContent = `Phần ${section}`;
+        document.getElementById("listeningTitle").textContent =
+          `Bài ${String(Number(sectionLesson)).padStart(2, "0")} - Phần ${section}`;
+        document.getElementById("breadcrumbLesson").textContent =
+          `Bài ${String(Number(lesson)).padStart(2, "0")}`;
+        document.getElementById("breadcrumbLesson").href =
+          `lesson-options.html?lesson=${String(Number(lesson)).padStart(2, "0")}&subject=listening`;
+        document.getElementById("breadcrumbBack").href =
+          `review.html?lesson=${String(Number(lesson)).padStart(2, "0")}&subject=listening&content=listening`;
+        document.getElementById("breadcrumbSection").textContent =
+          `Phần ${section}`;
         document.getElementById("listeningSubtitle").innerHTML =
           lessonData.title
             ? `${renderPinyinText(lessonData.title)} | ${questions.length} câu luyện nghe`
@@ -465,19 +789,66 @@
       prevBtn.addEventListener("click", prevQuestion);
       resetBtn.addEventListener("click", resetListeningTest);
       nextBtn.addEventListener("click", nextQuestion);
+      flagQuestionBtn?.addEventListener("click", toggleCurrentFlag);
       readPassageBtn.addEventListener("click", speakPassage);
       translatePassageBtn.addEventListener("click", togglePassageTranslation);
 
-      document.addEventListener("pointerdown", (event) => {
-        const target = event.target.closest(".pinyin-char");
-        if (!target) return;
-        event.preventDefault();
-        event.stopPropagation();
-        document.querySelectorAll(".pinyin-char.is-active").forEach((item) => {
-          if (item !== target) item.classList.remove("is-active");
-        });
-        target.classList.toggle("is-active");
-      }, true);
+      document.addEventListener("keydown", (event) => {
+        const activeTag = document.activeElement?.tagName?.toLowerCase();
+        if (activeTag === "input" || activeTag === "textarea") return;
+
+        if (event.key === "ArrowLeft") {
+          event.preventDefault();
+          if (!prevBtn.disabled) prevQuestion();
+          return;
+        }
+
+        if (event.key === "ArrowRight") {
+          event.preventDefault();
+          if (!nextBtn.disabled) nextQuestion();
+          return;
+        }
+
+        if (event.key.toLowerCase() === "f") {
+          event.preventDefault();
+          toggleCurrentFlag();
+          return;
+        }
+
+        const current = getCurrentQuestion();
+        if (!current || answers[currentIndex] || current.type === "fill")
+          return;
+
+        if (event.key === "1") {
+          event.preventDefault();
+          answers[currentIndex] = current.type === "truefalse" ? "true" : "A";
+          renderQuestion();
+          return;
+        }
+
+        if (event.key === "2") {
+          event.preventDefault();
+          answers[currentIndex] = current.type === "truefalse" ? "false" : "B";
+          renderQuestion();
+        }
+      });
+
+      document.addEventListener(
+        "pointerdown",
+        (event) => {
+          const target = event.target.closest(".pinyin-char");
+          if (!target) return;
+          event.preventDefault();
+          event.stopPropagation();
+          document
+            .querySelectorAll(".pinyin-char.is-active")
+            .forEach((item) => {
+              if (item !== target) item.classList.remove("is-active");
+            });
+          target.classList.toggle("is-active");
+        },
+        true,
+      );
 
       document.addEventListener("pointerdown", (event) => {
         if (event.target.closest(".pinyin-char")) return;
@@ -487,7 +858,8 @@
       });
 
       loadListeningTest().catch((err) => {
-        document.querySelector(".listening-main").innerHTML = `<p class="listen-error">Lỗi: ${escapeHtml(err.message)}</p>`;
+        document.querySelector(".listening-main").innerHTML =
+          `<p class="listen-error">Lỗi: ${escapeHtml(err.message)}</p>`;
       });
     </script>
   </body>

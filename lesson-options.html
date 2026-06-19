@@ -102,15 +102,15 @@
             return;
           }
           if (content === "words") {
-            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=grammar`;
+            window.location.href = `vocabulary.html?lesson=${lesson}&subject=writing`;
             return;
           }
           if (content === "grammar") {
-            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=grammar`;
+            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=words`;
             return;
           }
           if (content === "structure") {
-            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=grammar`;
+            window.location.href = `review.html?lesson=${lesson}&subject=writing&content=structure`;
             return;
           }
           if (content === "example") {
@@ -128,7 +128,7 @@
             return;
           }
           if (content === "words") {
-            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=words`;
+            window.location.href = `vocabulary.html?lesson=${lesson}&subject=speaking`;
             return;
           }
           if (content === "structure") {
@@ -146,7 +146,7 @@
             return;
           }
           if (content === "words") {
-            window.location.href = `review.html?lesson=${lesson}&subject=hanyu3&content=words`;
+            window.location.href = `vocabulary.html?lesson=${lesson}&subject=hanyu3`;
             return;
           }
           if (content === "grammar") {
@@ -185,9 +185,7 @@
         const lesson = getURLParam("lesson") || "01";
         const subject = getURLParam("subject");
         if (subject === "listening") {
-          const lessonNumber = String(Number(lesson));
-          const contentPart = lessonNumber === "1" ? "" : "&content=example";
-          window.location.href = `review.html?lesson=${lesson}&subject=listening${contentPart}`;
+          window.location.href = `review.html?lesson=${lesson}&subject=listening`;
           return;
         }
         const subjectParam = subject ? `&subject=${subject}` : "";
@@ -220,148 +218,394 @@
       const lesson = getURLParam("lesson") || "01";
       const subject = getURLParam("subject");
       const lessonNumber = String(Number(lesson));
+      const speakingLessonTitles = {
+        "1": ["我哪儿都没去过", "Tôi chưa từng đi đâu cả."],
+        "2": ["晚上早点儿睡", "Buổi tối hãy đi ngủ sớm một chút."],
+        "3": ["咱们去爬山吧", "Chúng ta đi leo núi nhé."],
+        "4": ["我帮你拿上去吧", "Để tôi giúp bạn mang lên trên nhé."],
+        "5": ["他是从新加坡来的", "Anh ấy đến từ Singapore."],
+        "6": ["这个颜色挺适合你的", "Màu này khá hợp với bạn."],
+        "7": ["越快越好", "Càng nhanh càng tốt."],
+        "8": ["虽然听不懂，但是我喜欢", "Mặc dù không hiểu, nhưng tôi thích."],
+        "9": ["我怎么也睡不着", "Dù thế nào tôi cũng không ngủ được."],
+        "10": ["地铁比公共汽车快", "Tàu điện ngầm nhanh hơn xe buýt."],
+        "11": ["去药店不如去医院", "Đi hiệu thuốc không bằng đi bệnh viện."],
+        "12": ["家家都是新房子", "Nhà nào cũng là nhà mới."],
+      };
+      const writingLessonTitles = {
+        "1": ["我的朋友——李明", "Bạn của tôi — Lý Minh"],
+        "2": ["来到中国", "Đến Trung Quốc"],
+        "3": ["上班族的一天", "Một ngày của dân công sở (người đi làm)"],
+        "4": ["第一印象可靠吗", "Ấn tượng đầu tiên có đáng tin không?"],
+        "5": ["我的故乡", "Quê hương của tôi"],
+        "6": ["我的恋爱史", "Lịch sử tình trường (Chuyện tình yêu) của tôi"],
+        "7": ["搬家", "Chuyển nhà"],
+        "8": ["到底发生了什么事", "Rốt cuộc đã xảy ra chuyện gì?"],
+        "9": ["关于出行方式的调查", "Khảo sát về phương thức di chuyển (đi lại)"],
+        "10": ["愉快的周末", "Cuối tuần vui vẻ"],
+        "11": ["橘子皮的用途", "Công dụng của vỏ quýt"],
+        "12": ["语言学家赵元任", "Nhà ngôn ngữ học Triệu Nguyên Nhiệm"],
+        "13": ["如果我是公司老板", "Nếu tôi là sếp (ông chủ) công ty"],
+        "14": ["一件小事", "Một việc nhỏ (Một câu chuyện nhỏ)"],
+        "15": ["你真是个好孩子", "Con/Cháu đúng là một đứa trẻ ngoan"],
+      };
+      const hanyu3LessonTitles = {
+        "1": ["\u6211\u6bd4\u4f60\u8ddf\u559c\u6b22\u97f3\u4e50", "T\u00f4i th\u00edch \u00e2m nh\u1ea1c h\u01a1n b\u1ea1n."],
+        "2": ["\u6211\u4eec\u90a3\u513f\u7684\u51ac\u5929\u8ddf\u5317\u4eac\u4e00\u6837\u51b7", "M\u00f9a \u0111\u00f4ng \u1edf ch\u1ed7 ch\u00fang t\u00f4i l\u1ea1nh nh\u01b0 B\u1eafc Kinh."],
+        "3": ["\u51ac\u5929\u5feb\u8981\u5230\u4e86", "M\u00f9a \u0111\u00f4ng s\u1eafp \u0111\u1ebfn r\u1ed3i."],
+        "4": ["\u5feb\u4e0a\u6765\u5427\uff0c\u8981\u5f00\u8f66\u4e86", "Mau l\u00ean \u0111i, xe s\u1eafp ch\u1ea1y r\u1ed3i."],
+        "5": ["\u6211\u542c\u8fc7\u94a2\u7434\u534f\u594f\u66f2\u300a\u9ec4\u6cb3\u300b", "T\u00f4i t\u1eebng nghe b\u1ea3n concerto piano Ho\u00e0ng H\u00e0."],
+        "6": ["\u6211\u662f\u8ddf\u65c5\u6e38\u56e2\u4e00\u8d77\u6765\u7684", "T\u00f4i \u0111\u1ebfn c\u00f9ng \u0111o\u00e0n du l\u1ecbch."],
+        "7": ["\u6211\u7684\u62a4\u7167\u4f60\u4f60\u627e\u4e86\u6ca1\u6709", "B\u1ea1n \u0111\u00e3 t\u00ecm th\u1ea5y h\u1ed9 chi\u1ebfu c\u1ee7a t\u00f4i ch\u01b0a?"],
+        "8": ["\u6211\u7684\u773c\u955c\u6454\u574f\u4e86", "K\u00ednh c\u1ee7a t\u00f4i b\u1ecb r\u01a1i h\u1ecfng r\u1ed3i."],
+        "9": ["\u94a5\u5319\u5fd8\u62d4\u4e0b\u6765\u4e86", "Qu\u00ean r\u00fat ch\u00eca kh\u00f3a ra r\u1ed3i."],
+        "10": ["\u4f1a\u8bae\u5385\u7684\u95e8\u5f00\u7740\u5462", "C\u1eeda ph\u00f2ng h\u1ed9i ngh\u1ecb \u0111ang m\u1edf \u0111\u1ea5y."],
+      };
       const listeningLessonTitles = {
-        "1": "Bài 01 你学了多长时间汉语了",
-        "3": "Bài 03-04 我很想家",
-        "5": "Bài 05-06 你也听听吧",
-        "7": "Bài 07-08 你吃去哦这个菜吗",
-        "9": "Bài 09-10 鸡蛋4块一斤",
-        "11": "Bài 11-12 我的手机没电了",
-        "13": "Bài 13-14 你怎么了",
-        "15": "Bài 15-16 你哪儿也没去",
-        "17": "Bài 17-18 买一送一",
-        "19": "Bài 19-20 太短了",
-        "21": "Bài 21-22 她刚从银行回来",
-        "23": "Bài 23-24 很多女人都喜欢逛商场",
+        "1": ["你学了多长时间汉语了", "Bạn học tiếng Trung được bao lâu rồi?"],
+        "2": ["请问，留学生宿舍怎么走", "Xin hỏi, ký túc xá lưu học sinh đi đường nào?"],
+        "3": ["我很想家", "Tôi rất nhớ nhà"],
+        "4": ["你是什么时候来的", "Bạn đến từ khi nào?"],
+        "5": ["你也听听吧", "Bạn cũng nghe thử đi"],
+        "6": ["我们大学有好几个学生食堂", "Trường đại học của chúng tôi có mấy cái nhà ăn sinh viên liền"],
+        "7": ["你吃过这个菜吗", "Bạn đã từng ăn món này chưa?"],
+        "8": ["我们还没想好租不租呢", "Chúng tôi vẫn chưa nghĩ kỹ xem có thuê hay không nữa"],
+        "9": ["鸡蛋 4 块一斤", "Trứng gà 4 tệ một cân"],
+        "10": ["我有一个好主意", "Tôi có một ý kiến hay / một chủ ý tốt"],
+        "11": ["我的手机没电了", "Điện thoại của tôi hết pin rồi"],
+        "12": ["孙子教我学电脑", "Cháu trai dạy tôi học máy tính"],
+        "13": ["你怎么了", "Bạn bị làm sao thế? / Bạn làm sao vậy?"],
+        "14": ["我还有一道题没做呢", "Tôi vẫn còn một câu hỏi chưa làm"],
+        "15": ["就要期中考试了", "Sắp thi giữa kỳ rồi"],
+        "16": ["我哪儿也没去", "Tôi chẳng đi đâu cả"],
+        "17": ["买一送一", "Mua một tặng một"],
+        "18": ["她比以前胖多了", "Cô ấy béo hơn trước nhiều rồi"],
+        "19": ["太短了", "Ngắn quá rồi"],
+        "20": ["“See a doctor” 用汉语怎么说", "Cụm từ \"See a doctor\" nói bằng tiếng Trung như thế nào?"],
+        "21": ["他刚从银行回来", "Anh ấy vừa từ ngân hàng trở về"],
+        "22": ["在北京坐公共汽车", "Đi xe buýt ở Bắc Kinh"],
+        "23": ["很多女人都喜欢逛商场", "Rất nhiều phụ nữ đều thích đi lượn trung tâm thương mại"],
+        "24": ["第一次坐飞机", "Lần đầu tiên đi máy bay"],
       };
       document.getElementById("lessonTitle").textContent =
         subject === "writing" || subject === "speaking"
           || subject === "hanyu3"
           ? `Bài ${lessonNumber}`
-          : listeningLessonTitles[lessonNumber] || `Bài ${lesson}`;
+          : `Bài ${String(Number(lesson)).padStart(2, "0")} ${listeningLessonTitles[lessonNumber]?.[0] || ""}`;
 
-      if (subject === "writing") {
-        document.getElementById("vocabularyIcon").textContent = "📘";
-        document.getElementById("vocabularyTitle").textContent = "Ôn tập bài khóa";
-        document.getElementById("vocabularyDesc").textContent =
-          "Luyện đọc và hiểu đoạn văn";
-        document.getElementById("vocabularyCard").onclick = () => goToContent("vocabulary");
+      function renderSpeakingLessonOptions(config = {}) {
+        const [chineseTitle, vietnameseTitle] =
+          config.titlePair || speakingLessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Luyện nói"];
+        const padLesson = String(Number(lesson)).padStart(2, "0");
+        const optionItems = config.optionItems || [
+          {
+            icon: "💬",
+            title: "Ôn tập bài khóa",
+            desc: "Hội thoại và nội dung chính của bài",
+            action: "vocabulary",
+          },
+          {
+            icon: "📚",
+            title: "Từ mới",
+            desc: "Từ vựng quan trọng trong bài",
+            action: "words",
+          },
+          {
+            icon: "🧩",
+            title: "Cấu trúc",
+            desc: "Mẫu câu và ngữ pháp cần nhớ",
+            action: "grammar",
+          },
+          {
+            icon: "🎯",
+            title: "Luyện tập cấu trúc",
+            desc: "Ghép câu và luyện phản xạ theo mẫu",
+            action: "structure",
+          },
+          {
+            icon: "⚡",
+            title: "Kiểm tra phản xạ",
+            desc: "Nghe câu hỏi và trả lời nhanh",
+            action: "example",
+          },
+        ];
+        const subjectKey = config.subjectKey || "speaking";
+        const subjectLabel = config.subjectLabel || "Khẩu ngữ";
+        const courseTitle = config.courseTitle || "初级口语（II）";
+        const courseDesc = config.courseDesc || "luyện nói giao tiếp";
+        const heroIcon = config.heroIcon || "🎙";
+        const lessonTotal = config.lessonTotal || 12;
+        const lessonStep = config.lessonStep || 1;
+        const maxLessonNumber = config.maxLessonNumber || lessonTotal;
+        const displayOptionItems = subjectKey === "writing"
+          ? [
+              {
+                icon: "💬",
+                title: "Ôn tập bài khóa",
+                desc: "Luyện đọc và hiểu đoạn văn",
+                action: "vocabulary",
+              },
+              {
+                icon: "📚",
+                title: "Từ mới",
+                desc: "Học từ mới theo bài",
+                action: "words",
+              },
+              {
+                icon: "🧩",
+                title: "Cấu trúc",
+                desc: "Mẫu câu và ví dụ",
+                action: "grammar",
+              },
+              {
+                icon: "🎯",
+                title: "Kiểm tra cấu trúc",
+                desc: "Luyện kiểm tra mẫu câu",
+                action: "structure",
+              },
+              {
+                icon: "⚡",
+                title: "Tham khảo bài văn",
+                desc: "9 bài đọc hiểu",
+                action: "example",
+              },
+            ]
+          : optionItems;
+        const listHref = subjectKey === "listening"
+          ? "lessons.html?subject=listening"
+          : `lessons.html?subject=${subjectKey}`;
 
-        document.getElementById("listeningIcon").textContent = "📚";
-        document.getElementById("listeningTitle").textContent = "Từ mới và cấu trúc";
-        document.getElementById("listeningDesc").textContent =
-          "Ôn từ/cụm từ và mẫu câu";
-        document.getElementById("listeningCard").onclick = () => goToContent("words");
+        document.body.classList.add("speaking-option-page");
+        document.querySelector(".lesson-options-container").innerHTML = `
+          <aside class="speaking-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <nav class="speaking-nav" aria-label="Điều hướng bài học">
+              <a href="index.html">⌂ Trang chủ</a>
+              <a class="is-active" href="${listHref}">▣ Học tập</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thử HSK</button>
+              <button disabled>AI hội thoại</button>
+              <button disabled>Từ vựng</button>
+              <button disabled>Thống kê</button>
+            </nav>
+          </aside>
 
-        document.getElementById("structureCard").hidden = true;
-        document.getElementById("structureIcon").textContent = "🧩";
-        document.getElementById("structureTitle").textContent = "Cấu trúc";
-        document.getElementById("structureDesc").textContent =
-          "Ôn mẫu câu và cách dùng";
-        document.getElementById("structureCard").onclick = () => goToContent("grammar");
+          <main class="speaking-main">
+            <div class="speaking-breadcrumb">
+              <a href="${listHref}">← Học tập</a>
+              <span>›</span>
+              <span>${subjectLabel}</span>
+              <span>›</span>
+              <strong>Bài ${padLesson} - ${chineseTitle}</strong>
+            </div>
 
-        document.getElementById("grammarCard").hidden = false;
-        document.getElementById("grammarIcon").textContent = "📝";
-        document.getElementById("grammarTitle").textContent = "Kiểm tra cấu trúc";
-        document.getElementById("grammarDesc").textContent =
-          "Luyện kiểm tra mẫu câu";
-        document.getElementById("grammarCard").onclick = () => goToContent("structure");
+            <section class="speaking-layout">
+              <div class="speaking-primary">
+                <header class="speaking-hero speaking-option-hero">
+                  <div class="speaking-hero-art" aria-hidden="true">${heroIcon}</div>
+                  <div class="speaking-hero-copy">
+                    <span class="speaking-lesson-badge">Bài ${padLesson}</span>
+                    <h1>${chineseTitle}</h1>
+                    <p>${vietnameseTitle}</p>
+                    <div class="speaking-option-meta">
+                      <span>▣ ${displayOptionItems.length} phần học</span>
+                      <span>◎ ${courseDesc}</span>
+                    </div>
+                    <div class="speaking-zero-progress" aria-hidden="true">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="speaking-hero-stats">
+                    <strong>0%</strong><span>tiến độ</span>
+                  </div>
+                </header>
 
-        document.getElementById("reviewIcon").textContent = "⚡";
-        document.getElementById("reviewTitle").textContent = "Luyện theo bài văn 200 chữ";
-        document.getElementById("reviewDesc").textContent =
-          "Luyện viết theo bài văn";
-        document.getElementById("reviewCard").onclick = () => goToContent("example");
-        document.getElementById("reviewCard").hidden = false;
-      } else if (subject === "speaking") {
-        const isLessonFive = lessonNumber === "5";
-        document.getElementById("vocabularyIcon").textContent = "📘";
-        document.getElementById("vocabularyTitle").textContent = "Ôn tập bài khóa";
-        document.getElementById("vocabularyDesc").textContent =
-          isLessonFive ? "1 bài kiểm tra - 27 câu/bài" : "1 bài kiểm tra - 25 câu/bài";
-        document.getElementById("vocabularyCard").onclick = () => goToContent("vocabulary");
+                <div class="speaking-option-grid" id="speakingOptionGrid"></div>
 
-        document.getElementById("listeningIcon").textContent = "📚";
-        document.getElementById("listeningTitle").textContent = "Từ mới";
-        document.getElementById("listeningDesc").textContent =
-          "Học từ mới theo bài";
-        document.getElementById("listeningCard").onclick = () => goToContent("words");
+                <div class="speaking-option-footer">
+                  <button type="button" id="prevSpeakingLesson">← Bài trước</button>
+                  <a href="${listHref}">Danh sách bài học</a>
+                  <button type="button" id="nextSpeakingLesson">Bài tiếp theo →</button>
+                </div>
+              </div>
 
-        document.getElementById("structureCard").hidden = false;
-        document.getElementById("structureIcon").textContent = "🧩";
-        document.getElementById("structureTitle").textContent = "Cấu trúc";
-        document.getElementById("structureDesc").textContent =
-          "Học mẫu câu và ví dụ";
-        document.getElementById("structureCard").onclick = () => goToContent("grammar");
+              <aside class="speaking-aside">
+                <article class="speaking-side-card">
+                  <h2>Tiến độ khóa học</h2>
+                  <div class="speaking-ring"><strong>0%</strong></div>
+                  <p>Đã học 0/${lessonTotal} bài</p>
+                  <ul>
+                    <li><span></span>0 bài đã hoàn thành</li>
+                    <li><span></span>${lessonTotal} bài chưa học</li>
+                  </ul>
+                </article>
 
-        document.getElementById("grammarCard").hidden = false;
-        document.getElementById("grammarIcon").textContent = "📝";
-        document.getElementById("grammarTitle").textContent = "Kiểm tra cấu trúc";
-        document.getElementById("grammarDesc").textContent =
-          "Luyện kiểm tra mẫu câu";
-        document.getElementById("grammarCard").onclick = () => goToContent("structure");
+                <article class="speaking-side-card">
+                  <h2>Gợi ý học hôm nay</h2>
+                  <button type="button" disabled>Tiếp tục bài ${padLesson} <small>${chineseTitle}</small></button>
+                  <button type="button" disabled>Ôn tập bài học <small>0 mục</small></button>
+                  <button type="button" disabled>Luyện nói <small>0</small></button>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
 
-        document.getElementById("reviewIcon").textContent = "⚡";
-        document.getElementById("reviewTitle").textContent = "Kiểm tra phản xạ";
-        document.getElementById("reviewDesc").textContent =
-          isLessonFive ? "10 bài kiểm tra - 20 câu/bài" : "10 bài kiểm tra - 25 câu/bài";
-        document.getElementById("reviewCard").onclick = () => goToContent("example");
-        document.getElementById("reviewCard").hidden = false;
-      } else if (subject === "hanyu3") {
-        document.getElementById("vocabularyIcon").textContent = "📘";
-        document.getElementById("vocabularyTitle").textContent = "Ôn tập bài khóa";
-        document.getElementById("vocabularyDesc").textContent = "Luyện đọc và hiểu bài khóa";
-        document.getElementById("vocabularyCard").onclick = () => goToContent("vocabulary");
+        const grid = document.getElementById("speakingOptionGrid");
+        displayOptionItems.forEach((item, index) => {
+          const card = document.createElement("button");
+          card.className = `speaking-option-card practice-activity-card speaking-option-card-${index + 1}`;
+          card.type = "button";
+          card.innerHTML = `
+            <span class="speaking-option-number">${String(index + 1).padStart(2, "0")}</span>
+            <span class="speaking-option-icon">${item.icon}</span>
+            <strong>${item.title}</strong>
+            <em>${item.desc}</em>
+            <b>Bắt đầu</b>
+          `;
+          card.addEventListener("click", () => {
+            if (item.action === "review") {
+              goToReview();
+              return;
+            }
+            goToContent(item.action);
+          });
+          grid.appendChild(card);
+        });
 
-        document.getElementById("listeningIcon").textContent = "📚";
-        document.getElementById("listeningTitle").textContent = "Từ mới";
-        document.getElementById("listeningDesc").textContent = "Học từ mới theo bài";
-        document.getElementById("listeningCard").onclick = () => goToContent("words");
-
-        document.getElementById("structureCard").hidden = false;
-        document.getElementById("structureIcon").textContent = "🧩";
-        document.getElementById("structureTitle").textContent = "Cấu trúc";
-        document.getElementById("structureDesc").textContent = "Học mẫu câu và ví dụ";
-        document.getElementById("structureCard").onclick = () => goToContent("grammar");
-
-        document.getElementById("grammarCard").hidden = false;
-        document.getElementById("grammarIcon").textContent = "📝";
-        document.getElementById("grammarTitle").textContent = "Kiểm tra cấu trúc";
-        document.getElementById("grammarDesc").textContent = "Luyện kiểm tra mẫu câu";
-        document.getElementById("grammarCard").onclick = () => goToContent("structure");
-
-        document.getElementById("reviewIcon").textContent = "⚡";
-        document.getElementById("reviewTitle").textContent = "Kiểm tra phản xạ";
-        document.getElementById("reviewDesc").textContent = "Luyện phản xạ câu";
-        document.getElementById("reviewCard").onclick = () => goToContent("example");
-        document.getElementById("reviewCard").hidden = false;
-
-        document.getElementById("exerciseCard").hidden = false;
-        document.getElementById("exerciseIcon").textContent = "✍️";
-        document.getElementById("exerciseTitle").textContent = "Bài tập";
-        document.getElementById("exerciseDesc").textContent = "6 mục bài tập";
-        document.getElementById("exerciseCard").onclick = () => goToContent("exercise");
-      } else {
-        const listeningExampleCounts = {
-          "1": "10 bài kiểm tra - 32 câu/bài",
-          "3": "13 bài kiểm tra - 20 câu/bài",
-          "5": "12 bài kiểm tra - 20 câu/bài",
-          "7": "13 bài kiểm tra - 20 câu/bài",
-          "9": "15 bài kiểm tra - 20 câu/bài",
-          "11": "13 bài kiểm tra - 20 câu/bài",
-          "13": "14 bài kiểm tra - 20 câu/bài",
-          "15": "16 bài kiểm tra - 20 câu/bài",
-          "17": "15 bài kiểm tra - 20 câu/bài",
-          "19": "16 bài kiểm tra - 20 câu/bài",
-          "21": "15 bài kiểm tra - 20 câu/bài",
-          "23": "14 bài kiểm tra - 20 câu/bài",
+        const prevBtn = document.getElementById("prevSpeakingLesson");
+        const nextBtn = document.getElementById("nextSpeakingLesson");
+        const lessonNum = Number(lessonNumber);
+        prevBtn.disabled = lessonNum <= 1;
+        nextBtn.disabled = lessonNum >= maxLessonNumber;
+        prevBtn.onclick = () => {
+          const prev = String(Math.max(1, lessonNum - lessonStep)).padStart(2, "0");
+          window.location.href = `lesson-options.html?lesson=${prev}&subject=${subjectKey}`;
         };
-        document.getElementById("reviewCard").onclick =
-          lessonNumber === "1" ? () => goToReview() : () => goToContent("example");
-        document.getElementById("reviewDesc").textContent =
-          listeningExampleCounts[lessonNumber] || "Chưa có dữ liệu";
-        document.getElementById("reviewCard").disabled =
-          !listeningExampleCounts[lessonNumber];
+        nextBtn.onclick = () => {
+          const next = String(Math.min(maxLessonNumber, lessonNum + lessonStep)).padStart(2, "0");
+          window.location.href = `lesson-options.html?lesson=${next}&subject=${subjectKey}`;
+        };
+      }
+
+      if (subject === "speaking") {
+        renderSpeakingLessonOptions();
+      } else if (subject === "writing") {
+        renderSpeakingLessonOptions({
+          subjectKey: "writing",
+          subjectLabel: "Viết",
+          courseTitle: "中级写作（I）",
+          courseDesc: "luyện viết",
+          heroIcon: "✍️",
+          lessonTotal: 15,
+          titlePair: writingLessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Luyện viết theo bài"],
+          optionItems: [
+            {
+              icon: "💬",
+              title: "Ôn tập bài khóa",
+              desc: "Luyện đọc và hiểu đoạn văn",
+              action: "vocabulary",
+            },
+            {
+              icon: "📚",
+              title: "Từ mới và cấu trúc",
+              desc: "Ôn từ/cụm từ và mẫu câu",
+              action: "words",
+            },
+            {
+              icon: "🎯",
+              title: "Kiểm tra cấu trúc",
+              desc: "Luyện kiểm tra mẫu câu",
+              action: "structure",
+            },
+            {
+              icon: "⚡",
+              title: "Tham khảo bài văn",
+              desc: "9 bài đọc hiểu",
+              action: "example",
+            },
+          ],
+        });
+      } else if (subject === "hanyu3") {
+        renderSpeakingLessonOptions({
+          subjectKey: "hanyu3",
+          subjectLabel: "Giáo trình Hán Ngữ",
+          courseTitle: "Hán Ngữ Quyển 3",
+          courseDesc: "đọc hiểu và ngữ pháp",
+          heroIcon: "📖",
+          lessonTotal: 10,
+          titlePair: hanyu3LessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Giáo trình Hán ngữ quyển 3"],
+          optionItems: [
+            {
+              icon: "💬",
+              title: "Ôn tập bài khóa",
+              desc: "Luyện đọc và hiểu bài khóa",
+              action: "vocabulary",
+            },
+            {
+              icon: "📚",
+              title: "Từ mới",
+              desc: "Học từ mới theo bài",
+              action: "words",
+            },
+            {
+              icon: "🧩",
+              title: "Cấu trúc",
+              desc: "Học mẫu câu và ví dụ",
+              action: "grammar",
+            },
+            {
+              icon: "🎯",
+              title: "Kiểm tra cấu trúc",
+              desc: "Luyện kiểm tra mẫu câu",
+              action: "structure",
+            },
+            {
+              icon: "⚡",
+              title: "Kiểm tra phản xạ",
+              desc: "Luyện phản xạ câu",
+              action: "example",
+            },
+            {
+              icon: "✍️",
+              title: "Bài tập",
+              desc: "6 mục bài tập",
+              action: "exercise",
+            },
+          ],
+        });
+      } else {
+        renderSpeakingLessonOptions({
+          subjectKey: "listening",
+          subjectLabel: "Nghe hiểu",
+          courseTitle: "初级听力（II）",
+          courseDesc: "luyện nghe hiểu",
+          heroIcon: "🎧",
+          lessonTotal: 24,
+          lessonStep: 1,
+          maxLessonNumber: 24,
+          titlePair: listeningLessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Luyện nghe và hiểu"],
+          optionItems: [
+            {
+              icon: "📚",
+              title: "Từ mới",
+              desc: "Học các từ vựng mới",
+              action: "vocabulary",
+            },
+            {
+              icon: "🎧",
+              title: "Bài tập nghe",
+              desc: "Luyện nghe và hiểu nội dung",
+              action: "listening",
+            },
+            {
+              icon: "⚡",
+              title: "Kiểm tra phản xạ",
+              desc: "Luyện kiểm tra câu ví dụ",
+              action: "example",
+            },
+          ],
+        });
       }
     </script>
   </body>

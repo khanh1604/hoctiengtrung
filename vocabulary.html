@@ -3,39 +3,271 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ôn tập từ vựng - Chinese Learning</title>
+    <title>Ôn tập từ mới - Chinese Learning</title>
     <link rel="stylesheet" href="style.css" />
     <script src="theme.js" defer></script>
   </head>
 
   <body class="vocabulary-page">
-    <main class="vocabulary-shell">
-      <header class="vocabulary-header">
-        <button class="vocab-back-btn" type="button" onclick="goBack()">← Quay lại</button>
-        <div>
-          <h1 id="vocabularyTitle">Bài 01 - Ôn tập từ vựng</h1>
-          <p id="vocabularySubtitle">Danh sách từ mới</p>
-        </div>
-      </header>
-
-      <section class="vocabulary-grid" id="vocabularyGrid" aria-live="polite"></section>
-      <nav class="vocab-pagination" aria-label="Phân trang từ vựng">
-        <button class="vocab-page-btn" id="prevVocabPage" type="button">← Trang trước</button>
-        <span class="vocab-page-status" id="vocabPageStatus">Trang 1/1</span>
-        <button class="vocab-page-btn" id="nextVocabPage" type="button">Trang sau →</button>
+    <aside class="vocab-sidebar">
+      <a class="vocab-logo" href="index.html">FTC</a>
+      <nav class="vocab-nav" aria-label="Điều hướng từ mới">
+        <a href="index.html">⌂ Trang chủ</a>
+        <a class="is-active" id="vocabStudyLink" href="lessons.html">▣ Học tập</a>
+        <button disabled>▤ Flashcard</button>
+        <button disabled>🏆 Thi thử HSK</button>
+        <button disabled>☏ AI hội thoại</button>
+        <button disabled>⌘ Từ vựng</button>
+        <button disabled>♙ Thống kê</button>
+        <button disabled>⚙ Cài đặt</button>
       </nav>
+    </aside>
+
+    <main class="vocabulary-shell">
+      <nav class="vocab-breadcrumb" aria-label="Đường dẫn">
+        <a id="vocabCrumbLesson" href="#">⌂ Bài 01</a>
+        <span>›</span>
+        <a id="vocabCrumbSubject" href="#">Khẩu ngữ</a>
+        <span>›</span>
+        <strong id="vocabCrumbCurrent">Bài 1 - Từ mới</strong>
+      </nav>
+
+      <div class="vocabulary-layout">
+        <section class="vocabulary-main">
+          <header class="vocabulary-hero">
+            <div class="vocab-hero-icon" aria-hidden="true">🎙</div>
+            <div class="vocab-hero-copy">
+              <span class="vocab-lesson-pill" id="vocabLessonPill">Bài 01</span>
+              <h1 id="vocabularyTitle">Bài 1 - Từ mới</h1>
+              <p id="vocabularySubtitle">Chọn từ để nghe phát âm</p>
+              <div class="vocab-hero-meta">
+                <span>▦ Danh sách bài</span>
+                <span>◉ Luyện nói giao tiếp</span>
+              </div>
+              <div class="vocab-hero-progress">
+                <span id="vocabHeroProgressBar"></span>
+              </div>
+            </div>
+            <div class="vocab-percent-card">
+              <strong id="vocabHeroPercent">0%</strong>
+              <span>tiến độ</span>
+            </div>
+          </header>
+
+          <div class="vocab-toolbar">
+            <button class="vocab-back-btn" type="button" onclick="goBack()">← Quay lại</button>
+            <div class="vocab-tools">
+              <label class="vocab-search">
+                <span>⌕</span>
+                <input id="vocabSearchInput" type="search" placeholder="Tìm từ vựng..." />
+              </label>
+              <select class="vocab-filter" id="vocabFilterSelect" aria-label="Lọc từ vựng">
+                <option value="all">Tất cả</option>
+                <option value="noun">Danh từ</option>
+                <option value="verb">Động từ</option>
+                <option value="adj">Tính từ</option>
+                <option value="adv">Trạng từ</option>
+              </select>
+            </div>
+          </div>
+
+          <section class="vocabulary-grid" id="vocabularyGrid" aria-live="polite"></section>
+          <nav class="vocab-pagination" aria-label="Phân trang từ vựng">
+            <button class="vocab-page-btn" id="prevVocabPage" type="button">← Trang trước</button>
+            <span class="vocab-page-status" id="vocabPageStatus">Trang 1/1</span>
+            <button class="vocab-page-btn" id="nextVocabPage" type="button">Trang sau →</button>
+          </nav>
+        </section>
+
+        <aside class="vocab-side-panel">
+          <article class="vocab-side-card">
+            <h2>Tiến độ khóa học</h2>
+            <div class="vocab-progress-donut">
+              <strong id="vocabSidePercent">0%</strong>
+            </div>
+            <p id="vocabLearnedText">Đã học 0/12 bài</p>
+            <ul>
+              <li><span class="done"></span><b id="vocabDoneCount">0</b> bài đã hoàn thành</li>
+              <li><span class="left"></span><b id="vocabLeftCount">12</b> bài chưa học</li>
+            </ul>
+          </article>
+
+          <article class="vocab-side-card">
+            <h2>Gợi ý học hôm nay</h2>
+            <div class="vocab-suggestion">
+              <span>▶</span>
+              <div>
+                <strong id="vocabSuggestLesson">Tiếp tục bài 01</strong>
+                <small id="vocabSuggestProgress">0%</small>
+              </div>
+            </div>
+            <div class="vocab-suggestion">
+              <span>▣</span>
+              <div>
+                <strong>Ôn tập bài học</strong>
+                <small id="vocabSuggestItems">0 mục</small>
+              </div>
+            </div>
+            <div class="vocab-suggestion">
+              <span>◉</span>
+              <div>
+                <strong>Luyện tập</strong>
+                <small>Nghe và nhắc lại</small>
+              </div>
+            </div>
+            <button class="vocab-see-all" type="button" onclick="goBack()">Xem tất cả ›</button>
+          </article>
+        </aside>
+      </div>
     </main>
+
+    <div class="vocab-detail-popover" id="vocabDetailPopover" hidden>
+      <button class="vocab-detail-backdrop" id="vocabDetailBackdrop" type="button" aria-label="Đóng chi tiết từ"></button>
+      <article class="vocab-detail-panel" role="dialog" aria-modal="true" aria-labelledby="vocabDetailTitle">
+        <button class="vocab-detail-close" id="vocabDetailClose" type="button" aria-label="Đóng">×</button>
+        <div class="vocab-detail-heading">
+          <div>
+            <span class="vocab-detail-kicker">Từ mới</span>
+            <h2 id="vocabDetailTitle"></h2>
+            <p id="vocabDetailPinyin"></p>
+          </div>
+          <button class="vocab-detail-sound" id="vocabDetailSound" type="button" aria-label="Nghe từ">🔊</button>
+        </div>
+        <div class="vocab-detail-info">
+          <div><span>Nghĩa</span><strong id="vocabDetailMeaning"></strong></div>
+          <div><span>Hán Việt</span><strong id="vocabDetailHanViet"></strong></div>
+          <div><span>Từ loại</span><strong id="vocabDetailPos"></strong></div>
+        </div>
+        <h3>Ví dụ minh họa</h3>
+        <div class="vocab-detail-examples" id="vocabDetailExamples"></div>
+      </article>
+    </div>
 
     <script>
       const params = new URLSearchParams(window.location.search);
       const lesson = params.get("lesson") || "01";
       const subject = params.get("subject") || "listening";
-      const pageSize = 16;
+      const pageSize = 8;
       let vocabularyItems = [];
+      let filteredItems = [];
       let currentPage = 1;
+
+      function replaceKnownMojibake(value) {
+        return String(value)
+          .replaceAll("â†", "←")
+          .replaceAll("â†’", "→")
+          .replaceAll("â€º", "›")
+          .replaceAll("â–£", "▣")
+          .replaceAll("â–¤", "▤")
+          .replaceAll("â—‰", "◎")
+          .replaceAll("âŒ‚", "⌂")
+          .replaceAll("âŒ•", "⌕")
+          .replaceAll("ðŸŽ™", "🎙")
+          .replaceAll("ðŸ”Š", "🔊")
+          .replaceAll("ðŸ†", "🏆");
+      }
+
+      function decodeMojibakeOnce(value) {
+        const windows1252Bytes = {
+          "€": 0x80, "‚": 0x82, "ƒ": 0x83, "„": 0x84, "…": 0x85, "†": 0x86,
+          "‡": 0x87, "ˆ": 0x88, "‰": 0x89, "Š": 0x8a, "‹": 0x8b, "Œ": 0x8c,
+          "Ž": 0x8e, "‘": 0x91, "’": 0x92, "“": 0x93, "”": 0x94, "•": 0x95,
+          "–": 0x96, "—": 0x97, "˜": 0x98, "™": 0x99, "š": 0x9a, "›": 0x9b,
+          "œ": 0x9c, "ž": 0x9e, "Ÿ": 0x9f,
+        };
+        try {
+          const bytes = Uint8Array.from(Array.from(value), (char) => {
+            if (windows1252Bytes[char] !== undefined) return windows1252Bytes[char];
+            const code = char.charCodeAt(0);
+            return code <= 255 ? code : code & 255;
+          });
+          const decoded = new TextDecoder("utf-8").decode(bytes);
+          return decoded.includes("�") ? value : decoded;
+        } catch (error) {
+          return value;
+        }
+      }
+
+      function fixMojibakeText(text) {
+        let value = replaceKnownMojibake(text ?? "");
+        const mojibakePattern = /(Ã|Â|Ä|Æ|â|ðŸ|å|ç|ï¼|á[º»]|è[¯°±²³´µ¶·¸¹º»¼½¾¿])/;
+        if (!mojibakePattern.test(value)) return value;
+        for (let i = 0; i < 3; i += 1) {
+          const decoded = replaceKnownMojibake(decodeMojibakeOnce(value));
+          if (!decoded || decoded === value) break;
+          value = decoded;
+          if (!mojibakePattern.test(value)) break;
+        }
+        if (mojibakePattern.test(value)) {
+          value = value
+            .split(/(\s+)/)
+            .map((token) => {
+              if (!mojibakePattern.test(token)) return token;
+              let fixedToken = token;
+              for (let i = 0; i < 3; i += 1) {
+                const decoded = replaceKnownMojibake(decodeMojibakeOnce(fixedToken));
+                if (!decoded || decoded === fixedToken) break;
+                fixedToken = decoded;
+                if (!mojibakePattern.test(fixedToken)) break;
+              }
+              return fixedToken;
+            })
+            .join("");
+        }
+        return replaceKnownMojibake(value);
+      }
+
+      function fixMojibakeIn(root = document.body) {
+        if (!root) return;
+        document.title = fixMojibakeText(document.title);
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+        const textNodes = [];
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
+        textNodes.forEach((node) => {
+          const fixed = fixMojibakeText(node.nodeValue);
+          if (fixed !== node.nodeValue) node.nodeValue = fixed;
+        });
+        root.querySelectorAll?.("[placeholder],[aria-label],[title]").forEach((element) => {
+          ["placeholder", "aria-label", "title"].forEach((attr) => {
+            if (!element.hasAttribute(attr)) return;
+            const current = element.getAttribute(attr);
+            const fixed = fixMojibakeText(current);
+            if (fixed !== current) element.setAttribute(attr, fixed);
+          });
+        });
+      }
+
+      function installMojibakeFixer() {
+        const root = document.body;
+        let scheduled = false;
+        const observer = new MutationObserver(() => {
+          if (scheduled) return;
+          scheduled = true;
+          requestAnimationFrame(() => {
+            fixMojibakeIn(root);
+            scheduled = false;
+          });
+        });
+        observer.observe(root, { attributes: true, childList: true, characterData: true, subtree: true });
+        fixMojibakeIn(root);
+      }
+
+      installMojibakeFixer();
 
       function getLessonKey() {
         return String(Number(lesson));
+      }
+
+      function getLessonLabel() {
+        return String(Number(lesson)).padStart(2, "0");
+      }
+
+      function getSubjectLabel() {
+        if (subject === "speaking") return "Khẩu ngữ";
+        if (subject === "hanyu3") return "Hán Ngữ";
+        if (subject === "writing") return "Viết";
+        if (subject === "listening") return "Nghe hiểu";
+        return "Học tập";
       }
 
       function escapeHtml(text) {
@@ -45,6 +277,17 @@
           .replace(/>/g, "&gt;")
           .replace(/"/g, "&quot;")
           .replace(/'/g, "&#039;");
+      }
+
+      function normalizeVocabItem(item) {
+        return {
+          chinese: item.chinese || item.word || item.hanzi || "",
+          pinyin: item.pinyin || "",
+          sinoVietnamese: item.sinoVietnamese || item.hanViet || item.hanviet || item.han_viet || "",
+          vietnamese: item.vietnamese || item.meaning || item.translation || "",
+          partOfSpeech: item.partOfSpeech || item.type || item.pos || "",
+          examples: Array.isArray(item.examples) ? item.examples : []
+        };
       }
 
       function goBack() {
@@ -60,61 +303,242 @@
         window.speechSynthesis.speak(utterance);
       }
 
+      function getVocabHanViet(item) {
+        return item.sinoVietnamese || "Đang bổ sung";
+      }
+
+      function buildGeneratedExamples(item) {
+        const word = item.chinese || "";
+        const meaning = item.vietnamese || "từ này";
+        const pos = String(item.partOfSpeech || "").toLowerCase();
+        if (!word) return [];
+
+        if (pos.includes("v")) {
+          return [
+            { chinese: `我想${word}。`, pinyin: "", vietnamese: `Tôi muốn ${meaning}.` },
+            { chinese: `老师让我们${word}。`, pinyin: "", vietnamese: `Giáo viên bảo chúng tôi ${meaning}.` }
+          ];
+        }
+
+        if (pos.includes("adj")) {
+          return [
+            { chinese: `这里很${word}。`, pinyin: "", vietnamese: `Ở đây rất ${meaning}.` },
+            { chinese: `我觉得这个很${word}。`, pinyin: "", vietnamese: `Tôi thấy cái này rất ${meaning}.` }
+          ];
+        }
+
+        if (pos.includes("adv")) {
+          return [
+            { chinese: `他${word}来了。`, pinyin: "", vietnamese: `Anh ấy ${meaning} đến rồi.` },
+            { chinese: `我${word}知道了。`, pinyin: "", vietnamese: `Tôi ${meaning} biết rồi.` }
+          ];
+        }
+
+        return [
+          { chinese: `这是${word}。`, pinyin: "", vietnamese: `Đây là ${meaning}.` },
+          { chinese: `我学习“${word}”这个词。`, pinyin: "", vietnamese: `Tôi học từ “${meaning}”.` }
+        ];
+      }
+
+      function getVocabExamples(item) {
+        return (item.examples.length ? item.examples : buildGeneratedExamples(item)).slice(0, 2);
+      }
+
+      function openVocabDetail(item) {
+        const popover = document.getElementById("vocabDetailPopover");
+        document.getElementById("vocabDetailTitle").textContent = item.chinese;
+        document.getElementById("vocabDetailPinyin").textContent = item.pinyin || "";
+        document.getElementById("vocabDetailMeaning").textContent = item.vietnamese || "Đang bổ sung";
+        document.getElementById("vocabDetailHanViet").textContent = getVocabHanViet(item);
+        document.getElementById("vocabDetailPos").textContent = item.partOfSpeech || "Đang bổ sung";
+        document.getElementById("vocabDetailSound").onclick = () => speakChinese(item.chinese);
+
+        const examples = getVocabExamples(item);
+        document.getElementById("vocabDetailExamples").innerHTML = examples
+          .map((example) => `
+            <div class="vocab-detail-example">
+              ${example.chinese ? `<strong>${escapeHtml(example.chinese)}</strong>` : ""}
+              ${example.pinyin ? `<span>${escapeHtml(example.pinyin)}</span>` : ""}
+              ${example.vietnamese ? `<small>${escapeHtml(example.vietnamese)}</small>` : ""}
+            </div>
+          `)
+          .join("");
+
+        popover.hidden = false;
+        document.body.classList.add("vocab-detail-open");
+      }
+
+      function closeVocabDetail() {
+        document.getElementById("vocabDetailPopover").hidden = true;
+        document.body.classList.remove("vocab-detail-open");
+      }
+
+      function itemMatchesFilter(item, filter) {
+        const pos = String(item.partOfSpeech || "").toLowerCase();
+        if (filter === "all") return true;
+        if (filter === "noun") return pos.includes("n");
+        if (filter === "verb") return pos.includes("v");
+        if (filter === "adj") return pos.includes("adj");
+        if (filter === "adv") return pos.includes("adv");
+        return true;
+      }
+
+      function applyFilters() {
+        const query = document.getElementById("vocabSearchInput").value.trim().toLowerCase();
+        const filter = document.getElementById("vocabFilterSelect").value;
+        filteredItems = vocabularyItems.filter((item) => {
+          const haystack = `${item.chinese} ${item.pinyin} ${item.vietnamese} ${item.sinoVietnamese}`.toLowerCase();
+          return (!query || haystack.includes(query)) && itemMatchesFilter(item, filter);
+        });
+        currentPage = 1;
+        renderVocabulary();
+      }
+
+      function updateProgressPanels() {
+        const total = Math.max(1, vocabularyItems.length);
+        const percent = vocabularyItems.length ? Math.round((filteredItems.length / total) * 100) : 0;
+        const cappedPercent = vocabularyItems.length ? 0 : percent;
+        document.getElementById("vocabHeroPercent").textContent = `${cappedPercent}%`;
+        document.getElementById("vocabSidePercent").textContent = `${cappedPercent}%`;
+        document.getElementById("vocabHeroProgressBar").style.width = `${cappedPercent}%`;
+        document.getElementById("vocabLearnedText").textContent = "Đã học 0/12 bài";
+        document.getElementById("vocabDoneCount").textContent = "0";
+        document.getElementById("vocabLeftCount").textContent = "12";
+        document.getElementById("vocabSuggestLesson").textContent = `Tiếp tục bài ${getLessonLabel()}`;
+        document.getElementById("vocabSuggestProgress").textContent = `${cappedPercent}%`;
+        document.getElementById("vocabSuggestItems").textContent = `${vocabularyItems.length} mục`;
+      }
+
       function renderVocabulary() {
         const grid = document.getElementById("vocabularyGrid");
-        const totalPages = Math.max(1, Math.ceil(vocabularyItems.length / pageSize));
+        const totalPages = Math.max(1, Math.ceil(filteredItems.length / pageSize));
+        currentPage = Math.min(currentPage, totalPages);
         const start = (currentPage - 1) * pageSize;
-        const items = vocabularyItems.slice(start, start + pageSize);
+        const items = filteredItems.slice(start, start + pageSize);
         grid.innerHTML = "";
 
         if (!items.length) {
           grid.innerHTML = '<p class="vocab-empty">Chưa có dữ liệu từ vựng cho bài này.</p>';
-          return;
-        }
-
-        items.forEach((item) => {
-          const card = document.createElement("article");
-          card.className = "vocab-card";
-          card.innerHTML = `
-            <div class="vocab-card-main">
-              <div class="vocab-word-row">
-                <h2>${escapeHtml(item.chinese)}</h2>
-                <button class="vocab-sound-btn" type="button" aria-label="Nghe ${escapeHtml(item.chinese)}">🔊</button>
+        } else {
+          items.forEach((item) => {
+            const card = document.createElement("article");
+            card.className = "vocab-card";
+            card.tabIndex = 0;
+            card.setAttribute("role", "button");
+            card.innerHTML = `
+              <div class="vocab-card-main">
+                <div class="vocab-word-row">
+                  <h2>${escapeHtml(item.chinese)}</h2>
+                  <button class="vocab-sound-btn" type="button" aria-label="Nghe ${escapeHtml(item.chinese)}">🔊</button>
+                </div>
+                <p class="vocab-pinyin">${escapeHtml(item.pinyin)}${item.sinoVietnamese ? ` <span>[ ${escapeHtml(item.sinoVietnamese)} ]</span>` : ""}</p>
+                <p class="vocab-meaning">${escapeHtml(item.vietnamese)}</p>
               </div>
-              <p class="vocab-pinyin">${escapeHtml(item.pinyin)} <span>[ ${escapeHtml(item.sinoVietnamese)} ]</span></p>
-              <p class="vocab-meaning">${escapeHtml(item.vietnamese)}</p>
-            </div>
-          `;
+            `;
 
-          card
-            .querySelector(".vocab-sound-btn")
-            .addEventListener("click", () => speakChinese(item.chinese));
-          grid.appendChild(card);
-        });
+            card
+              .querySelector(".vocab-sound-btn")
+              .addEventListener("click", (event) => {
+                event.stopPropagation();
+                speakChinese(item.chinese);
+              });
+            card.addEventListener("click", () => openVocabDetail(item));
+            card.addEventListener("keydown", (event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openVocabDetail(item);
+              }
+            });
+            grid.appendChild(card);
+          });
+        }
 
         document.getElementById("vocabPageStatus").textContent =
           `Trang ${currentPage}/${totalPages}`;
         document.getElementById("prevVocabPage").disabled = currentPage === 1;
         document.getElementById("nextVocabPage").disabled = currentPage === totalPages;
+        updateProgressPanels();
       }
 
       function changePage(delta) {
-        const totalPages = Math.max(1, Math.ceil(vocabularyItems.length / pageSize));
+        const totalPages = Math.max(1, Math.ceil(filteredItems.length / pageSize));
         currentPage = Math.min(totalPages, Math.max(1, currentPage + delta));
         renderVocabulary();
       }
 
+      async function fetchJson(path) {
+        const res = await fetch(path);
+        if (!res.ok) throw new Error(`Không tải được ${path}`);
+        return res.json();
+      }
+
+      function getListeningVocabularyItems(data) {
+        const lessonNumber = Number(lesson);
+        const exactKeys = [
+          lesson,
+          getLessonKey(),
+          String(lessonNumber),
+          String(lessonNumber % 2 === 0 ? lessonNumber - 1 : lessonNumber)
+        ].filter((key) => key && key !== "NaN");
+
+        for (const key of exactKeys) {
+          if (Array.isArray(data[key])) return data[key];
+        }
+
+        const numericKeys = Object.keys(data)
+          .map((key) => Number(key))
+          .filter((key) => Number.isFinite(key))
+          .sort((a, b) => a - b);
+
+        const fallbackKey = numericKeys
+          .slice()
+          .reverse()
+          .find((key) => key <= lessonNumber);
+
+        if (fallbackKey && Array.isArray(data[String(fallbackKey)])) {
+          return data[String(fallbackKey)];
+        }
+
+        return [];
+      }
+
       async function loadVocabulary() {
-        const res = await fetch("data/listening-vocabulary.json");
-        if (!res.ok) throw new Error("Không tải được dữ liệu từ vựng");
-        const data = await res.json();
-        const items = data[lesson] || data[getLessonKey()] || [];
-        vocabularyItems = items;
+        let items = [];
+        if (subject === "hanyu3") {
+          const allLessons = await fetchJson(`data/hanyu3-lessons.json?v=${Date.now()}`);
+          const data = allLessons[String(Number(lesson))] || {};
+          items = data.vocabulary || data.words || data.newWords || [];
+        } else if (subject === "speaking") {
+          const data = await fetchJson(`data/speaking-lesson-${Number(lesson)}.json`);
+          items = data.vocabulary || data.words || data.newWords || [];
+        } else if (subject === "writing") {
+          const data = await fetchJson("data/writing-tests.json");
+          const lessonKey = String(Number(lesson));
+          const grammar = data.grammar || data.grammarTests || {};
+          const grammarItems = grammar[lesson] || grammar[lessonKey] || [];
+          items = Array.isArray(grammarItems)
+            ? grammarItems.filter((item) => item && item.partOfSpeech)
+            : [];
+        } else {
+          const data = await fetchJson("data/listening-vocabulary.json");
+          items = getListeningVocabularyItems(data);
+        }
+
+        vocabularyItems = items.map(normalizeVocabItem).filter((item) => item.chinese);
+        filteredItems = vocabularyItems;
         currentPage = 1;
-        document.getElementById("vocabularyTitle").textContent =
-          `Bài ${String(Number(lesson)).padStart(2, "0")} - Ôn tập từ vựng`;
-        document.getElementById("vocabularySubtitle").textContent =
-          `${items.length} từ mới`;
+
+        const lessonLabel = getLessonLabel();
+        document.getElementById("vocabStudyLink").href = `lessons.html?subject=${subject}`;
+        document.getElementById("vocabCrumbLesson").href = `lesson-options.html?lesson=${lesson}&subject=${subject}`;
+        document.getElementById("vocabCrumbLesson").textContent = `⌂ Bài ${lessonLabel}`;
+        document.getElementById("vocabCrumbSubject").href = `lessons.html?subject=${subject}`;
+        document.getElementById("vocabCrumbSubject").textContent = getSubjectLabel();
+        document.getElementById("vocabCrumbCurrent").textContent = `Bài ${Number(lesson)} - Từ mới`;
+        document.getElementById("vocabLessonPill").textContent = `Bài ${lessonLabel}`;
+        document.getElementById("vocabularyTitle").textContent = `Bài ${Number(lesson)} - Từ mới`;
+        document.getElementById("vocabularySubtitle").textContent = "Chọn từ để nghe phát âm";
+
         renderVocabulary();
       }
 
@@ -124,6 +548,21 @@
       document
         .getElementById("nextVocabPage")
         .addEventListener("click", () => changePage(1));
+      document
+        .getElementById("vocabSearchInput")
+        .addEventListener("input", applyFilters);
+      document
+        .getElementById("vocabFilterSelect")
+        .addEventListener("change", applyFilters);
+      document
+        .getElementById("vocabDetailBackdrop")
+        .addEventListener("click", closeVocabDetail);
+      document
+        .getElementById("vocabDetailClose")
+        .addEventListener("click", closeVocabDetail);
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeVocabDetail();
+      });
 
       loadVocabulary().catch((err) => {
         document.getElementById("vocabularyGrid").innerHTML =

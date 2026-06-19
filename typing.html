@@ -74,6 +74,965 @@
     </div>
 
     <script>
+      function getPracticeActivityCopy(content, test) {
+        const testLabel = String(Number(test)).padStart(2, "0");
+        const copies = {
+          paragraph: {
+            title: `Ôn tập bài khóa ${testLabel}`,
+            subtitle: "Luyện dịch câu - Việt sang Trung",
+            hint: "Gợi ý: Nhớ lại nội dung bài khóa và dịch tự nhiên.",
+          },
+          structure: {
+            title: `Luyện tập cấu trúc ${testLabel}`,
+            subtitle: "20 câu cấu trúc - Việt sang Trung",
+            hint: "Gợi ý: Dùng đúng mẫu câu và trật tự từ đã học.",
+          },
+          example: {
+            title: `Bài kiểm tra ${testLabel}`,
+            subtitle: "20 câu phản xạ - Việt sang Trung",
+            hint: "Gợi ý: Sử dụng cách nói lịch sự và tự nhiên.",
+          },
+        };
+        return copies[content] || copies.example;
+      }
+
+      function PracticeActivityForm({ subject, content, lesson, test, subjectLabel }) {
+        const copy = getPracticeActivityCopy(content, test);
+        const lessonLabel = String(Number(lesson)).padStart(2, "0");
+        return `
+          <aside class="speaking-sidebar reflex-typing-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <nav class="speaking-nav" aria-label="Điều hướng luyện tập">
+              <a href="index.html">⌂ Trang chủ</a>
+              <a class="is-active" href="lessons.html?subject=${subject}">▣ Học tập</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thử HSK</button>
+              <button disabled>AI hội thoại</button>
+              <button disabled>Từ vựng</button>
+              <button disabled>Thống kê</button>
+              <button disabled>Cài đặt</button>
+            </nav>
+          </aside>
+
+          <main class="reflex-typing-main practice-activity-form">
+            <div class="speaking-breadcrumb reflex-typing-breadcrumb">
+              <a href="review.html?lesson=${lesson}&subject=${subject}&content=${content}">← Học tập</a>
+              <span>›</span>
+              <span>${subjectLabel}</span>
+              <span>›</span>
+              <span>Bài ${lessonLabel}</span>
+              <span>›</span>
+              <strong>${copy.title}</strong>
+            </div>
+
+            <section class="reflex-typing-layout">
+              <div class="reflex-typing-primary">
+                <header class="reflex-typing-hero">
+                  <div class="reflex-typing-art" aria-hidden="true">⚡</div>
+                  <div class="reflex-typing-copy">
+                    <div class="lesson reflex-typing-title">${copy.title}</div>
+                    <p>${copy.subtitle}</p>
+                    <div class="reflex-typing-stats">
+                      <span>Câu hiện tại <b class="reflex-current">01/20</b></span>
+                      <span>Đã làm <b class="reflex-done">0</b></span>
+                      <span>Đúng <b class="exp">0</b></span>
+                      <span>Tỷ lệ đúng <b class="reflex-accuracy">0%</b></span>
+                    </div>
+                    <div class="progress reflex-typing-progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="completion-note"></div>
+                  </div>
+                </header>
+
+                <div class="reflex-workspace">
+                  <section class="reflex-question-card">
+                    <div class="reflex-question-topline">
+                      <label>Câu tiếng Việt</label>
+                      <button type="button" class="reflex-flag-btn">⚐ Đặt cờ</button>
+                    </div>
+                    <h1 class="question">Đang tải câu hỏi...</h1>
+
+                    <label for="answerInput">Nhập tiếng Trung</label>
+                    <input id="answerInput" type="text" placeholder="Nhập đáp án bằng chữ Hán..." class="answer-input" />
+
+                    <div class="reflex-action-row">
+                      <span class="reflex-hint">${copy.hint}</span>
+                      <button class="sound-btn" type="button">Phát gợi ý</button>
+                      <button class="check-btn" type="button">Kiểm tra</button>
+                    </div>
+
+                    <div class="answer-feedback" hidden></div>
+                  </section>
+
+                </div>
+
+                <div class="reflex-bottom-nav">
+                  <button type="button" class="reflex-prev-btn">← Câu trước</button>
+                  <button type="button" class="reflex-next-btn">Câu tiếp theo →</button>
+                </div>
+              </div>
+
+              <aside class="reflex-typing-aside">
+                <article class="reflex-side-card">
+                  <h2>Câu đã đặt cờ</h2>
+                  <div class="reflex-question-grid" id="reflexQuestionGrid"></div>
+                </article>
+
+                <section class="reflex-settings-card">
+                  <h2>Cài đặt luyện tập</h2>
+                  <button class="tool-btn" type="button">Giọng đọc và tốc độ</button>
+                  <div class="custom-panel active" id="customPanel">
+                    <div class="custom-row">
+                      <label for="voiceSelect">Giọng đọc</label>
+                      <select id="voiceSelect"></select>
+                    </div>
+                    <div class="custom-row">
+                      <label for="speedRange">Tốc độ: <span id="speedValue">1.0</span>x</label>
+                      <input id="speedRange" type="range" min="0.5" max="2" step="0.1" value="1" />
+                    </div>
+                    <button class="custom-close-btn" id="customCloseBtn" type="button">Ẩn cài đặt</button>
+                  </div>
+                  <button class="reset-btn" type="button" onclick="resetToStart()">Làm lại từ đầu</button>
+                </section>
+
+                <article class="reflex-side-card">
+                  <h2>Tiến độ kiểm tra</h2>
+                  <div class="reflex-donut">
+                    <strong class="reflex-donut-count">0/20</strong>
+                    <span>Đã làm</span>
+                  </div>
+                  <ul>
+                    <li><span class="ok"></span>Đúng <b class="reflex-right-count">0</b></li>
+                    <li><span class="bad"></span>Sai <b class="reflex-wrong-count">0</b></li>
+                    <li><span class="left"></span>Còn lại <b class="reflex-left-count">20</b></li>
+                  </ul>
+                  <p>Tỷ lệ đúng: <b class="reflex-side-accuracy">0%</b></p>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
+      }
+
+      function FillBlankExerciseForm({ subject, lesson, test }) {
+        const lessonLabel = String(Number(lesson)).padStart(2, "0");
+        const testLabel = String(Number(test)).padStart(2, "0");
+        return `
+          <aside class="speaking-sidebar reflex-typing-sidebar fill-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <small>Học tiếng Trung, dễ như ý</small>
+            <nav class="speaking-nav" aria-label="Điều hướng bài tập">
+              <a href="index.html">⌂ Trang chủ</a>
+              <a class="is-active" href="lessons.html?subject=${subject}">▣ Học tập</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thử HSK</button>
+              <button disabled>AI hội thoại</button>
+              <button disabled>Từ vựng</button>
+              <button disabled>Thống kê</button>
+              <button disabled>Cài đặt</button>
+            </nav>
+          </aside>
+
+          <main class="fill-exercise-main">
+            <div class="speaking-breadcrumb fill-breadcrumb">
+              <a href="lesson-options.html?lesson=${lesson}&subject=${subject}">Bài ${lessonLabel}</a>
+              <span>›</span>
+              <a href="lessons.html?subject=${subject}">Giáo trình Hán Ngữ</a>
+              <span>›</span>
+              <a href="review.html?lesson=${lesson}&subject=${subject}&content=exercise">Bài 1 - Bài tập</a>
+              <span>›</span>
+              <strong>Bài tập điền từ ${testLabel}</strong>
+            </div>
+
+            <section class="fill-exercise-layout">
+              <div class="fill-exercise-primary">
+                <header class="fill-exercise-hero">
+                  <div class="fill-hero-icon" aria-hidden="true">✎</div>
+                  <div>
+                    <h1>Bài tập điền từ ${testLabel}</h1>
+                    <p>Chọn từ trong bảng để điền vào chỗ trống</p>
+                  </div>
+                  <div class="fill-hero-progress">
+                    <span class="fill-progress-ring"></span>
+                    <strong id="fillProgressText">0/8 câu</strong>
+                    <small>Chỉ hiển thị giải thích sau khi hoàn thành tất cả câu</small>
+                  </div>
+                </header>
+
+                <section class="fill-word-bank-card">
+                  <h2>▦ Từ trong bảng</h2>
+                  <div class="fill-word-bank" id="fillWordBank"></div>
+                </section>
+
+                <section class="fill-question-card">
+                  <ol class="fill-question-list" id="fillQuestionList"></ol>
+                </section>
+
+                <div class="fill-action-row">
+                  <button type="button" class="fill-reset-btn" id="fillResetBtn">↻ Làm lại</button>
+                  <button type="button" class="fill-check-btn" id="fillCheckBtn">◎ Kiểm tra đáp án</button>
+                  <button type="button" class="fill-explain-btn" id="fillExplainBtn" disabled>🔒 Xem giải thích</button>
+                </div>
+
+                <section class="fill-explanation-card is-locked" id="fillExplanationCard">
+                  <div class="fill-lock-icon">🔒</div>
+                  <div>
+                    <h2>Giải thích sẽ mở sau khi bạn hoàn thành tất cả câu.</h2>
+                    <p>Vui lòng điền hết 8/8 câu và nhấn “Kiểm tra đáp án” để xem đáp án, giải thích và nghĩa câu.</p>
+                  </div>
+                </section>
+              </div>
+
+              <aside class="fill-exercise-aside">
+                <article class="fill-side-card">
+                  <h2>ⓘ Hướng dẫn</h2>
+                  <ul class="fill-guide-list">
+                    <li><span>☝</span><div><strong>Bước 1: Chọn từ trong bảng</strong></div></li>
+                    <li><span>✎</span><div><strong>Bước 2: Điền hết tất cả chỗ trống</strong></div></li>
+                    <li><span>✓</span><div><strong>Bước 3: Nhấn “Kiểm tra đáp án”</strong></div></li>
+                    <li><span>🔒</span><div><strong>Sau khi hoàn thành mới hiện đáp án đúng, giải thích, và nghĩa câu.</strong></div></li>
+                  </ul>
+                </article>
+
+                <article class="fill-side-card">
+                  <h2>◎ Tiến độ bài tập</h2>
+                  <div class="fill-progress-box">
+                    <span>Đã điền</span>
+                    <strong id="fillDoneCount">0/8</strong>
+                    <span>Trạng thái</span>
+                    <strong class="fill-status" id="fillStatusText">Chưa kiểm tra</strong>
+                  </div>
+                  <p>ⓘ Không hiện giải thích từng câu ngay</p>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
+      }
+
+      function escapeFillHtml(text) {
+        return String(text ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function renderFillCompletedSentence(item) {
+        const completed = String(item.completed || "");
+        const answers = String(item.answer || "")
+          .split("/")
+          .map((part) => part.trim())
+          .filter(Boolean);
+        if (!completed || !answers.length) return escapeFillHtml(completed);
+
+        let cursor = 0;
+        let html = "";
+        let matched = false;
+        answers.forEach((answer) => {
+          const answerIndex = completed.indexOf(answer, cursor);
+          if (answerIndex < 0) return;
+          html += escapeFillHtml(completed.slice(cursor, answerIndex));
+          html += `<u class="fill-answer-underline">${escapeFillHtml(answer)}</u>`;
+          cursor = answerIndex + answer.length;
+          matched = true;
+        });
+
+        if (!matched) return escapeFillHtml(completed);
+        html += escapeFillHtml(completed.slice(cursor));
+        return html;
+      }
+
+      function renderFillAnswerChips(answer) {
+        return String(answer || "")
+          .split("/")
+          .map((part) => part.trim())
+          .filter(Boolean)
+          .map((part) => `<span class="fill-answer-chip">${escapeFillHtml(part)}</span>`)
+          .join("");
+      }
+
+      function renderFillExplanationText(explanation) {
+        const lines = String(explanation || "")
+          .split(/\r?\n/)
+          .map((line) => line.trim())
+          .filter(Boolean);
+        if (!lines.length) return "";
+        return `<div class="fill-explanation-notes">${lines
+          .map((line) => `<p>${escapeFillHtml(line)}</p>`)
+          .join("")}</div>`;
+      }
+
+      async function initFillBlankExercise({ lesson, test }) {
+        const res = await fetch(`data/hanyu3-lessons.json?v=${Date.now()}`);
+        if (!res.ok) throw new Error("Không tải được dữ liệu bài tập");
+        const data = await res.json();
+        const exercise = data[String(Number(lesson))]?.exercise?.[Number(test) - 1] || {};
+        const questions = exercise.questions || [];
+        const allowReuse = Boolean(exercise.allowReuse) || [3, 4].includes(Number(test));
+        const answers = allowReuse
+          ? Array.from(new Set(questions.flatMap((item) => String(item.answer || "").split("/").map((part) => part.trim()).filter(Boolean))))
+          : questions.map((item) => item.answer).filter(Boolean);
+        const wordBank = document.getElementById("fillWordBank");
+        const list = document.getElementById("fillQuestionList");
+        const doneCount = document.getElementById("fillDoneCount");
+        const progressText = document.getElementById("fillProgressText");
+        const statusText = document.getElementById("fillStatusText");
+        const explainBtn = document.getElementById("fillExplainBtn");
+        const explanationCard = document.getElementById("fillExplanationCard");
+
+        wordBank.innerHTML = answers
+          .map((word) => `<button type="button" class="fill-word-chip">${escapeFillHtml(word)}</button>`)
+          .join("");
+
+        list.innerHTML = questions
+          .map((item, idx) => {
+            let blankIndex = 0;
+            const sentence = escapeFillHtml(item.question).replace(/____/g, () => {
+              const html = `<input class="fill-answer-input" data-index="${idx}" data-blank="${blankIndex}" aria-label="Câu ${idx + 1} ô ${blankIndex + 1}" />`;
+              blankIndex += 1;
+              return html;
+            });
+            return `<li class="fill-question-row" data-index="${idx}"><span>${idx + 1}</span><p>${sentence}</p></li>`;
+          })
+          .join("");
+
+        const inputs = Array.from(document.querySelectorAll(".fill-answer-input"));
+        const totalBlanks = inputs.length || questions.length;
+        let selectedInput = inputs[0] || null;
+
+        function refreshWordBankState() {
+          if (allowReuse) return;
+          const used = new Set(inputs.map((input) => input.value.trim()).filter(Boolean));
+          document.querySelectorAll(".fill-word-chip").forEach((button) => {
+            const word = button.textContent.trim();
+            button.disabled = used.has(word);
+            button.classList.toggle("is-used", used.has(word));
+          });
+        }
+
+        function updateProgress() {
+          const filled = inputs.filter((input) => input.value.trim()).length;
+          doneCount.textContent = `${filled}/${totalBlanks}`;
+          progressText.textContent = `${filled}/${totalBlanks} ô`;
+          refreshWordBankState();
+        }
+
+        inputs.forEach((input) => {
+          input.addEventListener("focus", () => {
+            selectedInput = input;
+          });
+          input.addEventListener("input", updateProgress);
+        });
+
+        document.querySelectorAll(".fill-word-chip").forEach((button) => {
+          button.addEventListener("click", () => {
+            if (button.disabled) return;
+            const target = selectedInput || inputs.find((input) => !input.value.trim()) || inputs[0];
+            if (!target) return;
+            target.value = button.textContent.trim();
+            target.focus();
+            selectedInput = target;
+            updateProgress();
+          });
+        });
+
+        document.getElementById("fillResetBtn").addEventListener("click", () => {
+          inputs.forEach((input) => {
+            input.value = "";
+            input.classList.remove("is-correct", "is-wrong");
+          });
+          document.querySelectorAll(".fill-question-row").forEach((row) => row.classList.remove("is-correct", "is-wrong"));
+          explanationCard.classList.add("is-locked");
+          explanationCard.innerHTML = `
+            <div class="fill-lock-icon">🔒</div>
+            <div>
+              <h2>Giải thích sẽ mở sau khi bạn hoàn thành tất cả câu.</h2>
+              <p>Vui lòng điền hết 8/8 câu và nhấn “Kiểm tra đáp án” để xem đáp án, giải thích và nghĩa câu.</p>
+            </div>
+          `;
+          explainBtn.disabled = true;
+          statusText.textContent = "Chưa kiểm tra";
+          updateProgress();
+        });
+
+        document.getElementById("fillCheckBtn").addEventListener("click", () => {
+          let correct = 0;
+          inputs.forEach((input, idx) => {
+            const questionIndex = Number(input.dataset.index || idx);
+            const blankIndex = Number(input.dataset.blank || 0);
+            const expectedAnswers = String(questions[questionIndex].answer || "")
+              .split("/")
+              .map((part) => part.trim())
+              .filter(Boolean);
+            const expected = expectedAnswers[blankIndex] || expectedAnswers[0] || "";
+            const ok = input.value.trim() === expected;
+            correct += ok ? 1 : 0;
+            input.classList.toggle("is-correct", ok);
+            input.classList.toggle("is-wrong", !ok);
+            input.closest(".fill-question-row")?.classList.toggle("is-correct", ok);
+            input.closest(".fill-question-row")?.classList.toggle("is-wrong", !ok);
+          });
+          statusText.textContent = `${correct}/${totalBlanks} đúng`;
+          explainBtn.disabled = false;
+          explanationCard.classList.remove("is-locked");
+          explanationCard.innerHTML = `
+            <h2>Đáp án và giải thích</h2>
+            <div class="fill-explanation-list">
+              ${questions.map((item, idx) => `
+                <article>
+                  <strong>${idx + 1}. ${renderFillCompletedSentence(item)}</strong>
+                  <small>${escapeFillHtml(item.pinyin)}</small>
+                  <p>${escapeFillHtml(item.meaning)}</p>
+                  <div class="fill-answer-row"><b>Đáp án:</b>${renderFillAnswerChips(item.answer)}</div>
+                  ${renderFillExplanationText(item.explanation)}
+                </article>
+              `).join("")}
+            </div>
+          `;
+        });
+
+        explainBtn.addEventListener("click", () => {
+          explanationCard.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+
+        updateProgress();
+      }
+
+      function ErrorCorrectionExerciseForm({ subject, lesson, test }) {
+        const lessonLabel = String(Number(lesson)).padStart(2, "0");
+        const testNumber = Number(test);
+        const isPracticalAnswer = testNumber === 6;
+        const title = isPracticalAnswer ? `Bài ${lessonLabel} - Trả lời câu hỏi` : `Bài ${lessonLabel} - Sửa lỗi sai`;
+        const subtitle = isPracticalAnswer
+          ? "Trả lời bằng kiến thức thực tế, rồi xem câu mẫu và giải thích"
+          : "Tự sửa câu sai rồi mới xem đáp án và giải thích";
+        const questionLabel = isPracticalAnswer ? "Câu hỏi" : "Câu sai";
+        const answerLabel = isPracticalAnswer ? "Nhập câu trả lời" : "Nhập câu đúng";
+        const answerPlaceholder = isPracticalAnswer ? "Nhập câu trả lời bằng chữ Hán..." : "Nhập câu sửa lại bằng chữ Hán...";
+        const hintText = isPracticalAnswer
+          ? "Gợi ý: Dùng cấu trúc so sánh phù hợp với nội dung câu hỏi."
+          : "Gợi ý: Tìm lỗi trong cấu trúc so sánh, bổ ngữ hoặc trật tự từ.";
+        const totalLabel = isPracticalAnswer ? "08" : "06";
+        return `
+          <aside class="speaking-sidebar reflex-typing-sidebar error-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <nav class="speaking-nav" aria-label="Dieu huong bai tap sua loi">
+              <a href="index.html">⌂ Trang chủ</a>
+              <a class="is-active" href="lessons.html?subject=${subject}">▣ Học tập</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thử HSK</button>
+              <button disabled>AI hội thoại</button>
+              <button disabled>Từ vựng</button>
+              <button disabled>Thống kê</button>
+              <button disabled>Cài đặt</button>
+            </nav>
+          </aside>
+
+          <main class="error-exercise-main">
+            <div class="speaking-breadcrumb error-breadcrumb">
+              <a href="lesson-options.html?lesson=${lesson}&subject=${subject}">Bài ${lessonLabel}</a>
+              <span>›</span>
+              <a href="lessons.html?subject=${subject}">Giáo trình Hán Ngữ</a>
+              <span>›</span>
+              <a href="review.html?lesson=${lesson}&subject=${subject}&content=exercise">Bài ${Number(lesson)} - Bài tập</a>
+              <span>›</span>
+              <strong id="errorModeLabel">${isPracticalAnswer ? "Trả lời câu hỏi" : "Sửa lỗi sai"}</strong>
+            </div>
+
+            <section class="error-exercise-layout">
+              <div class="error-exercise-primary">
+                <header class="error-summary-card">
+                  <div class="error-summary-icon" aria-hidden="true">✎</div>
+                  <div class="error-summary-title">
+                    <h1 id="errorExerciseTitle">${title}</h1>
+                    <p id="errorExerciseSubtitle">${subtitle}</p>
+                  </div>
+                  <dl class="error-summary-stats">
+                    <div><dt>Câu hiện tại</dt><dd id="errorCurrentText">01/${totalLabel}</dd></div>
+                    <div><dt>Đã làm</dt><dd id="errorDoneText">0</dd></div>
+                    <div><dt>Đúng</dt><dd id="errorRightText">0</dd></div>
+                    <div><dt>Tỷ lệ đúng</dt><dd id="errorAccuracyText">0%</dd></div>
+                  </dl>
+                  <div class="error-summary-progress">
+                    <span id="errorProgressBar"></span>
+                    <small id="errorProgressText">0% hoàn thành</small>
+                  </div>
+                </header>
+
+                <section class="error-question-card">
+                  <label id="errorQuestionLabel">${questionLabel}</label>
+                  <div class="error-wrong-sentence" id="errorWrongSentence"></div>
+                  <label for="errorAnswerInput" id="errorAnswerLabel">${answerLabel}</label>
+                  <textarea id="errorAnswerInput" class="error-answer-input" rows="2" placeholder="${answerPlaceholder}"></textarea>
+                  <div class="error-hint-line" id="errorHintLine" hidden>${hintText}</div>
+                  <div class="error-actions">
+                    <button type="button" class="error-secondary-btn is-disabled" id="errorHintBtn" disabled aria-disabled="true">⚑ Gợi ý</button>
+                    <button type="button" class="error-check-btn" id="errorCheckBtn">◎ Kiểm tra</button>
+                  </div>
+                  <article class="error-result-card is-locked" id="errorResultCard">
+                    <strong>🔒 Giải thích sẽ mở sau khi bạn trả lời.</strong>
+                  </article>
+                </section>
+
+                <nav class="error-bottom-nav" aria-label="Điều hướng câu">
+                  <button type="button" id="errorPrevBtn">← Câu trước</button>
+                  <button type="button" id="errorFlagBtn">⚐ Đặt cờ</button>
+                  <button type="button" id="errorNextBtn">Câu tiếp theo →</button>
+                </nav>
+              </div>
+
+              <aside class="error-exercise-aside">
+                <article class="error-side-card">
+                  <h2>☷ Danh sách câu</h2>
+                  <div class="error-question-grid" id="errorQuestionGrid"></div>
+                </article>
+                <article class="error-side-card">
+                  <h2 id="errorProgressTitle">◴ ${isPracticalAnswer ? "Tiến độ bài trả lời" : "Tiến độ bài sửa lỗi"}</h2>
+                  <div class="error-donut" id="errorDonut"><span>0/${Number(totalLabel)}</span><small>Đã làm</small></div>
+                  <ul class="error-progress-list">
+                    <li><span class="ok"></span>Đúng <b id="errorSideRight">0</b></li>
+                    <li><span class="bad"></span>Sai <b id="errorSideWrong">0</b></li>
+                    <li><span class="left"></span>Còn lại <b id="errorSideLeft">${Number(totalLabel)}</b></li>
+                  </ul>
+                  <p>Tỷ lệ đúng: <b id="errorSideAccuracy">0%</b></p>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
+      }
+
+      function normalizeCorrectionAnswer(value) {
+        return String(value || "")
+          .replace(/[，。！？、,.!?;；：:\s]/g, "")
+          .toLowerCase();
+      }
+
+      async function initErrorCorrectionExercise({ lesson, test }) {
+        const res = await fetch(`data/hanyu3-lessons.json?v=${Date.now()}`);
+        if (!res.ok) throw new Error("Không tải được dữ liệu bài tập");
+        const data = await res.json();
+        const testNumber = Number(test);
+        const isPracticalAnswer = testNumber === 6;
+        const lessonLabel = String(Number(lesson)).padStart(2, "0");
+        const exercise = data[String(Number(lesson))]?.exercise?.[testNumber - 1] || {};
+        const questions = exercise.questions || [];
+        if (!questions.length) throw new Error("Bài tập này chưa có câu hỏi");
+        const activityType = questions[0]?.type || exercise.type || (isPracticalAnswer ? "practicalAnswer" : "errorCorrection");
+        const isRewriteSentence = activityType === "rewriteSentence";
+        const isCompleteSentence = activityType === "completeSentence";
+        const isMakeSentence = activityType === "makeSentence";
+        const isPositionIdentify = activityType === "positionIdentify";
+
+        const modeTitle = isMakeSentence
+          ? "Tạo câu"
+          : isPositionIdentify
+            ? "Xác định vị trí"
+            : isCompleteSentence
+              ? "Hoàn thành câu"
+              : isRewriteSentence
+                ? "Viết lại câu"
+                : (isPracticalAnswer ? "Trả lời câu hỏi" : "Sửa lỗi sai");
+        const modeSubtitle = isMakeSentence
+          ? "Dựa vào tình huống để tạo câu bằng cấu trúc được yêu cầu"
+          : isPositionIdentify
+            ? "Dựa vào hướng chuyển động để xác định vị trí người nói"
+            : isCompleteSentence
+              ? "Điền phần còn thiếu để hoàn thành câu, rồi xem đáp án và giải thích"
+              : isRewriteSentence
+                ? "Viết lại câu bằng cấu trúc được yêu cầu, rồi xem đáp án và giải thích"
+                : (isPracticalAnswer
+                  ? "Trả lời bằng kiến thức thực tế, rồi xem câu mẫu và giải thích"
+                  : "Tự sửa câu sai rồi mới xem đáp án và giải thích");
+        const questionLabelText = isMakeSentence
+          ? "Tình huống"
+          : isPositionIdentify
+            ? "Đối thoại"
+            : isCompleteSentence || isRewriteSentence
+              ? "Câu gốc"
+              : (isPracticalAnswer ? "Câu hỏi" : "Câu sai");
+        const answerLabelText = isMakeSentence
+          ? "Nhập câu tạo thành"
+          : isPositionIdentify
+            ? "Nhập vị trí"
+            : isCompleteSentence
+              ? "Nhập câu hoàn chỉnh"
+              : isRewriteSentence
+                ? "Nhập câu viết lại"
+                : (isPracticalAnswer ? "Nhập câu trả lời" : "Nhập câu đúng");
+        const answerPlaceholderText = isRewriteSentence
+          ? "Nhập câu viết lại bằng chữ Hán..."
+          : isCompleteSentence
+            ? "Nhập câu hoàn chỉnh bằng chữ Hán..."
+            : isMakeSentence
+              ? "Nhập câu tạo thành bằng chữ Hán..."
+              : isPositionIdentify
+                ? "Ví dụ: A ở 上边；B ở 上边；她在下边。"
+                : (isPracticalAnswer ? "Nhập câu trả lời bằng chữ Hán..." : "Nhập câu sửa lại bằng chữ Hán...");
+        const hintText = isMakeSentence
+          ? "Gợi ý: Dùng 快……了 / 要……了 / 快要……了 / 就要……了 cho phù hợp."
+          : isPositionIdentify
+            ? "Gợi ý: 来 thường hướng về phía người nói, 去 thường rời xa người nói."
+            : isCompleteSentence
+              ? "Gợi ý: Dựa vào ngữ cảnh và cấu trúc đã học để hoàn thành câu."
+              : isRewriteSentence
+                ? "Gợi ý: Dùng cấu trúc 跟……一样 để viết lại câu."
+                : (isPracticalAnswer
+                  ? "Gợi ý: Dùng cấu trúc so sánh phù hợp với nội dung câu hỏi."
+                  : "Gợi ý: Tìm lỗi trong cấu trúc so sánh, bổ ngữ hoặc trật tự từ.");
+
+        document.getElementById("errorModeLabel").textContent = modeTitle;
+        document.getElementById("errorExerciseTitle").textContent = `Bài ${lessonLabel} - ${modeTitle}`;
+        document.getElementById("errorExerciseSubtitle").textContent = modeSubtitle;
+        document.getElementById("errorQuestionLabel").textContent = questionLabelText;
+        document.getElementById("errorAnswerLabel").textContent = answerLabelText;
+        document.getElementById("errorAnswerInput").placeholder = answerPlaceholderText;
+        document.getElementById("errorProgressTitle").textContent = `◴ Tiến độ bài ${modeTitle.toLowerCase()}`;
+
+        let current = 0;
+        const answers = Array(questions.length).fill("");
+        const checked = Array(questions.length).fill(false);
+        const correct = Array(questions.length).fill(false);
+        const flagged = new Set();
+
+        const els = {
+          currentText: document.getElementById("errorCurrentText"),
+          doneText: document.getElementById("errorDoneText"),
+          rightText: document.getElementById("errorRightText"),
+          accuracyText: document.getElementById("errorAccuracyText"),
+          progressBar: document.getElementById("errorProgressBar"),
+          progressText: document.getElementById("errorProgressText"),
+          wrong: document.getElementById("errorWrongSentence"),
+          input: document.getElementById("errorAnswerInput"),
+          hintLine: document.getElementById("errorHintLine"),
+          result: document.getElementById("errorResultCard"),
+          grid: document.getElementById("errorQuestionGrid"),
+          donut: document.getElementById("errorDonut"),
+          sideRight: document.getElementById("errorSideRight"),
+          sideWrong: document.getElementById("errorSideWrong"),
+          sideLeft: document.getElementById("errorSideLeft"),
+          sideAccuracy: document.getElementById("errorSideAccuracy"),
+        };
+
+        function showResult(item, ok) {
+          els.result.classList.remove("is-locked", "is-correct", "is-wrong");
+          els.result.classList.add(ok ? "is-correct" : "is-wrong");
+          els.result.innerHTML = `
+            <strong>${ok ? "Kết quả: Đúng" : "Kết quả: Chưa đúng"}</strong>
+            <dl>
+              <div><dt>${isPracticalAnswer ? "Câu mẫu" : (isPositionIdentify ? "Vị trí đúng" : (isMakeSentence ? "Câu tạo thành" : (isCompleteSentence ? "Câu hoàn chỉnh" : (isRewriteSentence ? "Câu viết lại" : "Câu đúng"))))}</dt><dd>${escapeFillHtml(item.answer)}</dd></div>
+              <div><dt>Pinyin</dt><dd>${escapeFillHtml(item.pinyin)}</dd></div>
+              <div><dt>Nghĩa</dt><dd>${escapeFillHtml(item.meaning)}</dd></div>
+              <div><dt>Giải thích</dt><dd>${escapeFillHtml(item.explanation)}</dd></div>
+            </dl>
+          `;
+        }
+
+        function renderGrid() {
+          els.grid.innerHTML = questions
+            .map((_, idx) => {
+              const classes = [
+                idx === current ? "is-current" : "",
+                checked[idx] ? (correct[idx] ? "is-correct" : "is-wrong") : "",
+                flagged.has(idx) ? "is-flagged" : "",
+              ].filter(Boolean).join(" ");
+              return `<button type="button" class="${classes}" data-index="${idx}">
+                ${String(idx + 1).padStart(2, "0")} ${flagged.has(idx) ? "<small>⚑</small>" : ""}
+                <em>${checked[idx] ? (correct[idx] ? "Đúng" : "Sai") : "Chưa làm"}</em>
+              </button>`;
+            })
+            .join("");
+          els.grid.querySelectorAll("button").forEach((button) => {
+            button.addEventListener("click", () => {
+              saveCurrentAnswer();
+              current = Number(button.dataset.index || 0);
+              renderQuestion();
+            });
+          });
+        }
+
+        function updateStats() {
+          const done = checked.filter(Boolean).length;
+          const right = correct.filter(Boolean).length;
+          const wrong = done - right;
+          const percent = questions.length ? Math.round((done / questions.length) * 100) : 0;
+          const accuracy = done ? Math.round((right / done) * 100) : 0;
+          els.currentText.textContent = `${String(current + 1).padStart(2, "0")}/${String(questions.length).padStart(2, "0")}`;
+          els.doneText.textContent = String(done);
+          els.rightText.textContent = String(right);
+          els.accuracyText.textContent = `${accuracy}%`;
+          els.progressBar.style.width = `${percent}%`;
+          els.progressText.textContent = `${percent}% hoàn thành`;
+          if (els.donut) {
+            const rightPct = questions.length ? (right / questions.length) * 100 : 0;
+            const wrongEndPct = questions.length
+              ? ((right + wrong) / questions.length) * 100
+              : 0;
+            els.donut.style.setProperty("--right", `${rightPct}%`);
+            els.donut.style.setProperty("--wrong-end", `${wrongEndPct}%`);
+          }
+          els.donut.innerHTML = `<span>${done}/${questions.length}</span><small>Đã làm</small>`;
+          els.sideRight.textContent = String(right);
+          els.sideWrong.textContent = String(wrong);
+          els.sideLeft.textContent = String(questions.length - done);
+          els.sideAccuracy.textContent = `${accuracy}%`;
+        }
+
+        function saveCurrentAnswer() {
+          answers[current] = els.input.value.trim();
+        }
+
+        function renderQuestion() {
+          const item = questions[current];
+          els.wrong.textContent = item.question || item.wrong || "";
+          els.input.value = answers[current] || "";
+          els.hintLine.textContent = hintText;
+          if (checked[current]) {
+            showResult(item, correct[current]);
+          } else {
+            els.result.className = "error-result-card is-locked";
+            els.result.innerHTML = "<strong>🔒 Giải thích sẽ mở sau khi bạn trả lời.</strong>";
+          }
+          document.getElementById("errorFlagBtn").classList.toggle("is-active", flagged.has(current));
+          renderGrid();
+          updateStats();
+        }
+
+        document.getElementById("errorHintBtn").addEventListener("click", () => {
+          els.hintLine.textContent = isRewriteSentence
+            ? "Gợi ý: Hãy gộp hai câu thành một câu dùng 跟……一样."
+            : isCompleteSentence
+              ? "Gợi ý: Hãy hoàn thành cả câu, không chỉ nhập riêng từ còn thiếu."
+              : isMakeSentence
+                ? "Gợi ý: Chọn một trong các mẫu 快……了 / 要……了 / 快要……了 / 就要……了."
+                : isPositionIdentify
+                  ? "Gợi ý: Xem động từ hướng là 上来、下来、进去、出来、出去、回来 hay 过来."
+                  : (isPracticalAnswer
+                    ? "Gợi ý: Hãy trả lời bằng mẫu 没有 / 比 / V + 得 + Adj nếu cần so sánh."
+                    : "Gợi ý: Hãy so lại với mẫu 比 / 没有 / V + 得 + Adj trong bài 1.");
+        });
+
+        document.getElementById("errorCheckBtn").addEventListener("click", () => {
+          saveCurrentAnswer();
+          const item = questions[current];
+          const ok = normalizeCorrectionAnswer(answers[current]) === normalizeCorrectionAnswer(item.answer);
+          checked[current] = true;
+          correct[current] = ok;
+          showResult(item, ok);
+          renderGrid();
+          updateStats();
+        });
+
+        document.getElementById("errorPrevBtn").addEventListener("click", () => {
+          saveCurrentAnswer();
+          current = Math.max(0, current - 1);
+          renderQuestion();
+        });
+
+        document.getElementById("errorNextBtn").addEventListener("click", () => {
+          saveCurrentAnswer();
+          current = Math.min(questions.length - 1, current + 1);
+          renderQuestion();
+        });
+
+        document.getElementById("errorFlagBtn").addEventListener("click", () => {
+          if (flagged.has(current)) flagged.delete(current);
+          else flagged.add(current);
+          renderGrid();
+          document.getElementById("errorFlagBtn").classList.toggle("is-active", flagged.has(current));
+        });
+
+        renderQuestion();
+      }
+
+      (async function renderReflexTypingLayout() {
+        const params = new URLSearchParams(window.location.search);
+        const subject = params.get("subject") || "";
+        const content = params.get("content") || "";
+        const lesson = params.get("lesson") || "01";
+        const test = params.get("test") || "1";
+        if (subject === "hanyu3" && content === "exercise") {
+          let activityType = "";
+          try {
+            const res = await fetch(`data/hanyu3-lessons.json?v=${Date.now()}`);
+            const data = res.ok ? await res.json() : {};
+            const exercise = data[String(Number(lesson))]?.exercise?.[Number(test) - 1] || {};
+            activityType = exercise.questions?.[0]?.type || exercise.type || "";
+          } catch (err) {
+            activityType = "";
+          }
+
+          if (["fillBlank", "fillBlankMulti"].includes(activityType)) {
+            document.body.classList.add("fill-blank-page");
+            document.querySelector(".card").outerHTML = FillBlankExerciseForm({ subject, lesson, test });
+            initFillBlankExercise({ lesson, test }).catch((err) => {
+              document.querySelector(".fill-question-card").innerHTML = `<p class="vocab-empty">Lỗi: ${escapeFillHtml(err.message)}</p>`;
+            });
+            return;
+          }
+
+          if (["rewriteSentence", "errorCorrection", "practicalAnswer", "completeSentence", "makeSentence", "positionIdentify"].includes(activityType) || [5, 6].includes(Number(test))) {
+            document.body.classList.add("error-correction-page");
+            document.querySelector(".card").outerHTML = ErrorCorrectionExerciseForm({ subject, lesson, test });
+            initErrorCorrectionExercise({ lesson, test }).catch((err) => {
+              document.querySelector(".error-question-card").innerHTML = `<p class="vocab-empty">Lỗi: ${escapeFillHtml(err.message)}</p>`;
+            });
+            return;
+          }
+
+          if ([1, 2, 3, 4].includes(Number(test))) {
+            document.body.classList.add("fill-blank-page");
+            document.querySelector(".card").outerHTML = FillBlankExerciseForm({ subject, lesson, test });
+            initFillBlankExercise({ lesson, test }).catch((err) => {
+              document.querySelector(".fill-question-card").innerHTML = `<p class="vocab-empty">Lỗi: ${escapeFillHtml(err.message)}</p>`;
+            });
+            return;
+          }
+        }
+        const practiceContents = new Set(["paragraph", "structure", "example"]);
+        if (
+          !(
+            (subject === "speaking" || subject === "hanyu3" || subject === "writing" || subject === "listening") &&
+            practiceContents.has(content)
+          )
+        ) {
+          return;
+        }
+
+        document.body.classList.add("reflex-typing-page");
+        document.querySelector(".card").outerHTML = PracticeActivityForm({
+          subject,
+          content,
+          lesson,
+          test,
+          subjectLabel:
+            subject === "hanyu3"
+              ? "Hán Ngữ"
+              : subject === "writing"
+                ? "Viết"
+                : subject === "listening"
+                  ? "Nghe hiểu"
+                  : "Khẩu ngữ",
+        });
+        return;
+        document.querySelector(".card").outerHTML = `
+          <aside class="speaking-sidebar reflex-typing-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <nav class="speaking-nav" aria-label="Điều hướng kiểm tra">
+              <a href="index.html">⌂ Trang chủ</a>
+              <a class="is-active" href="lessons.html?subject=${subject}">▣ Học tập</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thử HSK</button>
+              <button disabled>AI hội thoại</button>
+              <button disabled>Từ vựng</button>
+              <button disabled>Thống kê</button>
+              <button disabled>Cài đặt</button>
+            </nav>
+          </aside>
+
+          <main class="reflex-typing-main">
+            <div class="speaking-breadcrumb reflex-typing-breadcrumb">
+              <a href="review.html?lesson=${lesson}&subject=${subject}&content=${content}">← Học tập</a>
+              <span>›</span>
+              <span>${subject === "hanyu3" ? "Hán Ngữ" : "Khẩu ngữ"}</span>
+              <span>›</span>
+              <span>Bài ${String(Number(lesson)).padStart(2, "0")}</span>
+              <span>›</span>
+              <strong>Bài kiểm tra ${String(Number(test)).padStart(2, "0")}</strong>
+            </div>
+
+            <section class="reflex-typing-layout">
+              <div class="reflex-typing-primary">
+                <header class="reflex-typing-hero">
+                  <div class="reflex-typing-art" aria-hidden="true">⚡</div>
+                  <div class="reflex-typing-copy">
+                    <div class="lesson reflex-typing-title">Bài kiểm tra ${String(Number(test)).padStart(2, "0")}</div>
+                    <p>20 câu phản xạ - Viết sang Trung</p>
+                    <div class="reflex-typing-stats">
+                      <span>Câu hiện tại <b class="reflex-current">01/20</b></span>
+                      <span>Đã làm <b class="reflex-done">0</b></span>
+                      <span>Đúng <b class="exp">0</b></span>
+                      <span>Tỷ lệ đúng <b class="reflex-accuracy">0%</b></span>
+                    </div>
+                    <div class="progress reflex-typing-progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="completion-note"></div>
+                  </div>
+                </header>
+
+                <div class="reflex-workspace">
+                  <section class="reflex-question-card">
+                    <div class="reflex-question-topline">
+                      <label>Câu tiếng Việt</label>
+                      <button type="button" class="reflex-flag-btn">⚐ Đặt cờ</button>
+                    </div>
+                    <h1 class="question">Đang tải câu hỏi...</h1>
+
+                    <label for="answerInput">Nhập tiếng Trung</label>
+                    <input id="answerInput" type="text" placeholder="Nhập đáp án bằng chữ Hán..." class="answer-input" />
+
+                    <div class="reflex-action-row">
+                      <span class="reflex-hint">Gợi ý: Sử dụng cách nói lịch sự và tự nhiên.</span>
+                      <button class="sound-btn" type="button">Phát gợi ý</button>
+                      <button class="check-btn" type="button">Kiểm tra</button>
+                    </div>
+
+                    <div class="answer-feedback" hidden></div>
+                  </section>
+
+                </div>
+
+                <div class="reflex-bottom-nav">
+                  <button type="button" class="reflex-prev-btn">← Câu trước</button>
+                  <button type="button" class="reflex-next-btn">Câu tiếp theo →</button>
+                </div>
+              </div>
+
+              <aside class="reflex-typing-aside">
+                <article class="reflex-side-card">
+                  <h2>Câu đã đặt cờ</h2>
+                  <div class="reflex-question-grid" id="reflexQuestionGrid"></div>
+                </article>
+
+                <section class="reflex-settings-card">
+                  <h2>Cài đặt luyện tập</h2>
+                  <button class="tool-btn" type="button">Giọng đọc và tốc độ</button>
+                  <div class="custom-panel active" id="customPanel">
+                    <div class="custom-row">
+                      <label for="voiceSelect">Giọng đọc</label>
+                      <select id="voiceSelect"></select>
+                    </div>
+                    <div class="custom-row">
+                      <label for="speedRange">Tốc độ: <span id="speedValue">1.0</span>x</label>
+                      <input id="speedRange" type="range" min="0.5" max="2" step="0.1" value="1" />
+                    </div>
+                    <button class="custom-close-btn" id="customCloseBtn" type="button">Ẩn cài đặt</button>
+                  </div>
+                  <button class="reset-btn" type="button" onclick="resetToStart()">Làm lại từ đầu</button>
+                </section>
+
+                <article class="reflex-side-card">
+                  <h2>Tiến độ kiểm tra</h2>
+                  <div class="reflex-donut">
+                    <strong class="reflex-donut-count">0/20</strong>
+                    <span>Đã làm</span>
+                  </div>
+                  <ul>
+                    <li><span class="ok"></span>Đúng <b class="reflex-right-count">0</b></li>
+                    <li><span class="bad"></span>Sai <b class="reflex-wrong-count">0</b></li>
+                    <li><span class="left"></span>Còn lại <b class="reflex-left-count">20</b></li>
+                  </ul>
+                  <p>Tỷ lệ đúng: <b class="reflex-side-accuracy">0%</b></p>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
+      })();
+
       function goBackToReview() {
         const params = new URLSearchParams(window.location.search);
         const lesson = params.get("lesson") || "01";

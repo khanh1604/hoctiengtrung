@@ -1,0 +1,1833 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ã”n táº­p - Chinese Learning</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="theme.js" defer></script>
+  </head>
+
+  <body class="review-page">
+    <div class="review-container">
+      <div class="review-content">
+        <h1 class="review-title" id="reviewTitle">BÃ i 01 - Ã”n táº­p</h1>
+        <p class="review-subtitle">Chá»n bÃ i kiá»ƒm tra Ä‘á»ƒ Ã´n táº­p</p>
+
+        <button
+          class="back-btn-review"
+          onclick="goBackToLessonOptions()"
+        >
+          â† Quay láº¡i
+        </button>
+
+        <div class="review-grid" id="reviewGrid"></div>
+      </div>
+    </div>
+
+    <!-- Restart confirmation modal -->
+    <div id="restartModal" class="modal" hidden>
+      <div class="modal-backdrop"></div>
+      <div class="modal-panel">
+        <h3 id="modalTitle">Báº¯t Ä‘áº§u láº¡i bÃ i kiá»ƒm tra</h3>
+        <p id="modalMessage">Báº¡n cÃ³ muá»‘n báº¯t Ä‘áº§u láº¡i bÃ i nÃ y khÃ´ng?</p>
+        <div class="modal-actions">
+          <button id="modalCancel" class="btn">Há»§y</button>
+          <button id="modalRestart" class="btn primary">Báº¯t Ä‘áº§u láº¡i</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="structure-detail-popover" id="structureDetailPopover" hidden>
+      <button class="structure-detail-backdrop" id="structureDetailBackdrop" type="button" aria-label="Đóng chi tiết cấu trúc"></button>
+      <article class="structure-detail-panel" role="dialog" aria-modal="true" aria-labelledby="structurePopoverTitle">
+        <button class="structure-detail-close" id="structureDetailClose" type="button" aria-label="Đóng">×</button>
+        <div class="structure-popover-heading">
+          <span class="structure-detail-kicker">Cấu trúc</span>
+          <h2 id="structurePopoverTitle"></h2>
+          <p id="structurePopoverPattern"></p>
+          <div class="structure-importance-detail" id="structurePopoverImportance" hidden></div>
+        </div>
+        <div class="structure-popover-info">
+          <div><span>Ý nghĩa</span><strong id="structurePopoverMeaning"></strong></div>
+          <div><span>Cách dùng</span><strong id="structurePopoverUsage"></strong></div>
+        </div>
+        <h3>Ví dụ minh họa</h3>
+        <div class="structure-popover-examples" id="structurePopoverExamples"></div>
+      </article>
+    </div>
+
+    <script>
+      function getLessonParam() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("lesson") || "01";
+      }
+
+      function getSubjectParam() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("subject") || "";
+      }
+
+      function getContentParam() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("content") || "";
+      }
+
+      function splitIntoParts(items, partCount) {
+        const base = Math.floor(items.length / partCount);
+        const extra = items.length % partCount;
+        let start = 0;
+
+        return Array.from({ length: partCount }, (_, idx) => {
+          const size = base + (idx < extra ? 1 : 0);
+          const end = start + size;
+          const part = items.slice(start, end);
+          start = end;
+          return part;
+        }).filter((part) => part.length > 0);
+      }
+
+      const lesson = getLessonParam();
+      const subject = getSubjectParam();
+      const content = getContentParam();
+      const subjectParam = subject ? `&subject=${subject}` : "";
+      const contentParam = content ? `&content=${content}` : "";
+      const storagePrefix = `${subject ? `${subject}-` : ""}${content ? `${content}-` : ""}`;
+      let tests = Array.from({ length: 10 }, (_, i) => ({
+        number: i + 1,
+        total: subject === "writing" && i + 1 === 2 ? 14 : 32,
+        label: `BÃ i Kiá»ƒm Tra ${String(i + 1).padStart(2, "0")}`,
+      }));
+
+      function replaceKnownMojibake(value) {
+        return String(value)
+          .replaceAll("â†", "←")
+          .replaceAll("â†’", "→")
+          .replaceAll("â€º", "›")
+          .replaceAll("â–£", "▣")
+          .replaceAll("â—Ž", "◎")
+          .replaceAll("âš¡", "⚡")
+          .replaceAll("âŒ‚", "⌂")
+          .replaceAll("ðŸŽ™", "🎙")
+          .replaceAll("ðŸ“–", "📖")
+          .replaceAll("ðŸŽ§", "🎧")
+          .replaceAll("âœï¸", "✍️");
+      }
+
+      function decodeMojibakeOnce(value) {
+        const windows1252Bytes = {
+          "€": 0x80,
+          "‚": 0x82,
+          "ƒ": 0x83,
+          "„": 0x84,
+          "…": 0x85,
+          "†": 0x86,
+          "‡": 0x87,
+          "ˆ": 0x88,
+          "‰": 0x89,
+          "Š": 0x8a,
+          "‹": 0x8b,
+          "Œ": 0x8c,
+          "Ž": 0x8e,
+          "‘": 0x91,
+          "’": 0x92,
+          "“": 0x93,
+          "”": 0x94,
+          "•": 0x95,
+          "–": 0x96,
+          "—": 0x97,
+          "˜": 0x98,
+          "™": 0x99,
+          "š": 0x9a,
+          "›": 0x9b,
+          "œ": 0x9c,
+          "ž": 0x9e,
+          "Ÿ": 0x9f,
+        };
+
+        try {
+          const bytes = Uint8Array.from(Array.from(value), (char) => {
+            if (windows1252Bytes[char] !== undefined) return windows1252Bytes[char];
+            const code = char.charCodeAt(0);
+            return code <= 255 ? code : code & 255;
+          });
+          const decoded = new TextDecoder("utf-8").decode(bytes);
+          return decoded.includes("�") ? value : decoded;
+        } catch (error) {
+          return value;
+        }
+      }
+
+      function fixMojibakeText(text) {
+        let value = replaceKnownMojibake(text ?? "");
+        const mojibakePattern = /(Ã|Â|Ä|Æ|â|ðŸ|å|ç|ï¼|á[º»]|è[¯°±²³´µ¶·¸¹º»¼½¾¿])/;
+        if (!mojibakePattern.test(value)) return value;
+
+        for (let i = 0; i < 3; i += 1) {
+          const decoded = replaceKnownMojibake(decodeMojibakeOnce(value));
+          if (!decoded || decoded === value) break;
+          value = decoded;
+          if (!mojibakePattern.test(value)) break;
+        }
+
+        if (mojibakePattern.test(value)) {
+          value = value
+            .split(/(\s+)/)
+            .map((token) => {
+              if (!mojibakePattern.test(token)) return token;
+
+              let fixedToken = token;
+              for (let i = 0; i < 3; i += 1) {
+                const decoded = replaceKnownMojibake(decodeMojibakeOnce(fixedToken));
+                if (!decoded || decoded === fixedToken) break;
+                fixedToken = decoded;
+                if (!mojibakePattern.test(fixedToken)) break;
+              }
+              return fixedToken;
+            })
+            .join("");
+        }
+
+        return replaceKnownMojibake(value);
+      }
+
+      function fixMojibakeIn(root = document.body) {
+        if (!root) return;
+        document.title = fixMojibakeText(document.title);
+
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+        const textNodes = [];
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+        textNodes.forEach((node) => {
+          const fixed = fixMojibakeText(node.nodeValue);
+          if (fixed !== node.nodeValue) node.nodeValue = fixed;
+        });
+
+        if (!root.querySelectorAll) return;
+        root.querySelectorAll("[placeholder],[aria-label],[title]").forEach((element) => {
+          ["placeholder", "aria-label", "title"].forEach((attr) => {
+            if (!element.hasAttribute(attr)) return;
+            const current = element.getAttribute(attr);
+            const fixed = fixMojibakeText(current);
+            if (fixed !== current) element.setAttribute(attr, fixed);
+          });
+        });
+      }
+
+      function installMojibakeFixer() {
+        const root = document.body;
+        if (!root || root.dataset.mojibakeFixerInstalled === "true") return;
+        root.dataset.mojibakeFixerInstalled = "true";
+
+        let scheduled = false;
+        const observer = new MutationObserver(() => {
+          if (scheduled) return;
+          scheduled = true;
+          requestAnimationFrame(() => {
+            fixMojibakeIn(root);
+            scheduled = false;
+          });
+        });
+
+        observer.observe(root, {
+          attributes: true,
+          childList: true,
+          characterData: true,
+          subtree: true,
+        });
+        fixMojibakeIn(root);
+      }
+
+      function getReviewSubjectInfo() {
+        if (subject === "speaking") {
+          return {
+            label: "Kháº©u ngá»¯",
+            course: "åˆçº§å£è¯­ï¼ˆIIï¼‰",
+            icon: "ðŸŽ™",
+            total: 12,
+            desc: "luyá»‡n nÃ³i giao tiáº¿p",
+            listHref: "lessons.html?subject=speaking",
+          };
+        }
+        if (subject === "writing") {
+          return {
+            label: "Viáº¿t",
+            course: "ä¸­çº§å†™ä½œï¼ˆIï¼‰",
+            icon: "âœï¸",
+            total: 15,
+            desc: "luyá»‡n viáº¿t",
+            listHref: "lessons.html?subject=writing",
+          };
+        }
+        if (subject === "hanyu3") {
+          return {
+            label: "GiÃ¡o trÃ¬nh HÃ¡n Ngá»¯",
+            course: "HÃ¡n Ngá»¯ Quyá»ƒn 3",
+            icon: "ðŸ“–",
+            total: 10,
+            desc: "Ä‘á»c hiá»ƒu vÃ  ngá»¯ phÃ¡p",
+            listHref: "lessons.html?subject=hanyu3",
+          };
+        }
+        return {
+          label: "Nghe hiá»ƒu",
+          course: "åˆçº§å¬åŠ›ï¼ˆIIï¼‰",
+          icon: "ðŸŽ§",
+          total: 12,
+          desc: "luyá»‡n nghe hiá»ƒu",
+          listHref: "lessons.html?subject=listening",
+        };
+      }
+
+      function applyReviewDashboardLayout() {
+        const info = getReviewSubjectInfo();
+        const padLesson = String(Number(lesson)).padStart(2, "0");
+
+        document.body.classList.add("speaking-review-list-page");
+        document.querySelector(".review-container").innerHTML = `
+          <aside class="speaking-sidebar">
+            <a class="speaking-logo" href="index.html">FTC</a>
+            <nav class="speaking-nav" aria-label="Äiá»u hÆ°á»›ng danh sÃ¡ch bÃ i">
+              <a href="index.html">âŒ‚ Trang chá»§</a>
+              <a class="is-active" href="${info.listHref}">â–£ Há»c táº­p</a>
+              <button disabled>Flashcard</button>
+              <button disabled>Thi thá»­ HSK</button>
+              <button disabled>AI há»™i thoáº¡i</button>
+              <button disabled>Tá»« vá»±ng</button>
+              <button disabled>Thá»‘ng kÃª</button>
+            </nav>
+          </aside>
+
+          <main class="speaking-main">
+            <div class="speaking-breadcrumb">
+              <a href="lesson-options.html?lesson=${padLesson}${subjectParam}">â† BÃ i ${padLesson}</a>
+              <span>â€º</span>
+              <span>${info.label}</span>
+              <span>â€º</span>
+              <strong id="reviewBreadcrumbTitle">Danh sÃ¡ch bÃ i</strong>
+            </div>
+
+            <section class="speaking-layout">
+              <div class="speaking-primary">
+                <header class="speaking-hero speaking-option-hero">
+                  <div class="speaking-hero-art" aria-hidden="true">${info.icon}</div>
+                  <div class="speaking-hero-copy">
+                    <span class="speaking-lesson-badge">BÃ i ${padLesson}</span>
+                    <h1 id="reviewTitle">BÃ i ${padLesson} - Ã”n táº­p</h1>
+                    <p id="reviewSubtitle">Chá»n bÃ i Ä‘á»ƒ há»c</p>
+                    <div class="speaking-option-meta">
+                      <span>â–£ danh sÃ¡ch bÃ i</span>
+                      <span>â—Ž ${info.desc}</span>
+                    </div>
+                    <div class="speaking-zero-progress" aria-hidden="true">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="speaking-hero-stats">
+                    <strong>0%</strong><span>tiáº¿n Ä‘á»™</span>
+                  </div>
+                </header>
+
+                <button class="back-btn-review modern-back-btn" onclick="goBackToLessonOptions()">
+                  â† Quay láº¡i
+                </button>
+
+                <div class="review-grid speaking-review-grid" id="reviewGrid"></div>
+              </div>
+
+              <aside class="speaking-aside">
+                <article class="speaking-side-card">
+                  <h2>Tiáº¿n Ä‘á»™ khÃ³a há»c</h2>
+                  <div class="speaking-ring"><strong>0%</strong></div>
+                  <p>ÄÃ£ há»c 0/${info.total} bÃ i</p>
+                  <ul>
+                    <li><span></span>0 bÃ i Ä‘Ã£ hoÃ n thÃ nh</li>
+                    <li><span></span>${info.total} bÃ i chÆ°a há»c</li>
+                  </ul>
+                </article>
+
+                <article class="speaking-side-card">
+                  <h2>Gá»£i Ã½ há»c hÃ´m nay</h2>
+                  <button type="button" disabled>Tiáº¿p tá»¥c bÃ i ${padLesson} <small>0%</small></button>
+                  <button type="button" disabled>Ã”n táº­p bÃ i há»c <small>0 má»¥c</small></button>
+                  <button type="button" disabled>Luyá»‡n táº­p <small>0</small></button>
+                </article>
+              </aside>
+            </section>
+          </main>
+        `;
+        fixMojibakeIn(document.querySelector(".review-container"));
+      }
+
+      installMojibakeFixer();
+      applyReviewDashboardLayout();
+
+      function setReviewHeader(title, subtitle = "Chá»n bÃ i Ä‘á»ƒ báº¯t Ä‘áº§u") {
+        const titleEl = document.getElementById("reviewTitle");
+        const subtitleEl = document.getElementById("reviewSubtitle") || document.querySelector(".review-subtitle");
+        const breadcrumbTitle = document.getElementById("reviewBreadcrumbTitle");
+
+        if (titleEl) titleEl.textContent = title;
+        if (subtitleEl) subtitleEl.textContent = subtitle;
+        if (breadcrumbTitle) breadcrumbTitle.textContent = title;
+        fixMojibakeIn(document.querySelector(".review-container"));
+      }
+
+      const listeningSectionGroups = {
+        "1": ["1-4", "1-5-1", "1-5-2", "1-6-1", "1-6-2", "2-4", "2-5-1", "2-5-2", "2-6-1", "2-6-2"],
+        "2": ["2-4", "2-5-1", "2-5-2", "2-6-1", "2-6-2"],
+        "3": ["3-4", "3-5-1", "3-5-2", "3-6-1", "3-6-2", "4-4", "4-5-1", "4-5-2", "4-6-1", "4-6-2"],
+        "4": ["4-4", "4-5-1", "4-5-2", "4-6-1", "4-6-2"],
+        "5": ["5-4", "5-5-1", "5-5-2", "5-6-1", "5-6-2", "6-4", "6-5-1", "6-5-2", "6-6-1", "6-6-2"],
+        "6": ["6-4", "6-5-1", "6-5-2", "6-6-1", "6-6-2"],
+        "7": ["7-4", "7-5-1", "7-5-2", "7-6-1", "7-6-2", "8-4", "8-5-1", "8-5-2", "8-6-1", "8-6-2"],
+        "8": ["8-4", "8-5-1", "8-5-2", "8-6-1", "8-6-2"],
+        "9": ["9-4", "9-5-1", "9-5-2", "9-6-1", "9-6-2", "10-4", "10-5-1", "10-5-2", "10-6-1", "10-6-2"],
+        "10": ["10-4", "10-5-1", "10-5-2", "10-6-1", "10-6-2"],
+        "11": ["11-4", "11-5-1", "11-5-2", "11-6-1", "11-6-2", "12-4", "12-5-1", "12-5-2", "12-6-1", "12-6-2"],
+        "12": ["12-4", "12-5-1", "12-5-2", "12-6-1", "12-6-2"],
+        "13": ["13-4", "13-5-1", "13-5-2", "13-6-1", "13-6-2", "14-4", "14-5-1", "14-5-2", "14-6-1", "14-6-2"],
+        "14": ["14-4", "14-5-1", "14-5-2", "14-6-1", "14-6-2"],
+        "15": ["15-4", "15-5-1", "15-5-2", "15-6-1", "15-6-2", "16-4", "16-5-1", "16-5-2", "16-6-1", "16-6-2"],
+        "16": ["16-4", "16-5-1", "16-5-2", "16-6-1", "16-6-2"],
+        "17": ["17-4", "17-5-1", "17-5-2", "17-6-1", "17-6-2", "18-4", "18-5-1", "18-5-2", "18-6-1", "18-6-2"],
+        "18": ["18-4", "18-5-1", "18-5-2", "18-6-1", "18-6-2"],
+        "19": ["19-4", "19-5-1", "19-5-2", "19-6-1", "19-6-2", "20-4", "20-5-1", "20-5-2", "20-6-1", "20-6-2"],
+        "20": ["20-4", "20-5-1", "20-5-2", "20-6-1", "20-6-2"],
+        "21": ["21-4", "21-5-1", "21-5-2", "21-6-1", "21-6-2", "22-4", "22-5-1", "22-5-2", "22-6-1", "22-6-2"],
+        "22": ["22-4", "22-5-1", "22-5-2", "22-6-1", "22-6-2"],
+        "23": ["23-4", "23-4-1", "23-4-2", "23-5-1", "23-5-2", "24-4", "24-5-1", "24-5-2", "24-6-1", "24-6-2"],
+        "24": ["24-4", "24-5-1", "24-5-2", "24-6-1", "24-6-2"],
+      };
+
+      function getWritingGrammarItems(data) {
+        const lessonKey = String(Number(lesson));
+        const grammar = data.grammar || data.grammarTests || {};
+        const items = grammar[lesson] || grammar[lessonKey] || [];
+        return Array.isArray(items)
+          ? items.filter((item) => item && !item.partOfSpeech)
+          : [];
+      }
+
+      function getWritingStructureItems(data) {
+        const lessonKey = String(Number(lesson));
+        const structure = data.structure || data.structureTests || {};
+        const items = structure[lesson] || structure[lessonKey] || [];
+        if (Array.isArray(items) && items.length) return items;
+
+        return getWritingGrammarItems(data);
+      }
+
+      function getWritingExampleItems(data) {
+        const lessonKey = String(Number(lesson));
+        const examples = data.examples || data.exampleTests || {};
+        return examples[lesson] || examples[lessonKey] || [];
+      }
+
+      function splitWritingItemsIntoTests(items) {
+        return Array.isArray(items)
+          ? Array.isArray(items[0])
+            ? items
+            : Array.from({ length: 4 }, (_, idx) =>
+                items.slice(idx * 20, (idx + 1) * 20),
+              )
+          : Object.keys(items || {})
+              .sort((a, b) => Number(a) - Number(b))
+              .map((key) => items[key]);
+      }
+
+      function parseTabSeparatedVocabulary(text) {
+        return String(text || "")
+          .split(/\r?\n/)
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .map((line) => {
+            const parts = line.split(/\t+/);
+            return {
+              chinese: parts[0] || "",
+              pinyin: parts[1] || "",
+              vietnamese: parts[2] || "",
+            };
+          });
+      }
+
+      function splitIntoFixedGroups(items, groupSize) {
+        const groups = [];
+        for (let i = 0; i < items.length; i += groupSize) {
+          groups.push(items.slice(i, i + groupSize));
+        }
+        return groups;
+      }
+
+      function splitIntoParts(items, partCount) {
+        const groups = [];
+        const size = Math.ceil((items || []).length / partCount);
+        for (let i = 0; i < partCount; i++) {
+          groups.push((items || []).slice(i * size, (i + 1) * size));
+        }
+        return groups;
+      }
+
+      function escapeHtml(text) {
+        return String(text || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function speakChinese(text) {
+        if (!("speechSynthesis" in window) || !text) return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "zh-CN";
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+      }
+
+      function getSpeakingStructureItems(data) {
+        if (data.__rawText) return parseTabSeparatedVocabulary(data.__rawText || "");
+        return data.grammar || data.structure || [];
+      }
+
+      function getSpeakingWordItems(data) {
+        if (data.__rawText) return [];
+        return data.vocabulary || data.words || data.newWords || [];
+      }
+
+      function getSpeakingParagraphGroups(data) {
+        const items = data.paragraph || [];
+        if (!Array.isArray(items) || !items.length) return [];
+        if (Array.isArray(items[0])) return items;
+        if (items[0] && (Array.isArray(items[0].lines) || items[0].title || items[0].type)) return items;
+        if (subject === "hanyu3") return splitIntoParts(items, 3);
+        return [items];
+      }
+
+      function isReadingPassage(group) {
+        if (group && !Array.isArray(group) && group.type) {
+          return group.type === "reading";
+        }
+        return Boolean(
+            group &&
+            !Array.isArray(group) &&
+            !Array.isArray(group.value) &&
+            (Array.isArray(group.lines) || group.chinese),
+        );
+      }
+
+      function getParagraphGroupLines(group) {
+        if (Array.isArray(group)) return group;
+        if (group && Array.isArray(group.value)) return group.value;
+        if (group && Array.isArray(group.lines)) return group.lines;
+        return [];
+      }
+
+      function getParagraphGroupTotal(group) {
+        if (isReadingPassage(group)) {
+          return Array.isArray(group.lines) ? group.lines.length : 1;
+        }
+        return getParagraphGroupLines(group).length;
+      }
+
+      function getParagraphGroupTitle(group, idx) {
+        const fallback = `Ôn tập bài khóa ${String(idx + 1).padStart(2, "0")}`;
+        if (!group || Array.isArray(group)) return fallback;
+        return group.title || group.name || group.heading || fallback;
+      }
+
+      function renderReadingText(text) {
+        return String(text || "")
+          .split(/\n+/)
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .map((line) => `<p>${escapeHtml(line)}</p>`)
+          .join("");
+      }
+
+      function getReadingPassageText(group, field) {
+        if (Array.isArray(group.lines)) {
+          return group.lines.map((line) => line[field]).filter(Boolean).join("\n");
+        }
+        return group[field] || "";
+      }
+
+      async function renderReadingPassage(testNumber) {
+        const data = await loadSpeakingLessonData();
+        const group = getSpeakingParagraphGroups(data)[Number(testNumber) - 1];
+        if (!isReadingPassage(group)) return;
+
+        const grid = document.getElementById("reviewGrid");
+        grid.className = "reading-detail-wrap";
+        grid.innerHTML = `
+          <button class="structure-back-btn reading-back-btn" type="button">â† Danh sÃ¡ch bÃ i khÃ³a</button>
+          <article class="reading-detail-card">
+            <h2>${escapeHtml(group.title || `${testNumber}. Äoáº¡n vÄƒn ${testNumber}`)}</h2>
+            <section class="reading-section">
+              <h3>Tiáº¿ng Trung:</h3>
+              <div class="reading-section-body reading-chinese">
+                ${renderReadingText(getReadingPassageText(group, "chinese"))}
+              </div>
+            </section>
+            <section class="reading-section">
+              <h3>PhiÃªn Ã¢m:</h3>
+              <div class="reading-section-body">
+                ${renderReadingText(getReadingPassageText(group, "pinyin"))}
+              </div>
+            </section>
+            <section class="reading-section">
+              <h3>NghÄ©a:</h3>
+              <div class="reading-section-body">
+                ${renderReadingText(getReadingPassageText(group, "vietnamese"))}
+              </div>
+            </section>
+          </article>
+        `;
+        grid.querySelector(".reading-back-btn").onclick = async () => {
+          await loadSpeakingParagraphTests();
+          renderReview();
+        };
+      }
+
+      let speakingWordItems = [];
+
+      function getWordText(item) {
+        return item.chinese || item.word || item.title || "";
+      }
+
+      function getWordHanViet(item) {
+        return (
+          item.hanViet ||
+          item.hanviet ||
+          item.sinoVietnamese ||
+          item.sinoVietnameseReading ||
+          item.han_viet ||
+          "Đang bổ sung"
+        );
+      }
+
+      function buildGeneratedWordExamples(item) {
+        const word = getWordText(item);
+        const meaning = item.vietnamese || item.meaning || "từ này";
+        const pos = String(item.partOfSpeech || "").toLowerCase();
+        if (!word) return [];
+
+        if (pos.includes("v")) {
+          return [
+            {
+              chinese: `我想${word}。`,
+              pinyin: "",
+              vietnamese: `Tôi muốn ${meaning}.`,
+            },
+            {
+              chinese: `老师让我们${word}。`,
+              pinyin: "",
+              vietnamese: `Giáo viên bảo chúng tôi ${meaning}.`,
+            },
+          ];
+        }
+
+        if (pos.includes("adj")) {
+          return [
+            {
+              chinese: `这里很${word}。`,
+              pinyin: "",
+              vietnamese: `Ở đây rất ${meaning}.`,
+            },
+            {
+              chinese: `我觉得这个很${word}。`,
+              pinyin: "",
+              vietnamese: `Tôi thấy cái này rất ${meaning}.`,
+            },
+          ];
+        }
+
+        if (pos.includes("adv")) {
+          return [
+            {
+              chinese: `他${word}来了。`,
+              pinyin: "",
+              vietnamese: `Anh ấy ${meaning} đến rồi.`,
+            },
+            {
+              chinese: `我${word}知道了。`,
+              pinyin: "",
+              vietnamese: `Tôi ${meaning} biết rồi.`,
+            },
+          ];
+        }
+
+        return [
+          {
+            chinese: `这是${word}。`,
+            pinyin: "",
+            vietnamese: `Đây là ${meaning}.`,
+          },
+          {
+            chinese: `我学习“${word}”这个词。`,
+            pinyin: "",
+            vietnamese: `Tôi học từ “${meaning}”.`,
+          },
+        ];
+      }
+
+      function getWordExamples(item) {
+        const examples = Array.isArray(item.examples) ? item.examples : [];
+        return examples.length ? examples.slice(0, 2) : buildGeneratedWordExamples(item).slice(0, 2);
+      }
+
+      function renderSpeakingWordList() {
+        const grid = document.getElementById("reviewGrid");
+        grid.className = "structure-list-grid";
+        grid.innerHTML = "";
+
+        if (!speakingWordItems.length) {
+          grid.innerHTML = '<p class="review-subtitle">ChÆ°a cÃ³ dá»¯ liá»‡u tá»« má»›i.</p>';
+          return;
+        }
+
+        speakingWordItems.forEach((item, index) => {
+          const card = document.createElement("button");
+          card.className = "structure-list-card";
+          card.type = "button";
+          card.innerHTML = `
+            <span class="structure-list-index">${String(index + 1).padStart(2, "0")}</span>
+            <span class="structure-list-title">${escapeHtml(item.chinese || item.word || item.title)}</span>
+            ${item.pinyin ? `<span class="structure-list-pattern">${escapeHtml(item.pinyin)}</span>` : ""}
+            ${item.vietnamese ? `<span class="structure-list-meaning">${escapeHtml(item.vietnamese)}</span>` : ""}
+            <span class="structure-list-sound" aria-hidden="true">ðŸ”Š</span>
+          `;
+          card.onclick = () => renderSpeakingStructureDetail(item, renderSpeakingWordList);
+          card.querySelector(".structure-list-sound").onclick = (event) => {
+            event.stopPropagation();
+            speakChinese(item.chinese || item.word);
+          };
+          grid.appendChild(card);
+        });
+      }
+
+      async function loadSpeakingWordCards() {
+        let data;
+        const lessonNum = String(Number(lesson));
+        if (false) {
+          const res = await fetch(`data/speaking-lesson-4.json?v=${Date.now()}`);
+          if (res.ok) {
+            data = await res.json();
+          } else {
+            data = await loadSpeakingLessonData();
+          }
+        } else {
+          data = await loadSpeakingLessonData();
+        }
+        speakingWordItems = getSpeakingWordItems(data);
+        setReviewHeader(
+          `BÃ i ${String(Number(lesson))} - Tá»« má»›i`,
+          "Chá»n tá»« Ä‘á»ƒ nghe phÃ¡t Ã¢m",
+        );
+        renderSpeakingWordList();
+      }
+
+      function renderSpeakingStructureDetail(item, backRenderer = renderSpeakingStructureList) {
+        const grid = document.getElementById("reviewGrid");
+        const isWordItem = Boolean(item.partOfSpeech);
+        const firstExample = item.examples?.[0] || {};
+        const wordExamples = isWordItem ? getWordExamples(item) : [];
+        const exampleChinese = item.chinese || item.word || firstExample.chinese || "";
+        const examplePinyin = item.pinyin || firstExample.pinyin || "";
+        const exampleVietnamese = item.vietnamese || item.meaning || firstExample.vietnamese || "";
+        const examples = isWordItem
+          ? wordExamples
+          : item.examples?.length
+          ? item.examples
+          : [{ chinese: exampleChinese, pinyin: examplePinyin, vietnamese: exampleVietnamese }];
+        const hanViet = isWordItem ? getWordHanViet(item) : "";
+
+        grid.className = "structure-detail-wrap";
+        grid.innerHTML = `
+          <button class="structure-back-btn" type="button">â† Danh sÃ¡ch</button>
+          <article class="structure-detail-card">
+            <div class="structure-detail-kicker">${isWordItem ? "Tá»ª Má»šI" : "Cáº¤U TRÃšC"}</div>
+            <div class="structure-detail-title-row">
+              <h2>${escapeHtml(item.title || item.pattern || getWordText(item))}</h2>
+              <button class="structure-sound-btn" type="button" aria-label="Nghe">ðŸ”Š</button>
+            </div>
+            ${item.pattern ? `<div class="structure-detail-pattern">${escapeHtml(item.pattern)}</div>` : ""}
+            ${isWordItem && item.pinyin ? `<div class="structure-detail-pattern">${escapeHtml(item.pinyin)}${item.partOfSpeech ? ` [ ${escapeHtml(item.partOfSpeech)} ]` : ""}</div>` : ""}
+            ${
+              isWordItem
+                ? `<div class="word-detail-info-grid">
+                    <div><span>Nghĩa</span><strong>${escapeHtml(exampleVietnamese)}</strong></div>
+                    <div><span>Hán Việt</span><strong>${escapeHtml(hanViet)}</strong></div>
+                    <div><span>Từ loại</span><strong>${escapeHtml(item.partOfSpeech || "Đang bổ sung")}</strong></div>
+                  </div>`
+                : ""
+            }
+            ${item.meaning ? `<p class="structure-detail-meaning"><strong>${escapeHtml(item.meaning)}</strong></p>` : ""}
+            ${item.usage ? `<p class="structure-detail-usage">${escapeHtml(item.usage)}</p>` : ""}
+            <div class="structure-detail-example-title">${isWordItem ? "Ví dụ minh họa" : "VÃ­ dá»¥"}</div>
+            <div class="structure-detail-examples">
+              ${examples
+                .filter((example) => example.chinese || example.pinyin || example.vietnamese)
+                .map(
+                  (example) => `
+                    <div class="structure-detail-example">
+                      ${example.chinese ? `<strong>${escapeHtml(example.chinese)}</strong>` : ""}
+                      ${example.pinyin ? `<span>${escapeHtml(example.pinyin)}</span>` : ""}
+                      ${example.vietnamese ? `<small>${escapeHtml(example.vietnamese)}</small>` : ""}
+                    </div>
+                  `,
+                )
+                .join("")}
+            </div>
+          </article>
+        `;
+
+        grid.querySelector(".structure-back-btn").onclick = () => backRenderer();
+        grid.querySelector(".structure-sound-btn").onclick = () => speakChinese(exampleChinese || item.pattern);
+      }
+
+      function getStructureExamples(item) {
+        const examples = Array.isArray(item.examples) ? item.examples : [];
+        if (examples.length) return examples.slice(0, 2);
+
+        const text = item.pattern || item.structure || item.title || item.chinese || "";
+        const example = item.example || item.exampleChinese || item.chinese || "";
+        const pinyin = item.examplePinyin || item.pinyin || "";
+        const vietnamese = item.exampleVietnamese || item.translation || item.vietnamese || item.meaning || "";
+        if (example && example !== text) {
+          return [{ chinese: example, pinyin, vietnamese }];
+        }
+
+        return [
+          {
+            chinese: text || "请看这个结构。",
+            pinyin: pinyin || "",
+            vietnamese: vietnamese || "Hãy xem cấu trúc này.",
+          },
+        ];
+      }
+
+      function normalizeStructureKey(value) {
+        return String(value || "")
+          .toLowerCase()
+          .replace(/[（）()，,.\s]/g, "")
+          .replace(/độngtừ|v\/adj|địađiểm|người|sựviệc|tínhtừ|ai|mụcđích/g, "")
+          .replace(/\.\.\./g, "");
+      }
+
+      function getStructureImportance(item) {
+        const text = normalizeStructureKey(
+          [item.title, item.pattern, item.structure, item.formula, item.chinese].filter(Boolean).join(" "),
+        );
+        const rulesByLesson = {
+          1: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Dùng rất nhiều: bảo/để/cho ai làm gì", tests: ["让+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nói quan điểm: đối với... mà nói", tests: ["对+来说"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Cực hay dùng để nói đã... rồi", tests: ["已经+", "+了"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Cấu trúc quét toàn bộ: cái gì cũng...", tests: ["什么都+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc điều kiện: nếu... thì...", tests: ["要是", "的话"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Trợ động từ cơ bản: có thể, có khả năng", tests: ["能+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Hay dùng trong khẩu ngữ: làm gì cho tốt/cẩn thận", tests: ["好好儿+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Dùng nhiều khi trình bày ý chính", tests: ["最重要的是+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Biến thể quan trọng của 什么都: đâu cũng...", tests: ["哪儿都+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Cụm cố định hay dùng: liên lạc với ai", tests: ["跟+", "+联系"] },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Cấu trúc thời gian thực tế: lâu rồi chưa...", tests: ["很长时间没+", "+了"] },
+            { order: 12, level: 1, label: "Quan trọng vừa", reason: "Dùng để nói mục đích: đến đâu để làm gì", tests: ["来++"] },
+            { order: 13, level: 1, label: "Quan trọng vừa", reason: "Gần giống cấu trúc 来 + Địa điểm + Động từ, có thể học chung", tests: ["来+v+"] },
+            { order: 14, level: 1, label: "Quan trọng vừa", reason: "Cụm cụ thể, không phải cấu trúc lớn", tests: ["做+", "+的导游"] },
+            { order: 15, level: 1, label: "Ít quan trọng hơn", reason: "Mẫu câu giao tiếp, không phải ngữ pháp trọng tâm", tests: ["后来+", "怎么样+", "+了"] },
+          ],
+          2: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Câu xin phép / hỏi có được không, dùng cực nhiều", tests: ["可以吗"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Mẫu trả lời giao tiếp cơ bản", tests: ["当然可以"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Câu hỏi tại sao, cực kỳ quan trọng", tests: ["为什么+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói thói quen, rất hay gặp", tests: ["习惯+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc khuyên / đề nghị ai làm gì", tests: ["建议"] },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Khẩu ngữ rất hay dùng: làm gì sớm một chút", tests: ["早点儿+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Cấu trúc hễ đến... thì..., dùng tốt trong hội thoại", tests: ["到+", "+就"] },
+            { order: 8, level: 1, label: "Quan trọng mở rộng", reason: "Thành ngữ hay, nhưng không phải ngữ pháp lõi", tests: ["入乡随俗"] },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Diễn tả phải / cần phải, dùng rất nhiều", tests: ["要+"] },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Nói cảm nhận, suy nghĩ, quan điểm", tests: ["觉得+"] },
+            { order: 11, level: 3, label: "Rất quan trọng", reason: "Cấu trúc vừa... vừa..., rất hay ra bài", tests: ["一边", "一边"] },
+            { order: 12, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ trình độ, trọng điểm HSK3-HSK4", tests: ["得+adj"] },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Câu nhắc nhở rất thực tế", tests: ["别忘了+"] },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Diễn tả gần như / hầu như", tests: ["差不多+"] },
+            { order: 15, level: 2, label: "Quan trọng", reason: "Phó từ tần suất: thỉnh thoảng", tests: ["偶尔+"] },
+            { order: 16, level: 1, label: "Quan trọng vừa", reason: "Khẩu ngữ, dùng để nói điều lo sợ", tests: ["就怕+"] },
+          ],
+          3: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Dùng nhiều để nói càng ngày càng...", tests: ["越来越+", "+了"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cấu trúc sắp... rồi, rất hay dùng", tests: ["快要+", "+了"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Câu khuyên/ngăn: đừng...", tests: ["别+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói lời khuyên, nghĩa vụ: nên...", tests: ["应该+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc điều kiện cơ bản: nếu... thì...", tests: ["如果", "就"] },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Câu lịch sự: mời/vui lòng", tests: ["请+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Mẫu đối xứng, hay dùng trong miêu tả", tests: ["不a不b"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Câu giao tiếp: được rồi/ổn rồi", tests: ["可以了"] },
+          ],
+          4: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Hỏi cách làm: làm sao / bằng cách nào", tests: ["怎么+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cấu trúc trọng điểm HSK3-HSK4, rất hay ra bài", tests: ["把+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Nói cảm nhận, suy nghĩ: cảm thấy / thấy rằng...", tests: ["觉得+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Cấu trúc phủ định toàn bộ: không ai...", tests: ["谁都不+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh phủ định: hoàn toàn không...", tests: ["一点儿也不+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Quy tắc gốc để hiểu bổ ngữ xu hướng", tests: ["来/去"] },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ xu hướng thường gặp", tests: ["上来"] },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ xu hướng thường gặp", tests: ["上去"] },
+            { order: 9, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ xu hướng thường gặp", tests: ["进来"] },
+            { order: 10, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ xu hướng thường gặp", tests: ["进去"] },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Câu hỏi giao tiếp: có cần... không?", tests: ["要+", "+吗"] },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Nói việc sắp xảy ra rất nhanh", tests: ["马上就+", "+了"] },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Khuyên ai đừng làm nữa", tests: ["别+", "+了"] },
+            { order: 14, level: 2, label: "Quan trọng", reason: "Mẫu câu điều kiện khẩu ngữ", tests: ["没事的话"] },
+            { order: 15, level: 2, label: "Quan trọng", reason: "Cấu trúc thực tế: tốt cho ai/cái gì", tests: ["对+", "+好"] },
+            { order: 16, level: 1, label: "Quan trọng vừa", reason: "Cụm giao tiếp: đỡ hơn nhiều rồi", tests: ["好多了"] },
+          ],
+          5: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Miêu tả ngoại hình, rất hay dùng", tests: ["长得+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Diễn tả suy đoán: hình như, có vẻ", tests: ["好像+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Hỏi/giới thiệu quê quán, nguồn gốc", tests: ["从+", "+来的"] },
+            { order: 4, level: 2, label: "Quan trọng", reason: "Phó từ mức độ: rất/đặc biệt", tests: ["特别+"] },
+            { order: 5, level: 2, label: "Quan trọng", reason: "Mẫu điều kiện giao tiếp tự nhiên", tests: ["有机会的话"] },
+            { order: 6, level: 2, label: "Quan trọng", reason: "Cụm giao tiếp: giới thiệu ai làm quen", tests: ["介绍+", "+认识"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Cụm khẩu ngữ: có thời gian rảnh", tests: ["有空儿"] },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Dùng nhiều để nói nhớ ai/cái gì/nhớ làm gì", tests: ["记得+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Câu giao tiếp thường dùng: cứ yên tâm", tests: ["放心吧"] },
+            { order: 10, level: 1, label: "Quan trọng vừa", reason: "Cụm bị động/ngữ cảnh cụ thể: được cử đến", tests: ["派来的"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Từ nối hội thoại: à đúng rồi", tests: ["对了"] },
+          ],
+          6: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Diễn tả hành động liên tục / luôn luôn", tests: ["一直+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nói trạng thái thay đổi qua lại: lúc thì... lúc thì...", tests: ["一会儿", "一会儿"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Nghĩa là phải, dùng nhiều trong khẩu ngữ", tests: ["得+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Diễn tả hơi..., thường dùng với nghĩa không tích cực", tests: ["有点儿+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh phủ định: hoàn toàn không...", tests: ["一点儿也不+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Cấu trúc so sánh cơ bản: A hơn B", tests: ["a比b+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Nói cái gì hợp với ai/cái gì", tests: ["适合+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Khá, tương đối, dùng nhiều khi miêu tả", tests: ["比较+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Có nhiều nghĩa: liền, sẽ, ngay, thì...", tests: ["就+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Mẫu giao tiếp: xem có... hay không", tests: ["看看有没有+"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Dùng để nói nhất, nhưng dạng này dễ học", tests: ["最+"] },
+          ],
+          7: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Hỏi bao lâu, dùng cực nhiều", tests: ["多长时间"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nói khoảng chừng, rất hay dùng", tests: ["大概+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Nói trong vòng / không quá", tests: ["以内"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói hành động xảy ra ngay", tests: ["马上+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc trọng điểm: càng... càng...", tests: ["越", "越"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Vừa... vừa..., dùng để miêu tả hai đặc điểm", tests: ["又", "又"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Chắc chắn sẽ / chắc chắn là...", tests: ["肯定+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Câu hỏi suy đoán: có... không nhỉ?", tests: ["会不会+", "+呢"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Câu lịch sự: vui lòng... một chút", tests: ["请+", "+一下"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Cụm công việc: cử người làm gì", tests: ["派人+"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Muộn nhất là...", tests: ["最晚+"] },
+            { order: 12, level: 1, label: "Quan trọng vừa", reason: "Từ vựng/cụm danh từ, không phải cấu trúc lớn", tests: ["联系方式"] },
+            { order: 13, level: 1, label: "Quan trọng vừa", reason: "Cấu trúc cơ bản, đã gặp nhiều lần", tests: ["可以+"] },
+          ],
+          8: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ khả năng: làm gì hiểu được", tests: ["得懂"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Phủ định của bổ ngữ khả năng: không hiểu được", tests: ["不懂"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nhượng bộ: tuy... nhưng...", tests: ["虽然", "但是"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói sở thích / hứng thú với cái gì", tests: ["对+", "+感兴趣"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Nói mục đích: để / vì", tests: ["为了+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Bổ ngữ trình độ, trọng điểm HSK3-HSK4", tests: ["得+adj"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Làm thêm lần nữa / thêm nữa", tests: ["再+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Câu ước muốn: giá mà... thì tốt", tests: ["要是", "就好了"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Chuyên / đặc biệt làm gì", tests: ["专门+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Không có cơ hội làm gì", tests: ["没机会+"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Đã gặp nhiều, nhưng vẫn dùng nhiều", tests: ["特别+"] },
+            { order: 12, level: 1, label: "Quan trọng vừa", reason: "Cụm cụ thể: mời từ đâu đến", tests: ["从+", "+请来"] },
+          ],
+          9: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Trạng thái đang duy trì, trọng điểm HSK3-HSK4", tests: ["v+着"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh làm thế nào cũng không...", tests: ["怎么也", "不"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Mãi đến... mới..., rất hay dùng", tests: ["才"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Hễ... là... / vừa... thì..., cấu trúc trọng điểm", tests: ["一", "就"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Phải làm gì, khẩu ngữ rất hay dùng", tests: ["得+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Nên / chắc là, dùng nhiều", tests: ["应该+"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Hình như / có vẻ như", tests: ["好像+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Vốn định làm gì", tests: ["原来+", "+打算"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Nhờ / mời ai làm gì", tests: ["请+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Đành phải làm gì", tests: ["只好+"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Cụm từ vựng: ngủ nướng", tests: ["睡懒觉"] },
+          ],
+          10: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Trình tự hành động: trước... rồi...", tests: ["先", "然后"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Cần phải / phải làm gì", tests: ["要+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Lựa chọn: hoặc", tests: ["或者"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nói khoảng chừng", tests: ["大约+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Từ đâu đến đâu / từ lúc nào đến lúc nào", tests: ["从", "到"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nâng cao: không những... mà còn...", tests: ["不仅", "而且"] },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Làm gì cho ai / đưa cho ai cái gì", tests: ["给+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Dùng nhiều khi đi xe, hỏi đường", tests: ["到", "下车"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Câu điều kiện thực tế", tests: ["不堵车的话"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Càng... càng tốt", tests: ["越", "越好"] },
+            { order: 11, level: 1, label: "Quan trọng vừa", reason: "Cụm chỉ đường: qua... là đến...", tests: ["过", "就是"] },
+          ],
+          11: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "Mẫu hỏi lịch sự, dùng rất nhiều", tests: ["请问+"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Diễn tả hành động/trạng thái kéo dài", tests: ["一直+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Nói suy đoán: hình như", tests: ["好像+"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "So sánh A không bằng B", tests: ["不如"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Cấu trúc nhượng bộ: tuy... nhưng...", tests: ["虽然", "但是"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Nói mục đích: vì/để", tests: ["为了+"] },
+            { order: 7, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh: nhất định phải", tests: ["一定要+"] },
+            { order: 8, level: 3, label: "Rất quan trọng", reason: "Nói hy vọng, mong muốn", tests: ["希望+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Nối ý: hơn nữa, ngoài ra", tests: ["而且"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Nói quá..., rất thường gặp", tests: ["太+"] },
+            { order: 11, level: 2, label: "Quan trọng", reason: "Không đồng ý làm gì / với việc gì", tests: ["不同意+"] },
+            { order: 12, level: 2, label: "Quan trọng", reason: "Bổ ngữ kết quả: ngã xuống / đổ xuống", tests: ["倒+了"] },
+            { order: 13, level: 2, label: "Quan trọng", reason: "Nhất định sẽ làm gì", tests: ["一定+"] },
+            { order: 14, level: 1, label: "Quan trọng vừa", reason: "Cụm theo ngữ cảnh học tập", tests: ["上+", "+的课"] },
+            { order: 15, level: 1, label: "Quan trọng vừa", reason: "Cụm kể tai nạn/va chạm", tests: ["和+", "+撞在一起"] },
+          ],
+          12: [
+            { order: 1, level: 3, label: "Rất quan trọng", reason: "So sánh giống nhau, dùng rất nhiều", tests: ["跟+", "+一样"] },
+            { order: 2, level: 3, label: "Rất quan trọng", reason: "Nói gần như / hầu như", tests: ["差不多+"] },
+            { order: 3, level: 3, label: "Rất quan trọng", reason: "Lựa chọn hoặc, cấu trúc cơ bản", tests: ["或者"] },
+            { order: 4, level: 3, label: "Rất quan trọng", reason: "Nhấn mạnh chỉ có..., rất hay gặp", tests: ["只有+"] },
+            { order: 5, level: 3, label: "Rất quan trọng", reason: "Tự mình làm gì", tests: ["自己+"] },
+            { order: 6, level: 3, label: "Rất quan trọng", reason: "Miêu tả hai đặc điểm: vừa... vừa...", tests: ["又", "又"] },
+            { order: 7, level: 2, label: "Quan trọng", reason: "Nói đa số / phần lớn", tests: ["大多+"] },
+            { order: 8, level: 2, label: "Quan trọng", reason: "Động từ cảm xúc thường dùng", tests: ["羡慕+"] },
+            { order: 9, level: 2, label: "Quan trọng", reason: "Nói thói quen thông thường", tests: ["一般都+"] },
+            { order: 10, level: 2, label: "Quan trọng", reason: "Nói ngày nào cũng làm gì", tests: ["天天+"] },
+            { order: 11, level: 1, label: "Quan trọng mở rộng", reason: "Câu cảm thán ước muốn", tests: ["要是", "该多好啊"] },
+          ],
+        };
+        const rules = rulesByLesson[Number(lesson)] || rulesByLesson[1];
+
+        return rules.find((rule) => rule.tests.every((part) => text.includes(normalizeStructureKey(part)))) || null;
+      }
+
+      function getStructureSortOrder(item, fallbackIndex) {
+        const importance = getStructureImportance(item);
+        return importance ? importance.order : 1000 + fallbackIndex;
+      }
+
+      function compareStructuresByImportance(a, b) {
+        const importanceA = getStructureImportance(a.item);
+        const importanceB = getStructureImportance(b.item);
+        const levelA = importanceA ? importanceA.level : 0;
+        const levelB = importanceB ? importanceB.level : 0;
+
+        if (levelA !== levelB) return levelB - levelA;
+
+        const orderA = importanceA ? importanceA.order : 1000 + a.index;
+        const orderB = importanceB ? importanceB.order : 1000 + b.index;
+        if (orderA !== orderB) return orderA - orderB;
+
+        return a.index - b.index;
+      }
+
+      function renderStructureStars(importance) {
+        if (!importance) return "";
+        return "⭐".repeat(importance.level);
+      }
+
+      function openStructureDetailPopover(item) {
+        const popover = document.getElementById("structureDetailPopover");
+        const title = item.title || item.pattern || item.structure || item.chinese || "Cấu trúc";
+        const pattern = item.pattern || item.structure || item.formula || item.chinese || "";
+        const meaning = item.meaning || item.vietnamese || item.translation || "Đang bổ sung";
+        const usage = item.usage || item.explanation || item.note || item.description || "Đang bổ sung";
+        const examples = getStructureExamples(item);
+        const importance = getStructureImportance(item);
+        const importanceEl = document.getElementById("structurePopoverImportance");
+
+        document.getElementById("structurePopoverTitle").textContent = title;
+        document.getElementById("structurePopoverPattern").textContent = pattern;
+        document.getElementById("structurePopoverMeaning").textContent = meaning;
+        document.getElementById("structurePopoverUsage").textContent = usage;
+        if (importanceEl) {
+          importanceEl.hidden = !importance;
+          importanceEl.innerHTML = importance
+            ? `<span>${renderStructureStars(importance)}</span><strong>${escapeHtml(importance.label)}</strong><small>${escapeHtml(importance.reason)}</small>`
+            : "";
+        }
+        document.getElementById("structurePopoverExamples").innerHTML = examples
+          .filter((example) => example.chinese || example.pinyin || example.vietnamese)
+          .map(
+            (example) => `
+              <div class="structure-popover-example">
+                ${example.chinese ? `<strong>${escapeHtml(example.chinese)}</strong>` : ""}
+                ${example.pinyin ? `<span>${escapeHtml(example.pinyin)}</span>` : ""}
+                ${example.vietnamese ? `<small>${escapeHtml(example.vietnamese)}</small>` : ""}
+              </div>
+            `,
+          )
+          .join("");
+
+        popover.hidden = false;
+        document.body.classList.add("structure-detail-open");
+        fixMojibakeIn(popover);
+      }
+
+      function closeStructureDetailPopover() {
+        const popover = document.getElementById("structureDetailPopover");
+        if (popover) popover.hidden = true;
+        document.body.classList.remove("structure-detail-open");
+      }
+
+      let speakingStructureItems = [];
+      let structureSearchQuery = "";
+      let structureCurrentPage = 1;
+      const structurePageSize = 8;
+
+      function getStructureSearchText(item) {
+        return [
+          item.title,
+          item.pattern,
+          item.structure,
+          item.formula,
+          item.chinese,
+          item.pinyin,
+          item.meaning,
+          item.vietnamese,
+          item.usage,
+          item.explanation,
+          item.note,
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+      }
+
+      function renderSpeakingStructureList(keepSearchFocus = false) {
+        if (subject === "writing" && content === "words") {
+          setReviewHeader(
+            `BÃ i ${String(Number(lesson))} - Cáº¥u trÃºc`,
+            "Chá»n má»™t cáº¥u trÃºc Ä‘á»ƒ xem giáº£i thÃ­ch vÃ  vÃ­ dá»¥",
+          );
+        }
+        const grid = document.getElementById("reviewGrid");
+        grid.className = "structure-list-panel";
+        grid.innerHTML = "";
+
+        if (!speakingStructureItems.length) {
+          grid.innerHTML = '<p class="review-subtitle">ChÆ°a cÃ³ dá»¯ liá»‡u cáº¥u trÃºc.</p>';
+          return;
+        }
+
+        const sortedItems = speakingStructureItems
+          .map((item, index) => ({ item, index }))
+          .sort(compareStructuresByImportance);
+
+        const query = structureSearchQuery.trim().toLowerCase();
+        const filteredItems = sortedItems.filter(({ item }) => !query || getStructureSearchText(item).includes(query));
+        const totalPages = Math.max(1, Math.ceil(filteredItems.length / structurePageSize));
+        structureCurrentPage = Math.min(Math.max(1, structureCurrentPage), totalPages);
+        const start = (structureCurrentPage - 1) * structurePageSize;
+        const pageItems = filteredItems.slice(start, start + structurePageSize);
+
+        grid.innerHTML = `
+          <div class="structure-list-toolbar">
+            <label class="structure-search">
+              <span>⌕</span>
+              <input id="structureSearchInput" type="search" placeholder="Tìm cấu trúc..." value="${escapeHtml(structureSearchQuery)}" />
+            </label>
+            <div class="structure-page-controls">
+              <button id="structurePrevPage" type="button" ${structureCurrentPage === 1 ? "disabled" : ""}>← Trang trước</button>
+              <span>Trang ${structureCurrentPage}/${totalPages}</span>
+              <button id="structureNextPage" type="button" ${structureCurrentPage === totalPages ? "disabled" : ""}>Trang sau →</button>
+            </div>
+          </div>
+          <div class="structure-list-grid" id="structureListGrid"></div>
+        `;
+
+        const listGrid = document.getElementById("structureListGrid");
+        if (!pageItems.length) {
+          listGrid.innerHTML = '<p class="review-subtitle structure-empty">Không tìm thấy cấu trúc phù hợp.</p>';
+        }
+
+        pageItems.forEach(({ item }, index) => {
+          const card = document.createElement("button");
+          card.className = "structure-list-card";
+          card.type = "button";
+          const secondary = item.pattern || item.pinyin || "";
+          const meaning = item.meaning || item.vietnamese || "";
+          const importance = getStructureImportance(item);
+          card.innerHTML = `
+            <span class="structure-list-index">${String(index + 1).padStart(2, "0")}</span>
+            ${
+              importance
+                ? `<span class="structure-importance-badge" title="${escapeHtml(importance.label)}">${renderStructureStars(importance)}</span>`
+                : ""
+            }
+            <span class="structure-list-title">${escapeHtml(item.title || item.pattern || item.chinese)}</span>
+            ${secondary ? `<span class="structure-list-pattern">${escapeHtml(secondary)}${item.partOfSpeech ? ` [ ${escapeHtml(item.partOfSpeech)} ]` : ""}</span>` : ""}
+            ${meaning ? `<span class="structure-list-meaning">${escapeHtml(meaning)}</span>` : ""}
+            <span class="structure-list-sound" aria-hidden="true">ðŸ”Š</span>
+          `;
+          card.onclick = () => openStructureDetailPopover(item);
+          card.querySelector(".structure-list-sound").onclick = (event) => {
+            event.stopPropagation();
+            speakChinese(item.chinese || item.pattern);
+          };
+          listGrid.appendChild(card);
+        });
+
+        document.getElementById("structureSearchInput").addEventListener("input", (event) => {
+          structureSearchQuery = event.target.value;
+          structureCurrentPage = 1;
+          renderSpeakingStructureList(true);
+        });
+        document.getElementById("structurePrevPage").addEventListener("click", () => {
+          structureCurrentPage -= 1;
+          renderSpeakingStructureList();
+        });
+        document.getElementById("structureNextPage").addEventListener("click", () => {
+          structureCurrentPage += 1;
+          renderSpeakingStructureList();
+        });
+        if (keepSearchFocus) {
+          const searchInput = document.getElementById("structureSearchInput");
+          searchInput.focus();
+          searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
+        }
+      }
+
+      async function loadSpeakingStructureCards() {
+        let data;
+        const lessonNum = String(Number(lesson));
+        if (false) {
+          const res = await fetch(`data/speaking-lesson-4.json?v=${Date.now()}`);
+          if (res.ok) {
+            data = await res.json();
+          } else {
+            data = await loadSpeakingLessonData();
+          }
+        } else {
+          data = await loadSpeakingLessonData();
+        }
+        speakingStructureItems = getSpeakingStructureItems(data);
+        setReviewHeader(
+          `BÃ i ${String(Number(lesson))} - Cáº¥u trÃºc`,
+          "Chá»n má»™t cáº¥u trÃºc Ä‘á»ƒ xem giáº£i thÃ­ch vÃ  vÃ­ dá»¥",
+        );
+        setReviewHeader(
+          `BÃ i ${String(Number(lesson))} - Cáº¥u trÃºc`,
+          "Chá»n má»™t cáº¥u trÃºc Ä‘á»ƒ xem giáº£i thÃ­ch vÃ  vÃ­ dá»¥",
+        );
+        setReviewHeader(
+          `BÃ i ${String(Number(lesson))} - Cáº¥u trÃºc`,
+          "Chá»n má»™t cáº¥u trÃºc Ä‘á»ƒ xem giáº£i thÃ­ch vÃ  vÃ­ dá»¥",
+        );
+        renderSpeakingStructureList();
+      }
+
+      async function loadSpeakingLessonData() {
+        const lessonNum = String(Number(lesson));
+        if (subject === "hanyu3") {
+          const res = await fetch(`data/hanyu3-lesson-${lessonNum}.json?v=${Date.now()}`);
+          if (!res.ok) throw new Error("KhÃ´ng táº£i Ä‘Æ°á»£c dá»¯ liá»‡u GiÃ¡o trÃ¬nh HÃ¡n ngá»¯ quyá»ƒn 3");
+          return res.json();
+        }
+
+        const res = await fetch(`data/speaking-lesson-${lessonNum}.json?v=${Date.now()}`);
+        if (res.ok) return res.json();
+
+        throw new Error("KhÃ´ng táº£i Ä‘Æ°á»£c dá»¯ liá»‡u mÃ´n nÃ³i");
+      }
+
+      function goBackToLessonOptions() {
+        window.location.href = `lesson-options.html?lesson=${lesson}${subjectParam}`;
+      }
+
+      async function loadParagraphTests() {
+        const res = await fetch("data/writing-tests.json");
+        if (!res.ok) throw new Error("KhÃ´ng táº£i Ä‘Æ°á»£c dá»¯ liá»‡u mÃ´n viáº¿t");
+
+        const data = await res.json();
+        const lessonKey = String(Number(lesson));
+        const items = data[lesson] || data[lessonKey] || [];
+        tests = [
+          {
+            number: 1,
+            total: items.length,
+            label: "Äoáº¡n vÄƒn 01",
+          },
+        ];
+      }
+
+      async function loadListeningTests() {
+        const lessonKey = String(Number(lesson));
+        const sections = listeningSectionGroups[lessonKey] || [];
+        const res = await fetch(`data/listening-lesson-1-4.json?v=${Date.now()}`);
+        if (!res.ok) throw new Error("KhÃ´ng táº£i Ä‘Æ°á»£c dá»¯ liá»‡u bÃ i nghe");
+        const data = await res.json();
+
+        tests = sections.map((label, idx) => {
+          const total = Array.isArray(data[label]?.questions)
+            ? data[label].questions.length
+            : 0;
+          return {
+            number: idx + 1,
+            total,
+            label: `Pháº§n ${label}`,
+            section: label,
+            hasData: total > 0,
+          };
+        });
+      }
+
+      async function loadExampleTests() {
+        const res = await fetch("data/writing-tests.json");
+        if (!res.ok) throw new Error("KhÃ´ng táº£i Ä‘Æ°á»£c dá»¯ liá»‡u mÃ´n viáº¿t");
+
+        const data = await res.json();
+        const groups = splitWritingItemsIntoTests(getWritingExampleItems(data));
+
+        tests = groups.slice(0, 4).map((group, idx) => ({
+          number: idx + 1,
+          total: group.length || 20,
+          label: `VÃ­ dá»¥ ${String(idx + 1).padStart(2, "0")}`,
+        }));
+
+        if (!tests.length) {
+          tests = Array.from({ length: 4 }, (_, idx) => ({
+            number: idx + 1,
+            total: 20,
+            label: `VÃ­ dá»¥ ${String(idx + 1).padStart(2, "0")}`,
+          }));
+        }
+      }
+
+      async function loadGrammarTests() {
+        const res = await fetch("data/writing-tests.json");
+        if (!res.ok) throw new Error("KhÃ´ng táº£i Ä‘Æ°á»£c dá»¯ liá»‡u mÃ´n viáº¿t");
+
+        const data = await res.json();
+        const groups = splitWritingItemsIntoTests(getWritingStructureItems(data));
+
+        tests = groups.slice(0, 4).map((group, idx) => ({
+          number: idx + 1,
+          total: group.length || 20,
+          label: `Cáº¥u trÃºc ${String(idx + 1).padStart(2, "0")}`,
+        }));
+
+        if (!tests.length) {
+          tests = Array.from({ length: 4 }, (_, idx) => ({
+            number: idx + 1,
+            total: 20,
+            label: `Cáº¥u trÃºc ${String(idx + 1).padStart(2, "0")}`,
+          }));
+        }
+      }
+
+      async function loadWritingWordStructureCards() {
+        const res = await fetch("data/writing-tests.json");
+        if (!res.ok) throw new Error("KhÃ´ng táº£i Ä‘Æ°á»£c dá»¯ liá»‡u mÃ´n viáº¿t");
+
+        const data = await res.json();
+        speakingStructureItems = getWritingGrammarItems(data);
+        setReviewHeader(
+          `BÃ i ${String(Number(lesson))} - Cáº¥u trÃºc`,
+          "Chá»n má»™t cáº¥u trÃºc Ä‘á»ƒ xem giáº£i thÃ­ch vÃ  vÃ­ dá»¥",
+        );
+        setReviewHeader(
+          `BÃ i ${String(Number(lesson))} - Tá»« má»›i vÃ  cáº¥u trÃºc`,
+          "Chá»n má»™t má»¥c Ä‘á»ƒ xem chi tiáº¿t vÃ  nghe phÃ¡t Ã¢m",
+        );
+        renderSpeakingStructureList();
+      }
+
+      async function loadSpeakingExampleTests() {
+        const data = await loadSpeakingLessonData();
+        const size = 20;
+        const items = data.__rawText ? parseTabSeparatedVocabulary(data.__rawText || "") : (data.example || []);
+        const groups = splitIntoFixedGroups(items, size);
+
+        tests = Array.from({ length: groups.length }, (_, idx) => {
+          const start = idx * size + 1;
+          const end = start + groups[idx].length - 1;
+          return {
+            number: idx + 1,
+            total: groups[idx].length,
+            label: `BÃ i ${String(idx + 1).padStart(2, "0")} (${start}-${end})`,
+            hasData: true,
+          };
+        });
+      }
+
+      async function loadHanyu3ExerciseTests() {
+        const data = await loadSpeakingLessonData();
+        const items = data.exercise || [];
+        const groups = Array.isArray(items[0])
+          ? items
+          : splitIntoFixedGroups(items, 20);
+
+        tests = groups.length
+          ? groups.map((group, idx) => ({
+              number: idx + 1,
+              total: group.length,
+              label: `BÃ i táº­p ${String(idx + 1).padStart(2, "0")}`,
+              hasData: group.length > 0,
+            }))
+          : Array.from({ length: 6 }, (_, idx) => ({
+              number: idx + 1,
+              total: 0,
+              label: `BÃ i táº­p ${String(idx + 1).padStart(2, "0")}`,
+              hasData: false,
+            }));
+      }
+
+      async function loadListeningExampleTests() {
+        const res = await fetch("data/listening-example-tests.json");
+        if (!res.ok) throw new Error("KhÃ´ng táº£i Ä‘Æ°á»£c dá»¯ liá»‡u vÃ­ dá»¥ nghe");
+
+        const data = await res.json();
+        const lessonNum = String(Number(lesson));
+        const items = data[lesson] || data[lessonNum] || [];
+        const groups = splitIntoFixedGroups(items, 20);
+
+        tests = groups.map((group, idx) => {
+          const start = idx * 20 + 1;
+          const end = start + group.length - 1;
+          return {
+            number: idx + 1,
+            total: group.length || 20,
+            label: `BÃ i ${String(idx + 1).padStart(2, "0")} (${start}-${end})`,
+            hasData: group.length > 0,
+          };
+        });
+      }
+
+      async function loadSpeakingGrammarTests() {
+        const data = await loadSpeakingLessonData();
+        const items = data.__rawText
+          ? parseTabSeparatedVocabulary(data.__rawText || "")
+          : content === "structure"
+            ? (data.structure || [])
+            : (data.grammar || data.structure || []);
+        const groupSize = content === "structure" ? 20 : 25;
+        const groups = splitIntoFixedGroups(items, groupSize);
+        const labelPrefix = content === "structure" ? "Kiá»ƒm tra cáº¥u trÃºc" : "Tá»« vá»±ng vÃ  cáº¥u trÃºc";
+
+        tests = groups.map((group, idx) => ({
+          number: idx + 1,
+          total: group.length,
+          label: `${labelPrefix} ${String(idx + 1).padStart(2, "0")} (${idx * groupSize + 1}-${idx * groupSize + group.length})`,
+          hasData: true,
+        }));
+      }
+
+      async function loadSpeakingParagraphTests() {
+        const data = await loadSpeakingLessonData();
+        const paragraphGroups = data.__rawText
+          ? splitIntoGroups(parseTabSeparatedVocabulary(data.__rawText || ""), 25)
+          : getSpeakingParagraphGroups(data);
+        const fallbackGroups = subject === "hanyu3" ? [[], [], []] : [[]];
+        tests = (paragraphGroups.length ? paragraphGroups : fallbackGroups).map((group, idx) => ({
+          number: idx + 1,
+          total: getParagraphGroupTotal(group),
+          label: getParagraphGroupTitle(group, idx),
+          hasData: getParagraphGroupTotal(group) > 0,
+          isReading: isReadingPassage(group),
+        }));
+      }
+
+      function renderReview() {
+        if ((subject === "speaking" || subject === "hanyu3") && content === "example") {
+          renderReflexReview();
+          return;
+        }
+
+        const grid = document.getElementById("reviewGrid");
+        const isPracticeActivityList = ["paragraph", "structure", "example"].includes(content);
+        grid.className = isPracticeActivityList
+          ? "reflex-test-list practice-activity-list"
+          : document.body.classList.contains("speaking-review-list-page")
+            ? "review-grid speaking-review-grid"
+            : "review-grid";
+        grid.innerHTML = "";
+
+        tests.forEach((test) => {
+          const progressKey = `typingProgress-${storagePrefix}${lesson}-${test.number}`;
+          let stored = null;
+          try {
+            stored = JSON.parse(localStorage.getItem(progressKey) || "null");
+          } catch (e) {
+            stored = null;
+          }
+
+          const completed =
+            stored && typeof stored.correctCount === "number"
+              ? stored.correctCount
+              : 0;
+          const totalForDisplay = Math.max(1, test.total || 0);
+          const done =
+            stored &&
+            typeof stored.currentIndex === "number" &&
+            stored.currentIndex >= totalForDisplay;
+          const active =
+            stored &&
+            typeof stored.currentIndex === "number" &&
+            stored.currentIndex > 0 &&
+            !done;
+
+          const pct = Math.round(((completed || 0) / totalForDisplay) * 100);
+          const unavailable = test.hasData === false;
+          const progressText = unavailable
+            ? "ChÆ°a cÃ³ dá»¯ liá»‡u"
+            : test.isReading
+              ? `${test.total} dÃ²ng Ä‘á»c hiá»ƒu`
+              : `HoÃ n thÃ nh ${completed}/${totalForDisplay}`;
+          const button = document.createElement("button");
+          button.className = isPracticeActivityList
+            ? `reflex-test-card practice-activity-list-card tone-${((test.number || 1) % 10) || 10}${active ? " is-active" : ""}${done ? " is-done" : ""}`
+            : "review-test-btn";
+          button.innerHTML = isPracticeActivityList
+            ? `
+              <span class="reflex-test-index">${String(test.number).padStart(2, "0")}</span>
+              <span class="reflex-test-body">
+                <strong>${test.label}</strong>
+                <small>${test.isReading ? `${test.total || 0} dÃƒÂ²ng Ã„â€˜Ã¡Â»Âc hiÃ¡Â»Æ’u` : `${test.total || 0} cÃƒÂ¢u`}</small>
+                <em>${done ? "Ã„ÂÃƒÂ£ hoÃƒÂ n thÃƒÂ nh" : active ? "Ã„Âang lÃƒÂ m" : unavailable ? "ChÃ†Â°a cÃƒÂ³ dÃ¡Â»Â¯ liÃ¡Â»â€¡u" : "ChÃ†Â°a lÃƒÂ m"}</em>
+              </span>
+              <span class="reflex-test-action">${active ? "TiÃ¡ÂºÂ¿p tÃ¡Â»Â¥c" : done ? "LÃƒÂ m lÃ¡ÂºÂ¡i" : "BÃ¡ÂºÂ¯t Ã„â€˜Ã¡ÂºÂ§u"}</span>
+            `
+            : `
+              <span class="test-number">${test.label}</span>
+              <span class="test-progress">${progressText}</span>
+              <div class="tile-progress">
+                <div class="tile-progress-bar" style="width:${pct}%;"></div>
+              </div>
+            `;
+          if (isPracticeActivityList) {
+            const metaEl = button.querySelector(".reflex-test-body small");
+            const stateEl = button.querySelector(".reflex-test-body em");
+            const actionEl = button.querySelector(".reflex-test-action");
+            if (metaEl) {
+              metaEl.textContent = test.isReading
+                ? `${test.total || 0} d\u00f2ng \u0111\u1ecdc hi\u1ec3u`
+                : `${test.total || 0} c\u00e2u`;
+            }
+            if (stateEl) {
+              stateEl.textContent = done
+                ? "\u0110\u00e3 ho\u00e0n th\u00e0nh"
+                : active
+                  ? "\u0110ang l\u00e0m"
+                  : unavailable
+                    ? "Ch\u01b0a c\u00f3 d\u1eef li\u1ec7u"
+                    : "Ch\u01b0a l\u00e0m";
+            }
+            if (actionEl) {
+              actionEl.textContent = active
+                ? "Ti\u1ebfp t\u1ee5c"
+                : done
+                  ? "L\u00e0m l\u1ea1i"
+                  : "B\u1eaft \u0111\u1ea7u";
+            }
+          }
+          if (unavailable) button.disabled = true;
+
+          button.onclick = () => {
+            if (unavailable) return;
+
+            if (content === "paragraph" && test.isReading) {
+              renderReadingPassage(test.number);
+              return;
+            }
+
+            let prev = null;
+            try {
+              prev = JSON.parse(localStorage.getItem(progressKey) || "null");
+            } catch (e) {
+              prev = null;
+            }
+            sessionStorage.setItem("currentQuestion", "0");
+            sessionStorage.setItem("currentTest", test.number);
+            sessionStorage.setItem(
+              `typingExp-${storagePrefix}${lesson}-${test.number}`,
+              "0",
+            );
+            sessionStorage.setItem(
+              `typingReset-${storagePrefix}${lesson}-${test.number}`,
+              "1",
+            );
+            localStorage.removeItem(progressKey);
+
+            if ((subject === "speaking" || subject === "hanyu3") && content === "example") {
+              window.location.href = `typing.html?lesson=${lesson}&test=${test.number}&subject=${subject}&content=example`;
+              return;
+            }
+
+            if (subject !== "writing" && content === "listening" && test.section) {
+              window.location.href = `listening-test.html?lesson=${lesson}&section=${test.section}${subjectParam}`;
+              return;
+            }
+
+            window.location.href = `typing.html?lesson=${lesson}&test=${test.number}${subjectParam}${contentParam}`;
+          };
+
+          grid.appendChild(button);
+        });
+
+        const reviewTitleText =
+          content === "paragraph"
+            ? `BÃ i ${String(Number(lesson))} - Ã”n táº­p bÃ i khÃ³a`
+            : subject === "writing" && content === "words"
+              ? `BÃ i ${String(Number(lesson))} - Tá»« má»›i vÃ  cáº¥u trÃºc`
+            : subject === "writing" && content === "structure"
+              ? `BÃ i ${String(Number(lesson))} - Kiá»ƒm tra cáº¥u trÃºc`
+            : subject === "speaking" && content === "words"
+              ? `BÃ i ${String(Number(lesson))} - Tá»« má»›i`
+            : content === "grammar"
+              ? `BÃ i ${String(Number(lesson))} - Cáº¥u trÃºc`
+            : subject === "speaking" && content === "structure"
+              ? `BÃ i ${String(Number(lesson))} - Kiá»ƒm tra cáº¥u trÃºc`
+            : subject === "speaking" && content === "example"
+              ? `BÃ i ${String(Number(lesson))} - Kiá»ƒm tra pháº£n xáº¡`
+            : subject === "speaking" && content === "paragraph"
+              ? `BÃ i ${String(Number(lesson))} - Ã”n táº­p bÃ i khÃ³a`
+            : subject === "hanyu3" && content === "words"
+              ? `BÃ i ${String(Number(lesson))} - Tá»« má»›i`
+            : subject === "hanyu3" && content === "structure"
+              ? `BÃ i ${String(Number(lesson))} - Kiá»ƒm tra cáº¥u trÃºc`
+            : subject === "hanyu3" && content === "example"
+              ? `BÃ i ${String(Number(lesson))} - Kiá»ƒm tra pháº£n xáº¡`
+            : subject === "hanyu3" && content === "exercise"
+              ? `BÃ i ${String(Number(lesson))} - BÃ i táº­p`
+            : subject === "hanyu3" && content === "paragraph"
+              ? `BÃ i ${String(Number(lesson))} - Ã”n táº­p bÃ i khÃ³a`
+            : subject !== "writing" && content === "listening"
+              ? `BÃ i ${String(Number(lesson))} - Ã”n táº­p Ä‘oáº¡n nghe`
+            : subject === "listening" && content === "example"
+              ? `BÃ i ${String(Number(lesson))} - Ã”n táº­p vÃ­ dá»¥`
+            : subject === "writing"
+              ? `BÃ i ${String(Number(lesson))} - Ã”n táº­p vÃ­ dá»¥`
+            : `BÃ i ${lesson} - Ã”n táº­p`;
+        setReviewHeader(reviewTitleText, "Chá»n bÃ i Ä‘á»ƒ báº¯t Ä‘áº§u");
+      }
+
+      function renderReflexReview() {
+        const grid = document.getElementById("reviewGrid");
+        const aside = document.querySelector(".speaking-aside");
+        const hero = document.querySelector(".speaking-hero");
+        const totalTests = tests.length;
+        const totalQuestions = tests.reduce((sum, test) => sum + (test.total || 0), 0);
+        let completedTests = 0;
+        let activeTests = 0;
+
+        document.body.classList.add("reflex-review-page");
+        setReviewHeader("Kiá»ƒm tra pháº£n xáº¡", `${totalTests} bÃ i kiá»ƒm tra - má»—i bÃ i 20 cÃ¢u`);
+
+        tests.forEach((test) => {
+          const progressKey = `typingProgress-${storagePrefix}${lesson}-${test.number}`;
+          let stored = null;
+          try {
+            stored = JSON.parse(localStorage.getItem(progressKey) || "null");
+          } catch (e) {
+            stored = null;
+          }
+          const totalForDisplay = Math.max(1, test.total || 0);
+          if (stored && typeof stored.currentIndex === "number" && stored.currentIndex >= totalForDisplay) {
+            completedTests += 1;
+          } else if (stored && typeof stored.currentIndex === "number" && stored.currentIndex > 0) {
+            activeTests += 1;
+          }
+        });
+
+        const pct = totalTests ? Math.round((completedTests / totalTests) * 100) : 0;
+
+        if (hero) {
+          hero.classList.add("reflex-hero");
+          const art = hero.querySelector(".speaking-hero-art");
+          if (art) art.textContent = "âš¡";
+          const meta = hero.querySelector(".speaking-option-meta");
+          if (meta) {
+            meta.innerHTML = `
+              <span>â–£ ${totalTests} bÃ i kiá»ƒm tra</span>
+              <span>â˜· ${totalQuestions} cÃ¢u há»i</span>
+              <span>â—‰ ${completedTests}/${totalTests} Ä‘Ã£ hoÃ n thÃ nh</span>
+              <span>âš¡ 0% tá»‘c Ä‘á»™ pháº£n xáº¡ TB</span>
+            `;
+          }
+          const stat = hero.querySelector(".speaking-hero-stats");
+          if (stat) stat.innerHTML = `<strong>${pct}%</strong><span>tiáº¿n Ä‘á»™</span>`;
+        }
+
+        if (aside) {
+          aside.innerHTML = `
+            <article class="speaking-side-card reflex-progress-card">
+              <h2>Tiáº¿n Ä‘á»™ kiá»ƒm tra</h2>
+              <div class="speaking-ring"><strong>${pct}%</strong></div>
+              <ul>
+                <li><span></span>${completedTests} ÄÃ£ hoÃ n thÃ nh</li>
+                <li><span></span>${activeTests} Äang lÃ m</li>
+                <li><span></span>${Math.max(0, totalTests - completedTests - activeTests)} ChÆ°a lÃ m</li>
+              </ul>
+              <button type="button" disabled>Xem thá»‘ng kÃª chi tiáº¿t â†’</button>
+            </article>
+
+            <article class="speaking-side-card reflex-rules-card">
+              <h2>Quy táº¯c kiá»ƒm tra</h2>
+              <ol>
+                <li><strong>Nghe cÃ¢u há»i</strong><small>Láº¯ng nghe ká»¹ cÃ¢u há»i tá»« audio</small></li>
+                <li><strong>Tráº£ lá»i nhanh</strong><small>Tráº£ lá»i trong thá»i gian ngáº¯n nháº¥t</small></li>
+                <li><strong>Kiá»ƒm tra Ä‘Ã¡p Ã¡n</strong><small>Xem Ä‘Ã¡p Ã¡n vÃ  giáº£i thÃ­ch chi tiáº¿t</small></li>
+                <li><strong>Luyá»‡n táº­p láº¡i</strong><small>Ã”n táº­p Ä‘á»ƒ cáº£i thiá»‡n tá»‘c Ä‘á»™</small></li>
+              </ol>
+            </article>
+
+            <article class="speaking-side-card reflex-suggestion-card">
+              <h2>Gá»£i Ã½ há»c hÃ´m nay</h2>
+              <button type="button" disabled>HoÃ n thÃ nh 2 bÃ i kiá»ƒm tra <small>NÃ¢ng cao pháº£n xáº¡ giao tiáº¿p</small></button>
+              <p>Giá»¯ chuá»—i 3 ngÃ y Ä‘á»ƒ duy trÃ¬ thÃ³i quen nhÃ©!</p>
+            </article>
+          `;
+        }
+
+        grid.className = "reflex-test-list practice-activity-list";
+        grid.innerHTML = "";
+
+        tests.forEach((test, idx) => {
+          const progressKey = `typingProgress-${storagePrefix}${lesson}-${test.number}`;
+          let stored = null;
+          try {
+            stored = JSON.parse(localStorage.getItem(progressKey) || "null");
+          } catch (e) {
+            stored = null;
+          }
+
+          const totalForDisplay = Math.max(1, test.total || 0);
+          const done =
+            stored &&
+            typeof stored.currentIndex === "number" &&
+            stored.currentIndex >= totalForDisplay;
+          const active =
+            stored &&
+            typeof stored.currentIndex === "number" &&
+            stored.currentIndex > 0 &&
+            !done;
+          const unavailable = test.hasData === false;
+
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `reflex-test-card practice-activity-list-card tone-${(idx % 10) + 1}${active ? " is-active" : ""}${done ? " is-done" : ""}`;
+          button.disabled = unavailable;
+          button.innerHTML = `
+            <span class="reflex-test-index">${String(test.number).padStart(2, "0")}</span>
+            <span class="reflex-test-body">
+              <strong>BÃ i kiá»ƒm tra ${String(test.number).padStart(2, "0")}</strong>
+              <small>â˜· ${test.total || 0} cÃ¢u <span>â—· 8-10 phÃºt</span></small>
+              <em>${done ? "ÄÃ£ hoÃ n thÃ nh" : active ? "Äang lÃ m" : unavailable ? "ChÆ°a cÃ³ dá»¯ liá»‡u" : "ChÆ°a lÃ m"}</em>
+            </span>
+            <span class="reflex-test-action">${active ? "Tiáº¿p tá»¥c" : done ? "LÃ m láº¡i" : "Báº¯t Ä‘áº§u"}</span>
+          `;
+
+          button.onclick = () => {
+            if (unavailable) return;
+
+            sessionStorage.setItem("currentQuestion", "0");
+            sessionStorage.setItem("currentTest", test.number);
+            sessionStorage.setItem(
+              `typingExp-${storagePrefix}${lesson}-${test.number}`,
+              "0",
+            );
+            sessionStorage.setItem(
+              `typingReset-${storagePrefix}${lesson}-${test.number}`,
+              "1",
+            );
+            localStorage.removeItem(progressKey);
+            window.location.href = `typing.html?lesson=${lesson}&test=${test.number}&subject=${subject}&content=example`;
+          };
+
+          grid.appendChild(button);
+        });
+      }
+
+      document
+        .getElementById("structureDetailBackdrop")
+        ?.addEventListener("click", closeStructureDetailPopover);
+      document
+        .getElementById("structureDetailClose")
+        ?.addEventListener("click", closeStructureDetailPopover);
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeStructureDetailPopover();
+      });
+
+      if (subject !== "writing" && content === "listening") {
+        loadListeningTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if ((subject === "speaking" || subject === "hanyu3") && content === "grammar") {
+        loadSpeakingStructureCards()
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if ((subject === "speaking" || subject === "hanyu3") && content === "words") {
+        loadSpeakingWordCards()
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if ((subject === "speaking" || subject === "hanyu3") && content === "structure") {
+        loadSpeakingGrammarTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if ((subject === "speaking" || subject === "hanyu3") && content === "example") {
+        loadSpeakingExampleTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if (subject === "listening" && content === "example") {
+        loadListeningExampleTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if ((subject === "speaking" || subject === "hanyu3") && content === "paragraph") {
+        loadSpeakingParagraphTests().then(renderReview);
+      } else if (subject === "hanyu3" && content === "exercise") {
+        loadHanyu3ExerciseTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if (subject === "writing" && content === "paragraph") {
+        loadParagraphTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="empty-state">Lá»—i: ${err.message}</p>`;
+          });
+      } else if (subject === "writing" && content === "words") {
+        loadWritingWordStructureCards()
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if (subject === "writing" && (content === "grammar" || content === "structure")) {
+        loadGrammarTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else if (subject === "writing") {
+        loadExampleTests()
+          .then(renderReview)
+          .catch((err) => {
+            document.getElementById("reviewGrid").innerHTML =
+              `<p class="review-subtitle">${err.message}</p>`;
+          });
+      } else {
+        renderReview();
+      }
+    </script>
+  </body>
+</html>
