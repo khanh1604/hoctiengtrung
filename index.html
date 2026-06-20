@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FTC - Học tiếng Trung</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <link rel="stylesheet" href="css/dashboard.css" />
   </head>
 
@@ -13,6 +13,9 @@
       <aside class="ftc-sidebar">
         <div class="brand">
           <span class="brand-mark">FTC</span>
+          <button class="dashboard-menu-toggle" type="button" aria-label="Mở menu" aria-controls="dashboardDrawer" aria-expanded="false">
+            ☰
+          </button>
           <!-- <span>
             <strong>FTC</strong>
             <small>Học tiếng Trung thông minh</small>
@@ -85,188 +88,37 @@
 
         <section class="stat-grid" aria-label="Chỉ số học tập">
           <article class="stat-card">
+            <span class="stat-icon" aria-hidden="true">📅</span>
             <small>Ngày học liên tục</small>
             <strong>0</strong>
           </article>
           <article class="stat-card">
+            <span class="stat-icon" aria-hidden="true">⭐</span>
             <small>EXP hiện có</small>
             <strong>0</strong>
           </article>
           <article class="stat-card">
+            <span class="stat-icon" aria-hidden="true">💠</span>
             <small>Cấp độ hiện tại</small>
             <strong>0</strong>
           </article>
           <article class="stat-card">
+            <span class="stat-icon" aria-hidden="true">📖</span>
             <small>Bài học hôm nay</small>
             <strong>0</strong>
           </article>
         </section>
 
-        <section class="course-grid" aria-label="Danh sách khóa học">
-          <article class="course-panel panel-blue">
-            <h2>Giáo trình Hán Ngữ</h2>
-            <div class="course-list">
-              <a class="course-link" href="lessons.html?subject=hanyu1">
-                <span>
-                  <strong>Hán Ngữ Quyển 1</strong>
-                  <small>15 bài · nhập môn</small>
-                </span>
-                <span>›</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>Hán Ngữ Quyển 2</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link" href="lessons.html?subject=hanyu3">
-                <span>
-                  <strong>Hán Ngữ Quyển 3</strong>
-                  <small>Đọc hiểu · 0 bài đã học</small>
-                </span>
-                <span>›</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>Hán Ngữ Quyển 4</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>Hán Ngữ Quyển 5</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>Hán Ngữ Quyển 6</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-            </div>
-          </article>
+        <section class="course-grid" id="courseGrid" aria-label="Danh sách khóa học"></section>
 
-          <article class="course-panel panel-green">
-            <h2>Khẩu ngữ</h2>
-            <div class="course-list">
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>初 级 口 语（I）</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link" href="lessons.html?subject=speaking">
-                <span>
-                  <strong>初 级 口 语（II）</strong>
-                  <small>Luyện nói · 0 bài đã học</small>
-                </span>
-                <span>›</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>中 级 口 语（I）</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>中 级 口 语（II）</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>高 级 口 语</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="course-panel panel-violet">
-            <h2>Nghe hiểu</h2>
-            <div class="course-list">
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>初 级 听 力（I）</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link" href="lessons.html">
-                <span>
-                  <strong>初 级 听 力（II）</strong>
-                  <small>Luyện nghe · 0 bài đã học</small>
-                </span>
-                <span>›</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>中 级 听 力（I）</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>中 级 听 力（II）</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>高 级 听 力</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="course-panel panel-amber">
-            <h2>Viết</h2>
-            <div class="course-list">
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>初 级写作</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link" href="lessons.html?subject=writing">
-                <span>
-                  <strong>中 级 写 作（I）</strong>
-                  <small>Luyện viết · 0 bài đã học</small>
-                </span>
-                <span>›</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>中级写作（II）</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-              <a class="course-link is-disabled" href="#">
-                <span>
-                  <strong>高 级写作</strong>
-                  <small>0 bài · đang khóa</small>
-                </span>
-                <span>0</span>
-              </a>
-            </div>
-          </article>
-        </section>
+        <a class="mobile-vip-card" href="#" data-locked="true">
+          <span class="vip-icon" aria-hidden="true">👑</span>
+          <span>
+            <strong>Nâng cấp VIP</strong>
+            <small>Tính năng học tập đẳng cấp, vô hiệu hóa theo thiết lập hiện tại.</small>
+          </span>
+          <em>›</em>
+        </a>
 
         <section class="dashboard-grid" aria-label="Thông tin học tập">
           <article class="info-card">
@@ -303,6 +155,28 @@
         </section>
       </main>
     </div>
+    <div class="dashboard-drawer" id="dashboardDrawer" hidden>
+      <button class="dashboard-drawer-backdrop" type="button" aria-label="Đóng menu"></button>
+      <nav class="dashboard-drawer-panel" aria-label="Menu điều hướng">
+        <div class="dashboard-drawer-head">
+          <strong>FTC</strong>
+          <button class="dashboard-drawer-close" type="button" aria-label="Đóng menu">×</button>
+        </div>
+        <a class="is-active" href="index.html"><span>🏠</span>Trang chủ</a>
+        <a href="lessons.html?subject=hanyu3"><span>📚</span>Giáo trình Hán Ngữ</a>
+        <a href="lessons.html?subject=speaking"><span>🎙️</span>Khẩu ngữ</a>
+        <a href="lessons.html"><span>🎧</span>Nghe hiểu</a>
+        <a href="lessons.html?subject=writing"><span>✍️</span>Viết</a>
+      </nav>
+    </div>
+    <nav class="mobile-bottom-nav" aria-label="Điều hướng mobile">
+      <a class="is-active" href="index.html"><span>⌂</span>Trang chủ</a>
+      <a href="lessons.html?subject=hanyu3"><span>▣</span>Giáo trình</a>
+      <a href="lessons.html?subject=speaking"><span>◉</span>Khẩu ngữ</a>
+      <a href="lessons.html"><span>🎧</span>Nghe hiểu</a>
+      <a href="lessons.html?subject=writing"><span>✎</span>Viết</a>
+    </nav>
+    <div class="dashboard-toast" id="dashboardToast" role="status" aria-live="polite"></div>
     <script src="js/dashboard.js" defer></script>
   </body>
 </html>

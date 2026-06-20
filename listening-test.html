@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập đoạn nghe - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css?v=listen-breadcrumb-20260605" />
+    <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
   <body class="listening-test-page">
@@ -12,7 +12,6 @@
       <a class="speaking-logo" href="index.html">FTC</a>
       <nav class="speaking-nav" aria-label="Điều hướng bài nghe">
         <a href="index.html">⌂ Trang chủ</a>
-        <a class="is-active" href="lessons.html?subject=listening">▣ Học tập</a>
         <button disabled>Flashcard</button>
         <button disabled>Thi thử HSK</button>
         <button disabled>AI hội thoại</button>
@@ -24,13 +23,11 @@
 
     <main class="listening-shell">
       <nav class="listening-breadcrumb" aria-label="Đường dẫn">
-        <a id="breadcrumbBack" href="#">← Học tập</a>
-        <span aria-hidden="true">›</span>
         <a href="lessons.html?subject=listening">Nghe hiểu</a>
         <span aria-hidden="true">›</span>
-        <a id="breadcrumbLesson" href="#">Bài 01</a>
+        <a id="breadcrumbLesson" href="lesson-options.html?lesson=01&subject=listening">Bài 01</a>
         <span aria-hidden="true">›</span>
-        <span id="breadcrumbSection">Phần 1-4</span>
+        <a id="breadcrumbSection" href="listening-test.html?lesson=01&section=1-4&subject=listening">Phần 1-4</a>
       </nav>
       <section class="listening-layout">
         <header class="listening-header">
@@ -774,8 +771,13 @@
           `Bài ${String(Number(lesson)).padStart(2, "0")}`;
         document.getElementById("breadcrumbLesson").href =
           `lesson-options.html?lesson=${String(Number(lesson)).padStart(2, "0")}&subject=listening`;
-        document.getElementById("breadcrumbBack").href =
-          `review.html?lesson=${String(Number(lesson)).padStart(2, "0")}&subject=listening&content=listening`;
+        const breadcrumbBack = document.getElementById("breadcrumbBack");
+        if (breadcrumbBack) {
+          breadcrumbBack.href =
+            `review.html?lesson=${String(Number(lesson)).padStart(2, "0")}&subject=listening&content=listening`;
+        }
+        document.getElementById("breadcrumbSection").href =
+          `listening-test.html?lesson=${String(Number(lesson)).padStart(2, "0")}&section=${section}&subject=listening`;
         document.getElementById("breadcrumbSection").textContent =
           `Phần ${section}`;
         document.getElementById("listeningSubtitle").innerHTML =

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
 
@@ -311,6 +311,29 @@
         };
       }
 
+      function getReviewSubjectHomeHref() {
+        return subject === "hanyu1" || subject === "hanyu3"
+          ? "index.html"
+          : `lessons.html?subject=${subject}`;
+      }
+
+      function getReviewContentTitle() {
+        if (content === "example") return "Kiểm tra phản xạ";
+        if (content === "structure") return "Kiểm tra cấu trúc";
+        if (content === "grammar") return "Cấu trúc";
+        if (content === "paragraph") return "Ôn tập bài khóa";
+        if (content === "exercise") return "Bài tập";
+        return "Danh sách bài";
+      }
+
+      function updateReviewLessonCrumb(title = "") {
+        const crumb = document.getElementById("reviewBreadcrumbLesson");
+        if (!crumb) return;
+        const padLesson = String(Number(lesson)).padStart(2, "0");
+        const cleanTitle = String(title || "").trim();
+        crumb.textContent = cleanTitle ? `Bài ${padLesson} - ${cleanTitle}` : `Bài ${padLesson}`;
+      }
+
       function applyReviewDashboardLayout() {
         const info = getReviewSubjectInfo();
         const padLesson = String(Number(lesson)).padStart(2, "0");
@@ -321,7 +344,6 @@
             <a class="speaking-logo" href="index.html">FTC</a>
             <nav class="speaking-nav" aria-label="Điều hướng danh sách bài">
               <a href="index.html">⌂ Trang chủ</a>
-              <a class="is-active" href="${info.listHref}">▣ Học tập</a>
               <button disabled>Flashcard</button>
               <button disabled>Thi thử HSK</button>
               <button disabled>AI hội thoại</button>
@@ -332,11 +354,13 @@
 
           <main class="speaking-main">
             <div class="speaking-breadcrumb">
-              <a href="lesson-options.html?lesson=${padLesson}${subjectParam}">← Bài ${padLesson}</a>
+              <a href="${getReviewSubjectHomeHref()}">${info.label}</a>
               <span>›</span>
-              <span>${info.label}</span>
+              <a href="${info.listHref}">${info.course}</a>
               <span>›</span>
-              <strong id="reviewBreadcrumbTitle">Danh sách bài</strong>
+              <a id="reviewBreadcrumbLesson" href="lesson-options.html?lesson=${padLesson}${subjectParam}">Bài ${padLesson}</a>
+              <span>›</span>
+              <a id="reviewBreadcrumbTitle" href="review.html?lesson=${padLesson}${subjectParam}${contentParam}">${getReviewContentTitle()}</a>
             </div>
 
             <section class="speaking-layout">
@@ -398,10 +422,14 @@
         const titleEl = document.getElementById("reviewTitle");
         const subtitleEl = document.getElementById("reviewSubtitle") || document.querySelector(".review-subtitle");
         const breadcrumbTitle = document.getElementById("reviewBreadcrumbTitle");
+        const padLesson = String(Number(lesson)).padStart(2, "0");
 
         if (titleEl) titleEl.textContent = title;
         if (subtitleEl) subtitleEl.textContent = subtitle;
-        if (breadcrumbTitle) breadcrumbTitle.textContent = title;
+        if (breadcrumbTitle) {
+          breadcrumbTitle.textContent = title;
+          breadcrumbTitle.href = `review.html?lesson=${padLesson}${subjectParam}${contentParam}`;
+        }
         fixMojibakeIn(document.querySelector(".review-container"));
       }
 
@@ -1941,10 +1969,11 @@
         if (subject === "hanyu1" || subject === "hanyu3") {
           const bookNumber = subject === "hanyu1" ? "1" : "3";
           const res = await fetch(`data/hanyu${bookNumber}-lessons.json?v=${Date.now()}`);
-          if (!res.ok) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ quyển 3");
+          if (!res.ok) throw new Error(`Không tải được dữ liệu Giáo trình Hán ngữ quyển ${bookNumber}`);
           const allLessons = await res.json();
           const lessonData = allLessons[lessonNum];
-          if (!lessonData) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ quyển 3");
+          if (!lessonData) throw new Error(`Không tải được dữ liệu Giáo trình Hán ngữ quyển ${bookNumber}`);
+          updateReviewLessonCrumb(lessonData.title || "");
           return lessonData;
         }
 
@@ -2376,7 +2405,7 @@
         }, 0);
 
         document.body.classList.add("reflex-review-page");
-        setReviewHeader("Kiểm tra phản xạ", `${totalTests} bài kiểm tra - mỗi bài 20 câu`);
+        setReviewHeader("Kiểm tra phản xạ", `${totalTests} bài kiểm tra - mỗi bài ${questionsPerTest} câu`);
 
         tests.forEach((test) => {
           const progressKey = `typingProgress-${storagePrefix}${lesson}-${test.number}`;
@@ -2476,7 +2505,7 @@
             <span class="reflex-test-index">${String(test.number).padStart(2, "0")}</span>
             <span class="reflex-test-body">
               <strong>Bài kiểm tra ${String(test.number).padStart(2, "0")}</strong>
-              <small>☷ ${test.total || 0} câu <span>◷ 8-10 phút</span></small>
+              <small>☷ ${test.total || 0} câu</small>
               <em>${done ? "Đã hoàn thành" : active ? "Đang làm" : unavailable ? "Chưa có dữ liệu" : "Chưa làm"}</em>
             </span>
             <span class="reflex-test-action">${active ? "Tiếp tục" : done ? "Làm lại" : "Bắt đầu"}</span>

@@ -701,6 +701,12 @@
       const allLessons = await res.json();
       const lessonData = allLessons[String(Number(lesson))];
       if (!lessonData) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ");
+      const typingLessonCrumb = document.getElementById("typingBreadcrumbLesson");
+      if (typingLessonCrumb) {
+        const padLesson = String(Number(lesson)).padStart(2, "0");
+        const cleanTitle = String(lessonData.title || "").trim();
+        typingLessonCrumb.textContent = cleanTitle ? `Bài ${padLesson} - ${cleanTitle}` : `Bài ${padLesson}`;
+      }
       if (content === "example") {
         const exampleGroupSize = subject === "hanyu1" ? 10 : 20;
         speakingExampleTestCount = Math.max(
@@ -860,6 +866,12 @@
 
   function setNextMode() {
     showingResult = true;
+    if (isReflexTyping) {
+      checkBtn.textContent = "Kiểm tra";
+      checkBtn.classList.remove("next-btn");
+      checkBtn.disabled = true;
+      return;
+    }
     checkBtn.textContent = isReflexTyping ? "Câu tiếp theo" : "Tiếp theo (Enter)";
     checkBtn.classList.add("next-btn");
     checkBtn.disabled = false;

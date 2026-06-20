@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập từ mới - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
 
@@ -13,7 +13,6 @@
       <a class="vocab-logo" href="index.html">FTC</a>
       <nav class="vocab-nav" aria-label="Điều hướng từ mới">
         <a href="index.html">⌂ Trang chủ</a>
-        <a class="is-active" id="vocabStudyLink" href="lessons.html">▣ Học tập</a>
         <button disabled>▤ Flashcard</button>
         <button disabled>🏆 Thi thử HSK</button>
         <button disabled>☏ AI hội thoại</button>
@@ -25,11 +24,13 @@
 
     <main class="vocabulary-shell">
       <nav class="vocab-breadcrumb" aria-label="Đường dẫn">
-        <a id="vocabCrumbLesson" href="#">⌂ Bài 01</a>
+        <a id="vocabCrumbSubject" href="index.html">Giáo trình Hán Ngữ</a>
         <span>›</span>
-        <a id="vocabCrumbSubject" href="#">Khẩu ngữ</a>
+        <a id="vocabCrumbCourse" href="lessons.html?subject=hanyu1">Hán Ngữ Quyển 1</a>
         <span>›</span>
-        <strong id="vocabCrumbCurrent">Bài 1 - Từ mới</strong>
+        <a id="vocabCrumbLesson" href="lesson-options.html?lesson=01&subject=hanyu1">Bài 01 - 你好！</a>
+        <span>›</span>
+        <a id="vocabCrumbCurrent" href="vocabulary.html?lesson=01&subject=hanyu1">Bài 1 - Từ mới</a>
       </nav>
 
       <div class="vocabulary-layout">
@@ -264,10 +265,25 @@
 
       function getSubjectLabel() {
         if (subject === "speaking") return "Khẩu ngữ";
-        if (subject === "hanyu1" || subject === "hanyu3") return "Hán Ngữ";
+        if (subject === "hanyu1" || subject === "hanyu3") return "Giáo trình Hán Ngữ";
         if (subject === "writing") return "Viết";
         if (subject === "listening") return "Nghe hiểu";
         return "Học tập";
+      }
+
+      function getSubjectHref() {
+        return subject === "hanyu1" || subject === "hanyu3"
+          ? "index.html"
+          : `lessons.html?subject=${subject}`;
+      }
+
+      function getCourseLabel() {
+        if (subject === "hanyu1") return "Hán Ngữ Quyển 1";
+        if (subject === "hanyu3") return "Hán Ngữ Quyển 3";
+        if (subject === "speaking") return "初级口语（II）";
+        if (subject === "listening") return "初级听力（II）";
+        if (subject === "writing") return "中级写作（I）";
+        return getSubjectLabel();
       }
 
       function escapeHtml(text) {
@@ -504,12 +520,15 @@
 
       async function loadVocabulary() {
         let items = [];
+        let lessonTitle = "";
         if (subject === "hanyu1" || subject === "hanyu3") {
           const allLessons = await fetchJson(`data/${subject}-lessons.json?v=${Date.now()}`);
           const data = allLessons[String(Number(lesson))] || {};
+          lessonTitle = data.title || "";
           items = data.vocabulary || data.words || data.newWords || [];
         } else if (subject === "speaking") {
           const data = await fetchJson(`data/speaking-lesson-${Number(lesson)}.json`);
+          lessonTitle = data.title || "";
           items = data.vocabulary || data.words || data.newWords || [];
         } else if (subject === "writing") {
           const data = await fetchJson("data/writing-tests.json");
@@ -529,11 +548,16 @@
         currentPage = 1;
 
         const lessonLabel = getLessonLabel();
-        document.getElementById("vocabStudyLink").href = `lessons.html?subject=${subject}`;
-        document.getElementById("vocabCrumbLesson").href = `lesson-options.html?lesson=${lesson}&subject=${subject}`;
-        document.getElementById("vocabCrumbLesson").textContent = `⌂ Bài ${lessonLabel}`;
-        document.getElementById("vocabCrumbSubject").href = `lessons.html?subject=${subject}`;
+        const vocabStudyLink = document.getElementById("vocabStudyLink");
+        if (vocabStudyLink) vocabStudyLink.href = `lessons.html?subject=${subject}`;
+        document.getElementById("vocabCrumbSubject").href = getSubjectHref();
         document.getElementById("vocabCrumbSubject").textContent = getSubjectLabel();
+        document.getElementById("vocabCrumbCourse").href = `lessons.html?subject=${subject}`;
+        document.getElementById("vocabCrumbCourse").textContent = getCourseLabel();
+        document.getElementById("vocabCrumbLesson").href = `lesson-options.html?lesson=${lesson}&subject=${subject}`;
+        document.getElementById("vocabCrumbLesson").textContent =
+          lessonTitle ? `Bài ${lessonLabel} - ${lessonTitle}` : `Bài ${lessonLabel}`;
+        document.getElementById("vocabCrumbCurrent").href = `vocabulary.html?lesson=${lesson}&subject=${subject}`;
         document.getElementById("vocabCrumbCurrent").textContent = `Bài ${Number(lesson)} - Từ mới`;
         document.getElementById("vocabLessonPill").textContent = `Bài ${lessonLabel}`;
         document.getElementById("vocabularyTitle").textContent = `Bài ${Number(lesson)} - Từ mới`;

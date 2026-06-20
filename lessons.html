@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh Sách Bài Học - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
 
@@ -65,7 +65,15 @@
       const isSpeaking = subject === "speaking";
       const isHanyu1 = subject === "hanyu1";
       const isHanyu3 = subject === "hanyu3";
-      const totalItems = isWriting ? 15 : isHanyu1 ? 15 : isHanyu3 ? 10 : isSpeaking ? 12 : 24;
+      const totalItems = isWriting
+        ? 15
+        : isHanyu1
+          ? 15
+          : isHanyu3
+            ? 10
+            : isSpeaking
+              ? 12
+              : 24;
       const itemsPerPage = 12;
       const availableListeningLessons = new Set(
         Array.from({ length: 24 }, (_, idx) => idx + 1),
@@ -101,13 +109,22 @@
       ];
       const listeningLessonNames = [
         ["你学了多长时间汉语了", "Bạn học tiếng Trung được bao lâu rồi?"],
-        ["请问，留学生宿舍怎么走", "Xin hỏi, ký túc xá lưu học sinh đi đường nào?"],
+        [
+          "请问，留学生宿舍怎么走",
+          "Xin hỏi, ký túc xá lưu học sinh đi đường nào?",
+        ],
         ["我很想家", "Tôi rất nhớ nhà"],
         ["你是什么时候来的", "Bạn đến từ khi nào?"],
         ["你也听听吧", "Bạn cũng nghe thử đi"],
-        ["我们大学有好几个学生食堂", "Trường đại học của chúng tôi có mấy cái nhà ăn sinh viên liền"],
+        [
+          "我们大学有好几个学生食堂",
+          "Trường đại học của chúng tôi có mấy cái nhà ăn sinh viên liền",
+        ],
         ["你吃过这个菜吗", "Bạn đã từng ăn món này chưa?"],
-        ["我们还没想好租不租呢", "Chúng tôi vẫn chưa nghĩ kỹ xem có thuê hay không nữa"],
+        [
+          "我们还没想好租不租呢",
+          "Chúng tôi vẫn chưa nghĩ kỹ xem có thuê hay không nữa",
+        ],
         ["鸡蛋 4 块一斤", "Trứng gà 4 tệ một cân"],
         ["我有一个好主意", "Tôi có một ý kiến hay / một chủ ý tốt"],
         ["我的手机没电了", "Điện thoại của tôi hết pin rồi"],
@@ -119,10 +136,16 @@
         ["买一送一", "Mua một tặng một"],
         ["她比以前胖多了", "Cô ấy béo hơn trước nhiều rồi"],
         ["太短了", "Ngắn quá rồi"],
-        ["“See a doctor” 用汉语怎么说", "Cụm từ \"See a doctor\" nói bằng tiếng Trung như thế nào?"],
+        [
+          "“See a doctor” 用汉语怎么说",
+          'Cụm từ "See a doctor" nói bằng tiếng Trung như thế nào?',
+        ],
         ["他刚从银行回来", "Anh ấy vừa từ ngân hàng trở về"],
         ["在北京坐公共汽车", "Đi xe buýt ở Bắc Kinh"],
-        ["很多女人都喜欢逛商场", "Rất nhiều phụ nữ đều thích đi lượn trung tâm thương mại"],
+        [
+          "很多女人都喜欢逛商场",
+          "Rất nhiều phụ nữ đều thích đi lượn trung tâm thương mại",
+        ],
         ["第一次坐飞机", "Lần đầu tiên đi máy bay"],
       ];
       var currentPage = 1;
@@ -140,9 +163,11 @@
       } else if (isSpeaking) {
         document.getElementById("lessonsTitle").textContent = "口语";
       } else if (isHanyu1) {
-        document.getElementById("lessonsTitle").textContent = "Giáo trình Hán ngữ quyển 1";
+        document.getElementById("lessonsTitle").textContent =
+          "Giáo trình Hán ngữ quyển 1";
       } else if (isHanyu3) {
-        document.getElementById("lessonsTitle").textContent = "Giáo trình Hán ngữ quyển 3";
+        document.getElementById("lessonsTitle").textContent =
+          "Giáo trình Hán ngữ quyển 3";
       }
 
       const lessonItems = Array.from({ length: totalItems }, (_, idx) => {
@@ -155,9 +180,13 @@
           const unlocked = hasLessonData(writingLesson);
           const lessonName = writingLessonNames[idx];
           return {
-            title: lessonName ? `Bài ${writingLesson} - ${lessonName[0]}` : `Bài ${writingLesson}`,
+            title: lessonName
+              ? `Bài ${writingLesson} - ${lessonName[0]}`
+              : `Bài ${writingLesson}`,
             unlocked,
-            href: unlocked ? `lesson-options.html?lesson=${pad(writingLesson)}&subject=${subject}` : null,
+            href: unlocked
+              ? `lesson-options.html?lesson=${pad(writingLesson)}&subject=${subject}`
+              : null,
             progress: unlocked ? "" : "Chưa có dữ liệu",
           };
         }
@@ -168,7 +197,9 @@
           return {
             title: `Bài ${pad(speakingLesson)}`,
             unlocked,
-            href: unlocked ? `lesson-options.html?lesson=${pad(speakingLesson)}&subject=${subject}` : null,
+            href: unlocked
+              ? `lesson-options.html?lesson=${pad(speakingLesson)}&subject=${subject}`
+              : null,
             progress: unlocked ? "" : "Chưa có dữ liệu",
           };
         }
@@ -177,10 +208,12 @@
           const hanyuLesson = idx + 1;
           const unlocked = hasLessonData(hanyuLesson);
           return {
-            title: `BÃ i ${pad(hanyuLesson)}`,
+            title: `Bài ${pad(hanyuLesson)}`,
             unlocked,
-            href: unlocked ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}` : null,
-            progress: unlocked ? "" : "ChÆ°a cÃ³ dá»¯ liá»‡u",
+            href: unlocked
+              ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}`
+              : null,
+            progress: unlocked ? "" : "Chưa có dữ liệu",
           };
         }
 
@@ -190,7 +223,9 @@
           return {
             title: `Bài ${pad(hanyuLesson)}`,
             unlocked,
-            href: unlocked ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}` : null,
+            href: unlocked
+              ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}`
+              : null,
             progress: unlocked ? "" : "Chưa có dữ liệu",
           };
         }
@@ -199,9 +234,13 @@
         const unlocked = hasLessonData(listeningLesson);
         const lessonName = listeningLessonNames[idx];
         return {
-          title: lessonName ? `Bài ${pad(listeningLesson)} - ${lessonName[0]}` : `Bài ${pad(listeningLesson)}`,
+          title: lessonName
+            ? `Bài ${pad(listeningLesson)} - ${lessonName[0]}`
+            : `Bài ${pad(listeningLesson)}`,
           unlocked,
-          href: unlocked ? `lesson-options.html?lesson=${pad(listeningLesson)}&subject=${subject}` : null,
+          href: unlocked
+            ? `lesson-options.html?lesson=${pad(listeningLesson)}&subject=${subject}`
+            : null,
           progress: unlocked ? "" : "Chưa có dữ liệu",
         };
       });
@@ -286,7 +325,6 @@
             <a class="speaking-logo" href="index.html">FTC</a>
             <nav class="speaking-nav" aria-label="Điều hướng khóa học">
               <a href="index.html">⌂ Trang chủ</a>
-              <a class="is-active" href="lessons.html?subject=speaking">▣ Học tập</a>
               <button disabled>Flashcard</button>
               <button disabled>Thi thử HSK</button>
               <button disabled>AI hội thoại</button>
@@ -298,11 +336,9 @@
 
           <main class="speaking-main">
             <div class="speaking-breadcrumb">
-              <a href="index.html">← Học tập</a>
+              <a href="lessons.html?subject=speaking">Khẩu ngữ</a>
               <span>›</span>
-              <span>Khẩu ngữ</span>
-              <span>›</span>
-              <strong>初级口语（II）</strong>
+              <a href="lessons.html?subject=speaking">初级口语（II）</a>
             </div>
 
             <section class="speaking-layout">
@@ -441,20 +477,51 @@
           hanyu3: {
             label: "Gi\u00e1o tr\u00ecnh H\u00e1n Ng\u1eef",
             title: "H\u00e1n Ng\u1eef Quy\u1ec3n 3",
-            subtitle: "T\u1eeb m\u1edbi, c\u1ea5u tr\u00fac v\u00e0 b\u00e0i kh\u00f3a",
+            subtitle:
+              "T\u1eeb m\u1edbi, c\u1ea5u tr\u00fac v\u00e0 b\u00e0i kh\u00f3a",
             icon: "\ud83d\udcd6",
             listHref: "lessons.html?subject=hanyu3",
             lessons: [
-              ["\u6211\u6bd4\u4f60\u8ddf\u559c\u6b22\u97f3\u4e50", "T\u00f4i th\u00edch \u00e2m nh\u1ea1c h\u01a1n b\u1ea1n."],
-              ["\u6211\u4eec\u90a3\u513f\u7684\u51ac\u5929\u8ddf\u5317\u4eac\u4e00\u6837\u51b7", "M\u00f9a \u0111\u00f4ng \u1edf ch\u1ed7 ch\u00fang t\u00f4i l\u1ea1nh nh\u01b0 B\u1eafc Kinh."],
-              ["\u51ac\u5929\u5feb\u8981\u5230\u4e86", "M\u00f9a \u0111\u00f4ng s\u1eafp \u0111\u1ebfn r\u1ed3i."],
-              ["\u5feb\u4e0a\u6765\u5427\uff0c\u8981\u5f00\u8f66\u4e86", "Mau l\u00ean \u0111i, xe s\u1eafp ch\u1ea1y r\u1ed3i."],
-              ["\u6211\u542c\u8fc7\u94a2\u7434\u534f\u594f\u66f2\u300a\u9ec4\u6cb3\u300b", "T\u00f4i t\u1eebng nghe b\u1ea3n concerto piano Ho\u00e0ng H\u00e0."],
-              ["\u6211\u662f\u8ddf\u65c5\u6e38\u56e2\u4e00\u8d77\u6765\u7684", "T\u00f4i \u0111\u1ebfn c\u00f9ng \u0111o\u00e0n du l\u1ecbch."],
-              ["\u6211\u7684\u62a4\u7167\u4f60\u4f60\u627e\u4e86\u6ca1\u6709", "B\u1ea1n \u0111\u00e3 t\u00ecm th\u1ea5y h\u1ed9 chi\u1ebfu c\u1ee7a t\u00f4i ch\u01b0a?"],
-              ["\u6211\u7684\u773c\u955c\u6454\u574f\u4e86", "K\u00ednh c\u1ee7a t\u00f4i b\u1ecb r\u01a1i h\u1ecfng r\u1ed3i."],
-              ["\u94a5\u5319\u5fd8\u62d4\u4e0b\u6765\u4e86", "Qu\u00ean r\u00fat ch\u00eca kh\u00f3a ra r\u1ed3i."],
-              ["\u4f1a\u8bae\u5385\u7684\u95e8\u5f00\u7740\u5462", "C\u1eeda ph\u00f2ng h\u1ed9i ngh\u1ecb \u0111ang m\u1edf \u0111\u1ea5y."],
+              [
+                "\u6211\u6bd4\u4f60\u8ddf\u559c\u6b22\u97f3\u4e50",
+                "T\u00f4i th\u00edch \u00e2m nh\u1ea1c h\u01a1n b\u1ea1n.",
+              ],
+              [
+                "\u6211\u4eec\u90a3\u513f\u7684\u51ac\u5929\u8ddf\u5317\u4eac\u4e00\u6837\u51b7",
+                "M\u00f9a \u0111\u00f4ng \u1edf ch\u1ed7 ch\u00fang t\u00f4i l\u1ea1nh nh\u01b0 B\u1eafc Kinh.",
+              ],
+              [
+                "\u51ac\u5929\u5feb\u8981\u5230\u4e86",
+                "M\u00f9a \u0111\u00f4ng s\u1eafp \u0111\u1ebfn r\u1ed3i.",
+              ],
+              [
+                "\u5feb\u4e0a\u6765\u5427\uff0c\u8981\u5f00\u8f66\u4e86",
+                "Mau l\u00ean \u0111i, xe s\u1eafp ch\u1ea1y r\u1ed3i.",
+              ],
+              [
+                "\u6211\u542c\u8fc7\u94a2\u7434\u534f\u594f\u66f2\u300a\u9ec4\u6cb3\u300b",
+                "T\u00f4i t\u1eebng nghe b\u1ea3n concerto piano Ho\u00e0ng H\u00e0.",
+              ],
+              [
+                "\u6211\u662f\u8ddf\u65c5\u6e38\u56e2\u4e00\u8d77\u6765\u7684",
+                "T\u00f4i \u0111\u1ebfn c\u00f9ng \u0111o\u00e0n du l\u1ecbch.",
+              ],
+              [
+                "\u6211\u7684\u62a4\u7167\u4f60\u4f60\u627e\u4e86\u6ca1\u6709",
+                "B\u1ea1n \u0111\u00e3 t\u00ecm th\u1ea5y h\u1ed9 chi\u1ebfu c\u1ee7a t\u00f4i ch\u01b0a?",
+              ],
+              [
+                "\u6211\u7684\u773c\u955c\u6454\u574f\u4e86",
+                "K\u00ednh c\u1ee7a t\u00f4i b\u1ecb r\u01a1i h\u1ecfng r\u1ed3i.",
+              ],
+              [
+                "\u94a5\u5319\u5fd8\u62d4\u4e0b\u6765\u4e86",
+                "Qu\u00ean r\u00fat ch\u00eca kh\u00f3a ra r\u1ed3i.",
+              ],
+              [
+                "\u4f1a\u8bae\u5385\u7684\u95e8\u5f00\u7740\u5462",
+                "C\u1eeda ph\u00f2ng h\u1ed9i ngh\u1ecb \u0111ang m\u1edf \u0111\u1ea5y.",
+              ],
             ],
             actionLabel: "H\u1ecdc b\u00e0i",
           },
@@ -467,7 +534,6 @@
             <a class="speaking-logo" href="index.html">FTC</a>
             <nav class="speaking-nav" aria-label="Điều hướng khóa học">
               <a href="index.html">⌂ Trang chủ</a>
-              <a class="is-active" href="${courseInfo.listHref}">▣ Học tập</a>
               <button disabled>Flashcard</button>
               <button disabled>Thi thử HSK</button>
               <button disabled>AI hội thoại</button>
@@ -479,11 +545,9 @@
 
           <main class="speaking-main">
             <div class="speaking-breadcrumb">
-              <a href="index.html">← Học tập</a>
+              <a href="${subject === "hanyu1" || subject === "hanyu3" ? "index.html" : `lessons.html?subject=${subject}`}">${courseInfo.label}</a>
               <span>›</span>
-              <span>${courseInfo.label}</span>
-              <span>›</span>
-              <strong>${courseInfo.title}</strong>
+              <a href="lessons.html?subject=${subject}">${courseInfo.title}</a>
             </div>
 
             <section class="speaking-layout">

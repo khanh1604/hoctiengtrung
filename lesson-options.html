@@ -4,85 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chọn Mục - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
 
   <body class="lesson-options-page">
     <div class="lesson-options-container">
-      <div class="lesson-options-content">
-        <h1 class="options-title" id="lessonTitle">
-          Bài 01 你学了多张时间汉语了
-        </h1>
-        <p class="options-subtitle">Chọn mục để học</p>
-
-        <button
-          class="back-btn-options"
-          onclick="goBackToLessons()"
-        >
-          ← Quay lại danh sách bài
-        </button>
-
-        <div class="options-grid">
-          <button
-            class="option-card vocabulary"
-            id="vocabularyCard"
-            onclick="goToContent('vocabulary')"
-          >
-            <span class="option-card-icon" id="vocabularyIcon">📚</span>
-            <span class="option-card-title" id="vocabularyTitle">Ôn tập từ vựng</span>
-            <span class="option-card-desc" id="vocabularyDesc">Học các từ vựng mới</span>
-          </button>
-
-          <button
-            class="option-card listening"
-            id="listeningCard"
-            onclick="goToContent('listening')"
-          >
-            <span class="option-card-icon" id="listeningIcon">🎧</span>
-            <span class="option-card-title" id="listeningTitle">Ôn tập đoạn nghe</span>
-            <span class="option-card-desc" id="listeningDesc">Luyện nghe và hiểu</span>
-          </button>
-
-          <button
-            class="option-card grammar"
-            id="structureCard"
-            onclick="goToContent('grammar')"
-            hidden
-          >
-            <span class="option-card-icon" id="structureIcon">🧩</span>
-            <span class="option-card-title" id="structureTitle">Cấu trúc</span>
-            <span class="option-card-desc" id="structureDesc">Học mẫu câu và ví dụ</span>
-          </button>
-
-          <button
-            class="option-card grammar"
-            id="grammarCard"
-            onclick="goToContent('grammar')"
-            hidden
-          >
-            <span class="option-card-icon" id="grammarIcon">📝</span>
-            <span class="option-card-title" id="grammarTitle">Cấu trúc</span>
-            <span class="option-card-desc" id="grammarDesc">Học cấu trúc câu và ngữ pháp</span>
-          </button>
-
-          <button class="option-card review" id="reviewCard" onclick="goToReview()">
-            <span class="option-card-icon" id="reviewIcon">✅</span>
-            <span class="option-card-title" id="reviewTitle">Ôn tập ví dụ</span>
-            <span class="option-card-desc" id="reviewDesc">10 bài kiểm tra - 32 câu/bài</span>
-          </button>
-
-          <button
-            class="option-card grammar"
-            id="exerciseCard"
-            onclick="goToContent('exercise')"
-            hidden
-          >
-            <span class="option-card-icon" id="exerciseIcon">✍️</span>
-            <span class="option-card-title" id="exerciseTitle">Bài tập</span>
-            <span class="option-card-desc" id="exerciseDesc">6 mục bài tập</span>
-          </button>
-        </div>
+      <div class="lesson-options-loading">
+        <h1 id="lessonTitle">Đang tải bài học...</h1>
+        <p>Đang mở giao diện học tập mới.</p>
       </div>
     </div>
 
@@ -348,6 +278,11 @@
         ];
         const subjectKey = config.subjectKey || "speaking";
         const subjectLabel = config.subjectLabel || "Khẩu ngữ";
+        const listHref = subjectKey === "listening"
+          ? "lessons.html?subject=listening"
+          : `lessons.html?subject=${subjectKey}`;
+        const subjectHomeHref =
+          subjectKey === "hanyu1" || subjectKey === "hanyu3" ? "index.html" : listHref;
         const courseTitle = config.courseTitle || "初级口语（II）";
         const courseDesc = config.courseDesc || "luyện nói giao tiếp";
         const heroIcon = config.heroIcon || "🎙";
@@ -386,11 +321,8 @@
                 desc: "9 bài đọc hiểu",
                 action: "example",
               },
-            ]
+          ]
           : optionItems;
-        const listHref = subjectKey === "listening"
-          ? "lessons.html?subject=listening"
-          : `lessons.html?subject=${subjectKey}`;
 
         document.body.classList.add("speaking-option-page");
         document.querySelector(".lesson-options-container").innerHTML = `
@@ -398,7 +330,6 @@
             <a class="speaking-logo" href="index.html">FTC</a>
             <nav class="speaking-nav" aria-label="Điều hướng bài học">
               <a href="index.html">⌂ Trang chủ</a>
-              <a class="is-active" href="${listHref}">▣ Học tập</a>
               <button disabled>Flashcard</button>
               <button disabled>Thi thử HSK</button>
               <button disabled>AI hội thoại</button>
@@ -409,11 +340,11 @@
 
           <main class="speaking-main">
             <div class="speaking-breadcrumb">
-              <a href="${listHref}">← Học tập</a>
+              <a href="${subjectHomeHref}">${subjectLabel}</a>
               <span>›</span>
-              <span>${subjectLabel}</span>
+              <a href="${listHref}">${courseTitle}</a>
               <span>›</span>
-              <strong>Bài ${padLesson} - ${chineseTitle}</strong>
+              <a href="lesson-options.html?lesson=${padLesson}&subject=${subjectKey}">Bài ${padLesson} - ${chineseTitle}</a>
             </div>
 
             <section class="speaking-layout">

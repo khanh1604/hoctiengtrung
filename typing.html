@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Mode - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
 
@@ -74,7 +74,7 @@
     </div>
 
     <script>
-      function getPracticeActivityCopy(content, test) {
+      function getPracticeActivityCopy(content, test, subject) {
         const testLabel = String(Number(test)).padStart(2, "0");
         const copies = {
           paragraph: {
@@ -89,22 +89,63 @@
           },
           example: {
             title: `Bài kiểm tra ${testLabel}`,
-            subtitle: "20 câu phản xạ - Việt sang Trung",
+            subtitle: subject === "hanyu1" ? "10 câu phản xạ - Việt sang Trung" : "20 câu phản xạ - Việt sang Trung",
             hint: "Gợi ý: Sử dụng cách nói lịch sự và tự nhiên.",
           },
         };
         return copies[content] || copies.example;
       }
 
+      function getPracticeSubjectInfo(subject) {
+        if (subject === "hanyu1") {
+          return {
+            label: "Giáo trình Hán Ngữ",
+            course: "Hán Ngữ Quyển 1",
+            homeHref: "index.html",
+            listHref: "lessons.html?subject=hanyu1",
+          };
+        }
+        if (subject === "hanyu3") {
+          return {
+            label: "Giáo trình Hán Ngữ",
+            course: "Hán Ngữ Quyển 3",
+            homeHref: "index.html",
+            listHref: "lessons.html?subject=hanyu3",
+          };
+        }
+        if (subject === "writing") {
+          return {
+            label: "Viết",
+            course: "中级写作（I）",
+            homeHref: "lessons.html?subject=writing",
+            listHref: "lessons.html?subject=writing",
+          };
+        }
+        if (subject === "listening") {
+          return {
+            label: "Nghe hiểu",
+            course: "初级听力（II）",
+            homeHref: "lessons.html?subject=listening",
+            listHref: "lessons.html?subject=listening",
+          };
+        }
+        return {
+          label: "Khẩu ngữ",
+          course: "初级口语（II）",
+          homeHref: "lessons.html?subject=speaking",
+          listHref: "lessons.html?subject=speaking",
+        };
+      }
+
       function PracticeActivityForm({ subject, content, lesson, test, subjectLabel }) {
-        const copy = getPracticeActivityCopy(content, test);
+        const copy = getPracticeActivityCopy(content, test, subject);
+        const subjectInfo = getPracticeSubjectInfo(subject);
         const lessonLabel = String(Number(lesson)).padStart(2, "0");
         return `
           <aside class="speaking-sidebar reflex-typing-sidebar">
             <a class="speaking-logo" href="index.html">FTC</a>
             <nav class="speaking-nav" aria-label="Điều hướng luyện tập">
               <a href="index.html">⌂ Trang chủ</a>
-              <a class="is-active" href="lessons.html?subject=${subject}">▣ Học tập</a>
               <button disabled>Flashcard</button>
               <button disabled>Thi thử HSK</button>
               <button disabled>AI hội thoại</button>
@@ -116,13 +157,13 @@
 
           <main class="reflex-typing-main practice-activity-form">
             <div class="speaking-breadcrumb reflex-typing-breadcrumb">
-              <a href="review.html?lesson=${lesson}&subject=${subject}&content=${content}">← Học tập</a>
+              <a href="${subjectInfo.homeHref}">${subjectInfo.label}</a>
               <span>›</span>
-              <span>${subjectLabel}</span>
+              <a href="${subjectInfo.listHref}">${subjectInfo.course}</a>
               <span>›</span>
-              <span>Bài ${lessonLabel}</span>
+              <a id="typingBreadcrumbLesson" href="lesson-options.html?lesson=${lesson}&subject=${subject}">Bài ${lessonLabel}</a>
               <span>›</span>
-              <strong>${copy.title}</strong>
+              <a href="typing.html?lesson=${lesson}&test=${test}&subject=${subject}&content=${content}">${copy.title}</a>
             </div>
 
             <section class="reflex-typing-layout">
@@ -224,7 +265,6 @@
             <small>Học tiếng Trung, dễ như ý</small>
             <nav class="speaking-nav" aria-label="Điều hướng bài tập">
               <a href="index.html">⌂ Trang chủ</a>
-              <a class="is-active" href="lessons.html?subject=${subject}">▣ Học tập</a>
               <button disabled>Flashcard</button>
               <button disabled>Thi thử HSK</button>
               <button disabled>AI hội thoại</button>
@@ -242,7 +282,7 @@
               <span>›</span>
               <a href="review.html?lesson=${lesson}&subject=${subject}&content=exercise">Bài 1 - Bài tập</a>
               <span>›</span>
-              <strong>Bài tập điền từ ${testLabel}</strong>
+              <a href="typing.html?lesson=${lesson}&test=${test}&subject=${subject}&content=exercise">Bài tập điền từ ${testLabel}</a>
             </div>
 
             <section class="fill-exercise-layout">
@@ -520,7 +560,6 @@
             <a class="speaking-logo" href="index.html">FTC</a>
             <nav class="speaking-nav" aria-label="Dieu huong bai tap sua loi">
               <a href="index.html">⌂ Trang chủ</a>
-              <a class="is-active" href="lessons.html?subject=${subject}">▣ Học tập</a>
               <button disabled>Flashcard</button>
               <button disabled>Thi thử HSK</button>
               <button disabled>AI hội thoại</button>
@@ -538,7 +577,7 @@
               <span>›</span>
               <a href="review.html?lesson=${lesson}&subject=${subject}&content=exercise">Bài ${Number(lesson)} - Bài tập</a>
               <span>›</span>
-              <strong id="errorModeLabel">${isPracticalAnswer ? "Trả lời câu hỏi" : "Sửa lỗi sai"}</strong>
+              <a id="errorModeLabel" href="typing.html?lesson=${lesson}&test=${test}&subject=${subject}&content=exercise">${isPracticalAnswer ? "Trả lời câu hỏi" : "Sửa lỗi sai"}</a>
             </div>
 
             <section class="error-exercise-layout">
@@ -891,6 +930,10 @@
             return;
           }
         }
+        if (subject === "writing" && content === "listening") {
+          window.location.replace(`review.html?lesson=${lesson}&subject=writing&content=paragraph`);
+          return;
+        }
         const practiceContents = new Set(["paragraph", "structure", "example"]);
         if (
           !(
@@ -922,7 +965,6 @@
             <a class="speaking-logo" href="index.html">FTC</a>
             <nav class="speaking-nav" aria-label="Điều hướng kiểm tra">
               <a href="index.html">⌂ Trang chủ</a>
-              <a class="is-active" href="lessons.html?subject=${subject}">▣ Học tập</a>
               <button disabled>Flashcard</button>
               <button disabled>Thi thử HSK</button>
               <button disabled>AI hội thoại</button>
@@ -934,13 +976,11 @@
 
           <main class="reflex-typing-main">
             <div class="speaking-breadcrumb reflex-typing-breadcrumb">
-              <a href="review.html?lesson=${lesson}&subject=${subject}&content=${content}">← Học tập</a>
+              <a href="lessons.html?subject=${subject}">${subject === "hanyu3" ? "Hán Ngữ" : "Khẩu ngữ"}</a>
               <span>›</span>
-              <span>${subject === "hanyu3" ? "Hán Ngữ" : "Khẩu ngữ"}</span>
+              <a href="lesson-options.html?lesson=${lesson}&subject=${subject}">Bài ${String(Number(lesson)).padStart(2, "0")}</a>
               <span>›</span>
-              <span>Bài ${String(Number(lesson)).padStart(2, "0")}</span>
-              <span>›</span>
-              <strong>Bài kiểm tra ${String(Number(test)).padStart(2, "0")}</strong>
+              <a href="typing.html?lesson=${lesson}&test=${test}&subject=${subject}&content=${content}">Bài kiểm tra ${String(Number(test)).padStart(2, "0")}</a>
             </div>
 
             <section class="reflex-typing-layout">
