@@ -310,12 +310,49 @@
         window.location.href = `lesson-options.html?lesson=${lesson}&subject=${subject}`;
       }
 
+      const preferredChineseVoiceNames = [
+        "zh-cn-xiaoxiaoneural",
+        "xiaoxiaoneural",
+        "microsoft xiaoxiao",
+        "xiaoxiao",
+        "zh-cn-xiaonineural",
+        "xiaonineural",
+        "microsoft xiaoni",
+        "xiaoni",
+        "google 普通话",
+        "google mandarin",
+        "google chinese"
+      ];
+
+      function scoreChineseVoice(voice) {
+        const text = `${voice.name || ""} ${voice.voiceURI || ""} ${voice.lang || ""}`.toLowerCase();
+        if (!voice.lang || !voice.lang.toLowerCase().startsWith("zh")) return -1;
+        const preferredIndex = preferredChineseVoiceNames.findIndex((name) => text.includes(name));
+        if (preferredIndex >= 0) return 1000 - preferredIndex * 20;
+        if (text.includes("neural")) return 760;
+        if (text.includes("microsoft")) return 700;
+        if (text.includes("google")) return 680;
+        if (voice.lang.toLowerCase() === "zh-cn") return 620;
+        return 500;
+      }
+
+      function getBestChineseVoice() {
+        return window.speechSynthesis
+          .getVoices()
+          .filter((voice) => scoreChineseVoice(voice) >= 0)
+          .sort((a, b) => scoreChineseVoice(b) - scoreChineseVoice(a))[0] || null;
+      }
+
       function speakChinese(text) {
         if (!("speechSynthesis" in window) || !text) return;
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = "zh-CN";
-        utterance.rate = 0.9;
+        const bestVoice = getBestChineseVoice();
+        utterance.lang = bestVoice?.lang || "zh-CN";
+        utterance.voice = bestVoice || null;
+        utterance.rate = 0.86;
+        utterance.pitch = 1.03;
+        utterance.volume = 1;
         window.speechSynthesis.speak(utterance);
       }
 

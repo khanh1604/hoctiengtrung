@@ -206,7 +206,7 @@
         "12": ["你在哪儿学习？", "Bạn học ở đâu?"],
         "13": ["这是不是中药？", "Đây có phải là thuốc Đông y không?"],
         "14": ["你的车是新的还是旧的", "Xe của bạn mới hay cũ?"],
-        "15": ["Bài 15", "Giáo trình Hán ngữ quyển 1"],
+        "15": ["你们有多少职员", "Các bạn có bao nhiêu nhân viên?"],
       };
       const listeningLessonTitles = {
         "1": ["你学了多长时间汉语了", "Bạn học tiếng Trung được bao lâu rồi?"],
@@ -476,7 +476,7 @@
         });
       } else if (subject === "hanyu1") {
         const hanyu1OptionItems = [
-          ...(lessonNumber >= 2 && lessonNumber <= 14
+          ...(lessonNumber >= 2 && lessonNumber <= 15
             ? [{
                 icon: "💬",
                 title: "Ôn tập bài khóa",
@@ -484,7 +484,7 @@
                 action: "vocabulary",
               }]
             : []),
-          ...(lessonNumber >= 1 && lessonNumber <= 14
+          ...(lessonNumber >= 1 && lessonNumber <= 15
             ? [{
                 icon: "📚",
                 title: "Từ mới",
@@ -492,7 +492,7 @@
                 action: "words",
               }]
             : []),
-          ...(lessonNumber >= 10 && lessonNumber <= 14
+          ...(lessonNumber >= 10 && lessonNumber <= 15
             ? [{
                 icon: "🧩",
                 title: "Cấu trúc",

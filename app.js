@@ -260,6 +260,43 @@
     sessionStorage.setItem("ttsRate", String(rate));
   }
 
+  const preferredChineseVoiceNames = [
+    "zh-cn-xiaoxiaoneural",
+    "xiaoxiaoneural",
+    "microsoft xiaoxiao",
+    "xiaoxiao",
+    "zh-cn-xiaonineural",
+    "xiaonineural",
+    "microsoft xiaoni",
+    "xiaoni",
+    "google 普通话",
+    "google mandarin",
+    "google chinese",
+  ];
+
+  function getVoiceSearchText(voice) {
+    return `${voice.name || ""} ${voice.voiceURI || ""} ${voice.lang || ""}`.toLowerCase();
+  }
+
+  function scoreChineseVoice(voice) {
+    const text = getVoiceSearchText(voice);
+    if (!voice.lang || !voice.lang.toLowerCase().startsWith("zh")) return -1;
+
+    const preferredIndex = preferredChineseVoiceNames.findIndex((name) => text.includes(name));
+    if (preferredIndex >= 0) return 1000 - preferredIndex * 20;
+    if (text.includes("neural")) return 760;
+    if (text.includes("microsoft")) return 700;
+    if (text.includes("google")) return 680;
+    if (voice.lang.toLowerCase() === "zh-cn") return 620;
+    return 500;
+  }
+
+  function getBestChineseVoice(voices, usedVoiceURIs = new Set()) {
+    return (voices || [])
+      .filter((voice) => !usedVoiceURIs.has(voice.voiceURI) && scoreChineseVoice(voice) >= 0)
+      .sort((a, b) => scoreChineseVoice(b) - scoreChineseVoice(a))[0] || null;
+  }
+
   function getSelectedVoice(voices) {
     const { voiceURI } = getSavedVoiceSettings();
     if (voiceURI) {
@@ -267,7 +304,7 @@
       if (match) return match;
     }
     const preferredVoices = getLimitedVoiceOptions(voices);
-    return preferredVoices[0]?.voice || voices.find((v) => v.lang && v.lang.startsWith("zh")) || voices[0];
+    return preferredVoices[0]?.voice || getBestChineseVoice(voices) || voices[0];
   }
 
   function findVoiceByLang(voices, langPrefix, usedVoiceURIs) {
@@ -286,8 +323,8 @@
     const usedVoiceURIs = new Set();
     const options = [
       {
-        label: "Tiếng Trung 1",
-        voice: findVoiceByLang(voices, "zh-CN", usedVoiceURIs),
+        label: "Tiếng Trung Neural",
+        voice: getBestChineseVoice(voices, usedVoiceURIs) || findVoiceByLang(voices, "zh-CN", usedVoiceURIs),
         fallbackLang: "zh-CN",
       },
       {
@@ -441,11 +478,16 @@
     const selectedLang =
       voiceSelect?.selectedOptions?.[0]?.dataset?.lang || preferredLang;
     utt.lang = selectedLang;
-    utt.rate = settings.rate;
+    utt.rate = Math.min(settings.rate || 0.88, 0.92);
+    utt.pitch = 1.03;
+    utt.volume = 1;
     const voices = window.speechSynthesis.getVoices();
     if (voices && voices.length) {
       const selectedVoice = getSelectedVoice(voices);
-      if (selectedVoice) utt.voice = selectedVoice;
+      if (selectedVoice) {
+        utt.voice = selectedVoice;
+        utt.lang = selectedVoice.lang || selectedLang;
+      }
     }
     window.speechSynthesis.speak(utt);
   }

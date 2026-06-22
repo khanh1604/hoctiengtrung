@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
+    <link rel="stylesheet" href="style.css?v=ftc-mobile-test-button-align-20260622" />
     <script src="theme.js" defer></script>
   </head>
 
@@ -1014,6 +1014,17 @@
       }
 
       function getStructureImportance(item) {
+        const explicitStars = Number(item.stars || item.star || item.level || 0);
+        if (Number.isFinite(explicitStars) && explicitStars > 0) {
+          const level = Math.max(1, Math.min(5, Math.round(explicitStars)));
+          return {
+            order: Number(item.order || 999),
+            level,
+            label: `${level} sao`,
+            reason: "Mức độ quan trọng từ dữ liệu bài học",
+            explicit: true,
+          };
+        }
         const candidates = [item.title, item.pattern, item.structure, item.formula, item.chinese]
           .filter(Boolean)
           .map((value) => normalizeStructureKey(value));
@@ -1769,7 +1780,7 @@
 
       function renderStructureStars(importance) {
         if (!importance) return "";
-        return "⭐".repeat(importance.level);
+        return "⭐".repeat(Math.max(1, Math.min(5, Number(importance.level) || 1)));
       }
 
       function openStructureDetailPopover(item) {
@@ -2205,6 +2216,11 @@
       }
 
       function renderReview() {
+        document.body.classList.toggle(
+          "structure-review-page",
+          content === "structure" && Number(lesson) >= 10,
+        );
+
         if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3" || subject === "listening") && content === "example") {
           renderReflexReview();
           return;

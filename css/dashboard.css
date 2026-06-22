@@ -1826,3 +1826,102 @@ body.light-theme .dashboard-drawer-panel a.is-active {
     font-size: 8px !important;
   }
 }
+
+/* Mobile readability tuning: compact stats, clearer course rows. */
+@media (max-width: 767px) {
+  .stat-grid {
+    gap: 7px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .stat-card {
+    min-height: 64px !important;
+    padding: 7px 9px !important;
+    border-radius: 10px !important;
+  }
+
+  .stat-icon {
+    width: 19px !important;
+    height: 19px !important;
+    margin-bottom: 2px !important;
+    border-radius: 6px !important;
+    font-size: 11px !important;
+  }
+
+  .stat-card small {
+    font-size: 9.5px !important;
+    line-height: 1.1 !important;
+  }
+
+  .stat-card strong {
+    font-size: 20px !important;
+    line-height: 0.95 !important;
+  }
+
+  .course-panel-head {
+    min-height: 38px !important;
+    padding: 8px 10px !important;
+    font-size: 14px !important;
+  }
+
+  .course-list {
+    padding: 0 9px 8px !important;
+  }
+
+  .course-link {
+    min-height: 46px !important;
+    padding: 8px 0 !important;
+    grid-template-columns: minmax(0, 1fr) 22px !important;
+  }
+
+  .course-link:not(.is-disabled) {
+    margin-inline: -5px !important;
+    padding-inline: 5px !important;
+  }
+
+  .course-link strong {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0 !important;
+  }
+
+  .course-link strong:lang(zh),
+  .panel-green .course-link strong,
+  .panel-violet .course-link strong,
+  .panel-amber .course-link strong {
+    font-family:
+      "Microsoft YaHei",
+      "Noto Sans SC",
+      "PingFang SC",
+      "Source Han Sans SC",
+      sans-serif !important;
+    font-weight: 450 !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  .course-link small {
+    color: #94a3b8 !important;
+    font-size: 10.5px !important;
+    line-height: 1.2 !important;
+    opacity: 0.85 !important;
+  }
+
+  .course-link-state {
+    font-size: 21px !important;
+  }
+}
+
+@media (max-width: 374px) {
+  .course-link strong {
+    font-size: 13.2px !important;
+  }
+
+  .course-link small {
+    font-size: 10px !important;
+  }
+}
+
+/* Final dashboard course title weight override. */
+.course-link strong {
+  font-weight: 450 !important;
+}
