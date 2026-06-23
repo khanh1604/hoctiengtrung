@@ -5730,7 +5730,7 @@ body.light-theme .page-indicator.active-page {
 
 .reflex-test-body strong {
   overflow: hidden;
-  font-size: 15px;
+  font-size: 30px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -15770,13 +15770,572 @@ body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning {
   }
 }
 
+/* Absolute final Chinese title weight inside reflex test cards. */
+body.review-page .reflex-test-body strong .zh-auto,
+body.review-page.reflex-review-page .reflex-test-body strong .zh-auto,
+body.review-page.structure-review-page .reflex-test-body strong .zh-auto {
+  font-weight: 300 !important;
+}
+
+/* Reading lesson detail layout: mobile-first refinements for Hanyu reading passages. */
+body.review-page.reading-detail-page .reading-lesson-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  gap: 14px;
+  align-items: start;
+}
+
+body.review-page.reading-detail-page .reading-lesson-main,
+body.review-page.reading-detail-page .reading-detail-side article,
+body.review-page.reading-detail-page .reading-detail-card {
+  border: 1px solid rgba(96, 165, 250, 0.22);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 0 0, rgba(124, 58, 237, 0.2), transparent 13rem),
+    linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(8, 18, 40, 0.98));
+  color: #e5edff;
+  box-shadow: 0 18px 42px rgba(2, 6, 23, 0.24);
+}
+
+body.review-page.reading-detail-page .reading-lesson-main {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+}
+
+body.review-page.reading-detail-page .reading-detail-card {
+  padding: 20px;
+}
+
+body.review-page.reading-detail-page .reading-side-head span {
+  color: #c4b5fd;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+body.review-page.reading-detail-page .reading-audio-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.72);
+}
+
+body.review-page.reading-detail-page .reading-audio-panel button,
+body.review-page.reading-detail-page .reading-word-sheet-save {
+  border: 1px solid rgba(168, 85, 247, 0.38);
+  border-radius: 10px;
+  color: #f8fafc;
+  background: rgba(88, 28, 135, 0.46);
+  font-weight: 800;
+}
+
+body.review-page.reading-detail-page .reading-speed-control,
+body.review-page.reading-detail-page .reading-toggle-switch {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  color: #dbeafe;
+  font-size: 12px;
+}
+
+body.review-page.reading-detail-page .reading-speed-control input {
+  width: 110px;
+  accent-color: #a855f7;
+}
+
+body.review-page.reading-detail-page .reading-section h3 {
+  color: #c084fc;
+}
+
+body.review-page.reading-detail-page .reading-main-text h3 {
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+body.review-page.reading-detail-page .reading-section-body,
+body.review-page.reading-detail-page .reading-section-body p {
+  color: #dbeafe;
+}
+
+body.review-page.reading-detail-page .reading-chinese {
+  color: #f8fafc;
+  font-size: 20px;
+  line-height: 2;
+}
+
+body.review-page.reading-detail-page .reading-word-chip {
+  display: inline;
+  margin: 0;
+  border: 0;
+  border-radius: 8px;
+  padding: 0 2px;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+body.review-page.reading-detail-page .reading-word-chip:hover,
+body.review-page.reading-detail-page .reading-word-chip:focus-visible {
+  color: #fef3c7;
+  background: rgba(168, 85, 247, 0.28);
+  outline: none;
+}
+
+body.review-page.reading-detail-page .reading-detail-side {
+  display: grid;
+  gap: 12px;
+}
+
+body.review-page.reading-detail-page .reading-detail-side article {
+  padding: 14px;
+}
+
+body.review-page.reading-detail-page .reading-side-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+body.review-page.reading-detail-page .reading-side-head h3 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 16px;
+}
+
+body.review-page.reading-detail-page .reading-word-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.review-page.reading-detail-page .reading-word-row {
+  display: grid;
+  grid-template-columns: minmax(44px, 0.8fr) minmax(70px, 1fr) minmax(80px, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 8px;
+  color: #cbd5e1;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+body.review-page.reading-detail-page .reading-word-row:hover {
+  background: rgba(96, 165, 250, 0.1);
+}
+
+body.review-page.reading-detail-page .reading-word-row strong {
+  color: #f8fafc;
+}
+
+body.review-page.reading-detail-page .reading-word-row small {
+  color: #bfdbfe;
+}
+
+body.review-page.reading-detail-page .reading-mobile-actions {
+  display: none;
+}
+
+body.review-page.reading-detail-page .reading-word-sheet[hidden] {
+  display: none !important;
+}
+
+body.review-page.reading-detail-page .reading-word-sheet:not([hidden]) {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+}
+
+body.review-page.reading-detail-page .reading-word-sheet-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(2, 6, 23, 0.56);
+}
+
+body.review-page.reading-detail-page .reading-word-sheet-panel {
+  position: fixed;
+  right: 50%;
+  bottom: 18px;
+  width: min(420px, calc(100vw - 28px));
+  transform: translateX(50%);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  border-radius: 22px;
+  padding: 18px;
+  color: #e5edff;
+  background: linear-gradient(160deg, rgba(15, 23, 42, 0.98), rgba(30, 27, 75, 0.98));
+  box-shadow: 0 -16px 46px rgba(2, 6, 23, 0.48);
+}
+
+body.review-page.reading-detail-page .reading-word-sheet-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: 0;
+  color: #cbd5e1;
+  background: transparent;
+  font-size: 24px;
+}
+
+body.review-page.reading-detail-page .reading-word-sheet-panel span {
+  color: #c084fc;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+body.review-page.reading-detail-page .reading-word-sheet-panel h3 {
+  margin: 8px 0 4px;
+  color: #fff;
+  font-size: 28px;
+}
+
+body.review-page.reading-detail-page .reading-word-sheet-pinyin {
+  margin: 0 0 8px;
+  color: #93c5fd;
+}
+
+body.review-page.reading-detail-page .reading-word-sheet-meaning {
+  display: block;
+  margin-bottom: 14px;
+  color: #fef3c7;
+}
+
+@media (max-width: 480px) {
+  body.review-page.reading-detail-page {
+    overflow-x: hidden !important;
+  }
+
+  body.review-page.reading-detail-page .review-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px 0 92px !important;
+  }
+
+  body.review-page.reading-detail-page .review-title,
+  body.review-page.reading-detail-page .review-subtitle {
+    display: none !important;
+  }
+
+  body.review-page.reading-detail-page .back-btn-review {
+    margin: 0 0 8px !important;
+    padding: 8px 10px !important;
+    border-radius: 10px !important;
+    font-size: 12px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-lesson-detail {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  body.review-page.reading-detail-page .reading-lesson-main {
+    order: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+    padding: 0 12px !important;
+    border-radius: 16px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-detail-side {
+    order: 2 !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-audio-panel {
+    order: 2 !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100% !important;
+    padding: 9px !important;
+    overflow: visible !important;
+  }
+
+  body.review-page.reading-detail-page .reading-audio-panel button {
+    min-height: 32px !important;
+    padding: 7px 5px !important;
+    border-radius: 9px !important;
+    font-size: 11px !important;
+    white-space: nowrap !important;
+  }
+
+  body.review-page.reading-detail-page .reading-speed-control {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+    padding: 2px 4px 0 !important;
+    font-size: 11px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-speed-control input {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 90px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-toggle-switch {
+    grid-column: span 1 !important;
+    grid-row: 3 !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    min-width: 0 !important;
+    padding: 4px 6px !important;
+    border-radius: 999px !important;
+    background: rgba(15, 23, 42, 0.72) !important;
+    font-size: 11px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-toggle-switch span {
+    font-size: 11px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-toggle-switch span {
+    color: #dbeafe !important;
+    white-space: nowrap !important;
+  }
+
+  body.review-page.reading-detail-page .reading-toggle-switch input {
+    width: 28px !important;
+    height: 16px !important;
+    accent-color: #a855f7 !important;
+  }
+
+  body.review-page.reading-detail-page .reading-detail-card {
+    order: 1 !important;
+    width: 100% !important;
+    padding: 12px !important;
+    border-radius: 15px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-section {
+    margin-top: 14px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-section:first-child {
+    margin-top: 0 !important;
+  }
+
+  body.review-page.reading-detail-page .reading-section h3 {
+    margin-bottom: 8px !important;
+    font-size: 16px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-main-text h3 {
+    margin-bottom: 16px !important;
+    text-align: center !important;
+    font-size: 21px !important;
+    line-height: 1.35 !important;
+  }
+
+  body.review-page.reading-detail-page .reading-section-body {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+  }
+
+  body.review-page.reading-detail-page .reading-chinese {
+    width: 100% !important;
+    font-size: 18px !important;
+    line-height: 2 !important;
+    letter-spacing: 0.2px !important;
+    text-align: justify !important;
+    text-align-last: auto !important;
+  }
+
+  body.review-page.reading-detail-page .reading-section-body p {
+    margin-bottom: 12px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-word-chip {
+    min-height: 30px !important;
+    padding: 1px 2px !important;
+    border-radius: 6px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-detail-side article {
+    padding: 12px !important;
+    border-radius: 15px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-word-list {
+    max-height: none !important;
+    gap: 5px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-word-row {
+    grid-template-columns: minmax(56px, 0.8fr) minmax(76px, 1fr) minmax(84px, 1fr) 18px !important;
+    gap: 6px !important;
+    padding: 7px 4px !important;
+    font-size: 12px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-word-row strong {
+    font-size: 15px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-mobile-actions {
+    position: fixed !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: 1100 !important;
+    display: flex !important;
+    gap: 7px !important;
+    padding: 9px 10px calc(9px + env(safe-area-inset-bottom)) !important;
+    border-top: 1px solid rgba(96, 165, 250, 0.24) !important;
+    background: rgba(3, 7, 18, 0.96) !important;
+    box-shadow: 0 -12px 34px rgba(2, 6, 23, 0.5) !important;
+    backdrop-filter: blur(14px) !important;
+  }
+
+  body.review-page.reading-detail-page .reading-mobile-actions button {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    min-height: 42px !important;
+    border: 1px solid rgba(168, 85, 247, 0.34) !important;
+    border-radius: 12px !important;
+    padding: 8px 5px !important;
+    color: #f8fafc !important;
+    background: rgba(15, 23, 42, 0.94) !important;
+    font-size: 12px !important;
+    font-weight: 850 !important;
+    white-space: nowrap !important;
+  }
+
+  body.review-page.reading-detail-page .reading-mobile-actions .reading-mobile-quiz {
+    flex: 1.45 1 0 !important;
+    border-color: rgba(196, 181, 253, 0.62) !important;
+    background: linear-gradient(135deg, #7c3aed, #4f46e5) !important;
+  }
+
+  body.review-page.reading-detail-page .reading-mobile-actions .reading-mobile-quiz.is-done {
+    background: linear-gradient(135deg, #059669, #2563eb) !important;
+  }
+
+  body.review-page.reading-detail-page .reading-word-sheet-panel {
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-height: 70vh !important;
+    transform: none !important;
+    border-radius: 22px 22px 0 0 !important;
+    padding: 18px 18px calc(22px + env(safe-area-inset-bottom)) !important;
+    animation: readingSheetRise 0.22s ease-out both;
+  }
+}
+
+@keyframes readingSheetRise {
+  from {
+    transform: translateY(18px);
+    opacity: 0.6;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Final mobile reading layout guard: full-width text first, controls below. */
+@media (max-width: 480px) {
+  body.review-page.reading-detail-page .review-content {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  body.review-page.reading-detail-page .reading-lesson-main {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-detail-card {
+    order: 1 !important;
+    width: 100% !important;
+  }
+
+  body.review-page.reading-detail-page .reading-audio-panel {
+    order: 2 !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+
+  body.review-page.reading-detail-page .reading-speed-control {
+    grid-column: 1 / -1 !important;
+  }
+
+  body.review-page.reading-detail-page .reading-toggle-switch {
+    grid-row: 3 !important;
+    justify-content: center !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+  }
+
+  body.review-page.reading-detail-page .reading-toggle-switch span {
+    color: #dbeafe !important;
+    white-space: nowrap !important;
+  }
+
+  body.review-page.reading-detail-page .reading-toggle-switch span::before {
+    content: none !important;
+  }
+
+  body.review-page.reading-detail-page .reading-chinese {
+    width: 100% !important;
+    text-align: justify !important;
+    line-height: 2 !important;
+  }
+}
+
+/* Absolute final Chinese title weight inside reflex test cards. */
+body.review-page .reflex-test-body strong .zh-auto,
+body.review-page.reflex-review-page .reflex-test-body strong .zh-auto,
+body.review-page.structure-review-page .reflex-test-body strong .zh-auto {
+  font-weight: 300 !important;
+}
+
+/* Lighten Chinese titles inside reflex test cards. */
+body.review-page .reflex-test-body strong .zh-auto,
+body.review-page.reflex-review-page .reflex-test-body strong .zh-auto,
+body.review-page.structure-review-page .reflex-test-body strong .zh-auto {
+  font-weight: 300 !important;
+}
+
 /* Absolute final lock: keep mobile test grids compact and keep Start buttons visible. */
 @media (max-width: 700px) {
   body.review-page.structure-review-page #reviewGrid.practice-activity-list,
-  body.review-page.structure-review-page .speaking-primary .practice-activity-list,
+  body.review-page.structure-review-page
+    .speaking-primary
+    .practice-activity-list,
   body.review-page.reflex-review-page #reviewGrid.reflex-test-list,
   body.review-page.reflex-review-page .speaking-primary .reflex-test-list,
-  body.review-page.reflex-review-page .speaking-primary .practice-activity-list {
+  body.review-page.reflex-review-page
+    .speaking-primary
+    .practice-activity-list {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
@@ -15862,10 +16421,14 @@ body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning {
 /* True final lock: mobile structure/reflex tests stay two-column and keep action buttons. */
 @media (max-width: 700px) {
   body.review-page.structure-review-page #reviewGrid.practice-activity-list,
-  body.review-page.structure-review-page .speaking-primary .practice-activity-list,
+  body.review-page.structure-review-page
+    .speaking-primary
+    .practice-activity-list,
   body.review-page.reflex-review-page #reviewGrid.reflex-test-list,
   body.review-page.reflex-review-page .speaking-primary .reflex-test-list,
-  body.review-page.reflex-review-page .speaking-primary .practice-activity-list {
+  body.review-page.reflex-review-page
+    .speaking-primary
+    .practice-activity-list {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
@@ -15964,7 +16527,9 @@ body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning {
 @media (max-width: 700px) {
   body.review-page.reflex-review-page #reviewGrid.reflex-test-list,
   body.review-page.reflex-review-page .speaking-primary .reflex-test-list,
-  body.review-page.reflex-review-page .speaking-primary .practice-activity-list {
+  body.review-page.reflex-review-page
+    .speaking-primary
+    .practice-activity-list {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
@@ -16038,10 +16603,14 @@ body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning {
 /* Last cascade guard: structure/reflex mobile tests keep two columns and visible buttons. */
 @media (max-width: 700px) {
   body.review-page.structure-review-page #reviewGrid.practice-activity-list,
-  body.review-page.structure-review-page .speaking-primary .practice-activity-list,
+  body.review-page.structure-review-page
+    .speaking-primary
+    .practice-activity-list,
   body.review-page.reflex-review-page #reviewGrid.reflex-test-list,
   body.review-page.reflex-review-page .speaking-primary .reflex-test-list,
-  body.review-page.reflex-review-page .speaking-primary .practice-activity-list {
+  body.review-page.reflex-review-page
+    .speaking-primary
+    .practice-activity-list {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
@@ -16130,4 +16699,11 @@ body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning {
     margin: 0 !important;
     padding: 6px 8px !important;
   }
+}
+
+/* Absolute final Chinese title weight inside reflex test cards. */
+body.review-page .reflex-test-body strong .zh-auto,
+body.review-page.reflex-review-page .reflex-test-body strong .zh-auto,
+body.review-page.structure-review-page .reflex-test-body strong .zh-auto {
+  font-weight: 300 !important;
 }

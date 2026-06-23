@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập - Chinese Learning</title>
-    <link rel="stylesheet" href="style.css?v=ftc-mobile-test-button-align-20260622" />
+    <link rel="stylesheet" href="style.css?v=ftc-mobile-reading-detail-20260622" />
     <script src="theme.js" defer></script>
   </head>
 
@@ -674,13 +674,95 @@
           .replace(/"/g, "&quot;");
       }
 
-      function speakChinese(text) {
+      const preferredChineseVoiceNames = [
+        "zh-cn-xiaoxiaoneural",
+        "xiaoxiaoneural",
+        "microsoft xiaoxiao",
+        "xiaoxiao",
+        "zh-cn-xiaonineural",
+        "xiaonineural",
+        "microsoft xiaoni",
+        "xiaoni",
+        "google 普通话",
+        "google mandarin",
+        "google chinese"
+      ];
+
+      function scoreChineseVoice(voice) {
+        const text = `${voice.name || ""} ${voice.voiceURI || ""} ${voice.lang || ""}`.toLowerCase();
+        if (!voice.lang || !voice.lang.toLowerCase().startsWith("zh")) return -1;
+        const preferredIndex = preferredChineseVoiceNames.findIndex((name) => text.includes(name));
+        if (preferredIndex >= 0) return 1000 - preferredIndex * 20;
+        if (text.includes("neural")) return 760;
+        if (text.includes("microsoft")) return 700;
+        if (text.includes("google")) return 680;
+        if (voice.lang.toLowerCase() === "zh-cn") return 620;
+        return 500;
+      }
+
+      function getBestChineseVoice() {
+        return window.speechSynthesis
+          .getVoices()
+          .filter((voice) => scoreChineseVoice(voice) >= 0)
+          .sort((a, b) => scoreChineseVoice(b) - scoreChineseVoice(a))[0] || null;
+      }
+
+      function wakeSpeechSynthesis() {
+        if (!("speechSynthesis" in window)) return;
+        try {
+          window.speechSynthesis.resume();
+          const wakeUtterance = new SpeechSynthesisUtterance(" ");
+          wakeUtterance.lang = "zh-CN";
+          wakeUtterance.volume = 0;
+          window.speechSynthesis.speak(wakeUtterance);
+          window.speechSynthesis.cancel();
+        } catch (e) {}
+      }
+
+      function speakWhenChineseVoicesReady(utterance, applyVoice) {
+        const synth = window.speechSynthesis;
+        if (!synth) return;
+        let started = false;
+
+        const speakNow = () => {
+          if (started) return;
+          started = true;
+          try {
+            synth.cancel();
+            synth.resume();
+            applyVoice?.();
+            setTimeout(() => synth.speak(utterance), 0);
+          } catch (e) {}
+        };
+
+        const voices = synth.getVoices();
+        if (voices && voices.length) {
+          speakNow();
+          return;
+        }
+
+        const handleVoicesChanged = () => {
+          synth.removeEventListener?.("voiceschanged", handleVoicesChanged);
+          speakNow();
+        };
+        synth.addEventListener?.("voiceschanged", handleVoicesChanged, { once: true });
+        wakeSpeechSynthesis();
+        setTimeout(speakNow, 250);
+      }
+
+      function speakChinese(text, options = {}) {
         if (!("speechSynthesis" in window) || !text) return;
-        window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = "zh-CN";
-        utterance.rate = 0.9;
-        window.speechSynthesis.speak(utterance);
+        utterance.rate = Number(options.rate) || 0.86;
+        utterance.pitch = 1.03;
+        utterance.volume = 1;
+
+        speakWhenChineseVoicesReady(utterance, () => {
+          const bestVoice = getBestChineseVoice();
+          utterance.lang = bestVoice?.lang || "zh-CN";
+          utterance.voice = bestVoice || null;
+        });
       }
 
       function getSpeakingStructureItems(data) {
@@ -743,6 +825,45 @@
           .join("");
       }
 
+      function getReadingWordsForText(data, text) {
+        const sourceWords = getSpeakingWordItems(data);
+        const seen = new Set();
+        const matchedWords = (sourceWords || []).filter((word) => {
+          const chinese = getWordText(word);
+          if (!chinese || seen.has(chinese)) return false;
+          seen.add(chinese);
+          return String(text || "").includes(chinese);
+        });
+        return (matchedWords.length ? matchedWords : sourceWords || []).slice(0, 12);
+      }
+
+      function renderInteractiveReadingText(text, words) {
+        const tokens = (words || [])
+          .map((word, index) => ({ word, index, text: getWordText(word) }))
+          .filter((item) => item.text && item.text.length >= 2)
+          .sort((a, b) => b.text.length - a.text.length);
+
+        const line = String(text || "")
+          .split(/\n+/)
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .join("");
+
+        let html = "";
+        let position = 0;
+        while (position < line.length) {
+          const matched = tokens.find((token) => line.startsWith(token.text, position));
+          if (matched) {
+            html += `<button class="reading-word-chip" type="button" data-word-index="${matched.index}">${escapeHtml(matched.text)}</button>`;
+            position += matched.text.length;
+          } else {
+            html += escapeHtml(line[position]);
+            position += 1;
+          }
+        }
+        return `<p>${html}</p>`;
+      }
+
       function getReadingPassageText(group, field) {
         if (Array.isArray(group.lines)) {
           return group.lines.map((line) => line[field]).filter(Boolean).join("\n");
@@ -752,39 +873,149 @@
 
       async function renderReadingPassage(testNumber) {
         const data = await loadSpeakingLessonData();
-        const group = getSpeakingParagraphGroups(data)[Number(testNumber) - 1];
+        const paragraphGroups = getSpeakingParagraphGroups(data);
+        const group = paragraphGroups[Number(testNumber) - 1];
         if (!isReadingPassage(group)) return;
 
+        document.body.classList.add("reading-detail-page");
+        const chineseText = getReadingPassageText(group, "chinese");
+        const pinyinText = getReadingPassageText(group, "pinyin");
+        const vietnameseText = getReadingPassageText(group, "vietnamese");
+        const readingWords = getReadingWordsForText(data, chineseText);
+        const readTotalKey = `readingPassageReadTotal-${subject}-${lesson}`;
+        const currentReadKey = `readingPassageRead-${subject}-${lesson}-${testNumber}`;
         const grid = document.getElementById("reviewGrid");
-        grid.className = "reading-detail-wrap";
+        grid.className = "reading-detail-wrap reading-lesson-detail";
         grid.innerHTML = `
-          <button class="structure-back-btn reading-back-btn" type="button">← Danh sách bài khóa</button>
-          <article class="reading-detail-card">
-            <h2>${escapeHtml(group.title || `${testNumber}. Đoạn văn ${testNumber}`)}</h2>
-            <section class="reading-section">
-              <h3>Tiếng Trung:</h3>
-              <div class="reading-section-body reading-chinese">
-                ${renderReadingText(getReadingPassageText(group, "chinese"))}
+          <section class="reading-lesson-main">
+            <div class="reading-audio-panel">
+              <button class="reading-audio-play" type="button">▶ Phát</button>
+              <button class="reading-audio-pause" type="button">⏸ Tạm dừng</button>
+              <button class="reading-audio-repeat" type="button">↻ Lặp lại</button>
+              <label class="reading-speed-control">
+                <span>Tốc độ</span>
+                <input id="readingSpeechRate" type="range" min="0.7" max="1.2" step="0.1" value="1" />
+                <em id="readingSpeechRateValue">1.0x</em>
+              </label>
+              <label class="reading-toggle-switch reading-pinyin-toggle"><span>Pinyin</span><input id="toggleReadingPinyin" type="checkbox" /></label>
+              <label class="reading-toggle-switch reading-meaning-toggle"><span>Nghĩa Việt</span><input id="toggleReadingMeaning" type="checkbox" /></label>
+            </div>
+
+            <article class="reading-detail-card">
+              <section class="reading-section reading-main-text">
+                <h3>${escapeHtml(group.title || "Bài đọc")}</h3>
+                <div class="reading-section-body reading-chinese">
+                  ${renderInteractiveReadingText(chineseText, readingWords)}
+                </div>
+              </section>
+              <section class="reading-section reading-pinyin-section" hidden>
+                <h3>Pinyin</h3>
+                <div class="reading-section-body">
+                  ${renderReadingText(pinyinText)}
+                </div>
+              </section>
+              <section class="reading-section reading-meaning-section" hidden>
+                <h3>Nghĩa Việt</h3>
+                <div class="reading-section-body">
+                  ${renderReadingText(vietnameseText)}
+                </div>
+              </section>
+            </article>
+          </section>
+
+          <aside class="reading-detail-side">
+            <article class="reading-words-card">
+              <div class="reading-side-head">
+                <h3>Từ mới trong bài</h3>
+                <span>${readingWords.length} từ</span>
               </div>
-            </section>
-            <section class="reading-section">
-              <h3>Phiên âm:</h3>
-              <div class="reading-section-body">
-                ${renderReadingText(getReadingPassageText(group, "pinyin"))}
-              </div>
-            </section>
-            <section class="reading-section">
-              <h3>Nghĩa:</h3>
-              <div class="reading-section-body">
-                ${renderReadingText(getReadingPassageText(group, "vietnamese"))}
-              </div>
-            </section>
-          </article>
+              <ol class="reading-word-list">
+                ${readingWords.length
+                  ? readingWords.map((word, index) => `
+                    <li>
+                      <button class="reading-word-row" type="button" data-word-index="${index}">
+                        <strong>${escapeHtml(getWordText(word))}</strong>
+                        <span>${escapeHtml(word.pinyin || "")}</span>
+                        <small>${escapeHtml(word.vietnamese || word.meaning || "")}</small>
+                        <em>☆</em>
+                      </button>
+                    </li>
+                  `).join("")
+                  : "<li><small>Chưa có danh sách từ mới riêng.</small></li>"
+                }
+              </ol>
+            </article>
+          </aside>
+
+          <nav class="reading-mobile-actions" aria-label="Công cụ bài đọc">
+            <button class="reading-mobile-replay" type="button">↻ Đọc lại</button>
+            <button class="reading-mobile-save" type="button">☆ Lưu từ mới</button>
+            <button class="reading-mobile-quiz" type="button">📝 Làm bài đọc hiểu</button>
+          </nav>
+
+          <div class="reading-word-sheet" hidden>
+            <button class="reading-word-sheet-backdrop" type="button" aria-label="Đóng giải nghĩa"></button>
+            <article class="reading-word-sheet-panel" role="dialog" aria-modal="true" aria-labelledby="readingWordSheetTitle">
+              <button class="reading-word-sheet-close" type="button" aria-label="Đóng">×</button>
+              <span>Từ mới</span>
+              <h3 id="readingWordSheetTitle"></h3>
+              <p class="reading-word-sheet-pinyin"></p>
+              <strong class="reading-word-sheet-meaning"></strong>
+              <button class="reading-word-sheet-save" type="button">☆ Lưu từ mới</button>
+            </article>
+          </div>
         `;
-        grid.querySelector(".reading-back-btn").onclick = async () => {
-          await loadSpeakingParagraphTests();
-          renderReview();
+        const readWithCurrentSpeed = () => {
+          const rate = Number(grid.querySelector("#readingSpeechRate")?.value || 1);
+          speakChinese(chineseText, { rate });
         };
+        const markCurrentReading = () => {
+          localStorage.setItem(currentReadKey, "1");
+          const nextReadCount = paragraphGroups.filter((_, index) =>
+            localStorage.getItem(`readingPassageRead-${subject}-${lesson}-${index + 1}`) === "1",
+          ).length;
+          localStorage.setItem(readTotalKey, String(nextReadCount));
+          grid.querySelector(".reading-mobile-quiz")?.classList.add("is-done");
+        };
+        const openWordSheet = (word) => {
+          const sheet = grid.querySelector(".reading-word-sheet");
+          if (!sheet || !word) return;
+          sheet.querySelector("#readingWordSheetTitle").textContent = getWordText(word);
+          sheet.querySelector(".reading-word-sheet-pinyin").textContent = word.pinyin || "";
+          sheet.querySelector(".reading-word-sheet-meaning").textContent = word.vietnamese || word.meaning || "Đang bổ sung";
+          sheet.hidden = false;
+          document.body.classList.add("reading-word-sheet-open");
+        };
+        const closeWordSheet = () => {
+          const sheet = grid.querySelector(".reading-word-sheet");
+          if (sheet) sheet.hidden = true;
+          document.body.classList.remove("reading-word-sheet-open");
+        };
+        grid.querySelector(".reading-audio-play")?.addEventListener("click", readWithCurrentSpeed);
+        grid.querySelector(".reading-audio-repeat")?.addEventListener("click", readWithCurrentSpeed);
+        grid.querySelector(".reading-audio-pause")?.addEventListener("click", () => window.speechSynthesis?.pause());
+        grid.querySelector("#readingSpeechRate")?.addEventListener("input", (event) => {
+          const value = Number(event.target.value || 1).toFixed(1);
+          const label = grid.querySelector("#readingSpeechRateValue");
+          if (label) label.textContent = `${value}x`;
+        });
+        grid.querySelector("#toggleReadingPinyin")?.addEventListener("change", (event) => {
+          grid.querySelector(".reading-pinyin-section").hidden = !event.target.checked;
+        });
+        grid.querySelector("#toggleReadingMeaning")?.addEventListener("change", (event) => {
+          grid.querySelector(".reading-meaning-section").hidden = !event.target.checked;
+        });
+        grid.querySelectorAll(".reading-word-chip, .reading-word-row").forEach((button) => {
+          button.addEventListener("click", () => openWordSheet(readingWords[Number(button.dataset.wordIndex)]));
+        });
+        grid.querySelector(".reading-word-sheet-backdrop")?.addEventListener("click", closeWordSheet);
+        grid.querySelector(".reading-word-sheet-close")?.addEventListener("click", closeWordSheet);
+        grid.querySelector(".reading-word-sheet-save")?.addEventListener("click", closeWordSheet);
+        grid.querySelector(".reading-mobile-replay")?.addEventListener("click", readWithCurrentSpeed);
+        grid.querySelector(".reading-mobile-save")?.addEventListener("click", () => {
+          grid.querySelector(".reading-words-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+        grid.querySelector(".reading-mobile-quiz")?.addEventListener("click", markCurrentReading);
       }
 
       let speakingWordItems = [];
@@ -2216,6 +2447,7 @@
       }
 
       function renderReview() {
+        document.body.classList.remove("reading-detail-page", "reading-word-sheet-open");
         document.body.classList.toggle(
           "structure-review-page",
           content === "structure" && Number(lesson) >= 10,

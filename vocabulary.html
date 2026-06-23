@@ -343,17 +343,62 @@
           .sort((a, b) => scoreChineseVoice(b) - scoreChineseVoice(a))[0] || null;
       }
 
+      function wakeSpeechSynthesis() {
+        if (!("speechSynthesis" in window)) return;
+        try {
+          window.speechSynthesis.resume();
+          const wakeUtterance = new SpeechSynthesisUtterance(" ");
+          wakeUtterance.lang = "zh-CN";
+          wakeUtterance.volume = 0;
+          window.speechSynthesis.speak(wakeUtterance);
+          window.speechSynthesis.cancel();
+        } catch (e) {}
+      }
+
+      function speakWhenChineseVoicesReady(utterance, applyVoice) {
+        const synth = window.speechSynthesis;
+        if (!synth) return;
+        let started = false;
+
+        const speakNow = () => {
+          if (started) return;
+          started = true;
+          try {
+            synth.cancel();
+            synth.resume();
+            applyVoice?.();
+            setTimeout(() => synth.speak(utterance), 0);
+          } catch (e) {}
+        };
+
+        const voices = synth.getVoices();
+        if (voices && voices.length) {
+          speakNow();
+          return;
+        }
+
+        const handleVoicesChanged = () => {
+          synth.removeEventListener?.("voiceschanged", handleVoicesChanged);
+          speakNow();
+        };
+        synth.addEventListener?.("voiceschanged", handleVoicesChanged, { once: true });
+        wakeSpeechSynthesis();
+        setTimeout(speakNow, 250);
+      }
+
       function speakChinese(text) {
         if (!("speechSynthesis" in window) || !text) return;
-        window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
-        const bestVoice = getBestChineseVoice();
-        utterance.lang = bestVoice?.lang || "zh-CN";
-        utterance.voice = bestVoice || null;
+        utterance.lang = "zh-CN";
         utterance.rate = 0.86;
         utterance.pitch = 1.03;
         utterance.volume = 1;
-        window.speechSynthesis.speak(utterance);
+
+        speakWhenChineseVoicesReady(utterance, () => {
+          const bestVoice = getBestChineseVoice();
+          utterance.lang = bestVoice?.lang || "zh-CN";
+          utterance.voice = bestVoice || null;
+        });
       }
 
       function getVocabHanViet(item) {

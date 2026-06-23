@@ -292,9 +292,11 @@
   }
 
   function getBestChineseVoice(voices, usedVoiceURIs = new Set()) {
-    return (voices || [])
+    const bestVoice = (voices || [])
       .filter((voice) => !usedVoiceURIs.has(voice.voiceURI) && scoreChineseVoice(voice) >= 0)
       .sort((a, b) => scoreChineseVoice(b) - scoreChineseVoice(a))[0] || null;
+    if (bestVoice) usedVoiceURIs.add(bestVoice.voiceURI);
+    return bestVoice;
   }
 
   function getSelectedVoice(voices) {
@@ -467,13 +469,55 @@
     return `Khá (${exp}/${totalQuestions} đúng)`;
   }
 
-  // Simple TTS helper using the Web Speech API
-  function speakText(text, preferredLang = "zh-CN") {
+  function wakeSpeechSynthesis() {
     if (!window.speechSynthesis) return;
-    const settings = getSavedVoiceSettings();
     try {
+      window.speechSynthesis.resume();
+      const wakeUtterance = new SpeechSynthesisUtterance(" ");
+      wakeUtterance.volume = 0;
+      wakeUtterance.rate = 1;
+      wakeUtterance.lang = "zh-CN";
+      window.speechSynthesis.speak(wakeUtterance);
       window.speechSynthesis.cancel();
     } catch (e) {}
+  }
+
+  function speakUtteranceWhenVoicesReady(utterance, configureVoice) {
+    const synth = window.speechSynthesis;
+    if (!synth) return;
+    let started = false;
+
+    const speakNow = () => {
+      if (started) return;
+      started = true;
+      try {
+        synth.cancel();
+        synth.resume();
+        configureVoice?.();
+        setTimeout(() => synth.speak(utterance), 0);
+      } catch (e) {}
+    };
+
+    const voices = synth.getVoices();
+    if (voices && voices.length) {
+      speakNow();
+      return;
+    }
+
+    const handleVoicesChanged = () => {
+      synth.removeEventListener?.("voiceschanged", handleVoicesChanged);
+      populateVoiceOptions();
+      speakNow();
+    };
+    synth.addEventListener?.("voiceschanged", handleVoicesChanged, { once: true });
+    wakeSpeechSynthesis();
+    setTimeout(speakNow, 250);
+  }
+
+  // Simple TTS helper using the Web Speech API
+  function speakText(text, preferredLang = "zh-CN") {
+    if (!window.speechSynthesis || !text) return;
+    const settings = getSavedVoiceSettings();
     const utt = new SpeechSynthesisUtterance(String(text || ""));
     const selectedLang =
       voiceSelect?.selectedOptions?.[0]?.dataset?.lang || preferredLang;
@@ -481,15 +525,15 @@
     utt.rate = Math.min(settings.rate || 0.88, 0.92);
     utt.pitch = 1.03;
     utt.volume = 1;
-    const voices = window.speechSynthesis.getVoices();
-    if (voices && voices.length) {
-      const selectedVoice = getSelectedVoice(voices);
+
+    speakUtteranceWhenVoicesReady(utt, () => {
+      const voices = window.speechSynthesis.getVoices();
+      const selectedVoice = getSelectedVoice(voices || []);
       if (selectedVoice) {
         utt.voice = selectedVoice;
         utt.lang = selectedVoice.lang || selectedLang;
       }
-    }
-    window.speechSynthesis.speak(utt);
+    });
   }
 
   function populateVoiceOptions() {
