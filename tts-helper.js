@@ -15,6 +15,23 @@
   let isStopped = false;
   let activeTrigger = null;
   let lastTrigger = null;
+  const sharedAudio = document.createElement("audio");
+  sharedAudio.preload = "auto";
+  sharedAudio.playsInline = true;
+
+  function debugLog(message, data) {
+    console.log(`[FTCTTS] ${message}`, data || "");
+  }
+
+  function logAudioError(message, error, audio) {
+    console.error(`[FTCTTS] ${message}`, {
+      name: error?.name || "UnknownError",
+      message: error?.message || String(error || ""),
+      src: audio?.currentSrc || audio?.src || "",
+      readyState: audio?.readyState,
+      networkState: audio?.networkState,
+    });
+  }
 
   function getAudioTrigger(target) {
     return target?.closest?.(AUDIO_TRIGGER_SELECTOR) || null;
@@ -86,6 +103,25 @@
     } catch (e) {}
   }
 
+  function waitForVoices(timeoutMs = 700) {
+    const synth = window.speechSynthesis;
+    if (!synth) return Promise.resolve([]);
+    const voices = synth.getVoices();
+    if (voices?.length) return Promise.resolve(voices);
+
+    return new Promise((resolve) => {
+      let resolved = false;
+      const finish = () => {
+        if (resolved) return;
+        resolved = true;
+        synth.removeEventListener?.("voiceschanged", finish);
+        resolve(synth.getVoices() || []);
+      };
+      synth.addEventListener?.("voiceschanged", finish, { once: true });
+      window.setTimeout(finish, timeoutMs);
+    });
+  }
+
   function stop() {
     isStopped = true;
     clearActiveTrigger();
@@ -98,6 +134,10 @@
         currentAudio.currentTime = 0;
       } catch (e) {}
     }
+    try {
+      sharedAudio.pause();
+      sharedAudio.currentTime = 0;
+    } catch (e) {}
     currentAudio = null;
   }
 
@@ -111,6 +151,9 @@
         currentAudio.pause();
       } catch (e) {}
     }
+    try {
+      sharedAudio.pause();
+    } catch (e) {}
   }
 
   function buildRemoteTtsUrl(text, lang) {
@@ -118,33 +161,52 @@
     return `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${encodeURIComponent(lang || "zh-CN")}&q=${query}`;
   }
 
-  function playAudioUrl(url) {
-    return new Promise((resolve, reject) => {
-      const audio = new Audio(url);
-      currentAudio = audio;
-      audio.preload = "auto";
-      audio.playsInline = true;
-      audio.onended = resolve;
-      audio.onerror = reject;
-      const playPromise = audio.play();
-      if (playPromise && typeof playPromise.catch === "function") {
-        playPromise.catch(reject);
+  async function playAudio(url) {
+    debugLog("Play clicked", { src: url });
+    const audio = sharedAudio;
+    currentAudio = audio;
+    try {
+      audio.pause();
+      audio.muted = false;
+      audio.volume = 1;
+      if (audio.src !== url) {
+        audio.src = url;
       }
-    });
+      try {
+        audio.currentTime = 0;
+      } catch (error) {}
+
+      const endedPromise = new Promise((resolve, reject) => {
+        audio.onended = resolve;
+        audio.onerror = () => reject(new Error("HTMLAudioElement playback error"));
+      });
+
+      await audio.play();
+      debugLog("Audio played successfully", {
+        src: audio.currentSrc || audio.src,
+        readyState: audio.readyState,
+        networkState: audio.networkState,
+      });
+      await endedPromise;
+    } catch (error) {
+      logAudioError("Audio play failed", error, audio);
+      throw error;
+    }
   }
 
   async function playRemoteTts(text, options = {}) {
     const chunks = splitSpeechText(text, 180);
     for (const chunk of chunks) {
       if (isStopped) break;
-      await playAudioUrl(buildRemoteTtsUrl(chunk, options.lang || "zh-CN"));
+      await playAudio(buildRemoteTtsUrl(chunk, options.lang || "zh-CN"));
     }
   }
 
   function speakWithWebSpeech(text, options = {}) {
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
       const synth = window.speechSynthesis;
       if (!synth || !window.SpeechSynthesisUtterance) {
+        console.warn("[FTCTTS] speechSynthesis is not available; falling back to audio.");
         reject(new Error("Speech synthesis is not supported"));
         return;
       }
@@ -159,18 +221,30 @@
           return;
         }
 
+        debugLog("Play clicked", { mode: "speechSynthesis", chunk: index + 1 });
         const utterance = new SpeechSynthesisUtterance(chunks[index]);
         index += 1;
-        utterance.lang = options.lang || options.voice?.lang || "zh-CN";
+        utterance.lang = "zh-CN";
         utterance.voice = options.voice || null;
-        utterance.rate = Number(options.rate) || 0.86;
+        utterance.rate = Number(options.rate) || 0.9;
         utterance.pitch = Number(options.pitch) || 1.03;
         utterance.volume = 1;
         utterance.onstart = () => {
           spokeAtLeastOneChunk = true;
+          debugLog("Audio played successfully", {
+            mode: "speechSynthesis",
+            lang: utterance.lang,
+            voice: utterance.voice?.name || "",
+          });
         };
         utterance.onend = speakNext;
-        utterance.onerror = () => {
+        utterance.onerror = (event) => {
+          console.error("[FTCTTS] speechSynthesis failed", {
+            name: event?.error || "SpeechSynthesisError",
+            message: event?.message || "",
+            lang: utterance.lang,
+            voice: utterance.voice?.name || "",
+          });
           if (spokeAtLeastOneChunk) speakNext();
           else reject(new Error("Speech synthesis failed"));
         };
@@ -180,9 +254,25 @@
       try {
         synth.cancel();
         synth.resume();
-        synth.getVoices();
+        const voices = await waitForVoices();
+        if (!options.voice && voices?.length) {
+          options.voice =
+            voices.find((voice) => voice.lang === "zh-CN") ||
+            voices.find((voice) => voice.lang === "cmn-CN") ||
+            voices.find((voice) => voice.lang?.startsWith("zh")) ||
+            null;
+        }
+        if (!options.voice && ANDROID_RE.test(navigator.userAgent || "")) {
+          console.warn("[FTCTTS] No Chinese voice found on Android; falling back to audio TTS.");
+          reject(new Error("No Chinese speechSynthesis voice on Android"));
+          return;
+        }
         speakNext();
       } catch (error) {
+        console.error("[FTCTTS] speechSynthesis exception", {
+          name: error?.name || "UnknownError",
+          message: error?.message || String(error || ""),
+        });
         reject(error);
       }
     });
@@ -190,6 +280,10 @@
 
   async function speak(text, options = {}) {
     if (!text) return;
+    debugLog("Play clicked", {
+      mode: options.forceRemote || ANDROID_RE.test(navigator.userAgent || "") ? "audio" : "speechSynthesis",
+      textLength: String(text).length,
+    });
     stop();
     isStopped = false;
     activateTrigger(options.trigger || lastTrigger);
