@@ -1,7 +1,61 @@
 (function () {
   const ANDROID_RE = /Android/i;
+  const AUDIO_TRIGGER_SELECTOR = [
+    ".sound-btn",
+    ".vocab-sound-btn",
+    ".vocab-detail-sound",
+    ".structure-list-sound",
+    ".structure-sound-btn",
+    ".writing-reference-play",
+    ".reading-audio-play",
+    ".reading-audio-repeat",
+    ".reading-mobile-replay",
+  ].join(",");
   let currentAudio = null;
   let isStopped = false;
+  let activeTrigger = null;
+  let lastTrigger = null;
+
+  function getAudioTrigger(target) {
+    return target?.closest?.(AUDIO_TRIGGER_SELECTOR) || null;
+  }
+
+  function setTriggerState(trigger, state) {
+    if (!trigger) return;
+    trigger.classList.toggle("tts-pressing", state === "pressing");
+    trigger.classList.toggle("tts-speaking", state === "speaking");
+    trigger.setAttribute("aria-busy", state === "speaking" ? "true" : "false");
+  }
+
+  function rememberTrigger(event) {
+    const trigger = getAudioTrigger(event.target);
+    if (!trigger) return;
+    lastTrigger = trigger;
+    setTriggerState(trigger, "pressing");
+    window.setTimeout(() => {
+      if (trigger !== activeTrigger) {
+        trigger.classList.remove("tts-pressing");
+      }
+    }, 180);
+  }
+
+  function activateTrigger(trigger) {
+    if (activeTrigger && activeTrigger !== trigger) {
+      setTriggerState(activeTrigger, "");
+    }
+    activeTrigger = trigger || lastTrigger;
+    setTriggerState(activeTrigger, "speaking");
+  }
+
+  function clearActiveTrigger() {
+    if (activeTrigger) {
+      setTriggerState(activeTrigger, "");
+    }
+    activeTrigger = null;
+    if (lastTrigger) {
+      lastTrigger.classList.remove("tts-pressing");
+    }
+  }
 
   function splitSpeechText(text, maxLength = 140) {
     const parts =
@@ -34,6 +88,7 @@
 
   function stop() {
     isStopped = true;
+    clearActiveTrigger();
     try {
       window.speechSynthesis?.cancel();
     } catch (e) {}
@@ -47,6 +102,7 @@
   }
 
   function pause() {
+    clearActiveTrigger();
     try {
       window.speechSynthesis?.pause();
     } catch (e) {}
@@ -136,6 +192,7 @@
     if (!text) return;
     stop();
     isStopped = false;
+    activateTrigger(options.trigger || lastTrigger);
     prime();
 
     const shouldUseRemoteFirst =
@@ -144,22 +201,30 @@
     if (shouldUseRemoteFirst) {
       try {
         await playRemoteTts(text, options);
+        clearActiveTrigger();
         return;
       } catch (e) {
         stop();
         isStopped = false;
+        activateTrigger(options.trigger || lastTrigger);
       }
     }
 
     try {
       await speakWithWebSpeech(text, options);
+      clearActiveTrigger();
     } catch (e) {
       try {
         await playRemoteTts(text, options);
-      } catch (error) {}
+        clearActiveTrigger();
+      } catch (error) {
+        clearActiveTrigger();
+      }
     }
   }
 
+  document.addEventListener("pointerdown", rememberTrigger, { passive: true });
+  document.addEventListener("touchstart", rememberTrigger, { passive: true });
   document.addEventListener("pointerdown", prime, { once: true, passive: true });
   document.addEventListener("touchstart", prime, { once: true, passive: true });
 

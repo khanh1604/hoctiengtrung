@@ -16311,6 +16311,80 @@ body.review-page.reading-detail-page .reading-word-sheet-meaning {
   }
 }
 
+/* Universal TTS feedback: make speaker buttons visibly light up on phones. */
+.sound-btn,
+.vocab-sound-btn,
+.vocab-detail-sound,
+.structure-list-sound,
+.structure-sound-btn,
+.writing-reference-play,
+.reading-audio-play,
+.reading-audio-repeat,
+.reading-mobile-replay {
+  -webkit-tap-highlight-color: rgba(168, 85, 247, 0.28);
+  touch-action: manipulation;
+}
+
+.sound-btn.tts-pressing,
+.sound-btn.tts-speaking,
+.vocab-sound-btn.tts-pressing,
+.vocab-sound-btn.tts-speaking,
+.vocab-detail-sound.tts-pressing,
+.vocab-detail-sound.tts-speaking,
+.structure-list-sound.tts-pressing,
+.structure-list-sound.tts-speaking,
+.structure-sound-btn.tts-pressing,
+.structure-sound-btn.tts-speaking,
+.writing-reference-play.tts-pressing,
+.writing-reference-play.tts-speaking,
+.reading-audio-play.tts-pressing,
+.reading-audio-play.tts-speaking,
+.reading-audio-repeat.tts-pressing,
+.reading-audio-repeat.tts-speaking,
+.reading-mobile-replay.tts-pressing,
+.reading-mobile-replay.tts-speaking {
+  border-color: rgba(216, 180, 254, 0.86) !important;
+  color: #fff !important;
+  background: linear-gradient(135deg, #a855f7, #2563eb) !important;
+  box-shadow:
+    0 0 0 3px rgba(168, 85, 247, 0.24),
+    0 0 18px rgba(168, 85, 247, 0.58) !important;
+  transform: translateY(-1px) scale(1.03);
+}
+
+.sound-btn.tts-speaking::after,
+.vocab-sound-btn.tts-speaking::after,
+.vocab-detail-sound.tts-speaking::after,
+.structure-list-sound.tts-speaking::after,
+.structure-sound-btn.tts-speaking::after,
+.writing-reference-play.tts-speaking::after,
+.reading-audio-play.tts-speaking::after,
+.reading-audio-repeat.tts-speaking::after,
+.reading-mobile-replay.tts-speaking::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 6px;
+  border-radius: 999px;
+  background: #fef3c7;
+  box-shadow: 0 0 10px #fde68a;
+  animation: ttsGlowPulse 0.9s ease-in-out infinite;
+}
+
+@keyframes ttsGlowPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.82);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.18);
+  }
+}
+
 /* Absolute final Chinese title weight inside reflex test cards. */
 body.review-page .reflex-test-body strong .zh-auto,
 body.review-page.reflex-review-page .reflex-test-body strong .zh-auto,
