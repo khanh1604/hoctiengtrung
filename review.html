@@ -707,62 +707,63 @@
           .sort((a, b) => scoreChineseVoice(b) - scoreChineseVoice(a))[0] || null;
       }
 
-      function wakeSpeechSynthesis() {
+      function splitSpeechText(text, maxLength = 90) {
+        const parts = String(text || "")
+          .replace(/\s+/g, " ")
+          .match(/[^。！？!?；;，,]+[。！？!?；;，,]?/g) || [String(text || "")];
+        const chunks = [];
+        let current = "";
+        parts.forEach((part) => {
+          const next = `${current}${part}`;
+          if (next.length > maxLength && current) {
+            chunks.push(current);
+            current = part;
+          } else {
+            current = next;
+          }
+        });
+        if (current) chunks.push(current);
+        return chunks.map((chunk) => chunk.trim()).filter(Boolean);
+      }
+
+      function primeSpeechSynthesis() {
         if (!("speechSynthesis" in window)) return;
         try {
           window.speechSynthesis.resume();
-          const wakeUtterance = new SpeechSynthesisUtterance(" ");
-          wakeUtterance.lang = "zh-CN";
-          wakeUtterance.volume = 0;
-          window.speechSynthesis.speak(wakeUtterance);
-          window.speechSynthesis.cancel();
+          window.speechSynthesis.getVoices();
         } catch (e) {}
       }
 
-      function speakWhenChineseVoicesReady(utterance, applyVoice) {
-        const synth = window.speechSynthesis;
-        if (!synth) return;
-        let started = false;
-
-        const speakNow = () => {
-          if (started) return;
-          started = true;
-          try {
-            synth.cancel();
-            synth.resume();
-            applyVoice?.();
-            setTimeout(() => synth.speak(utterance), 0);
-          } catch (e) {}
-        };
-
-        const voices = synth.getVoices();
-        if (voices && voices.length) {
-          speakNow();
-          return;
-        }
-
-        const handleVoicesChanged = () => {
-          synth.removeEventListener?.("voiceschanged", handleVoicesChanged);
-          speakNow();
-        };
-        synth.addEventListener?.("voiceschanged", handleVoicesChanged, { once: true });
-        wakeSpeechSynthesis();
-        setTimeout(speakNow, 250);
-      }
+      document.addEventListener("pointerdown", primeSpeechSynthesis, { once: true, passive: true });
+      document.addEventListener("touchstart", primeSpeechSynthesis, { once: true, passive: true });
 
       function speakChinese(text, options = {}) {
         if (!("speechSynthesis" in window) || !text) return;
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = "zh-CN";
-        utterance.rate = Number(options.rate) || 0.86;
-        utterance.pitch = 1.03;
-        utterance.volume = 1;
+        const synth = window.speechSynthesis;
+        const chunks = splitSpeechText(text);
+        const bestVoice = getBestChineseVoice();
+        let index = 0;
 
-        speakWhenChineseVoicesReady(utterance, () => {
-          const bestVoice = getBestChineseVoice();
+        const speakNext = () => {
+          if (index >= chunks.length) return;
+          const utterance = new SpeechSynthesisUtterance(chunks[index]);
+          index += 1;
           utterance.lang = bestVoice?.lang || "zh-CN";
           utterance.voice = bestVoice || null;
-        });
+          utterance.rate = Number(options.rate) || 0.86;
+          utterance.pitch = 1.03;
+          utterance.volume = 1;
+          utterance.onend = speakNext;
+          utterance.onerror = speakNext;
+          synth.speak(utterance);
+        };
+
+        try {
+          synth.cancel();
+          synth.resume();
+          synth.getVoices();
+          speakNext();
+        } catch (e) {}
       }
 
       function getSpeakingStructureItems(data) {

@@ -469,71 +469,71 @@
     return `Khá (${exp}/${totalQuestions} đúng)`;
   }
 
-  function wakeSpeechSynthesis() {
+  function splitSpeechText(text, maxLength = 90) {
+    const parts = String(text || "")
+      .replace(/\s+/g, " ")
+      .match(/[^。！？!?；;，,]+[。！？!?；;，,]?/g) || [String(text || "")];
+    const chunks = [];
+    let current = "";
+    parts.forEach((part) => {
+      const next = `${current}${part}`;
+      if (next.length > maxLength && current) {
+        chunks.push(current);
+        current = part;
+      } else {
+        current = next;
+      }
+    });
+    if (current) chunks.push(current);
+    return chunks.map((chunk) => chunk.trim()).filter(Boolean);
+  }
+
+  function primeSpeechSynthesis() {
     if (!window.speechSynthesis) return;
     try {
       window.speechSynthesis.resume();
-      const wakeUtterance = new SpeechSynthesisUtterance(" ");
-      wakeUtterance.volume = 0;
-      wakeUtterance.rate = 1;
-      wakeUtterance.lang = "zh-CN";
-      window.speechSynthesis.speak(wakeUtterance);
-      window.speechSynthesis.cancel();
+      window.speechSynthesis.getVoices();
     } catch (e) {}
   }
 
-  function speakUtteranceWhenVoicesReady(utterance, configureVoice) {
-    const synth = window.speechSynthesis;
-    if (!synth) return;
-    let started = false;
-
-    const speakNow = () => {
-      if (started) return;
-      started = true;
-      try {
-        synth.cancel();
-        synth.resume();
-        configureVoice?.();
-        setTimeout(() => synth.speak(utterance), 0);
-      } catch (e) {}
-    };
-
-    const voices = synth.getVoices();
-    if (voices && voices.length) {
-      speakNow();
-      return;
-    }
-
-    const handleVoicesChanged = () => {
-      synth.removeEventListener?.("voiceschanged", handleVoicesChanged);
-      populateVoiceOptions();
-      speakNow();
-    };
-    synth.addEventListener?.("voiceschanged", handleVoicesChanged, { once: true });
-    wakeSpeechSynthesis();
-    setTimeout(speakNow, 250);
-  }
+  document.addEventListener("pointerdown", primeSpeechSynthesis, { once: true, passive: true });
+  document.addEventListener("touchstart", primeSpeechSynthesis, { once: true, passive: true });
 
   // Simple TTS helper using the Web Speech API
   function speakText(text, preferredLang = "zh-CN") {
     if (!window.speechSynthesis || !text) return;
+    const synth = window.speechSynthesis;
     const settings = getSavedVoiceSettings();
-    const utt = new SpeechSynthesisUtterance(String(text || ""));
     const selectedLang =
       voiceSelect?.selectedOptions?.[0]?.dataset?.lang || preferredLang;
-    utt.lang = selectedLang;
-    utt.rate = Math.min(settings.rate || 0.88, 0.92);
-    utt.pitch = 1.03;
-    utt.volume = 1;
+    const chunks = splitSpeechText(text);
+    const voices = synth.getVoices();
+    const selectedVoice = getSelectedVoice(voices || []);
+    let index = 0;
 
-    speakUtteranceWhenVoicesReady(utt, () => {
-      const voices = window.speechSynthesis.getVoices();
-      const selectedVoice = getSelectedVoice(voices || []);
+    const speakNext = () => {
+      if (index >= chunks.length) return;
+      const utt = new SpeechSynthesisUtterance(chunks[index]);
+      index += 1;
+      utt.lang = selectedLang;
+      utt.rate = Math.min(settings.rate || 0.88, 0.92);
+      utt.pitch = 1.03;
+      utt.volume = 1;
       if (selectedVoice) {
         utt.voice = selectedVoice;
         utt.lang = selectedVoice.lang || selectedLang;
       }
-    });
+      utt.onend = speakNext;
+      utt.onerror = speakNext;
+      synth.speak(utt);
+    };
+
+    try {
+      synth.cancel();
+      synth.resume();
+      synth.getVoices();
+      speakNext();
+    } catch (e) {}
   }
 
   function populateVoiceOptions() {
