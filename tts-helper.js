@@ -27,10 +27,27 @@
     console.error(`[FTCTTS] ${message}`, {
       name: error?.name || "UnknownError",
       message: error?.message || String(error || ""),
+      mediaErrorCode: audio?.error?.code || null,
+      mediaErrorMessage: audio?.error?.message || "",
       src: audio?.currentSrc || audio?.src || "",
       readyState: audio?.readyState,
       networkState: audio?.networkState,
     });
+  }
+
+  function getAudioDiagnostics() {
+    const probe = document.createElement("audio");
+    return {
+      userAgent: navigator.userAgent,
+      isAndroid: ANDROID_RE.test(navigator.userAgent || ""),
+      isSecureContext: window.isSecureContext,
+      speechSynthesis: Boolean(window.speechSynthesis),
+      speechVoices: window.speechSynthesis?.getVoices?.().length || 0,
+      mp3: probe.canPlayType("audio/mpeg") || "no",
+      wav: probe.canPlayType("audio/wav") || "no",
+      webm: probe.canPlayType("audio/webm") || "no",
+      mp4: probe.canPlayType("audio/mp4") || "no",
+    };
   }
 
   function getAudioTrigger(target) {
@@ -162,7 +179,7 @@
   }
 
   async function playAudio(url) {
-    debugLog("Play clicked", { src: url });
+    debugLog("Play clicked", { src: url, diagnostics: getAudioDiagnostics() });
     const audio = sharedAudio;
     currentAudio = audio;
     try {
@@ -176,16 +193,38 @@
         audio.currentTime = 0;
       } catch (error) {}
 
-      const endedPromise = new Promise((resolve, reject) => {
-        audio.onended = resolve;
-        audio.onerror = () => reject(new Error("HTMLAudioElement playback error"));
-      });
+      audio.onerror = null;
+      audio.onended = null;
+      audio.onloadedmetadata = () => {
+        debugLog("Audio metadata loaded", {
+          src: audio.currentSrc || audio.src,
+          duration: audio.duration,
+          readyState: audio.readyState,
+          networkState: audio.networkState,
+        });
+      };
 
-      await audio.play();
+      audio.load();
+      let startTimeoutId;
+      await Promise.race([
+        audio.play(),
+        new Promise((_, reject) => {
+          startTimeoutId = window.setTimeout(
+            () => reject(new DOMException("Audio start timeout on this browser", "TimeoutError")),
+            12000,
+          );
+        }),
+      ]);
+      window.clearTimeout(startTimeoutId);
       debugLog("Audio played successfully", {
         src: audio.currentSrc || audio.src,
         readyState: audio.readyState,
         networkState: audio.networkState,
+      });
+
+      const endedPromise = new Promise((resolve, reject) => {
+        audio.onended = resolve;
+        audio.onerror = () => reject(new Error("HTMLAudioElement playback error"));
       });
       await endedPromise;
     } catch (error) {
@@ -254,7 +293,14 @@
       try {
         synth.cancel();
         synth.resume();
-        const voices = await waitForVoices();
+        const isAndroid = ANDROID_RE.test(navigator.userAgent || "");
+        const voices = isAndroid ? synth.getVoices() : await waitForVoices();
+        debugLog("speechSynthesis voices loaded", {
+          count: voices?.length || 0,
+          chineseVoices: (voices || [])
+            .filter((voice) => voice.lang === "zh-CN" || voice.lang === "cmn-CN" || voice.lang?.startsWith("zh"))
+            .map((voice) => `${voice.name} (${voice.lang})`),
+        });
         if (!options.voice && voices?.length) {
           options.voice =
             voices.find((voice) => voice.lang === "zh-CN") ||
@@ -262,10 +308,8 @@
             voices.find((voice) => voice.lang?.startsWith("zh")) ||
             null;
         }
-        if (!options.voice && ANDROID_RE.test(navigator.userAgent || "")) {
-          console.warn("[FTCTTS] No Chinese voice found on Android; falling back to audio TTS.");
-          reject(new Error("No Chinese speechSynthesis voice on Android"));
-          return;
+        if (!options.voice && isAndroid) {
+          console.warn("[FTCTTS] No Chinese voice listed on Android; trying zh-CN system TTS directly.");
         }
         speakNext();
       } catch (error) {
@@ -281,7 +325,7 @@
   async function speak(text, options = {}) {
     if (!text) return;
     debugLog("Play clicked", {
-      mode: options.forceRemote || ANDROID_RE.test(navigator.userAgent || "") ? "audio" : "speechSynthesis",
+      mode: options.forceRemote ? "audio" : "speechSynthesis",
       textLength: String(text).length,
     });
     stop();
@@ -289,8 +333,7 @@
     activateTrigger(options.trigger || lastTrigger);
     prime();
 
-    const shouldUseRemoteFirst =
-      options.forceRemote || ANDROID_RE.test(navigator.userAgent || "");
+    const shouldUseRemoteFirst = Boolean(options.forceRemote);
 
     if (shouldUseRemoteFirst) {
       try {
