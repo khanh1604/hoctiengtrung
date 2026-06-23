@@ -501,14 +501,26 @@
 
   // Simple TTS helper using the Web Speech API
   function speakText(text, preferredLang = "zh-CN") {
-    if (!window.speechSynthesis || !text) return;
-    const synth = window.speechSynthesis;
+    if (!text) return;
     const settings = getSavedVoiceSettings();
     const selectedLang =
       voiceSelect?.selectedOptions?.[0]?.dataset?.lang || preferredLang;
-    const chunks = splitSpeechText(text);
-    const voices = synth.getVoices();
+    const voices = window.speechSynthesis?.getVoices?.() || [];
     const selectedVoice = getSelectedVoice(voices || []);
+
+    if (window.FTCTTS?.speak) {
+      window.FTCTTS.speak(text, {
+        lang: selectedLang,
+        rate: Math.min(settings.rate || 0.88, 0.92),
+        pitch: 1.03,
+        voice: selectedVoice,
+      });
+      return;
+    }
+
+    if (!window.speechSynthesis) return;
+    const synth = window.speechSynthesis;
+    const chunks = splitSpeechText(text);
     let index = 0;
 
     const speakNext = () => {

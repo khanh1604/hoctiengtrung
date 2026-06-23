@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập - Chinese Learning</title>
     <link rel="stylesheet" href="style.css?v=ftc-mobile-reading-detail-20260622" />
+    <script src="tts-helper.js?v=20260623"></script>
     <script src="theme.js" defer></script>
   </head>
 
@@ -738,10 +739,20 @@
       document.addEventListener("touchstart", primeSpeechSynthesis, { once: true, passive: true });
 
       function speakChinese(text, options = {}) {
-        if (!("speechSynthesis" in window) || !text) return;
+        if (!text) return;
+        const bestVoice = "speechSynthesis" in window ? getBestChineseVoice() : null;
+        if (window.FTCTTS?.speak) {
+          window.FTCTTS.speak(text, {
+            lang: bestVoice?.lang || "zh-CN",
+            voice: bestVoice,
+            rate: Number(options.rate) || 0.86,
+            pitch: 1.03,
+          });
+          return;
+        }
+
         const synth = window.speechSynthesis;
         const chunks = splitSpeechText(text);
-        const bestVoice = getBestChineseVoice();
         let index = 0;
 
         const speakNext = () => {
@@ -994,7 +1005,10 @@
         };
         grid.querySelector(".reading-audio-play")?.addEventListener("click", readWithCurrentSpeed);
         grid.querySelector(".reading-audio-repeat")?.addEventListener("click", readWithCurrentSpeed);
-        grid.querySelector(".reading-audio-pause")?.addEventListener("click", () => window.speechSynthesis?.pause());
+        grid.querySelector(".reading-audio-pause")?.addEventListener("click", () => {
+          if (window.FTCTTS?.pause) window.FTCTTS.pause();
+          else window.speechSynthesis?.pause();
+        });
         grid.querySelector("#readingSpeechRate")?.addEventListener("input", (event) => {
           const value = Number(event.target.value || 1).toFixed(1);
           const label = grid.querySelector("#readingSpeechRateValue");
