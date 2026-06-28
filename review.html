@@ -342,6 +342,26 @@
             listHref: "lessons.html?subject=hanyu6",
           };
         }
+        if (subject === "listening3") {
+          return {
+            label: "Nghe hiểu",
+            course: "中级听力（I）",
+            icon: "🎧",
+            total: 30,
+            desc: "luyện nghe trung cấp",
+            listHref: "lessons.html?subject=listening3",
+          };
+        }
+        if (subject === "listening4") {
+          return {
+            label: "Nghe hiểu",
+            course: "中级听力（II）",
+            icon: "🎧",
+            total: 30,
+            desc: "luyện nghe trung cấp",
+            listHref: "lessons.html?subject=listening4",
+          };
+        }
         return {
           label: "Nghe hiểu",
           course: "初级听力（II）",
@@ -2456,7 +2476,13 @@
       }
 
       async function loadListeningExampleTests() {
-        const res = await fetch("data/listening-example-tests.json");
+        const res = await fetch(
+          subject === "listening4"
+            ? "data/listening4-example-tests.json"
+            : subject === "listening3"
+              ? "data/listening3-example-tests.json"
+              : "data/listening-example-tests.json",
+        );
         if (!res.ok) throw new Error("Không tải được dữ liệu ví dụ nghe");
 
         const data = await res.json();
@@ -2519,7 +2545,7 @@
           content === "structure" && Number(lesson) >= 10,
         );
 
-        if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "listening") && content === "example") {
+        if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "listening" || subject === "listening3" || subject === "listening4") && content === "example") {
           renderReflexReview();
           return;
         }
@@ -2527,7 +2553,7 @@
         const grid = document.getElementById("reviewGrid");
         const isPracticeActivityList =
           ["paragraph", "structure", "example", "exercise"].includes(content) ||
-          (subject === "listening" && content === "listening") ||
+          ((subject === "listening" || subject === "listening3" || subject === "listening4") && content === "listening") ||
           (subject === "writing" && !content);
         grid.className = isPracticeActivityList
           ? "reflex-test-list practice-activity-list"
@@ -2889,7 +2915,7 @@
             document.getElementById("reviewGrid").innerHTML =
               `<p class="review-subtitle">${err.message}</p>`;
           });
-      } else if (subject === "listening" && content === "example") {
+      } else if ((subject === "listening" || subject === "listening3" || subject === "listening4") && content === "example") {
         loadListeningExampleTests()
           .then(renderReview)
           .catch((err) => {
@@ -2938,6 +2964,7 @@
     </script>
   </body>
 </html>
+
 
 
 

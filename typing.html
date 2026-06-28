@@ -162,6 +162,22 @@
             listHref: "lessons.html?subject=listening",
           };
         }
+        if (subject === "listening3") {
+          return {
+            label: "Nghe hiểu",
+            course: "中级听力（I）",
+            homeHref: "lessons.html?subject=listening3",
+            listHref: "lessons.html?subject=listening3",
+          };
+        }
+        if (subject === "listening4") {
+          return {
+            label: "Nghe hiểu",
+            course: "中级听力（II）",
+            homeHref: "lessons.html?subject=listening4",
+            listHref: "lessons.html?subject=listening4",
+          };
+        }
         return {
           label: "Khẩu ngữ",
           course: "初级口语（II）",
@@ -970,7 +986,7 @@
         const practiceContents = new Set(["paragraph", "structure", "example"]);
         if (
           !(
-            (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening") &&
+            (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening" || subject === "listening3" || subject === "listening4") &&
             practiceContents.has(content)
           )
         ) {
@@ -988,7 +1004,7 @@
               ? "Hán Ngữ"
               : subject === "writing"
                 ? "Viết"
-                : subject === "listening"
+                : (subject === "listening" || subject === "listening3" || subject === "listening4")
                   ? "Nghe hiểu"
                   : "Khẩu ngữ",
         });

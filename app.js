@@ -32,7 +32,7 @@
   const resetKey = `typingReset-${storagePrefix}${lesson}-${testNum}`;
   const practiceActivityContents = new Set(["paragraph", "structure", "example"]);
   const isReflexTyping =
-    (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening") &&
+    (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening" || subject === "listening3" || subject === "listening4") &&
     practiceActivityContents.has(content);
   const reflexCurrentEl = document.querySelector(".reflex-current");
   const reflexDoneEl = document.querySelector(".reflex-done");
@@ -659,7 +659,7 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if (subject === "listening" && content === "example") {
+    if ((subject === "listening" || subject === "listening3" || subject === "listening4") && content === "example") {
       const lessonKey = String(Number(lesson));
       const items = allData[lesson] || allData[lessonKey] || [];
       const groups = splitIntoGroups(items, 20);
@@ -780,13 +780,17 @@
   }
 
   async function loadQuestions() {
-    if (subject === "listening" && content !== "example" && loadFromStorage()) return;
+    if ((subject === "listening" || subject === "listening3" || subject === "listening4") && content !== "example" && loadFromStorage()) return;
 
     const dataFile =
       subject === "writing"
         ? "data/writing-tests.json"
-        : subject === "listening" && content === "example"
-          ? "data/listening-example-tests.json"
+        : (subject === "listening" || subject === "listening3" || subject === "listening4") && content === "example"
+          ? subject === "listening4"
+            ? "data/listening4-example-tests.json"
+            : subject === "listening3"
+              ? "data/listening3-example-tests.json"
+              : "data/listening-example-tests.json"
         : (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6")
           ? `data/${subject}-lessons.json?v=${Date.now()}`
         : subject === "speaking"
@@ -861,7 +865,7 @@
     }
 
     const allData = await res.json();
-    if (subject === "listening" && content === "example") {
+    if ((subject === "listening" || subject === "listening3" || subject === "listening4") && content === "example") {
       const lessonKey = String(Number(lesson));
       const items = allData[lesson] || allData[lessonKey] || [];
       listeningExampleTestCount = Math.max(1, splitIntoGroups(items, 20).length);
@@ -1043,11 +1047,11 @@
   function showCompletion() {
     if (questionEl) questionEl.textContent = "Đã hoàn thành bài kiểm tra.";
     if (answerInput) answerInput.disabled = true;
-    // allow check button to navigate to next test
+    // allow the main button to return to the current test list
     finished = true;
     if (checkBtn) {
       checkBtn.disabled = false;
-      checkBtn.textContent = "Bài tiếp theo";
+      checkBtn.textContent = "Hoàn thành";
       checkBtn.classList.remove("next-btn");
     }
     if (remainingEl) remainingEl.textContent = "0";
@@ -1102,13 +1106,8 @@
       currentIndex += 1;
       showQuestion();
     } else {
-      checkBtn.disabled = true;
-      checkBtn.textContent = `Đã hoàn thành ${totalQuestions} câu`;
-      checkBtn.classList.remove("next-btn");
-      if (remainingEl) remainingEl.textContent = "0";
-      if (progressBar) progressBar.style.width = "100%";
-      if (answerInput) answerInput.disabled = true;
-      clearFeedback();
+      saveProgressState(totalQuestions);
+      showCompletion();
     }
   }
 
@@ -1163,58 +1162,7 @@
   function onMainAction() {
     if (checkBtn.disabled) return;
     if (finished) {
-      const nextTestNum = Number(testNum) + 1;
-      const maxTests =
-        subject === "writing" && content === "paragraph"
-          ? 1
-        : subject === "writing" && (content === "grammar" || content === "structure")
-          ? Math.max(
-              1,
-              countWritingPracticeGroups(
-                (
-                  content === "structure"
-                    ? (lessonData.structure || lessonData.structureTests || {})
-                    : (lessonData.grammar || lessonData.grammarTests || {})
-                )[lesson] ||
-                  (
-                    content === "structure"
-                      ? (lessonData.structure || lessonData.structureTests || {})
-                      : (lessonData.grammar || lessonData.grammarTests || {})
-                  )[String(Number(lesson))] ||
-                  [],
-              ),
-            )
-              : subject === "writing" && !content
-              ? Math.max(
-                  9,
-                  splitWritingExamplesIntoReadings(
-                    (lessonData.examples || lessonData.exampleTests || {})[lesson] ||
-                      (lessonData.examples || lessonData.exampleTests || {})[String(Number(lesson))] ||
-                      [],
-                  ).length,
-                )
-              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "paragraph"
-                ? Math.max(1, speakingParagraphTestCount)
-              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "structure"
-                ? Math.max(1, speakingStructureTestCount)
-              : subject === "speaking" && content === "grammar" && (Number(lesson) === 4 || Number(lesson) === 5)
-                ? 2
-              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "example"
-                ? Math.max(1, speakingExampleTestCount)
-              : subject === "hanyu3" && content === "exercise"
-                ? Math.max(6, hanyu3ExerciseTestCount)
-              : subject !== "writing" && content === "listening" && Number(lesson) === 1
-                ? 5
-              : subject === "listening" && content === "example"
-                ? Math.max(1, listeningExampleTestCount)
-              : 10;
-      if (nextTestNum > maxTests) {
-        // no more tests: go back to review
-        window.location.href = `review.html?lesson=${lesson}${subjectParam}${contentParam}`;
-      } else {
-        // navigate to next test
-        window.location.href = `typing.html?lesson=${lesson}&test=${nextTestNum}${subjectParam}${contentParam}`;
-      }
+      window.location.href = `review.html?lesson=${lesson}${subjectParam}${contentParam}`;
       return;
     }
     if (showingResult) {

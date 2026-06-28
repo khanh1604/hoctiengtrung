@@ -63,6 +63,8 @@
       const subject = params.get("subject") || "listening";
       const isWriting = subject === "writing";
       const isSpeaking = subject === "speaking";
+      const isListening3 = subject === "listening3";
+      const isListening4 = subject === "listening4";
       const isHanyu1 = subject === "hanyu1";
       const isHanyu2 = subject === "hanyu2";
       const isHanyu3 = subject === "hanyu3";
@@ -81,12 +83,20 @@
                 ? 10
                 : isHanyu5 || isHanyu6
                   ? 13
+                  : isListening3 || isListening4
+                    ? 30
                   : isSpeaking
                     ? 12
                     : 24;
       const itemsPerPage = 12;
       const availableListeningLessons = new Set(
         Array.from({ length: 24 }, (_, idx) => idx + 1),
+      );
+      const availableListening3Lessons = new Set(
+        Array.from({ length: 30 }, (_, idx) => idx + 1),
+      );
+      const availableListening4Lessons = new Set(
+        Array.from({ length: 30 }, (_, idx) => idx + 1),
       );
       const availableSpeakingLessons = new Set(
         Array.from({ length: 12 }, (_, idx) => idx + 1),
@@ -170,6 +180,70 @@
         ],
         ["第一次坐飞机", "Lần đầu tiên đi máy bay"],
       ];
+      const listening3LessonNames = [
+        ["画家和他的孙女", "Họa sĩ và cháu gái của ông"],
+        ["最好的年龄", "Độ tuổi đẹp nhất"],
+        ["交换人生", "Hoán đổi cuộc đời"],
+        ["为什么烦恼", "Tại sao phải phiền não"],
+        ["乞丐的故事", "Câu chuyện về người ăn xin"],
+        ["20美元", "20 đô la Mỹ"],
+        ["别活得太累", "Đừng sống quá mệt mỏi"],
+        ["年龄并不重要", "Tuổi tác không quan trọng"],
+        ["猜猜他是谁", "Đoán xem người đó là ai"],
+        ["该哭就哭", "Muốn khóc thì cứ khóc"],
+        ["请把试卷认真读完", "Hãy đọc kỹ đề thi đến hết"],
+        ["说了没用就不如不说", "Nói không có ích thì thà đừng nói"],
+        ["我想买电子词典", "Tôi muốn mua từ điển điện tử"],
+        ["差别", "Sự khác biệt"],
+        ["因为没有电子邮箱", "Vì không có hộp thư điện tử"],
+        ["你会怎么选择", "Bạn sẽ lựa chọn như thế nào?"],
+        ["换一种方式生活", "Thay đổi một cách sống khác"],
+        ["钱的想象力", "Sức tưởng tượng của đồng tiền"],
+        ["健身三人谈", "Ba người bàn về việc rèn luyện sức khỏe"],
+        ["吃饭和减肥", "Ăn uống và giảm cân"],
+        ["失败产品博物馆", "Bảo tàng các sản phẩm thất bại"],
+        ["德国丈夫中国妻", "Chồng người Đức, vợ người Trung Quốc"],
+        ["会打字不会写字", "Biết đánh máy nhưng không biết viết chữ"],
+        ["伤心故事", "Câu chuyện buồn"],
+        ["心态和行为", "Tâm lý và hành vi"],
+        ["狗的昨天和今天", "Con chó của ngày hôm qua và ngày hôm nay"],
+        ["一则钟表修理广告", "Một mẩu quảng cáo sửa đồng hồ"],
+        ["如果我开一家店……", "Nếu tôi mở một cửa hàng…"],
+        ["去哪里玩儿", "Đi đâu chơi?"],
+        ["拐杖", "Cây gậy chống"],
+      ];
+      const listening4LessonNames = [
+        ["还是回家好", "Vẫn là về nhà thì tốt hơn"],
+        ["一切都可能改变", "Mọi thứ đều có thể thay đổi"],
+        ["科学新发现", "Phát hiện mới của khoa học"],
+        ["第一桶金", "Thùng vàng đầu tiên (Khoản tiền đầu tiên kiếm được)"],
+        ["母亲不在家的日子", "Những ngày mẹ không có ở nhà"],
+        ["时间的产生", "Sự ra đời của thời gian"],
+        ["全职太太", "Người vợ nội trợ toàn thời gian"],
+        ["最好的老师", "Người thầy tốt nhất"],
+        ["为了一个梦", "Vì một ước mơ"],
+        ["怎么称呼陌生人", "Gọi người lạ như thế nào"],
+        ["陪读的父母", "Cha mẹ đi học cùng con"],
+        ["好梦成真", "Giấc mơ đẹp trở thành hiện thực"],
+        ["关于望子成龙", "Về việc mong con thành tài"],
+        ["在家上学行不行", "Học ở nhà có được không?"],
+        ["一件西服", "Một bộ com-lê (vest)"],
+        ["设置密码", "Đặt mật khẩu"],
+        ["换票", "Đổi vé"],
+        ["离婚餐厅", "Nhà hàng dành cho người ly hôn"],
+        ["误会", "Hiểu lầm"],
+        ["怎么处理淘汰电器", "Xử lý đồ điện bị loại bỏ như thế nào"],
+        ["在路上", "Trên đường"],
+        ["分享", "Chia sẻ"],
+        ["在当当网买书", "Mua sách trên Dangdang"],
+        ["请客的经济学", "Kinh tế học của việc mời khách"],
+        ["孔雀的悲哀", "Nỗi buồn của con công"],
+        ["科学的睡眠", "Giấc ngủ khoa học"],
+        ["商店太热闹，顾客难接受", "Cửa hàng quá đông đúc, khách hàng khó chấp nhận"],
+        ["办件好事可真难", "Làm một việc tốt thật không dễ"],
+        ["办什么样的婚礼", "Nên tổ chức đám cưới như thế nào"],
+        ["导盲犬和他的主人", "Chó dẫn đường và người chủ của nó"],
+      ];
       var currentPage = 1;
 
       function hasLessonData(lessonNumber) {
@@ -181,6 +255,8 @@
         if (isHanyu4) return availableHanyu4Lessons.has(lessonNumber);
         if (isHanyu5) return availableHanyu5Lessons.has(lessonNumber);
         if (isHanyu6) return availableHanyu6Lessons.has(lessonNumber);
+        if (isListening3) return availableListening3Lessons.has(lessonNumber);
+        if (isListening4) return availableListening4Lessons.has(lessonNumber);
         return availableListeningLessons.has(lessonNumber);
       }
 
@@ -188,6 +264,10 @@
         document.getElementById("lessonsTitle").textContent = "中级写作（I）";
       } else if (isSpeaking) {
         document.getElementById("lessonsTitle").textContent = "口语";
+      } else if (isListening3) {
+        document.getElementById("lessonsTitle").textContent = "中级听力（I）";
+      } else if (isListening4) {
+        document.getElementById("lessonsTitle").textContent = "中级听力（II）";
       } else if (isHanyu1) {
         document.getElementById("lessonsTitle").textContent =
           "Giáo trình Hán ngữ quyển 1";
@@ -322,7 +402,12 @@
 
         const listeningLesson = idx + 1;
         const unlocked = hasLessonData(listeningLesson);
-        const lessonName = listeningLessonNames[idx];
+        const activeListeningLessonNames = isListening4
+          ? listening4LessonNames
+          : isListening3
+            ? listening3LessonNames
+            : listeningLessonNames;
+        const lessonName = activeListeningLessonNames[idx];
         return {
           title: lessonName
             ? `Bài ${pad(listeningLesson)} - ${lessonName[0]}`
@@ -528,6 +613,24 @@
             icon: "🎧",
             listHref: "lessons.html?subject=listening",
             lessons: listeningLessonNames,
+            actionLabel: "Luyện nghe",
+          },
+          listening3: {
+            label: "Nghe hiểu",
+            title: "中级听力（I）",
+            subtitle: "Từ vựng và luyện phản xạ nghe",
+            icon: "🎧",
+            listHref: "lessons.html?subject=listening3",
+            lessons: listening3LessonNames,
+            actionLabel: "Luyện nghe",
+          },
+          listening4: {
+            label: "Nghe hiểu",
+            title: "中级听力（II）",
+            subtitle: "Từ vựng và luyện phản xạ nghe",
+            icon: "🎧",
+            listHref: "lessons.html?subject=listening4",
+            lessons: listening4LessonNames,
             actionLabel: "Luyện nghe",
           },
           writing: {

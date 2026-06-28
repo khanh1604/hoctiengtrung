@@ -268,6 +268,7 @@
         if (subject === "speaking") return "Khẩu ngữ";
         if (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") return "Giáo trình Hán Ngữ";
         if (subject === "writing") return "Viết";
+        if (subject === "listening3" || subject === "listening4") return "Nghe hiểu";
         if (subject === "listening") return "Nghe hiểu";
         return "Học tập";
       }
@@ -286,6 +287,8 @@
         if (subject === "hanyu5") return "Hán Ngữ Quyển 5";
         if (subject === "hanyu6") return "Hán Ngữ Quyển 6";
         if (subject === "speaking") return "初级口语（II）";
+        if (subject === "listening3") return "中级听力（I）";
+        if (subject === "listening4") return "中级听力（II）";
         if (subject === "listening") return "初级听力（II）";
         if (subject === "writing") return "中级写作（I）";
         return getSubjectLabel();
@@ -638,7 +641,13 @@
             ? grammarItems.filter((item) => item && item.partOfSpeech)
             : [];
         } else {
-          const data = await fetchJson("data/listening-vocabulary.json");
+          const data = await fetchJson(
+            subject === "listening4"
+              ? "data/listening4-vocabulary.json"
+              : subject === "listening3"
+                ? "data/listening3-vocabulary.json"
+                : "data/listening-vocabulary.json",
+          );
           items = getListeningVocabularyItems(data);
         }
 

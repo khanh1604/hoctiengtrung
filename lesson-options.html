@@ -70,6 +70,16 @@
             return;
           }
         }
+        if (subject === "listening3" || subject === "listening4") {
+          if (content === "vocabulary") {
+            window.location.href = `vocabulary.html?lesson=${lesson}&subject=${subject}`;
+            return;
+          }
+          if (content === "example") {
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=example`;
+            return;
+          }
+        }
         if (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") {
           if (content === "vocabulary") {
             window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=paragraph`;
@@ -840,6 +850,33 @@
               title: "Bài tập",
               desc: "6 mục bài tập",
               action: "exercise",
+            },
+          ],
+        });
+      } else if (subject === "listening3" || subject === "listening4") {
+        const isListening4 = subject === "listening4";
+        renderSpeakingLessonOptions({
+          subjectKey: subject,
+          subjectLabel: "Nghe hiểu",
+          courseTitle: isListening4 ? "中级听力（II）" : "中级听力（I）",
+          courseDesc: "luyện nghe trung cấp",
+          heroIcon: "🎧",
+          lessonTotal: 30,
+          lessonStep: 1,
+          maxLessonNumber: 30,
+          titlePair: [`Bài ${String(Number(lessonNumber)).padStart(2, "0")}`, "Từ vựng và luyện phản xạ nghe"],
+          optionItems: [
+            {
+              icon: "📚",
+              title: "Từ mới",
+              desc: "Học các từ vựng mới",
+              action: "vocabulary",
+            },
+            {
+              icon: "⚡",
+              title: "Kiểm tra phản xạ",
+              desc: "Luyện kiểm tra câu ví dụ",
+              action: "example",
             },
           ],
         });

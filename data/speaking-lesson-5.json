@@ -1139,188 +1139,361 @@
     "grammar":  [
                     {
                         "type":  "structure",
-                        "title":  "长得 + Adj",
-                        "pattern":  "长得 + Tính từ",
-                        "meaning":  "trông như thế nào",
-                        "usage":  "Miêu tả ngoại hình.",
-                        "chinese":  "他长得挺帅。",
-                        "pinyin":  "Tā zhǎng de tǐng shuài.",
-                        "vietnamese":  "Anh ấy khá đẹp trai.",
+                        "title":  "长 + Adj",
+                        "pattern":  "长 + Adj",
+                        "meaning":  "Lớn lên / phát triển thành…",
+                        "usage":  "Dùng để nói người, cây cối, sự vật phát triển theo hướng nào đó",
+                        "note":  "长 đọc là zhǎng, nghĩa là “lớn lên, phát triển”; khác với 长 cháng = dài",
+                        "chinese":  "孩子长高了。",
+                        "pinyin":  "hai zi zhang gao le。",
+                        "vietnamese":  "Đứa trẻ cao lên rồi.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "他长得挺帅。",
-                                             "pinyin":  "Tā zhǎng de tǐng shuài.",
-                                             "vietnamese":  "Anh ấy khá đẹp trai."
+                                             "chinese":  "孩子长高了。",
+                                             "pinyin":  "hai zi zhang gao le。",
+                                             "vietnamese":  "Đứa trẻ cao lên rồi."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "特别 + Adj",
-                        "pattern":  "特别 + Tính từ",
-                        "meaning":  "đặc biệt, rất",
-                        "usage":  "Nhấn mạnh mức độ cao.",
-                        "chinese":  "还特别聪明。",
-                        "pinyin":  "Hái tèbié cōngming.",
-                        "vietnamese":  "Còn rất thông minh.",
+                        "title":  "长大",
+                        "pattern":  "长大",
+                        "meaning":  "Lớn lên, trưởng thành",
+                        "usage":  "Dùng để nói người hoặc động vật từ nhỏ trở nên lớn, trưởng thành",
+                        "note":  "长大 là cụm cố định, thường nói về quá trình trưởng thành",
+                        "chinese":  "我长大以后想当医生。",
+                        "pinyin":  "wo zhang da yi hou xiang dang yi sheng。",
+                        "vietnamese":  "Sau khi lớn lên tôi muốn làm bác sĩ.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "还特别聪明。",
-                                             "pinyin":  "Hái tèbié cōngming.",
-                                             "vietnamese":  "Còn rất thông minh."
+                                             "chinese":  "我长大以后想当医生。",
+                                             "pinyin":  "wo zhang da yi hou xiang dang yi sheng。",
+                                             "vietnamese":  "Sau khi lớn lên tôi muốn làm bác sĩ."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "从……来的",
-                        "pattern":  "从 + Địa điểm + 来的",
-                        "meaning":  "đến từ...",
-                        "usage":  "Dùng để giới thiệu xuất thân, nơi đến.",
-                        "chinese":  "他是从新加坡来的。",
-                        "pinyin":  "Tā shì cóng Xīnjiāpō lái de.",
-                        "vietnamese":  "Anh ấy đến từ Singapore.",
+                        "title":  "长得 + 像 + người",
+                        "pattern":  "长得 + 像 + người",
+                        "meaning":  "Trông giống ai",
+                        "usage":  "Dùng để nói ngoại hình của ai đó giống người nào",
+                        "note":  "长得 dùng để miêu tả ngoại hình; 像 = giống",
+                        "chinese":  "他长得像爸爸。",
+                        "pinyin":  "ta zhang de xiang ba ba。",
+                        "vietnamese":  "Anh ấy trông giống bố.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "他是从新加坡来的。",
-                                             "pinyin":  "Tā shì cóng Xīnjiāpō lái de.",
-                                             "vietnamese":  "Anh ấy đến từ Singapore."
+                                             "chinese":  "他长得像爸爸。",
+                                             "pinyin":  "ta zhang de xiang ba ba。",
+                                             "vietnamese":  "Anh ấy trông giống bố."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "好像",
-                        "pattern":  "好像 + ...",
-                        "meaning":  "hình như",
-                        "usage":  "Biểu thị suy đoán không chắc chắn.",
-                        "chinese":  "好像是从韩国来的。",
-                        "pinyin":  "Hǎoxiàng shì cóng Hánguó lái de.",
-                        "vietnamese":  "Hình như cô ấy đến từ Hàn Quốc.",
+                        "title":  "聪明",
+                        "pattern":  "聪明",
+                        "meaning":  "Thông minh",
+                        "usage":  "Dùng làm tính từ để khen người có đầu óc nhanh nhạy, hiểu nhanh",
+                        "note":  "Có thể đứng sau 很, hoặc đứng trước danh từ làm định ngữ",
+                        "chinese":  "这个孩子很聪明。",
+                        "pinyin":  "zhe ge hai zi hen cong ming。",
+                        "vietnamese":  "Đứa trẻ này rất thông minh.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "好像是从韩国来的。",
-                                             "pinyin":  "Hǎoxiàng shì cóng Hánguó lái de.",
-                                             "vietnamese":  "Hình như cô ấy đến từ Hàn Quốc."
+                                             "chinese":  "这个孩子很聪明。",
+                                             "pinyin":  "zhe ge hai zi hen cong ming。",
+                                             "vietnamese":  "Đứa trẻ này rất thông minh."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "有机会的话",
-                        "pattern":  "有机会的话，...",
-                        "meaning":  "nếu có cơ hội",
-                        "usage":  "Điều kiện giả định thường dùng trong giao tiếp.",
-                        "chinese":  "有机会的话，一定介绍我们认识一下。",
-                        "pinyin":  "Yǒu jīhuì de huà, yídìng jièshào wǒmen rènshi yíxià.",
-                        "vietnamese":  "Nếu có cơ hội nhất định giới thiệu cho chúng tôi làm quen nhé.",
+                        "title":  "聪明 + 人",
+                        "pattern":  "聪明 + 人",
+                        "meaning":  "Người thông minh",
+                        "usage":  "Dùng khi 聪明 đứng trước danh từ để bổ nghĩa cho danh từ",
+                        "note":  "Khi tính từ bổ nghĩa cho danh từ, thường có dạng 聪明人 / 聪明的孩子",
+                        "chinese":  "他是个聪明人。",
+                        "pinyin":  "ta shi ge cong ming ren。",
+                        "vietnamese":  "Anh ấy là một người thông minh.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "有机会的话，一定介绍我们认识一下。",
-                                             "pinyin":  "Yǒu jīhuì de huà, yídìng jièshào wǒmen rènshi yíxià.",
-                                             "vietnamese":  "Nếu có cơ hội nhất định giới thiệu cho chúng tôi làm quen nhé."
+                                             "chinese":  "他是个聪明人。",
+                                             "pinyin":  "ta shi ge cong ming ren。",
+                                             "vietnamese":  "Anh ấy là một người thông minh."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "介绍 + 人 + 认识",
-                        "pattern":  "介绍 + A + 认识",
-                        "meaning":  "giới thiệu cho ai làm quen",
-                        "usage":  "Cấu trúc giao tiếp rất thông dụng.",
-                        "chinese":  "介绍我们认识一下。",
-                        "pinyin":  "Jièshào wǒmen rènshi yíxià.",
-                        "vietnamese":  "Giới thiệu cho chúng tôi làm quen nhé.",
+                        "title":  "不聪明",
+                        "pattern":  "不聪明",
+                        "meaning":  "Không thông minh / không khôn ngoan",
+                        "usage":  "Dùng để đánh giá cách làm hoặc suy nghĩ không hợp lý",
+                        "note":  "不聪明 không chỉ nói người “không thông minh”, còn có thể nói hành động “không khôn ngoan”",
+                        "chinese":  "这样做不聪明。",
+                        "pinyin":  "zhe yang zuo bu cong ming。",
+                        "vietnamese":  "Làm như vậy không khôn ngoan.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "介绍我们认识一下。",
-                                             "pinyin":  "Jièshào wǒmen rènshi yíxià.",
-                                             "vietnamese":  "Giới thiệu cho chúng tôi làm quen nhé."
+                                             "chinese":  "这样做不聪明。",
+                                             "pinyin":  "zhe yang zuo bu cong ming。",
+                                             "vietnamese":  "Làm như vậy không khôn ngoan."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "有空儿",
-                        "pattern":  "有空儿",
-                        "meaning":  "có thời gian rảnh",
-                        "usage":  "Hỏi hoặc nói về thời gian rảnh.",
-                        "chinese":  "你周末有没有空儿？",
-                        "pinyin":  "Nǐ zhōumò yǒu méiyǒu kòngr?",
-                        "vietnamese":  "Cuối tuần bạn có rảnh không?",
+                        "title":  "好像 + câu",
+                        "pattern":  "好像 + câu",
+                        "meaning":  "Hình như…, có vẻ như…",
+                        "usage":  "Dùng để nói phán đoán không chắc chắn của người nói",
+                        "note":  "好像 thường dùng khi chưa chắc 100%, chỉ là cảm giác hoặc suy đoán",
+                        "chinese":  "他好像不在家。",
+                        "pinyin":  "ta hao xiang bu zai jia。",
+                        "vietnamese":  "Hình như anh ấy không có ở nhà.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "你周末有没有空儿？",
-                                             "pinyin":  "Nǐ zhōumò yǒu méiyǒu kòngr?",
-                                             "vietnamese":  "Cuối tuần bạn có rảnh không?"
+                                             "chinese":  "他好像不在家。",
+                                             "pinyin":  "ta hao xiang bu zai jia。",
+                                             "vietnamese":  "Hình như anh ấy không có ở nhà."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "对了",
-                        "pattern":  "对了",
-                        "meaning":  "à đúng rồi",
-                        "usage":  "Dùng khi chợt nhớ ra điều muốn nói.",
-                        "chinese":  "对了，还记得那位美女吗？",
-                        "pinyin":  "Duì le, hái jìde nà wèi měinǚ ma?",
-                        "vietnamese":  "À đúng rồi, còn nhớ cô gái đẹp đó không?",
+                        "title":  "好像 + V 过",
+                        "pattern":  "好像 + V 过",
+                        "meaning":  "Hình như đã từng…",
+                        "usage":  "Dùng để nói cảm giác đã từng làm việc gì đó trong quá khứ",
+                        "note":  "V 过 biểu thị kinh nghiệm đã từng làm",
+                        "chinese":  "我好像见过他。",
+                        "pinyin":  "wo hao xiang jian guo ta。",
+                        "vietnamese":  "Hình như tôi từng gặp anh ấy.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "对了，还记得那位美女吗？",
-                                             "pinyin":  "Duì le, hái jìde nà wèi měinǚ ma?",
-                                             "vietnamese":  "À đúng rồi, còn nhớ cô gái đẹp đó không?"
+                                             "chinese":  "我好像见过他。",
+                                             "pinyin":  "wo hao xiang jian guo ta。",
+                                             "vietnamese":  "Hình như tôi từng gặp anh ấy."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "记得",
-                        "pattern":  "记得 + N/VP",
-                        "meaning":  "nhớ",
-                        "usage":  "Nhớ người hoặc việc gì đó.",
-                        "chinese":  "当然记得。",
-                        "pinyin":  "Dāngrán jìde.",
-                        "vietnamese":  "Đương nhiên nhớ.",
+                        "title":  "是……的",
+                        "pattern":  "是……的",
+                        "meaning":  "Chính là… / dùng để nhấn mạnh thông tin đã xảy ra",
+                        "usage":  "Dùng để nhấn mạnh thời gian, địa điểm, cách thức, người thực hiện của một hành động đã xảy ra",
+                        "note":  "Thường dùng cho sự việc đã xảy ra; phần được nhấn mạnh nằm giữa 是 và 的",
+                        "chinese":  "我是昨天来的。",
+                        "pinyin":  "wo shi zuo tian lai de。",
+                        "vietnamese":  "Tôi đến vào hôm qua.",
+                        "stars":  5,
+                        "level":  "⭐⭐⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "当然记得。",
-                                             "pinyin":  "Dāngrán jìde.",
-                                             "vietnamese":  "Đương nhiên nhớ."
+                                             "chinese":  "我是昨天来的。",
+                                             "pinyin":  "wo shi zuo tian lai de。",
+                                             "vietnamese":  "Tôi đến vào hôm qua."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "派来的",
-                        "pattern":  "派来的",
-                        "meaning":  "được cử đến",
-                        "usage":  "Chỉ người được cơ quan hoặc tổ chức cử đi.",
-                        "chinese":  "她是一家韩国汽车公司派来的。",
-                        "pinyin":  "Tā shì yì jiā Hánguó qìchē gōngsī pài lái de.",
-                        "vietnamese":  "Cô ấy được một công ty ô tô Hàn Quốc cử đến.",
+                        "title":  "是 + thời gian + V + 的",
+                        "pattern":  "是 + thời gian + V + 的",
+                        "meaning":  "Chính là làm gì vào thời gian nào",
+                        "usage":  "Dùng để nhấn mạnh thời gian xảy ra hành động",
+                        "note":  "Không dùng để kể hành động mới xảy ra đơn thuần, mà dùng khi muốn nhấn mạnh thông tin",
+                        "chinese":  "他是去年开始学的。",
+                        "pinyin":  "ta shi qu nian kai shi xue de。",
+                        "vietnamese":  "Anh ấy bắt đầu học từ năm ngoái.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "她是一家韩国汽车公司派来的。",
-                                             "pinyin":  "Tā shì yì jiā Hánguó qìchē gōngsī pài lái de.",
-                                             "vietnamese":  "Cô ấy được một công ty ô tô Hàn Quốc cử đến."
+                                             "chinese":  "他是去年开始学的。",
+                                             "pinyin":  "ta shi qu nian kai shi xue de。",
+                                             "vietnamese":  "Anh ấy bắt đầu học từ năm ngoái."
                                          }
                                      ]
                     },
                     {
                         "type":  "structure",
-                        "title":  "放心吧",
-                        "pattern":  "放心吧",
-                        "meaning":  "cứ yên tâm",
-                        "usage":  "Dùng để trấn an người khác.",
-                        "chinese":  "当然，放心吧。",
-                        "pinyin":  "Dāngrán, fàngxīn ba.",
-                        "vietnamese":  "Đương nhiên, cứ yên tâm đi.",
+                        "title":  "A 或者 B",
+                        "pattern":  "A 或者 B",
+                        "meaning":  "A hoặc B",
+                        "usage":  "Dùng để nối hai lựa chọn trong câu trần thuật",
+                        "note":  "Trong câu hỏi lựa chọn thường dùng 还是, không dùng 或者",
+                        "chinese":  "你喝茶或者喝水。",
+                        "pinyin":  "ni he cha huo zhe he shui。",
+                        "vietnamese":  "Bạn uống trà hoặc uống nước.",
+                        "stars":  5,
+                        "level":  "⭐⭐⭐⭐⭐",
                         "examples":  [
                                          {
-                                             "chinese":  "当然，放心吧。",
-                                             "pinyin":  "Dāngrán, fàngxīn ba.",
-                                             "vietnamese":  "Đương nhiên, cứ yên tâm đi."
+                                             "chinese":  "你喝茶或者喝水。",
+                                             "pinyin":  "ni he cha huo zhe he shui。",
+                                             "vietnamese":  "Bạn uống trà hoặc uống nước."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "thời gian A 或者 thời gian B",
+                        "pattern":  "thời gian A 或者 thời gian B",
+                        "meaning":  "Thời gian A hoặc thời gian B",
+                        "usage":  "Dùng để nói một trong hai thời điểm đều có thể",
+                        "note":  "或者 dùng khi người nói đưa ra lựa chọn, chưa yêu cầu người nghe chọn trực tiếp",
+                        "chinese":  "明天或者后天都可以。",
+                        "pinyin":  "ming tian huo zhe hou tian dou ke yi。",
+                        "vietnamese":  "Ngày mai hoặc ngày kia đều được.",
+                        "stars":  5,
+                        "level":  "⭐⭐⭐⭐⭐",
+                        "examples":  [
+                                         {
+                                             "chinese":  "明天或者后天都可以。",
+                                             "pinyin":  "ming tian huo zhe hou tian dou ke yi。",
+                                             "vietnamese":  "Ngày mai hoặc ngày kia đều được."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "最好 + V",
+                        "pattern":  "最好 + V",
+                        "meaning":  "Tốt nhất là nên…",
+                        "usage":  "Dùng để đưa ra lời khuyên hoặc phương án tốt nhất",
+                        "note":  "Sau 最好 thường là động từ/cụm động từ; có thể dùng để khuyên người khác",
+                        "chinese":  "最好现在就去。",
+                        "pinyin":  "zui hao xian zai jiu qu。",
+                        "vietnamese":  "Tốt nhất là bây giờ đi ngay.",
+                        "stars":  5,
+                        "level":  "⭐⭐⭐⭐⭐",
+                        "examples":  [
+                                         {
+                                             "chinese":  "最好现在就去。",
+                                             "pinyin":  "zui hao xian zai jiu qu。",
+                                             "vietnamese":  "Tốt nhất là bây giờ đi ngay."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "最好 + V + N",
+                        "pattern":  "最好 + V + N",
+                        "meaning":  "Tốt nhất là làm gì",
+                        "usage":  "Dùng để nói lựa chọn tốt hơn trong một tình huống cụ thể",
+                        "note":  "Không nên hiểu 最好 là “tốt nhất” độc lập, mà là “nên… là tốt nhất”",
+                        "chinese":  "你最好复习课文。",
+                        "pinyin":  "ni zui hao fu xi ke wen。",
+                        "vietnamese":  "Bạn tốt nhất nên ôn bài khóa.",
+                        "stars":  5,
+                        "level":  "⭐⭐⭐⭐⭐",
+                        "examples":  [
+                                         {
+                                             "chinese":  "你最好复习课文。",
+                                             "pinyin":  "ni zui hao fu xi ke wen。",
+                                             "vietnamese":  "Bạn tốt nhất nên ôn bài khóa."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "你最好 + V",
+                        "pattern":  "你最好 + V",
+                        "meaning":  "Bạn tốt nhất nên…",
+                        "usage":  "Dùng để khuyên trực tiếp người nghe làm việc gì",
+                        "note":  "Có sắc thái khuyên nhủ; nếu giọng mạnh có thể giống yêu cầu",
+                        "chinese":  "你最好早点儿睡觉。",
+                        "pinyin":  "ni zui hao zao dian r shui jiao。",
+                        "vietnamese":  "Bạn tốt nhất nên ngủ sớm một chút.",
+                        "stars":  5,
+                        "level":  "⭐⭐⭐⭐⭐",
+                        "examples":  [
+                                         {
+                                             "chinese":  "你最好早点儿睡觉。",
+                                             "pinyin":  "ni zui hao zao dian r shui jiao。",
+                                             "vietnamese":  "Bạn tốt nhất nên ngủ sớm một chút."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "放心",
+                        "pattern":  "放心",
+                        "meaning":  "Yên tâm",
+                        "usage":  "Dùng để nói không còn lo lắng về việc gì hoặc ai đó",
+                        "note":  "Thường dùng: 放心吧 / 很放心 / 不放心 / 放不下心",
+                        "chinese":  "你放心吧，我没问题。",
+                        "pinyin":  "ni fang xin ba， wo mei wen ti。",
+                        "vietnamese":  "Bạn yên tâm đi, tôi không sao.",
+                        "stars":  4,
+                        "level":  "⭐⭐⭐⭐",
+                        "examples":  [
+                                         {
+                                             "chinese":  "你放心吧，我没问题。",
+                                             "pinyin":  "ni fang xin ba， wo mei wen ti。",
+                                             "vietnamese":  "Bạn yên tâm đi, tôi không sao."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "不放心",
+                        "pattern":  "不放心",
+                        "meaning":  "Không yên tâm",
+                        "usage":  "Dùng khi còn lo lắng, chưa tin tưởng hoàn toàn",
+                        "note":  "Sau 对 + người/việc có thể nói đối tượng mình không yên tâm",
+                        "chinese":  "我对他不放心。",
+                        "pinyin":  "wo dui ta bu fang xin。",
+                        "vietnamese":  "Tôi không yên tâm về anh ấy.",
+                        "stars":  4,
+                        "level":  "⭐⭐⭐⭐",
+                        "examples":  [
+                                         {
+                                             "chinese":  "我对他不放心。",
+                                             "pinyin":  "wo dui ta bu fang xin。",
+                                             "vietnamese":  "Tôi không yên tâm về anh ấy."
+                                         }
+                                     ]
+                    },
+                    {
+                        "type":  "structure",
+                        "title":  "放不下心",
+                        "pattern":  "放不下心",
+                        "meaning":  "Không thể yên tâm được",
+                        "usage":  "Dùng khi trong lòng vẫn còn lo, không thể bỏ xuống được",
+                        "note":  "Mạnh hơn 不放心, nhấn mạnh cảm giác lo lắng trong lòng",
+                        "chinese":  "孩子没回来，我放不下心。",
+                        "pinyin":  "hai zi mei hui lai， wo fang bu xia xin。",
+                        "vietnamese":  "Con chưa về, tôi không thể yên tâm.",
+                        "stars":  3,
+                        "level":  "⭐⭐⭐",
+                        "examples":  [
+                                         {
+                                             "chinese":  "孩子没回来，我放不下心。",
+                                             "pinyin":  "hai zi mei hui lai， wo fang bu xia xin。",
+                                             "vietnamese":  "Con chưa về, tôi không thể yên tâm."
                                          }
                                      ]
                     }
@@ -1481,673 +1654,643 @@
                            "chinese":  "中间",
                            "pinyin":  "zhōngjiān",
                            "partOfSpeech":  "n.",
-                           "vietnamese":  "ở giữa, trung gian"
+                           "sinoVietnamese":  "trung gian",
+                           "vietnamese":  "ở giữa, trung gian",
+                           "examples":  [
+                                            {
+                                                "chinese":  "老师站在学生中间，给大家讲课。",
+                                                "pinyin":  "Lǎoshī zhàn zài xuésheng zhōngjiān, gěi dàjiā jiǎngkè.",
+                                                "vietnamese":  "Giáo viên đứng giữa học sinh, giảng bài cho mọi người."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "长",
                            "pinyin":  "zhǎng",
                            "partOfSpeech":  "v.",
-                           "vietnamese":  "lớn lên, phát triển"
+                           "sinoVietnamese":  "trưởng",
+                           "vietnamese":  "lớn lên, phát triển",
+                           "examples":  [
+                                            {
+                                                "chinese":  "几年不见，他长高了很多。",
+                                                "pinyin":  "Jǐ nián bú jiàn, tā zhǎng gāo le hěn duō.",
+                                                "vietnamese":  "Mấy năm không gặp, anh ấy đã cao lên rất nhiều."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "帅",
                            "pinyin":  "shuài",
                            "partOfSpeech":  "adj.",
-                           "vietnamese":  "đẹp trai"
+                           "sinoVietnamese":  "suất",
+                           "vietnamese":  "đẹp trai",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他穿上西服以后看起来很帅。",
+                                                "pinyin":  "Tā chuān shang xīfú yǐhòu kàn qǐlái hěn shuài.",
+                                                "vietnamese":  "Sau khi mặc vest, anh ấy trông rất đẹp trai."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "聪明",
                            "pinyin":  "cōngming",
                            "partOfSpeech":  "adj.",
-                           "vietnamese":  "thông minh"
+                           "sinoVietnamese":  "thông minh",
+                           "vietnamese":  "thông minh",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个孩子很聪明，学东西特别快。",
+                                                "pinyin":  "Zhège háizi hěn cōngming, xué dōngxi tèbié kuài.",
+                                                "vietnamese":  "Đứa trẻ này rất thông minh, học gì cũng rất nhanh."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "毕业",
                            "pinyin":  "bìyè",
                            "partOfSpeech":  "v.",
-                           "vietnamese":  "tốt nghiệp"
+                           "sinoVietnamese":  "tốt nghiệp",
+                           "vietnamese":  "tốt nghiệp",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我哥哥明年大学毕业。",
+                                                "pinyin":  "Wǒ gēge míngnián dàxué bìyè.",
+                                                "vietnamese":  "Anh trai tôi năm sau tốt nghiệp đại học."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "位",
                            "pinyin":  "wèi",
                            "partOfSpeech":  "m.",
-                           "vietnamese":  "vị (lượng từ lịch sự cho người)"
+                           "sinoVietnamese":  "vị",
+                           "vietnamese":  "vị, lượng từ lịch sự cho người",
+                           "examples":  [
+                                            {
+                                                "chinese":  "今天有一位新老师来我们班。",
+                                                "pinyin":  "Jīntiān yǒu yí wèi xīn lǎoshī lái wǒmen bān.",
+                                                "vietnamese":  "Hôm nay có một giáo viên mới đến lớp chúng tôi."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "美女",
                            "pinyin":  "měinǚ",
                            "partOfSpeech":  "n.",
-                           "vietnamese":  "cô gái đẹp, mỹ nữ"
+                           "sinoVietnamese":  "mỹ nữ",
+                           "vietnamese":  "cô gái đẹp, mỹ nữ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "她不只是美女，学习成绩也很好。",
+                                                "pinyin":  "Tā bù zhǐ shì měinǚ, xuéxí chéngjì yě hěn hǎo.",
+                                                "vietnamese":  "Cô ấy không chỉ là người đẹp, thành tích học tập cũng rất tốt."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "噢",
                            "pinyin":  "ō",
                            "partOfSpeech":  "int.",
-                           "vietnamese":  "ồ, à"
+                           "sinoVietnamese":  "ồ",
+                           "vietnamese":  "ồ, à",
+                           "examples":  [
+                                            {
+                                                "chinese":  "噢，原来你已经认识她了。",
+                                                "pinyin":  "Ō, yuánlái nǐ yǐjīng rènshi tā le.",
+                                                "vietnamese":  "Ồ, hóa ra bạn đã quen cô ấy rồi."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "好像",
                            "pinyin":  "hǎoxiàng",
                            "partOfSpeech":  "adv.",
-                           "vietnamese":  "hình như, dường như"
+                           "sinoVietnamese":  "hảo tượng",
+                           "vietnamese":  "hình như, dường như",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他好像不太喜欢这个工作。",
+                                                "pinyin":  "Tā hǎoxiàng bú tài xǐhuan zhège gōngzuò.",
+                                                "vietnamese":  "Hình như anh ấy không thích công việc này lắm."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "介绍",
                            "pinyin":  "jièshào",
                            "partOfSpeech":  "v.",
-                           "vietnamese":  "giới thiệu"
+                           "sinoVietnamese":  "giới thiệu",
+                           "vietnamese":  "giới thiệu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "老师给我们介绍了一位新同学。",
+                                                "pinyin":  "Lǎoshī gěi wǒmen jièshào le yí wèi xīn tóngxué.",
+                                                "vietnamese":  "Giáo viên giới thiệu cho chúng tôi một bạn học mới."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "或者",
                            "pinyin":  "huòzhě",
                            "partOfSpeech":  "conj.",
-                           "vietnamese":  "hoặc là"
+                           "sinoVietnamese":  "hoặc giả",
+                           "vietnamese":  "hoặc là",
+                           "examples":  [
+                                            {
+                                                "chinese":  "周末我们去看电影，或者去公园散步。",
+                                                "pinyin":  "Zhōumò wǒmen qù kàn diànyǐng, huòzhě qù gōngyuán sànbù.",
+                                                "vietnamese":  "Cuối tuần chúng ta đi xem phim hoặc đi công viên dạo bộ."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "最好",
                            "pinyin":  "zuìhǎo",
                            "partOfSpeech":  "adv.",
-                           "vietnamese":  "tốt nhất"
+                           "sinoVietnamese":  "tối hảo",
+                           "vietnamese":  "tốt nhất",
+                           "examples":  [
+                                            {
+                                                "chinese":  "你最好提前十分钟到教室。",
+                                                "pinyin":  "Nǐ zuìhǎo tíqián shí fēnzhōng dào jiàoshì.",
+                                                "vietnamese":  "Tốt nhất bạn nên đến lớp sớm mười phút."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "停",
                            "pinyin":  "tíng",
                            "partOfSpeech":  "v.",
-                           "vietnamese":  "dừng, ngừng"
+                           "sinoVietnamese":  "đình",
+                           "vietnamese":  "dừng, ngừng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "雨停了，我们可以出去玩了。",
+                                                "pinyin":  "Yǔ tíng le, wǒmen kěyǐ chūqù wán le.",
+                                                "vietnamese":  "Mưa tạnh rồi, chúng ta có thể ra ngoài chơi."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "记得",
                            "pinyin":  "jìde",
                            "partOfSpeech":  "v.",
-                           "vietnamese":  "nhớ"
+                           "sinoVietnamese":  "kí đắc",
+                           "vietnamese":  "nhớ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "你记得明天带护照和充电器。",
+                                                "pinyin":  "Nǐ jìde míngtiān dài hùzhào hé chōngdiànqì.",
+                                                "vietnamese":  "Bạn nhớ ngày mai mang hộ chiếu và bộ sạc."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "记者",
                            "pinyin":  "jìzhě",
                            "partOfSpeech":  "n.",
-                           "vietnamese":  "nhà báo, phóng viên"
+                           "sinoVietnamese":  "kí giả",
+                           "vietnamese":  "nhà báo, phóng viên",
+                           "examples":  [
+                                            {
+                                                "chinese":  "那位记者正在采访运动员。",
+                                                "pinyin":  "Nà wèi jìzhě zhèngzài cǎifǎng yùndòngyuán.",
+                                                "vietnamese":  "Phóng viên kia đang phỏng vấn vận động viên."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "派",
                            "pinyin":  "pài",
                            "partOfSpeech":  "v.",
-                           "vietnamese":  "phái, cử đi"
+                           "sinoVietnamese":  "phái",
+                           "vietnamese":  "phái, cử đi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "公司派他去上海参加培训。",
+                                                "pinyin":  "Gōngsī pài tā qù Shànghǎi cānjiā péixùn.",
+                                                "vietnamese":  "Công ty cử anh ấy đến Thượng Hải tham gia tập huấn."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "宣传部",
                            "pinyin":  "xuānchuánbù",
                            "partOfSpeech":  "n.",
-                           "vietnamese":  "ban tuyên truyền"
+                           "sinoVietnamese":  "tuyên truyền bộ",
+                           "vietnamese":  "ban tuyên truyền",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他在学校宣传部工作。",
+                                                "pinyin":  "Tā zài xuéxiào xuānchuánbù gōngzuò.",
+                                                "vietnamese":  "Anh ấy làm việc ở ban tuyên truyền của trường."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "宣传",
                            "pinyin":  "xuānchuán",
                            "partOfSpeech":  "v.",
-                           "vietnamese":  "tuyên truyền"
+                           "sinoVietnamese":  "tuyên truyền",
+                           "vietnamese":  "tuyên truyền",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我们要宣传保护环境的重要性。",
+                                                "pinyin":  "Wǒmen yào xuānchuán bǎohù huánjìng de zhòngyàoxìng.",
+                                                "vietnamese":  "Chúng ta phải tuyên truyền tầm quan trọng của bảo vệ môi trường."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "部",
                            "pinyin":  "bù",
                            "partOfSpeech":  "suf.",
-                           "vietnamese":  "bộ, ban"
+                           "sinoVietnamese":  "bộ",
+                           "vietnamese":  "bộ, ban",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个部门主要负责学生工作。",
+                                                "pinyin":  "Zhège bùmén zhǔyào fùzé xuésheng gōngzuò.",
+                                                "vietnamese":  "Bộ phận này chủ yếu phụ trách công tác sinh viên."
+                                            }
+                                        ]
                        },
                        {
                            "chinese":  "放心",
                            "pinyin":  "fàngxīn",
                            "partOfSpeech":  "v.",
-                           "vietnamese":  "yên tâm"
+                           "sinoVietnamese":  "phóng tâm",
+                           "vietnamese":  "yên tâm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "你放心，我一定会准时到。",
+                                                "pinyin":  "Nǐ fàngxīn, wǒ yídìng huì zhǔnshí dào.",
+                                                "vietnamese":  "Bạn yên tâm, tôi nhất định sẽ đến đúng giờ."
+                                            }
+                                        ]
                        }
                    ],
     "structure":  [
                       {
-                          "chinese":  "你弟弟长得很帅，而且特别喜欢运动。",
-                          "pinyin":  "Nǐ dìdi zhǎng de hěn shuài, érqiě tèbié xǐhuan yùndòng.",
-                          "vietnamese":  "Em trai bạn rất đẹp trai và đặc biệt thích thể thao."
-                      },
-                      {
-                          "chinese":  "她长得很漂亮，所以很多人都认识她。",
-                          "pinyin":  "Tā zhǎng de hěn piàoliang, suǒyǐ hěn duō rén dōu rènshi tā.",
-                          "vietnamese":  "Cô ấy rất xinh đẹp nên rất nhiều người biết cô ấy."
-                      },
-                      {
-                          "chinese":  "这个孩子长得很可爱，而且非常聪明。",
-                          "pinyin":  "Zhège háizi zhǎng de hěn kě’ài, érqiě fēicháng cōngming.",
-                          "vietnamese":  "Đứa trẻ này rất đáng yêu và vô cùng thông minh."
-                      },
-                      {
-                          "chinese":  "他长得不高，但是打篮球打得很好。",
-                          "pinyin":  "Tā zhǎng de bù gāo, dànshì dǎ lánqiú dǎ de hěn hǎo.",
-                          "vietnamese":  "Anh ấy không cao nhưng chơi bóng rổ rất giỏi."
-                      },
-                      {
-                          "chinese":  "你们两个人长得很像，大家都以为是兄弟。",
-                          "pinyin":  "Nǐmen liǎng gè rén zhǎng de hěn xiàng, dàjiā dōu yǐwéi shì xiōngdì.",
-                          "vietnamese":  "Hai người trông rất giống nhau nên mọi người đều tưởng là anh em."
-                      },
-                      {
-                          "chinese":  "她长得特别年轻，一点儿也不像三十岁。",
-                          "pinyin":  "Tā zhǎng de tèbié niánqīng, yìdiǎnr yě bú xiàng sānshí suì.",
-                          "vietnamese":  "Cô ấy trông đặc biệt trẻ, hoàn toàn không giống người 30 tuổi."
-                      },
-                      {
-                          "chinese":  "那位老师长得很和气，所以学生都喜欢他。",
-                          "pinyin":  "Nà wèi lǎoshī zhǎng de hěn héqi, suǒyǐ xuésheng dōu xǐhuan tā.",
-                          "vietnamese":  "Vị giáo viên đó trông rất hiền hòa nên học sinh đều thích thầy."
-                      },
-                      {
-                          "chinese":  "他长得越来越帅了，而且越来越自信。",
-                          "pinyin":  "Tā zhǎng de yuèláiyuè shuài le, érqiě yuèláiyuè zìxìn.",
-                          "vietnamese":  "Anh ấy ngày càng đẹp trai và tự tin hơn."
-                      },
-                      {
-                          "chinese":  "她长得很像她妈妈，尤其是眼睛。",
-                          "pinyin":  "Tā zhǎng de hěn xiàng tā māma, yóuqí shì yǎnjing.",
-                          "vietnamese":  "Cô ấy rất giống mẹ mình, đặc biệt là đôi mắt."
-                      },
-                      {
-                          "chinese":  "这个演员长得很普通，但是演技特别好。",
-                          "pinyin":  "Zhège yǎnyuán zhǎng de hěn pǔtōng, dànshì yǎnjì tèbié hǎo.",
-                          "vietnamese":  "Diễn viên này trông bình thường nhưng diễn xuất đặc biệt tốt."
-                      },
-                      {
-                          "chinese":  "今天的天气特别好，我们一起出去玩吧。",
-                          "pinyin":  "Jīntiān de tiānqì tèbié hǎo, wǒmen yìqǐ chūqù wán ba.",
-                          "vietnamese":  "Thời tiết hôm nay đặc biệt đẹp, chúng ta cùng ra ngoài chơi nhé."
-                      },
-                      {
-                          "chinese":  "这家饭店的菜特别好吃。",
-                          "pinyin":  "Zhè jiā fàndiàn de cài tèbié hǎochī.",
-                          "vietnamese":  "Món ăn của nhà hàng này đặc biệt ngon."
-                      },
-                      {
-                          "chinese":  "她特别喜欢中国文化。",
-                          "pinyin":  "Tā tèbié xǐhuan Zhōngguó wénhuà.",
-                          "vietnamese":  "Cô ấy đặc biệt thích văn hóa Trung Quốc."
-                      },
-                      {
-                          "chinese":  "我今天特别累，所以想早点儿休息。",
-                          "pinyin":  "Wǒ jīntiān tèbié lèi, suǒyǐ xiǎng zǎodiǎnr xiūxi.",
-                          "vietnamese":  "Hôm nay tôi đặc biệt mệt nên muốn nghỉ sớm."
-                      },
-                      {
-                          "chinese":  "这个老师特别负责，学生都很尊敬他。",
-                          "pinyin":  "Zhège lǎoshī tèbié fùzé, xuésheng dōu hěn zūnjìng tā.",
-                          "vietnamese":  "Giáo viên này đặc biệt có trách nhiệm nên học sinh đều kính trọng thầy."
-                      },
-                      {
-                          "chinese":  "农村的空气特别新鲜。",
-                          "pinyin":  "Nóngcūn de kōngqì tèbié xīnxiān.",
-                          "vietnamese":  "Không khí ở nông thôn đặc biệt trong lành."
-                      },
-                      {
-                          "chinese":  "她唱歌特别好听。",
-                          "pinyin":  "Tā chànggē tèbié hǎotīng.",
-                          "vietnamese":  "Cô ấy hát đặc biệt hay."
-                      },
-                      {
-                          "chinese":  "我对这次旅行特别期待。",
-                          "pinyin":  "Wǒ duì zhè cì lǚxíng tèbié qīdài.",
-                          "vietnamese":  "Tôi đặc biệt mong chờ chuyến du lịch này."
-                      },
-                      {
-                          "chinese":  "这本书特别有意思。",
-                          "pinyin":  "Zhè běn shū tèbié yǒu yìsi.",
-                          "vietnamese":  "Quyển sách này đặc biệt thú vị."
-                      },
-                      {
-                          "chinese":  "今天路上特别堵车。",
-                          "pinyin":  "Jīntiān lùshang tèbié dǔchē.",
-                          "vietnamese":  "Hôm nay đường đặc biệt tắc."
-                      },
-                      {
-                          "chinese":  "我是从越南来的，现在在中国学习汉语。",
-                          "pinyin":  "Wǒ shì cóng Yuènán lái de, xiànzài zài Zhōngguó xuéxí Hànyǔ.",
-                          "vietnamese":  "Tôi đến từ Việt Nam và hiện đang học tiếng Trung ở Trung Quốc."
-                      },
-                      {
-                          "chinese":  "那位同学是从北京来的。",
-                          "pinyin":  "Nà wèi tóngxué shì cóng Běijīng lái de.",
-                          "vietnamese":  "Bạn học đó đến từ Bắc Kinh."
-                      },
-                      {
-                          "chinese":  "她是从农村来的，但是很喜欢城市生活。",
-                          "pinyin":  "Tā shì cóng nóngcūn lái de, dànshì hěn xǐhuan chéngshì shēnghuó.",
-                          "vietnamese":  "Cô ấy đến từ nông thôn nhưng rất thích cuộc sống thành phố."
-                      },
-                      {
-                          "chinese":  "这些游客是从国外来的。",
-                          "pinyin":  "Zhèxiē yóukè shì cóng guówài lái de.",
-                          "vietnamese":  "Những du khách này đến từ nước ngoài."
-                      },
-                      {
-                          "chinese":  "他是从上海来的导游。",
-                          "pinyin":  "Tā shì cóng Shànghǎi lái de dǎoyóu.",
-                          "vietnamese":  "Anh ấy là hướng dẫn viên đến từ Thượng Hải."
-                      },
-                      {
-                          "chinese":  "我有一个从中国来的朋友。",
-                          "pinyin":  "Wǒ yǒu yí gè cóng Zhōngguó lái de péngyou.",
-                          "vietnamese":  "Tôi có một người bạn đến từ Trung Quốc."
-                      },
-                      {
-                          "chinese":  "这位老师是从美国来的。",
-                          "pinyin":  "Zhè wèi lǎoshī shì cóng Měiguó lái de.",
-                          "vietnamese":  "Giáo viên này đến từ Mỹ."
-                      },
-                      {
-                          "chinese":  "他是从南方来的，所以不习惯北方的冬天。",
-                          "pinyin":  "Tā shì cóng nánfāng lái de, suǒyǐ bù xíguàn běifāng de dōngtiān.",
-                          "vietnamese":  "Anh ấy đến từ miền Nam nên không quen mùa đông miền Bắc."
-                      },
-                      {
-                          "chinese":  "这些水果是从外地来的。",
-                          "pinyin":  "Zhèxiē shuǐguǒ shì cóng wàidì lái de.",
-                          "vietnamese":  "Những loại trái cây này được chuyển đến từ nơi khác."
-                      },
-                      {
-                          "chinese":  "她认识很多从不同国家来的留学生。",
-                          "pinyin":  "Tā rènshi hěn duō cóng bùtóng guójiā lái de liúxuéshēng.",
-                          "vietnamese":  "Cô ấy quen nhiều du học sinh đến từ các quốc gia khác nhau."
-                      },
-                      {
-                          "chinese":  "他今天好像不太高兴，而且一句话也不想说。",
-                          "pinyin":  "Tā jīntiān hǎoxiàng bú tài gāoxìng, érqiě yí jù huà yě bù xiǎng shuō.",
-                          "vietnamese":  "Hôm nay anh ấy dường như không vui lắm và cũng không muốn nói gì."
-                      },
-                      {
-                          "chinese":  "外面好像要下雨了，我们早点儿回去吧。",
-                          "pinyin":  "Wàimiàn hǎoxiàng yào xiàyǔ le, wǒmen zǎodiǎnr huíqù ba.",
-                          "vietnamese":  "Bên ngoài hình như sắp mưa rồi, chúng ta về sớm đi."
-                      },
-                      {
-                          "chinese":  "这个人我好像在哪儿见过。",
-                          "pinyin":  "Zhège rén wǒ hǎoxiàng zài nǎr jiànguo.",
-                          "vietnamese":  "Người này hình như tôi đã gặp ở đâu rồi."
-                      },
-                      {
-                          "chinese":  "她好像很喜欢中国文化。",
-                          "pinyin":  "Tā hǎoxiàng hěn xǐhuan Zhōngguó wénhuà.",
-                          "vietnamese":  "Cô ấy dường như rất thích văn hóa Trung Quốc."
-                      },
-                      {
-                          "chinese":  "老师今天好像特别忙。",
-                          "pinyin":  "Lǎoshī jīntiān hǎoxiàng tèbié máng.",
-                          "vietnamese":  "Hôm nay giáo viên hình như đặc biệt bận."
-                      },
-                      {
-                          "chinese":  "他好像已经把作业做完了。",
-                          "pinyin":  "Tā hǎoxiàng yǐjīng bǎ zuòyè zuò wán le.",
-                          "vietnamese":  "Anh ấy hình như đã làm xong bài tập rồi."
-                      },
-                      {
-                          "chinese":  "这道题好像没有那么难。",
-                          "pinyin":  "Zhè dào tí hǎoxiàng méiyǒu nàme nán.",
-                          "vietnamese":  "Bài này hình như không khó đến thế."
-                      },
-                      {
-                          "chinese":  "奶奶好像已经学会发邮件了。",
-                          "pinyin":  "Nǎinai hǎoxiàng yǐjīng xuéhuì fā yóujiàn le.",
-                          "vietnamese":  "Bà hình như đã học được cách gửi email rồi."
-                      },
-                      {
-                          "chinese":  "他们两个人好像认识很长时间了。",
-                          "pinyin":  "Tāmen liǎng gè rén hǎoxiàng rènshi hěn cháng shíjiān le.",
-                          "vietnamese":  "Hai người họ hình như quen nhau đã lâu rồi."
-                      },
-                      {
-                          "chinese":  "这家饭店的菜好像比以前好吃多了。",
-                          "pinyin":  "Zhè jiā fàndiàn de cài hǎoxiàng bǐ yǐqián hǎochī duō le.",
-                          "vietnamese":  "Món ăn của nhà hàng này hình như ngon hơn trước nhiều rồi."
-                      },
-                      {
-                          "chinese":  "有机会的话，我想去中国旅游。",
-                          "pinyin":  "Yǒu jīhuì dehuà, wǒ xiǎng qù Zhōngguó lǚyóu.",
-                          "vietnamese":  "Nếu có cơ hội, tôi muốn đi du lịch Trung Quốc."
-                      },
-                      {
-                          "chinese":  "有机会的话，你应该去看看长城。",
-                          "pinyin":  "Yǒu jīhuì dehuà, nǐ yīnggāi qù kànkan Chángchéng.",
-                          "vietnamese":  "Nếu có cơ hội, bạn nên đi thăm Vạn Lý Trường Thành."
-                      },
-                      {
-                          "chinese":  "有机会的话，我们一起吃饭吧。",
-                          "pinyin":  "Yǒu jīhuì dehuà, wǒmen yìqǐ chīfàn ba.",
-                          "vietnamese":  "Nếu có cơ hội, chúng ta cùng ăn cơm nhé."
-                      },
-                      {
-                          "chinese":  "有机会的话，我想提高自己的汉语水平。",
-                          "pinyin":  "Yǒu jīhuì dehuà, wǒ xiǎng tígāo zìjǐ de Hànyǔ shuǐpíng.",
-                          "vietnamese":  "Nếu có cơ hội, tôi muốn nâng cao trình độ tiếng Trung của mình."
-                      },
-                      {
-                          "chinese":  "有机会的话，我会参加学校的活动。",
-                          "pinyin":  "Yǒu jīhuì dehuà, wǒ huì cānjiā xuéxiào de huódòng.",
-                          "vietnamese":  "Nếu có cơ hội, tôi sẽ tham gia các hoạt động của trường."
-                      },
-                      {
-                          "chinese":  "有机会的话，请来我家做客。",
-                          "pinyin":  "Yǒu jīhuì dehuà, qǐng lái wǒ jiā zuòkè.",
-                          "vietnamese":  "Nếu có cơ hội, hãy đến nhà tôi chơi."
-                      },
-                      {
-                          "chinese":  "有机会的话，我想认识更多中国朋友。",
-                          "pinyin":  "Yǒu jīhuì dehuà, wǒ xiǎng rènshi gèng duō Zhōngguó péngyou.",
-                          "vietnamese":  "Nếu có cơ hội, tôi muốn làm quen với nhiều bạn Trung Quốc hơn."
-                      },
-                      {
-                          "chinese":  "有机会的话，我们再见面聊聊。",
-                          "pinyin":  "Yǒu jīhuì dehuà, wǒmen zài jiànmiàn liáoliao.",
-                          "vietnamese":  "Nếu có cơ hội, chúng ta gặp lại và trò chuyện nhé."
-                      },
-                      {
-                          "chinese":  "有机会的话，我想学习京剧。",
-                          "pinyin":  "Yǒu jīhuì dehuà, wǒ xiǎng xuéxí Jīngjù.",
-                          "vietnamese":  "Nếu có cơ hội, tôi muốn học Kinh kịch."
-                      },
-                      {
-                          "chinese":  "有机会的话，我一定会帮助你。",
-                          "pinyin":  "Yǒu jīhuì dehuà, wǒ yídìng huì bāngzhù nǐ.",
-                          "vietnamese":  "Nếu có cơ hội, tôi nhất định sẽ giúp bạn."
-                      },
-                      {
-                          "chinese":  "请你介绍一个中国朋友给我认识吧。",
-                          "pinyin":  "Qǐng nǐ jièshào yí gè Zhōngguó péngyou gěi wǒ rènshi ba.",
-                          "vietnamese":  "Hãy giới thiệu cho tôi một người bạn Trung Quốc nhé."
-                      },
-                      {
-                          "chinese":  "老师介绍我们认识了一位中国学生。",
-                          "pinyin":  "Lǎoshī jièshào wǒmen rènshi le yí wèi Zhōngguó xuésheng.",
-                          "vietnamese":  "Giáo viên giới thiệu cho chúng tôi làm quen với một sinh viên Trung Quốc."
-                      },
-                      {
-                          "chinese":  "他介绍我认识了很多新朋友。",
-                          "pinyin":  "Tā jièshào wǒ rènshi le hěn duō xīn péngyou.",
-                          "vietnamese":  "Anh ấy giới thiệu cho tôi làm quen với rất nhiều bạn mới."
-                      },
-                      {
-                          "chinese":  "你能介绍一下这位老师给我认识吗？",
-                          "pinyin":  "Nǐ néng jièshào yíxià zhè wèi lǎoshī gěi wǒ rènshi ma?",
-                          "vietnamese":  "Bạn có thể giới thiệu vị giáo viên này cho tôi làm quen không?"
-                      },
-                      {
-                          "chinese":  "导游介绍游客认识当地文化。",
-                          "pinyin":  "Dǎoyóu jièshào yóukè rènshi dāngdì wénhuà.",
-                          "vietnamese":  "Hướng dẫn viên giới thiệu để du khách hiểu văn hóa địa phương."
-                      },
-                      {
-                          "chinese":  "朋友介绍我认识了现在的同事。",
-                          "pinyin":  "Péngyou jièshào wǒ rènshi le xiànzài de tóngshì.",
-                          "vietnamese":  "Bạn tôi đã giới thiệu để tôi quen với đồng nghiệp hiện tại."
-                      },
-                      {
-                          "chinese":  "她想介绍妹妹给大家认识。",
-                          "pinyin":  "Tā xiǎng jièshào mèimei gěi dàjiā rènshi.",
-                          "vietnamese":  "Cô ấy muốn giới thiệu em gái mình với mọi người."
-                      },
-                      {
-                          "chinese":  "能不能介绍几位中国朋友给我认识？",
-                          "pinyin":  "Néng bu néng jièshào jǐ wèi Zhōngguó péngyou gěi wǒ rènshi?",
-                          "vietnamese":  "Có thể giới thiệu cho tôi vài người bạn Trung Quốc được không?"
-                      },
-                      {
-                          "chinese":  "老师介绍我们认识以后，大家很快就熟悉了。",
-                          "pinyin":  "Lǎoshī jièshào wǒmen rènshi yǐhòu, dàjiā hěn kuài jiù shúxī le.",
-                          "vietnamese":  "Sau khi giáo viên giới thiệu cho chúng tôi làm quen, mọi người nhanh chóng thân thiết hơn."
-                      },
-                      {
-                          "chinese":  "他通过朋友介绍认识了自己的妻子。",
-                          "pinyin":  "Tā tōngguò péngyou jièshào rènshi le zìjǐ de qīzi.",
-                          "vietnamese":  "Anh ấy quen vợ mình thông qua sự giới thiệu của bạn bè."
-                      },
-                      {
-                          "chinese":  "你有空儿的时候来我家玩吧。",
-                          "pinyin":  "Nǐ yǒu kòngr de shíhou lái wǒ jiā wán ba.",
-                          "vietnamese":  "Khi có thời gian rảnh thì đến nhà tôi chơi nhé."
-                      },
-                      {
-                          "chinese":  "我有空儿就去图书馆看书。",
-                          "pinyin":  "Wǒ yǒu kòngr jiù qù túshūguǎn kàn shū.",
-                          "vietnamese":  "Hễ có thời gian rảnh là tôi đi thư viện đọc sách."
-                      },
-                      {
-                          "chinese":  "有空儿的话，我们一起吃饭吧。",
-                          "pinyin":  "Yǒu kòngr dehuà, wǒmen yìqǐ chīfàn ba.",
-                          "vietnamese":  "Nếu có thời gian rảnh thì chúng ta cùng ăn cơm nhé."
-                      },
-                      {
-                          "chinese":  "他周末有空儿，所以经常出去运动。",
-                          "pinyin":  "Tā zhōumò yǒu kòngr, suǒyǐ jīngcháng chūqù yùndòng.",
-                          "vietnamese":  "Cuối tuần anh ấy có thời gian rảnh nên thường ra ngoài tập thể dục."
-                      },
-                      {
-                          "chinese":  "你什么时候有空儿？",
-                          "pinyin":  "Nǐ shénme shíhou yǒu kòngr?",
-                          "vietnamese":  "Khi nào bạn rảnh?"
-                      },
-                      {
-                          "chinese":  "我最近有空儿就练习汉语口语。",
-                          "pinyin":  "Wǒ zuìjìn yǒu kòngr jiù liànxí Hànyǔ kǒuyǔ.",
-                          "vietnamese":  "Dạo gần đây hễ có thời gian rảnh là tôi luyện khẩu ngữ tiếng Trung."
-                      },
-                      {
-                          "chinese":  "有空儿的时候，我喜欢听音乐放松。",
-                          "pinyin":  "Yǒu kòngr de shíhou, wǒ xǐhuan tīng yīnyuè fàngsōng.",
-                          "vietnamese":  "Khi rảnh tôi thích nghe nhạc để thư giãn."
-                      },
-                      {
-                          "chinese":  "如果你有空儿，可以帮我看看这个问题吗？",
-                          "pinyin":  "Rúguǒ nǐ yǒu kòngr, kěyǐ bāng wǒ kànkan zhège wèntí ma?",
-                          "vietnamese":  "Nếu bạn rảnh, có thể giúp tôi xem vấn đề này không?"
-                      },
-                      {
-                          "chinese":  "奶奶有空儿的时候会练习打字。",
-                          "pinyin":  "Nǎinai yǒu kòngr de shíhou huì liànxí dǎzì.",
-                          "vietnamese":  "Khi rảnh bà sẽ luyện gõ máy tính."
-                      },
-                      {
-                          "chinese":  "有空儿的话，别忘了联系我。",
-                          "pinyin":  "Yǒu kòngr dehuà, bié wàng le liánxì wǒ.",
-                          "vietnamese":  "Nếu có thời gian rảnh, đừng quên liên lạc với tôi."
-                      },
-                      {
-                          "chinese":  "对了，你明天有空儿吗？",
-                          "pinyin":  "Duì le, nǐ míngtiān yǒu kòngr ma?",
-                          "vietnamese":  "À đúng rồi, ngày mai bạn có rảnh không?"
-                      },
-                      {
-                          "chinese":  "对了，你的汉语考试考得怎么样？",
-                          "pinyin":  "Duì le, nǐ de Hànyǔ kǎoshì kǎo de zěnmeyàng?",
-                          "vietnamese":  "À đúng rồi, kỳ thi tiếng Trung của bạn thế nào rồi?"
-                      },
-                      {
-                          "chinese":  "对了，老师让你下午去办公室。",
-                          "pinyin":  "Duì le, lǎoshī ràng nǐ xiàwǔ qù bàngōngshì.",
-                          "vietnamese":  "À đúng rồi, giáo viên bảo bạn chiều nay đến văn phòng."
-                      },
-                      {
-                          "chinese":  "对了，你认识那位中国同学吗？",
-                          "pinyin":  "Duì le, nǐ rènshi nà wèi Zhōngguó tóngxué ma?",
-                          "vietnamese":  "À đúng rồi, bạn có quen bạn học người Trung Quốc đó không?"
-                      },
-                      {
-                          "chinese":  "对了，别忘了带护照。",
-                          "pinyin":  "Duì le, bié wàng le dài hùzhào.",
-                          "vietnamese":  "À đúng rồi, đừng quên mang hộ chiếu."
-                      },
-                      {
-                          "chinese":  "对了，我们什么时候出发？",
-                          "pinyin":  "Duì le, wǒmen shénme shíhou chūfā?",
-                          "vietnamese":  "À đúng rồi, khi nào chúng ta xuất phát?"
-                      },
-                      {
-                          "chinese":  "对了，你会不会用这个软件？",
-                          "pinyin":  "Duì le, nǐ huì bú huì yòng zhège ruǎnjiàn?",
-                          "vietnamese":  "À đúng rồi, bạn có biết dùng phần mềm này không?"
-                      },
-                      {
-                          "chinese":  "对了，周末一起去爬山吧。",
-                          "pinyin":  "Duì le, zhōumò yìqǐ qù páshān ba.",
-                          "vietnamese":  "À đúng rồi, cuối tuần cùng đi leo núi nhé."
-                      },
-                      {
-                          "chinese":  "对了，你找到新房子了吗？",
-                          "pinyin":  "Duì le, nǐ zhǎodào xīn fángzi le ma?",
-                          "vietnamese":  "À đúng rồi, bạn tìm được nhà mới chưa?"
-                      },
-                      {
-                          "chinese":  "对了，我还有一个问题想问你。",
-                          "pinyin":  "Duì le, wǒ hái yǒu yí gè wèntí xiǎng wèn nǐ.",
-                          "vietnamese":  "À đúng rồi, tôi còn một câu hỏi muốn hỏi bạn."
-                      },
-                      {
-                          "chinese":  "记得带护照。",
-                          "pinyin":  "Jìde dài hùzhào.",
-                          "vietnamese":  "Nhớ mang hộ chiếu."
-                      },
-                      {
-                          "chinese":  "记得给我打电话。",
-                          "pinyin":  "Jìde gěi wǒ dǎ diànhuà.",
-                          "vietnamese":  "Nhớ gọi điện cho tôi."
-                      },
-                      {
-                          "chinese":  "我记得他的名字。",
-                          "pinyin":  "Wǒ jìde tā de míngzi.",
-                          "vietnamese":  "Tôi nhớ tên của anh ấy."
-                      },
-                      {
-                          "chinese":  "记得按时吃药。",
-                          "pinyin":  "Jìde ànshí chī yào.",
-                          "vietnamese":  "Nhớ uống thuốc đúng giờ."
-                      },
-                      {
-                          "chinese":  "你还记得我吗？",
-                          "pinyin":  "Nǐ hái jìde wǒ ma?",
-                          "vietnamese":  "Bạn còn nhớ tôi không?"
-                      },
-                      {
-                          "chinese":  "我记得老师说过这件事。",
-                          "pinyin":  "Wǒ jìde lǎoshī shuō guò zhè jiàn shì.",
-                          "vietnamese":  "Tôi nhớ giáo viên đã từng nói về việc này."
-                      },
-                      {
-                          "chinese":  "记得早点儿休息。",
-                          "pinyin":  "Jìde zǎodiǎnr xiūxi.",
-                          "vietnamese":  "Nhớ nghỉ ngơi sớm."
-                      },
-                      {
-                          "chinese":  "我记得这里以前有一家饭店。",
-                          "pinyin":  "Wǒ jìde zhèlǐ yǐqián yǒu yì jiā fàndiàn.",
-                          "vietnamese":  "Tôi nhớ trước đây ở đây có một nhà hàng."
-                      },
-                      {
-                          "chinese":  "记得把作业发给老师。",
-                          "pinyin":  "Jìde bǎ zuòyè fā gěi lǎoshī.",
-                          "vietnamese":  "Nhớ gửi bài tập cho giáo viên."
-                      },
-                      {
-                          "chinese":  "你记得我们第一次见面的时候吗？",
-                          "pinyin":  "Nǐ jìde wǒmen dì yī cì jiànmiàn de shíhou ma?",
-                          "vietnamese":  "Bạn còn nhớ lần đầu chúng ta gặp nhau không?"
-                      },
-                      {
-                          "chinese":  "他是公司派来的工程师。",
-                          "pinyin":  "Tā shì gōngsī pài lái de gōngchéngshī.",
-                          "vietnamese":  "Anh ấy là kỹ sư được công ty cử đến."
-                      },
-                      {
-                          "chinese":  "这位老师是学校派来的。",
-                          "pinyin":  "Zhè wèi lǎoshī shì xuéxiào pài lái de.",
-                          "vietnamese":  "Giáo viên này được nhà trường cử đến."
-                      },
-                      {
-                          "chinese":  "他是宣传部派来的记者。",
-                          "pinyin":  "Tā shì xuānchuánbù pài lái de jìzhě.",
-                          "vietnamese":  "Anh ấy là phóng viên được ban tuyên truyền cử đến."
-                      },
-                      {
-                          "chinese":  "他们是总公司派来的工作人员。",
-                          "pinyin":  "Tāmen shì zǒng gōngsī pài lái de gōngzuò rényuán.",
-                          "vietnamese":  "Họ là nhân viên được công ty tổng cử đến."
-                      },
-                      {
-                          "chinese":  "这位导游是旅行社派来的。",
-                          "pinyin":  "Zhè wèi dǎoyóu shì lǚxíngshè pài lái de.",
-                          "vietnamese":  "Hướng dẫn viên này được công ty du lịch cử đến."
-                      },
-                      {
-                          "chinese":  "他是医院派来的医生。",
-                          "pinyin":  "Tā shì yīyuàn pài lái de yīshēng.",
-                          "vietnamese":  "Anh ấy là bác sĩ được bệnh viện cử đến."
-                      },
-                      {
-                          "chinese":  "这些专家是政府派来的。",
-                          "pinyin":  "Zhèxiē zhuānjiā shì zhèngfǔ pài lái de.",
-                          "vietnamese":  "Những chuyên gia này được chính phủ cử đến."
-                      },
-                      {
-                          "chinese":  "她是公司派来帮助我们的。",
-                          "pinyin":  "Tā shì gōngsī pài lái bāngzhù wǒmen de.",
-                          "vietnamese":  "Cô ấy được công ty cử đến giúp chúng tôi."
-                      },
-                      {
-                          "chinese":  "那位经理是总部派来的。",
-                          "pinyin":  "Nà wèi jīnglǐ shì zǒngbù pài lái de.",
-                          "vietnamese":  "Vị quản lý đó được trụ sở chính cử đến."
-                      },
-                      {
-                          "chinese":  "他是学校派来负责这次活动的。",
-                          "pinyin":  "Tā shì xuéxiào pài lái fùzé zhè cì huódòng de.",
-                          "vietnamese":  "Anh ấy được nhà trường cử đến phụ trách hoạt động lần này."
-                      },
-                      {
-                          "chinese":  "放心吧，我一定会帮助你的。",
-                          "pinyin":  "Fàngxīn ba, wǒ yídìng huì bāngzhù nǐ de.",
-                          "vietnamese":  "Yên tâm đi, tôi nhất định sẽ giúp bạn."
-                      },
-                      {
-                          "chinese":  "放心吧，我不会迟到的。",
-                          "pinyin":  "Fàngxīn ba, wǒ bú huì chídào de.",
-                          "vietnamese":  "Yên tâm đi, tôi sẽ không đến muộn đâu."
-                      },
-                      {
-                          "chinese":  "放心吧，我已经准备好了。",
-                          "pinyin":  "Fàngxīn ba, wǒ yǐjīng zhǔnbèi hǎo le.",
-                          "vietnamese":  "Yên tâm đi, tôi đã chuẩn bị xong rồi."
-                      },
-                      {
-                          "chinese":  "放心吧，这个问题不难解决。",
-                          "pinyin":  "Fàngxīn ba, zhège wèntí bù nán jiějué.",
-                          "vietnamese":  "Yên tâm đi, vấn đề này không khó giải quyết."
-                      },
-                      {
-                          "chinese":  "放心吧，我记得你的电话号码。",
-                          "pinyin":  "Fàngxīn ba, wǒ jìde nǐ de diànhuà hàomǎ.",
-                          "vietnamese":  "Yên tâm đi, tôi nhớ số điện thoại của bạn."
-                      },
-                      {
-                          "chinese":  "放心吧，我会把事情告诉老师。",
-                          "pinyin":  "Fàngxīn ba, wǒ huì bǎ shìqing gàosu lǎoshī.",
-                          "vietnamese":  "Yên tâm đi, tôi sẽ báo việc này cho giáo viên."
-                      },
-                      {
-                          "chinese":  "放心吧，医生说你的身体好多了。",
-                          "pinyin":  "Fàngxīn ba, yīshēng shuō nǐ de shēntǐ hǎo duō le.",
-                          "vietnamese":  "Yên tâm đi, bác sĩ nói sức khỏe của bạn đã tốt hơn nhiều rồi."
-                      },
-                      {
-                          "chinese":  "放心吧，我不会忘记的。",
-                          "pinyin":  "Fàngxīn ba, wǒ bú huì wàngjì de.",
-                          "vietnamese":  "Yên tâm đi, tôi sẽ không quên đâu."
-                      },
-                      {
-                          "chinese":  "放心吧，一切都会顺利的。",
-                          "pinyin":  "Fàngxīn ba, yíqiè dōu huì shùnlì de.",
-                          "vietnamese":  "Yên tâm đi, mọi chuyện sẽ thuận lợi thôi."
-                      },
-                      {
-                          "chinese":  "放心吧，我们一定能完成任务。",
-                          "pinyin":  "Fàngxīn ba, wǒmen yídìng néng wánchéng rènwu.",
-                          "vietnamese":  "Yên tâm đi, chúng ta nhất định có thể hoàn thành nhiệm vụ."
+                          "type":  "structure",
+                          "title":  "长 + Adj",
+                          "pattern":  "长 + Adj",
+                          "meaning":  "Lớn lên / phát triển thành…",
+                          "usage":  "Dùng để nói người, cây cối, sự vật phát triển theo hướng nào đó",
+                          "note":  "长 đọc là zhǎng, nghĩa là “lớn lên, phát triển”; khác với 长 cháng = dài",
+                          "chinese":  "孩子长高了。",
+                          "pinyin":  "hai zi zhang gao le。",
+                          "vietnamese":  "Đứa trẻ cao lên rồi.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "孩子长高了。",
+                                               "pinyin":  "hai zi zhang gao le。",
+                                               "vietnamese":  "Đứa trẻ cao lên rồi."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "长大",
+                          "pattern":  "长大",
+                          "meaning":  "Lớn lên, trưởng thành",
+                          "usage":  "Dùng để nói người hoặc động vật từ nhỏ trở nên lớn, trưởng thành",
+                          "note":  "长大 là cụm cố định, thường nói về quá trình trưởng thành",
+                          "chinese":  "我长大以后想当医生。",
+                          "pinyin":  "wo zhang da yi hou xiang dang yi sheng。",
+                          "vietnamese":  "Sau khi lớn lên tôi muốn làm bác sĩ.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "我长大以后想当医生。",
+                                               "pinyin":  "wo zhang da yi hou xiang dang yi sheng。",
+                                               "vietnamese":  "Sau khi lớn lên tôi muốn làm bác sĩ."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "长得 + 像 + người",
+                          "pattern":  "长得 + 像 + người",
+                          "meaning":  "Trông giống ai",
+                          "usage":  "Dùng để nói ngoại hình của ai đó giống người nào",
+                          "note":  "长得 dùng để miêu tả ngoại hình; 像 = giống",
+                          "chinese":  "他长得像爸爸。",
+                          "pinyin":  "ta zhang de xiang ba ba。",
+                          "vietnamese":  "Anh ấy trông giống bố.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "他长得像爸爸。",
+                                               "pinyin":  "ta zhang de xiang ba ba。",
+                                               "vietnamese":  "Anh ấy trông giống bố."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "聪明",
+                          "pattern":  "聪明",
+                          "meaning":  "Thông minh",
+                          "usage":  "Dùng làm tính từ để khen người có đầu óc nhanh nhạy, hiểu nhanh",
+                          "note":  "Có thể đứng sau 很, hoặc đứng trước danh từ làm định ngữ",
+                          "chinese":  "这个孩子很聪明。",
+                          "pinyin":  "zhe ge hai zi hen cong ming。",
+                          "vietnamese":  "Đứa trẻ này rất thông minh.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "这个孩子很聪明。",
+                                               "pinyin":  "zhe ge hai zi hen cong ming。",
+                                               "vietnamese":  "Đứa trẻ này rất thông minh."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "聪明 + 人",
+                          "pattern":  "聪明 + 人",
+                          "meaning":  "Người thông minh",
+                          "usage":  "Dùng khi 聪明 đứng trước danh từ để bổ nghĩa cho danh từ",
+                          "note":  "Khi tính từ bổ nghĩa cho danh từ, thường có dạng 聪明人 / 聪明的孩子",
+                          "chinese":  "他是个聪明人。",
+                          "pinyin":  "ta shi ge cong ming ren。",
+                          "vietnamese":  "Anh ấy là một người thông minh.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "他是个聪明人。",
+                                               "pinyin":  "ta shi ge cong ming ren。",
+                                               "vietnamese":  "Anh ấy là một người thông minh."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "不聪明",
+                          "pattern":  "不聪明",
+                          "meaning":  "Không thông minh / không khôn ngoan",
+                          "usage":  "Dùng để đánh giá cách làm hoặc suy nghĩ không hợp lý",
+                          "note":  "不聪明 không chỉ nói người “không thông minh”, còn có thể nói hành động “không khôn ngoan”",
+                          "chinese":  "这样做不聪明。",
+                          "pinyin":  "zhe yang zuo bu cong ming。",
+                          "vietnamese":  "Làm như vậy không khôn ngoan.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "这样做不聪明。",
+                                               "pinyin":  "zhe yang zuo bu cong ming。",
+                                               "vietnamese":  "Làm như vậy không khôn ngoan."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "好像 + câu",
+                          "pattern":  "好像 + câu",
+                          "meaning":  "Hình như…, có vẻ như…",
+                          "usage":  "Dùng để nói phán đoán không chắc chắn của người nói",
+                          "note":  "好像 thường dùng khi chưa chắc 100%, chỉ là cảm giác hoặc suy đoán",
+                          "chinese":  "他好像不在家。",
+                          "pinyin":  "ta hao xiang bu zai jia。",
+                          "vietnamese":  "Hình như anh ấy không có ở nhà.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "他好像不在家。",
+                                               "pinyin":  "ta hao xiang bu zai jia。",
+                                               "vietnamese":  "Hình như anh ấy không có ở nhà."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "好像 + V 过",
+                          "pattern":  "好像 + V 过",
+                          "meaning":  "Hình như đã từng…",
+                          "usage":  "Dùng để nói cảm giác đã từng làm việc gì đó trong quá khứ",
+                          "note":  "V 过 biểu thị kinh nghiệm đã từng làm",
+                          "chinese":  "我好像见过他。",
+                          "pinyin":  "wo hao xiang jian guo ta。",
+                          "vietnamese":  "Hình như tôi từng gặp anh ấy.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "我好像见过他。",
+                                               "pinyin":  "wo hao xiang jian guo ta。",
+                                               "vietnamese":  "Hình như tôi từng gặp anh ấy."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "是……的",
+                          "pattern":  "是……的",
+                          "meaning":  "Chính là… / dùng để nhấn mạnh thông tin đã xảy ra",
+                          "usage":  "Dùng để nhấn mạnh thời gian, địa điểm, cách thức, người thực hiện của một hành động đã xảy ra",
+                          "note":  "Thường dùng cho sự việc đã xảy ra; phần được nhấn mạnh nằm giữa 是 và 的",
+                          "chinese":  "我是昨天来的。",
+                          "pinyin":  "wo shi zuo tian lai de。",
+                          "vietnamese":  "Tôi đến vào hôm qua.",
+                          "stars":  5,
+                          "level":  "⭐⭐⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "我是昨天来的。",
+                                               "pinyin":  "wo shi zuo tian lai de。",
+                                               "vietnamese":  "Tôi đến vào hôm qua."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "是 + thời gian + V + 的",
+                          "pattern":  "是 + thời gian + V + 的",
+                          "meaning":  "Chính là làm gì vào thời gian nào",
+                          "usage":  "Dùng để nhấn mạnh thời gian xảy ra hành động",
+                          "note":  "Không dùng để kể hành động mới xảy ra đơn thuần, mà dùng khi muốn nhấn mạnh thông tin",
+                          "chinese":  "他是去年开始学的。",
+                          "pinyin":  "ta shi qu nian kai shi xue de。",
+                          "vietnamese":  "Anh ấy bắt đầu học từ năm ngoái.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "他是去年开始学的。",
+                                               "pinyin":  "ta shi qu nian kai shi xue de。",
+                                               "vietnamese":  "Anh ấy bắt đầu học từ năm ngoái."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "A 或者 B",
+                          "pattern":  "A 或者 B",
+                          "meaning":  "A hoặc B",
+                          "usage":  "Dùng để nối hai lựa chọn trong câu trần thuật",
+                          "note":  "Trong câu hỏi lựa chọn thường dùng 还是, không dùng 或者",
+                          "chinese":  "你喝茶或者喝水。",
+                          "pinyin":  "ni he cha huo zhe he shui。",
+                          "vietnamese":  "Bạn uống trà hoặc uống nước.",
+                          "stars":  5,
+                          "level":  "⭐⭐⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "你喝茶或者喝水。",
+                                               "pinyin":  "ni he cha huo zhe he shui。",
+                                               "vietnamese":  "Bạn uống trà hoặc uống nước."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "thời gian A 或者 thời gian B",
+                          "pattern":  "thời gian A 或者 thời gian B",
+                          "meaning":  "Thời gian A hoặc thời gian B",
+                          "usage":  "Dùng để nói một trong hai thời điểm đều có thể",
+                          "note":  "或者 dùng khi người nói đưa ra lựa chọn, chưa yêu cầu người nghe chọn trực tiếp",
+                          "chinese":  "明天或者后天都可以。",
+                          "pinyin":  "ming tian huo zhe hou tian dou ke yi。",
+                          "vietnamese":  "Ngày mai hoặc ngày kia đều được.",
+                          "stars":  5,
+                          "level":  "⭐⭐⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "明天或者后天都可以。",
+                                               "pinyin":  "ming tian huo zhe hou tian dou ke yi。",
+                                               "vietnamese":  "Ngày mai hoặc ngày kia đều được."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "最好 + V",
+                          "pattern":  "最好 + V",
+                          "meaning":  "Tốt nhất là nên…",
+                          "usage":  "Dùng để đưa ra lời khuyên hoặc phương án tốt nhất",
+                          "note":  "Sau 最好 thường là động từ/cụm động từ; có thể dùng để khuyên người khác",
+                          "chinese":  "最好现在就去。",
+                          "pinyin":  "zui hao xian zai jiu qu。",
+                          "vietnamese":  "Tốt nhất là bây giờ đi ngay.",
+                          "stars":  5,
+                          "level":  "⭐⭐⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "最好现在就去。",
+                                               "pinyin":  "zui hao xian zai jiu qu。",
+                                               "vietnamese":  "Tốt nhất là bây giờ đi ngay."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "最好 + V + N",
+                          "pattern":  "最好 + V + N",
+                          "meaning":  "Tốt nhất là làm gì",
+                          "usage":  "Dùng để nói lựa chọn tốt hơn trong một tình huống cụ thể",
+                          "note":  "Không nên hiểu 最好 là “tốt nhất” độc lập, mà là “nên… là tốt nhất”",
+                          "chinese":  "你最好复习课文。",
+                          "pinyin":  "ni zui hao fu xi ke wen。",
+                          "vietnamese":  "Bạn tốt nhất nên ôn bài khóa.",
+                          "stars":  5,
+                          "level":  "⭐⭐⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "你最好复习课文。",
+                                               "pinyin":  "ni zui hao fu xi ke wen。",
+                                               "vietnamese":  "Bạn tốt nhất nên ôn bài khóa."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "你最好 + V",
+                          "pattern":  "你最好 + V",
+                          "meaning":  "Bạn tốt nhất nên…",
+                          "usage":  "Dùng để khuyên trực tiếp người nghe làm việc gì",
+                          "note":  "Có sắc thái khuyên nhủ; nếu giọng mạnh có thể giống yêu cầu",
+                          "chinese":  "你最好早点儿睡觉。",
+                          "pinyin":  "ni zui hao zao dian r shui jiao。",
+                          "vietnamese":  "Bạn tốt nhất nên ngủ sớm một chút.",
+                          "stars":  5,
+                          "level":  "⭐⭐⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "你最好早点儿睡觉。",
+                                               "pinyin":  "ni zui hao zao dian r shui jiao。",
+                                               "vietnamese":  "Bạn tốt nhất nên ngủ sớm một chút."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "放心",
+                          "pattern":  "放心",
+                          "meaning":  "Yên tâm",
+                          "usage":  "Dùng để nói không còn lo lắng về việc gì hoặc ai đó",
+                          "note":  "Thường dùng: 放心吧 / 很放心 / 不放心 / 放不下心",
+                          "chinese":  "你放心吧，我没问题。",
+                          "pinyin":  "ni fang xin ba， wo mei wen ti。",
+                          "vietnamese":  "Bạn yên tâm đi, tôi không sao.",
+                          "stars":  4,
+                          "level":  "⭐⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "你放心吧，我没问题。",
+                                               "pinyin":  "ni fang xin ba， wo mei wen ti。",
+                                               "vietnamese":  "Bạn yên tâm đi, tôi không sao."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "不放心",
+                          "pattern":  "不放心",
+                          "meaning":  "Không yên tâm",
+                          "usage":  "Dùng khi còn lo lắng, chưa tin tưởng hoàn toàn",
+                          "note":  "Sau 对 + người/việc có thể nói đối tượng mình không yên tâm",
+                          "chinese":  "我对他不放心。",
+                          "pinyin":  "wo dui ta bu fang xin。",
+                          "vietnamese":  "Tôi không yên tâm về anh ấy.",
+                          "stars":  4,
+                          "level":  "⭐⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "我对他不放心。",
+                                               "pinyin":  "wo dui ta bu fang xin。",
+                                               "vietnamese":  "Tôi không yên tâm về anh ấy."
+                                           }
+                                       ]
+                      },
+                      {
+                          "type":  "structure",
+                          "title":  "放不下心",
+                          "pattern":  "放不下心",
+                          "meaning":  "Không thể yên tâm được",
+                          "usage":  "Dùng khi trong lòng vẫn còn lo, không thể bỏ xuống được",
+                          "note":  "Mạnh hơn 不放心, nhấn mạnh cảm giác lo lắng trong lòng",
+                          "chinese":  "孩子没回来，我放不下心。",
+                          "pinyin":  "hai zi mei hui lai， wo fang bu xia xin。",
+                          "vietnamese":  "Con chưa về, tôi không thể yên tâm.",
+                          "stars":  3,
+                          "level":  "⭐⭐⭐",
+                          "examples":  [
+                                           {
+                                               "chinese":  "孩子没回来，我放不下心。",
+                                               "pinyin":  "hai zi mei hui lai， wo fang bu xia xin。",
+                                               "vietnamese":  "Con chưa về, tôi không thể yên tâm."
+                                           }
+                                       ]
                       }
                   ]
 }
