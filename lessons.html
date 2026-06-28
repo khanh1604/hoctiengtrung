@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -64,16 +64,26 @@
       const isWriting = subject === "writing";
       const isSpeaking = subject === "speaking";
       const isHanyu1 = subject === "hanyu1";
+      const isHanyu2 = subject === "hanyu2";
       const isHanyu3 = subject === "hanyu3";
+      const isHanyu4 = subject === "hanyu4";
+      const isHanyu5 = subject === "hanyu5";
+      const isHanyu6 = subject === "hanyu6";
       const totalItems = isWriting
         ? 15
         : isHanyu1
           ? 15
-          : isHanyu3
-            ? 10
-            : isSpeaking
-              ? 12
-              : 24;
+          : isHanyu2
+            ? 15
+            : isHanyu3
+              ? 10
+              : isHanyu4
+                ? 10
+                : isHanyu5 || isHanyu6
+                  ? 13
+                  : isSpeaking
+                    ? 12
+                    : 24;
       const itemsPerPage = 12;
       const availableListeningLessons = new Set(
         Array.from({ length: 24 }, (_, idx) => idx + 1),
@@ -89,6 +99,18 @@
       );
       const availableHanyu1Lessons = new Set(
         Array.from({ length: 15 }, (_, idx) => idx + 1),
+      );
+      const availableHanyu2Lessons = new Set(
+        Array.from({ length: 15 }, (_, idx) => idx + 16),
+      );
+      const availableHanyu4Lessons = new Set(
+        Array.from({ length: 10 }, (_, idx) => idx + 11),
+      );
+      const availableHanyu5Lessons = new Set(
+        Array.from({ length: 13 }, (_, idx) => idx + 1),
+      );
+      const availableHanyu6Lessons = new Set(
+        Array.from({ length: 13 }, (_, idx) => idx + 14),
       );
       const writingLessonNames = [
         ["我的朋友——李明", "Bạn của tôi — Lý Minh"],
@@ -154,7 +176,11 @@
         if (isWriting) return availableWritingLessons.has(lessonNumber);
         if (isSpeaking) return availableSpeakingLessons.has(lessonNumber);
         if (isHanyu1) return availableHanyu1Lessons.has(lessonNumber);
+        if (isHanyu2) return availableHanyu2Lessons.has(lessonNumber);
         if (isHanyu3) return availableHanyu3Lessons.has(lessonNumber);
+        if (isHanyu4) return availableHanyu4Lessons.has(lessonNumber);
+        if (isHanyu5) return availableHanyu5Lessons.has(lessonNumber);
+        if (isHanyu6) return availableHanyu6Lessons.has(lessonNumber);
         return availableListeningLessons.has(lessonNumber);
       }
 
@@ -165,9 +191,21 @@
       } else if (isHanyu1) {
         document.getElementById("lessonsTitle").textContent =
           "Giáo trình Hán ngữ quyển 1";
+      } else if (isHanyu2) {
+        document.getElementById("lessonsTitle").textContent =
+          "Giáo trình Hán ngữ quyển 2";
       } else if (isHanyu3) {
         document.getElementById("lessonsTitle").textContent =
           "Giáo trình Hán ngữ quyển 3";
+      } else if (isHanyu4) {
+        document.getElementById("lessonsTitle").textContent =
+          "Giáo trình Hán ngữ quyển 4";
+      } else if (isHanyu5) {
+        document.getElementById("lessonsTitle").textContent =
+          "Giáo trình Hán ngữ quyển 5";
+      } else if (isHanyu6) {
+        document.getElementById("lessonsTitle").textContent =
+          "Giáo trình Hán ngữ quyển 6";
       }
 
       const lessonItems = Array.from({ length: totalItems }, (_, idx) => {
@@ -217,8 +255,60 @@
           };
         }
 
+        if (isHanyu2) {
+          const hanyuLesson = idx + 16;
+          const unlocked = hasLessonData(hanyuLesson);
+          return {
+            title: `Bài ${pad(hanyuLesson)}`,
+            unlocked,
+            href: unlocked
+              ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}`
+              : null,
+            progress: unlocked ? "" : "Chưa có dữ liệu",
+          };
+        }
+
         if (isHanyu3) {
           const hanyuLesson = idx + 1;
+          const unlocked = hasLessonData(hanyuLesson);
+          return {
+            title: `Bài ${pad(hanyuLesson)}`,
+            unlocked,
+            href: unlocked
+              ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}`
+              : null,
+            progress: unlocked ? "" : "Chưa có dữ liệu",
+          };
+        }
+
+        if (isHanyu4) {
+          const hanyuLesson = idx + 11;
+          const unlocked = hasLessonData(hanyuLesson);
+          return {
+            title: `Bài ${pad(hanyuLesson)}`,
+            unlocked,
+            href: unlocked
+              ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}`
+              : null,
+            progress: unlocked ? "" : "Chưa có dữ liệu",
+          };
+        }
+
+        if (isHanyu5) {
+          const hanyuLesson = idx + 1;
+          const unlocked = hasLessonData(hanyuLesson);
+          return {
+            title: `Bài ${pad(hanyuLesson)}`,
+            unlocked,
+            href: unlocked
+              ? `lesson-options.html?lesson=${pad(hanyuLesson)}&subject=${subject}`
+              : null,
+            progress: unlocked ? "" : "Chưa có dữ liệu",
+          };
+        }
+
+        if (isHanyu6) {
+          const hanyuLesson = idx + 14;
           const unlocked = hasLessonData(hanyuLesson);
           return {
             title: `Bài ${pad(hanyuLesson)}`,
@@ -378,7 +468,7 @@
 
                 <article class="speaking-side-card">
                   <h2>Gợi ý học hôm nay</h2>
-                  <button type="button" disabled>Tiếp tục bài 01 <small>0%</small></button>
+                  <button type="button" disabled>Tiếp tục bài ${isHanyu2 ? "16" : "01"} <small>0%</small></button>
                   <button type="button" disabled>Ôn tập bài học <small>0 bài</small></button>
                   <button type="button" disabled>Luyện nói <small>0</small></button>
                 </article>
@@ -474,6 +564,31 @@
             ],
             actionLabel: "Học bài",
           },
+          hanyu2: {
+            label: "Giáo trình Hán Ngữ",
+            title: "Hán Ngữ Quyển 2",
+            subtitle: "Giai đoạn 2: bài khóa, từ mới và cấu trúc",
+            icon: "📘",
+            listHref: "lessons.html?subject=hanyu2",
+            lessons: [
+              ["你常去图书馆吗", "Bạn thường đi thư viện không?"],
+              ["他在做什么呢", "Anh ấy đang làm gì vậy?"],
+              ["我去邮局寄包裹", "Tôi đi bưu điện gửi bưu kiện"],
+              ["可以试试吗", "Có thể thử không?"],
+              ["祝你生日快乐", "Chúc bạn sinh nhật vui vẻ"],
+              ["我们明天七点一刻出发", "Ngày mai chúng tôi xuất phát lúc 7 giờ 15"],
+              ["我打算请老师教我京剧", "Tôi định mời thầy dạy tôi Kinh kịch"],
+              ["学校里边有邮局吗", "Trong trường có bưu điện không?"],
+              ["我想学太极拳", "Tôi muốn học Thái Cực Quyền"],
+              ["她学得很好", "Cô ấy học rất tốt"],
+              ["田芳去哪儿了", "Điền Phương đi đâu rồi?"],
+              ["玛丽哭了", "Mary khóc rồi"],
+              ["我吃了早饭就来了", "Tôi ăn sáng xong thì đến"],
+              ["我都做对了", "Tôi đều làm đúng rồi"],
+              ["我来了两个多月了", "Tôi đến hơn hai tháng rồi"],
+            ],
+            actionLabel: "Học bài",
+          },
           hanyu3: {
             label: "Gi\u00e1o tr\u00ecnh H\u00e1n Ng\u1eef",
             title: "H\u00e1n Ng\u1eef Quy\u1ec3n 3",
@@ -525,6 +640,72 @@
             ],
             actionLabel: "H\u1ecdc b\u00e0i",
           },
+          hanyu4: {
+            label: "Giáo trình Hán Ngữ",
+            title: "Hán Ngữ Quyển 4",
+            subtitle: "Từ mới theo bài",
+            icon: "📗",
+            listHref: "lessons.html?subject=hanyu4",
+            lessons: [
+              ["前边开过来一辆空车", "Phía trước có một chiếc xe trống chạy tới"],
+              ["为什么把“福”字倒贴在门上", "Vì sao dán ngược chữ Phúc trên cửa?"],
+              ["请把护照和机票给我", "Hãy đưa hộ chiếu và vé máy bay cho tôi"],
+              ["我的腿被自行车撞伤了", "Chân tôi bị xe đạp đâm bị thương"],
+              ["京剧我看得懂，但是听不懂", "Kinh kịch tôi xem hiểu, nhưng nghe không hiểu"],
+              ["山这么高，你爬得上去吗", "Núi cao như vậy, bạn leo lên được không?"],
+              ["我想起来了", "Tôi nhớ ra rồi"],
+              ["寒假你打算去哪儿旅行", "Nghỉ đông bạn định đi đâu du lịch?"],
+              ["有困难找警察", "Có khó khăn thì tìm cảnh sát"],
+              ["吉利的数字", "Con số may mắn"],
+            ],
+            actionLabel: "Học bài",
+          },
+          hanyu5: {
+            label: "Giáo trình Hán Ngữ",
+            title: "Hán Ngữ Quyển 5",
+            subtitle: "Đọc hiểu và ngữ pháp",
+            icon: "📘",
+            listHref: "lessons.html?subject=hanyu5",
+            lessons: [
+              ["离家的时候", "Khi rời nhà"],
+              ["一封信", "Một bức thư"],
+              ["北京的四季", "Bốn mùa ở Bắc Kinh"],
+              ["理想", "Lý tưởng"],
+              ["回头再说", "Quay lại rồi nói sau"],
+              ["吃葡萄", "Ăn nho"],
+              ["成语故事", "Câu chuyện thành ngữ"],
+              ["恋爱故事", "Chuyện tình yêu"],
+              ["幸福的感觉", "Cảm giác hạnh phúc"],
+              ["提高自己", "Nâng cao bản thân"],
+              ["我看见了飞碟", "Tôi nhìn thấy đĩa bay"],
+              ["好人难当", "Làm người tốt thật khó"],
+              ["百姓话题", "Chủ đề đời sống người dân"],
+            ],
+            actionLabel: "Học bài",
+          },
+          hanyu6: {
+            label: "Giáo trình Hán Ngữ",
+            title: "Hán Ngữ Quyển 6",
+            subtitle: "Đọc hiểu và ngữ pháp",
+            icon: "📙",
+            listHref: "lessons.html?subject=hanyu6",
+            lessons: [
+              ["谁当家", "Ai quản việc nhà"],
+              ["受伤以后", "Sau khi bị thương"],
+              ["话说“慢点儿”", "Nói về chuyện “chậm một chút”"],
+              ["再试一次", "Thử lại lần nữa"],
+              ["一盒蛋糕", "Một hộp bánh kem"],
+              ["无声的泪", "Những giọt nước mắt không lời"],
+              ["什么最重要", "Điều gì quan trọng nhất"],
+              ["理发", "Cắt tóc"],
+              ["母亲的心", "Tấm lòng người mẹ"],
+              ["网络学校", "Trường học trực tuyến"],
+              ["情商", "Trí tuệ cảm xúc"],
+              ["你喜欢什么颜色", "Bạn thích màu gì"],
+              ["梁山伯与祝英台", "Lương Sơn Bá và Chúc Anh Đài"],
+            ],
+            actionLabel: "Học bài",
+          },
         };
         const courseInfo = courseInfoMap[subject] || courseInfoMap.listening;
 
@@ -545,7 +726,7 @@
 
           <main class="speaking-main">
             <div class="speaking-breadcrumb">
-              <a href="${subject === "hanyu1" || subject === "hanyu3" ? "index.html" : `lessons.html?subject=${subject}`}">${courseInfo.label}</a>
+              <a href="${subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" ? "index.html" : `lessons.html?subject=${subject}`}">${courseInfo.label}</a>
               <span>›</span>
               <a href="lessons.html?subject=${subject}">${courseInfo.title}</a>
             </div>
@@ -598,7 +779,8 @@
 
         const list = document.getElementById("speakingLessonList");
         lessonItems.forEach((item, index) => {
-          const padLesson = String(index + 1).padStart(2, "0");
+          const displayLessonNumber = isHanyu2 ? index + 16 : isHanyu4 ? index + 11 : isHanyu6 ? index + 14 : index + 1;
+          const padLesson = String(displayLessonNumber).padStart(2, "0");
           const preset = courseInfo.lessons?.[index];
           const row = document.createElement("button");
           row.className = "speaking-lesson-row";
@@ -623,3 +805,5 @@
     </script>
   </body>
 </html>
+
+

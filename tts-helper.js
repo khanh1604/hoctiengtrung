@@ -263,7 +263,7 @@
         debugLog("Play clicked", { mode: "speechSynthesis", chunk: index + 1 });
         const utterance = new SpeechSynthesisUtterance(chunks[index]);
         index += 1;
-        utterance.lang = "zh-CN";
+        utterance.lang = options.lang || "zh-CN";
         utterance.voice = options.voice || null;
         utterance.rate = Number(options.rate) || 0.9;
         utterance.pitch = Number(options.pitch) || 1.03;
@@ -309,7 +309,7 @@
             null;
         }
         if (!options.voice && isAndroid) {
-          console.warn("[FTCTTS] No Chinese voice listed on Android; trying zh-CN system TTS directly.");
+          console.warn("[FTCTTS] No Chinese voice listed on Android; trying system TTS with lang=zh-CN directly.");
         }
         speakNext();
       } catch (error) {
@@ -351,12 +351,11 @@
       await speakWithWebSpeech(text, options);
       clearActiveTrigger();
     } catch (e) {
-      try {
-        await playRemoteTts(text, options);
-        clearActiveTrigger();
-      } catch (error) {
-        clearActiveTrigger();
-      }
+      console.warn("[FTCTTS] Cannot read text with system TTS. Install/enable a Chinese TTS voice on this device.", {
+        diagnostics: getAudioDiagnostics(),
+        error: e?.message || String(e || ""),
+      });
+      clearActiveTrigger();
     }
   }
 

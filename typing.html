@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Mode - Chinese Learning</title>
     <link rel="stylesheet" href="style.css?v=ftc-tts-glow-20260623" />
-    <script src="tts-helper.js?v=20260623-android-speech-first2"></script>
+    <script src="tts-helper.js?v=20260623-system-tts-text1"></script>
     <script src="theme.js" defer></script>
   </head>
 
@@ -90,7 +90,7 @@
           },
           example: {
             title: `Bài kiểm tra ${testLabel}`,
-            subtitle: subject === "hanyu1" ? "10 câu phản xạ - Việt sang Trung" : "20 câu phản xạ - Việt sang Trung",
+            subtitle: (subject === "hanyu1" || subject === "hanyu2") ? "10 câu phản xạ - Việt sang Trung" : "20 câu phản xạ - Việt sang Trung",
             hint: "Gợi ý: Sử dụng cách nói lịch sự và tự nhiên.",
           },
         };
@@ -106,12 +106,44 @@
             listHref: "lessons.html?subject=hanyu1",
           };
         }
+        if (subject === "hanyu2") {
+          return {
+            label: "Giáo trình Hán Ngữ",
+            course: "Hán Ngữ Quyển 2",
+            homeHref: "index.html",
+            listHref: "lessons.html?subject=hanyu2",
+          };
+        }
         if (subject === "hanyu3") {
           return {
             label: "Giáo trình Hán Ngữ",
             course: "Hán Ngữ Quyển 3",
             homeHref: "index.html",
             listHref: "lessons.html?subject=hanyu3",
+          };
+        }
+        if (subject === "hanyu4") {
+          return {
+            label: "Giáo trình Hán Ngữ",
+            course: "Hán Ngữ Quyển 4",
+            homeHref: "index.html",
+            listHref: "lessons.html?subject=hanyu4",
+          };
+        }
+        if (subject === "hanyu5") {
+          return {
+            label: "Giáo trình Hán Ngữ",
+            course: "Hán Ngữ Quyển 5",
+            homeHref: "index.html",
+            listHref: "lessons.html?subject=hanyu5",
+          };
+        }
+        if (subject === "hanyu6") {
+          return {
+            label: "Giáo trình Hán Ngữ",
+            course: "Hán Ngữ Quyển 6",
+            homeHref: "index.html",
+            listHref: "lessons.html?subject=hanyu6",
           };
         }
         if (subject === "writing") {
@@ -938,7 +970,7 @@
         const practiceContents = new Set(["paragraph", "structure", "example"]);
         if (
           !(
-            (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3" || subject === "writing" || subject === "listening") &&
+            (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening") &&
             practiceContents.has(content)
           )
         ) {
@@ -952,7 +984,7 @@
           lesson,
           test,
           subjectLabel:
-            (subject === "hanyu1" || subject === "hanyu3")
+            (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6")
               ? "Hán Ngữ"
               : subject === "writing"
                 ? "Viết"
@@ -977,7 +1009,7 @@
 
           <main class="reflex-typing-main">
             <div class="speaking-breadcrumb reflex-typing-breadcrumb">
-              <a href="lessons.html?subject=${subject}">${subject === "hanyu3" ? "Hán Ngữ" : "Khẩu ngữ"}</a>
+              <a href="lessons.html?subject=${subject}">${(subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") ? "Hán Ngữ" : "Khẩu ngữ"}</a>
               <span>›</span>
               <a href="lesson-options.html?lesson=${lesson}&subject=${subject}">Bài ${String(Number(lesson)).padStart(2, "0")}</a>
               <span>›</span>
@@ -1101,6 +1133,12 @@
         window.location.reload();
       }
     </script>
-    <script src="app.js"></script>
+    <script src="app.js?v=20260623-android-touch-fix"></script>
   </body>
 </html>
+
+
+
+
+
+

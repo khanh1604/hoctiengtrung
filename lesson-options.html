@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -70,7 +70,7 @@
             return;
           }
         }
-        if (subject === "hanyu1" || subject === "hanyu3") {
+        if (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") {
           if (content === "vocabulary") {
             window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=paragraph`;
             return;
@@ -139,7 +139,7 @@
             ? "lessons.html?subject=writing"
             : subject === "speaking"
               ? "lessons.html?subject=speaking"
-              : subject === "hanyu1" || subject === "hanyu3"
+              : subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6"
                 ? `lessons.html?subject=${subject}`
               : "lessons.html";
       }
@@ -208,6 +208,65 @@
         "14": ["你的车是新的还是旧的", "Xe của bạn mới hay cũ?"],
         "15": ["你们有多少职员", "Các bạn có bao nhiêu nhân viên?"],
       };
+      const hanyu2LessonTitles = {
+        "16": ["你常去图书馆吗", "Bạn thường đi thư viện không?"],
+        "17": ["他在做什么呢", "Anh ấy đang làm gì vậy?"],
+        "18": ["我去邮局寄包裹", "Tôi đi bưu điện gửi bưu kiện"],
+        "19": ["可以试试吗", "Có thể thử không?"],
+        "20": ["祝你生日快乐", "Chúc bạn sinh nhật vui vẻ"],
+        "21": ["我们明天七点一刻出发", "Ngày mai chúng tôi xuất phát lúc 7 giờ 15"],
+        "22": ["我打算请老师教我京剧", "Tôi định mời thầy dạy tôi Kinh kịch"],
+        "23": ["学校里边有邮局吗", "Trong trường có bưu điện không?"],
+        "24": ["我想学太极拳", "Tôi muốn học Thái Cực Quyền"],
+        "25": ["她学得很好", "Cô ấy học rất tốt"],
+        "26": ["田芳去哪儿了", "Điền Phương đi đâu rồi?"],
+        "27": ["玛丽哭了", "Mary khóc rồi"],
+        "28": ["我吃了早饭就来了", "Tôi ăn sáng xong thì đến"],
+        "29": ["我都做对了", "Tôi đều làm đúng rồi"],
+        "30": ["我来了两个多月了", "Tôi đến hơn hai tháng rồi"],
+      };
+      const hanyu4LessonTitles = {
+        "11": ["前边开过来一辆空车", "Phía trước có một chiếc xe trống chạy tới"],
+        "12": ["为什么把“福”字倒贴在门上", "Vì sao dán ngược chữ Phúc trên cửa?"],
+        "13": ["请把护照和机票给我", "Hãy đưa hộ chiếu và vé máy bay cho tôi"],
+        "14": ["我的腿被自行车撞伤了", "Chân tôi bị xe đạp đâm bị thương"],
+        "15": ["京剧我看得懂，但是听不懂", "Kinh kịch tôi xem hiểu, nhưng nghe không hiểu"],
+        "16": ["山这么高，你爬得上去吗", "Núi cao như vậy, bạn leo lên được không?"],
+        "17": ["我想起来了", "Tôi nhớ ra rồi"],
+        "18": ["寒假你打算去哪儿旅行", "Nghỉ đông bạn định đi đâu du lịch?"],
+        "19": ["有困难找警察", "Có khó khăn thì tìm cảnh sát"],
+        "20": ["吉利的数字", "Con số may mắn"],
+      };
+      const hanyu5LessonTitles = {
+        "1": ["离家的时候", "Khi rời nhà"],
+        "2": ["一封信", "Một bức thư"],
+        "3": ["北京的四季", "Bốn mùa ở Bắc Kinh"],
+        "4": ["理想", "Lý tưởng"],
+        "5": ["回头再说", "Quay lại rồi nói sau"],
+        "6": ["吃葡萄", "Ăn nho"],
+        "7": ["成语故事", "Câu chuyện thành ngữ"],
+        "8": ["恋爱故事", "Chuyện tình yêu"],
+        "9": ["幸福的感觉", "Cảm giác hạnh phúc"],
+        "10": ["提高自己", "Nâng cao bản thân"],
+        "11": ["我看见了飞碟", "Tôi nhìn thấy đĩa bay"],
+        "12": ["好人难当", "Làm người tốt thật khó"],
+        "13": ["百姓话题", "Chủ đề đời sống người dân"],
+      };
+      const hanyu6LessonTitles = {
+        "14": ["谁当家", "Ai quản việc nhà"],
+        "15": ["受伤以后", "Sau khi bị thương"],
+        "16": ["话说“慢点儿”", "Nói về chuyện “chậm một chút”"],
+        "17": ["再试一次", "Thử lại lần nữa"],
+        "18": ["一盒蛋糕", "Một hộp bánh kem"],
+        "19": ["无声的泪", "Những giọt nước mắt không lời"],
+        "20": ["什么最重要", "Điều gì quan trọng nhất"],
+        "21": ["理发", "Cắt tóc"],
+        "22": ["母亲的心", "Tấm lòng người mẹ"],
+        "23": ["网络学校", "Trường học trực tuyến"],
+        "24": ["情商", "Trí tuệ cảm xúc"],
+        "25": ["你喜欢什么颜色", "Bạn thích màu gì"],
+        "26": ["梁山伯与祝英台", "Lương Sơn Bá và Chúc Anh Đài"],
+      };
       const listeningLessonTitles = {
         "1": ["你学了多长时间汉语了", "Bạn học tiếng Trung được bao lâu rồi?"],
         "2": ["请问，留学生宿舍怎么走", "Xin hỏi, ký túc xá lưu học sinh đi đường nào?"],
@@ -236,7 +295,7 @@
       };
       document.getElementById("lessonTitle").textContent =
         subject === "writing" || subject === "speaking"
-          || subject === "hanyu1" || subject === "hanyu3"
+          || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6"
           ? `Bài ${lessonNumber}`
           : `Bài ${String(Number(lesson)).padStart(2, "0")} ${listeningLessonTitles[lessonNumber]?.[0] || ""}`;
 
@@ -282,12 +341,13 @@
           ? "lessons.html?subject=listening"
           : `lessons.html?subject=${subjectKey}`;
         const subjectHomeHref =
-          subjectKey === "hanyu1" || subjectKey === "hanyu3" ? "index.html" : listHref;
+          subjectKey === "hanyu1" || subjectKey === "hanyu2" || subjectKey === "hanyu3" || subjectKey === "hanyu4" || subjectKey === "hanyu5" || subjectKey === "hanyu6" ? "index.html" : listHref;
         const courseTitle = config.courseTitle || "初级口语（II）";
         const courseDesc = config.courseDesc || "luyện nói giao tiếp";
         const heroIcon = config.heroIcon || "🎙";
         const lessonTotal = config.lessonTotal || 12;
         const lessonStep = config.lessonStep || 1;
+        const minLessonNumber = config.minLessonNumber || 1;
         const maxLessonNumber = config.maxLessonNumber || lessonTotal;
         const displayOptionItems = subjectKey === "writing"
           ? [
@@ -424,10 +484,10 @@
         const prevBtn = document.getElementById("prevSpeakingLesson");
         const nextBtn = document.getElementById("nextSpeakingLesson");
         const lessonNum = Number(lessonNumber);
-        prevBtn.disabled = lessonNum <= 1;
+        prevBtn.disabled = lessonNum <= minLessonNumber;
         nextBtn.disabled = lessonNum >= maxLessonNumber;
         prevBtn.onclick = () => {
-          const prev = String(Math.max(1, lessonNum - lessonStep)).padStart(2, "0");
+          const prev = String(Math.max(minLessonNumber, lessonNum - lessonStep)).padStart(2, "0");
           window.location.href = `lesson-options.html?lesson=${prev}&subject=${subjectKey}`;
         };
         nextBtn.onclick = () => {
@@ -557,6 +617,184 @@
           ],
           optionItems: hanyu1OptionItems,
         });
+      } else if (subject === "hanyu2") {
+        const hanyu2OptionItems = [
+          {
+            icon: "💬",
+            title: "Ôn tập bài khóa",
+            desc: "Luyện đọc và hiểu bài khóa",
+            action: "vocabulary",
+          },
+          {
+            icon: "📚",
+            title: "Từ mới",
+            desc: "Học từ mới theo bài",
+            action: "words",
+          },
+          {
+            icon: "🧩",
+            title: "Cấu trúc",
+            desc: "Học mẫu câu và ví dụ",
+            action: "grammar",
+          },
+          {
+            icon: "🎯",
+            title: "Kiểm tra cấu trúc",
+            desc: "Luyện kiểm tra mẫu câu",
+            action: "structure",
+          },
+          {
+            icon: "⚡",
+            title: "Kiểm tra phản xạ",
+            desc: "Luyện phản xạ câu",
+            action: "example",
+          },
+        ];
+        renderSpeakingLessonOptions({
+          subjectKey: "hanyu2",
+          subjectLabel: "Giáo trình Hán Ngữ",
+          courseTitle: "Hán Ngữ Quyển 2",
+          courseDesc: "giai đoạn 2",
+          heroIcon: "📘",
+          lessonTotal: 15,
+          minLessonNumber: 16,
+          maxLessonNumber: 30,
+          titlePair: hanyu2LessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Giáo trình Hán ngữ quyển 2"],
+          optionItems: hanyu2OptionItems,
+        });
+      } else if (subject === "hanyu4") {
+        const hanyu4OptionItems = [
+          {
+            icon: "💬",
+            title: "Ôn tập bài khóa",
+            desc: "Luyện đọc và hiểu bài khóa",
+            action: "vocabulary",
+          },
+          {
+            icon: "📚",
+            title: "Từ mới",
+            desc: "Học từ mới theo bài",
+            action: "words",
+          },
+          {
+            icon: "🧩",
+            title: "Cấu trúc",
+            desc: "Học mẫu câu và ví dụ",
+            action: "grammar",
+          },
+          {
+            icon: "🎯",
+            title: "Luyện tập cấu trúc",
+            desc: "Ghép câu và luyện phản xạ theo mẫu",
+            action: "structure",
+          },
+          {
+            icon: "⚡",
+            title: "Kiểm tra phản xạ",
+            desc: "Nghe câu hỏi và trả lời nhanh",
+            action: "example",
+          },
+        ];
+        renderSpeakingLessonOptions({
+          subjectKey: "hanyu4",
+          subjectLabel: "Giáo trình Hán Ngữ",
+          courseTitle: "Hán Ngữ Quyển 4",
+          courseDesc: "đọc hiểu và ngữ pháp",
+          heroIcon: "📗",
+          lessonTotal: 10,
+          minLessonNumber: 11,
+          maxLessonNumber: 20,
+          titlePair: hanyu4LessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Giáo trình Hán ngữ quyển 4"],
+          optionItems: hanyu4OptionItems,
+        });
+      } else if (subject === "hanyu5") {
+        const hanyu5OptionItems = [
+          {
+            icon: "💬",
+            title: "Ôn tập bài khóa",
+            desc: "Luyện đọc và hiểu bài khóa",
+            action: "vocabulary",
+          },
+          {
+            icon: "📚",
+            title: "Từ mới",
+            desc: "Học từ mới theo bài",
+            action: "words",
+          },
+          {
+            icon: "🧩",
+            title: "Cấu trúc",
+            desc: "Học mẫu câu và ví dụ",
+            action: "grammar",
+          },
+          {
+            icon: "🎯",
+            title: "Luyện tập cấu trúc",
+            desc: "Ghép câu và luyện phản xạ theo mẫu",
+            action: "structure",
+          },
+          {
+            icon: "⚡",
+            title: "Kiểm tra phản xạ",
+            desc: "Nghe câu hỏi và trả lời nhanh",
+            action: "example",
+          },
+        ];
+        renderSpeakingLessonOptions({
+          subjectKey: "hanyu5",
+          subjectLabel: "Giáo trình Hán Ngữ",
+          courseTitle: "Hán Ngữ Quyển 5",
+          courseDesc: "đọc hiểu và ngữ pháp",
+          heroIcon: "📘",
+          lessonTotal: 13,
+          titlePair: hanyu5LessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Giáo trình Hán ngữ quyển 5"],
+          optionItems: hanyu5OptionItems,
+        });
+      } else if (subject === "hanyu6") {
+        const hanyu6OptionItems = [
+          {
+            icon: "💬",
+            title: "Ôn tập bài khóa",
+            desc: "Luyện đọc và hiểu bài khóa",
+            action: "vocabulary",
+          },
+          {
+            icon: "📚",
+            title: "Từ mới",
+            desc: "Học từ mới theo bài",
+            action: "words",
+          },
+          {
+            icon: "🧩",
+            title: "Cấu trúc",
+            desc: "Học mẫu câu và ví dụ",
+            action: "grammar",
+          },
+          {
+            icon: "🎯",
+            title: "Luyện tập cấu trúc",
+            desc: "Ghép câu và luyện phản xạ theo mẫu",
+            action: "structure",
+          },
+          {
+            icon: "⚡",
+            title: "Kiểm tra phản xạ",
+            desc: "Nghe câu hỏi và trả lời nhanh",
+            action: "example",
+          },
+        ];
+        renderSpeakingLessonOptions({
+          subjectKey: "hanyu6",
+          subjectLabel: "Giáo trình Hán Ngữ",
+          courseTitle: "Hán Ngữ Quyển 6",
+          courseDesc: "đọc hiểu và ngữ pháp",
+          heroIcon: "📙",
+          lessonTotal: 13,
+          minLessonNumber: 14,
+          maxLessonNumber: 26,
+          titlePair: hanyu6LessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Giáo trình Hán ngữ quyển 6"],
+          optionItems: hanyu6OptionItems,
+        });
       } else if (subject === "hanyu3") {
         renderSpeakingLessonOptions({
           subjectKey: "hanyu3",
@@ -641,3 +879,6 @@
     </script>
   </body>
 </html>
+
+
+

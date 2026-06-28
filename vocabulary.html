@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập từ mới - Chinese Learning</title>
     <link rel="stylesheet" href="style.css?v=ftc-tts-glow-20260623" />
-    <script src="tts-helper.js?v=20260623-android-speech-first2"></script>
+    <script src="tts-helper.js?v=20260623-system-tts-text1"></script>
     <script src="theme.js" defer></script>
   </head>
 
@@ -266,21 +266,25 @@
 
       function getSubjectLabel() {
         if (subject === "speaking") return "Khẩu ngữ";
-        if (subject === "hanyu1" || subject === "hanyu3") return "Giáo trình Hán Ngữ";
+        if (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") return "Giáo trình Hán Ngữ";
         if (subject === "writing") return "Viết";
         if (subject === "listening") return "Nghe hiểu";
         return "Học tập";
       }
 
       function getSubjectHref() {
-        return subject === "hanyu1" || subject === "hanyu3"
+        return subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6"
           ? "index.html"
           : `lessons.html?subject=${subject}`;
       }
 
       function getCourseLabel() {
         if (subject === "hanyu1") return "Hán Ngữ Quyển 1";
+        if (subject === "hanyu2") return "Hán Ngữ Quyển 2";
         if (subject === "hanyu3") return "Hán Ngữ Quyển 3";
+        if (subject === "hanyu4") return "Hán Ngữ Quyển 4";
+        if (subject === "hanyu5") return "Hán Ngữ Quyển 5";
+        if (subject === "hanyu6") return "Hán Ngữ Quyển 6";
         if (subject === "speaking") return "初级口语（II）";
         if (subject === "listening") return "初级听力（II）";
         if (subject === "writing") return "中级写作（I）";
@@ -616,7 +620,7 @@
       async function loadVocabulary() {
         let items = [];
         let lessonTitle = "";
-        if (subject === "hanyu1" || subject === "hanyu3") {
+        if (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") {
           const allLessons = await fetchJson(`data/${subject}-lessons.json?v=${Date.now()}`);
           const data = allLessons[String(Number(lesson))] || {};
           lessonTitle = data.title || "";
@@ -690,3 +694,9 @@
     </script>
   </body>
 </html>
+
+
+
+
+
+

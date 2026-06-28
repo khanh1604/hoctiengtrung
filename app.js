@@ -32,7 +32,7 @@
   const resetKey = `typingReset-${storagePrefix}${lesson}-${testNum}`;
   const practiceActivityContents = new Set(["paragraph", "structure", "example"]);
   const isReflexTyping =
-    (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3" || subject === "writing" || subject === "listening") &&
+    (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening") &&
     practiceActivityContents.has(content);
   const reflexCurrentEl = document.querySelector(".reflex-current");
   const reflexDoneEl = document.querySelector(".reflex-done");
@@ -644,9 +644,9 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "example") {
+    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "example") {
       const lessonNum = String(Number(lesson));
-      const exampleGroupSize = subject === "hanyu1" ? 10 : 20;
+      const exampleGroupSize = (subject === "hanyu1" || subject === "hanyu2") ? 10 : 20;
       if (!allData.__rawText) {
         const exampleItems = allData.example || [];
         const groups = splitIntoGroups(exampleItems, exampleGroupSize);
@@ -666,7 +666,7 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && (content === "grammar" || content === "structure")) {
+    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && (content === "grammar" || content === "structure")) {
       const lessonNum = String(Number(lesson));
       if (!allData.__rawText) {
         const grammarItems = content === "structure"
@@ -683,7 +683,7 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "paragraph") {
+    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "paragraph") {
       const lessonNum = String(Number(lesson));
       if (!allData.__rawText) {
         const paragraphGroups = getSpeakingParagraphGroups(allData);
@@ -787,7 +787,7 @@
         ? "data/writing-tests.json"
         : subject === "listening" && content === "example"
           ? "data/listening-example-tests.json"
-        : (subject === "hanyu1" || subject === "hanyu3")
+        : (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6")
           ? `data/${subject}-lessons.json?v=${Date.now()}`
         : subject === "speaking"
           ? `data/speaking-lesson-${Number(lesson)}.json?v=${Date.now()}`
@@ -795,7 +795,7 @@
     const res = await fetch(dataFile);
     if (!res.ok) throw new Error("Không tải được dữ liệu câu hỏi");
 
-    if (subject === "hanyu1" || subject === "hanyu3") {
+    if (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") {
       const allLessons = await res.json();
       const lessonData = allLessons[String(Number(lesson))];
       if (!lessonData) throw new Error("Không tải được dữ liệu Giáo trình Hán ngữ");
@@ -806,7 +806,7 @@
         typingLessonCrumb.textContent = cleanTitle ? `Bài ${padLesson} - ${cleanTitle}` : `Bài ${padLesson}`;
       }
       if (content === "example") {
-        const exampleGroupSize = subject === "hanyu1" ? 10 : 20;
+        const exampleGroupSize = (subject === "hanyu1" || subject === "hanyu2") ? 10 : 20;
         speakingExampleTestCount = Math.max(
           1,
           splitIntoGroups(lessonData.example || [], exampleGroupSize).length,
@@ -1193,13 +1193,13 @@
                       [],
                   ).length,
                 )
-              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "paragraph"
+              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "paragraph"
                 ? Math.max(1, speakingParagraphTestCount)
-              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "structure"
+              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "structure"
                 ? Math.max(1, speakingStructureTestCount)
               : subject === "speaking" && content === "grammar" && (Number(lesson) === 4 || Number(lesson) === 5)
                 ? 2
-              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu3") && content === "example"
+              : (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "example"
                 ? Math.max(1, speakingExampleTestCount)
               : subject === "hanyu3" && content === "exercise"
                 ? Math.max(6, hanyu3ExerciseTestCount)
@@ -1224,10 +1224,24 @@
     }
   }
 
-  checkBtn.addEventListener("click", onMainAction);
+  function bindTapFallback(button, handler) {
+    if (!button) return;
+    let handledTouchAt = 0;
+    button.addEventListener("touchend", (event) => {
+      handledTouchAt = Date.now();
+      event.preventDefault();
+      handler(event);
+    }, { passive: false });
+    button.addEventListener("click", (event) => {
+      if (Date.now() - handledTouchAt < 650) return;
+      handler(event);
+    });
+  }
+
+  bindTapFallback(checkBtn, onMainAction);
 
   if (soundBtn) {
-    soundBtn.addEventListener("click", () => {
+    bindTapFallback(soundBtn, () => {
       if (isReflexTyping) {
         const q = getCurrentQuestion();
         if (q?.chinese || q?.pinyin) speakText(q.chinese || q.pinyin, "zh-CN");
@@ -1340,4 +1354,10 @@
       questionEl.textContent = `Lỗi: ${err.message}`;
     });
 })();
+
+
+
+
+
+
 
