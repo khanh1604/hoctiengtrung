@@ -7,6 +7,7 @@
 
   function setTheme(theme) {
     const isLight = theme === "light";
+    document.documentElement.classList.toggle("light-theme", isLight);
     document.body.classList.toggle("light-theme", isLight);
     localStorage.setItem(STORAGE_KEY, theme);
 

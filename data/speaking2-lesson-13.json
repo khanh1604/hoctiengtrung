@@ -1,0 +1,2263 @@
+﻿{
+    "title":  "旅游",
+    "vietnameseTitle":  "你们的西安游是怎么安排的 / 新疆好玩儿极了",
+    "textTitles":  [
+                       "你们的西安游是怎么安排的",
+                       "新疆好玩儿极了"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "旅行社",
+                           "pinyin":  "lǚxíngshè",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "lữ hành xã",
+                           "vietnamese":  "công ty du lịch",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我打算去旅行社问问新疆旅游的价格。",
+                                                "pinyin":  "Wǒ dǎsuàn qù lǚxíngshè wènwen Xīnjiāng lǚyóu de jiàgé.",
+                                                "vietnamese":  "Tôi định đến công ty du lịch hỏi thử giá du lịch Tân Cương."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "报价",
+                           "pinyin":  "bàojià",
+                           "partOfSpeech":  "动/名",
+                           "sinoVietnamese":  "báo giá",
+                           "vietnamese":  "báo giá, giá được báo",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这家旅行社的报价比那家便宜一些。",
+                                                "pinyin":  "Zhè jiā lǚxíngshè de bàojià bǐ nà jiā piányi yìxiē.",
+                                                "vietnamese":  "Báo giá của công ty du lịch này rẻ hơn bên kia một chút."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "景点",
+                           "pinyin":  "jǐngdiǎn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "cảnh điểm",
+                           "vietnamese":  "điểm tham quan",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个旅游团包括三个有名的景点。",
+                                                "pinyin":  "Zhège lǚyóutuán bāokuò sān ge yǒumíng de jǐngdiǎn.",
+                                                "vietnamese":  "Đoàn du lịch này bao gồm ba điểm tham quan nổi tiếng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "项目",
+                           "pinyin":  "xiàngmù",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "hạng mục",
+                           "vietnamese":  "hạng mục, mục",
+                           "examples":  [
+                                            {
+                                                "chinese":  "报价里包括交通、住宿和门票项目。",
+                                                "pinyin":  "Bàojià lǐ bāokuò jiāotōng, zhùsù hé ménpiào xiàngmù.",
+                                                "vietnamese":  "Trong báo giá bao gồm các mục giao thông, lưu trú và vé vào cửa."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "往返",
+                           "pinyin":  "wǎngfǎn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "vãng phản",
+                           "vietnamese":  "đi và về, khứ hồi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "从北京到新疆往返需要不少时间。",
+                                                "pinyin":  "Cóng Běijīng dào Xīnjiāng wǎngfǎn xūyào bù shǎo shíjiān.",
+                                                "vietnamese":  "Từ Bắc Kinh đi Tân Cương khứ hồi cần khá nhiều thời gian."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "住宿",
+                           "pinyin":  "zhùsù",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "trú túc",
+                           "vietnamese":  "lưu trú, ở trọ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "旅行社可以帮我们安排住宿。",
+                                                "pinyin":  "Lǚxíngshè kěyǐ bāng wǒmen ānpái zhùsù.",
+                                                "vietnamese":  "Công ty du lịch có thể giúp chúng tôi sắp xếp chỗ ở."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "餐",
+                           "pinyin":  "cān",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "xan",
+                           "vietnamese":  "bữa ăn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个价格包括每天三餐。",
+                                                "pinyin":  "Zhège jiàgé bāokuò měi tiān sān cān.",
+                                                "vietnamese":  "Giá này bao gồm ba bữa ăn mỗi ngày."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "土特产",
+                           "pinyin":  "tǔtèchǎn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thổ đặc sản",
+                           "vietnamese":  "đặc sản địa phương",
+                           "examples":  [
+                                            {
+                                                "chinese":  "新疆有很多好吃的土特产。",
+                                                "pinyin":  "Xīnjiāng yǒu hěn duō hǎochī de tǔtèchǎn.",
+                                                "vietnamese":  "Tân Cương có rất nhiều đặc sản địa phương ngon."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "纪念品",
+                           "pinyin":  "jìniànpǐn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "kỷ niệm phẩm",
+                           "vietnamese":  "đồ lưu niệm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我想给朋友买一些纪念品。",
+                                                "pinyin":  "Wǒ xiǎng gěi péngyou mǎi yìxiē jìniànpǐn.",
+                                                "vietnamese":  "Tôi muốn mua một ít đồ lưu niệm cho bạn bè."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "保险",
+                           "pinyin":  "bǎoxiǎn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "bảo hiểm",
+                           "vietnamese":  "bảo hiểm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个旅游团的费用包括保险。",
+                                                "pinyin":  "Zhège lǚyóutuán de fèiyòng bāokuò bǎoxiǎn.",
+                                                "vietnamese":  "Chi phí của đoàn du lịch này bao gồm bảo hiểm."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "旅馆",
+                           "pinyin":  "lǚguǎn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "lữ quán",
+                           "vietnamese":  "nhà nghỉ, khách sạn nhỏ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我们晚上住在景点附近的旅馆。",
+                                                "pinyin":  "Wǒmen wǎnshang zhù zài jǐngdiǎn fùjìn de lǚguǎn.",
+                                                "vietnamese":  "Buổi tối chúng tôi ở nhà nghỉ gần điểm tham quan."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "星",
+                           "pinyin":  "xīng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tinh",
+                           "vietnamese":  "sao",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这是一家三星旅馆，价格不太贵。",
+                                                "pinyin":  "Zhè shì yì jiā sān xīng lǚguǎn, jiàgé bú tài guì.",
+                                                "vietnamese":  "Đây là một nhà nghỉ/khách sạn ba sao, giá không quá đắt."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "优惠",
+                           "pinyin":  "yōuhuì",
+                           "partOfSpeech":  "动/名",
+                           "sinoVietnamese":  "ưu huệ",
+                           "vietnamese":  "ưu đãi, giảm giá",
+                           "examples":  [
+                                            {
+                                                "chinese":  "如果团体报名，可以享受优惠。",
+                                                "pinyin":  "Rúguǒ tuántǐ bàomíng, kěyǐ xiǎngshòu yōuhuì.",
+                                                "vietnamese":  "Nếu đăng ký theo nhóm thì có thể được ưu đãi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "总算",
+                           "pinyin":  "zǒngsuàn",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "tổng toán",
+                           "vietnamese":  "cuối cùng cũng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我们问了很多家旅行社，总算找到合适的。",
+                                                "pinyin":  "Wǒmen wèn le hěn duō jiā lǚxíngshè, zǒngsuàn zhǎodào héshì de.",
+                                                "vietnamese":  "Chúng tôi hỏi nhiều công ty du lịch, cuối cùng cũng tìm được cái phù hợp."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "特点",
+                           "pinyin":  "tèdiǎn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đặc điểm",
+                           "vietnamese":  "đặc điểm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个旅游路线最大的特点是景点多。",
+                                                "pinyin":  "Zhège lǚyóu lùxiàn zuì dà de tèdiǎn shì jǐngdiǎn duō.",
+                                                "vietnamese":  "Đặc điểm lớn nhất của tuyến du lịch này là nhiều điểm tham quan."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "百闻不如一见",
+                           "pinyin":  "bǎi wén bù rú yí jiàn",
+                           "partOfSpeech":  "成语",
+                           "sinoVietnamese":  "bách văn bất như nhất kiến",
+                           "vietnamese":  "trăm nghe không bằng một thấy",
+                           "examples":  [
+                                            {
+                                                "chinese":  "大家都说新疆很美，真是百闻不如一见。",
+                                                "pinyin":  "Dàjiā dōu shuō Xīnjiāng hěn měi, zhēn shì bǎi wén bù rú yí jiàn.",
+                                                "vietnamese":  "Mọi người đều nói Tân Cương rất đẹp, đúng là trăm nghe không bằng một thấy."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "哈密瓜",
+                           "pinyin":  "hāmìguā",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "cáp mật qua",
+                           "vietnamese":  "dưa Hami",
+                           "examples":  [
+                                            {
+                                                "chinese":  "新疆的哈密瓜又甜又有名。",
+                                                "pinyin":  "Xīnjiāng de hāmìguā yòu tián yòu yǒumíng.",
+                                                "vietnamese":  "Dưa Hami của Tân Cương vừa ngọt vừa nổi tiếng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "惯",
+                           "pinyin":  "guàn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "quán",
+                           "vietnamese":  "quen với",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我刚来这里，还不太惯这种天气。",
+                                                "pinyin":  "Wǒ gāng lái zhèlǐ, hái bú tài guàn zhè zhǒng tiānqì.",
+                                                "vietnamese":  "Tôi mới đến đây, vẫn chưa quen lắm với thời tiết này."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "羊肉串",
+                           "pinyin":  "yángròuchuàn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "dương nhục xuyến",
+                           "vietnamese":  "xiên thịt cừu nướng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "到新疆旅游一定要尝尝羊肉串。",
+                                                "pinyin":  "Dào Xīnjiāng lǚyóu yídìng yào chángchang yángròuchuàn.",
+                                                "vietnamese":  "Đến Tân Cương du lịch nhất định phải nếm thử xiên thịt cừu nướng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "甭",
+                           "pinyin":  "béng",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "băng",
+                           "vietnamese":  "khỏi, không cần",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这件事你甭担心，我来安排。",
+                                                "pinyin":  "Zhè jiàn shì nǐ béng dānxīn, wǒ lái ānpái.",
+                                                "vietnamese":  "Việc này bạn khỏi lo, tôi sẽ sắp xếp."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "信仰",
+                           "pinyin":  "xìnyǎng",
+                           "partOfSpeech":  "动/名",
+                           "sinoVietnamese":  "tín ngưỡng",
+                           "vietnamese":  "tín ngưỡng, niềm tin",
+                           "examples":  [
+                                            {
+                                                "chinese":  "不同民族有不同的文化和信仰。",
+                                                "pinyin":  "Bùtóng mínzú yǒu bùtóng de wénhuà hé xìnyǎng.",
+                                                "vietnamese":  "Các dân tộc khác nhau có văn hóa và tín ngưỡng khác nhau."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "尊重",
+                           "pinyin":  "zūnzhòng",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "tôn trọng",
+                           "vietnamese":  "tôn trọng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "旅游时要尊重当地人的生活习惯。",
+                                                "pinyin":  "Lǚyóu shí yào zūnzhòng dāngdì rén de shēnghuó xíguàn.",
+                                                "vietnamese":  "Khi đi du lịch cần tôn trọng thói quen sinh hoạt của người địa phương."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "新疆",
+                           "pinyin":  "Xīnjiāng",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Tân Cương",
+                           "vietnamese":  "Tân Cương",
+                           "examples":  [
+                                            {
+                                                "chinese":  "新疆的景色非常美，值得去看看。",
+                                                "pinyin":  "Xīnjiāng de jǐngsè fēicháng měi, zhíde qù kànkan.",
+                                                "vietnamese":  "Phong cảnh Tân Cương rất đẹp, đáng để đi xem."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "葡萄沟",
+                           "pinyin":  "Pútáogōu",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Bồ Đào Câu",
+                           "vietnamese":  "Thung lũng Nho",
+                           "examples":  [
+                                            {
+                                                "chinese":  "葡萄沟是新疆很有名的景点。",
+                                                "pinyin":  "Pútáogōu shì Xīnjiāng hěn yǒumíng de jǐngdiǎn.",
+                                                "vietnamese":  "Thung lũng Nho là điểm tham quan rất nổi tiếng ở Tân Cương."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "伊斯兰",
+                           "pinyin":  "Yīsīlán",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Y Tư Lan",
+                           "vietnamese":  "Hồi giáo, Islam",
+                           "examples":  [
+                                            {
+                                                "chinese":  "伊斯兰文化在新疆有很深的影响。",
+                                                "pinyin":  "Yīsīlán wénhuà zài Xīnjiāng yǒu hěn shēn de yǐngxiǎng.",
+                                                "vietnamese":  "Văn hóa Hồi giáo có ảnh hưởng sâu ở Tân Cương."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "你看，青年旅行社去西安的报价是两千三，双飞四天。",
+                          "pinyin":  "Nǐ kàn, Qīngnián Lǚxíngshè qù Xī’ān de bàojià shì liǎng qiān sān, shuāngfēi sì tiān.",
+                          "vietnamese":  "Bạn xem, báo giá đi Tây An của Công ty du lịch Thanh niên là 2.300 tệ, bay khứ hồi trong 4 ngày."
+                      },
+                      {
+                          "chinese":  "是吗？我们打个电话问一下，看看他们到底是怎么安排的。",
+                          "pinyin":  "Shì ma? Wǒmen dǎ ge diànhuà wèn yíxià, kànkan tāmen dàodǐ shì zěnme ānpái de.",
+                          "vietnamese":  "Vậy à? Chúng ta gọi điện hỏi thử xem rốt cuộc họ sắp xếp như thế nào."
+                      },
+                      {
+                          "chinese":  "您好，这里是青年旅行社。",
+                          "pinyin":  "Nín hǎo, zhèlǐ shì Qīngnián Lǚxíngshè.",
+                          "vietnamese":  "Xin chào, đây là Công ty du lịch Thanh niên."
+                      },
+                      {
+                          "chinese":  "你好，请问你们的西安游是怎么安排的？",
+                          "pinyin":  "Nǐ hǎo, qǐngwèn nǐmen de Xī’ān yóu shì zěnme ānpái de?",
+                          "vietnamese":  "Xin chào, cho hỏi tour Tây An của các bạn được sắp xếp như thế nào?"
+                      },
+                      {
+                          "chinese":  "西安游是第一天坐飞机到西安，第二天、第三天游览当地的名胜古迹，一共5个景点，第四天飞回北京。",
+                          "pinyin":  "Xī’ān yóu shì dì yī tiān zuò fēijī dào Xī’ān, dì èr tiān, dì sān tiān yóulǎn dāngdì de míngshèng gǔjì, yígòng wǔ ge jǐngdiǎn, dì sì tiān fēi huí Běijīng.",
+                          "vietnamese":  "Tour Tây An là ngày đầu bay đến Tây An, ngày thứ hai và thứ ba tham quan danh lam thắng cảnh, di tích lịch sử địa phương, tổng cộng 5 điểm tham quan, ngày thứ tư bay về Bắc Kinh."
+                      },
+                      {
+                          "chinese":  "你们的报价包括哪些项目？",
+                          "pinyin":  "Nǐmen de bàojià bāokuò nǎxiē xiàngmù?",
+                          "vietnamese":  "Báo giá của các bạn bao gồm những hạng mục nào?"
+                      },
+                      {
+                          "chinese":  "包括北京到西安的往返机票、住宿费、当地车费，还有景点的第一道门票、导游费和餐费，其余是自费项目。",
+                          "pinyin":  "Bāokuò Běijīng dào Xī’ān de wǎngfǎn jīpiào, zhùsùfèi, dāngdì chēfèi, hái yǒu jǐngdiǎn de dì yī dào ménpiào, dǎoyóufèi hé cānfèi, qíyú shì zìfèi xiàngmù.",
+                          "vietnamese":  "Bao gồm vé máy bay khứ hồi Bắc Kinh – Tây An, phí lưu trú, phí xe tại địa phương, vé vào cửa đầu tiên của điểm tham quan, phí hướng dẫn viên và tiền ăn, còn lại là hạng mục tự trả."
+                      },
+                      {
+                          "chinese":  "有哪些自费项目？",
+                          "pinyin":  "Yǒu nǎxiē zìfèi xiàngmù?",
+                          "vietnamese":  "Có những hạng mục tự trả nào?"
+                      },
+                      {
+                          "chinese":  "除了两个自费的景点，还有个人消费，就是买当地的土特产和纪念品。",
+                          "pinyin":  "Chúle liǎng ge zìfèi de jǐngdiǎn, hái yǒu gèrén xiāofèi, jiùshì mǎi dāngdì de tǔtèchǎn hé jìniànpǐn.",
+                          "vietnamese":  "Ngoài hai điểm tham quan tự trả, còn có chi tiêu cá nhân, tức là mua đặc sản địa phương và đồ lưu niệm."
+                      },
+                      {
+                          "chinese":  "我们非得买东西不可吗？",
+                          "pinyin":  "Wǒmen fēi děi mǎi dōngxi bùkě ma?",
+                          "vietnamese":  "Chúng tôi nhất định phải mua đồ sao?"
+                      },
+                      {
+                          "chinese":  "买不买东西您自己说了算，我们没要求。",
+                          "pinyin":  "Mǎi bu mǎi dōngxi nín zìjǐ shuōle suàn, wǒmen méi yāoqiú.",
+                          "vietnamese":  "Mua hay không là do anh/chị tự quyết định, chúng tôi không yêu cầu."
+                      },
+                      {
+                          "chinese":  "有保险吗？",
+                          "pinyin":  "Yǒu bǎoxiǎn ma?",
+                          "vietnamese":  "Có bảo hiểm không?"
+                      },
+                      {
+                          "chinese":  "保险您得自己买，我们建议您买人身意外保险。",
+                          "pinyin":  "Bǎoxiǎn nín děi zìjǐ mǎi, wǒmen jiànyì nín mǎi rénshēn yìwài bǎoxiǎn.",
+                          "vietnamese":  "Bảo hiểm anh/chị phải tự mua, chúng tôi khuyên anh/chị mua bảo hiểm tai nạn cá nhân."
+                      },
+                      {
+                          "chinese":  "对了，我们住西安什么样的旅馆？",
+                          "pinyin":  "Duì le, wǒmen zhù Xī’ān shénme yàng de lǚguǎn?",
+                          "vietnamese":  "À đúng rồi, chúng tôi sẽ ở khách sạn kiểu gì tại Tây An?"
+                      },
+                      {
+                          "chinese":  "我们住的都是三星级旅馆，标准双人间。",
+                          "pinyin":  "Wǒmen zhù de dōu shì sān xīng jí lǚguǎn, biāozhǔn shuāngrénjiān.",
+                          "vietnamese":  "Chúng tôi ở khách sạn 3 sao, phòng tiêu chuẩn hai người."
+                      },
+                      {
+                          "chinese":  "什么时候发团？有没有什么优惠活动？",
+                          "pinyin":  "Shénme shíhou fā tuán? Yǒu méiyǒu shénme yōuhuì huódòng?",
+                          "vietnamese":  "Khi nào khởi hành theo đoàn? Có hoạt động ưu đãi gì không?"
+                      },
+                      {
+                          "chinese":  "每周一、三发团，随报随走，三人以上，报价打九五折。",
+                          "pinyin":  "Měi zhōu yī, sān fā tuán, suí bào suí zǒu, sān rén yǐshàng, bàojià dǎ jiǔ wǔ zhé.",
+                          "vietnamese":  "Mỗi thứ Hai và thứ Tư đều khởi hành, đăng ký là đi được, từ 3 người trở lên thì báo giá giảm còn 95%."
+                      },
+                      {
+                          "chinese":  "好，谢谢你，我再考虑考虑。再见！",
+                          "pinyin":  "Hǎo, xièxie nǐ, wǒ zài kǎolǜ kǎolǜ. Zàijiàn!",
+                          "vietnamese":  "Được, cảm ơn bạn, tôi sẽ suy nghĩ thêm. Tạm biệt!"
+                      },
+                      {
+                          "chinese":  "好的，有问题的话，请随时给我们打电话。再见！",
+                          "pinyin":  "Hǎo de, yǒu wèntí de huà, qǐng suíshí gěi wǒmen dǎ diànhuà. Zàijiàn!",
+                          "vietnamese":  "Vâng, nếu có vấn đề gì, xin cứ gọi điện cho chúng tôi bất cứ lúc nào. Tạm biệt!"
+                      },
+                      {
+                          "chinese":  "我觉得不错，只是旅游项目安排得太多，时间紧。",
+                          "pinyin":  "Wǒ juéde búcuò, zhǐshì lǚyóu xiàngmù ānpái de tài duō, shíjiān jǐn.",
+                          "vietnamese":  "Tôi thấy khá ổn, chỉ là các hạng mục du lịch được sắp xếp quá nhiều, thời gian gấp."
+                      },
+                      {
+                          "chinese":  "跟团旅游就是这样，便宜是便宜，不过没什么自由。",
+                          "pinyin":  "Gēn tuán lǚyóu jiù shì zhèyàng, piányi shì piányi, búguò méi shénme zìyóu.",
+                          "vietnamese":  "Đi du lịch theo đoàn là như vậy, rẻ thì có rẻ, nhưng không được tự do lắm."
+                      },
+                      {
+                          "chinese":  "不过这样也好，我们不光省心、省钱，还方便、安全。",
+                          "pinyin":  "Búguò zhèyàng yě hǎo, wǒmen bùguāng shěngxīn, shěngqián, hái fāngbiàn, ānquán.",
+                          "vietnamese":  "Nhưng như vậy cũng tốt, chúng ta không chỉ đỡ phải lo, tiết kiệm tiền, mà còn tiện lợi và an toàn."
+                      },
+                      {
+                          "chinese":  "那我们就赶快报名吧！",
+                          "pinyin":  "Nà wǒmen jiù gǎnkuài bàomíng ba!",
+                          "vietnamese":  "Vậy chúng ta mau đăng ký thôi!"
+                      },
+                      {
+                          "chinese":  "听说你跟小林去新疆玩儿了一趟？",
+                          "pinyin":  "Tīngshuō nǐ gēn Xiǎo Lín qù Xīnjiāng wánr le yí tàng?",
+                          "vietnamese":  "Nghe nói bạn và Tiểu Lâm đã đi Tân Cương chơi một chuyến à?"
+                      },
+                      {
+                          "chinese":  "是啊，新疆好玩儿极了，我一直想去，这次总算去成了。",
+                          "pinyin":  "Shì a, Xīnjiāng hǎowánr jí le, wǒ yìzhí xiǎng qù, zhè cì zǒngsuàn qù chéng le.",
+                          "vietnamese":  "Đúng vậy, Tân Cương cực kỳ thú vị, tôi luôn muốn đi, lần này cuối cùng cũng đi được rồi."
+                      },
+                      {
+                          "chinese":  "你们都去了哪些地方？",
+                          "pinyin":  "Nǐmen dōu qù le nǎxiē dìfang?",
+                          "vietnamese":  "Các bạn đã đi những nơi nào?"
+                      },
+                      {
+                          "chinese":  "我们去了三个主要景点，然后就是随便看看。",
+                          "pinyin":  "Wǒmen qù le sān ge zhǔyào jǐngdiǎn, ránhòu jiùshì suíbiàn kànkan.",
+                          "vietnamese":  "Chúng tôi đi ba điểm tham quan chính, sau đó thì đi xem loanh quanh."
+                      },
+                      {
+                          "chinese":  "你们是怎么去的？",
+                          "pinyin":  "Nǐmen shì zěnme qù de?",
+                          "vietnamese":  "Các bạn đi bằng cách nào?"
+                      },
+                      {
+                          "chinese":  "坐火车去的，花的时间比较长。",
+                          "pinyin":  "Zuò huǒchē qù de, huā de shíjiān bǐjiào cháng.",
+                          "vietnamese":  "Đi bằng tàu hỏa, thời gian mất khá lâu."
+                      },
+                      {
+                          "chinese":  "新疆怎么样啊？",
+                          "pinyin":  "Xīnjiāng zěnmeyàng a?",
+                          "vietnamese":  "Tân Cương thế nào?"
+                      },
+                      {
+                          "chinese":  "很值得去，市里的商场东西很有特点，也比我们这儿便宜，郊区空气特别好，特别美。",
+                          "pinyin":  "Hěn zhíde qù, shì lǐ de shāngchǎng dōngxi hěn yǒu tèdiǎn, yě bǐ wǒmen zhèr piányi, jiāoqū kōngqì tèbié hǎo, tèbié měi.",
+                          "vietnamese":  "Rất đáng đi, đồ trong trung tâm thương mại ở thành phố rất có đặc sắc, cũng rẻ hơn chỗ chúng ta; không khí ngoại ô đặc biệt tốt, đặc biệt đẹp."
+                      },
+                      {
+                          "chinese":  "是吗？你觉得新疆最主要的景点是哪儿？",
+                          "pinyin":  "Shì ma? Nǐ juéde Xīnjiāng zuì zhǔyào de jǐngdiǎn shì nǎr?",
+                          "vietnamese":  "Vậy à? Bạn thấy điểm tham quan chính nhất của Tân Cương là đâu?"
+                      },
+                      {
+                          "chinese":  "我觉得是葡萄沟，以前光看过介绍，去了才知道百闻不如一见。",
+                          "pinyin":  "Wǒ juéde shì Pútáogōu, yǐqián guāng kàn guò jièshào, qù le cái zhīdào bǎi wén bùrú yí jiàn.",
+                          "vietnamese":  "Tôi thấy là Thung lũng Nho, trước đây chỉ từng xem giới thiệu, đi rồi mới biết trăm nghe không bằng một thấy."
+                      },
+                      {
+                          "chinese":  "新疆有什么特产吗？",
+                          "pinyin":  "Xīnjiāng yǒu shénme tèchǎn ma?",
+                          "vietnamese":  "Tân Cương có đặc sản gì không?"
+                      },
+                      {
+                          "chinese":  "最主要的特产是水果，其中最有名的就是葡萄、哈密瓜，特好吃。",
+                          "pinyin":  "Zuì zhǔyào de tèchǎn shì shuǐguǒ, qízhōng zuì yǒumíng de jiùshì pútáo, hāmìguā, tè hǎochī.",
+                          "vietnamese":  "Đặc sản chính là trái cây, trong đó nổi tiếng nhất là nho và dưa Hami, rất ngon."
+                      },
+                      {
+                          "chinese":  "当地的饭菜怎么样？吃得惯吃不惯？",
+                          "pinyin":  "Dāngdì de fàncài zěnmeyàng? Chī de guàn chī bu guàn?",
+                          "vietnamese":  "Đồ ăn địa phương thế nào? Có ăn quen không?"
+                      },
+                      {
+                          "chinese":  "饭菜特好吃，我最喜欢吃的是羊肉串，有半米多长，甭提多香了。",
+                          "pinyin":  "Fàncài tè hǎochī, wǒ zuì xǐhuan chī de shì yángròuchuàn, yǒu bàn mǐ duō cháng, béng tí duō xiāng le.",
+                          "vietnamese":  "Đồ ăn rất ngon, món tôi thích nhất là xiên thịt dê, dài hơn nửa mét, khỏi phải nói thơm đến mức nào."
+                      },
+                      {
+                          "chinese":  "你们俩买了什么纪念品？",
+                          "pinyin":  "Nǐmen liǎ mǎi le shénme jìniànpǐn?",
+                          "vietnamese":  "Hai bạn đã mua quà lưu niệm gì?"
+                      },
+                      {
+                          "chinese":  "我买了一套新疆服装，小林买了一把新疆刀。",
+                          "pinyin":  "Wǒ mǎi le yí tào Xīnjiāng fúzhuāng, Xiǎo Lín mǎi le yì bǎ Xīnjiāng dāo.",
+                          "vietnamese":  "Tôi mua một bộ trang phục Tân Cương, Tiểu Lâm mua một con dao Tân Cương."
+                      },
+                      {
+                          "chinese":  "对了，去新疆旅游有什么需要注意的吗？",
+                          "pinyin":  "Duì le, qù Xīnjiāng lǚyóu yǒu shénme xūyào zhùyì de ma?",
+                          "vietnamese":  "À đúng rồi, đi du lịch Tân Cương có điều gì cần chú ý không?"
+                      },
+                      {
+                          "chinese":  "新疆大部分人信仰伊斯兰教，所以尊重人家的信仰最重要。",
+                          "pinyin":  "Xīnjiāng dà bùfen rén xìnyǎng Yīsīlánjiào, suǒyǐ zūnzhòng rénjiā de xìnyǎng zuì zhòngyào.",
+                          "vietnamese":  "Phần lớn người ở Tân Cương theo đạo Hồi, vì vậy tôn trọng tín ngưỡng của họ là quan trọng nhất."
+                      },
+                      {
+                          "chinese":  "那儿的气候跟咱们这儿比怎么样？比这儿冷还是比这儿热？",
+                          "pinyin":  "Nàr de qìhòu gēn zánmen zhèr bǐ zěnmeyàng? Bǐ zhèr lěng háishi bǐ zhèr rè?",
+                          "vietnamese":  "Khí hậu ở đó so với chỗ chúng ta thế nào? Lạnh hơn hay nóng hơn ở đây?"
+                      },
+                      {
+                          "chinese":  "白天比这儿热得多，晚上比这儿冷得多，你要去的话，千万别忘了带厚衣服。",
+                          "pinyin":  "Báitiān bǐ zhèr rè de duō, wǎnshang bǐ zhèr lěng de duō, nǐ yào qù de huà, qiānwàn bié wàng le dài hòu yīfu.",
+                          "vietnamese":  "Ban ngày nóng hơn ở đây nhiều, buổi tối lạnh hơn ở đây nhiều; nếu bạn đi thì tuyệt đối đừng quên mang quần áo dày."
+                      },
+                      {
+                          "chinese":  "你们在那儿玩儿了多长时间？大概费用是多少？",
+                          "pinyin":  "Nǐmen zài nàr wánr le duō cháng shíjiān? Dàgài fèiyòng shì duōshao?",
+                          "vietnamese":  "Các bạn chơi ở đó bao lâu? Chi phí khoảng bao nhiêu?"
+                      },
+                      {
+                          "chinese":  "从出发到回来一共用了两个星期，每个人大概花了两千七百多块钱。",
+                          "pinyin":  "Cóng chūfā dào huílai yígòng yòng le liǎng ge xīngqī, měi ge rén dàgài huā le liǎng qiān qī bǎi duō kuài qián.",
+                          "vietnamese":  "Từ lúc xuất phát đến khi về tổng cộng mất hai tuần, mỗi người khoảng hơn 2.700 tệ."
+                      },
+                      {
+                          "chinese":  "怎么这么便宜啊？",
+                          "pinyin":  "Zěnme zhème piányi a?",
+                          "vietnamese":  "Sao rẻ vậy?"
+                      },
+                      {
+                          "chinese":  "我们俩来回都是坐火车，所以费用不高。你要是去新疆啊，就7月去，7月是最适合旅游的好时候。",
+                          "pinyin":  "Wǒmen liǎ láihuí dōu shì zuò huǒchē, suǒyǐ fèiyòng bù gāo. Nǐ yàoshi qù Xīnjiāng a, jiù qī yuè qù, qī yuè shì zuì shìhé lǚyóu de hǎo shíhou.",
+                          "vietnamese":  "Hai chúng tôi cả đi lẫn về đều đi tàu hỏa, nên chi phí không cao. Nếu bạn đi Tân Cương thì hãy đi vào tháng 7, tháng 7 là thời điểm rất thích hợp để du lịch."
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "……说了算",
+                        "meaning":  "… có quyền quyết định",
+                        "usage":  "Dùng để nói ai là người quyết định cuối cùng",
+                        "note":  "Chủ ngữ thường là người hoặc quy định",
+                        "example":  "这件事不是我说了算，要问经理。",
+                        "pinyin":  "Zhè jiàn shì bú shì wǒ shuō le suàn, yào wèn jīnglǐ.",
+                        "vietnamese":  "Việc này không phải tôi quyết là được, phải hỏi giám đốc.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……得……",
+                        "meaning":  "… đến mức…",
+                        "usage":  "Dùng để bổ sung mức độ hoặc kết quả cho động từ/tính từ",
+                        "note":  "Đây là bổ ngữ trình độ",
+                        "example":  "他忙得连饭都没时间吃。",
+                        "pinyin":  "Tā máng de lián fàn dōu méi shíjiān chī.",
+                        "vietnamese":  "Anh ấy bận đến mức ngay cả cơm cũng không có thời gian ăn.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "V 得 A 不 A",
+                        "meaning":  "V có A hay không",
+                        "usage":  "Dùng để hỏi khả năng hoặc kết quả của hành động",
+                        "note":  "Thường dùng trong khẩu ngữ",
+                        "example":  "这篇文章你看得懂看不懂？",
+                        "pinyin":  "Zhè piān wénzhāng nǐ kàn de dǒng kàn bù dǒng?",
+                        "vietnamese":  "Bài văn này bạn đọc có hiểu không?",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "再提多……了",
+                        "meaning":  "Đừng nhắc nữa, quá… rồi",
+                        "usage":  "Dùng để nhấn mạnh cảm xúc mạnh về một việc",
+                        "note":  "Nên hiểu theo mẫu thường dùng: 别提多……了",
+                        "example":  "今天的考试别提多难了。",
+                        "pinyin":  "Jīntiān de kǎoshì bié tí duō nán le.",
+                        "vietnamese":  "Kỳ thi hôm nay khó khỏi phải nói.",
+                        "level":  "⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "这家旅行社的服务态度不错。",
+                        "pinyin":  "Zhè jiā lǚxíngshè de fúwù tàidu búcuò.",
+                        "vietnamese":  "Thái độ phục vụ của công ty du lịch này khá tốt.",
+                        "answer":  "这家旅行社的服务态度不错。"
+                    },
+                    {
+                        "chinese":  "旅行社给我们推荐了三条新疆路线。",
+                        "pinyin":  "Lǚxíngshè gěi wǒmen tuījiàn le sān tiáo Xīnjiāng lùxiàn.",
+                        "vietnamese":  "Công ty du lịch giới thiệu cho chúng tôi ba tuyến Tân Cương.",
+                        "answer":  "旅行社给我们推荐了三条新疆路线。"
+                    },
+                    {
+                        "chinese":  "选择旅行社时，不能只看报价。",
+                        "pinyin":  "Xuǎnzé lǚxíngshè shí, bù néng zhǐ kàn bàojià.",
+                        "vietnamese":  "Khi chọn công ty du lịch, không thể chỉ xem báo giá.",
+                        "answer":  "选择旅行社时，不能只看报价。"
+                    },
+                    {
+                        "chinese":  "这家旅行社不光安排住宿，还负责保险。",
+                        "pinyin":  "Zhè jiā lǚxíngshè bùguāng ānpái zhùsù, hái fùzé bǎoxiǎn.",
+                        "vietnamese":  "Công ty du lịch này không chỉ sắp xếp chỗ ở mà còn phụ trách bảo hiểm.",
+                        "answer":  "这家旅行社不光安排住宿，还负责保险。"
+                    },
+                    {
+                        "chinese":  "如果旅行社不正规，游客可能会走冤枉路。",
+                        "pinyin":  "Rúguǒ lǚxíngshè bù zhèngguī, yóukè kěnéng huì zǒu yuānwang lù.",
+                        "vietnamese":  "Nếu công ty du lịch không chính quy, du khách có thể bị đi đường vòng oan.",
+                        "answer":  "如果旅行社不正规，游客可能会走冤枉路。"
+                    },
+                    {
+                        "chinese":  "旅行社说这个项目包含往返车票。",
+                        "pinyin":  "Lǚxíngshè shuō zhège xiàngmù bāohán wǎngfǎn chēpiào.",
+                        "vietnamese":  "Công ty du lịch nói hạng mục này bao gồm vé xe khứ hồi.",
+                        "answer":  "旅行社说这个项目包含往返车票。"
+                    },
+                    {
+                        "chinese":  "他向旅行社咨询了住宿和餐费。",
+                        "pinyin":  "Tā xiàng lǚxíngshè zīxún le zhùsù hé cānfèi.",
+                        "vietnamese":  "Anh ấy hỏi công ty du lịch về chỗ ở và tiền ăn.",
+                        "answer":  "他向旅行社咨询了住宿和餐费。"
+                    },
+                    {
+                        "chinese":  "这家旅行社专门做新疆旅游项目。",
+                        "pinyin":  "Zhè jiā lǚxíngshè zhuānmén zuò Xīnjiāng lǚyóu xiàngmù.",
+                        "vietnamese":  "Công ty du lịch này chuyên làm các chương trình du lịch Tân Cương.",
+                        "answer":  "这家旅行社专门做新疆旅游项目。"
+                    },
+                    {
+                        "chinese":  "旅行社提醒我们尊重当地信仰。",
+                        "pinyin":  "Lǚxíngshè tíxǐng wǒmen zūnzhòng dāngdì xìnyǎng.",
+                        "vietnamese":  "Công ty du lịch nhắc chúng tôi tôn trọng tín ngưỡng địa phương.",
+                        "answer":  "旅行社提醒我们尊重当地信仰。"
+                    },
+                    {
+                        "chinese":  "如果报价太低，没准儿这家旅行社不可靠。",
+                        "pinyin":  "Rúguǒ bàojià tài dī, méizhǔnr zhè jiā lǚxíngshè bù kěkào.",
+                        "vietnamese":  "Nếu báo giá quá thấp, biết đâu công ty du lịch này không đáng tin.",
+                        "answer":  "如果报价太低，没准儿这家旅行社不可靠。"
+                    },
+                    {
+                        "chinese":  "旅行社的报价比我们想象中低。",
+                        "pinyin":  "Lǚxíngshè de bàojià bǐ wǒmen xiǎngxiàng zhōng dī.",
+                        "vietnamese":  "Báo giá của công ty du lịch thấp hơn chúng tôi tưởng.",
+                        "answer":  "旅行社的报价比我们想象中低。"
+                    },
+                    {
+                        "chinese":  "这个报价包括住宿和三餐吗？",
+                        "pinyin":  "Zhège bàojià bāokuò zhùsù hé sān cān ma?",
+                        "vietnamese":  "Báo giá này bao gồm chỗ ở và ba bữa ăn không?",
+                        "answer":  "这个报价包括住宿和三餐吗？"
+                    },
+                    {
+                        "chinese":  "不同旅行社的报价差别很大。",
+                        "pinyin":  "Bùtóng lǚxíngshè de bàojià chābié hěn dà.",
+                        "vietnamese":  "Báo giá của các công ty du lịch khác nhau chênh lệch rất lớn.",
+                        "answer":  "不同旅行社的报价差别很大。"
+                    },
+                    {
+                        "chinese":  "报价太便宜时，最好先问清楚保险项目。",
+                        "pinyin":  "Bàojià tài piányi shí, zuìhǎo xiān wèn qīngchu bǎoxiǎn xiàngmù.",
+                        "vietnamese":  "Khi báo giá quá rẻ, tốt nhất hỏi rõ hạng mục bảo hiểm trước.",
+                        "answer":  "报价太便宜时，最好先问清楚保险项目。"
+                    },
+                    {
+                        "chinese":  "这个报价不光包含门票，还包含导游服务。",
+                        "pinyin":  "Zhège bàojià bùguāng bāohán ménpiào, hái bāohán dǎoyóu fúwù.",
+                        "vietnamese":  "Báo giá này không chỉ gồm vé vào cửa mà còn gồm dịch vụ hướng dẫn viên.",
+                        "answer":  "这个报价不光包含门票，还包含导游服务。"
+                    },
+                    {
+                        "chinese":  "他把三家旅行社的报价整理成表格。",
+                        "pinyin":  "Tā bǎ sān jiā lǚxíngshè de bàojià zhěnglǐ chéng biǎogé.",
+                        "vietnamese":  "Anh ấy sắp xếp báo giá của ba công ty du lịch thành bảng.",
+                        "answer":  "他把三家旅行社的报价整理成表格。"
+                    },
+                    {
+                        "chinese":  "如果报价不透明，游客容易产生误会。",
+                        "pinyin":  "Rúguǒ bàojià bù tòumíng, yóukè róngyì chǎnshēng wùhuì.",
+                        "vietnamese":  "Nếu báo giá không minh bạch, du khách dễ nảy sinh hiểu lầm.",
+                        "answer":  "如果报价不透明，游客容易产生误会。"
+                    },
+                    {
+                        "chinese":  "据旅行社说，这个报价已经是优惠价。",
+                        "pinyin":  "Jù lǚxíngshè shuō, zhège bàojià yǐjīng shì yōuhuì jià.",
+                        "vietnamese":  "Theo công ty du lịch nói, báo giá này đã là giá ưu đãi.",
+                        "answer":  "据旅行社说，这个报价已经是优惠价。"
+                    },
+                    {
+                        "chinese":  "报价虽然高一点，但住宿条件更好。",
+                        "pinyin":  "Bàojià suīrán gāo yìdiǎn, dàn zhùsù tiáojiàn gèng hǎo.",
+                        "vietnamese":  "Báo giá tuy cao hơn một chút nhưng điều kiện chỗ ở tốt hơn.",
+                        "answer":  "报价虽然高一点，但住宿条件更好。"
+                    },
+                    {
+                        "chinese":  "你别胡乱接受报价，省得以后后悔。",
+                        "pinyin":  "Nǐ bié húluàn jiēshòu bàojià, shěngde yǐhòu hòuhuǐ.",
+                        "vietnamese":  "Bạn đừng tùy tiện chấp nhận báo giá, để khỏi sau này hối hận.",
+                        "answer":  "你别胡乱接受报价，省得以后后悔。"
+                    },
+                    {
+                        "chinese":  "这个景点每天都有很多游客。",
+                        "pinyin":  "Zhège jǐngdiǎn měitiān dōu yǒu hěn duō yóukè.",
+                        "vietnamese":  "Điểm tham quan này mỗi ngày đều có rất nhiều du khách.",
+                        "answer":  "这个景点每天都有很多游客。"
+                    },
+                    {
+                        "chinese":  "导游说，下一个景点是葡萄沟。",
+                        "pinyin":  "Dǎoyóu shuō, xià yí ge jǐngdiǎn shì Pútáogōu.",
+                        "vietnamese":  "Hướng dẫn viên nói điểm tham quan tiếp theo là Thung lũng Nho.",
+                        "answer":  "导游说，下一个景点是葡萄沟。"
+                    },
+                    {
+                        "chinese":  "旅行社安排的景点都很有特色。",
+                        "pinyin":  "Lǚxíngshè ānpái de jǐngdiǎn dōu hěn yǒu tèsè.",
+                        "vietnamese":  "Các điểm tham quan mà công ty du lịch sắp xếp đều rất có đặc sắc.",
+                        "answer":  "旅行社安排的景点都很有特色。"
+                    },
+                    {
+                        "chinese":  "如果时间不够，就只能减少两个景点。",
+                        "pinyin":  "Rúguǒ shíjiān bú gòu, jiù zhǐ néng jiǎnshǎo liǎng ge jǐngdiǎn.",
+                        "vietnamese":  "Nếu thời gian không đủ thì chỉ có thể giảm hai điểm tham quan.",
+                        "answer":  "如果时间不够，就只能减少两个景点。"
+                    },
+                    {
+                        "chinese":  "这个景点不光景色美，而且文化很特别。",
+                        "pinyin":  "Zhège jǐngdiǎn bùguāng jǐngsè měi, érqiě wénhuà hěn tèbié.",
+                        "vietnamese":  "Điểm tham quan này không chỉ phong cảnh đẹp mà văn hóa cũng rất đặc biệt.",
+                        "answer":  "这个景点不光景色美，而且文化很特别。"
+                    },
+                    {
+                        "chinese":  "去景点以前，最好先了解当地信仰。",
+                        "pinyin":  "Qù jǐngdiǎn yǐqián, zuìhǎo xiān liǎojiě dāngdì xìnyǎng.",
+                        "vietnamese":  "Trước khi đến điểm tham quan, tốt nhất tìm hiểu tín ngưỡng địa phương trước.",
+                        "answer":  "去景点以前，最好先了解当地信仰。"
+                    },
+                    {
+                        "chinese":  "这个景点的门票已经包含在报价里了。",
+                        "pinyin":  "Zhège jǐngdiǎn de ménpiào yǐjīng bāohán zài bàojià lǐ le.",
+                        "vietnamese":  "Vé vào cửa của điểm tham quan này đã bao gồm trong báo giá rồi.",
+                        "answer":  "这个景点的门票已经包含在报价里了。"
+                    },
+                    {
+                        "chinese":  "导游提醒我们不要在景点胡乱拍照。",
+                        "pinyin":  "Dǎoyóu tíxǐng wǒmen búyào zài jǐngdiǎn húluàn pāizhào.",
+                        "vietnamese":  "Hướng dẫn viên nhắc chúng tôi đừng chụp ảnh lung tung ở điểm tham quan.",
+                        "answer":  "导游提醒我们不要在景点胡乱拍照。"
+                    },
+                    {
+                        "chinese":  "有些景点百闻不如一见，照片完全不够。",
+                        "pinyin":  "Yǒuxiē jǐngdiǎn bǎi wén bù rú yí jiàn, zhàopiàn wánquán bú gòu.",
+                        "vietnamese":  "Có những điểm tham quan trăm nghe không bằng một thấy, ảnh hoàn toàn không đủ.",
+                        "answer":  "有些景点百闻不如一见，照片完全不够。"
+                    },
+                    {
+                        "chinese":  "这个景点附近可以买到很多土特产。",
+                        "pinyin":  "Zhège jǐngdiǎn fùjìn kěyǐ mǎi dào hěn duō tǔtèchǎn.",
+                        "vietnamese":  "Gần điểm tham quan này có thể mua được nhiều đặc sản địa phương.",
+                        "answer":  "这个景点附近可以买到很多土特产。"
+                    },
+                    {
+                        "chinese":  "这个旅游项目包括住宿和保险。",
+                        "pinyin":  "Zhège lǚyóu xiàngmù bāokuò zhùsù hé bǎoxiǎn.",
+                        "vietnamese":  "Chương trình du lịch này bao gồm chỗ ở và bảo hiểm.",
+                        "answer":  "这个旅游项目包括住宿和保险。"
+                    },
+                    {
+                        "chinese":  "旅行社给我们介绍了几个不同项目。",
+                        "pinyin":  "Lǚxíngshè gěi wǒmen jièshào le jǐ ge bùtóng xiàngmù.",
+                        "vietnamese":  "Công ty du lịch giới thiệu cho chúng tôi vài hạng mục/chương trình khác nhau.",
+                        "answer":  "旅行社给我们介绍了几个不同项目。"
+                    },
+                    {
+                        "chinese":  "这个项目报价不高，内容却很丰富。",
+                        "pinyin":  "Zhège xiàngmù bàojià bù gāo, nèiróng què hěn fēngfù.",
+                        "vietnamese":  "Hạng mục này báo giá không cao nhưng nội dung lại rất phong phú.",
+                        "answer":  "这个项目报价不高，内容却很丰富。"
+                    },
+                    {
+                        "chinese":  "如果项目太多，老人可能会觉得累。",
+                        "pinyin":  "Rúguǒ xiàngmù tài duō, lǎorén kěnéng huì juéde lèi.",
+                        "vietnamese":  "Nếu hạng mục quá nhiều, người già có thể sẽ thấy mệt.",
+                        "answer":  "如果项目太多，老人可能会觉得累。"
+                    },
+                    {
+                        "chinese":  "这个项目不光有景点参观，还有土特产体验。",
+                        "pinyin":  "Zhège xiàngmù bùguāng yǒu jǐngdiǎn cānguān, hái yǒu tǔtèchǎn tǐyàn.",
+                        "vietnamese":  "Chương trình này không chỉ có tham quan điểm du lịch mà còn có trải nghiệm đặc sản địa phương.",
+                        "answer":  "这个项目不光有景点参观，还有土特产体验。"
+                    },
+                    {
+                        "chinese":  "导游说，自费项目可以自由选择。",
+                        "pinyin":  "Dǎoyóu shuō, zìfèi xiàngmù kěyǐ zìyóu xuǎnzé.",
+                        "vietnamese":  "Hướng dẫn viên nói hạng mục tự phí có thể tự do lựa chọn.",
+                        "answer":  "导游说，自费项目可以自由选择。"
+                    },
+                    {
+                        "chinese":  "选择项目时，要注意是否包含往返交通。",
+                        "pinyin":  "Xuǎnzé xiàngmù shí, yào zhùyì shìfǒu bāohán wǎngfǎn jiāotōng.",
+                        "vietnamese":  "Khi chọn hạng mục, phải chú ý có bao gồm giao thông khứ hồi hay không.",
+                        "answer":  "选择项目时，要注意是否包含往返交通。"
+                    },
+                    {
+                        "chinese":  "这个项目看起来很优惠，没准儿有限制条件。",
+                        "pinyin":  "Zhège xiàngmù kàn qǐlái hěn yōuhuì, méizhǔnr yǒu xiànzhì tiáojiàn.",
+                        "vietnamese":  "Hạng mục này nhìn có vẻ ưu đãi, biết đâu có điều kiện hạn chế.",
+                        "answer":  "这个项目看起来很优惠，没准儿有限制条件。"
+                    },
+                    {
+                        "chinese":  "他把所有项目通通写进了旅行计划。",
+                        "pinyin":  "Tā bǎ suǒyǒu xiàngmù tōngtōng xiě jìn le lǚxíng jìhuà.",
+                        "vietnamese":  "Anh ấy viết tất cả hạng mục vào kế hoạch du lịch.",
+                        "answer":  "他把所有项目通通写进了旅行计划。"
+                    },
+                    {
+                        "chinese":  "这个项目最大的特点是路线轻松。",
+                        "pinyin":  "Zhège xiàngmù zuì dà de tèdiǎn shì lùxiàn qīngsōng.",
+                        "vietnamese":  "Đặc điểm lớn nhất của hạng mục này là tuyến đường nhẹ nhàng.",
+                        "answer":  "这个项目最大的特点是路线轻松。"
+                    },
+                    {
+                        "chinese":  "我们买了往返北京的火车票。",
+                        "pinyin":  "Wǒmen mǎi le wǎngfǎn Běijīng de huǒchēpiào.",
+                        "vietnamese":  "Chúng tôi đã mua vé tàu khứ hồi Bắc Kinh.",
+                        "answer":  "我们买了往返北京的火车票。"
+                    },
+                    {
+                        "chinese":  "这个报价包括往返机票吗？",
+                        "pinyin":  "Zhège bàojià bāokuò wǎngfǎn jīpiào ma?",
+                        "vietnamese":  "Báo giá này có bao gồm vé máy bay khứ hồi không?",
+                        "answer":  "这个报价包括往返机票吗？"
+                    },
+                    {
+                        "chinese":  "从旅馆到景点往返大约需要两个小时。",
+                        "pinyin":  "Cóng lǚguǎn dào jǐngdiǎn wǎngfǎn dàyuē xūyào liǎng ge xiǎoshí.",
+                        "vietnamese":  "Từ nhà nghỉ đến điểm tham quan đi về khoảng cần hai tiếng.",
+                        "answer":  "从旅馆到景点往返大约需要两个小时。"
+                    },
+                    {
+                        "chinese":  "旅行社安排了往返交通，省得游客麻烦。",
+                        "pinyin":  "Lǚxíngshè ānpái le wǎngfǎn jiāotōng, shěngde yóukè máfan.",
+                        "vietnamese":  "Công ty du lịch sắp xếp giao thông khứ hồi, để khỏi du khách phiền.",
+                        "answer":  "旅行社安排了往返交通，省得游客麻烦。"
+                    },
+                    {
+                        "chinese":  "往返路程虽然有点远，但景色非常值得。",
+                        "pinyin":  "Wǎngfǎn lùchéng suīrán yǒudiǎn yuǎn, dàn jǐngsè fēicháng zhíde.",
+                        "vietnamese":  "Quãng đường khứ hồi tuy hơi xa nhưng phong cảnh rất đáng.",
+                        "answer":  "往返路程虽然有点远，但景色非常值得。"
+                    },
+                    {
+                        "chinese":  "我们需要确认往返时间，省得错过集合。",
+                        "pinyin":  "Wǒmen xūyào quèrèn wǎngfǎn shíjiān, shěngde cuòguò jíhé.",
+                        "vietnamese":  "Chúng ta cần xác nhận thời gian đi về để khỏi lỡ tập trung.",
+                        "answer":  "我们需要确认往返时间，省得错过集合。"
+                    },
+                    {
+                        "chinese":  "往返费用已经包含在总报价里了。",
+                        "pinyin":  "Wǎngfǎn fèiyòng yǐjīng bāohán zài zǒng bàojià lǐ le.",
+                        "vietnamese":  "Chi phí khứ hồi đã bao gồm trong tổng báo giá rồi.",
+                        "answer":  "往返费用已经包含在总报价里了。"
+                    },
+                    {
+                        "chinese":  "他觉得往返一天太累，想住一晚。",
+                        "pinyin":  "Tā juéde wǎngfǎn yì tiān tài lèi, xiǎng zhù yì wǎn.",
+                        "vietnamese":  "Anh ấy thấy đi về trong một ngày quá mệt, muốn ở lại một đêm.",
+                        "answer":  "他觉得往返一天太累，想住一晚。"
+                    },
+                    {
+                        "chinese":  "往返车票不光便宜，而且使用方便。",
+                        "pinyin":  "Wǎngfǎn chēpiào bùguāng piányi, érqiě shǐyòng fāngbiàn.",
+                        "vietnamese":  "Vé xe khứ hồi không chỉ rẻ mà còn dùng tiện.",
+                        "answer":  "往返车票不光便宜，而且使用方便。"
+                    },
+                    {
+                        "chinese":  "如果不买往返票，回来的时候可能会麻烦。",
+                        "pinyin":  "Rúguǒ bù mǎi wǎngfǎn piào, huílái de shíhou kěnéng huì máfan.",
+                        "vietnamese":  "Nếu không mua vé khứ hồi, lúc về có thể sẽ phiền.",
+                        "answer":  "如果不买往返票，回来的时候可能会麻烦。"
+                    },
+                    {
+                        "chinese":  "这次旅行的住宿条件还不错。",
+                        "pinyin":  "Zhè cì lǚxíng de zhùsù tiáojiàn hái búcuò.",
+                        "vietnamese":  "Điều kiện lưu trú của chuyến du lịch lần này khá tốt.",
+                        "answer":  "这次旅行的住宿条件还不错。"
+                    },
+                    {
+                        "chinese":  "报价里已经包括两晚住宿。",
+                        "pinyin":  "Bàojià lǐ yǐjīng bāokuò liǎng wǎn zhùsù.",
+                        "vietnamese":  "Trong báo giá đã bao gồm hai đêm lưu trú.",
+                        "answer":  "报价里已经包括两晚住宿。"
+                    },
+                    {
+                        "chinese":  "住宿安排得太远，会影响第二天的路程。",
+                        "pinyin":  "Zhùsù ānpái de tài yuǎn, huì yǐngxiǎng dì èr tiān de lùchéng.",
+                        "vietnamese":  "Chỗ ở sắp xếp quá xa sẽ ảnh hưởng hành trình ngày hôm sau.",
+                        "answer":  "住宿安排得太远，会影响第二天的路程。"
+                    },
+                    {
+                        "chinese":  "旅行社说可以帮我们预订住宿。",
+                        "pinyin":  "Lǚxíngshè shuō kěyǐ bāng wǒmen yùdìng zhùsù.",
+                        "vietnamese":  "Công ty du lịch nói có thể giúp chúng tôi đặt chỗ ở.",
+                        "answer":  "旅行社说可以帮我们预订住宿。"
+                    },
+                    {
+                        "chinese":  "选择住宿时，安全和位置都很关键。",
+                        "pinyin":  "Xuǎnzé zhùsù shí, ānquán hé wèizhi dōu hěn guānjiàn.",
+                        "vietnamese":  "Khi chọn chỗ ở, an toàn và vị trí đều rất then chốt.",
+                        "answer":  "选择住宿时，安全和位置都很关键。"
+                    },
+                    {
+                        "chinese":  "这个旅馆住宿便宜，但设施有点旧。",
+                        "pinyin":  "Zhège lǚguǎn zhùsù piányi, dàn shèshī yǒudiǎn jiù.",
+                        "vietnamese":  "Lưu trú ở nhà nghỉ này rẻ nhưng cơ sở vật chất hơi cũ.",
+                        "answer":  "这个旅馆住宿便宜，但设施有点旧。"
+                    },
+                    {
+                        "chinese":  "如果住宿不习惯，可以提前告诉导游。",
+                        "pinyin":  "Rúguǒ zhùsù bù xíguàn, kěyǐ tíqián gàosu dǎoyóu.",
+                        "vietnamese":  "Nếu không quen chỗ ở, có thể nói trước với hướng dẫn viên.",
+                        "answer":  "如果住宿不习惯，可以提前告诉导游。"
+                    },
+                    {
+                        "chinese":  "这家旅行社的住宿项目不光干净，也很安静。",
+                        "pinyin":  "Zhè jiā lǚxíngshè de zhùsù xiàngmù bùguāng gānjìng, yě hěn ānjìng.",
+                        "vietnamese":  "Hạng mục lưu trú của công ty du lịch này không chỉ sạch mà cũng rất yên tĩnh.",
+                        "answer":  "这家旅行社的住宿项目不光干净，也很安静。"
+                    },
+                    {
+                        "chinese":  "住宿费用如果不清楚，游客会觉得不公平。",
+                        "pinyin":  "Zhùsù fèiyòng rúguǒ bù qīngchu, yóukè huì juéde bù gōngpíng.",
+                        "vietnamese":  "Nếu chi phí lưu trú không rõ, du khách sẽ thấy không công bằng.",
+                        "answer":  "住宿费用如果不清楚，游客会觉得不公平。"
+                    },
+                    {
+                        "chinese":  "他整理了住宿地址，发到大家邮箱里。",
+                        "pinyin":  "Tā zhěnglǐ le zhùsù dìzhǐ, fā dào dàjiā yóuxiāng lǐ.",
+                        "vietnamese":  "Anh ấy sắp xếp địa chỉ chỗ ở rồi gửi vào email mọi người.",
+                        "answer":  "他整理了住宿地址，发到大家邮箱里。"
+                    },
+                    {
+                        "chinese":  "这顿餐很有新疆特色。",
+                        "pinyin":  "Zhè dùn cān hěn yǒu Xīnjiāng tèsè.",
+                        "vietnamese":  "Bữa ăn này rất có đặc sắc Tân Cương.",
+                        "answer":  "这顿餐很有新疆特色。"
+                    },
+                    {
+                        "chinese":  "报价里包括每天两餐，不包括晚餐。",
+                        "pinyin":  "Bàojià lǐ bāokuò měitiān liǎng cān, bù bāokuò wǎncān.",
+                        "vietnamese":  "Trong báo giá bao gồm hai bữa mỗi ngày, không bao gồm bữa tối.",
+                        "answer":  "报价里包括每天两餐，不包括晚餐。"
+                    },
+                    {
+                        "chinese":  "旅行社安排的餐比较简单，但味道不错。",
+                        "pinyin":  "Lǚxíngshè ānpái de cān bǐjiào jiǎndān, dàn wèidào búcuò.",
+                        "vietnamese":  "Bữa ăn công ty du lịch sắp xếp khá đơn giản nhưng hương vị không tệ.",
+                        "answer":  "旅行社安排的餐比较简单，但味道不错。"
+                    },
+                    {
+                        "chinese":  "如果你吃不惯羊肉串，可以提前说。",
+                        "pinyin":  "Rúguǒ nǐ chī bù guàn yángròuchuàn, kěyǐ tíqián shuō.",
+                        "vietnamese":  "Nếu bạn ăn không quen xiên thịt cừu nướng, có thể nói trước.",
+                        "answer":  "如果你吃不惯羊肉串，可以提前说。"
+                    },
+                    {
+                        "chinese":  "导游提醒我们尊重当地的饮食信仰。",
+                        "pinyin":  "Dǎoyóu tíxǐng wǒmen zūnzhòng dāngdì de yǐnshí xìnyǎng.",
+                        "vietnamese":  "Hướng dẫn viên nhắc chúng tôi tôn trọng tín ngưỡng ăn uống địa phương.",
+                        "answer":  "导游提醒我们尊重当地的饮食信仰。"
+                    },
+                    {
+                        "chinese":  "这家旅馆早餐只有一餐，选择不多。",
+                        "pinyin":  "Zhè jiā lǚguǎn zǎocān zhǐ yǒu yì cān, xuǎnzé bù duō.",
+                        "vietnamese":  "Nhà nghỉ này chỉ có một bữa sáng, lựa chọn không nhiều.",
+                        "answer":  "这家旅馆早餐只有一餐，选择不多。"
+                    },
+                    {
+                        "chinese":  "一餐饭看起来普通，却能看出地方特点。",
+                        "pinyin":  "Yì cān fàn kàn qǐlái pǔtōng, què néng kàn chū dìfāng tèdiǎn.",
+                        "vietnamese":  "Một bữa cơm nhìn có vẻ bình thường nhưng có thể thấy đặc điểm địa phương.",
+                        "answer":  "一餐饭看起来普通，却能看出地方特点。"
+                    },
+                    {
+                        "chinese":  "我们今天中午那餐吃了哈密瓜和羊肉串。",
+                        "pinyin":  "Wǒmen jīntiān zhōngwǔ nà cān chī le hāmìguā hé yángròuchuàn.",
+                        "vietnamese":  "Bữa trưa hôm nay chúng tôi ăn dưa Hami và xiên thịt cừu.",
+                        "answer":  "我们今天中午那餐吃了哈密瓜和羊肉串。"
+                    },
+                    {
+                        "chinese":  "这顿餐不光好吃，而且很有文化味道。",
+                        "pinyin":  "Zhè dùn cān bùguāng hǎochī, érqiě hěn yǒu wénhuà wèidào.",
+                        "vietnamese":  "Bữa ăn này không chỉ ngon mà còn rất có hương vị văn hóa.",
+                        "answer":  "这顿餐不光好吃，而且很有文化味道。"
+                    },
+                    {
+                        "chinese":  "如果餐费另外算，报价就不算优惠。",
+                        "pinyin":  "Rúguǒ cānfèi lìngwài suàn, bàojià jiù bú suàn yōuhuì.",
+                        "vietnamese":  "Nếu tiền ăn tính riêng, báo giá không tính là ưu đãi.",
+                        "answer":  "如果餐费另外算，报价就不算优惠。"
+                    },
+                    {
+                        "chinese":  "我想给父母买点土特产。",
+                        "pinyin":  "Wǒ xiǎng gěi fùmǔ mǎi diǎn tǔtèchǎn.",
+                        "vietnamese":  "Tôi muốn mua chút đặc sản địa phương cho cha mẹ.",
+                        "answer":  "我想给父母买点土特产。"
+                    },
+                    {
+                        "chinese":  "新疆的土特产种类很多。",
+                        "pinyin":  "Xīnjiāng de tǔtèchǎn zhǒnglèi hěn duō.",
+                        "vietnamese":  "Đặc sản địa phương của Tân Cương có rất nhiều loại.",
+                        "answer":  "新疆的土特产种类很多。"
+                    },
+                    {
+                        "chinese":  "导游带我们去了一家土特产商店。",
+                        "pinyin":  "Dǎoyóu dài wǒmen qù le yì jiā tǔtèchǎn shāngdiàn.",
+                        "vietnamese":  "Hướng dẫn viên dẫn chúng tôi đến một cửa hàng đặc sản địa phương.",
+                        "answer":  "导游带我们去了一家土特产商店。"
+                    },
+                    {
+                        "chinese":  "买土特产时不要胡乱花钱。",
+                        "pinyin":  "Mǎi tǔtèchǎn shí búyào húluàn huāqián.",
+                        "vietnamese":  "Khi mua đặc sản địa phương đừng tiêu tiền lung tung.",
+                        "answer":  "买土特产时不要胡乱花钱。"
+                    },
+                    {
+                        "chinese":  "这个景点附近的土特产价格有点高。",
+                        "pinyin":  "Zhège jǐngdiǎn fùjìn de tǔtèchǎn jiàgé yǒudiǎn gāo.",
+                        "vietnamese":  "Đặc sản gần điểm tham quan này giá hơi cao.",
+                        "answer":  "这个景点附近的土特产价格有点高。"
+                    },
+                    {
+                        "chinese":  "土特产不光可以自己吃，也可以送朋友。",
+                        "pinyin":  "Tǔtèchǎn bùguāng kěyǐ zìjǐ chī, yě kěyǐ sòng péngyou.",
+                        "vietnamese":  "Đặc sản địa phương không chỉ có thể tự ăn mà còn có thể tặng bạn bè.",
+                        "answer":  "土特产不光可以自己吃，也可以送朋友。"
+                    },
+                    {
+                        "chinese":  "他把买来的土特产通通装进行李箱。",
+                        "pinyin":  "Tā bǎ mǎi lái de tǔtèchǎn tōngtōng zhuāng jìn xínglǐxiāng.",
+                        "vietnamese":  "Anh ấy bỏ toàn bộ đặc sản đã mua vào vali.",
+                        "answer":  "他把买来的土特产通通装进行李箱。"
+                    },
+                    {
+                        "chinese":  "旅行社说这个项目包括参观土特产市场。",
+                        "pinyin":  "Lǚxíngshè shuō zhège xiàngmù bāokuò cānguān tǔtèchǎn shìchǎng.",
+                        "vietnamese":  "Công ty du lịch nói hạng mục này bao gồm tham quan chợ đặc sản địa phương.",
+                        "answer":  "旅行社说这个项目包括参观土特产市场。"
+                    },
+                    {
+                        "chinese":  "如果土特产太重，往返路程会更累。",
+                        "pinyin":  "Rúguǒ tǔtèchǎn tài zhòng, wǎngfǎn lùchéng huì gèng lèi.",
+                        "vietnamese":  "Nếu đặc sản quá nặng, hành trình khứ hồi sẽ mệt hơn.",
+                        "answer":  "如果土特产太重，往返路程会更累。"
+                    },
+                    {
+                        "chinese":  "买土特产也要尊重当地人的习惯。",
+                        "pinyin":  "Mǎi tǔtèchǎn yě yào zūnzhòng dāngdì rén de xíguàn.",
+                        "vietnamese":  "Mua đặc sản địa phương cũng phải tôn trọng thói quen của người địa phương.",
+                        "answer":  "买土特产也要尊重当地人的习惯。"
+                    },
+                    {
+                        "chinese":  "我买了一个小纪念品送给老师。",
+                        "pinyin":  "Wǒ mǎi le yí ge xiǎo jìniànpǐn sòng gěi lǎoshī.",
+                        "vietnamese":  "Tôi mua một món đồ lưu niệm nhỏ tặng giáo viên.",
+                        "answer":  "我买了一个小纪念品送给老师。"
+                    },
+                    {
+                        "chinese":  "这个纪念品虽然便宜，但很有意义。",
+                        "pinyin":  "Zhège jìniànpǐn suīrán piányi, dàn hěn yǒu yìyì.",
+                        "vietnamese":  "Món đồ lưu niệm này tuy rẻ nhưng rất có ý nghĩa.",
+                        "answer":  "这个纪念品虽然便宜，但很有意义。"
+                    },
+                    {
+                        "chinese":  "景点门口有很多卖纪念品的小店。",
+                        "pinyin":  "Jǐngdiǎn ménkǒu yǒu hěn duō mài jìniànpǐn de xiǎo diàn.",
+                        "vietnamese":  "Cổng điểm tham quan có nhiều cửa hàng nhỏ bán đồ lưu niệm.",
+                        "answer":  "景点门口有很多卖纪念品的小店。"
+                    },
+                    {
+                        "chinese":  "买纪念品时，最好先比较一下价格。",
+                        "pinyin":  "Mǎi jìniànpǐn shí, zuìhǎo xiān bǐjiào yíxià jiàgé.",
+                        "vietnamese":  "Khi mua đồ lưu niệm, tốt nhất so sánh giá trước.",
+                        "answer":  "买纪念品时，最好先比较一下价格。"
+                    },
+                    {
+                        "chinese":  "他胡乱买了太多纪念品，回程很不方便。",
+                        "pinyin":  "Tā húluàn mǎi le tài duō jìniànpǐn, huíchéng hěn bù fāngbiàn.",
+                        "vietnamese":  "Anh ấy mua lung tung quá nhiều đồ lưu niệm, chuyến về rất bất tiện.",
+                        "answer":  "他胡乱买了太多纪念品，回程很不方便。"
+                    },
+                    {
+                        "chinese":  "这个纪念品体现了新疆的文化特点。",
+                        "pinyin":  "Zhège jìniànpǐn tǐxiàn le Xīnjiāng de wénhuà tèdiǎn.",
+                        "vietnamese":  "Món đồ lưu niệm này thể hiện đặc điểm văn hóa Tân Cương.",
+                        "answer":  "这个纪念品体现了新疆的文化特点。"
+                    },
+                    {
+                        "chinese":  "纪念品不光是商品，也是旅行记忆。",
+                        "pinyin":  "Jìniànpǐn bùguāng shì shāngpǐn, yě shì lǚxíng jìyì.",
+                        "vietnamese":  "Đồ lưu niệm không chỉ là hàng hóa mà còn là ký ức du lịch.",
+                        "answer":  "纪念品不光是商品，也是旅行记忆。"
+                    },
+                    {
+                        "chinese":  "导游提醒游客不要轻易相信低价纪念品。",
+                        "pinyin":  "Dǎoyóu tíxǐng yóukè búyào qīngyì xiāngxìn dījià jìniànpǐn.",
+                        "vietnamese":  "Hướng dẫn viên nhắc du khách đừng dễ tin đồ lưu niệm giá rẻ.",
+                        "answer":  "导游提醒游客不要轻易相信低价纪念品。"
+                    },
+                    {
+                        "chinese":  "他把纪念品和土特产分开放。",
+                        "pinyin":  "Tā bǎ jìniànpǐn hé tǔtèchǎn fēnkāi fàng.",
+                        "vietnamese":  "Anh ấy để riêng đồ lưu niệm và đặc sản địa phương.",
+                        "answer":  "他把纪念品和土特产分开放。"
+                    },
+                    {
+                        "chinese":  "如果预算有限，就别买太多纪念品。",
+                        "pinyin":  "Rúguǒ yùsuàn yǒuxiàn, jiù bié mǎi tài duō jìniànpǐn.",
+                        "vietnamese":  "Nếu ngân sách có hạn thì đừng mua quá nhiều đồ lưu niệm.",
+                        "answer":  "如果预算有限，就别买太多纪念品。"
+                    },
+                    {
+                        "chinese":  "旅行保险已经包含在报价里。",
+                        "pinyin":  "Lǚxíng bǎoxiǎn yǐjīng bāohán zài bàojià lǐ.",
+                        "vietnamese":  "Bảo hiểm du lịch đã bao gồm trong báo giá.",
+                        "answer":  "旅行保险已经包含在报价里。"
+                    },
+                    {
+                        "chinese":  "出发前买保险，是对自己负责。",
+                        "pinyin":  "Chūfā qián mǎi bǎoxiǎn, shì duì zìjǐ fùzé.",
+                        "vietnamese":  "Mua bảo hiểm trước khi xuất phát là có trách nhiệm với bản thân.",
+                        "answer":  "出发前买保险，是对自己负责。"
+                    },
+                    {
+                        "chinese":  "旅行社提醒我们确认保险内容。",
+                        "pinyin":  "Lǚxíngshè tíxǐng wǒmen quèrèn bǎoxiǎn nèiróng.",
+                        "vietnamese":  "Công ty du lịch nhắc chúng tôi xác nhận nội dung bảo hiểm.",
+                        "answer":  "旅行社提醒我们确认保险内容。"
+                    },
+                    {
+                        "chinese":  "如果没有保险，路上出了问题会很麻烦。",
+                        "pinyin":  "Rúguǒ méiyǒu bǎoxiǎn, lùshang chū le wèntí huì hěn máfan.",
+                        "vietnamese":  "Nếu không có bảo hiểm, trên đường xảy ra vấn đề sẽ rất phiền.",
+                        "answer":  "如果没有保险，路上出了问题会很麻烦。"
+                    },
+                    {
+                        "chinese":  "这个项目的保险费用不算高。",
+                        "pinyin":  "Zhège xiàngmù de bǎoxiǎn fèiyòng bú suàn gāo.",
+                        "vietnamese":  "Chi phí bảo hiểm của hạng mục này không tính là cao.",
+                        "answer":  "这个项目的保险费用不算高。"
+                    },
+                    {
+                        "chinese":  "导游说保险不光保护游客，也保护旅行社。",
+                        "pinyin":  "Dǎoyóu shuō bǎoxiǎn bùguāng bǎohù yóukè, yě bǎohù lǚxíngshè.",
+                        "vietnamese":  "Hướng dẫn viên nói bảo hiểm không chỉ bảo vệ du khách mà cũng bảo vệ công ty du lịch.",
+                        "answer":  "导游说保险不光保护游客，也保护旅行社。"
+                    },
+                    {
+                        "chinese":  "你别轻易省掉保险，省得以后吃亏。",
+                        "pinyin":  "Nǐ bié qīngyì shěng diào bǎoxiǎn, shěngde yǐhòu chīkuī.",
+                        "vietnamese":  "Bạn đừng dễ dàng bỏ bảo hiểm, để khỏi sau này thiệt.",
+                        "answer":  "你别轻易省掉保险，省得以后吃亏。"
+                    },
+                    {
+                        "chinese":  "购买保险以前，要看清楚相关规定。",
+                        "pinyin":  "Gòumǎi bǎoxiǎn yǐqián, yào kàn qīngchu xiāngguān guīdìng.",
+                        "vietnamese":  "Trước khi mua bảo hiểm, phải xem rõ quy định liên quan.",
+                        "answer":  "购买保险以前，要看清楚相关规定。"
+                    },
+                    {
+                        "chinese":  "有些优惠项目不包括保险。",
+                        "pinyin":  "Yǒuxiē yōuhuì xiàngmù bù bāokuò bǎoxiǎn.",
+                        "vietnamese":  "Một số hạng mục ưu đãi không bao gồm bảo hiểm.",
+                        "answer":  "有些优惠项目不包括保险。"
+                    },
+                    {
+                        "chinese":  "幸亏买了保险，他受伤后费用少了很多。",
+                        "pinyin":  "Xìngkuī mǎi le bǎoxiǎn, tā shòushāng hòu fèiyòng shǎo le hěn duō.",
+                        "vietnamese":  "May mà đã mua bảo hiểm, sau khi anh ấy bị thương chi phí giảm rất nhiều.",
+                        "answer":  "幸亏买了保险，他受伤后费用少了很多。"
+                    },
+                    {
+                        "chinese":  "这家旅馆离景点很近。",
+                        "pinyin":  "Zhè jiā lǚguǎn lí jǐngdiǎn hěn jìn.",
+                        "vietnamese":  "Nhà nghỉ này cách điểm tham quan rất gần.",
+                        "answer":  "这家旅馆离景点很近。"
+                    },
+                    {
+                        "chinese":  "旅馆虽然不大，但是住宿环境很安静。",
+                        "pinyin":  "Lǚguǎn suīrán bú dà, dànshì zhùsù huánjìng hěn ānjìng.",
+                        "vietnamese":  "Nhà nghỉ tuy không lớn nhưng môi trường lưu trú rất yên tĩnh.",
+                        "answer":  "旅馆虽然不大，但是住宿环境很安静。"
+                    },
+                    {
+                        "chinese":  "导游帮我们确认了旅馆地址。",
+                        "pinyin":  "Dǎoyóu bāng wǒmen quèrèn le lǚguǎn dìzhǐ.",
+                        "vietnamese":  "Hướng dẫn viên giúp chúng tôi xác nhận địa chỉ nhà nghỉ.",
+                        "answer":  "导游帮我们确认了旅馆地址。"
+                    },
+                    {
+                        "chinese":  "这家旅馆的报价包含早餐。",
+                        "pinyin":  "Zhè jiā lǚguǎn de bàojià bāohán zǎocān.",
+                        "vietnamese":  "Báo giá của nhà nghỉ này bao gồm bữa sáng.",
+                        "answer":  "这家旅馆的报价包含早餐。"
+                    },
+                    {
+                        "chinese":  "如果旅馆太远，往返景点会浪费时间。",
+                        "pinyin":  "Rúguǒ lǚguǎn tài yuǎn, wǎngfǎn jǐngdiǎn huì làngfèi shíjiān.",
+                        "vietnamese":  "Nếu nhà nghỉ quá xa, đi về điểm tham quan sẽ lãng phí thời gian.",
+                        "answer":  "如果旅馆太远，往返景点会浪费时间。"
+                    },
+                    {
+                        "chinese":  "旅行社给我们安排了三星级旅馆。",
+                        "pinyin":  "Lǚxíngshè gěi wǒmen ānpái le sān xīng jí lǚguǎn.",
+                        "vietnamese":  "Công ty du lịch sắp xếp cho chúng tôi nhà nghỉ/khách sạn ba sao.",
+                        "answer":  "旅行社给我们安排了三星级旅馆。"
+                    },
+                    {
+                        "chinese":  "旅馆附近可以买到新疆土特产。",
+                        "pinyin":  "Lǚguǎn fùjìn kěyǐ mǎi dào Xīnjiāng tǔtèchǎn.",
+                        "vietnamese":  "Gần nhà nghỉ có thể mua được đặc sản Tân Cương.",
+                        "answer":  "旅馆附近可以买到新疆土特产。"
+                    },
+                    {
+                        "chinese":  "他不习惯这家旅馆的餐。",
+                        "pinyin":  "Tā bù xíguàn zhè jiā lǚguǎn de cān.",
+                        "vietnamese":  "Anh ấy không quen bữa ăn của nhà nghỉ này.",
+                        "answer":  "他不习惯这家旅馆的餐。"
+                    },
+                    {
+                        "chinese":  "旅馆房间干净整洁，游客评价不错。",
+                        "pinyin":  "Lǚguǎn fángjiān gānjìng zhěngjié, yóukè píngjià búcuò.",
+                        "vietnamese":  "Phòng nhà nghỉ sạch sẽ gọn gàng, đánh giá của du khách khá tốt.",
+                        "answer":  "旅馆房间干净整洁，游客评价不错。"
+                    },
+                    {
+                        "chinese":  "如果对旅馆不满意，可以及时联系旅行社。",
+                        "pinyin":  "Rúguǒ duì lǚguǎn bù mǎnyì, kěyǐ jíshí liánxì lǚxíngshè.",
+                        "vietnamese":  "Nếu không hài lòng với nhà nghỉ, có thể kịp thời liên hệ công ty du lịch.",
+                        "answer":  "如果对旅馆不满意，可以及时联系旅行社。"
+                    },
+                    {
+                        "chinese":  "这家旅馆是三星标准。",
+                        "pinyin":  "Zhè jiā lǚguǎn shì sān xīng biāozhǔn.",
+                        "vietnamese":  "Nhà nghỉ/khách sạn này đạt tiêu chuẩn ba sao.",
+                        "answer":  "这家旅馆是三星标准。"
+                    },
+                    {
+                        "chinese":  "五星酒店的报价当然会高很多。",
+                        "pinyin":  "Wǔ xīng jiǔdiàn de bàojià dāngrán huì gāo hěn duō.",
+                        "vietnamese":  "Báo giá khách sạn năm sao đương nhiên sẽ cao hơn nhiều.",
+                        "answer":  "五星酒店的报价当然会高很多。"
+                    },
+                    {
+                        "chinese":  "这个旅游项目安排的是四星级住宿。",
+                        "pinyin":  "Zhège lǚyóu xiàngmù ānpái de shì sì xīng jí zhùsù.",
+                        "vietnamese":  "Chương trình du lịch này sắp xếp chỗ ở bốn sao.",
+                        "answer":  "这个旅游项目安排的是四星级住宿。"
+                    },
+                    {
+                        "chinese":  "他觉得星级不重要，关键是干净安全。",
+                        "pinyin":  "Tā juéde xīngjí bù zhòngyào, guānjiàn shì gānjìng ānquán.",
+                        "vietnamese":  "Anh ấy thấy hạng sao không quan trọng, mấu chốt là sạch và an toàn.",
+                        "answer":  "他觉得星级不重要，关键是干净安全。"
+                    },
+                    {
+                        "chinese":  "旅行社说，升级到五星需要另外付费。",
+                        "pinyin":  "Lǚxíngshè shuō, shēngjí dào wǔ xīng xūyào lìngwài fùfèi.",
+                        "vietnamese":  "Công ty du lịch nói nâng cấp lên năm sao cần trả phí riêng.",
+                        "answer":  "旅行社说，升级到五星需要另外付费。"
+                    },
+                    {
+                        "chinese":  "三星旅馆不光便宜，也比较方便。",
+                        "pinyin":  "Sān xīng lǚguǎn bùguāng piányi, yě bǐjiào fāngbiàn.",
+                        "vietnamese":  "Nhà nghỉ/khách sạn ba sao không chỉ rẻ mà cũng khá tiện.",
+                        "answer":  "三星旅馆不光便宜，也比较方便。"
+                    },
+                    {
+                        "chinese":  "如果只看星级，可能会忽略位置。",
+                        "pinyin":  "Rúguǒ zhǐ kàn xīngjí, kěnéng huì hūlüè wèizhi.",
+                        "vietnamese":  "Nếu chỉ nhìn hạng sao, có thể sẽ bỏ qua vị trí.",
+                        "answer":  "如果只看星级，可能会忽略位置。"
+                    },
+                    {
+                        "chinese":  "这家星级旅馆靠近市中心，往返很方便。",
+                        "pinyin":  "Zhè jiā xīngjí lǚguǎn kàojìn shì zhōngxīn, wǎngfǎn hěn fāngbiàn.",
+                        "vietnamese":  "Nhà nghỉ/khách sạn có sao này gần trung tâm, đi về rất tiện.",
+                        "answer":  "这家星级旅馆靠近市中心，往返很方便。"
+                    },
+                    {
+                        "chinese":  "导游提醒我们确认旅馆星级和住宿条件。",
+                        "pinyin":  "Dǎoyóu tíxǐng wǒmen quèrèn lǚguǎn xīngjí hé zhùsù tiáojiàn.",
+                        "vietnamese":  "Hướng dẫn viên nhắc chúng tôi xác nhận hạng sao và điều kiện lưu trú của nhà nghỉ.",
+                        "answer":  "导游提醒我们确认旅馆星级和住宿条件。"
+                    },
+                    {
+                        "chinese":  "这个报价相当于三星住宿的价格。",
+                        "pinyin":  "Zhège bàojià xiāngdāng yú sān xīng zhùsù de jiàgé.",
+                        "vietnamese":  "Báo giá này tương đương giá lưu trú ba sao.",
+                        "answer":  "这个报价相当于三星住宿的价格。"
+                    },
+                    {
+                        "chinese":  "旅行社给学生提供了优惠价格。",
+                        "pinyin":  "Lǚxíngshè gěi xuésheng tígōng le yōuhuì jiàgé.",
+                        "vietnamese":  "Công ty du lịch cung cấp giá ưu đãi cho sinh viên.",
+                        "answer":  "旅行社给学生提供了优惠价格。"
+                    },
+                    {
+                        "chinese":  "这个旅游项目现在有很大的优惠。",
+                        "pinyin":  "Zhège lǚyóu xiàngmù xiànzài yǒu hěn dà de yōuhuì.",
+                        "vietnamese":  "Chương trình du lịch này hiện có ưu đãi rất lớn.",
+                        "answer":  "这个旅游项目现在有很大的优惠。"
+                    },
+                    {
+                        "chinese":  "优惠不一定真的便宜，要看包含哪些项目。",
+                        "pinyin":  "Yōuhuì bù yídìng zhēn de piányi, yào kàn bāohán nǎxiē xiàngmù.",
+                        "vietnamese":  "Ưu đãi không nhất định thật sự rẻ, phải xem bao gồm những hạng mục nào.",
+                        "answer":  "优惠不一定真的便宜，要看包含哪些项目。"
+                    },
+                    {
+                        "chinese":  "如果提前报名，住宿可以享受优惠。",
+                        "pinyin":  "Rúguǒ tíqián bàomíng, zhùsù kěyǐ xiǎngshòu yōuhuì.",
+                        "vietnamese":  "Nếu đăng ký trước, chỗ ở có thể được hưởng ưu đãi.",
+                        "answer":  "如果提前报名，住宿可以享受优惠。"
+                    },
+                    {
+                        "chinese":  "这个报价看起来优惠，其实不包括保险。",
+                        "pinyin":  "Zhège bàojià kàn qǐlái yōuhuì, qíshí bù bāokuò bǎoxiǎn.",
+                        "vietnamese":  "Báo giá này nhìn có vẻ ưu đãi, thật ra không bao gồm bảo hiểm.",
+                        "answer":  "这个报价看起来优惠，其实不包括保险。"
+                    },
+                    {
+                        "chinese":  "导游说，买土特产时可以问问有没有优惠。",
+                        "pinyin":  "Dǎoyóu shuō, mǎi tǔtèchǎn shí kěyǐ wènwen yǒu méi yǒu yōuhuì.",
+                        "vietnamese":  "Hướng dẫn viên nói khi mua đặc sản có thể hỏi xem có ưu đãi không.",
+                        "answer":  "导游说，买土特产时可以问问有没有优惠。"
+                    },
+                    {
+                        "chinese":  "这家旅馆对老客户有特别优惠。",
+                        "pinyin":  "Zhè jiā lǚguǎn duì lǎo kèhù yǒu tèbié yōuhuì.",
+                        "vietnamese":  "Nhà nghỉ này có ưu đãi đặc biệt cho khách cũ.",
+                        "answer":  "这家旅馆对老客户有特别优惠。"
+                    },
+                    {
+                        "chinese":  "优惠活动结束以后，报价会恢复原价。",
+                        "pinyin":  "Yōuhuì huódòng jiéshù yǐhòu, bàojià huì huīfù yuánjià.",
+                        "vietnamese":  "Sau khi hoạt động ưu đãi kết thúc, báo giá sẽ trở về giá gốc.",
+                        "answer":  "优惠活动结束以后，报价会恢复原价。"
+                    },
+                    {
+                        "chinese":  "不要轻易相信过分优惠的旅游广告。",
+                        "pinyin":  "Búyào qīngyì xiāngxìn guòfèn yōuhuì de lǚyóu guǎnggào.",
+                        "vietnamese":  "Đừng dễ dàng tin quảng cáo du lịch ưu đãi quá mức.",
+                        "answer":  "不要轻易相信过分优惠的旅游广告。"
+                    },
+                    {
+                        "chinese":  "这个优惠项目不光适合学生，也适合家庭游客。",
+                        "pinyin":  "Zhège yōuhuì xiàngmù bùguāng shìhé xuésheng, yě shìhé jiātíng yóukè.",
+                        "vietnamese":  "Hạng mục ưu đãi này không chỉ phù hợp sinh viên mà cũng phù hợp khách gia đình.",
+                        "answer":  "这个优惠项目不光适合学生，也适合家庭游客。"
+                    },
+                    {
+                        "chinese":  "我们总算买到往返车票了。",
+                        "pinyin":  "Wǒmen zǒngsuàn mǎi dào wǎngfǎn chēpiào le.",
+                        "vietnamese":  "Cuối cùng chúng tôi cũng mua được vé xe khứ hồi rồi.",
+                        "answer":  "我们总算买到往返车票了。"
+                    },
+                    {
+                        "chinese":  "走了这么久，总算到了第一个景点。",
+                        "pinyin":  "Zǒu le zhème jiǔ, zǒngsuàn dào le dì yī ge jǐngdiǎn.",
+                        "vietnamese":  "Đi lâu như vậy, cuối cùng cũng đến điểm tham quan đầu tiên.",
+                        "answer":  "走了这么久，总算到了第一个景点。"
+                    },
+                    {
+                        "chinese":  "导游解释了半天，大家总算明白了。",
+                        "pinyin":  "Dǎoyóu jiěshì le bàntiān, dàjiā zǒngsuàn míngbai le.",
+                        "vietnamese":  "Hướng dẫn viên giải thích nửa ngày, mọi người cuối cùng cũng hiểu.",
+                        "answer":  "导游解释了半天，大家总算明白了。"
+                    },
+                    {
+                        "chinese":  "这家旅行社总算把报价发过来了。",
+                        "pinyin":  "Zhè jiā lǚxíngshè zǒngsuàn bǎ bàojià fā guòlái le.",
+                        "vietnamese":  "Công ty du lịch này cuối cùng cũng gửi báo giá qua rồi.",
+                        "answer":  "这家旅行社总算把报价发过来了。"
+                    },
+                    {
+                        "chinese":  "雨停以后，我们总算可以继续出发。",
+                        "pinyin":  "Yǔ tíng yǐhòu, wǒmen zǒngsuàn kěyǐ jìxù chūfā.",
+                        "vietnamese":  "Sau khi mưa tạnh, cuối cùng chúng tôi cũng có thể tiếp tục xuất phát.",
+                        "answer":  "雨停以后，我们总算可以继续出发。"
+                    },
+                    {
+                        "chinese":  "他练了很久，总算习惯了新疆菜。",
+                        "pinyin":  "Tā liàn le hěn jiǔ, zǒngsuàn xíguàn le Xīnjiāng cài.",
+                        "vietnamese":  "Anh ấy luyện/ăn thử lâu, cuối cùng cũng quen đồ ăn Tân Cương.",
+                        "answer":  "他练了很久，总算习惯了新疆菜。"
+                    },
+                    {
+                        "chinese":  "找了三家旅馆，我们总算找到合适的住宿。",
+                        "pinyin":  "Zhǎo le sān jiā lǚguǎn, wǒmen zǒngsuàn zhǎodào héshì de zhùsù.",
+                        "vietnamese":  "Tìm ba nhà nghỉ, cuối cùng chúng tôi cũng tìm được chỗ ở phù hợp.",
+                        "answer":  "找了三家旅馆，我们总算找到合适的住宿。"
+                    },
+                    {
+                        "chinese":  "总算这次没有走冤枉路，大家都松了一口气。",
+                        "pinyin":  "Zǒngsuàn zhè cì méiyǒu zǒu yuānwang lù, dàjiā dōu sōng le yì kǒu qì.",
+                        "vietnamese":  "Cuối cùng lần này không đi đường vòng oan, mọi người đều thở phào.",
+                        "answer":  "总算这次没有走冤枉路，大家都松了一口气。"
+                    },
+                    {
+                        "chinese":  "保险问题解决以后，他总算放心了。",
+                        "pinyin":  "Bǎoxiǎn wèntí jiějué yǐhòu, tā zǒngsuàn fàngxīn le.",
+                        "vietnamese":  "Sau khi vấn đề bảo hiểm được giải quyết, anh ấy cuối cùng yên tâm.",
+                        "answer":  "保险问题解决以后，他总算放心了。"
+                    },
+                    {
+                        "chinese":  "这场旅行准备了一个月，总算顺利开始。",
+                        "pinyin":  "Zhè chǎng lǚxíng zhǔnbèi le yí ge yuè, zǒngsuàn shùnlì kāishǐ.",
+                        "vietnamese":  "Chuyến đi này chuẩn bị một tháng, cuối cùng cũng bắt đầu thuận lợi.",
+                        "answer":  "这场旅行准备了一个月，总算顺利开始。"
+                    },
+                    {
+                        "chinese":  "这个项目最大的特点是路线安排合理。",
+                        "pinyin":  "Zhège xiàngmù zuì dà de tèdiǎn shì lùxiàn ānpái hélǐ.",
+                        "vietnamese":  "Đặc điểm lớn nhất của chương trình này là tuyến đường sắp xếp hợp lý.",
+                        "answer":  "这个项目最大的特点是路线安排合理。"
+                    },
+                    {
+                        "chinese":  "新疆的饮食特点和南方很不一样。",
+                        "pinyin":  "Xīnjiāng de yǐnshí tèdiǎn hé nánfāng hěn bù yíyàng.",
+                        "vietnamese":  "Đặc điểm ẩm thực Tân Cương rất khác miền Nam.",
+                        "answer":  "新疆的饮食特点和南方很不一样。"
+                    },
+                    {
+                        "chinese":  "旅行社要把每个景点的特点介绍清楚。",
+                        "pinyin":  "Lǚxíngshè yào bǎ měi ge jǐngdiǎn de tèdiǎn jièshào qīngchu.",
+                        "vietnamese":  "Công ty du lịch phải giới thiệu rõ đặc điểm của mỗi điểm tham quan.",
+                        "answer":  "旅行社要把每个景点的特点介绍清楚。"
+                    },
+                    {
+                        "chinese":  "这个旅馆的特点是便宜但位置好。",
+                        "pinyin":  "Zhège lǚguǎn de tèdiǎn shì piányi dàn wèizhi hǎo.",
+                        "vietnamese":  "Đặc điểm của nhà nghỉ này là rẻ nhưng vị trí tốt.",
+                        "answer":  "这个旅馆的特点是便宜但位置好。"
+                    },
+                    {
+                        "chinese":  "哈密瓜甜是当地水果的一个特点。",
+                        "pinyin":  "Hāmìguā tián shì dāngdì shuǐguǒ de yí ge tèdiǎn.",
+                        "vietnamese":  "Dưa Hami ngọt là một đặc điểm của trái cây địa phương.",
+                        "answer":  "哈密瓜甜是当地水果的一个特点。"
+                    },
+                    {
+                        "chinese":  "导游用通俗易懂的话讲清楚了文化特点。",
+                        "pinyin":  "Dǎoyóu yòng tōngsú yì dǒng de huà jiǎng qīngchu le wénhuà tèdiǎn.",
+                        "vietnamese":  "Hướng dẫn viên dùng lời dễ hiểu để giảng rõ đặc điểm văn hóa.",
+                        "answer":  "导游用通俗易懂的话讲清楚了文化特点。"
+                    },
+                    {
+                        "chinese":  "不同信仰会形成不同生活特点。",
+                        "pinyin":  "Bùtóng xìnyǎng huì xíngchéng bùtóng shēnghuó tèdiǎn.",
+                        "vietnamese":  "Tín ngưỡng khác nhau sẽ hình thành những đặc điểm sinh hoạt khác nhau.",
+                        "answer":  "不同信仰会形成不同生活特点。"
+                    },
+                    {
+                        "chinese":  "这个优惠项目的特点是不限制出发时间。",
+                        "pinyin":  "Zhège yōuhuì xiàngmù de tèdiǎn shì bù xiànzhì chūfā shíjiān.",
+                        "vietnamese":  "Đặc điểm của chương trình ưu đãi này là không hạn chế thời gian xuất phát.",
+                        "answer":  "这个优惠项目的特点是不限制出发时间。"
+                    },
+                    {
+                        "chinese":  "如果不了解当地特点，就容易产生误会。",
+                        "pinyin":  "Rúguǒ bù liǎojiě dāngdì tèdiǎn, jiù róngyì chǎnshēng wùhuì.",
+                        "vietnamese":  "Nếu không hiểu đặc điểm địa phương thì dễ nảy sinh hiểu lầm.",
+                        "answer":  "如果不了解当地特点，就容易产生误会。"
+                    },
+                    {
+                        "chinese":  "这个纪念品的特点是图案很有民族风格。",
+                        "pinyin":  "Zhège jìniànpǐn de tèdiǎn shì tú\u0027àn hěn yǒu mínzú fēnggé.",
+                        "vietnamese":  "Đặc điểm của món lưu niệm này là hoa văn rất có phong cách dân tộc.",
+                        "answer":  "这个纪念品的特点是图案很有民族风格。"
+                    },
+                    {
+                        "chinese":  "新疆的美景真是百闻不如一见。",
+                        "pinyin":  "Xīnjiāng de měijǐng zhēn shì bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Cảnh đẹp Tân Cương thật đúng là trăm nghe không bằng một thấy.",
+                        "answer":  "新疆的美景真是百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "导游说葡萄沟百闻不如一见。",
+                        "pinyin":  "Dǎoyóu shuō Pútáogōu bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Hướng dẫn viên nói Thung lũng Nho trăm nghe không bằng một thấy.",
+                        "answer":  "导游说葡萄沟百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "这个景点照片很多，但还是百闻不如一见。",
+                        "pinyin":  "Zhège jǐngdiǎn zhàopiàn hěn duō, dàn háishi bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Điểm tham quan này có nhiều ảnh nhưng vẫn trăm nghe không bằng một thấy.",
+                        "answer":  "这个景点照片很多，但还是百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "看完表演以后，我才明白什么叫百闻不如一见。",
+                        "pinyin":  "Kàn wán biǎoyǎn yǐhòu, wǒ cái míngbai shénme jiào bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Sau khi xem xong biểu diễn, tôi mới hiểu thế nào là trăm nghe không bằng một thấy.",
+                        "answer":  "看完表演以后，我才明白什么叫百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "新疆文化很特别，确实百闻不如一见。",
+                        "pinyin":  "Xīnjiāng wénhuà hěn tèbié, quèshí bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Văn hóa Tân Cương rất đặc biệt, đúng là trăm nghe không bằng một thấy.",
+                        "answer":  "新疆文化很特别，确实百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "土特产再有名，也要亲自尝尝，百闻不如一见。",
+                        "pinyin":  "Tǔtèchǎn zài yǒumíng, yě yào qīnzì chángchang, bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Đặc sản dù nổi tiếng đến đâu cũng phải tự nếm thử, trăm nghe không bằng một thấy.",
+                        "answer":  "土特产再有名，也要亲自尝尝，百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "这家旅馆网上评价很好，但我还是觉得百闻不如一见。",
+                        "pinyin":  "Zhè jiā lǚguǎn wǎngshàng píngjià hěn hǎo, dàn wǒ háishi juéde bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Nhà nghỉ này đánh giá online rất tốt nhưng tôi vẫn thấy trăm nghe không bằng một thấy.",
+                        "answer":  "这家旅馆网上评价很好，但我还是觉得百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "旅行的意义就在于百闻不如一见。",
+                        "pinyin":  "Lǚxíng de yìyì jiù zài yú bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Ý nghĩa của du lịch nằm ở chỗ trăm nghe không bằng một thấy.",
+                        "answer":  "旅行的意义就在于百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "就算导游讲得再精彩，也还是百闻不如一见。",
+                        "pinyin":  "Jiùsuàn dǎoyóu jiǎng de zài jīngcǎi, yě háishi bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Cho dù hướng dẫn viên kể hay đến đâu, vẫn là trăm nghe không bằng một thấy.",
+                        "answer":  "就算导游讲得再精彩，也还是百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "他看完新疆景色后感叹，真是百闻不如一见。",
+                        "pinyin":  "Tā kàn wán Xīnjiāng jǐngsè hòu gǎntàn, zhēn shì bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Sau khi xem phong cảnh Tân Cương, anh ấy cảm thán thật là trăm nghe không bằng một thấy.",
+                        "answer":  "他看完新疆景色后感叹，真是百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "新疆的哈密瓜又甜又香。",
+                        "pinyin":  "Xīnjiāng de hāmìguā yòu tián yòu xiāng.",
+                        "vietnamese":  "Dưa Hami của Tân Cương vừa ngọt vừa thơm.",
+                        "answer":  "新疆的哈密瓜又甜又香。"
+                    },
+                    {
+                        "chinese":  "导游请我们尝了当地的哈密瓜。",
+                        "pinyin":  "Dǎoyóu qǐng wǒmen cháng le dāngdì de hāmìguā.",
+                        "vietnamese":  "Hướng dẫn viên mời chúng tôi nếm thử dưa Hami địa phương.",
+                        "answer":  "导游请我们尝了当地的哈密瓜。"
+                    },
+                    {
+                        "chinese":  "哈密瓜是新疆很有名的土特产。",
+                        "pinyin":  "Hāmìguā shì Xīnjiāng hěn yǒumíng de tǔtèchǎn.",
+                        "vietnamese":  "Dưa Hami là đặc sản rất nổi tiếng của Tân Cương.",
+                        "answer":  "哈密瓜是新疆很有名的土特产。"
+                    },
+                    {
+                        "chinese":  "我买了两个哈密瓜，准备带回家。",
+                        "pinyin":  "Wǒ mǎi le liǎng ge hāmìguā, zhǔnbèi dài huí jiā.",
+                        "vietnamese":  "Tôi mua hai quả dưa Hami, chuẩn bị mang về nhà.",
+                        "answer":  "我买了两个哈密瓜，准备带回家。"
+                    },
+                    {
+                        "chinese":  "哈密瓜虽然好吃，但带在路上有点重。",
+                        "pinyin":  "Hāmìguā suīrán hǎochī, dàn dài zài lùshang yǒudiǎn zhòng.",
+                        "vietnamese":  "Dưa Hami tuy ngon nhưng mang trên đường hơi nặng.",
+                        "answer":  "哈密瓜虽然好吃，但带在路上有点重。"
+                    },
+                    {
+                        "chinese":  "第一次吃哈密瓜时，他居然觉得太甜了。",
+                        "pinyin":  "Dì yī cì chī hāmìguā shí, tā jūrán juéde tài tián le.",
+                        "vietnamese":  "Lần đầu ăn dưa Hami, anh ấy vậy mà thấy quá ngọt.",
+                        "answer":  "第一次吃哈密瓜时，他居然觉得太甜了。"
+                    },
+                    {
+                        "chinese":  "这家店的哈密瓜价格比景点便宜。",
+                        "pinyin":  "Zhè jiā diàn de hāmìguā jiàgé bǐ jǐngdiǎn piányi.",
+                        "vietnamese":  "Giá dưa Hami ở cửa hàng này rẻ hơn điểm tham quan.",
+                        "answer":  "这家店的哈密瓜价格比景点便宜。"
+                    },
+                    {
+                        "chinese":  "哈密瓜不光可以直接吃，也可以做成果汁。",
+                        "pinyin":  "Hāmìguā bùguāng kěyǐ zhíjiē chī, yě kěyǐ zuò chéng guǒzhī.",
+                        "vietnamese":  "Dưa Hami không chỉ có thể ăn trực tiếp mà còn có thể làm thành nước ép.",
+                        "answer":  "哈密瓜不光可以直接吃，也可以做成果汁。"
+                    },
+                    {
+                        "chinese":  "如果吃不惯羊肉串，可以多吃点哈密瓜。",
+                        "pinyin":  "Rúguǒ chī bù guàn yángròuchuàn, kěyǐ duō chī diǎn hāmìguā.",
+                        "vietnamese":  "Nếu ăn không quen xiên thịt cừu, có thể ăn nhiều dưa Hami hơn chút.",
+                        "answer":  "如果吃不惯羊肉串，可以多吃点哈密瓜。"
+                    },
+                    {
+                        "chinese":  "哈密瓜的甜味让他一下子记住了新疆。",
+                        "pinyin":  "Hāmìguā de tiánwèi ràng tā yíxiàzi jìzhù le Xīnjiāng.",
+                        "vietnamese":  "Vị ngọt của dưa Hami khiến anh ấy lập tức nhớ đến Tân Cương.",
+                        "answer":  "哈密瓜的甜味让他一下子记住了新疆。"
+                    },
+                    {
+                        "chinese":  "我还不太惯这里的饮食。",
+                        "pinyin":  "Wǒ hái bú tài guàn zhèlǐ de yǐnshí.",
+                        "vietnamese":  "Tôi vẫn chưa quen lắm với ẩm thực ở đây.",
+                        "answer":  "我还不太惯这里的饮食。"
+                    },
+                    {
+                        "chinese":  "他住了一个月，终于惯了新疆的天气。",
+                        "pinyin":  "Tā zhù le yí ge yuè, zhōngyú guàn le Xīnjiāng de tiānqì.",
+                        "vietnamese":  "Anh ấy ở một tháng, cuối cùng quen với thời tiết Tân Cương.",
+                        "answer":  "他住了一个月，终于惯了新疆的天气。"
+                    },
+                    {
+                        "chinese":  "吃不惯羊肉串的话，可以点别的餐。",
+                        "pinyin":  "Chī bù guàn yángròuchuàn de huà, kěyǐ diǎn bié de cān.",
+                        "vietnamese":  "Nếu ăn không quen xiên thịt cừu, có thể gọi bữa khác.",
+                        "answer":  "吃不惯羊肉串的话，可以点别的餐。"
+                    },
+                    {
+                        "chinese":  "刚开始不惯没关系，慢慢就好了。",
+                        "pinyin":  "Gāng kāishǐ bú guàn méi guānxi, mànman jiù hǎo le.",
+                        "vietnamese":  "Ban đầu không quen cũng không sao, dần dần sẽ ổn.",
+                        "answer":  "刚开始不惯没关系，慢慢就好了。"
+                    },
+                    {
+                        "chinese":  "他惯了城市生活，反而不太适应农村。",
+                        "pinyin":  "Tā guàn le chéngshì shēnghuó, fǎn\u0027ér bú tài shìyìng nóngcūn.",
+                        "vietnamese":  "Anh ấy quen cuộc sống thành phố, ngược lại không thích nghi lắm với nông thôn.",
+                        "answer":  "他惯了城市生活，反而不太适应农村。"
+                    },
+                    {
+                        "chinese":  "旅行时要学会适应，不可能什么都惯。",
+                        "pinyin":  "Lǚxíng shí yào xuéhuì shìyìng, bù kěnéng shénme dōu guàn.",
+                        "vietnamese":  "Khi du lịch phải học cách thích nghi, không thể cái gì cũng quen.",
+                        "answer":  "旅行时要学会适应，不可能什么都惯。"
+                    },
+                    {
+                        "chinese":  "他已经惯了每天早起赶路。",
+                        "pinyin":  "Tā yǐjīng guàn le měitiān zǎoqǐ gǎnlù.",
+                        "vietnamese":  "Anh ấy đã quen mỗi ngày dậy sớm lên đường.",
+                        "answer":  "他已经惯了每天早起赶路。"
+                    },
+                    {
+                        "chinese":  "外地游客可能不惯当地的口味。",
+                        "pinyin":  "Wàidì yóukè kěnéng bú guàn dāngdì de kǒuwèi.",
+                        "vietnamese":  "Du khách nơi khác có thể không quen khẩu vị địa phương.",
+                        "answer":  "外地游客可能不惯当地的口味。"
+                    },
+                    {
+                        "chinese":  "如果住不惯这家旅馆，可以换住宿。",
+                        "pinyin":  "Rúguǒ zhù bù guàn zhè jiā lǚguǎn, kěyǐ huàn zhùsù.",
+                        "vietnamese":  "Nếu ở không quen nhà nghỉ này, có thể đổi chỗ ở.",
+                        "answer":  "如果住不惯这家旅馆，可以换住宿。"
+                    },
+                    {
+                        "chinese":  "他从不惯到习惯，只用了三天。",
+                        "pinyin":  "Tā cóng bú guàn dào xíguàn, zhǐ yòng le sān tiān.",
+                        "vietnamese":  "Anh ấy từ không quen đến quen chỉ mất ba ngày.",
+                        "answer":  "他从不惯到习惯，只用了三天。"
+                    },
+                    {
+                        "chinese":  "新疆的羊肉串特别有名。",
+                        "pinyin":  "Xīnjiāng de yángròuchuàn tèbié yǒumíng.",
+                        "vietnamese":  "Xiên thịt cừu nướng của Tân Cương đặc biệt nổi tiếng.",
+                        "answer":  "新疆的羊肉串特别有名。"
+                    },
+                    {
+                        "chinese":  "我们晚餐吃了羊肉串和哈密瓜。",
+                        "pinyin":  "Wǒmen wǎncān chī le yángròuchuàn hé hāmìguā.",
+                        "vietnamese":  "Bữa tối chúng tôi ăn xiên thịt cừu và dưa Hami.",
+                        "answer":  "我们晚餐吃了羊肉串和哈密瓜。"
+                    },
+                    {
+                        "chinese":  "他第一次吃羊肉串，觉得味道很特别。",
+                        "pinyin":  "Tā dì yī cì chī yángròuchuàn, juéde wèidào hěn tèbié.",
+                        "vietnamese":  "Lần đầu ăn xiên thịt cừu, anh ấy thấy hương vị rất đặc biệt.",
+                        "answer":  "他第一次吃羊肉串，觉得味道很特别。"
+                    },
+                    {
+                        "chinese":  "如果你吃不惯羊肉串，可以选择素餐。",
+                        "pinyin":  "Rúguǒ nǐ chī bù guàn yángròuchuàn, kěyǐ xuǎnzé sùcān.",
+                        "vietnamese":  "Nếu bạn ăn không quen xiên thịt cừu, có thể chọn bữa chay.",
+                        "answer":  "如果你吃不惯羊肉串，可以选择素餐。"
+                    },
+                    {
+                        "chinese":  "景点附近的羊肉串价格有点高。",
+                        "pinyin":  "Jǐngdiǎn fùjìn de yángròuchuàn jiàgé yǒudiǎn gāo.",
+                        "vietnamese":  "Xiên thịt cừu gần điểm tham quan giá hơi cao.",
+                        "answer":  "景点附近的羊肉串价格有点高。"
+                    },
+                    {
+                        "chinese":  "导游说，吃羊肉串也要尊重当地习惯。",
+                        "pinyin":  "Dǎoyóu shuō, chī yángròuchuàn yě yào zūnzhòng dāngdì xíguàn.",
+                        "vietnamese":  "Hướng dẫn viên nói ăn xiên thịt cừu cũng phải tôn trọng thói quen địa phương.",
+                        "answer":  "导游说，吃羊肉串也要尊重当地习惯。"
+                    },
+                    {
+                        "chinese":  "羊肉串不光是食物，也是新疆文化的一部分。",
+                        "pinyin":  "Yángròuchuàn bùguāng shì shíwù, yě shì Xīnjiāng wénhuà de yí bùfen.",
+                        "vietnamese":  "Xiên thịt cừu không chỉ là món ăn mà còn là một phần văn hóa Tân Cương.",
+                        "answer":  "羊肉串不光是食物，也是新疆文化的一部分。"
+                    },
+                    {
+                        "chinese":  "他一边吃羊肉串，一边听导游讲信仰。",
+                        "pinyin":  "Tā yìbiān chī yángròuchuàn, yìbiān tīng dǎoyóu jiǎng xìnyǎng.",
+                        "vietnamese":  "Anh ấy vừa ăn xiên thịt cừu vừa nghe hướng dẫn viên nói về tín ngưỡng.",
+                        "answer":  "他一边吃羊肉串，一边听导游讲信仰。"
+                    },
+                    {
+                        "chinese":  "这顿餐的特点就是羊肉串味道很地道。",
+                        "pinyin":  "Zhè dùn cān de tèdiǎn jiù shì yángròuchuàn wèidào hěn dìdao.",
+                        "vietnamese":  "Đặc điểm của bữa ăn này chính là xiên thịt cừu có vị rất chuẩn địa phương.",
+                        "answer":  "这顿餐的特点就是羊肉串味道很地道。"
+                    },
+                    {
+                        "chinese":  "百闻不如一见，羊肉串也要亲自尝尝。",
+                        "pinyin":  "Bǎi wén bù rú yí jiàn, yángròuchuàn yě yào qīnzì chángchang.",
+                        "vietnamese":  "Trăm nghe không bằng một thấy, xiên thịt cừu cũng phải tự nếm thử.",
+                        "answer":  "百闻不如一见，羊肉串也要亲自尝尝。"
+                    },
+                    {
+                        "chinese":  "你甭担心，导游已经安排好了。",
+                        "pinyin":  "Nǐ béng dānxīn, dǎoyóu yǐjīng ānpái hǎo le.",
+                        "vietnamese":  "Bạn khỏi lo, hướng dẫn viên đã sắp xếp xong rồi.",
+                        "answer":  "你甭担心，导游已经安排好了。"
+                    },
+                    {
+                        "chinese":  "这件事甭问我，直接问旅行社吧。",
+                        "pinyin":  "Zhè jiàn shì béng wèn wǒ, zhíjiē wèn lǚxíngshè ba.",
+                        "vietnamese":  "Việc này khỏi hỏi tôi, hỏi trực tiếp công ty du lịch đi.",
+                        "answer":  "这件事甭问我，直接问旅行社吧。"
+                    },
+                    {
+                        "chinese":  "甭买太多纪念品，行李会很重。",
+                        "pinyin":  "Béng mǎi tài duō jìniànpǐn, xíngli huì hěn zhòng.",
+                        "vietnamese":  "Khỏi mua quá nhiều đồ lưu niệm, hành lý sẽ rất nặng.",
+                        "answer":  "甭买太多纪念品，行李会很重。"
+                    },
+                    {
+                        "chinese":  "如果报价已经包括保险，你就甭另外买了。",
+                        "pinyin":  "Rúguǒ bàojià yǐjīng bāokuò bǎoxiǎn, nǐ jiù béng lìngwài mǎi le.",
+                        "vietnamese":  "Nếu báo giá đã bao gồm bảo hiểm thì bạn khỏi mua riêng nữa.",
+                        "answer":  "如果报价已经包括保险，你就甭另外买了。"
+                    },
+                    {
+                        "chinese":  "甭胡乱选择项目，先看清楚特点。",
+                        "pinyin":  "Béng húluàn xuǎnzé xiàngmù, xiān kàn qīngchu tèdiǎn.",
+                        "vietnamese":  "Đừng chọn hạng mục lung tung, hãy xem rõ đặc điểm trước.",
+                        "answer":  "甭胡乱选择项目，先看清楚特点。"
+                    },
+                    {
+                        "chinese":  "你甭着急，往返车票还可以买到。",
+                        "pinyin":  "Nǐ béng zháojí, wǎngfǎn chēpiào hái kěyǐ mǎi dào.",
+                        "vietnamese":  "Bạn khỏi sốt ruột, vé khứ hồi vẫn còn mua được.",
+                        "answer":  "你甭着急，往返车票还可以买到。"
+                    },
+                    {
+                        "chinese":  "甭听别人说太多，百闻不如一见。",
+                        "pinyin":  "Béng tīng biérén shuō tài duō, bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Khỏi nghe người khác nói quá nhiều, trăm nghe không bằng một thấy.",
+                        "answer":  "甭听别人说太多，百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "如果吃不惯羊肉串，甭勉强自己。",
+                        "pinyin":  "Rúguǒ chī bù guàn yángròuchuàn, béng miǎnqiǎng zìjǐ.",
+                        "vietnamese":  "Nếu ăn không quen xiên thịt cừu thì đừng ép bản thân.",
+                        "answer":  "如果吃不惯羊肉串，甭勉强自己。"
+                    },
+                    {
+                        "chinese":  "这个旅馆离景点很近，甭坐车也能到。",
+                        "pinyin":  "Zhège lǚguǎn lí jǐngdiǎn hěn jìn, béng zuò chē yě néng dào.",
+                        "vietnamese":  "Nhà nghỉ này rất gần điểm tham quan, khỏi ngồi xe cũng đến được.",
+                        "answer":  "这个旅馆离景点很近，甭坐车也能到。"
+                    },
+                    {
+                        "chinese":  "甭轻易相信低价团，没准儿有隐藏费用。",
+                        "pinyin":  "Béng qīngyì xiāngxìn dījià tuán, méizhǔnr yǒu yǐncáng fèiyòng.",
+                        "vietnamese":  "Đừng dễ tin tour giá rẻ, biết đâu có phí ẩn.",
+                        "answer":  "甭轻易相信低价团，没准儿有隐藏费用。"
+                    },
+                    {
+                        "chinese":  "旅行时要尊重当地人的信仰。",
+                        "pinyin":  "Lǚxíng shí yào zūnzhòng dāngdì rén de xìnyǎng.",
+                        "vietnamese":  "Khi du lịch phải tôn trọng tín ngưỡng của người địa phương.",
+                        "answer":  "旅行时要尊重当地人的信仰。"
+                    },
+                    {
+                        "chinese":  "新疆有很多和伊斯兰信仰相关的习俗。",
+                        "pinyin":  "Xīnjiāng yǒu hěn duō hé Yīsīlán xìnyǎng xiāngguān de xísú.",
+                        "vietnamese":  "Tân Cương có nhiều phong tục liên quan đến tín ngưỡng Hồi giáo.",
+                        "answer":  "新疆有很多和伊斯兰信仰相关的习俗。"
+                    },
+                    {
+                        "chinese":  "不同民族有不同信仰，游客应该理解。",
+                        "pinyin":  "Bùtóng mínzú yǒu bùtóng xìnyǎng, yóukè yīnggāi lǐjiě.",
+                        "vietnamese":  "Các dân tộc khác nhau có tín ngưỡng khác nhau, du khách nên hiểu.",
+                        "answer":  "不同民族有不同信仰，游客应该理解。"
+                    },
+                    {
+                        "chinese":  "导游提前介绍信仰问题，省得游客出错。",
+                        "pinyin":  "Dǎoyóu tíqián jièshào xìnyǎng wèntí, shěngde yóukè chūcuò.",
+                        "vietnamese":  "Hướng dẫn viên giới thiệu trước vấn đề tín ngưỡng để khỏi du khách mắc lỗi.",
+                        "answer":  "导游提前介绍信仰问题，省得游客出错。"
+                    },
+                    {
+                        "chinese":  "信仰不光影响节日，也影响饮食习惯。",
+                        "pinyin":  "Xìnyǎng bùguāng yǐngxiǎng jiérì, yě yǐngxiǎng yǐnshí xíguàn.",
+                        "vietnamese":  "Tín ngưỡng không chỉ ảnh hưởng lễ hội mà cũng ảnh hưởng thói quen ăn uống.",
+                        "answer":  "信仰不光影响节日，也影响饮食习惯。"
+                    },
+                    {
+                        "chinese":  "如果不了解信仰差异，就容易产生误会。",
+                        "pinyin":  "Rúguǒ bù liǎojiě xìnyǎng chāyì, jiù róngyì chǎnshēng wùhuì.",
+                        "vietnamese":  "Nếu không hiểu khác biệt tín ngưỡng thì dễ nảy sinh hiểu lầm.",
+                        "answer":  "如果不了解信仰差异，就容易产生误会。"
+                    },
+                    {
+                        "chinese":  "尊重信仰是基本礼貌，不是额外要求。",
+                        "pinyin":  "Zūnzhòng xìnyǎng shì jīběn lǐmào, bú shì éwài yāoqiú.",
+                        "vietnamese":  "Tôn trọng tín ngưỡng là phép lịch sự cơ bản, không phải yêu cầu thêm.",
+                        "answer":  "尊重信仰是基本礼貌，不是额外要求。"
+                    },
+                    {
+                        "chinese":  "这个景点和当地信仰有密切关系。",
+                        "pinyin":  "Zhège jǐngdiǎn hé dāngdì xìnyǎng yǒu mìqiè guānxi.",
+                        "vietnamese":  "Điểm tham quan này có quan hệ mật thiết với tín ngưỡng địa phương.",
+                        "answer":  "这个景点和当地信仰有密切关系。"
+                    },
+                    {
+                        "chinese":  "他对伊斯兰信仰很感兴趣，但不会胡乱评论。",
+                        "pinyin":  "Tā duì Yīsīlán xìnyǎng hěn gǎn xìngqù, dàn bú huì húluàn pínglùn.",
+                        "vietnamese":  "Anh ấy rất hứng thú với tín ngưỡng Hồi giáo nhưng sẽ không bình luận lung tung.",
+                        "answer":  "他对伊斯兰信仰很感兴趣，但不会胡乱评论。"
+                    },
+                    {
+                        "chinese":  "旅行真正的意义之一，是学会尊重不同信仰。",
+                        "pinyin":  "Lǚxíng zhēnzhèng de yìyì zhī yī, shì xuéhuì zūnzhòng bùtóng xìnyǎng.",
+                        "vietnamese":  "Một trong những ý nghĩa thật sự của du lịch là học cách tôn trọng tín ngưỡng khác nhau.",
+                        "answer":  "旅行真正的意义之一，是学会尊重不同信仰。"
+                    },
+                    {
+                        "chinese":  "我们应该尊重不同地区的文化。",
+                        "pinyin":  "Wǒmen yīnggāi zūnzhòng bùtóng dìqū de wénhuà.",
+                        "vietnamese":  "Chúng ta nên tôn trọng văn hóa của các khu vực khác nhau.",
+                        "answer":  "我们应该尊重不同地区的文化。"
+                    },
+                    {
+                        "chinese":  "尊重当地信仰，是游客的基本责任。",
+                        "pinyin":  "Zūnzhòng dāngdì xìnyǎng, shì yóukè de jīběn zérèn.",
+                        "vietnamese":  "Tôn trọng tín ngưỡng địa phương là trách nhiệm cơ bản của du khách.",
+                        "answer":  "尊重当地信仰，是游客的基本责任。"
+                    },
+                    {
+                        "chinese":  "导游提醒大家尊重新疆的饮食习惯。",
+                        "pinyin":  "Dǎoyóu tíxǐng dàjiā zūnzhòng Xīnjiāng de yǐnshí xíguàn.",
+                        "vietnamese":  "Hướng dẫn viên nhắc mọi người tôn trọng thói quen ăn uống Tân Cương.",
+                        "answer":  "导游提醒大家尊重新疆的饮食习惯。"
+                    },
+                    {
+                        "chinese":  "就算你不习惯，也要尊重别人的选择。",
+                        "pinyin":  "Jiùsuàn nǐ bù xíguàn, yě yào zūnzhòng biérén de xuǎnzé.",
+                        "vietnamese":  "Cho dù bạn không quen, cũng phải tôn trọng lựa chọn của người khác.",
+                        "answer":  "就算你不习惯，也要尊重别人的选择。"
+                    },
+                    {
+                        "chinese":  "尊重不是表面客气，而是真正理解差异。",
+                        "pinyin":  "Zūnzhòng bú shì biǎomiàn kèqi, ér shì zhēnzhèng lǐjiě chāyì.",
+                        "vietnamese":  "Tôn trọng không phải khách sáo bề ngoài mà là thật sự hiểu sự khác biệt.",
+                        "answer":  "尊重不是表面客气，而是真正理解差异。"
+                    },
+                    {
+                        "chinese":  "在景点拍照前，要尊重当地规定。",
+                        "pinyin":  "Zài jǐngdiǎn pāizhào qián, yào zūnzhòng dāngdì guīdìng.",
+                        "vietnamese":  "Trước khi chụp ảnh ở điểm tham quan, phải tôn trọng quy định địa phương.",
+                        "answer":  "在景点拍照前，要尊重当地规定。"
+                    },
+                    {
+                        "chinese":  "他不光尊重传统，也愿意了解新的观念。",
+                        "pinyin":  "Tā bùguāng zūnzhòng chuántǒng, yě yuànyì liǎojiě xīn de guānniàn.",
+                        "vietnamese":  "Anh ấy không chỉ tôn trọng truyền thống mà còn sẵn sàng hiểu quan niệm mới.",
+                        "answer":  "他不光尊重传统，也愿意了解新的观念。"
+                    },
+                    {
+                        "chinese":  "如果不尊重导游安排，旅行会变得很乱。",
+                        "pinyin":  "Rúguǒ bù zūnzhòng dǎoyóu ānpái, lǚxíng huì biàn de hěn luàn.",
+                        "vietnamese":  "Nếu không tôn trọng sắp xếp của hướng dẫn viên, chuyến đi sẽ trở nên rất loạn.",
+                        "answer":  "如果不尊重导游安排，旅行会变得很乱。"
+                    },
+                    {
+                        "chinese":  "旅行社应该尊重游客的合理需求。",
+                        "pinyin":  "Lǚxíngshè yīnggāi zūnzhòng yóukè de hélǐ xūqiú.",
+                        "vietnamese":  "Công ty du lịch nên tôn trọng nhu cầu hợp lý của du khách.",
+                        "answer":  "旅行社应该尊重游客的合理需求。"
+                    },
+                    {
+                        "chinese":  "尊重别人，往往也会得到别人的尊重。",
+                        "pinyin":  "Zūnzhòng biérén, wǎngwǎng yě huì dédào biérén de zūnzhòng.",
+                        "vietnamese":  "Tôn trọng người khác thường cũng sẽ nhận được sự tôn trọng của người khác.",
+                        "answer":  "尊重别人，往往也会得到别人的尊重。"
+                    },
+                    {
+                        "chinese":  "我一直想去新疆旅行。",
+                        "pinyin":  "Wǒ yìzhí xiǎng qù Xīnjiāng lǚxíng.",
+                        "vietnamese":  "Tôi luôn muốn đi du lịch Tân Cương.",
+                        "answer":  "我一直想去新疆旅行。"
+                    },
+                    {
+                        "chinese":  "新疆的景色和文化都很有特点。",
+                        "pinyin":  "Xīnjiāng de jǐngsè hé wénhuà dōu hěn yǒu tèdiǎn.",
+                        "vietnamese":  "Phong cảnh và văn hóa Tân Cương đều rất có đặc điểm.",
+                        "answer":  "新疆的景色和文化都很有特点。"
+                    },
+                    {
+                        "chinese":  "导游说，新疆的哈密瓜特别甜。",
+                        "pinyin":  "Dǎoyóu shuō, Xīnjiāng de hāmìguā tèbié tián.",
+                        "vietnamese":  "Hướng dẫn viên nói dưa Hami của Tân Cương đặc biệt ngọt.",
+                        "answer":  "导游说，新疆的哈密瓜特别甜。"
+                    },
+                    {
+                        "chinese":  "去新疆以前，最好了解当地信仰和习俗。",
+                        "pinyin":  "Qù Xīnjiāng yǐqián, zuìhǎo liǎojiě dāngdì xìnyǎng hé xísú.",
+                        "vietnamese":  "Trước khi đi Tân Cương, tốt nhất tìm hiểu tín ngưỡng và phong tục địa phương.",
+                        "answer":  "去新疆以前，最好了解当地信仰和习俗。"
+                    },
+                    {
+                        "chinese":  "这家旅行社专门安排新疆路线。",
+                        "pinyin":  "Zhè jiā lǚxíngshè zhuānmén ānpái Xīnjiāng lùxiàn.",
+                        "vietnamese":  "Công ty du lịch này chuyên sắp xếp tuyến Tân Cương.",
+                        "answer":  "这家旅行社专门安排新疆路线。"
+                    },
+                    {
+                        "chinese":  "新疆不光有美丽景点，还有很多土特产。",
+                        "pinyin":  "Xīnjiāng bùguāng yǒu měilì jǐngdiǎn, hái yǒu hěn duō tǔtèchǎn.",
+                        "vietnamese":  "Tân Cương không chỉ có điểm tham quan đẹp mà còn có nhiều đặc sản địa phương.",
+                        "answer":  "新疆不光有美丽景点，还有很多土特产。"
+                    },
+                    {
+                        "chinese":  "他在新疆吃惯了羊肉串。",
+                        "pinyin":  "Tā zài Xīnjiāng chī guàn le yángròuchuàn.",
+                        "vietnamese":  "Anh ấy ở Tân Cương đã ăn quen xiên thịt cừu.",
+                        "answer":  "他在新疆吃惯了羊肉串。"
+                    },
+                    {
+                        "chinese":  "新疆旅行的路程比较远，要提前准备。",
+                        "pinyin":  "Xīnjiāng lǚxíng de lùchéng bǐjiào yuǎn, yào tíqián zhǔnbèi.",
+                        "vietnamese":  "Hành trình du lịch Tân Cương khá xa, phải chuẩn bị trước.",
+                        "answer":  "新疆旅行的路程比较远，要提前准备。"
+                    },
+                    {
+                        "chinese":  "百闻不如一见，新疆值得亲自去看看。",
+                        "pinyin":  "Bǎi wén bù rú yí jiàn, Xīnjiāng zhíde qīnzì qù kànkan.",
+                        "vietnamese":  "Trăm nghe không bằng một thấy, Tân Cương đáng để tự mình đi xem.",
+                        "answer":  "百闻不如一见，新疆值得亲自去看看。"
+                    },
+                    {
+                        "chinese":  "如果去新疆，别忘了买旅行保险。",
+                        "pinyin":  "Rúguǒ qù Xīnjiāng, bié wàng le mǎi lǚxíng bǎoxiǎn.",
+                        "vietnamese":  "Nếu đi Tân Cương, đừng quên mua bảo hiểm du lịch.",
+                        "answer":  "如果去新疆，别忘了买旅行保险。"
+                    },
+                    {
+                        "chinese":  "葡萄沟是新疆很有名的景点。",
+                        "pinyin":  "Pútáogōu shì Xīnjiāng hěn yǒumíng de jǐngdiǎn.",
+                        "vietnamese":  "Thung lũng Nho là điểm tham quan rất nổi tiếng của Tân Cương.",
+                        "answer":  "葡萄沟是新疆很有名的景点。"
+                    },
+                    {
+                        "chinese":  "导游说明天上午去葡萄沟参观。",
+                        "pinyin":  "Dǎoyóu shuō míngtiān shàngwǔ qù Pútáogōu cānguān.",
+                        "vietnamese":  "Hướng dẫn viên nói sáng mai đi tham quan Thung lũng Nho.",
+                        "answer":  "导游说明天上午去葡萄沟参观。"
+                    },
+                    {
+                        "chinese":  "葡萄沟的景色确实百闻不如一见。",
+                        "pinyin":  "Pútáogōu de jǐngsè quèshí bǎi wén bù rú yí jiàn.",
+                        "vietnamese":  "Phong cảnh Thung lũng Nho đúng là trăm nghe không bằng một thấy.",
+                        "answer":  "葡萄沟的景色确实百闻不如一见。"
+                    },
+                    {
+                        "chinese":  "旅行社的报价包括葡萄沟门票。",
+                        "pinyin":  "Lǚxíngshè de bàojià bāokuò Pútáogōu ménpiào.",
+                        "vietnamese":  "Báo giá của công ty du lịch bao gồm vé vào cửa Thung lũng Nho.",
+                        "answer":  "旅行社的报价包括葡萄沟门票。"
+                    },
+                    {
+                        "chinese":  "在葡萄沟可以买到很多新疆土特产。",
+                        "pinyin":  "Zài Pútáogōu kěyǐ mǎi dào hěn duō Xīnjiāng tǔtèchǎn.",
+                        "vietnamese":  "Ở Thung lũng Nho có thể mua được nhiều đặc sản Tân Cương.",
+                        "answer":  "在葡萄沟可以买到很多新疆土特产。"
+                    },
+                    {
+                        "chinese":  "去葡萄沟的路程不算近，但很值得。",
+                        "pinyin":  "Qù Pútáogōu de lùchéng bú suàn jìn, dàn hěn zhíde.",
+                        "vietnamese":  "Quãng đường đến Thung lũng Nho không tính là gần nhưng rất đáng.",
+                        "answer":  "去葡萄沟的路程不算近，但很值得。"
+                    },
+                    {
+                        "chinese":  "葡萄沟不光有葡萄，还有特别的民俗文化。",
+                        "pinyin":  "Pútáogōu bùguāng yǒu pútáo, hái yǒu tèbié de mínsú wénhuà.",
+                        "vietnamese":  "Thung lũng Nho không chỉ có nho mà còn có văn hóa dân tục đặc biệt.",
+                        "answer":  "葡萄沟不光有葡萄，还有特别的民俗文化。"
+                    },
+                    {
+                        "chinese":  "导游提醒我们在葡萄沟尊重当地习俗。",
+                        "pinyin":  "Dǎoyóu tíxǐng wǒmen zài Pútáogōu zūnzhòng dāngdì xísú.",
+                        "vietnamese":  "Hướng dẫn viên nhắc chúng tôi ở Thung lũng Nho phải tôn trọng phong tục địa phương.",
+                        "answer":  "导游提醒我们在葡萄沟尊重当地习俗。"
+                    },
+                    {
+                        "chinese":  "如果时间够，我们想在葡萄沟多待一会儿。",
+                        "pinyin":  "Rúguǒ shíjiān gòu, wǒmen xiǎng zài Pútáogōu duō dāi yíhuìr.",
+                        "vietnamese":  "Nếu thời gian đủ, chúng tôi muốn ở Thung lũng Nho lâu hơn chút.",
+                        "answer":  "如果时间够，我们想在葡萄沟多待一会儿。"
+                    },
+                    {
+                        "chinese":  "葡萄沟的特点是水果甜、景色美。",
+                        "pinyin":  "Pútáogōu de tèdiǎn shì shuǐguǒ tián, jǐngsè měi.",
+                        "vietnamese":  "Đặc điểm của Thung lũng Nho là trái cây ngọt, phong cảnh đẹp.",
+                        "answer":  "葡萄沟的特点是水果甜、景色美。"
+                    },
+                    {
+                        "chinese":  "伊斯兰文化在新疆有重要影响。",
+                        "pinyin":  "Yīsīlán wénhuà zài Xīnjiāng yǒu zhòngyào yǐngxiǎng.",
+                        "vietnamese":  "Văn hóa Hồi giáo có ảnh hưởng quan trọng ở Tân Cương.",
+                        "answer":  "伊斯兰文化在新疆有重要影响。"
+                    },
+                    {
+                        "chinese":  "旅行时了解伊斯兰信仰，有助于减少误会。",
+                        "pinyin":  "Lǚxíng shí liǎojiě Yīsīlán xìnyǎng, yǒu zhù yú jiǎnshǎo wùhuì.",
+                        "vietnamese":  "Khi du lịch, hiểu tín ngưỡng Hồi giáo giúp giảm hiểu lầm.",
+                        "answer":  "旅行时了解伊斯兰信仰，有助于减少误会。"
+                    },
+                    {
+                        "chinese":  "导游用通俗易懂的话介绍了伊斯兰习俗。",
+                        "pinyin":  "Dǎoyóu yòng tōngsú yì dǒng de huà jièshào le Yīsīlán xísú.",
+                        "vietnamese":  "Hướng dẫn viên dùng lời dễ hiểu giới thiệu phong tục Hồi giáo.",
+                        "answer":  "导游用通俗易懂的话介绍了伊斯兰习俗。"
+                    },
+                    {
+                        "chinese":  "尊重伊斯兰信仰是游客必须注意的事。",
+                        "pinyin":  "Zūnzhòng Yīsīlán xìnyǎng shì yóukè bìxū zhùyì de shì.",
+                        "vietnamese":  "Tôn trọng tín ngưỡng Hồi giáo là việc du khách phải chú ý.",
+                        "answer":  "尊重伊斯兰信仰是游客必须注意的事。"
+                    },
+                    {
+                        "chinese":  "有些餐饮习惯和伊斯兰信仰相关。",
+                        "pinyin":  "Yǒuxiē cānyǐn xíguàn hé Yīsīlán xìnyǎng xiāngguān.",
+                        "vietnamese":  "Một số thói quen ăn uống liên quan đến tín ngưỡng Hồi giáo.",
+                        "answer":  "有些餐饮习惯和伊斯兰信仰相关。"
+                    },
+                    {
+                        "chinese":  "如果不了解伊斯兰文化，就不要胡乱评论。",
+                        "pinyin":  "Rúguǒ bù liǎojiě Yīsīlán wénhuà, jiù búyào húluàn pínglùn.",
+                        "vietnamese":  "Nếu không hiểu văn hóa Hồi giáo thì đừng bình luận lung tung.",
+                        "answer":  "如果不了解伊斯兰文化，就不要胡乱评论。"
+                    },
+                    {
+                        "chinese":  "伊斯兰建筑也体现了当地文化特点。",
+                        "pinyin":  "Yīsīlán jiànzhù yě tǐxiàn le dāngdì wénhuà tèdiǎn.",
+                        "vietnamese":  "Kiến trúc Hồi giáo cũng thể hiện đặc điểm văn hóa địa phương.",
+                        "answer":  "伊斯兰建筑也体现了当地文化特点。"
+                    },
+                    {
+                        "chinese":  "旅行社提醒我们参观时尊重伊斯兰规定。",
+                        "pinyin":  "Lǚxíngshè tíxǐng wǒmen cānguān shí zūnzhòng Yīsīlán guīdìng.",
+                        "vietnamese":  "Công ty du lịch nhắc chúng tôi khi tham quan phải tôn trọng quy định Hồi giáo.",
+                        "answer":  "旅行社提醒我们参观时尊重伊斯兰规定。"
+                    },
+                    {
+                        "chinese":  "他对伊斯兰历史很感兴趣，专门查了资料。",
+                        "pinyin":  "Tā duì Yīsīlán lìshǐ hěn gǎn xìngqù, zhuānmén chá le zīliào.",
+                        "vietnamese":  "Anh ấy rất hứng thú với lịch sử Hồi giáo, đặc biệt tra tài liệu.",
+                        "answer":  "他对伊斯兰历史很感兴趣，专门查了资料。"
+                    },
+                    {
+                        "chinese":  "了解伊斯兰文化，不光靠听说，还要亲自观察。",
+                        "pinyin":  "Liǎojiě Yīsīlán wénhuà, bùguāng kào tīngshuō, hái yào qīnzì guānchá.",
+                        "vietnamese":  "Hiểu văn hóa Hồi giáo không chỉ dựa vào nghe nói mà còn phải tự quan sát.",
+                        "answer":  "了解伊斯兰文化，不光靠听说，还要亲自观察。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "这件事不是我说了算，要问经理的意见。",
+                          "pinyin":  "Zhè jiàn shì bú shì wǒ shuō le suàn, yào wèn jīnglǐ de yìjiàn.",
+                          "vietnamese":  "Việc này không phải tôi quyết là được, phải hỏi ý kiến quản lý.",
+                          "answer":  "这件事不是我说了算，要问经理的意见。"
+                      },
+                      {
+                          "chinese":  "去不去旅行，最后还是父母说了算。",
+                          "pinyin":  "Qù bu qù lǚxíng, zuìhòu háishi fùmǔ shuō le suàn.",
+                          "vietnamese":  "Có đi du lịch hay không, cuối cùng vẫn là bố mẹ quyết.",
+                          "answer":  "去不去旅行，最后还是父母说了算。"
+                      },
+                      {
+                          "chinese":  "这个项目谁负责，就应该由谁说了算。",
+                          "pinyin":  "Zhège xiàngmù shéi fùzé, jiù yīnggāi yóu shéi shuō le suàn.",
+                          "vietnamese":  "Dự án này ai phụ trách thì nên do người đó quyết.",
+                          "answer":  "这个项目谁负责，就应该由谁说了算。"
+                      },
+                      {
+                          "chinese":  "房租能不能便宜一点儿，还是房东说了算。",
+                          "pinyin":  "Fángzū néng bu néng piányi yìdiǎnr, háishi fángdōng shuō le suàn.",
+                          "vietnamese":  "Tiền thuê có thể rẻ hơn chút không, vẫn là chủ nhà quyết.",
+                          "answer":  "房租能不能便宜一点儿，还是房东说了算。"
+                      },
+                      {
+                          "chinese":  "旅游路线怎么安排，最好让旅行社说了算。",
+                          "pinyin":  "Lǚyóu lùxiàn zěnme ānpái, zuìhǎo ràng lǚxíngshè shuō le suàn.",
+                          "vietnamese":  "Lộ trình du lịch sắp xếp thế nào, tốt nhất để công ty du lịch quyết.",
+                          "answer":  "旅游路线怎么安排，最好让旅行社说了算。"
+                      },
+                      {
+                          "chinese":  "他忙得连午饭都没有时间吃。",
+                          "pinyin":  "Tā máng de lián wǔfàn dōu méiyǒu shíjiān chī.",
+                          "vietnamese":  "Anh ấy bận đến mức ngay cả cơm trưa cũng không có thời gian ăn.",
+                          "answer":  "他忙得连午饭都没有时间吃。"
+                      },
+                      {
+                          "chinese":  "今天热得大家都不想出门。",
+                          "pinyin":  "Jīntiān rè de dàjiā dōu bù xiǎng chūmén.",
+                          "vietnamese":  "Hôm nay nóng đến mức mọi người đều không muốn ra ngoài.",
+                          "answer":  "今天热得大家都不想出门。"
+                      },
+                      {
+                          "chinese":  "这次旅行累得我一回酒店就睡着了。",
+                          "pinyin":  "Zhè cì lǚxíng lèi de wǒ yì huí jiǔdiàn jiù shuìzháo le.",
+                          "vietnamese":  "Chuyến du lịch lần này mệt đến mức tôi vừa về khách sạn đã ngủ mất.",
+                          "answer":  "这次旅行累得我一回酒店就睡着了。"
+                      },
+                      {
+                          "chinese":  "他紧张得一句话也说不出来。",
+                          "pinyin":  "Tā jǐnzhāng de yí jù huà yě shuō bu chūlái.",
+                          "vietnamese":  "Anh ấy căng thẳng đến mức một câu cũng không nói ra được.",
+                          "answer":  "他紧张得一句话也说不出来。"
+                      },
+                      {
+                          "chinese":  "老师讲得非常清楚，大家一下子就明白了。",
+                          "pinyin":  "Lǎoshī jiǎng de fēicháng qīngchu, dàjiā yíxiàzi jiù míngbai le.",
+                          "vietnamese":  "Thầy giảng rõ đến mức mọi người hiểu ngay.",
+                          "answer":  "老师讲得非常清楚，大家一下子就明白了。"
+                      },
+                      {
+                          "chinese":  "这篇文章你看得懂看不懂？",
+                          "pinyin":  "Zhè piān wénzhāng nǐ kàn de dǒng kàn bù dǒng?",
+                          "vietnamese":  "Bài văn này bạn đọc có hiểu không?",
+                          "answer":  "这篇文章你看得懂看不懂？"
+                      },
+                      {
+                          "chinese":  "老师刚才说的话，你听得清楚听不清楚？",
+                          "pinyin":  "Lǎoshī gāngcái shuō de huà, nǐ tīng de qīngchu tīng bù qīngchu?",
+                          "vietnamese":  "Lời thầy vừa nói, bạn nghe có rõ không?",
+                          "answer":  "老师刚才说的话，你听得清楚听不清楚？"
+                      },
+                      {
+                          "chinese":  "这么多作业，你今天做得完做不完？",
+                          "pinyin":  "Zhème duō zuòyè, nǐ jīntiān zuò de wán zuò bù wán?",
+                          "vietnamese":  "Nhiều bài tập thế này, hôm nay bạn làm có xong không?",
+                          "answer":  "这么多作业，你今天做得完做不完？"
+                      },
+                      {
+                          "chinese":  "这个问题你自己解决得了解决不了？",
+                          "pinyin":  "Zhège wèntí nǐ zìjǐ jiějué de liǎo jiějué bù liǎo?",
+                          "vietnamese":  "Vấn đề này bạn tự giải quyết được không?",
+                          "answer":  "这个问题你自己解决得了解决不了？"
+                      },
+                      {
+                          "chinese":  "这条路这么复杂，你找得到找不到？",
+                          "pinyin":  "Zhè tiáo lù zhème fùzá, nǐ zhǎo de dào zhǎo bu dào?",
+                          "vietnamese":  "Con đường này phức tạp như vậy, bạn tìm thấy được không?",
+                          "answer":  "这条路这么复杂，你找得到找不到？"
+                      },
+                      {
+                          "chinese":  "今天的考试别提多难了，很多人都没做完。",
+                          "pinyin":  "Jīntiān de kǎoshì bié tí duō nán le, hěn duō rén dōu méi zuò wán.",
+                          "vietnamese":  "Kỳ thi hôm nay khó khỏi phải nói, rất nhiều người đều chưa làm xong.",
+                          "answer":  "今天的考试别提多难了，很多人都没做完。"
+                      },
+                      {
+                          "chinese":  "这次旅行别提多累了，每天都走很多路。",
+                          "pinyin":  "Zhè cì lǚxíng bié tí duō lèi le, měitiān dōu zǒu hěn duō lù.",
+                          "vietnamese":  "Chuyến du lịch lần này mệt khỏi phải nói, ngày nào cũng đi rất nhiều đường.",
+                          "answer":  "这次旅行别提多累了，每天都走很多路。"
+                      },
+                      {
+                          "chinese":  "那家饭店别提多贵了，一顿饭花了很多钱。",
+                          "pinyin":  "Nà jiā fàndiàn bié tí duō guì le, yí dùn fàn huā le hěn duō qián.",
+                          "vietnamese":  "Nhà hàng đó đắt khỏi phải nói, một bữa ăn tốn rất nhiều tiền.",
+                          "answer":  "那家饭店别提多贵了，一顿饭花了很多钱。"
+                      },
+                      {
+                          "chinese":  "老师今天讲得别提多清楚了，我终于听懂了。",
+                          "pinyin":  "Lǎoshī jīntiān jiǎng de bié tí duō qīngchu le, wǒ zhōngyú tīng dǒng le.",
+                          "vietnamese":  "Hôm nay thầy giảng rõ khỏi phải nói, cuối cùng tôi đã nghe hiểu.",
+                          "answer":  "老师今天讲得别提多清楚了，我终于听懂了。"
+                      },
+                      {
+                          "chinese":  "家乡现在变化别提多大了，我差点儿认不出来。",
+                          "pinyin":  "Jiāxiāng xiànzài biànhuà bié tí duō dà le, wǒ chàdiǎnr rèn bu chūlái.",
+                          "vietnamese":  "Quê hương bây giờ thay đổi lớn khỏi phải nói, tôi suýt nữa không nhận ra.",
+                          "answer":  "家乡现在变化别提多大了，我差点儿认不出来。"
+                      }
+                  ]
+}

@@ -1,0 +1,1883 @@
+﻿{
+    "title":  "信与不信",
+    "vietnameseTitle":  "怎么办 / 天下还有这种好事儿",
+    "textTitles":  [
+                       "怎么办",
+                       "天下还有这种好事儿"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "没准儿",
+                           "pinyin":  "méizhǔnr",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "một chuẩn nhi",
+                           "vietnamese":  "có lẽ, biết đâu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他现在还没来，没准儿路上堵车了。",
+                                                "pinyin":  "Tā xiànzài hái méi lái, méizhǔnr lù shàng dǔchē le.",
+                                                "vietnamese":  "Bây giờ anh ấy vẫn chưa đến, biết đâu trên đường bị tắc xe rồi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "启发",
+                           "pinyin":  "qǐfā",
+                           "partOfSpeech":  "动/名",
+                           "sinoVietnamese":  "khải phát",
+                           "vietnamese":  "gợi mở, khơi gợi, cảm hứng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这次谈话给了我很大的启发。",
+                                                "pinyin":  "Zhè cì tánhuà gěi le wǒ hěn dà de qǐfā.",
+                                                "vietnamese":  "Cuộc nói chuyện lần này đã cho tôi rất nhiều gợi mở."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "据",
+                           "pinyin":  "jù",
+                           "partOfSpeech":  "介",
+                           "sinoVietnamese":  "cứ",
+                           "vietnamese":  "theo, căn cứ vào",
+                           "examples":  [
+                                            {
+                                                "chinese":  "据天气预报，明天可能会下雨。",
+                                                "pinyin":  "Jù tiānqì yùbào, míngtiān kěnéng huì xià yǔ.",
+                                                "vietnamese":  "Theo dự báo thời tiết, ngày mai có thể sẽ mưa."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "或多或少",
+                           "pinyin":  "huò duō huò shǎo",
+                           "partOfSpeech":  "短语",
+                           "sinoVietnamese":  "hoặc đa hoặc thiểu",
+                           "vietnamese":  "ít nhiều, nhiều hay ít",
+                           "examples":  [
+                                            {
+                                                "chinese":  "每个人或多或少都会遇到困难。",
+                                                "pinyin":  "Měi ge rén huò duō huò shǎo dōu huì yùdào kùnnan.",
+                                                "vietnamese":  "Mỗi người ít nhiều đều sẽ gặp khó khăn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "挑战",
+                           "pinyin":  "tiǎozhàn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "thiêu chiến",
+                           "vietnamese":  "thử thách, thách thức",
+                           "examples":  [
+                                            {
+                                                "chinese":  "学好汉语对我来说是一个挑战。",
+                                                "pinyin":  "Xué hǎo Hànyǔ duì wǒ lái shuō shì yí ge tiǎozhàn.",
+                                                "vietnamese":  "Học tốt tiếng Trung đối với tôi là một thử thách."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "无聊",
+                           "pinyin":  "wúliáo",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "vô liêu",
+                           "vietnamese":  "buồn chán, tẻ nhạt",
+                           "examples":  [
+                                            {
+                                                "chinese":  "周末一个人在宿舍，感觉有点儿无聊。",
+                                                "pinyin":  "Zhōumò yí ge rén zài sùshè, gǎnjué yǒu diǎnr wúliáo.",
+                                                "vietnamese":  "Cuối tuần ở ký túc xá một mình, cảm thấy hơi buồn chán."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "就算",
+                           "pinyin":  "jiùsuàn",
+                           "partOfSpeech":  "连",
+                           "sinoVietnamese":  "tựu toán",
+                           "vietnamese":  "cho dù, ngay cả khi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "就算明天下雨，我们也要按时出发。",
+                                                "pinyin":  "Jiùsuàn míngtiān xià yǔ, wǒmen yě yào ànshí chūfā.",
+                                                "vietnamese":  "Cho dù ngày mai trời mưa, chúng tôi cũng phải xuất phát đúng giờ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "不光",
+                           "pinyin":  "bùguāng",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "bất quang",
+                           "vietnamese":  "không chỉ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他不光会说汉语，还会说英语。",
+                                                "pinyin":  "Tā bùguāng huì shuō Hànyǔ, hái huì shuō Yīngyǔ.",
+                                                "vietnamese":  "Anh ấy không chỉ biết nói tiếng Trung, mà còn biết nói tiếng Anh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "辞职",
+                           "pinyin":  "cízhí",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "từ chức",
+                           "vietnamese":  "nghỉ việc, từ chức",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他觉得工作太累，所以决定辞职。",
+                                                "pinyin":  "Tā juéde gōngzuò tài lèi, suǒyǐ juédìng cízhí.",
+                                                "vietnamese":  "Anh ấy thấy công việc quá mệt nên quyết định nghỉ việc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "居然",
+                           "pinyin":  "jūrán",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "cư nhiên",
+                           "vietnamese":  "không ngờ, vậy mà",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他没复习，考试居然通过了。",
+                                                "pinyin":  "Tā méi fùxí, kǎoshì jūrán tōngguò le.",
+                                                "vietnamese":  "Anh ấy không ôn bài, vậy mà thi lại qua."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "路程",
+                           "pinyin":  "lùchéng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "lộ trình",
+                           "vietnamese":  "quãng đường, hành trình",
+                           "examples":  [
+                                            {
+                                                "chinese":  "从学校到机场的路程大概一个小时。",
+                                                "pinyin":  "Cóng xuéxiào dào jīchǎng de lùchéng dàgài yí ge xiǎoshí.",
+                                                "vietnamese":  "Quãng đường từ trường đến sân bay khoảng một tiếng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "骗子",
+                           "pinyin":  "piànzi",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "phiến tử",
+                           "vietnamese":  "kẻ lừa đảo",
+                           "examples":  [
+                                            {
+                                                "chinese":  "别相信那个骗子的话。",
+                                                "pinyin":  "Bié xiāngxìn nàge piànzi de huà.",
+                                                "vietnamese":  "Đừng tin lời của kẻ lừa đảo đó."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "轻易",
+                           "pinyin":  "qīngyì",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "khinh dị",
+                           "vietnamese":  "dễ dàng, tùy tiện",
+                           "examples":  [
+                                            {
+                                                "chinese":  "不要轻易把个人信息告诉别人。",
+                                                "pinyin":  "Bú yào qīngyì bǎ gèrén xìnxī gàosu biérén.",
+                                                "vietnamese":  "Đừng dễ dàng nói thông tin cá nhân cho người khác."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "模特",
+                           "pinyin":  "mótè",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "mô đặc",
+                           "vietnamese":  "người mẫu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "她想成为一名服装模特。",
+                                                "pinyin":  "Tā xiǎng chéngwéi yì míng fúzhuāng mótè.",
+                                                "vietnamese":  "Cô ấy muốn trở thành một người mẫu thời trang."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "天下",
+                           "pinyin":  "tiānxià",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thiên hạ",
+                           "vietnamese":  "thiên hạ, thế giới",
+                           "examples":  [
+                                            {
+                                                "chinese":  "天下没有白白得到的成功。",
+                                                "pinyin":  "Tiānxià méiyǒu báibái dédào de chénggōng.",
+                                                "vietnamese":  "Trên đời không có thành công nào tự nhiên mà có."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "面试",
+                           "pinyin":  "miànshì",
+                           "partOfSpeech":  "动/名",
+                           "sinoVietnamese":  "diện thí",
+                           "vietnamese":  "phỏng vấn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "明天我要去一家公司面试。",
+                                                "pinyin":  "Míngtiān wǒ yào qù yì jiā gōngsī miànshì.",
+                                                "vietnamese":  "Ngày mai tôi phải đến một công ty phỏng vấn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "助手",
+                           "pinyin":  "zhùshǒu",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "trợ thủ",
+                           "vietnamese":  "trợ lý, người hỗ trợ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "经理正在找一名工作助手。",
+                                                "pinyin":  "Jīnglǐ zhèngzài zhǎo yì míng gōngzuò zhùshǒu.",
+                                                "vietnamese":  "Giám đốc đang tìm một trợ lý công việc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "莫非",
+                           "pinyin":  "mòfēi",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "mạc phi",
+                           "vietnamese":  "chẳng lẽ, có lẽ nào",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他一直不接电话，莫非手机丢了？",
+                                                "pinyin":  "Tā yìzhí bù jiē diànhuà, mòfēi shǒujī diū le?",
+                                                "vietnamese":  "Anh ấy mãi không nghe điện thoại, chẳng lẽ mất điện thoại rồi?"
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "天哪",
+                           "pinyin":  "tiān na",
+                           "partOfSpeech":  "叹",
+                           "sinoVietnamese":  "thiên na",
+                           "vietnamese":  "trời ơi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "天哪，我把面试时间记错了！",
+                                                "pinyin":  "Tiān na, wǒ bǎ miànshì shíjiān jì cuò le!",
+                                                "vietnamese":  "Trời ơi, tôi nhớ nhầm thời gian phỏng vấn rồi!"
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "幸亏",
+                           "pinyin":  "xìngkuī",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "hạnh khuy",
+                           "vietnamese":  "may mà, may thay",
+                           "examples":  [
+                                            {
+                                                "chinese":  "幸亏你提醒我，不然我就迟到了。",
+                                                "pinyin":  "Xìngkuī nǐ tíxǐng wǒ, bùrán wǒ jiù chídào le.",
+                                                "vietnamese":  "May mà bạn nhắc tôi, nếu không tôi đã đến muộn rồi."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "你毕业以后干什么？",
+                          "pinyin":  "Nǐ bìyè yǐhòu gàn shénme?",
+                          "vietnamese":  "Sau khi tốt nghiệp bạn định làm gì?"
+                      },
+                      {
+                          "chinese":  "我也拿不定主意，现在我是又想上学，又想工作。",
+                          "pinyin":  "Wǒ yě ná bù dìng zhǔyi, xiànzài wǒ shì yòu xiǎng shàngxué, yòu xiǎng gōngzuò.",
+                          "vietnamese":  "Tôi cũng chưa quyết định được, bây giờ tôi vừa muốn học tiếp, vừa muốn đi làm."
+                      },
+                      {
+                          "chinese":  "这样吧，我讲个故事，没准儿对你有启发。",
+                          "pinyin":  "Zhèyàng ba, wǒ jiǎng ge gùshi, méi zhǔnr duì nǐ yǒu qǐfā.",
+                          "vietnamese":  "Thế này nhé, tôi kể một câu chuyện, biết đâu có thể gợi ý cho bạn."
+                      },
+                      {
+                          "chinese":  "好啊，快说说，什么故事？",
+                          "pinyin":  "Hǎo a, kuài shuōshuo, shénme gùshi?",
+                          "vietnamese":  "Được đấy, mau kể đi, câu chuyện gì?"
+                      },
+                      {
+                          "chinese":  "有一个三十七岁的记者，他决定一分钱也不带，走遍全国。",
+                          "pinyin":  "Yǒu yí ge sānshíqī suì de jìzhě, tā juédìng yì fēn qián yě bú dài, zǒubiàn quánguó.",
+                          "vietnamese":  "Có một phóng viên 37 tuổi, anh ấy quyết định không mang một xu nào, đi khắp cả nước."
+                      },
+                      {
+                          "chinese":  "不会吧？什么也不带，他这是怎么了？",
+                          "pinyin":  "Bú huì ba? Shénme yě bú dài, tā zhè shì zěnme le?",
+                          "vietnamese":  "Không thể nào? Không mang gì cả, anh ấy bị sao vậy?"
+                      },
+                      {
+                          "chinese":  "因为在那之前，他问自己：“要是有人通知我，今天我就要死了，我会后悔吗？”",
+                          "pinyin":  "Yīnwèi zài nà zhīqián, tā wèn zìjǐ: “Yàoshi yǒu rén tōngzhī wǒ, jīntiān wǒ jiù yào sǐ le, wǒ huì hòuhuǐ ma?”",
+                          "vietnamese":  "Bởi vì trước đó, anh ấy tự hỏi mình: “Nếu có người báo với tôi rằng hôm nay tôi sắp chết, tôi có hối hận không?”"
+                      },
+                      {
+                          "chinese":  "据我估计，每个人或多或少都会后悔吧。",
+                          "pinyin":  "Jù wǒ gūjì, měi ge rén huò duō huò shǎo dōu huì hòuhuǐ ba.",
+                          "vietnamese":  "Theo tôi ước đoán, mỗi người ít nhiều đều sẽ hối hận."
+                      },
+                      {
+                          "chinese":  "他发现，他的生活没什么挑战，也没什么变化。",
+                          "pinyin":  "Tā fāxiàn, tā de shēnghuó méi shénme tiǎozhàn, yě méi shénme biànhuà.",
+                          "vietnamese":  "Anh ấy phát hiện cuộc sống của mình không có thử thách gì, cũng không có thay đổi gì."
+                      },
+                      {
+                          "chinese":  "真够无聊的。",
+                          "pinyin":  "Zhēn gòu wúliáo de.",
+                          "vietnamese":  "Thật là vô vị."
+                      },
+                      {
+                          "chinese":  "因为怕失败，就算有机会做想做的事情，他也放弃了。",
+                          "pinyin":  "Yīnwèi pà shībài, jiùsuàn yǒu jīhuì zuò xiǎng zuò de shìqing, tā yě fàngqì le.",
+                          "vietnamese":  "Vì sợ thất bại, dù có cơ hội làm việc mình muốn làm, anh ấy cũng từ bỏ."
+                      },
+                      {
+                          "chinese":  "不光是他，很多人都有这样的经历吧。",
+                          "pinyin":  "Bùguāng shì tā, hěn duō rén dōu yǒu zhèyàng de jīnglì ba.",
+                          "vietnamese":  "Không chỉ anh ấy, rất nhiều người đều có trải nghiệm như vậy."
+                      },
+                      {
+                          "chinese":  "他越想越后悔，这样的日子，有什么过头？所以最后他决定辞职。",
+                          "pinyin":  "Tā yuè xiǎng yuè hòuhuǐ, zhèyàng de rìzi, yǒu shénme guòtou? Suǒyǐ zuìhòu tā juédìng cízhí.",
+                          "vietnamese":  "Càng nghĩ anh ấy càng hối hận, những ngày tháng như vậy có gì đáng sống? Vì vậy cuối cùng anh ấy quyết định nghỉ việc."
+                      },
+                      {
+                          "chinese":  "他家人居然同意了？",
+                          "pinyin":  "Tā jiārén jūrán tóngyì le?",
+                          "vietnamese":  "Người nhà anh ấy vậy mà đồng ý à?"
+                      },
+                      {
+                          "chinese":  "同意才怪呢，他们都劝他，说太危险了。",
+                          "pinyin":  "Tóngyì cái guài ne, tāmen dōu quàn tā, shuō tài wēixiǎn le.",
+                          "vietnamese":  "Đồng ý mới lạ, họ đều khuyên anh ấy, nói quá nguy hiểm."
+                      },
+                      {
+                          "chinese":  "对，万一遇到坏人怎么办？病了怎么办？饿了怎么办？睡哪儿？",
+                          "pinyin":  "Duì, wànyī yùdào huàirén zěnme bàn? Bìng le zěnme bàn? È le zěnme bàn? Shuì nǎr?",
+                          "vietnamese":  "Đúng vậy, lỡ gặp người xấu thì làm sao? Bị bệnh thì sao? Đói thì sao? Ngủ ở đâu?"
+                      },
+                      {
+                          "chinese":  "估计没几天他就得自己回来，要不然，让别人给送回来。",
+                          "pinyin":  "Gūjì méi jǐ tiān tā jiù děi zìjǐ huílai, yàoburán, ràng biérén gěi sòng huílai.",
+                          "vietnamese":  "Chắc chẳng mấy ngày anh ấy phải tự quay về, nếu không thì cũng bị người khác đưa về."
+                      },
+                      {
+                          "chinese":  "他这次谁的话也没听。最后，他走完了全部路程。",
+                          "pinyin":  "Tā zhè cì shéi de huà yě méi tīng. Zuìhòu, tā zǒuwán le quánbù lùchéng.",
+                          "vietnamese":  "Lần này anh ấy không nghe lời ai cả. Cuối cùng, anh ấy đã đi hết toàn bộ hành trình."
+                      },
+                      {
+                          "chinese":  "一分钱不带，怎么可能呢？",
+                          "pinyin":  "Yì fēn qián bú dài, zěnme kěnéng ne?",
+                          "vietnamese":  "Không mang một xu nào, sao có thể chứ?"
+                      },
+                      {
+                          "chinese":  "他依靠了上百人的帮助，这些人，没一个以前认识的。",
+                          "pinyin":  "Tā yīkào le shàng bǎi rén de bāngzhù, zhèxiē rén, méi yí ge yǐqián rènshi de.",
+                          "vietnamese":  "Anh ấy dựa vào sự giúp đỡ của hơn trăm người, những người này không có ai là quen biết trước đó."
+                      },
+                      {
+                          "chinese":  "大卫，你想用这个故事告诉我什么？",
+                          "pinyin":  "Nǐ xiǎng yòng zhège gùshi gàosu wǒ shénme?",
+                          "vietnamese":  "Bạn muốn dùng câu chuyện này để nói với tôi điều gì?"
+                      },
+                      {
+                          "chinese":  "你说呢？你最大的愿望是什么？",
+                          "pinyin":  "Nǐ shuō ne? Nǐ zuì dà de yuànwàng shì shénme?",
+                          "vietnamese":  "Bạn nói xem? Nguyện vọng lớn nhất của bạn là gì?"
+                      },
+                      {
+                          "chinese":  "从前，有个年轻人很容易相信别人，找工作的时候，他被骗了三千元。",
+                          "pinyin":  "Cóngqián, yǒu ge niánqīngrén hěn róngyì xiāngxìn biérén, zhǎo gōngzuò de shíhou, tā bèi piàn le sān qiān yuán.",
+                          "vietnamese":  "Trước đây, có một người trẻ tuổi rất dễ tin người khác, khi tìm việc anh ta bị lừa 3.000 tệ."
+                      },
+                      {
+                          "chinese":  "有人告诉他：“小心啊，现在大街上骗子可不少，不能轻易相信任何人啊！”",
+                          "pinyin":  "Yǒu rén gàosu tā: “Xiǎoxīn a, xiànzài dàjiē shang piànzi kě bù shǎo, bù néng qīngyì xiāngxìn rènhé rén a!”",
+                          "vietnamese":  "Có người nói với anh ta: “Cẩn thận đấy, bây giờ ngoài đường có không ít kẻ lừa đảo, không thể dễ dàng tin bất cứ ai!”"
+                      },
+                      {
+                          "chinese":  "年轻人听了，觉得很有道理。",
+                          "pinyin":  "Niánqīngrén tīng le, juéde hěn yǒu dàolǐ.",
+                          "vietnamese":  "Người trẻ tuổi nghe xong, cảm thấy rất có lý."
+                      },
+                      {
+                          "chinese":  "年轻人一直没有工作。",
+                          "pinyin":  "Niánqīngrén yìzhí méiyǒu gōngzuò.",
+                          "vietnamese":  "Người trẻ tuổi vẫn luôn không có việc làm."
+                      },
+                      {
+                          "chinese":  "一位女画家看中了他，请他做她的模特。",
+                          "pinyin":  "Yí wèi nǚ huàjiā kànzhòng le tā, qǐng tā zuò tā de mótè.",
+                          "vietnamese":  "Một nữ họa sĩ đã nhìn trúng anh ta, mời anh ta làm người mẫu cho cô ấy."
+                      },
+                      {
+                          "chinese":  "“当我的模特怎么样？小伙子，一年二十万元。”",
+                          "pinyin":  "“Dāng wǒ de mótè zěnmeyàng? Xiǎohuǒzi, yì nián èrshí wàn yuán.”",
+                          "vietnamese":  "“Làm người mẫu cho tôi thế nào? Chàng trai, một năm 200.000 tệ.”"
+                      },
+                      {
+                          "chinese":  "年轻人先是高兴，然后觉得奇怪：“天下还有这种好事儿？哼！骗子！骗子！”",
+                          "pinyin":  "Niánqīngrén xiān shì gāoxìng, ránhòu juéde qíguài: “Tiānxià hái yǒu zhè zhǒng hǎoshìr? Hēng! Piànzi! Piànzi!”",
+                          "vietnamese":  "Người trẻ tuổi ban đầu vui mừng, sau đó cảm thấy kỳ lạ: “Trên đời còn có chuyện tốt như vậy sao? Hừ! Lừa đảo! Lừa đảo!”"
+                      },
+                      {
+                          "chinese":  "又过了几天，他到一家公司面试，老板看中了他流利的外语。",
+                          "pinyin":  "Yòu guò le jǐ tiān, tā dào yì jiā gōngsī miànshì, lǎobǎn kànzhòng le tā liúlì de wàiyǔ.",
+                          "vietnamese":  "Vài ngày sau, anh ta đến một công ty phỏng vấn, ông chủ nhìn trúng khả năng ngoại ngữ lưu loát của anh ta."
+                      },
+                      {
+                          "chinese":  "“你就做我的助手和翻译吧，每个月三万元。”",
+                          "pinyin":  "“Nǐ jiù zuò wǒ de zhùshǒu hé fānyì ba, měi ge yuè sān wàn yuán.”",
+                          "vietnamese":  "“Cậu làm trợ lý và phiên dịch cho tôi nhé, mỗi tháng 30.000 tệ.”"
+                      },
+                      {
+                          "chinese":  "“请你今晚就开始工作，今晚有一个重要的会，就先别回家了。”",
+                          "pinyin":  "“Qǐng nǐ jīnwǎn jiù kāishǐ gōngzuò, jīnwǎn yǒu yí ge zhòngyào de huì, jiù xiān bié huí jiā le.”",
+                          "vietnamese":  "“Mời cậu tối nay bắt đầu làm việc luôn, tối nay có một cuộc họp quan trọng, trước hết đừng về nhà.”"
+                      },
+                      {
+                          "chinese":  "老板说。",
+                          "pinyin":  "Lǎobǎn shuō.",
+                          "vietnamese":  "Ông chủ nói."
+                      },
+                      {
+                          "chinese":  "年轻人想：“不让我回家，马上就上班，莫非这是一家骗子公司？先骗我留在这儿，然后偷我家东西？”",
+                          "pinyin":  "Niánqīngrén xiǎng: “Bù ràng wǒ huí jiā, mǎshàng jiù shàngbān, mòfēi zhè shì yì jiā piànzi gōngsī? Xiān piàn wǒ liú zài zhèr, ránhòu tōu wǒ jiā dōngxi?”",
+                          "vietnamese":  "Người trẻ tuổi nghĩ: “Không cho mình về nhà, lập tức đi làm, lẽ nào đây là công ty lừa đảo? Trước tiên lừa mình ở lại đây, rồi trộm đồ nhà mình?”"
+                      },
+                      {
+                          "chinese":  "三万元的工资，怎么可能这么高？",
+                          "pinyin":  "Sān wàn yuán de gōngzī, zěnme kěnéng zhème gāo?",
+                          "vietnamese":  "Lương 30.000 tệ, sao có thể cao như vậy được?"
+                      },
+                      {
+                          "chinese":  "哼！一定是在骗人，不能相信，不能相信！",
+                          "pinyin":  "Hēng! Yídìng shì zài piàn rén, bù néng xiāngxìn, bù néng xiāngxìn!",
+                          "vietnamese":  "Hừ! Chắc chắn là đang lừa người, không thể tin, không thể tin!"
+                      },
+                      {
+                          "chinese":  "年轻人走了，他对自己说：“天哪，幸亏我聪明，要不然……”",
+                          "pinyin":  "Niánqīngrén zǒu le, tā duì zìjǐ shuō: “Tiān na, xìngkuī wǒ cōngmíng, yàoburán……”",
+                          "vietnamese":  "Người trẻ tuổi bỏ đi, anh ta tự nói với mình: “Trời ơi, may mà mình thông minh, nếu không thì……”"
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "没准儿……",
+                        "meaning":  "Biết đâu…, có khi…",
+                        "usage":  "Dùng để nói khả năng không chắc chắn",
+                        "note":  "Khẩu ngữ, gần với 也许",
+                        "example":  "他没准儿已经到学校了。",
+                        "pinyin":  "Tā méizhǔnr yǐjīng dào xuéxiào le.",
+                        "vietnamese":  "Biết đâu anh ấy đã đến trường rồi.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "困……够……也……",
+                        "meaning":  "Dù… đến mức nào cũng…",
+                        "usage":  "Dùng để nói mức độ rất cao nhưng vẫn tiếp tục làm gì",
+                        "note":  "Có thể hiểu gần với 再……也……",
+                        "example":  "再困，我也要把作业写完。",
+                        "pinyin":  "Zài kùn, wǒ yě yào bǎ zuòyè xiě wán.",
+                        "vietnamese":  "Dù buồn ngủ đến đâu, tôi cũng phải làm xong bài tập.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "不光……，也/都……",
+                        "meaning":  "Không chỉ…, mà cũng…",
+                        "usage":  "Dùng để bổ sung thêm đối tượng hoặc hành động",
+                        "note":  "不光 = 不但, dùng nhiều trong khẩu ngữ",
+                        "example":  "他不光会说汉语，也会写汉字。",
+                        "pinyin":  "Tā bùguāng huì shuō Hànyǔ, yě huì xiě Hànzì.",
+                        "vietnamese":  "Anh ấy không chỉ biết nói tiếng Trung, mà cũng biết viết chữ Hán.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "莫非……",
+                        "meaning":  "Chẳng lẽ…, lẽ nào…",
+                        "usage":  "Dùng khi suy đoán điều gì đó bất ngờ",
+                        "note":  "Mang sắc thái nghi ngờ",
+                        "example":  "他一直没回消息，莫非手机没电了？",
+                        "pinyin":  "Tā yìzhí méi huí xiāoxi, mòfēi shǒujī méi diàn le?",
+                        "vietnamese":  "Anh ấy mãi chưa trả lời tin nhắn, chẳng lẽ điện thoại hết pin rồi?",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "幸亏……，要不然……",
+                        "meaning":  "May mà…, nếu không thì…",
+                        "usage":  "Dùng để nói nhờ có một điều tốt nên tránh hậu quả xấu",
+                        "note":  "幸亏 thường nói việc đã xảy ra",
+                        "example":  "幸亏你提醒我，要不然我就忘了开会。",
+                        "pinyin":  "Xìngkuī nǐ tíxǐng wǒ, yàobùrán wǒ jiù wàng le kāihuì.",
+                        "vietnamese":  "May mà bạn nhắc tôi, nếu không tôi đã quên họp rồi.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "他今天没来上课，没准儿是生病了。",
+                        "pinyin":  "Tā jīntiān méi lái shàngkè, méizhǔnr shì shēngbìng le.",
+                        "vietnamese":  "Hôm nay anh ấy không đến lớp, biết đâu là bị ốm rồi.",
+                        "answer":  "他今天没来上课，没准儿是生病了。"
+                    },
+                    {
+                        "chinese":  "你现在去面试，没准儿还能赶得上。",
+                        "pinyin":  "Nǐ xiànzài qù miànshì, méizhǔnr hái néng gǎn de shàng.",
+                        "vietnamese":  "Bây giờ bạn đi phỏng vấn, biết đâu vẫn còn kịp.",
+                        "answer":  "你现在去面试，没准儿还能赶得上。"
+                    },
+                    {
+                        "chinese":  "这份工作看起来普通，没准儿很有挑战。",
+                        "pinyin":  "Zhè fèn gōngzuò kàn qǐlái pǔtōng, méizhǔnr hěn yǒu tiǎozhàn.",
+                        "vietnamese":  "Công việc này nhìn có vẻ bình thường, biết đâu rất có thử thách.",
+                        "answer":  "这份工作看起来普通，没准儿很有挑战。"
+                    },
+                    {
+                        "chinese":  "他突然辞职，没准儿已经找到了更好的机会。",
+                        "pinyin":  "Tā tūrán cízhí, méizhǔnr yǐjīng zhǎodào le gèng hǎo de jīhuì.",
+                        "vietnamese":  "Anh ấy đột nhiên nghỉ việc, biết đâu đã tìm được cơ hội tốt hơn.",
+                        "answer":  "他突然辞职，没准儿已经找到了更好的机会。"
+                    },
+                    {
+                        "chinese":  "你别轻易放弃，没准儿下次就成功了。",
+                        "pinyin":  "Nǐ bié qīngyì fàngqì, méizhǔnr xià cì jiù chénggōng le.",
+                        "vietnamese":  "Bạn đừng dễ dàng bỏ cuộc, biết đâu lần sau sẽ thành công.",
+                        "answer":  "你别轻易放弃，没准儿下次就成功了。"
+                    },
+                    {
+                        "chinese":  "这条路程有点远，没准儿要坐两个小时。",
+                        "pinyin":  "Zhè tiáo lùchéng yǒudiǎn yuǎn, méizhǔnr yào zuò liǎng ge xiǎoshí.",
+                        "vietnamese":  "Quãng đường này hơi xa, có lẽ phải ngồi xe hai tiếng.",
+                        "answer":  "这条路程有点远，没准儿要坐两个小时。"
+                    },
+                    {
+                        "chinese":  "他总说自己是模特，没准儿是在开玩笑。",
+                        "pinyin":  "Tā zǒng shuō zìjǐ shì mótè, méizhǔnr shì zài kāi wánxiào.",
+                        "vietnamese":  "Anh ấy cứ nói mình là người mẫu, biết đâu là đang đùa.",
+                        "answer":  "他总说自己是模特，没准儿是在开玩笑。"
+                    },
+                    {
+                        "chinese":  "这个号码不要轻易相信，没准儿是骗子。",
+                        "pinyin":  "Zhège hàomǎ búyào qīngyì xiāngxìn, méizhǔnr shì piànzi.",
+                        "vietnamese":  "Đừng dễ dàng tin số này, biết đâu là kẻ lừa đảo.",
+                        "answer":  "这个号码不要轻易相信，没准儿是骗子。"
+                    },
+                    {
+                        "chinese":  "面试结果还没出来，没准儿明天会通知。",
+                        "pinyin":  "Miànshì jiéguǒ hái méi chūlái, méizhǔnr míngtiān huì tōngzhī.",
+                        "vietnamese":  "Kết quả phỏng vấn chưa có, có lẽ ngày mai sẽ thông báo.",
+                        "answer":  "面试结果还没出来，没准儿明天会通知。"
+                    },
+                    {
+                        "chinese":  "你先别着急，没准儿事情没有那么严重。",
+                        "pinyin":  "Nǐ xiān bié zháojí, méizhǔnr shìqing méiyǒu nàme yánzhòng.",
+                        "vietnamese":  "Bạn đừng vội lo, biết đâu sự việc không nghiêm trọng như vậy.",
+                        "answer":  "你先别着急，没准儿事情没有那么严重。"
+                    },
+                    {
+                        "chinese":  "老师的话给了我很大启发。",
+                        "pinyin":  "Lǎoshī de huà gěi le wǒ hěn dà qǐfā.",
+                        "vietnamese":  "Lời của giáo viên đã cho tôi rất nhiều gợi mở.",
+                        "answer":  "老师的话给了我很大启发。"
+                    },
+                    {
+                        "chinese":  "这次面试经历启发我重新思考职业方向。",
+                        "pinyin":  "Zhè cì miànshì jīnglì qǐfā wǒ chóngxīn sīkǎo zhíyè fāngxiàng.",
+                        "vietnamese":  "Trải nghiệm phỏng vấn lần này gợi mở tôi suy nghĩ lại hướng nghề nghiệp.",
+                        "answer":  "这次面试经历启发我重新思考职业方向。"
+                    },
+                    {
+                        "chinese":  "一本好书不光能提供知识，还能给人启发。",
+                        "pinyin":  "Yì běn hǎo shū bùguāng néng tígōng zhīshi, hái néng gěi rén qǐfā.",
+                        "vietnamese":  "Một cuốn sách hay không chỉ cung cấp kiến thức mà còn gợi mở cho con người.",
+                        "answer":  "一本好书不光能提供知识，还能给人启发。"
+                    },
+                    {
+                        "chinese":  "他的故事对正在找工作的人很有启发。",
+                        "pinyin":  "Tā de gùshi duì zhèngzài zhǎo gōngzuò de rén hěn yǒu qǐfā.",
+                        "vietnamese":  "Câu chuyện của anh ấy rất có gợi mở với người đang tìm việc.",
+                        "answer":  "他的故事对正在找工作的人很有启发。"
+                    },
+                    {
+                        "chinese":  "这个挑战让我受到不少启发。",
+                        "pinyin":  "Zhège tiǎozhàn ràng wǒ shòudào bù shǎo qǐfā.",
+                        "vietnamese":  "Thử thách này khiến tôi nhận được không ít cảm hứng.",
+                        "answer":  "这个挑战让我受到不少启发。"
+                    },
+                    {
+                        "chinese":  "导师没有直接给答案，而是启发我们自己思考。",
+                        "pinyin":  "Dǎoshī méiyǒu zhíjiē gěi dá\u0027àn, ér shì qǐfā wǒmen zìjǐ sīkǎo.",
+                        "vietnamese":  "Người hướng dẫn không trực tiếp đưa đáp án mà gợi mở chúng tôi tự suy nghĩ.",
+                        "answer":  "导师没有直接给答案，而是启发我们自己思考。"
+                    },
+                    {
+                        "chinese":  "这部电影看似无聊，其实很有启发意义。",
+                        "pinyin":  "Zhè bù diànyǐng kàn sì wúliáo, qíshí hěn yǒu qǐfā yìyì.",
+                        "vietnamese":  "Bộ phim này nhìn có vẻ buồn chán, thật ra rất có ý nghĩa gợi mở.",
+                        "answer":  "这部电影看似无聊，其实很有启发意义。"
+                    },
+                    {
+                        "chinese":  "这次失败启发他不要轻易相信别人。",
+                        "pinyin":  "Zhè cì shībài qǐfā tā búyào qīngyì xiāngxìn biérén.",
+                        "vietnamese":  "Lần thất bại này gợi mở anh ấy không nên dễ dàng tin người khác.",
+                        "answer":  "这次失败启发他不要轻易相信别人。"
+                    },
+                    {
+                        "chinese":  "他的辞职决定给同事们带来很多启发。",
+                        "pinyin":  "Tā de cízhí juédìng gěi tóngshìmen dài lái hěn duō qǐfā.",
+                        "vietnamese":  "Quyết định nghỉ việc của anh ấy mang lại nhiều gợi mở cho đồng nghiệp.",
+                        "answer":  "他的辞职决定给同事们带来很多启发。"
+                    },
+                    {
+                        "chinese":  "一次普通的聊天，居然给了我新的启发。",
+                        "pinyin":  "Yí cì pǔtōng de liáotiān, jūrán gěi le wǒ xīn de qǐfā.",
+                        "vietnamese":  "Một lần trò chuyện bình thường vậy mà cho tôi cảm hứng mới.",
+                        "answer":  "一次普通的聊天，居然给了我新的启发。"
+                    },
+                    {
+                        "chinese":  "据老师介绍，这家公司正在招聘助手。",
+                        "pinyin":  "Jù lǎoshī jièshào, zhè jiā gōngsī zhèngzài zhāopìn zhùshǒu.",
+                        "vietnamese":  "Theo giáo viên giới thiệu, công ty này đang tuyển trợ lý.",
+                        "answer":  "据老师介绍，这家公司正在招聘助手。"
+                    },
+                    {
+                        "chinese":  "据我了解，他辞职不是因为工资低。",
+                        "pinyin":  "Jù wǒ liǎojiě, tā cízhí bú shì yīnwèi gōngzī dī.",
+                        "vietnamese":  "Theo tôi tìm hiểu, anh ấy nghỉ việc không phải vì lương thấp.",
+                        "answer":  "据我了解，他辞职不是因为工资低。"
+                    },
+                    {
+                        "chinese":  "据新闻报道，很多年轻人正在面对就业挑战。",
+                        "pinyin":  "Jù xīnwén bàodào, hěn duō niánqīng rén zhèngzài miànduì jiùyè tiǎozhàn.",
+                        "vietnamese":  "Theo tin tức đưa tin, nhiều người trẻ đang đối mặt thử thách việc làm.",
+                        "answer":  "据新闻报道，很多年轻人正在面对就业挑战。"
+                    },
+                    {
+                        "chinese":  "据面试官说，这个职位需要很强的沟通能力。",
+                        "pinyin":  "Jù miànshìguān shuō, zhège zhíwèi xūyào hěn qiáng de gōutōng nénglì.",
+                        "vietnamese":  "Theo người phỏng vấn nói, vị trí này cần năng lực giao tiếp rất mạnh.",
+                        "answer":  "据面试官说，这个职位需要很强的沟通能力。"
+                    },
+                    {
+                        "chinese":  "据他自己说，他以前当过模特。",
+                        "pinyin":  "Jù tā zìjǐ shuō, tā yǐqián dāng guò mótè.",
+                        "vietnamese":  "Theo chính anh ấy nói, trước đây anh ấy từng làm người mẫu.",
+                        "answer":  "据他自己说，他以前当过模特。"
+                    },
+                    {
+                        "chinese":  "据资料显示，路程大约需要三个小时。",
+                        "pinyin":  "Jù zīliào xiǎnshì, lùchéng dàyuē xūyào sān ge xiǎoshí.",
+                        "vietnamese":  "Theo tài liệu cho thấy, hành trình khoảng cần ba tiếng.",
+                        "answer":  "据资料显示，路程大约需要三个小时。"
+                    },
+                    {
+                        "chinese":  "据经验判断，这种电话很可能是骗子打来的。",
+                        "pinyin":  "Jù jīngyàn pànduàn, zhè zhǒng diànhuà hěn kěnéng shì piànzi dǎ lái de.",
+                        "vietnamese":  "Căn cứ vào kinh nghiệm phán đoán, cuộc gọi kiểu này rất có thể là kẻ lừa đảo gọi đến.",
+                        "answer":  "据经验判断，这种电话很可能是骗子打来的。"
+                    },
+                    {
+                        "chinese":  "据规定，面试前必须先提交简历。",
+                        "pinyin":  "Jù guīdìng, miànshì qián bìxū xiān tíjiāo jiǎnlì.",
+                        "vietnamese":  "Theo quy định, trước phỏng vấn phải nộp CV trước.",
+                        "answer":  "据规定，面试前必须先提交简历。"
+                    },
+                    {
+                        "chinese":  "据朋友提醒，网上的高薪工作不能轻易相信。",
+                        "pinyin":  "Jù péngyou tíxǐng, wǎngshàng de gāoxīn gōngzuò bù néng qīngyì xiāngxìn.",
+                        "vietnamese":  "Theo lời bạn nhắc, công việc lương cao trên mạng không thể dễ dàng tin.",
+                        "answer":  "据朋友提醒，网上的高薪工作不能轻易相信。"
+                    },
+                    {
+                        "chinese":  "据说这个行业不光辛苦，而且竞争很激烈。",
+                        "pinyin":  "Jùshuō zhège hángyè bùguāng xīnkǔ, érqiě jìngzhēng hěn jīliè.",
+                        "vietnamese":  "Nghe nói ngành này không chỉ vất vả mà cạnh tranh còn rất khốc liệt.",
+                        "answer":  "据说这个行业不光辛苦，而且竞争很激烈。"
+                    },
+                    {
+                        "chinese":  "每个人或多或少都会遇到一些挑战。",
+                        "pinyin":  "Měi ge rén huò duō huò shǎo dōu huì yùdào yìxiē tiǎozhàn.",
+                        "vietnamese":  "Mỗi người ít nhiều đều sẽ gặp một số thử thách.",
+                        "answer":  "每个人或多或少都会遇到一些挑战。"
+                    },
+                    {
+                        "chinese":  "这次面试或多或少影响了他的自信。",
+                        "pinyin":  "Zhè cì miànshì huò duō huò shǎo yǐngxiǎng le tā de zìxìn.",
+                        "vietnamese":  "Cuộc phỏng vấn lần này ít nhiều ảnh hưởng đến sự tự tin của anh ấy.",
+                        "answer":  "这次面试或多或少影响了他的自信。"
+                    },
+                    {
+                        "chinese":  "你看了这本书，或多或少会受到启发。",
+                        "pinyin":  "Nǐ kàn le zhè běn shū, huò duō huò shǎo huì shòudào qǐfā.",
+                        "vietnamese":  "Bạn đọc cuốn sách này, ít nhiều sẽ nhận được cảm hứng.",
+                        "answer":  "你看了这本书，或多或少会受到启发。"
+                    },
+                    {
+                        "chinese":  "长时间做无聊的工作，或多或少会让人疲惫。",
+                        "pinyin":  "Cháng shíjiān zuò wúliáo de gōngzuò, huò duō huò shǎo huì ràng rén píbèi.",
+                        "vietnamese":  "Làm công việc nhàm chán lâu dài ít nhiều sẽ khiến người ta mệt mỏi.",
+                        "answer":  "长时间做无聊的工作，或多或少会让人疲惫。"
+                    },
+                    {
+                        "chinese":  "他的辞职决定或多或少让大家感到意外。",
+                        "pinyin":  "Tā de cízhí juédìng huò duō huò shǎo ràng dàjiā gǎndào yìwài.",
+                        "vietnamese":  "Quyết định nghỉ việc của anh ấy ít nhiều khiến mọi người bất ngờ.",
+                        "answer":  "他的辞职决定或多或少让大家感到意外。"
+                    },
+                    {
+                        "chinese":  "走这么远的路程，或多或少会有点累。",
+                        "pinyin":  "Zǒu zhème yuǎn de lùchéng, huò duō huò shǎo huì yǒudiǎn lèi.",
+                        "vietnamese":  "Đi quãng đường xa như vậy ít nhiều sẽ hơi mệt.",
+                        "answer":  "走这么远的路程，或多或少会有点累。"
+                    },
+                    {
+                        "chinese":  "这件事或多或少说明他不想轻易放弃。",
+                        "pinyin":  "Zhè jiàn shì huò duō huò shǎo shuōmíng tā bù xiǎng qīngyì fàngqì.",
+                        "vietnamese":  "Việc này ít nhiều cho thấy anh ấy không muốn dễ dàng bỏ cuộc.",
+                        "answer":  "这件事或多或少说明他不想轻易放弃。"
+                    },
+                    {
+                        "chinese":  "网上信息或多或少都有夸大的地方。",
+                        "pinyin":  "Wǎngshàng xìnxī huò duō huò shǎo dōu yǒu kuādà de dìfang.",
+                        "vietnamese":  "Thông tin trên mạng ít nhiều đều có chỗ phóng đại.",
+                        "answer":  "网上信息或多或少都有夸大的地方。"
+                    },
+                    {
+                        "chinese":  "就算你有经验，也或多或少会紧张。",
+                        "pinyin":  "Jiùsuàn nǐ yǒu jīngyàn, yě huò duō huò shǎo huì jǐnzhāng.",
+                        "vietnamese":  "Cho dù bạn có kinh nghiệm, ít nhiều cũng sẽ căng thẳng.",
+                        "answer":  "就算你有经验，也或多或少会紧张。"
+                    },
+                    {
+                        "chinese":  "这个助手或多或少帮他减轻了工作压力。",
+                        "pinyin":  "Zhège zhùshǒu huò duō huò shǎo bāng tā jiǎnqīng le gōngzuò yālì.",
+                        "vietnamese":  "Trợ lý này ít nhiều đã giúp anh ấy giảm áp lực công việc.",
+                        "answer":  "这个助手或多或少帮他减轻了工作压力。"
+                    },
+                    {
+                        "chinese":  "新工作对他来说是一个很大的挑战。",
+                        "pinyin":  "Xīn gōngzuò duì tā lái shuō shì yí ge hěn dà de tiǎozhàn.",
+                        "vietnamese":  "Công việc mới đối với anh ấy là một thử thách rất lớn.",
+                        "answer":  "新工作对他来说是一个很大的挑战。"
+                    },
+                    {
+                        "chinese":  "面试本身就是一种挑战，别太害怕。",
+                        "pinyin":  "Miànshì běnshēn jiù shì yì zhǒng tiǎozhàn, bié tài hàipà.",
+                        "vietnamese":  "Bản thân phỏng vấn đã là một thử thách, đừng quá sợ.",
+                        "answer":  "面试本身就是一种挑战，别太害怕。"
+                    },
+                    {
+                        "chinese":  "他喜欢有挑战的工作，不喜欢每天重复。",
+                        "pinyin":  "Tā xǐhuan yǒu tiǎozhàn de gōngzuò, bù xǐhuan měitiān chóngfù.",
+                        "vietnamese":  "Anh ấy thích công việc có thử thách, không thích lặp lại mỗi ngày.",
+                        "answer":  "他喜欢有挑战的工作，不喜欢每天重复。"
+                    },
+                    {
+                        "chinese":  "这条路程很长，对老人来说有点挑战。",
+                        "pinyin":  "Zhè tiáo lùchéng hěn cháng, duì lǎorén lái shuō yǒudiǎn tiǎozhàn.",
+                        "vietnamese":  "Hành trình này rất dài, đối với người già hơi có thử thách.",
+                        "answer":  "这条路程很长，对老人来说有点挑战。"
+                    },
+                    {
+                        "chinese":  "就算失败了，这次挑战也会给你经验。",
+                        "pinyin":  "Jiùsuàn shībài le, zhè cì tiǎozhàn yě huì gěi nǐ jīngyàn.",
+                        "vietnamese":  "Cho dù thất bại, thử thách lần này cũng sẽ cho bạn kinh nghiệm.",
+                        "answer":  "就算失败了，这次挑战也会给你经验。"
+                    },
+                    {
+                        "chinese":  "他辞职以后，决定挑战一个完全不同的行业。",
+                        "pinyin":  "Tā cízhí yǐhòu, juédìng tiǎozhàn yí ge wánquán bùtóng de hángyè.",
+                        "vietnamese":  "Sau khi nghỉ việc, anh ấy quyết định thử thách một ngành hoàn toàn khác.",
+                        "answer":  "他辞职以后，决定挑战一个完全不同的行业。"
+                    },
+                    {
+                        "chinese":  "不光年轻人，成年人也需要面对挑战。",
+                        "pinyin":  "Bùguāng niánqīng rén, chéngnián rén yě xūyào miànduì tiǎozhàn.",
+                        "vietnamese":  "Không chỉ người trẻ, người trưởng thành cũng cần đối mặt thử thách.",
+                        "answer":  "不光年轻人，成年人也需要面对挑战。"
+                    },
+                    {
+                        "chinese":  "这个项目挑战很大，但回报也可能很高。",
+                        "pinyin":  "Zhège xiàngmù tiǎozhàn hěn dà, dàn huíbào yě kěnéng hěn gāo.",
+                        "vietnamese":  "Dự án này thử thách rất lớn nhưng lợi ích nhận lại cũng có thể cao.",
+                        "answer":  "这个项目挑战很大，但回报也可能很高。"
+                    },
+                    {
+                        "chinese":  "他居然主动接受了最难的挑战。",
+                        "pinyin":  "Tā jūrán zhǔdòng jiēshòu le zuì nán de tiǎozhàn.",
+                        "vietnamese":  "Anh ấy vậy mà chủ động nhận thử thách khó nhất.",
+                        "answer":  "他居然主动接受了最难的挑战。"
+                    },
+                    {
+                        "chinese":  "真正的成长，往往来自一次次挑战。",
+                        "pinyin":  "Zhēnzhèng de chéngzhǎng, wǎngwǎng láizì yí cì cì tiǎozhàn.",
+                        "vietnamese":  "Sự trưởng thành thật sự thường đến từ từng lần thử thách.",
+                        "answer":  "真正的成长，往往来自一次次挑战。"
+                    },
+                    {
+                        "chinese":  "这份工作太无聊，我想换一个环境。",
+                        "pinyin":  "Zhè fèn gōngzuò tài wúliáo, wǒ xiǎng huàn yí ge huánjìng.",
+                        "vietnamese":  "Công việc này quá nhàm chán, tôi muốn đổi môi trường.",
+                        "answer":  "这份工作太无聊，我想换一个环境。"
+                    },
+                    {
+                        "chinese":  "他觉得每天重复同样的任务很无聊。",
+                        "pinyin":  "Tā juéde měitiān chóngfù tóngyàng de rènwu hěn wúliáo.",
+                        "vietnamese":  "Anh ấy thấy mỗi ngày lặp lại cùng nhiệm vụ rất buồn chán.",
+                        "answer":  "他觉得每天重复同样的任务很无聊。"
+                    },
+                    {
+                        "chinese":  "无聊的时候，他喜欢看一些有启发的文章。",
+                        "pinyin":  "Wúliáo de shíhou, tā xǐhuan kàn yìxiē yǒu qǐfā de wénzhāng.",
+                        "vietnamese":  "Khi buồn chán, anh ấy thích đọc một số bài viết có cảm hứng.",
+                        "answer":  "无聊的时候，他喜欢看一些有启发的文章。"
+                    },
+                    {
+                        "chinese":  "不要把面试当成无聊的考试。",
+                        "pinyin":  "Búyào bǎ miànshì dàngchéng wúliáo de kǎoshì.",
+                        "vietnamese":  "Đừng xem phỏng vấn như một kỳ thi nhàm chán.",
+                        "answer":  "不要把面试当成无聊的考试。"
+                    },
+                    {
+                        "chinese":  "这部电影开头有点无聊，后面却很精彩。",
+                        "pinyin":  "Zhè bù diànyǐng kāitóu yǒudiǎn wúliáo, hòumiàn què hěn jīngcǎi.",
+                        "vietnamese":  "Bộ phim này phần đầu hơi nhàm chán nhưng phía sau lại rất hay.",
+                        "answer":  "这部电影开头有点无聊，后面却很精彩。"
+                    },
+                    {
+                        "chinese":  "他一无聊就上网找兼职信息。",
+                        "pinyin":  "Tā yì wúliáo jiù shàngwǎng zhǎo jiānzhí xìnxī.",
+                        "vietnamese":  "Anh ấy cứ buồn chán là lên mạng tìm thông tin làm thêm.",
+                        "answer":  "他一无聊就上网找兼职信息。"
+                    },
+                    {
+                        "chinese":  "就算工作无聊，也不能轻易辞职。",
+                        "pinyin":  "Jiùsuàn gōngzuò wúliáo, yě bù néng qīngyì cízhí.",
+                        "vietnamese":  "Cho dù công việc nhàm chán, cũng không thể dễ dàng nghỉ việc.",
+                        "answer":  "就算工作无聊，也不能轻易辞职。"
+                    },
+                    {
+                        "chinese":  "长时间待在家里不出门，真的很无聊。",
+                        "pinyin":  "Cháng shíjiān dāi zài jiā lǐ bù chūmén, zhēn de hěn wúliáo.",
+                        "vietnamese":  "Ở nhà lâu không ra ngoài thật sự rất buồn chán.",
+                        "answer":  "长时间待在家里不出门，真的很无聊。"
+                    },
+                    {
+                        "chinese":  "他不光觉得无聊，还觉得没有成长空间。",
+                        "pinyin":  "Tā bùguāng juéde wúliáo, hái juéde méiyǒu chéngzhǎng kōngjiān.",
+                        "vietnamese":  "Anh ấy không chỉ thấy nhàm chán mà còn thấy không có không gian phát triển.",
+                        "answer":  "他不光觉得无聊，还觉得没有成长空间。"
+                    },
+                    {
+                        "chinese":  "无聊并不可怕，可怕的是没有改变的勇气。",
+                        "pinyin":  "Wúliáo bìng bù kěpà, kěpà de shì méiyǒu gǎibiàn de yǒngqì.",
+                        "vietnamese":  "Buồn chán không đáng sợ, đáng sợ là không có dũng khí thay đổi.",
+                        "answer":  "无聊并不可怕，可怕的是没有改变的勇气。"
+                    },
+                    {
+                        "chinese":  "就算面试失败，也不要失去信心。",
+                        "pinyin":  "Jiùsuàn miànshì shībài, yě búyào shīqù xìnxīn.",
+                        "vietnamese":  "Cho dù phỏng vấn thất bại, cũng đừng mất tự tin.",
+                        "answer":  "就算面试失败，也不要失去信心。"
+                    },
+                    {
+                        "chinese":  "就算路程很远，我也想亲自去看看。",
+                        "pinyin":  "Jiùsuàn lùchéng hěn yuǎn, wǒ yě xiǎng qīnzì qù kànkan.",
+                        "vietnamese":  "Cho dù quãng đường rất xa, tôi cũng muốn tự mình đi xem.",
+                        "answer":  "就算路程很远，我也想亲自去看看。"
+                    },
+                    {
+                        "chinese":  "就算工作无聊，也能从中找到启发。",
+                        "pinyin":  "Jiùsuàn gōngzuò wúliáo, yě néng cóng zhōng zhǎodào qǐfā.",
+                        "vietnamese":  "Cho dù công việc nhàm chán, cũng có thể tìm được cảm hứng từ đó.",
+                        "answer":  "就算工作无聊，也能从中找到启发。"
+                    },
+                    {
+                        "chinese":  "就算他辞职了，公司也会继续运转。",
+                        "pinyin":  "Jiùsuàn tā cízhí le, gōngsī yě huì jìxù yùnzhuǎn.",
+                        "vietnamese":  "Cho dù anh ấy nghỉ việc, công ty cũng sẽ tiếp tục vận hành.",
+                        "answer":  "就算他辞职了，公司也会继续运转。"
+                    },
+                    {
+                        "chinese":  "就算对方说得很真，也不要轻易相信。",
+                        "pinyin":  "Jiùsuàn duìfāng shuō de hěn zhēn, yě búyào qīngyì xiāngxìn.",
+                        "vietnamese":  "Cho dù đối phương nói rất thật, cũng đừng dễ dàng tin.",
+                        "answer":  "就算对方说得很真，也不要轻易相信。"
+                    },
+                    {
+                        "chinese":  "就算你没有经验，也可以挑战这个职位。",
+                        "pinyin":  "Jiùsuàn nǐ méiyǒu jīngyàn, yě kěyǐ tiǎozhàn zhège zhíwèi.",
+                        "vietnamese":  "Cho dù bạn không có kinh nghiệm, cũng có thể thử thách vị trí này.",
+                        "answer":  "就算你没有经验，也可以挑战这个职位。"
+                    },
+                    {
+                        "chinese":  "就算天下没有免费的午餐，也不代表没有机会。",
+                        "pinyin":  "Jiùsuàn tiānxià méiyǒu miǎnfèi de wǔcān, yě bù dàibiǎo méiyǒu jīhuì.",
+                        "vietnamese":  "Cho dù thiên hạ không có bữa trưa miễn phí, cũng không có nghĩa là không có cơ hội.",
+                        "answer":  "就算天下没有免费的午餐，也不代表没有机会。"
+                    },
+                    {
+                        "chinese":  "就算他是模特，也需要认真准备面试。",
+                        "pinyin":  "Jiùsuàn tā shì mótè, yě xūyào rènzhēn zhǔnbèi miànshì.",
+                        "vietnamese":  "Cho dù anh ấy là người mẫu, cũng cần chuẩn bị phỏng vấn nghiêm túc.",
+                        "answer":  "就算他是模特，也需要认真准备面试。"
+                    },
+                    {
+                        "chinese":  "就算助手很能干，老板也不能什么都不管。",
+                        "pinyin":  "Jiùsuàn zhùshǒu hěn nénggàn, lǎobǎn yě bù néng shénme dōu bù guǎn.",
+                        "vietnamese":  "Cho dù trợ lý rất giỏi, sếp cũng không thể không quản gì cả.",
+                        "answer":  "就算助手很能干，老板也不能什么都不管。"
+                    },
+                    {
+                        "chinese":  "就算这次挑战很难，我们也要试一试。",
+                        "pinyin":  "Jiùsuàn zhè cì tiǎozhàn hěn nán, wǒmen yě yào shì yi shì.",
+                        "vietnamese":  "Cho dù thử thách lần này rất khó, chúng ta cũng phải thử một chút.",
+                        "answer":  "就算这次挑战很难，我们也要试一试。"
+                    },
+                    {
+                        "chinese":  "他不光会说英语，还会说韩语。",
+                        "pinyin":  "Tā bùguāng huì shuō Yīngyǔ, hái huì shuō Hányǔ.",
+                        "vietnamese":  "Anh ấy không chỉ biết nói tiếng Anh mà còn biết nói tiếng Hàn.",
+                        "answer":  "他不光会说英语，还会说韩语。"
+                    },
+                    {
+                        "chinese":  "这份工作不光有挑战，而且很有发展空间。",
+                        "pinyin":  "Zhè fèn gōngzuò bùguāng yǒu tiǎozhàn, érqiě hěn yǒu fāzhǎn kōngjiān.",
+                        "vietnamese":  "Công việc này không chỉ có thử thách mà còn có không gian phát triển.",
+                        "answer":  "这份工作不光有挑战，而且很有发展空间。"
+                    },
+                    {
+                        "chinese":  "面试不光看简历，也看表达能力。",
+                        "pinyin":  "Miànshì bùguāng kàn jiǎnlì, yě kàn biǎodá nénglì.",
+                        "vietnamese":  "Phỏng vấn không chỉ xem CV mà còn xem năng lực biểu đạt.",
+                        "answer":  "面试不光看简历，也看表达能力。"
+                    },
+                    {
+                        "chinese":  "他辞职不光是因为工资低，还有别的原因。",
+                        "pinyin":  "Tā cízhí bùguāng shì yīnwèi gōngzī dī, hái yǒu bié de yuányīn.",
+                        "vietnamese":  "Anh ấy nghỉ việc không chỉ vì lương thấp mà còn có lý do khác.",
+                        "answer":  "他辞职不光是因为工资低，还有别的原因。"
+                    },
+                    {
+                        "chinese":  "骗子不光会打电话，还会发假邮件。",
+                        "pinyin":  "Piànzi bùguāng huì dǎ diànhuà, hái huì fā jiǎ yóujiàn.",
+                        "vietnamese":  "Kẻ lừa đảo không chỉ biết gọi điện mà còn gửi email giả.",
+                        "answer":  "骗子不光会打电话，还会发假邮件。"
+                    },
+                    {
+                        "chinese":  "这次经历不光让我紧张，也给了我启发。",
+                        "pinyin":  "Zhè cì jīnglì bùguāng ràng wǒ jǐnzhāng, yě gěi le wǒ qǐfā.",
+                        "vietnamese":  "Trải nghiệm lần này không chỉ khiến tôi căng thẳng mà còn cho tôi cảm hứng.",
+                        "answer":  "这次经历不光让我紧张，也给了我启发。"
+                    },
+                    {
+                        "chinese":  "他不光想当模特，还想自己开公司。",
+                        "pinyin":  "Tā bùguāng xiǎng dāng mótè, hái xiǎng zìjǐ kāi gōngsī.",
+                        "vietnamese":  "Anh ấy không chỉ muốn làm người mẫu mà còn muốn tự mở công ty.",
+                        "answer":  "他不光想当模特，还想自己开公司。"
+                    },
+                    {
+                        "chinese":  "这个助手不光工作认真，而且反应很快。",
+                        "pinyin":  "Zhège zhùshǒu bùguāng gōngzuò rènzhēn, érqiě fǎnyìng hěn kuài.",
+                        "vietnamese":  "Trợ lý này không chỉ làm việc nghiêm túc mà phản ứng còn rất nhanh.",
+                        "answer":  "这个助手不光工作认真，而且反应很快。"
+                    },
+                    {
+                        "chinese":  "成长不光来自成功，也来自失败。",
+                        "pinyin":  "Chéngzhǎng bùguāng láizì chénggōng, yě láizì shībài.",
+                        "vietnamese":  "Trưởng thành không chỉ đến từ thành công mà cũng đến từ thất bại.",
+                        "answer":  "成长不光来自成功，也来自失败。"
+                    },
+                    {
+                        "chinese":  "他不光没有觉得无聊，反而越来越感兴趣。",
+                        "pinyin":  "Tā bùguāng méiyǒu juéde wúliáo, fǎn\u0027ér yuèláiyuè gǎn xìngqù.",
+                        "vietnamese":  "Anh ấy không những không thấy buồn chán, ngược lại càng ngày càng hứng thú.",
+                        "answer":  "他不光没有觉得无聊，反而越来越感兴趣。"
+                    },
+                    {
+                        "chinese":  "他考虑了很久，最后还是决定辞职。",
+                        "pinyin":  "Tā kǎolǜ le hěn jiǔ, zuìhòu háishi juédìng cízhí.",
+                        "vietnamese":  "Anh ấy suy nghĩ rất lâu, cuối cùng vẫn quyết định nghỉ việc.",
+                        "answer":  "他考虑了很久，最后还是决定辞职。"
+                    },
+                    {
+                        "chinese":  "辞职以前，最好先想清楚下一步计划。",
+                        "pinyin":  "Cízhí yǐqián, zuìhǎo xiān xiǎng qīngchu xià yí bù jìhuà.",
+                        "vietnamese":  "Trước khi nghỉ việc, tốt nhất nghĩ rõ kế hoạch bước tiếp theo.",
+                        "answer":  "辞职以前，最好先想清楚下一步计划。"
+                    },
+                    {
+                        "chinese":  "他突然辞职，让同事们都很意外。",
+                        "pinyin":  "Tā tūrán cízhí, ràng tóngshìmen dōu hěn yìwài.",
+                        "vietnamese":  "Anh ấy đột nhiên nghỉ việc khiến đồng nghiệp đều rất bất ngờ.",
+                        "answer":  "他突然辞职，让同事们都很意外。"
+                    },
+                    {
+                        "chinese":  "就算工作无聊，也不能冲动辞职。",
+                        "pinyin":  "Jiùsuàn gōngzuò wúliáo, yě bù néng chōngdòng cízhí.",
+                        "vietnamese":  "Cho dù công việc nhàm chán, cũng không thể bốc đồng nghỉ việc.",
+                        "answer":  "就算工作无聊，也不能冲动辞职。"
+                    },
+                    {
+                        "chinese":  "她辞职以后，去参加了模特面试。",
+                        "pinyin":  "Tā cízhí yǐhòu, qù cānjiā le mótè miànshì.",
+                        "vietnamese":  "Sau khi nghỉ việc, cô ấy đi tham gia phỏng vấn người mẫu.",
+                        "answer":  "她辞职以后，去参加了模特面试。"
+                    },
+                    {
+                        "chinese":  "据朋友说，他辞职是为了接受更大的挑战。",
+                        "pinyin":  "Jù péngyou shuō, tā cízhí shì wèile jiēshòu gèng dà de tiǎozhàn.",
+                        "vietnamese":  "Theo bạn nói, anh ấy nghỉ việc là để nhận thử thách lớn hơn.",
+                        "answer":  "据朋友说，他辞职是为了接受更大的挑战。"
+                    },
+                    {
+                        "chinese":  "辞职不是逃避，而是重新选择方向。",
+                        "pinyin":  "Cízhí bú shì táobì, ér shì chóngxīn xuǎnzé fāngxiàng.",
+                        "vietnamese":  "Nghỉ việc không phải là trốn tránh mà là chọn lại phương hướng.",
+                        "answer":  "辞职不是逃避，而是重新选择方向。"
+                    },
+                    {
+                        "chinese":  "父母不太理解他为什么要辞职。",
+                        "pinyin":  "Fùmǔ bú tài lǐjiě tā wèishénme yào cízhí.",
+                        "vietnamese":  "Cha mẹ không hiểu lắm vì sao anh ấy muốn nghỉ việc.",
+                        "answer":  "父母不太理解他为什么要辞职。"
+                    },
+                    {
+                        "chinese":  "他辞职以后，或多或少有点后悔。",
+                        "pinyin":  "Tā cízhí yǐhòu, huò duō huò shǎo yǒudiǎn hòuhuǐ.",
+                        "vietnamese":  "Sau khi nghỉ việc, anh ấy ít nhiều hơi hối hận.",
+                        "answer":  "他辞职以后，或多或少有点后悔。"
+                    },
+                    {
+                        "chinese":  "如果没有存款，轻易辞职会很危险。",
+                        "pinyin":  "Rúguǒ méiyǒu cúnkuǎn, qīngyì cízhí huì hěn wēixiǎn.",
+                        "vietnamese":  "Nếu không có tiền tiết kiệm, dễ dàng nghỉ việc sẽ rất nguy hiểm.",
+                        "answer":  "如果没有存款，轻易辞职会很危险。"
+                    },
+                    {
+                        "chinese":  "他居然通过了最难的面试。",
+                        "pinyin":  "Tā jūrán tōngguò le zuì nán de miànshì.",
+                        "vietnamese":  "Anh ấy vậy mà vượt qua được cuộc phỏng vấn khó nhất.",
+                        "answer":  "他居然通过了最难的面试。"
+                    },
+                    {
+                        "chinese":  "我没想到她居然会突然辞职。",
+                        "pinyin":  "Wǒ méi xiǎngdào tā jūrán huì tūrán cízhí.",
+                        "vietnamese":  "Tôi không ngờ cô ấy vậy mà sẽ đột nhiên nghỉ việc.",
+                        "answer":  "我没想到她居然会突然辞职。"
+                    },
+                    {
+                        "chinese":  "这个看起来无聊的故事，居然很有启发。",
+                        "pinyin":  "Zhège kàn qǐlái wúliáo de gùshi, jūrán hěn yǒu qǐfā.",
+                        "vietnamese":  "Câu chuyện nhìn có vẻ buồn chán này vậy mà rất có cảm hứng.",
+                        "answer":  "这个看起来无聊的故事，居然很有启发。"
+                    },
+                    {
+                        "chinese":  "他平时很安静，居然敢挑战主持人的工作。",
+                        "pinyin":  "Tā píngshí hěn ānjìng, jūrán gǎn tiǎozhàn zhǔchírén de gōngzuò.",
+                        "vietnamese":  "Bình thường anh ấy rất ít nói, vậy mà dám thử thách công việc MC.",
+                        "answer":  "他平时很安静，居然敢挑战主持人的工作。"
+                    },
+                    {
+                        "chinese":  "路程这么远，他居然一个人走到了。",
+                        "pinyin":  "Lùchéng zhème yuǎn, tā jūrán yí ge rén zǒu dào le.",
+                        "vietnamese":  "Quãng đường xa như vậy, anh ấy vậy mà tự đi đến nơi.",
+                        "answer":  "路程这么远，他居然一个人走到了。"
+                    },
+                    {
+                        "chinese":  "那个骗子居然用同样的方法骗了很多人。",
+                        "pinyin":  "Nà ge piànzi jūrán yòng tóngyàng de fāngfǎ piàn le hěn duō rén.",
+                        "vietnamese":  "Kẻ lừa đảo đó vậy mà dùng cùng một cách lừa rất nhiều người.",
+                        "answer":  "那个骗子居然用同样的方法骗了很多人。"
+                    },
+                    {
+                        "chinese":  "他居然轻易相信了网上的高薪广告。",
+                        "pinyin":  "Tā jūrán qīngyì xiāngxìn le wǎngshàng de gāoxīn guǎnggào.",
+                        "vietnamese":  "Anh ấy vậy mà dễ dàng tin quảng cáo lương cao trên mạng.",
+                        "answer":  "他居然轻易相信了网上的高薪广告。"
+                    },
+                    {
+                        "chinese":  "天哪，他居然把面试时间记错了。",
+                        "pinyin":  "Tiān na, tā jūrán bǎ miànshì shíjiān jì cuò le.",
+                        "vietnamese":  "Trời ơi, anh ấy vậy mà nhớ sai thời gian phỏng vấn.",
+                        "answer":  "天哪，他居然把面试时间记错了。"
+                    },
+                    {
+                        "chinese":  "这个助手居然能同时处理三项任务。",
+                        "pinyin":  "Zhège zhùshǒu jūrán néng tóngshí chǔlǐ sān xiàng rènwu.",
+                        "vietnamese":  "Trợ lý này vậy mà có thể xử lý đồng thời ba nhiệm vụ.",
+                        "answer":  "这个助手居然能同时处理三项任务。"
+                    },
+                    {
+                        "chinese":  "幸亏你提醒我，不然我居然差点相信他。",
+                        "pinyin":  "Xìngkuī nǐ tíxǐng wǒ, bùrán wǒ jūrán chàdiǎn xiāngxìn tā.",
+                        "vietnamese":  "May mà bạn nhắc tôi, nếu không tôi vậy mà suýt tin anh ta.",
+                        "answer":  "幸亏你提醒我，不然我居然差点相信他。"
+                    },
+                    {
+                        "chinese":  "从学校到公司，路程大约一个小时。",
+                        "pinyin":  "Cóng xuéxiào dào gōngsī, lùchéng dàyuē yí ge xiǎoshí.",
+                        "vietnamese":  "Từ trường đến công ty, quãng đường khoảng một tiếng.",
+                        "answer":  "从学校到公司，路程大约一个小时。"
+                    },
+                    {
+                        "chinese":  "这段路程虽然不远，但是很容易堵车。",
+                        "pinyin":  "Zhè duàn lùchéng suīrán bù yuǎn, dànshì hěn róngyì dǔchē.",
+                        "vietnamese":  "Đoạn đường này tuy không xa nhưng rất dễ tắc đường.",
+                        "answer":  "这段路程虽然不远，但是很容易堵车。"
+                    },
+                    {
+                        "chinese":  "面试地点太远，来回路程让我很累。",
+                        "pinyin":  "Miànshì dìdiǎn tài yuǎn, láihuí lùchéng ràng wǒ hěn lèi.",
+                        "vietnamese":  "Địa điểm phỏng vấn quá xa, quãng đường đi về khiến tôi rất mệt.",
+                        "answer":  "面试地点太远，来回路程让我很累。"
+                    },
+                    {
+                        "chinese":  "据导游介绍，今天的路程比较轻松。",
+                        "pinyin":  "Jù dǎoyóu jièshào, jīntiān de lùchéng bǐjiào qīngsōng.",
+                        "vietnamese":  "Theo hướng dẫn viên giới thiệu, hành trình hôm nay khá nhẹ nhàng.",
+                        "answer":  "据导游介绍，今天的路程比较轻松。"
+                    },
+                    {
+                        "chinese":  "这么长的路程，对孩子来说是个挑战。",
+                        "pinyin":  "Zhème cháng de lùchéng, duì háizi lái shuō shì ge tiǎozhàn.",
+                        "vietnamese":  "Quãng đường dài như vậy, đối với trẻ em là một thử thách.",
+                        "answer":  "这么长的路程，对孩子来说是个挑战。"
+                    },
+                    {
+                        "chinese":  "他不想白白浪费路程，所以顺便去面试。",
+                        "pinyin":  "Tā bù xiǎng báibái làngfèi lùchéng, suǒyǐ shùnbiàn qù miànshì.",
+                        "vietnamese":  "Anh ấy không muốn phí quãng đường nên tiện thể đi phỏng vấn.",
+                        "answer":  "他不想白白浪费路程，所以顺便去面试。"
+                    },
+                    {
+                        "chinese":  "如果路程太远，没准儿需要提前一天出发。",
+                        "pinyin":  "Rúguǒ lùchéng tài yuǎn, méizhǔnr xūyào tíqián yì tiān chūfā.",
+                        "vietnamese":  "Nếu quãng đường quá xa, có lẽ cần xuất phát trước một ngày.",
+                        "answer":  "如果路程太远，没准儿需要提前一天出发。"
+                    },
+                    {
+                        "chinese":  "这次旅行的路程不光长，而且天气也不好。",
+                        "pinyin":  "Zhè cì lǚxíng de lùchéng bùguāng cháng, érqiě tiānqì yě bù hǎo.",
+                        "vietnamese":  "Hành trình chuyến đi lần này không chỉ dài mà thời tiết cũng không tốt.",
+                        "answer":  "这次旅行的路程不光长，而且天气也不好。"
+                    },
+                    {
+                        "chinese":  "他整整走完了最后一段路程。",
+                        "pinyin":  "Tā zhěngzhěng zǒu wán le zuìhòu yí duàn lùchéng.",
+                        "vietnamese":  "Anh ấy đi hết trọn đoạn đường cuối cùng.",
+                        "answer":  "他整整走完了最后一段路程。"
+                    },
+                    {
+                        "chinese":  "路程再远，只要值得，我也愿意去。",
+                        "pinyin":  "Lùchéng zài yuǎn, zhǐyào zhíde, wǒ yě yuànyì qù.",
+                        "vietnamese":  "Quãng đường dù xa đến đâu, chỉ cần đáng giá, tôi cũng muốn đi.",
+                        "answer":  "路程再远，只要值得，我也愿意去。"
+                    },
+                    {
+                        "chinese":  "网上有些高薪招聘其实是骗子发的。",
+                        "pinyin":  "Wǎngshàng yǒuxiē gāoxīn zhāopìn qíshí shì piànzi fā de.",
+                        "vietnamese":  "Một số tuyển dụng lương cao trên mạng thật ra do kẻ lừa đảo đăng.",
+                        "answer":  "网上有些高薪招聘其实是骗子发的。"
+                    },
+                    {
+                        "chinese":  "你不要轻易相信陌生人，没准儿他是骗子。",
+                        "pinyin":  "Nǐ búyào qīngyì xiāngxìn mòshēng rén, méizhǔnr tā shì piànzi.",
+                        "vietnamese":  "Bạn đừng dễ dàng tin người lạ, biết đâu anh ta là kẻ lừa đảo.",
+                        "answer":  "你不要轻易相信陌生人，没准儿他是骗子。"
+                    },
+                    {
+                        "chinese":  "这个骗子居然假装成公司助手。",
+                        "pinyin":  "Zhège piànzi jūrán jiǎzhuāng chéng gōngsī zhùshǒu.",
+                        "vietnamese":  "Kẻ lừa đảo này vậy mà giả làm trợ lý công ty.",
+                        "answer":  "这个骗子居然假装成公司助手。"
+                    },
+                    {
+                        "chinese":  "面试前让你先交钱的，多半是骗子。",
+                        "pinyin":  "Miànshì qián ràng nǐ xiān jiāo qián de, duōbàn shì piànzi.",
+                        "vietnamese":  "Trước phỏng vấn mà bắt bạn nộp tiền trước, phần lớn là kẻ lừa đảo.",
+                        "answer":  "面试前让你先交钱的，多半是骗子。"
+                    },
+                    {
+                        "chinese":  "据警方提醒，最近这种骗子越来越多。",
+                        "pinyin":  "Jù jǐngfāng tíxǐng, zuìjìn zhè zhǒng piànzi yuèláiyuè duō.",
+                        "vietnamese":  "Theo cảnh sát nhắc nhở, gần đây loại lừa đảo này ngày càng nhiều.",
+                        "answer":  "据警方提醒，最近这种骗子越来越多。"
+                    },
+                    {
+                        "chinese":  "他差点被骗子骗走自己的证件信息。",
+                        "pinyin":  "Tā chàdiǎn bèi piànzi piàn zǒu zìjǐ de zhèngjiàn xìnxī.",
+                        "vietnamese":  "Anh ấy suýt bị kẻ lừa đảo lừa lấy thông tin giấy tờ.",
+                        "answer":  "他差点被骗子骗走自己的证件信息。"
+                    },
+                    {
+                        "chinese":  "骗子不光会说好听的话，还会伪造资料。",
+                        "pinyin":  "Piànzi bùguāng huì shuō hǎotīng de huà, hái huì wěizào zīliào.",
+                        "vietnamese":  "Kẻ lừa đảo không chỉ biết nói lời hay mà còn làm giả tài liệu.",
+                        "answer":  "骗子不光会说好听的话，还会伪造资料。"
+                    },
+                    {
+                        "chinese":  "天下没有免费的午餐，别轻易相信骗子。",
+                        "pinyin":  "Tiānxià méiyǒu miǎnfèi de wǔcān, bié qīngyì xiāngxìn piànzi.",
+                        "vietnamese":  "Trên đời không có bữa trưa miễn phí, đừng dễ tin kẻ lừa đảo.",
+                        "answer":  "天下没有免费的午餐，别轻易相信骗子。"
+                    },
+                    {
+                        "chinese":  "幸亏朋友提醒，他才发现对方是骗子。",
+                        "pinyin":  "Xìngkuī péngyou tíxǐng, tā cái fāxiàn duìfāng shì piànzi.",
+                        "vietnamese":  "May mà bạn nhắc, anh ấy mới phát hiện đối phương là kẻ lừa đảo.",
+                        "answer":  "幸亏朋友提醒，他才发现对方是骗子。"
+                    },
+                    {
+                        "chinese":  "遇到可疑电话，先核实，别让骗子有机会。",
+                        "pinyin":  "Yù dào kěyí diànhuà, xiān héshí, bié ràng piànzi yǒu jīhuì.",
+                        "vietnamese":  "Gặp cuộc gọi đáng ngờ thì xác minh trước, đừng để kẻ lừa đảo có cơ hội.",
+                        "answer":  "遇到可疑电话，先核实，别让骗子有机会。"
+                    },
+                    {
+                        "chinese":  "不要轻易相信网上的高薪职位。",
+                        "pinyin":  "Búyào qīngyì xiāngxìn wǎngshàng de gāoxīn zhíwèi.",
+                        "vietnamese":  "Đừng dễ dàng tin các vị trí lương cao trên mạng.",
+                        "answer":  "不要轻易相信网上的高薪职位。"
+                    },
+                    {
+                        "chinese":  "他不是会轻易辞职的人。",
+                        "pinyin":  "Tā bú shì huì qīngyì cízhí de rén.",
+                        "vietnamese":  "Anh ấy không phải người sẽ dễ dàng nghỉ việc.",
+                        "answer":  "他不是会轻易辞职的人。"
+                    },
+                    {
+                        "chinese":  "面试机会来得不容易，别轻易放弃。",
+                        "pinyin":  "Miànshì jīhuì lái de bù róngyì, bié qīngyì fàngqì.",
+                        "vietnamese":  "Cơ hội phỏng vấn đến không dễ, đừng dễ dàng từ bỏ.",
+                        "answer":  "面试机会来得不容易，别轻易放弃。"
+                    },
+                    {
+                        "chinese":  "这么重要的决定，不能轻易下结论。",
+                        "pinyin":  "Zhème zhòngyào de juédìng, bù néng qīngyì xià jiélùn.",
+                        "vietnamese":  "Quyết định quan trọng như vậy không thể dễ dàng kết luận.",
+                        "answer":  "这么重要的决定，不能轻易下结论。"
+                    },
+                    {
+                        "chinese":  "就算工作很无聊，也别轻易否定自己。",
+                        "pinyin":  "Jiùsuàn gōngzuò hěn wúliáo, yě bié qīngyì fǒudìng zìjǐ.",
+                        "vietnamese":  "Cho dù công việc rất nhàm chán, cũng đừng dễ dàng phủ nhận bản thân.",
+                        "answer":  "就算工作很无聊，也别轻易否定自己。"
+                    },
+                    {
+                        "chinese":  "他轻易相信骗子，结果损失了不少钱。",
+                        "pinyin":  "Tā qīngyì xiāngxìn piànzi, jiéguǒ sǔnshī le bù shǎo qián.",
+                        "vietnamese":  "Anh ấy dễ dàng tin kẻ lừa đảo, kết quả mất không ít tiền.",
+                        "answer":  "他轻易相信骗子，结果损失了不少钱。"
+                    },
+                    {
+                        "chinese":  "真正有经验的人，不会轻易被表面吸引。",
+                        "pinyin":  "Zhēnzhèng yǒu jīngyàn de rén, bú huì qīngyì bèi biǎomiàn xīyǐn.",
+                        "vietnamese":  "Người thật sự có kinh nghiệm sẽ không dễ bị vẻ bề ngoài thu hút.",
+                        "answer":  "真正有经验的人，不会轻易被表面吸引。"
+                    },
+                    {
+                        "chinese":  "不要轻易评价别人的选择。",
+                        "pinyin":  "Búyào qīngyì píngjià biérén de xuǎnzé.",
+                        "vietnamese":  "Đừng dễ dàng đánh giá lựa chọn của người khác.",
+                        "answer":  "不要轻易评价别人的选择。"
+                    },
+                    {
+                        "chinese":  "这次挑战很难，但他没有轻易后退。",
+                        "pinyin":  "Zhè cì tiǎozhàn hěn nán, dàn tā méiyǒu qīngyì hòutuì.",
+                        "vietnamese":  "Thử thách lần này rất khó nhưng anh ấy không dễ lùi bước.",
+                        "answer":  "这次挑战很难，但他没有轻易后退。"
+                    },
+                    {
+                        "chinese":  "助手提醒老板，不要轻易公开公司资料。",
+                        "pinyin":  "Zhùshǒu tíxǐng lǎobǎn, búyào qīngyì gōngkāi gōngsī zīliào.",
+                        "vietnamese":  "Trợ lý nhắc sếp đừng dễ dàng công khai tài liệu công ty.",
+                        "answer":  "助手提醒老板，不要轻易公开公司资料。"
+                    },
+                    {
+                        "chinese":  "她以前做过服装模特。",
+                        "pinyin":  "Tā yǐqián zuò guò fúzhuāng mótè.",
+                        "vietnamese":  "Trước đây cô ấy từng làm người mẫu thời trang.",
+                        "answer":  "她以前做过服装模特。"
+                    },
+                    {
+                        "chinese":  "当模特不光要外表好，还要很能吃苦。",
+                        "pinyin":  "Dāng mótè bùguāng yào wàibiǎo hǎo, hái yào hěn néng chīkǔ.",
+                        "vietnamese":  "Làm người mẫu không chỉ cần ngoại hình tốt mà còn phải chịu khổ giỏi.",
+                        "answer":  "当模特不光要外表好，还要很能吃苦。"
+                    },
+                    {
+                        "chinese":  "他去参加模特面试，结果居然通过了。",
+                        "pinyin":  "Tā qù cānjiā mótè miànshì, jiéguǒ jūrán tōngguò le.",
+                        "vietnamese":  "Anh ấy đi tham gia phỏng vấn người mẫu, kết quả vậy mà đỗ.",
+                        "answer":  "他去参加模特面试，结果居然通过了。"
+                    },
+                    {
+                        "chinese":  "模特行业竞争激烈，挑战也很多。",
+                        "pinyin":  "Mótè hángyè jìngzhēng jīliè, tiǎozhàn yě hěn duō.",
+                        "vietnamese":  "Ngành người mẫu cạnh tranh khốc liệt, thử thách cũng nhiều.",
+                        "answer":  "模特行业竞争激烈，挑战也很多。"
+                    },
+                    {
+                        "chinese":  "她不是专业模特，却拍得很自然。",
+                        "pinyin":  "Tā bú shì zhuānyè mótè, què pāi de hěn zìrán.",
+                        "vietnamese":  "Cô ấy không phải người mẫu chuyên nghiệp nhưng chụp rất tự nhiên.",
+                        "answer":  "她不是专业模特，却拍得很自然。"
+                    },
+                    {
+                        "chinese":  "这个模特很自信，走路姿态也很漂亮。",
+                        "pinyin":  "Zhège mótè hěn zìxìn, zǒulù zītài yě hěn piàoliang.",
+                        "vietnamese":  "Người mẫu này rất tự tin, dáng đi cũng rất đẹp.",
+                        "answer":  "这个模特很自信，走路姿态也很漂亮。"
+                    },
+                    {
+                        "chinese":  "做模特看起来光鲜，其实或多或少有压力。",
+                        "pinyin":  "Zuò mótè kàn qǐlái guāngxiān, qíshí huò duō huò shǎo yǒu yālì.",
+                        "vietnamese":  "Làm người mẫu nhìn có vẻ hào nhoáng, thật ra ít nhiều có áp lực.",
+                        "answer":  "做模特看起来光鲜，其实或多或少有压力。"
+                    },
+                    {
+                        "chinese":  "他辞职以后，没准儿真的会去当模特。",
+                        "pinyin":  "Tā cízhí yǐhòu, méizhǔnr zhēn de huì qù dāng mótè.",
+                        "vietnamese":  "Sau khi nghỉ việc, biết đâu anh ấy thật sự sẽ đi làm người mẫu.",
+                        "answer":  "他辞职以后，没准儿真的会去当模特。"
+                    },
+                    {
+                        "chinese":  "网上招聘模特的信息，不能轻易相信。",
+                        "pinyin":  "Wǎngshàng zhāopìn mótè de xìnxī, bù néng qīngyì xiāngxìn.",
+                        "vietnamese":  "Thông tin tuyển người mẫu trên mạng không thể dễ dàng tin.",
+                        "answer":  "网上招聘模特的信息，不能轻易相信。"
+                    },
+                    {
+                        "chinese":  "莫非你想放弃原来的工作，去当模特？",
+                        "pinyin":  "Mòfēi nǐ xiǎng fàngqì yuánlái de gōngzuò, qù dāng mótè?",
+                        "vietnamese":  "Chẳng lẽ bạn muốn bỏ công việc ban đầu để đi làm người mẫu?",
+                        "answer":  "莫非你想放弃原来的工作，去当模特？"
+                    },
+                    {
+                        "chinese":  "天下没有不辛苦的工作。",
+                        "pinyin":  "Tiānxià méiyǒu bù xīnkǔ de gōngzuò.",
+                        "vietnamese":  "Trên đời không có công việc nào không vất vả.",
+                        "answer":  "天下没有不辛苦的工作。"
+                    },
+                    {
+                        "chinese":  "天下没有免费的午餐，别轻易相信别人。",
+                        "pinyin":  "Tiānxià méiyǒu miǎnfèi de wǔcān, bié qīngyì xiāngxìn biérén.",
+                        "vietnamese":  "Trên đời không có bữa trưa miễn phí, đừng dễ dàng tin người khác.",
+                        "answer":  "天下没有免费的午餐，别轻易相信别人。"
+                    },
+                    {
+                        "chinese":  "他走遍天下，也忘不了自己的家乡。",
+                        "pinyin":  "Tā zǒu biàn tiānxià, yě wàng bù liǎo zìjǐ de jiāxiāng.",
+                        "vietnamese":  "Anh ấy đi khắp thiên hạ cũng không quên quê hương mình.",
+                        "answer":  "他走遍天下，也忘不了自己的家乡。"
+                    },
+                    {
+                        "chinese":  "天下的父母大多都希望孩子过得好。",
+                        "pinyin":  "Tiānxià de fùmǔ dàduō dōu xīwàng háizi guò de hǎo.",
+                        "vietnamese":  "Cha mẹ trên đời phần lớn đều mong con sống tốt.",
+                        "answer":  "天下的父母大多都希望孩子过得好。"
+                    },
+                    {
+                        "chinese":  "这个道理放之天下都差不多。",
+                        "pinyin":  "Zhège dàolǐ fàng zhī tiānxià dōu chàbuduō.",
+                        "vietnamese":  "Đạo lý này đặt ở đâu trên đời cũng gần như vậy.",
+                        "answer":  "这个道理放之天下都差不多。"
+                    },
+                    {
+                        "chinese":  "他以为天下机会很多，所以轻易辞职了。",
+                        "pinyin":  "Tā yǐwéi tiānxià jīhuì hěn duō, suǒyǐ qīngyì cízhí le.",
+                        "vietnamese":  "Anh ấy tưởng cơ hội trong thiên hạ rất nhiều nên dễ dàng nghỉ việc.",
+                        "answer":  "他以为天下机会很多，所以轻易辞职了。"
+                    },
+                    {
+                        "chinese":  "天下再大，也总有适合自己的位置。",
+                        "pinyin":  "Tiānxià zài dà, yě zǒng yǒu shìhé zìjǐ de wèizhi.",
+                        "vietnamese":  "Thiên hạ dù rộng lớn, cũng luôn có vị trí phù hợp với bản thân.",
+                        "answer":  "天下再大，也总有适合自己的位置。"
+                    },
+                    {
+                        "chinese":  "他想闯天下，不愿意一直待在小地方。",
+                        "pinyin":  "Tā xiǎng chuǎng tiānxià, bú yuànyì yìzhí dāi zài xiǎo dìfang.",
+                        "vietnamese":  "Anh ấy muốn xông pha thiên hạ, không muốn mãi ở nơi nhỏ.",
+                        "answer":  "他想闯天下，不愿意一直待在小地方。"
+                    },
+                    {
+                        "chinese":  "据说天下最难的事，是真正了解自己。",
+                        "pinyin":  "Jùshuō tiānxià zuì nán de shì, shì zhēnzhèng liǎojiě zìjǐ.",
+                        "vietnamese":  "Nghe nói việc khó nhất trên đời là thật sự hiểu bản thân.",
+                        "answer":  "据说天下最难的事，是真正了解自己。"
+                    },
+                    {
+                        "chinese":  "天下一切成功，或多或少都需要付出。",
+                        "pinyin":  "Tiānxià yíqiè chénggōng, huò duō huò shǎo dōu xūyào fùchū.",
+                        "vietnamese":  "Mọi thành công trên đời ít nhiều đều cần sự bỏ ra/cống hiến.",
+                        "answer":  "天下一切成功，或多或少都需要付出。"
+                    },
+                    {
+                        "chinese":  "明天上午我有一个重要面试。",
+                        "pinyin":  "Míngtiān shàngwǔ wǒ yǒu yí ge zhòngyào miànshì.",
+                        "vietnamese":  "Sáng mai tôi có một buổi phỏng vấn quan trọng.",
+                        "answer":  "明天上午我有一个重要面试。"
+                    },
+                    {
+                        "chinese":  "面试以前，最好先了解公司的情况。",
+                        "pinyin":  "Miànshì yǐqián, zuìhǎo xiān liǎojiě gōngsī de qíngkuàng.",
+                        "vietnamese":  "Trước khi phỏng vấn, tốt nhất tìm hiểu tình hình công ty trước.",
+                        "answer":  "面试以前，最好先了解公司的情况。"
+                    },
+                    {
+                        "chinese":  "他第一次参加面试，紧张得说不出话。",
+                        "pinyin":  "Tā dì yī cì cānjiā miànshì, jǐnzhāng de shuō bù chū huà.",
+                        "vietnamese":  "Anh ấy lần đầu tham gia phỏng vấn, căng thẳng đến mức không nói ra lời.",
+                        "answer":  "他第一次参加面试，紧张得说不出话。"
+                    },
+                    {
+                        "chinese":  "这次面试不光考能力，也考反应速度。",
+                        "pinyin":  "Zhè cì miànshì bùguāng kǎo nénglì, yě kǎo fǎnyìng sùdù.",
+                        "vietnamese":  "Cuộc phỏng vấn lần này không chỉ kiểm tra năng lực mà còn kiểm tra tốc độ phản ứng.",
+                        "answer":  "这次面试不光考能力，也考反应速度。"
+                    },
+                    {
+                        "chinese":  "他为了这次面试，整整准备了一个星期。",
+                        "pinyin":  "Tā wèile zhè cì miànshì, zhěngzhěng zhǔnbèi le yí ge xīngqī.",
+                        "vietnamese":  "Anh ấy vì cuộc phỏng vấn này mà chuẩn bị suốt một tuần.",
+                        "answer":  "他为了这次面试，整整准备了一个星期。"
+                    },
+                    {
+                        "chinese":  "面试官问他为什么从上一家公司辞职。",
+                        "pinyin":  "Miànshìguān wèn tā wèishénme cóng shàng yì jiā gōngsī cízhí.",
+                        "vietnamese":  "Người phỏng vấn hỏi anh ấy vì sao nghỉ việc ở công ty trước.",
+                        "answer":  "面试官问他为什么从上一家公司辞职。"
+                    },
+                    {
+                        "chinese":  "就算面试失败，也能从中得到启发。",
+                        "pinyin":  "Jiùsuàn miànshì shībài, yě néng cóng zhōng dédào qǐfā.",
+                        "vietnamese":  "Cho dù phỏng vấn thất bại, cũng có thể nhận được cảm hứng từ đó.",
+                        "answer":  "就算面试失败，也能从中得到启发。"
+                    },
+                    {
+                        "chinese":  "据通知，面试地点改到了三楼会议室。",
+                        "pinyin":  "Jù tōngzhī, miànshì dìdiǎn gǎi dào le sān lóu huìyìshì.",
+                        "vietnamese":  "Theo thông báo, địa điểm phỏng vấn đổi sang phòng họp tầng ba.",
+                        "answer":  "据通知，面试地点改到了三楼会议室。"
+                    },
+                    {
+                        "chinese":  "他轻易相信了骗子，差点错过真正的面试。",
+                        "pinyin":  "Tā qīngyì xiāngxìn le piànzi, chàdiǎn cuòguò zhēnzhèng de miànshì.",
+                        "vietnamese":  "Anh ấy dễ dàng tin kẻ lừa đảo, suýt bỏ lỡ buổi phỏng vấn thật.",
+                        "answer":  "他轻易相信了骗子，差点错过真正的面试。"
+                    },
+                    {
+                        "chinese":  "幸亏你提醒我，不然我会忘记面试时间。",
+                        "pinyin":  "Xìngkuī nǐ tíxǐng wǒ, bùrán wǒ huì wàngjì miànshì shíjiān.",
+                        "vietnamese":  "May mà bạn nhắc tôi, nếu không tôi sẽ quên thời gian phỏng vấn.",
+                        "answer":  "幸亏你提醒我，不然我会忘记面试时间。"
+                    },
+                    {
+                        "chinese":  "他现在是经理的私人助手。",
+                        "pinyin":  "Tā xiànzài shì jīnglǐ de sīrén zhùshǒu.",
+                        "vietnamese":  "Bây giờ anh ấy là trợ lý riêng của giám đốc.",
+                        "answer":  "他现在是经理的私人助手。"
+                    },
+                    {
+                        "chinese":  "一个好助手能提高整个团队的效率。",
+                        "pinyin":  "Yí ge hǎo zhùshǒu néng tígāo zhěngge tuánduì de xiàolǜ.",
+                        "vietnamese":  "Một trợ lý tốt có thể nâng cao hiệu suất của cả đội.",
+                        "answer":  "一个好助手能提高整个团队的效率。"
+                    },
+                    {
+                        "chinese":  "这家公司正在招聘办公室助手。",
+                        "pinyin":  "Zhè jiā gōngsī zhèngzài zhāopìn bàngōngshì zhùshǒu.",
+                        "vietnamese":  "Công ty này đang tuyển trợ lý văn phòng.",
+                        "answer":  "这家公司正在招聘办公室助手。"
+                    },
+                    {
+                        "chinese":  "助手不光要会整理资料，还要会沟通。",
+                        "pinyin":  "Zhùshǒu bùguāng yào huì zhěnglǐ zīliào, hái yào huì gōutōng.",
+                        "vietnamese":  "Trợ lý không chỉ phải biết sắp xếp tài liệu mà còn phải biết giao tiếp.",
+                        "answer":  "助手不光要会整理资料，还要会沟通。"
+                    },
+                    {
+                        "chinese":  "他面试的职位是导游助手。",
+                        "pinyin":  "Tā miànshì de zhíwèi shì dǎoyóu zhùshǒu.",
+                        "vietnamese":  "Vị trí anh ấy phỏng vấn là trợ lý hướng dẫn viên du lịch.",
+                        "answer":  "他面试的职位是导游助手。"
+                    },
+                    {
+                        "chinese":  "老板辞职以后，他的助手也离开了公司。",
+                        "pinyin":  "Lǎobǎn cízhí yǐhòu, tā de zhùshǒu yě líkāi le gōngsī.",
+                        "vietnamese":  "Sau khi sếp nghỉ việc, trợ lý của ông ấy cũng rời công ty.",
+                        "answer":  "老板辞职以后，他的助手也离开了公司。"
+                    },
+                    {
+                        "chinese":  "这个助手居然把所有任务都提前完成了。",
+                        "pinyin":  "Zhège zhùshǒu jūrán bǎ suǒyǒu rènwu dōu tíqián wánchéng le.",
+                        "vietnamese":  "Trợ lý này vậy mà hoàn thành tất cả nhiệm vụ trước thời hạn.",
+                        "answer":  "这个助手居然把所有任务都提前完成了。"
+                    },
+                    {
+                        "chinese":  "据他说，做助手最大的挑战是时间管理。",
+                        "pinyin":  "Jù tā shuō, zuò zhùshǒu zuì dà de tiǎozhàn shì shíjiān guǎnlǐ.",
+                        "vietnamese":  "Theo anh ấy nói, thử thách lớn nhất khi làm trợ lý là quản lý thời gian.",
+                        "answer":  "据他说，做助手最大的挑战是时间管理。"
+                    },
+                    {
+                        "chinese":  "助手提醒他不要轻易相信陌生邮件。",
+                        "pinyin":  "Zhùshǒu tíxǐng tā búyào qīngyì xiāngxìn mòshēng yóujiàn.",
+                        "vietnamese":  "Trợ lý nhắc anh ấy đừng dễ dàng tin email lạ.",
+                        "answer":  "助手提醒他不要轻易相信陌生邮件。"
+                    },
+                    {
+                        "chinese":  "如果没有助手帮忙，这个项目没准儿会推迟。",
+                        "pinyin":  "Rúguǒ méiyǒu zhùshǒu bāngmáng, zhège xiàngmù méizhǔnr huì tuīchí.",
+                        "vietnamese":  "Nếu không có trợ lý giúp, dự án này biết đâu sẽ bị hoãn.",
+                        "answer":  "如果没有助手帮忙，这个项目没准儿会推迟。"
+                    },
+                    {
+                        "chinese":  "莫非你真的打算辞职？",
+                        "pinyin":  "Mòfēi nǐ zhēn de dǎsuàn cízhí?",
+                        "vietnamese":  "Chẳng lẽ bạn thật sự định nghỉ việc?",
+                        "answer":  "莫非你真的打算辞职？"
+                    },
+                    {
+                        "chinese":  "他今天一直不说话，莫非面试失败了？",
+                        "pinyin":  "Tā jīntiān yìzhí bù shuōhuà, mòfēi miànshì shībài le?",
+                        "vietnamese":  "Hôm nay anh ấy cứ không nói gì, chẳng lẽ phỏng vấn thất bại rồi?",
+                        "answer":  "他今天一直不说话，莫非面试失败了？"
+                    },
+                    {
+                        "chinese":  "莫非这个高薪职位是骗子发的？",
+                        "pinyin":  "Mòfēi zhège gāoxīn zhíwèi shì piànzi fā de?",
+                        "vietnamese":  "Chẳng lẽ vị trí lương cao này do kẻ lừa đảo đăng?",
+                        "answer":  "莫非这个高薪职位是骗子发的？"
+                    },
+                    {
+                        "chinese":  "她突然请假，莫非家里出了什么事？",
+                        "pinyin":  "Tā tūrán qǐngjià, mòfēi jiā lǐ chū le shénme shì?",
+                        "vietnamese":  "Cô ấy đột nhiên xin nghỉ, chẳng lẽ nhà có chuyện gì?",
+                        "answer":  "她突然请假，莫非家里出了什么事？"
+                    },
+                    {
+                        "chinese":  "莫非你不想接受这个挑战？",
+                        "pinyin":  "Mòfēi nǐ bù xiǎng jiēshòu zhège tiǎozhàn?",
+                        "vietnamese":  "Chẳng lẽ bạn không muốn nhận thử thách này?",
+                        "answer":  "莫非你不想接受这个挑战？"
+                    },
+                    {
+                        "chinese":  "他居然没来，莫非路程太远了？",
+                        "pinyin":  "Tā jūrán méi lái, mòfēi lùchéng tài yuǎn le?",
+                        "vietnamese":  "Anh ấy vậy mà không đến, chẳng lẽ quãng đường quá xa?",
+                        "answer":  "他居然没来，莫非路程太远了？"
+                    },
+                    {
+                        "chinese":  "莫非你觉得这份工作太无聊？",
+                        "pinyin":  "Mòfēi nǐ juéde zhè fèn gōngzuò tài wúliáo?",
+                        "vietnamese":  "Chẳng lẽ bạn thấy công việc này quá nhàm chán?",
+                        "answer":  "莫非你觉得这份工作太无聊？"
+                    },
+                    {
+                        "chinese":  "她这么有气质，莫非以前当过模特？",
+                        "pinyin":  "Tā zhème yǒu qìzhì, mòfēi yǐqián dāng guò mótè?",
+                        "vietnamese":  "Cô ấy khí chất như vậy, chẳng lẽ trước đây từng làm người mẫu?",
+                        "answer":  "她这么有气质，莫非以前当过模特？"
+                    },
+                    {
+                        "chinese":  "莫非助手忘了把资料发给你？",
+                        "pinyin":  "Mòfēi zhùshǒu wàng le bǎ zīliào fā gěi nǐ?",
+                        "vietnamese":  "Chẳng lẽ trợ lý quên gửi tài liệu cho bạn?",
+                        "answer":  "莫非助手忘了把资料发给你？"
+                    },
+                    {
+                        "chinese":  "莫非天下真有这么巧的事？",
+                        "pinyin":  "Mòfēi tiānxià zhēn yǒu zhème qiǎo de shì?",
+                        "vietnamese":  "Chẳng lẽ trên đời thật sự có chuyện trùng hợp như vậy?",
+                        "answer":  "莫非天下真有这么巧的事？"
+                    },
+                    {
+                        "chinese":  "天哪，我居然忘了今天有面试！",
+                        "pinyin":  "Tiān na, wǒ jūrán wàng le jīntiān yǒu miànshì!",
+                        "vietnamese":  "Trời ơi, tôi vậy mà quên hôm nay có phỏng vấn!",
+                        "answer":  "天哪，我居然忘了今天有面试！"
+                    },
+                    {
+                        "chinese":  "天哪，这条路程也太远了吧！",
+                        "pinyin":  "Tiān na, zhè tiáo lùchéng yě tài yuǎn le ba!",
+                        "vietnamese":  "Trời ơi, quãng đường này cũng quá xa rồi đấy!",
+                        "answer":  "天哪，这条路程也太远了吧！"
+                    },
+                    {
+                        "chinese":  "天哪，他怎么轻易相信了骗子？",
+                        "pinyin":  "Tiān na, tā zěnme qīngyì xiāngxìn le piànzi?",
+                        "vietnamese":  "Trời ơi, sao anh ấy lại dễ dàng tin kẻ lừa đảo vậy?",
+                        "answer":  "天哪，他怎么轻易相信了骗子？"
+                    },
+                    {
+                        "chinese":  "天哪，这个挑战比我想象中难多了。",
+                        "pinyin":  "Tiān na, zhège tiǎozhàn bǐ wǒ xiǎngxiàng zhōng nán duō le.",
+                        "vietnamese":  "Trời ơi, thử thách này khó hơn tôi tưởng nhiều.",
+                        "answer":  "天哪，这个挑战比我想象中难多了。"
+                    },
+                    {
+                        "chinese":  "天哪，她辞职以后居然去当模特了！",
+                        "pinyin":  "Tiān na, tā cízhí yǐhòu jūrán qù dāng mótè le!",
+                        "vietnamese":  "Trời ơi, sau khi nghỉ việc cô ấy vậy mà đi làm người mẫu rồi!",
+                        "answer":  "天哪，她辞职以后居然去当模特了！"
+                    },
+                    {
+                        "chinese":  "天哪，这份工作不光无聊，还特别累。",
+                        "pinyin":  "Tiān na, zhè fèn gōngzuò bùguāng wúliáo, hái tèbié lèi.",
+                        "vietnamese":  "Trời ơi, công việc này không chỉ nhàm chán mà còn đặc biệt mệt.",
+                        "answer":  "天哪，这份工作不光无聊，还特别累。"
+                    },
+                    {
+                        "chinese":  "天哪，助手把所有资料都弄错了。",
+                        "pinyin":  "Tiān na, zhùshǒu bǎ suǒyǒu zīliào dōu nòng cuò le.",
+                        "vietnamese":  "Trời ơi, trợ lý làm sai hết tất cả tài liệu rồi.",
+                        "answer":  "天哪，助手把所有资料都弄错了。"
+                    },
+                    {
+                        "chinese":  "天哪，莫非我们真的走错路了？",
+                        "pinyin":  "Tiān na, mòfēi wǒmen zhēn de zǒu cuò lù le?",
+                        "vietnamese":  "Trời ơi, chẳng lẽ chúng ta thật sự đi sai đường rồi?",
+                        "answer":  "天哪，莫非我们真的走错路了？"
+                    },
+                    {
+                        "chinese":  "天哪，这个看似无聊的问题居然很关键。",
+                        "pinyin":  "Tiān na, zhège kàn sì wúliáo de wèntí jūrán hěn guānjiàn.",
+                        "vietnamese":  "Trời ơi, vấn đề nhìn có vẻ nhàm chán này vậy mà rất then chốt.",
+                        "answer":  "天哪，这个看似无聊的问题居然很关键。"
+                    },
+                    {
+                        "chinese":  "天哪，天下怎么会有这么巧的安排？",
+                        "pinyin":  "Tiān na, tiānxià zěnme huì yǒu zhème qiǎo de ānpái?",
+                        "vietnamese":  "Trời ơi, trên đời sao lại có sự sắp xếp trùng hợp như vậy?",
+                        "answer":  "天哪，天下怎么会有这么巧的安排？"
+                    },
+                    {
+                        "chinese":  "幸亏你提醒我，不然我会错过面试。",
+                        "pinyin":  "Xìngkuī nǐ tíxǐng wǒ, bùrán wǒ huì cuòguò miànshì.",
+                        "vietnamese":  "May mà bạn nhắc tôi, nếu không tôi sẽ bỏ lỡ phỏng vấn.",
+                        "answer":  "幸亏你提醒我，不然我会错过面试。"
+                    },
+                    {
+                        "chinese":  "幸亏路程不远，我们才准时到了。",
+                        "pinyin":  "Xìngkuī lùchéng bù yuǎn, wǒmen cái zhǔnshí dào le.",
+                        "vietnamese":  "May mà quãng đường không xa, chúng tôi mới đến đúng giờ.",
+                        "answer":  "幸亏路程不远，我们才准时到了。"
+                    },
+                    {
+                        "chinese":  "幸亏他没有轻易相信那个骗子。",
+                        "pinyin":  "Xìngkuī tā méiyǒu qīngyì xiāngxìn nà ge piànzi.",
+                        "vietnamese":  "May mà anh ấy không dễ dàng tin kẻ lừa đảo đó.",
+                        "answer":  "幸亏他没有轻易相信那个骗子。"
+                    },
+                    {
+                        "chinese":  "幸亏助手提前准备好了所有资料。",
+                        "pinyin":  "Xìngkuī zhùshǒu tíqián zhǔnbèi hǎo le suǒyǒu zīliào.",
+                        "vietnamese":  "May mà trợ lý đã chuẩn bị sẵn tất cả tài liệu.",
+                        "answer":  "幸亏助手提前准备好了所有资料。"
+                    },
+                    {
+                        "chinese":  "幸亏这次挑战没有想象中那么难。",
+                        "pinyin":  "Xìngkuī zhè cì tiǎozhàn méiyǒu xiǎngxiàng zhōng nàme nán.",
+                        "vietnamese":  "May mà thử thách lần này không khó như tưởng tượng.",
+                        "answer":  "幸亏这次挑战没有想象中那么难。"
+                    },
+                    {
+                        "chinese":  "幸亏他及时辞职，才没有继续受骗。",
+                        "pinyin":  "Xìngkuī tā jíshí cízhí, cái méiyǒu jìxù shòupiàn.",
+                        "vietnamese":  "May mà anh ấy nghỉ việc kịp thời, mới không tiếp tục bị lừa.",
+                        "answer":  "幸亏他及时辞职，才没有继续受骗。"
+                    },
+                    {
+                        "chinese":  "幸亏面试官很友好，我才没那么紧张。",
+                        "pinyin":  "Xìngkuī miànshìguān hěn yǒuhǎo, wǒ cái méi nàme jǐnzhāng.",
+                        "vietnamese":  "May mà người phỏng vấn rất thân thiện, tôi mới không căng thẳng như vậy.",
+                        "answer":  "幸亏面试官很友好，我才没那么紧张。"
+                    },
+                    {
+                        "chinese":  "幸亏这个故事给了我启发，我才没有放弃。",
+                        "pinyin":  "Xìngkuī zhège gùshi gěi le wǒ qǐfā, wǒ cái méiyǒu fàngqì.",
+                        "vietnamese":  "May mà câu chuyện này cho tôi cảm hứng, tôi mới không bỏ cuộc.",
+                        "answer":  "幸亏这个故事给了我启发，我才没有放弃。"
+                    },
+                    {
+                        "chinese":  "幸亏朋友陪我去，不然这段路程太无聊了。",
+                        "pinyin":  "Xìngkuī péngyou péi wǒ qù, bùrán zhè duàn lùchéng tài wúliáo le.",
+                        "vietnamese":  "May mà bạn đi cùng tôi, nếu không quãng đường này quá nhàm chán.",
+                        "answer":  "幸亏朋友陪我去，不然这段路程太无聊了。"
+                    },
+                    {
+                        "chinese":  "幸亏你没把证件信息发给陌生人。",
+                        "pinyin":  "Xìngkuī nǐ méi bǎ zhèngjiàn xìnxī fā gěi mòshēng rén.",
+                        "vietnamese":  "May mà bạn không gửi thông tin giấy tờ cho người lạ.",
+                        "answer":  "幸亏你没把证件信息发给陌生人。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "他没准儿已经到学校了，只是还没给我发消息。",
+                          "pinyin":  "Tā méizhǔnr yǐjīng dào xuéxiào le, zhǐshì hái méi gěi wǒ fā xiāoxi.",
+                          "vietnamese":  "Biết đâu anh ấy đã đến trường rồi, chỉ là chưa nhắn cho tôi.",
+                          "answer":  "他没准儿已经到学校了，只是还没给我发消息。"
+                      },
+                      {
+                          "chinese":  "这家店看起来不错，没准儿真的能退货。",
+                          "pinyin":  "Zhè jiā diàn kàn qǐlái búcuò, méizhǔnr zhēn de néng tuìhuò.",
+                          "vietnamese":  "Cửa hàng này nhìn không tệ, biết đâu thật sự có thể trả hàng.",
+                          "answer":  "这家店看起来不错，没准儿真的能退货。"
+                      },
+                      {
+                          "chinese":  "老师今天没来，没准儿是身体不舒服。",
+                          "pinyin":  "Lǎoshī jīntiān méi lái, méizhǔnr shì shēntǐ bù shūfu.",
+                          "vietnamese":  "Hôm nay thầy không đến, biết đâu là không khỏe.",
+                          "answer":  "老师今天没来，没准儿是身体不舒服。"
+                      },
+                      {
+                          "chinese":  "你再问问客服，没准儿还有别的办法。",
+                          "pinyin":  "Nǐ zài wènwen kèfú, méizhǔnr hái yǒu bié de bànfǎ.",
+                          "vietnamese":  "Bạn hỏi lại chăm sóc khách hàng xem, biết đâu còn cách khác.",
+                          "answer":  "你再问问客服，没准儿还有别的办法。"
+                      },
+                      {
+                          "chinese":  "他一直没回复，没准儿手机已经没电了。",
+                          "pinyin":  "Tā yìzhí méi huífù, méizhǔnr shǒujī yǐjīng méi diàn le.",
+                          "vietnamese":  "Anh ấy mãi chưa trả lời, biết đâu điện thoại hết pin rồi.",
+                          "answer":  "他一直没回复，没准儿手机已经没电了。"
+                      },
+                      {
+                          "chinese":  "再困，我也要把今天的作业写完。",
+                          "pinyin":  "Zài kùn, wǒ yě yào bǎ jīntiān de zuòyè xiě wán.",
+                          "vietnamese":  "Dù buồn ngủ đến đâu, tôi cũng phải viết xong bài tập hôm nay.",
+                          "answer":  "再困，我也要把今天的作业写完。"
+                      },
+                      {
+                          "chinese":  "再累，他也坚持把客户的问题处理完。",
+                          "pinyin":  "Zài lèi, tā yě jiānchí bǎ kèhù de wèntí chǔlǐ wán.",
+                          "vietnamese":  "Dù mệt đến đâu, anh ấy vẫn kiên trì xử lý xong vấn đề của khách hàng.",
+                          "answer":  "再累，他也坚持把客户的问题处理完。"
+                      },
+                      {
+                          "chinese":  "再忙，我也会每天抽时间练习听力。",
+                          "pinyin":  "Zài máng, wǒ yě huì měitiān chōu shíjiān liànxí tīnglì.",
+                          "vietnamese":  "Dù bận đến đâu, tôi cũng sẽ dành thời gian luyện nghe mỗi ngày.",
+                          "answer":  "再忙，我也会每天抽时间练习听力。"
+                      },
+                      {
+                          "chinese":  "再难，我们也不能随便放弃这次机会。",
+                          "pinyin":  "Zài nán, wǒmen yě bù néng suíbiàn fàngqì zhè cì jīhuì.",
+                          "vietnamese":  "Dù khó đến đâu, chúng ta cũng không thể tùy tiện bỏ cơ hội này.",
+                          "answer":  "再难，我们也不能随便放弃这次机会。"
+                      },
+                      {
+                          "chinese":  "再远，我也想回家看看父母。",
+                          "pinyin":  "Zài yuǎn, wǒ yě xiǎng huí jiā kànkan fùmǔ.",
+                          "vietnamese":  "Dù xa đến đâu, tôi vẫn muốn về nhà thăm bố mẹ.",
+                          "answer":  "再远，我也想回家看看父母。"
+                      },
+                      {
+                          "chinese":  "他不光会说汉语，也会写很多汉字。",
+                          "pinyin":  "Tā bùguāng huì shuō Hànyǔ, yě huì xiě hěn duō Hànzì.",
+                          "vietnamese":  "Anh ấy không chỉ biết nói tiếng Trung, cũng biết viết nhiều chữ Hán.",
+                          "answer":  "他不光会说汉语，也会写很多汉字。"
+                      },
+                      {
+                          "chinese":  "这个软件不光能练听力，也能练口语。",
+                          "pinyin":  "Zhège ruǎnjiàn bùguāng néng liàn tīnglì, yě néng liàn kǒuyǔ.",
+                          "vietnamese":  "Phần mềm này không chỉ có thể luyện nghe, cũng có thể luyện khẩu ngữ.",
+                          "answer":  "这个软件不光能练听力，也能练口语。"
+                      },
+                      {
+                          "chinese":  "他不光学习努力，也很愿意帮助同学。",
+                          "pinyin":  "Tā bùguāng xuéxí nǔlì, yě hěn yuànyì bāngzhù tóngxué.",
+                          "vietnamese":  "Anh ấy không chỉ học chăm chỉ, cũng rất sẵn lòng giúp bạn học.",
+                          "answer":  "他不光学习努力，也很愿意帮助同学。"
+                      },
+                      {
+                          "chinese":  "这家饭店不光菜好吃，服务也很好。",
+                          "pinyin":  "Zhè jiā fàndiàn bùguāng cài hǎochī, fúwù yě hěn hǎo.",
+                          "vietnamese":  "Nhà hàng này không chỉ món ăn ngon, dịch vụ cũng rất tốt.",
+                          "answer":  "这家饭店不光菜好吃，服务也很好。"
+                      },
+                      {
+                          "chinese":  "这次活动不光学生参加，老师也来了。",
+                          "pinyin":  "Zhè cì huódòng bùguāng xuésheng cānjiā, lǎoshī yě lái le.",
+                          "vietnamese":  "Hoạt động lần này không chỉ học sinh tham gia, thầy cô cũng đến.",
+                          "answer":  "这次活动不光学生参加，老师也来了。"
+                      },
+                      {
+                          "chinese":  "他一直没回消息，莫非真的生气了？",
+                          "pinyin":  "Tā yìzhí méi huí xiāoxi, mòfēi zhēn de shēngqì le?",
+                          "vietnamese":  "Anh ấy mãi chưa trả lời tin nhắn, chẳng lẽ thật sự giận rồi?",
+                          "answer":  "他一直没回消息，莫非真的生气了？"
+                      },
+                      {
+                          "chinese":  "老师今天没来上课，莫非是生病了吗？",
+                          "pinyin":  "Lǎoshī jīntiān méi lái shàngkè, mòfēi shì shēngbìng le ma?",
+                          "vietnamese":  "Hôm nay thầy không đến lớp, chẳng lẽ bị bệnh rồi sao?",
+                          "answer":  "老师今天没来上课，莫非是生病了吗？"
+                      },
+                      {
+                          "chinese":  "这个房间这么便宜，莫非有什么问题？",
+                          "pinyin":  "Zhège fángjiān zhème piányi, mòfēi yǒu shénme wèntí?",
+                          "vietnamese":  "Căn phòng này rẻ như vậy, chẳng lẽ có vấn đề gì sao?",
+                          "answer":  "这个房间这么便宜，莫非有什么问题？"
+                      },
+                      {
+                          "chinese":  "客服一直不回复，莫非已经下班了？",
+                          "pinyin":  "Kèfú yìzhí bù huífù, mòfēi yǐjīng xiàbān le?",
+                          "vietnamese":  "Chăm sóc khách hàng mãi không trả lời, chẳng lẽ đã tan làm rồi sao?",
+                          "answer":  "客服一直不回复，莫非已经下班了？"
+                      },
+                      {
+                          "chinese":  "他突然不参加会议，莫非计划改变了？",
+                          "pinyin":  "Tā tūrán bù cānjiā huìyì, mòfēi jìhuà gǎibiàn le?",
+                          "vietnamese":  "Anh ấy đột nhiên không tham gia họp, chẳng lẽ kế hoạch thay đổi rồi sao?",
+                          "answer":  "他突然不参加会议，莫非计划改变了？"
+                      },
+                      {
+                          "chinese":  "幸亏你提醒我，要不然我就忘了交作业。",
+                          "pinyin":  "Xìngkuī nǐ tíxǐng wǒ, yàobùrán wǒ jiù wàng le jiāo zuòyè.",
+                          "vietnamese":  "May mà bạn nhắc tôi, nếu không tôi đã quên nộp bài tập.",
+                          "answer":  "幸亏你提醒我，要不然我就忘了交作业。"
+                      },
+                      {
+                          "chinese":  "幸亏今天出门早，要不然肯定赶不上地铁。",
+                          "pinyin":  "Xìngkuī jīntiān chūmén zǎo, yàobùrán kěndìng gǎn bu shàng dìtiě.",
+                          "vietnamese":  "May mà hôm nay ra khỏi nhà sớm, nếu không chắc chắn không kịp tàu điện.",
+                          "answer":  "幸亏今天出门早，要不然肯定赶不上地铁。"
+                      },
+                      {
+                          "chinese":  "幸亏老师又解释了一遍，要不然我还听不懂。",
+                          "pinyin":  "Xìngkuī lǎoshī yòu jiěshì le yí biàn, yàobùrán wǒ hái tīng bu dǒng.",
+                          "vietnamese":  "May mà thầy giải thích lại một lần, nếu không tôi vẫn chưa hiểu.",
+                          "answer":  "幸亏老师又解释了一遍，要不然我还听不懂。"
+                      },
+                      {
+                          "chinese":  "幸亏朋友帮我搬家，要不然我一个人做不了。",
+                          "pinyin":  "Xìngkuī péngyou bāng wǒ bānjiā, yàobùrán wǒ yí ge rén zuò bu liǎo.",
+                          "vietnamese":  "May mà bạn giúp tôi chuyển nhà, nếu không một mình tôi làm không nổi.",
+                          "answer":  "幸亏朋友帮我搬家，要不然我一个人做不了。"
+                      },
+                      {
+                          "chinese":  "幸亏保存了聊天记录，要不然很难说清楚。",
+                          "pinyin":  "Xìngkuī bǎocún le liáotiān jìlù, yàobùrán hěn nán shuō qīngchu.",
+                          "vietnamese":  "May mà đã lưu lịch sử trò chuyện, nếu không rất khó nói rõ.",
+                          "answer":  "幸亏保存了聊天记录，要不然很难说清楚。"
+                      }
+                  ]
+}

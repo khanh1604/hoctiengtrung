@@ -673,364 +673,264 @@
                 ],
     "structure":  [
                       {
-                          "type":  "structure",
-                          "title":  "请假",
-                          "pattern":  "请假",
-                          "meaning":  "Xin nghỉ / xin phép nghỉ",
-                          "usage":  "Dùng khi xin nghỉ học, nghỉ làm, nghỉ vài ngày vì có việc hoặc bị ốm",
-                          "note":  "请假 là động từ cố định; người xin nghỉ thường làm chủ ngữ",
-                          "chinese":  "我今天想请假。",
-                          "pinyin":  "wo jin tian xiang qing jia。",
-                          "vietnamese":  "Hôm nay tôi muốn xin nghỉ.",
-                          "stars":  4,
-                          "level":  "⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "我今天想请假。",
-                                               "pinyin":  "wo jin tian xiang qing jia。",
-                                               "vietnamese":  "Hôm nay tôi muốn xin nghỉ."
-                                           }
-                                       ]
+                          "chinese":  "我今天头疼得厉害，想跟老师请假一天。",
+                          "pinyin":  "Wǒ jīntiān tóu téng de lìhai, xiǎng gēn lǎoshī qǐngjià yì tiān.",
+                          "vietnamese":  "Hôm nay tôi đau đầu dữ dội, muốn xin thầy nghỉ một ngày."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "到 + nơi + 请假",
-                          "pattern":  "到 + nơi + 请假",
-                          "meaning":  "Đến nơi nào để xin nghỉ",
-                          "usage":  "Dùng khi nói đến văn phòng, công ty, chỗ giáo viên để xin nghỉ",
-                          "note":  "Sau 到 + nơi thường có động từ chỉ mục đích",
-                          "chinese":  "我到办公室请假。",
-                          "pinyin":  "wo dao ban gong shi qing jia。",
-                          "vietnamese":  "Tôi đến văn phòng xin nghỉ.",
-                          "stars":  4,
-                          "level":  "⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "我到办公室请假。",
-                                               "pinyin":  "wo dao ban gong shi qing jia。",
-                                               "vietnamese":  "Tôi đến văn phòng xin nghỉ."
-                                           }
-                                       ]
+                          "chinese":  "他上午到办公室请假，然后去了医院检查。",
+                          "pinyin":  "Tā shàngwǔ dào bàngōngshì qǐngjià, ránhòu qù le yīyuàn jiǎnchá.",
+                          "vietnamese":  "Sáng nay anh ấy đến văn phòng xin nghỉ, sau đó đi bệnh viện kiểm tra."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "累坏了",
-                          "pattern":  "累坏了",
-                          "meaning":  "Mệt lả / mệt quá rồi",
-                          "usage":  "Dùng để nói mức độ mệt rất cao",
-                          "note":  "坏了 sau tính từ/động từ chỉ mức độ rất mạnh, thường không mang nghĩa “hỏng”",
-                          "chinese":  "今天我累坏了。",
-                          "pinyin":  "jin tian wo lei huai le。",
-                          "vietnamese":  "Hôm nay tôi mệt lả rồi.",
-                          "stars":  3,
-                          "level":  "⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "今天我累坏了。",
-                                               "pinyin":  "jin tian wo lei huai le。",
-                                               "vietnamese":  "Hôm nay tôi mệt lả rồi."
-                                           }
-                                       ]
+                          "chinese":  "如果你身体不舒服，最好早点儿请假。",
+                          "pinyin":  "Rúguǒ nǐ shēntǐ bù shūfu, zuìhǎo zǎo diǎnr qǐngjià.",
+                          "vietnamese":  "Nếu bạn không khỏe, tốt nhất xin nghỉ sớm một chút."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "不如 + N / V",
-                          "pattern":  "不如 + N / V",
-                          "meaning":  "Không bằng… / chi bằng…",
-                          "usage":  "Dùng để so sánh hoặc đưa ra lựa chọn tốt hơn",
-                          "note":  "Khi khuyên người khác, 不如 thường có nghĩa “chi bằng / hay là…”",
-                          "chinese":  "坐车不如走路。",
-                          "pinyin":  "zuo che bu ru zou lu。",
-                          "vietnamese":  "Đi xe không bằng đi bộ.",
-                          "stars":  5,
-                          "level":  "⭐⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "坐车不如走路。",
-                                               "pinyin":  "zuo che bu ru zou lu。",
-                                               "vietnamese":  "Đi xe không bằng đi bộ."
-                                           }
-                                       ]
+                          "chinese":  "老师告诉我们，请假以前要先发消息说明原因。",
+                          "pinyin":  "Lǎoshī gàosu wǒmen, qǐngjià yǐqián yào xiān fā xiāoxi shuōmíng yuányīn.",
+                          "vietnamese":  "Thầy nói với chúng tôi trước khi xin nghỉ phải gửi tin nhắn nói rõ lý do."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "A 不如 B",
-                          "pattern":  "A 不如 B",
-                          "meaning":  "A không bằng B",
-                          "usage":  "Dùng để so sánh A kém hơn B về một mặt nào đó",
-                          "note":  "Sau B có thể thêm tính từ hoặc không, tùy ngữ cảnh",
-                          "chinese":  "我不如他努力。",
-                          "pinyin":  "wo bu ru ta nu li。",
-                          "vietnamese":  "Tôi không cố gắng bằng anh ấy.",
-                          "stars":  5,
-                          "level":  "⭐⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "我不如他努力。",
-                                               "pinyin":  "wo bu ru ta nu li。",
-                                               "vietnamese":  "Tôi không cố gắng bằng anh ấy."
-                                           }
-                                       ]
+                          "chinese":  "他因为家里有事，已经请假回家了。",
+                          "pinyin":  "Tā yīnwèi jiālǐ yǒu shì, yǐjīng qǐngjià huí jiā le.",
+                          "vietnamese":  "Anh ấy vì nhà có việc nên đã xin nghỉ về nhà rồi."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "赶快 + V",
-                          "pattern":  "赶快 + V",
-                          "meaning":  "Mau / nhanh chóng làm gì",
-                          "usage":  "Dùng để thúc giục hoặc nhấn mạnh phải làm ngay",
-                          "note":  "Gần nghĩa với 快, nhưng 赶快 nhấn mạnh tính gấp hơn",
-                          "chinese":  "你赶快去医院。",
-                          "pinyin":  "ni gan kuai qu yi yuan。",
-                          "vietnamese":  "Bạn mau đi bệnh viện.",
-                          "stars":  3,
-                          "level":  "⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "你赶快去医院。",
-                                               "pinyin":  "ni gan kuai qu yi yuan。",
-                                               "vietnamese":  "Bạn mau đi bệnh viện."
-                                           }
-                                       ]
+                          "chinese":  "我昨天没来上课，是因为提前请假了。",
+                          "pinyin":  "Wǒ zuótiān méi lái shàngkè, shì yīnwèi tíqián qǐngjià le.",
+                          "vietnamese":  "Hôm qua tôi không đến lớp là vì đã xin nghỉ trước rồi."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "赶快 + V + N",
-                          "pattern":  "赶快 + V + N",
-                          "meaning":  "Mau làm việc gì",
-                          "usage":  "Dùng khi muốn người khác nhanh chóng hoàn thành một việc",
-                          "note":  "Hay dùng trong lời nhắc: 赶快睡觉、赶快吃饭、赶快去医院",
-                          "chinese":  "赶快吃饭吧。",
-                          "pinyin":  "gan kuai chi fan ba。",
-                          "vietnamese":  "Mau ăn cơm đi.",
-                          "stars":  3,
-                          "level":  "⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "赶快吃饭吧。",
-                                               "pinyin":  "gan kuai chi fan ba。",
-                                               "vietnamese":  "Mau ăn cơm đi."
-                                           }
-                                       ]
+                          "chinese":  "今天搬了一天家，我真的累坏了。",
+                          "pinyin":  "Jīntiān bān le yì tiān jiā, wǒ zhēn de lèi huài le.",
+                          "vietnamese":  "Hôm nay chuyển nhà cả ngày, tôi thật sự mệt lả rồi."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "赶快 + 把 + N + V",
-                          "pattern":  "赶快 + 把 + N + V",
-                          "meaning":  "Mau xử lý cái gì",
-                          "usage":  "Dùng khi muốn nhấn mạnh đối tượng cần được xử lý nhanh",
-                          "note":  "把 đưa tân ngữ lên trước động từ để nhấn mạnh xử lý đối tượng đó",
-                          "chinese":  "赶快把门关上。",
-                          "pinyin":  "gan kuai ba men guan shang。",
-                          "vietnamese":  "Mau đóng cửa lại.",
-                          "stars":  3,
-                          "level":  "⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "赶快把门关上。",
-                                               "pinyin":  "gan kuai ba men guan shang。",
-                                               "vietnamese":  "Mau đóng cửa lại."
-                                           }
-                                       ]
+                          "chinese":  "他连续工作十二个小时，回家以后累坏了。",
+                          "pinyin":  "Tā liánxù gōngzuò shí’èr ge xiǎoshí, huí jiā yǐhòu lèi huài le.",
+                          "vietnamese":  "Anh ấy làm việc liên tục 12 tiếng, về nhà xong mệt lả."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "受伤",
-                          "pattern":  "受伤",
-                          "meaning":  "Bị thương",
-                          "usage":  "Dùng khi người hoặc con vật bị thương do tai nạn, va chạm…",
-                          "note":  "受伤 thường là nội động từ, không cần tân ngữ trực tiếp",
-                          "chinese":  "他受伤了。",
-                          "pinyin":  "ta shou shang le。",
-                          "vietnamese":  "Anh ấy bị thương rồi.",
-                          "stars":  4,
-                          "level":  "⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "他受伤了。",
-                                               "pinyin":  "ta shou shang le。",
-                                               "vietnamese":  "Anh ấy bị thương rồi."
-                                           }
-                                       ]
+                          "chinese":  "老师今天讲了四节课，看起来累坏了。",
+                          "pinyin":  "Lǎoshī jīntiān jiǎng le sì jié kè, kàn qǐlái lèi huài le.",
+                          "vietnamese":  "Hôm nay thầy giảng bốn tiết, nhìn có vẻ mệt lả rồi."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "受 + N",
-                          "pattern":  "受 + N",
-                          "meaning":  "Chịu / bị / nhận…",
-                          "usage":  "Dùng để nói chịu ảnh hưởng, chịu tổn thương, nhận sự tác động nào đó",
-                          "note":  "Hay gặp: 受伤、受累、受影响、受欢迎",
-                          "chinese":  "他受到了影响。",
-                          "pinyin":  "ta shou dao le ying xiang。",
-                          "vietnamese":  "Anh ấy chịu ảnh hưởng.",
-                          "stars":  4,
-                          "level":  "⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "他受到了影响。",
-                                               "pinyin":  "ta shou dao le ying xiang。",
-                                               "vietnamese":  "Anh ấy chịu ảnh hưởng."
-                                           }
-                                       ]
+                          "chinese":  "我们爬了一上午山，大家都累坏了。",
+                          "pinyin":  "Wǒmen pá le yì shàngwǔ shān, dàjiā dōu lèi huài le.",
+                          "vietnamese":  "Chúng tôi leo núi cả buổi sáng, mọi người đều mệt lả."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "有人 + V",
-                          "pattern":  "有人 + V",
-                          "meaning":  "Có người…",
-                          "usage":  "Dùng để nói có một người hoặc một số người làm việc gì",
-                          "note":  "有人 thường dùng khi người đó chưa xác định rõ",
-                          "chinese":  "有人在外面等你。",
-                          "pinyin":  "you ren zai wai mian deng ni。",
-                          "vietnamese":  "Có người đang chờ bạn ở bên ngoài.",
-                          "stars":  3,
-                          "level":  "⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "有人在外面等你。",
-                                               "pinyin":  "you ren zai wai mian deng ni。",
-                                               "vietnamese":  "Có người đang chờ bạn ở bên ngoài."
-                                           }
-                                       ]
+                          "chinese":  "他考试前天天熬夜复习，身体快累坏了。",
+                          "pinyin":  "Tā kǎoshì qián tiāntiān áoyè fùxí, shēntǐ kuài lèi huài le.",
+                          "vietnamese":  "Trước kỳ thi anh ấy ngày nào cũng thức khuya ôn bài, cơ thể sắp mệt lả."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "厉害",
-                          "pattern":  "厉害",
-                          "meaning":  "Ghê / nghiêm trọng / giỏi",
-                          "usage":  "Dùng để khen người giỏi, hoặc nói tình trạng nghiêm trọng",
-                          "note":  "Nghĩa phụ thuộc ngữ cảnh: 他很厉害 = anh ấy giỏi; 病得厉害 = bệnh nặng",
-                          "chinese":  "他汉语说得很厉害。",
-                          "pinyin":  "ta han yu shuo de hen li hai。",
-                          "vietnamese":  "Anh ấy nói tiếng Trung rất giỏi.",
-                          "stars":  4,
-                          "level":  "⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "他汉语说得很厉害。",
-                                               "pinyin":  "ta han yu shuo de hen li hai。",
-                                               "vietnamese":  "Anh ấy nói tiếng Trung rất giỏi."
-                                           }
-                                       ]
+                          "chinese":  "坐车不如走路，天气这么好可以散步。",
+                          "pinyin":  "Zuò chē bùrú zǒulù, tiānqì zhème hǎo kěyǐ sànbù.",
+                          "vietnamese":  "Đi xe không bằng đi bộ, thời tiết đẹp thế này có thể đi dạo."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "V + 得 + 厉害",
-                          "pattern":  "V + 得 + 厉害",
-                          "meaning":  "V rất dữ dội / rất nghiêm trọng",
-                          "usage":  "Dùng để nhấn mạnh mức độ của hành động hoặc trạng thái",
-                          "note":  "Hay gặp: 疼得厉害、咳嗽得厉害、累得厉害",
-                          "chinese":  "我头疼得厉害。",
-                          "pinyin":  "wo tou teng de li hai。",
-                          "vietnamese":  "Đầu tôi đau dữ dội.",
-                          "stars":  4,
-                          "level":  "⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "我头疼得厉害。",
-                                               "pinyin":  "wo tou teng de li hai。",
-                                               "vietnamese":  "Đầu tôi đau dữ dội."
-                                           }
-                                       ]
+                          "chinese":  "与其一直担心，不如马上跟老师联系。",
+                          "pinyin":  "Yǔqí yìzhí dānxīn, bùrú mǎshàng gēn lǎoshī liánxì.",
+                          "vietnamese":  "Thay vì cứ lo lắng, chi bằng lập tức liên lạc với thầy."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "照顾 + người",
-                          "pattern":  "照顾 + người",
-                          "meaning":  "Chăm sóc ai",
-                          "usage":  "Dùng khi nói chăm sóc người ốm, trẻ em, người thân…",
-                          "note":  "照顾 là động từ hai âm tiết, thường đi trực tiếp với tân ngữ",
-                          "chinese":  "我照顾妹妹。",
-                          "pinyin":  "wo zhao gu mei mei。",
-                          "vietnamese":  "Tôi chăm sóc em gái.",
-                          "stars":  4,
-                          "level":  "⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "我照顾妹妹。",
-                                               "pinyin":  "wo zhao gu mei mei。",
-                                               "vietnamese":  "Tôi chăm sóc em gái."
-                                           }
-                                       ]
+                          "chinese":  "这家饭店不如上次那家好吃。",
+                          "pinyin":  "Zhè jiā fàndiàn bùrú shàng cì nà jiā hǎochī.",
+                          "vietnamese":  "Nhà hàng này không ngon bằng nhà hàng lần trước."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "照顾好 + người / N",
-                          "pattern":  "照顾好 + người / N",
-                          "meaning":  "Chăm sóc tốt ai/cái gì",
-                          "usage":  "Dùng khi dặn dò hoặc nói làm tốt việc chăm sóc",
-                          "note":  "好 ở đây là bổ ngữ kết quả, nghĩa là làm cho tốt",
-                          "chinese":  "请照顾好自己。",
-                          "pinyin":  "qing zhao gu hao zi ji。",
-                          "vietnamese":  "Hãy chăm sóc tốt bản thân.",
-                          "stars":  4,
-                          "level":  "⭐⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "请照顾好自己。",
-                                               "pinyin":  "qing zhao gu hao zi ji。",
-                                               "vietnamese":  "Hãy chăm sóc tốt bản thân."
-                                           }
-                                       ]
+                          "chinese":  "他虽然聪明，但是学习态度不如你认真。",
+                          "pinyin":  "Tā suīrán cōngming, dànshì xuéxí tàidu bùrú nǐ rènzhēn.",
+                          "vietnamese":  "Tuy anh ấy thông minh, nhưng thái độ học tập không nghiêm túc bằng bạn."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "倒（dǎo）",
-                          "pattern":  "倒（dǎo）",
-                          "meaning":  "Đổ / ngã / sập",
-                          "usage":  "Dùng khi người, cây, chai lọ, vật đứng bị ngã xuống",
-                          "note":  "Đọc dǎo khi nghĩa là “ngã/đổ”; khác dào trong 倒水 = rót nước",
-                          "chinese":  "杯子倒了。",
-                          "pinyin":  "bei zi dao le。",
-                          "vietnamese":  "Cái cốc đổ rồi.",
-                          "stars":  3,
-                          "level":  "⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "杯子倒了。",
-                                               "pinyin":  "bei zi dao le。",
-                                               "vietnamese":  "Cái cốc đổ rồi."
-                                           }
-                                       ]
+                          "chinese":  "如果时间不够，不如明天再讨论这个问题。",
+                          "pinyin":  "Rúguǒ shíjiān bú gòu, bùrú míngtiān zài tǎolùn zhège wèntí.",
+                          "vietnamese":  "Nếu không đủ thời gian, chi bằng ngày mai thảo luận vấn đề này tiếp."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "被 + N + V 倒了",
-                          "pattern":  "被 + N + V 倒了",
-                          "meaning":  "Bị ai/cái gì làm đổ",
-                          "usage":  "Dùng khi nhấn mạnh đối tượng bị tác động bởi người/vật khác",
-                          "note":  "被 dùng trong câu bị động",
-                          "chinese":  "杯子被弟弟碰倒了。",
-                          "pinyin":  "bei zi bei di di peng dao le。",
-                          "vietnamese":  "Cái cốc bị em trai làm đổ.",
-                          "stars":  3,
-                          "level":  "⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "杯子被弟弟碰倒了。",
-                                               "pinyin":  "bei zi bei di di peng dao le。",
-                                               "vietnamese":  "Cái cốc bị em trai làm đổ."
-                                           }
-                                       ]
+                          "chinese":  "这个房间不如那个房间安静，也不如那个方便。",
+                          "pinyin":  "Zhège fángjiān bùrú nà ge fángjiān ānjìng, yě bùrú nà ge fāngbiàn.",
+                          "vietnamese":  "Căn phòng này không yên tĩnh bằng căn kia, cũng không tiện bằng căn kia."
                       },
                       {
-                          "type":  "structure",
-                          "title":  "有人 + V 倒了",
-                          "pattern":  "有人 + V 倒了",
-                          "meaning":  "Có người bị ngã / làm đổ",
-                          "usage":  "Dùng khi người cụ thể không rõ hoặc không cần nói rõ",
-                          "note":  "有人摔倒了 rất thường dùng khi có người ngã",
-                          "chinese":  "有人摔倒了。",
-                          "pinyin":  "you ren shuai dao le。",
-                          "vietnamese":  "Có người bị ngã rồi.",
-                          "stars":  3,
-                          "level":  "⭐⭐⭐",
-                          "examples":  [
-                                           {
-                                               "chinese":  "有人摔倒了。",
-                                               "pinyin":  "you ren shuai dao le。",
-                                               "vietnamese":  "Có người bị ngã rồi."
-                                           }
-                                       ]
+                          "chinese":  "你赶快去医院检查，别一直忍着。",
+                          "pinyin":  "Nǐ gǎnkuài qù yīyuàn jiǎnchá, bié yìzhí rěn zhe.",
+                          "vietnamese":  "Bạn mau đi bệnh viện kiểm tra, đừng cứ cố chịu."
+                      },
+                      {
+                          "chinese":  "快上课了，大家赶快回到教室。",
+                          "pinyin":  "Kuài shàngkè le, dàjiā gǎnkuài huí dào jiàoshì.",
+                          "vietnamese":  "Sắp vào học rồi, mọi người mau quay lại lớp."
+                      },
+                      {
+                          "chinese":  "外面要下雨了，你赶快把衣服收进去。",
+                          "pinyin":  "Wàimiàn yào xià yǔ le, nǐ gǎnkuài bǎ yīfu shōu jìnqù.",
+                          "vietnamese":  "Bên ngoài sắp mưa rồi, bạn mau thu quần áo vào."
+                      },
+                      {
+                          "chinese":  "老师让我们赶快把练习题做完。",
+                          "pinyin":  "Lǎoshī ràng wǒmen gǎnkuài bǎ liànxí tí zuò wán.",
+                          "vietnamese":  "Thầy bảo chúng tôi mau làm xong bài luyện tập."
+                      },
+                      {
+                          "chinese":  "如果你找不到路，赶快给我打电话。",
+                          "pinyin":  "Rúguǒ nǐ zhǎo bu dào lù, gǎnkuài gěi wǒ dǎ diànhuà.",
+                          "vietnamese":  "Nếu bạn không tìm thấy đường, mau gọi điện cho tôi."
+                      },
+                      {
+                          "chinese":  "会议马上开始了，你赶快把资料拿上去。",
+                          "pinyin":  "Huìyì mǎshàng kāishǐ le, nǐ gǎnkuài bǎ zīliào ná shàngqù.",
+                          "vietnamese":  "Cuộc họp sắp bắt đầu rồi, bạn mau mang tài liệu lên."
+                      },
+                      {
+                          "chinese":  "他骑车的时候摔倒了，腿受伤了。",
+                          "pinyin":  "Tā qí chē de shíhou shuāidǎo le, tuǐ shòushāng le.",
+                          "vietnamese":  "Anh ấy bị ngã khi đi xe đạp, chân bị thương rồi."
+                      },
+                      {
+                          "chinese":  "比赛中有个运动员受伤了，大家都很担心。",
+                          "pinyin":  "Bǐsài zhōng yǒu ge yùndòngyuán shòushāng le, dàjiā dōu hěn dānxīn.",
+                          "vietnamese":  "Trong trận đấu có một vận động viên bị thương, mọi người đều rất lo."
+                      },
+                      {
+                          "chinese":  "他手受伤以后，很多工作都做不了。",
+                          "pinyin":  "Tā shǒu shòushāng yǐhòu, hěn duō gōngzuò dōu zuò bu liǎo.",
+                          "vietnamese":  "Sau khi tay anh ấy bị thương, nhiều việc đều không làm được."
+                      },
+                      {
+                          "chinese":  "这次大雨让很多地方受到了影响。",
+                          "pinyin":  "Zhè cì dà yǔ ràng hěn duō dìfang shòu dào le yǐngxiǎng.",
+                          "vietnamese":  "Trận mưa lớn lần này khiến nhiều nơi chịu ảnh hưởng."
+                      },
+                      {
+                          "chinese":  "他因为工作太忙，身体受不了。",
+                          "pinyin":  "Tā yīnwèi gōngzuò tài máng, shēntǐ shòu bu liǎo.",
+                          "vietnamese":  "Anh ấy vì công việc quá bận, cơ thể không chịu nổi."
+                      },
+                      {
+                          "chinese":  "这个学生很受欢迎，谁都愿意跟他说话。",
+                          "pinyin":  "Zhège xuésheng hěn shòu huānyíng, shéi dōu yuànyì gēn tā shuōhuà.",
+                          "vietnamese":  "Học sinh này rất được yêu thích, ai cũng muốn nói chuyện với bạn ấy."
+                      },
+                      {
+                          "chinese":  "外面有人在等你，好像已经等了很久。",
+                          "pinyin":  "Wàimiàn yǒu rén zài děng nǐ, hǎoxiàng yǐjīng děng le hěn jiǔ.",
+                          "vietnamese":  "Bên ngoài có người đang chờ bạn, hình như đã chờ rất lâu rồi."
+                      },
+                      {
+                          "chinese":  "有人把你的书拿到办公室去了。",
+                          "pinyin":  "Yǒu rén bǎ nǐ de shū ná dào bàngōngshì qù le.",
+                          "vietnamese":  "Có người đã mang sách của bạn đến văn phòng rồi."
+                      },
+                      {
+                          "chinese":  "今天有人请假，所以老师让我们自己练习。",
+                          "pinyin":  "Jīntiān yǒu rén qǐngjià, suǒyǐ lǎoshī ràng wǒmen zìjǐ liànxí.",
+                          "vietnamese":  "Hôm nay có người xin nghỉ, nên thầy cho chúng tôi tự luyện tập."
+                      },
+                      {
+                          "chinese":  "教室门口有人找你，你赶快出去看看。",
+                          "pinyin":  "Jiàoshì ménkǒu yǒu rén zhǎo nǐ, nǐ gǎnkuài chūqù kànkan.",
+                          "vietnamese":  "Ở cửa lớp có người tìm bạn, bạn mau ra xem thử."
+                      },
+                      {
+                          "chinese":  "刚才有人给你打电话，但是你没听见。",
+                          "pinyin":  "Gāngcái yǒu rén gěi nǐ dǎ diànhuà, dànshì nǐ méi tīngjiàn.",
+                          "vietnamese":  "Vừa nãy có người gọi điện cho bạn, nhưng bạn không nghe thấy."
+                      },
+                      {
+                          "chinese":  "他的汉语说得很厉害，发音也很标准。",
+                          "pinyin":  "Tā de Hànyǔ shuō de hěn lìhai, fāyīn yě hěn biāozhǔn.",
+                          "vietnamese":  "Tiếng Trung của anh ấy nói rất giỏi, phát âm cũng rất chuẩn."
+                      },
+                      {
+                          "chinese":  "今天风刮得很厉害，出门要注意安全。",
+                          "pinyin":  "Jīntiān fēng guā de hěn lìhai, chūmén yào zhùyì ānquán.",
+                          "vietnamese":  "Hôm nay gió thổi rất mạnh, ra ngoài phải chú ý an toàn."
+                      },
+                      {
+                          "chinese":  "我头疼得厉害，可能不能参加会议了。",
+                          "pinyin":  "Wǒ tóu téng de lìhai, kěnéng bù néng cānjiā huìyì le.",
+                          "vietnamese":  "Tôi đau đầu dữ dội, có thể không tham gia cuộc họp được rồi."
+                      },
+                      {
+                          "chinese":  "他咳嗽得厉害，医生让他好好儿休息。",
+                          "pinyin":  "Tā késou de lìhai, yīshēng ràng tā hǎohāor xiūxi.",
+                          "vietnamese":  "Anh ấy ho rất dữ, bác sĩ bảo anh ấy nghỉ ngơi cho tốt."
+                      },
+                      {
+                          "chinese":  "这次考试难得厉害，很多同学都没做完。",
+                          "pinyin":  "Zhè cì kǎoshì nán de lìhai, hěn duō tóngxué dōu méi zuò wán.",
+                          "vietnamese":  "Kỳ thi lần này khó dữ dội, nhiều bạn học đều không làm xong."
+                      },
+                      {
+                          "chinese":  "老师讲课很厉害，复杂问题也能说清楚。",
+                          "pinyin":  "Lǎoshī jiǎngkè hěn lìhai, fùzá wèntí yě néng shuō qīngchu.",
+                          "vietnamese":  "Thầy giảng bài rất giỏi, vấn đề phức tạp cũng có thể nói rõ."
+                      },
+                      {
+                          "chinese":  "妈妈生病了，我今天在家照顾她。",
+                          "pinyin":  "Māma shēngbìng le, wǒ jīntiān zài jiā zhàogù tā.",
+                          "vietnamese":  "Mẹ bị bệnh rồi, hôm nay tôi ở nhà chăm sóc mẹ."
+                      },
+                      {
+                          "chinese":  "请你照顾好自己，别让父母担心。",
+                          "pinyin":  "Qǐng nǐ zhàogù hǎo zìjǐ, bié ràng fùmǔ dānxīn.",
+                          "vietnamese":  "Xin bạn chăm sóc tốt bản thân, đừng để bố mẹ lo."
+                      },
+                      {
+                          "chinese":  "他每天照顾妹妹，还要按时完成作业。",
+                          "pinyin":  "Tā měitiān zhàogù mèimei, hái yào ànshí wánchéng zuòyè.",
+                          "vietnamese":  "Anh ấy mỗi ngày chăm sóc em gái, còn phải hoàn thành bài tập đúng hạn."
+                      },
+                      {
+                          "chinese":  "老师很照顾新同学，经常帮他们解决问题。",
+                          "pinyin":  "Lǎoshī hěn zhàogù xīn tóngxué, jīngcháng bāng tāmen jiějué wèntí.",
+                          "vietnamese":  "Thầy rất quan tâm bạn học mới, thường giúp họ giải quyết vấn đề."
+                      },
+                      {
+                          "chinese":  "出门旅行的时候，大家要互相照顾。",
+                          "pinyin":  "Chūmén lǚxíng de shíhou, dàjiā yào hùxiāng zhàogù.",
+                          "vietnamese":  "Khi đi du lịch, mọi người phải chăm sóc lẫn nhau."
+                      },
+                      {
+                          "chinese":  "他把弟弟照顾得很好，妈妈很放心。",
+                          "pinyin":  "Tā bǎ dìdi zhàogù de hěn hǎo, māma hěn fàngxīn.",
+                          "vietnamese":  "Anh ấy chăm sóc em trai rất tốt, mẹ rất yên tâm."
+                      },
+                      {
+                          "chinese":  "桌子上的杯子倒了，水流得到处都是。",
+                          "pinyin":  "Zhuōzi shàng de bēizi dǎo le, shuǐ liú de dàochù dōu shì.",
+                          "vietnamese":  "Cái cốc trên bàn đổ rồi, nước chảy khắp nơi."
+                      },
+                      {
+                          "chinese":  "他走得太快，一不小心就摔倒了。",
+                          "pinyin":  "Tā zǒu de tài kuài, yì bù xiǎoxīn jiù shuāidǎo le.",
+                          "vietnamese":  "Anh ấy đi quá nhanh, không cẩn thận một cái là ngã."
+                      },
+                      {
+                          "chinese":  "风太大了，路边的一棵小树被吹倒了。",
+                          "pinyin":  "Fēng tài dà le, lùbiān de yì kē xiǎo shù bèi chuī dǎo le.",
+                          "vietnamese":  "Gió quá lớn, một cây nhỏ bên đường bị thổi đổ rồi."
+                      },
+                      {
+                          "chinese":  "杯子被弟弟碰倒了，妈妈有点儿生气。",
+                          "pinyin":  "Bēizi bèi dìdi pèng dǎo le, māma yǒudiǎnr shēngqì.",
+                          "vietnamese":  "Cái cốc bị em trai chạm đổ, mẹ hơi tức giận."
+                      },
+                      {
+                          "chinese":  "有人在楼下摔倒了，我们赶快过去帮忙。",
+                          "pinyin":  "Yǒu rén zài lóuxià shuāidǎo le, wǒmen gǎnkuài guòqù bāngmáng.",
+                          "vietnamese":  "Có người ngã dưới tầng, chúng tôi mau qua giúp."
+                      },
+                      {
+                          "chinese":  "他把自行车放得不好，结果一下子倒了。",
+                          "pinyin":  "Tā bǎ zìxíngchē fàng de bù hǎo, jiéguǒ yíxiàzi dǎo le.",
+                          "vietnamese":  "Anh ấy đặt xe đạp không cẩn thận, kết quả đổ ngay."
                       }
                   ],
     "paragraph":  [
@@ -1191,1104 +1091,1104 @@
                   ],
     "example":  [
                     {
-                        "chinese":  "喂，请问你是哪位？",
-                        "pinyin":  "Wèi, qǐngwèn nǐ shì nǎ wèi?",
-                        "vietnamese":  "Alo, xin hỏi bạn là ai?"
+                        "chinese":  "喂，请问你现在有空儿吗？",
+                        "pinyin":  "Wèi, qǐngwèn nǐ xiànzài yǒu kòngr ma?",
+                        "vietnamese":  "Alo, xin hỏi bây giờ bạn có rảnh không?"
                     },
                     {
-                        "chinese":  "喂，我是小王。",
-                        "pinyin":  "Wèi, wǒ shì Xiǎo Wáng.",
-                        "vietnamese":  "Alo, tôi là Tiểu Vương."
+                        "chinese":  "喂，老师，我想请假一天。",
+                        "pinyin":  "Wèi, lǎoshī, wǒ xiǎng qǐngjià yì tiān.",
+                        "vietnamese":  "Alo, thưa cô/thầy, em muốn xin nghỉ một ngày."
                     },
                     {
-                        "chinese":  "喂，你听得见吗？",
-                        "pinyin":  "Wèi, nǐ tīng de jiàn ma?",
-                        "vietnamese":  "Alo, bạn nghe thấy không?"
+                        "chinese":  "喂，你听得见我说话吗？",
+                        "pinyin":  "Wèi, nǐ tīng de jiàn wǒ shuōhuà ma?",
+                        "vietnamese":  "Alo, bạn có nghe thấy tôi nói không?"
                     },
                     {
-                        "chinese":  "喂，请稍等一下。",
-                        "pinyin":  "Wèi, qǐng shāo děng yíxià.",
-                        "vietnamese":  "Alo, vui lòng đợi một chút."
+                        "chinese":  "喂，我肚子不舒服，不能去上课了。",
+                        "pinyin":  "Wèi, wǒ dùzi bù shūfu, bù néng qù shàngkè le.",
+                        "vietnamese":  "Alo, tôi đau bụng, không thể đi học được rồi."
                     },
                     {
-                        "chinese":  "喂，老师您好。",
-                        "pinyin":  "Wèi, lǎoshī nín hǎo.",
-                        "vietnamese":  "Alo, chào thầy/cô."
+                        "chinese":  "喂，请你帮我转告老师一声。",
+                        "pinyin":  "Wèi, qǐng nǐ bāng wǒ zhuǎngào lǎoshī yì shēng.",
+                        "vietnamese":  "Alo, nhờ bạn chuyển lời giúp tôi với giáo viên một tiếng."
                     },
                     {
-                        "chinese":  "喂，我想请假。",
-                        "pinyin":  "Wèi, wǒ xiǎng qǐngjià.",
-                        "vietnamese":  "Alo, tôi muốn xin nghỉ."
+                        "chinese":  "喂，我在药店门口等你。",
+                        "pinyin":  "Wèi, wǒ zài yàodiàn ménkǒu děng nǐ.",
+                        "vietnamese":  "Alo, tôi đang đợi bạn ở cổng hiệu thuốc."
                     },
                     {
-                        "chinese":  "喂，请问这是药店吗？",
-                        "pinyin":  "Wèi, qǐngwèn zhè shì yàodiàn ma?",
-                        "vietnamese":  "Alo, đây có phải hiệu thuốc không?"
+                        "chinese":  "喂，你是不是发烧了？",
+                        "pinyin":  "Wèi, nǐ shì bú shì fāshāo le?",
+                        "vietnamese":  "Alo, bạn có phải bị sốt rồi không?"
                     },
                     {
-                        "chinese":  "喂，你现在有空吗？",
-                        "pinyin":  "Wèi, nǐ xiànzài yǒu kòng ma?",
-                        "vietnamese":  "Alo, bây giờ bạn có rảnh không?"
+                        "chinese":  "喂，我腿受伤了，走不了路。",
+                        "pinyin":  "Wèi, wǒ tuǐ shòushāng le, zǒu bù liǎo lù.",
+                        "vietnamese":  "Alo, chân tôi bị thương rồi, không đi được."
                     },
                     {
-                        "chinese":  "喂，我已经到了。",
-                        "pinyin":  "Wèi, wǒ yǐjīng dào le.",
-                        "vietnamese":  "Alo, tôi đến rồi."
+                        "chinese":  "喂，你赶快去医院检查一下。",
+                        "pinyin":  "Wèi, nǐ gǎnkuài qù yīyuàn jiǎnchá yíxià.",
+                        "vietnamese":  "Alo, bạn mau đến bệnh viện kiểm tra một chút đi."
                     },
                     {
-                        "chinese":  "喂，麻烦你转告他一下。",
-                        "pinyin":  "Wèi, máfan nǐ zhuǎngào tā yíxià.",
-                        "vietnamese":  "Alo, phiền bạn nhắn lại với anh ấy một chút."
+                        "chinese":  "喂，我已经恢复得差不多了。",
+                        "pinyin":  "Wèi, wǒ yǐjīng huīfù de chàbuduō le.",
+                        "vietnamese":  "Alo, tôi đã hồi phục gần như xong rồi."
                     },
                     {
-                        "chinese":  "我选修了汉语课。",
-                        "pinyin":  "Wǒ xuǎnxiū le Hànyǔ kè.",
-                        "vietnamese":  "Tôi đã chọn học môn tiếng Trung."
+                        "chinese":  "我这个学期选修了京剧课。",
+                        "pinyin":  "Wǒ zhège xuéqī xuǎnxiū le jīngjù kè.",
+                        "vietnamese":  "Học kỳ này tôi học tự chọn môn Kinh kịch."
                     },
                     {
-                        "chinese":  "这是一门选修课。",
-                        "pinyin":  "Zhè shì yì mén xuǎnxiū kè.",
-                        "vietnamese":  "Đây là một môn học tự chọn."
-                    },
-                    {
-                        "chinese":  "你选修什么课程？",
-                        "pinyin":  "Nǐ xuǎnxiū shénme kèchéng?",
-                        "vietnamese":  "Bạn chọn học môn gì?"
-                    },
-                    {
-                        "chinese":  "我打算选修外语。",
-                        "pinyin":  "Wǒ dǎsuàn xuǎnxiū wàiyǔ.",
-                        "vietnamese":  "Tôi dự định chọn học ngoại ngữ."
-                    },
-                    {
-                        "chinese":  "很多学生选修音乐课。",
-                        "pinyin":  "Hěn duō xuésheng xuǎnxiū yīnyuè kè.",
-                        "vietnamese":  "Nhiều sinh viên chọn học môn âm nhạc."
+                        "chinese":  "他想选修一门外语。",
+                        "pinyin":  "Tā xiǎng xuǎnxiū yì mén wàiyǔ.",
+                        "vietnamese":  "Anh ấy muốn học tự chọn một môn ngoại ngữ."
                     },
                     {
                         "chinese":  "这门选修课很有意思。",
                         "pinyin":  "Zhè mén xuǎnxiū kè hěn yǒu yìsi.",
-                        "vietnamese":  "Môn học tự chọn này rất thú vị."
+                        "vietnamese":  "Môn tự chọn này rất thú vị."
                     },
                     {
-                        "chinese":  "我已经选修了两门课。",
-                        "pinyin":  "Wǒ yǐjīng xuǎnxiū le liǎng mén kè.",
-                        "vietnamese":  "Tôi đã chọn hai môn học rồi."
+                        "chinese":  "老师建议我们选修中国文化。",
+                        "pinyin":  "Lǎoshī jiànyì wǒmen xuǎnxiū Zhōngguó wénhuà.",
+                        "vietnamese":  "Giáo viên khuyên chúng tôi học tự chọn văn hóa Trung Quốc."
                     },
                     {
-                        "chinese":  "她选修了京剧课程。",
-                        "pinyin":  "Tā xuǎnxiū le Jīngjù kèchéng.",
-                        "vietnamese":  "Cô ấy chọn học môn Kinh kịch."
+                        "chinese":  "如果你喜欢表演，可以选修京剧。",
+                        "pinyin":  "Rúguǒ nǐ xǐhuan biǎoyǎn, kěyǐ xuǎnxiū jīngjù.",
+                        "vietnamese":  "Nếu bạn thích biểu diễn, có thể học tự chọn Kinh kịch."
                     },
                     {
-                        "chinese":  "选修课比必修课轻松一点儿。",
-                        "pinyin":  "Xuǎnxiū kè bǐ bìxiū kè qīngsōng yìdiǎnr.",
-                        "vietnamese":  "Môn tự chọn nhẹ nhàng hơn môn bắt buộc một chút."
+                        "chinese":  "她选修了钢琴课，但是很少练习。",
+                        "pinyin":  "Tā xuǎnxiū le gāngqín kè, dànshì hěn shǎo liànxí.",
+                        "vietnamese":  "Cô ấy học tự chọn lớp piano nhưng rất ít luyện tập."
                     },
                     {
-                        "chinese":  "我最喜欢的选修课是摄影。",
-                        "pinyin":  "Wǒ zuì xǐhuan de xuǎnxiū kè shì shèyǐng.",
-                        "vietnamese":  "Môn tự chọn tôi thích nhất là nhiếp ảnh."
+                        "chinese":  "选修课虽然不难，但是也要认真学。",
+                        "pinyin":  "Xuǎnxiū kè suīrán bù nán, dànshì yě yào rènzhēn xué.",
+                        "vietnamese":  "Môn tự chọn tuy không khó nhưng cũng phải học nghiêm túc."
                     },
                     {
-                        "chinese":  "我要请假一天。",
-                        "pinyin":  "Wǒ yào qǐngjià yì tiān.",
-                        "vietnamese":  "Tôi muốn xin nghỉ một ngày."
+                        "chinese":  "我还没决定选修哪门课。",
+                        "pinyin":  "Wǒ hái méi juédìng xuǎnxiū nǎ mén kè.",
+                        "vietnamese":  "Tôi vẫn chưa quyết định học tự chọn môn nào."
                     },
                     {
-                        "chinese":  "我今天想请假。",
-                        "pinyin":  "Wǒ jīntiān xiǎng qǐngjià.",
-                        "vietnamese":  "Hôm nay tôi muốn xin nghỉ."
+                        "chinese":  "这个学院的选修课很多。",
+                        "pinyin":  "Zhège xuéyuàn de xuǎnxiū kè hěn duō.",
+                        "vietnamese":  "Môn tự chọn của học viện này rất nhiều."
                     },
                     {
-                        "chinese":  "他因为感冒请假了。",
-                        "pinyin":  "Tā yīnwèi gǎnmào qǐngjià le.",
-                        "vietnamese":  "Anh ấy xin nghỉ vì bị cảm."
+                        "chinese":  "选修外语以后，他越来越喜欢学习。",
+                        "pinyin":  "Xuǎnxiū wàiyǔ yǐhòu, tā yuèláiyuè xǐhuan xuéxí.",
+                        "vietnamese":  "Sau khi học tự chọn ngoại ngữ, anh ấy ngày càng thích học."
                     },
                     {
-                        "chinese":  "请假要先告诉老师。",
-                        "pinyin":  "Qǐngjià yào xiān gàosu lǎoshī.",
-                        "vietnamese":  "Xin nghỉ phải báo cho giáo viên trước."
+                        "chinese":  "我今天发烧，想跟老师请假。",
+                        "pinyin":  "Wǒ jīntiān fāshāo, xiǎng gēn lǎoshī qǐngjià.",
+                        "vietnamese":  "Hôm nay tôi bị sốt, muốn xin nghỉ với giáo viên."
                     },
                     {
-                        "chinese":  "她向公司请假了。",
-                        "pinyin":  "Tā xiàng gōngsī qǐngjià le.",
-                        "vietnamese":  "Cô ấy đã xin nghỉ với công ty."
+                        "chinese":  "他肚子疼，所以请假回家了。",
+                        "pinyin":  "Tā dùzi téng, suǒyǐ qǐngjià huí jiā le.",
+                        "vietnamese":  "Anh ấy đau bụng nên xin nghỉ về nhà rồi."
                     },
                     {
-                        "chinese":  "我跟老师请了半天假。",
-                        "pinyin":  "Wǒ gēn lǎoshī qǐng le bàn tiān jià.",
-                        "vietnamese":  "Tôi xin nghỉ nửa ngày với giáo viên."
+                        "chinese":  "请假以前，最好先给老师打电话。",
+                        "pinyin":  "Qǐngjià yǐqián, zuìhǎo xiān gěi lǎoshī dǎ diànhuà.",
+                        "vietnamese":  "Trước khi xin nghỉ, tốt nhất gọi điện cho giáo viên trước."
                     },
                     {
-                        "chinese":  "他请假去医院检查。",
-                        "pinyin":  "Tā qǐngjià qù yīyuàn jiǎnchá.",
-                        "vietnamese":  "Anh ấy xin nghỉ để đi khám bệnh viện."
+                        "chinese":  "她感冒很厉害，只好请假。",
+                        "pinyin":  "Tā gǎnmào hěn lìhai, zhǐhǎo qǐngjià.",
+                        "vietnamese":  "Cô ấy bị cảm rất nặng, đành phải xin nghỉ."
                     },
                     {
-                        "chinese":  "请假以后要补课。",
-                        "pinyin":  "Qǐngjià yǐhòu yào bǔkè.",
-                        "vietnamese":  "Sau khi nghỉ phải học bù."
+                        "chinese":  "老师同意我请假一天。",
+                        "pinyin":  "Lǎoshī tóngyì wǒ qǐngjià yì tiān.",
+                        "vietnamese":  "Giáo viên đồng ý cho tôi xin nghỉ một ngày."
                     },
                     {
-                        "chinese":  "她从来不随便请假。",
-                        "pinyin":  "Tā cónglái bù suíbiàn qǐngjià.",
-                        "vietnamese":  "Cô ấy chưa bao giờ xin nghỉ tùy tiện."
+                        "chinese":  "如果腿受伤了，就赶快请假去检查。",
+                        "pinyin":  "Rúguǒ tuǐ shòushāng le, jiù gǎnkuài qǐngjià qù jiǎnchá.",
+                        "vietnamese":  "Nếu chân bị thương thì nhanh chóng xin nghỉ đi kiểm tra."
                     },
                     {
-                        "chinese":  "我已经请好假了。",
-                        "pinyin":  "Wǒ yǐjīng qǐng hǎo jià le.",
-                        "vietnamese":  "Tôi đã xin nghỉ xong rồi."
+                        "chinese":  "他没有请假，所以老师很担心。",
+                        "pinyin":  "Tā méiyǒu qǐngjià, suǒyǐ lǎoshī hěn dānxīn.",
+                        "vietnamese":  "Anh ấy không xin nghỉ nên giáo viên rất lo."
                     },
                     {
-                        "chinese":  "我的肚子疼。",
-                        "pinyin":  "Wǒ de dùzi téng.",
-                        "vietnamese":  "Bụng tôi đau."
+                        "chinese":  "请假以后，你要在家好好儿休息。",
+                        "pinyin":  "Qǐngjià yǐhòu, nǐ yào zài jiā hǎohāor xiūxi.",
+                        "vietnamese":  "Sau khi xin nghỉ, bạn phải ở nhà nghỉ ngơi tử tế."
                     },
                     {
-                        "chinese":  "你肚子怎么了？",
-                        "pinyin":  "Nǐ dùzi zěnme le?",
-                        "vietnamese":  "Bụng bạn bị sao vậy?"
+                        "chinese":  "我想请假，但是不知道怎么说。",
+                        "pinyin":  "Wǒ xiǎng qǐngjià, dànshì bù zhīdào zěnme shuō.",
+                        "vietnamese":  "Tôi muốn xin nghỉ nhưng không biết nói thế nào."
                     },
                     {
-                        "chinese":  "我肚子有点儿不舒服。",
-                        "pinyin":  "Wǒ dùzi yǒudiǎnr bù shūfu.",
-                        "vietnamese":  "Bụng tôi hơi khó chịu."
+                        "chinese":  "她让我转告老师，明天要请假。",
+                        "pinyin":  "Tā ràng wǒ zhuǎngào lǎoshī, míngtiān yào qǐngjià.",
+                        "vietnamese":  "Cô ấy nhờ tôi chuyển lời với giáo viên rằng ngày mai sẽ xin nghỉ."
                     },
                     {
-                        "chinese":  "肚子饿了。",
-                        "pinyin":  "Dùzi è le.",
-                        "vietnamese":  "Bụng đói rồi."
+                        "chinese":  "我肚子有点疼，想休息一下。",
+                        "pinyin":  "Wǒ dùzi yǒudiǎn téng, xiǎng xiūxi yíxià.",
+                        "vietnamese":  "Bụng tôi hơi đau, muốn nghỉ một chút."
                     },
                     {
-                        "chinese":  "孩子说肚子疼。",
-                        "pinyin":  "Háizi shuō dùzi téng.",
-                        "vietnamese":  "Đứa trẻ nói đau bụng."
+                        "chinese":  "他肚子不舒服，不能吃凉的东西。",
+                        "pinyin":  "Tā dùzi bù shūfu, bù néng chī liáng de dōngxi.",
+                        "vietnamese":  "Bụng anh ấy không khỏe, không thể ăn đồ lạnh."
                     },
                     {
-                        "chinese":  "他吃坏了肚子。",
-                        "pinyin":  "Tā chī huài le dùzi.",
-                        "vietnamese":  "Anh ấy bị đau bụng do ăn phải đồ không tốt."
+                        "chinese":  "孩子说肚子疼，妈妈很担心。",
+                        "pinyin":  "Háizi shuō dùzi téng, māma hěn dānxīn.",
+                        "vietnamese":  "Đứa trẻ nói đau bụng, mẹ rất lo."
                     },
                     {
-                        "chinese":  "我的肚子越来越疼。",
-                        "pinyin":  "Wǒ de dùzi yuèláiyuè téng.",
-                        "vietnamese":  "Bụng tôi ngày càng đau hơn."
+                        "chinese":  "如果肚子疼得厉害，就去检查。",
+                        "pinyin":  "Rúguǒ dùzi téng de lìhai, jiù qù jiǎnchá.",
+                        "vietnamese":  "Nếu đau bụng nghiêm trọng thì đi kiểm tra."
                     },
                     {
-                        "chinese":  "肚子疼就去医院吧。",
-                        "pinyin":  "Dùzi téng jiù qù yīyuàn ba.",
-                        "vietnamese":  "Đau bụng thì đi bệnh viện đi."
+                        "chinese":  "他夜里肚子疼，所以没睡好。",
+                        "pinyin":  "Tā yèlǐ dùzi téng, suǒyǐ méi shuì hǎo.",
+                        "vietnamese":  "Ban đêm anh ấy đau bụng nên ngủ không ngon."
                     },
                     {
-                        "chinese":  "我肚子不饿。",
-                        "pinyin":  "Wǒ dùzi bú è.",
-                        "vietnamese":  "Tôi không đói bụng."
+                        "chinese":  "吃药以后，肚子好多了。",
+                        "pinyin":  "Chī yào yǐhòu, dùzi hǎo duō le.",
+                        "vietnamese":  "Sau khi uống thuốc, bụng đỡ hơn nhiều."
                     },
                     {
-                        "chinese":  "他肚子疼得睡不着。",
-                        "pinyin":  "Tā dùzi téng de shuì bu zháo.",
-                        "vietnamese":  "Anh ấy đau bụng đến mức không ngủ được."
+                        "chinese":  "肚子不舒服的话，不如喝点热水。",
+                        "pinyin":  "Dùzi bù shūfu dehuà, bùrú hē diǎn rè shuǐ.",
+                        "vietnamese":  "Nếu bụng không khỏe thì chi bằng uống chút nước nóng."
                     },
                     {
-                        "chinese":  "我发烧了。",
-                        "pinyin":  "Wǒ fāshāo le.",
-                        "vietnamese":  "Tôi bị sốt rồi."
+                        "chinese":  "她肚子疼，只好去药店买药。",
+                        "pinyin":  "Tā dùzi téng, zhǐhǎo qù yàodiàn mǎi yào.",
+                        "vietnamese":  "Cô ấy đau bụng, đành đi hiệu thuốc mua thuốc."
                     },
                     {
-                        "chinese":  "他昨天晚上发烧了。",
-                        "pinyin":  "Tā zuótiān wǎnshang fāshāo le.",
-                        "vietnamese":  "Tối qua anh ấy bị sốt."
+                        "chinese":  "医生问他肚子疼了多久。",
+                        "pinyin":  "Yīshēng wèn tā dùzi téng le duōjiǔ.",
+                        "vietnamese":  "Bác sĩ hỏi anh ấy đau bụng bao lâu rồi."
                     },
                     {
-                        "chinese":  "发烧要多休息。",
-                        "pinyin":  "Fāshāo yào duō xiūxi.",
-                        "vietnamese":  "Bị sốt cần nghỉ ngơi nhiều."
+                        "chinese":  "我肚子饿了，想先吃点东西。",
+                        "pinyin":  "Wǒ dùzi è le, xiǎng xiān chī diǎn dōngxi.",
+                        "vietnamese":  "Tôi đói bụng rồi, muốn ăn chút gì trước."
                     },
                     {
-                        "chinese":  "她发高烧了。",
-                        "pinyin":  "Tā fā gāoshāo le.",
-                        "vietnamese":  "Cô ấy bị sốt cao rồi."
+                        "chinese":  "他昨天夜里发烧了。",
+                        "pinyin":  "Tā zuótiān yèlǐ fāshāo le.",
+                        "vietnamese":  "Tối qua anh ấy bị sốt rồi."
                     },
                     {
-                        "chinese":  "发烧以后不要出去。",
-                        "pinyin":  "Fāshāo yǐhòu búyào chūqù.",
-                        "vietnamese":  "Sau khi bị sốt không nên ra ngoài."
+                        "chinese":  "孩子发烧，最好赶快去医院。",
+                        "pinyin":  "Háizi fāshāo, zuìhǎo gǎnkuài qù yīyuàn.",
+                        "vietnamese":  "Trẻ bị sốt, tốt nhất mau đến bệnh viện."
                     },
                     {
-                        "chinese":  "孩子发烧了，家长很担心。",
-                        "pinyin":  "Háizi fāshāo le, jiāzhǎng hěn dānxīn.",
-                        "vietnamese":  "Đứa trẻ bị sốt nên bố mẹ rất lo lắng."
-                    },
-                    {
-                        "chinese":  "我感冒以后发烧了。",
-                        "pinyin":  "Wǒ gǎnmào yǐhòu fāshāo le.",
-                        "vietnamese":  "Tôi bị sốt sau khi cảm cúm."
+                        "chinese":  "我有点发烧，所以今天请假。",
+                        "pinyin":  "Wǒ yǒudiǎn fāshāo, suǒyǐ jīntiān qǐngjià.",
+                        "vietnamese":  "Tôi hơi sốt nên hôm nay xin nghỉ."
                     },
                     {
                         "chinese":  "发烧的时候要多喝水。",
                         "pinyin":  "Fāshāo de shíhou yào duō hē shuǐ.",
-                        "vietnamese":  "Khi bị sốt nên uống nhiều nước."
+                        "vietnamese":  "Khi bị sốt phải uống nhiều nước."
                     },
                     {
-                        "chinese":  "他因为发烧请假了。",
-                        "pinyin":  "Tā yīnwèi fāshāo qǐngjià le.",
-                        "vietnamese":  "Anh ấy xin nghỉ vì bị sốt."
+                        "chinese":  "他发烧很厉害，可能要住院。",
+                        "pinyin":  "Tā fāshāo hěn lìhai, kěnéng yào zhùyuàn.",
+                        "vietnamese":  "Anh ấy sốt rất nặng, có thể phải nhập viện."
                     },
                     {
-                        "chinese":  "发烧两天了还没好。",
-                        "pinyin":  "Fāshāo liǎng tiān le hái méi hǎo.",
-                        "vietnamese":  "Bị sốt hai ngày rồi vẫn chưa khỏi."
+                        "chinese":  "如果发烧严重，别自己乱吃药。",
+                        "pinyin":  "Rúguǒ fāshāo yánzhòng, bié zìjǐ luàn chī yào.",
+                        "vietnamese":  "Nếu sốt nghiêm trọng, đừng tự uống thuốc lung tung."
                     },
                     {
-                        "chinese":  "附近有药店吗？",
-                        "pinyin":  "Fùjìn yǒu yàodiàn ma?",
-                        "vietnamese":  "Gần đây có hiệu thuốc không?"
+                        "chinese":  "她发烧以后，脸色很不好。",
+                        "pinyin":  "Tā fāshāo yǐhòu, liǎnsè hěn bù hǎo.",
+                        "vietnamese":  "Sau khi cô ấy bị sốt, sắc mặt rất không tốt."
                     },
                     {
-                        "chinese":  "我要去药店买药。",
-                        "pinyin":  "Wǒ yào qù yàodiàn mǎi yào.",
-                        "vietnamese":  "Tôi muốn đi hiệu thuốc mua thuốc."
+                        "chinese":  "医生检查以后，说他只是感冒发烧。",
+                        "pinyin":  "Yīshēng jiǎnchá yǐhòu, shuō tā zhǐshì gǎnmào fāshāo.",
+                        "vietnamese":  "Sau khi bác sĩ kiểm tra, nói anh ấy chỉ bị cảm sốt."
                     },
                     {
-                        "chinese":  "药店离这里不远。",
-                        "pinyin":  "Yàodiàn lí zhèlǐ bù yuǎn.",
-                        "vietnamese":  "Hiệu thuốc không xa đây."
+                        "chinese":  "发烧一天以后，他终于退烧了。",
+                        "pinyin":  "Fāshāo yì tiān yǐhòu, tā zhōngyú tuìshāo le.",
+                        "vietnamese":  "Sau một ngày bị sốt, cuối cùng anh ấy đã hạ sốt."
                     },
                     {
-                        "chinese":  "她刚从药店回来。",
-                        "pinyin":  "Tā gāng cóng yàodiàn huílai.",
-                        "vietnamese":  "Cô ấy vừa từ hiệu thuốc về."
+                        "chinese":  "老师听说他发烧了，马上让他回家。",
+                        "pinyin":  "Lǎoshī tīngshuō tā fāshāo le, mǎshàng ràng tā huí jiā.",
+                        "vietnamese":  "Giáo viên nghe nói anh ấy bị sốt, lập tức cho anh ấy về nhà."
                     },
                     {
-                        "chinese":  "药店几点关门？",
-                        "pinyin":  "Yàodiàn jǐ diǎn guānmén?",
-                        "vietnamese":  "Hiệu thuốc mấy giờ đóng cửa?"
+                        "chinese":  "学校门口有一家药店。",
+                        "pinyin":  "Xuéxiào ménkǒu yǒu yì jiā yàodiàn.",
+                        "vietnamese":  "Ở cổng trường có một hiệu thuốc."
                     },
                     {
-                        "chinese":  "这家药店很大。",
-                        "pinyin":  "Zhè jiā yàodiàn hěn dà.",
-                        "vietnamese":  "Hiệu thuốc này rất lớn."
+                        "chinese":  "他去药店买感冒药。",
+                        "pinyin":  "Tā qù yàodiàn mǎi gǎnmào yào.",
+                        "vietnamese":  "Anh ấy đi hiệu thuốc mua thuốc cảm."
                     },
                     {
-                        "chinese":  "发烧了就去药店买药。",
-                        "pinyin":  "Fāshāo le jiù qù yàodiàn mǎi yào.",
-                        "vietnamese":  "Bị sốt thì đi hiệu thuốc mua thuốc."
+                        "chinese":  "药店晚上十点才关门。",
+                        "pinyin":  "Yàodiàn wǎnshang shí diǎn cái guānmén.",
+                        "vietnamese":  "Hiệu thuốc đến 10 giờ tối mới đóng cửa."
                     },
                     {
-                        "chinese":  "药店里有很多药。",
-                        "pinyin":  "Yàodiàn lǐ yǒu hěn duō yào.",
-                        "vietnamese":  "Trong hiệu thuốc có rất nhiều thuốc."
+                        "chinese":  "如果肚子疼，可以先去药店问问。",
+                        "pinyin":  "Rúguǒ dùzi téng, kěyǐ xiān qù yàodiàn wènwen.",
+                        "vietnamese":  "Nếu đau bụng, có thể đến hiệu thuốc hỏi trước."
                     },
                     {
-                        "chinese":  "请问药店怎么走？",
-                        "pinyin":  "Qǐngwèn yàodiàn zěnme zǒu?",
-                        "vietnamese":  "Xin hỏi đi hiệu thuốc thế nào?"
+                        "chinese":  "社区附近的药店很方便。",
+                        "pinyin":  "Shèqū fùjìn de yàodiàn hěn fāngbiàn.",
+                        "vietnamese":  "Hiệu thuốc gần khu dân cư rất tiện."
                     },
                     {
-                        "chinese":  "社区附近有一家药店。",
-                        "pinyin":  "Shèqū fùjìn yǒu yì jiā yàodiàn.",
-                        "vietnamese":  "Gần khu dân cư có một hiệu thuốc."
+                        "chinese":  "药店的人建议他去医院检查。",
+                        "pinyin":  "Yàodiàn de rén jiànyì tā qù yīyuàn jiǎnchá.",
+                        "vietnamese":  "Người ở hiệu thuốc khuyên anh ấy đến bệnh viện kiểm tra."
                     },
                     {
-                        "chinese":  "我去买药。",
-                        "pinyin":  "Wǒ qù mǎi yào.",
-                        "vietnamese":  "Tôi đi mua thuốc."
+                        "chinese":  "我在药店买了一盒药。",
+                        "pinyin":  "Wǒ zài yàodiàn mǎi le yì hé yào.",
+                        "vietnamese":  "Tôi mua một hộp thuốc ở hiệu thuốc."
                     },
                     {
-                        "chinese":  "你吃药了吗？",
-                        "pinyin":  "Nǐ chī yào le ma?",
-                        "vietnamese":  "Bạn uống thuốc chưa?"
+                        "chinese":  "药店离学院不远，大约五分钟。",
+                        "pinyin":  "Yàodiàn lí xuéyuàn bù yuǎn, dàyuē wǔ fēnzhōng.",
+                        "vietnamese":  "Hiệu thuốc cách học viện không xa, khoảng 5 phút."
                     },
                     {
-                        "chinese":  "医生给我开了药。",
-                        "pinyin":  "Yīshēng gěi wǒ kāi le yào.",
-                        "vietnamese":  "Bác sĩ kê thuốc cho tôi."
+                        "chinese":  "发烧的时候，别随便在药店买药吃。",
+                        "pinyin":  "Fāshāo de shíhou, bié suíbiàn zài yàodiàn mǎi yào chī.",
+                        "vietnamese":  "Khi bị sốt, đừng tùy tiện mua thuốc ở hiệu thuốc uống."
                     },
                     {
-                        "chinese":  "这个药很有效。",
-                        "pinyin":  "Zhège yào hěn yǒuxiào.",
-                        "vietnamese":  "Thuốc này rất hiệu quả."
+                        "chinese":  "他腿受伤了，我陪他去药店。",
+                        "pinyin":  "Tā tuǐ shòushāng le, wǒ péi tā qù yàodiàn.",
+                        "vietnamese":  "Anh ấy bị thương ở chân, tôi đi cùng anh ấy đến hiệu thuốc."
                     },
                     {
-                        "chinese":  "发烧了要吃药。",
-                        "pinyin":  "Fāshāo le yào chī yào.",
-                        "vietnamese":  "Bị sốt phải uống thuốc."
+                        "chinese":  "这个药一天吃三次。",
+                        "pinyin":  "Zhège yào yì tiān chī sān cì.",
+                        "vietnamese":  "Thuốc này một ngày uống ba lần."
                     },
                     {
-                        "chinese":  "我忘了吃药。",
-                        "pinyin":  "Wǒ wàng le chī yào.",
-                        "vietnamese":  "Tôi quên uống thuốc."
+                        "chinese":  "吃药以前，最好先看说明。",
+                        "pinyin":  "Chī yào yǐqián, zuìhǎo xiān kàn shuōmíng.",
+                        "vietnamese":  "Trước khi uống thuốc, tốt nhất xem hướng dẫn trước."
                     },
                     {
-                        "chinese":  "药有一点儿苦。",
-                        "pinyin":  "Yào yǒu yìdiǎnr kǔ.",
-                        "vietnamese":  "Thuốc hơi đắng."
+                        "chinese":  "他吃了药以后，感觉好多了。",
+                        "pinyin":  "Tā chī le yào yǐhòu, gǎnjué hǎo duō le.",
+                        "vietnamese":  "Sau khi uống thuốc, anh ấy cảm thấy đỡ hơn nhiều."
                     },
                     {
-                        "chinese":  "请按时吃药。",
-                        "pinyin":  "Qǐng ànshí chī yào.",
-                        "vietnamese":  "Hãy uống thuốc đúng giờ."
+                        "chinese":  "这种药可以治感冒吗？",
+                        "pinyin":  "Zhè zhǒng yào kěyǐ zhì gǎnmào ma?",
+                        "vietnamese":  "Loại thuốc này có thể trị cảm không?"
                     },
                     {
-                        "chinese":  "药店里有很多药。",
-                        "pinyin":  "Yàodiàn lǐ yǒu hěn duō yào.",
-                        "vietnamese":  "Hiệu thuốc có rất nhiều thuốc."
+                        "chinese":  "医生给孩子开了一些药。",
+                        "pinyin":  "Yīshēng gěi háizi kāi le yìxiē yào.",
+                        "vietnamese":  "Bác sĩ kê cho đứa trẻ một ít thuốc."
                     },
                     {
-                        "chinese":  "吃了药以后好多了。",
-                        "pinyin":  "Chī le yào yǐhòu hǎo duō le.",
-                        "vietnamese":  "Uống thuốc xong đỡ hơn nhiều rồi."
+                        "chinese":  "如果发烧严重，不能只吃药。",
+                        "pinyin":  "Rúguǒ fāshāo yánzhòng, bù néng zhǐ chī yào.",
+                        "vietnamese":  "Nếu sốt nghiêm trọng, không thể chỉ uống thuốc."
                     },
                     {
-                        "chinese":  "我的汉语不如你好。",
-                        "pinyin":  "Wǒ de Hànyǔ bùrú nǐ hǎo.",
-                        "vietnamese":  "Tiếng Trung của tôi không bằng bạn."
+                        "chinese":  "你买药的时候要问清楚用法。",
+                        "pinyin":  "Nǐ mǎi yào de shíhou yào wèn qīngchu yòngfǎ.",
+                        "vietnamese":  "Khi bạn mua thuốc phải hỏi rõ cách dùng."
                     },
                     {
-                        "chinese":  "今天不如昨天热。",
-                        "pinyin":  "Jīntiān bùrú zuótiān rè.",
-                        "vietnamese":  "Hôm nay không nóng bằng hôm qua."
+                        "chinese":  "他忘了带药，所以很担心。",
+                        "pinyin":  "Tā wàng le dài yào, suǒyǐ hěn dānxīn.",
+                        "vietnamese":  "Anh ấy quên mang thuốc nên rất lo."
                     },
                     {
-                        "chinese":  "他跑得不如我快。",
-                        "pinyin":  "Tā pǎo de bùrú wǒ kuài.",
-                        "vietnamese":  "Anh ấy chạy không nhanh bằng tôi."
+                        "chinese":  "药不能乱吃，要听医生的话。",
+                        "pinyin":  "Yào bù néng luàn chī, yào tīng yīshēng de huà.",
+                        "vietnamese":  "Thuốc không được uống bừa, phải nghe lời bác sĩ."
                     },
                     {
-                        "chinese":  "这个药不如那个药有效。",
-                        "pinyin":  "Zhège yào bùrú nàge yào yǒuxiào.",
-                        "vietnamese":  "Thuốc này không hiệu quả bằng thuốc kia."
+                        "chinese":  "吃完药以后，最好早点儿休息。",
+                        "pinyin":  "Chī wán yào yǐhòu, zuìhǎo zǎodiǎnr xiūxi.",
+                        "vietnamese":  "Sau khi uống thuốc xong, tốt nhất nghỉ sớm hơn."
                     },
                     {
-                        "chinese":  "我的电脑不如你的新。",
-                        "pinyin":  "Wǒ de diànnǎo bùrú nǐ de xīn.",
-                        "vietnamese":  "Máy tính của tôi không mới bằng của bạn."
+                        "chinese":  "这么晚了，不如明天再去。",
+                        "pinyin":  "Zhème wǎn le, bùrú míngtiān zài qù.",
+                        "vietnamese":  "Muộn như vậy rồi, chi bằng ngày mai hãy đi."
                     },
                     {
-                        "chinese":  "不如你去吧。",
-                        "pinyin":  "Bùrú nǐ qù ba.",
-                        "vietnamese":  "Hay là bạn đi đi."
+                        "chinese":  "你发烧了，不如先请假休息。",
+                        "pinyin":  "Nǐ fāshāo le, bùrú xiān qǐngjià xiūxi.",
+                        "vietnamese":  "Bạn bị sốt rồi, chi bằng xin nghỉ trước để nghỉ ngơi."
                     },
                     {
-                        "chinese":  "不如我们一起吃饭吧。",
-                        "pinyin":  "Bùrú wǒmen yìqǐ chīfàn ba.",
-                        "vietnamese":  "Hay là chúng ta cùng ăn cơm nhé."
+                        "chinese":  "坐出租车太贵，不如坐地铁。",
+                        "pinyin":  "Zuò chūzūchē tài guì, bùrú zuò dìtiě.",
+                        "vietnamese":  "Đi taxi quá đắt, chi bằng đi tàu điện ngầm."
                     },
                     {
-                        "chinese":  "不如下周再见面。",
-                        "pinyin":  "Bùrú xià zhōu zài jiànmiàn.",
-                        "vietnamese":  "Hay là tuần sau gặp lại nhé."
+                        "chinese":  "肚子疼的话，不如去检查一下。",
+                        "pinyin":  "Dùzi téng dehuà, bùrú qù jiǎnchá yíxià.",
+                        "vietnamese":  "Nếu đau bụng thì chi bằng đi kiểm tra một chút."
                     },
                     {
-                        "chinese":  "与其坐车，不如走路。",
-                        "pinyin":  "Yǔqí zuò chē, bùrú zǒulù.",
-                        "vietnamese":  "Thà đi bộ còn hơn đi xe."
+                        "chinese":  "在家乱吃药，不如去药店问问。",
+                        "pinyin":  "Zài jiā luàn chī yào, bùrú qù yàodiàn wènwen.",
+                        "vietnamese":  "Ở nhà uống thuốc bừa, chi bằng đến hiệu thuốc hỏi thử."
                     },
                     {
-                        "chinese":  "与其熬夜，不如早点睡觉。",
-                        "pinyin":  "Yǔqí áoyè, bùrú zǎodiǎn shuìjiào.",
-                        "vietnamese":  "Thà ngủ sớm còn hơn thức khuya."
+                        "chinese":  "今天太累了，不如早点儿睡。",
+                        "pinyin":  "Jīntiān tài lèi le, bùrú zǎodiǎnr shuì.",
+                        "vietnamese":  "Hôm nay quá mệt rồi, chi bằng ngủ sớm hơn."
                     },
                     {
-                        "chinese":  "医生给我检查身体。",
-                        "pinyin":  "Yīshēng gěi wǒ jiǎnchá shēntǐ.",
-                        "vietnamese":  "Bác sĩ kiểm tra sức khỏe cho tôi."
+                        "chinese":  "这个方法太麻烦，不如换一种。",
+                        "pinyin":  "Zhège fāngfǎ tài máfan, bùrú huàn yì zhǒng.",
+                        "vietnamese":  "Cách này quá phiền, chi bằng đổi cách khác."
                     },
                     {
-                        "chinese":  "我要去医院检查。",
-                        "pinyin":  "Wǒ yào qù yīyuàn jiǎnchá.",
-                        "vietnamese":  "Tôi muốn đi bệnh viện kiểm tra."
+                        "chinese":  "他腿受伤了，不如别参加比赛。",
+                        "pinyin":  "Tā tuǐ shòushāng le, bùrú bié cānjiā bǐsài.",
+                        "vietnamese":  "Anh ấy bị thương ở chân rồi, chi bằng đừng tham gia thi đấu."
                     },
                     {
-                        "chinese":  "他正在检查作业。",
-                        "pinyin":  "Tā zhèngzài jiǎnchá zuòyè.",
-                        "vietnamese":  "Anh ấy đang kiểm tra bài tập."
+                        "chinese":  "你脸色不好，不如回家休息。",
+                        "pinyin":  "Nǐ liǎnsè bù hǎo, bùrú huí jiā xiūxi.",
+                        "vietnamese":  "Sắc mặt bạn không tốt, chi bằng về nhà nghỉ."
                     },
                     {
-                        "chinese":  "请检查一下。",
-                        "pinyin":  "Qǐng jiǎnchá yíxià.",
-                        "vietnamese":  "Hãy kiểm tra một chút."
+                        "chinese":  "与其一直担心，不如赶快行动。",
+                        "pinyin":  "Yǔqí yìzhí dānxīn, bùrú gǎnkuài xíngdòng.",
+                        "vietnamese":  "Thay vì cứ lo lắng, chi bằng nhanh chóng hành động."
                     },
                     {
-                        "chinese":  "医生建议我做检查。",
-                        "pinyin":  "Yīshēng jiànyì wǒ zuò jiǎnchá.",
-                        "vietnamese":  "Bác sĩ khuyên tôi đi kiểm tra."
+                        "chinese":  "医生让他做一次检查。",
+                        "pinyin":  "Yīshēng ràng tā zuò yí cì jiǎnchá.",
+                        "vietnamese":  "Bác sĩ bảo anh ấy làm một lần kiểm tra."
                     },
                     {
-                        "chinese":  "检查结果出来了。",
-                        "pinyin":  "Jiǎnchá jiéguǒ chūlái le.",
-                        "vietnamese":  "Kết quả kiểm tra đã có rồi."
+                        "chinese":  "发烧严重的话，最好去医院检查。",
+                        "pinyin":  "Fāshāo yánzhòng dehuà, zuìhǎo qù yīyuàn jiǎnchá.",
+                        "vietnamese":  "Nếu sốt nghiêm trọng, tốt nhất đến bệnh viện kiểm tra."
                     },
                     {
-                        "chinese":  "出发以前检查一下行李。",
-                        "pinyin":  "Chūfā yǐqián jiǎnchá yíxià xíngli.",
-                        "vietnamese":  "Trước khi xuất phát hãy kiểm tra hành lý."
+                        "chinese":  "老师检查了我们的作业。",
+                        "pinyin":  "Lǎoshī jiǎnchá le wǒmen de zuòyè.",
+                        "vietnamese":  "Giáo viên đã kiểm tra bài tập của chúng tôi."
                     },
                     {
-                        "chinese":  "我每年检查一次身体。",
-                        "pinyin":  "Wǒ měinián jiǎnchá yí cì shēntǐ.",
-                        "vietnamese":  "Tôi mỗi năm kiểm tra sức khỏe một lần."
+                        "chinese":  "出发以前，要检查一下地址。",
+                        "pinyin":  "Chūfā yǐqián, yào jiǎnchá yíxià dìzhǐ.",
+                        "vietnamese":  "Trước khi xuất phát, phải kiểm tra địa chỉ một chút."
                     },
                     {
-                        "chinese":  "医生正在给孩子检查。",
-                        "pinyin":  "Yīshēng zhèngzài gěi háizi jiǎnchá.",
-                        "vietnamese":  "Bác sĩ đang khám cho đứa trẻ."
+                        "chinese":  "他腿受伤了，需要检查一下。",
+                        "pinyin":  "Tā tuǐ shòushāng le, xūyào jiǎnchá yíxià.",
+                        "vietnamese":  "Anh ấy bị thương ở chân, cần kiểm tra một chút."
                     },
                     {
-                        "chinese":  "请认真检查答案。",
-                        "pinyin":  "Qǐng rènzhēn jiǎnchá dá\u0027àn.",
-                        "vietnamese":  "Hãy kiểm tra đáp án cẩn thận."
+                        "chinese":  "检查以后，医生说问题不严重。",
+                        "pinyin":  "Jiǎnchá yǐhòu, yīshēng shuō wèntí bù yánzhòng.",
+                        "vietnamese":  "Sau khi kiểm tra, bác sĩ nói vấn đề không nghiêm trọng."
                     },
                     {
-                        "chinese":  "我住在这个社区。",
-                        "pinyin":  "Wǒ zhù zài zhège shèqū.",
-                        "vietnamese":  "Tôi sống ở khu dân cư này."
+                        "chinese":  "请你检查一下发票上的价格。",
+                        "pinyin":  "Qǐng nǐ jiǎnchá yíxià fāpiào shàng de jiàgé.",
+                        "vietnamese":  "Bạn hãy kiểm tra giá trên hóa đơn một chút."
                     },
                     {
-                        "chinese":  "社区环境很好。",
-                        "pinyin":  "Shèqū huánjìng hěn hǎo.",
-                        "vietnamese":  "Môi trường khu dân cư rất tốt."
+                        "chinese":  "社区医院可以做简单检查。",
+                        "pinyin":  "Shèqū yīyuàn kěyǐ zuò jiǎndān jiǎnchá.",
+                        "vietnamese":  "Bệnh viện/phòng khám cộng đồng có thể làm kiểm tra đơn giản."
                     },
                     {
-                        "chinese":  "社区附近有药店。",
-                        "pinyin":  "Shèqū fùjìn yǒu yàodiàn.",
-                        "vietnamese":  "Gần khu dân cư có hiệu thuốc."
+                        "chinese":  "他没有检查清楚，所以买错了药。",
+                        "pinyin":  "Tā méiyǒu jiǎnchá qīngchu, suǒyǐ mǎi cuò le yào.",
+                        "vietnamese":  "Anh ấy không kiểm tra rõ nên mua nhầm thuốc."
                     },
                     {
-                        "chinese":  "社区里有很多老人。",
-                        "pinyin":  "Shèqū lǐ yǒu hěn duō lǎorén.",
-                        "vietnamese":  "Trong khu dân cư có nhiều người già."
+                        "chinese":  "如果身体不舒服，别怕检查。",
+                        "pinyin":  "Rúguǒ shēntǐ bù shūfu, bié pà jiǎnchá.",
+                        "vietnamese":  "Nếu cơ thể không khỏe, đừng sợ kiểm tra."
                     },
                     {
-                        "chinese":  "社区很安静。",
-                        "pinyin":  "Shèqū hěn ānjìng.",
-                        "vietnamese":  "Khu dân cư rất yên tĩnh."
+                        "chinese":  "我们社区有一个小药店。",
+                        "pinyin":  "Wǒmen shèqū yǒu yí ge xiǎo yàodiàn.",
+                        "vietnamese":  "Khu dân cư chúng tôi có một hiệu thuốc nhỏ."
                     },
                     {
-                        "chinese":  "社区有一个公园。",
-                        "pinyin":  "Shèqū yǒu yí gè gōngyuán.",
-                        "vietnamese":  "Khu dân cư có một công viên."
+                        "chinese":  "社区医院离我家很近。",
+                        "pinyin":  "Shèqū yīyuàn lí wǒ jiā hěn jìn.",
+                        "vietnamese":  "Bệnh viện/phòng khám cộng đồng cách nhà tôi rất gần."
                     },
                     {
-                        "chinese":  "社区活动很丰富。",
-                        "pinyin":  "Shèqū huódòng hěn fēngfù.",
-                        "vietnamese":  "Hoạt động cộng đồng rất phong phú."
+                        "chinese":  "社区里有很多老人和孩子。",
+                        "pinyin":  "Shèqū lǐ yǒu hěn duō lǎorén hé háizi.",
+                        "vietnamese":  "Trong khu dân cư có nhiều người già và trẻ em."
                     },
                     {
-                        "chinese":  "我经常参加社区活动。",
-                        "pinyin":  "Wǒ jīngcháng cānjiā shèqū huódòng.",
-                        "vietnamese":  "Tôi thường tham gia hoạt động cộng đồng."
+                        "chinese":  "他在社区工作，负责照顾老人。",
+                        "pinyin":  "Tā zài shèqū gōngzuò, fùzé zhàogu lǎorén.",
+                        "vietnamese":  "Anh ấy làm việc ở khu dân cư, phụ trách chăm sóc người già."
                     },
                     {
-                        "chinese":  "社区中心离我家很近。",
-                        "pinyin":  "Shèqū zhōngxīn lí wǒ jiā hěn jìn.",
-                        "vietnamese":  "Trung tâm cộng đồng gần nhà tôi."
+                        "chinese":  "社区通知大家明天做健康检查。",
+                        "pinyin":  "Shèqū tōngzhī dàjiā míngtiān zuò jiànkāng jiǎnchá.",
+                        "vietnamese":  "Khu dân cư thông báo mọi người ngày mai khám sức khỏe."
                     },
                     {
-                        "chinese":  "大家都喜欢这个社区。",
-                        "pinyin":  "Dàjiā dōu xǐhuan zhège shèqū.",
-                        "vietnamese":  "Mọi người đều thích khu dân cư này."
+                        "chinese":  "如果感冒了，可以先去社区医院。",
+                        "pinyin":  "Rúguǒ gǎnmào le, kěyǐ xiān qù shèqū yīyuàn.",
+                        "vietnamese":  "Nếu bị cảm, có thể đến phòng khám cộng đồng trước."
                     },
                     {
-                        "chinese":  "赶快走吧。",
-                        "pinyin":  "Gǎnkuài zǒu ba.",
-                        "vietnamese":  "Mau đi thôi."
+                        "chinese":  "这个社区环境很好，也很安全。",
+                        "pinyin":  "Zhège shèqū huánjìng hěn hǎo, yě hěn ānquán.",
+                        "vietnamese":  "Khu dân cư này môi trường tốt và cũng rất an toàn."
                     },
                     {
-                        "chinese":  "赶快吃饭。",
-                        "pinyin":  "Gǎnkuài chīfàn.",
-                        "vietnamese":  "Mau ăn cơm đi."
+                        "chinese":  "社区保安晚上一直在门口站着。",
+                        "pinyin":  "Shèqū bǎo\u0027ān wǎnshang yìzhí zài ménkǒu zhànzhe.",
+                        "vietnamese":  "Bảo vệ khu dân cư buổi tối luôn đứng ở cổng."
                     },
                     {
-                        "chinese":  "你赶快回来。",
-                        "pinyin":  "Nǐ gǎnkuài huílai.",
-                        "vietnamese":  "Bạn mau quay về đi."
+                        "chinese":  "我们社区有很多活动。",
+                        "pinyin":  "Wǒmen shèqū yǒu hěn duō huódòng.",
+                        "vietnamese":  "Khu dân cư chúng tôi có nhiều hoạt động."
                     },
                     {
-                        "chinese":  "快迟到了，赶快走。",
-                        "pinyin":  "Kuài chídào le, gǎnkuài zǒu.",
-                        "vietnamese":  "Sắp muộn rồi, mau đi thôi."
+                        "chinese":  "社区医生建议他赶快去检查。",
+                        "pinyin":  "Shèqū yīshēng jiànyì tā gǎnkuài qù jiǎnchá.",
+                        "vietnamese":  "Bác sĩ cộng đồng khuyên anh ấy mau đi kiểm tra."
                     },
                     {
-                        "chinese":  "发烧了就赶快去医院。",
-                        "pinyin":  "Fāshāo le jiù gǎnkuài qù yīyuàn.",
-                        "vietnamese":  "Bị sốt thì mau đi bệnh viện."
+                        "chinese":  "你发烧了，赶快去医院。",
+                        "pinyin":  "Nǐ fāshāo le, gǎnkuài qù yīyuàn.",
+                        "vietnamese":  "Bạn bị sốt rồi, mau đến bệnh viện đi."
                     },
                     {
-                        "chinese":  "赶快把药吃了。",
-                        "pinyin":  "Gǎnkuài bǎ yào chī le.",
-                        "vietnamese":  "Mau uống thuốc đi."
+                        "chinese":  "天快黑了，我们赶快回家吧。",
+                        "pinyin":  "Tiān kuài hēi le, wǒmen gǎnkuài huí jiā ba.",
+                        "vietnamese":  "Trời sắp tối rồi, chúng ta mau về nhà thôi."
                     },
                     {
-                        "chinese":  "老师让我们赶快进去。",
-                        "pinyin":  "Lǎoshī ràng wǒmen gǎnkuài jìnqù.",
-                        "vietnamese":  "Giáo viên bảo chúng tôi mau vào trong."
+                        "chinese":  "他腿受伤了，赶快叫医生。",
+                        "pinyin":  "Tā tuǐ shòushāng le, gǎnkuài jiào yīshēng.",
+                        "vietnamese":  "Anh ấy bị thương ở chân rồi, mau gọi bác sĩ."
                     },
                     {
-                        "chinese":  "下雨了，赶快回家吧。",
-                        "pinyin":  "Xiàyǔ le, gǎnkuài huí jiā ba.",
-                        "vietnamese":  "Mưa rồi, mau về nhà đi."
+                        "chinese":  "如果肚子疼得厉害，赶快检查。",
+                        "pinyin":  "Rúguǒ dùzi téng de lìhai, gǎnkuài jiǎnchá.",
+                        "vietnamese":  "Nếu đau bụng nghiêm trọng, mau kiểm tra."
                     },
                     {
-                        "chinese":  "请赶快告诉我结果。",
-                        "pinyin":  "Qǐng gǎnkuài gàosu wǒ jiéguǒ.",
-                        "vietnamese":  "Hãy mau cho tôi biết kết quả."
+                        "chinese":  "老师让我们赶快把作业交上去。",
+                        "pinyin":  "Lǎoshī ràng wǒmen gǎnkuài bǎ zuòyè jiāo shàngqù.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi nhanh chóng nộp bài tập lên."
                     },
                     {
-                        "chinese":  "赶快复习，明天要考试。",
-                        "pinyin":  "Gǎnkuài fùxí, míngtiān yào kǎoshì.",
-                        "vietnamese":  "Mau ôn tập đi, ngày mai phải thi rồi."
+                        "chinese":  "赶快吃药，然后好好儿休息。",
+                        "pinyin":  "Gǎnkuài chī yào, ránhòu hǎohāor xiūxi.",
+                        "vietnamese":  "Mau uống thuốc, sau đó nghỉ ngơi tử tế."
                     },
                     {
-                        "chinese":  "我感冒了。",
-                        "pinyin":  "Wǒ gǎnmào le.",
-                        "vietnamese":  "Tôi bị cảm rồi."
+                        "chinese":  "他赶快给老师打电话请假。",
+                        "pinyin":  "Tā gǎnkuài gěi lǎoshī dǎ diànhuà qǐngjià.",
+                        "vietnamese":  "Anh ấy nhanh chóng gọi điện cho giáo viên xin nghỉ."
                     },
                     {
-                        "chinese":  "他昨天感冒了。",
-                        "pinyin":  "Tā zuótiān gǎnmào le.",
-                        "vietnamese":  "Hôm qua anh ấy bị cảm."
+                        "chinese":  "赶快走吧，不然会迟到。",
+                        "pinyin":  "Gǎnkuài zǒu ba, bùrán huì chídào.",
+                        "vietnamese":  "Mau đi thôi, nếu không sẽ đến muộn."
                     },
                     {
-                        "chinese":  "感冒以后要多休息。",
-                        "pinyin":  "Gǎnmào yǐhòu yào duō xiūxi.",
-                        "vietnamese":  "Bị cảm rồi cần nghỉ ngơi nhiều."
+                        "chinese":  "孩子倒了以后，妈妈赶快跑过去。",
+                        "pinyin":  "Háizi dǎo le yǐhòu, māma gǎnkuài pǎo guòqù.",
+                        "vietnamese":  "Sau khi đứa trẻ ngã, mẹ nhanh chóng chạy qua."
                     },
                     {
-                        "chinese":  "我因为感冒请假了。",
-                        "pinyin":  "Wǒ yīnwèi gǎnmào qǐngjià le.",
-                        "vietnamese":  "Tôi xin nghỉ vì bị cảm."
+                        "chinese":  "如果药吃完了，就赶快去药店买。",
+                        "pinyin":  "Rúguǒ yào chī wán le, jiù gǎnkuài qù yàodiàn mǎi.",
+                        "vietnamese":  "Nếu thuốc uống hết rồi thì mau đi hiệu thuốc mua."
                     },
                     {
-                        "chinese":  "感冒的时候要多喝水。",
-                        "pinyin":  "Gǎnmào de shíhou yào duō hē shuǐ.",
-                        "vietnamese":  "Khi bị cảm cần uống nhiều nước."
+                        "chinese":  "我感冒了，今天不想出门。",
+                        "pinyin":  "Wǒ gǎnmào le, jīntiān bù xiǎng chūmén.",
+                        "vietnamese":  "Tôi bị cảm rồi, hôm nay không muốn ra ngoài."
                     },
                     {
-                        "chinese":  "她感冒得很厉害。",
+                        "chinese":  "他感冒以后一直咳嗽。",
+                        "pinyin":  "Tā gǎnmào yǐhòu yìzhí késou.",
+                        "vietnamese":  "Sau khi bị cảm, anh ấy cứ ho mãi."
+                    },
+                    {
+                        "chinese":  "感冒不严重的话，可以在家休息。",
+                        "pinyin":  "Gǎnmào bù yánzhòng dehuà, kěyǐ zài jiā xiūxi.",
+                        "vietnamese":  "Nếu cảm không nghiêm trọng, có thể nghỉ ở nhà."
+                    },
+                    {
+                        "chinese":  "她因为感冒请假两天。",
+                        "pinyin":  "Tā yīnwèi gǎnmào qǐngjià liǎng tiān.",
+                        "vietnamese":  "Cô ấy vì bị cảm nên xin nghỉ hai ngày."
+                    },
+                    {
+                        "chinese":  "感冒的时候要多喝热水。",
+                        "pinyin":  "Gǎnmào de shíhou yào duō hē rè shuǐ.",
+                        "vietnamese":  "Khi bị cảm phải uống nhiều nước nóng."
+                    },
+                    {
+                        "chinese":  "医生说他只是普通感冒。",
+                        "pinyin":  "Yīshēng shuō tā zhǐshì pǔtōng gǎnmào.",
+                        "vietnamese":  "Bác sĩ nói anh ấy chỉ là cảm thông thường."
+                    },
+                    {
+                        "chinese":  "如果感冒越来越厉害，就去检查。",
+                        "pinyin":  "Rúguǒ gǎnmào yuèláiyuè lìhai, jiù qù jiǎnchá.",
+                        "vietnamese":  "Nếu cảm ngày càng nặng thì đi kiểm tra."
+                    },
+                    {
+                        "chinese":  "药店有很多种感冒药。",
+                        "pinyin":  "Yàodiàn yǒu hěn duō zhǒng gǎnmào yào.",
+                        "vietnamese":  "Hiệu thuốc có nhiều loại thuốc cảm."
+                    },
+                    {
+                        "chinese":  "他感冒还没恢复，不适合运动。",
+                        "pinyin":  "Tā gǎnmào hái méi huīfù, bù shìhé yùndòng.",
+                        "vietnamese":  "Anh ấy bị cảm vẫn chưa hồi phục, không phù hợp vận động."
+                    },
+                    {
+                        "chinese":  "感冒虽然不严重，但是也要注意身体。",
+                        "pinyin":  "Gǎnmào suīrán bù yánzhòng, dànshì yě yào zhùyì shēntǐ.",
+                        "vietnamese":  "Cảm tuy không nghiêm trọng nhưng cũng phải chú ý sức khỏe."
+                    },
+                    {
+                        "chinese":  "我的腿有点疼，走路不方便。",
+                        "pinyin":  "Wǒ de tuǐ yǒudiǎn téng, zǒulù bù fāngbiàn.",
+                        "vietnamese":  "Chân tôi hơi đau, đi lại không tiện."
+                    },
+                    {
+                        "chinese":  "他踢球的时候腿受伤了。",
+                        "pinyin":  "Tā tī qiú de shíhou tuǐ shòushāng le.",
+                        "vietnamese":  "Anh ấy khi đá bóng thì chân bị thương."
+                    },
+                    {
+                        "chinese":  "如果腿疼得厉害，就别爬楼梯。",
+                        "pinyin":  "Rúguǒ tuǐ téng de lìhai, jiù bié pá lóutī.",
+                        "vietnamese":  "Nếu chân đau nghiêm trọng thì đừng leo cầu thang."
+                    },
+                    {
+                        "chinese":  "医生检查了他的腿。",
+                        "pinyin":  "Yīshēng jiǎnchá le tā de tuǐ.",
+                        "vietnamese":  "Bác sĩ kiểm tra chân của anh ấy."
+                    },
+                    {
+                        "chinese":  "她腿受伤以后，只好在家休息。",
+                        "pinyin":  "Tā tuǐ shòushāng yǐhòu, zhǐhǎo zài jiā xiūxi.",
+                        "vietnamese":  "Sau khi chân cô ấy bị thương, đành ở nhà nghỉ."
+                    },
+                    {
+                        "chinese":  "你的腿恢复得怎么样了？",
+                        "pinyin":  "Nǐ de tuǐ huīfù de zěnmeyàng le?",
+                        "vietnamese":  "Chân của bạn hồi phục thế nào rồi?"
+                    },
+                    {
+                        "chinese":  "他腿不舒服，所以走得很慢。",
+                        "pinyin":  "Tā tuǐ bù shūfu, suǒyǐ zǒu de hěn màn.",
+                        "vietnamese":  "Chân anh ấy không thoải mái nên đi rất chậm."
+                    },
+                    {
+                        "chinese":  "孩子摔倒了，腿上有点伤。",
+                        "pinyin":  "Háizi shuāidǎo le, tuǐ shàng yǒudiǎn shāng.",
+                        "vietnamese":  "Đứa trẻ ngã rồi, trên chân có chút vết thương."
+                    },
+                    {
+                        "chinese":  "腿受伤的时候，最好不要跑步。",
+                        "pinyin":  "Tuǐ shòushāng de shíhou, zuìhǎo búyào pǎobù.",
+                        "vietnamese":  "Khi chân bị thương, tốt nhất đừng chạy bộ."
+                    },
+                    {
+                        "chinese":  "他住院以后，腿慢慢恢复了。",
+                        "pinyin":  "Tā zhùyuàn yǐhòu, tuǐ mànman huīfù le.",
+                        "vietnamese":  "Sau khi nhập viện, chân anh ấy dần hồi phục."
+                    },
+                    {
+                        "chinese":  "他在路上摔倒，腿受伤了。",
+                        "pinyin":  "Tā zài lùshang shuāidǎo, tuǐ shòushāng le.",
+                        "vietnamese":  "Anh ấy ngã trên đường, chân bị thương rồi."
+                    },
+                    {
+                        "chinese":  "运动以前要小心，别受伤。",
+                        "pinyin":  "Yùndòng yǐqián yào xiǎoxīn, bié shòushāng.",
+                        "vietnamese":  "Trước khi vận động phải cẩn thận, đừng bị thương."
+                    },
+                    {
+                        "chinese":  "孩子受伤以后一直哭。",
+                        "pinyin":  "Háizi shòushāng yǐhòu yìzhí kū.",
+                        "vietnamese":  "Sau khi bị thương, đứa trẻ cứ khóc mãi."
+                    },
+                    {
+                        "chinese":  "如果受伤严重，要马上去医院。",
+                        "pinyin":  "Rúguǒ shòushāng yánzhòng, yào mǎshàng qù yīyuàn.",
+                        "vietnamese":  "Nếu bị thương nghiêm trọng, phải lập tức đi bệnh viện."
+                    },
+                    {
+                        "chinese":  "她虽然受伤了，但是没有放弃比赛。",
+                        "pinyin":  "Tā suīrán shòushāng le, dànshì méiyǒu fàngqì bǐsài.",
+                        "vietnamese":  "Tuy cô ấy bị thương nhưng không bỏ cuộc thi."
+                    },
+                    {
+                        "chinese":  "他受伤以后，老师帮他请假。",
+                        "pinyin":  "Tā shòushāng yǐhòu, lǎoshī bāng tā qǐngjià.",
+                        "vietnamese":  "Sau khi anh ấy bị thương, giáo viên giúp anh ấy xin nghỉ."
+                    },
+                    {
+                        "chinese":  "医生说他的伤不算严重。",
+                        "pinyin":  "Yīshēng shuō tā de shāng bú suàn yánzhòng.",
+                        "vietnamese":  "Bác sĩ nói vết thương của anh ấy không tính là nghiêm trọng."
+                    },
+                    {
+                        "chinese":  "腿受伤了，不如先别出门。",
+                        "pinyin":  "Tuǐ shòushāng le, bùrú xiān bié chūmén.",
+                        "vietnamese":  "Chân bị thương rồi, chi bằng tạm đừng ra ngoài."
+                    },
+                    {
+                        "chinese":  "他受伤以后，需要别人照顾。",
+                        "pinyin":  "Tā shòushāng yǐhòu, xūyào biérén zhàogu.",
+                        "vietnamese":  "Sau khi bị thương, anh ấy cần người khác chăm sóc."
+                    },
+                    {
+                        "chinese":  "如果只是小受伤，可以去社区医院。",
+                        "pinyin":  "Rúguǒ zhǐshì xiǎo shòushāng, kěyǐ qù shèqū yīyuàn.",
+                        "vietnamese":  "Nếu chỉ là vết thương nhỏ, có thể đến phòng khám cộng đồng."
+                    },
+                    {
+                        "chinese":  "他感冒得很厉害。",
                         "pinyin":  "Tā gǎnmào de hěn lìhai.",
-                        "vietnamese":  "Cô ấy bị cảm rất nặng."
+                        "vietnamese":  "Anh ấy bị cảm rất nặng."
                     },
                     {
-                        "chinese":  "最近很多人感冒。",
-                        "pinyin":  "Zuìjìn hěn duō rén gǎnmào.",
-                        "vietnamese":  "Gần đây rất nhiều người bị cảm."
+                        "chinese":  "今天风很厉害，别出去太久。",
+                        "pinyin":  "Jīntiān fēng hěn lìhai, bié chūqù tài jiǔ.",
+                        "vietnamese":  "Hôm nay gió rất mạnh, đừng ra ngoài quá lâu."
                     },
                     {
-                        "chinese":  "感冒了不要熬夜。",
-                        "pinyin":  "Gǎnmào le búyào áoyè.",
-                        "vietnamese":  "Bị cảm thì đừng thức khuya."
+                        "chinese":  "她中文说得很厉害，老师都夸她。",
+                        "pinyin":  "Tā Zhōngwén shuō de hěn lìhai, lǎoshī dōu kuā tā.",
+                        "vietnamese":  "Cô ấy nói tiếng Trung rất giỏi, giáo viên đều khen."
                     },
                     {
-                        "chinese":  "我吃了药以后好多了。",
-                        "pinyin":  "Wǒ chī le yào yǐhòu hǎo duō le.",
-                        "vietnamese":  "Sau khi uống thuốc tôi đỡ hơn nhiều rồi."
+                        "chinese":  "发烧厉害的话，最好去检查。",
+                        "pinyin":  "Fāshāo lìhai dehuà, zuìhǎo qù jiǎnchá.",
+                        "vietnamese":  "Nếu sốt nặng thì tốt nhất đi kiểm tra."
                     },
                     {
-                        "chinese":  "感冒还没完全恢复。",
-                        "pinyin":  "Gǎnmào hái méi wánquán huīfù.",
-                        "vietnamese":  "Bệnh cảm vẫn chưa hồi phục hoàn toàn."
+                        "chinese":  "他腿疼得厉害，只好坐下休息。",
+                        "pinyin":  "Tā tuǐ téng de lìhai, zhǐhǎo zuò xià xiūxi.",
+                        "vietnamese":  "Anh ấy đau chân nặng, đành ngồi xuống nghỉ."
                     },
                     {
-                        "chinese":  "我的腿疼。",
-                        "pinyin":  "Wǒ de tuǐ téng.",
-                        "vietnamese":  "Chân tôi đau."
+                        "chinese":  "这个医生很厉害，经验也很多。",
+                        "pinyin":  "Zhège yīshēng hěn lìhai, jīngyàn yě hěn duō.",
+                        "vietnamese":  "Bác sĩ này rất giỏi, kinh nghiệm cũng nhiều."
                     },
                     {
-                        "chinese":  "他的腿受伤了。",
-                        "pinyin":  "Tā de tuǐ shòushāng le.",
-                        "vietnamese":  "Chân anh ấy bị thương rồi."
+                        "chinese":  "昨天夜里楼上吵得很厉害。",
+                        "pinyin":  "Zuótiān yèlǐ lóushang chǎo de hěn lìhai.",
+                        "vietnamese":  "Tối qua tầng trên ồn rất dữ."
                     },
                     {
-                        "chinese":  "我的腿有点儿酸。",
-                        "pinyin":  "Wǒ de tuǐ yǒudiǎnr suān.",
-                        "vietnamese":  "Chân tôi hơi mỏi."
+                        "chinese":  "孩子咳嗽得厉害，妈妈很担心。",
+                        "pinyin":  "Háizi késou de lìhai, māma hěn dānxīn.",
+                        "vietnamese":  "Đứa trẻ ho dữ, mẹ rất lo."
                     },
                     {
-                        "chinese":  "她的腿很长。",
-                        "pinyin":  "Tā de tuǐ hěn cháng.",
-                        "vietnamese":  "Chân cô ấy rất dài."
+                        "chinese":  "这次堵车很厉害，我们迟到了。",
+                        "pinyin":  "Zhè cì dǔchē hěn lìhai, wǒmen chídào le.",
+                        "vietnamese":  "Lần này tắc đường rất nghiêm trọng, chúng tôi đến muộn."
                     },
                     {
-                        "chinese":  "我跑步以后腿疼。",
-                        "pinyin":  "Wǒ pǎobù yǐhòu tuǐ téng.",
-                        "vietnamese":  "Sau khi chạy bộ chân tôi bị đau."
+                        "chinese":  "他恢复得很厉害，已经能走路了。",
+                        "pinyin":  "Tā huīfù de hěn lìhai, yǐjīng néng zǒulù le.",
+                        "vietnamese":  "Anh ấy hồi phục rất tốt, đã có thể đi lại rồi."
                     },
                     {
-                        "chinese":  "孩子的腿撞伤了。",
-                        "pinyin":  "Háizi de tuǐ zhuàng shāng le.",
-                        "vietnamese":  "Chân đứa trẻ bị va đập bị thương."
+                        "chinese":  "这个问题比较严重。",
+                        "pinyin":  "Zhège wèntí bǐjiào yánzhòng.",
+                        "vietnamese":  "Vấn đề này khá nghiêm trọng."
                     },
                     {
-                        "chinese":  "我的腿恢复得不错。",
-                        "pinyin":  "Wǒ de tuǐ huīfù de búcuò.",
-                        "vietnamese":  "Chân tôi hồi phục khá tốt."
+                        "chinese":  "如果发烧严重，要赶快去医院。",
+                        "pinyin":  "Rúguǒ fāshāo yánzhòng, yào gǎnkuài qù yīyuàn.",
+                        "vietnamese":  "Nếu sốt nghiêm trọng, phải nhanh chóng đến bệnh viện."
                     },
                     {
-                        "chinese":  "他站了一天，腿很累。",
-                        "pinyin":  "Tā zhàn le yì tiān, tuǐ hěn lèi.",
-                        "vietnamese":  "Anh ấy đứng cả ngày nên chân rất mệt."
+                        "chinese":  "他的腿伤不严重，不用住院。",
+                        "pinyin":  "Tā de tuǐ shāng bù yánzhòng, búyòng zhùyuàn.",
+                        "vietnamese":  "Vết thương ở chân của anh ấy không nghiêm trọng, không cần nhập viện."
                     },
                     {
-                        "chinese":  "医生检查了我的腿。",
-                        "pinyin":  "Yīshēng jiǎnchá le wǒ de tuǐ.",
-                        "vietnamese":  "Bác sĩ đã kiểm tra chân tôi."
+                        "chinese":  "感冒虽然不严重，但是也要休息。",
+                        "pinyin":  "Gǎnmào suīrán bù yánzhòng, dànshì yě yào xiūxi.",
+                        "vietnamese":  "Cảm tuy không nghiêm trọng nhưng cũng phải nghỉ ngơi."
                     },
                     {
-                        "chinese":  "她的腿越来越好了。",
-                        "pinyin":  "Tā de tuǐ yuèláiyuè hǎo le.",
-                        "vietnamese":  "Chân cô ấy ngày càng tốt hơn."
+                        "chinese":  "医生说情况有点严重。",
+                        "pinyin":  "Yīshēng shuō qíngkuàng yǒudiǎn yánzhòng.",
+                        "vietnamese":  "Bác sĩ nói tình hình hơi nghiêm trọng."
                     },
                     {
-                        "chinese":  "他受伤了。",
-                        "pinyin":  "Tā shòushāng le.",
-                        "vietnamese":  "Anh ấy bị thương rồi."
+                        "chinese":  "如果不及时吃药，可能会更严重。",
+                        "pinyin":  "Rúguǒ bù jíshí chī yào, kěnéng huì gèng yánzhòng.",
+                        "vietnamese":  "Nếu không uống thuốc kịp thời, có thể sẽ nghiêm trọng hơn."
                     },
                     {
-                        "chinese":  "我的腿受伤了。",
-                        "pinyin":  "Wǒ de tuǐ shòushāng le.",
-                        "vietnamese":  "Chân tôi bị thương rồi."
+                        "chinese":  "他受伤严重，所以需要照顾。",
+                        "pinyin":  "Tā shòushāng yánzhòng, suǒyǐ xūyào zhàogu.",
+                        "vietnamese":  "Anh ấy bị thương nghiêm trọng nên cần chăm sóc."
                     },
                     {
-                        "chinese":  "孩子在运动会受伤了。",
-                        "pinyin":  "Háizi zài yùndònghuì shòushāng le.",
-                        "vietnamese":  "Đứa trẻ bị thương trong đại hội thể thao."
+                        "chinese":  "这次撞车事故很严重。",
+                        "pinyin":  "Zhè cì zhuàngchē shìgù hěn yánzhòng.",
+                        "vietnamese":  "Sự cố va xe lần này rất nghiêm trọng."
                     },
                     {
-                        "chinese":  "她受伤以后住院了。",
-                        "pinyin":  "Tā shòushāng yǐhòu zhùyuàn le.",
-                        "vietnamese":  "Sau khi bị thương cô ấy đã nhập viện."
+                        "chinese":  "肚子疼得严重时，不要自己乱吃药。",
+                        "pinyin":  "Dùzi téng de yánzhòng shí, búyào zìjǐ luàn chī yào.",
+                        "vietnamese":  "Khi đau bụng nghiêm trọng, đừng tự uống thuốc bừa."
                     },
                     {
-                        "chinese":  "他的手受伤了。",
-                        "pinyin":  "Tā de shǒu shòushāng le.",
-                        "vietnamese":  "Tay anh ấy bị thương rồi."
+                        "chinese":  "老师很认真地处理这个严重问题。",
+                        "pinyin":  "Lǎoshī hěn rènzhēn de chǔlǐ zhège yánzhòng wèntí.",
+                        "vietnamese":  "Giáo viên xử lý vấn đề nghiêm trọng này rất nghiêm túc."
                     },
                     {
-                        "chinese":  "受伤以后要多休息。",
-                        "pinyin":  "Shòushāng yǐhòu yào duō xiūxi.",
-                        "vietnamese":  "Sau khi bị thương cần nghỉ ngơi nhiều."
+                        "chinese":  "他发烧严重，需要住院。",
+                        "pinyin":  "Tā fāshāo yánzhòng, xūyào zhùyuàn.",
+                        "vietnamese":  "Anh ấy sốt nghiêm trọng, cần nhập viện."
                     },
                     {
-                        "chinese":  "医生正在检查受伤的地方。",
-                        "pinyin":  "Yīshēng zhèngzài jiǎnchá shòushāng de dìfang.",
-                        "vietnamese":  "Bác sĩ đang kiểm tra chỗ bị thương."
+                        "chinese":  "医生说不用住院，在家休息就行。",
+                        "pinyin":  "Yīshēng shuō búyòng zhùyuàn, zài jiā xiūxi jiù xíng.",
+                        "vietnamese":  "Bác sĩ nói không cần nhập viện, nghỉ ở nhà là được."
                     },
                     {
-                        "chinese":  "他受伤得不严重。",
-                        "pinyin":  "Tā shòushāng de bù yánzhòng.",
-                        "vietnamese":  "Anh ấy bị thương không nghiêm trọng."
+                        "chinese":  "她住院以后，妈妈一直照顾她。",
+                        "pinyin":  "Tā zhùyuàn yǐhòu, māma yìzhí zhàogu tā.",
+                        "vietnamese":  "Sau khi cô ấy nhập viện, mẹ luôn chăm sóc cô ấy."
                     },
                     {
-                        "chinese":  "受伤以后不要运动。",
-                        "pinyin":  "Shòushāng yǐhòu búyào yùndòng.",
-                        "vietnamese":  "Sau khi bị thương không nên vận động."
+                        "chinese":  "腿受伤严重的话，可能要住院。",
+                        "pinyin":  "Tuǐ shòushāng yánzhòng dehuà, kěnéng yào zhùyuàn.",
+                        "vietnamese":  "Nếu chân bị thương nghiêm trọng, có thể phải nhập viện."
                     },
                     {
-                        "chinese":  "我的腿已经恢复了。",
-                        "pinyin":  "Wǒ de tuǐ yǐjīng huīfù le.",
-                        "vietnamese":  "Chân tôi đã hồi phục rồi."
+                        "chinese":  "他住院三天以后，身体好多了。",
+                        "pinyin":  "Tā zhùyuàn sān tiān yǐhòu, shēntǐ hǎo duō le.",
+                        "vietnamese":  "Sau khi anh ấy nhập viện ba ngày, cơ thể đã tốt hơn nhiều."
                     },
                     {
-                        "chinese":  "他汉语说得很厉害。",
-                        "pinyin":  "Tā Hànyǔ shuō de hěn lìhai.",
-                        "vietnamese":  "Anh ấy nói tiếng Trung rất giỏi."
+                        "chinese":  "孩子发烧不退，只好住院检查。",
+                        "pinyin":  "Háizi fāshāo bú tuì, zhǐhǎo zhùyuàn jiǎnchá.",
+                        "vietnamese":  "Đứa trẻ sốt không hạ, đành nhập viện kiểm tra."
                     },
                     {
-                        "chinese":  "今天风很厉害。",
-                        "pinyin":  "Jīntiān fēng hěn lìhai.",
-                        "vietnamese":  "Hôm nay gió rất mạnh."
+                        "chinese":  "住院期间，医生每天来看他。",
+                        "pinyin":  "Zhùyuàn qījiān, yīshēng měitiān lái kàn tā.",
+                        "vietnamese":  "Trong thời gian nhập viện, bác sĩ mỗi ngày đến thăm anh ấy."
                     },
                     {
-                        "chinese":  "她感冒得很厉害。",
-                        "pinyin":  "Tā gǎnmào de hěn lìhai.",
-                        "vietnamese":  "Cô ấy bị cảm rất nặng."
+                        "chinese":  "他不想住院，但是医生不同意。",
+                        "pinyin":  "Tā bù xiǎng zhùyuàn, dànshì yīshēng bù tóngyì.",
+                        "vietnamese":  "Anh ấy không muốn nhập viện nhưng bác sĩ không đồng ý."
                     },
                     {
-                        "chinese":  "我肚子疼得厉害。",
-                        "pinyin":  "Wǒ dùzi téng de lìhai.",
-                        "vietnamese":  "Tôi đau bụng dữ dội."
+                        "chinese":  "如果恢复得好，明天就能出院。",
+                        "pinyin":  "Rúguǒ huīfù de hǎo, míngtiān jiù néng chūyuàn.",
+                        "vietnamese":  "Nếu hồi phục tốt, ngày mai có thể xuất viện."
                     },
                     {
-                        "chinese":  "他跑得真厉害。",
-                        "pinyin":  "Tā pǎo de zhēn lìhai.",
-                        "vietnamese":  "Anh ấy chạy rất giỏi."
+                        "chinese":  "住院不是小事，家人都很担心。",
+                        "pinyin":  "Zhùyuàn bú shì xiǎoshì, jiārén dōu hěn dānxīn.",
+                        "vietnamese":  "Nhập viện không phải việc nhỏ, người nhà đều rất lo."
                     },
                     {
-                        "chinese":  "雨下得越来越厉害。",
-                        "pinyin":  "Yǔ xià de yuèláiyuè lìhai.",
-                        "vietnamese":  "Mưa ngày càng to hơn."
+                        "chinese":  "妈妈每天照顾孩子。",
+                        "pinyin":  "Māma měitiān zhàogu háizi.",
+                        "vietnamese":  "Mẹ mỗi ngày chăm sóc con."
                     },
                     {
-                        "chinese":  "他工作能力很厉害。",
-                        "pinyin":  "Tā gōngzuò nénglì hěn lìhai.",
-                        "vietnamese":  "Năng lực làm việc của anh ấy rất giỏi."
+                        "chinese":  "他生病了，需要有人照顾。",
+                        "pinyin":  "Tā shēngbìng le, xūyào yǒu rén zhàogu.",
+                        "vietnamese":  "Anh ấy bị bệnh rồi, cần có người chăm sóc."
                     },
                     {
-                        "chinese":  "我的头疼得很厉害。",
-                        "pinyin":  "Wǒ de tóu téng de hěn lìhai.",
-                        "vietnamese":  "Tôi đau đầu rất dữ dội."
+                        "chinese":  "她住院的时候，朋友去照顾她。",
+                        "pinyin":  "Tā zhùyuàn de shíhou, péngyou qù zhàogu tā.",
+                        "vietnamese":  "Khi cô ấy nhập viện, bạn đến chăm sóc cô ấy."
                     },
                     {
-                        "chinese":  "她唱歌很厉害。",
-                        "pinyin":  "Tā chànggē hěn lìhai.",
-                        "vietnamese":  "Cô ấy hát rất giỏi."
+                        "chinese":  "老师让我们照顾受伤的同学。",
+                        "pinyin":  "Lǎoshī ràng wǒmen zhàogu shòushāng de tóngxué.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi chăm sóc bạn học bị thương."
                     },
                     {
-                        "chinese":  "最近堵车特别厉害。",
-                        "pinyin":  "Zuìjìn dǔchē tèbié lìhai.",
-                        "vietnamese":  "Gần đây tắc đường đặc biệt nghiêm trọng."
+                        "chinese":  "照顾病人很辛苦，也需要耐心。",
+                        "pinyin":  "Zhàogu bìngrén hěn xīnkǔ, yě xūyào nàixīn.",
+                        "vietnamese":  "Chăm sóc bệnh nhân rất vất vả và cũng cần kiên nhẫn."
                     },
                     {
-                        "chinese":  "他的病很严重。",
-                        "pinyin":  "Tā de bìng hěn yánzhòng.",
-                        "vietnamese":  "Bệnh của anh ấy rất nghiêm trọng."
+                        "chinese":  "如果你感冒了，要好好儿照顾自己。",
+                        "pinyin":  "Rúguǒ nǐ gǎnmào le, yào hǎohāor zhàogu zìjǐ.",
+                        "vietnamese":  "Nếu bạn bị cảm, phải chăm sóc bản thân tử tế."
                     },
                     {
-                        "chinese":  "这次感冒不严重。",
-                        "pinyin":  "Zhè cì gǎnmào bù yánzhòng.",
-                        "vietnamese":  "Lần cảm này không nghiêm trọng."
+                        "chinese":  "社区工作人员经常照顾老人。",
+                        "pinyin":  "Shèqū gōngzuò rényuán jīngcháng zhàogu lǎorén.",
+                        "vietnamese":  "Nhân viên cộng đồng thường chăm sóc người già."
                     },
                     {
-                        "chinese":  "医生说问题不严重。",
-                        "pinyin":  "Yīshēng shuō wèntí bù yánzhòng.",
-                        "vietnamese":  "Bác sĩ nói vấn đề không nghiêm trọng."
+                        "chinese":  "他腿受伤了，暂时不能照顾孩子。",
+                        "pinyin":  "Tā tuǐ shòushāng le, zànshí bù néng zhàogu háizi.",
+                        "vietnamese":  "Anh ấy bị thương ở chân, tạm thời không thể chăm con."
                     },
                     {
-                        "chinese":  "堵车情况很严重。",
-                        "pinyin":  "Dǔchē qíngkuàng hěn yánzhòng.",
-                        "vietnamese":  "Tình trạng tắc đường rất nghiêm trọng."
+                        "chinese":  "父母照顾我们长大，很不容易。",
+                        "pinyin":  "Fùmǔ zhàogu wǒmen zhǎngdà, hěn bù róngyì.",
+                        "vietnamese":  "Bố mẹ chăm sóc chúng ta lớn lên, rất không dễ dàng."
                     },
                     {
-                        "chinese":  "他的腿伤得很严重。",
-                        "pinyin":  "Tā de tuǐ shāng de hěn yánzhòng.",
-                        "vietnamese":  "Chân anh ấy bị thương rất nặng."
+                        "chinese":  "医生照顾得很好，他恢复得很快。",
+                        "pinyin":  "Yīshēng zhàogu de hěn hǎo, tā huīfù de hěn kuài.",
+                        "vietnamese":  "Bác sĩ chăm sóc rất tốt, anh ấy hồi phục rất nhanh."
                     },
                     {
-                        "chinese":  "空气污染越来越严重。",
-                        "pinyin":  "Kōngqì wūrǎn yuèláiyuè yánzhòng.",
-                        "vietnamese":  "Ô nhiễm không khí ngày càng nghiêm trọng."
+                        "chinese":  "他骑车时撞到了树。",
+                        "pinyin":  "Tā qíchē shí zhuàng dào le shù.",
+                        "vietnamese":  "Khi đi xe đạp, anh ấy va vào cây."
                     },
                     {
-                        "chinese":  "问题没有那么严重。",
-                        "pinyin":  "Wèntí méiyǒu nàme yánzhòng.",
-                        "vietnamese":  "Vấn đề không nghiêm trọng đến thế."
+                        "chinese":  "两辆车在路口撞了。",
+                        "pinyin":  "Liǎng liàng chē zài lùkǒu zhuàng le.",
+                        "vietnamese":  "Hai chiếc xe va chạm ở giao lộ."
                     },
                     {
-                        "chinese":  "如果严重的话，要住院。",
-                        "pinyin":  "Rúguǒ yánzhòng dehuà, yào zhùyuàn.",
-                        "vietnamese":  "Nếu nghiêm trọng thì phải nhập viện."
+                        "chinese":  "孩子跑得太快，撞到了桌子。",
+                        "pinyin":  "Háizi pǎo de tài kuài, zhuàng dào le zhuōzi.",
+                        "vietnamese":  "Đứa trẻ chạy quá nhanh, va vào bàn."
                     },
                     {
-                        "chinese":  "受伤以后情况变严重了。",
-                        "pinyin":  "Shòushāng yǐhòu qíngkuàng biàn yánzhòng le.",
-                        "vietnamese":  "Sau khi bị thương tình trạng trở nên nghiêm trọng hơn."
+                        "chinese":  "他被车撞倒了，腿受伤很严重。",
+                        "pinyin":  "Tā bèi chē zhuàng dǎo le, tuǐ shòushāng hěn yánzhòng.",
+                        "vietnamese":  "Anh ấy bị xe đâm ngã, chân bị thương rất nghiêm trọng."
                     },
                     {
-                        "chinese":  "医生担心病情越来越严重。",
-                        "pinyin":  "Yīshēng dānxīn bìngqíng yuèláiyuè yánzhòng.",
-                        "vietnamese":  "Bác sĩ lo tình trạng bệnh ngày càng nghiêm trọng."
+                        "chinese":  "过马路时要小心，别被车撞。",
+                        "pinyin":  "Guò mǎlù shí yào xiǎoxīn, bié bèi chē zhuàng.",
+                        "vietnamese":  "Khi qua đường phải cẩn thận, đừng bị xe đâm."
                     },
                     {
-                        "chinese":  "他住院了。",
-                        "pinyin":  "Tā zhùyuàn le.",
-                        "vietnamese":  "Anh ấy nhập viện rồi."
+                        "chinese":  "门开得太快，撞到了他的脸。",
+                        "pinyin":  "Mén kāi de tài kuài, zhuàng dào le tā de liǎn.",
+                        "vietnamese":  "Cửa mở quá nhanh, va vào mặt anh ấy."
                     },
                     {
-                        "chinese":  "医生建议我住院。",
-                        "pinyin":  "Yīshēng jiànyì wǒ zhùyuàn.",
-                        "vietnamese":  "Bác sĩ khuyên tôi nhập viện."
+                        "chinese":  "这次撞车不严重，没人受伤。",
+                        "pinyin":  "Zhè cì zhuàngchē bù yánzhòng, méi rén shòushāng.",
+                        "vietnamese":  "Lần va xe này không nghiêm trọng, không ai bị thương."
                     },
                     {
-                        "chinese":  "她在医院住院一个星期。",
-                        "pinyin":  "Tā zài yīyuàn zhùyuàn yí gè xīngqī.",
-                        "vietnamese":  "Cô ấy nằm viện một tuần."
+                        "chinese":  "他一边看手机一边走路，差点撞到人。",
+                        "pinyin":  "Tā yìbiān kàn shǒujī yìbiān zǒulù, chàdiǎn zhuàng dào rén.",
+                        "vietnamese":  "Anh ấy vừa xem điện thoại vừa đi bộ, suýt va vào người khác."
                     },
                     {
-                        "chinese":  "病情严重，需要住院。",
-                        "pinyin":  "Bìngqíng yánzhòng, xūyào zhùyuàn.",
-                        "vietnamese":  "Bệnh tình nghiêm trọng, cần nhập viện."
+                        "chinese":  "如果撞到别人，要有礼貌地道歉。",
+                        "pinyin":  "Rúguǒ zhuàng dào biérén, yào yǒu lǐmào de dàoqiàn.",
+                        "vietnamese":  "Nếu va vào người khác, phải lịch sự xin lỗi."
                     },
                     {
-                        "chinese":  "我朋友昨天住院了。",
-                        "pinyin":  "Wǒ péngyou zuótiān zhùyuàn le.",
-                        "vietnamese":  "Bạn tôi hôm qua nhập viện rồi."
+                        "chinese":  "他撞伤了腿，只好去医院检查。",
+                        "pinyin":  "Tā zhuàng shāng le tuǐ, zhǐhǎo qù yīyuàn jiǎnchá.",
+                        "vietnamese":  "Anh ấy va bị thương chân, đành đi bệnh viện kiểm tra."
                     },
                     {
-                        "chinese":  "他因为受伤住院了。",
-                        "pinyin":  "Tā yīnwèi shòushāng zhùyuàn le.",
-                        "vietnamese":  "Anh ấy nhập viện vì bị thương."
+                        "chinese":  "孩子跑得太快，突然倒了。",
+                        "pinyin":  "Háizi pǎo de tài kuài, tūrán dǎo le.",
+                        "vietnamese":  "Đứa trẻ chạy quá nhanh, đột nhiên ngã."
                     },
                     {
-                        "chinese":  "住院期间要好好休息。",
-                        "pinyin":  "Zhùyuàn qījiān yào hǎohāor xiūxi.",
-                        "vietnamese":  "Trong thời gian nằm viện phải nghỉ ngơi tốt."
+                        "chinese":  "他被车撞倒以后，腿受伤了。",
+                        "pinyin":  "Tā bèi chē zhuàng dǎo yǐhòu, tuǐ shòushāng le.",
+                        "vietnamese":  "Sau khi anh ấy bị xe đâm ngã, chân bị thương rồi."
                     },
                     {
-                        "chinese":  "医生说不用住院。",
-                        "pinyin":  "Yīshēng shuō búyòng zhùyuàn.",
-                        "vietnamese":  "Bác sĩ nói không cần nhập viện."
+                        "chinese":  "这棵树被大风吹倒了。",
+                        "pinyin":  "Zhè kē shù bèi dàfēng chuī dǎo le.",
+                        "vietnamese":  "Cái cây này bị gió lớn thổi đổ rồi."
                     },
                     {
-                        "chinese":  "她刚出院。",
-                        "pinyin":  "Tā gāng chūyuàn.",
-                        "vietnamese":  "Cô ấy vừa xuất viện."
+                        "chinese":  "她太困了，差点倒在桌子上。",
+                        "pinyin":  "Tā tài kùn le, chàdiǎn dǎo zài zhuōzi shàng.",
+                        "vietnamese":  "Cô ấy quá buồn ngủ, suýt gục xuống bàn."
                     },
                     {
-                        "chinese":  "妈妈在医院照顾住院的爷爷。",
-                        "pinyin":  "Māma zài yīyuàn zhàogu zhùyuàn de yéye.",
-                        "vietnamese":  "Mẹ đang chăm ông nội nằm viện ở bệnh viện."
+                        "chinese":  "老人倒了以后，邻居赶快过去帮忙。",
+                        "pinyin":  "Lǎorén dǎo le yǐhòu, línjū gǎnkuài guòqù bāngmáng.",
+                        "vietnamese":  "Sau khi người già ngã, hàng xóm nhanh chóng qua giúp."
                     },
                     {
-                        "chinese":  "妈妈照顾我。",
-                        "pinyin":  "Māma zhàogu wǒ.",
-                        "vietnamese":  "Mẹ chăm sóc tôi."
+                        "chinese":  "地上很滑，小心别倒。",
+                        "pinyin":  "Dì shàng hěn huá, xiǎoxīn bié dǎo.",
+                        "vietnamese":  "Dưới đất rất trơn, cẩn thận đừng ngã."
                     },
                     {
-                        "chinese":  "她在医院照顾病人。",
-                        "pinyin":  "Tā zài yīyuàn zhàogu bìngrén.",
-                        "vietnamese":  "Cô ấy chăm sóc bệnh nhân ở bệnh viện."
+                        "chinese":  "他身体不好，一站起来就想倒。",
+                        "pinyin":  "Tā shēntǐ bù hǎo, yí zhàn qǐlái jiù xiǎng dǎo.",
+                        "vietnamese":  "Anh ấy sức khỏe không tốt, vừa đứng dậy là muốn ngã."
                     },
                     {
-                        "chinese":  "请照顾好自己。",
-                        "pinyin":  "Qǐng zhàogu hǎo zìjǐ.",
-                        "vietnamese":  "Hãy chăm sóc bản thân thật tốt."
+                        "chinese":  "杯子倒了，水流了一桌子。",
+                        "pinyin":  "Bēizi dǎo le, shuǐ liú le yì zhuōzi.",
+                        "vietnamese":  "Cái cốc đổ rồi, nước chảy đầy bàn."
                     },
                     {
-                        "chinese":  "奶奶照顾孩子。",
-                        "pinyin":  "Nǎinai zhàogu háizi.",
-                        "vietnamese":  "Bà chăm sóc trẻ em."
+                        "chinese":  "如果发烧很厉害，人可能会倒下。",
+                        "pinyin":  "Rúguǒ fāshāo hěn lìhai, rén kěnéng huì dǎo xià.",
+                        "vietnamese":  "Nếu sốt rất nặng, người có thể ngã xuống."
                     },
                     {
-                        "chinese":  "谢谢你照顾我。",
-                        "pinyin":  "Xièxie nǐ zhàogu wǒ.",
-                        "vietnamese":  "Cảm ơn bạn đã chăm sóc tôi."
+                        "chinese":  "他倒下以后，大家马上叫医生。",
+                        "pinyin":  "Tā dǎo xià yǐhòu, dàjiā mǎshàng jiào yīshēng.",
+                        "vietnamese":  "Sau khi anh ấy ngã xuống, mọi người lập tức gọi bác sĩ."
                     },
                     {
-                        "chinese":  "他很会照顾别人。",
-                        "pinyin":  "Tā hěn huì zhàogu biérén.",
-                        "vietnamese":  "Anh ấy rất biết chăm sóc người khác."
+                        "chinese":  "他恢复得很快，已经能走路了。",
+                        "pinyin":  "Tā huīfù de hěn kuài, yǐjīng néng zǒulù le.",
+                        "vietnamese":  "Anh ấy hồi phục rất nhanh, đã có thể đi lại rồi."
                     },
                     {
-                        "chinese":  "我会照顾好宠物。",
-                        "pinyin":  "Wǒ huì zhàogu hǎo chǒngwù.",
-                        "vietnamese":  "Tôi sẽ chăm sóc thú cưng thật tốt."
+                        "chinese":  "感冒以后，要好好儿休息才能恢复。",
+                        "pinyin":  "Gǎnmào yǐhòu, yào hǎohāor xiūxi cái néng huīfù.",
+                        "vietnamese":  "Sau khi bị cảm, phải nghỉ ngơi tử tế mới có thể hồi phục."
                     },
                     {
-                        "chinese":  "生病的时候需要人照顾。",
-                        "pinyin":  "Shēngbìng de shíhou xūyào rén zhàogu.",
-                        "vietnamese":  "Khi bị bệnh cần có người chăm sóc."
+                        "chinese":  "医生说他的腿还需要时间恢复。",
+                        "pinyin":  "Yīshēng shuō tā de tuǐ hái xūyào shíjiān huīfù.",
+                        "vietnamese":  "Bác sĩ nói chân anh ấy vẫn cần thời gian hồi phục."
                     },
                     {
-                        "chinese":  "她一直照顾住院的父亲。",
-                        "pinyin":  "Tā yìzhí zhàogu zhùyuàn de fùqīn.",
-                        "vietnamese":  "Cô ấy luôn chăm sóc người cha đang nằm viện."
+                        "chinese":  "住院一周以后，她慢慢恢复了。",
+                        "pinyin":  "Zhùyuàn yì zhōu yǐhòu, tā mànman huīfù le.",
+                        "vietnamese":  "Sau khi nhập viện một tuần, cô ấy dần hồi phục."
                     },
                     {
-                        "chinese":  "你要好好照顾身体。",
-                        "pinyin":  "Nǐ yào hǎohāor zhàogu shēntǐ.",
-                        "vietnamese":  "Bạn phải chăm sóc sức khỏe thật tốt."
+                        "chinese":  "如果恢复不好，就不能参加比赛。",
+                        "pinyin":  "Rúguǒ huīfù bù hǎo, jiù bù néng cānjiā bǐsài.",
+                        "vietnamese":  "Nếu hồi phục không tốt thì không thể tham gia thi đấu."
                     },
                     {
-                        "chinese":  "我撞到桌子了。",
-                        "pinyin":  "Wǒ zhuàng dào zhuōzi le.",
-                        "vietnamese":  "Tôi va vào bàn rồi."
+                        "chinese":  "他受伤以后，身体恢复得不错。",
+                        "pinyin":  "Tā shòushāng yǐhòu, shēntǐ huīfù de búcuò.",
+                        "vietnamese":  "Sau khi bị thương, cơ thể anh ấy hồi phục khá tốt."
                     },
                     {
-                        "chinese":  "他撞到门上了。",
-                        "pinyin":  "Tā zhuàng dào mén shàng le.",
-                        "vietnamese":  "Anh ấy va vào cửa."
+                        "chinese":  "学校已经恢复正常上课了。",
+                        "pinyin":  "Xuéxiào yǐjīng huīfù zhèngcháng shàngkè le.",
+                        "vietnamese":  "Trường đã khôi phục việc học bình thường rồi."
                     },
                     {
-                        "chinese":  "自行车撞到了树。",
-                        "pinyin":  "Zìxíngchē zhuàng dào le shù.",
-                        "vietnamese":  "Xe đạp đâm vào cây."
+                        "chinese":  "睡一觉以后，我的精神恢复了。",
+                        "pinyin":  "Shuì yí jiào yǐhòu, wǒ de jīngshen huīfù le.",
+                        "vietnamese":  "Sau khi ngủ một giấc, tinh thần của tôi đã hồi phục."
                     },
                     {
-                        "chinese":  "孩子撞伤了腿。",
-                        "pinyin":  "Háizi zhuàng shāng le tuǐ.",
-                        "vietnamese":  "Đứa trẻ va bị thương chân."
+                        "chinese":  "他的脸色恢复正常了。",
+                        "pinyin":  "Tā de liǎnsè huīfù zhèngcháng le.",
+                        "vietnamese":  "Sắc mặt của anh ấy đã hồi phục bình thường rồi."
                     },
                     {
-                        "chinese":  "我不小心撞到了别人。",
-                        "pinyin":  "Wǒ bù xiǎoxīn zhuàng dào le biérén.",
-                        "vietnamese":  "Tôi vô tình va vào người khác."
+                        "chinese":  "只要认真照顾，腿会慢慢恢复。",
+                        "pinyin":  "Zhǐyào rènzhēn zhàogu, tuǐ huì mànman huīfù.",
+                        "vietnamese":  "Chỉ cần chăm sóc cẩn thận, chân sẽ dần hồi phục."
                     },
                     {
-                        "chinese":  "两辆车撞上了。",
-                        "pinyin":  "Liǎng liàng chē zhuàng shàng le.",
-                        "vietnamese":  "Hai chiếc xe va chạm nhau."
+                        "chinese":  "请你帮我转告老师，我今天请假。",
+                        "pinyin":  "Qǐng nǐ bāng wǒ zhuǎngào lǎoshī, wǒ jīntiān qǐngjià.",
+                        "vietnamese":  "Nhờ bạn chuyển lời giúp tôi với giáo viên rằng hôm nay tôi xin nghỉ."
                     },
                     {
-                        "chinese":  "他被汽车撞了。",
-                        "pinyin":  "Tā bèi qìchē zhuàng le.",
-                        "vietnamese":  "Anh ấy bị ô tô đâm."
+                        "chinese":  "他让我转告你，讲座改到下午了。",
+                        "pinyin":  "Tā ràng wǒ zhuǎngào nǐ, jiǎngzuò gǎi dào xiàwǔ le.",
+                        "vietnamese":  "Anh ấy bảo tôi nhắn lại với bạn rằng buổi tọa đàm đổi sang chiều rồi."
                     },
                     {
-                        "chinese":  "头撞到了墙。",
-                        "pinyin":  "Tóu zhuàng dào le qiáng.",
-                        "vietnamese":  "Đầu va vào tường."
+                        "chinese":  "你能不能转告她赶快去药店？",
+                        "pinyin":  "Nǐ néng bu néng zhuǎngào tā gǎnkuài qù yàodiàn?",
+                        "vietnamese":  "Bạn có thể nhắn lại cô ấy mau đi hiệu thuốc không?"
                     },
                     {
-                        "chinese":  "撞得不严重。",
-                        "pinyin":  "Zhuàng de bù yánzhòng.",
-                        "vietnamese":  "Va chạm không nghiêm trọng."
+                        "chinese":  "老师让我转告大家明天不上课。",
+                        "pinyin":  "Lǎoshī ràng wǒ zhuǎngào dàjiā míngtiān bú shàngkè.",
+                        "vietnamese":  "Giáo viên bảo tôi chuyển lời với mọi người rằng ngày mai không học."
                     },
                     {
-                        "chinese":  "开车要小心，别撞到别人。",
-                        "pinyin":  "Kāichē yào xiǎoxīn, bié zhuàng dào biérén.",
-                        "vietnamese":  "Lái xe phải cẩn thận, đừng va vào người khác."
+                        "chinese":  "如果他来了，请转告我一声。",
+                        "pinyin":  "Rúguǒ tā lái le, qǐng zhuǎngào wǒ yì shēng.",
+                        "vietnamese":  "Nếu anh ấy đến, xin nhắn lại với tôi một tiếng."
                     },
                     {
-                        "chinese":  "我摔倒了。",
-                        "pinyin":  "Wǒ shuāidǎo le.",
-                        "vietnamese":  "Tôi bị ngã rồi."
+                        "chinese":  "她住院了，所以让我转告同学。",
+                        "pinyin":  "Tā zhùyuàn le, suǒyǐ ràng wǒ zhuǎngào tóngxué.",
+                        "vietnamese":  "Cô ấy nhập viện rồi nên nhờ tôi chuyển lời với bạn học."
                     },
                     {
-                        "chinese":  "孩子不小心摔倒了。",
-                        "pinyin":  "Háizi bù xiǎoxīn shuāidǎo le.",
-                        "vietnamese":  "Đứa trẻ vô tình bị ngã."
+                        "chinese":  "我已经把你的意思转告老师了。",
+                        "pinyin":  "Wǒ yǐjīng bǎ nǐ de yìsi zhuǎngào lǎoshī le.",
+                        "vietnamese":  "Tôi đã chuyển ý của bạn cho giáo viên rồi."
                     },
                     {
-                        "chinese":  "她在路上摔倒了。",
-                        "pinyin":  "Tā zài lùshang shuāidǎo le.",
-                        "vietnamese":  "Cô ấy bị ngã trên đường."
+                        "chinese":  "他感冒很严重，我会帮他转告。",
+                        "pinyin":  "Tā gǎnmào hěn yánzhòng, wǒ huì bāng tā zhuǎngào.",
+                        "vietnamese":  "Anh ấy bị cảm rất nặng, tôi sẽ giúp anh ấy chuyển lời."
                     },
                     {
-                        "chinese":  "他从楼梯上摔倒了。",
-                        "pinyin":  "Tā cóng lóutī shàng shuāidǎo le.",
-                        "vietnamese":  "Anh ấy ngã từ cầu thang."
+                        "chinese":  "请转告社区医生，他明天去检查。",
+                        "pinyin":  "Qǐng zhuǎngào shèqū yīshēng, tā míngtiān qù jiǎnchá.",
+                        "vietnamese":  "Xin nhắn lại bác sĩ cộng đồng rằng ngày mai anh ấy đi kiểm tra."
                     },
                     {
-                        "chinese":  "雨后路滑，很容易摔倒。",
-                        "pinyin":  "Yǔ hòu lù huá, hěn róngyì shuāidǎo.",
-                        "vietnamese":  "Sau mưa đường trơn rất dễ ngã."
-                    },
-                    {
-                        "chinese":  "奶奶摔倒了。",
-                        "pinyin":  "Nǎinai shuāidǎo le.",
-                        "vietnamese":  "Bà bị ngã rồi."
-                    },
-                    {
-                        "chinese":  "他摔倒以后受伤了。",
-                        "pinyin":  "Tā shuāidǎo yǐhòu shòushāng le.",
-                        "vietnamese":  "Anh ấy bị thương sau khi ngã."
-                    },
-                    {
-                        "chinese":  "我差点儿摔倒。",
-                        "pinyin":  "Wǒ chàdiǎnr shuāidǎo.",
-                        "vietnamese":  "Tôi suýt bị ngã."
-                    },
-                    {
-                        "chinese":  "小心一点儿，别摔倒。",
-                        "pinyin":  "Xiǎoxīn yìdiǎnr, bié shuāidǎo.",
-                        "vietnamese":  "Cẩn thận một chút, đừng ngã."
-                    },
-                    {
-                        "chinese":  "她摔倒以后去了医院。",
-                        "pinyin":  "Tā shuāidǎo yǐhòu qù le yīyuàn.",
-                        "vietnamese":  "Sau khi ngã cô ấy đã đến bệnh viện."
-                    },
-                    {
-                        "chinese":  "我的身体恢复了。",
-                        "pinyin":  "Wǒ de shēntǐ huīfù le.",
-                        "vietnamese":  "Sức khỏe của tôi đã hồi phục rồi."
-                    },
-                    {
-                        "chinese":  "他恢复得很快。",
-                        "pinyin":  "Tā huīfù de hěn kuài.",
-                        "vietnamese":  "Anh ấy hồi phục rất nhanh."
-                    },
-                    {
-                        "chinese":  "感冒以后已经恢复正常了。",
-                        "pinyin":  "Gǎnmào yǐhòu yǐjīng huīfù zhèngcháng le.",
-                        "vietnamese":  "Sau khi bị cảm đã hồi phục bình thường rồi."
-                    },
-                    {
-                        "chinese":  "她的腿还没有完全恢复。",
-                        "pinyin":  "Tā de tuǐ hái méiyǒu wánquán huīfù.",
-                        "vietnamese":  "Chân cô ấy vẫn chưa hồi phục hoàn toàn."
-                    },
-                    {
-                        "chinese":  "医生说我快恢复了。",
-                        "pinyin":  "Yīshēng shuō wǒ kuài huīfù le.",
-                        "vietnamese":  "Bác sĩ nói tôi sắp hồi phục rồi."
-                    },
-                    {
-                        "chinese":  "希望你早日恢复健康。",
-                        "pinyin":  "Xīwàng nǐ zǎorì huīfù jiànkāng.",
-                        "vietnamese":  "Mong bạn sớm hồi phục sức khỏe."
-                    },
-                    {
-                        "chinese":  "手术以后需要时间恢复。",
-                        "pinyin":  "Shǒushù yǐhòu xūyào shíjiān huīfù.",
-                        "vietnamese":  "Sau phẫu thuật cần thời gian để hồi phục."
-                    },
-                    {
-                        "chinese":  "他住院一个月才恢复。",
-                        "pinyin":  "Tā zhùyuàn yí gè yuè cái huīfù.",
-                        "vietnamese":  "Anh ấy nằm viện một tháng mới hồi phục."
-                    },
-                    {
-                        "chinese":  "多休息有助于恢复。",
-                        "pinyin":  "Duō xiūxi yǒuzhù yú huīfù.",
-                        "vietnamese":  "Nghỉ ngơi nhiều có lợi cho việc hồi phục."
-                    },
-                    {
-                        "chinese":  "她已经恢复工作了。",
-                        "pinyin":  "Tā yǐjīng huīfù gōngzuò le.",
-                        "vietnamese":  "Cô ấy đã quay lại làm việc rồi."
-                    },
-                    {
-                        "chinese":  "请帮我转告老师。",
-                        "pinyin":  "Qǐng bāng wǒ zhuǎngào lǎoshī.",
-                        "vietnamese":  "Hãy giúp tôi nhắn lại với giáo viên."
-                    },
-                    {
-                        "chinese":  "请转告他一声。",
-                        "pinyin":  "Qǐng zhuǎngào tā yì shēng.",
-                        "vietnamese":  "Hãy nhắn lại với anh ấy một tiếng."
-                    },
-                    {
-                        "chinese":  "你能转告小王吗？",
-                        "pinyin":  "Nǐ néng zhuǎngào Xiǎo Wáng ma?",
-                        "vietnamese":  "Bạn có thể nhắn lại với Tiểu Vương không?"
-                    },
-                    {
-                        "chinese":  "请替我转告妈妈。",
-                        "pinyin":  "Qǐng tì wǒ zhuǎngào māma.",
-                        "vietnamese":  "Hãy thay tôi nhắn lại với mẹ."
-                    },
-                    {
-                        "chinese":  "我已经转告他了。",
-                        "pinyin":  "Wǒ yǐjīng zhuǎngào tā le.",
-                        "vietnamese":  "Tôi đã nhắn lại với anh ấy rồi."
-                    },
-                    {
-                        "chinese":  "老师让我转告你。",
-                        "pinyin":  "Lǎoshī ràng wǒ zhuǎngào nǐ.",
-                        "vietnamese":  "Giáo viên bảo tôi nhắn lại với bạn."
-                    },
-                    {
-                        "chinese":  "请转告大家明天开会。",
-                        "pinyin":  "Qǐng zhuǎngào dàjiā míngtiān kāihuì.",
-                        "vietnamese":  "Hãy nhắn lại với mọi người rằng ngày mai có cuộc họp."
-                    },
-                    {
-                        "chinese":  "我会帮你转告的。",
-                        "pinyin":  "Wǒ huì bāng nǐ zhuǎngào de.",
-                        "vietnamese":  "Tôi sẽ giúp bạn nhắn lại."
-                    },
-                    {
-                        "chinese":  "请转告他不要担心。",
-                        "pinyin":  "Qǐng zhuǎngào tā búyào dānxīn.",
-                        "vietnamese":  "Hãy nhắn anh ấy đừng lo lắng."
-                    },
-                    {
-                        "chinese":  "麻烦你转告一下结果。",
-                        "pinyin":  "Máfan nǐ zhuǎngào yíxià jiéguǒ.",
-                        "vietnamese":  "Phiền bạn nhắn lại kết quả giúp tôi."
+                        "chinese":  "她没有接电话，我只好请你转告。",
+                        "pinyin":  "Tā méiyǒu jiē diànhuà, wǒ zhǐhǎo qǐng nǐ zhuǎngào.",
+                        "vietnamese":  "Cô ấy không nghe điện thoại, tôi đành nhờ bạn chuyển lời."
                     }
                 ]
 }

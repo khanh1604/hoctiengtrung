@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký - FTC</title>
+    <link rel="stylesheet" href="css/auth.css?v=ftc-auth-20260629" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <section class="auth-card" aria-labelledby="registerTitle">
+        <div class="auth-head">
+          <a class="auth-logo" href="index.html" aria-label="FTC">FTC</a>
+          <h1 id="registerTitle">Đăng ký</h1>
+          <p>Tạo tài khoản mới để bắt đầu học tiếng Trung.</p>
+        </div>
+
+        <div class="auth-status" id="authStatus" hidden></div>
+
+        <form class="auth-form" id="registerForm" novalidate>
+          <label class="auth-field">
+            <span>Họ và tên</span>
+            <input
+              class="auth-input"
+              name="fullName"
+              type="text"
+              autocomplete="name"
+              placeholder="Nhập họ và tên"
+              required
+            />
+          </label>
+
+          <label class="auth-field">
+            <span>Email</span>
+            <input
+              class="auth-input"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Nhập email của bạn"
+              required
+            />
+          </label>
+
+          <label class="auth-field">
+            <span>Tên đăng nhập</span>
+            <input
+              class="auth-input"
+              name="username"
+              type="text"
+              autocomplete="username"
+              placeholder="Nhập tên đăng nhập"
+            />
+          </label>
+
+          <label class="auth-field">
+            <span>Mật khẩu</span>
+            <input
+              class="auth-input"
+              name="password"
+              type="password"
+              autocomplete="new-password"
+              placeholder="Tối thiểu 6 ký tự"
+              required
+            />
+          </label>
+
+          <label class="auth-field">
+            <span>Xác nhận mật khẩu</span>
+            <input
+              class="auth-input"
+              name="confirmPassword"
+              type="password"
+              autocomplete="new-password"
+              placeholder="Nhập lại mật khẩu"
+              required
+            />
+          </label>
+
+          <label class="auth-check">
+            <input type="checkbox" name="terms" checked />
+            <span>
+              Tôi đồng ý với <a href="#">Điều khoản sử dụng</a> và
+              <a href="#">Chính sách bảo mật</a>
+            </span>
+          </label>
+
+          <button
+            class="auth-submit"
+            type="submit"
+            data-auth-submit
+            data-label="Đăng ký"
+          >
+            Đăng ký
+          </button>
+        </form>
+
+        <div class="auth-divider">Hoặc đăng ký với</div>
+        <button class="auth-social" type="button" data-google-login>
+          <span>G</span>Google
+        </button>
+
+        <p class="auth-foot">
+          Đã có tài khoản?
+          <a href="login.html">Đăng nhập ngay</a>
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="js/auth-pages.js"></script>
+  </body>
+</html>

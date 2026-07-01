@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập từ mới - Chinese Learning</title>
+    <script>
+      try {
+        if (localStorage.getItem("menuTheme") === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css?v=ftc-tts-glow-20260623" />
     <script src="tts-helper.js?v=20260623-system-tts-text1"></script>
     <script src="theme.js" defer></script>
@@ -265,7 +272,7 @@
       }
 
       function getSubjectLabel() {
-        if (subject === "speaking") return "Khẩu ngữ";
+        if (subject === "speaking" || subject === "speaking2" || subject === "speaking3") return "Khẩu ngữ";
         if (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") return "Giáo trình Hán Ngữ";
         if (subject === "writing") return "Viết";
         if (subject === "listening3" || subject === "listening4") return "Nghe hiểu";
@@ -274,9 +281,7 @@
       }
 
       function getSubjectHref() {
-        return subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6"
-          ? "index.html"
-          : `lessons.html?subject=${subject}`;
+        return "index.html";
       }
 
       function getCourseLabel() {
@@ -287,6 +292,8 @@
         if (subject === "hanyu5") return "Hán Ngữ Quyển 5";
         if (subject === "hanyu6") return "Hán Ngữ Quyển 6";
         if (subject === "speaking") return "初级口语（II）";
+        if (subject === "speaking2") return "中级口语（I）";
+        if (subject === "speaking3") return "中级口语（II）";
         if (subject === "listening3") return "中级听力（I）";
         if (subject === "listening4") return "中级听力（II）";
         if (subject === "listening") return "初级听力（II）";
@@ -516,12 +523,13 @@
         const total = Math.max(1, vocabularyItems.length);
         const percent = vocabularyItems.length ? Math.round((filteredItems.length / total) * 100) : 0;
         const cappedPercent = vocabularyItems.length ? 0 : percent;
+        const courseTotalLessons = subject === "speaking2" || subject === "speaking3" ? 15 : 12;
         document.getElementById("vocabHeroPercent").textContent = `${cappedPercent}%`;
         document.getElementById("vocabSidePercent").textContent = `${cappedPercent}%`;
         document.getElementById("vocabHeroProgressBar").style.width = `${cappedPercent}%`;
-        document.getElementById("vocabLearnedText").textContent = "Đã học 0/12 bài";
+        document.getElementById("vocabLearnedText").textContent = `Đã học 0/${courseTotalLessons} bài`;
         document.getElementById("vocabDoneCount").textContent = "0";
-        document.getElementById("vocabLeftCount").textContent = "12";
+        document.getElementById("vocabLeftCount").textContent = String(courseTotalLessons);
         document.getElementById("vocabSuggestLesson").textContent = `Tiếp tục bài ${getLessonLabel()}`;
         document.getElementById("vocabSuggestProgress").textContent = `${cappedPercent}%`;
         document.getElementById("vocabSuggestItems").textContent = `${vocabularyItems.length} mục`;
@@ -628,8 +636,9 @@
           const data = allLessons[String(Number(lesson))] || {};
           lessonTitle = data.title || "";
           items = data.vocabulary || data.words || data.newWords || [];
-        } else if (subject === "speaking") {
-          const data = await fetchJson(`data/speaking-lesson-${Number(lesson)}.json`);
+        } else if (subject === "speaking" || subject === "speaking2" || subject === "speaking3") {
+          const speakingPrefix = subject === "speaking3" ? "speaking3" : subject === "speaking2" ? "speaking2" : "speaking";
+          const data = await fetchJson(`data/${speakingPrefix}-lesson-${Number(lesson)}.json`);
           lessonTitle = data.title || "";
           items = data.vocabulary || data.words || data.newWords || [];
         } else if (subject === "writing") {
@@ -701,7 +710,8 @@
           `<p class="vocab-empty">Lỗi: ${escapeHtml(err.message)}</p>`;
       });
     </script>
-  </body>
+<script type="module" src="js/protected-route.js"></script>
+</body>
 </html>
 
 

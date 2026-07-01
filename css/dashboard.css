@@ -13,9 +13,9 @@
   --text: #eaf2ff;
   --muted: #9fb0c8;
   --blue: #3b82f6;
-  --green: #22c55e;
-  --violet: #8b5cf6;
-  --amber: #f59e0b;
+  --green: #01f65b;
+  --violet: #8a5af9;
+  --amber: #ffa200;
 }
 
 body.light-theme {
@@ -565,29 +565,21 @@ body.light-theme .zero-bar {
       rgba(147, 197, 253, 0.24),
       transparent 11rem
     ),
-    linear-gradient(180deg, rgba(37, 99, 235, 0.48), rgba(15, 23, 42, 0.86));
+    linear-gradient(270deg, rgba(37, 99, 235, 0.48), rgba(0, 59, 200, 0.86));
 }
 
 .panel-green {
   border-color: rgba(74, 222, 128, 0.34);
   background:
-    radial-gradient(
-      circle at 12% 0%,
-      rgba(134, 239, 172, 0.2),
-      transparent 11rem
-    ),
-    linear-gradient(180deg, rgba(22, 163, 74, 0.44), rgba(15, 23, 42, 0.86));
+    radial-gradient(circle at 12% 0%, rgb(30 255 0 / 20%), #ffe0e000 11rem),
+    linear-gradient(270deg, rgb(15 222 75 / 59%), rgb(18 23 19 / 86%));
 }
 
 .panel-violet {
   border-color: rgba(167, 139, 250, 0.38);
   background:
-    radial-gradient(
-      circle at 12% 0%,
-      rgba(196, 181, 253, 0.2),
-      transparent 11rem
-    ),
-    linear-gradient(180deg, rgba(109, 40, 217, 0.5), rgba(15, 23, 42, 0.86));
+    radial-gradient(circle at 12% 0%, rgb(53 0 255 / 20%), transparent 11rem),
+    linear-gradient(257deg, rgb(0 48 255 / 77%), rgb(20 33 66 / 86%));
 }
 
 .panel-amber {
@@ -598,7 +590,7 @@ body.light-theme .zero-bar {
       rgba(253, 230, 138, 0.18),
       transparent 11rem
     ),
-    linear-gradient(180deg, rgba(180, 83, 9, 0.52), rgba(15, 23, 42, 0.86));
+    linear-gradient(279deg, rgb(224 151 1 / 41%), rgb(90 20 3 / 83%));
 }
 
 .panel-blue .course-link {
@@ -1890,10 +1882,7 @@ body.light-theme .dashboard-drawer-panel a.is-active {
   .panel-violet .course-link strong,
   .panel-amber .course-link strong {
     font-family:
-      "Microsoft YaHei",
-      "Noto Sans SC",
-      "PingFang SC",
-      "Source Han Sans SC",
+      "Microsoft YaHei", "Noto Sans SC", "PingFang SC", "Source Han Sans SC",
       sans-serif !important;
     font-weight: 450 !important;
     letter-spacing: 0.05em !important;
@@ -1924,4 +1913,34 @@ body.light-theme .dashboard-drawer-panel a.is-active {
 /* Final dashboard course title weight override. */
 .course-link strong {
   font-weight: 450 !important;
+}
+
+.auth-logout-btn {
+  min-height: 36px;
+  border: 1px solid rgba(147, 197, 253, 0.24);
+  border-radius: 12px;
+  padding: 0 14px;
+  color: #eaf2ff;
+  background: rgba(15, 30, 64, 0.84);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.auth-logout-btn:hover {
+  border-color: rgba(168, 85, 247, 0.72);
+  background: rgba(59, 40, 120, 0.72);
+}
+
+body.light-theme .auth-logout-btn {
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 767px) {
+  .auth-logout-btn {
+    width: 100%;
+    min-height: 32px;
+    margin-top: 6px;
+    font-size: 12px;
+  }
 }

@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập - Chinese Learning</title>
+    <script>
+      try {
+        if (localStorage.getItem("menuTheme") === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css?v=ftc-tts-glow-20260623" />
     <script src="tts-helper.js?v=20260623-system-tts-text1"></script>
     <script src="theme.js" defer></script>
@@ -272,6 +279,26 @@
             listHref: "lessons.html?subject=speaking",
           };
         }
+        if (subject === "speaking2") {
+          return {
+            label: "Khẩu ngữ",
+            course: "中级口语（I）",
+            icon: "💬",
+            total: 15,
+            desc: "luyện nói trung cấp",
+            listHref: "lessons.html?subject=speaking2",
+          };
+        }
+        if (subject === "speaking3") {
+          return {
+            label: "Khẩu ngữ",
+            course: "中级口语（II）",
+            icon: "💬",
+            total: 15,
+            desc: "luyện nói trung cấp",
+            listHref: "lessons.html?subject=speaking3",
+          };
+        }
         if (subject === "writing") {
           return {
             label: "Viết",
@@ -373,9 +400,7 @@
       }
 
       function getReviewSubjectHomeHref() {
-        return subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6"
-          ? "index.html"
-          : `lessons.html?subject=${subject}`;
+        return "index.html";
       }
 
       function getReviewContentTitle() {
@@ -486,7 +511,10 @@
         const padLesson = String(Number(lesson)).padStart(2, "0");
 
         if (titleEl) titleEl.textContent = title;
-        if (subtitleEl) subtitleEl.textContent = subtitle;
+        if (subtitleEl) {
+          subtitleEl.textContent = subtitle;
+          subtitleEl.style.display = subtitle ? "" : "none";
+        }
         if (breadcrumbTitle) {
           breadcrumbTitle.textContent = title;
           breadcrumbTitle.href = `review.html?lesson=${padLesson}${subjectParam}${contentParam}`;
@@ -573,11 +601,7 @@
         const pinyinText = getWritingReferenceText(group, "pinyin");
         const vietnameseText = getWritingReferenceText(group, "vietnamese");
         const learnedCount = Number(localStorage.getItem(`writingReferenceRead-${lesson}`) || 0);
-        const noteKey = `writingReferenceNote-${lesson}-${testNumber}`;
-        const noteValue = localStorage.getItem(noteKey) || "";
-        const writingWords = writingReferenceWords.slice(0, 8);
-
-        setReviewHeader("Tham khảo đoạn văn", "9 bài văn mẫu - chữ Hán - pinyin - nghĩa Việt");
+        setReviewHeader("Tham khảo đoạn văn", "");
         const grid = document.getElementById("reviewGrid");
         grid.className = "writing-reference-reader";
         grid.innerHTML = `
@@ -601,7 +625,6 @@
               <div>
                 <span>Tham khảo đoạn văn</span>
                 <h2>${escapeHtml(currentTitle)}</h2>
-                <p>${escapeHtml(getWritingLessonName()?.[0] || "中级写作（I）")}</p>
               </div>
               <div class="writing-reference-stats">
                 <strong>${writingReferenceGroups.length || 9}</strong><small>bài</small>
@@ -632,35 +655,6 @@
           <aside class="writing-reference-side">
             <article>
               <div class="writing-reference-side-head">
-                <h3>Ghi chú của tôi</h3>
-                <button class="writing-reference-save-note" type="button">Lưu</button>
-              </div>
-              <textarea id="writingReferenceNote" placeholder="Ghi lại mẫu câu hay, từ mới, ý cần nhớ...">${escapeHtml(noteValue)}</textarea>
-            </article>
-            <article>
-              <div class="writing-reference-side-head">
-                <h3>Từ mới trong bài</h3>
-              </div>
-              <ol class="writing-reference-words">
-                ${
-                  writingWords.length
-                    ? writingWords
-                        .map(
-                          (word) => `
-                            <li>
-                              <strong>${escapeHtml(word.chinese)}</strong>
-                              <span>${escapeHtml(word.pinyin || "")}</span>
-                              <small>${escapeHtml(word.vietnamese || word.meaning || "")}</small>
-                            </li>
-                          `,
-                        )
-                        .join("")
-                    : "<li><small>Chưa có danh sách từ mới riêng.</small></li>"
-                }
-              </ol>
-            </article>
-            <article>
-              <div class="writing-reference-side-head">
                 <h3>Mẹo ghi nhớ</h3>
               </div>
               <ul class="writing-reference-tips">
@@ -675,7 +669,22 @@
         grid.querySelectorAll(".writing-reference-item").forEach((button) => {
           button.addEventListener("click", () => renderWritingReferenceReader(Number(button.dataset.index) + 1));
         });
-        grid.querySelector(".writing-reference-play")?.addEventListener("click", () => speakChinese(chineseText));
+        const playButton = grid.querySelector(".writing-reference-play");
+        let referenceAudioPlaying = false;
+        playButton?.addEventListener("click", () => {
+          if (referenceAudioPlaying) {
+            if (window.FTCTTS?.stop) window.FTCTTS.stop();
+            else window.speechSynthesis?.cancel();
+            referenceAudioPlaying = false;
+            playButton.textContent = "▶";
+            playButton.classList.remove("is-playing");
+            return;
+          }
+          referenceAudioPlaying = true;
+          playButton.textContent = "⏸";
+          playButton.classList.add("is-playing");
+          speakChinese(chineseText);
+        });
         grid.querySelector(".writing-reference-mark")?.addEventListener("click", () => {
           localStorage.setItem(`writingReferenceRead-${lesson}-${testNumber}`, "1");
           const totalRead = writingReferenceGroups.filter((_, idx) =>
@@ -683,9 +692,6 @@
           ).length;
           localStorage.setItem(`writingReferenceRead-${lesson}`, String(totalRead));
           renderWritingReferenceReader(testNumber);
-        });
-        grid.querySelector(".writing-reference-save-note")?.addEventListener("click", () => {
-          localStorage.setItem(noteKey, document.getElementById("writingReferenceNote")?.value || "");
         });
         grid.querySelector("#toggleReferencePinyin")?.addEventListener("change", (event) => {
           grid.querySelector(".writing-reference-pinyin").hidden = !event.target.checked;
@@ -854,6 +860,24 @@
         if (items[0] && (Array.isArray(items[0].lines) || items[0].title || items[0].type)) return items;
         if (subject === "hanyu3") return splitIntoParts(items, 3);
         return [items];
+      }
+
+      function getWritingParagraphItems(data) {
+        const lessonKey = String(Number(lesson));
+        const directItems = data[lesson] || data[lessonKey] || [];
+        if (Array.isArray(directItems) && directItems.length) return directItems;
+
+        const exampleGroups = data.examples || data.reference || data.references || {};
+        const exampleItems = exampleGroups[lesson] || exampleGroups[lessonKey] || [];
+        if (!Array.isArray(exampleItems) || !exampleItems.length) return [];
+
+        return exampleItems.map((item, index) => ({
+          title: item.title || `Ôn tập bài khóa ${String(index + 1).padStart(2, "0")}`,
+          chinese: item.chinese || item.text || "",
+          pinyin: item.pinyin || "",
+          vietnamese: item.vietnamese || item.meaning || item.translation || "",
+          isReading: true,
+        }));
       }
 
       function isReadingPassage(group) {
@@ -2209,7 +2233,6 @@
           const card = document.createElement("button");
           card.className = "structure-list-card";
           card.type = "button";
-          const secondary = item.pattern || item.pinyin || "";
           const meaning = item.meaning || item.vietnamese || "";
           const importance = getStructureImportance(item);
           card.innerHTML = `
@@ -2220,7 +2243,6 @@
                 : ""
             }
             <span class="structure-list-title">${escapeHtml(item.title || item.pattern || item.chinese)}</span>
-            ${secondary ? `<span class="structure-list-pattern">${escapeHtml(secondary)}${item.partOfSpeech ? ` [ ${escapeHtml(item.partOfSpeech)} ]` : ""}</span>` : ""}
             ${meaning ? `<span class="structure-list-meaning">${escapeHtml(meaning)}</span>` : ""}
             <span class="structure-list-sound" aria-hidden="true">🔊</span>
           `;
@@ -2305,7 +2327,8 @@
           return lessonData;
         }
 
-        const res = await fetch(`data/speaking-lesson-${lessonNum}.json?v=${Date.now()}`);
+        const speakingPrefix = subject === "speaking3" ? "speaking3" : subject === "speaking2" ? "speaking2" : "speaking";
+        const res = await fetch(`data/${speakingPrefix}-lesson-${lessonNum}.json?v=${Date.now()}`);
         if (res.ok) return res.json();
 
         throw new Error("Không tải được dữ liệu môn nói");
@@ -2320,8 +2343,7 @@
         if (!res.ok) throw new Error("Không tải được dữ liệu môn viết");
 
         const data = await res.json();
-        const lessonKey = String(Number(lesson));
-        const items = data[lesson] || data[lessonKey] || [];
+        const items = getWritingParagraphItems(data);
         const writingLessonName = getWritingLessonName();
         tests = [
           {
@@ -2962,7 +2984,8 @@
         renderReview();
       }
     </script>
-  </body>
+<script type="module" src="js/protected-route.js"></script>
+</body>
 </html>
 
 

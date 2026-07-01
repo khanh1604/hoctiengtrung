@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Mode - Chinese Learning</title>
+    <script>
+      try {
+        if (localStorage.getItem("menuTheme") === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css?v=ftc-tts-glow-20260623" />
     <script src="tts-helper.js?v=20260623-system-tts-text1"></script>
     <script src="theme.js" defer></script>
@@ -158,7 +165,7 @@
           return {
             label: "Nghe hiểu",
             course: "初级听力（II）",
-            homeHref: "lessons.html?subject=listening",
+            homeHref: "index.html",
             listHref: "lessons.html?subject=listening",
           };
         }
@@ -166,7 +173,7 @@
           return {
             label: "Nghe hiểu",
             course: "中级听力（I）",
-            homeHref: "lessons.html?subject=listening3",
+            homeHref: "index.html",
             listHref: "lessons.html?subject=listening3",
           };
         }
@@ -174,8 +181,24 @@
           return {
             label: "Nghe hiểu",
             course: "中级听力（II）",
-            homeHref: "lessons.html?subject=listening4",
+            homeHref: "index.html",
             listHref: "lessons.html?subject=listening4",
+          };
+        }
+        if (subject === "speaking2") {
+          return {
+            label: "Khẩu ngữ",
+            course: "中级口语（I）",
+            homeHref: "lessons.html?subject=speaking2",
+            listHref: "lessons.html?subject=speaking2",
+          };
+        }
+        if (subject === "speaking3") {
+          return {
+            label: "Khẩu ngữ",
+            course: "中级口语（II）",
+            homeHref: "lessons.html?subject=speaking3",
+            listHref: "lessons.html?subject=speaking3",
           };
         }
         return {
@@ -408,6 +431,42 @@
           .replace(/"/g, "&quot;");
       }
 
+      function getTypingRouteParts() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          subject: params.get("subject") || "hanyu3",
+          lesson: params.get("lesson") || "01",
+          test: params.get("test") || "1",
+          content: params.get("content") || "example",
+        };
+      }
+
+      function recordTypingCorrect(item, extra = {}) {
+        const route = getTypingRouteParts();
+        const exerciseType = extra.exerciseType || route.content || "typing";
+        window.FTCStats?.awardCorrectAnswer?.({
+          subject: route.subject,
+          lesson: route.lesson,
+          lessonId: `${route.subject}_lesson_${String(route.lesson).padStart(2, "0")}`,
+          exerciseType,
+          question:
+            extra.question ||
+            item?.question ||
+            item?.vietnamese ||
+            item?.prompt ||
+            item?.sentence ||
+            item?.completed ||
+            JSON.stringify(item || {}),
+          answer: extra.answer || item?.answer || "",
+          correctAnswer: extra.correctAnswer || item?.answer || "",
+        }).catch((error) => console.warn("EXP typing:", error.message));
+
+        window.FTCStats?.markLessonActivity?.({
+          subject: route.subject,
+          lessonId: `${route.subject}_lesson_${String(route.lesson).padStart(2, "0")}`,
+        }).catch(() => {});
+      }
+
       function renderFillCompletedSentence(item) {
         const completed = String(item.completed || "");
         const answers = String(item.answer || "")
@@ -558,6 +617,14 @@
             const expected = expectedAnswers[blankIndex] || expectedAnswers[0] || "";
             const ok = input.value.trim() === expected;
             correct += ok ? 1 : 0;
+            if (ok) {
+              recordTypingCorrect(questions[questionIndex], {
+                exerciseType: "fill_blank",
+                question: `${questions[questionIndex].completed || questions[questionIndex].question || ""}|${expected}`,
+                answer: input.value.trim(),
+                correctAnswer: expected,
+              });
+            }
             input.classList.toggle("is-correct", ok);
             input.classList.toggle("is-wrong", !ok);
             input.closest(".fill-question-row")?.classList.toggle("is-correct", ok);
@@ -908,6 +975,14 @@
           const ok = normalizeCorrectionAnswer(answers[current]) === normalizeCorrectionAnswer(item.answer);
           checked[current] = true;
           correct[current] = ok;
+          if (ok) {
+            recordTypingCorrect(item, {
+              exerciseType: activityType || "typing",
+              index: current,
+              answer: answers[current],
+              correctAnswer: item.answer,
+            });
+          }
           showResult(item, ok);
           renderGrid();
           updateStats();
@@ -986,7 +1061,7 @@
         const practiceContents = new Set(["paragraph", "structure", "example"]);
         if (
           !(
-            (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening" || subject === "listening3" || subject === "listening4") &&
+            (subject === "speaking" || subject === "speaking2" || subject === "speaking3" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening" || subject === "listening3" || subject === "listening4") &&
             practiceContents.has(content)
           )
         ) {
@@ -1150,7 +1225,8 @@
       }
     </script>
     <script src="app.js?v=20260623-android-touch-fix"></script>
-  </body>
+<script type="module" src="js/protected-route.js"></script>
+</body>
 </html>
 
 

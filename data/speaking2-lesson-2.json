@@ -1,0 +1,2545 @@
+﻿{
+    "title":  "入乡随俗",
+    "vietnameseTitle":  "叫错了也没什么 / 这样能行吗",
+    "textTitles":  [
+                       "叫错了也没什么",
+                       "这样能行吗"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "称呼",
+                           "pinyin":  "chēnghu",
+                           "partOfSpeech":  "动/名",
+                           "sinoVietnamese":  "xưng hô",
+                           "vietnamese":  "gọi, cách xưng hô",
+                           "examples":  [
+                                            {
+                                                "chinese":  "在中国，称呼别人要注意礼貌。",
+                                                "pinyin":  "Zài Zhōngguó, chēnghu biérén yào zhùyì lǐmào.",
+                                                "vietnamese":  "Ở Trung Quốc, khi xưng hô với người khác cần chú ý lịch sự."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "叔叔",
+                           "pinyin":  "shūshu",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thúc thúc",
+                           "vietnamese":  "chú, bác trai",
+                           "examples":  [
+                                            {
+                                                "chinese":  "王叔叔对我们非常热情。",
+                                                "pinyin":  "Wáng shūshu duì wǒmen fēicháng rèqíng.",
+                                                "vietnamese":  "Chú Vương đối xử với chúng tôi rất nhiệt tình."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "丢脸",
+                           "pinyin":  "diūliǎn",
+                           "partOfSpeech":  "形/动",
+                           "sinoVietnamese":  "đâu kiểm",
+                           "vietnamese":  "mất mặt, xấu hổ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "说错一句话不丢脸，别太紧张。",
+                                                "pinyin":  "Shuō cuò yí jù huà bù diūliǎn, bié tài jǐnzhāng.",
+                                                "vietnamese":  "Nói sai một câu không mất mặt đâu, đừng căng thẳng quá."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "出错",
+                           "pinyin":  "chūcuò",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "xuất thác",
+                           "vietnamese":  "sai, mắc lỗi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "做练习时出错很正常。",
+                                                "pinyin":  "Zuò liànxí shí chūcuò hěn zhèngcháng.",
+                                                "vietnamese":  "Khi làm bài luyện tập mắc lỗi là chuyện bình thường."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "售票员",
+                           "pinyin":  "shòupiàoyuán",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thụ phiếu viên",
+                           "vietnamese":  "nhân viên bán vé",
+                           "examples":  [
+                                            {
+                                                "chinese":  "售票员告诉我们电影快开演了。",
+                                                "pinyin":  "Shòupiàoyuán gàosu wǒmen diànyǐng kuài kāiyǎn le.",
+                                                "vietnamese":  "Nhân viên bán vé nói với chúng tôi phim sắp bắt đầu chiếu rồi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "出租车",
+                           "pinyin":  "chūzūchē",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "xuất tô xa",
+                           "vietnamese":  "taxi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "下雨了，我们坐出租车回学校吧。",
+                                                "pinyin":  "Xià yǔ le, wǒmen zuò chūzūchē huí xuéxiào ba.",
+                                                "vietnamese":  "Trời mưa rồi, chúng ta đi taxi về trường nhé."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "主持人",
+                           "pinyin":  "zhǔchírén",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "chủ trì nhân",
+                           "vietnamese":  "người dẫn chương trình",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个主持人的汉语说得很清楚。",
+                                                "pinyin":  "Zhège zhǔchírén de Hànyǔ shuō de hěn qīngchu.",
+                                                "vietnamese":  "Người dẫn chương trình này nói tiếng Trung rất rõ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "不见得",
+                           "pinyin":  "bú jiàn de",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "bất kiến đắc",
+                           "vietnamese":  "chưa chắc, không nhất định",
+                           "examples":  [
+                                            {
+                                                "chinese":  "贵的东西不见得都好。",
+                                                "pinyin":  "Guì de dōngxi bú jiàn de dōu hǎo.",
+                                                "vietnamese":  "Đồ đắt chưa chắc đều tốt."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "官职",
+                           "pinyin":  "guānzhí",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "quan chức",
+                           "vietnamese":  "chức quan, chức vụ nhà nước",
+                           "examples":  [
+                                            {
+                                                "chinese":  "古代很多人都想得到官职。",
+                                                "pinyin":  "Gǔdài hěn duō rén dōu xiǎng dédào guānzhí.",
+                                                "vietnamese":  "Thời xưa nhiều người đều muốn có chức quan."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "难怪",
+                           "pinyin":  "nánguài",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "nan quái",
+                           "vietnamese":  "thảo nào, chẳng trách",
+                           "examples":  [
+                                            {
+                                                "chinese":  "难怪你这么累，原来昨天没睡好。",
+                                                "pinyin":  "Nánguài nǐ zhème lèi, yuánlái zuótiān méi shuì hǎo.",
+                                                "vietnamese":  "Thảo nào bạn mệt như vậy, hóa ra hôm qua ngủ không ngon."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "厂长",
+                           "pinyin":  "chǎngzhǎng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "xưởng trưởng",
+                           "vietnamese":  "giám đốc nhà máy",
+                           "examples":  [
+                                            {
+                                                "chinese":  "李厂长今天要去北京出差。",
+                                                "pinyin":  "Lǐ chǎngzhǎng jīntiān yào qù Běijīng chūchāi.",
+                                                "vietnamese":  "Giám đốc nhà máy Lý hôm nay phải đi công tác Bắc Kinh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "总",
+                           "pinyin":  "zǒng",
+                           "partOfSpeech":  "形/副",
+                           "sinoVietnamese":  "tổng",
+                           "vietnamese":  "chung, luôn, tổng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他总喜欢开玩笑，大家都很开心。",
+                                                "pinyin":  "Tā zǒng xǐhuān kāi wánxiào, dàjiā dōu hěn kāixīn.",
+                                                "vietnamese":  "Anh ấy luôn thích nói đùa, mọi người đều rất vui."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "打交道",
+                           "pinyin":  "dǎ jiāodao",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "đả giao đạo",
+                           "vietnamese":  "giao tiếp, qua lại, tiếp xúc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "做销售要经常跟客户打交道。",
+                                                "pinyin":  "Zuò xiāoshòu yào jīngcháng gēn kèhù dǎ jiāodao.",
+                                                "vietnamese":  "Làm bán hàng phải thường xuyên giao tiếp với khách hàng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "朴东民",
+                           "pinyin":  "Piáo Dōngmín",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Phác Đông Dân",
+                           "vietnamese":  "tên một bạn nam Hàn Quốc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "朴东民是我们班的新同学。",
+                                                "pinyin":  "Piáo Dōngmín shì wǒmen bān de xīn tóngxué.",
+                                                "vietnamese":  "Phác Đông Dân là bạn học mới của lớp chúng tôi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "李",
+                           "pinyin":  "Lǐ",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Lý",
+                           "vietnamese":  "họ Lý",
+                           "examples":  [
+                                            {
+                                                "chinese":  "李老师正在办公室等你。",
+                                                "pinyin":  "Lǐ lǎoshī zhèngzài bàngōngshì děng nǐ.",
+                                                "vietnamese":  "Thầy/cô Lý đang đợi bạn ở văn phòng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "王",
+                           "pinyin":  "Wáng",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Vương",
+                           "vietnamese":  "họ Vương",
+                           "examples":  [
+                                            {
+                                                "chinese":  "王经理明天上午开会。",
+                                                "pinyin":  "Wáng jīnglǐ míngtiān shàngwǔ kāihuì.",
+                                                "vietnamese":  "Giám đốc Vương sáng mai họp."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "官儿",
+                           "pinyin":  "guānr",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "quan nhi",
+                           "vietnamese":  "chức quan, chức vụ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他以前当过一个小官儿。",
+                                                "pinyin":  "Tā yǐqián dāngguò yí ge xiǎo guānr.",
+                                                "vietnamese":  "Trước đây ông ấy từng làm một chức quan nhỏ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "嗯",
+                           "pinyin":  "ng",
+                           "partOfSpeech":  "叹",
+                           "sinoVietnamese":  "ừm",
+                           "vietnamese":  "ừ, ừm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "嗯，我觉得这个办法不错。",
+                                                "pinyin":  "Ng, wǒ juéde zhège bànfǎ búcuò.",
+                                                "vietnamese":  "Ừm, tôi thấy cách này không tệ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "招儿",
+                           "pinyin":  "zhāor",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "chiêu nhi",
+                           "vietnamese":  "cách, biện pháp",
+                           "examples":  [
+                                            {
+                                                "chinese":  "你有什么好招儿，可以告诉我吗？",
+                                                "pinyin":  "Nǐ yǒu shénme hǎo zhāor, kěyǐ gàosu wǒ ma?",
+                                                "vietnamese":  "Bạn có cách hay nào có thể nói cho tôi biết không?"
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "开头",
+                           "pinyin":  "kāitóu",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "khai đầu",
+                           "vietnamese":  "phần mở đầu, bắt đầu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这篇文章的开头写得很好。",
+                                                "pinyin":  "Zhè piān wénzhāng de kāitóu xiě de hěn hǎo.",
+                                                "vietnamese":  "Phần mở đầu của bài văn này viết rất hay."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "购物",
+                           "pinyin":  "gòuwù",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "cấu vật",
+                           "vietnamese":  "mua sắm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "周末我常常和朋友去购物。",
+                                                "pinyin":  "Zhōumò wǒ chángcháng hé péngyou qù gòuwù.",
+                                                "vietnamese":  "Cuối tuần tôi thường đi mua sắm cùng bạn bè."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "哎",
+                           "pinyin":  "āi",
+                           "partOfSpeech":  "叹",
+                           "sinoVietnamese":  "ai",
+                           "vietnamese":  "này, ôi, ê",
+                           "examples":  [
+                                            {
+                                                "chinese":  "哎，你的钥匙是不是丢了？",
+                                                "pinyin":  "Āi, nǐ de yàoshi shì bu shì diū le?",
+                                                "vietnamese":  "Này, có phải bạn làm mất chìa khóa rồi không?"
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "入乡随俗",
+                           "pinyin":  "rù xiāng suí sú",
+                           "partOfSpeech":  "成语",
+                           "sinoVietnamese":  "nhập hương tùy tục",
+                           "vietnamese":  "nhập gia tùy tục",
+                           "examples":  [
+                                            {
+                                                "chinese":  "到了中国以后，我们应该入乡随俗。",
+                                                "pinyin":  "Dào le Zhōngguó yǐhòu, wǒmen yīnggāi rù xiāng suí sú.",
+                                                "vietnamese":  "Sau khi đến Trung Quốc, chúng ta nên nhập gia tùy tục."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "大爷",
+                           "pinyin":  "dàyé",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đại gia",
+                           "vietnamese":  "bác trai, ông bác",
+                           "examples":  [
+                                            {
+                                                "chinese":  "大爷，请问去食堂怎么走？",
+                                                "pinyin":  "Dàyé, qǐngwèn qù shítáng zěnme zǒu?",
+                                                "vietnamese":  "Bác ơi, xin hỏi đi đến nhà ăn như thế nào?"
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "大妈",
+                           "pinyin":  "dàmā",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đại ma",
+                           "vietnamese":  "bác gái, cô lớn tuổi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "大妈热情地给我们介绍小吃。",
+                                                "pinyin":  "Dàmā rèqíng de gěi wǒmen jièshào xiǎochī.",
+                                                "vietnamese":  "Bác gái nhiệt tình giới thiệu món ăn vặt cho chúng tôi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "亲热",
+                           "pinyin":  "qīnrè",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "thân nhiệt",
+                           "vietnamese":  "thân mật, thân thiết",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他们说话的样子很亲热。",
+                                                "pinyin":  "Tāmen shuōhuà de yàngzi hěn qīnrè.",
+                                                "vietnamese":  "Cách họ nói chuyện rất thân mật."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "王丽，我们应该怎么称呼你的家人？",
+                          "pinyin":  "Wáng Lì, wǒmen yīnggāi zěnme chēnghu nǐ de jiārén?",
+                          "vietnamese":  "Vương Lệ, chúng tôi nên gọi người nhà của bạn như thế nào?"
+                      },
+                      {
+                          "chinese":  "这个容易，我爸我妈，你叫叔叔、阿姨就行了，其他人嘛，我怎么称呼，你就怎么称呼。",
+                          "pinyin":  "Zhège róngyì, wǒ bà wǒ mā, nǐ jiào shūshu, āyí jiù xíng le, qítā rén ma, wǒ zěnme chēnghu, nǐ jiù zěnme chēnghu.",
+                          "vietnamese":  "Cái này dễ, bố mẹ tôi thì bạn gọi là chú, dì là được, còn những người khác thì tôi gọi thế nào, bạn cứ gọi thế ấy."
+                      },
+                      {
+                          "chinese":  "恐怕没这么容易吧？错了多丢脸呀。",
+                          "pinyin":  "Kǒngpà méi zhème róngyì ba? Cuò le duō diūliǎn ya.",
+                          "vietnamese":  "E là không dễ như vậy đâu nhỉ? Gọi sai thì mất mặt lắm."
+                      },
+                      {
+                          "chinese":  "你不是中国人，一点儿小错没什么。",
+                          "pinyin":  "Nǐ bú shì Zhōngguórén, yìdiǎnr xiǎo cuò méi shénme.",
+                          "vietnamese":  "Bạn không phải người Trung Quốc, sai một chút cũng không sao."
+                      },
+                      {
+                          "chinese":  "这事儿不好说，那天我跟同学去吃饭，同学喊了一声“小姐”，服务员就不太高兴。",
+                          "pinyin":  "Zhè shìr bù hǎo shuō, nà tiān wǒ gēn tóngxué qù chīfàn, tóngxué hǎn le yì shēng “xiǎojiě”, fúwùyuán jiù bú tài gāoxìng.",
+                          "vietnamese":  "Việc này khó nói lắm, hôm đó tôi đi ăn với bạn học, bạn học gọi một tiếng “tiểu thư”, nhân viên phục vụ liền không vui lắm."
+                      },
+                      {
+                          "chinese":  "你叫“小姐”，不如叫“服务员”，直接称呼职业应该不会出错。",
+                          "pinyin":  "Nǐ jiào “xiǎojiě”, bùrú jiào “fúwùyuán”, zhíjiē chēnghu zhíyè yīnggāi bú huì chūcuò.",
+                          "vietnamese":  "Bạn gọi “tiểu thư” thì không bằng gọi “nhân viên phục vụ”, gọi trực tiếp theo nghề nghiệp chắc sẽ không sai."
+                      },
+                      {
+                          "chinese":  "这可不好说，直接称呼职业，会不会不太礼貌？比如说售票员啊，出租车司机啊，他们恐怕会不高兴吧？",
+                          "pinyin":  "Zhè kě bù hǎo shuō, zhíjiē chēnghu zhíyè, huì bú huì bú tài lǐmào? Bǐrú shuō shòupiàoyuán a, chūzūchē sījī a, tāmen kǒngpà huì bù gāoxìng ba?",
+                          "vietnamese":  "Cái này khó nói lắm, gọi trực tiếp theo nghề nghiệp liệu có hơi bất lịch sự không? Ví dụ như nhân viên bán vé, tài xế taxi, e là họ sẽ không vui chứ?"
+                      },
+                      {
+                          "chinese":  "叫“老师”怎么样？电视节目中，主持人就经常叫别人“老师”，他们不见得都是老师吧？",
+                          "pinyin":  "Jiào “lǎoshī” zěnmeyàng? Diànshì jiémù zhōng, zhǔchírén jiù jīngcháng jiào biérén “lǎoshī”, tāmen bú jiàn dé dōu shì lǎoshī ba?",
+                          "vietnamese":  "Gọi là “thầy/cô” thì sao? Trong chương trình truyền hình, người dẫn chương trình thường gọi người khác là “lǎoshī”, họ chưa chắc đều là giáo viên mà?"
+                      },
+                      {
+                          "chinese":  "对那些年龄大、有知识的人，我们叫“老师”也可以。",
+                          "pinyin":  "Duì nàxiē niánlíng dà, yǒu zhīshi de rén, wǒmen jiào “lǎoshī” yě kěyǐ.",
+                          "vietnamese":  "Với những người lớn tuổi, có học thức, chúng ta gọi là “lǎoshī” cũng được."
+                      },
+                      {
+                          "chinese":  "那我以后不知道怎么称呼的时候，我就称呼“老师”，反正他们的汉语都比我的汉语好。",
+                          "pinyin":  "Nà wǒ yǐhòu bù zhīdào zěnme chēnghu de shíhou, wǒ jiù chēnghu “lǎoshī”, fǎnzhèng tāmen de Hànyǔ dōu bǐ wǒ de Hànyǔ hǎo.",
+                          "vietnamese":  "Vậy sau này khi tôi không biết gọi thế nào, tôi sẽ gọi là “lǎoshī”, dù sao tiếng Trung của họ đều tốt hơn tôi."
+                      },
+                      {
+                          "chinese":  "那也不见得，对那些有官职的人，你称呼职业、称呼“老师”，不如称呼他的官职。",
+                          "pinyin":  "Nà yě bú jiàn dé, duì nàxiē yǒu guānzhí de rén, nǐ chēnghu zhíyè, chēnghu “lǎoshī”, bùrú chēnghu tā de guānzhí.",
+                          "vietnamese":  "Cũng chưa chắc đâu, với những người có chức vụ, bạn gọi theo nghề nghiệp hoặc gọi “lǎoshī” thì không bằng gọi theo chức vụ của họ."
+                      },
+                      {
+                          "chinese":  "哦，难怪我经常听到“张经理”“李厂长”“王总经理”什么的呢。",
+                          "pinyin":  "Ò, nánguài wǒ jīngcháng tīngdào “Zhāng jīnglǐ”, “Lǐ chǎngzhǎng”, “Wáng zǒngjīnglǐ” shénme de ne.",
+                          "vietnamese":  "Ồ, chẳng trách tôi thường nghe thấy kiểu “Giám đốc Trương”, “Xưởng trưởng Lý”, “Tổng giám đốc Vương” gì đó."
+                      },
+                      {
+                          "chinese":  "另外，副的官职，你叫他“副厂长”“副经理”，不如把“副”字去掉，这样更合适。",
+                          "pinyin":  "Lìngwài, fù de guānzhí, nǐ jiào tā “fù chǎngzhǎng”, “fù jīnglǐ”, bùrú bǎ “fù” zì qùdiào, zhèyàng gèng héshì.",
+                          "vietnamese":  "Ngoài ra, với chức vụ phó, bạn gọi họ là “phó xưởng trưởng”, “phó giám đốc” thì không bằng bỏ chữ “phó” đi, như vậy phù hợp hơn."
+                      },
+                      {
+                          "chinese":  "哎呀，那我将来跟中国人才交道的时候，说什么也得记住他们的官职。",
+                          "pinyin":  "Āiyā, nà wǒ jiānglái gēn Zhōngguórén dǎ jiāodào de shíhou, shuō shénme yě děi jìzhù tāmen de guānzhí.",
+                          "vietnamese":  "Ôi, vậy sau này khi tôi giao tiếp với người Trung Quốc, dù thế nào cũng phải nhớ chức vụ của họ."
+                      },
+                      {
+                          "chinese":  "不过，我还是有个问题。",
+                          "pinyin":  "Búguò, wǒ háishi yǒu ge wèntí.",
+                          "vietnamese":  "Nhưng mà tôi vẫn còn một vấn đề."
+                      },
+                      {
+                          "chinese":  "什么问题？",
+                          "pinyin":  "Shénme wèntí?",
+                          "vietnamese":  "Vấn đề gì?"
+                      },
+                      {
+                          "chinese":  "又是官职，又是职业，又是年龄，这么复杂，我不出错才怪呢！",
+                          "pinyin":  "Yòu shì guānzhí, yòu shì zhíyè, yòu shì niánlíng, zhème fùzá, wǒ bù chūcuò cái guài ne!",
+                          "vietnamese":  "Nào là chức vụ, nào là nghề nghiệp, nào là tuổi tác, phức tạp như vậy, tôi không sai mới lạ!"
+                      },
+                      {
+                          "chinese":  "这是中国的叫法，还有一种西方的叫法，直接叫名字，反正你是西方人。",
+                          "pinyin":  "Zhè shì Zhōngguó de jiàofǎ, hái yǒu yì zhǒng Xīfāng de jiàofǎ, zhíjiē jiào míngzi, fǎnzhèng nǐ shì Xīfāngrén.",
+                          "vietnamese":  "Đây là cách gọi của Trung Quốc, còn có một cách gọi kiểu phương Tây là gọi thẳng tên, dù sao bạn cũng là người phương Tây."
+                      },
+                      {
+                          "chinese":  "王丽，我还是担心。",
+                          "pinyin":  "Wáng Lì, wǒ háishi dānxīn.",
+                          "vietnamese":  "Vương Lệ, tôi vẫn lo lắng."
+                      },
+                      {
+                          "chinese":  "你担心什么呀？",
+                          "pinyin":  "Nǐ dānxīn shénme ya?",
+                          "vietnamese":  "Bạn lo lắng điều gì vậy?"
+                      },
+                      {
+                          "chinese":  "你告诉我，最好称呼官职，可我是外国人，怎么知道谁是什么官儿？",
+                          "pinyin":  "Nǐ gàosu wǒ, zuì hǎo chēnghu guānzhí, kě wǒ shì wàiguórén, zěnme zhīdào shéi shì shénme guānr?",
+                          "vietnamese":  "Bạn nói với tôi tốt nhất là gọi theo chức vụ, nhưng tôi là người nước ngoài, làm sao biết ai làm chức gì?"
+                      },
+                      {
+                          "chinese":  "嗯，你说的也有道理。这样吧，我教你一招儿，肯定不会出错。",
+                          "pinyin":  "Ńg, nǐ shuō de yě yǒu dàolǐ. Zhèyàng ba, wǒ jiāo nǐ yì zhāor, kěndìng bú huì chūcuò.",
+                          "vietnamese":  "Ừ, bạn nói cũng có lý. Thế này nhé, tôi dạy bạn một chiêu, chắc chắn sẽ không sai."
+                      },
+                      {
+                          "chinese":  "什么招儿？",
+                          "pinyin":  "Shénme zhāor?",
+                          "vietnamese":  "Chiêu gì?"
+                      },
+                      {
+                          "chinese":  "不熟悉的人，你可以不称呼，直接用“你好”“劳驾”“打扰你一下”开头。",
+                          "pinyin":  "Bù shúxī de rén, nǐ kěyǐ bù chēnghu, zhíjiē yòng “nǐ hǎo”, “láojià”, “dǎrǎo nǐ yíxià” kāitóu.",
+                          "vietnamese":  "Người không quen thì bạn có thể không gọi danh xưng, trực tiếp mở đầu bằng “xin chào”, “làm phiền”, “làm phiền bạn một chút”."
+                      },
+                      {
+                          "chinese":  "什么也不称呼，这样能行吗？",
+                          "pinyin":  "Shénme yě bù chēnghu, zhèyàng néng xíng ma?",
+                          "vietnamese":  "Không gọi gì cả, như vậy có được không?"
+                      },
+                      {
+                          "chinese":  "能行，不过你得注意，也有不能说的。",
+                          "pinyin":  "Néng xíng, búguò nǐ děi zhùyì, yě yǒu bù néng shuō de.",
+                          "vietnamese":  "Được, nhưng bạn phải chú ý, cũng có những câu không thể nói."
+                      },
+                      {
+                          "chinese":  "什么不能说？",
+                          "pinyin":  "Shénme bù néng shuō?",
+                          "vietnamese":  "Không thể nói gì?"
+                      },
+                      {
+                          "chinese":  "不能说：“喂，购物中心怎么走？”也不能说：“哎，电影院在哪儿？”",
+                          "pinyin":  "Bù néng shuō: “Wèi, gòuwù zhōngxīn zěnme zǒu?” Yě bù néng shuō: “Āi, diànyǐngyuàn zài nǎr?”",
+                          "vietnamese":  "Không thể nói: “Này, trung tâm mua sắm đi thế nào?” Cũng không thể nói: “Ê, rạp chiếu phim ở đâu?”"
+                      },
+                      {
+                          "chinese":  "看你说的，我哪儿会那么没礼貌。",
+                          "pinyin":  "Kàn nǐ shuō de, wǒ nǎr huì nàme méi lǐmào.",
+                          "vietnamese":  "Xem bạn nói kìa, tôi đâu có bất lịch sự như vậy."
+                      },
+                      {
+                          "chinese":  "要有礼貌，那你就入乡随俗，称呼“叔叔”“阿姨”“大哥”“大姐”“大爷”“大妈”吧。",
+                          "pinyin":  "Yào yǒu lǐmào, nà nǐ jiù rùxiāng-suísú, chēnghu “shūshu”, “āyí”, “dàgē”, “dàjiě”, “dàyé”, “dàmā” ba.",
+                          "vietnamese":  "Muốn lịch sự thì bạn cứ nhập gia tùy tục, gọi là “chú”, “dì”, “anh cả”, “chị cả”, “ông bác”, “bác gái” nhé."
+                      },
+                      {
+                          "chinese":  "入乡随俗？",
+                          "pinyin":  "Rùxiāng-suísú?",
+                          "vietnamese":  "Nhập gia tùy tục à?"
+                      },
+                      {
+                          "chinese":  "到了新的地方，就得入乡随俗，别人怎么做，你也怎么做。",
+                          "pinyin":  "Dào le xīn de dìfang, jiù děi rùxiāng-suísú, biérén zěnme zuò, nǐ yě zěnme zuò.",
+                          "vietnamese":  "Đến nơi mới thì phải nhập gia tùy tục, người khác làm thế nào, bạn cũng làm thế ấy."
+                      },
+                      {
+                          "chinese":  "我又不是中国人，也不认识他们，叫得这么亲热，有必要吗？",
+                          "pinyin":  "Wǒ yòu bú shì Zhōngguórén, yě bú rènshi tāmen, jiào de zhème qīnrè, yǒu bìyào ma?",
+                          "vietnamese":  "Tôi đâu phải người Trung Quốc, cũng không quen họ, gọi thân mật như vậy có cần thiết không?"
+                      },
+                      {
+                          "chinese":  "你这么叫，别人肯定会说，这个人不光汉语说得好，还特别有礼貌。",
+                          "pinyin":  "Nǐ zhème jiào, biérén kěndìng huì shuō, zhège rén bùguāng Hànyǔ shuō de hǎo, hái tèbié yǒu lǐmào.",
+                          "vietnamese":  "Bạn gọi như vậy, người khác chắc chắn sẽ nói người này không chỉ nói tiếng Trung tốt mà còn rất lịch sự."
+                      },
+                      {
+                          "chinese":  "你一说礼貌，我想到一个问题，我们应该带什么礼物去你家？",
+                          "pinyin":  "Nǐ yì shuō lǐmào, wǒ xiǎngdào yí ge wèntí, wǒmen yīnggāi dài shénme lǐwù qù nǐ jiā?",
+                          "vietnamese":  "Bạn vừa nhắc đến lịch sự, tôi nghĩ ra một vấn đề: chúng tôi nên mang quà gì đến nhà bạn?"
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "……怎么……，……怎么……",
+                        "meaning":  "… thế nào thì … thế ấy",
+                        "usage":  "Dùng để nói hai việc tương ứng với nhau",
+                        "note":  "Thường dùng trong khẩu ngữ để nhấn mạnh cách làm",
+                        "example":  "你怎么说，我就怎么做。",
+                        "pinyin":  "Nǐ zěnme shuō, wǒ jiù zěnme zuò.",
+                        "vietnamese":  "Bạn nói thế nào thì tôi làm thế ấy.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "恐怕……",
+                        "meaning":  "E rằng…, có lẽ…",
+                        "usage":  "Dùng để nói dự đoán không tốt hoặc từ chối nhẹ",
+                        "note":  "Lịch sự hơn nói thẳng 不行",
+                        "example":  "今天太晚了，恐怕我不能去了。",
+                        "pinyin":  "Jīntiān tài wǎn le, kǒngpà wǒ bù néng qù le.",
+                        "vietnamese":  "Hôm nay muộn quá, e rằng tôi không đi được nữa.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……，不如……",
+                        "meaning":  "… không bằng… / chi bằng…",
+                        "usage":  "Dùng để đưa ra lựa chọn tốt hơn",
+                        "note":  "Thường dùng khi khuyên người khác",
+                        "example":  "天气这么好，我们不如出去走走。",
+                        "pinyin":  "Tiānqì zhème hǎo, wǒmen bùrú chūqù zǒuzou.",
+                        "vietnamese":  "Thời tiết đẹp thế này, chi bằng chúng ta ra ngoài đi dạo.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "难怪……",
+                        "meaning":  "Thảo nào…",
+                        "usage":  "Dùng khi đã hiểu nguyên nhân của một việc",
+                        "note":  "Phía sau thường là kết quả đã xảy ra",
+                        "example":  "难怪他没来，原来他生病了。",
+                        "pinyin":  "Nánguài tā méi lái, yuánlái tā shēngbìng le.",
+                        "vietnamese":  "Thảo nào anh ấy không đến, hóa ra anh ấy bị ốm.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "说什么也……",
+                        "meaning":  "Dù nói gì cũng… / nhất định…",
+                        "usage":  "Nhấn mạnh thái độ rất kiên quyết",
+                        "note":  "Thường dùng với 不、要、得",
+                        "example":  "这次机会很好，我说什么也不能放弃。",
+                        "pinyin":  "Zhè cì jīhuì hěn hǎo, wǒ shuō shénme yě bù néng fàngqì.",
+                        "vietnamese":  "Cơ hội lần này rất tốt, dù thế nào tôi cũng không thể bỏ cuộc.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……才怪呢",
+                        "meaning":  "… mới lạ đấy / chắc chắn không…",
+                        "usage":  "Dùng để phủ định mạnh, mang sắc thái khẩu ngữ",
+                        "note":  "Câu có cảm xúc mạnh, không dùng trong văn trang trọng",
+                        "example":  "他天天不复习，能考好才怪呢。",
+                        "pinyin":  "Tā tiāntiān bù fùxí, néng kǎo hǎo cái guài ne.",
+                        "vietnamese":  "Anh ấy ngày nào cũng không ôn bài, thi tốt mới lạ đấy.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "哪儿会 / 哪儿有 / 哪儿能……",
+                        "meaning":  "Làm gì có chuyện…",
+                        "usage":  "Dùng để phủ định mạnh điều người khác nói",
+                        "note":  "Khẩu ngữ, sắc thái phản bác",
+                        "example":  "你别担心，他哪儿会生你的气。",
+                        "pinyin":  "Nǐ bié dānxīn, tā nǎr huì shēng nǐ de qì.",
+                        "vietnamese":  "Bạn đừng lo, làm gì có chuyện anh ấy giận bạn.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "要……，就……",
+                        "meaning":  "Nếu muốn…, thì…",
+                        "usage":  "Dùng để nêu điều kiện và kết quả",
+                        "note":  "Gần giống 如果……就……",
+                        "example":  "要学好汉语，就得每天坚持练习。",
+                        "pinyin":  "Yào xué hǎo Hànyǔ, jiù děi měitiān jiānchí liànxí.",
+                        "vietnamese":  "Muốn học tốt tiếng Trung thì phải kiên trì luyện tập mỗi ngày.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "在中国，称呼别人时要注意身份和年龄。",
+                        "pinyin":  "Zài Zhōngguó, chēnghu biérén shí yào zhùyì shēnfèn hé niánlíng.",
+                        "vietnamese":  "Ở Trung Quốc, khi xưng hô với người khác phải chú ý thân phận và tuổi tác.",
+                        "answer":  "在中国，称呼别人时要注意身份和年龄。"
+                    },
+                    {
+                        "chinese":  "老师给我们讲了不同场合的称呼方式。",
+                        "pinyin":  "Lǎoshī gěi wǒmen jiǎng le bùtóng chǎnghé de chēnghu fāngshì.",
+                        "vietnamese":  "Giáo viên giảng cho chúng tôi cách xưng hô trong những hoàn cảnh khác nhau.",
+                        "answer":  "老师给我们讲了不同场合的称呼方式。"
+                    },
+                    {
+                        "chinese":  "如果称呼错了，对方可能会觉得不舒服。",
+                        "pinyin":  "Rúguǒ chēnghu cuò le, duìfāng kěnéng huì juéde bù shūfu.",
+                        "vietnamese":  "Nếu xưng hô sai, đối phương có thể sẽ thấy không thoải mái.",
+                        "answer":  "如果称呼错了，对方可能会觉得不舒服。"
+                    },
+                    {
+                        "chinese":  "对售票员可以直接称呼“师傅”或者“您好”。",
+                        "pinyin":  "Duì shòupiàoyuán kěyǐ zhíjiē chēnghu “shīfu” huòzhě “nín hǎo”.",
+                        "vietnamese":  "Với nhân viên bán vé có thể trực tiếp gọi “sư phụ/bác” hoặc “xin chào”.",
+                        "answer":  "对售票员可以直接称呼“师傅”或者“您好”。"
+                    },
+                    {
+                        "chinese":  "这种称呼听起来很亲热，但不一定适合所有人。",
+                        "pinyin":  "Zhè zhǒng chēnghu tīng qǐlái hěn qīnrè, dàn bù yídìng shìhé suǒyǒu rén.",
+                        "vietnamese":  "Cách xưng hô này nghe rất thân mật, nhưng không nhất định phù hợp với tất cả mọi người.",
+                        "answer":  "这种称呼听起来很亲热，但不一定适合所有人。"
+                    },
+                    {
+                        "chinese":  "他刚来中国，还不太习惯这些称呼。",
+                        "pinyin":  "Tā gāng lái Zhōngguó, hái bú tài xíguàn zhèxiē chēnghu.",
+                        "vietnamese":  "Anh ấy vừa đến Trung Quốc, vẫn chưa quen những cách xưng hô này lắm.",
+                        "answer":  "他刚来中国，还不太习惯这些称呼。"
+                    },
+                    {
+                        "chinese":  "称呼大爷大妈时，语气最好自然一点。",
+                        "pinyin":  "Chēnghu dàyé dàmā shí, yǔqì zuìhǎo zìrán yìdiǎn.",
+                        "vietnamese":  "Khi gọi bác trai bác gái lớn tuổi, giọng điệu tốt nhất tự nhiên một chút.",
+                        "answer":  "称呼大爷大妈时，语气最好自然一点。"
+                    },
+                    {
+                        "chinese":  "主持人介绍客人时，称呼必须准确。",
+                        "pinyin":  "Zhǔchírén jièshào kèrén shí, chēnghu bìxū zhǔnquè.",
+                        "vietnamese":  "Khi người dẫn chương trình giới thiệu khách, cách xưng hô phải chính xác.",
+                        "answer":  "主持人介绍客人时，称呼必须准确。"
+                    },
+                    {
+                        "chinese":  "有些官职称呼比较正式，平时不常用。",
+                        "pinyin":  "Yǒuxiē guānzhí chēnghu bǐjiào zhèngshì, píngshí bù cháng yòng.",
+                        "vietnamese":  "Một số cách gọi chức vụ khá trang trọng, bình thường không hay dùng.",
+                        "answer":  "有些官职称呼比较正式，平时不常用。"
+                    },
+                    {
+                        "chinese":  "学会合适的称呼，跟人打交道会顺利很多。",
+                        "pinyin":  "Xuéhuì héshì de chēnghu, gēn rén dǎ jiāodao huì shùnlì hěn duō.",
+                        "vietnamese":  "Học được cách xưng hô phù hợp thì giao tiếp với người khác sẽ thuận lợi hơn nhiều.",
+                        "answer":  "学会合适的称呼，跟人打交道会顺利很多。"
+                    },
+                    {
+                        "chinese":  "我叔叔在一家工厂当厂长。",
+                        "pinyin":  "Wǒ shūshu zài yì jiā gōngchǎng dāng chǎngzhǎng.",
+                        "vietnamese":  "Chú tôi làm giám đốc ở một nhà máy.",
+                        "answer":  "我叔叔在一家工厂当厂长。"
+                    },
+                    {
+                        "chinese":  "叔叔见到售票员时，总是很有礼貌。",
+                        "pinyin":  "Shūshu jiàn dào shòupiàoyuán shí, zǒngshì hěn yǒu lǐmào.",
+                        "vietnamese":  "Chú tôi khi gặp nhân viên bán vé luôn rất lịch sự.",
+                        "answer":  "叔叔见到售票员时，总是很有礼貌。"
+                    },
+                    {
+                        "chinese":  "这个称呼像亲戚一样，听起来很亲热。",
+                        "pinyin":  "Zhège chēnghu xiàng qīnqi yíyàng, tīng qǐlái hěn qīnrè.",
+                        "vietnamese":  "Cách gọi này giống như người thân, nghe rất thân mật.",
+                        "answer":  "这个称呼像亲戚一样，听起来很亲热。"
+                    },
+                    {
+                        "chinese":  "小孩子常常把父亲的朋友叫叔叔。",
+                        "pinyin":  "Xiǎoháizi chángcháng bǎ fùqīn de péngyou jiào shūshu.",
+                        "vietnamese":  "Trẻ nhỏ thường gọi bạn của bố là chú.",
+                        "answer":  "小孩子常常把父亲的朋友叫叔叔。"
+                    },
+                    {
+                        "chinese":  "在路上问路时，叫一声叔叔也很自然。",
+                        "pinyin":  "Zài lùshang wèn lù shí, jiào yì shēng shūshu yě hěn zìrán.",
+                        "vietnamese":  "Khi hỏi đường trên đường, gọi một tiếng chú cũng rất tự nhiên.",
+                        "answer":  "在路上问路时，叫一声叔叔也很自然。"
+                    },
+                    {
+                        "chinese":  "他觉得叫陌生人叔叔有点不好意思。",
+                        "pinyin":  "Tā juéde jiào mòshēng rén shūshu yǒudiǎn bù hǎoyìsi.",
+                        "vietnamese":  "Anh ấy thấy gọi người lạ là chú hơi ngại.",
+                        "answer":  "他觉得叫陌生人叔叔有点不好意思。"
+                    },
+                    {
+                        "chinese":  "叔叔告诉我，跟人打交道要真诚。",
+                        "pinyin":  "Shūshu gàosu wǒ, gēn rén dǎ jiāodao yào zhēnchéng.",
+                        "vietnamese":  "Chú nói với tôi rằng giao tiếp với người khác phải chân thành.",
+                        "answer":  "叔叔告诉我，跟人打交道要真诚。"
+                    },
+                    {
+                        "chinese":  "这位叔叔帮我们找到了购物中心。",
+                        "pinyin":  "Zhè wèi shūshu bāng wǒmen zhǎodào le gòuwù zhōngxīn.",
+                        "vietnamese":  "Vị chú này giúp chúng tôi tìm được trung tâm mua sắm.",
+                        "answer":  "这位叔叔帮我们找到了购物中心。"
+                    },
+                    {
+                        "chinese":  "有些地方把年纪大的男人称为叔叔。",
+                        "pinyin":  "Yǒuxiē dìfang bǎ niánjì dà de nánrén chēngwéi shūshu.",
+                        "vietnamese":  "Một số nơi gọi đàn ông lớn tuổi là chú.",
+                        "answer":  "有些地方把年纪大的男人称为叔叔。"
+                    },
+                    {
+                        "chinese":  "他一开头就叫错了叔叔的名字。",
+                        "pinyin":  "Tā yì kāitóu jiù jiào cuò le shūshu de míngzi.",
+                        "vietnamese":  "Ngay từ đầu anh ấy đã gọi sai tên của chú.",
+                        "answer":  "他一开头就叫错了叔叔的名字。"
+                    },
+                    {
+                        "chinese":  "在正式场合出错，会让人觉得丢脸。",
+                        "pinyin":  "Zài zhèngshì chǎnghé chūcuò, huì ràng rén juéde diūliǎn.",
+                        "vietnamese":  "Mắc lỗi trong hoàn cảnh trang trọng sẽ khiến người ta thấy mất mặt.",
+                        "answer":  "在正式场合出错，会让人觉得丢脸。"
+                    },
+                    {
+                        "chinese":  "他把厂长叫错了，觉得特别丢脸。",
+                        "pinyin":  "Tā bǎ chǎngzhǎng jiào cuò le, juéde tèbié diūliǎn.",
+                        "vietnamese":  "Anh ấy gọi sai giám đốc nhà máy, cảm thấy rất mất mặt.",
+                        "answer":  "他把厂长叫错了，觉得特别丢脸。"
+                    },
+                    {
+                        "chinese":  "学外语时说错话并不丢脸，重要的是继续练。",
+                        "pinyin":  "Xué wàiyǔ shí shuō cuò huà bìng bù diūliǎn, zhòngyào de shì jìxù liàn.",
+                        "vietnamese":  "Khi học ngoại ngữ nói sai không mất mặt, quan trọng là tiếp tục luyện.",
+                        "answer":  "学外语时说错话并不丢脸，重要的是继续练。"
+                    },
+                    {
+                        "chinese":  "他不敢问路，怕在陌生人面前丢脸。",
+                        "pinyin":  "Tā bù gǎn wèn lù, pà zài mòshēng rén miànqián diūliǎn.",
+                        "vietnamese":  "Anh ấy không dám hỏi đường vì sợ mất mặt trước người lạ.",
+                        "answer":  "他不敢问路，怕在陌生人面前丢脸。"
+                    },
+                    {
+                        "chinese":  "主持人临时忘词，虽然尴尬，但不算丢脸。",
+                        "pinyin":  "Zhǔchírén línshí wàng cí, suīrán gāngà, dàn bú suàn diūliǎn.",
+                        "vietnamese":  "Người dẫn chương trình tạm thời quên lời, tuy ngại nhưng không tính là mất mặt.",
+                        "answer":  "主持人临时忘词，虽然尴尬，但不算丢脸。"
+                    },
+                    {
+                        "chinese":  "不懂就问并不丢脸，装懂才容易出错。",
+                        "pinyin":  "Bù dǒng jiù wèn bìng bù diūliǎn, zhuāng dǒng cái róngyì chūcuò.",
+                        "vietnamese":  "Không hiểu thì hỏi không mất mặt, giả vờ hiểu mới dễ sai.",
+                        "answer":  "不懂就问并不丢脸，装懂才容易出错。"
+                    },
+                    {
+                        "chinese":  "他觉得坐出租车走错路很丢脸。",
+                        "pinyin":  "Tā juéde zuò chūzūchē zǒu cuò lù hěn diūliǎn.",
+                        "vietnamese":  "Anh ấy thấy đi taxi mà đi nhầm đường rất mất mặt.",
+                        "answer":  "他觉得坐出租车走错路很丢脸。"
+                    },
+                    {
+                        "chinese":  "如果只是小错误，完全不用觉得丢脸。",
+                        "pinyin":  "Rúguǒ zhǐshì xiǎo cuòwù, wánquán búyòng juéde diūliǎn.",
+                        "vietnamese":  "Nếu chỉ là lỗi nhỏ thì hoàn toàn không cần thấy mất mặt.",
+                        "answer":  "如果只是小错误，完全不用觉得丢脸。"
+                    },
+                    {
+                        "chinese":  "面对错误要勇敢承认，不要只怕丢脸。",
+                        "pinyin":  "Miànduì cuòwù yào yǒnggǎn chéngrèn, búyào zhǐ pà diūliǎn.",
+                        "vietnamese":  "Đối mặt lỗi lầm phải dũng cảm thừa nhận, đừng chỉ sợ mất mặt.",
+                        "answer":  "面对错误要勇敢承认，不要只怕丢脸。"
+                    },
+                    {
+                        "chinese":  "他第一次当主持人，紧张得怕丢脸。",
+                        "pinyin":  "Tā dì yī cì dāng zhǔchírén, jǐnzhāng de pà diūliǎn.",
+                        "vietnamese":  "Lần đầu làm MC, anh ấy căng thẳng đến mức sợ mất mặt.",
+                        "answer":  "他第一次当主持人，紧张得怕丢脸。"
+                    },
+                    {
+                        "chinese":  "这份资料如果出错，就会影响整个活动。",
+                        "pinyin":  "Zhè fèn zīliào rúguǒ chūcuò, jiù huì yǐngxiǎng zhěngge huódòng.",
+                        "vietnamese":  "Nếu tài liệu này sai, sẽ ảnh hưởng cả hoạt động.",
+                        "answer":  "这份资料如果出错，就会影响整个活动。"
+                    },
+                    {
+                        "chinese":  "售票员很忙，偶尔也可能出错。",
+                        "pinyin":  "Shòupiàoyuán hěn máng, ǒu\u0027ěr yě kěnéng chūcuò.",
+                        "vietnamese":  "Nhân viên bán vé rất bận, thỉnh thoảng cũng có thể mắc lỗi.",
+                        "answer":  "售票员很忙，偶尔也可能出错。"
+                    },
+                    {
+                        "chinese":  "他总是检查两遍，尽量避免出错。",
+                        "pinyin":  "Tā zǒngshì jiǎnchá liǎng biàn, jìnliàng bìmiǎn chūcuò.",
+                        "vietnamese":  "Anh ấy luôn kiểm tra hai lần, cố gắng tránh sai sót.",
+                        "answer":  "他总是检查两遍，尽量避免出错。"
+                    },
+                    {
+                        "chinese":  "称呼别人以前，最好先弄清楚身份，免得出错。",
+                        "pinyin":  "Chēnghu biérén yǐqián, zuìhǎo xiān nòng qīngchu shēnfèn, miǎnde chūcuò.",
+                        "vietnamese":  "Trước khi xưng hô với người khác, tốt nhất làm rõ thân phận để tránh sai.",
+                        "answer":  "称呼别人以前，最好先弄清楚身份，免得出错。"
+                    },
+                    {
+                        "chinese":  "购物付款时出错，会给双方带来麻烦。",
+                        "pinyin":  "Gòuwù fùkuǎn shí chūcuò, huì gěi shuāngfāng dài lái máfan.",
+                        "vietnamese":  "Khi thanh toán mua sắm nếu sai sẽ gây phiền cho hai bên.",
+                        "answer":  "购物付款时出错，会给双方带来麻烦。"
+                    },
+                    {
+                        "chinese":  "这个系统不稳定，所以经常出错。",
+                        "pinyin":  "Zhège xìtǒng bù wěndìng, suǒyǐ jīngcháng chūcuò.",
+                        "vietnamese":  "Hệ thống này không ổn định nên thường xuyên lỗi.",
+                        "answer":  "这个系统不稳定，所以经常出错。"
+                    },
+                    {
+                        "chinese":  "主持人念名字时出错，马上向大家道歉。",
+                        "pinyin":  "Zhǔchírén niàn míngzi shí chūcuò, mǎshàng xiàng dàjiā dàoqiàn.",
+                        "vietnamese":  "Người dẫn chương trình khi đọc tên bị sai liền xin lỗi mọi người.",
+                        "answer":  "主持人念名字时出错，马上向大家道歉。"
+                    },
+                    {
+                        "chinese":  "如果开头就出错，后面的介绍会受影响。",
+                        "pinyin":  "Rúguǒ kāitóu jiù chūcuò, hòumiàn de jièshào huì shòu yǐngxiǎng.",
+                        "vietnamese":  "Nếu ngay phần mở đầu đã sai thì phần giới thiệu phía sau sẽ bị ảnh hưởng.",
+                        "answer":  "如果开头就出错，后面的介绍会受影响。"
+                    },
+                    {
+                        "chinese":  "他不是能力差，只是太紧张才出错。",
+                        "pinyin":  "Tā bú shì nénglì chà, zhǐshì tài jǐnzhāng cái chūcuò.",
+                        "vietnamese":  "Anh ấy không phải năng lực kém, chỉ là quá căng thẳng nên mắc lỗi.",
+                        "answer":  "他不是能力差，只是太紧张才出错。"
+                    },
+                    {
+                        "chinese":  "出错以后要及时改正，不要推责任。",
+                        "pinyin":  "Chūcuò yǐhòu yào jíshí gǎizhèng, búyào tuī zérèn.",
+                        "vietnamese":  "Sau khi mắc lỗi phải sửa kịp thời, đừng đẩy trách nhiệm.",
+                        "answer":  "出错以后要及时改正，不要推责任。"
+                    },
+                    {
+                        "chinese":  "售票员告诉我们，学生证可以买半价票。",
+                        "pinyin":  "Shòupiàoyuán gàosu wǒmen, xuéshēngzhèng kěyǐ mǎi bànjià piào.",
+                        "vietnamese":  "Nhân viên bán vé nói với chúng tôi rằng thẻ sinh viên có thể mua vé nửa giá.",
+                        "answer":  "售票员告诉我们，学生证可以买半价票。"
+                    },
+                    {
+                        "chinese":  "那位售票员很有耐心，解释得也很清楚。",
+                        "pinyin":  "Nà wèi shòupiàoyuán hěn yǒu nàixīn, jiěshì de yě hěn qīngchu.",
+                        "vietnamese":  "Nhân viên bán vé kia rất kiên nhẫn, giải thích cũng rất rõ.",
+                        "answer":  "那位售票员很有耐心，解释得也很清楚。"
+                    },
+                    {
+                        "chinese":  "如果售票员出错，应该礼貌地提醒他。",
+                        "pinyin":  "Rúguǒ shòupiàoyuán chūcuò, yīnggāi lǐmào de tíxǐng tā.",
+                        "vietnamese":  "Nếu nhân viên bán vé sai, nên lịch sự nhắc anh ấy.",
+                        "answer":  "如果售票员出错，应该礼貌地提醒他。"
+                    },
+                    {
+                        "chinese":  "他不知道该怎么称呼售票员，只好说您好。",
+                        "pinyin":  "Tā bù zhīdào gāi zěnme chēnghu shòupiàoyuán, zhǐhǎo shuō nín hǎo.",
+                        "vietnamese":  "Anh ấy không biết nên gọi nhân viên bán vé thế nào, đành nói xin chào.",
+                        "answer":  "他不知道该怎么称呼售票员，只好说您好。"
+                    },
+                    {
+                        "chinese":  "售票员让我们提前准备好身份证。",
+                        "pinyin":  "Shòupiàoyuán ràng wǒmen tíqián zhǔnbèi hǎo shēnfènzhèng.",
+                        "vietnamese":  "Nhân viên bán vé bảo chúng tôi chuẩn bị chứng minh thư trước.",
+                        "answer":  "售票员让我们提前准备好身份证。"
+                    },
+                    {
+                        "chinese":  "这位售票员每天都要跟很多游客打交道。",
+                        "pinyin":  "Zhè wèi shòupiàoyuán měitiān dōu yào gēn hěn duō yóukè dǎ jiāodao.",
+                        "vietnamese":  "Nhân viên bán vé này mỗi ngày phải tiếp xúc với rất nhiều du khách.",
+                        "answer":  "这位售票员每天都要跟很多游客打交道。"
+                    },
+                    {
+                        "chinese":  "售票员说门票已经卖完了。",
+                        "pinyin":  "Shòupiàoyuán shuō ménpiào yǐjīng mài wán le.",
+                        "vietnamese":  "Nhân viên bán vé nói vé vào cửa đã bán hết rồi.",
+                        "answer":  "售票员说门票已经卖完了。"
+                    },
+                    {
+                        "chinese":  "我问售票员去西安的车几点开。",
+                        "pinyin":  "Wǒ wèn shòupiàoyuán qù Xī’ān de chē jǐ diǎn kāi.",
+                        "vietnamese":  "Tôi hỏi nhân viên bán vé xe đi Tây An mấy giờ chạy.",
+                        "answer":  "我问售票员去西安的车几点开。"
+                    },
+                    {
+                        "chinese":  "售票员虽然很忙，但服务态度不错。",
+                        "pinyin":  "Shòupiàoyuán suīrán hěn máng, dàn fúwù tàidu búcuò.",
+                        "vietnamese":  "Nhân viên bán vé tuy rất bận nhưng thái độ phục vụ khá tốt.",
+                        "answer":  "售票员虽然很忙，但服务态度不错。"
+                    },
+                    {
+                        "chinese":  "如果不会买票，可以直接问售票员。",
+                        "pinyin":  "Rúguǒ bú huì mǎi piào, kěyǐ zhíjiē wèn shòupiàoyuán.",
+                        "vietnamese":  "Nếu không biết mua vé, có thể hỏi trực tiếp nhân viên bán vé.",
+                        "answer":  "如果不会买票，可以直接问售票员。"
+                    },
+                    {
+                        "chinese":  "下雨天打不到出租车，真让人着急。",
+                        "pinyin":  "Xiàyǔtiān dǎ bú dào chūzūchē, zhēn ràng rén zháojí.",
+                        "vietnamese":  "Ngày mưa không bắt được taxi thật khiến người ta sốt ruột.",
+                        "answer":  "下雨天打不到出租车，真让人着急。"
+                    },
+                    {
+                        "chinese":  "出租车司机和售票员一样，经常跟人打交道。",
+                        "pinyin":  "Chūzūchē sījī hé shòupiàoyuán yíyàng, jīngcháng gēn rén dǎ jiāodao.",
+                        "vietnamese":  "Tài xế taxi giống nhân viên bán vé, thường xuyên tiếp xúc với người khác.",
+                        "answer":  "出租车司机和售票员一样，经常跟人打交道。"
+                    },
+                    {
+                        "chinese":  "如果怕迟到，不如坐出租车去。",
+                        "pinyin":  "Rúguǒ pà chídào, bùrú zuò chūzūchē qù.",
+                        "vietnamese":  "Nếu sợ đến muộn thì chi bằng đi taxi.",
+                        "answer":  "如果怕迟到，不如坐出租车去。"
+                    },
+                    {
+                        "chinese":  "他上了出租车以后，才发现地址发错了。",
+                        "pinyin":  "Tā shàng le chūzūchē yǐhòu, cái fāxiàn dìzhǐ fā cuò le.",
+                        "vietnamese":  "Sau khi lên taxi, anh ấy mới phát hiện gửi sai địa chỉ.",
+                        "answer":  "他上了出租车以后，才发现地址发错了。"
+                    },
+                    {
+                        "chinese":  "出租车费用比地铁高，但是方便很多。",
+                        "pinyin":  "Chūzūchē fèiyòng bǐ dìtiě gāo, dànshì fāngbiàn hěn duō.",
+                        "vietnamese":  "Chi phí taxi cao hơn tàu điện ngầm nhưng tiện hơn nhiều.",
+                        "answer":  "出租车费用比地铁高，但是方便很多。"
+                    },
+                    {
+                        "chinese":  "这辆出租车停在购物中心门口。",
+                        "pinyin":  "Zhè liàng chūzūchē tíng zài gòuwù zhōngxīn ménkǒu.",
+                        "vietnamese":  "Chiếc taxi này dừng ở cổng trung tâm mua sắm.",
+                        "answer":  "这辆出租车停在购物中心门口。"
+                    },
+                    {
+                        "chinese":  "坐出租车时，最好提前把目的地说清楚。",
+                        "pinyin":  "Zuò chūzūchē shí, zuìhǎo tíqián bǎ mùdìdì shuō qīngchu.",
+                        "vietnamese":  "Khi đi taxi, tốt nhất nói rõ điểm đến trước.",
+                        "answer":  "坐出租车时，最好提前把目的地说清楚。"
+                    },
+                    {
+                        "chinese":  "他觉得在香港坐出租车有点贵。",
+                        "pinyin":  "Tā juéde zài Xiānggǎng zuò chūzūchē yǒudiǎn guì.",
+                        "vietnamese":  "Anh ấy thấy đi taxi ở Hồng Kông hơi đắt.",
+                        "answer":  "他觉得在香港坐出租车有点贵。"
+                    },
+                    {
+                        "chinese":  "出租车司机问我们是不是第一次来上海。",
+                        "pinyin":  "Chūzūchē sījī wèn wǒmen shì bú shì dì yī cì lái Shànghǎi.",
+                        "vietnamese":  "Tài xế taxi hỏi chúng tôi có phải lần đầu đến Thượng Hải không.",
+                        "answer":  "出租车司机问我们是不是第一次来上海。"
+                    },
+                    {
+                        "chinese":  "如果出租车走错路，乘客可能会不高兴。",
+                        "pinyin":  "Rúguǒ chūzūchē zǒu cuò lù, chéngkè kěnéng huì bù gāoxìng.",
+                        "vietnamese":  "Nếu taxi đi nhầm đường, hành khách có thể sẽ không vui.",
+                        "answer":  "如果出租车走错路，乘客可能会不高兴。"
+                    },
+                    {
+                        "chinese":  "主持人一开口，大家就安静下来了。",
+                        "pinyin":  "Zhǔchírén yì kāikǒu, dàjiā jiù ānjìng xiàlái le.",
+                        "vietnamese":  "Người dẫn chương trình vừa mở lời, mọi người liền yên lặng.",
+                        "answer":  "主持人一开口，大家就安静下来了。"
+                    },
+                    {
+                        "chinese":  "这位主持人说话自然，也很会打交道。",
+                        "pinyin":  "Zhè wèi zhǔchírén shuōhuà zìrán, yě hěn huì dǎ jiāodao.",
+                        "vietnamese":  "Người dẫn chương trình này nói chuyện tự nhiên và cũng rất biết giao tiếp.",
+                        "answer":  "这位主持人说话自然，也很会打交道。"
+                    },
+                    {
+                        "chinese":  "主持人介绍嘉宾时，把称呼说得很准确。",
+                        "pinyin":  "Zhǔchírén jièshào jiābīn shí, bǎ chēnghu shuō de hěn zhǔnquè.",
+                        "vietnamese":  "Khi MC giới thiệu khách mời, cách xưng hô rất chính xác.",
+                        "answer":  "主持人介绍嘉宾时，把称呼说得很准确。"
+                    },
+                    {
+                        "chinese":  "他第一次当主持人，难免有点紧张。",
+                        "pinyin":  "Tā dì yī cì dāng zhǔchírén, nánmiǎn yǒudiǎn jǐnzhāng.",
+                        "vietnamese":  "Anh ấy lần đầu làm người dẫn chương trình, khó tránh hơi căng thẳng.",
+                        "answer":  "他第一次当主持人，难免有点紧张。"
+                    },
+                    {
+                        "chinese":  "如果主持人出错，也要马上冷静处理。",
+                        "pinyin":  "Rúguǒ zhǔchírén chūcuò, yě yào mǎshàng lěngjìng chǔlǐ.",
+                        "vietnamese":  "Nếu MC mắc lỗi, cũng phải lập tức xử lý bình tĩnh.",
+                        "answer":  "如果主持人出错，也要马上冷静处理。"
+                    },
+                    {
+                        "chinese":  "主持人请厂长上台讲话。",
+                        "pinyin":  "Zhǔchírén qǐng chǎngzhǎng shàngtái jiǎnghuà.",
+                        "vietnamese":  "Người dẫn chương trình mời giám đốc nhà máy lên sân khấu phát biểu.",
+                        "answer":  "主持人请厂长上台讲话。"
+                    },
+                    {
+                        "chinese":  "这个主持人不见得最有名，但非常专业。",
+                        "pinyin":  "Zhège zhǔchírén bú jiàn de zuì yǒumíng, dàn fēicháng zhuānyè.",
+                        "vietnamese":  "MC này chưa chắc nổi tiếng nhất, nhưng vô cùng chuyên nghiệp.",
+                        "answer":  "这个主持人不见得最有名，但非常专业。"
+                    },
+                    {
+                        "chinese":  "主持人开头讲了一个轻松的故事。",
+                        "pinyin":  "Zhǔchírén kāitóu jiǎng le yí ge qīngsōng de gùshi.",
+                        "vietnamese":  "MC ở phần mở đầu kể một câu chuyện nhẹ nhàng.",
+                        "answer":  "主持人开头讲了一个轻松的故事。"
+                    },
+                    {
+                        "chinese":  "他总能让现场气氛变得亲热自然。",
+                        "pinyin":  "Tā zǒng néng ràng xiànchǎng qìfēn biàn de qīnrè zìrán.",
+                        "vietnamese":  "Anh ấy luôn có thể khiến không khí hiện trường trở nên thân mật tự nhiên.",
+                        "answer":  "他总能让现场气氛变得亲热自然。"
+                    },
+                    {
+                        "chinese":  "主持人要了解活动流程，不能只会说漂亮话。",
+                        "pinyin":  "Zhǔchírén yào liǎojiě huódòng liúchéng, bù néng zhǐ huì shuō piàoliang huà.",
+                        "vietnamese":  "MC phải hiểu quy trình hoạt động, không thể chỉ biết nói lời hay.",
+                        "answer":  "主持人要了解活动流程，不能只会说漂亮话。"
+                    },
+                    {
+                        "chinese":  "贵的不见得就是最好的。",
+                        "pinyin":  "Guì de bú jiàn de jiù shì zuì hǎo de.",
+                        "vietnamese":  "Đắt chưa chắc đã là tốt nhất.",
+                        "answer":  "贵的不见得就是最好的。"
+                    },
+                    {
+                        "chinese":  "他不见得知道这个称呼的真正意思。",
+                        "pinyin":  "Tā bú jiàn de zhīdào zhège chēnghu de zhēnzhèng yìsi.",
+                        "vietnamese":  "Anh ấy chưa chắc biết ý nghĩa thật sự của cách xưng hô này.",
+                        "answer":  "他不见得知道这个称呼的真正意思。"
+                    },
+                    {
+                        "chinese":  "会说外语的人不见得会跟人打交道。",
+                        "pinyin":  "Huì shuō wàiyǔ de rén bú jiàn de huì gēn rén dǎ jiāodao.",
+                        "vietnamese":  "Người biết nói ngoại ngữ chưa chắc biết giao tiếp với người khác.",
+                        "answer":  "会说外语的人不见得会跟人打交道。"
+                    },
+                    {
+                        "chinese":  "出错一次不见得说明能力差。",
+                        "pinyin":  "Chūcuò yí cì bú jiàn de shuōmíng nénglì chà.",
+                        "vietnamese":  "Sai một lần chưa chắc chứng tỏ năng lực kém.",
+                        "answer":  "出错一次不见得说明能力差。"
+                    },
+                    {
+                        "chinese":  "叫大爷大妈不见得所有地方都合适。",
+                        "pinyin":  "Jiào dàyé dàmā bú jiàn de suǒyǒu dìfang dōu héshì.",
+                        "vietnamese":  "Gọi bác trai bác gái chưa chắc ở nơi nào cũng phù hợp.",
+                        "answer":  "叫大爷大妈不见得所有地方都合适。"
+                    },
+                    {
+                        "chinese":  "这个招儿不见得对每个人都有用。",
+                        "pinyin":  "Zhège zhāor bú jiàn de duì měi ge rén dōu yǒuyòng.",
+                        "vietnamese":  "Cách này chưa chắc hữu ích với mọi người.",
+                        "answer":  "这个招儿不见得对每个人都有用。"
+                    },
+                    {
+                        "chinese":  "做过主持人不见得就能主持大型活动。",
+                        "pinyin":  "Zuò guò zhǔchírén bú jiàn de jiù néng zhǔchí dàxíng huódòng.",
+                        "vietnamese":  "Từng làm MC chưa chắc có thể dẫn chương trình lớn.",
+                        "answer":  "做过主持人不见得就能主持大型活动。"
+                    },
+                    {
+                        "chinese":  "坐出租车不见得比地铁快，特别是堵车时。",
+                        "pinyin":  "Zuò chūzūchē bú jiàn de bǐ dìtiě kuài, tèbié shì dǔchē shí.",
+                        "vietnamese":  "Đi taxi chưa chắc nhanh hơn tàu điện, nhất là khi tắc đường.",
+                        "answer":  "坐出租车不见得比地铁快，特别是堵车时。"
+                    },
+                    {
+                        "chinese":  "名字好听不见得容易被人记住。",
+                        "pinyin":  "Míngzi hǎotīng bú jiàn de róngyì bèi rén jìzhù.",
+                        "vietnamese":  "Tên nghe hay chưa chắc dễ được người khác nhớ.",
+                        "answer":  "名字好听不见得容易被人记住。"
+                    },
+                    {
+                        "chinese":  "经验多不见得不会出错，只是更会处理。",
+                        "pinyin":  "Jīngyàn duō bú jiàn de bú huì chūcuò, zhǐshì gèng huì chǔlǐ.",
+                        "vietnamese":  "Nhiều kinh nghiệm chưa chắc không sai, chỉ là biết xử lý hơn.",
+                        "answer":  "经验多不见得不会出错，只是更会处理。"
+                    },
+                    {
+                        "chinese":  "古代的官职称呼和现在不太一样。",
+                        "pinyin":  "Gǔdài de guānzhí chēnghu hé xiànzài bú tài yíyàng.",
+                        "vietnamese":  "Cách gọi chức quan thời xưa và bây giờ không giống nhau lắm.",
+                        "answer":  "古代的官职称呼和现在不太一样。"
+                    },
+                    {
+                        "chinese":  "他对历史上的官职很感兴趣。",
+                        "pinyin":  "Tā duì lìshǐ shàng de guānzhí hěn gǎn xìngqù.",
+                        "vietnamese":  "Anh ấy rất hứng thú với chức quan trong lịch sử.",
+                        "answer":  "他对历史上的官职很感兴趣。"
+                    },
+                    {
+                        "chinese":  "老师让我们查几个官职的意思。",
+                        "pinyin":  "Lǎoshī ràng wǒmen chá jǐ ge guānzhí de yìsi.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi tra nghĩa của vài chức quan.",
+                        "answer":  "老师让我们查几个官职的意思。"
+                    },
+                    {
+                        "chinese":  "官职高不见得一定受人尊重。",
+                        "pinyin":  "Guānzhí gāo bú jiàn de yídìng shòu rén zūnzhòng.",
+                        "vietnamese":  "Chức quan cao chưa chắc nhất định được người khác tôn trọng.",
+                        "answer":  "官职高不见得一定受人尊重。"
+                    },
+                    {
+                        "chinese":  "这个官职在不同朝代有不同叫法。",
+                        "pinyin":  "Zhège guānzhí zài bùtóng cháodài yǒu bùtóng jiàofǎ.",
+                        "vietnamese":  "Chức quan này ở các triều đại khác nhau có cách gọi khác nhau.",
+                        "answer":  "这个官职在不同朝代有不同叫法。"
+                    },
+                    {
+                        "chinese":  "主持人介绍客人时，不能把官职说错。",
+                        "pinyin":  "Zhǔchírén jièshào kèrén shí, bù néng bǎ guānzhí shuō cuò.",
+                        "vietnamese":  "Khi MC giới thiệu khách không được nói sai chức vụ.",
+                        "answer":  "主持人介绍客人时，不能把官职说错。"
+                    },
+                    {
+                        "chinese":  "他觉得官职只是身份的一部分。",
+                        "pinyin":  "Tā juéde guānzhí zhǐshì shēnfèn de yí bùfen.",
+                        "vietnamese":  "Anh ấy thấy chức vụ chỉ là một phần của thân phận.",
+                        "answer":  "他觉得官职只是身份的一部分。"
+                    },
+                    {
+                        "chinese":  "有些人很看重官职，有些人却无所谓。",
+                        "pinyin":  "Yǒuxiē rén hěn kànzhòng guānzhí, yǒuxiē rén què wúsuǒwèi.",
+                        "vietnamese":  "Có người rất coi trọng chức quan, có người lại không để ý.",
+                        "answer":  "有些人很看重官职，有些人却无所谓。"
+                    },
+                    {
+                        "chinese":  "了解官职称呼，有助于读懂历史文章。",
+                        "pinyin":  "Liǎojiě guānzhí chēnghu, yǒu zhù yú dú dǒng lìshǐ wénzhāng.",
+                        "vietnamese":  "Hiểu cách gọi chức quan giúp đọc hiểu bài viết lịch sử.",
+                        "answer":  "了解官职称呼，有助于读懂历史文章。"
+                    },
+                    {
+                        "chinese":  "他说话总提官职，反而让人觉得不自然。",
+                        "pinyin":  "Tā shuōhuà zǒng tí guānzhí, fǎn\u0027ér ràng rén juéde bù zìrán.",
+                        "vietnamese":  "Anh ấy nói chuyện cứ nhắc chức vụ, ngược lại khiến người ta thấy không tự nhiên.",
+                        "answer":  "他说话总提官职，反而让人觉得不自然。"
+                    },
+                    {
+                        "chinese":  "难怪你迟到了，原来路上一直堵车。",
+                        "pinyin":  "Nánguài nǐ chídào le, yuánlái lùshang yìzhí dǔchē.",
+                        "vietnamese":  "Thảo nào bạn đến muộn, hóa ra trên đường cứ tắc xe.",
+                        "answer":  "难怪你迟到了，原来路上一直堵车。"
+                    },
+                    {
+                        "chinese":  "难怪他这么会说话，原来当过主持人。",
+                        "pinyin":  "Nánguài tā zhème huì shuōhuà, yuánlái dāng guò zhǔchírén.",
+                        "vietnamese":  "Thảo nào anh ấy nói chuyện giỏi vậy, hóa ra từng làm MC.",
+                        "answer":  "难怪他这么会说话，原来当过主持人。"
+                    },
+                    {
+                        "chinese":  "难怪售票员认识他，原来他经常来买票。",
+                        "pinyin":  "Nánguài shòupiàoyuán rènshi tā, yuánlái tā jīngcháng lái mǎi piào.",
+                        "vietnamese":  "Thảo nào nhân viên bán vé biết anh ấy, hóa ra anh ấy thường đến mua vé.",
+                        "answer":  "难怪售票员认识他，原来他经常来买票。"
+                    },
+                    {
+                        "chinese":  "难怪你觉得丢脸，原来叫错了厂长的名字。",
+                        "pinyin":  "Nánguài nǐ juéde diūliǎn, yuánlái jiào cuò le chǎngzhǎng de míngzi.",
+                        "vietnamese":  "Thảo nào bạn thấy mất mặt, hóa ra gọi sai tên giám đốc nhà máy.",
+                        "answer":  "难怪你觉得丢脸，原来叫错了厂长的名字。"
+                    },
+                    {
+                        "chinese":  "难怪他说得这么自然，原来很会打交道。",
+                        "pinyin":  "Nánguài tā shuō de zhème zìrán, yuánlái hěn huì dǎ jiāodao.",
+                        "vietnamese":  "Thảo nào anh ấy nói tự nhiên như vậy, hóa ra rất biết giao tiếp.",
+                        "answer":  "难怪他说得这么自然，原来很会打交道。"
+                    },
+                    {
+                        "chinese":  "难怪大爷对你这么亲热，你经常帮他。",
+                        "pinyin":  "Nánguài dàyé duì nǐ zhème qīnrè, nǐ jīngcháng bāng tā.",
+                        "vietnamese":  "Thảo nào bác trai thân mật với bạn như vậy, bạn thường giúp bác ấy.",
+                        "answer":  "难怪大爷对你这么亲热，你经常帮他。"
+                    },
+                    {
+                        "chinese":  "难怪他总是出错，原来开头就没听懂。",
+                        "pinyin":  "Nánguài tā zǒngshì chūcuò, yuánlái kāitóu jiù méi tīng dǒng.",
+                        "vietnamese":  "Thảo nào anh ấy luôn mắc lỗi, hóa ra ngay từ đầu đã không nghe hiểu.",
+                        "answer":  "难怪他总是出错，原来开头就没听懂。"
+                    },
+                    {
+                        "chinese":  "难怪这个招儿有用，原来老师以前试过。",
+                        "pinyin":  "Nánguài zhège zhāor yǒuyòng, yuánlái lǎoshī yǐqián shì guò.",
+                        "vietnamese":  "Thảo nào cách này hữu ích, hóa ra giáo viên trước đây từng thử.",
+                        "answer":  "难怪这个招儿有用，原来老师以前试过。"
+                    },
+                    {
+                        "chinese":  "难怪他不想购物，原来费用太高了。",
+                        "pinyin":  "Nánguài tā bù xiǎng gòuwù, yuánlái fèiyòng tài gāo le.",
+                        "vietnamese":  "Thảo nào anh ấy không muốn mua sắm, hóa ra chi phí quá cao.",
+                        "answer":  "难怪他不想购物，原来费用太高了。"
+                    },
+                    {
+                        "chinese":  "难怪你不知道怎么称呼，原来第一次见面。",
+                        "pinyin":  "Nánguài nǐ bù zhīdào zěnme chēnghu, yuánlái dì yī cì jiànmiàn.",
+                        "vietnamese":  "Thảo nào bạn không biết xưng hô thế nào, hóa ra lần đầu gặp mặt.",
+                        "answer":  "难怪你不知道怎么称呼，原来第一次见面。"
+                    },
+                    {
+                        "chinese":  "厂长今天要来参加我们的活动。",
+                        "pinyin":  "Chǎngzhǎng jīntiān yào lái cānjiā wǒmen de huódòng.",
+                        "vietnamese":  "Hôm nay giám đốc nhà máy sẽ đến tham gia hoạt động của chúng tôi.",
+                        "answer":  "厂长今天要来参加我们的活动。"
+                    },
+                    {
+                        "chinese":  "主持人请厂长介绍工厂情况。",
+                        "pinyin":  "Zhǔchírén qǐng chǎngzhǎng jièshào gōngchǎng qíngkuàng.",
+                        "vietnamese":  "MC mời giám đốc nhà máy giới thiệu tình hình nhà máy.",
+                        "answer":  "主持人请厂长介绍工厂情况。"
+                    },
+                    {
+                        "chinese":  "他把厂长称呼错了，场面有点尴尬。",
+                        "pinyin":  "Tā bǎ chǎngzhǎng chēnghu cuò le, chǎngmiàn yǒudiǎn gāngà.",
+                        "vietnamese":  "Anh ấy xưng hô sai với giám đốc nhà máy, tình huống hơi ngại.",
+                        "answer":  "他把厂长称呼错了，场面有点尴尬。"
+                    },
+                    {
+                        "chinese":  "这位厂长虽然职位高，但是很亲切。",
+                        "pinyin":  "Zhè wèi chǎngzhǎng suīrán zhíwèi gāo, dànshì hěn qīnqiè.",
+                        "vietnamese":  "Vị giám đốc nhà máy này tuy chức vị cao nhưng rất thân thiện.",
+                        "answer":  "这位厂长虽然职位高，但是很亲切。"
+                    },
+                    {
+                        "chinese":  "厂长说，跟工人打交道要真诚。",
+                        "pinyin":  "Chǎngzhǎng shuō, gēn gōngrén dǎ jiāodao yào zhēnchéng.",
+                        "vietnamese":  "Giám đốc nhà máy nói, giao tiếp với công nhân phải chân thành.",
+                        "answer":  "厂长说，跟工人打交道要真诚。"
+                    },
+                    {
+                        "chinese":  "厂长不见得每天都在办公室。",
+                        "pinyin":  "Chǎngzhǎng bú jiàn de měitiān dōu zài bàngōngshì.",
+                        "vietnamese":  "Giám đốc nhà máy chưa chắc ngày nào cũng ở văn phòng.",
+                        "answer":  "厂长不见得每天都在办公室。"
+                    },
+                    {
+                        "chinese":  "难怪他这么忙，原来他是厂长。",
+                        "pinyin":  "Nánguài tā zhème máng, yuánlái tā shì chǎngzhǎng.",
+                        "vietnamese":  "Thảo nào anh ấy bận như vậy, hóa ra là giám đốc nhà máy.",
+                        "answer":  "难怪他这么忙，原来他是厂长。"
+                    },
+                    {
+                        "chinese":  "厂长让售票员帮客人安排座位。",
+                        "pinyin":  "Chǎngzhǎng ràng shòupiàoyuán bāng kèrén ānpái zuòwèi.",
+                        "vietnamese":  "Giám đốc nhà máy bảo nhân viên bán vé giúp khách sắp xếp chỗ ngồi.",
+                        "answer":  "厂长让售票员帮客人安排座位。"
+                    },
+                    {
+                        "chinese":  "他总想当厂长，可是还缺少管理经验。",
+                        "pinyin":  "Tā zǒng xiǎng dāng chǎngzhǎng, kěshì hái quēshǎo guǎnlǐ jīngyàn.",
+                        "vietnamese":  "Anh ấy luôn muốn làm giám đốc nhà máy, nhưng vẫn thiếu kinh nghiệm quản lý.",
+                        "answer":  "他总想当厂长，可是还缺少管理经验。"
+                    },
+                    {
+                        "chinese":  "厂长讲话很简单，开头没有说太多客套话。",
+                        "pinyin":  "Chǎngzhǎng jiǎnghuà hěn jiǎndān, kāitóu méiyǒu shuō tài duō kètào huà.",
+                        "vietnamese":  "Giám đốc nhà máy phát biểu rất đơn giản, phần mở đầu không nói quá nhiều lời khách sáo.",
+                        "answer":  "厂长讲话很简单，开头没有说太多客套话。"
+                    },
+                    {
+                        "chinese":  "他总是提前十分钟到教室。",
+                        "pinyin":  "Tā zǒngshì tíqián shí fēnzhōng dào jiàoshì.",
+                        "vietnamese":  "Anh ấy luôn đến lớp sớm 10 phút.",
+                        "answer":  "他总是提前十分钟到教室。"
+                    },
+                    {
+                        "chinese":  "这个活动的总费用还没有算出来。",
+                        "pinyin":  "Zhège huódòng de zǒng fèiyòng hái méiyǒu suàn chūlái.",
+                        "vietnamese":  "Tổng chi phí của hoạt động này vẫn chưa tính ra.",
+                        "answer":  "这个活动的总费用还没有算出来。"
+                    },
+                    {
+                        "chinese":  "总的来说，这次购物体验还不错。",
+                        "pinyin":  "Zǒng de lái shuō, zhè cì gòuwù tǐyàn hái búcuò.",
+                        "vietnamese":  "Nói chung, trải nghiệm mua sắm lần này khá tốt.",
+                        "answer":  "总的来说，这次购物体验还不错。"
+                    },
+                    {
+                        "chinese":  "他总觉得自己会出错，所以不敢开口。",
+                        "pinyin":  "Tā zǒng juéde zìjǐ huì chūcuò, suǒyǐ bù gǎn kāikǒu.",
+                        "vietnamese":  "Anh ấy luôn cảm thấy mình sẽ sai nên không dám mở miệng.",
+                        "answer":  "他总觉得自己会出错，所以不敢开口。"
+                    },
+                    {
+                        "chinese":  "主持人总能把气氛变得轻松。",
+                        "pinyin":  "Zhǔchírén zǒng néng bǎ qìfēn biàn de qīngsōng.",
+                        "vietnamese":  "Người dẫn chương trình luôn có thể làm không khí trở nên thoải mái.",
+                        "answer":  "主持人总能把气氛变得轻松。"
+                    },
+                    {
+                        "chinese":  "你总这样称呼别人，可能会让人误会。",
+                        "pinyin":  "Nǐ zǒng zhèyàng chēnghu biérén, kěnéng huì ràng rén wùhuì.",
+                        "vietnamese":  "Bạn cứ xưng hô với người khác như vậy có thể khiến người ta hiểu lầm.",
+                        "answer":  "你总这样称呼别人，可能会让人误会。"
+                    },
+                    {
+                        "chinese":  "他总和各种人打交道，所以经验很丰富。",
+                        "pinyin":  "Tā zǒng hé gè zhǒng rén dǎ jiāodao, suǒyǐ jīngyàn hěn fēngfù.",
+                        "vietnamese":  "Anh ấy luôn tiếp xúc với đủ loại người nên kinh nghiệm rất phong phú.",
+                        "answer":  "他总和各种人打交道，所以经验很丰富。"
+                    },
+                    {
+                        "chinese":  "总经理和厂长都参加了今天的会议。",
+                        "pinyin":  "Zǒng jīnglǐ hé chǎngzhǎng dōu cānjiā le jīntiān de huìyì.",
+                        "vietnamese":  "Tổng giám đốc và giám đốc nhà máy đều tham gia cuộc họp hôm nay.",
+                        "answer":  "总经理和厂长都参加了今天的会议。"
+                    },
+                    {
+                        "chinese":  "这件事总要有人负责，不能一直拖。",
+                        "pinyin":  "Zhè jiàn shì zǒng yào yǒu rén fùzé, bù néng yìzhí tuō.",
+                        "vietnamese":  "Việc này cuối cùng cũng phải có người phụ trách, không thể cứ kéo dài.",
+                        "answer":  "这件事总要有人负责，不能一直拖。"
+                    },
+                    {
+                        "chinese":  "他总在开头说错话，后来慢慢习惯了。",
+                        "pinyin":  "Tā zǒng zài kāitóu shuō cuò huà, hòulái mànman xíguàn le.",
+                        "vietnamese":  "Anh ấy luôn nói sai ở phần mở đầu, sau này dần quen rồi.",
+                        "answer":  "他总在开头说错话，后来慢慢习惯了。"
+                    },
+                    {
+                        "chinese":  "做销售的人每天都要跟客户打交道。",
+                        "pinyin":  "Zuò xiāoshòu de rén měitiān dōu yào gēn kèhù dǎ jiāodao.",
+                        "vietnamese":  "Người làm bán hàng mỗi ngày đều phải giao tiếp với khách hàng.",
+                        "answer":  "做销售的人每天都要跟客户打交道。"
+                    },
+                    {
+                        "chinese":  "他很会打交道，所以朋友特别多。",
+                        "pinyin":  "Tā hěn huì dǎ jiāodao, suǒyǐ péngyou tèbié duō.",
+                        "vietnamese":  "Anh ấy rất biết giao tiếp nên bạn bè đặc biệt nhiều.",
+                        "answer":  "他很会打交道，所以朋友特别多。"
+                    },
+                    {
+                        "chinese":  "跟陌生人打交道时，称呼要自然有礼貌。",
+                        "pinyin":  "Gēn mòshēng rén dǎ jiāodao shí, chēnghu yào zìrán yǒu lǐmào.",
+                        "vietnamese":  "Khi giao tiếp với người lạ, cách xưng hô phải tự nhiên và lịch sự.",
+                        "answer":  "跟陌生人打交道时，称呼要自然有礼貌。"
+                    },
+                    {
+                        "chinese":  "售票员需要经常和旅客打交道。",
+                        "pinyin":  "Shòupiàoyuán xūyào jīngcháng hé lǚkè dǎ jiāodao.",
+                        "vietnamese":  "Nhân viên bán vé cần thường xuyên tiếp xúc với hành khách.",
+                        "answer":  "售票员需要经常和旅客打交道。"
+                    },
+                    {
+                        "chinese":  "他不喜欢打交道，只想做安静的工作。",
+                        "pinyin":  "Tā bù xǐhuan dǎ jiāodao, zhǐ xiǎng zuò ānjìng de gōngzuò.",
+                        "vietnamese":  "Anh ấy không thích giao tiếp, chỉ muốn làm công việc yên tĩnh.",
+                        "answer":  "他不喜欢打交道，只想做安静的工作。"
+                    },
+                    {
+                        "chinese":  "主持人如果不会打交道，现场会很尴尬。",
+                        "pinyin":  "Zhǔchírén rúguǒ bú huì dǎ jiāodao, xiànchǎng huì hěn gāngà.",
+                        "vietnamese":  "Nếu MC không biết giao tiếp, hiện trường sẽ rất ngại.",
+                        "answer":  "主持人如果不会打交道，现场会很尴尬。"
+                    },
+                    {
+                        "chinese":  "他从小跟大人打交道，所以说话很成熟。",
+                        "pinyin":  "Tā cóngxiǎo gēn dàrén dǎ jiāodao, suǒyǐ shuōhuà hěn chéngshú.",
+                        "vietnamese":  "Anh ấy từ nhỏ đã tiếp xúc với người lớn nên nói chuyện rất trưởng thành.",
+                        "answer":  "他从小跟大人打交道，所以说话很成熟。"
+                    },
+                    {
+                        "chinese":  "跟官员打交道时，更要注意称呼和礼貌。",
+                        "pinyin":  "Gēn guānyuán dǎ jiāodao shí, gèng yào zhùyì chēnghu hé lǐmào.",
+                        "vietnamese":  "Khi giao tiếp với quan chức, càng phải chú ý cách xưng hô và phép lịch sự.",
+                        "answer":  "跟官员打交道时，更要注意称呼和礼貌。"
+                    },
+                    {
+                        "chinese":  "会打交道不等于会讨好别人。",
+                        "pinyin":  "Huì dǎ jiāodao bù děngyú huì tǎohǎo biérén.",
+                        "vietnamese":  "Biết giao tiếp không có nghĩa là biết nịnh người khác.",
+                        "answer":  "会打交道不等于会讨好别人。"
+                    },
+                    {
+                        "chinese":  "购物时跟店员打交道，也是一种练习。",
+                        "pinyin":  "Gòuwù shí gēn diànyuán dǎ jiāodao, yě shì yì zhǒng liànxí.",
+                        "vietnamese":  "Khi mua sắm giao tiếp với nhân viên cửa hàng cũng là một kiểu luyện tập.",
+                        "answer":  "购物时跟店员打交道，也是一种练习。"
+                    },
+                    {
+                        "chinese":  "朴东民刚来中国，还不熟悉称呼习惯。",
+                        "pinyin":  "Piáo Dōngmín gāng lái Zhōngguó, hái bù shúxī chēnghu xíguàn.",
+                        "vietnamese":  "Phác Đông Dân vừa đến Trung Quốc, vẫn chưa quen thói quen xưng hô.",
+                        "answer":  "朴东民刚来中国，还不熟悉称呼习惯。"
+                    },
+                    {
+                        "chinese":  "朴东民觉得叫大爷大妈很亲热。",
+                        "pinyin":  "Piáo Dōngmín juéde jiào dàyé dàmā hěn qīnrè.",
+                        "vietnamese":  "Phác Đông Dân thấy gọi bác trai bác gái rất thân mật.",
+                        "answer":  "朴东民觉得叫大爷大妈很亲热。"
+                    },
+                    {
+                        "chinese":  "李老师给朴东民介绍了几个称呼。",
+                        "pinyin":  "Lǐ lǎoshī gěi Piáo Dōngmín jièshào le jǐ ge chēnghu.",
+                        "vietnamese":  "Thầy/cô Lý giới thiệu cho Phác Đông Dân vài cách xưng hô.",
+                        "answer":  "李老师给朴东民介绍了几个称呼。"
+                    },
+                    {
+                        "chinese":  "朴东民一开始怕出错，不敢跟人打交道。",
+                        "pinyin":  "Piáo Dōngmín yì kāishǐ pà chūcuò, bù gǎn gēn rén dǎ jiāodao.",
+                        "vietnamese":  "Phác Đông Dân lúc đầu sợ mắc lỗi, không dám giao tiếp với người khác.",
+                        "answer":  "朴东民一开始怕出错，不敢跟人打交道。"
+                    },
+                    {
+                        "chinese":  "朴东民坐出租车时，礼貌地叫司机师傅。",
+                        "pinyin":  "Piáo Dōngmín zuò chūzūchē shí, lǐmào de jiào sījī shīfu.",
+                        "vietnamese":  "Khi đi taxi, Phác Đông Dân lịch sự gọi tài xế là sư phụ/bác tài.",
+                        "answer":  "朴东民坐出租车时，礼貌地叫司机师傅。"
+                    },
+                    {
+                        "chinese":  "难怪朴东民进步快，原来他每天练口语。",
+                        "pinyin":  "Nánguài Piáo Dōngmín jìnbù kuài, yuánlái tā měitiān liàn kǒuyǔ.",
+                        "vietnamese":  "Thảo nào Phác Đông Dân tiến bộ nhanh, hóa ra anh ấy luyện khẩu ngữ mỗi ngày.",
+                        "answer":  "难怪朴东民进步快，原来他每天练口语。"
+                    },
+                    {
+                        "chinese":  "朴东民不见得完全明白这些文化差别。",
+                        "pinyin":  "Piáo Dōngmín bú jiàn de wánquán míngbai zhèxiē wénhuà chābié.",
+                        "vietnamese":  "Phác Đông Dân chưa chắc hoàn toàn hiểu những khác biệt văn hóa này.",
+                        "answer":  "朴东民不见得完全明白这些文化差别。"
+                    },
+                    {
+                        "chinese":  "王老师提醒朴东民，别怕丢脸，多开口。",
+                        "pinyin":  "Wáng lǎoshī tíxǐng Piáo Dōngmín, bié pà diūliǎn, duō kāikǒu.",
+                        "vietnamese":  "Thầy/cô Vương nhắc Phác Đông Dân đừng sợ mất mặt, hãy nói nhiều.",
+                        "answer":  "王老师提醒朴东民，别怕丢脸，多开口。"
+                    },
+                    {
+                        "chinese":  "朴东民购物时学会了跟售货员打交道。",
+                        "pinyin":  "Piáo Dōngmín gòuwù shí xuéhuì le gēn shòuhuòyuán dǎ jiāodao.",
+                        "vietnamese":  "Khi mua sắm, Phác Đông Dân học được cách giao tiếp với nhân viên bán hàng.",
+                        "answer":  "朴东民购物时学会了跟售货员打交道。"
+                    },
+                    {
+                        "chinese":  "朴东民说，入乡随俗确实很重要。",
+                        "pinyin":  "Piáo Dōngmín shuō, rù xiāng suí sú quèshí hěn zhòngyào.",
+                        "vietnamese":  "Phác Đông Dân nói, nhập gia tùy tục thật sự rất quan trọng.",
+                        "answer":  "朴东民说，入乡随俗确实很重要。"
+                    },
+                    {
+                        "chinese":  "李老师今天给我们讲中国称呼。",
+                        "pinyin":  "Lǐ lǎoshī jīntiān gěi wǒmen jiǎng Zhōngguó chēnghu.",
+                        "vietnamese":  "Thầy/cô Lý hôm nay giảng cho chúng tôi về cách xưng hô Trung Quốc.",
+                        "answer":  "李老师今天给我们讲中国称呼。"
+                    },
+                    {
+                        "chinese":  "小李第一次坐出租车去学校。",
+                        "pinyin":  "Xiǎo Lǐ dì yī cì zuò chūzūchē qù xuéxiào.",
+                        "vietnamese":  "Tiểu Lý lần đầu đi taxi đến trường.",
+                        "answer":  "小李第一次坐出租车去学校。"
+                    },
+                    {
+                        "chinese":  "李厂长虽然很忙，但是说话很亲切。",
+                        "pinyin":  "Lǐ chǎngzhǎng suīrán hěn máng, dànshì shuōhuà hěn qīnqiè.",
+                        "vietnamese":  "Giám đốc Lý tuy rất bận nhưng nói chuyện rất thân thiện.",
+                        "answer":  "李厂长虽然很忙，但是说话很亲切。"
+                    },
+                    {
+                        "chinese":  "他姓李，不姓王，你别叫错了。",
+                        "pinyin":  "Tā xìng Lǐ, bù xìng Wáng, nǐ bié jiào cuò le.",
+                        "vietnamese":  "Anh ấy họ Lý, không họ Vương, bạn đừng gọi sai.",
+                        "answer":  "他姓李，不姓王，你别叫错了。"
+                    },
+                    {
+                        "chinese":  "李主持人开头介绍得很自然。",
+                        "pinyin":  "Lǐ zhǔchírén kāitóu jièshào de hěn zìrán.",
+                        "vietnamese":  "MC Lý mở đầu giới thiệu rất tự nhiên.",
+                        "answer":  "李主持人开头介绍得很自然。"
+                    },
+                    {
+                        "chinese":  "李叔叔告诉我，跟人打交道别太紧张。",
+                        "pinyin":  "Lǐ shūshu gàosu wǒ, gēn rén dǎ jiāodao bié tài jǐnzhāng.",
+                        "vietnamese":  "Chú Lý nói với tôi, giao tiếp với người khác đừng quá căng thẳng.",
+                        "answer":  "李叔叔告诉我，跟人打交道别太紧张。"
+                    },
+                    {
+                        "chinese":  "李老师说这种招儿不见得每次都有效。",
+                        "pinyin":  "Lǐ lǎoshī shuō zhè zhǒng zhāor bú jiàn de měi cì dōu yǒuxiào.",
+                        "vietnamese":  "Thầy/cô Lý nói cách này chưa chắc lần nào cũng hiệu quả.",
+                        "answer":  "李老师说这种招儿不见得每次都有效。"
+                    },
+                    {
+                        "chinese":  "小李在购物中心问售票员怎么买票。",
+                        "pinyin":  "Xiǎo Lǐ zài gòuwù zhōngxīn wèn shòupiàoyuán zěnme mǎi piào.",
+                        "vietnamese":  "Tiểu Lý ở trung tâm mua sắm hỏi nhân viên bán vé mua vé thế nào.",
+                        "answer":  "小李在购物中心问售票员怎么买票。"
+                    },
+                    {
+                        "chinese":  "李大爷每天早上都在校园门口散步。",
+                        "pinyin":  "Lǐ dàyé měitiān zǎoshang dōu zài xiàoyuán ménkǒu sànbù.",
+                        "vietnamese":  "Bác Lý mỗi sáng đều đi dạo ở cổng khuôn viên.",
+                        "answer":  "李大爷每天早上都在校园门口散步。"
+                    },
+                    {
+                        "chinese":  "如果不知道怎么称呼，先叫李老师比较安全。",
+                        "pinyin":  "Rúguǒ bù zhīdào zěnme chēnghu, xiān jiào Lǐ lǎoshī bǐjiào ānquán.",
+                        "vietnamese":  "Nếu không biết xưng hô thế nào, gọi thầy/cô Lý trước thì khá an toàn.",
+                        "answer":  "如果不知道怎么称呼，先叫李老师比较安全。"
+                    },
+                    {
+                        "chinese":  "王老师总是鼓励我们多说中文。",
+                        "pinyin":  "Wáng lǎoshī zǒngshì gǔlì wǒmen duō shuō Zhōngwén.",
+                        "vietnamese":  "Thầy/cô Vương luôn khuyến khích chúng tôi nói tiếng Trung nhiều hơn.",
+                        "answer":  "王老师总是鼓励我们多说中文。"
+                    },
+                    {
+                        "chinese":  "小王第一次当主持人，有点紧张。",
+                        "pinyin":  "Xiǎo Wáng dì yī cì dāng zhǔchírén, yǒudiǎn jǐnzhāng.",
+                        "vietnamese":  "Tiểu Vương lần đầu làm MC, hơi căng thẳng.",
+                        "answer":  "小王第一次当主持人，有点紧张。"
+                    },
+                    {
+                        "chinese":  "王厂长今天要和客户打交道。",
+                        "pinyin":  "Wáng chǎngzhǎng jīntiān yào hé kèhù dǎ jiāodao.",
+                        "vietnamese":  "Giám đốc Vương hôm nay phải giao tiếp với khách hàng.",
+                        "answer":  "王厂长今天要和客户打交道。"
+                    },
+                    {
+                        "chinese":  "他姓王，不见得就是王老师的亲戚。",
+                        "pinyin":  "Tā xìng Wáng, bú jiàn de jiù shì Wáng lǎoshī de qīnqi.",
+                        "vietnamese":  "Anh ấy họ Vương, chưa chắc là họ hàng của thầy/cô Vương.",
+                        "answer":  "他姓王，不见得就是王老师的亲戚。"
+                    },
+                    {
+                        "chinese":  "王大妈对新生特别亲热。",
+                        "pinyin":  "Wáng dàmā duì xīnshēng tèbié qīnrè.",
+                        "vietnamese":  "Bác gái Vương rất thân mật với sinh viên mới.",
+                        "answer":  "王大妈对新生特别亲热。"
+                    },
+                    {
+                        "chinese":  "小王坐出租车时忘了拿发票。",
+                        "pinyin":  "Xiǎo Wáng zuò chūzūchē shí wàng le ná fāpiào.",
+                        "vietnamese":  "Tiểu Vương khi đi taxi quên lấy hóa đơn.",
+                        "answer":  "小王坐出租车时忘了拿发票。"
+                    },
+                    {
+                        "chinese":  "王主持人一开头就说错了嘉宾称呼。",
+                        "pinyin":  "Wáng zhǔchírén yì kāitóu jiù shuō cuò le jiābīn chēnghu.",
+                        "vietnamese":  "MC Vương ngay phần mở đầu đã nói sai cách xưng hô khách mời.",
+                        "answer":  "王主持人一开头就说错了嘉宾称呼。"
+                    },
+                    {
+                        "chinese":  "王老师告诉朴东民，出错并不丢脸。",
+                        "pinyin":  "Wáng lǎoshī gàosu Piáo Dōngmín, chūcuò bìng bù diūliǎn.",
+                        "vietnamese":  "Thầy/cô Vương nói với Phác Đông Dân rằng mắc lỗi không mất mặt.",
+                        "answer":  "王老师告诉朴东民，出错并不丢脸。"
+                    },
+                    {
+                        "chinese":  "王叔叔常常带我去购物中心。",
+                        "pinyin":  "Wáng shūshu chángcháng dài wǒ qù gòuwù zhōngxīn.",
+                        "vietnamese":  "Chú Vương thường dẫn tôi đến trung tâm mua sắm.",
+                        "answer":  "王叔叔常常带我去购物中心。"
+                    },
+                    {
+                        "chinese":  "难怪小王会用这个招儿，原来他学过。",
+                        "pinyin":  "Nánguài Xiǎo Wáng huì yòng zhège zhāor, yuánlái tā xué guò.",
+                        "vietnamese":  "Thảo nào Tiểu Vương biết dùng cách này, hóa ra anh ấy từng học.",
+                        "answer":  "难怪小王会用这个招儿，原来他学过。"
+                    },
+                    {
+                        "chinese":  "他当了官儿以后，说话反而更客气了。",
+                        "pinyin":  "Tā dāng le guānr yǐhòu, shuōhuà fǎn\u0027ér gèng kèqi le.",
+                        "vietnamese":  "Sau khi làm quan/chức vụ, anh ấy nói chuyện ngược lại càng khách sáo hơn.",
+                        "answer":  "他当了官儿以后，说话反而更客气了。"
+                    },
+                    {
+                        "chinese":  "有些人一有点官儿，就喜欢摆架子。",
+                        "pinyin":  "Yǒuxiē rén yì yǒu diǎn guānr, jiù xǐhuan bǎi jiàzi.",
+                        "vietnamese":  "Có người vừa có chút chức quyền là thích ra vẻ.",
+                        "answer":  "有些人一有点官儿，就喜欢摆架子。"
+                    },
+                    {
+                        "chinese":  "这个官儿不大，但是责任很重。",
+                        "pinyin":  "Zhège guānr bú dà, dànshì zérèn hěn zhòng.",
+                        "vietnamese":  "Chức quan này không lớn nhưng trách nhiệm rất nặng.",
+                        "answer":  "这个官儿不大，但是责任很重。"
+                    },
+                    {
+                        "chinese":  "他开玩笑说自己只是个小官儿。",
+                        "pinyin":  "Tā kāi wánxiào shuō zìjǐ zhǐshì ge xiǎo guānr.",
+                        "vietnamese":  "Anh ấy đùa rằng mình chỉ là một chức quan nhỏ.",
+                        "answer":  "他开玩笑说自己只是个小官儿。"
+                    },
+                    {
+                        "chinese":  "跟有官儿的人打交道，也要自然一点。",
+                        "pinyin":  "Gēn yǒu guānr de rén dǎ jiāodao, yě yào zìrán yìdiǎn.",
+                        "vietnamese":  "Giao tiếp với người có chức quyền cũng phải tự nhiên một chút.",
+                        "answer":  "跟有官儿的人打交道，也要自然一点。"
+                    },
+                    {
+                        "chinese":  "官儿高不见得能力就一定强。",
+                        "pinyin":  "Guānr gāo bú jiàn de nénglì jiù yídìng qiáng.",
+                        "vietnamese":  "Chức cao chưa chắc năng lực nhất định mạnh.",
+                        "answer":  "官儿高不见得能力就一定强。"
+                    },
+                    {
+                        "chinese":  "他觉得称呼官儿时容易出错。",
+                        "pinyin":  "Tā juéde chēnghu guānr shí róngyì chūcuò.",
+                        "vietnamese":  "Anh ấy thấy khi xưng hô với quan chức dễ mắc lỗi.",
+                        "answer":  "他觉得称呼官儿时容易出错。"
+                    },
+                    {
+                        "chinese":  "这个词儿听起来像老北京话里的官儿。",
+                        "pinyin":  "Zhège cír tīng qǐlái xiàng lǎo Běijīng huà lǐ de guānr.",
+                        "vietnamese":  "Từ này nghe giống “quan” trong tiếng Bắc Kinh xưa.",
+                        "answer":  "这个词儿听起来像老北京话里的官儿。"
+                    },
+                    {
+                        "chinese":  "他并不在乎官儿大小，只想把事情做好。",
+                        "pinyin":  "Tā bìng bú zàihu guānr dà xiǎo, zhǐ xiǎng bǎ shìqing zuò hǎo.",
+                        "vietnamese":  "Anh ấy không để ý chức vụ lớn nhỏ, chỉ muốn làm tốt việc.",
+                        "answer":  "他并不在乎官儿大小，只想把事情做好。"
+                    },
+                    {
+                        "chinese":  "难怪大家尊重他，原来他从不摆官儿架子。",
+                        "pinyin":  "Nánguài dàjiā zūnzhòng tā, yuánlái tā cóng bù bǎi guānr jiàzi.",
+                        "vietnamese":  "Thảo nào mọi người tôn trọng anh ấy, hóa ra anh ấy không bao giờ ra vẻ quan cách.",
+                        "answer":  "难怪大家尊重他，原来他从不摆官儿架子。"
+                    },
+                    {
+                        "chinese":  "嗯，我觉得这个称呼比较合适。",
+                        "pinyin":  "Ng, wǒ juéde zhège chēnghu bǐjiào héshì.",
+                        "vietnamese":  "Ừm, tôi thấy cách xưng hô này khá phù hợp.",
+                        "answer":  "嗯，我觉得这个称呼比较合适。"
+                    },
+                    {
+                        "chinese":  "嗯，你说得有道理，我再想想。",
+                        "pinyin":  "Ng, nǐ shuō de yǒu dàolǐ, wǒ zài xiǎngxiang.",
+                        "vietnamese":  "Ừm, bạn nói có lý, tôi nghĩ thêm đã.",
+                        "answer":  "嗯，你说得有道理，我再想想。"
+                    },
+                    {
+                        "chinese":  "嗯，售票员刚才好像说错了时间。",
+                        "pinyin":  "Ng, shòupiàoyuán gāngcái hǎoxiàng shuō cuò le shíjiān.",
+                        "vietnamese":  "Ừm, nhân viên bán vé vừa rồi hình như nói sai thời gian.",
+                        "answer":  "嗯，售票员刚才好像说错了时间。"
+                    },
+                    {
+                        "chinese":  "嗯，坐出租车不见得比地铁快。",
+                        "pinyin":  "Ng, zuò chūzūchē bú jiàn de bǐ dìtiě kuài.",
+                        "vietnamese":  "Ừm, đi taxi chưa chắc nhanh hơn tàu điện.",
+                        "answer":  "嗯，坐出租车不见得比地铁快。"
+                    },
+                    {
+                        "chinese":  "嗯，难怪他今天一直不说话。",
+                        "pinyin":  "Ng, nánguài tā jīntiān yìzhí bù shuōhuà.",
+                        "vietnamese":  "Ừm, thảo nào hôm nay anh ấy cứ không nói gì.",
+                        "answer":  "嗯，难怪他今天一直不说话。"
+                    },
+                    {
+                        "chinese":  "嗯，我明白了，入乡随俗很重要。",
+                        "pinyin":  "Ng, wǒ míngbai le, rù xiāng suí sú hěn zhòngyào.",
+                        "vietnamese":  "Ừm, tôi hiểu rồi, nhập gia tùy tục rất quan trọng.",
+                        "answer":  "嗯，我明白了，入乡随俗很重要。"
+                    },
+                    {
+                        "chinese":  "嗯，这个招儿也许真的有用。",
+                        "pinyin":  "Ng, zhège zhāor yěxǔ zhēn de yǒuyòng.",
+                        "vietnamese":  "Ừm, cách này có lẽ thật sự hữu ích.",
+                        "answer":  "嗯，这个招儿也许真的有用。"
+                    },
+                    {
+                        "chinese":  "嗯，开头部分可以再自然一点。",
+                        "pinyin":  "Ng, kāitóu bùfen kěyǐ zài zìrán yìdiǎn.",
+                        "vietnamese":  "Ừm, phần mở đầu có thể tự nhiên hơn một chút.",
+                        "answer":  "嗯，开头部分可以再自然一点。"
+                    },
+                    {
+                        "chinese":  "嗯，购物以前先看看价格比较好。",
+                        "pinyin":  "Ng, gòuwù yǐqián xiān kànkan jiàgé bǐjiào hǎo.",
+                        "vietnamese":  "Ừm, trước khi mua sắm xem giá trước thì tốt hơn.",
+                        "answer":  "嗯，购物以前先看看价格比较好。"
+                    },
+                    {
+                        "chinese":  "嗯，跟大爷大妈说话要亲切一点。",
+                        "pinyin":  "Ng, gēn dàyé dàmā shuōhuà yào qīnqiè yìdiǎn.",
+                        "vietnamese":  "Ừm, nói chuyện với bác trai bác gái lớn tuổi phải thân thiện hơn chút.",
+                        "answer":  "嗯，跟大爷大妈说话要亲切一点。"
+                    },
+                    {
+                        "chinese":  "这个招儿虽然简单，但是很管用。",
+                        "pinyin":  "Zhège zhāor suīrán jiǎndān, dànshì hěn guǎnyòng.",
+                        "vietnamese":  "Cách này tuy đơn giản nhưng rất hiệu quả.",
+                        "answer":  "这个招儿虽然简单，但是很管用。"
+                    },
+                    {
+                        "chinese":  "他想了半天，终于想出一个好招儿。",
+                        "pinyin":  "Tā xiǎng le bàntiān, zhōngyú xiǎng chū yí ge hǎo zhāor.",
+                        "vietnamese":  "Anh ấy nghĩ nửa ngày, cuối cùng nghĩ ra một cách hay.",
+                        "answer":  "他想了半天，终于想出一个好招儿。"
+                    },
+                    {
+                        "chinese":  "学会这个招儿以后，他不怕跟人打交道了。",
+                        "pinyin":  "Xuéhuì zhège zhāor yǐhòu, tā bú pà gēn rén dǎ jiāodao le.",
+                        "vietnamese":  "Sau khi học được cách này, anh ấy không sợ giao tiếp nữa.",
+                        "answer":  "学会这个招儿以后，他不怕跟人打交道了。"
+                    },
+                    {
+                        "chinese":  "这个招儿不见得适合正式场合。",
+                        "pinyin":  "Zhège zhāor bú jiàn de shìhé zhèngshì chǎnghé.",
+                        "vietnamese":  "Cách này chưa chắc phù hợp với hoàn cảnh trang trọng.",
+                        "answer":  "这个招儿不见得适合正式场合。"
+                    },
+                    {
+                        "chinese":  "老师教了我们一个避免出错的招儿。",
+                        "pinyin":  "Lǎoshī jiāo le wǒmen yí ge bìmiǎn chūcuò de zhāor.",
+                        "vietnamese":  "Giáo viên dạy chúng tôi một cách tránh mắc lỗi.",
+                        "answer":  "老师教了我们一个避免出错的招儿。"
+                    },
+                    {
+                        "chinese":  "难怪他说得这么自然，原来有招儿。",
+                        "pinyin":  "Nánguài tā shuō de zhème zìrán, yuánlái yǒu zhāor.",
+                        "vietnamese":  "Thảo nào anh ấy nói tự nhiên như vậy, hóa ra có cách.",
+                        "answer":  "难怪他说得这么自然，原来有招儿。"
+                    },
+                    {
+                        "chinese":  "购物时讲价也需要一点招儿。",
+                        "pinyin":  "Gòuwù shí jiǎngjià yě xūyào yìdiǎn zhāor.",
+                        "vietnamese":  "Khi mua sắm mặc cả cũng cần chút mẹo.",
+                        "answer":  "购物时讲价也需要一点招儿。"
+                    },
+                    {
+                        "chinese":  "你别只怕丢脸，先试试这个招儿。",
+                        "pinyin":  "Nǐ bié zhǐ pà diūliǎn, xiān shìshi zhège zhāor.",
+                        "vietnamese":  "Bạn đừng chỉ sợ mất mặt, hãy thử cách này trước.",
+                        "answer":  "你别只怕丢脸，先试试这个招儿。"
+                    },
+                    {
+                        "chinese":  "主持人控制气氛也有自己的招儿。",
+                        "pinyin":  "Zhǔchírén kòngzhì qìfēn yě yǒu zìjǐ de zhāor.",
+                        "vietnamese":  "MC kiểm soát không khí cũng có cách riêng.",
+                        "answer":  "主持人控制气氛也有自己的招儿。"
+                    },
+                    {
+                        "chinese":  "这个招儿开头有点难，练几次就好了。",
+                        "pinyin":  "Zhège zhāor kāitóu yǒudiǎn nán, liàn jǐ cì jiù hǎo le.",
+                        "vietnamese":  "Cách này lúc đầu hơi khó, luyện vài lần là ổn.",
+                        "answer":  "这个招儿开头有点难，练几次就好了。"
+                    },
+                    {
+                        "chinese":  "文章开头写得好，读者才愿意继续看。",
+                        "pinyin":  "Wénzhāng kāitóu xiě de hǎo, dúzhě cái yuànyì jìxù kàn.",
+                        "vietnamese":  "Phần mở đầu bài viết viết tốt thì độc giả mới muốn tiếp tục đọc.",
+                        "answer":  "文章开头写得好，读者才愿意继续看。"
+                    },
+                    {
+                        "chinese":  "主持人开头说了几句幽默的话。",
+                        "pinyin":  "Zhǔchírén kāitóu shuō le jǐ jù yōumò de huà.",
+                        "vietnamese":  "MC ở phần mở đầu nói vài câu hài hước.",
+                        "answer":  "主持人开头说了几句幽默的话。"
+                    },
+                    {
+                        "chinese":  "他开头有点紧张，后来慢慢自然了。",
+                        "pinyin":  "Tā kāitóu yǒudiǎn jǐnzhāng, hòulái mànman zìrán le.",
+                        "vietnamese":  "Lúc đầu anh ấy hơi căng thẳng, sau đó dần tự nhiên hơn.",
+                        "answer":  "他开头有点紧张，后来慢慢自然了。"
+                    },
+                    {
+                        "chinese":  "这个故事开头很普通，结尾却很感人。",
+                        "pinyin":  "Zhège gùshi kāitóu hěn pǔtōng, jiéwěi què hěn gǎnrén.",
+                        "vietnamese":  "Câu chuyện này mở đầu rất bình thường nhưng kết thúc lại rất cảm động.",
+                        "answer":  "这个故事开头很普通，结尾却很感人。"
+                    },
+                    {
+                        "chinese":  "如果开头就出错，观众可能会失去兴趣。",
+                        "pinyin":  "Rúguǒ kāitóu jiù chūcuò, guānzhòng kěnéng huì shīqù xìngqù.",
+                        "vietnamese":  "Nếu ngay mở đầu đã sai, khán giả có thể mất hứng thú.",
+                        "answer":  "如果开头就出错，观众可能会失去兴趣。"
+                    },
+                    {
+                        "chinese":  "老师让我们重新设计演讲开头。",
+                        "pinyin":  "Lǎoshī ràng wǒmen chóngxīn shèjì yǎnjiǎng kāitóu.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi thiết kế lại phần mở đầu bài diễn thuyết.",
+                        "answer":  "老师让我们重新设计演讲开头。"
+                    },
+                    {
+                        "chinese":  "开头称呼错了，后面就有点尴尬。",
+                        "pinyin":  "Kāitóu chēnghu cuò le, hòumiàn jiù yǒudiǎn gāngà.",
+                        "vietnamese":  "Phần đầu xưng hô sai, phía sau liền hơi ngại.",
+                        "answer":  "开头称呼错了，后面就有点尴尬。"
+                    },
+                    {
+                        "chinese":  "他总是在开头先感谢老师和同学。",
+                        "pinyin":  "Tā zǒngshì zài kāitóu xiān gǎnxiè lǎoshī hé tóngxué.",
+                        "vietnamese":  "Anh ấy luôn ở phần đầu cảm ơn giáo viên và bạn học trước.",
+                        "answer":  "他总是在开头先感谢老师和同学。"
+                    },
+                    {
+                        "chinese":  "这个开头虽然短，但是很有特色。",
+                        "pinyin":  "Zhège kāitóu suīrán duǎn, dànshì hěn yǒu tèsè.",
+                        "vietnamese":  "Phần mở đầu này tuy ngắn nhưng rất có nét riêng.",
+                        "answer":  "这个开头虽然短，但是很有特色。"
+                    },
+                    {
+                        "chinese":  "写邮件时，开头最好先礼貌地问候。",
+                        "pinyin":  "Xiě yóujiàn shí, kāitóu zuìhǎo xiān lǐmào de wènhòu.",
+                        "vietnamese":  "Khi viết email, phần mở đầu tốt nhất chào hỏi lịch sự trước.",
+                        "answer":  "写邮件时，开头最好先礼貌地问候。"
+                    },
+                    {
+                        "chinese":  "周末我想去购物中心买衣服。",
+                        "pinyin":  "Zhōumò wǒ xiǎng qù gòuwù zhōngxīn mǎi yīfu.",
+                        "vietnamese":  "Cuối tuần tôi muốn đến trung tâm mua sắm mua quần áo.",
+                        "answer":  "周末我想去购物中心买衣服。"
+                    },
+                    {
+                        "chinese":  "购物以前，最好先看看自己的预算。",
+                        "pinyin":  "Gòuwù yǐqián, zuìhǎo xiān kànkan zìjǐ de yùsuàn.",
+                        "vietnamese":  "Trước khi mua sắm, tốt nhất xem ngân sách của mình trước.",
+                        "answer":  "购物以前，最好先看看自己的预算。"
+                    },
+                    {
+                        "chinese":  "他一购物就忘了时间。",
+                        "pinyin":  "Tā yì gòuwù jiù wàng le shíjiān.",
+                        "vietnamese":  "Anh ấy cứ mua sắm là quên thời gian.",
+                        "answer":  "他一购物就忘了时间。"
+                    },
+                    {
+                        "chinese":  "网上购物虽然方便，但是也容易出错。",
+                        "pinyin":  "Wǎngshàng gòuwù suīrán fāngbiàn, dànshì yě róngyì chūcuò.",
+                        "vietnamese":  "Mua sắm online tuy tiện nhưng cũng dễ sai.",
+                        "answer":  "网上购物虽然方便，但是也容易出错。"
+                    },
+                    {
+                        "chinese":  "这次购物总费用比我想的高。",
+                        "pinyin":  "Zhè cì gòuwù zǒng fèiyòng bǐ wǒ xiǎng de gāo.",
+                        "vietnamese":  "Tổng chi phí mua sắm lần này cao hơn tôi nghĩ.",
+                        "answer":  "这次购物总费用比我想的高。"
+                    },
+                    {
+                        "chinese":  "购物时跟店员打交道，可以练习中文。",
+                        "pinyin":  "Gòuwù shí gēn diànyuán dǎ jiāodao, kěyǐ liànxí Zhōngwén.",
+                        "vietnamese":  "Khi mua sắm giao tiếp với nhân viên có thể luyện tiếng Trung.",
+                        "answer":  "购物时跟店员打交道，可以练习中文。"
+                    },
+                    {
+                        "chinese":  "香港不仅适合旅游，也很适合购物。",
+                        "pinyin":  "Xiānggǎng bùjǐn shìhé lǚyóu, yě hěn shìhé gòuwù.",
+                        "vietnamese":  "Hồng Kông không chỉ hợp du lịch mà cũng rất hợp mua sắm.",
+                        "answer":  "香港不仅适合旅游，也很适合购物。"
+                    },
+                    {
+                        "chinese":  "他怕购物时说错话，觉得有点丢脸。",
+                        "pinyin":  "Tā pà gòuwù shí shuō cuò huà, juéde yǒudiǎn diūliǎn.",
+                        "vietnamese":  "Anh ấy sợ khi mua sắm nói sai, thấy hơi mất mặt.",
+                        "answer":  "他怕购物时说错话，觉得有点丢脸。"
+                    },
+                    {
+                        "chinese":  "购物不见得一定要买贵的东西。",
+                        "pinyin":  "Gòuwù bú jiàn de yídìng yào mǎi guì de dōngxi.",
+                        "vietnamese":  "Mua sắm chưa chắc nhất định phải mua đồ đắt.",
+                        "answer":  "购物不见得一定要买贵的东西。"
+                    },
+                    {
+                        "chinese":  "老师让我们写一篇关于购物经历的作文。",
+                        "pinyin":  "Lǎoshī ràng wǒmen xiě yì piān guānyú gòuwù jīnglì de zuòwén.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi viết một bài văn về trải nghiệm mua sắm.",
+                        "answer":  "老师让我们写一篇关于购物经历的作文。"
+                    },
+                    {
+                        "chinese":  "哎，你怎么又忘了带学生证？",
+                        "pinyin":  "Āi, nǐ zěnme yòu wàng le dài xuéshēngzhèng?",
+                        "vietnamese":  "Này, sao bạn lại quên mang thẻ sinh viên nữa rồi?",
+                        "answer":  "哎，你怎么又忘了带学生证？"
+                    },
+                    {
+                        "chinese":  "哎，这个称呼好像不太合适。",
+                        "pinyin":  "Āi, zhège chēnghu hǎoxiàng bú tài héshì.",
+                        "vietnamese":  "Ê/ôi, cách xưng hô này hình như không phù hợp lắm.",
+                        "answer":  "哎，这个称呼好像不太合适。"
+                    },
+                    {
+                        "chinese":  "哎，出租车怎么还没来？",
+                        "pinyin":  "Āi, chūzūchē zěnme hái méi lái?",
+                        "vietnamese":  "Này, sao taxi vẫn chưa đến?",
+                        "answer":  "哎，出租车怎么还没来？"
+                    },
+                    {
+                        "chinese":  "哎，我刚才好像说错话了。",
+                        "pinyin":  "Āi, wǒ gāngcái hǎoxiàng shuō cuò huà le.",
+                        "vietnamese":  "Ôi, vừa rồi hình như tôi nói sai rồi.",
+                        "answer":  "哎，我刚才好像说错话了。"
+                    },
+                    {
+                        "chinese":  "哎，你别总怕丢脸，多练就好了。",
+                        "pinyin":  "Āi, nǐ bié zǒng pà diūliǎn, duō liàn jiù hǎo le.",
+                        "vietnamese":  "Này, bạn đừng cứ sợ mất mặt, luyện nhiều là được.",
+                        "answer":  "哎，你别总怕丢脸，多练就好了。"
+                    },
+                    {
+                        "chinese":  "哎，难怪售票员不明白你的意思。",
+                        "pinyin":  "Āi, nánguài shòupiàoyuán bù míngbai nǐ de yìsi.",
+                        "vietnamese":  "À, thảo nào nhân viên bán vé không hiểu ý bạn.",
+                        "answer":  "哎，难怪售票员不明白你的意思。"
+                    },
+                    {
+                        "chinese":  "哎，这个招儿我以前怎么没想到？",
+                        "pinyin":  "Āi, zhège zhāor wǒ yǐqián zěnme méi xiǎngdào?",
+                        "vietnamese":  "Ôi, cách này sao trước đây tôi không nghĩ ra nhỉ?",
+                        "answer":  "哎，这个招儿我以前怎么没想到？"
+                    },
+                    {
+                        "chinese":  "哎，主持人已经开始介绍嘉宾了。",
+                        "pinyin":  "Āi, zhǔchírén yǐjīng kāishǐ jièshào jiābīn le.",
+                        "vietnamese":  "Này, MC đã bắt đầu giới thiệu khách mời rồi.",
+                        "answer":  "哎，主持人已经开始介绍嘉宾了。"
+                    },
+                    {
+                        "chinese":  "哎，叫大妈是不是太亲热了？",
+                        "pinyin":  "Āi, jiào dàmā shì bú shì tài qīnrè le?",
+                        "vietnamese":  "Này, gọi bác gái có phải quá thân mật không?",
+                        "answer":  "哎，叫大妈是不是太亲热了？"
+                    },
+                    {
+                        "chinese":  "哎，入乡随俗，说起来容易做起来难。",
+                        "pinyin":  "Āi, rù xiāng suí sú, shuō qǐlái róngyì zuò qǐlái nán.",
+                        "vietnamese":  "Ôi, nhập gia tùy tục, nói thì dễ làm thì khó.",
+                        "answer":  "哎，入乡随俗，说起来容易做起来难。"
+                    },
+                    {
+                        "chinese":  "到了一个新地方，就要入乡随俗。",
+                        "pinyin":  "Dào le yí ge xīn dìfang, jiù yào rù xiāng suí sú.",
+                        "vietnamese":  "Đến một nơi mới thì phải nhập gia tùy tục.",
+                        "answer":  "到了一个新地方，就要入乡随俗。"
+                    },
+                    {
+                        "chinese":  "朴东民觉得入乡随俗是学习文化的重要部分。",
+                        "pinyin":  "Piáo Dōngmín juéde rù xiāng suí sú shì xuéxí wénhuà de zhòngyào bùfen.",
+                        "vietnamese":  "Phác Đông Dân thấy nhập gia tùy tục là phần quan trọng của học văn hóa.",
+                        "answer":  "朴东民觉得入乡随俗是学习文化的重要部分。"
+                    },
+                    {
+                        "chinese":  "在中国称呼别人，也要懂得入乡随俗。",
+                        "pinyin":  "Zài Zhōngguó chēnghu biérén, yě yào dǒngde rù xiāng suí sú.",
+                        "vietnamese":  "Ở Trung Quốc xưng hô với người khác cũng phải hiểu nhập gia tùy tục.",
+                        "answer":  "在中国称呼别人，也要懂得入乡随俗。"
+                    },
+                    {
+                        "chinese":  "入乡随俗不等于完全放弃自己的习惯。",
+                        "pinyin":  "Rù xiāng suí sú bù děngyú wánquán fàngqì zìjǐ de xíguàn.",
+                        "vietnamese":  "Nhập gia tùy tục không có nghĩa là hoàn toàn từ bỏ thói quen của mình.",
+                        "answer":  "入乡随俗不等于完全放弃自己的习惯。"
+                    },
+                    {
+                        "chinese":  "老师说，学语言也要学会入乡随俗。",
+                        "pinyin":  "Lǎoshī shuō, xué yǔyán yě yào xuéhuì rù xiāng suí sú.",
+                        "vietnamese":  "Giáo viên nói, học ngôn ngữ cũng phải học cách nhập gia tùy tục.",
+                        "answer":  "老师说，学语言也要学会入乡随俗。"
+                    },
+                    {
+                        "chinese":  "如果不懂入乡随俗，就容易在交往中出错。",
+                        "pinyin":  "Rúguǒ bù dǒng rù xiāng suí sú, jiù róngyì zài jiāowǎng zhōng chūcuò.",
+                        "vietnamese":  "Nếu không hiểu nhập gia tùy tục thì dễ mắc lỗi trong giao tiếp.",
+                        "answer":  "如果不懂入乡随俗，就容易在交往中出错。"
+                    },
+                    {
+                        "chinese":  "他刚来香港，就开始学习入乡随俗。",
+                        "pinyin":  "Tā gāng lái Xiānggǎng, jiù kāishǐ xuéxí rù xiāng suí sú.",
+                        "vietnamese":  "Anh ấy vừa đến Hồng Kông đã bắt đầu học nhập gia tùy tục.",
+                        "answer":  "他刚来香港，就开始学习入乡随俗。"
+                    },
+                    {
+                        "chinese":  "入乡随俗能帮助我们更自然地打交道。",
+                        "pinyin":  "Rù xiāng suí sú néng bāngzhù wǒmen gèng zìrán de dǎ jiāodao.",
+                        "vietnamese":  "Nhập gia tùy tục có thể giúp chúng ta giao tiếp tự nhiên hơn.",
+                        "answer":  "入乡随俗能帮助我们更自然地打交道。"
+                    },
+                    {
+                        "chinese":  "有些称呼听起来奇怪，其实也是入乡随俗。",
+                        "pinyin":  "Yǒuxiē chēnghu tīng qǐlái qíguài, qíshí yě shì rù xiāng suí sú.",
+                        "vietnamese":  "Một số cách xưng hô nghe lạ, thật ra cũng là nhập gia tùy tục.",
+                        "answer":  "有些称呼听起来奇怪，其实也是入乡随俗。"
+                    },
+                    {
+                        "chinese":  "与其怕丢脸，不如先学会入乡随俗。",
+                        "pinyin":  "Yǔqí pà diūliǎn, bùrú xiān xuéhuì rù xiāng suí sú.",
+                        "vietnamese":  "Thay vì sợ mất mặt, chi bằng học nhập gia tùy tục trước.",
+                        "answer":  "与其怕丢脸，不如先学会入乡随俗。"
+                    },
+                    {
+                        "chinese":  "大爷每天早上都在门口下棋。",
+                        "pinyin":  "Dàyé měitiān zǎoshang dōu zài ménkǒu xiàqí.",
+                        "vietnamese":  "Bác trai mỗi sáng đều đánh cờ ở cổng.",
+                        "answer":  "大爷每天早上都在门口下棋。"
+                    },
+                    {
+                        "chinese":  "问路时叫一声大爷，听起来很亲切。",
+                        "pinyin":  "Wèn lù shí jiào yì shēng dàyé, tīng qǐlái hěn qīnqiè.",
+                        "vietnamese":  "Khi hỏi đường gọi một tiếng bác trai nghe rất thân thiện.",
+                        "answer":  "问路时叫一声大爷，听起来很亲切。"
+                    },
+                    {
+                        "chinese":  "这位大爷帮我找到了出租车站。",
+                        "pinyin":  "Zhè wèi dàyé bāng wǒ zhǎodào le chūzūchē zhàn.",
+                        "vietnamese":  "Vị bác trai này giúp tôi tìm được điểm taxi.",
+                        "answer":  "这位大爷帮我找到了出租车站。"
+                    },
+                    {
+                        "chinese":  "大爷说话很慢，所以我都听懂了。",
+                        "pinyin":  "Dàyé shuōhuà hěn màn, suǒyǐ wǒ dōu tīng dǒng le.",
+                        "vietnamese":  "Bác trai nói rất chậm nên tôi đều nghe hiểu.",
+                        "answer":  "大爷说话很慢，所以我都听懂了。"
+                    },
+                    {
+                        "chinese":  "有些年轻人不知道怎么称呼大爷大妈。",
+                        "pinyin":  "Yǒuxiē niánqīng rén bù zhīdào zěnme chēnghu dàyé dàmā.",
+                        "vietnamese":  "Một số người trẻ không biết xưng hô với bác trai bác gái thế nào.",
+                        "answer":  "有些年轻人不知道怎么称呼大爷大妈。"
+                    },
+                    {
+                        "chinese":  "大爷虽然年纪大，但是身体很健康。",
+                        "pinyin":  "Dàyé suīrán niánjì dà, dànshì shēntǐ hěn jiànkāng.",
+                        "vietnamese":  "Bác trai tuy lớn tuổi nhưng sức khỏe rất tốt.",
+                        "answer":  "大爷虽然年纪大，但是身体很健康。"
+                    },
+                    {
+                        "chinese":  "他叫错了大爷的姓，觉得有点丢脸。",
+                        "pinyin":  "Tā jiào cuò le dàyé de xìng, juéde yǒudiǎn diūliǎn.",
+                        "vietnamese":  "Anh ấy gọi sai họ của bác trai, cảm thấy hơi mất mặt.",
+                        "answer":  "他叫错了大爷的姓，觉得有点丢脸。"
+                    },
+                    {
+                        "chinese":  "大爷对新来的学生特别亲热。",
+                        "pinyin":  "Dàyé duì xīn lái de xuésheng tèbié qīnrè.",
+                        "vietnamese":  "Bác trai rất thân mật với học sinh mới đến.",
+                        "answer":  "大爷对新来的学生特别亲热。"
+                    },
+                    {
+                        "chinese":  "如果想跟大爷打交道，态度要真诚。",
+                        "pinyin":  "Rúguǒ xiǎng gēn dàyé dǎ jiāodao, tàidu yào zhēnchéng.",
+                        "vietnamese":  "Nếu muốn giao tiếp với bác trai, thái độ phải chân thành.",
+                        "answer":  "如果想跟大爷打交道，态度要真诚。"
+                    },
+                    {
+                        "chinese":  "大爷告诉我，这条街开头就有一家小吃店。",
+                        "pinyin":  "Dàyé gàosu wǒ, zhè tiáo jiē kāitóu jiù yǒu yì jiā xiǎochī diàn.",
+                        "vietnamese":  "Bác trai nói với tôi, đầu con phố này có một quán ăn vặt.",
+                        "answer":  "大爷告诉我，这条街开头就有一家小吃店。"
+                    },
+                    {
+                        "chinese":  "大妈在市场卖特色小吃。",
+                        "pinyin":  "Dàmā zài shìchǎng mài tèsè xiǎochī.",
+                        "vietnamese":  "Bác gái bán món ăn vặt đặc sắc ở chợ.",
+                        "answer":  "大妈在市场卖特色小吃。"
+                    },
+                    {
+                        "chinese":  "他礼貌地叫了一声大妈，然后问路。",
+                        "pinyin":  "Tā lǐmào de jiào le yì shēng dàmā, ránhòu wèn lù.",
+                        "vietnamese":  "Anh ấy lịch sự gọi một tiếng bác gái rồi hỏi đường.",
+                        "answer":  "他礼貌地叫了一声大妈，然后问路。"
+                    },
+                    {
+                        "chinese":  "这位大妈很热心，主动帮我们买票。",
+                        "pinyin":  "Zhè wèi dàmā hěn rèxīn, zhǔdòng bāng wǒmen mǎi piào.",
+                        "vietnamese":  "Vị bác gái này rất nhiệt tình, chủ động giúp chúng tôi mua vé.",
+                        "answer":  "这位大妈很热心，主动帮我们买票。"
+                    },
+                    {
+                        "chinese":  "大妈说这种称呼听起来特别亲热。",
+                        "pinyin":  "Dàmā shuō zhè zhǒng chēnghu tīng qǐlái tèbié qīnrè.",
+                        "vietnamese":  "Bác gái nói cách xưng hô này nghe đặc biệt thân mật.",
+                        "answer":  "大妈说这种称呼听起来特别亲热。"
+                    },
+                    {
+                        "chinese":  "小王第一次叫陌生人为大妈，觉得不好意思。",
+                        "pinyin":  "Xiǎo Wáng dì yī cì jiào mòshēng rén wéi dàmā, juéde bù hǎoyìsi.",
+                        "vietnamese":  "Tiểu Vương lần đầu gọi người lạ là bác gái, thấy ngại.",
+                        "answer":  "小王第一次叫陌生人为大妈，觉得不好意思。"
+                    },
+                    {
+                        "chinese":  "大妈提醒我们购物时别忘了看价格。",
+                        "pinyin":  "Dàmā tíxǐng wǒmen gòuwù shí bié wàng le kàn jiàgé.",
+                        "vietnamese":  "Bác gái nhắc chúng tôi khi mua sắm đừng quên xem giá.",
+                        "answer":  "大妈提醒我们购物时别忘了看价格。"
+                    },
+                    {
+                        "chinese":  "难怪大家都喜欢她，原来大妈这么热情。",
+                        "pinyin":  "Nánguài dàjiā dōu xǐhuan tā, yuánlái dàmā zhème rèqíng.",
+                        "vietnamese":  "Thảo nào mọi người đều thích bác ấy, hóa ra bác gái nhiệt tình như vậy.",
+                        "answer":  "难怪大家都喜欢她，原来大妈这么热情。"
+                    },
+                    {
+                        "chinese":  "跟大妈聊天时，他学到了很多地道说法。",
+                        "pinyin":  "Gēn dàmā liáotiān shí, tā xué dào le hěn duō dìdao shuōfǎ.",
+                        "vietnamese":  "Khi trò chuyện với bác gái, anh ấy học được nhiều cách nói tự nhiên.",
+                        "answer":  "跟大妈聊天时，他学到了很多地道说法。"
+                    },
+                    {
+                        "chinese":  "大妈不见得懂外语，但很会跟人打交道。",
+                        "pinyin":  "Dàmā bú jiàn de dǒng wàiyǔ, dàn hěn huì gēn rén dǎ jiāodao.",
+                        "vietnamese":  "Bác gái chưa chắc hiểu ngoại ngữ nhưng rất biết giao tiếp.",
+                        "answer":  "大妈不见得懂外语，但很会跟人打交道。"
+                    },
+                    {
+                        "chinese":  "他说“大妈”这个称呼入乡随俗，很自然。",
+                        "pinyin":  "Tā shuō “dàmā” zhège chēnghu rù xiāng suí sú, hěn zìrán.",
+                        "vietnamese":  "Anh ấy nói cách gọi “bác gái” là nhập gia tùy tục, rất tự nhiên.",
+                        "answer":  "他说“大妈”这个称呼入乡随俗，很自然。"
+                    },
+                    {
+                        "chinese":  "他们见面不久，就聊得很亲热。",
+                        "pinyin":  "Tāmen jiànmiàn bù jiǔ, jiù liáo de hěn qīnrè.",
+                        "vietnamese":  "Họ gặp nhau không lâu đã trò chuyện rất thân mật.",
+                        "answer":  "他们见面不久，就聊得很亲热。"
+                    },
+                    {
+                        "chinese":  "这种称呼听起来亲热，但是不能乱用。",
+                        "pinyin":  "Zhè zhǒng chēnghu tīng qǐlái qīnrè, dànshì bù néng luàn yòng.",
+                        "vietnamese":  "Cách xưng hô này nghe thân mật nhưng không thể dùng bừa.",
+                        "answer":  "这种称呼听起来亲热，但是不能乱用。"
+                    },
+                    {
+                        "chinese":  "大爷大妈对新生都很亲热。",
+                        "pinyin":  "Dàyé dàmā duì xīnshēng dōu hěn qīnrè.",
+                        "vietnamese":  "Các bác trai bác gái đều rất thân mật với sinh viên mới.",
+                        "answer":  "大爷大妈对新生都很亲热。"
+                    },
+                    {
+                        "chinese":  "他跟售票员说话太亲热，反而有点奇怪。",
+                        "pinyin":  "Tā gēn shòupiàoyuán shuōhuà tài qīnrè, fǎn\u0027ér yǒudiǎn qíguài.",
+                        "vietnamese":  "Anh ấy nói chuyện với nhân viên bán vé quá thân mật, ngược lại hơi kỳ lạ.",
+                        "answer":  "他跟售票员说话太亲热，反而有点奇怪。"
+                    },
+                    {
+                        "chinese":  "亲热不等于没有距离感。",
+                        "pinyin":  "Qīnrè bù děngyú méiyǒu jùlígǎn.",
+                        "vietnamese":  "Thân mật không có nghĩa là không có cảm giác khoảng cách.",
+                        "answer":  "亲热不等于没有距离感。"
+                    },
+                    {
+                        "chinese":  "他们虽然不是亲戚，却像家人一样亲热。",
+                        "pinyin":  "Tāmen suīrán bú shì qīnqi, què xiàng jiārén yíyàng qīnrè.",
+                        "vietnamese":  "Họ tuy không phải họ hàng nhưng thân mật như người nhà.",
+                        "answer":  "他们虽然不是亲戚，却像家人一样亲热。"
+                    },
+                    {
+                        "chinese":  "主持人的语气很亲热，让观众感觉轻松。",
+                        "pinyin":  "Zhǔchírén de yǔqì hěn qīnrè, ràng guānzhòng gǎnjué qīngsōng.",
+                        "vietnamese":  "Giọng điệu của MC rất thân mật, khiến khán giả cảm thấy thoải mái.",
+                        "answer":  "主持人的语气很亲热，让观众感觉轻松。"
+                    },
+                    {
+                        "chinese":  "如果第一次见面太亲热，别人可能不习惯。",
+                        "pinyin":  "Rúguǒ dì yī cì jiànmiàn tài qīnrè, biérén kěnéng bú xíguàn.",
+                        "vietnamese":  "Nếu lần đầu gặp đã quá thân mật, người khác có thể không quen.",
+                        "answer":  "如果第一次见面太亲热，别人可能不习惯。"
+                    },
+                    {
+                        "chinese":  "李叔叔说话亲热自然，所以大家喜欢他。",
+                        "pinyin":  "Lǐ shūshu shuōhuà qīnrè zìrán, suǒyǐ dàjiā xǐhuan tā.",
+                        "vietnamese":  "Chú Lý nói chuyện thân mật tự nhiên nên mọi người thích chú ấy.",
+                        "answer":  "李叔叔说话亲热自然，所以大家喜欢他。"
+                    },
+                    {
+                        "chinese":  "学会亲热而不失礼貌地打交道，并不容易。",
+                        "pinyin":  "Xuéhuì qīnrè ér bù shī lǐmào de dǎ jiāodao, bìng bù róngyì.",
+                        "vietnamese":  "Học cách giao tiếp thân mật mà không mất lịch sự không hề dễ.",
+                        "answer":  "学会亲热而不失礼貌地打交道，并不容易。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "你明天怎么安排时间，我就怎么配合你。",
+                          "pinyin":  "Nǐ míngtiān zěnme ānpái shíjiān, wǒ jiù zěnme pèihé nǐ.",
+                          "vietnamese":  "Ngày mai bạn sắp xếp thời gian thế nào, tôi sẽ phối hợp thế ấy.",
+                          "answer":  "你明天怎么安排时间，我就怎么配合你。"
+                      },
+                      {
+                          "chinese":  "老师怎么要求我们，我们就怎么准备考试。",
+                          "pinyin":  "Lǎoshī zěnme yāoqiú wǒmen, wǒmen jiù zěnme zhǔnbèi kǎoshì.",
+                          "vietnamese":  "Thầy yêu cầu chúng tôi thế nào, chúng tôi chuẩn bị thi thế ấy.",
+                          "answer":  "老师怎么要求我们，我们就怎么准备考试。"
+                      },
+                      {
+                          "chinese":  "客户怎么说，经理就让我们怎么修改方案。",
+                          "pinyin":  "Kèhù zěnme shuō, jīnglǐ jiù ràng wǒmen zěnme xiūgǎi fāng’àn.",
+                          "vietnamese":  "Khách hàng nói thế nào, quản lý cho chúng tôi sửa phương án thế ấy.",
+                          "answer":  "客户怎么说，经理就让我们怎么修改方案。"
+                      },
+                      {
+                          "chinese":  "你怎么学习汉语，我也想跟着怎么学习。",
+                          "pinyin":  "Nǐ zěnme xuéxí Hànyǔ, wǒ yě xiǎng gēnzhe zěnme xuéxí.",
+                          "vietnamese":  "Bạn học tiếng Trung thế nào, tôi cũng muốn học theo như thế.",
+                          "answer":  "你怎么学习汉语，我也想跟着怎么学习。"
+                      },
+                      {
+                          "chinese":  "房东怎么规定，我们暂时就怎么做吧。",
+                          "pinyin":  "Fángdōng zěnme guīdìng, wǒmen zànshí jiù zěnme zuò ba.",
+                          "vietnamese":  "Chủ nhà quy định thế nào, chúng ta tạm thời làm thế ấy đi.",
+                          "answer":  "房东怎么规定，我们暂时就怎么做吧。"
+                      },
+                      {
+                          "chinese":  "老板怎么安排工作，大家就怎么完成任务。",
+                          "pinyin":  "Lǎobǎn zěnme ānpái gōngzuò, dàjiā jiù zěnme wánchéng rènwu.",
+                          "vietnamese":  "Sếp sắp xếp công việc thế nào, mọi người hoàn thành nhiệm vụ thế ấy.",
+                          "answer":  "老板怎么安排工作，大家就怎么完成任务。"
+                      },
+                      {
+                          "chinese":  "你怎么方便，我就怎么把资料发给你。",
+                          "pinyin":  "Nǐ zěnme fāngbiàn, wǒ jiù zěnme bǎ zīliào fā gěi nǐ.",
+                          "vietnamese":  "Bạn thấy tiện thế nào, tôi sẽ gửi tài liệu cho bạn theo cách ấy.",
+                          "answer":  "你怎么方便，我就怎么把资料发给你。"
+                      },
+                      {
+                          "chinese":  "这个软件怎么提示，你就怎么一步一步操作。",
+                          "pinyin":  "Zhège ruǎnjiàn zěnme tíshì, nǐ jiù zěnme yí bù yí bù cāozuò.",
+                          "vietnamese":  "Phần mềm này hướng dẫn thế nào, bạn cứ thao tác từng bước như thế.",
+                          "answer":  "这个软件怎么提示，你就怎么一步一步操作。"
+                      },
+                      {
+                          "chinese":  "今天太晚了，恐怕我不能去你家复习了。",
+                          "pinyin":  "Jīntiān tài wǎn le, kǒngpà wǒ bù néng qù nǐ jiā fùxí le.",
+                          "vietnamese":  "Hôm nay muộn quá, e rằng tôi không thể đến nhà bạn ôn bài được nữa.",
+                          "answer":  "今天太晚了，恐怕我不能去你家复习了。"
+                      },
+                      {
+                          "chinese":  "这份工作要求很高，恐怕新同事做不了。",
+                          "pinyin":  "Zhè fèn gōngzuò yāoqiú hěn gāo, kǒngpà xīn tóngshì zuò bu liǎo.",
+                          "vietnamese":  "Công việc này yêu cầu rất cao, e rằng đồng nghiệp mới không làm nổi.",
+                          "answer":  "这份工作要求很高，恐怕新同事做不了。"
+                      },
+                      {
+                          "chinese":  "外面雨下得很大，恐怕地铁站也很多人。",
+                          "pinyin":  "Wàimiàn yǔ xià de hěn dà, kǒngpà dìtiězhàn yě hěn duō rén.",
+                          "vietnamese":  "Bên ngoài mưa rất to, e rằng ga tàu điện ngầm cũng rất đông người.",
+                          "answer":  "外面雨下得很大，恐怕地铁站也很多人。"
+                      },
+                      {
+                          "chinese":  "你现在才出门，恐怕赶不上下午的会议。",
+                          "pinyin":  "Nǐ xiànzài cái chūmén, kǒngpà gǎn bu shàng xiàwǔ de huìyì.",
+                          "vietnamese":  "Bây giờ bạn mới ra khỏi nhà, e rằng không kịp cuộc họp chiều.",
+                          "answer":  "你现在才出门，恐怕赶不上下午的会议。"
+                      },
+                      {
+                          "chinese":  "这个房间离学校太远，恐怕不太适合学生。",
+                          "pinyin":  "Zhège fángjiān lí xuéxiào tài yuǎn, kǒngpà bú tài shìhé xuésheng.",
+                          "vietnamese":  "Căn phòng này quá xa trường, e rằng không phù hợp với học sinh lắm.",
+                          "answer":  "这个房间离学校太远，恐怕不太适合学生。"
+                      },
+                      {
+                          "chinese":  "老师今天身体不舒服，恐怕不能继续上课。",
+                          "pinyin":  "Lǎoshī jīntiān shēntǐ bù shūfu, kǒngpà bù néng jìxù shàngkè.",
+                          "vietnamese":  "Hôm nay thầy không khỏe, e rằng không thể tiếp tục lên lớp.",
+                          "answer":  "老师今天身体不舒服，恐怕不能继续上课。"
+                      },
+                      {
+                          "chinese":  "这件衣服号码太小，恐怕你穿着不舒服。",
+                          "pinyin":  "Zhè jiàn yīfu hàomǎ tài xiǎo, kǒngpà nǐ chuān zhe bù shūfu.",
+                          "vietnamese":  "Bộ quần áo này size quá nhỏ, e rằng bạn mặc sẽ không thoải mái.",
+                          "answer":  "这件衣服号码太小，恐怕你穿着不舒服。"
+                      },
+                      {
+                          "chinese":  "如果不提前预订座位，恐怕周末没地方坐。",
+                          "pinyin":  "Rúguǒ bù tíqián yùdìng zuòwèi, kǒngpà zhōumò méi dìfang zuò.",
+                          "vietnamese":  "Nếu không đặt chỗ trước, e rằng cuối tuần không có chỗ ngồi.",
+                          "answer":  "如果不提前预订座位，恐怕周末没地方坐。"
+                      },
+                      {
+                          "chinese":  "一直担心也没有用，不如直接问老师。",
+                          "pinyin":  "Yìzhí dānxīn yě méiyǒu yòng, bùrú zhíjiē wèn lǎoshī.",
+                          "vietnamese":  "Cứ lo lắng mãi cũng vô ích, chi bằng hỏi thầy trực tiếp.",
+                          "answer":  "一直担心也没有用，不如直接问老师。"
+                      },
+                      {
+                          "chinese":  "天气这么好，我们不如去公园练习口语。",
+                          "pinyin":  "Tiānqì zhème hǎo, wǒmen bùrú qù gōngyuán liànxí kǒuyǔ.",
+                          "vietnamese":  "Thời tiết đẹp như vậy, chi bằng chúng ta ra công viên luyện khẩu ngữ.",
+                          "answer":  "天气这么好，我们不如去公园练习口语。"
+                      },
+                      {
+                          "chinese":  "这家饭店太贵，不如去学校食堂吃饭。",
+                          "pinyin":  "Zhè jiā fàndiàn tài guì, bùrú qù xuéxiào shítáng chīfàn.",
+                          "vietnamese":  "Nhà hàng này quá đắt, chi bằng đến nhà ăn trường ăn cơm.",
+                          "answer":  "这家饭店太贵，不如去学校食堂吃饭。"
+                      },
+                      {
+                          "chinese":  "你一个人搬家太累，不如叫朋友来帮忙。",
+                          "pinyin":  "Nǐ yí ge rén bānjiā tài lèi, bùrú jiào péngyou lái bāngmáng.",
+                          "vietnamese":  "Một mình bạn chuyển nhà quá mệt, chi bằng gọi bạn đến giúp.",
+                          "answer":  "你一个人搬家太累，不如叫朋友来帮忙。"
+                      },
+                      {
+                          "chinese":  "坐公交太慢了，不如我们打车去机场。",
+                          "pinyin":  "Zuò gōngjiāo tài màn le, bùrú wǒmen dǎchē qù jīchǎng.",
+                          "vietnamese":  "Đi xe buýt chậm quá, chi bằng chúng ta đi taxi đến sân bay.",
+                          "answer":  "坐公交太慢了，不如我们打车去机场。"
+                      },
+                      {
+                          "chinese":  "这篇课文太长，不如先看重点句子。",
+                          "pinyin":  "Zhè piān kèwén tài cháng, bùrú xiān kàn zhòngdiǎn jùzi.",
+                          "vietnamese":  "Bài khóa này quá dài, chi bằng xem câu trọng điểm trước.",
+                          "answer":  "这篇课文太长，不如先看重点句子。"
+                      },
+                      {
+                          "chinese":  "如果你不喜欢这份工作，不如再找找别的。",
+                          "pinyin":  "Rúguǒ nǐ bù xǐhuan zhè fèn gōngzuò, bùrú zài zhǎozhao bié de.",
+                          "vietnamese":  "Nếu bạn không thích công việc này, chi bằng tìm thêm việc khác.",
+                          "answer":  "如果你不喜欢这份工作，不如再找找别的。"
+                      },
+                      {
+                          "chinese":  "现在讨论不清楚，不如明天见面再说。",
+                          "pinyin":  "Xiànzài tǎolùn bù qīngchu, bùrú míngtiān jiànmiàn zài shuō.",
+                          "vietnamese":  "Bây giờ thảo luận không rõ được, chi bằng ngày mai gặp mặt rồi nói.",
+                          "answer":  "现在讨论不清楚，不如明天见面再说。"
+                      },
+                      {
+                          "chinese":  "难怪他今天没来上课，原来生病了。",
+                          "pinyin":  "Nánguài tā jīntiān méi lái shàngkè, yuánlái shēngbìng le.",
+                          "vietnamese":  "Thảo nào hôm nay anh ấy không đến lớp, hóa ra bị bệnh.",
+                          "answer":  "难怪他今天没来上课，原来生病了。"
+                      },
+                      {
+                          "chinese":  "难怪这个房间这么贵，原来离地铁站很近。",
+                          "pinyin":  "Nánguài zhège fángjiān zhème guì, yuánlái lí dìtiězhàn hěn jìn.",
+                          "vietnamese":  "Thảo nào căn phòng này đắt như vậy, hóa ra rất gần ga tàu điện ngầm.",
+                          "answer":  "难怪这个房间这么贵，原来离地铁站很近。"
+                      },
+                      {
+                          "chinese":  "难怪老师表扬他，原来他每天都练习口语。",
+                          "pinyin":  "Nánguài lǎoshī biǎoyáng tā, yuánlái tā měitiān dōu liànxí kǒuyǔ.",
+                          "vietnamese":  "Thảo nào thầy khen anh ấy, hóa ra ngày nào anh ấy cũng luyện khẩu ngữ.",
+                          "answer":  "难怪老师表扬他，原来他每天都练习口语。"
+                      },
+                      {
+                          "chinese":  "难怪你听不懂，原来录音速度太快了。",
+                          "pinyin":  "Nánguài nǐ tīng bu dǒng, yuánlái lùyīn sùdù tài kuài le.",
+                          "vietnamese":  "Thảo nào bạn nghe không hiểu, hóa ra tốc độ ghi âm quá nhanh.",
+                          "answer":  "难怪你听不懂，原来录音速度太快了。"
+                      },
+                      {
+                          "chinese":  "难怪大家都喜欢这家饭店，菜真的很好吃。",
+                          "pinyin":  "Nánguài dàjiā dōu xǐhuan zhè jiā fàndiàn, cài zhēn de hěn hǎochī.",
+                          "vietnamese":  "Thảo nào mọi người đều thích nhà hàng này, món ăn thật sự rất ngon.",
+                          "answer":  "难怪大家都喜欢这家饭店，菜真的很好吃。"
+                      },
+                      {
+                          "chinese":  "难怪他一直不说话，原来心情不太好。",
+                          "pinyin":  "Nánguài tā yìzhí bù shuōhuà, yuánlái xīnqíng bú tài hǎo.",
+                          "vietnamese":  "Thảo nào anh ấy cứ không nói gì, hóa ra tâm trạng không tốt lắm.",
+                          "answer":  "难怪他一直不说话，原来心情不太好。"
+                      },
+                      {
+                          "chinese":  "难怪你这么累，原来昨天晚上没睡好。",
+                          "pinyin":  "Nánguài nǐ zhème lèi, yuánlái zuótiān wǎnshang méi shuì hǎo.",
+                          "vietnamese":  "Thảo nào bạn mệt như vậy, hóa ra tối qua ngủ không ngon.",
+                          "answer":  "难怪你这么累，原来昨天晚上没睡好。"
+                      },
+                      {
+                          "chinese":  "难怪这道题没人会做，原来老师还没讲。",
+                          "pinyin":  "Nánguài zhè dào tí méi rén huì zuò, yuánlái lǎoshī hái méi jiǎng.",
+                          "vietnamese":  "Thảo nào câu này không ai biết làm, hóa ra thầy vẫn chưa giảng.",
+                          "answer":  "难怪这道题没人会做，原来老师还没讲。"
+                      },
+                      {
+                          "chinese":  "这次机会很难得，我说什么也不能放弃。",
+                          "pinyin":  "Zhè cì jīhuì hěn nándé, wǒ shuō shénme yě bù néng fàngqì.",
+                          "vietnamese":  "Cơ hội lần này rất hiếm, dù thế nào tôi cũng không thể bỏ cuộc.",
+                          "answer":  "这次机会很难得，我说什么也不能放弃。"
+                      },
+                      {
+                          "chinese":  "明天的考试很重要，我说什么也要参加。",
+                          "pinyin":  "Míngtiān de kǎoshì hěn zhòngyào, wǒ shuō shénme yě yào cānjiā.",
+                          "vietnamese":  "Kỳ thi ngày mai rất quan trọng, dù thế nào tôi cũng phải tham gia.",
+                          "answer":  "明天的考试很重要，我说什么也要参加。"
+                      },
+                      {
+                          "chinese":  "这个错误影响很大，我们说什么也不能再犯。",
+                          "pinyin":  "Zhège cuòwù yǐngxiǎng hěn dà, wǒmen shuō shénme yě bù néng zài fàn.",
+                          "vietnamese":  "Lỗi này ảnh hưởng rất lớn, dù thế nào chúng tôi cũng không thể phạm lại.",
+                          "answer":  "这个错误影响很大，我们说什么也不能再犯。"
+                      },
+                      {
+                          "chinese":  "父母不同意他一个人去外地，他说什么也要去。",
+                          "pinyin":  "Fùmǔ bù tóngyì tā yí ge rén qù wàidì, tā shuō shénme yě yào qù.",
+                          "vietnamese":  "Bố mẹ không đồng ý cho anh ấy một mình đi nơi khác, nhưng anh ấy dù thế nào cũng muốn đi.",
+                          "answer":  "父母不同意他一个人去外地，他说什么也要去。"
+                      },
+                      {
+                          "chinese":  "老师已经提醒很多次了，你说什么也不能迟到。",
+                          "pinyin":  "Lǎoshī yǐjīng tíxǐng hěn duō cì le, nǐ shuō shénme yě bù néng chídào.",
+                          "vietnamese":  "Thầy đã nhắc nhiều lần rồi, dù thế nào bạn cũng không được đến muộn.",
+                          "answer":  "老师已经提醒很多次了，你说什么也不能迟到。"
+                      },
+                      {
+                          "chinese":  "这份合同还没看清楚，我说什么也不能签。",
+                          "pinyin":  "Zhè fèn hétong hái méi kàn qīngchu, wǒ shuō shénme yě bù néng qiān.",
+                          "vietnamese":  "Bản hợp đồng này vẫn chưa xem rõ, dù thế nào tôi cũng không thể ký.",
+                          "answer":  "这份合同还没看清楚，我说什么也不能签。"
+                      },
+                      {
+                          "chinese":  "他天天不复习，能考好才怪呢。",
+                          "pinyin":  "Tā tiāntiān bù fùxí, néng kǎo hǎo cái guài ne.",
+                          "vietnamese":  "Anh ấy ngày nào cũng không ôn bài, thi tốt mới lạ đấy.",
+                          "answer":  "他天天不复习，能考好才怪呢。"
+                      },
+                      {
+                          "chinese":  "你晚上一直玩手机，明天不困才怪呢。",
+                          "pinyin":  "Nǐ wǎnshang yìzhí wán shǒujī, míngtiān bù kùn cái guài ne.",
+                          "vietnamese":  "Tối bạn cứ chơi điện thoại mãi, mai không buồn ngủ mới lạ đấy.",
+                          "answer":  "你晚上一直玩手机，明天不困才怪呢。"
+                      },
+                      {
+                          "chinese":  "这么贵的房子，学生租得起才怪呢。",
+                          "pinyin":  "Zhème guì de fángzi, xuésheng zū de qǐ cái guài ne.",
+                          "vietnamese":  "Căn nhà đắt như vậy, học sinh thuê nổi mới lạ đấy.",
+                          "answer":  "这么贵的房子，学生租得起才怪呢。"
+                      },
+                      {
+                          "chinese":  "他从来不练口语，说得流利才怪呢。",
+                          "pinyin":  "Tā cónglái bù liàn kǒuyǔ, shuō de liúlì cái guài ne.",
+                          "vietnamese":  "Anh ấy chưa bao giờ luyện khẩu ngữ, nói lưu loát mới lạ đấy.",
+                          "answer":  "他从来不练口语，说得流利才怪呢。"
+                      },
+                      {
+                          "chinese":  "你连课文都没看懂，会做练习才怪呢。",
+                          "pinyin":  "Nǐ lián kèwén dōu méi kàn dǒng, huì zuò liànxí cái guài ne.",
+                          "vietnamese":  "Bạn ngay cả bài khóa còn chưa đọc hiểu, làm được bài tập mới lạ đấy.",
+                          "answer":  "你连课文都没看懂，会做练习才怪呢。"
+                      },
+                      {
+                          "chinese":  "他天天迟到，老师不生气才怪呢。",
+                          "pinyin":  "Tā tiāntiān chídào, lǎoshī bù shēngqì cái guài ne.",
+                          "vietnamese":  "Anh ấy ngày nào cũng đến muộn, thầy không tức mới lạ đấy.",
+                          "answer":  "他天天迟到，老师不生气才怪呢。"
+                      },
+                      {
+                          "chinese":  "你别担心，他哪儿会因为这点小事生气。",
+                          "pinyin":  "Nǐ bié dānxīn, tā nǎr huì yīnwèi zhè diǎn xiǎoshì shēngqì.",
+                          "vietnamese":  "Bạn đừng lo, làm gì có chuyện anh ấy giận vì chút chuyện nhỏ này.",
+                          "answer":  "你别担心，他哪儿会因为这点小事生气。"
+                      },
+                      {
+                          "chinese":  "这么简单的问题，哪儿能难住我们班学生。",
+                          "pinyin":  "Zhème jiǎndān de wèntí, nǎr néng nán zhù wǒmen bān xuésheng.",
+                          "vietnamese":  "Vấn đề đơn giản như vậy, làm gì có thể làm khó học sinh lớp chúng tôi.",
+                          "answer":  "这么简单的问题，哪儿能难住我们班学生。"
+                      },
+                      {
+                          "chinese":  "你已经准备这么久了，哪儿会考不好呢。",
+                          "pinyin":  "Nǐ yǐjīng zhǔnbèi zhème jiǔ le, nǎr huì kǎo bù hǎo ne.",
+                          "vietnamese":  "Bạn đã chuẩn bị lâu như vậy rồi, làm gì có chuyện thi không tốt.",
+                          "answer":  "你已经准备这么久了，哪儿会考不好呢。"
+                      },
+                      {
+                          "chinese":  "这里离学校这么近，哪儿有不方便的道理。",
+                          "pinyin":  "Zhèlǐ lí xuéxiào zhème jìn, nǎr yǒu bù fāngbiàn de dàolǐ.",
+                          "vietnamese":  "Chỗ này gần trường như vậy, làm gì có chuyện không tiện.",
+                          "answer":  "这里离学校这么近，哪儿有不方便的道理。"
+                      },
+                      {
+                          "chinese":  "老师讲得这么清楚，哪儿会听不懂。",
+                          "pinyin":  "Lǎoshī jiǎng de zhème qīngchu, nǎr huì tīng bu dǒng.",
+                          "vietnamese":  "Thầy giảng rõ như vậy, làm gì có chuyện nghe không hiểu.",
+                          "answer":  "老师讲得这么清楚，哪儿会听不懂。"
+                      },
+                      {
+                          "chinese":  "他平时那么努力，哪儿能轻易放弃。",
+                          "pinyin":  "Tā píngshí nàme nǔlì, nǎr néng qīngyì fàngqì.",
+                          "vietnamese":  "Bình thường anh ấy cố gắng như vậy, làm gì có thể dễ dàng bỏ cuộc.",
+                          "answer":  "他平时那么努力，哪儿能轻易放弃。"
+                      },
+                      {
+                          "chinese":  "要学好汉语，就得每天坚持听和说。",
+                          "pinyin":  "Yào xué hǎo Hànyǔ, jiù děi měitiān jiānchí tīng hé shuō.",
+                          "vietnamese":  "Muốn học tốt tiếng Trung thì phải kiên trì nghe và nói mỗi ngày.",
+                          "answer":  "要学好汉语，就得每天坚持听和说。"
+                      },
+                      {
+                          "chinese":  "要找到合适的房子，就要多比较几家。",
+                          "pinyin":  "Yào zhǎo dào héshì de fángzi, jiù yào duō bǐjiào jǐ jiā.",
+                          "vietnamese":  "Muốn tìm được căn nhà phù hợp thì phải so sánh nhiều nơi.",
+                          "answer":  "要找到合适的房子，就要多比较几家。"
+                      },
+                      {
+                          "chinese":  "要提高听力，就不能只看课文不听录音。",
+                          "pinyin":  "Yào tígāo tīnglì, jiù bù néng zhǐ kàn kèwén bù tīng lùyīn.",
+                          "vietnamese":  "Muốn nâng cao nghe thì không thể chỉ đọc bài khóa mà không nghe ghi âm.",
+                          "answer":  "要提高听力，就不能只看课文不听录音。"
+                      },
+                      {
+                          "chinese":  "要准时参加会议，就最好提前半小时出门。",
+                          "pinyin":  "Yào zhǔnshí cānjiā huìyì, jiù zuìhǎo tíqián bàn xiǎoshí chūmén.",
+                          "vietnamese":  "Muốn tham gia cuộc họp đúng giờ thì tốt nhất ra khỏi nhà sớm nửa tiếng.",
+                          "answer":  "要准时参加会议，就最好提前半小时出门。"
+                      },
+                      {
+                          "chinese":  "要让父母放心，就要学会照顾自己。",
+                          "pinyin":  "Yào ràng fùmǔ fàngxīn, jiù yào xuéhuì zhàogù zìjǐ.",
+                          "vietnamese":  "Muốn để bố mẹ yên tâm thì phải học cách chăm sóc bản thân.",
+                          "answer":  "要让父母放心，就要学会照顾自己。"
+                      },
+                      {
+                          "chinese":  "要了解一个城市，就应该多去不同地方看看。",
+                          "pinyin":  "Yào liǎojiě yí ge chéngshì, jiù yīnggāi duō qù bùtóng dìfang kànkan.",
+                          "vietnamese":  "Muốn hiểu một thành phố thì nên đi nhiều nơi khác nhau xem thử.",
+                          "answer":  "要了解一个城市，就应该多去不同地方看看。"
+                      },
+                      {
+                          "chinese":  "要解决这个问题，就得先弄清楚原因。",
+                          "pinyin":  "Yào jiějué zhège wèntí, jiù děi xiān nòng qīngchu yuányīn.",
+                          "vietnamese":  "Muốn giải quyết vấn đề này thì phải làm rõ nguyên nhân trước.",
+                          "answer":  "要解决这个问题，就得先弄清楚原因。"
+                      },
+                      {
+                          "chinese":  "要申请这份工作，就要准备好相关资料。",
+                          "pinyin":  "Yào shēnqǐng zhè fèn gōngzuò, jiù yào zhǔnbèi hǎo xiāngguān zīliào.",
+                          "vietnamese":  "Muốn ứng tuyển công việc này thì phải chuẩn bị tốt tài liệu liên quan.",
+                          "answer":  "要申请这份工作，就要准备好相关资料。"
+                      }
+                  ]
+}

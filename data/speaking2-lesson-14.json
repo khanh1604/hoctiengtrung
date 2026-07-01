@@ -1,0 +1,2012 @@
+﻿{
+    "title":  "看什么书",
+    "vietnameseTitle":  "我一般看畅销书 / 我最喜欢的一本书",
+    "textTitles":  [
+                       "我一般看畅销书",
+                       "我最喜欢的一本书"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "畅销",
+                           "pinyin":  "chàngxiāo",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "sướng tiêu",
+                           "vietnamese":  "bán chạy",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这本书最近很畅销，很多书店都卖完了。",
+                                                "pinyin":  "Zhè běn shū zuìjìn hěn chàngxiāo, hěn duō shūdiàn dōu mài wán le.",
+                                                "vietnamese":  "Quyển sách này gần đây bán rất chạy, nhiều hiệu sách đều bán hết rồi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "通俗易懂",
+                           "pinyin":  "tōngsú yì dǒng",
+                           "partOfSpeech":  "成语",
+                           "sinoVietnamese":  "thông tục dị đổng",
+                           "vietnamese":  "phổ thông dễ hiểu, dễ hiểu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这篇文章写得通俗易懂，适合初学者看。",
+                                                "pinyin":  "Zhè piān wénzhāng xiě de tōngsú yì dǒng, shìhé chūxuézhě kàn.",
+                                                "vietnamese":  "Bài viết này viết rất dễ hiểu, phù hợp cho người mới học đọc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "出版社",
+                           "pinyin":  "chūbǎnshè",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "xuất bản xã",
+                           "vietnamese":  "nhà xuất bản",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这本小说是北京一家出版社出版的。",
+                                                "pinyin":  "Zhè běn xiǎoshuō shì Běijīng yì jiā chūbǎnshè chūbǎn de.",
+                                                "vietnamese":  "Cuốn tiểu thuyết này do một nhà xuất bản ở Bắc Kinh xuất bản."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "排行榜",
+                           "pinyin":  "páihángbǎng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "bài hàng bảng",
+                           "vietnamese":  "bảng xếp hạng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这本书一直在销售排行榜上。",
+                                                "pinyin":  "Zhè běn shū yìzhí zài xiāoshòu páihángbǎng shàng.",
+                                                "vietnamese":  "Quyển sách này luôn nằm trên bảng xếp hạng bán hàng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "财经",
+                           "pinyin":  "cáijīng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tài kinh",
+                           "vietnamese":  "tài chính kinh tế",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他对财经新闻特别感兴趣。",
+                                                "pinyin":  "Tā duì cáijīng xīnwén tèbié gǎn xìngqù.",
+                                                "vietnamese":  "Anh ấy đặc biệt hứng thú với tin tức tài chính kinh tế."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "科幻",
+                           "pinyin":  "kēhuàn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "khoa huyễn",
+                           "vietnamese":  "khoa học viễn tưởng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我喜欢看科幻小说和科幻电影。",
+                                                "pinyin":  "Wǒ xǐhuān kàn kēhuàn xiǎoshuō hé kēhuàn diànyǐng.",
+                                                "vietnamese":  "Tôi thích đọc tiểu thuyết khoa học viễn tưởng và xem phim khoa học viễn tưởng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "实话",
+                           "pinyin":  "shíhuà",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thực thoại",
+                           "vietnamese":  "lời thật, sự thật",
+                           "examples":  [
+                                            {
+                                                "chinese":  "说实话，我不太喜欢这本书。",
+                                                "pinyin":  "Shuō shíhuà, wǒ bú tài xǐhuān zhè běn shū.",
+                                                "vietnamese":  "Nói thật, tôi không thích quyển sách này lắm."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "只顾",
+                           "pinyin":  "zhǐgù",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "chỉ cố",
+                           "vietnamese":  "chỉ lo, chỉ mải",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他只顾看小说，忘了做作业。",
+                                                "pinyin":  "Tā zhǐgù kàn xiǎoshuō, wàng le zuò zuòyè.",
+                                                "vietnamese":  "Anh ấy chỉ mải đọc tiểu thuyết, quên làm bài tập."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "迎合",
+                           "pinyin":  "yínghé",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "nghênh hợp",
+                           "vietnamese":  "chiều theo, đáp ứng theo",
+                           "examples":  [
+                                            {
+                                                "chinese":  "有些作品只是迎合年轻人的口味。",
+                                                "pinyin":  "Yǒuxiē zuòpǐn zhǐshì yínghé niánqīngrén de kǒuwèi.",
+                                                "vietnamese":  "Một số tác phẩm chỉ là chiều theo thị hiếu của người trẻ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "口味",
+                           "pinyin":  "kǒuwèi",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "khẩu vị",
+                           "vietnamese":  "khẩu vị, sở thích",
+                           "examples":  [
+                                            {
+                                                "chinese":  "每个人的阅读口味都不一样。",
+                                                "pinyin":  "Měi ge rén de yuèdú kǒuwèi dōu bù yíyàng.",
+                                                "vietnamese":  "Khẩu vị đọc sách của mỗi người đều khác nhau."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "名著",
+                           "pinyin":  "míngzhù",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "danh trứ",
+                           "vietnamese":  "tác phẩm nổi tiếng, danh tác",
+                           "examples":  [
+                                            {
+                                                "chinese":  "老师建议我们多读一些世界名著。",
+                                                "pinyin":  "Lǎoshī jiànyì wǒmen duō dú yìxiē shìjiè míngzhù.",
+                                                "vietnamese":  "Thầy/cô khuyên chúng tôi đọc nhiều tác phẩm nổi tiếng thế giới."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "观念",
+                           "pinyin":  "guānniàn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "quan niệm",
+                           "vietnamese":  "quan niệm, ý tưởng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "年轻人的消费观念和父母不太一样。",
+                                                "pinyin":  "Niánqīngrén de xiāofèi guānniàn hé fùmǔ bú tài yíyàng.",
+                                                "vietnamese":  "Quan niệm tiêu dùng của người trẻ không giống cha mẹ lắm."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "理财",
+                           "pinyin":  "lǐcái",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "lý tài",
+                           "vietnamese":  "quản lý tài chính",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他大学毕业以后开始学习理财。",
+                                                "pinyin":  "Tā dàxué bìyè yǐhòu kāishǐ xuéxí lǐcái.",
+                                                "vietnamese":  "Sau khi tốt nghiệp đại học, anh ấy bắt đầu học quản lý tài chính."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "高手",
+                           "pinyin":  "gāoshǒu",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "cao thủ",
+                           "vietnamese":  "cao thủ, chuyên gia",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他是理财方面的高手。",
+                                                "pinyin":  "Tā shì lǐcái fāngmiàn de gāoshǒu.",
+                                                "vietnamese":  "Anh ấy là cao thủ trong lĩnh vực quản lý tài chính."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "财富",
+                           "pinyin":  "cáifù",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tài phú",
+                           "vietnamese":  "của cải, tài sản",
+                           "examples":  [
+                                            {
+                                                "chinese":  "知识也是一种重要的财富。",
+                                                "pinyin":  "Zhīshi yě shì yì zhǒng zhòngyào de cáifù.",
+                                                "vietnamese":  "Kiến thức cũng là một loại tài sản quan trọng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "成人",
+                           "pinyin":  "chéngrén",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thành nhân",
+                           "vietnamese":  "người lớn, người trưởng thành",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这本书比较适合成人阅读。",
+                                                "pinyin":  "Zhè běn shū bǐjiào shìhé chéngrén yuèdú.",
+                                                "vietnamese":  "Quyển sách này khá phù hợp cho người lớn đọc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "版",
+                           "pinyin":  "bǎn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "bản",
+                           "vietnamese":  "bản, phiên bản",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这本书出了新的中文版本。",
+                                                "pinyin":  "Zhè běn shū chū le xīn de Zhōngwén bǎnběn.",
+                                                "vietnamese":  "Quyển sách này đã ra phiên bản tiếng Trung mới."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "报道",
+                           "pinyin":  "bàodào",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "báo đạo",
+                           "vietnamese":  "đưa tin, báo cáo",
+                           "examples":  [
+                                            {
+                                                "chinese":  "报纸报道了这本书畅销的原因。",
+                                                "pinyin":  "Bàozhǐ bàodào le zhè běn shū chàngxiāo de yuányīn.",
+                                                "vietnamese":  "Báo chí đã đưa tin về nguyên nhân quyển sách này bán chạy."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "金钱",
+                           "pinyin":  "jīnqián",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "kim tiền",
+                           "vietnamese":  "tiền bạc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "金钱很重要，但不是生活的全部。",
+                                                "pinyin":  "Jīnqián hěn zhòngyào, dàn bú shì shēnghuó de quánbù.",
+                                                "vietnamese":  "Tiền bạc rất quan trọng, nhưng không phải là toàn bộ cuộc sống."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "童话",
+                           "pinyin":  "tónghuà",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đồng thoại",
+                           "vietnamese":  "truyện cổ tích, truyện thiếu nhi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "小时候我特别喜欢读童话故事。",
+                                                "pinyin":  "Xiǎoshíhou wǒ tèbié xǐhuān dú tónghuà gùshi.",
+                                                "vietnamese":  "Khi còn nhỏ tôi đặc biệt thích đọc truyện cổ tích."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "奇迹",
+                           "pinyin":  "qíjì",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "kỳ tích",
+                           "vietnamese":  "kỳ tích, điều kỳ diệu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "只要继续努力，就可能创造奇迹。",
+                                                "pinyin":  "Zhǐyào jìxù nǔlì, jiù kěnéng chuàngzào qíjì.",
+                                                "vietnamese":  "Chỉ cần tiếp tục cố gắng thì có thể tạo ra kỳ tích."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "你一般喜欢看什么书？",
+                          "pinyin":  "Nǐ yìbān xǐhuan kàn shénme shū?",
+                          "vietnamese":  "Bạn thường thích đọc sách gì?"
+                      },
+                      {
+                          "chinese":  "我一般喜欢看畅销书。",
+                          "pinyin":  "Wǒ yìbān xǐhuan kàn chàngxiāoshū.",
+                          "vietnamese":  "Tôi thường thích đọc sách bán chạy."
+                      },
+                      {
+                          "chinese":  "为什么呀？",
+                          "pinyin":  "Wèishénme ya?",
+                          "vietnamese":  "Vì sao vậy?"
+                      },
+                      {
+                          "chinese":  "每年出版的书太多了，根本看不过来，只能看畅销书。你呢？",
+                          "pinyin":  "Měi nián chūbǎn de shū tài duō le, gēnběn kàn bu guòlái, zhǐ néng kàn chàngxiāoshū. Nǐ ne?",
+                          "vietnamese":  "Mỗi năm sách xuất bản quá nhiều, căn bản đọc không xuể, chỉ có thể đọc sách bán chạy. Còn bạn?"
+                      },
+                      {
+                          "chinese":  "我喜欢看历史类的。我最喜欢的一本中文书是《中国历史故事》。",
+                          "pinyin":  "Wǒ xǐhuan kàn lìshǐ lèi de. Wǒ zuì xǐhuan de yì běn Zhōngwén shū shì “Zhōngguó Lìshǐ Gùshi”.",
+                          "vietnamese":  "Tôi thích đọc thể loại lịch sử. Cuốn sách tiếng Trung tôi thích nhất là “Truyện lịch sử Trung Quốc”."
+                      },
+                      {
+                          "chinese":  "《中国历史故事》？作者是谁？",
+                          "pinyin":  "“Zhōngguó Lìshǐ Gùshi”? Zuòzhě shì shéi?",
+                          "vietnamese":  "“Truyện lịch sử Trung Quốc” à? Tác giả là ai?"
+                      },
+                      {
+                          "chinese":  "我忘了，不过我知道他写过很多历史方面的书。",
+                          "pinyin":  "Wǒ wàng le, búguò wǒ zhīdào tā xiě guò hěn duō lìshǐ fāngmiàn de shū.",
+                          "vietnamese":  "Tôi quên rồi, nhưng tôi biết ông ấy từng viết rất nhiều sách về lịch sử."
+                      },
+                      {
+                          "chinese":  "你为什么喜欢这本书？",
+                          "pinyin":  "Nǐ wèishénme xǐhuan zhè běn shū?",
+                          "vietnamese":  "Vì sao bạn thích cuốn sách này?"
+                      },
+                      {
+                          "chinese":  "这本书最大的特点就是通俗易懂，把中国历史变成了一个个小故事，又简单又有趣。",
+                          "pinyin":  "Zhè běn shū zuì dà de tèdiǎn jiùshì tōngsú yì dǒng, bǎ Zhōngguó lìshǐ biànchéng le yí ge ge xiǎo gùshi, yòu jiǎndān yòu yǒuqù.",
+                          "vietnamese":  "Đặc điểm lớn nhất của cuốn sách này là dễ hiểu, biến lịch sử Trung Quốc thành từng câu chuyện nhỏ, vừa đơn giản vừa thú vị."
+                      },
+                      {
+                          "chinese":  "它主要是写给什么人看的？",
+                          "pinyin":  "Tā zhǔyào shì xiě gěi shénme rén kàn de?",
+                          "vietnamese":  "Nó chủ yếu được viết cho đối tượng nào đọc?"
+                      },
+                      {
+                          "chinese":  "主要是写给中小学生的。这本书有个好处就是容易懂，学一点儿是一点儿。",
+                          "pinyin":  "Zhǔyào shì xiě gěi zhōng xiǎo xuéshēng de. Zhè běn shū yǒu ge hǎochu jiùshì róngyì dǒng, xué yìdiǎnr shì yìdiǎnr.",
+                          "vietnamese":  "Chủ yếu viết cho học sinh tiểu học và trung học. Ưu điểm của cuốn sách này là dễ hiểu, học được chút nào hay chút đó."
+                      },
+                      {
+                          "chinese":  "那我也买一本吧。哎，大卫，是哪个出版社出的？",
+                          "pinyin":  "Nà wǒ yě mǎi yì běn ba. Āi, Dàwèi, shì nǎ ge chūbǎnshè chū de?",
+                          "vietnamese":  "Vậy tôi cũng mua một cuốn nhé. À, David, là nhà xuất bản nào xuất bản?"
+                      },
+                      {
+                          "chinese":  "中国少年儿童出版社2009年出版的。",
+                          "pinyin":  "Zhōngguó Shàonián Értóng Chūbǎnshè èr líng líng jiǔ nián chūbǎn de.",
+                          "vietnamese":  "Do Nhà xuất bản Thiếu niên Nhi đồng Trung Quốc xuất bản năm 2009."
+                      },
+                      {
+                          "chinese":  "哪儿能买到这本书？",
+                          "pinyin":  "Nǎr néng mǎi dào zhè běn shū?",
+                          "vietnamese":  "Có thể mua cuốn sách này ở đâu?"
+                      },
+                      {
+                          "chinese":  "我是在网上买的，才三十多块钱。",
+                          "pinyin":  "Wǒ shì zài wǎngshàng mǎi de, cái sānshí duō kuài qián.",
+                          "vietnamese":  "Tôi mua trên mạng, chỉ hơn 30 tệ."
+                      },
+                      {
+                          "chinese":  "网上还有什么好书？",
+                          "pinyin":  "Wǎngshàng hái yǒu shénme hǎo shū?",
+                          "vietnamese":  "Trên mạng còn có sách hay nào nữa?"
+                      },
+                      {
+                          "chinese":  "多着呢，还有畅销书排行榜呢，你上网看看就知道了。",
+                          "pinyin":  "Duō zhe ne, hái yǒu chàngxiāoshū páihángbǎng ne, nǐ shàngwǎng kànkan jiù zhīdào le.",
+                          "vietnamese":  "Nhiều lắm, còn có bảng xếp hạng sách bán chạy nữa, bạn lên mạng xem là biết."
+                      },
+                      {
+                          "chinese":  "有哪方面的书？",
+                          "pinyin":  "Yǒu nǎ fāngmiàn de shū?",
+                          "vietnamese":  "Có sách thuộc những lĩnh vực nào?"
+                      },
+                      {
+                          "chinese":  "有日常生活类的、爱情类的、财经类的、军事类的、科幻类的，什么书都有。",
+                          "pinyin":  "Yǒu rìcháng shēnghuó lèi de, àiqíng lèi de, cáijīng lèi de, jūnshì lèi de, kēhuàn lèi de, shénme shū dōu yǒu.",
+                          "vietnamese":  "Có sách về đời sống hằng ngày, tình yêu, tài chính kinh tế, quân sự, khoa học viễn tưởng, loại sách nào cũng có."
+                      },
+                      {
+                          "chinese":  "你喜欢畅销书吗？",
+                          "pinyin":  "Nǐ xǐhuan chàngxiāoshū ma?",
+                          "vietnamese":  "Bạn có thích sách bán chạy không?"
+                      },
+                      {
+                          "chinese":  "说实话，我不喜欢畅销书。",
+                          "pinyin":  "Shuō shíhuà, wǒ bù xǐhuan chàngxiāoshū.",
+                          "vietnamese":  "Nói thật, tôi không thích sách bán chạy."
+                      },
+                      {
+                          "chinese":  "为什么？",
+                          "pinyin":  "Wèishénme?",
+                          "vietnamese":  "Vì sao?"
+                      },
+                      {
+                          "chinese":  "畅销书只顾迎合人们的口味，不见得是好书，有名的不见得就好。",
+                          "pinyin":  "Chàngxiāoshū zhǐ gù yínghé rénmen de kǒuwèi, bú jiàn dé shì hǎoshū, yǒumíng de bú jiàn dé jiù hǎo.",
+                          "vietnamese":  "Sách bán chạy chỉ chăm chăm chiều theo thị hiếu của mọi người, chưa chắc là sách hay; nổi tiếng chưa chắc đã tốt."
+                      },
+                      {
+                          "chinese":  "话是这么说，可现在啊有时间读名著呀？还是看畅销书轻松，了解一点儿是一点儿。",
+                          "pinyin":  "Huà shì zhème shuō, kě xiànzài a yǒu shíjiān dú míngzhù ya? Háishi kàn chàngxiāoshū qīngsōng, liǎojiě yìdiǎnr shì yìdiǎnr.",
+                          "vietnamese":  "Nói thì nói vậy, nhưng bây giờ làm gì có thời gian đọc danh tác? Vẫn là đọc sách bán chạy nhẹ nhàng hơn, hiểu được chút nào hay chút đó."
+                      },
+                      {
+                          "chinese":  "我最喜欢的一本书是《小狗钱钱》，这本书是南海出版公司2009年出版的，作者是德国的博多·舍费尔。",
+                          "pinyin":  "Wǒ zuì xǐhuan de yì běn shū shì “Xiǎogǒu Qiánqián”, zhè běn shū shì Nánhǎi Chūbǎn Gōngsī èr líng líng jiǔ nián chūbǎn de, zuòzhě shì Déguó de Bóduō Shèfèi’ěr.",
+                          "vietnamese":  "Cuốn sách tôi thích nhất là “Chú chó Money”, cuốn sách này do Công ty Xuất bản Nam Hải xuất bản năm 2009, tác giả là Bodo Schäfer người Đức."
+                      },
+                      {
+                          "chinese":  "这本书是写给孩子看的。",
+                          "pinyin":  "Zhè běn shū shì xiě gěi háizi kàn de.",
+                          "vietnamese":  "Cuốn sách này viết cho trẻ em đọc."
+                      },
+                      {
+                          "chinese":  "它的主要内容是：在一只名叫钱钱的小狗的帮助下，一个12岁的普通小女孩改变观念，成为一名理财高手，获得了财富。",
+                          "pinyin":  "Tā de zhǔyào nèiróng shì: zài yì zhī míng jiào Qiánqián de xiǎogǒu de bāngzhù xià, yí ge shí’èr suì de pǔtōng xiǎo nǚhái gǎibiàn guānniàn, chéngwéi yì míng lǐcái gāoshǒu, huòdé le cáifù.",
+                          "vietnamese":  "Nội dung chính của nó là: dưới sự giúp đỡ của một chú chó tên Money, một cô bé bình thường 12 tuổi thay đổi quan niệm, trở thành một cao thủ quản lý tài chính và có được của cải."
+                      },
+                      {
+                          "chinese":  "这本书的目的是教孩子们怎样正确认识财富、创造财富。",
+                          "pinyin":  "Zhè běn shū de mùdì shì jiāo háizimen zěnyàng zhèngquè rènshi cáifù, chuàngzào cáifù.",
+                          "vietnamese":  "Mục đích của cuốn sách này là dạy trẻ em cách nhận thức đúng về của cải và tạo ra của cải."
+                      },
+                      {
+                          "chinese":  "作者用讲故事的方式，让孩子们更容易理解怎样轻松地获得财富和成功。",
+                          "pinyin":  "Zuòzhě yòng jiǎng gùshi de fāngshì, ràng háizimen gèng róngyì lǐjiě zěnyàng qīngsōng de huòdé cáifù hé chénggōng.",
+                          "vietnamese":  "Tác giả dùng cách kể chuyện để giúp trẻ em dễ hiểu hơn cách đạt được của cải và thành công một cách nhẹ nhàng."
+                      },
+                      {
+                          "chinese":  "据说，这本书出版以后，不光孩子喜欢，就连成人也喜欢。",
+                          "pinyin":  "Jùshuō, zhè běn shū chūbǎn yǐhòu, bùguāng háizi xǐhuan, jiùlián chéngrén yě xǐhuan.",
+                          "vietnamese":  "Nghe nói sau khi cuốn sách này xuất bản, không chỉ trẻ em thích mà ngay cả người lớn cũng thích."
+                      },
+                      {
+                          "chinese":  "这本书一出版，就成了德国各地畅销书排行榜的第一名。",
+                          "pinyin":  "Zhè běn shū yì chūbǎn, jiù chéng le Déguó gèdì chàngxiāoshū páihángbǎng de dì yī míng.",
+                          "vietnamese":  "Cuốn sách này vừa xuất bản đã trở thành sách bán chạy đứng đầu bảng xếp hạng ở khắp nước Đức."
+                      },
+                      {
+                          "chinese":  "然后出版了英文版、法文版、日文版、韩文版和中文版。",
+                          "pinyin":  "Ránhòu chūbǎn le Yīngwén bǎn, Fǎwén bǎn, Rìwén bǎn, Hánwén bǎn hé Zhōngwén bǎn.",
+                          "vietnamese":  "Sau đó đã xuất bản bản tiếng Anh, tiếng Pháp, tiếng Nhật, tiếng Hàn và tiếng Trung."
+                      },
+                      {
+                          "chinese":  "有新闻报道，人们称赞这本书是成人和孩子的“金钱童话”。",
+                          "pinyin":  "Yǒu xīnwén bàodào, rénmen chēngzàn zhè běn shū shì chéngrén hé háizi de “jīnqián tónghuà”.",
+                          "vietnamese":  "Có tin tức đưa tin rằng mọi người khen cuốn sách này là “truyện cổ tích về tiền bạc” dành cho người lớn và trẻ em."
+                      },
+                      {
+                          "chinese":  "据介绍，这本书在全世界卖出了上百万本。",
+                          "pinyin":  "Jù jièshào, zhè běn shū zài quán shìjiè mài chū le shàng bǎi wàn běn.",
+                          "vietnamese":  "Theo giới thiệu, cuốn sách này đã bán được hơn một triệu bản trên toàn thế giới."
+                      },
+                      {
+                          "chinese":  "在图书出版量巨大的今天，这不能不说是一个奇迹。",
+                          "pinyin":  "Zài túshū chūbǎn liàng jùdà de jīntiān, zhè bù néng bù shuō shì yí ge qíjì.",
+                          "vietnamese":  "Trong thời đại số lượng sách xuất bản rất lớn như hiện nay, điều này không thể không nói là một kỳ tích."
+                      },
+                      {
+                          "chinese":  "你们知道我为什么喜欢这本书吗？",
+                          "pinyin":  "Nǐmen zhīdào wǒ wèishénme xǐhuan zhè běn shū ma?",
+                          "vietnamese":  "Các bạn có biết vì sao tôi thích cuốn sách này không?"
+                      },
+                      {
+                          "chinese":  "因为这本中文书我能看懂，它的内容很简单。",
+                          "pinyin":  "Yīnwèi zhè běn Zhōngwén shū wǒ néng kàndǒng, tā de nèiróng hěn jiǎndān.",
+                          "vietnamese":  "Bởi vì cuốn sách tiếng Trung này tôi có thể đọc hiểu, nội dung của nó rất đơn giản."
+                      },
+                      {
+                          "chinese":  "你们不知道我看懂这本书有多高兴。",
+                          "pinyin":  "Nǐmen bù zhīdào wǒ kàndǒng zhè běn shū yǒu duō gāoxìng.",
+                          "vietnamese":  "Các bạn không biết tôi vui thế nào khi đọc hiểu cuốn sách này đâu."
+                      },
+                      {
+                          "chinese":  "当然，这并不是我最喜欢的书，哪一本书是我最喜欢的书？",
+                          "pinyin":  "Dāngrán, zhè bìng bú shì wǒ zuì xǐhuan de shū, nǎ yì běn shū shì wǒ zuì xǐhuan de shū?",
+                          "vietnamese":  "Tất nhiên, đây không phải là cuốn sách tôi thích nhất; cuốn nào mới là cuốn sách tôi thích nhất?"
+                      },
+                      {
+                          "chinese":  "我也不知道，我还没遇到呢。",
+                          "pinyin":  "Wǒ yě bù zhīdào, wǒ hái méi yùdào ne.",
+                          "vietnamese":  "Tôi cũng không biết, tôi vẫn chưa gặp được nó."
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "……不必……",
+                        "meaning":  "Không cần phải…",
+                        "usage":  "Dùng để nói việc gì không cần làm",
+                        "note":  "Trang trọng hơn 不用 một chút",
+                        "example":  "这件小事你不必太担心。",
+                        "pinyin":  "Zhè jiàn xiǎoshì nǐ bú bì tài dānxīn.",
+                        "vietnamese":  "Chuyện nhỏ này bạn không cần quá lo lắng.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "V 点儿是点儿 / V 多少是多少",
+                        "meaning":  "Được chút nào hay chút đó",
+                        "usage":  "Dùng khi nói dù ít nhưng vẫn có giá trị",
+                        "note":  "Thường dùng khi khuyên tích lũy dần",
+                        "example":  "时间不多了，能复习多少是多少。",
+                        "pinyin":  "Shíjiān bù duō le, néng fùxí duōshǎo shì duōshǎo.",
+                        "vietnamese":  "Không còn nhiều thời gian, ôn được bao nhiêu hay bấy nhiêu.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "V 至于是 V / VA 倒是 VA",
+                        "meaning":  "Còn việc có… hay không thì…",
+                        "usage":  "Dùng để chuyển sang đánh giá nhẹ về một mặt khác",
+                        "note":  "Cấu trúc khẩu ngữ, thường để bổ sung nhận xét",
+                        "example":  "这个办法有用倒是有用，就是太麻烦。",
+                        "pinyin":  "Zhège bànfǎ yǒuyòng dào shì yǒuyòng, jiùshì tài máfan.",
+                        "vietnamese":  "Cách này hữu ích thì đúng là hữu ích, chỉ là quá phiền.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……着呢",
+                        "meaning":  "… lắm đấy / vẫn đang…",
+                        "usage":  "Dùng để nhấn mạnh trạng thái hoặc hành động đang tiếp diễn",
+                        "note":  "Khẩu ngữ, sắc thái nhấn mạnh",
+                        "example":  "你别担心，他在宿舍休息着呢。",
+                        "pinyin":  "Nǐ bié dānxīn, tā zài sùshè xiūxi zhe ne.",
+                        "vietnamese":  "Bạn đừng lo, anh ấy vẫn đang nghỉ ở ký túc xá đấy.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "还是这么说，可……",
+                        "meaning":  "Nói thì vẫn nói vậy, nhưng…",
+                        "usage":  "Dùng khi thừa nhận lời nói trước nhưng chuyển sang ý khác",
+                        "note":  "Khẩu ngữ, dùng khi giải thích ý kiến",
+                        "example":  "话还是这么说，可做起来不容易。",
+                        "pinyin":  "Huà háishi zhème shuō, kě zuò qǐlái bù róngyì.",
+                        "vietnamese":  "Nói thì vẫn nói vậy, nhưng làm thì không dễ.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "不光……，就连……也……",
+                        "meaning":  "Không chỉ…, ngay cả… cũng…",
+                        "usage":  "Dùng để nhấn mạnh phạm vi rộng, đến cả đối tượng đặc biệt cũng vậy",
+                        "note":  "就连 làm vế sau mạnh hơn",
+                        "example":  "他不光会做饭，就连复杂的菜也会做。",
+                        "pinyin":  "Tā bùguāng huì zuò fàn, jiùlián fùzá de cài yě huì zuò.",
+                        "vietnamese":  "Anh ấy không chỉ biết nấu ăn, ngay cả món phức tạp cũng biết làm.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "这本小说最近很畅销，很多书店都卖完了。",
+                        "pinyin":  "Zhè běn xiǎoshuō zuìjìn hěn chàngxiāo, hěn duō shūdiàn dōu mài wán le.",
+                        "vietnamese":  "Cuốn tiểu thuyết này gần đây rất bán chạy, nhiều hiệu sách đều bán hết rồi.",
+                        "answer":  "这本小说最近很畅销，很多书店都卖完了。"
+                    },
+                    {
+                        "chinese":  "畅销书不一定都是名著，但一定有吸引人的地方。",
+                        "pinyin":  "Chàngxiāoshū bù yídìng dōu shì míngzhù, dàn yídìng yǒu xīyǐn rén de dìfang.",
+                        "vietnamese":  "Sách bán chạy chưa chắc đều là danh tác, nhưng nhất định có điểm thu hút.",
+                        "answer":  "畅销书不一定都是名著，但一定有吸引人的地方。"
+                    },
+                    {
+                        "chinese":  "这套理财书很畅销，因为内容通俗易懂。",
+                        "pinyin":  "Zhè tào lǐcái shū hěn chàngxiāo, yīnwèi nèiróng tōngsú yì dǒng.",
+                        "vietnamese":  "Bộ sách quản lý tài chính này rất bán chạy vì nội dung phổ thông dễ hiểu.",
+                        "answer":  "这套理财书很畅销，因为内容通俗易懂。"
+                    },
+                    {
+                        "chinese":  "出版社希望这本财经书能继续畅销。",
+                        "pinyin":  "Chūbǎnshè xīwàng zhè běn cáijīng shū néng jìxù chàngxiāo.",
+                        "vietnamese":  "Nhà xuất bản hy vọng cuốn sách tài chính kinh tế này có thể tiếp tục bán chạy.",
+                        "answer":  "出版社希望这本财经书能继续畅销。"
+                    },
+                    {
+                        "chinese":  "一本书是否畅销，不光看作者名气。",
+                        "pinyin":  "Yì běn shū shìfǒu chàngxiāo, bùguāng kàn zuòzhě míngqì.",
+                        "vietnamese":  "Một cuốn sách có bán chạy hay không không chỉ xem danh tiếng tác giả.",
+                        "answer":  "一本书是否畅销，不光看作者名气。"
+                    },
+                    {
+                        "chinese":  "这本童话居然进入了畅销书排行榜。",
+                        "pinyin":  "Zhè běn tónghuà jūrán jìnrù le chàngxiāoshū páihángbǎng.",
+                        "vietnamese":  "Cuốn truyện thiếu nhi này vậy mà lọt vào bảng xếp hạng sách bán chạy.",
+                        "answer":  "这本童话居然进入了畅销书排行榜。"
+                    },
+                    {
+                        "chinese":  "畅销并不代表质量一定高。",
+                        "pinyin":  "Chàngxiāo bìng bù dàibiǎo zhìliàng yídìng gāo.",
+                        "vietnamese":  "Bán chạy không có nghĩa là chất lượng nhất định cao.",
+                        "answer":  "畅销并不代表质量一定高。"
+                    },
+                    {
+                        "chinese":  "他只顾追求畅销，忽略了作品的深度。",
+                        "pinyin":  "Tā zhǐgù zhuīqiú chàngxiāo, hūlüè le zuòpǐn de shēndù.",
+                        "vietnamese":  "Anh ấy chỉ lo theo đuổi bán chạy, bỏ qua chiều sâu của tác phẩm.",
+                        "answer":  "他只顾追求畅销，忽略了作品的深度。"
+                    },
+                    {
+                        "chinese":  "这本科幻小说上市后很快畅销全国。",
+                        "pinyin":  "Zhè běn kēhuàn xiǎoshuō shàngshì hòu hěn kuài chàngxiāo quánguó.",
+                        "vietnamese":  "Cuốn tiểu thuyết khoa học viễn tưởng này sau khi ra mắt nhanh chóng bán chạy toàn quốc.",
+                        "answer":  "这本科幻小说上市后很快畅销全国。"
+                    },
+                    {
+                        "chinese":  "畅销书的口味往往会影响出版社的选择。",
+                        "pinyin":  "Chàngxiāoshū de kǒuwèi wǎngwǎng huì yǐngxiǎng chūbǎnshè de xuǎnzé.",
+                        "vietnamese":  "Thị hiếu sách bán chạy thường ảnh hưởng đến lựa chọn của nhà xuất bản.",
+                        "answer":  "畅销书的口味往往会影响出版社的选择。"
+                    },
+                    {
+                        "chinese":  "这篇文章写得通俗易懂，适合初学者阅读。",
+                        "pinyin":  "Zhè piān wénzhāng xiě de tōngsú yì dǒng, shìhé chūxuézhě yuèdú.",
+                        "vietnamese":  "Bài viết này viết phổ thông dễ hiểu, phù hợp cho người mới học đọc.",
+                        "answer":  "这篇文章写得通俗易懂，适合初学者阅读。"
+                    },
+                    {
+                        "chinese":  "好的财经书应该把复杂问题讲得通俗易懂。",
+                        "pinyin":  "Hǎo de cáijīng shū yīnggāi bǎ fùzá wèntí jiǎng de tōngsú yì dǒng.",
+                        "vietnamese":  "Sách tài chính kinh tế hay nên giảng vấn đề phức tạp một cách dễ hiểu.",
+                        "answer":  "好的财经书应该把复杂问题讲得通俗易懂。"
+                    },
+                    {
+                        "chinese":  "这本理财书之所以畅销，是因为通俗易懂。",
+                        "pinyin":  "Zhè běn lǐcái shū zhī suǒyǐ chàngxiāo, shì yīnwèi tōngsú yì dǒng.",
+                        "vietnamese":  "Cuốn sách quản lý tài chính này sở dĩ bán chạy là vì dễ hiểu.",
+                        "answer":  "这本理财书之所以畅销，是因为通俗易懂。"
+                    },
+                    {
+                        "chinese":  "老师用通俗易懂的话解释了财富观念。",
+                        "pinyin":  "Lǎoshī yòng tōngsú yì dǒng de huà jiěshì le cáifù guānniàn.",
+                        "vietnamese":  "Giáo viên dùng lời dễ hiểu giải thích quan niệm về của cải.",
+                        "answer":  "老师用通俗易懂的话解释了财富观念。"
+                    },
+                    {
+                        "chinese":  "通俗易懂不等于内容没有深度。",
+                        "pinyin":  "Tōngsú yì dǒng bù děngyú nèiróng méiyǒu shēndù.",
+                        "vietnamese":  "Dễ hiểu không có nghĩa là nội dung không có chiều sâu.",
+                        "answer":  "通俗易懂不等于内容没有深度。"
+                    },
+                    {
+                        "chinese":  "这本成人版童话写得通俗易懂又有趣。",
+                        "pinyin":  "Zhè běn chéngrén bǎn tónghuà xiě de tōngsú yì dǒng yòu yǒuqù.",
+                        "vietnamese":  "Bản truyện thiếu nhi dành cho người lớn này viết dễ hiểu lại thú vị.",
+                        "answer":  "这本成人版童话写得通俗易懂又有趣。"
+                    },
+                    {
+                        "chinese":  "出版社要求作者把语言改得更通俗易懂。",
+                        "pinyin":  "Chūbǎnshè yāoqiú zuòzhě bǎ yǔyán gǎi de gèng tōngsú yì dǒng.",
+                        "vietnamese":  "Nhà xuất bản yêu cầu tác giả sửa ngôn ngữ cho dễ hiểu hơn.",
+                        "answer":  "出版社要求作者把语言改得更通俗易懂。"
+                    },
+                    {
+                        "chinese":  "排行榜上的书不一定都通俗易懂。",
+                        "pinyin":  "Páihángbǎng shàng de shū bù yídìng dōu tōngsú yì dǒng.",
+                        "vietnamese":  "Sách trên bảng xếp hạng không nhất định đều dễ hiểu.",
+                        "answer":  "排行榜上的书不一定都通俗易懂。"
+                    },
+                    {
+                        "chinese":  "他把科幻故事讲得通俗易懂，孩子也能听懂。",
+                        "pinyin":  "Tā bǎ kēhuàn gùshi jiǎng de tōngsú yì dǒng, háizi yě néng tīng dǒng.",
+                        "vietnamese":  "Anh ấy kể chuyện khoa học viễn tưởng rất dễ hiểu, trẻ con cũng nghe hiểu.",
+                        "answer":  "他把科幻故事讲得通俗易懂，孩子也能听懂。"
+                    },
+                    {
+                        "chinese":  "如果只顾通俗易懂，作品可能会失去文学味道。",
+                        "pinyin":  "Rúguǒ zhǐgù tōngsú yì dǒng, zuòpǐn kěnéng huì shīqù wénxué wèidào.",
+                        "vietnamese":  "Nếu chỉ lo dễ hiểu, tác phẩm có thể mất đi hương vị văn học.",
+                        "answer":  "如果只顾通俗易懂，作品可能会失去文学味道。"
+                    },
+                    {
+                        "chinese":  "这家出版社最近推出了很多畅销书。",
+                        "pinyin":  "Zhè jiā chūbǎnshè zuìjìn tuīchū le hěn duō chàngxiāoshū.",
+                        "vietnamese":  "Nhà xuất bản này gần đây ra mắt nhiều sách bán chạy.",
+                        "answer":  "这家出版社最近推出了很多畅销书。"
+                    },
+                    {
+                        "chinese":  "出版社决定重印这本名著。",
+                        "pinyin":  "Chūbǎnshè juédìng chóngyìn zhè běn míngzhù.",
+                        "vietnamese":  "Nhà xuất bản quyết định tái bản danh tác này.",
+                        "answer":  "出版社决定重印这本名著。"
+                    },
+                    {
+                        "chinese":  "他把自己的童话作品寄给了出版社。",
+                        "pinyin":  "Tā bǎ zìjǐ de tónghuà zuòpǐn jì gěi le chūbǎnshè.",
+                        "vietnamese":  "Anh ấy gửi tác phẩm truyện thiếu nhi của mình cho nhà xuất bản.",
+                        "answer":  "他把自己的童话作品寄给了出版社。"
+                    },
+                    {
+                        "chinese":  "出版社不光看市场口味，也要看作品质量。",
+                        "pinyin":  "Chūbǎnshè bùguāng kàn shìchǎng kǒuwèi, yě yào kàn zuòpǐn zhìliàng.",
+                        "vietnamese":  "Nhà xuất bản không chỉ xem thị hiếu thị trường mà còn phải xem chất lượng tác phẩm.",
+                        "answer":  "出版社不光看市场口味，也要看作品质量。"
+                    },
+                    {
+                        "chinese":  "这家出版社专门出版财经和理财类图书。",
+                        "pinyin":  "Zhè jiā chūbǎnshè zhuānmén chūbǎn cáijīng hé lǐcái lèi túshū.",
+                        "vietnamese":  "Nhà xuất bản này chuyên xuất bản sách tài chính kinh tế và quản lý tài chính.",
+                        "answer":  "这家出版社专门出版财经和理财类图书。"
+                    },
+                    {
+                        "chinese":  "据报道，出版社今年收入增长不少。",
+                        "pinyin":  "Jù bàodào, chūbǎnshè jīnnián shōurù zēngzhǎng bù shǎo.",
+                        "vietnamese":  "Theo báo cáo, doanh thu của nhà xuất bản năm nay tăng khá nhiều.",
+                        "answer":  "据报道，出版社今年收入增长不少。"
+                    },
+                    {
+                        "chinese":  "出版社希望这本书能进入排行榜。",
+                        "pinyin":  "Chūbǎnshè xīwàng zhè běn shū néng jìnrù páihángbǎng.",
+                        "vietnamese":  "Nhà xuất bản hy vọng cuốn sách này có thể vào bảng xếp hạng.",
+                        "answer":  "出版社希望这本书能进入排行榜。"
+                    },
+                    {
+                        "chinese":  "如果出版社只顾迎合读者口味，风险也很大。",
+                        "pinyin":  "Rúguǒ chūbǎnshè zhǐgù yínghé dúzhě kǒuwèi, fēngxiǎn yě hěn dà.",
+                        "vietnamese":  "Nếu nhà xuất bản chỉ lo chiều theo thị hiếu độc giả, rủi ro cũng rất lớn.",
+                        "answer":  "如果出版社只顾迎合读者口味，风险也很大。"
+                    },
+                    {
+                        "chinese":  "这家出版社的儿童版童话很受欢迎。",
+                        "pinyin":  "Zhè jiā chūbǎnshè de értóng bǎn tónghuà hěn shòu huānyíng.",
+                        "vietnamese":  "Bản truyện thiếu nhi dành cho trẻ em của nhà xuất bản này rất được yêu thích.",
+                        "answer":  "这家出版社的儿童版童话很受欢迎。"
+                    },
+                    {
+                        "chinese":  "出版社编辑说实话，这本书还需要修改。",
+                        "pinyin":  "Chūbǎnshè biānjí shuō shíhuà, zhè běn shū hái xūyào xiūgǎi.",
+                        "vietnamese":  "Biên tập viên nhà xuất bản nói thật, cuốn sách này vẫn cần sửa.",
+                        "answer":  "出版社编辑说实话，这本书还需要修改。"
+                    },
+                    {
+                        "chinese":  "这本书连续三周在排行榜第一名。",
+                        "pinyin":  "Zhè běn shū liánxù sān zhōu zài páihángbǎng dì yī míng.",
+                        "vietnamese":  "Cuốn sách này liên tục ba tuần đứng số một trên bảng xếp hạng.",
+                        "answer":  "这本书连续三周在排行榜第一名。"
+                    },
+                    {
+                        "chinese":  "排行榜能反映读者最近的阅读口味。",
+                        "pinyin":  "Páihángbǎng néng fǎnyìng dúzhě zuìjìn de yuèdú kǒuwèi.",
+                        "vietnamese":  "Bảng xếp hạng có thể phản ánh thị hiếu đọc gần đây của độc giả.",
+                        "answer":  "排行榜能反映读者最近的阅读口味。"
+                    },
+                    {
+                        "chinese":  "进入排行榜不容易，保持排名更难。",
+                        "pinyin":  "Jìnrù páihángbǎng bù róngyì, bǎochí páimíng gèng nán.",
+                        "vietnamese":  "Vào bảng xếp hạng không dễ, giữ thứ hạng càng khó hơn.",
+                        "answer":  "进入排行榜不容易，保持排名更难。"
+                    },
+                    {
+                        "chinese":  "这本科幻小说居然上了畅销书排行榜。",
+                        "pinyin":  "Zhè běn kēhuàn xiǎoshuō jūrán shàng le chàngxiāoshū páihángbǎng.",
+                        "vietnamese":  "Cuốn tiểu thuyết khoa học viễn tưởng này vậy mà lên bảng xếp hạng sách bán chạy.",
+                        "answer":  "这本科幻小说居然上了畅销书排行榜。"
+                    },
+                    {
+                        "chinese":  "排行榜上的作品不光有名著，也有新书。",
+                        "pinyin":  "Páihángbǎng shàng de zuòpǐn bùguāng yǒu míngzhù, yě yǒu xīnshū.",
+                        "vietnamese":  "Tác phẩm trên bảng xếp hạng không chỉ có danh tác mà cũng có sách mới.",
+                        "answer":  "排行榜上的作品不光有名著，也有新书。"
+                    },
+                    {
+                        "chinese":  "他只顾看排行榜，反而错过了真正适合自己的书。",
+                        "pinyin":  "Tā zhǐgù kàn páihángbǎng, fǎn\u0027ér cuòguò le zhēnzhèng shìhé zìjǐ de shū.",
+                        "vietnamese":  "Anh ấy chỉ lo xem bảng xếp hạng, ngược lại bỏ lỡ cuốn sách thật sự phù hợp với mình.",
+                        "answer":  "他只顾看排行榜，反而错过了真正适合自己的书。"
+                    },
+                    {
+                        "chinese":  "出版社根据排行榜调整出版计划。",
+                        "pinyin":  "Chūbǎnshè gēnjù páihángbǎng tiáozhěng chūbǎn jìhuà.",
+                        "vietnamese":  "Nhà xuất bản căn cứ vào bảng xếp hạng để điều chỉnh kế hoạch xuất bản.",
+                        "answer":  "出版社根据排行榜调整出版计划。"
+                    },
+                    {
+                        "chinese":  "这本理财书虽然不在排行榜上，但内容很好。",
+                        "pinyin":  "Zhè běn lǐcái shū suīrán bú zài páihángbǎng shàng, dàn nèiróng hěn hǎo.",
+                        "vietnamese":  "Cuốn sách quản lý tài chính này tuy không ở bảng xếp hạng nhưng nội dung rất tốt.",
+                        "answer":  "这本理财书虽然不在排行榜上，但内容很好。"
+                    },
+                    {
+                        "chinese":  "排行榜不能完全代表一本书的价值。",
+                        "pinyin":  "Páihángbǎng bù néng wánquán dàibiǎo yì běn shū de jiàzhí.",
+                        "vietnamese":  "Bảng xếp hạng không thể hoàn toàn đại diện cho giá trị của một cuốn sách.",
+                        "answer":  "排行榜不能完全代表一本书的价值。"
+                    },
+                    {
+                        "chinese":  "这本童话进入排行榜以后，销量提高了很多。",
+                        "pinyin":  "Zhè běn tónghuà jìnrù páihángbǎng yǐhòu, xiāoliàng tígāo le hěn duō.",
+                        "vietnamese":  "Sau khi truyện thiếu nhi này vào bảng xếp hạng, lượng bán tăng lên rất nhiều.",
+                        "answer":  "这本童话进入排行榜以后，销量提高了很多。"
+                    },
+                    {
+                        "chinese":  "他每天都会看财经新闻。",
+                        "pinyin":  "Tā měitiān dōu huì kàn cáijīng xīnwén.",
+                        "vietnamese":  "Anh ấy ngày nào cũng xem tin tài chính kinh tế.",
+                        "answer":  "他每天都会看财经新闻。"
+                    },
+                    {
+                        "chinese":  "这本财经书写得很通俗易懂。",
+                        "pinyin":  "Zhè běn cáijīng shū xiě de hěn tōngsú yì dǒng.",
+                        "vietnamese":  "Cuốn sách tài chính kinh tế này viết rất dễ hiểu.",
+                        "answer":  "这本财经书写得很通俗易懂。"
+                    },
+                    {
+                        "chinese":  "财经知识对理财很有帮助。",
+                        "pinyin":  "Cáijīng zhīshi duì lǐcái hěn yǒu bāngzhù.",
+                        "vietnamese":  "Kiến thức tài chính kinh tế rất có ích cho quản lý tài chính.",
+                        "answer":  "财经知识对理财很有帮助。"
+                    },
+                    {
+                        "chinese":  "他对财经行业很感兴趣，想以后从事相关工作。",
+                        "pinyin":  "Tā duì cáijīng hángyè hěn gǎn xìngqù, xiǎng yǐhòu cóngshì xiāngguān gōngzuò.",
+                        "vietnamese":  "Anh ấy rất hứng thú với ngành tài chính kinh tế, muốn sau này làm công việc liên quan.",
+                        "answer":  "他对财经行业很感兴趣，想以后从事相关工作。"
+                    },
+                    {
+                        "chinese":  "出版社最近增加了财经类图书项目。",
+                        "pinyin":  "Chūbǎnshè zuìjìn zēngjiā le cáijīng lèi túshū xiàngmù.",
+                        "vietnamese":  "Nhà xuất bản gần đây tăng thêm hạng mục sách tài chính kinh tế.",
+                        "answer":  "出版社最近增加了财经类图书项目。"
+                    },
+                    {
+                        "chinese":  "财经报道不光要准确，也要容易理解。",
+                        "pinyin":  "Cáijīng bàodào bùguāng yào zhǔnquè, yě yào róngyì lǐjiě.",
+                        "vietnamese":  "Bản tin tài chính kinh tế không chỉ phải chính xác mà còn phải dễ hiểu.",
+                        "answer":  "财经报道不光要准确，也要容易理解。"
+                    },
+                    {
+                        "chinese":  "如果没有财经观念，很容易胡乱花钱。",
+                        "pinyin":  "Rúguǒ méiyǒu cáijīng guānniàn, hěn róngyì húluàn huāqián.",
+                        "vietnamese":  "Nếu không có quan niệm tài chính kinh tế, rất dễ tiêu tiền lung tung.",
+                        "answer":  "如果没有财经观念，很容易胡乱花钱。"
+                    },
+                    {
+                        "chinese":  "这本财经杂志在成人读者中很畅销。",
+                        "pinyin":  "Zhè běn cáijīng zázhì zài chéngrén dúzhě zhōng hěn chàngxiāo.",
+                        "vietnamese":  "Tạp chí tài chính kinh tế này rất bán chạy trong độc giả người lớn.",
+                        "answer":  "这本财经杂志在成人读者中很畅销。"
+                    },
+                    {
+                        "chinese":  "他通过财经节目学习财富管理。",
+                        "pinyin":  "Tā tōngguò cáijīng jiémù xuéxí cáifù guǎnlǐ.",
+                        "vietnamese":  "Anh ấy thông qua chương trình tài chính kinh tế để học quản lý tài sản.",
+                        "answer":  "他通过财经节目学习财富管理。"
+                    },
+                    {
+                        "chinese":  "财经类名著不一定难懂，关键看作者怎么写。",
+                        "pinyin":  "Cáijīng lèi míngzhù bù yídìng nán dǒng, guānjiàn kàn zuòzhě zěnme xiě.",
+                        "vietnamese":  "Danh tác loại tài chính kinh tế không nhất định khó hiểu, mấu chốt xem tác giả viết thế nào.",
+                        "answer":  "财经类名著不一定难懂，关键看作者怎么写。"
+                    },
+                    {
+                        "chinese":  "这本科幻小说讲的是未来城市生活。",
+                        "pinyin":  "Zhè běn kēhuàn xiǎoshuō jiǎng de shì wèilái chéngshì shēnghuó.",
+                        "vietnamese":  "Tiểu thuyết khoa học viễn tưởng này kể về cuộc sống đô thị tương lai.",
+                        "answer":  "这本科幻小说讲的是未来城市生活。"
+                    },
+                    {
+                        "chinese":  "科幻作品不光需要想象力，也需要科学基础。",
+                        "pinyin":  "Kēhuàn zuòpǐn bùguāng xūyào xiǎngxiànglì, yě xūyào kēxué jīchǔ.",
+                        "vietnamese":  "Tác phẩm khoa học viễn tưởng không chỉ cần trí tưởng tượng mà cũng cần nền tảng khoa học.",
+                        "answer":  "科幻作品不光需要想象力，也需要科学基础。"
+                    },
+                    {
+                        "chinese":  "他从小喜欢科幻，所以后来学了物理。",
+                        "pinyin":  "Tā cóngxiǎo xǐhuan kēhuàn, suǒyǐ hòulái xué le wùlǐ.",
+                        "vietnamese":  "Anh ấy từ nhỏ thích khoa học viễn tưởng nên sau này học vật lý.",
+                        "answer":  "他从小喜欢科幻，所以后来学了物理。"
+                    },
+                    {
+                        "chinese":  "这本科幻书居然比财经书还畅销。",
+                        "pinyin":  "Zhè běn kēhuàn shū jūrán bǐ cáijīng shū hái chàngxiāo.",
+                        "vietnamese":  "Cuốn sách khoa học viễn tưởng này vậy mà còn bán chạy hơn sách tài chính kinh tế.",
+                        "answer":  "这本科幻书居然比财经书还畅销。"
+                    },
+                    {
+                        "chinese":  "科幻故事能启发读者思考未来。",
+                        "pinyin":  "Kēhuàn gùshi néng qǐfā dúzhě sīkǎo wèilái.",
+                        "vietnamese":  "Câu chuyện khoa học viễn tưởng có thể gợi mở độc giả suy nghĩ về tương lai.",
+                        "answer":  "科幻故事能启发读者思考未来。"
+                    },
+                    {
+                        "chinese":  "出版社准备推出一套青少年科幻丛书。",
+                        "pinyin":  "Chūbǎnshè zhǔnbèi tuīchū yí tào qīngshàonián kēhuàn cóngshū.",
+                        "vietnamese":  "Nhà xuất bản chuẩn bị ra mắt một bộ sách khoa học viễn tưởng cho thanh thiếu niên.",
+                        "answer":  "出版社准备推出一套青少年科幻丛书。"
+                    },
+                    {
+                        "chinese":  "这部科幻电影不在排行榜上，却很有深度。",
+                        "pinyin":  "Zhè bù kēhuàn diànyǐng bú zài páihángbǎng shàng, què hěn yǒu shēndù.",
+                        "vietnamese":  "Bộ phim khoa học viễn tưởng này không ở bảng xếp hạng nhưng rất có chiều sâu.",
+                        "answer":  "这部科幻电影不在排行榜上，却很有深度。"
+                    },
+                    {
+                        "chinese":  "写科幻不能只顾奇怪，还要有合理的观念。",
+                        "pinyin":  "Xiě kēhuàn bù néng zhǐgù qíguài, hái yào yǒu hélǐ de guānniàn.",
+                        "vietnamese":  "Viết khoa học viễn tưởng không thể chỉ lo kỳ lạ, còn phải có quan niệm hợp lý.",
+                        "answer":  "写科幻不能只顾奇怪，还要有合理的观念。"
+                    },
+                    {
+                        "chinese":  "这本成人版科幻书更适合有经验的读者。",
+                        "pinyin":  "Zhè běn chéngrén bǎn kēhuàn shū gèng shìhé yǒu jīngyàn de dúzhě.",
+                        "vietnamese":  "Bản sách khoa học viễn tưởng người lớn này phù hợp hơn với độc giả có kinh nghiệm.",
+                        "answer":  "这本成人版科幻书更适合有经验的读者。"
+                    },
+                    {
+                        "chinese":  "科幻让我们看到金钱之外的另一种未来。",
+                        "pinyin":  "Kēhuàn ràng wǒmen kàndào jīnqián zhī wài de lìng yì zhǒng wèilái.",
+                        "vietnamese":  "Khoa học viễn tưởng giúp chúng ta nhìn thấy một kiểu tương lai khác ngoài tiền bạc.",
+                        "answer":  "科幻让我们看到金钱之外的另一种未来。"
+                    },
+                    {
+                        "chinese":  "说实话，我不太喜欢只谈金钱的书。",
+                        "pinyin":  "Shuō shíhuà, wǒ bú tài xǐhuan zhǐ tán jīnqián de shū.",
+                        "vietnamese":  "Nói thật, tôi không thích lắm những cuốn sách chỉ bàn về tiền bạc.",
+                        "answer":  "说实话，我不太喜欢只谈金钱的书。"
+                    },
+                    {
+                        "chinese":  "实话有时候不好听，但很有价值。",
+                        "pinyin":  "Shíhuà yǒu shíhou bù hǎotīng, dàn hěn yǒu jiàzhí.",
+                        "vietnamese":  "Lời thật đôi khi không dễ nghe nhưng rất có giá trị.",
+                        "answer":  "实话有时候不好听，但很有价值。"
+                    },
+                    {
+                        "chinese":  "他终于说了实话，承认自己只顾赚钱。",
+                        "pinyin":  "Tā zhōngyú shuō le shíhuà, chéngrèn zìjǐ zhǐgù zhuànqián.",
+                        "vietnamese":  "Cuối cùng anh ấy nói thật, thừa nhận mình chỉ lo kiếm tiền.",
+                        "answer":  "他终于说了实话，承认自己只顾赚钱。"
+                    },
+                    {
+                        "chinese":  "面试时说实话，比胡乱夸大自己更好。",
+                        "pinyin":  "Miànshì shí shuō shíhuà, bǐ húluàn kuādà zìjǐ gèng hǎo.",
+                        "vietnamese":  "Khi phỏng vấn nói thật tốt hơn việc phóng đại bản thân lung tung.",
+                        "answer":  "面试时说实话，比胡乱夸大自己更好。"
+                    },
+                    {
+                        "chinese":  "说句实话，这本畅销书并没有那么精彩。",
+                        "pinyin":  "Shuō jù shíhuà, zhè běn chàngxiāoshū bìng méiyǒu nàme jīngcǎi.",
+                        "vietnamese":  "Nói thật một câu, cuốn sách bán chạy này không hay đến vậy.",
+                        "answer":  "说句实话，这本畅销书并没有那么精彩。"
+                    },
+                    {
+                        "chinese":  "孩子问财富是什么，父母应该说实话。",
+                        "pinyin":  "Háizi wèn cáifù shì shénme, fùmǔ yīnggāi shuō shíhuà.",
+                        "vietnamese":  "Con hỏi tài sản là gì, cha mẹ nên nói thật.",
+                        "answer":  "孩子问财富是什么，父母应该说实话。"
+                    },
+                    {
+                        "chinese":  "他说实话时很平静，没有故意批评别人。",
+                        "pinyin":  "Tā shuō shíhuà shí hěn píngjìng, méiyǒu gùyì pīpíng biérén.",
+                        "vietnamese":  "Khi nói thật, anh ấy rất bình tĩnh, không cố ý phê bình người khác.",
+                        "answer":  "他说实话时很平静，没有故意批评别人。"
+                    },
+                    {
+                        "chinese":  "读书时也要敢于面对实话。",
+                        "pinyin":  "Dúshū shí yě yào gǎn yú miànduì shíhuà.",
+                        "vietnamese":  "Khi đọc sách cũng phải dám đối mặt với sự thật.",
+                        "answer":  "读书时也要敢于面对实话。"
+                    },
+                    {
+                        "chinese":  "实话是，排行榜不能决定一个人的阅读口味。",
+                        "pinyin":  "Shíhuà shì, páihángbǎng bù néng juédìng yí ge rén de yuèdú kǒuwèi.",
+                        "vietnamese":  "Sự thật là bảng xếp hạng không thể quyết định thị hiếu đọc của một người.",
+                        "answer":  "实话是，排行榜不能决定一个人的阅读口味。"
+                    },
+                    {
+                        "chinese":  "他不想迎合市场，只想写自己的实话。",
+                        "pinyin":  "Tā bù xiǎng yínghé shìchǎng, zhǐ xiǎng xiě zìjǐ de shíhuà.",
+                        "vietnamese":  "Anh ấy không muốn chiều theo thị trường, chỉ muốn viết lời thật của mình.",
+                        "answer":  "他不想迎合市场，只想写自己的实话。"
+                    },
+                    {
+                        "chinese":  "他只顾赚钱，忘了身体健康。",
+                        "pinyin":  "Tā zhǐgù zhuànqián, wàng le shēntǐ jiànkāng.",
+                        "vietnamese":  "Anh ấy chỉ lo kiếm tiền, quên sức khỏe.",
+                        "answer":  "他只顾赚钱，忘了身体健康。"
+                    },
+                    {
+                        "chinese":  "有些出版社只顾销量，不顾作品质量。",
+                        "pinyin":  "Yǒuxiē chūbǎnshè zhǐgù xiāoliàng, bù gù zuòpǐn zhìliàng.",
+                        "vietnamese":  "Một số nhà xuất bản chỉ lo doanh số, không lo chất lượng tác phẩm.",
+                        "answer":  "有些出版社只顾销量，不顾作品质量。"
+                    },
+                    {
+                        "chinese":  "他只顾看排行榜，却没有认真读书。",
+                        "pinyin":  "Tā zhǐgù kàn páihángbǎng, què méiyǒu rènzhēn dúshū.",
+                        "vietnamese":  "Anh ấy chỉ lo xem bảng xếp hạng mà không đọc sách nghiêm túc.",
+                        "answer":  "他只顾看排行榜，却没有认真读书。"
+                    },
+                    {
+                        "chinese":  "只顾迎合读者口味，作品会越来越浅。",
+                        "pinyin":  "Zhǐgù yínghé dúzhě kǒuwèi, zuòpǐn huì yuèláiyuè qiǎn.",
+                        "vietnamese":  "Chỉ lo chiều theo thị hiếu độc giả, tác phẩm sẽ ngày càng nông.",
+                        "answer":  "只顾迎合读者口味，作品会越来越浅。"
+                    },
+                    {
+                        "chinese":  "他只顾买畅销书，书架上却没有几本名著。",
+                        "pinyin":  "Tā zhǐgù mǎi chàngxiāoshū, shūjià shàng què méiyǒu jǐ běn míngzhù.",
+                        "vietnamese":  "Anh ấy chỉ lo mua sách bán chạy, trên giá sách lại không có mấy cuốn danh tác.",
+                        "answer":  "他只顾买畅销书，书架上却没有几本名著。"
+                    },
+                    {
+                        "chinese":  "学理财不能只顾回报，还要看风险。",
+                        "pinyin":  "Xué lǐcái bù néng zhǐgù huíbào, hái yào kàn fēngxiǎn.",
+                        "vietnamese":  "Học quản lý tài chính không thể chỉ lo lợi nhuận, còn phải xem rủi ro.",
+                        "answer":  "学理财不能只顾回报，还要看风险。"
+                    },
+                    {
+                        "chinese":  "成人不应该只顾工作，也要陪伴家人。",
+                        "pinyin":  "Chéngrén bù yīnggāi zhǐgù gōngzuò, yě yào péibàn jiārén.",
+                        "vietnamese":  "Người trưởng thành không nên chỉ lo công việc, cũng phải bên cạnh gia đình.",
+                        "answer":  "成人不应该只顾工作，也要陪伴家人。"
+                    },
+                    {
+                        "chinese":  "他只顾讲自己的观念，完全不听别人意见。",
+                        "pinyin":  "Tā zhǐgù jiǎng zìjǐ de guānniàn, wánquán bù tīng biérén yìjiàn.",
+                        "vietnamese":  "Anh ấy chỉ lo nói quan niệm của mình, hoàn toàn không nghe ý kiến người khác.",
+                        "answer":  "他只顾讲自己的观念，完全不听别人意见。"
+                    },
+                    {
+                        "chinese":  "只顾金钱的人，往往忽略真正的财富。",
+                        "pinyin":  "Zhǐgù jīnqián de rén, wǎngwǎng hūlüè zhēnzhèng de cáifù.",
+                        "vietnamese":  "Người chỉ lo tiền bạc thường bỏ qua tài sản thật sự.",
+                        "answer":  "只顾金钱的人，往往忽略真正的财富。"
+                    },
+                    {
+                        "chinese":  "孩子只顾看童话，作业都忘了做。",
+                        "pinyin":  "Háizi zhǐgù kàn tónghuà, zuòyè dōu wàng le zuò.",
+                        "vietnamese":  "Đứa trẻ chỉ lo đọc truyện thiếu nhi, bài tập cũng quên làm.",
+                        "answer":  "孩子只顾看童话，作业都忘了做。"
+                    },
+                    {
+                        "chinese":  "出版社不能只迎合市场口味。",
+                        "pinyin":  "Chūbǎnshè bù néng zhǐ yínghé shìchǎng kǒuwèi.",
+                        "vietnamese":  "Nhà xuất bản không thể chỉ chiều theo thị hiếu thị trường.",
+                        "answer":  "出版社不能只迎合市场口味。"
+                    },
+                    {
+                        "chinese":  "他写书不是为了迎合排行榜。",
+                        "pinyin":  "Tā xiě shū bú shì wèile yínghé páihángbǎng.",
+                        "vietnamese":  "Anh ấy viết sách không phải để chiều theo bảng xếp hạng.",
+                        "answer":  "他写书不是为了迎合排行榜。"
+                    },
+                    {
+                        "chinese":  "迎合别人不一定能得到尊重。",
+                        "pinyin":  "Yínghé biérén bù yídìng néng dédào zūnzhòng.",
+                        "vietnamese":  "Chiều theo người khác chưa chắc có thể nhận được sự tôn trọng.",
+                        "answer":  "迎合别人不一定能得到尊重。"
+                    },
+                    {
+                        "chinese":  "如果只迎合读者，作家可能失去自己的观念。",
+                        "pinyin":  "Rúguǒ zhǐ yínghé dúzhě, zuòjiā kěnéng shīqù zìjǐ de guānniàn.",
+                        "vietnamese":  "Nếu chỉ chiều theo độc giả, nhà văn có thể mất quan niệm riêng của mình.",
+                        "answer":  "如果只迎合读者，作家可能失去自己的观念。"
+                    },
+                    {
+                        "chinese":  "这本书迎合了年轻人的阅读口味。",
+                        "pinyin":  "Zhè běn shū yínghé le niánqīng rén de yuèdú kǒuwèi.",
+                        "vietnamese":  "Cuốn sách này đáp ứng thị hiếu đọc của người trẻ.",
+                        "answer":  "这本书迎合了年轻人的阅读口味。"
+                    },
+                    {
+                        "chinese":  "有些畅销书只是迎合了短期热点。",
+                        "pinyin":  "Yǒuxiē chàngxiāoshū zhǐshì yínghé le duǎnqī rèdiǎn.",
+                        "vietnamese":  "Một số sách bán chạy chỉ là đáp ứng điểm nóng ngắn hạn.",
+                        "answer":  "有些畅销书只是迎合了短期热点。"
+                    },
+                    {
+                        "chinese":  "老师提醒我们不要总是迎合别人。",
+                        "pinyin":  "Lǎoshī tíxǐng wǒmen búyào zǒngshì yínghé biérén.",
+                        "vietnamese":  "Giáo viên nhắc chúng tôi đừng lúc nào cũng chiều theo người khác.",
+                        "answer":  "老师提醒我们不要总是迎合别人。"
+                    },
+                    {
+                        "chinese":  "迎合市场和坚持质量之间需要平衡。",
+                        "pinyin":  "Yínghé shìchǎng hé jiānchí zhìliàng zhījiān xūyào pínghéng.",
+                        "vietnamese":  "Giữa việc chiều theo thị trường và giữ chất lượng cần cân bằng.",
+                        "answer":  "迎合市场和坚持质量之间需要平衡。"
+                    },
+                    {
+                        "chinese":  "这部成人版童话没有刻意迎合孩子。",
+                        "pinyin":  "Zhè bù chéngrén bǎn tónghuà méiyǒu kèyì yínghé háizi.",
+                        "vietnamese":  "Bản truyện cổ tích người lớn này không cố ý chiều theo trẻ em.",
+                        "answer":  "这部成人版童话没有刻意迎合孩子。"
+                    },
+                    {
+                        "chinese":  "如果作品只为迎合口味，很难成为名著。",
+                        "pinyin":  "Rúguǒ zuòpǐn zhǐ wèi yínghé kǒuwèi, hěn nán chéngwéi míngzhù.",
+                        "vietnamese":  "Nếu tác phẩm chỉ vì chiều theo thị hiếu thì rất khó trở thành danh tác.",
+                        "answer":  "如果作品只为迎合口味，很难成为名著。"
+                    },
+                    {
+                        "chinese":  "每个人的阅读口味都不一样。",
+                        "pinyin":  "Měi ge rén de yuèdú kǒuwèi dōu bù yíyàng.",
+                        "vietnamese":  "Thị hiếu đọc của mỗi người đều không giống nhau.",
+                        "answer":  "每个人的阅读口味都不一样。"
+                    },
+                    {
+                        "chinese":  "这本书很迎合年轻读者的口味。",
+                        "pinyin":  "Zhè běn shū hěn yínghé niánqīng dúzhě de kǒuwèi.",
+                        "vietnamese":  "Cuốn sách này rất phù hợp thị hiếu độc giả trẻ.",
+                        "answer":  "这本书很迎合年轻读者的口味。"
+                    },
+                    {
+                        "chinese":  "他的口味比较特别，不太喜欢畅销书。",
+                        "pinyin":  "Tā de kǒuwèi bǐjiào tèbié, bú tài xǐhuan chàngxiāoshū.",
+                        "vietnamese":  "Thị hiếu của anh ấy khá đặc biệt, không thích sách bán chạy lắm.",
+                        "answer":  "他的口味比较特别，不太喜欢畅销书。"
+                    },
+                    {
+                        "chinese":  "出版社要了解市场口味，但不能完全被它控制。",
+                        "pinyin":  "Chūbǎnshè yào liǎojiě shìchǎng kǒuwèi, dàn bù néng wánquán bèi tā kòngzhì.",
+                        "vietnamese":  "Nhà xuất bản phải hiểu thị hiếu thị trường nhưng không thể hoàn toàn bị nó kiểm soát.",
+                        "answer":  "出版社要了解市场口味，但不能完全被它控制。"
+                    },
+                    {
+                        "chinese":  "财经类图书的读者口味正在变化。",
+                        "pinyin":  "Cáijīng lèi túshū de dúzhě kǒuwèi zhèngzài biànhuà.",
+                        "vietnamese":  "Thị hiếu độc giả sách tài chính kinh tế đang thay đổi.",
+                        "answer":  "财经类图书的读者口味正在变化。"
+                    },
+                    {
+                        "chinese":  "他看书不看排行榜，只按自己的口味选择。",
+                        "pinyin":  "Tā kàn shū bú kàn páihángbǎng, zhǐ àn zìjǐ de kǒuwèi xuǎnzé.",
+                        "vietnamese":  "Anh ấy đọc sách không xem bảng xếp hạng, chỉ chọn theo thị hiếu của mình.",
+                        "answer":  "他看书不看排行榜，只按自己的口味选择。"
+                    },
+                    {
+                        "chinese":  "这部科幻作品不太符合大众口味。",
+                        "pinyin":  "Zhè bù kēhuàn zuòpǐn bú tài fúhé dàzhòng kǒuwèi.",
+                        "vietnamese":  "Tác phẩm khoa học viễn tưởng này không phù hợp thị hiếu đại chúng lắm.",
+                        "answer":  "这部科幻作品不太符合大众口味。"
+                    },
+                    {
+                        "chinese":  "口味可以改变，观念也会慢慢变化。",
+                        "pinyin":  "Kǒuwèi kěyǐ gǎibiàn, guānniàn yě huì mànman biànhuà.",
+                        "vietnamese":  "Thị hiếu có thể thay đổi, quan niệm cũng sẽ dần thay đổi.",
+                        "answer":  "口味可以改变，观念也会慢慢变化。"
+                    },
+                    {
+                        "chinese":  "如果只看口味，不看内容深度，就容易走偏。",
+                        "pinyin":  "Rúguǒ zhǐ kàn kǒuwèi, bú kàn nèiróng shēndù, jiù róngyì zǒu piān.",
+                        "vietnamese":  "Nếu chỉ nhìn thị hiếu mà không nhìn chiều sâu nội dung thì dễ lệch hướng.",
+                        "answer":  "如果只看口味，不看内容深度，就容易走偏。"
+                    },
+                    {
+                        "chinese":  "童话书的口味不光属于孩子，也属于成年人。",
+                        "pinyin":  "Tónghuà shū de kǒuwèi bùguāng shǔyú háizi, yě shǔyú chéngnián rén.",
+                        "vietnamese":  "Thị hiếu truyện thiếu nhi không chỉ thuộc về trẻ em mà cũng thuộc về người trưởng thành.",
+                        "answer":  "童话书的口味不光属于孩子，也属于成年人。"
+                    },
+                    {
+                        "chinese":  "这本名著影响了几代读者。",
+                        "pinyin":  "Zhè běn míngzhù yǐngxiǎng le jǐ dài dúzhě.",
+                        "vietnamese":  "Danh tác này đã ảnh hưởng mấy thế hệ độc giả.",
+                        "answer":  "这本名著影响了几代读者。"
+                    },
+                    {
+                        "chinese":  "名著不一定一开始就畅销。",
+                        "pinyin":  "Míngzhù bù yídìng yì kāishǐ jiù chàngxiāo.",
+                        "vietnamese":  "Danh tác không nhất định ngay từ đầu đã bán chạy.",
+                        "answer":  "名著不一定一开始就畅销。"
+                    },
+                    {
+                        "chinese":  "读名著可以帮助我们理解不同观念。",
+                        "pinyin":  "Dú míngzhù kěyǐ bāngzhù wǒmen lǐjiě bùtóng guānniàn.",
+                        "vietnamese":  "Đọc danh tác có thể giúp chúng ta hiểu các quan niệm khác nhau.",
+                        "answer":  "读名著可以帮助我们理解不同观念。"
+                    },
+                    {
+                        "chinese":  "他每个月都会读一本世界名著。",
+                        "pinyin":  "Tā měi ge yuè dōu huì dú yì běn shìjiè míngzhù.",
+                        "vietnamese":  "Mỗi tháng anh ấy đều đọc một danh tác thế giới.",
+                        "answer":  "他每个月都会读一本世界名著。"
+                    },
+                    {
+                        "chinese":  "有些名著语言不通俗，但思想很深。",
+                        "pinyin":  "Yǒuxiē míngzhù yǔyán bù tōngsú, dàn sīxiǎng hěn shēn.",
+                        "vietnamese":  "Một số danh tác ngôn ngữ không phổ thông nhưng tư tưởng rất sâu.",
+                        "answer":  "有些名著语言不通俗，但思想很深。"
+                    },
+                    {
+                        "chinese":  "出版社推出了成人版名著导读。",
+                        "pinyin":  "Chūbǎnshè tuīchū le chéngrén bǎn míngzhù dǎodú.",
+                        "vietnamese":  "Nhà xuất bản ra mắt bản hướng dẫn đọc danh tác dành cho người lớn.",
+                        "answer":  "出版社推出了成人版名著导读。"
+                    },
+                    {
+                        "chinese":  "排行榜上的畅销书不一定能成为名著。",
+                        "pinyin":  "Páihángbǎng shàng de chàngxiāoshū bù yídìng néng chéngwéi míngzhù.",
+                        "vietnamese":  "Sách bán chạy trên bảng xếp hạng không nhất định có thể trở thành danh tác.",
+                        "answer":  "排行榜上的畅销书不一定能成为名著。"
+                    },
+                    {
+                        "chinese":  "名著的价值不光在故事，也在思想。",
+                        "pinyin":  "Míngzhù de jiàzhí bùguāng zài gùshi, yě zài sīxiǎng.",
+                        "vietnamese":  "Giá trị của danh tác không chỉ nằm ở câu chuyện mà còn ở tư tưởng.",
+                        "answer":  "名著的价值不光在故事，也在思想。"
+                    },
+                    {
+                        "chinese":  "他以前只看财经书，现在也开始读名著。",
+                        "pinyin":  "Tā yǐqián zhǐ kàn cáijīng shū, xiànzài yě kāishǐ dú míngzhù.",
+                        "vietnamese":  "Trước đây anh ấy chỉ đọc sách tài chính kinh tế, bây giờ cũng bắt đầu đọc danh tác.",
+                        "answer":  "他以前只看财经书，现在也开始读名著。"
+                    },
+                    {
+                        "chinese":  "如果只迎合口味，作品很难有名著气质。",
+                        "pinyin":  "Rúguǒ zhǐ yínghé kǒuwèi, zuòpǐn hěn nán yǒu míngzhù qìzhì.",
+                        "vietnamese":  "Nếu chỉ chiều theo thị hiếu, tác phẩm rất khó có khí chất danh tác.",
+                        "answer":  "如果只迎合口味，作品很难有名著气质。"
+                    },
+                    {
+                        "chinese":  "年轻人的消费观念正在改变。",
+                        "pinyin":  "Niánqīng rén de xiāofèi guānniàn zhèngzài gǎibiàn.",
+                        "vietnamese":  "Quan niệm tiêu dùng của người trẻ đang thay đổi.",
+                        "answer":  "年轻人的消费观念正在改变。"
+                    },
+                    {
+                        "chinese":  "理财首先要改变自己的金钱观念。",
+                        "pinyin":  "Lǐcái shǒuxiān yào gǎibiàn zìjǐ de jīnqián guānniàn.",
+                        "vietnamese":  "Quản lý tài chính trước tiên phải thay đổi quan niệm tiền bạc của mình.",
+                        "answer":  "理财首先要改变自己的金钱观念。"
+                    },
+                    {
+                        "chinese":  "这本书给了我新的财富观念。",
+                        "pinyin":  "Zhè běn shū gěi le wǒ xīn de cáifù guānniàn.",
+                        "vietnamese":  "Cuốn sách này cho tôi quan niệm mới về tài sản.",
+                        "answer":  "这本书给了我新的财富观念。"
+                    },
+                    {
+                        "chinese":  "他的观念很传统，不太接受科幻作品。",
+                        "pinyin":  "Tā de guānniàn hěn chuántǒng, bú tài jiēshòu kēhuàn zuòpǐn.",
+                        "vietnamese":  "Quan niệm của anh ấy rất truyền thống, không chấp nhận tác phẩm khoa học viễn tưởng lắm.",
+                        "answer":  "他的观念很传统，不太接受科幻作品。"
+                    },
+                    {
+                        "chinese":  "不同年龄的人，对金钱有不同观念。",
+                        "pinyin":  "Bùtóng niánlíng de rén, duì jīnqián yǒu bùtóng guānniàn.",
+                        "vietnamese":  "Người ở độ tuổi khác nhau có quan niệm khác nhau về tiền bạc.",
+                        "answer":  "不同年龄的人，对金钱有不同观念。"
+                    },
+                    {
+                        "chinese":  "读名著能帮助我们形成更成熟的观念。",
+                        "pinyin":  "Dú míngzhù néng bāngzhù wǒmen xíngchéng gèng chéngshú de guānniàn.",
+                        "vietnamese":  "Đọc danh tác có thể giúp chúng ta hình thành quan niệm trưởng thành hơn.",
+                        "answer":  "读名著能帮助我们形成更成熟的观念。"
+                    },
+                    {
+                        "chinese":  "出版社不能只迎合旧观念，也要接受新想法。",
+                        "pinyin":  "Chūbǎnshè bù néng zhǐ yínghé jiù guānniàn, yě yào jiēshòu xīn xiǎngfǎ.",
+                        "vietnamese":  "Nhà xuất bản không thể chỉ chiều theo quan niệm cũ mà cũng phải tiếp nhận ý tưởng mới.",
+                        "answer":  "出版社不能只迎合旧观念，也要接受新想法。"
+                    },
+                    {
+                        "chinese":  "观念一旦改变，选择也会跟着改变。",
+                        "pinyin":  "Guānniàn yídàn gǎibiàn, xuǎnzé yě huì gēnzhe gǎibiàn.",
+                        "vietnamese":  "Một khi quan niệm thay đổi, lựa chọn cũng sẽ thay đổi theo.",
+                        "answer":  "观念一旦改变，选择也会跟着改变。"
+                    },
+                    {
+                        "chinese":  "财经报道会影响很多人的投资观念。",
+                        "pinyin":  "Cáijīng bàodào huì yǐngxiǎng hěn duō rén de tóuzī guānniàn.",
+                        "vietnamese":  "Bản tin tài chính kinh tế sẽ ảnh hưởng đến quan niệm đầu tư của nhiều người.",
+                        "answer":  "财经报道会影响很多人的投资观念。"
+                    },
+                    {
+                        "chinese":  "他不想只顾财富，也想建立正确的人生观念。",
+                        "pinyin":  "Tā bù xiǎng zhǐgù cáifù, yě xiǎng jiànlì zhèngquè de rénshēng guānniàn.",
+                        "vietnamese":  "Anh ấy không muốn chỉ lo tài sản mà cũng muốn xây dựng quan niệm sống đúng đắn.",
+                        "answer":  "他不想只顾财富，也想建立正确的人生观念。"
+                    },
+                    {
+                        "chinese":  "学会理财以后，他不再胡乱花钱。",
+                        "pinyin":  "Xuéhuì lǐcái yǐhòu, tā bú zài húluàn huāqián.",
+                        "vietnamese":  "Sau khi học quản lý tài chính, anh ấy không còn tiêu tiền lung tung nữa.",
+                        "answer":  "学会理财以后，他不再胡乱花钱。"
+                    },
+                    {
+                        "chinese":  "理财不是只顾赚钱，也要控制风险。",
+                        "pinyin":  "Lǐcái bú shì zhǐgù zhuànqián, yě yào kòngzhì fēngxiǎn.",
+                        "vietnamese":  "Quản lý tài chính không phải chỉ lo kiếm tiền mà cũng phải kiểm soát rủi ro.",
+                        "answer":  "理财不是只顾赚钱，也要控制风险。"
+                    },
+                    {
+                        "chinese":  "这本理财书很适合刚工作的年轻人。",
+                        "pinyin":  "Zhè běn lǐcái shū hěn shìhé gāng gōngzuò de niánqīng rén.",
+                        "vietnamese":  "Cuốn sách quản lý tài chính này rất phù hợp người trẻ mới đi làm.",
+                        "answer":  "这本理财书很适合刚工作的年轻人。"
+                    },
+                    {
+                        "chinese":  "他每个月都会看一些理财文章。",
+                        "pinyin":  "Tā měi ge yuè dōu huì kàn yìxiē lǐcái wénzhāng.",
+                        "vietnamese":  "Mỗi tháng anh ấy đều xem một số bài viết quản lý tài chính.",
+                        "answer":  "他每个月都会看一些理财文章。"
+                    },
+                    {
+                        "chinese":  "理财的关键是了解自己的收入和支出。",
+                        "pinyin":  "Lǐcái de guānjiàn shì liǎojiě zìjǐ de shōurù hé zhīchū.",
+                        "vietnamese":  "Mấu chốt của quản lý tài chính là hiểu thu nhập và chi tiêu của mình.",
+                        "answer":  "理财的关键是了解自己的收入和支出。"
+                    },
+                    {
+                        "chinese":  "父母从小就教他基本理财观念。",
+                        "pinyin":  "Fùmǔ cóng xiǎo jiù jiāo tā jīběn lǐcái guānniàn.",
+                        "vietnamese":  "Cha mẹ từ nhỏ đã dạy anh ấy quan niệm quản lý tài chính cơ bản.",
+                        "answer":  "父母从小就教他基本理财观念。"
+                    },
+                    {
+                        "chinese":  "理财高手不一定每天看排行榜。",
+                        "pinyin":  "Lǐcái gāoshǒu bù yídìng měitiān kàn páihángbǎng.",
+                        "vietnamese":  "Cao thủ quản lý tài chính không nhất định ngày nào cũng xem bảng xếp hạng.",
+                        "answer":  "理财高手不一定每天看排行榜。"
+                    },
+                    {
+                        "chinese":  "这本畅销理财书把复杂问题讲得通俗易懂。",
+                        "pinyin":  "Zhè běn chàngxiāo lǐcái shū bǎ fùzá wèntí jiǎng de tōngsú yì dǒng.",
+                        "vietnamese":  "Cuốn sách quản lý tài chính bán chạy này giảng vấn đề phức tạp rất dễ hiểu.",
+                        "answer":  "这本畅销理财书把复杂问题讲得通俗易懂。"
+                    },
+                    {
+                        "chinese":  "如果没有金钱观念，理财就很难有效。",
+                        "pinyin":  "Rúguǒ méiyǒu jīnqián guānniàn, lǐcái jiù hěn nán yǒuxiào.",
+                        "vietnamese":  "Nếu không có quan niệm tiền bạc, quản lý tài chính sẽ rất khó hiệu quả.",
+                        "answer":  "如果没有金钱观念，理财就很难有效。"
+                    },
+                    {
+                        "chinese":  "学理财不是为了成为财富高手，而是为了生活更稳定。",
+                        "pinyin":  "Xué lǐcái bú shì wèile chéngwéi cáifù gāoshǒu, ér shì wèile shēnghuó gèng wěndìng.",
+                        "vietnamese":  "Học quản lý tài chính không phải để trở thành cao thủ tài sản, mà là để cuộc sống ổn định hơn.",
+                        "answer":  "学理财不是为了成为财富高手，而是为了生活更稳定。"
+                    },
+                    {
+                        "chinese":  "他是我们班的理财高手。",
+                        "pinyin":  "Tā shì wǒmen bān de lǐcái gāoshǒu.",
+                        "vietnamese":  "Anh ấy là cao thủ quản lý tài chính của lớp chúng tôi.",
+                        "answer":  "他是我们班的理财高手。"
+                    },
+                    {
+                        "chinese":  "高手不光有经验，也懂得控制风险。",
+                        "pinyin":  "Gāoshǒu bùguāng yǒu jīngyàn, yě dǒngde kòngzhì fēngxiǎn.",
+                        "vietnamese":  "Cao thủ không chỉ có kinh nghiệm mà còn biết kiểm soát rủi ro.",
+                        "answer":  "高手不光有经验，也懂得控制风险。"
+                    },
+                    {
+                        "chinese":  "真正的高手不会轻易相信所谓的发财秘诀。",
+                        "pinyin":  "Zhēnzhèng de gāoshǒu bú huì qīngyì xiāngxìn suǒwèi de fācái mìjué.",
+                        "vietnamese":  "Cao thủ thật sự sẽ không dễ dàng tin cái gọi là bí quyết phát tài.",
+                        "answer":  "真正的高手不会轻易相信所谓的发财秘诀。"
+                    },
+                    {
+                        "chinese":  "他在财经行业工作多年，算是一个高手。",
+                        "pinyin":  "Tā zài cáijīng hángyè gōngzuò duō nián, suànshì yí ge gāoshǒu.",
+                        "vietnamese":  "Anh ấy làm việc trong ngành tài chính kinh tế nhiều năm, coi như là một cao thủ.",
+                        "answer":  "他在财经行业工作多年，算是一个高手。"
+                    },
+                    {
+                        "chinese":  "学习高手通常都有清楚的目标和方法。",
+                        "pinyin":  "Xuéxí gāoshǒu tōngcháng dōu yǒu qīngchu de mùbiāo hé fāngfǎ.",
+                        "vietnamese":  "Cao thủ học tập thường đều có mục tiêu và phương pháp rõ ràng.",
+                        "answer":  "学习高手通常都有清楚的目标和方法。"
+                    },
+                    {
+                        "chinese":  "排行榜上的作者不一定都是写作高手。",
+                        "pinyin":  "Páihángbǎng shàng de zuòzhě bù yídìng dōu shì xiězuò gāoshǒu.",
+                        "vietnamese":  "Tác giả trên bảng xếp hạng không nhất định đều là cao thủ viết lách.",
+                        "answer":  "排行榜上的作者不一定都是写作高手。"
+                    },
+                    {
+                        "chinese":  "高手也需要不断学习新的观念。",
+                        "pinyin":  "Gāoshǒu yě xūyào búduàn xuéxí xīn de guānniàn.",
+                        "vietnamese":  "Cao thủ cũng cần không ngừng học quan niệm mới.",
+                        "answer":  "高手也需要不断学习新的观念。"
+                    },
+                    {
+                        "chinese":  "他不是高手，但愿意长期积累经验。",
+                        "pinyin":  "Tā bú shì gāoshǒu, dàn yuànyì chángqī jīlěi jīngyàn.",
+                        "vietnamese":  "Anh ấy không phải cao thủ nhưng sẵn sàng tích lũy kinh nghiệm lâu dài.",
+                        "answer":  "他不是高手，但愿意长期积累经验。"
+                    },
+                    {
+                        "chinese":  "这本书采访了几位财富管理高手。",
+                        "pinyin":  "Zhè běn shū cǎifǎng le jǐ wèi cáifù guǎnlǐ gāoshǒu.",
+                        "vietnamese":  "Cuốn sách này phỏng vấn vài cao thủ quản lý tài sản.",
+                        "answer":  "这本书采访了几位财富管理高手。"
+                    },
+                    {
+                        "chinese":  "成为高手以前，起码要先打好基础。",
+                        "pinyin":  "Chéngwéi gāoshǒu yǐqián, qǐmǎ yào xiān dǎ hǎo jīchǔ.",
+                        "vietnamese":  "Trước khi trở thành cao thủ, ít nhất phải xây nền tảng tốt trước.",
+                        "answer":  "成为高手以前，起码要先打好基础。"
+                    },
+                    {
+                        "chinese":  "健康是比金钱更重要的财富。",
+                        "pinyin":  "Jiànkāng shì bǐ jīnqián gèng zhòngyào de cáifù.",
+                        "vietnamese":  "Sức khỏe là tài sản quan trọng hơn tiền bạc.",
+                        "answer":  "健康是比金钱更重要的财富。"
+                    },
+                    {
+                        "chinese":  "这本书改变了我对财富的看法。",
+                        "pinyin":  "Zhè běn shū gǎibiàn le wǒ duì cáifù de kànfǎ.",
+                        "vietnamese":  "Cuốn sách này thay đổi cách nhìn của tôi về tài sản.",
+                        "answer":  "这本书改变了我对财富的看法。"
+                    },
+                    {
+                        "chinese":  "财富不只是银行里的数字。",
+                        "pinyin":  "Cáifù bù zhǐshì yínháng lǐ de shùzì.",
+                        "vietnamese":  "Tài sản không chỉ là con số trong ngân hàng.",
+                        "answer":  "财富不只是银行里的数字。"
+                    },
+                    {
+                        "chinese":  "他只顾追求财富，却忽略了家人。",
+                        "pinyin":  "Tā zhǐgù zhuīqiú cáifù, què hūlüè le jiārén.",
+                        "vietnamese":  "Anh ấy chỉ lo theo đuổi tài sản mà bỏ qua người nhà.",
+                        "answer":  "他只顾追求财富，却忽略了家人。"
+                    },
+                    {
+                        "chinese":  "正确的财富观念需要从小培养。",
+                        "pinyin":  "Zhèngquè de cáifù guānniàn xūyào cóng xiǎo péiyǎng.",
+                        "vietnamese":  "Quan niệm tài sản đúng đắn cần được nuôi dưỡng từ nhỏ.",
+                        "answer":  "正确的财富观念需要从小培养。"
+                    },
+                    {
+                        "chinese":  "理财的目的不是炫耀财富，而是管理生活。",
+                        "pinyin":  "Lǐcái de mùdì bú shì xuànyào cáifù, ér shì guǎnlǐ shēnghuó.",
+                        "vietnamese":  "Mục đích của quản lý tài chính không phải khoe của cải mà là quản lý cuộc sống.",
+                        "answer":  "理财的目的不是炫耀财富，而是管理生活。"
+                    },
+                    {
+                        "chinese":  "他通过写畅销书积累了很多财富。",
+                        "pinyin":  "Tā tōngguò xiě chàngxiāoshū jīlěi le hěn duō cáifù.",
+                        "vietnamese":  "Anh ấy thông qua viết sách bán chạy tích lũy được nhiều tài sản.",
+                        "answer":  "他通过写畅销书积累了很多财富。"
+                    },
+                    {
+                        "chinese":  "财富越多，责任也可能越大。",
+                        "pinyin":  "Cáifù yuè duō, zérèn yě kěnéng yuè dà.",
+                        "vietnamese":  "Tài sản càng nhiều, trách nhiệm cũng có thể càng lớn.",
+                        "answer":  "财富越多，责任也可能越大。"
+                    },
+                    {
+                        "chinese":  "这篇财经报道讨论了财富分配问题。",
+                        "pinyin":  "Zhè piān cáijīng bàodào tǎolùn le cáifù fēnpèi wèntí.",
+                        "vietnamese":  "Bài báo tài chính kinh tế này thảo luận vấn đề phân phối tài sản.",
+                        "answer":  "这篇财经报道讨论了财富分配问题。"
+                    },
+                    {
+                        "chinese":  "真正的财富包括知识、健康和时间。",
+                        "pinyin":  "Zhēnzhèng de cáifù bāokuò zhīshi, jiànkāng hé shíjiān.",
+                        "vietnamese":  "Tài sản thật sự bao gồm kiến thức, sức khỏe và thời gian.",
+                        "answer":  "真正的财富包括知识、健康和时间。"
+                    },
+                    {
+                        "chinese":  "成人应该学会自己管理时间和金钱。",
+                        "pinyin":  "Chéngrén yīnggāi xuéhuì zìjǐ guǎnlǐ shíjiān hé jīnqián.",
+                        "vietnamese":  "Người trưởng thành nên học cách tự quản lý thời gian và tiền bạc.",
+                        "answer":  "成人应该学会自己管理时间和金钱。"
+                    },
+                    {
+                        "chinese":  "这本童话其实更适合成人阅读。",
+                        "pinyin":  "Zhè běn tónghuà qíshí gèng shìhé chéngrén yuèdú.",
+                        "vietnamese":  "Truyện thiếu nhi này thật ra phù hợp với người lớn đọc hơn.",
+                        "answer":  "这本童话其实更适合成人阅读。"
+                    },
+                    {
+                        "chinese":  "成人的世界不光有工作，也应该有梦想。",
+                        "pinyin":  "Chéngrén de shìjiè bùguāng yǒu gōngzuò, yě yīnggāi yǒu mèngxiǎng.",
+                        "vietnamese":  "Thế giới của người trưởng thành không chỉ có công việc mà cũng nên có ước mơ.",
+                        "answer":  "成人的世界不光有工作，也应该有梦想。"
+                    },
+                    {
+                        "chinese":  "这家出版社推出了成人版科幻小说。",
+                        "pinyin":  "Zhè jiā chūbǎnshè tuīchū le chéngrén bǎn kēhuàn xiǎoshuō.",
+                        "vietnamese":  "Nhà xuất bản này ra mắt bản tiểu thuyết khoa học viễn tưởng dành cho người lớn.",
+                        "answer":  "这家出版社推出了成人版科幻小说。"
+                    },
+                    {
+                        "chinese":  "成人也需要通过阅读改变自己的观念。",
+                        "pinyin":  "Chéngrén yě xūyào tōngguò yuèdú gǎibiàn zìjǐ de guānniàn.",
+                        "vietnamese":  "Người trưởng thành cũng cần thông qua đọc sách để thay đổi quan niệm của mình.",
+                        "answer":  "成人也需要通过阅读改变自己的观念。"
+                    },
+                    {
+                        "chinese":  "很多成人开始关注财经和理财知识。",
+                        "pinyin":  "Hěn duō chéngrén kāishǐ guānzhù cáijīng hé lǐcái zhīshi.",
+                        "vietnamese":  "Nhiều người lớn bắt đầu chú ý kiến thức tài chính kinh tế và quản lý tài chính.",
+                        "answer":  "很多成人开始关注财经和理财知识。"
+                    },
+                    {
+                        "chinese":  "成人读名著，往往会有不同的理解。",
+                        "pinyin":  "Chéngrén dú míngzhù, wǎngwǎng huì yǒu bùtóng de lǐjiě.",
+                        "vietnamese":  "Người trưởng thành đọc danh tác thường sẽ có cách hiểu khác.",
+                        "answer":  "成人读名著，往往会有不同的理解。"
+                    },
+                    {
+                        "chinese":  "这本书不光写给孩子，也写给成人。",
+                        "pinyin":  "Zhè běn shū bùguāng xiě gěi háizi, yě xiě gěi chéngrén.",
+                        "vietnamese":  "Cuốn sách này không chỉ viết cho trẻ em mà cũng viết cho người lớn.",
+                        "answer":  "这本书不光写给孩子，也写给成人。"
+                    },
+                    {
+                        "chinese":  "成人需要面对现实，但不能失去想象力。",
+                        "pinyin":  "Chéngrén xūyào miànduì xiànshí, dàn bù néng shīqù xiǎngxiànglì.",
+                        "vietnamese":  "Người trưởng thành cần đối mặt hiện thực nhưng không thể mất trí tưởng tượng.",
+                        "answer":  "成人需要面对现实，但不能失去想象力。"
+                    },
+                    {
+                        "chinese":  "他成为成人以后，才真正理解父母的付出。",
+                        "pinyin":  "Tā chéngwéi chéngrén yǐhòu, cái zhēnzhèng lǐjiě fùmǔ de fùchū.",
+                        "vietnamese":  "Sau khi trở thành người lớn, anh ấy mới thật sự hiểu sự cống hiến của cha mẹ.",
+                        "answer":  "他成为成人以后，才真正理解父母的付出。"
+                    },
+                    {
+                        "chinese":  "这本书有儿童版和成人版。",
+                        "pinyin":  "Zhè běn shū yǒu értóng bǎn hé chéngrén bǎn.",
+                        "vietnamese":  "Cuốn sách này có bản trẻ em và bản người lớn.",
+                        "answer":  "这本书有儿童版和成人版。"
+                    },
+                    {
+                        "chinese":  "新版名著加入了很多注释。",
+                        "pinyin":  "Xīn bǎn míngzhù jiārù le hěn duō zhùshì.",
+                        "vietnamese":  "Bản danh tác mới thêm rất nhiều chú thích.",
+                        "answer":  "新版名著加入了很多注释。"
+                    },
+                    {
+                        "chinese":  "这部电影的科幻版很受年轻人欢迎。",
+                        "pinyin":  "Zhè bù diànyǐng de kēhuàn bǎn hěn shòu niánqīng rén huānyíng.",
+                        "vietnamese":  "Bản khoa học viễn tưởng của bộ phim này rất được người trẻ yêu thích.",
+                        "answer":  "这部电影的科幻版很受年轻人欢迎。"
+                    },
+                    {
+                        "chinese":  "出版社准备推出通俗易懂版财经书。",
+                        "pinyin":  "Chūbǎnshè zhǔnbèi tuīchū tōngsú yì dǒng bǎn cáijīng shū.",
+                        "vietnamese":  "Nhà xuất bản chuẩn bị ra mắt bản sách tài chính kinh tế dễ hiểu.",
+                        "answer":  "出版社准备推出通俗易懂版财经书。"
+                    },
+                    {
+                        "chinese":  "这个版本比原版更适合初学者。",
+                        "pinyin":  "Zhège bǎnběn bǐ yuánbǎn gèng shìhé chūxuézhě.",
+                        "vietnamese":  "Phiên bản này phù hợp với người mới học hơn bản gốc.",
+                        "answer":  "这个版本比原版更适合初学者。"
+                    },
+                    {
+                        "chinese":  "他买的是精装版，不是普通版。",
+                        "pinyin":  "Tā mǎi de shì jīngzhuāng bǎn, bú shì pǔtōng bǎn.",
+                        "vietnamese":  "Anh ấy mua bản bìa cứng, không phải bản thường.",
+                        "answer":  "他买的是精装版，不是普通版。"
+                    },
+                    {
+                        "chinese":  "成人版童话不一定比儿童版更难懂。",
+                        "pinyin":  "Chéngrén bǎn tónghuà bù yídìng bǐ értóng bǎn gèng nán dǒng.",
+                        "vietnamese":  "Bản truyện thiếu nhi người lớn chưa chắc khó hiểu hơn bản trẻ em.",
+                        "answer":  "成人版童话不一定比儿童版更难懂。"
+                    },
+                    {
+                        "chinese":  "这本理财书的电子版很便宜。",
+                        "pinyin":  "Zhè běn lǐcái shū de diànzǐ bǎn hěn piányi.",
+                        "vietnamese":  "Bản điện tử của sách quản lý tài chính này rất rẻ.",
+                        "answer":  "这本理财书的电子版很便宜。"
+                    },
+                    {
+                        "chinese":  "出版社说新版下个月上市。",
+                        "pinyin":  "Chūbǎnshè shuō xīn bǎn xià ge yuè shàngshì.",
+                        "vietnamese":  "Nhà xuất bản nói bản mới tháng sau ra mắt.",
+                        "answer":  "出版社说新版下个月上市。"
+                    },
+                    {
+                        "chinese":  "如果预算有限，可以先买电子版。",
+                        "pinyin":  "Rúguǒ yùsuàn yǒuxiàn, kěyǐ xiān mǎi diànzǐ bǎn.",
+                        "vietnamese":  "Nếu ngân sách có hạn, có thể mua bản điện tử trước.",
+                        "answer":  "如果预算有限，可以先买电子版。"
+                    },
+                    {
+                        "chinese":  "新闻报道说这本书销量很高。",
+                        "pinyin":  "Xīnwén bàodào shuō zhè běn shū xiāoliàng hěn gāo.",
+                        "vietnamese":  "Tin tức đưa tin rằng lượng bán cuốn sách này rất cao.",
+                        "answer":  "新闻报道说这本书销量很高。"
+                    },
+                    {
+                        "chinese":  "财经报道应该尽量准确客观。",
+                        "pinyin":  "Cáijīng bàodào yīnggāi jìnliàng zhǔnquè kèguān.",
+                        "vietnamese":  "Bản tin tài chính kinh tế nên cố gắng chính xác khách quan.",
+                        "answer":  "财经报道应该尽量准确客观。"
+                    },
+                    {
+                        "chinese":  "据报道，这家出版社今年推出了很多新书。",
+                        "pinyin":  "Jù bàodào, zhè jiā chūbǎnshè jīnnián tuīchū le hěn duō xīnshū.",
+                        "vietnamese":  "Theo đưa tin, nhà xuất bản này năm nay ra mắt nhiều sách mới.",
+                        "answer":  "据报道，这家出版社今年推出了很多新书。"
+                    },
+                    {
+                        "chinese":  "这篇报道不光谈金钱，也谈财富观念。",
+                        "pinyin":  "Zhè piān bàodào bùguāng tán jīnqián, yě tán cáifù guānniàn.",
+                        "vietnamese":  "Bài báo này không chỉ bàn về tiền bạc mà còn bàn về quan niệm tài sản.",
+                        "answer":  "这篇报道不光谈金钱，也谈财富观念。"
+                    },
+                    {
+                        "chinese":  "报道里提到，这本书进入了畅销排行榜。",
+                        "pinyin":  "Bàodào lǐ tí dào, zhè běn shū jìnrù le chàngxiāo páihángbǎng.",
+                        "vietnamese":  "Trong bài đưa tin có nhắc cuốn sách này đã vào bảng xếp hạng bán chạy.",
+                        "answer":  "报道里提到，这本书进入了畅销排行榜。"
+                    },
+                    {
+                        "chinese":  "媒体报道有时会迎合大众口味。",
+                        "pinyin":  "Méitǐ bàodào yǒu shí huì yínghé dàzhòng kǒuwèi.",
+                        "vietnamese":  "Truyền thông đưa tin đôi khi sẽ chiều theo thị hiếu đại chúng.",
+                        "answer":  "媒体报道有时会迎合大众口味。"
+                    },
+                    {
+                        "chinese":  "这篇报道写得通俗易懂，读者反应很好。",
+                        "pinyin":  "Zhè piān bàodào xiě de tōngsú yì dǒng, dúzhě fǎnyìng hěn hǎo.",
+                        "vietnamese":  "Bài đưa tin này viết dễ hiểu, phản ứng độc giả rất tốt.",
+                        "answer":  "这篇报道写得通俗易懂，读者反应很好。"
+                    },
+                    {
+                        "chinese":  "他只顾看报道，没有亲自查资料。",
+                        "pinyin":  "Tā zhǐgù kàn bàodào, méiyǒu qīnzì chá zīliào.",
+                        "vietnamese":  "Anh ấy chỉ lo xem tin tức, không tự tra tài liệu.",
+                        "answer":  "他只顾看报道，没有亲自查资料。"
+                    },
+                    {
+                        "chinese":  "关于这本名著的新报道引起了很多讨论。",
+                        "pinyin":  "Guānyú zhè běn míngzhù de xīn bàodào yǐnqǐ le hěn duō tǎolùn.",
+                        "vietnamese":  "Bài đưa tin mới về danh tác này đã gây ra nhiều thảo luận.",
+                        "answer":  "关于这本名著的新报道引起了很多讨论。"
+                    },
+                    {
+                        "chinese":  "报道真实与否，不能只看标题。",
+                        "pinyin":  "Bàodào zhēnshí yǔ fǒu, bù néng zhǐ kàn biāotí.",
+                        "vietnamese":  "Bài đưa tin có thật hay không không thể chỉ xem tiêu đề.",
+                        "answer":  "报道真实与否，不能只看标题。"
+                    },
+                    {
+                        "chinese":  "金钱很重要，但不是生活的全部。",
+                        "pinyin":  "Jīnqián hěn zhòngyào, dàn bú shì shēnghuó de quánbù.",
+                        "vietnamese":  "Tiền bạc rất quan trọng nhưng không phải toàn bộ cuộc sống.",
+                        "answer":  "金钱很重要，但不是生活的全部。"
+                    },
+                    {
+                        "chinese":  "他的金钱观念比以前成熟多了。",
+                        "pinyin":  "Tā de jīnqián guānniàn bǐ yǐqián chéngshú duō le.",
+                        "vietnamese":  "Quan niệm tiền bạc của anh ấy trưởng thành hơn trước nhiều.",
+                        "answer":  "他的金钱观念比以前成熟多了。"
+                    },
+                    {
+                        "chinese":  "理财首先要学会管理金钱。",
+                        "pinyin":  "Lǐcái shǒuxiān yào xuéhuì guǎnlǐ jīnqián.",
+                        "vietnamese":  "Quản lý tài chính trước tiên phải học cách quản lý tiền bạc.",
+                        "answer":  "理财首先要学会管理金钱。"
+                    },
+                    {
+                        "chinese":  "只顾金钱的人，很难感受到阅读的乐趣。",
+                        "pinyin":  "Zhǐgù jīnqián de rén, hěn nán gǎnshòu dào yuèdú de lèqù.",
+                        "vietnamese":  "Người chỉ lo tiền bạc rất khó cảm nhận niềm vui đọc sách.",
+                        "answer":  "只顾金钱的人，很难感受到阅读的乐趣。"
+                    },
+                    {
+                        "chinese":  "这本书讨论了金钱和幸福的关系。",
+                        "pinyin":  "Zhè běn shū tǎolùn le jīnqián hé xìngfú de guānxi.",
+                        "vietnamese":  "Cuốn sách này thảo luận quan hệ giữa tiền bạc và hạnh phúc.",
+                        "answer":  "这本书讨论了金钱和幸福的关系。"
+                    },
+                    {
+                        "chinese":  "金钱可以带来方便，却不能买到一切。",
+                        "pinyin":  "Jīnqián kěyǐ dài lái fāngbiàn, què bù néng mǎi dào yíqiè.",
+                        "vietnamese":  "Tiền bạc có thể mang lại tiện lợi nhưng không thể mua được tất cả.",
+                        "answer":  "金钱可以带来方便，却不能买到一切。"
+                    },
+                    {
+                        "chinese":  "父母教他不要轻易被金钱吸引。",
+                        "pinyin":  "Fùmǔ jiāo tā búyào qīngyì bèi jīnqián xīyǐn.",
+                        "vietnamese":  "Cha mẹ dạy anh ấy đừng dễ dàng bị tiền bạc thu hút.",
+                        "answer":  "父母教他不要轻易被金钱吸引。"
+                    },
+                    {
+                        "chinese":  "金钱只是财富的一部分，不是全部。",
+                        "pinyin":  "Jīnqián zhǐshì cáifù de yí bùfen, bú shì quánbù.",
+                        "vietnamese":  "Tiền bạc chỉ là một phần của tài sản, không phải tất cả.",
+                        "answer":  "金钱只是财富的一部分，不是全部。"
+                    },
+                    {
+                        "chinese":  "这篇财经报道改变了他对金钱的看法。",
+                        "pinyin":  "Zhè piān cáijīng bàodào gǎibiàn le tā duì jīnqián de kànfǎ.",
+                        "vietnamese":  "Bài báo tài chính kinh tế này thay đổi cách nhìn của anh ấy về tiền bạc.",
+                        "answer":  "这篇财经报道改变了他对金钱的看法。"
+                    },
+                    {
+                        "chinese":  "如果只用金钱衡量成功，就太简单了。",
+                        "pinyin":  "Rúguǒ zhǐ yòng jīnqián héngliáng chénggōng, jiù tài jiǎndān le.",
+                        "vietnamese":  "Nếu chỉ dùng tiền bạc để đo thành công thì quá đơn giản.",
+                        "answer":  "如果只用金钱衡量成功，就太简单了。"
+                    },
+                    {
+                        "chinese":  "这本童话陪伴了我的童年。",
+                        "pinyin":  "Zhè běn tónghuà péibàn le wǒ de tóngnián.",
+                        "vietnamese":  "Truyện cổ tích này đã đồng hành với tuổi thơ của tôi.",
+                        "answer":  "这本童话陪伴了我的童年。"
+                    },
+                    {
+                        "chinese":  "童话不光写给孩子，也写给相信奇迹的人。",
+                        "pinyin":  "Tónghuà bùguāng xiě gěi háizi, yě xiě gěi xiāngxìn qíjì de rén.",
+                        "vietnamese":  "Truyện cổ tích không chỉ viết cho trẻ em mà còn viết cho người tin vào điều kỳ diệu.",
+                        "answer":  "童话不光写给孩子，也写给相信奇迹的人。"
+                    },
+                    {
+                        "chinese":  "成人读童话，往往会有不同的感受。",
+                        "pinyin":  "Chéngrén dú tónghuà, wǎngwǎng huì yǒu bùtóng de gǎnshòu.",
+                        "vietnamese":  "Người lớn đọc truyện cổ tích thường sẽ có cảm nhận khác.",
+                        "answer":  "成人读童话，往往会有不同的感受。"
+                    },
+                    {
+                        "chinese":  "这部童话被改成了电影版。",
+                        "pinyin":  "Zhè bù tónghuà bèi gǎi chéng le diànyǐng bǎn.",
+                        "vietnamese":  "Truyện cổ tích này đã được chuyển thể thành bản phim.",
+                        "answer":  "这部童话被改成了电影版。"
+                    },
+                    {
+                        "chinese":  "童话故事虽然简单，却有深刻的观念。",
+                        "pinyin":  "Tónghuà gùshi suīrán jiǎndān, què yǒu shēnkè de guānniàn.",
+                        "vietnamese":  "Câu chuyện cổ tích tuy đơn giản nhưng có quan niệm sâu sắc.",
+                        "answer":  "童话故事虽然简单，却有深刻的观念。"
+                    },
+                    {
+                        "chinese":  "出版社推出了一套经典童话名著。",
+                        "pinyin":  "Chūbǎnshè tuīchū le yí tào jīngdiǎn tónghuà míngzhù.",
+                        "vietnamese":  "Nhà xuất bản ra mắt một bộ danh tác truyện cổ tích kinh điển.",
+                        "answer":  "出版社推出了一套经典童话名著。"
+                    },
+                    {
+                        "chinese":  "有些童话看起来通俗易懂，其实很有哲理。",
+                        "pinyin":  "Yǒuxiē tónghuà kàn qǐlái tōngsú yì dǒng, qíshí hěn yǒu zhélǐ.",
+                        "vietnamese":  "Một số truyện cổ tích nhìn dễ hiểu, thật ra rất có triết lý.",
+                        "answer":  "有些童话看起来通俗易懂，其实很有哲理。"
+                    },
+                    {
+                        "chinese":  "他小时候最喜欢看关于奇迹的童话。",
+                        "pinyin":  "Tā xiǎoshíhou zuì xǐhuan kàn guānyú qíjì de tónghuà.",
+                        "vietnamese":  "Hồi nhỏ anh ấy thích nhất đọc truyện cổ tích về điều kỳ diệu.",
+                        "answer":  "他小时候最喜欢看关于奇迹的童话。"
+                    },
+                    {
+                        "chinese":  "童话的价值不在于真实，而在于启发。",
+                        "pinyin":  "Tónghuà de jiàzhí bú zài yú zhēnshí, ér zài yú qǐfā.",
+                        "vietnamese":  "Giá trị của truyện cổ tích không nằm ở sự thật mà ở sự gợi mở.",
+                        "answer":  "童话的价值不在于真实，而在于启发。"
+                    },
+                    {
+                        "chinese":  "这本童话进入排行榜以后，孩子们都想买。",
+                        "pinyin":  "Zhè běn tónghuà jìnrù páihángbǎng yǐhòu, háizimen dōu xiǎng mǎi.",
+                        "vietnamese":  "Sau khi truyện cổ tích này vào bảng xếp hạng, bọn trẻ đều muốn mua.",
+                        "answer":  "这本童话进入排行榜以后，孩子们都想买。"
+                    },
+                    {
+                        "chinese":  "他的成功不是运气，而是努力创造的奇迹。",
+                        "pinyin":  "Tā de chénggōng bú shì yùnqi, ér shì nǔlì chuàngzào de qíjì.",
+                        "vietnamese":  "Thành công của anh ấy không phải may mắn mà là kỳ tích do nỗ lực tạo ra.",
+                        "answer":  "他的成功不是运气，而是努力创造的奇迹。"
+                    },
+                    {
+                        "chinese":  "这个孩子居然活了下来，真是一个奇迹。",
+                        "pinyin":  "Zhège háizi jūrán huó le xiàlái, zhēn shì yí ge qíjì.",
+                        "vietnamese":  "Đứa trẻ này vậy mà sống sót, thật là một kỳ tích.",
+                        "answer":  "这个孩子居然活了下来，真是一个奇迹。"
+                    },
+                    {
+                        "chinese":  "童话里常常出现各种奇迹。",
+                        "pinyin":  "Tónghuà lǐ chángcháng chūxiàn gè zhǒng qíjì.",
+                        "vietnamese":  "Trong truyện cổ tích thường xuất hiện các loại điều kỳ diệu.",
+                        "answer":  "童话里常常出现各种奇迹。"
+                    },
+                    {
+                        "chinese":  "财富不会自己变成奇迹，关键是长期付出。",
+                        "pinyin":  "Cáifù bú huì zìjǐ biàn chéng qíjì, guānjiàn shì chángqī fùchū.",
+                        "vietnamese":  "Tài sản sẽ không tự biến thành kỳ tích, mấu chốt là nỗ lực lâu dài.",
+                        "answer":  "财富不会自己变成奇迹，关键是长期付出。"
+                    },
+                    {
+                        "chinese":  "这本书讲了一个普通人改变命运的奇迹。",
+                        "pinyin":  "Zhè běn shū jiǎng le yí ge pǔtōng rén gǎibiàn mìngyùn de qíjì.",
+                        "vietnamese":  "Cuốn sách này kể về kỳ tích một người bình thường thay đổi số phận.",
+                        "answer":  "这本书讲了一个普通人改变命运的奇迹。"
+                    },
+                    {
+                        "chinese":  "奇迹不一定突然发生，它可能来自每天的积累。",
+                        "pinyin":  "Qíjì bù yídìng tūrán fāshēng, tā kěnéng láizì měitiān de jīlěi.",
+                        "vietnamese":  "Kỳ tích không nhất định xảy ra đột ngột, nó có thể đến từ tích lũy mỗi ngày.",
+                        "answer":  "奇迹不一定突然发生，它可能来自每天的积累。"
+                    },
+                    {
+                        "chinese":  "成人虽然现实，也应该相信生活里有奇迹。",
+                        "pinyin":  "Chéngrén suīrán xiànshí, yě yīnggāi xiāngxìn shēnghuó lǐ yǒu qíjì.",
+                        "vietnamese":  "Người lớn tuy thực tế nhưng cũng nên tin cuộc sống có điều kỳ diệu.",
+                        "answer":  "成人虽然现实，也应该相信生活里有奇迹。"
+                    },
+                    {
+                        "chinese":  "这部科幻电影创造了票房奇迹。",
+                        "pinyin":  "Zhè bù kēhuàn diànyǐng chuàngzào le piàofáng qíjì.",
+                        "vietnamese":  "Bộ phim khoa học viễn tưởng này đã tạo ra kỳ tích phòng vé.",
+                        "answer":  "这部科幻电影创造了票房奇迹。"
+                    },
+                    {
+                        "chinese":  "排行榜第一名不是奇迹，而是市场选择的结果。",
+                        "pinyin":  "Páihángbǎng dì yī míng bú shì qíjì, ér shì shìchǎng xuǎnzé de jiéguǒ.",
+                        "vietnamese":  "Vị trí số một bảng xếp hạng không phải kỳ tích mà là kết quả lựa chọn của thị trường.",
+                        "answer":  "排行榜第一名不是奇迹，而是市场选择的结果。"
+                    },
+                    {
+                        "chinese":  "只顾等待奇迹的人，往往错过真正的机会。",
+                        "pinyin":  "Zhǐgù děngdài qíjì de rén, wǎngwǎng cuòguò zhēnzhèng de jīhuì.",
+                        "vietnamese":  "Người chỉ lo chờ kỳ tích thường bỏ lỡ cơ hội thật sự.",
+                        "answer":  "只顾等待奇迹的人，往往错过真正的机会。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "这件小事你不必太担心，老师会帮你解决。",
+                          "pinyin":  "Zhè jiàn xiǎoshì nǐ bú bì tài dānxīn, lǎoshī huì bāng nǐ jiějué.",
+                          "vietnamese":  "Chuyện nhỏ này bạn không cần quá lo, thầy sẽ giúp bạn giải quyết.",
+                          "answer":  "这件小事你不必太担心，老师会帮你解决。"
+                      },
+                      {
+                          "chinese":  "如果你已经看懂了，就不必再做同样的练习。",
+                          "pinyin":  "Rúguǒ nǐ yǐjīng kàn dǒng le, jiù bú bì zài zuò tóngyàng de liànxí.",
+                          "vietnamese":  "Nếu bạn đã đọc hiểu rồi thì không cần làm lại bài luyện giống nhau nữa.",
+                          "answer":  "如果你已经看懂了，就不必再做同样的练习。"
+                      },
+                      {
+                          "chinese":  "这本书只是参考资料，你不必全部背下来。",
+                          "pinyin":  "Zhè běn shū zhǐshì cānkǎo zīliào, nǐ bú bì quánbù bèi xiàlái.",
+                          "vietnamese":  "Quyển sách này chỉ là tài liệu tham khảo, bạn không cần học thuộc toàn bộ.",
+                          "answer":  "这本书只是参考资料，你不必全部背下来。"
+                      },
+                      {
+                          "chinese":  "明天的活动不太正式，你不必穿得太认真。",
+                          "pinyin":  "Míngtiān de huódòng bú tài zhèngshì, nǐ bú bì chuān de tài rènzhēn.",
+                          "vietnamese":  "Hoạt động ngày mai không quá trang trọng, bạn không cần mặc quá nghiêm túc.",
+                          "answer":  "明天的活动不太正式，你不必穿得太认真。"
+                      },
+                      {
+                          "chinese":  "他已经给老师请假了，你不必再替他解释。",
+                          "pinyin":  "Tā yǐjīng gěi lǎoshī qǐngjià le, nǐ bú bì zài tì tā jiěshì.",
+                          "vietnamese":  "Anh ấy đã xin nghỉ với thầy rồi, bạn không cần giải thích thay anh ấy nữa.",
+                          "answer":  "他已经给老师请假了，你不必再替他解释。"
+                      },
+                      {
+                          "chinese":  "时间不多了，能复习多少是多少。",
+                          "pinyin":  "Shíjiān bù duō le, néng fùxí duōshǎo shì duōshǎo.",
+                          "vietnamese":  "Không còn nhiều thời gian, ôn được bao nhiêu hay bấy nhiêu.",
+                          "answer":  "时间不多了，能复习多少是多少。"
+                      },
+                      {
+                          "chinese":  "汉字太多了，今天能记住几个是几个。",
+                          "pinyin":  "Hànzì tài duō le, jīntiān néng jì zhù jǐ ge shì jǐ ge.",
+                          "vietnamese":  "Chữ Hán quá nhiều, hôm nay nhớ được chữ nào hay chữ đó.",
+                          "answer":  "汉字太多了，今天能记住几个是几个。"
+                      },
+                      {
+                          "chinese":  "口语不是一天能练好的，能说点儿是点儿。",
+                          "pinyin":  "Kǒuyǔ bú shì yì tiān néng liàn hǎo de, néng shuō diǎnr shì diǎnr.",
+                          "vietnamese":  "Khẩu ngữ không thể luyện tốt trong một ngày, nói được chút nào hay chút đó.",
+                          "answer":  "口语不是一天能练好的，能说点儿是点儿。"
+                      },
+                      {
+                          "chinese":  "作业太多了，今晚能做多少是多少。",
+                          "pinyin":  "Zuòyè tài duō le, jīnwǎn néng zuò duōshǎo shì duōshǎo.",
+                          "vietnamese":  "Bài tập quá nhiều, tối nay làm được bao nhiêu hay bấy nhiêu.",
+                          "answer":  "作业太多了，今晚能做多少是多少。"
+                      },
+                      {
+                          "chinese":  "这本小说很厚，今天能看几页是几页。",
+                          "pinyin":  "Zhè běn xiǎoshuō hěn hòu, jīntiān néng kàn jǐ yè shì jǐ yè.",
+                          "vietnamese":  "Tiểu thuyết này rất dày, hôm nay đọc được vài trang hay vài trang.",
+                          "answer":  "这本小说很厚，今天能看几页是几页。"
+                      },
+                      {
+                          "chinese":  "这个办法有用倒是有用，就是花时间太多。",
+                          "pinyin":  "Zhège bànfǎ yǒuyòng dào shì yǒuyòng, jiùshì huā shíjiān tài duō.",
+                          "vietnamese":  "Cách này hữu ích thì đúng là hữu ích, chỉ là tốn quá nhiều thời gian.",
+                          "answer":  "这个办法有用倒是有用，就是花时间太多。"
+                      },
+                      {
+                          "chinese":  "这本书好看倒是好看，就是生词有点儿多。",
+                          "pinyin":  "Zhè běn shū hǎokàn dào shì hǎokàn, jiùshì shēngcí yǒudiǎnr duō.",
+                          "vietnamese":  "Quyển sách này hay thì đúng là hay, chỉ là từ mới hơi nhiều.",
+                          "answer":  "这本书好看倒是好看，就是生词有点儿多。"
+                      },
+                      {
+                          "chinese":  "这个房间安静倒是安静，就是离学校太远。",
+                          "pinyin":  "Zhège fángjiān ānjìng dào shì ānjìng, jiùshì lí xuéxiào tài yuǎn.",
+                          "vietnamese":  "Căn phòng này yên tĩnh thì đúng là yên tĩnh, chỉ là xa trường quá.",
+                          "answer":  "这个房间安静倒是安静，就是离学校太远。"
+                      },
+                      {
+                          "chinese":  "这个老师严格倒是严格，不过对学生很负责。",
+                          "pinyin":  "Zhège lǎoshī yángé dào shì yángé, búguò duì xuésheng hěn fùzé.",
+                          "vietnamese":  "Thầy này nghiêm thì đúng là nghiêm, nhưng rất có trách nhiệm với học sinh.",
+                          "answer":  "这个老师严格倒是严格，不过对学生很负责。"
+                      },
+                      {
+                          "chinese":  "这份工作累倒是累，不过可以学到很多东西。",
+                          "pinyin":  "Zhè fèn gōngzuò lèi dào shì lèi, búguò kěyǐ xué dào hěn duō dōngxi.",
+                          "vietnamese":  "Công việc này mệt thì đúng là mệt, nhưng có thể học được nhiều thứ.",
+                          "answer":  "这份工作累倒是累，不过可以学到很多东西。"
+                      },
+                      {
+                          "chinese":  "你别着急，老师在办公室等着呢。",
+                          "pinyin":  "Nǐ bié zháojí, lǎoshī zài bàngōngshì děng zhe ne.",
+                          "vietnamese":  "Bạn đừng vội, thầy vẫn đang đợi ở văn phòng đấy.",
+                          "answer":  "你别着急，老师在办公室等着呢。"
+                      },
+                      {
+                          "chinese":  "他没有回宿舍，还在图书馆看书着呢。",
+                          "pinyin":  "Tā méiyǒu huí sùshè, hái zài túshūguǎn kàn shū zhe ne.",
+                          "vietnamese":  "Anh ấy chưa về ký túc xá, vẫn đang đọc sách ở thư viện đấy.",
+                          "answer":  "他没有回宿舍，还在图书馆看书着呢。"
+                      },
+                      {
+                          "chinese":  "这件事还早着呢，你不必现在就担心。",
+                          "pinyin":  "Zhè jiàn shì hái zǎo zhe ne, nǐ bú bì xiànzài jiù dānxīn.",
+                          "vietnamese":  "Chuyện này còn sớm lắm, bạn không cần lo ngay bây giờ.",
+                          "answer":  "这件事还早着呢，你不必现在就担心。"
+                      },
+                      {
+                          "chinese":  "外面冷着呢，你最好多穿一件衣服。",
+                          "pinyin":  "Wàimiàn lěng zhe ne, nǐ zuìhǎo duō chuān yí jiàn yīfu.",
+                          "vietnamese":  "Bên ngoài lạnh lắm đấy, bạn tốt nhất mặc thêm một áo.",
+                          "answer":  "外面冷着呢，你最好多穿一件衣服。"
+                      },
+                      {
+                          "chinese":  "这本书难着呢，初学者最好慢慢看。",
+                          "pinyin":  "Zhè běn shū nán zhe ne, chūxuézhě zuìhǎo mànman kàn.",
+                          "vietnamese":  "Quyển sách này khó lắm đấy, người mới học tốt nhất đọc từ từ.",
+                          "answer":  "这本书难着呢，初学者最好慢慢看。"
+                      },
+                      {
+                          "chinese":  "话还是这么说，可真正做起来不容易。",
+                          "pinyin":  "Huà háishi zhème shuō, kě zhēnzhèng zuò qǐlái bù róngyì.",
+                          "vietnamese":  "Nói thì vẫn nói vậy, nhưng thật sự làm thì không dễ.",
+                          "answer":  "话还是这么说，可真正做起来不容易。"
+                      },
+                      {
+                          "chinese":  "道理还是这么说，可每个人情况不一样。",
+                          "pinyin":  "Dàolǐ háishi zhème shuō, kě měi ge rén qíngkuàng bù yíyàng.",
+                          "vietnamese":  "Lý thì vẫn nói vậy, nhưng hoàn cảnh mỗi người không giống nhau.",
+                          "answer":  "道理还是这么说，可每个人情况不一样。"
+                      },
+                      {
+                          "chinese":  "计划还是这么说，可天气突然变坏了。",
+                          "pinyin":  "Jìhuà háishi zhème shuō, kě tiānqì tūrán biàn huài le.",
+                          "vietnamese":  "Kế hoạch thì vẫn nói vậy, nhưng thời tiết đột nhiên xấu đi rồi.",
+                          "answer":  "计划还是这么说，可天气突然变坏了。"
+                      },
+                      {
+                          "chinese":  "老师还是这么说，可学生不一定都能做到。",
+                          "pinyin":  "Lǎoshī háishi zhème shuō, kě xuésheng bù yídìng dōu néng zuò dào.",
+                          "vietnamese":  "Thầy vẫn nói như vậy, nhưng học sinh chưa chắc đều làm được.",
+                          "answer":  "老师还是这么说，可学生不一定都能做到。"
+                      },
+                      {
+                          "chinese":  "建议还是这么说，可最后要看你自己的决定。",
+                          "pinyin":  "Jiànyì háishi zhème shuō, kě zuìhòu yào kàn nǐ zìjǐ de juédìng.",
+                          "vietnamese":  "Lời khuyên thì vẫn nói vậy, nhưng cuối cùng phải xem quyết định của bạn.",
+                          "answer":  "建议还是这么说，可最后要看你自己的决定。"
+                      },
+                      {
+                          "chinese":  "他不光会做饭，就连复杂的菜也会做。",
+                          "pinyin":  "Tā bùguāng huì zuò fàn, jiùlián fùzá de cài yě huì zuò.",
+                          "vietnamese":  "Anh ấy không chỉ biết nấu cơm, ngay cả món phức tạp cũng biết làm.",
+                          "answer":  "他不光会做饭，就连复杂的菜也会做。"
+                      },
+                      {
+                          "chinese":  "这本书不光学生喜欢，就连老师也常常推荐。",
+                          "pinyin":  "Zhè běn shū bùguāng xuésheng xǐhuan, jiùlián lǎoshī yě chángcháng tuījiàn.",
+                          "vietnamese":  "Quyển sách này không chỉ học sinh thích, ngay cả thầy cũng thường giới thiệu.",
+                          "answer":  "这本书不光学生喜欢，就连老师也常常推荐。"
+                      },
+                      {
+                          "chinese":  "他不光汉语说得好，就连书法也写得不错。",
+                          "pinyin":  "Tā bùguāng Hànyǔ shuō de hǎo, jiùlián shūfǎ yě xiě de búcuò.",
+                          "vietnamese":  "Anh ấy không chỉ nói tiếng Trung tốt, ngay cả thư pháp cũng viết khá ổn.",
+                          "answer":  "他不光汉语说得好，就连书法也写得不错。"
+                      },
+                      {
+                          "chinese":  "这个软件不光能练听力，就连发音也能纠正。",
+                          "pinyin":  "Zhège ruǎnjiàn bùguāng néng liàn tīnglì, jiùlián fāyīn yě néng jiūzhèng.",
+                          "vietnamese":  "Phần mềm này không chỉ luyện nghe được, ngay cả phát âm cũng có thể sửa.",
+                          "answer":  "这个软件不光能练听力，就连发音也能纠正。"
+                      },
+                      {
+                          "chinese":  "这次活动不光学生参加，就连校长也来了。",
+                          "pinyin":  "Zhè cì huódòng bùguāng xuésheng cānjiā, jiùlián xiàozhǎng yě lái le.",
+                          "vietnamese":  "Hoạt động lần này không chỉ học sinh tham gia, ngay cả hiệu trưởng cũng đến.",
+                          "answer":  "这次活动不光学生参加，就连校长也来了。"
+                      }
+                  ]
+}

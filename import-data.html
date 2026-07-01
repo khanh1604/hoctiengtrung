@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Import Dữ Liệu - Chinese Learning</title>
+    <script>
+      try {
+        if (localStorage.getItem("menuTheme") === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
@@ -116,5 +123,6 @@
         previewDiv.innerHTML = html;
       }
     </script>
-  </body>
+<script type="module" src="js/protected-route.js"></script>
+</body>
 </html>

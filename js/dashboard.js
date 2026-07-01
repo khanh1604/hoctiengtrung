@@ -70,8 +70,18 @@ const courseGroups = [
         href: "lessons.html?subject=speaking",
         unlocked: true,
       },
-      { title: "中级口语（I）", meta: "0 bài · đang khóa" },
-      { title: "中级口语（II）", meta: "0 bài · đang khóa" },
+      {
+        title: "中级口语（I）",
+        meta: "15 bài · luyện nói",
+        href: "lessons.html?subject=speaking2",
+        unlocked: true,
+      },
+      {
+        title: "中级口语（II）",
+        meta: "15 bài · luyện nói",
+        href: "lessons.html?subject=speaking3",
+        unlocked: true,
+      },
       { title: "高级口语", meta: "0 bài · đang khóa" },
     ],
   },
@@ -129,6 +139,7 @@ const courseGroups = [
 // =========================================================
 function applyDashboardTheme(theme) {
   const isLight = theme === "light";
+  document.documentElement.classList.toggle("light-theme", isLight);
   document.body.classList.toggle("light-theme", isLight);
   themeToggleButton?.classList.toggle("is-light", isLight);
   themeToggleButton?.setAttribute("aria-pressed", String(isLight));

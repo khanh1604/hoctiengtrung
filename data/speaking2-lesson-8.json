@@ -1,0 +1,1796 @@
+﻿{
+    "title":  "我想退这条裤子",
+    "vietnameseTitle":  "我想退这条裤子 / 两位请慢用",
+    "textTitles":  [
+                       "我想退这条裤子",
+                       "两位请慢用"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "退货",
+                           "pinyin":  "tuìhuò",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "thoái hóa",
+                           "vietnamese":  "trả hàng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "如果衣服不合身，可以拿着发票退货。",
+                                                "pinyin":  "Rúguǒ yīfu bù héshēn, kěyǐ názhe fāpiào tuìhuò.",
+                                                "vietnamese":  "Nếu quần áo không vừa, có thể cầm hóa đơn đi trả hàng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "合身",
+                           "pinyin":  "héshēn",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "hợp thân",
+                           "vietnamese":  "vừa người, vừa vặn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这件衣服很合身，颜色也不错。",
+                                                "pinyin":  "Zhè jiàn yīfu hěn héshēn, yánsè yě búcuò.",
+                                                "vietnamese":  "Bộ quần áo này rất vừa người, màu sắc cũng không tệ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "销售",
+                           "pinyin":  "xiāoshòu",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "tiêu thụ",
+                           "vietnamese":  "bán, tiêu thụ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这家商店主要销售女装和鞋子。",
+                                                "pinyin":  "Zhè jiā shāngdiàn zhǔyào xiāoshòu nǚzhuāng hé xiézi.",
+                                                "vietnamese":  "Cửa hàng này chủ yếu bán quần áo nữ và giày dép."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "单据",
+                           "pinyin":  "dānjù",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đơn cứ",
+                           "vietnamese":  "chứng từ, phiếu, hóa đơn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "办理退货时，请先出示购物单据。",
+                                                "pinyin":  "Bànlǐ tuìhuò shí, qǐng xiān chūshì gòuwù dānjù.",
+                                                "vietnamese":  "Khi làm thủ tục trả hàng, xin hãy xuất trình chứng từ mua hàng trước."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "发票",
+                           "pinyin":  "fāpiào",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "phát phiếu",
+                           "vietnamese":  "hóa đơn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "买电器以后一定要保存好发票。",
+                                                "pinyin":  "Mǎi diànqì yǐhòu yídìng yào bǎocún hǎo fāpiào.",
+                                                "vietnamese":  "Sau khi mua đồ điện, nhất định phải giữ kỹ hóa đơn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "号",
+                           "pinyin":  "hào",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "hiệu",
+                           "vietnamese":  "cỡ, số",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这双鞋是三十八号的。",
+                                                "pinyin":  "Zhè shuāng xié shì sānshíbā hào de.",
+                                                "vietnamese":  "Đôi giày này là cỡ 38."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "体形",
+                           "pinyin":  "tǐxíng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thể hình",
+                           "vietnamese":  "dáng người, vóc dáng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "你可以根据自己的体形选择衣服。",
+                                                "pinyin":  "Nǐ kěyǐ gēnjù zìjǐ de tǐxíng xuǎnzé yīfu.",
+                                                "vietnamese":  "Bạn có thể dựa vào dáng người của mình để chọn quần áo."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "免费",
+                           "pinyin":  "miǎnfèi",
+                           "partOfSpeech":  "动/形",
+                           "sinoVietnamese":  "miễn phí",
+                           "vietnamese":  "miễn phí",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这家店提供免费修改服务。",
+                                                "pinyin":  "Zhè jiā diàn tígōng miǎnfèi xiūgǎi fúwù.",
+                                                "vietnamese":  "Cửa hàng này cung cấp dịch vụ sửa miễn phí."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "服务台",
+                           "pinyin":  "fúwùtái",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "phục vụ đài",
+                           "vietnamese":  "quầy dịch vụ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "有问题可以去一楼服务台咨询。",
+                                                "pinyin":  "Yǒu wèntí kěyǐ qù yì lóu fúwùtái zīxún.",
+                                                "vietnamese":  "Có vấn đề có thể đến quầy dịch vụ tầng một để hỏi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "收银台",
+                           "pinyin":  "shōuyíntái",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thu ngân đài",
+                           "vietnamese":  "quầy thu ngân",
+                           "examples":  [
+                                            {
+                                                "chinese":  "请到收银台付款。",
+                                                "pinyin":  "Qǐng dào shōuyíntái fùkuǎn.",
+                                                "vietnamese":  "Xin hãy đến quầy thu ngân thanh toán."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "改进",
+                           "pinyin":  "gǎijìn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "cải tiến",
+                           "vietnamese":  "cải thiện, cải tiến",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我们会根据客户意见改进服务。",
+                                                "pinyin":  "Wǒmen huì gēnjù kèhù yìjiàn gǎijìn fúwù.",
+                                                "vietnamese":  "Chúng tôi sẽ dựa vào ý kiến khách hàng để cải thiện dịch vụ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "菜单",
+                           "pinyin":  "càidān",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thái đơn",
+                           "vietnamese":  "thực đơn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "服务员，请把菜单给我们看一下。",
+                                                "pinyin":  "Fúwùyuán, qǐng bǎ càidān gěi wǒmen kàn yíxià.",
+                                                "vietnamese":  "Phục vụ ơi, xin cho chúng tôi xem thực đơn một chút."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "粥",
+                           "pinyin":  "zhōu",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "chúc",
+                           "vietnamese":  "cháo",
+                           "examples":  [
+                                            {
+                                                "chinese":  "早上我喜欢喝一碗热粥。",
+                                                "pinyin":  "Zǎoshang wǒ xǐhuān hē yì wǎn rè zhōu.",
+                                                "vietnamese":  "Buổi sáng tôi thích ăn/uống một bát cháo nóng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "凉菜",
+                           "pinyin":  "liángcài",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "lương thái",
+                           "vietnamese":  "món nguội, món lạnh",
+                           "examples":  [
+                                            {
+                                                "chinese":  "夏天吃一点儿凉菜很舒服。",
+                                                "pinyin":  "Xiàtiān chī yìdiǎnr liángcài hěn shūfu.",
+                                                "vietnamese":  "Mùa hè ăn một chút món nguội rất dễ chịu."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "白",
+                           "pinyin":  "bái",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "bạch",
+                           "vietnamese":  "trắng, nguyên chất, không pha",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我想喝白开水，不想喝饮料。",
+                                                "pinyin":  "Wǒ xiǎng hē báikāishuǐ, bù xiǎng hē yǐnliào.",
+                                                "vietnamese":  "Tôi muốn uống nước lọc, không muốn uống đồ uống."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "肉饼",
+                           "pinyin":  "ròubǐng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "nhục bính",
+                           "vietnamese":  "bánh nhân thịt",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这家饭馆的肉饼又香又便宜。",
+                                                "pinyin":  "Zhè jiā fànguǎn de ròubǐng yòu xiāng yòu piányi.",
+                                                "vietnamese":  "Bánh nhân thịt của quán này vừa thơm vừa rẻ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "这样一来",
+                           "pinyin":  "zhèyàng yì lái",
+                           "partOfSpeech":  "短语",
+                           "sinoVietnamese":  "giá dạng nhất lai",
+                           "vietnamese":  "như vậy thì, làm như vậy thì",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这样一来，我们就不用排队了。",
+                                                "pinyin":  "Zhèyàng yì lái, wǒmen jiù bú yòng páiduì le.",
+                                                "vietnamese":  "Như vậy thì chúng ta không cần xếp hàng nữa."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "你好，我上星期在你们这儿买了条裤子，现在我想退货。",
+                          "pinyin":  "Nǐ hǎo, wǒ shàng xīngqī zài nǐmen zhèr mǎi le tiáo kùzi, xiànzài wǒ xiǎng tuìhuò.",
+                          "vietnamese":  "Xin chào, tuần trước tôi mua một chiếc quần ở chỗ các bạn, bây giờ tôi muốn trả hàng."
+                      },
+                      {
+                          "chinese":  "怎么了？这条裤子不是挺好看的吗？",
+                          "pinyin":  "Zěnme le? Zhè tiáo kùzi bú shì tǐng hǎokàn de ma?",
+                          "vietnamese":  "Sao vậy? Chiếc quần này chẳng phải khá đẹp sao?"
+                      },
+                      {
+                          "chinese":  "这条裤子有点儿瘦，还有点儿长，我穿着不合身。",
+                          "pinyin":  "Zhè tiáo kùzi yǒudiǎnr shòu, hái yǒudiǎnr cháng, wǒ chuānzhe bù héshēn.",
+                          "vietnamese":  "Chiếc quần này hơi chật, lại hơi dài, tôi mặc không vừa người."
+                      },
+                      {
+                          "chinese":  "销售单据和发票还在吗？我先看一看。",
+                          "pinyin":  "Xiāoshòu dānjù hé fāpiào hái zài ma? Wǒ xiān kàn yi kàn.",
+                          "vietnamese":  "Hóa đơn bán hàng và hóa đơn còn không? Tôi xem trước một chút."
+                      },
+                      {
+                          "chinese":  "给你。",
+                          "pinyin":  "Gěi nǐ.",
+                          "vietnamese":  "Đây."
+                      },
+                      {
+                          "chinese":  "我看看，哦，是五天前买的。",
+                          "pinyin":  "Wǒ kànkan, ò, shì wǔ tiān qián mǎi de.",
+                          "vietnamese":  "Để tôi xem, ồ, là mua năm ngày trước."
+                      },
+                      {
+                          "chinese":  "能退货吗？",
+                          "pinyin":  "Néng tuìhuò ma?",
+                          "vietnamese":  "Có thể trả hàng không?"
+                      },
+                      {
+                          "chinese":  "能退，规定是七天包退，一个月包换。",
+                          "pinyin":  "Néng tuì, guīdìng shì qī tiān bāotuì, yí ge yuè bāohuàn.",
+                          "vietnamese":  "Có thể trả, quy định là trong bảy ngày được trả, trong một tháng được đổi."
+                      },
+                      {
+                          "chinese":  "谢谢，你帮我退了吧。",
+                          "pinyin":  "Xièxie, nǐ bāng wǒ tuì le ba.",
+                          "vietnamese":  "Cảm ơn, bạn giúp tôi trả hàng nhé."
+                      },
+                      {
+                          "chinese":  "好的，那您想退就退吧。不过，您不如换一条，这种裤子挺抢手的。",
+                          "pinyin":  "Hǎo de, nà nín xiǎng tuì jiù tuì ba. Búguò, nín bùrú huàn yì tiáo, zhè zhǒng kùzi tǐng qiǎngshǒu de.",
+                          "vietnamese":  "Được, nếu chị muốn trả thì trả. Nhưng chị không bằng đổi một chiếc khác, loại quần này khá được ưa chuộng."
+                      },
+                      {
+                          "chinese":  "可是我穿着不合身。",
+                          "pinyin":  "Kěshì wǒ chuānzhe bù héshēn.",
+                          "vietnamese":  "Nhưng tôi mặc không vừa."
+                      },
+                      {
+                          "chinese":  "我们这儿号挺全的，要哪个号的有哪个号的，准有合身的。",
+                          "pinyin":  "Wǒmen zhèr hào tǐng quán de, yào nǎ ge hào de yǒu nǎ ge hào de, zhǔn yǒu héshēn de.",
+                          "vietnamese":  "Chỗ chúng tôi có đủ cỡ, muốn cỡ nào có cỡ đó, chắc chắn có cái vừa người."
+                      },
+                      {
+                          "chinese":  "有我这个体形穿的？",
+                          "pinyin":  "Yǒu wǒ zhège tǐxíng chuān de?",
+                          "vietnamese":  "Có loại phù hợp với dáng người của tôi không?"
+                      },
+                      {
+                          "chinese":  "有大号的，大号的肥一点儿，至于长嘛，我们可以免费帮您改短一点儿。",
+                          "pinyin":  "Yǒu dà hào de, dà hào de féi yìdiǎnr, zhìyú cháng ma, wǒmen kěyǐ miǎnfèi bāng nín gǎi duǎn yìdiǎnr.",
+                          "vietnamese":  "Có cỡ lớn, cỡ lớn rộng hơn một chút; còn về độ dài thì chúng tôi có thể miễn phí sửa ngắn cho chị một chút."
+                      },
+                      {
+                          "chinese":  "谢谢，我还是不想要了。",
+                          "pinyin":  "Xièxie, wǒ háishi bù xiǎng yào le.",
+                          "vietnamese":  "Cảm ơn, tôi vẫn không muốn lấy nữa."
+                      },
+                      {
+                          "chinese":  "那您先去服务台吧，退货必须有经理的签字。",
+                          "pinyin":  "Nà nín xiān qù fúwùtái ba, tuìhuò bìxū yǒu jīnglǐ de qiānzì.",
+                          "vietnamese":  "Vậy chị đến quầy dịch vụ trước nhé, trả hàng phải có chữ ký của quản lý."
+                      },
+                      {
+                          "chinese":  "然后呢？",
+                          "pinyin":  "Ránhòu ne?",
+                          "vietnamese":  "Sau đó thì sao?"
+                      },
+                      {
+                          "chinese":  "然后您就可以去收银台退钱了。",
+                          "pinyin":  "Ránhòu nín jiù kěyǐ qù shōuyíntái tuì qián le.",
+                          "vietnamese":  "Sau đó chị có thể đến quầy thu ngân để nhận lại tiền."
+                      },
+                      {
+                          "chinese":  "谢谢。",
+                          "pinyin":  "Xièxie.",
+                          "vietnamese":  "Cảm ơn."
+                      },
+                      {
+                          "chinese":  "你好，我想退这条裤子，哪位能帮我处理一下？",
+                          "pinyin":  "Nǐ hǎo, wǒ xiǎng tuì zhè tiáo kùzi, nǎ wèi néng bāng wǒ chǔlǐ yíxià?",
+                          "vietnamese":  "Xin chào, tôi muốn trả chiếc quần này, ai có thể giúp tôi xử lý một chút?"
+                      },
+                      {
+                          "chinese":  "为什么退呀？",
+                          "pinyin":  "Wèishénme tuì ya?",
+                          "vietnamese":  "Vì sao muốn trả vậy?"
+                      },
+                      {
+                          "chinese":  "穿着不合身。",
+                          "pinyin":  "Chuānzhe bù héshēn.",
+                          "vietnamese":  "Mặc không vừa người."
+                      },
+                      {
+                          "chinese":  "好吧，请把销售单据、发票给我，我看一下。",
+                          "pinyin":  "Hǎo ba, qǐng bǎ xiāoshòu dānjù, fāpiào gěi wǒ, wǒ kàn yíxià.",
+                          "vietnamese":  "Được rồi, xin đưa hóa đơn bán hàng và hóa đơn cho tôi, tôi xem một chút."
+                      },
+                      {
+                          "chinese":  "给您，您拿着这些去找售货员，请她带您去收银台退钱。",
+                          "pinyin":  "Gěi nín, nín názhe zhèxiē qù zhǎo shòuhuòyuán, qǐng tā dài nín qù shōuyíntái tuì qián.",
+                          "vietnamese":  "Đây, chị cầm những thứ này đi tìm nhân viên bán hàng, nhờ cô ấy dẫn chị đến quầy thu ngân hoàn tiền."
+                      },
+                      {
+                          "chinese":  "谢谢你。",
+                          "pinyin":  "Xièxie nǐ.",
+                          "vietnamese":  "Cảm ơn bạn."
+                      },
+                      {
+                          "chinese":  "您对我们的服务有什么建议吗？我们以后好改进。",
+                          "pinyin":  "Nín duì wǒmen de fúwù yǒu shénme jiànyì ma? Wǒmen yǐhòu hǎo gǎijìn.",
+                          "vietnamese":  "Chị có góp ý gì về dịch vụ của chúng tôi không? Sau này chúng tôi sẽ cải thiện."
+                      },
+                      {
+                          "chinese":  "没有，谢谢，再见。",
+                          "pinyin":  "Méiyǒu, xièxie, zàijiàn.",
+                          "vietnamese":  "Không có, cảm ơn, tạm biệt."
+                      },
+                      {
+                          "chinese":  "再见，欢迎下次惠顾。",
+                          "pinyin":  "Zàijiàn, huānyíng xià cì huìgù.",
+                          "vietnamese":  "Tạm biệt, hoan nghênh lần sau lại ghé mua."
+                      },
+                      {
+                          "chinese":  "这家快餐店看上去挺不错的，我们就在这儿吃吧。",
+                          "pinyin":  "Zhè jiā kuàicān diàn kàn shàngqù tǐng búcuò de, wǒmen jiù zài zhèr chī ba.",
+                          "vietnamese":  "Quán ăn nhanh này nhìn có vẻ khá được, chúng ta ăn ở đây đi."
+                      },
+                      {
+                          "chinese":  "行，你想在这儿吃就在这儿吃吧。",
+                          "pinyin":  "Xíng, nǐ xiǎng zài zhèr chī jiù zài zhèr chī ba.",
+                          "vietnamese":  "Được, bạn muốn ăn ở đây thì ăn ở đây đi."
+                      },
+                      {
+                          "chinese":  "我们要点菜！",
+                          "pinyin":  "Wǒmen yào diǎn cài!",
+                          "vietnamese":  "Chúng tôi muốn gọi món!"
+                      },
+                      {
+                          "chinese":  "好的，这是菜单，您要点什么？",
+                          "pinyin":  "Hǎo de, zhè shì càidān, nín yào diǎn shénme?",
+                          "vietnamese":  "Vâng, đây là thực đơn, anh muốn gọi món gì?"
+                      },
+                      {
+                          "chinese":  "什么饭菜做得快？我们俩想快点儿吃，吃完了好去看电影。",
+                          "pinyin":  "Shénme fàncài zuò de kuài? Wǒmen liǎ xiǎng kuài diǎnr chī, chī wán le hǎo qù kàn diànyǐng.",
+                          "vietnamese":  "Món nào làm nhanh? Hai chúng tôi muốn ăn nhanh một chút, ăn xong còn đi xem phim."
+                      },
+                      {
+                          "chinese":  "粥最快，最多三分钟，凉菜也不慢。",
+                          "pinyin":  "Zhōu zuì kuài, zuìduō sān fēnzhōng, liángcài yě bú màn.",
+                          "vietnamese":  "Cháo là nhanh nhất, nhiều nhất ba phút, món nguội cũng không chậm."
+                      },
+                      {
+                          "chinese":  "那好吧，我们就一人来一碗白粥，再来两个凉菜。",
+                          "pinyin":  "Nà hǎo ba, wǒmen jiù yì rén lái yì wǎn báizhōu, zài lái liǎng ge liángcài.",
+                          "vietnamese":  "Vậy được, mỗi người chúng tôi lấy một bát cháo trắng, thêm hai món nguội."
+                      },
+                      {
+                          "chinese":  "光喝粥不吃别的，恐怕太少了吧？",
+                          "pinyin":  "Guāng hē zhōu bù chī bié de, kǒngpà tài shǎo le ba?",
+                          "vietnamese":  "Chỉ uống cháo không ăn món khác, e là hơi ít quá nhỉ?"
+                      },
+                      {
+                          "chinese":  "那我们就再要两份肉饼吧，总共多少钱？",
+                          "pinyin":  "Nà wǒmen jiù zài yào liǎng fèn ròubǐng ba, zǒnggòng duōshao qián?",
+                          "vietnamese":  "Vậy chúng tôi lấy thêm hai phần bánh thịt nhé, tổng cộng bao nhiêu tiền?"
+                      },
+                      {
+                          "chinese":  "总共二十八块钱，你们先交钱，粥马上就端来。",
+                          "pinyin":  "Zǒnggòng èrshíbā kuài qián, nǐmen xiān jiāo qián, zhōu mǎshàng jiù duān lái.",
+                          "vietnamese":  "Tổng cộng 28 tệ, các anh trả tiền trước, cháo sẽ được mang ra ngay."
+                      },
+                      {
+                          "chinese":  "好，给你钱。劳驾快点儿。",
+                          "pinyin":  "Hǎo, gěi nǐ qián. Láojià kuài diǎnr.",
+                          "vietnamese":  "Được, gửi tiền bạn. Làm phiền nhanh một chút nhé."
+                      },
+                      {
+                          "chinese":  "这是你们的粥和凉菜，两位请慢用。",
+                          "pinyin":  "Zhè shì nǐmen de zhōu hé liángcài, liǎng wèi qǐng màn yòng.",
+                          "vietnamese":  "Đây là cháo và món nguội của hai anh, xin mời dùng từ từ."
+                      },
+                      {
+                          "chinese":  "谢谢。哎，我们的肉饼呢？",
+                          "pinyin":  "Xièxie. Āi, wǒmen de ròubǐng ne?",
+                          "vietnamese":  "Cảm ơn. À, bánh thịt của chúng tôi đâu?"
+                      },
+                      {
+                          "chinese":  "对不起，肉饼得等二十分钟，做好就送来。",
+                          "pinyin":  "Duìbuqǐ, ròubǐng děi děng èrshí fēnzhōng, zuò hǎo jiù sòng lái.",
+                          "vietnamese":  "Xin lỗi, bánh thịt phải đợi 20 phút, làm xong sẽ mang ra ngay."
+                      },
+                      {
+                          "chinese":  "糟糕！这样一来，我们看电影就要迟到了。",
+                          "pinyin":  "Zāogāo! Zhèyàng yì lái, wǒmen kàn diànyǐng jiù yào chídào le.",
+                          "vietnamese":  "Hỏng rồi! Như vậy thì chúng tôi đi xem phim sẽ bị muộn mất."
+                      },
+                      {
+                          "chinese":  "对不起，我们不知道肉饼要等这么长时间，能换别的吗？",
+                          "pinyin":  "Duìbuqǐ, wǒmen bù zhīdào ròubǐng yào děng zhème cháng shíjiān, néng huàn bié de ma?",
+                          "vietnamese":  "Xin lỗi, chúng tôi không biết bánh thịt phải đợi lâu như vậy, có thể đổi món khác không?"
+                      },
+                      {
+                          "chinese":  "对不起，肉饼已经开始做了，换不了了。",
+                          "pinyin":  "Duìbuqǐ, ròubǐng yǐjīng kāishǐ zuò le, huàn bù liǎo le.",
+                          "vietnamese":  "Xin lỗi, bánh thịt đã bắt đầu làm rồi, không đổi được nữa."
+                      },
+                      {
+                          "chinese":  "那我们就等一等吧，看电影晚点儿就晚点儿吧。",
+                          "pinyin":  "Nà wǒmen jiù děng yi děng ba, kàn diànyǐng wǎn diǎnr jiù wǎn diǎnr ba.",
+                          "vietnamese":  "Vậy chúng ta đợi một chút đi, xem phim muộn một chút thì muộn một chút vậy."
+                      },
+                      {
+                          "chinese":  "服务员，你能不能先把这些粥和凉菜拿下去呀？",
+                          "pinyin":  "Fúwùyuán, nǐ néng bù néng xiān bǎ zhèxiē zhōu hé liángcài ná xiàqù ya?",
+                          "vietnamese":  "Nhân viên ơi, bạn có thể mang cháo và món nguội này xuống trước không?"
+                      },
+                      {
+                          "chinese":  "为什么？",
+                          "pinyin":  "Wèishénme?",
+                          "vietnamese":  "Vì sao?"
+                      },
+                      {
+                          "chinese":  "我们想肉饼和粥一起吃，过二十分钟，粥就该凉了。",
+                          "pinyin":  "Wǒmen xiǎng ròubǐng hé zhōu yìqǐ chī, guò èrshí fēnzhōng, zhōu jiù gāi liáng le.",
+                          "vietnamese":  "Chúng tôi muốn ăn bánh thịt cùng với cháo, qua 20 phút thì cháo sẽ nguội mất."
+                      },
+                      {
+                          "chinese":  "不好意思，这粥要是端下去就浪费了。",
+                          "pinyin":  "Bù hǎoyìsi, zhè zhōu yàoshi duān xiàqù jiù làngfèi le.",
+                          "vietnamese":  "Xin lỗi, nếu mang cháo xuống thì sẽ lãng phí."
+                      },
+                      {
+                          "chinese":  "没了就没了吧，劳驾你到时候再给我们做一份。",
+                          "pinyin":  "Méi le jiù méi le ba, láojià nǐ dào shíhou zài gěi wǒmen zuò yí fèn.",
+                          "vietnamese":  "Bỏ thì bỏ vậy, phiền bạn đến lúc đó làm lại cho chúng tôi một phần."
+                      },
+                      {
+                          "chinese":  "对不起，那就得更长时间了，要多长时间不好说。",
+                          "pinyin":  "Duìbuqǐ, nà jiù děi gèng cháng shíjiān le, yào duō cháng shíjiān bù hǎo shuō.",
+                          "vietnamese":  "Xin lỗi, như vậy sẽ phải đợi lâu hơn nữa, cần bao lâu thì khó nói."
+                      },
+                      {
+                          "chinese":  "我们不吃了，直接走吧。服务员，劳驾你帮我们退了吧。",
+                          "pinyin":  "Wǒmen bù chī le, zhíjiē zǒu ba. Fúwùyuán, láojià nǐ bāng wǒmen tuì le ba.",
+                          "vietnamese":  "Chúng tôi không ăn nữa, đi luôn thôi. Nhân viên ơi, phiền bạn giúp chúng tôi hoàn tiền nhé."
+                      },
+                      {
+                          "chinese":  "对不起，要退东西，非得我们经理同意不可。",
+                          "pinyin":  "Duìbuqǐ, yào tuì dōngxi, fēi děi wǒmen jīnglǐ tóngyì bùkě.",
+                          "vietnamese":  "Xin lỗi, muốn trả món thì nhất định phải được quản lý của chúng tôi đồng ý."
+                      },
+                      {
+                          "chinese":  "你们经理呢？",
+                          "pinyin":  "Nǐmen jīnglǐ ne?",
+                          "vietnamese":  "Quản lý của các bạn đâu?"
+                      },
+                      {
+                          "chinese":  "我们经理今天没来。",
+                          "pinyin":  "Wǒmen jīnglǐ jīntiān méi lái.",
+                          "vietnamese":  "Hôm nay quản lý của chúng tôi không đến."
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "和……时……",
+                        "meaning":  "Khi cùng / khi với…",
+                        "usage":  "Dùng để nói thời điểm giao tiếp hoặc xử lý việc với ai đó",
+                        "note":  "Có thể hiểu là 和 + người + V 时",
+                        "example":  "和老师谈话时，你要说清楚自己的想法。",
+                        "pinyin":  "Hé lǎoshī tánhuà shí, nǐ yào shuō qīngchu zìjǐ de xiǎngfǎ.",
+                        "vietnamese":  "Khi nói chuyện với thầy giáo, bạn phải nói rõ suy nghĩ của mình.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "要……有……",
+                        "meaning":  "Muốn có… thì có… / cần gì có nấy",
+                        "usage":  "Dùng để nói thứ gì đó đầy đủ, muốn gì cũng có",
+                        "note":  "Khẩu ngữ, thường dùng để khen",
+                        "example":  "这个城市要吃的有吃的，要玩的有玩的。",
+                        "pinyin":  "Zhège chéngshì yào chī de yǒu chī de, yào wán de yǒu wán de.",
+                        "vietnamese":  "Thành phố này muốn ăn có đồ ăn, muốn chơi có chỗ chơi.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "好 + V",
+                        "meaning":  "Dễ / tiện để…",
+                        "usage":  "Dùng để nói điều kiện thuận lợi cho hành động",
+                        "note":  "好 đứng trước động từ, không phải nghĩa “tốt” đơn thuần",
+                        "example":  "这本书字很大，老人也好看。",
+                        "pinyin":  "Zhè běn shū zì hěn dà, lǎorén yě hǎo kàn.",
+                        "vietnamese":  "Cuốn sách này chữ to, người già cũng dễ đọc.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "这样一来，……就……了",
+                        "meaning":  "Như vậy thì…",
+                        "usage":  "Dùng để nói sau khi làm vậy sẽ dẫn đến kết quả nào đó",
+                        "note":  "Hay dùng khi phân tích vấn đề",
+                        "example":  "这样一来，大家就不用排队等很久了。",
+                        "pinyin":  "Zhèyàng yì lái, dàjiā jiù bú yòng páiduì děng hěn jiǔ le.",
+                        "vietnamese":  "Như vậy thì mọi người không cần xếp hàng đợi lâu nữa.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "V/A 就 V/A 吧",
+                        "meaning":  "… thì … vậy",
+                        "usage":  "Dùng khi miễn cưỡng chấp nhận một việc hoặc tình huống",
+                        "note":  "Mang sắc thái “đành vậy”",
+                        "example":  "远就远吧，环境好就行。",
+                        "pinyin":  "Yuǎn jiù yuǎn ba, huánjìng hǎo jiù xíng.",
+                        "vietnamese":  "Xa thì xa vậy, môi trường tốt là được.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "要……，倒……不可",
+                        "meaning":  "Nếu…, thì lại không thể…",
+                        "usage":  "Dùng để nói một giả thiết dẫn đến tình huống không ổn",
+                        "note":  "Khá khẩu ngữ, hơi nâng cao",
+                        "example":  "要我一个人去，倒不是不可，只是有点儿麻烦。",
+                        "pinyin":  "Yào wǒ yí gè rén qù, dào bú shì bùkě, zhǐshì yǒudiǎnr máfan.",
+                        "vietnamese":  "Nếu để tôi đi một mình thì cũng không phải là không được, chỉ là hơi phiền.",
+                        "level":  "⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "如果衣服不合身，可以在七天之内退货。",
+                        "pinyin":  "Rúguǒ yīfu bù héshēn, kěyǐ zài qī tiān zhī nèi tuìhuò.",
+                        "vietnamese":  "Nếu quần áo không vừa người, có thể trả hàng trong vòng bảy ngày.",
+                        "answer":  "如果衣服不合身，可以在七天之内退货。"
+                    },
+                    {
+                        "chinese":  "退货以前，最好先保留发票和单据。",
+                        "pinyin":  "Tuìhuò yǐqián, zuìhǎo xiān bǎoliú fāpiào hé dānjù.",
+                        "vietnamese":  "Trước khi trả hàng, tốt nhất giữ lại hóa đơn và chứng từ.",
+                        "answer":  "退货以前，最好先保留发票和单据。"
+                    },
+                    {
+                        "chinese":  "这件衣服穿了一次，服务台说不能退货。",
+                        "pinyin":  "Zhè jiàn yīfu chuān le yí cì, fúwùtái shuō bù néng tuìhuò.",
+                        "vietnamese":  "Chiếc áo này đã mặc một lần, quầy dịch vụ nói không thể trả hàng.",
+                        "answer":  "这件衣服穿了一次，服务台说不能退货。"
+                    },
+                    {
+                        "chinese":  "他想退货，但是找不到购物单据了。",
+                        "pinyin":  "Tā xiǎng tuìhuò, dànshì zhǎo bú dào gòuwù dānjù le.",
+                        "vietnamese":  "Anh ấy muốn trả hàng nhưng không tìm thấy chứng từ mua hàng.",
+                        "answer":  "他想退货，但是找不到购物单据了。"
+                    },
+                    {
+                        "chinese":  "销售员提醒我，特价商品一般不能退货。",
+                        "pinyin":  "Xiāoshòuyuán tíxǐng wǒ, tèjià shāngpǐn yìbān bù néng tuìhuò.",
+                        "vietnamese":  "Nhân viên bán hàng nhắc tôi rằng hàng giảm giá thường không thể trả.",
+                        "answer":  "销售员提醒我，特价商品一般不能退货。"
+                    },
+                    {
+                        "chinese":  "退货流程太麻烦，所以很多顾客不愿意处理。",
+                        "pinyin":  "Tuìhuò liúchéng tài máfan, suǒyǐ hěn duō gùkè bú yuànyì chǔlǐ.",
+                        "vietnamese":  "Quy trình trả hàng quá phiền nên nhiều khách không muốn xử lý.",
+                        "answer":  "退货流程太麻烦，所以很多顾客不愿意处理。"
+                    },
+                    {
+                        "chinese":  "如果质量有问题，商场应该免费退货。",
+                        "pinyin":  "Rúguǒ zhìliàng yǒu wèntí, shāngchǎng yīnggāi miǎnfèi tuìhuò.",
+                        "vietnamese":  "Nếu chất lượng có vấn đề, trung tâm thương mại nên cho trả hàng miễn phí.",
+                        "answer":  "如果质量有问题，商场应该免费退货。"
+                    },
+                    {
+                        "chinese":  "我已经在服务台申请退货，正在等确认。",
+                        "pinyin":  "Wǒ yǐjīng zài fúwùtái shēnqǐng tuìhuò, zhèngzài děng quèrèn.",
+                        "vietnamese":  "Tôi đã đăng ký trả hàng ở quầy dịch vụ, đang chờ xác nhận.",
+                        "answer":  "我已经在服务台申请退货，正在等确认。"
+                    },
+                    {
+                        "chinese":  "这家网店退货很方便，态度也不错。",
+                        "pinyin":  "Zhè jiā wǎngdiàn tuìhuò hěn fāngbiàn, tàidu yě búcuò.",
+                        "vietnamese":  "Cửa hàng online này trả hàng rất tiện, thái độ cũng khá tốt.",
+                        "answer":  "这家网店退货很方便，态度也不错。"
+                    },
+                    {
+                        "chinese":  "退货成功以后，钱会在三天之内退回。",
+                        "pinyin":  "Tuìhuò chénggōng yǐhòu, qián huì zài sān tiān zhī nèi tuì huí.",
+                        "vietnamese":  "Sau khi trả hàng thành công, tiền sẽ được hoàn lại trong vòng ba ngày.",
+                        "answer":  "退货成功以后，钱会在三天之内退回。"
+                    },
+                    {
+                        "chinese":  "这件外套很合身，颜色也适合你。",
+                        "pinyin":  "Zhè jiàn wàitào hěn héshēn, yánsè yě shìhé nǐ.",
+                        "vietnamese":  "Chiếc áo khoác này rất vừa người, màu cũng hợp với bạn.",
+                        "answer":  "这件外套很合身，颜色也适合你。"
+                    },
+                    {
+                        "chinese":  "如果衣服不合身，买回去也不会常穿。",
+                        "pinyin":  "Rúguǒ yīfu bù héshēn, mǎi huíqù yě bú huì cháng chuān.",
+                        "vietnamese":  "Nếu quần áo không vừa người, mua về cũng sẽ không hay mặc.",
+                        "answer":  "如果衣服不合身，买回去也不会常穿。"
+                    },
+                    {
+                        "chinese":  "这条裤子虽然便宜，但是一点儿也不合身。",
+                        "pinyin":  "Zhè tiáo kùzi suīrán piányi, dànshì yìdiǎnr yě bù héshēn.",
+                        "vietnamese":  "Chiếc quần này tuy rẻ nhưng hoàn toàn không vừa người.",
+                        "answer":  "这条裤子虽然便宜，但是一点儿也不合身。"
+                    },
+                    {
+                        "chinese":  "销售员帮我找了一件更合身的衬衫。",
+                        "pinyin":  "Xiāoshòuyuán bāng wǒ zhǎo le yí jiàn gèng héshēn de chènshān.",
+                        "vietnamese":  "Nhân viên bán hàng giúp tôi tìm một chiếc sơ mi vừa người hơn.",
+                        "answer":  "销售员帮我找了一件更合身的衬衫。"
+                    },
+                    {
+                        "chinese":  "网上买衣服最大的问题就是不一定合身。",
+                        "pinyin":  "Wǎngshàng mǎi yīfu zuì dà de wèntí jiù shì bù yídìng héshēn.",
+                        "vietnamese":  "Vấn đề lớn nhất khi mua quần áo online là chưa chắc vừa người.",
+                        "answer":  "网上买衣服最大的问题就是不一定合身。"
+                    },
+                    {
+                        "chinese":  "这件衣服的号太小，穿起来不太合身。",
+                        "pinyin":  "Zhè jiàn yīfu de hào tài xiǎo, chuān qǐlái bú tài héshēn.",
+                        "vietnamese":  "Cỡ áo này quá nhỏ, mặc lên không vừa lắm.",
+                        "answer":  "这件衣服的号太小，穿起来不太合身。"
+                    },
+                    {
+                        "chinese":  "合身的衣服不一定贵，关键是适合体形。",
+                        "pinyin":  "Héshēn de yīfu bù yídìng guì, guānjiàn shì shìhé tǐxíng.",
+                        "vietnamese":  "Quần áo vừa người chưa chắc đắt, quan trọng là hợp dáng người.",
+                        "answer":  "合身的衣服不一定贵，关键是适合体形。"
+                    },
+                    {
+                        "chinese":  "他试了三件，最后才找到一件合身的。",
+                        "pinyin":  "Tā shì le sān jiàn, zuìhòu cái zhǎodào yí jiàn héshēn de.",
+                        "vietnamese":  "Anh ấy thử ba chiếc, cuối cùng mới tìm được một chiếc vừa người.",
+                        "answer":  "他试了三件，最后才找到一件合身的。"
+                    },
+                    {
+                        "chinese":  "这套西服特别合身，看起来很正式。",
+                        "pinyin":  "Zhè tào xīfú tèbié héshēn, kàn qǐlái hěn zhèngshì.",
+                        "vietnamese":  "Bộ vest này rất vừa người, nhìn rất trang trọng.",
+                        "answer":  "这套西服特别合身，看起来很正式。"
+                    },
+                    {
+                        "chinese":  "如果想买合身的衣服，最好到店里试穿。",
+                        "pinyin":  "Rúguǒ xiǎng mǎi héshēn de yīfu, zuìhǎo dào diàn lǐ shìchuān.",
+                        "vietnamese":  "Nếu muốn mua quần áo vừa người, tốt nhất đến cửa hàng thử.",
+                        "answer":  "如果想买合身的衣服，最好到店里试穿。"
+                    },
+                    {
+                        "chinese":  "这款手机最近销售得非常好。",
+                        "pinyin":  "Zhè kuǎn shǒujī zuìjìn xiāoshòu de fēicháng hǎo.",
+                        "vietnamese":  "Mẫu điện thoại này gần đây bán rất tốt.",
+                        "answer":  "这款手机最近销售得非常好。"
+                    },
+                    {
+                        "chinese":  "他在商场做销售，每天都要接待很多顾客。",
+                        "pinyin":  "Tā zài shāngchǎng zuò xiāoshòu, měitiān dōu yào jiēdài hěn duō gùkè.",
+                        "vietnamese":  "Anh ấy làm bán hàng ở trung tâm thương mại, mỗi ngày phải tiếp rất nhiều khách.",
+                        "answer":  "他在商场做销售，每天都要接待很多顾客。"
+                    },
+                    {
+                        "chinese":  "销售员的态度会直接影响顾客的购物体验。",
+                        "pinyin":  "Xiāoshòuyuán de tàidu huì zhíjiē yǐngxiǎng gùkè de gòuwù tǐyàn.",
+                        "vietnamese":  "Thái độ của nhân viên bán hàng sẽ ảnh hưởng trực tiếp đến trải nghiệm mua sắm của khách.",
+                        "answer":  "销售员的态度会直接影响顾客的购物体验。"
+                    },
+                    {
+                        "chinese":  "这家店通过改进服务，提高了销售成绩。",
+                        "pinyin":  "Zhè jiā diàn tōngguò gǎijìn fúwù, tígāo le xiāoshòu chéngjì.",
+                        "vietnamese":  "Cửa hàng này thông qua cải thiện dịch vụ đã nâng cao thành tích bán hàng.",
+                        "answer":  "这家店通过改进服务，提高了销售成绩。"
+                    },
+                    {
+                        "chinese":  "销售数据说明，这个套餐很受年轻人欢迎。",
+                        "pinyin":  "Xiāoshòu shùjù shuōmíng, zhège tàocān hěn shòu niánqīng rén huānyíng.",
+                        "vietnamese":  "Dữ liệu bán hàng cho thấy combo này rất được người trẻ yêu thích.",
+                        "answer":  "销售数据说明，这个套餐很受年轻人欢迎。"
+                    },
+                    {
+                        "chinese":  "他刚开始做销售时，不太会跟顾客沟通。",
+                        "pinyin":  "Tā gāng kāishǐ zuò xiāoshòu shí, bú tài huì gēn gùkè gōutōng.",
+                        "vietnamese":  "Khi mới bắt đầu làm bán hàng, anh ấy không giỏi giao tiếp với khách lắm.",
+                        "answer":  "他刚开始做销售时，不太会跟顾客沟通。"
+                    },
+                    {
+                        "chinese":  "免费试用活动让产品销售增加了不少。",
+                        "pinyin":  "Miǎnfèi shìyòng huódòng ràng chǎnpǐn xiāoshòu zēngjiā le bù shǎo.",
+                        "vietnamese":  "Hoạt động dùng thử miễn phí khiến doanh số sản phẩm tăng không ít.",
+                        "answer":  "免费试用活动让产品销售增加了不少。"
+                    },
+                    {
+                        "chinese":  "销售部门要求我们保留每一张发票。",
+                        "pinyin":  "Xiāoshòu bùmén yāoqiú wǒmen bǎoliú měi yì zhāng fāpiào.",
+                        "vietnamese":  "Bộ phận bán hàng yêu cầu chúng tôi giữ lại từng hóa đơn.",
+                        "answer":  "销售部门要求我们保留每一张发票。"
+                    },
+                    {
+                        "chinese":  "这个月销售任务很重，大家压力都不小。",
+                        "pinyin":  "Zhège yuè xiāoshòu rènwu hěn zhòng, dàjiā yālì dōu bù xiǎo.",
+                        "vietnamese":  "Nhiệm vụ bán hàng tháng này rất nặng, mọi người đều áp lực không nhỏ.",
+                        "answer":  "这个月销售任务很重，大家压力都不小。"
+                    },
+                    {
+                        "chinese":  "只靠低价销售，不能真正提高品牌价值。",
+                        "pinyin":  "Zhǐ kào dījià xiāoshòu, bù néng zhēnzhèng tígāo pǐnpái jiàzhí.",
+                        "vietnamese":  "Chỉ dựa vào bán giá thấp không thể thật sự nâng cao giá trị thương hiệu.",
+                        "answer":  "只靠低价销售，不能真正提高品牌价值。"
+                    },
+                    {
+                        "chinese":  "退货时必须出示发票和购物单据。",
+                        "pinyin":  "Tuìhuò shí bìxū chūshì fāpiào hé gòuwù dānjù.",
+                        "vietnamese":  "Khi trả hàng bắt buộc phải xuất trình hóa đơn và chứng từ mua hàng.",
+                        "answer":  "退货时必须出示发票和购物单据。"
+                    },
+                    {
+                        "chinese":  "这张单据上的金额和实际付款不一样。",
+                        "pinyin":  "Zhè zhāng dānjù shàng de jīn\u0027é hé shíjì fùkuǎn bù yíyàng.",
+                        "vietnamese":  "Số tiền trên chứng từ này không giống số tiền thanh toán thực tế.",
+                        "answer":  "这张单据上的金额和实际付款不一样。"
+                    },
+                    {
+                        "chinese":  "如果单据丢了，服务台可能不接受退货。",
+                        "pinyin":  "Rúguǒ dānjù diū le, fúwùtái kěnéng bù jiēshòu tuìhuò.",
+                        "vietnamese":  "Nếu mất chứng từ, quầy dịch vụ có thể không nhận trả hàng.",
+                        "answer":  "如果单据丢了，服务台可能不接受退货。"
+                    },
+                    {
+                        "chinese":  "收银台打印的单据要保存好。",
+                        "pinyin":  "Shōuyíntái dǎyìn de dānjù yào bǎocún hǎo.",
+                        "vietnamese":  "Chứng từ in ở quầy thu ngân phải giữ cẩn thận.",
+                        "answer":  "收银台打印的单据要保存好。"
+                    },
+                    {
+                        "chinese":  "他把所有单据都放进了文件夹里。",
+                        "pinyin":  "Tā bǎ suǒyǒu dānjù dōu fàng jìn le wénjiànjiā lǐ.",
+                        "vietnamese":  "Anh ấy để tất cả chứng từ vào trong bìa hồ sơ.",
+                        "answer":  "他把所有单据都放进了文件夹里。"
+                    },
+                    {
+                        "chinese":  "销售人员核对单据以后，才同意退货。",
+                        "pinyin":  "Xiāoshòu rényuán héduì dānjù yǐhòu, cái tóngyì tuìhuò.",
+                        "vietnamese":  "Nhân viên bán hàng sau khi đối chiếu chứng từ mới đồng ý trả hàng.",
+                        "answer":  "销售人员核对单据以后，才同意退货。"
+                    },
+                    {
+                        "chinese":  "这份单据证明你确实在本店消费过。",
+                        "pinyin":  "Zhè fèn dānjù zhèngmíng nǐ quèshí zài běn diàn xiāofèi guò.",
+                        "vietnamese":  "Chứng từ này chứng minh bạn thật sự đã tiêu dùng tại cửa hàng này.",
+                        "answer":  "这份单据证明你确实在本店消费过。"
+                    },
+                    {
+                        "chinese":  "没有单据的话，很多售后服务都会受影响。",
+                        "pinyin":  "Méiyǒu dānjù dehuà, hěn duō shòuhòu fúwù dōu huì shòu yǐngxiǎng.",
+                        "vietnamese":  "Nếu không có chứng từ, nhiều dịch vụ sau bán hàng đều sẽ bị ảnh hưởng.",
+                        "answer":  "没有单据的话，很多售后服务都会受影响。"
+                    },
+                    {
+                        "chinese":  "请你把单据交给服务台工作人员。",
+                        "pinyin":  "Qǐng nǐ bǎ dānjù jiāo gěi fúwùtái gōngzuò rényuán.",
+                        "vietnamese":  "Xin bạn đưa chứng từ cho nhân viên quầy dịch vụ.",
+                        "answer":  "请你把单据交给服务台工作人员。"
+                    },
+                    {
+                        "chinese":  "购物单据虽然小，但处理退货时很重要。",
+                        "pinyin":  "Gòuwù dānjù suīrán xiǎo, dàn chǔlǐ tuìhuò shí hěn zhòngyào.",
+                        "vietnamese":  "Chứng từ mua hàng tuy nhỏ nhưng rất quan trọng khi xử lý trả hàng.",
+                        "answer":  "购物单据虽然小，但处理退货时很重要。"
+                    },
+                    {
+                        "chinese":  "公司要求每次报销都必须提供发票。",
+                        "pinyin":  "Gōngsī yāoqiú měi cì bàoxiāo dōu bìxū tígōng fāpiào.",
+                        "vietnamese":  "Công ty yêu cầu mỗi lần thanh toán lại đều phải cung cấp hóa đơn.",
+                        "answer":  "公司要求每次报销都必须提供发票。"
+                    },
+                    {
+                        "chinese":  "这张发票上的商品名称写错了。",
+                        "pinyin":  "Zhè zhāng fāpiào shàng de shāngpǐn míngchēng xiě cuò le.",
+                        "vietnamese":  "Tên hàng trên hóa đơn này viết sai rồi.",
+                        "answer":  "这张发票上的商品名称写错了。"
+                    },
+                    {
+                        "chinese":  "退货时没有发票，手续会麻烦很多。",
+                        "pinyin":  "Tuìhuò shí méiyǒu fāpiào, shǒuxù huì máfan hěn duō.",
+                        "vietnamese":  "Khi trả hàng không có hóa đơn, thủ tục sẽ phiền hơn nhiều.",
+                        "answer":  "退货时没有发票，手续会麻烦很多。"
+                    },
+                    {
+                        "chinese":  "收银台可以帮你重新打印电子发票。",
+                        "pinyin":  "Shōuyíntái kěyǐ bāng nǐ chóngxīn dǎyìn diànzǐ fāpiào.",
+                        "vietnamese":  "Quầy thu ngân có thể giúp bạn in lại hóa đơn điện tử.",
+                        "answer":  "收银台可以帮你重新打印电子发票。"
+                    },
+                    {
+                        "chinese":  "服务员问我们要普通发票还是电子发票。",
+                        "pinyin":  "Fúwùyuán wèn wǒmen yào pǔtōng fāpiào háishi diànzǐ fāpiào.",
+                        "vietnamese":  "Nhân viên phục vụ hỏi chúng tôi cần hóa đơn thường hay hóa đơn điện tử.",
+                        "answer":  "服务员问我们要普通发票还是电子发票。"
+                    },
+                    {
+                        "chinese":  "发票金额要和单据金额完全一致。",
+                        "pinyin":  "Fāpiào jīn\u0027é yào hé dānjù jīn\u0027é wánquán yízhì.",
+                        "vietnamese":  "Số tiền hóa đơn phải hoàn toàn khớp với số tiền chứng từ.",
+                        "answer":  "发票金额要和单据金额完全一致。"
+                    },
+                    {
+                        "chinese":  "如果发票信息不对，要马上申请修改。",
+                        "pinyin":  "Rúguǒ fāpiào xìnxī bú duì, yào mǎshàng shēnqǐng xiūgǎi.",
+                        "vietnamese":  "Nếu thông tin hóa đơn không đúng, phải lập tức đăng ký sửa.",
+                        "answer":  "如果发票信息不对，要马上申请修改。"
+                    },
+                    {
+                        "chinese":  "销售员把发票放进袋子里，提醒我保存。",
+                        "pinyin":  "Xiāoshòuyuán bǎ fāpiào fàng jìn dàizi lǐ, tíxǐng wǒ bǎocún.",
+                        "vietnamese":  "Nhân viên bán hàng bỏ hóa đơn vào túi và nhắc tôi giữ lại.",
+                        "answer":  "销售员把发票放进袋子里，提醒我保存。"
+                    },
+                    {
+                        "chinese":  "这家店开发票很快，不用等很久。",
+                        "pinyin":  "Zhè jiā diàn kāi fāpiào hěn kuài, búyòng děng hěn jiǔ.",
+                        "vietnamese":  "Cửa hàng này xuất hóa đơn rất nhanh, không cần đợi lâu.",
+                        "answer":  "这家店开发票很快，不用等很久。"
+                    },
+                    {
+                        "chinese":  "没有正规发票，消费者维权会比较困难。",
+                        "pinyin":  "Méiyǒu zhèngguī fāpiào, xiāofèizhě wéiquán huì bǐjiào kùnnan.",
+                        "vietnamese":  "Không có hóa đơn hợp lệ, người tiêu dùng bảo vệ quyền lợi sẽ khá khó khăn.",
+                        "answer":  "没有正规发票，消费者维权会比较困难。"
+                    },
+                    {
+                        "chinese":  "你穿多大号的鞋？",
+                        "pinyin":  "Nǐ chuān duō dà hào de xié?",
+                        "vietnamese":  "Bạn đi giày cỡ bao nhiêu?",
+                        "answer":  "你穿多大号的鞋？"
+                    },
+                    {
+                        "chinese":  "这件衣服有大号，也有中号。",
+                        "pinyin":  "Zhè jiàn yīfu yǒu dà hào, yě yǒu zhōng hào.",
+                        "vietnamese":  "Chiếc áo này có cỡ lớn và cỡ vừa.",
+                        "answer":  "这件衣服有大号，也有中号。"
+                    },
+                    {
+                        "chinese":  "我买错了号，所以穿起来不合身。",
+                        "pinyin":  "Wǒ mǎi cuò le hào, suǒyǐ chuān qǐlái bù héshēn.",
+                        "vietnamese":  "Tôi mua nhầm cỡ nên mặc lên không vừa người.",
+                        "answer":  "我买错了号，所以穿起来不合身。"
+                    },
+                    {
+                        "chinese":  "销售员建议我试试小一号的裤子。",
+                        "pinyin":  "Xiāoshòuyuán jiànyì wǒ shìshi xiǎo yì hào de kùzi.",
+                        "vietnamese":  "Nhân viên bán hàng khuyên tôi thử chiếc quần nhỏ hơn một cỡ.",
+                        "answer":  "销售员建议我试试小一号的裤子。"
+                    },
+                    {
+                        "chinese":  "这个号已经卖完了，只剩下大号。",
+                        "pinyin":  "Zhège hào yǐjīng mài wán le, zhǐ shèng xià dà hào.",
+                        "vietnamese":  "Cỡ này đã bán hết rồi, chỉ còn cỡ lớn.",
+                        "answer":  "这个号已经卖完了，只剩下大号。"
+                    },
+                    {
+                        "chinese":  "网上买衣服时，一定要看清楚号。",
+                        "pinyin":  "Wǎngshàng mǎi yīfu shí, yídìng yào kàn qīngchu hào.",
+                        "vietnamese":  "Khi mua quần áo trên mạng, nhất định phải xem rõ cỡ.",
+                        "answer":  "网上买衣服时，一定要看清楚号。"
+                    },
+                    {
+                        "chinese":  "这双鞋号不对，我想去服务台换货。",
+                        "pinyin":  "Zhè shuāng xié hào bú duì, wǒ xiǎng qù fúwùtái huànhuò.",
+                        "vietnamese":  "Đôi giày này cỡ không đúng, tôi muốn đến quầy dịch vụ đổi hàng.",
+                        "answer":  "这双鞋号不对，我想去服务台换货。"
+                    },
+                    {
+                        "chinese":  "同样的号，不同品牌穿起来也不一样。",
+                        "pinyin":  "Tóngyàng de hào, bùtóng pǐnpái chuān qǐlái yě bù yíyàng.",
+                        "vietnamese":  "Cùng một cỡ, các thương hiệu khác nhau mặc lên cũng không giống nhau.",
+                        "answer":  "同样的号，不同品牌穿起来也不一样。"
+                    },
+                    {
+                        "chinese":  "如果没有合适的号，就不要勉强买。",
+                        "pinyin":  "Rúguǒ méiyǒu héshì de hào, jiù búyào miǎnqiǎng mǎi.",
+                        "vietnamese":  "Nếu không có cỡ phù hợp thì đừng miễn cưỡng mua.",
+                        "answer":  "如果没有合适的号，就不要勉强买。"
+                    },
+                    {
+                        "chinese":  "他先确认了号和颜色，才决定刷卡付款。",
+                        "pinyin":  "Tā xiān quèrèn le hào hé yánsè, cái juédìng shuākǎ fùkuǎn.",
+                        "vietnamese":  "Anh ấy xác nhận cỡ và màu trước rồi mới quyết định quẹt thẻ thanh toán.",
+                        "answer":  "他先确认了号和颜色，才决定刷卡付款。"
+                    },
+                    {
+                        "chinese":  "每个人的体形不同，适合的衣服也不同。",
+                        "pinyin":  "Měi ge rén de tǐxíng bùtóng, shìhé de yīfu yě bùtóng.",
+                        "vietnamese":  "Dáng người mỗi người khác nhau, quần áo phù hợp cũng khác nhau.",
+                        "answer":  "每个人的体形不同，适合的衣服也不同。"
+                    },
+                    {
+                        "chinese":  "销售员会根据顾客体形推荐合适的号。",
+                        "pinyin":  "Xiāoshòuyuán huì gēnjù gùkè tǐxíng tuījiàn héshì de hào.",
+                        "vietnamese":  "Nhân viên bán hàng sẽ dựa vào dáng người của khách để giới thiệu cỡ phù hợp.",
+                        "answer":  "销售员会根据顾客体形推荐合适的号。"
+                    },
+                    {
+                        "chinese":  "这条裙子很适合她的体形。",
+                        "pinyin":  "Zhè tiáo qúnzi hěn shìhé tā de tǐxíng.",
+                        "vietnamese":  "Chiếc váy này rất hợp với dáng người của cô ấy.",
+                        "answer":  "这条裙子很适合她的体形。"
+                    },
+                    {
+                        "chinese":  "他体形偏瘦，所以穿大号会显得不合身。",
+                        "pinyin":  "Tā tǐxíng piān shòu, suǒyǐ chuān dà hào huì xiǎnde bù héshēn.",
+                        "vietnamese":  "Dáng người anh ấy hơi gầy nên mặc cỡ lớn sẽ trông không vừa.",
+                        "answer":  "他体形偏瘦，所以穿大号会显得不合身。"
+                    },
+                    {
+                        "chinese":  "健身以后，他的体形明显变好了。",
+                        "pinyin":  "Jiànshēn yǐhòu, tā de tǐxíng míngxiǎn biàn hǎo le.",
+                        "vietnamese":  "Sau khi tập thể hình, dáng người anh ấy rõ ràng đẹp hơn.",
+                        "answer":  "健身以后，他的体形明显变好了。"
+                    },
+                    {
+                        "chinese":  "选衣服不能只看流行，还要看体形。",
+                        "pinyin":  "Xuǎn yīfu bù néng zhǐ kàn liúxíng, hái yào kàn tǐxíng.",
+                        "vietnamese":  "Chọn quần áo không thể chỉ xem xu hướng, còn phải xem dáng người.",
+                        "answer":  "选衣服不能只看流行，还要看体形。"
+                    },
+                    {
+                        "chinese":  "这款衣服对体形要求比较高。",
+                        "pinyin":  "Zhè kuǎn yīfu duì tǐxíng yāoqiú bǐjiào gāo.",
+                        "vietnamese":  "Kiểu quần áo này yêu cầu dáng người khá cao.",
+                        "answer":  "这款衣服对体形要求比较高。"
+                    },
+                    {
+                        "chinese":  "如果了解自己的体形，购物时就不容易出错。",
+                        "pinyin":  "Rúguǒ liǎojiě zìjǐ de tǐxíng, gòuwù shí jiù bù róngyì chūcuò.",
+                        "vietnamese":  "Nếu hiểu dáng người của mình, khi mua sắm sẽ không dễ mắc lỗi.",
+                        "answer":  "如果了解自己的体形，购物时就不容易出错。"
+                    },
+                    {
+                        "chinese":  "体形不是问题，关键是选择合适的款式。",
+                        "pinyin":  "Tǐxíng bú shì wèntí, guānjiàn shì xuǎnzé héshì de kuǎnshì.",
+                        "vietnamese":  "Dáng người không phải vấn đề, quan trọng là chọn kiểu phù hợp.",
+                        "answer":  "体形不是问题，关键是选择合适的款式。"
+                    },
+                    {
+                        "chinese":  "这家店提供免费的体形分析服务。",
+                        "pinyin":  "Zhè jiā diàn tígōng miǎnfèi de tǐxíng fēnxī fúwù.",
+                        "vietnamese":  "Cửa hàng này cung cấp dịch vụ phân tích dáng người miễn phí.",
+                        "answer":  "这家店提供免费的体形分析服务。"
+                    },
+                    {
+                        "chinese":  "这次活动对会员完全免费。",
+                        "pinyin":  "Zhè cì huódòng duì huìyuán wánquán miǎnfèi.",
+                        "vietnamese":  "Hoạt động lần này hoàn toàn miễn phí cho hội viên.",
+                        "answer":  "这次活动对会员完全免费。"
+                    },
+                    {
+                        "chinese":  "服务台说退货服务是免费的。",
+                        "pinyin":  "Fúwùtái shuō tuìhuò fúwù shì miǎnfèi de.",
+                        "vietnamese":  "Quầy dịch vụ nói dịch vụ trả hàng là miễn phí.",
+                        "answer":  "服务台说退货服务是免费的。"
+                    },
+                    {
+                        "chinese":  "商场提供免费停车，但时间只有两个小时。",
+                        "pinyin":  "Shāngchǎng tígōng miǎnfèi tíngchē, dàn shíjiān zhǐ yǒu liǎng ge xiǎoshí.",
+                        "vietnamese":  "Trung tâm thương mại cung cấp đỗ xe miễn phí nhưng thời gian chỉ có hai tiếng.",
+                        "answer":  "商场提供免费停车，但时间只有两个小时。"
+                    },
+                    {
+                        "chinese":  "这家店免费修改裤长，所以很受欢迎。",
+                        "pinyin":  "Zhè jiā diàn miǎnfèi xiūgǎi kùcháng, suǒyǐ hěn shòu huānyíng.",
+                        "vietnamese":  "Cửa hàng này sửa chiều dài quần miễn phí nên rất được yêu thích.",
+                        "answer":  "这家店免费修改裤长，所以很受欢迎。"
+                    },
+                    {
+                        "chinese":  "免费服务不代表质量可以降低。",
+                        "pinyin":  "Miǎnfèi fúwù bù dàibiǎo zhìliàng kěyǐ jiàngdī.",
+                        "vietnamese":  "Dịch vụ miễn phí không có nghĩa là chất lượng có thể giảm.",
+                        "answer":  "免费服务不代表质量可以降低。"
+                    },
+                    {
+                        "chinese":  "如果消费满三百元，可以免费送货。",
+                        "pinyin":  "Rúguǒ xiāofèi mǎn sānbǎi yuán, kěyǐ miǎnfèi sònghuò.",
+                        "vietnamese":  "Nếu tiêu dùng đủ 300 tệ, có thể giao hàng miễn phí.",
+                        "answer":  "如果消费满三百元，可以免费送货。"
+                    },
+                    {
+                        "chinese":  "店员给我一张免费的优惠券。",
+                        "pinyin":  "Diànyuán gěi wǒ yì zhāng miǎnfèi de yōuhuìquàn.",
+                        "vietnamese":  "Nhân viên đưa tôi một phiếu ưu đãi miễn phí.",
+                        "answer":  "店员给我一张免费的优惠券。"
+                    },
+                    {
+                        "chinese":  "这款软件可以免费试用七天。",
+                        "pinyin":  "Zhè kuǎn ruǎnjiàn kěyǐ miǎnfèi shìyòng qī tiān.",
+                        "vietnamese":  "Phần mềm này có thể dùng thử miễn phí bảy ngày.",
+                        "answer":  "这款软件可以免费试用七天。"
+                    },
+                    {
+                        "chinese":  "免费退货虽然方便，但也需要符合条件。",
+                        "pinyin":  "Miǎnfèi tuìhuò suīrán fāngbiàn, dàn yě xūyào fúhé tiáojiàn.",
+                        "vietnamese":  "Trả hàng miễn phí tuy tiện nhưng cũng cần phù hợp điều kiện.",
+                        "answer":  "免费退货虽然方便，但也需要符合条件。"
+                    },
+                    {
+                        "chinese":  "收银台旁边有免费包装服务。",
+                        "pinyin":  "Shōuyíntái pángbiān yǒu miǎnfèi bāozhuāng fúwù.",
+                        "vietnamese":  "Bên cạnh quầy thu ngân có dịch vụ gói hàng miễn phí.",
+                        "answer":  "收银台旁边有免费包装服务。"
+                    },
+                    {
+                        "chinese":  "如果需要退货，请先到服务台登记。",
+                        "pinyin":  "Rúguǒ xūyào tuìhuò, qǐng xiān dào fúwùtái dēngjì.",
+                        "vietnamese":  "Nếu cần trả hàng, xin hãy đến quầy dịch vụ đăng ký trước.",
+                        "answer":  "如果需要退货，请先到服务台登记。"
+                    },
+                    {
+                        "chinese":  "服务台工作人员帮我查了订单信息。",
+                        "pinyin":  "Fúwùtái gōngzuò rényuán bāng wǒ chá le dìngdān xìnxī.",
+                        "vietnamese":  "Nhân viên quầy dịch vụ giúp tôi tra thông tin đơn hàng.",
+                        "answer":  "服务台工作人员帮我查了订单信息。"
+                    },
+                    {
+                        "chinese":  "发票丢了以后，可以去服务台咨询。",
+                        "pinyin":  "Fāpiào diū le yǐhòu, kěyǐ qù fúwùtái zīxún.",
+                        "vietnamese":  "Sau khi mất hóa đơn, có thể đến quầy dịch vụ tư vấn.",
+                        "answer":  "发票丢了以后，可以去服务台咨询。"
+                    },
+                    {
+                        "chinese":  "服务台旁边就是收银台，很容易找到。",
+                        "pinyin":  "Fúwùtái pángbiān jiù shì shōuyíntái, hěn róngyì zhǎodào.",
+                        "vietnamese":  "Bên cạnh quầy dịch vụ chính là quầy thu ngân, rất dễ tìm.",
+                        "answer":  "服务台旁边就是收银台，很容易找到。"
+                    },
+                    {
+                        "chinese":  "这家商场的服务台态度一直很好。",
+                        "pinyin":  "Zhè jiā shāngchǎng de fúwùtái tàidu yìzhí hěn hǎo.",
+                        "vietnamese":  "Thái độ quầy dịch vụ của trung tâm thương mại này luôn rất tốt.",
+                        "answer":  "这家商场的服务台态度一直很好。"
+                    },
+                    {
+                        "chinese":  "服务台说这件衣服可以免费改小。",
+                        "pinyin":  "Fúwùtái shuō zhè jiàn yīfu kěyǐ miǎnfèi gǎi xiǎo.",
+                        "vietnamese":  "Quầy dịch vụ nói chiếc áo này có thể sửa nhỏ miễn phí.",
+                        "answer":  "服务台说这件衣服可以免费改小。"
+                    },
+                    {
+                        "chinese":  "如果找不到合适的号，可以问服务台。",
+                        "pinyin":  "Rúguǒ zhǎo bú dào héshì de hào, kěyǐ wèn fúwùtái.",
+                        "vietnamese":  "Nếu không tìm được cỡ phù hợp, có thể hỏi quầy dịch vụ.",
+                        "answer":  "如果找不到合适的号，可以问服务台。"
+                    },
+                    {
+                        "chinese":  "服务台会把顾客意见交给销售部门。",
+                        "pinyin":  "Fúwùtái huì bǎ gùkè yìjiàn jiāo gěi xiāoshòu bùmén.",
+                        "vietnamese":  "Quầy dịch vụ sẽ chuyển ý kiến khách hàng cho bộ phận bán hàng.",
+                        "answer":  "服务台会把顾客意见交给销售部门。"
+                    },
+                    {
+                        "chinese":  "他在服务台等了十分钟，终于办好退货。",
+                        "pinyin":  "Tā zài fúwùtái děng le shí fēnzhōng, zhōngyú bàn hǎo tuìhuò.",
+                        "vietnamese":  "Anh ấy đợi ở quầy dịch vụ 10 phút, cuối cùng xử lý xong trả hàng.",
+                        "answer":  "他在服务台等了十分钟，终于办好退货。"
+                    },
+                    {
+                        "chinese":  "服务台提醒顾客保留单据，方便以后处理问题。",
+                        "pinyin":  "Fúwùtái tíxǐng gùkè bǎoliú dānjù, fāngbiàn yǐhòu chǔlǐ wèntí.",
+                        "vietnamese":  "Quầy dịch vụ nhắc khách giữ chứng từ để sau này xử lý vấn đề tiện hơn.",
+                        "answer":  "服务台提醒顾客保留单据，方便以后处理问题。"
+                    },
+                    {
+                        "chinese":  "请到收银台结账，然后再取发票。",
+                        "pinyin":  "Qǐng dào shōuyíntái jiézhàng, ránhòu zài qǔ fāpiào.",
+                        "vietnamese":  "Vui lòng đến quầy thu ngân thanh toán, sau đó lấy hóa đơn.",
+                        "answer":  "请到收银台结账，然后再取发票。"
+                    },
+                    {
+                        "chinese":  "收银台前面排了很多人。",
+                        "pinyin":  "Shōuyíntái qiánmiàn pái le hěn duō rén.",
+                        "vietnamese":  "Trước quầy thu ngân có rất nhiều người xếp hàng.",
+                        "answer":  "收银台前面排了很多人。"
+                    },
+                    {
+                        "chinese":  "这件衣服在收银台旁边可以免费包装。",
+                        "pinyin":  "Zhè jiàn yīfu zài shōuyíntái pángbiān kěyǐ miǎnfèi bāozhuāng.",
+                        "vietnamese":  "Chiếc áo này có thể gói miễn phí bên cạnh quầy thu ngân.",
+                        "answer":  "这件衣服在收银台旁边可以免费包装。"
+                    },
+                    {
+                        "chinese":  "收银台工作人员提醒我刷卡前确认金额。",
+                        "pinyin":  "Shōuyíntái gōngzuò rényuán tíxǐng wǒ shuākǎ qián quèrèn jīn\u0027é.",
+                        "vietnamese":  "Nhân viên quầy thu ngân nhắc tôi xác nhận số tiền trước khi quẹt thẻ.",
+                        "answer":  "收银台工作人员提醒我刷卡前确认金额。"
+                    },
+                    {
+                        "chinese":  "他在收银台发现买错了号。",
+                        "pinyin":  "Tā zài shōuyíntái fāxiàn mǎi cuò le hào.",
+                        "vietnamese":  "Anh ấy phát hiện mua nhầm cỡ ở quầy thu ngân.",
+                        "answer":  "他在收银台发现买错了号。"
+                    },
+                    {
+                        "chinese":  "收银台可以打印单据，也可以开发票。",
+                        "pinyin":  "Shōuyíntái kěyǐ dǎyìn dānjù, yě kěyǐ kāi fāpiào.",
+                        "vietnamese":  "Quầy thu ngân có thể in chứng từ, cũng có thể xuất hóa đơn.",
+                        "answer":  "收银台可以打印单据，也可以开发票。"
+                    },
+                    {
+                        "chinese":  "如果收银台太忙，可以先去服务台咨询。",
+                        "pinyin":  "Rúguǒ shōuyíntái tài máng, kěyǐ xiān qù fúwùtái zīxún.",
+                        "vietnamese":  "Nếu quầy thu ngân quá bận, có thể đến quầy dịch vụ hỏi trước.",
+                        "answer":  "如果收银台太忙，可以先去服务台咨询。"
+                    },
+                    {
+                        "chinese":  "收银台系统出错，导致付款失败。",
+                        "pinyin":  "Shōuyíntái xìtǒng chūcuò, dǎozhì fùkuǎn shībài.",
+                        "vietnamese":  "Hệ thống quầy thu ngân lỗi, dẫn đến thanh toán thất bại.",
+                        "answer":  "收银台系统出错，导致付款失败。"
+                    },
+                    {
+                        "chinese":  "购物结束后，请把商品拿到收银台。",
+                        "pinyin":  "Gòuwù jiéshù hòu, qǐng bǎ shāngpǐn ná dào shōuyíntái.",
+                        "vietnamese":  "Sau khi mua sắm xong, hãy mang hàng đến quầy thu ngân.",
+                        "answer":  "购物结束后，请把商品拿到收银台。"
+                    },
+                    {
+                        "chinese":  "收银台旁边的菜单上写着今日特价。",
+                        "pinyin":  "Shōuyíntái pángbiān de càidān shàng xiězhe jīnrì tèjià.",
+                        "vietnamese":  "Trên thực đơn bên cạnh quầy thu ngân ghi món giảm giá hôm nay.",
+                        "answer":  "收银台旁边的菜单上写着今日特价。"
+                    },
+                    {
+                        "chinese":  "商场应该不断改进退货流程。",
+                        "pinyin":  "Shāngchǎng yīnggāi bùduàn gǎijìn tuìhuò liúchéng.",
+                        "vietnamese":  "Trung tâm thương mại nên không ngừng cải thiện quy trình trả hàng.",
+                        "answer":  "商场应该不断改进退货流程。"
+                    },
+                    {
+                        "chinese":  "这个菜单设计得不好，需要进一步改进。",
+                        "pinyin":  "Zhège càidān shèjì de bù hǎo, xūyào jìnyíbù gǎijìn.",
+                        "vietnamese":  "Thiết kế thực đơn này chưa tốt, cần cải tiến thêm.",
+                        "answer":  "这个菜单设计得不好，需要进一步改进。"
+                    },
+                    {
+                        "chinese":  "销售部门根据顾客意见改进了服务。",
+                        "pinyin":  "Xiāoshòu bùmén gēnjù gùkè yìjiàn gǎijìn le fúwù.",
+                        "vietnamese":  "Bộ phận bán hàng dựa vào ý kiến khách hàng đã cải thiện dịch vụ.",
+                        "answer":  "销售部门根据顾客意见改进了服务。"
+                    },
+                    {
+                        "chinese":  "如果想提高销售，就必须改进产品质量。",
+                        "pinyin":  "Rúguǒ xiǎng tígāo xiāoshòu, jiù bìxū gǎijìn chǎnpǐn zhìliàng.",
+                        "vietnamese":  "Nếu muốn nâng cao doanh số, bắt buộc phải cải thiện chất lượng sản phẩm.",
+                        "answer":  "如果想提高销售，就必须改进产品质量。"
+                    },
+                    {
+                        "chinese":  "老板希望收银台系统下个月完成改进。",
+                        "pinyin":  "Lǎobǎn xīwàng shōuyíntái xìtǒng xià ge yuè wánchéng gǎijìn.",
+                        "vietnamese":  "Chủ cửa hàng hy vọng hệ thống quầy thu ngân hoàn thành cải tiến vào tháng sau.",
+                        "answer":  "老板希望收银台系统下个月完成改进。"
+                    },
+                    {
+                        "chinese":  "改进以后，顾客办理退货方便多了。",
+                        "pinyin":  "Gǎijìn yǐhòu, gùkè bànlǐ tuìhuò fāngbiàn duō le.",
+                        "vietnamese":  "Sau khi cải thiện, khách xử lý trả hàng tiện hơn nhiều.",
+                        "answer":  "改进以后，顾客办理退货方便多了。"
+                    },
+                    {
+                        "chinese":  "这款衣服的版型还可以继续改进。",
+                        "pinyin":  "Zhè kuǎn yīfu de bǎnxíng hái kěyǐ jìxù gǎijìn.",
+                        "vietnamese":  "Form dáng của mẫu quần áo này vẫn có thể tiếp tục cải tiến.",
+                        "answer":  "这款衣服的版型还可以继续改进。"
+                    },
+                    {
+                        "chinese":  "服务台收集意见，是为了改进顾客体验。",
+                        "pinyin":  "Fúwùtái shōují yìjiàn, shì wèile gǎijìn gùkè tǐyàn.",
+                        "vietnamese":  "Quầy dịch vụ thu thập ý kiến là để cải thiện trải nghiệm khách hàng.",
+                        "answer":  "服务台收集意见，是为了改进顾客体验。"
+                    },
+                    {
+                        "chinese":  "免费服务如果做不好，也需要认真改进。",
+                        "pinyin":  "Miǎnfèi fúwù rúguǒ zuò bù hǎo, yě xūyào rènzhēn gǎijìn.",
+                        "vietnamese":  "Nếu dịch vụ miễn phí làm không tốt thì cũng cần cải thiện nghiêm túc.",
+                        "answer":  "免费服务如果做不好，也需要认真改进。"
+                    },
+                    {
+                        "chinese":  "他提出了几个具体建议，帮助商场改进管理。",
+                        "pinyin":  "Tā tíchū le jǐ ge jùtǐ jiànyì, bāngzhù shāngchǎng gǎijìn guǎnlǐ.",
+                        "vietnamese":  "Anh ấy đưa ra vài đề xuất cụ thể, giúp trung tâm thương mại cải thiện quản lý.",
+                        "answer":  "他提出了几个具体建议，帮助商场改进管理。"
+                    },
+                    {
+                        "chinese":  "服务员把菜单递给我们，让我们先看看。",
+                        "pinyin":  "Fúwùyuán bǎ càidān dì gěi wǒmen, ràng wǒmen xiān kànkan.",
+                        "vietnamese":  "Nhân viên phục vụ đưa thực đơn cho chúng tôi, để chúng tôi xem trước.",
+                        "answer":  "服务员把菜单递给我们，让我们先看看。"
+                    },
+                    {
+                        "chinese":  "这个菜单上不仅有粥，还有很多凉菜。",
+                        "pinyin":  "Zhège càidān shàng bùjǐn yǒu zhōu, hái yǒu hěn duō liángcài.",
+                        "vietnamese":  "Trên thực đơn này không chỉ có cháo mà còn có nhiều món nguội.",
+                        "answer":  "这个菜单上不仅有粥，还有很多凉菜。"
+                    },
+                    {
+                        "chinese":  "菜单设计太复杂，顾客看起来很累。",
+                        "pinyin":  "Càidān shèjì tài fùzá, gùkè kàn qǐlái hěn lèi.",
+                        "vietnamese":  "Thiết kế thực đơn quá phức tạp, khách xem rất mệt.",
+                        "answer":  "菜单设计太复杂，顾客看起来很累。"
+                    },
+                    {
+                        "chinese":  "老板决定改进菜单，增加一些健康食品。",
+                        "pinyin":  "Lǎobǎn juédìng gǎijìn càidān, zēngjiā yìxiē jiànkāng shípǐn.",
+                        "vietnamese":  "Chủ quán quyết định cải tiến thực đơn, thêm một số thực phẩm lành mạnh.",
+                        "answer":  "老板决定改进菜单，增加一些健康食品。"
+                    },
+                    {
+                        "chinese":  "菜单上的价格和发票金额应该一致。",
+                        "pinyin":  "Càidān shàng de jiàgé hé fāpiào jīn\u0027é yīnggāi yízhì.",
+                        "vietnamese":  "Giá trên thực đơn và số tiền hóa đơn nên thống nhất.",
+                        "answer":  "菜单上的价格和发票金额应该一致。"
+                    },
+                    {
+                        "chinese":  "这家店的菜单很清楚，每个套餐都有图片。",
+                        "pinyin":  "Zhè jiā diàn de càidān hěn qīngchu, měi ge tàocān dōu yǒu túpiàn.",
+                        "vietnamese":  "Thực đơn của quán này rất rõ, mỗi combo đều có hình.",
+                        "answer":  "这家店的菜单很清楚，每个套餐都有图片。"
+                    },
+                    {
+                        "chinese":  "如果菜单内容太单调，销售会受到影响。",
+                        "pinyin":  "Rúguǒ càidān nèiróng tài dāndiào, xiāoshòu huì shòu dào yǐngxiǎng.",
+                        "vietnamese":  "Nếu nội dung thực đơn quá đơn điệu, doanh số sẽ bị ảnh hưởng.",
+                        "answer":  "如果菜单内容太单调，销售会受到影响。"
+                    },
+                    {
+                        "chinese":  "他看了半天菜单，最后点了一碗粥。",
+                        "pinyin":  "Tā kàn le bàntiān càidān, zuìhòu diǎn le yì wǎn zhōu.",
+                        "vietnamese":  "Anh ấy xem thực đơn rất lâu, cuối cùng gọi một bát cháo.",
+                        "answer":  "他看了半天菜单，最后点了一碗粥。"
+                    },
+                    {
+                        "chinese":  "收银台旁边也放着一份简单菜单。",
+                        "pinyin":  "Shōuyíntái pángbiān yě fàngzhe yí fèn jiǎndān càidān.",
+                        "vietnamese":  "Bên cạnh quầy thu ngân cũng đặt một bản thực đơn đơn giản.",
+                        "answer":  "收银台旁边也放着一份简单菜单。"
+                    },
+                    {
+                        "chinese":  "这样一来，顾客看菜单就方便多了。",
+                        "pinyin":  "Zhèyàng yì lái, gùkè kàn càidān jiù fāngbiàn duō le.",
+                        "vietnamese":  "Như vậy thì khách xem thực đơn sẽ tiện hơn nhiều.",
+                        "answer":  "这样一来，顾客看菜单就方便多了。"
+                    },
+                    {
+                        "chinese":  "早上喝一碗热粥，胃会舒服一些。",
+                        "pinyin":  "Zǎoshang hē yì wǎn rè zhōu, wèi huì shūfu yìxiē.",
+                        "vietnamese":  "Buổi sáng uống một bát cháo nóng, dạ dày sẽ dễ chịu hơn.",
+                        "answer":  "早上喝一碗热粥，胃会舒服一些。"
+                    },
+                    {
+                        "chinese":  "这家店的粥很有特色，很多顾客专门来吃。",
+                        "pinyin":  "Zhè jiā diàn de zhōu hěn yǒu tèsè, hěn duō gùkè zhuānmén lái chī.",
+                        "vietnamese":  "Cháo của quán này rất đặc sắc, nhiều khách đặc biệt đến ăn.",
+                        "answer":  "这家店的粥很有特色，很多顾客专门来吃。"
+                    },
+                    {
+                        "chinese":  "菜单上有白粥、肉粥和海鲜粥。",
+                        "pinyin":  "Càidān shàng yǒu bái zhōu, ròu zhōu hé hǎixiān zhōu.",
+                        "vietnamese":  "Trên thực đơn có cháo trắng, cháo thịt và cháo hải sản.",
+                        "answer":  "菜单上有白粥、肉粥和海鲜粥。"
+                    },
+                    {
+                        "chinese":  "他发烧以后，只想吃点清淡的粥。",
+                        "pinyin":  "Tā fāshāo yǐhòu, zhǐ xiǎng chī diǎn qīngdàn de zhōu.",
+                        "vietnamese":  "Sau khi bị sốt, anh ấy chỉ muốn ăn chút cháo thanh đạm.",
+                        "answer":  "他发烧以后，只想吃点清淡的粥。"
+                    },
+                    {
+                        "chinese":  "这碗粥虽然便宜，但是味道很不错。",
+                        "pinyin":  "Zhè wǎn zhōu suīrán piányi, dànshì wèidào hěn búcuò.",
+                        "vietnamese":  "Bát cháo này tuy rẻ nhưng hương vị rất khá.",
+                        "answer":  "这碗粥虽然便宜，但是味道很不错。"
+                    },
+                    {
+                        "chinese":  "除了粥，我们还点了两个肉饼。",
+                        "pinyin":  "Chúle zhōu, wǒmen hái diǎn le liǎng ge ròubǐng.",
+                        "vietnamese":  "Ngoài cháo, chúng tôi còn gọi hai cái bánh nhân thịt.",
+                        "answer":  "除了粥，我们还点了两个肉饼。"
+                    },
+                    {
+                        "chinese":  "店员说这碗粥可以免费加小菜。",
+                        "pinyin":  "Diànyuán shuō zhè wǎn zhōu kěyǐ miǎnfèi jiā xiǎocài.",
+                        "vietnamese":  "Nhân viên nói bát cháo này có thể thêm món nhỏ miễn phí.",
+                        "answer":  "店员说这碗粥可以免费加小菜。"
+                    },
+                    {
+                        "chinese":  "外卖送到时，粥已经不太热了。",
+                        "pinyin":  "Wàimài sòng dào shí, zhōu yǐjīng bú tài rè le.",
+                        "vietnamese":  "Khi đồ giao ngoài đến, cháo đã không còn nóng lắm.",
+                        "answer":  "外卖送到时，粥已经不太热了。"
+                    },
+                    {
+                        "chinese":  "这家店通过改进包装，让粥不容易洒出来。",
+                        "pinyin":  "Zhè jiā diàn tōngguò gǎijìn bāozhuāng, ràng zhōu bù róngyì sǎ chūlái.",
+                        "vietnamese":  "Quán này thông qua cải tiến bao bì khiến cháo không dễ đổ ra.",
+                        "answer":  "这家店通过改进包装，让粥不容易洒出来。"
+                    },
+                    {
+                        "chinese":  "这样一来，顾客点粥外卖就放心多了。",
+                        "pinyin":  "Zhèyàng yì lái, gùkè diǎn zhōu wàimài jiù fàngxīn duō le.",
+                        "vietnamese":  "Như vậy thì khách gọi cháo giao ngoài sẽ yên tâm hơn nhiều.",
+                        "answer":  "这样一来，顾客点粥外卖就放心多了。"
+                    },
+                    {
+                        "chinese":  "夏天吃点凉菜，感觉很舒服。",
+                        "pinyin":  "Xiàtiān chī diǎn liángcài, gǎnjué hěn shūfu.",
+                        "vietnamese":  "Mùa hè ăn chút món nguội cảm thấy rất dễ chịu.",
+                        "answer":  "夏天吃点凉菜，感觉很舒服。"
+                    },
+                    {
+                        "chinese":  "这家饭店的凉菜做得特别清爽。",
+                        "pinyin":  "Zhè jiā fàndiàn de liángcài zuò de tèbié qīngshuǎng.",
+                        "vietnamese":  "Món nguội của nhà hàng này làm đặc biệt thanh mát.",
+                        "answer":  "这家饭店的凉菜做得特别清爽。"
+                    },
+                    {
+                        "chinese":  "除了烤鸭，我们还点了三盘凉菜。",
+                        "pinyin":  "Chúle kǎoyā, wǒmen hái diǎn le sān pán liángcài.",
+                        "vietnamese":  "Ngoài vịt quay, chúng tôi còn gọi ba đĩa món nguội.",
+                        "answer":  "除了烤鸭，我们还点了三盘凉菜。"
+                    },
+                    {
+                        "chinese":  "菜单上的凉菜种类不多，显得有点单调。",
+                        "pinyin":  "Càidān shàng de liángcài zhǒnglèi bù duō, xiǎnde yǒudiǎn dāndiào.",
+                        "vietnamese":  "Món nguội trên thực đơn không nhiều loại, có vẻ hơi đơn điệu.",
+                        "answer":  "菜单上的凉菜种类不多，显得有点单调。"
+                    },
+                    {
+                        "chinese":  "这个套餐包括一碗粥和一份凉菜。",
+                        "pinyin":  "Zhège tàocān bāokuò yì wǎn zhōu hé yí fèn liángcài.",
+                        "vietnamese":  "Combo này bao gồm một bát cháo và một phần món nguội.",
+                        "answer":  "这个套餐包括一碗粥和一份凉菜。"
+                    },
+                    {
+                        "chinese":  "凉菜最好当天吃完，不要放太久。",
+                        "pinyin":  "Liángcài zuìhǎo dàngtiān chī wán, búyào fàng tài jiǔ.",
+                        "vietnamese":  "Món nguội tốt nhất ăn hết trong ngày, đừng để quá lâu.",
+                        "answer":  "凉菜最好当天吃完，不要放太久。"
+                    },
+                    {
+                        "chinese":  "服务员推荐的凉菜很受顾客欢迎。",
+                        "pinyin":  "Fúwùyuán tuījiàn de liángcài hěn shòu gùkè huānyíng.",
+                        "vietnamese":  "Món nguội nhân viên phục vụ giới thiệu rất được khách yêu thích.",
+                        "answer":  "服务员推荐的凉菜很受顾客欢迎。"
+                    },
+                    {
+                        "chinese":  "退货可以等，但凉菜不能放到明天。",
+                        "pinyin":  "Tuìhuò kěyǐ děng, dàn liángcài bù néng fàng dào míngtiān.",
+                        "vietnamese":  "Trả hàng có thể đợi, nhưng món nguội không thể để đến ngày mai.",
+                        "answer":  "退货可以等，但凉菜不能放到明天。"
+                    },
+                    {
+                        "chinese":  "这道凉菜看起来简单，其实调味很讲究。",
+                        "pinyin":  "Zhè dào liángcài kàn qǐlái jiǎndān, qíshí tiáowèi hěn jiǎngjiu.",
+                        "vietnamese":  "Món nguội này nhìn đơn giản, thật ra nêm nếm rất cầu kỳ.",
+                        "answer":  "这道凉菜看起来简单，其实调味很讲究。"
+                    },
+                    {
+                        "chinese":  "如果顾客觉得太咸，我们可以改进凉菜配方。",
+                        "pinyin":  "Rúguǒ gùkè juéde tài xián, wǒmen kěyǐ gǎijìn liángcài pèifāng.",
+                        "vietnamese":  "Nếu khách thấy quá mặn, chúng tôi có thể cải thiện công thức món nguội.",
+                        "answer":  "如果顾客觉得太咸，我们可以改进凉菜配方。"
+                    },
+                    {
+                        "chinese":  "我早上只喝了一碗白粥。",
+                        "pinyin":  "Wǒ zǎoshang zhǐ hē le yì wǎn bái zhōu.",
+                        "vietnamese":  "Sáng nay tôi chỉ uống một bát cháo trắng.",
+                        "answer":  "我早上只喝了一碗白粥。"
+                    },
+                    {
+                        "chinese":  "这件白衬衫很合身，看起来很干净。",
+                        "pinyin":  "Zhè jiàn bái chènshān hěn héshēn, kàn qǐlái hěn gānjìng.",
+                        "vietnamese":  "Chiếc sơ mi trắng này rất vừa người, nhìn rất sạch sẽ.",
+                        "answer":  "这件白衬衫很合身，看起来很干净。"
+                    },
+                    {
+                        "chinese":  "菜单上写着白水免费提供。",
+                        "pinyin":  "Càidān shàng xiězhe báishuǐ miǎnfèi tígōng.",
+                        "vietnamese":  "Trên thực đơn ghi nước lọc được cung cấp miễn phí.",
+                        "answer":  "菜单上写着白水免费提供。"
+                    },
+                    {
+                        "chinese":  "他点了白粥和肉饼，吃得很简单。",
+                        "pinyin":  "Tā diǎn le bái zhōu hé ròubǐng, chī de hěn jiǎndān.",
+                        "vietnamese":  "Anh ấy gọi cháo trắng và bánh nhân thịt, ăn rất đơn giản.",
+                        "answer":  "他点了白粥和肉饼，吃得很简单。"
+                    },
+                    {
+                        "chinese":  "这条白裙子虽然漂亮，但是不太耐脏。",
+                        "pinyin":  "Zhè tiáo bái qúnzi suīrán piàoliang, dànshì bú tài nàizāng.",
+                        "vietnamese":  "Chiếc váy trắng này tuy đẹp nhưng không chịu bẩn lắm.",
+                        "answer":  "这条白裙子虽然漂亮，但是不太耐脏。"
+                    },
+                    {
+                        "chinese":  "白颜色的衣服容易显得人精神。",
+                        "pinyin":  "Bái yánsè de yīfu róngyì xiǎnde rén jīngshen.",
+                        "vietnamese":  "Quần áo màu trắng dễ làm người trông có tinh thần hơn.",
+                        "answer":  "白颜色的衣服容易显得人精神。"
+                    },
+                    {
+                        "chinese":  "服务台旁边有一个白色的指示牌。",
+                        "pinyin":  "Fúwùtái pángbiān yǒu yí ge báisè de zhǐshìpái.",
+                        "vietnamese":  "Bên cạnh quầy dịch vụ có một biển chỉ dẫn màu trắng.",
+                        "answer":  "服务台旁边有一个白色的指示牌。"
+                    },
+                    {
+                        "chinese":  "他买了一件白外套，但是号有点大。",
+                        "pinyin":  "Tā mǎi le yí jiàn bái wàitào, dànshì hào yǒudiǎn dà.",
+                        "vietnamese":  "Anh ấy mua một chiếc áo khoác trắng nhưng cỡ hơi lớn.",
+                        "answer":  "他买了一件白外套，但是号有点大。"
+                    },
+                    {
+                        "chinese":  "白粥配凉菜，吃起来比较清淡。",
+                        "pinyin":  "Bái zhōu pèi liángcài, chī qǐlái bǐjiào qīngdàn.",
+                        "vietnamese":  "Cháo trắng ăn kèm món nguội thì khá thanh đạm.",
+                        "answer":  "白粥配凉菜，吃起来比较清淡。"
+                    },
+                    {
+                        "chinese":  "如果白衣服洗不干净，就很影响销售。",
+                        "pinyin":  "Rúguǒ bái yīfu xǐ bù gānjìng, jiù hěn yǐngxiǎng xiāoshòu.",
+                        "vietnamese":  "Nếu quần áo trắng giặt không sạch thì rất ảnh hưởng đến bán hàng.",
+                        "answer":  "如果白衣服洗不干净，就很影响销售。"
+                    },
+                    {
+                        "chinese":  "这家店的肉饼外脆里嫩，特别受欢迎。",
+                        "pinyin":  "Zhè jiā diàn de ròubǐng wài cuì lǐ nèn, tèbié shòu huānyíng.",
+                        "vietnamese":  "Bánh nhân thịt của quán này ngoài giòn trong mềm, đặc biệt được yêu thích.",
+                        "answer":  "这家店的肉饼外脆里嫩，特别受欢迎。"
+                    },
+                    {
+                        "chinese":  "我点了一碗粥和两个肉饼。",
+                        "pinyin":  "Wǒ diǎn le yì wǎn zhōu hé liǎng ge ròubǐng.",
+                        "vietnamese":  "Tôi gọi một bát cháo và hai cái bánh nhân thịt.",
+                        "answer":  "我点了一碗粥和两个肉饼。"
+                    },
+                    {
+                        "chinese":  "菜单上说肉饼每天限量销售。",
+                        "pinyin":  "Càidān shàng shuō ròubǐng měitiān xiànliàng xiāoshòu.",
+                        "vietnamese":  "Trên thực đơn nói bánh nhân thịt mỗi ngày bán số lượng giới hạn.",
+                        "answer":  "菜单上说肉饼每天限量销售。"
+                    },
+                    {
+                        "chinese":  "这个肉饼太油了，吃完有点不舒服。",
+                        "pinyin":  "Zhège ròubǐng tài yóu le, chī wán yǒudiǎn bù shūfu.",
+                        "vietnamese":  "Bánh nhân thịt này quá dầu, ăn xong hơi khó chịu.",
+                        "answer":  "这个肉饼太油了，吃完有点不舒服。"
+                    },
+                    {
+                        "chinese":  "外卖送到时，肉饼还很热。",
+                        "pinyin":  "Wàimài sòng dào shí, ròubǐng hái hěn rè.",
+                        "vietnamese":  "Khi đồ giao ngoài đến, bánh nhân thịt vẫn còn nóng.",
+                        "answer":  "外卖送到时，肉饼还很热。"
+                    },
+                    {
+                        "chinese":  "服务员推荐我们尝尝新出的牛肉饼。",
+                        "pinyin":  "Fúwùyuán tuījiàn wǒmen chángchang xīn chū de niúròubǐng.",
+                        "vietnamese":  "Nhân viên phục vụ giới thiệu chúng tôi thử bánh nhân thịt bò mới ra.",
+                        "answer":  "服务员推荐我们尝尝新出的牛肉饼。"
+                    },
+                    {
+                        "chinese":  "这个套餐包括白粥、凉菜和肉饼。",
+                        "pinyin":  "Zhège tàocān bāokuò bái zhōu, liángcài hé ròubǐng.",
+                        "vietnamese":  "Combo này gồm cháo trắng, món nguội và bánh nhân thịt.",
+                        "answer":  "这个套餐包括白粥、凉菜和肉饼。"
+                    },
+                    {
+                        "chinese":  "肉饼价格不高，但是味道很有特色。",
+                        "pinyin":  "Ròubǐng jiàgé bù gāo, dànshì wèidào hěn yǒu tèsè.",
+                        "vietnamese":  "Bánh nhân thịt giá không cao nhưng hương vị rất đặc sắc.",
+                        "answer":  "肉饼价格不高，但是味道很有特色。"
+                    },
+                    {
+                        "chinese":  "他怕吃不完，所以只点了一个肉饼。",
+                        "pinyin":  "Tā pà chī bù wán, suǒyǐ zhǐ diǎn le yí ge ròubǐng.",
+                        "vietnamese":  "Anh ấy sợ ăn không hết nên chỉ gọi một cái bánh nhân thịt.",
+                        "answer":  "他怕吃不完，所以只点了一个肉饼。"
+                    },
+                    {
+                        "chinese":  "如果肉饼太咸，顾客会建议店里改进。",
+                        "pinyin":  "Rúguǒ ròubǐng tài xián, gùkè huì jiànyì diàn lǐ gǎijìn.",
+                        "vietnamese":  "Nếu bánh nhân thịt quá mặn, khách sẽ đề xuất quán cải thiện.",
+                        "answer":  "如果肉饼太咸，顾客会建议店里改进。"
+                    },
+                    {
+                        "chinese":  "这样一来，退货流程就简单多了。",
+                        "pinyin":  "Zhèyàng yì lái, tuìhuò liúchéng jiù jiǎndān duō le.",
+                        "vietnamese":  "Như vậy thì quy trình trả hàng đơn giản hơn nhiều.",
+                        "answer":  "这样一来，退货流程就简单多了。"
+                    },
+                    {
+                        "chinese":  "我们先确认号和体形，这样一来就不容易买错。",
+                        "pinyin":  "Wǒmen xiān quèrèn hào hé tǐxíng, zhèyàng yì lái jiù bù róngyì mǎi cuò.",
+                        "vietnamese":  "Chúng ta xác nhận cỡ và dáng người trước, như vậy thì không dễ mua nhầm.",
+                        "answer":  "我们先确认号和体形，这样一来就不容易买错。"
+                    },
+                    {
+                        "chinese":  "菜单上加了图片，这样一来顾客更容易选择。",
+                        "pinyin":  "Càidān shàng jiā le túpiàn, zhèyàng yì lái gùkè gèng róngyì xuǎnzé.",
+                        "vietnamese":  "Thêm hình ảnh vào thực đơn, như vậy khách dễ chọn hơn.",
+                        "answer":  "菜单上加了图片，这样一来顾客更容易选择。"
+                    },
+                    {
+                        "chinese":  "服务台和收银台分开，这样一来效率会更高。",
+                        "pinyin":  "Fúwùtái hé shōuyíntái fēnkāi, zhèyàng yì lái xiàolǜ huì gèng gāo.",
+                        "vietnamese":  "Tách quầy dịch vụ và quầy thu ngân, như vậy hiệu quả sẽ cao hơn.",
+                        "answer":  "服务台和收银台分开，这样一来效率会更高。"
+                    },
+                    {
+                        "chinese":  "提前保存单据，这样一来退货时就方便了。",
+                        "pinyin":  "Tíqián bǎocún dānjù, zhèyàng yì lái tuìhuò shí jiù fāngbiàn le.",
+                        "vietnamese":  "Giữ chứng từ trước, như vậy khi trả hàng sẽ tiện hơn.",
+                        "answer":  "提前保存单据，这样一来退货时就方便了。"
+                    },
+                    {
+                        "chinese":  "销售员先了解顾客体形，这样一来推荐更准确。",
+                        "pinyin":  "Xiāoshòuyuán xiān liǎojiě gùkè tǐxíng, zhèyàng yì lái tuījiàn gèng zhǔnquè.",
+                        "vietnamese":  "Nhân viên bán hàng hiểu dáng người của khách trước, như vậy giới thiệu sẽ chính xác hơn.",
+                        "answer":  "销售员先了解顾客体形，这样一来推荐更准确。"
+                    },
+                    {
+                        "chinese":  "商场提供免费修改服务，这样一来顾客更愿意购买。",
+                        "pinyin":  "Shāngchǎng tígōng miǎnfèi xiūgǎi fúwù, zhèyàng yì lái gùkè gèng yuànyì gòumǎi.",
+                        "vietnamese":  "Trung tâm thương mại cung cấp dịch vụ sửa miễn phí, như vậy khách càng muốn mua.",
+                        "answer":  "商场提供免费修改服务，这样一来顾客更愿意购买。"
+                    },
+                    {
+                        "chinese":  "我们把粥和凉菜放进套餐，这样一来选择更多。",
+                        "pinyin":  "Wǒmen bǎ zhōu hé liángcài fàng jìn tàocān, zhèyàng yì lái xuǎnzé gèng duō.",
+                        "vietnamese":  "Chúng tôi đưa cháo và món nguội vào combo, như vậy lựa chọn nhiều hơn.",
+                        "answer":  "我们把粥和凉菜放进套餐，这样一来选择更多。"
+                    },
+                    {
+                        "chinese":  "发票可以电子化，这样一来就不怕丢了。",
+                        "pinyin":  "Fāpiào kěyǐ diànzǐhuà, zhèyàng yì lái jiù bú pà diū le.",
+                        "vietnamese":  "Hóa đơn có thể điện tử hóa, như vậy thì không sợ mất nữa.",
+                        "answer":  "发票可以电子化，这样一来就不怕丢了。"
+                    },
+                    {
+                        "chinese":  "店里不断改进服务，这样一来老顾客越来越多。",
+                        "pinyin":  "Diàn lǐ búduàn gǎijìn fúwù, zhèyàng yì lái lǎo gùkè yuèláiyuè duō.",
+                        "vietnamese":  "Quán không ngừng cải thiện dịch vụ, như vậy khách cũ ngày càng nhiều.",
+                        "answer":  "店里不断改进服务，这样一来老顾客越来越多。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "和老师谈话时，你要把自己的想法说清楚。",
+                          "pinyin":  "Hé lǎoshī tánhuà shí, nǐ yào bǎ zìjǐ de xiǎngfǎ shuō qīngchu.",
+                          "vietnamese":  "Khi nói chuyện với thầy, bạn phải nói rõ suy nghĩ của mình.",
+                          "answer":  "和老师谈话时，你要把自己的想法说清楚。"
+                      },
+                      {
+                          "chinese":  "和客户联系时，最好提前准备好相关资料。",
+                          "pinyin":  "Hé kèhù liánxì shí, zuìhǎo tíqián zhǔnbèi hǎo xiāngguān zīliào.",
+                          "vietnamese":  "Khi liên lạc với khách hàng, tốt nhất chuẩn bị trước tài liệu liên quan.",
+                          "answer":  "和客户联系时，最好提前准备好相关资料。"
+                      },
+                      {
+                          "chinese":  "和房东谈房租时，合同内容一定要看清楚。",
+                          "pinyin":  "Hé fángdōng tán fángzū shí, hétong nèiróng yídìng yào kàn qīngchu.",
+                          "vietnamese":  "Khi nói chuyện tiền thuê với chủ nhà, nội dung hợp đồng nhất định phải xem rõ.",
+                          "answer":  "和房东谈房租时，合同内容一定要看清楚。"
+                      },
+                      {
+                          "chinese":  "和同事讨论问题时，不要只坚持自己的意见。",
+                          "pinyin":  "Hé tóngshì tǎolùn wèntí shí, bú yào zhǐ jiānchí zìjǐ de yìjiàn.",
+                          "vietnamese":  "Khi thảo luận vấn đề với đồng nghiệp, đừng chỉ kiên trì ý kiến của mình.",
+                          "answer":  "和同事讨论问题时，不要只坚持自己的意见。"
+                      },
+                      {
+                          "chinese":  "和朋友一起点外卖时，要先问清楚大家想吃什么。",
+                          "pinyin":  "Hé péngyou yìqǐ diǎn wàimài shí, yào xiān wèn qīngchu dàjiā xiǎng chī shénme.",
+                          "vietnamese":  "Khi gọi đồ ăn ngoài cùng bạn, phải hỏi rõ trước mọi người muốn ăn gì.",
+                          "answer":  "和朋友一起点外卖时，要先问清楚大家想吃什么。"
+                      },
+                      {
+                          "chinese":  "这个商场要吃的有吃的，要买的有买的。",
+                          "pinyin":  "Zhège shāngchǎng yào chī de yǒu chī de, yào mǎi de yǒu mǎi de.",
+                          "vietnamese":  "Trung tâm thương mại này muốn ăn có đồ ăn, muốn mua có đồ mua.",
+                          "answer":  "这个商场要吃的有吃的，要买的有买的。"
+                      },
+                      {
+                          "chinese":  "这座城市要玩的有玩的，要看的有看的。",
+                          "pinyin":  "Zhè zuò chéngshì yào wán de yǒu wán de, yào kàn de yǒu kàn de.",
+                          "vietnamese":  "Thành phố này muốn chơi có chỗ chơi, muốn xem có chỗ xem.",
+                          "answer":  "这座城市要玩的有玩的，要看的有看的。"
+                      },
+                      {
+                          "chinese":  "这个学校要社团有社团，要活动有活动。",
+                          "pinyin":  "Zhège xuéxiào yào shètuán yǒu shètuán, yào huódòng yǒu huódòng.",
+                          "vietnamese":  "Trường này muốn câu lạc bộ có câu lạc bộ, muốn hoạt động có hoạt động.",
+                          "answer":  "这个学校要社团有社团，要活动有活动。"
+                      },
+                      {
+                          "chinese":  "这家店要服务有服务，要质量有质量。",
+                          "pinyin":  "Zhè jiā diàn yào fúwù yǒu fúwù, yào zhìliàng yǒu zhìliàng.",
+                          "vietnamese":  "Cửa hàng này muốn dịch vụ có dịch vụ, muốn chất lượng có chất lượng.",
+                          "answer":  "这家店要服务有服务，要质量有质量。"
+                      },
+                      {
+                          "chinese":  "这个小区要地铁有地铁，要超市有超市。",
+                          "pinyin":  "Zhège xiǎoqū yào dìtiě yǒu dìtiě, yào chāoshì yǒu chāoshì.",
+                          "vietnamese":  "Khu chung cư này muốn tàu điện có tàu điện, muốn siêu thị có siêu thị.",
+                          "answer":  "这个小区要地铁有地铁，要超市有超市。"
+                      },
+                      {
+                          "chinese":  "这本书字很大，老人和孩子都好看。",
+                          "pinyin":  "Zhè běn shū zì hěn dà, lǎorén hé háizi dōu hǎo kàn.",
+                          "vietnamese":  "Quyển sách này chữ rất to, người già và trẻ em đều dễ đọc.",
+                          "answer":  "这本书字很大，老人和孩子都好看。"
+                      },
+                      {
+                          "chinese":  "这个软件界面简单，初学者也好用。",
+                          "pinyin":  "Zhège ruǎnjiàn jièmiàn jiǎndān, chūxuézhě yě hǎo yòng.",
+                          "vietnamese":  "Giao diện phần mềm này đơn giản, người mới học cũng dễ dùng.",
+                          "answer":  "这个软件界面简单，初学者也好用。"
+                      },
+                      {
+                          "chinese":  "这条路车少，晚上回家比较好走。",
+                          "pinyin":  "Zhè tiáo lù chē shǎo, wǎnshang huí jiā bǐjiào hǎo zǒu.",
+                          "vietnamese":  "Con đường này ít xe, buổi tối về nhà khá dễ đi.",
+                          "answer":  "这条路车少，晚上回家比较好走。"
+                      },
+                      {
+                          "chinese":  "这个句子结构清楚，学生比较好理解。",
+                          "pinyin":  "Zhège jùzi jiégòu qīngchu, xuésheng bǐjiào hǎo lǐjiě.",
+                          "vietnamese":  "Câu này cấu trúc rõ ràng, học sinh khá dễ hiểu.",
+                          "answer":  "这个句子结构清楚，学生比较好理解。"
+                      },
+                      {
+                          "chinese":  "这件衣服颜色普通，平时上课也好穿。",
+                          "pinyin":  "Zhè jiàn yīfu yánsè pǔtōng, píngshí shàngkè yě hǎo chuān.",
+                          "vietnamese":  "Bộ quần áo này màu bình thường, thường ngày đi học cũng dễ mặc.",
+                          "answer":  "这件衣服颜色普通，平时上课也好穿。"
+                      },
+                      {
+                          "chinese":  "我们先把信息写清楚，这样一来，大家就不会误会了。",
+                          "pinyin":  "Wǒmen xiān bǎ xìnxī xiě qīngchu, zhèyàng yì lái, dàjiā jiù bú huì wùhuì le.",
+                          "vietnamese":  "Chúng ta viết rõ thông tin trước, như vậy mọi người sẽ không hiểu lầm.",
+                          "answer":  "我们先把信息写清楚，这样一来，大家就不会误会了。"
+                      },
+                      {
+                          "chinese":  "你先把地址发给我，这样一来，我就好安排路线了。",
+                          "pinyin":  "Nǐ xiān bǎ dìzhǐ fā gěi wǒ, zhèyàng yì lái, wǒ jiù hǎo ānpái lùxiàn le.",
+                          "vietnamese":  "Bạn gửi địa chỉ cho tôi trước, như vậy tôi sẽ dễ sắp xếp đường đi.",
+                          "answer":  "你先把地址发给我，这样一来，我就好安排路线了。"
+                      },
+                      {
+                          "chinese":  "老师把重点整理出来，这样一来，复习就方便多了。",
+                          "pinyin":  "Lǎoshī bǎ zhòngdiǎn zhěnglǐ chūlái, zhèyàng yì lái, fùxí jiù fāngbiàn duō le.",
+                          "vietnamese":  "Thầy sắp xếp trọng điểm ra, như vậy ôn tập sẽ tiện hơn nhiều.",
+                          "answer":  "老师把重点整理出来，这样一来，复习就方便多了。"
+                      },
+                      {
+                          "chinese":  "我们提前点外卖，这样一来，下课就能马上吃饭。",
+                          "pinyin":  "Wǒmen tíqián diǎn wàimài, zhèyàng yì lái, xiàkè jiù néng mǎshàng chīfàn.",
+                          "vietnamese":  "Chúng ta gọi đồ ăn ngoài trước, như vậy tan học là có thể ăn ngay.",
+                          "answer":  "我们提前点外卖，这样一来，下课就能马上吃饭。"
+                      },
+                      {
+                          "chinese":  "你先跟商家确认，这样一来，退货就不会太麻烦。",
+                          "pinyin":  "Nǐ xiān gēn shāngjiā quèrèn, zhèyàng yì lái, tuìhuò jiù bú huì tài máfan.",
+                          "vietnamese":  "Bạn xác nhận với người bán trước, như vậy trả hàng sẽ không quá phiền.",
+                          "answer":  "你先跟商家确认，这样一来，退货就不会太麻烦。"
+                      },
+                      {
+                          "chinese":  "远就远吧，只要房间安全干净就行。",
+                          "pinyin":  "Yuǎn jiù yuǎn ba, zhǐyào fángjiān ānquán gānjìng jiù xíng.",
+                          "vietnamese":  "Xa thì xa vậy, chỉ cần phòng an toàn sạch sẽ là được.",
+                          "answer":  "远就远吧，只要房间安全干净就行。"
+                      },
+                      {
+                          "chinese":  "贵就贵吧，质量好一点儿也值得。",
+                          "pinyin":  "Guì jiù guì ba, zhìliàng hǎo yìdiǎnr yě zhídé.",
+                          "vietnamese":  "Đắt thì đắt vậy, chất lượng tốt hơn một chút cũng đáng.",
+                          "answer":  "贵就贵吧，质量好一点儿也值得。"
+                      },
+                      {
+                          "chinese":  "麻烦就麻烦吧，重要的是把问题解决。",
+                          "pinyin":  "Máfan jiù máfan ba, zhòngyào de shì bǎ wèntí jiějué.",
+                          "vietnamese":  "Phiền thì phiền vậy, quan trọng là giải quyết vấn đề.",
+                          "answer":  "麻烦就麻烦吧，重要的是把问题解决。"
+                      },
+                      {
+                          "chinese":  "累就累吧，今天一定要把作业写完。",
+                          "pinyin":  "Lèi jiù lèi ba, jīntiān yídìng yào bǎ zuòyè xiě wán.",
+                          "vietnamese":  "Mệt thì mệt vậy, hôm nay nhất định phải viết xong bài tập.",
+                          "answer":  "累就累吧，今天一定要把作业写完。"
+                      },
+                      {
+                          "chinese":  "等就等吧，反正现在回去也没什么事。",
+                          "pinyin":  "Děng jiù děng ba, fǎnzhèng xiànzài huíqù yě méi shénme shì.",
+                          "vietnamese":  "Đợi thì đợi vậy, dù sao bây giờ về cũng không có việc gì.",
+                          "answer":  "等就等吧，反正现在回去也没什么事。"
+                      },
+                      {
+                          "chinese":  "要我一个人去，倒不是不可，只是有点儿紧张。",
+                          "pinyin":  "Yào wǒ yí ge rén qù, dào bú shì bùkě, zhǐshì yǒudiǎnr jǐnzhāng.",
+                          "vietnamese":  "Nếu để tôi đi một mình thì cũng không phải không được, chỉ là hơi căng thẳng.",
+                          "answer":  "要我一个人去，倒不是不可，只是有点儿紧张。"
+                      },
+                      {
+                          "chinese":  "要今天完成，倒不是不可，只是质量可能不够好。",
+                          "pinyin":  "Yào jīntiān wánchéng, dào bú shì bùkě, zhǐshì zhìliàng kěnéng bú gòu hǎo.",
+                          "vietnamese":  "Nếu hôm nay hoàn thành thì cũng không phải không được, chỉ là chất lượng có thể chưa đủ tốt.",
+                          "answer":  "要今天完成，倒不是不可，只是质量可能不够好。"
+                      },
+                      {
+                          "chinese":  "要换一家店，倒不是不可，只是会浪费很多时间。",
+                          "pinyin":  "Yào huàn yì jiā diàn, dào bú shì bùkě, zhǐshì huì làngfèi hěn duō shíjiān.",
+                          "vietnamese":  "Nếu đổi cửa hàng khác thì cũng không phải không được, chỉ là sẽ lãng phí nhiều thời gian.",
+                          "answer":  "要换一家店，倒不是不可，只是会浪费很多时间。"
+                      },
+                      {
+                          "chinese":  "要重新准备材料，倒不是不可，只是今晚会很忙。",
+                          "pinyin":  "Yào chóngxīn zhǔnbèi cáiliào, dào bú shì bùkě, zhǐshì jīnwǎn huì hěn máng.",
+                          "vietnamese":  "Nếu chuẩn bị lại tài liệu thì cũng không phải không được, chỉ là tối nay sẽ rất bận.",
+                          "answer":  "要重新准备材料，倒不是不可，只是今晚会很忙。"
+                      },
+                      {
+                          "chinese":  "要我马上回复客户，倒不是不可，只是还没想清楚。",
+                          "pinyin":  "Yào wǒ mǎshàng huífù kèhù, dào bú shì bùkě, zhǐshì hái méi xiǎng qīngchu.",
+                          "vietnamese":  "Nếu muốn tôi trả lời khách ngay thì cũng không phải không được, chỉ là vẫn chưa nghĩ rõ.",
+                          "answer":  "要我马上回复客户，倒不是不可，只是还没想清楚。"
+                      }
+                  ]
+}

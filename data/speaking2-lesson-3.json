@@ -1,0 +1,2095 @@
+﻿{
+    "title":  "家乡",
+    "vietnameseTitle":  "你是哪儿的人呀 / 我的家乡",
+    "textTitles":  [
+                       "你是哪儿的人呀",
+                       "我的家乡"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "谈论",
+                           "pinyin":  "tánlùn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "đàm luận",
+                           "vietnamese":  "bàn luận, nói về",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他们正在谈论中国的旅游城市。",
+                                                "pinyin":  "Tāmen zhèngzài tánlùn Zhōngguó de lǚyóu chéngshì.",
+                                                "vietnamese":  "Họ đang bàn luận về các thành phố du lịch của Trung Quốc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "各自",
+                           "pinyin":  "gèzì",
+                           "partOfSpeech":  "代",
+                           "sinoVietnamese":  "các tự",
+                           "vietnamese":  "mỗi người tự, từng người",
+                           "examples":  [
+                                            {
+                                                "chinese":  "同学们各自介绍自己的家乡。",
+                                                "pinyin":  "Tóngxuémen gèzì jièshào zìjǐ de jiāxiāng.",
+                                                "vietnamese":  "Các bạn học mỗi người tự giới thiệu quê hương của mình."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "部",
+                           "pinyin":  "bù",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "bộ",
+                           "vietnamese":  "bộ phận, phần",
+                           "examples":  [
+                                            {
+                                                "chinese":  "南方是中国很重要的一部分。",
+                                                "pinyin":  "Nánfāng shì Zhōngguó hěn zhòngyào de yí bùfen.",
+                                                "vietnamese":  "Miền Nam là một phần rất quan trọng của Trung Quốc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "算是",
+                           "pinyin":  "suànshì",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "toán thị",
+                           "vietnamese":  "coi như là, được xem là",
+                           "examples":  [
+                                            {
+                                                "chinese":  "上海算是中国很有名的大城市。",
+                                                "pinyin":  "Shànghǎi suànshì Zhōngguó hěn yǒumíng de dà chéngshì.",
+                                                "vietnamese":  "Thượng Hải được xem là một thành phố lớn rất nổi tiếng của Trung Quốc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "中等",
+                           "pinyin":  "zhōngděng",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "trung đẳng",
+                           "vietnamese":  "trung bình, vừa",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这家宾馆的价格属于中等水平。",
+                                                "pinyin":  "Zhè jiā bīnguǎn de jiàgé shǔyú zhōngděng shuǐpíng.",
+                                                "vietnamese":  "Giá của nhà nghỉ này thuộc mức trung bình."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "出",
+                           "pinyin":  "chū",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "xuất",
+                           "vietnamese":  "xuất hiện, mọc ra",
+                           "examples":  [
+                                            {
+                                                "chinese":  "春天到了，树上出了很多新叶子。",
+                                                "pinyin":  "Chūntiān dào le, shù shàng chū le hěn duō xīn yèzi.",
+                                                "vietnamese":  "Mùa xuân đến rồi, trên cây mọc ra nhiều lá mới."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "美女",
+                           "pinyin":  "měinǚ",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "mỹ nữ",
+                           "vietnamese":  "người đẹp, cô gái đẹp",
+                           "examples":  [
+                                            {
+                                                "chinese":  "那位美女是我们学校的主持人。",
+                                                "pinyin":  "Nà wèi měinǚ shì wǒmen xuéxiào de zhǔchírén.",
+                                                "vietnamese":  "Cô gái đẹp kia là người dẫn chương trình của trường chúng tôi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "湿润",
+                           "pinyin":  "shīrùn",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "thấp nhuận",
+                           "vietnamese":  "ẩm ướt, ẩm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "南方的空气比较湿润。",
+                                                "pinyin":  "Nánfāng de kōngqì bǐjiào shīrùn.",
+                                                "vietnamese":  "Không khí ở miền Nam khá ẩm."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "优越",
+                           "pinyin":  "yōuyuè",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "ưu việt",
+                           "vietnamese":  "vượt trội, ưu việt",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这里的交通条件很优越。",
+                                                "pinyin":  "Zhèlǐ de jiāotōng tiáojiàn hěn yōuyuè.",
+                                                "vietnamese":  "Điều kiện giao thông ở đây rất thuận lợi/vượt trội."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "人文",
+                           "pinyin":  "rénwén",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "nhân văn",
+                           "vietnamese":  "nhân văn, văn hóa con người",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个城市有丰富的人文历史。",
+                                                "pinyin":  "Zhège chéngshì yǒu fēngfù de rénwén lìshǐ.",
+                                                "vietnamese":  "Thành phố này có lịch sử nhân văn phong phú."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "名胜古迹",
+                           "pinyin":  "míngshèng gǔjì",
+                           "partOfSpeech":  "成",
+                           "sinoVietnamese":  "danh thắng cổ tích",
+                           "vietnamese":  "danh lam thắng cảnh và di tích lịch sử",
+                           "examples":  [
+                                            {
+                                                "chinese":  "西安有很多名胜古迹，值得去看看。",
+                                                "pinyin":  "Xī’ān yǒu hěn duō míngshèng gǔjì, zhíde qù kànkan.",
+                                                "vietnamese":  "Tây An có nhiều danh lam thắng cảnh và di tích lịch sử, rất đáng đi xem."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "也是",
+                           "pinyin":  "yěshì",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "dã thị",
+                           "vietnamese":  "cũng là",
+                           "examples":  [
+                                            {
+                                                "chinese":  "香港也是一个很受欢迎的旅游城市。",
+                                                "pinyin":  "Xiānggǎng yě shì yí ge hěn shòu huānyíng de lǚyóu chéngshì.",
+                                                "vietnamese":  "Hồng Kông cũng là một thành phố du lịch rất được yêu thích."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "小巷",
+                           "pinyin":  "xiǎoxiàng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tiểu hạng",
+                           "vietnamese":  "ngõ nhỏ, hẻm nhỏ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这条小巷里有很多特色小吃。",
+                                                "pinyin":  "Zhè tiáo xiǎoxiàng lǐ yǒu hěn duō tèsè xiǎochī.",
+                                                "vietnamese":  "Trong con hẻm nhỏ này có rất nhiều món ăn vặt đặc sắc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "来历",
+                           "pinyin":  "láilì",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "lai lịch",
+                           "vietnamese":  "nguồn gốc, lai lịch",
+                           "examples":  [
+                                            {
+                                                "chinese":  "你知道这个名字的来历吗？",
+                                                "pinyin":  "Nǐ zhīdào zhège míngzi de láilì ma?",
+                                                "vietnamese":  "Bạn có biết nguồn gốc của cái tên này không?"
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "适宜",
+                           "pinyin":  "shìyí",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "thích nghi",
+                           "vietnamese":  "thích hợp, phù hợp",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这里气候温暖，很适宜居住。",
+                                                "pinyin":  "Zhèlǐ qìhòu wēnnuǎn, hěn shìyí jūzhù.",
+                                                "vietnamese":  "Khí hậu ở đây ấm áp, rất thích hợp để sinh sống."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "居住",
+                           "pinyin":  "jūzhù",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "cư trú",
+                           "vietnamese":  "cư trú, sinh sống",
+                           "examples":  [
+                                            {
+                                                "chinese":  "很多少数民族居住在云南。",
+                                                "pinyin":  "Hěn duō shǎoshù mínzú jūzhù zài Yúnnán.",
+                                                "vietnamese":  "Rất nhiều dân tộc thiểu số sinh sống ở Vân Nam."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "温暖",
+                           "pinyin":  "wēnnuǎn",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "ôn noãn",
+                           "vietnamese":  "ấm áp",
+                           "examples":  [
+                                            {
+                                                "chinese":  "南方的冬天比北方温暖一些。",
+                                                "pinyin":  "Nánfāng de dōngtiān bǐ běifāng wēnnuǎn yìxiē.",
+                                                "vietnamese":  "Mùa đông ở miền Nam ấm hơn miền Bắc một chút."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "海滨",
+                           "pinyin":  "hǎibīn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "hải tân",
+                           "vietnamese":  "ven biển, bờ biển",
+                           "examples":  [
+                                            {
+                                                "chinese":  "青岛是一个美丽的海滨城市。",
+                                                "pinyin":  "Qīngdǎo shì yí ge měilì de hǎibīn chéngshì.",
+                                                "vietnamese":  "Thanh Đảo là một thành phố ven biển xinh đẹp."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "位于",
+                           "pinyin":  "wèiyú",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "vị vu",
+                           "vietnamese":  "nằm ở, tọa lạc tại",
+                           "examples":  [
+                                            {
+                                                "chinese":  "上海位于中国的东部。",
+                                                "pinyin":  "Shànghǎi wèiyú Zhōngguó de dōngbù.",
+                                                "vietnamese":  "Thượng Hải nằm ở phía Đông Trung Quốc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "沙滩",
+                           "pinyin":  "shātān",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "sa than",
+                           "vietnamese":  "bãi cát, bãi biển",
+                           "examples":  [
+                                            {
+                                                "chinese":  "夏天很多人在沙滩上玩儿。",
+                                                "pinyin":  "Xiàtiān hěn duō rén zài shātān shàng wánr.",
+                                                "vietnamese":  "Mùa hè có rất nhiều người chơi trên bãi biển."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "观光",
+                           "pinyin":  "guānguāng",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "quan quang",
+                           "vietnamese":  "tham quan, du lịch ngắm cảnh",
+                           "examples":  [
+                                            {
+                                                "chinese":  "游客们坐船观光，拍了很多照片。",
+                                                "pinyin":  "Yóukèmen zuò chuán guānguāng, pāi le hěn duō zhàopiàn.",
+                                                "vietnamese":  "Du khách ngồi thuyền tham quan và chụp rất nhiều ảnh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "进出口",
+                           "pinyin":  "jìnchūkǒu",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tiến xuất khẩu",
+                           "vietnamese":  "xuất nhập khẩu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个城市的进出口贸易很发达。",
+                                                "pinyin":  "Zhège chéngshì de jìnchūkǒu màoyì hěn fādá.",
+                                                "vietnamese":  "Thương mại xuất nhập khẩu của thành phố này rất phát triển."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "小林，你是哪儿的人呀？",
+                          "pinyin":  "Xiǎo Lín, nǐ shì nǎr de rén ya?",
+                          "vietnamese":  "Tiểu Lâm, bạn là người ở đâu vậy?"
+                      },
+                      {
+                          "chinese":  "我是江苏扬州人。",
+                          "pinyin":  "Wǒ shì Jiāngsū Yángzhōu rén.",
+                          "vietnamese":  "Tôi là người Dương Châu, Giang Tô."
+                      },
+                      {
+                          "chinese":  "扬州在哪儿呀？",
+                          "pinyin":  "Yángzhōu zài nǎr ya?",
+                          "vietnamese":  "Dương Châu ở đâu vậy?"
+                      },
+                      {
+                          "chinese":  "扬州在江苏的中部，就在长江边上。",
+                          "pinyin":  "Yángzhōu zài Jiāngsū de zhōngbù, jiù zài Chángjiāng biān shang.",
+                          "vietnamese":  "Dương Châu ở miền trung Giang Tô, ngay bên bờ Trường Giang."
+                      },
+                      {
+                          "chinese":  "扬州大吗？",
+                          "pinyin":  "Yángzhōu dà ma?",
+                          "vietnamese":  "Dương Châu có lớn không?"
+                      },
+                      {
+                          "chinese":  "不太大，算是中等城市，有四百五十万人口。不过，我们扬州特别有名。",
+                          "pinyin":  "Bú tài dà, suàn shì zhōngděng chéngshì, yǒu sì bǎi wǔ shí wàn rénkǒu. Búguò, wǒmen Yángzhōu tèbié yǒumíng.",
+                          "vietnamese":  "Không quá lớn, được xem là thành phố cỡ trung, có 4,5 triệu dân. Nhưng Dương Châu của chúng tôi rất nổi tiếng."
+                      },
+                      {
+                          "chinese":  "怎么有名呀？",
+                          "pinyin":  "Zěnme yǒumíng ya?",
+                          "vietnamese":  "Nổi tiếng như thế nào?"
+                      },
+                      {
+                          "chinese":  "我们扬州是历史文化名城，出名人，也出美女，我们扬州的姑娘，个个都漂亮。",
+                          "pinyin":  "Wǒmen Yángzhōu shì lìshǐ wénhuà míngchéng, chū míngrén, yě chū měinǚ, wǒmen Yángzhōu de gūniang, gè ge dōu piàoliang.",
+                          "vietnamese":  "Dương Châu chúng tôi là thành phố lịch sử văn hóa nổi tiếng, có nhiều danh nhân, cũng có nhiều mỹ nữ, các cô gái Dương Châu ai cũng xinh đẹp."
+                      },
+                      {
+                          "chinese":  "是吗？那我一定得去扬州看看。",
+                          "pinyin":  "Shì ma? Nà wǒ yídìng děi qù Yángzhōu kànkan.",
+                          "vietnamese":  "Vậy à? Thế thì tôi nhất định phải đến Dương Châu xem thử."
+                      },
+                      {
+                          "chinese":  "哎，那儿的气候怎么样？",
+                          "pinyin":  "Āi, nàr de qìhòu zěnmeyàng?",
+                          "vietnamese":  "À, khí hậu ở đó thế nào?"
+                      },
+                      {
+                          "chinese":  "气候特湿润，冬天不太冷，夏天不太热，一年四季都舒服，自然条件也特优越。",
+                          "pinyin":  "Qìhòu tè shīrùn, dōngtiān bú tài lěng, xiàtiān bú tài rè, yì nián sì jì dōu shūfu, zìrán tiáojiàn yě tè yōuyuè.",
+                          "vietnamese":  "Khí hậu rất ẩm, mùa đông không quá lạnh, mùa hè không quá nóng, bốn mùa đều dễ chịu, điều kiện tự nhiên cũng rất tốt."
+                      },
+                      {
+                          "chinese":  "扬州是好，不过我们北京也不错呀，我最喜欢北京。",
+                          "pinyin":  "Yángzhōu shì hǎo, búguò wǒmen Běijīng yě búcuò ya, wǒ zuì xǐhuan Běijīng.",
+                          "vietnamese":  "Dương Châu thì tốt, nhưng Bắc Kinh của chúng tôi cũng không tệ, tôi thích Bắc Kinh nhất."
+                      },
+                      {
+                          "chinese":  "你最喜欢北京的什么？",
+                          "pinyin":  "Nǐ zuì xǐhuan Běijīng de shénme?",
+                          "vietnamese":  "Bạn thích nhất điều gì ở Bắc Kinh?"
+                      },
+                      {
+                          "chinese":  "人文环境好，文化活动多，名胜古迹也多，大街也好，小巷也罢，哪儿都能说出一段来历。",
+                          "pinyin":  "Rénwén huánjìng hǎo, wénhuà huódòng duō, míngshèng gǔjì yě duō, dàjiē yě hǎo, xiǎoxiàng yě bà, nǎr dōu néng shuō chū yí duàn láilì.",
+                          "vietnamese":  "Môi trường văn hóa tốt, hoạt động văn hóa nhiều, danh lam thắng cảnh và di tích lịch sử cũng nhiều; dù là phố lớn hay ngõ nhỏ, nơi nào cũng có thể kể ra một câu chuyện nguồn gốc."
+                      },
+                      {
+                          "chinese":  "北京太大，人口太多。我们扬州嘛，不大不小，最适宜居住、生活。",
+                          "pinyin":  "Běijīng tài dà, rénkǒu tài duō. Wǒmen Yángzhōu ma, bú dà bù xiǎo, zuì shìyí jūzhù, shēnghuó.",
+                          "vietnamese":  "Bắc Kinh quá lớn, dân số quá đông. Còn Dương Châu chúng tôi thì không lớn không nhỏ, rất thích hợp để cư trú và sinh sống."
+                      },
+                      {
+                          "chinese":  "扬州我不了解，不过，我挺喜欢北京的。",
+                          "pinyin":  "Yángzhōu wǒ bù liǎojiě, búguò, wǒ tǐng xǐhuan Běijīng de.",
+                          "vietnamese":  "Tôi không hiểu rõ Dương Châu, nhưng tôi khá thích Bắc Kinh."
+                      },
+                      {
+                          "chinese":  "是吗？你喜欢北京什么呀？",
+                          "pinyin":  "Shì ma? Nǐ xǐhuan Běijīng shénme ya?",
+                          "vietnamese":  "Vậy à? Bạn thích điều gì ở Bắc Kinh?"
+                      },
+                      {
+                          "chinese":  "什么人都能在这儿生活，穷也好，富也罢，都能找到自己的生活圈子。",
+                          "pinyin":  "Shénme rén dōu néng zài zhèr shēnghuó, qióng yě hǎo, fù yě bà, dōu néng zhǎodào zìjǐ de shēnghuó quānzi.",
+                          "vietnamese":  "Người kiểu nào cũng có thể sống ở đây, nghèo cũng được, giàu cũng được, đều có thể tìm được vòng sống của riêng mình."
+                      },
+                      {
+                          "chinese":  "大卫，你们家乡什么样啊？",
+                          "pinyin":  "Dàwèi, nǐmen jiāxiāng shénme yàng a?",
+                          "vietnamese":  "David, quê hương của bạn như thế nào?"
+                      },
+                      {
+                          "chinese":  "特别小，人口也少，也没名儿，不过，说实在的，我还是挺想念家乡的。",
+                          "pinyin":  "Tèbié xiǎo, rénkǒu yě shǎo, yě méi míngr, búguò, shuō shízài de, wǒ háishi tǐng xiǎngniàn jiāxiāng de.",
+                          "vietnamese":  "Rất nhỏ, dân số cũng ít, cũng không nổi tiếng, nhưng nói thật là tôi vẫn rất nhớ quê hương."
+                      },
+                      {
+                          "chinese":  "你最想念家乡的什么？",
+                          "pinyin":  "Nǐ zuì xiǎngniàn jiāxiāng de shénme?",
+                          "vietnamese":  "Bạn nhớ nhất điều gì ở quê hương?"
+                      },
+                      {
+                          "chinese":  "在我们那儿，人们认识也好，不认识也好，见了面都互相问候，让人觉得又温暖又亲切。",
+                          "pinyin":  "Zài wǒmen nàr, rénmen rènshi yě hǎo, bú rènshi yě hǎo, jiàn le miàn dōu hùxiāng wènhòu, ràng rén juéde yòu wēnnuǎn yòu qīnqiè.",
+                          "vietnamese":  "Ở chỗ chúng tôi, dù quen hay không quen, gặp mặt đều chào hỏi nhau, khiến người ta cảm thấy vừa ấm áp vừa thân thiết."
+                      },
+                      {
+                          "chinese":  "那你毕业以后回家乡工作吗？",
+                          "pinyin":  "Nà nǐ bìyè yǐhòu huí jiāxiāng gōngzuò ma?",
+                          "vietnamese":  "Vậy sau khi tốt nghiệp bạn có về quê làm việc không?"
+                      },
+                      {
+                          "chinese":  "不回去，家乡工作机会少，也没什么好玩的地方，不适合年轻人。",
+                          "pinyin":  "Bù huíqù, jiāxiāng gōngzuò jīhuì shǎo, yě méi shénme hǎowán de dìfang, bú shìhé niánqīngrén.",
+                          "vietnamese":  "Không về, quê tôi ít cơ hội việc làm, cũng không có chỗ nào vui chơi, không phù hợp với người trẻ."
+                      },
+                      {
+                          "chinese":  "所以说还是北京好，你承认也罢，不承认也罢，北京的机会就是比别的地方多。",
+                          "pinyin":  "Suǒyǐ shuō háishi Běijīng hǎo, nǐ chéngrèn yě bà, bù chéngrèn yě bà, Běijīng de jīhuì jiùshì bǐ bié de dìfang duō.",
+                          "vietnamese":  "Vì vậy nói cho cùng Bắc Kinh vẫn tốt hơn, bạn thừa nhận cũng được, không thừa nhận cũng được, cơ hội ở Bắc Kinh đúng là nhiều hơn nơi khác."
+                      },
+                      {
+                          "chinese":  "北京的工作机会多是多，不过北京的物价也高呀。",
+                          "pinyin":  "Běijīng de gōngzuò jīhuì duō shì duō, búguò Běijīng de wùjià yě gāo ya.",
+                          "vietnamese":  "Cơ hội việc làm ở Bắc Kinh nhiều thì có nhiều, nhưng giá cả ở Bắc Kinh cũng cao mà."
+                      },
+                      {
+                          "chinese":  "我是韩国人，家乡在釜山。",
+                          "pinyin":  "Wǒ shì Hánguórén, jiāxiāng zài Fǔshān.",
+                          "vietnamese":  "Tôi là người Hàn Quốc, quê tôi ở Busan."
+                      },
+                      {
+                          "chinese":  "釜山是韩国的第二大城市，是个美丽的海滨城市。",
+                          "pinyin":  "Fǔshān shì Hánguó de dì èr dà chéngshì, shì ge měilì de hǎibīn chéngshì.",
+                          "vietnamese":  "Busan là thành phố lớn thứ hai của Hàn Quốc, là một thành phố ven biển xinh đẹp."
+                      },
+                      {
+                          "chinese":  "釜山位于韩国的东南，人口大概400万左右。",
+                          "pinyin":  "Fǔshān wèiyú Hánguó de dōngnán, rénkǒu dàgài sì bǎi wàn zuǒyòu.",
+                          "vietnamese":  "Busan nằm ở phía đông nam Hàn Quốc, dân số khoảng 4 triệu người."
+                      },
+                      {
+                          "chinese":  "天气不冷不热，非常适宜居住。",
+                          "pinyin":  "Tiānqì bù lěng bú rè, fēicháng shìyí jūzhù.",
+                          "vietnamese":  "Thời tiết không lạnh cũng không nóng, rất thích hợp để sinh sống."
+                      },
+                      {
+                          "chinese":  "釜山的风景又美丽又特别，城市里有江、有海、有山。",
+                          "pinyin":  "Fǔshān de fēngjǐng yòu měilì yòu tèbié, chéngshì lǐ yǒu jiāng, yǒu hǎi, yǒu shān.",
+                          "vietnamese":  "Phong cảnh Busan vừa đẹp vừa đặc biệt, trong thành phố có sông, có biển, có núi."
+                      },
+                      {
+                          "chinese":  "城市的东面是蓝色的大海，美丽的沙滩吸引了很多旅游的人，每年来釜山观光的人特别多。",
+                          "pinyin":  "Chéngshì de dōngmiàn shì lán sè de dàhǎi, měilì de shātān xīyǐn le hěn duō lǚyóu de rén, měi nián lái Fǔshān guānguāng de rén tèbié duō.",
+                          "vietnamese":  "Phía đông thành phố là biển xanh, bãi cát xinh đẹp thu hút rất nhiều khách du lịch, mỗi năm người đến Busan tham quan đặc biệt nhiều."
+                      },
+                      {
+                          "chinese":  "釜山的经济很发达，是韩国重要的进出口中心。",
+                          "pinyin":  "Fǔshān de jīngjì hěn fādá, shì Hánguó zhòngyào de jìnchūkǒu zhōngxīn.",
+                          "vietnamese":  "Kinh tế Busan rất phát triển, là trung tâm xuất nhập khẩu quan trọng của Hàn Quốc."
+                      },
+                      {
+                          "chinese":  "此外，釜山还生产汽车。",
+                          "pinyin":  "Cǐwài, Fǔshān hái shēngchǎn qìchē.",
+                          "vietnamese":  "Ngoài ra, Busan còn sản xuất ô tô."
+                      },
+                      {
+                          "chinese":  "釜山还是一个文化城市。",
+                          "pinyin":  "Fǔshān háishi yí ge wénhuà chéngshì.",
+                          "vietnamese":  "Busan còn là một thành phố văn hóa."
+                      },
+                      {
+                          "chinese":  "从1996年开始，釜山每年都有国际电影节，人们经常去看电影。",
+                          "pinyin":  "Cóng yī jiǔ jiǔ liù nián kāishǐ, Fǔshān měi nián dōu yǒu guójì diànyǐngjié, rénmen jīngcháng qù kàn diànyǐng.",
+                          "vietnamese":  "Từ năm 1996, Busan mỗi năm đều có liên hoan phim quốc tế, mọi người thường đi xem phim."
+                      },
+                      {
+                          "chinese":  "可以说，看电影是釜山人生活中最重要的部分。",
+                          "pinyin":  "Kěyǐ shuō, kàn diànyǐng shì Fǔshān rén shēnghuó zhōng zuì zhòngyào de bùfen.",
+                          "vietnamese":  "Có thể nói, xem phim là phần quan trọng nhất trong cuộc sống của người Busan."
+                      },
+                      {
+                          "chinese":  "人们都知道首尔，但是我的家乡釜山更可爱，你们一定要来釜山看看。",
+                          "pinyin":  "Rénmen dōu zhīdào Shǒu’ěr, dànshì wǒ de jiāxiāng Fǔshān gèng kě’ài, nǐmen yídìng yào lái Fǔshān kànkan.",
+                          "vietnamese":  "Mọi người đều biết Seoul, nhưng quê hương Busan của tôi đáng yêu hơn, các bạn nhất định phải đến Busan xem thử."
+                      },
+                      {
+                          "chinese":  "来韩国不来釜山，你一定会后悔。",
+                          "pinyin":  "Lái Hánguó bù lái Fǔshān, nǐ yídìng huì hòuhuǐ.",
+                          "vietnamese":  "Đến Hàn Quốc mà không đến Busan, bạn nhất định sẽ hối hận."
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "算是……",
+                        "meaning":  "Có thể xem là…",
+                        "usage":  "Dùng để đánh giá tương đối, không nói quá tuyệt đối",
+                        "note":  "Nhẹ hơn 是",
+                        "example":  "这次考试我算是通过了。",
+                        "pinyin":  "Zhè cì kǎoshì wǒ suànshì tōngguò le.",
+                        "vietnamese":  "Kỳ thi lần này tôi xem như đã qua.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……也好，……也罢，都……",
+                        "meaning":  "Dù là… hay là…, đều…",
+                        "usage":  "Dùng để nói trong mọi trường hợp kết quả đều giống nhau",
+                        "note":  "也罢 trang trọng hơn 也好",
+                        "example":  "成功也好，失败也罢，都要继续努力。",
+                        "pinyin":  "Chénggōng yě hǎo, shībài yě bà, dōu yào jìxù nǔlì.",
+                        "vietnamese":  "Thành công cũng được, thất bại cũng vậy, đều phải tiếp tục cố gắng.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……也好，……也好，都/总……",
+                        "meaning":  "… cũng được, … cũng được, đều…",
+                        "usage":  "Dùng để liệt kê hai lựa chọn hoặc hai mặt",
+                        "note":  "Hay dùng khi giới thiệu ưu điểm chung",
+                        "example":  "坐车也好，骑车也好，都要注意安全。",
+                        "pinyin":  "Zuò chē yě hǎo, qí chē yě hǎo, dōu yào zhùyì ānquán.",
+                        "vietnamese":  "Đi xe buýt cũng được, đi xe đạp cũng được, đều phải chú ý an toàn.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "说实在的，……",
+                        "meaning":  "Nói thật là…",
+                        "usage":  "Dùng để nói suy nghĩ thật của mình",
+                        "note":  "Khẩu ngữ tự nhiên",
+                        "example":  "说实在的，我不太喜欢这个办法。",
+                        "pinyin":  "Shuō shízài de, wǒ bú tài xǐhuan zhège bànfǎ.",
+                        "vietnamese":  "Nói thật là tôi không thích cách này lắm.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "可以说，……",
+                        "meaning":  "Có thể nói rằng…",
+                        "usage":  "Dùng khi đưa ra nhận xét hoặc kết luận",
+                        "note":  "Thường dùng trong giới thiệu, thuyết minh",
+                        "example":  "可以说，他是我们班最努力的学生。",
+                        "pinyin":  "Kěyǐ shuō, tā shì wǒmen bān zuì nǔlì de xuésheng.",
+                        "vietnamese":  "Có thể nói rằng, anh ấy là học sinh cố gắng nhất lớp chúng tôi.",
+                        "level":  "⭐⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "今天课堂上，我们谈论了各自的家乡。",
+                        "pinyin":  "Jīntiān kètáng shàng, wǒmen tánlùn le gèzì de jiāxiāng.",
+                        "vietnamese":  "Hôm nay trên lớp, chúng tôi bàn luận về quê hương của mỗi người.",
+                        "answer":  "今天课堂上，我们谈论了各自的家乡。"
+                    },
+                    {
+                        "chinese":  "他们正在谈论上海和西安的城市特色。",
+                        "pinyin":  "Tāmen zhèngzài tánlùn Shànghǎi hé Xī’ān de chéngshì tèsè.",
+                        "vietnamese":  "Họ đang bàn luận về nét đặc sắc đô thị của Thượng Hải và Tây An.",
+                        "answer":  "他们正在谈论上海和西安的城市特色。"
+                    },
+                    {
+                        "chinese":  "老师让学生分组谈论旅游经历。",
+                        "pinyin":  "Lǎoshī ràng xuésheng fēnzǔ tánlùn lǚyóu jīnglì.",
+                        "vietnamese":  "Giáo viên cho học sinh chia nhóm bàn luận về trải nghiệm du lịch.",
+                        "answer":  "老师让学生分组谈论旅游经历。"
+                    },
+                    {
+                        "chinese":  "谈论一个地方时，不能只说小吃和风景。",
+                        "pinyin":  "Tánlùn yí ge dìfang shí, bù néng zhǐ shuō xiǎochī hé fēngjǐng.",
+                        "vietnamese":  "Khi bàn luận về một nơi, không thể chỉ nói đồ ăn vặt và phong cảnh.",
+                        "answer":  "谈论一个地方时，不能只说小吃和风景。"
+                    },
+                    {
+                        "chinese":  "大家谈论得很热烈，课堂气氛非常好。",
+                        "pinyin":  "Dàjiā tánlùn de hěn rèliè, kètáng qìfēn fēicháng hǎo.",
+                        "vietnamese":  "Mọi người bàn luận rất sôi nổi, không khí lớp học rất tốt.",
+                        "answer":  "大家谈论得很热烈，课堂气氛非常好。"
+                    },
+                    {
+                        "chinese":  "我们常常谈论不同城市的生活方式。",
+                        "pinyin":  "Wǒmen chángcháng tánlùn bùtóng chéngshì de shēnghuó fāngshì.",
+                        "vietnamese":  "Chúng tôi thường bàn luận về cách sống của các thành phố khác nhau.",
+                        "answer":  "我们常常谈论不同城市的生活方式。"
+                    },
+                    {
+                        "chinese":  "他不太愿意谈论自己的家庭情况。",
+                        "pinyin":  "Tā bú tài yuànyì tánlùn zìjǐ de jiātíng qíngkuàng.",
+                        "vietnamese":  "Anh ấy không muốn bàn về tình hình gia đình của mình lắm.",
+                        "answer":  "他不太愿意谈论自己的家庭情况。"
+                    },
+                    {
+                        "chinese":  "这篇文章主要谈论城市发展和环境问题。",
+                        "pinyin":  "Zhè piān wénzhāng zhǔyào tánlùn chéngshì fāzhǎn hé huánjìng wèntí.",
+                        "vietnamese":  "Bài viết này chủ yếu bàn về phát triển đô thị và vấn đề môi trường.",
+                        "answer":  "这篇文章主要谈论城市发展和环境问题。"
+                    },
+                    {
+                        "chinese":  "谈论文化差别时，要尊重别人的看法。",
+                        "pinyin":  "Tánlùn wénhuà chābié shí, yào zūnzhòng biérén de kànfǎ.",
+                        "vietnamese":  "Khi bàn luận về khác biệt văn hóa, phải tôn trọng quan điểm của người khác.",
+                        "answer":  "谈论文化差别时，要尊重别人的看法。"
+                    },
+                    {
+                        "chinese":  "他们一边喝茶，一边谈论校园生活。",
+                        "pinyin":  "Tāmen yìbiān hē chá, yìbiān tánlùn xiàoyuán shēnghuó.",
+                        "vietnamese":  "Họ vừa uống trà vừa bàn luận về đời sống khuôn viên.",
+                        "answer":  "他们一边喝茶，一边谈论校园生活。"
+                    },
+                    {
+                        "chinese":  "同学们各自介绍了自己的学习计划。",
+                        "pinyin":  "Tóngxuémen gèzì jièshào le zìjǐ de xuéxí jìhuà.",
+                        "vietnamese":  "Các bạn học mỗi người tự giới thiệu kế hoạch học tập của mình.",
+                        "answer":  "同学们各自介绍了自己的学习计划。"
+                    },
+                    {
+                        "chinese":  "下课以后，大家各自回宿舍休息。",
+                        "pinyin":  "Xiàkè yǐhòu, dàjiā gèzì huí sùshè xiūxi.",
+                        "vietnamese":  "Sau giờ học, mọi người tự về ký túc xá nghỉ ngơi.",
+                        "answer":  "下课以后，大家各自回宿舍休息。"
+                    },
+                    {
+                        "chinese":  "我们各自负责一个部分，效率会更高。",
+                        "pinyin":  "Wǒmen gèzì fùzé yí ge bùfen, xiàolǜ huì gèng gāo.",
+                        "vietnamese":  "Chúng tôi mỗi người phụ trách một phần, hiệu quả sẽ cao hơn.",
+                        "answer":  "我们各自负责一个部分，效率会更高。"
+                    },
+                    {
+                        "chinese":  "他们来自不同城市，各自有不同的生活习惯。",
+                        "pinyin":  "Tāmen láizì bùtóng chéngshì, gèzì yǒu bùtóng de shēnghuó xíguàn.",
+                        "vietnamese":  "Họ đến từ các thành phố khác nhau, mỗi người có thói quen sống khác nhau.",
+                        "answer":  "他们来自不同城市，各自有不同的生活习惯。"
+                    },
+                    {
+                        "chinese":  "讨论结束后，学生们各自写一篇总结。",
+                        "pinyin":  "Tǎolùn jiéshù hòu, xuéshengmen gèzì xiě yì piān zǒngjié.",
+                        "vietnamese":  "Sau khi thảo luận kết thúc, học sinh mỗi người tự viết một bài tổng kết.",
+                        "answer":  "讨论结束后，学生们各自写一篇总结。"
+                    },
+                    {
+                        "chinese":  "旅行时大家可以各自选择喜欢的小吃。",
+                        "pinyin":  "Lǚxíng shí dàjiā kěyǐ gèzì xuǎnzé xǐhuan de xiǎochī.",
+                        "vietnamese":  "Khi đi du lịch, mọi người có thể tự chọn món ăn vặt mình thích.",
+                        "answer":  "旅行时大家可以各自选择喜欢的小吃。"
+                    },
+                    {
+                        "chinese":  "这两个城市各自都有很明显的特色。",
+                        "pinyin":  "Zhè liǎng ge chéngshì gèzì dōu yǒu hěn míngxiǎn de tèsè.",
+                        "vietnamese":  "Hai thành phố này mỗi nơi đều có nét đặc sắc rất rõ.",
+                        "answer":  "这两个城市各自都有很明显的特色。"
+                    },
+                    {
+                        "chinese":  "老师让我们各自谈谈对校园设施的看法。",
+                        "pinyin":  "Lǎoshī ràng wǒmen gèzì tántan duì xiàoyuán shèshī de kànfǎ.",
+                        "vietnamese":  "Giáo viên cho chúng tôi mỗi người nói về cách nhìn đối với cơ sở vật chất khuôn viên.",
+                        "answer":  "老师让我们各自谈谈对校园设施的看法。"
+                    },
+                    {
+                        "chinese":  "他们各自带了证件和门票，准备进场。",
+                        "pinyin":  "Tāmen gèzì dài le zhèngjiàn hé ménpiào, zhǔnbèi jìnchǎng.",
+                        "vietnamese":  "Họ mỗi người tự mang giấy tờ và vé vào cửa, chuẩn bị vào sân.",
+                        "answer":  "他们各自带了证件和门票，准备进场。"
+                    },
+                    {
+                        "chinese":  "分开以后，我们各自开始新的生活。",
+                        "pinyin":  "Fēnkāi yǐhòu, wǒmen gèzì kāishǐ xīn de shēnghuó.",
+                        "vietnamese":  "Sau khi chia xa, chúng tôi mỗi người bắt đầu cuộc sống mới.",
+                        "answer":  "分开以后，我们各自开始新的生活。"
+                    },
+                    {
+                        "chinese":  "这部电影主要讲一个新生的成长故事。",
+                        "pinyin":  "Zhè bù diànyǐng zhǔyào jiǎng yí ge xīnshēng de chéngzhǎng gùshi.",
+                        "vietnamese":  "Bộ phim này chủ yếu kể câu chuyện trưởng thành của một sinh viên mới.",
+                        "answer":  "这部电影主要讲一个新生的成长故事。"
+                    },
+                    {
+                        "chinese":  "我们学习了课文的第一部和第二部。",
+                        "pinyin":  "Wǒmen xuéxí le kèwén de dì yī bù hé dì èr bù.",
+                        "vietnamese":  "Chúng tôi đã học phần một và phần hai của bài khóa.",
+                        "answer":  "我们学习了课文的第一部和第二部。"
+                    },
+                    {
+                        "chinese":  "这部作品虽然不长，但是内容很深。",
+                        "pinyin":  "Zhè bù zuòpǐn suīrán bù cháng, dànshì nèiróng hěn shēn.",
+                        "vietnamese":  "Tác phẩm này tuy không dài nhưng nội dung rất sâu.",
+                        "answer":  "这部作品虽然不长，但是内容很深。"
+                    },
+                    {
+                        "chinese":  "学校宣传部负责介绍校园特色。",
+                        "pinyin":  "Xuéxiào xuānchuánbù fùzé jièshào xiàoyuán tèsè.",
+                        "vietnamese":  "Ban tuyên truyền của trường phụ trách giới thiệu nét đặc sắc khuôn viên.",
+                        "answer":  "学校宣传部负责介绍校园特色。"
+                    },
+                    {
+                        "chinese":  "这部手机虽然旧，但是还能正常使用。",
+                        "pinyin":  "Zhè bù shǒujī suīrán jiù, dànshì hái néng zhèngcháng shǐyòng.",
+                        "vietnamese":  "Chiếc điện thoại này tuy cũ nhưng vẫn có thể sử dụng bình thường.",
+                        "answer":  "这部手机虽然旧，但是还能正常使用。"
+                    },
+                    {
+                        "chinese":  "每个部门都要完成自己的任务。",
+                        "pinyin":  "Měi ge bùmén dōu yào wánchéng zìjǐ de rènwu.",
+                        "vietnamese":  "Mỗi bộ phận đều phải hoàn thành nhiệm vụ của mình.",
+                        "answer":  "每个部门都要完成自己的任务。"
+                    },
+                    {
+                        "chinese":  "旅游部安排了上海和西安的路线。",
+                        "pinyin":  "Lǚyóu bù ānpái le Shànghǎi hé Xī’ān de lùxiàn.",
+                        "vietnamese":  "Bộ phận du lịch đã sắp xếp tuyến Thượng Hải và Tây An.",
+                        "answer":  "旅游部安排了上海和西安的路线。"
+                    },
+                    {
+                        "chinese":  "这本书分成三部，第一部最容易读。",
+                        "pinyin":  "Zhè běn shū fēn chéng sān bù, dì yī bù zuì róngyì dú.",
+                        "vietnamese":  "Cuốn sách này chia thành ba phần, phần một dễ đọc nhất.",
+                        "answer":  "这本书分成三部，第一部最容易读。"
+                    },
+                    {
+                        "chinese":  "他们部门的人每天都要跟客户打交道。",
+                        "pinyin":  "Tāmen bùmén de rén měitiān dōu yào gēn kèhù dǎ jiāodao.",
+                        "vietnamese":  "Người trong bộ phận của họ mỗi ngày đều phải giao tiếp với khách hàng.",
+                        "answer":  "他们部门的人每天都要跟客户打交道。"
+                    },
+                    {
+                        "chinese":  "这部纪录片介绍了海滨城市的生活。",
+                        "pinyin":  "Zhè bù jìlùpiàn jièshào le hǎibīn chéngshì de shēnghuó.",
+                        "vietnamese":  "Bộ phim tài liệu này giới thiệu cuộc sống của thành phố ven biển.",
+                        "answer":  "这部纪录片介绍了海滨城市的生活。"
+                    },
+                    {
+                        "chinese":  "这次考试算是比较容易的。",
+                        "pinyin":  "Zhè cì kǎoshì suànshì bǐjiào róngyì de.",
+                        "vietnamese":  "Kỳ thi lần này coi như là khá dễ.",
+                        "answer":  "这次考试算是比较容易的。"
+                    },
+                    {
+                        "chinese":  "他虽然不是本地人，但算是很熟悉这座城市。",
+                        "pinyin":  "Tā suīrán bú shì běndì rén, dàn suànshì hěn shúxī zhè zuò chéngshì.",
+                        "vietnamese":  "Tuy anh ấy không phải người địa phương nhưng coi như rất quen thành phố này.",
+                        "answer":  "他虽然不是本地人，但算是很熟悉这座城市。"
+                    },
+                    {
+                        "chinese":  "这家小吃店算是校园附近最有特色的店。",
+                        "pinyin":  "Zhè jiā xiǎochī diàn suànshì xiàoyuán fùjìn zuì yǒu tèsè de diàn.",
+                        "vietnamese":  "Quán ăn vặt này coi như là quán đặc sắc nhất gần khuôn viên.",
+                        "answer":  "这家小吃店算是校园附近最有特色的店。"
+                    },
+                    {
+                        "chinese":  "我们提前买到了门票，算是比较幸运。",
+                        "pinyin":  "Wǒmen tíqián mǎi dào le ménpiào, suànshì bǐjiào xìngyùn.",
+                        "vietnamese":  "Chúng tôi mua được vé trước, coi như khá may mắn.",
+                        "answer":  "我们提前买到了门票，算是比较幸运。"
+                    },
+                    {
+                        "chinese":  "这部电影的开头算是很吸引人。",
+                        "pinyin":  "Zhè bù diànyǐng de kāitóu suànshì hěn xīyǐn rén.",
+                        "vietnamese":  "Phần mở đầu của bộ phim này coi như rất cuốn hút.",
+                        "answer":  "这部电影的开头算是很吸引人。"
+                    },
+                    {
+                        "chinese":  "上海的生活费用在中国算是比较高的。",
+                        "pinyin":  "Shànghǎi de shēnghuó fèiyòng zài Zhōngguó suànshì bǐjiào gāo de.",
+                        "vietnamese":  "Chi phí sinh hoạt ở Thượng Hải tại Trung Quốc coi như khá cao.",
+                        "answer":  "上海的生活费用在中国算是比较高的。"
+                    },
+                    {
+                        "chinese":  "他中文说得不错，算是新生里进步最快的。",
+                        "pinyin":  "Tā Zhōngwén shuō de búcuò, suànshì xīnshēng lǐ jìnbù zuì kuài de.",
+                        "vietnamese":  "Anh ấy nói tiếng Trung khá tốt, coi như là người tiến bộ nhanh nhất trong sinh viên mới.",
+                        "answer":  "他中文说得不错，算是新生里进步最快的。"
+                    },
+                    {
+                        "chinese":  "这条小巷虽然很短，但算是当地名胜之一。",
+                        "pinyin":  "Zhè tiáo xiǎoxiàng suīrán hěn duǎn, dàn suànshì dāngdì míngshèng zhī yī.",
+                        "vietnamese":  "Con hẻm này tuy ngắn nhưng coi như một trong những thắng cảnh địa phương.",
+                        "answer":  "这条小巷虽然很短，但算是当地名胜之一。"
+                    },
+                    {
+                        "chinese":  "如果按条件来看，这个房子算是不错。",
+                        "pinyin":  "Rúguǒ àn tiáojiàn lái kàn, zhège fángzi suànshì búcuò.",
+                        "vietnamese":  "Nếu xét theo điều kiện, căn nhà này coi như khá tốt.",
+                        "answer":  "如果按条件来看，这个房子算是不错。"
+                    },
+                    {
+                        "chinese":  "他这次没有出错，算是完成了任务。",
+                        "pinyin":  "Tā zhè cì méiyǒu chūcuò, suànshì wánchéng le rènwu.",
+                        "vietnamese":  "Lần này anh ấy không mắc lỗi, coi như đã hoàn thành nhiệm vụ.",
+                        "answer":  "他这次没有出错，算是完成了任务。"
+                    },
+                    {
+                        "chinese":  "这个城市的生活费用属于中等水平。",
+                        "pinyin":  "Zhège chéngshì de shēnghuó fèiyòng shǔyú zhōngděng shuǐpíng.",
+                        "vietnamese":  "Chi phí sinh hoạt của thành phố này thuộc mức trung bình.",
+                        "answer":  "这个城市的生活费用属于中等水平。"
+                    },
+                    {
+                        "chinese":  "她的中文水平不算高，大概是中等。",
+                        "pinyin":  "Tā de Zhōngwén shuǐpíng bú suàn gāo, dàgài shì zhōngděng.",
+                        "vietnamese":  "Trình độ tiếng Trung của cô ấy không tính là cao, khoảng mức trung bình.",
+                        "answer":  "她的中文水平不算高，大概是中等。"
+                    },
+                    {
+                        "chinese":  "这家饭店的价格中等，味道却很有特色。",
+                        "pinyin":  "Zhè jiā fàndiàn de jiàgé zhōngděng, wèidào què hěn yǒu tèsè.",
+                        "vietnamese":  "Giá của nhà hàng này ở mức trung bình nhưng hương vị lại rất đặc sắc.",
+                        "answer":  "这家饭店的价格中等，味道却很有特色。"
+                    },
+                    {
+                        "chinese":  "中等城市的生活节奏一般没有上海快。",
+                        "pinyin":  "Zhōngděng chéngshì de shēnghuó jiézòu yìbān méiyǒu Shànghǎi kuài.",
+                        "vietnamese":  "Nhịp sống của thành phố trung bình thường không nhanh bằng Thượng Hải.",
+                        "answer":  "中等城市的生活节奏一般没有上海快。"
+                    },
+                    {
+                        "chinese":  "老师建议中等水平的学生多练口语。",
+                        "pinyin":  "Lǎoshī jiànyì zhōngděng shuǐpíng de xuésheng duō liàn kǒuyǔ.",
+                        "vietnamese":  "Giáo viên khuyên học sinh trình độ trung bình luyện khẩu ngữ nhiều hơn.",
+                        "answer":  "老师建议中等水平的学生多练口语。"
+                    },
+                    {
+                        "chinese":  "这件外衣质量中等，但是颜色很好看。",
+                        "pinyin":  "Zhè jiàn wàiyī zhìliàng zhōngděng, dànshì yánsè hěn hǎokàn.",
+                        "vietnamese":  "Chiếc áo khoác này chất lượng trung bình nhưng màu rất đẹp.",
+                        "answer":  "这件外衣质量中等，但是颜色很好看。"
+                    },
+                    {
+                        "chinese":  "中等收入家庭也越来越重视旅游体验。",
+                        "pinyin":  "Zhōngděng shōurù jiātíng yě yuèláiyuè zhòngshì lǚyóu tǐyàn.",
+                        "vietnamese":  "Gia đình thu nhập trung bình cũng ngày càng coi trọng trải nghiệm du lịch.",
+                        "answer":  "中等收入家庭也越来越重视旅游体验。"
+                    },
+                    {
+                        "chinese":  "他买了一张中等价格的门票。",
+                        "pinyin":  "Tā mǎi le yì zhāng zhōngděng jiàgé de ménpiào.",
+                        "vietnamese":  "Anh ấy mua một vé vào cửa giá trung bình.",
+                        "answer":  "他买了一张中等价格的门票。"
+                    },
+                    {
+                        "chinese":  "这个班学生水平中等，但学习态度很好。",
+                        "pinyin":  "Zhège bān xuésheng shuǐpíng zhōngděng, dàn xuéxí tàidu hěn hǎo.",
+                        "vietnamese":  "Trình độ học sinh lớp này ở mức trung bình nhưng thái độ học rất tốt.",
+                        "answer":  "这个班学生水平中等，但学习态度很好。"
+                    },
+                    {
+                        "chinese":  "这座城市规模中等，却非常适宜居住。",
+                        "pinyin":  "Zhè zuò chéngshì guīmó zhōngděng, què fēicháng shìyí jūzhù.",
+                        "vietnamese":  "Thành phố này quy mô trung bình nhưng vô cùng thích hợp để sinh sống.",
+                        "answer":  "这座城市规模中等，却非常适宜居住。"
+                    },
+                    {
+                        "chinese":  "春天一到，树上就出新叶子了。",
+                        "pinyin":  "Chūntiān yí dào, shù shàng jiù chū xīn yèzi le.",
+                        "vietnamese":  "Mùa xuân đến là trên cây mọc lá mới.",
+                        "answer":  "春天一到，树上就出新叶子了。"
+                    },
+                    {
+                        "chinese":  "太阳刚出来，校园里就热闹起来。",
+                        "pinyin":  "Tàiyáng gāng chūlái, xiàoyuán lǐ jiù rènao qǐlái.",
+                        "vietnamese":  "Mặt trời vừa ló ra, trong khuôn viên liền náo nhiệt lên.",
+                        "answer":  "太阳刚出来，校园里就热闹起来。"
+                    },
+                    {
+                        "chinese":  "这本书出了新版，内容更适合新生。",
+                        "pinyin":  "Zhè běn shū chū le xīn bǎn, nèiróng gèng shìhé xīnshēng.",
+                        "vietnamese":  "Cuốn sách này ra bản mới, nội dung phù hợp hơn với sinh viên mới.",
+                        "answer":  "这本书出了新版，内容更适合新生。"
+                    },
+                    {
+                        "chinese":  "他一紧张，脸上就出汗。",
+                        "pinyin":  "Tā yì jǐnzhāng, liǎn shàng jiù chū hàn.",
+                        "vietnamese":  "Anh ấy cứ căng thẳng là trên mặt đổ mồ hôi.",
+                        "answer":  "他一紧张，脸上就出汗。"
+                    },
+                    {
+                        "chinese":  "这个问题一出来，大家就开始谈论。",
+                        "pinyin":  "Zhège wèntí yì chūlái, dàjiā jiù kāishǐ tánlùn.",
+                        "vietnamese":  "Vấn đề này vừa xuất hiện, mọi người liền bắt đầu bàn luận.",
+                        "answer":  "这个问题一出来，大家就开始谈论。"
+                    },
+                    {
+                        "chinese":  "西安出了很多和历史有关的旅游路线。",
+                        "pinyin":  "Xī’ān chū le hěn duō hé lìshǐ yǒuguān de lǚyóu lùxiàn.",
+                        "vietnamese":  "Tây An xuất hiện nhiều tuyến du lịch liên quan đến lịch sử.",
+                        "answer":  "西安出了很多和历史有关的旅游路线。"
+                    },
+                    {
+                        "chinese":  "如果证件出了问题，进出口会很麻烦。",
+                        "pinyin":  "Rúguǒ zhèngjiàn chū le wèntí, jìnchūkǒu huì hěn máfan.",
+                        "vietnamese":  "Nếu giấy tờ xảy ra vấn đề, xuất nhập khẩu sẽ rất phiền.",
+                        "answer":  "如果证件出了问题，进出口会很麻烦。"
+                    },
+                    {
+                        "chinese":  "海边风一大，天气就容易出变化。",
+                        "pinyin":  "Hǎibiān fēng yí dà, tiānqì jiù róngyì chū biànhuà.",
+                        "vietnamese":  "Gió ven biển vừa lớn thì thời tiết dễ xuất hiện thay đổi.",
+                        "answer":  "海边风一大，天气就容易出变化。"
+                    },
+                    {
+                        "chinese":  "他想不出更好的办法，只好问老师。",
+                        "pinyin":  "Tā xiǎng bù chū gèng hǎo de bànfǎ, zhǐhǎo wèn lǎoshī.",
+                        "vietnamese":  "Anh ấy không nghĩ ra cách tốt hơn, đành hỏi giáo viên.",
+                        "answer":  "他想不出更好的办法，只好问老师。"
+                    },
+                    {
+                        "chinese":  "这座城市出了不少有名的演员和主持人。",
+                        "pinyin":  "Zhè zuò chéngshì chū le bù shǎo yǒumíng de yǎnyuán hé zhǔchírén.",
+                        "vietnamese":  "Thành phố này đã xuất hiện không ít diễn viên và MC nổi tiếng.",
+                        "answer":  "这座城市出了不少有名的演员和主持人。"
+                    },
+                    {
+                        "chinese":  "大家都说她是我们班的美女。",
+                        "pinyin":  "Dàjiā dōu shuō tā shì wǒmen bān de měinǚ.",
+                        "vietnamese":  "Mọi người đều nói cô ấy là người đẹp của lớp chúng tôi.",
+                        "answer":  "大家都说她是我们班的美女。"
+                    },
+                    {
+                        "chinese":  "这位美女不仅外表漂亮，而且很有能力。",
+                        "pinyin":  "Zhè wèi měinǚ bùjǐn wàibiǎo piàoliang, érqiě hěn yǒu nénglì.",
+                        "vietnamese":  "Cô gái đẹp này không chỉ ngoại hình đẹp mà còn rất có năng lực.",
+                        "answer":  "这位美女不仅外表漂亮，而且很有能力。"
+                    },
+                    {
+                        "chinese":  "他称呼别人为美女时，有时候显得太随便。",
+                        "pinyin":  "Tā chēnghu biérén wéi měinǚ shí, yǒu shíhou xiǎnde tài suíbiàn.",
+                        "vietnamese":  "Khi anh ấy gọi người khác là người đẹp, đôi khi có vẻ quá tùy tiện.",
+                        "answer":  "他称呼别人为美女时，有时候显得太随便。"
+                    },
+                    {
+                        "chinese":  "在正式场合，最好不要随便叫别人美女。",
+                        "pinyin":  "Zài zhèngshì chǎnghé, zuìhǎo búyào suíbiàn jiào biérén měinǚ.",
+                        "vietnamese":  "Trong hoàn cảnh trang trọng, tốt nhất đừng tùy tiện gọi người khác là người đẹp.",
+                        "answer":  "在正式场合，最好不要随便叫别人美女。"
+                    },
+                    {
+                        "chinese":  "这个美女主持人说话自然，反应也很快。",
+                        "pinyin":  "Zhège měinǚ zhǔchírén shuōhuà zìrán, fǎnyìng yě hěn kuài.",
+                        "vietnamese":  "Nữ MC xinh đẹp này nói chuyện tự nhiên, phản ứng cũng rất nhanh.",
+                        "answer":  "这个美女主持人说话自然，反应也很快。"
+                    },
+                    {
+                        "chinese":  "美女这个称呼听起来亲热，但不一定合适。",
+                        "pinyin":  "Měinǚ zhège chēnghu tīng qǐlái qīnrè, dàn bù yídìng héshì.",
+                        "vietnamese":  "Cách gọi “người đẹp” nghe thân mật nhưng không nhất định phù hợp.",
+                        "answer":  "美女这个称呼听起来亲热，但不一定合适。"
+                    },
+                    {
+                        "chinese":  "售票员叫她美女，她反而觉得有点尴尬。",
+                        "pinyin":  "Shòupiàoyuán jiào tā měinǚ, tā fǎn\u0027ér juéde yǒudiǎn gāngà.",
+                        "vietnamese":  "Nhân viên bán vé gọi cô ấy là người đẹp, cô ấy ngược lại thấy hơi ngại.",
+                        "answer":  "售票员叫她美女，她反而觉得有点尴尬。"
+                    },
+                    {
+                        "chinese":  "那位美女对中国小吃特别感兴趣。",
+                        "pinyin":  "Nà wèi měinǚ duì Zhōngguó xiǎochī tèbié gǎn xìngqù.",
+                        "vietnamese":  "Cô gái đẹp kia đặc biệt hứng thú với đồ ăn vặt Trung Quốc.",
+                        "answer":  "那位美女对中国小吃特别感兴趣。"
+                    },
+                    {
+                        "chinese":  "他想跟美女打交道，却不知道怎么开头。",
+                        "pinyin":  "Tā xiǎng gēn měinǚ dǎ jiāodao, què bù zhīdào zěnme kāitóu.",
+                        "vietnamese":  "Anh ấy muốn giao tiếp với người đẹp nhưng lại không biết mở đầu thế nào.",
+                        "answer":  "他想跟美女打交道，却不知道怎么开头。"
+                    },
+                    {
+                        "chinese":  "真正有魅力的美女，往往也很有思想。",
+                        "pinyin":  "Zhēnzhèng yǒu mèilì de měinǚ, wǎngwǎng yě hěn yǒu sīxiǎng.",
+                        "vietnamese":  "Người đẹp thật sự có sức hút thường cũng rất có tư tưởng.",
+                        "answer":  "真正有魅力的美女，往往也很有思想。"
+                    },
+                    {
+                        "chinese":  "南方的空气比较湿润。",
+                        "pinyin":  "Nánfāng de kōngqì bǐjiào shīrùn.",
+                        "vietnamese":  "Không khí miền Nam khá ẩm.",
+                        "answer":  "南方的空气比较湿润。"
+                    },
+                    {
+                        "chinese":  "这个海滨城市气候温暖湿润。",
+                        "pinyin":  "Zhège hǎibīn chéngshì qìhòu wēnnuǎn shīrùn.",
+                        "vietnamese":  "Thành phố ven biển này khí hậu ấm áp ẩm ướt.",
+                        "answer":  "这个海滨城市气候温暖湿润。"
+                    },
+                    {
+                        "chinese":  "湿润的环境更适合某些植物生长。",
+                        "pinyin":  "Shīrùn de huánjìng gèng shìhé mǒuxiē zhíwù shēngzhǎng.",
+                        "vietnamese":  "Môi trường ẩm ướt phù hợp hơn cho một số thực vật sinh trưởng.",
+                        "answer":  "湿润的环境更适合某些植物生长。"
+                    },
+                    {
+                        "chinese":  "下雨以后，校园里的空气变得很湿润。",
+                        "pinyin":  "Xiàyǔ yǐhòu, xiàoyuán lǐ de kōngqì biàn de hěn shīrùn.",
+                        "vietnamese":  "Sau khi mưa, không khí trong khuôn viên trở nên rất ẩm.",
+                        "answer":  "下雨以后，校园里的空气变得很湿润。"
+                    },
+                    {
+                        "chinese":  "香港气候湿润，夏天有时候让人不太舒服。",
+                        "pinyin":  "Xiānggǎng qìhòu shīrùn, xiàtiān yǒu shíhou ràng rén bú tài shūfu.",
+                        "vietnamese":  "Khí hậu Hồng Kông ẩm, mùa hè đôi khi khiến người ta không thoải mái lắm.",
+                        "answer":  "香港气候湿润，夏天有时候让人不太舒服。"
+                    },
+                    {
+                        "chinese":  "她喜欢湿润的海风，不喜欢干燥的空气。",
+                        "pinyin":  "Tā xǐhuan shīrùn de hǎifēng, bù xǐhuan gānzào de kōngqì.",
+                        "vietnamese":  "Cô ấy thích gió biển ẩm, không thích không khí khô.",
+                        "answer":  "她喜欢湿润的海风，不喜欢干燥的空气。"
+                    },
+                    {
+                        "chinese":  "湿润地区的房子要注意通风。",
+                        "pinyin":  "Shīrùn dìqū de fángzi yào zhùyì tōngfēng.",
+                        "vietnamese":  "Nhà ở vùng ẩm phải chú ý thông gió.",
+                        "answer":  "湿润地区的房子要注意通风。"
+                    },
+                    {
+                        "chinese":  "这种湿润的气候很适宜居住。",
+                        "pinyin":  "Zhè zhǒng shīrùn de qìhòu hěn shìyí jūzhù.",
+                        "vietnamese":  "Kiểu khí hậu ẩm này rất thích hợp để sinh sống.",
+                        "answer":  "这种湿润的气候很适宜居住。"
+                    },
+                    {
+                        "chinese":  "雨后的沙滩有点湿润，走路要小心。",
+                        "pinyin":  "Yǔ hòu de shātān yǒudiǎn shīrùn, zǒulù yào xiǎoxīn.",
+                        "vietnamese":  "Bãi cát sau mưa hơi ẩm, đi đường phải cẩn thận.",
+                        "answer":  "雨后的沙滩有点湿润，走路要小心。"
+                    },
+                    {
+                        "chinese":  "老人说湿润的空气对皮肤有好处。",
+                        "pinyin":  "Lǎorén shuō shīrùn de kōngqì duì pífū yǒu hǎochu.",
+                        "vietnamese":  "Người già nói không khí ẩm có lợi cho da.",
+                        "answer":  "老人说湿润的空气对皮肤有好处。"
+                    },
+                    {
+                        "chinese":  "这个学校的地理位置非常优越。",
+                        "pinyin":  "Zhège xuéxiào de dìlǐ wèizhì fēicháng yōuyuè.",
+                        "vietnamese":  "Vị trí địa lý của trường này vô cùng thuận lợi/vượt trội.",
+                        "answer":  "这个学校的地理位置非常优越。"
+                    },
+                    {
+                        "chinese":  "上海的交通条件很优越。",
+                        "pinyin":  "Shànghǎi de jiāotōng tiáojiàn hěn yōuyuè.",
+                        "vietnamese":  "Điều kiện giao thông của Thượng Hải rất ưu việt.",
+                        "answer":  "上海的交通条件很优越。"
+                    },
+                    {
+                        "chinese":  "优越的学习环境能提高学生效率。",
+                        "pinyin":  "Yōuyuè de xuéxí huánjìng néng tígāo xuésheng xiàolǜ.",
+                        "vietnamese":  "Môi trường học tập ưu việt có thể nâng cao hiệu quả của học sinh.",
+                        "answer":  "优越的学习环境能提高学生效率。"
+                    },
+                    {
+                        "chinese":  "这个海滨城市有优越的旅游资源。",
+                        "pinyin":  "Zhège hǎibīn chéngshì yǒu yōuyuè de lǚyóu zīyuán.",
+                        "vietnamese":  "Thành phố ven biển này có tài nguyên du lịch vượt trội.",
+                        "answer":  "这个海滨城市有优越的旅游资源。"
+                    },
+                    {
+                        "chinese":  "他的家庭条件优越，但学习也很努力。",
+                        "pinyin":  "Tā de jiātíng tiáojiàn yōuyuè, dàn xuéxí yě hěn nǔlì.",
+                        "vietnamese":  "Điều kiện gia đình anh ấy tốt nhưng học tập cũng rất cố gắng.",
+                        "answer":  "他的家庭条件优越，但学习也很努力。"
+                    },
+                    {
+                        "chinese":  "校园设施优越，吸引了很多新生。",
+                        "pinyin":  "Xiàoyuán shèshī yōuyuè, xīyǐn le hěn duō xīnshēng.",
+                        "vietnamese":  "Cơ sở vật chất khuôn viên vượt trội, thu hút nhiều sinh viên mới.",
+                        "answer":  "校园设施优越，吸引了很多新生。"
+                    },
+                    {
+                        "chinese":  "优越并不代表没有压力。",
+                        "pinyin":  "Yōuyuè bìng bù dàibiǎo méiyǒu yālì.",
+                        "vietnamese":  "Ưu việt không có nghĩa là không có áp lực.",
+                        "answer":  "优越并不代表没有压力。"
+                    },
+                    {
+                        "chinese":  "这座城市的自然条件和人文条件都很优越。",
+                        "pinyin":  "Zhè zuò chéngshì de zìrán tiáojiàn hé rénwén tiáojiàn dōu hěn yōuyuè.",
+                        "vietnamese":  "Điều kiện tự nhiên và nhân văn của thành phố này đều rất ưu việt.",
+                        "answer":  "这座城市的自然条件和人文条件都很优越。"
+                    },
+                    {
+                        "chinese":  "优越的位置让这个小巷成了旅游热点。",
+                        "pinyin":  "Yōuyuè de wèizhi ràng zhège xiǎoxiàng chéng le lǚyóu rèdiǎn.",
+                        "vietnamese":  "Vị trí thuận lợi khiến con hẻm này trở thành điểm nóng du lịch.",
+                        "answer":  "优越的位置让这个小巷成了旅游热点。"
+                    },
+                    {
+                        "chinese":  "他总觉得自己条件优越，所以不太努力。",
+                        "pinyin":  "Tā zǒng juéde zìjǐ tiáojiàn yōuyuè, suǒyǐ bú tài nǔlì.",
+                        "vietnamese":  "Anh ấy luôn cảm thấy điều kiện của mình tốt nên không cố gắng lắm.",
+                        "answer":  "他总觉得自己条件优越，所以不太努力。"
+                    },
+                    {
+                        "chinese":  "这座城市有丰富的人文历史。",
+                        "pinyin":  "Zhè zuò chéngshì yǒu fēngfù de rénwén lìshǐ.",
+                        "vietnamese":  "Thành phố này có lịch sử nhân văn phong phú.",
+                        "answer":  "这座城市有丰富的人文历史。"
+                    },
+                    {
+                        "chinese":  "旅游不能只看风景，也要了解人文特色。",
+                        "pinyin":  "Lǚyóu bù néng zhǐ kàn fēngjǐng, yě yào liǎojiě rénwén tèsè.",
+                        "vietnamese":  "Du lịch không thể chỉ ngắm cảnh, cũng phải hiểu nét nhân văn.",
+                        "answer":  "旅游不能只看风景，也要了解人文特色。"
+                    },
+                    {
+                        "chinese":  "西安的人文气息比很多城市更浓。",
+                        "pinyin":  "Xī’ān de rénwén qìxī bǐ hěn duō chéngshì gèng nóng.",
+                        "vietnamese":  "Không khí nhân văn của Tây An đậm hơn nhiều thành phố khác.",
+                        "answer":  "西安的人文气息比很多城市更浓。"
+                    },
+                    {
+                        "chinese":  "人文环境好，学生会更愿意留下来。",
+                        "pinyin":  "Rénwén huánjìng hǎo, xuésheng huì gèng yuànyì liú xiàlái.",
+                        "vietnamese":  "Môi trường nhân văn tốt, học sinh sẽ càng muốn ở lại hơn.",
+                        "answer":  "人文环境好，学生会更愿意留下来。"
+                    },
+                    {
+                        "chinese":  "这门课主要介绍中国人文知识。",
+                        "pinyin":  "Zhè mén kè zhǔyào jièshào Zhōngguó rénwén zhīshi.",
+                        "vietnamese":  "Môn học này chủ yếu giới thiệu kiến thức nhân văn Trung Quốc.",
+                        "answer":  "这门课主要介绍中国人文知识。"
+                    },
+                    {
+                        "chinese":  "城市发展不仅需要经济，也需要人文关怀。",
+                        "pinyin":  "Chéngshì fāzhǎn bùjǐn xūyào jīngjì, yě xūyào rénwén guānhuái.",
+                        "vietnamese":  "Phát triển đô thị không chỉ cần kinh tế mà cũng cần sự quan tâm nhân văn.",
+                        "answer":  "城市发展不仅需要经济，也需要人文关怀。"
+                    },
+                    {
+                        "chinese":  "校园建筑体现了学校的人文精神。",
+                        "pinyin":  "Xiàoyuán jiànzhù tǐxiàn le xuéxiào de rénwén jīngshén.",
+                        "vietnamese":  "Kiến trúc khuôn viên thể hiện tinh thần nhân văn của trường.",
+                        "answer":  "校园建筑体现了学校的人文精神。"
+                    },
+                    {
+                        "chinese":  "这次观光活动包括自然景点和人文景点。",
+                        "pinyin":  "Zhè cì guānguāng huódòng bāokuò zìrán jǐngdiǎn hé rénwén jǐngdiǎn.",
+                        "vietnamese":  "Hoạt động tham quan lần này bao gồm điểm tự nhiên và điểm nhân văn.",
+                        "answer":  "这次观光活动包括自然景点和人文景点。"
+                    },
+                    {
+                        "chinese":  "他对香港的人文生活特别感兴趣。",
+                        "pinyin":  "Tā duì Xiānggǎng de rénwén shēnghuó tèbié gǎn xìngqù.",
+                        "vietnamese":  "Anh ấy đặc biệt hứng thú với đời sống nhân văn của Hồng Kông.",
+                        "answer":  "他对香港的人文生活特别感兴趣。"
+                    },
+                    {
+                        "chinese":  "人文因素让这座海滨城市更有吸引力。",
+                        "pinyin":  "Rénwén yīnsù ràng zhè zuò hǎibīn chéngshì gèng yǒu xīyǐnlì.",
+                        "vietnamese":  "Yếu tố nhân văn khiến thành phố ven biển này hấp dẫn hơn.",
+                        "answer":  "人文因素让这座海滨城市更有吸引力。"
+                    },
+                    {
+                        "chinese":  "西安有很多名胜古迹，值得慢慢参观。",
+                        "pinyin":  "Xī’ān yǒu hěn duō míngshèng gǔjì, zhíde mànman cānguān.",
+                        "vietnamese":  "Tây An có nhiều danh lam thắng cảnh và di tích lịch sử, đáng để tham quan chậm rãi.",
+                        "answer":  "西安有很多名胜古迹，值得慢慢参观。"
+                    },
+                    {
+                        "chinese":  "这条旅游路线包括几个著名的名胜古迹。",
+                        "pinyin":  "Zhè tiáo lǚyóu lùxiàn bāokuò jǐ ge zhùmíng de míngshèng gǔjì.",
+                        "vietnamese":  "Tuyến du lịch này bao gồm vài danh lam thắng cảnh và di tích nổi tiếng.",
+                        "answer":  "这条旅游路线包括几个著名的名胜古迹。"
+                    },
+                    {
+                        "chinese":  "参观名胜古迹时，要尊重当地文化。",
+                        "pinyin":  "Cānguān míngshèng gǔjì shí, yào zūnzhòng dāngdì wénhuà.",
+                        "vietnamese":  "Khi tham quan danh lam di tích, phải tôn trọng văn hóa địa phương.",
+                        "answer":  "参观名胜古迹时，要尊重当地文化。"
+                    },
+                    {
+                        "chinese":  "这个城市不仅有海滨风光，也有名胜古迹。",
+                        "pinyin":  "Zhège chéngshì bùjǐn yǒu hǎibīn fēngguāng, yě yǒu míngshèng gǔjì.",
+                        "vietnamese":  "Thành phố này không chỉ có phong cảnh ven biển mà cũng có danh lam di tích.",
+                        "answer":  "这个城市不仅有海滨风光，也有名胜古迹。"
+                    },
+                    {
+                        "chinese":  "老师让我们介绍一处家乡的名胜古迹。",
+                        "pinyin":  "Lǎoshī ràng wǒmen jièshào yí chù jiāxiāng de míngshèng gǔjì.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi giới thiệu một danh lam di tích ở quê mình.",
+                        "answer":  "老师让我们介绍一处家乡的名胜古迹。"
+                    },
+                    {
+                        "chinese":  "名胜古迹是了解一座城市的重要窗口。",
+                        "pinyin":  "Míngshèng gǔjì shì liǎojiě yí zuò chéngshì de zhòngyào chuāngkǒu.",
+                        "vietnamese":  "Danh lam di tích là cửa sổ quan trọng để hiểu một thành phố.",
+                        "answer":  "名胜古迹是了解一座城市的重要窗口。"
+                    },
+                    {
+                        "chinese":  "保护名胜古迹不仅靠政府，也靠游客自觉。",
+                        "pinyin":  "Bǎohù míngshèng gǔjì bùjǐn kào zhèngfǔ, yě kào yóukè zìjué.",
+                        "vietnamese":  "Bảo vệ danh lam di tích không chỉ dựa vào chính phủ mà còn dựa vào ý thức du khách.",
+                        "answer":  "保护名胜古迹不仅靠政府，也靠游客自觉。"
+                    },
+                    {
+                        "chinese":  "这处名胜古迹的门票费用并不高。",
+                        "pinyin":  "Zhè chù míngshèng gǔjì de ménpiào fèiyòng bìng bù gāo.",
+                        "vietnamese":  "Phí vé vào cửa của danh lam di tích này không cao.",
+                        "answer":  "这处名胜古迹的门票费用并不高。"
+                    },
+                    {
+                        "chinese":  "如果只看小吃，不看名胜古迹，就太可惜了。",
+                        "pinyin":  "Rúguǒ zhǐ kàn xiǎochī, bú kàn míngshèng gǔjì, jiù tài kěxī le.",
+                        "vietnamese":  "Nếu chỉ xem đồ ăn vặt mà không xem danh lam di tích thì quá đáng tiếc.",
+                        "answer":  "如果只看小吃，不看名胜古迹，就太可惜了。"
+                    },
+                    {
+                        "chinese":  "很多国外游客专门来中国看名胜古迹。",
+                        "pinyin":  "Hěn duō guówài yóukè zhuānmén lái Zhōngguó kàn míngshèng gǔjì.",
+                        "vietnamese":  "Nhiều du khách nước ngoài đặc biệt đến Trung Quốc xem danh lam di tích.",
+                        "answer":  "很多国外游客专门来中国看名胜古迹。"
+                    },
+                    {
+                        "chinese":  "上海是大城市，香港也是大城市。",
+                        "pinyin":  "Shànghǎi shì dà chéngshì, Xiānggǎng yěshì dà chéngshì.",
+                        "vietnamese":  "Thượng Hải là thành phố lớn, Hồng Kông cũng là thành phố lớn.",
+                        "answer":  "上海是大城市，香港也是大城市。"
+                    },
+                    {
+                        "chinese":  "他是新生，我也是新生。",
+                        "pinyin":  "Tā shì xīnshēng, wǒ yěshì xīnshēng.",
+                        "vietnamese":  "Anh ấy là sinh viên mới, tôi cũng là sinh viên mới.",
+                        "answer":  "他是新生，我也是新生。"
+                    },
+                    {
+                        "chinese":  "旅游是一种学习，观光也是一种学习。",
+                        "pinyin":  "Lǚyóu shì yì zhǒng xuéxí, guānguāng yěshì yì zhǒng xuéxí.",
+                        "vietnamese":  "Du lịch là một kiểu học tập, tham quan cũng là một kiểu học tập.",
+                        "answer":  "旅游是一种学习，观光也是一种学习。"
+                    },
+                    {
+                        "chinese":  "西安有名胜古迹，也是小吃很多的城市。",
+                        "pinyin":  "Xī’ān yǒu míngshèng gǔjì, yěshì xiǎochī hěn duō de chéngshì.",
+                        "vietnamese":  "Tây An có danh lam di tích, cũng là thành phố có nhiều món ăn vặt.",
+                        "answer":  "西安有名胜古迹，也是小吃很多的城市。"
+                    },
+                    {
+                        "chinese":  "这个校园是学习的地方，也是生活的地方。",
+                        "pinyin":  "Zhège xiàoyuán shì xuéxí de dìfang, yěshì shēnghuó de dìfang.",
+                        "vietnamese":  "Khuôn viên này là nơi học tập, cũng là nơi sinh hoạt.",
+                        "answer":  "这个校园是学习的地方，也是生活的地方。"
+                    },
+                    {
+                        "chinese":  "称呼是一种语言问题，也是文化问题。",
+                        "pinyin":  "Chēnghu shì yì zhǒng yǔyán wèntí, yěshì wénhuà wèntí.",
+                        "vietnamese":  "Xưng hô là một vấn đề ngôn ngữ, cũng là vấn đề văn hóa.",
+                        "answer":  "称呼是一种语言问题，也是文化问题。"
+                    },
+                    {
+                        "chinese":  "这条小巷是当地特色，也是游客喜欢的地方。",
+                        "pinyin":  "Zhè tiáo xiǎoxiàng shì dāngdì tèsè, yěshì yóukè xǐhuan de dìfang.",
+                        "vietnamese":  "Con hẻm này là nét đặc sắc địa phương, cũng là nơi du khách thích.",
+                        "answer":  "这条小巷是当地特色，也是游客喜欢的地方。"
+                    },
+                    {
+                        "chinese":  "健身是为了身体，也是为了减轻压力。",
+                        "pinyin":  "Jiànshēn shì wèile shēntǐ, yěshì wèile jiǎnqīng yālì.",
+                        "vietnamese":  "Tập thể dục là vì cơ thể, cũng là để giảm áp lực.",
+                        "answer":  "健身是为了身体，也是为了减轻压力。"
+                    },
+                    {
+                        "chinese":  "海滨城市适合旅游，也是适宜居住的地方。",
+                        "pinyin":  "Hǎibīn chéngshì shìhé lǚyóu, yěshì shìyí jūzhù de dìfang.",
+                        "vietnamese":  "Thành phố ven biển phù hợp du lịch, cũng là nơi thích hợp để sinh sống.",
+                        "answer":  "海滨城市适合旅游，也是适宜居住的地方。"
+                    },
+                    {
+                        "chinese":  "这部电影是娱乐，也是一次文化介绍。",
+                        "pinyin":  "Zhè bù diànyǐng shì yúlè, yěshì yí cì wénhuà jièshào.",
+                        "vietnamese":  "Bộ phim này là giải trí, cũng là một lần giới thiệu văn hóa.",
+                        "answer":  "这部电影是娱乐，也是一次文化介绍。"
+                    },
+                    {
+                        "chinese":  "这条小巷虽然窄，但是很有特色。",
+                        "pinyin":  "Zhè tiáo xiǎoxiàng suīrán zhǎi, dànshì hěn yǒu tèsè.",
+                        "vietnamese":  "Con hẻm này tuy hẹp nhưng rất có nét riêng.",
+                        "answer":  "这条小巷虽然窄，但是很有特色。"
+                    },
+                    {
+                        "chinese":  "小巷里有几家有名的小吃店。",
+                        "pinyin":  "Xiǎoxiàng lǐ yǒu jǐ jiā yǒumíng de xiǎochī diàn.",
+                        "vietnamese":  "Trong hẻm nhỏ có vài quán ăn vặt nổi tiếng.",
+                        "answer":  "小巷里有几家有名的小吃店。"
+                    },
+                    {
+                        "chinese":  "游客喜欢在老小巷里拍照片。",
+                        "pinyin":  "Yóukè xǐhuan zài lǎo xiǎoxiàng lǐ pāi zhàopiàn.",
+                        "vietnamese":  "Du khách thích chụp ảnh trong những con hẻm cũ.",
+                        "answer":  "游客喜欢在老小巷里拍照片。"
+                    },
+                    {
+                        "chinese":  "这条小巷的来历很有意思。",
+                        "pinyin":  "Zhè tiáo xiǎoxiàng de láilì hěn yǒu yìsi.",
+                        "vietnamese":  "Nguồn gốc của con hẻm này rất thú vị.",
+                        "answer":  "这条小巷的来历很有意思。"
+                    },
+                    {
+                        "chinese":  "小巷两边都是老房子，特别有人文气息。",
+                        "pinyin":  "Xiǎoxiàng liǎngbiān dōu shì lǎo fángzi, tèbié yǒu rénwén qìxī.",
+                        "vietnamese":  "Hai bên con hẻm đều là nhà cũ, đặc biệt có không khí nhân văn.",
+                        "answer":  "小巷两边都是老房子，特别有人文气息。"
+                    },
+                    {
+                        "chinese":  "他带新生参观了校园附近的小巷。",
+                        "pinyin":  "Tā dài xīnshēng cānguān le xiàoyuán fùjìn de xiǎoxiàng.",
+                        "vietnamese":  "Anh ấy dẫn sinh viên mới tham quan hẻm nhỏ gần khuôn viên.",
+                        "answer":  "他带新生参观了校园附近的小巷。"
+                    },
+                    {
+                        "chinese":  "小巷不见得容易找，但值得一去。",
+                        "pinyin":  "Xiǎoxiàng bú jiàn de róngyì zhǎo, dàn zhíde yí qù.",
+                        "vietnamese":  "Hẻm nhỏ chưa chắc dễ tìm nhưng đáng để đi một lần.",
+                        "answer":  "小巷不见得容易找，但值得一去。"
+                    },
+                    {
+                        "chinese":  "夜里走小巷时，最好注意安全。",
+                        "pinyin":  "Yèlǐ zǒu xiǎoxiàng shí, zuìhǎo zhùyì ānquán.",
+                        "vietnamese":  "Khi đi trong hẻm nhỏ ban đêm, tốt nhất chú ý an toàn.",
+                        "answer":  "夜里走小巷时，最好注意安全。"
+                    },
+                    {
+                        "chinese":  "这条小巷通向一个安静的海滨公园。",
+                        "pinyin":  "Zhè tiáo xiǎoxiàng tōngxiàng yí ge ānjìng de hǎibīn gōngyuán.",
+                        "vietnamese":  "Con hẻm này dẫn tới một công viên ven biển yên tĩnh.",
+                        "answer":  "这条小巷通向一个安静的海滨公园。"
+                    },
+                    {
+                        "chinese":  "老师让我们写一篇关于小巷的观光日记。",
+                        "pinyin":  "Lǎoshī ràng wǒmen xiě yì piān guānyú xiǎoxiàng de guānguāng rìjì.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi viết một bài nhật ký tham quan về con hẻm.",
+                        "answer":  "老师让我们写一篇关于小巷的观光日记。"
+                    },
+                    {
+                        "chinese":  "这条小巷的来历可以追到一百年前。",
+                        "pinyin":  "Zhè tiáo xiǎoxiàng de láilì kěyǐ zhuī dào yì bǎi nián qián.",
+                        "vietnamese":  "Nguồn gốc của con hẻm này có thể truy về một trăm năm trước.",
+                        "answer":  "这条小巷的来历可以追到一百年前。"
+                    },
+                    {
+                        "chinese":  "他对这个地名的来历很感兴趣。",
+                        "pinyin":  "Tā duì zhège dìmíng de láilì hěn gǎn xìngqù.",
+                        "vietnamese":  "Anh ấy rất hứng thú với nguồn gốc của địa danh này.",
+                        "answer":  "他对这个地名的来历很感兴趣。"
+                    },
+                    {
+                        "chinese":  "老师给我们讲了西安几个名胜的来历。",
+                        "pinyin":  "Lǎoshī gěi wǒmen jiǎng le Xī’ān jǐ ge míngshèng de láilì.",
+                        "vietnamese":  "Giáo viên giảng cho chúng tôi nguồn gốc của vài thắng cảnh ở Tây An.",
+                        "answer":  "老师给我们讲了西安几个名胜的来历。"
+                    },
+                    {
+                        "chinese":  "不了解来历，就很难真正理解文化。",
+                        "pinyin":  "Bù liǎojiě láilì, jiù hěn nán zhēnzhèng lǐjiě wénhuà.",
+                        "vietnamese":  "Không hiểu nguồn gốc thì rất khó thật sự hiểu văn hóa.",
+                        "answer":  "不了解来历，就很难真正理解文化。"
+                    },
+                    {
+                        "chinese":  "这个称呼的来历和古代官职有关。",
+                        "pinyin":  "Zhège chēnghu de láilì hé gǔdài guānzhí yǒuguān.",
+                        "vietnamese":  "Nguồn gốc của cách xưng hô này liên quan đến chức quan thời xưa.",
+                        "answer":  "这个称呼的来历和古代官职有关。"
+                    },
+                    {
+                        "chinese":  "这家小吃店的来历很特别。",
+                        "pinyin":  "Zhè jiā xiǎochī diàn de láilì hěn tèbié.",
+                        "vietnamese":  "Nguồn gốc của quán ăn vặt này rất đặc biệt.",
+                        "answer":  "这家小吃店的来历很特别。"
+                    },
+                    {
+                        "chinese":  "主持人介绍活动来历时，说得非常清楚。",
+                        "pinyin":  "Zhǔchírén jièshào huódòng láilì shí, shuō de fēicháng qīngchu.",
+                        "vietnamese":  "Khi MC giới thiệu nguồn gốc hoạt động, nói vô cùng rõ ràng.",
+                        "answer":  "主持人介绍活动来历时，说得非常清楚。"
+                    },
+                    {
+                        "chinese":  "每个名胜古迹背后都有自己的来历。",
+                        "pinyin":  "Měi ge míngshèng gǔjì bèihòu dōu yǒu zìjǐ de láilì.",
+                        "vietnamese":  "Đằng sau mỗi danh lam di tích đều có nguồn gốc riêng.",
+                        "answer":  "每个名胜古迹背后都有自己的来历。"
+                    },
+                    {
+                        "chinese":  "如果只看风景，不问来历，就少了一层意思。",
+                        "pinyin":  "Rúguǒ zhǐ kàn fēngjǐng, bú wèn láilì, jiù shǎo le yì céng yìsi.",
+                        "vietnamese":  "Nếu chỉ ngắm cảnh mà không hỏi nguồn gốc thì mất đi một tầng ý nghĩa.",
+                        "answer":  "如果只看风景，不问来历，就少了一层意思。"
+                    },
+                    {
+                        "chinese":  "这个村庄名字的来历，老人最清楚。",
+                        "pinyin":  "Zhège cūnzhuāng míngzi de láilì, lǎorén zuì qīngchu.",
+                        "vietnamese":  "Nguồn gốc tên của ngôi làng này, người già rõ nhất.",
+                        "answer":  "这个村庄名字的来历，老人最清楚。"
+                    },
+                    {
+                        "chinese":  "这种气候非常适宜居住。",
+                        "pinyin":  "Zhè zhǒng qìhòu fēicháng shìyí jūzhù.",
+                        "vietnamese":  "Khí hậu này rất thích hợp để sinh sống.",
+                        "answer":  "这种气候非常适宜居住。"
+                    },
+                    {
+                        "chinese":  "海滨城市适宜发展旅游业。",
+                        "pinyin":  "Hǎibīn chéngshì shìyí fāzhǎn lǚyóu yè.",
+                        "vietnamese":  "Thành phố ven biển thích hợp phát triển ngành du lịch.",
+                        "answer":  "海滨城市适宜发展旅游业。"
+                    },
+                    {
+                        "chinese":  "温暖湿润的环境适宜植物生长。",
+                        "pinyin":  "Wēnnuǎn shīrùn de huánjìng shìyí zhíwù shēngzhǎng.",
+                        "vietnamese":  "Môi trường ấm áp ẩm ướt thích hợp cho thực vật sinh trưởng.",
+                        "answer":  "温暖湿润的环境适宜植物生长。"
+                    },
+                    {
+                        "chinese":  "这套房子安静方便，很适宜老人居住。",
+                        "pinyin":  "Zhè tào fángzi ānjìng fāngbiàn, hěn shìyí lǎorén jūzhù.",
+                        "vietnamese":  "Căn nhà này yên tĩnh tiện lợi, rất thích hợp cho người già sinh sống.",
+                        "answer":  "这套房子安静方便，很适宜老人居住。"
+                    },
+                    {
+                        "chinese":  "这里虽然交通一般，但是生活环境很适宜。",
+                        "pinyin":  "Zhèlǐ suīrán jiāotōng yìbān, dànshì shēnghuó huánjìng hěn shìyí.",
+                        "vietnamese":  "Ở đây tuy giao thông bình thường nhưng môi trường sống rất phù hợp.",
+                        "answer":  "这里虽然交通一般，但是生活环境很适宜。"
+                    },
+                    {
+                        "chinese":  "这个旅游季节最适宜去西安观光。",
+                        "pinyin":  "Zhège lǚyóu jìjié zuì shìyí qù Xī’ān guānguāng.",
+                        "vietnamese":  "Mùa du lịch này thích hợp nhất để đi Tây An tham quan.",
+                        "answer":  "这个旅游季节最适宜去西安观光。"
+                    },
+                    {
+                        "chinese":  "不是所有海滨地区都适宜长期居住。",
+                        "pinyin":  "Bú shì suǒyǒu hǎibīn dìqū dōu shìyí chángqī jūzhù.",
+                        "vietnamese":  "Không phải tất cả khu vực ven biển đều thích hợp cư trú lâu dài.",
+                        "answer":  "不是所有海滨地区都适宜长期居住。"
+                    },
+                    {
+                        "chinese":  "这个地方气候优越，适宜开办度假项目。",
+                        "pinyin":  "Zhège dìfang qìhòu yōuyuè, shìyí kāibàn dùjià xiàngmù.",
+                        "vietnamese":  "Nơi này khí hậu ưu việt, thích hợp mở dự án nghỉ dưỡng.",
+                        "answer":  "这个地方气候优越，适宜开办度假项目。"
+                    },
+                    {
+                        "chinese":  "新生学习压力大，更需要适宜的校园环境。",
+                        "pinyin":  "Xīnshēng xuéxí yālì dà, gèng xūyào shìyí de xiàoyuán huánjìng.",
+                        "vietnamese":  "Sinh viên mới áp lực học lớn, càng cần môi trường khuôn viên phù hợp.",
+                        "answer":  "新生学习压力大，更需要适宜的校园环境。"
+                    },
+                    {
+                        "chinese":  "这种方式不太适宜正式介绍会。",
+                        "pinyin":  "Zhè zhǒng fāngshì bú tài shìyí zhèngshì jièshào huì.",
+                        "vietnamese":  "Cách này không thích hợp lắm với buổi giới thiệu trang trọng.",
+                        "answer":  "这种方式不太适宜正式介绍会。"
+                    },
+                    {
+                        "chinese":  "他毕业以后一直在上海居住。",
+                        "pinyin":  "Tā bìyè yǐhòu yìzhí zài Shànghǎi jūzhù.",
+                        "vietnamese":  "Sau khi tốt nghiệp, anh ấy vẫn luôn sinh sống ở Thượng Hải.",
+                        "answer":  "他毕业以后一直在上海居住。"
+                    },
+                    {
+                        "chinese":  "这个海滨城市非常适宜居住。",
+                        "pinyin":  "Zhège hǎibīn chéngshì fēicháng shìyí jūzhù.",
+                        "vietnamese":  "Thành phố ven biển này rất thích hợp để sinh sống.",
+                        "answer":  "这个海滨城市非常适宜居住。"
+                    },
+                    {
+                        "chinese":  "居住环境会影响人的身体和心情。",
+                        "pinyin":  "Jūzhù huánjìng huì yǐngxiǎng rén de shēntǐ hé xīnqíng.",
+                        "vietnamese":  "Môi trường cư trú sẽ ảnh hưởng đến cơ thể và tâm trạng của con người.",
+                        "answer":  "居住环境会影响人的身体和心情。"
+                    },
+                    {
+                        "chinese":  "很多年轻人选择在大城市居住和工作。",
+                        "pinyin":  "Hěn duō niánqīng rén xuǎnzé zài dà chéngshì jūzhù hé gōngzuò.",
+                        "vietnamese":  "Nhiều người trẻ chọn sinh sống và làm việc ở thành phố lớn.",
+                        "answer":  "很多年轻人选择在大城市居住和工作。"
+                    },
+                    {
+                        "chinese":  "这里的房子费用不高，适合长期居住。",
+                        "pinyin":  "Zhèlǐ de fángzi fèiyòng bù gāo, shìhé chángqī jūzhù.",
+                        "vietnamese":  "Nhà ở đây chi phí không cao, phù hợp cư trú lâu dài.",
+                        "answer":  "这里的房子费用不高，适合长期居住。"
+                    },
+                    {
+                        "chinese":  "外国人在本市居住需要办理相关证件。",
+                        "pinyin":  "Wàiguó rén zài běn shì jūzhù xūyào bànlǐ xiāngguān zhèngjiàn.",
+                        "vietnamese":  "Người nước ngoài cư trú ở thành phố này cần làm giấy tờ liên quan.",
+                        "answer":  "外国人在本市居住需要办理相关证件。"
+                    },
+                    {
+                        "chinese":  "居住在校园附近，上课会方便很多。",
+                        "pinyin":  "Jūzhù zài xiàoyuán fùjìn, shàngkè huì fāngbiàn hěn duō.",
+                        "vietnamese":  "Sống gần khuôn viên sẽ tiện đi học hơn nhiều.",
+                        "answer":  "居住在校园附近，上课会方便很多。"
+                    },
+                    {
+                        "chinese":  "他不喜欢居住在人太多的市中心。",
+                        "pinyin":  "Tā bù xǐhuan jūzhù zài rén tài duō de shì zhōngxīn.",
+                        "vietnamese":  "Anh ấy không thích sống ở trung tâm thành phố quá đông người.",
+                        "answer":  "他不喜欢居住在人太多的市中心。"
+                    },
+                    {
+                        "chinese":  "这个村庄虽然小，但是很适合居住。",
+                        "pinyin":  "Zhège cūnzhuāng suīrán xiǎo, dànshì hěn shìhé jūzhù.",
+                        "vietnamese":  "Ngôi làng này tuy nhỏ nhưng rất phù hợp để sinh sống.",
+                        "answer":  "这个村庄虽然小，但是很适合居住。"
+                    },
+                    {
+                        "chinese":  "居住条件越来越好，老人也更愿意留下。",
+                        "pinyin":  "Jūzhù tiáojiàn yuèláiyuè hǎo, lǎorén yě gèng yuànyì liú xià.",
+                        "vietnamese":  "Điều kiện cư trú ngày càng tốt, người già cũng càng muốn ở lại.",
+                        "answer":  "居住条件越来越好，老人也更愿意留下。"
+                    },
+                    {
+                        "chinese":  "这座城市冬天并不冷，气候很温暖。",
+                        "pinyin":  "Zhè zuò chéngshì dōngtiān bìng bù lěng, qìhòu hěn wēnnuǎn.",
+                        "vietnamese":  "Thành phố này mùa đông không lạnh, khí hậu rất ấm áp.",
+                        "answer":  "这座城市冬天并不冷，气候很温暖。"
+                    },
+                    {
+                        "chinese":  "她的笑容让人感觉特别温暖。",
+                        "pinyin":  "Tā de xiàoróng ràng rén gǎnjué tèbié wēnnuǎn.",
+                        "vietnamese":  "Nụ cười của cô ấy khiến người ta cảm thấy đặc biệt ấm áp.",
+                        "answer":  "她的笑容让人感觉特别温暖。"
+                    },
+                    {
+                        "chinese":  "海滨地区气候温暖湿润，适合旅游。",
+                        "pinyin":  "Hǎibīn dìqū qìhòu wēnnuǎn shīrùn, shìhé lǚyóu.",
+                        "vietnamese":  "Khu vực ven biển khí hậu ấm áp ẩm ướt, phù hợp du lịch.",
+                        "answer":  "海滨地区气候温暖湿润，适合旅游。"
+                    },
+                    {
+                        "chinese":  "这个校园虽然不大，但是气氛很温暖。",
+                        "pinyin":  "Zhège xiàoyuán suīrán bú dà, dànshì qìfēn hěn wēnnuǎn.",
+                        "vietnamese":  "Khuôn viên này tuy không lớn nhưng bầu không khí rất ấm áp.",
+                        "answer":  "这个校园虽然不大，但是气氛很温暖。"
+                    },
+                    {
+                        "chinese":  "老师温暖的话让新生不再紧张。",
+                        "pinyin":  "Lǎoshī wēnnuǎn de huà ràng xīnshēng bú zài jǐnzhāng.",
+                        "vietnamese":  "Những lời ấm áp của giáo viên khiến sinh viên mới không còn căng thẳng.",
+                        "answer":  "老师温暖的话让新生不再紧张。"
+                    },
+                    {
+                        "chinese":  "春天来了，空气一天比一天温暖。",
+                        "pinyin":  "Chūntiān lái le, kōngqì yì tiān bǐ yì tiān wēnnuǎn.",
+                        "vietnamese":  "Mùa xuân đến rồi, không khí ngày càng ấm áp.",
+                        "answer":  "春天来了，空气一天比一天温暖。"
+                    },
+                    {
+                        "chinese":  "这个故事虽然简单，却让人心里很温暖。",
+                        "pinyin":  "Zhège gùshi suīrán jiǎndān, què ràng rén xīn lǐ hěn wēnnuǎn.",
+                        "vietnamese":  "Câu chuyện này tuy đơn giản nhưng khiến trong lòng người ta rất ấm áp.",
+                        "answer":  "这个故事虽然简单，却让人心里很温暖。"
+                    },
+                    {
+                        "chinese":  "家人的关心给了他很多温暖。",
+                        "pinyin":  "Jiārén de guānxīn gěi le tā hěn duō wēnnuǎn.",
+                        "vietnamese":  "Sự quan tâm của người nhà cho anh ấy rất nhiều ấm áp.",
+                        "answer":  "家人的关心给了他很多温暖。"
+                    },
+                    {
+                        "chinese":  "温暖的城市不见得没有生活压力。",
+                        "pinyin":  "Wēnnuǎn de chéngshì bú jiàn de méiyǒu shēnghuó yālì.",
+                        "vietnamese":  "Thành phố ấm áp chưa chắc không có áp lực cuộc sống.",
+                        "answer":  "温暖的城市不见得没有生活压力。"
+                    },
+                    {
+                        "chinese":  "他们在温暖的海滨小城定居了下来。",
+                        "pinyin":  "Tāmen zài wēnnuǎn de hǎibīn xiǎo chéng dìngjū le xiàlái.",
+                        "vietnamese":  "Họ đã định cư ở thành phố nhỏ ven biển ấm áp.",
+                        "answer":  "他们在温暖的海滨小城定居了下来。"
+                    },
+                    {
+                        "chinese":  "我一直想去海滨城市生活一段时间。",
+                        "pinyin":  "Wǒ yìzhí xiǎng qù hǎibīn chéngshì shēnghuó yí duàn shíjiān.",
+                        "vietnamese":  "Tôi luôn muốn đến thành phố ven biển sống một thời gian.",
+                        "answer":  "我一直想去海滨城市生活一段时间。"
+                    },
+                    {
+                        "chinese":  "海滨的风景很美，空气也很湿润。",
+                        "pinyin":  "Hǎibīn de fēngjǐng hěn měi, kōngqì yě hěn shīrùn.",
+                        "vietnamese":  "Phong cảnh ven biển rất đẹp, không khí cũng ẩm.",
+                        "answer":  "海滨的风景很美，空气也很湿润。"
+                    },
+                    {
+                        "chinese":  "这个海滨城市位于中国东部。",
+                        "pinyin":  "Zhège hǎibīn chéngshì wèiyú Zhōngguó dōngbù.",
+                        "vietnamese":  "Thành phố ven biển này nằm ở miền Đông Trung Quốc.",
+                        "answer":  "这个海滨城市位于中国东部。"
+                    },
+                    {
+                        "chinese":  "海滨地区适宜发展观光旅游。",
+                        "pinyin":  "Hǎibīn dìqū shìyí fāzhǎn guānguāng lǚyóu.",
+                        "vietnamese":  "Khu vực ven biển thích hợp phát triển du lịch tham quan.",
+                        "answer":  "海滨地区适宜发展观光旅游。"
+                    },
+                    {
+                        "chinese":  "他喜欢海滨生活，却不喜欢太湿润的天气。",
+                        "pinyin":  "Tā xǐhuan hǎibīn shēnghuó, què bù xǐhuan tài shīrùn de tiānqì.",
+                        "vietnamese":  "Anh ấy thích cuộc sống ven biển nhưng không thích thời tiết quá ẩm.",
+                        "answer":  "他喜欢海滨生活，却不喜欢太湿润的天气。"
+                    },
+                    {
+                        "chinese":  "海滨沙滩上有很多游客在拍照。",
+                        "pinyin":  "Hǎibīn shātān shàng yǒu hěn duō yóukè zài pāizhào.",
+                        "vietnamese":  "Trên bãi cát ven biển có nhiều du khách đang chụp ảnh.",
+                        "answer":  "海滨沙滩上有很多游客在拍照。"
+                    },
+                    {
+                        "chinese":  "这个海滨小城虽然不大，但是很适宜居住。",
+                        "pinyin":  "Zhège hǎibīn xiǎo chéng suīrán bú dà, dànshì hěn shìyí jūzhù.",
+                        "vietnamese":  "Thành phố nhỏ ven biển này tuy không lớn nhưng rất thích hợp cư trú.",
+                        "answer":  "这个海滨小城虽然不大，但是很适宜居住。"
+                    },
+                    {
+                        "chinese":  "海滨风光吸引了不少国外游客。",
+                        "pinyin":  "Hǎibīn fēngguāng xīyǐn le bù shǎo guówài yóukè.",
+                        "vietnamese":  "Phong cảnh ven biển thu hút không ít du khách nước ngoài.",
+                        "answer":  "海滨风光吸引了不少国外游客。"
+                    },
+                    {
+                        "chinese":  "我们这次旅游主要参观几个海滨景点。",
+                        "pinyin":  "Wǒmen zhè cì lǚyóu zhǔyào cānguān jǐ ge hǎibīn jǐngdiǎn.",
+                        "vietnamese":  "Chuyến du lịch lần này của chúng tôi chủ yếu tham quan vài điểm ven biển.",
+                        "answer":  "我们这次旅游主要参观几个海滨景点。"
+                    },
+                    {
+                        "chinese":  "海滨城市不仅适合观光，也适合休息。",
+                        "pinyin":  "Hǎibīn chéngshì bùjǐn shìhé guānguāng, yě shìhé xiūxi.",
+                        "vietnamese":  "Thành phố ven biển không chỉ hợp tham quan mà cũng hợp nghỉ ngơi.",
+                        "answer":  "海滨城市不仅适合观光，也适合休息。"
+                    },
+                    {
+                        "chinese":  "这所大学位于市中心附近。",
+                        "pinyin":  "Zhè suǒ dàxué wèiyú shì zhōngxīn fùjìn.",
+                        "vietnamese":  "Trường đại học này nằm gần trung tâm thành phố.",
+                        "answer":  "这所大学位于市中心附近。"
+                    },
+                    {
+                        "chinese":  "上海位于中国东部，是重要的经济城市。",
+                        "pinyin":  "Shànghǎi wèiyú Zhōngguó dōngbù, shì zhòngyào de jīngjì chéngshì.",
+                        "vietnamese":  "Thượng Hải nằm ở miền Đông Trung Quốc, là thành phố kinh tế quan trọng.",
+                        "answer":  "上海位于中国东部，是重要的经济城市。"
+                    },
+                    {
+                        "chinese":  "这个海滨城市位于一条大河的出口。",
+                        "pinyin":  "Zhège hǎibīn chéngshì wèiyú yì tiáo dà hé de chūkǒu.",
+                        "vietnamese":  "Thành phố ven biển này nằm ở cửa ra của một con sông lớn.",
+                        "answer":  "这个海滨城市位于一条大河的出口。"
+                    },
+                    {
+                        "chinese":  "图书馆位于校园的中间位置。",
+                        "pinyin":  "Túshūguǎn wèiyú xiàoyuán de zhōngjiān wèizhi.",
+                        "vietnamese":  "Thư viện nằm ở vị trí giữa khuôn viên.",
+                        "answer":  "图书馆位于校园的中间位置。"
+                    },
+                    {
+                        "chinese":  "西安位于中国西北地区，历史很悠久。",
+                        "pinyin":  "Xī’ān wèiyú Zhōngguó xīběi dìqū, lìshǐ hěn yōujiǔ.",
+                        "vietnamese":  "Tây An nằm ở khu vực Tây Bắc Trung Quốc, lịch sử rất lâu đời.",
+                        "answer":  "西安位于中国西北地区，历史很悠久。"
+                    },
+                    {
+                        "chinese":  "这个小巷位于老城区，来历很特别。",
+                        "pinyin":  "Zhège xiǎoxiàng wèiyú lǎo chéngqū, láilì hěn tèbié.",
+                        "vietnamese":  "Con hẻm này nằm ở khu phố cổ, nguồn gốc rất đặc biệt.",
+                        "answer":  "这个小巷位于老城区，来历很特别。"
+                    },
+                    {
+                        "chinese":  "学生宿舍位于教学楼后面，走路很方便。",
+                        "pinyin":  "Xuésheng sùshè wèiyú jiàoxuélóu hòumiàn, zǒulù hěn fāngbiàn.",
+                        "vietnamese":  "Ký túc xá sinh viên nằm phía sau tòa nhà học, đi bộ rất tiện.",
+                        "answer":  "学生宿舍位于教学楼后面，走路很方便。"
+                    },
+                    {
+                        "chinese":  "这片沙滩位于城市南部，游客很多。",
+                        "pinyin":  "Zhè piàn shātān wèiyú chéngshì nánbù, yóukè hěn duō.",
+                        "vietnamese":  "Bãi cát này nằm ở phía Nam thành phố, có rất nhiều du khách.",
+                        "answer":  "这片沙滩位于城市南部，游客很多。"
+                    },
+                    {
+                        "chinese":  "购物中心位于地铁站旁边，位置很优越。",
+                        "pinyin":  "Gòuwù zhōngxīn wèiyú dìtiězhàn pángbiān, wèizhi hěn yōuyuè.",
+                        "vietnamese":  "Trung tâm mua sắm nằm cạnh ga tàu điện ngầm, vị trí rất thuận lợi.",
+                        "answer":  "购物中心位于地铁站旁边，位置很优越。"
+                    },
+                    {
+                        "chinese":  "这个名胜古迹位于山冈之上。",
+                        "pinyin":  "Zhège míngshèng gǔjì wèiyú shāngāng zhī shàng.",
+                        "vietnamese":  "Danh lam di tích này nằm trên gò núi.",
+                        "answer":  "这个名胜古迹位于山冈之上。"
+                    },
+                    {
+                        "chinese":  "孩子们在沙滩上玩得很开心。",
+                        "pinyin":  "Háizimen zài shātān shàng wán de hěn kāixīn.",
+                        "vietnamese":  "Bọn trẻ chơi rất vui trên bãi cát.",
+                        "answer":  "孩子们在沙滩上玩得很开心。"
+                    },
+                    {
+                        "chinese":  "这个海滨城市有一片非常漂亮的沙滩。",
+                        "pinyin":  "Zhège hǎibīn chéngshì yǒu yí piàn fēicháng piàoliang de shātān.",
+                        "vietnamese":  "Thành phố ven biển này có một bãi cát vô cùng đẹp.",
+                        "answer":  "这个海滨城市有一片非常漂亮的沙滩。"
+                    },
+                    {
+                        "chinese":  "沙滩虽然很美，但是中午太阳太强。",
+                        "pinyin":  "Shātān suīrán hěn měi, dànshì zhōngwǔ tàiyáng tài qiáng.",
+                        "vietnamese":  "Bãi cát tuy rất đẹp nhưng buổi trưa nắng quá mạnh.",
+                        "answer":  "沙滩虽然很美，但是中午太阳太强。"
+                    },
+                    {
+                        "chinese":  "游客喜欢在沙滩上散步和拍照。",
+                        "pinyin":  "Yóukè xǐhuan zài shātān shàng sànbù hé pāizhào.",
+                        "vietnamese":  "Du khách thích đi dạo và chụp ảnh trên bãi cát.",
+                        "answer":  "游客喜欢在沙滩上散步和拍照。"
+                    },
+                    {
+                        "chinese":  "雨后的沙滩比较湿润，走路要小心。",
+                        "pinyin":  "Yǔ hòu de shātān bǐjiào shīrùn, zǒulù yào xiǎoxīn.",
+                        "vietnamese":  "Bãi cát sau mưa khá ẩm, đi đường phải cẩn thận.",
+                        "answer":  "雨后的沙滩比较湿润，走路要小心。"
+                    },
+                    {
+                        "chinese":  "这片沙滩适宜观光，不适合游泳。",
+                        "pinyin":  "Zhè piàn shātān shìyí guānguāng, bù shìhé yóuyǒng.",
+                        "vietnamese":  "Bãi cát này thích hợp tham quan, không hợp bơi.",
+                        "answer":  "这片沙滩适宜观光，不适合游泳。"
+                    },
+                    {
+                        "chinese":  "他躺在沙滩上听音乐，感觉很放松。",
+                        "pinyin":  "Tā tǎng zài shātān shàng tīng yīnyuè, gǎnjué hěn fàngsōng.",
+                        "vietnamese":  "Anh ấy nằm trên bãi cát nghe nhạc, cảm thấy rất thư giãn.",
+                        "answer":  "他躺在沙滩上听音乐，感觉很放松。"
+                    },
+                    {
+                        "chinese":  "沙滩旁边有很多特色小吃店。",
+                        "pinyin":  "Shātān pángbiān yǒu hěn duō tèsè xiǎochī diàn.",
+                        "vietnamese":  "Bên cạnh bãi cát có nhiều quán ăn vặt đặc sắc.",
+                        "answer":  "沙滩旁边有很多特色小吃店。"
+                    },
+                    {
+                        "chinese":  "保护沙滩环境是游客的责任。",
+                        "pinyin":  "Bǎohù shātān huánjìng shì yóukè de zérèn.",
+                        "vietnamese":  "Bảo vệ môi trường bãi cát là trách nhiệm của du khách.",
+                        "answer":  "保护沙滩环境是游客的责任。"
+                    },
+                    {
+                        "chinese":  "如果去海滨旅游，我最想在沙滩看日出。",
+                        "pinyin":  "Rúguǒ qù hǎibīn lǚyóu, wǒ zuì xiǎng zài shātān kàn rìchū.",
+                        "vietnamese":  "Nếu đi du lịch ven biển, tôi muốn nhất là ngắm mặt trời mọc trên bãi cát.",
+                        "answer":  "如果去海滨旅游，我最想在沙滩看日出。"
+                    },
+                    {
+                        "chinese":  "我们明天去西安观光。",
+                        "pinyin":  "Wǒmen míngtiān qù Xī’ān guānguāng.",
+                        "vietnamese":  "Ngày mai chúng tôi đi Tây An tham quan.",
+                        "answer":  "我们明天去西安观光。"
+                    },
+                    {
+                        "chinese":  "观光旅游不能只看风景，也要了解文化。",
+                        "pinyin":  "Guānguāng lǚyóu bù néng zhǐ kàn fēngjǐng, yě yào liǎojiě wénhuà.",
+                        "vietnamese":  "Du lịch tham quan không thể chỉ ngắm cảnh, cũng phải hiểu văn hóa.",
+                        "answer":  "观光旅游不能只看风景，也要了解文化。"
+                    },
+                    {
+                        "chinese":  "这个海滨城市很适合观光。",
+                        "pinyin":  "Zhège hǎibīn chéngshì hěn shìhé guānguāng.",
+                        "vietnamese":  "Thành phố ven biển này rất phù hợp tham quan.",
+                        "answer":  "这个海滨城市很适合观光。"
+                    },
+                    {
+                        "chinese":  "观光车大约十分钟以后出发。",
+                        "pinyin":  "Guānguāng chē dàyuē shí fēnzhōng yǐhòu chūfā.",
+                        "vietnamese":  "Xe tham quan khoảng 10 phút nữa xuất phát.",
+                        "answer":  "观光车大约十分钟以后出发。"
+                    },
+                    {
+                        "chinese":  "新生可以参加免费的校园观光活动。",
+                        "pinyin":  "Xīnshēng kěyǐ cānjiā miǎnfèi de xiàoyuán guānguāng huódòng.",
+                        "vietnamese":  "Sinh viên mới có thể tham gia hoạt động tham quan khuôn viên miễn phí.",
+                        "answer":  "新生可以参加免费的校园观光活动。"
+                    },
+                    {
+                        "chinese":  "观光的时候，最好提前准备好门票。",
+                        "pinyin":  "Guānguāng de shíhou, zuìhǎo tíqián zhǔnbèi hǎo ménpiào.",
+                        "vietnamese":  "Khi tham quan, tốt nhất chuẩn bị sẵn vé vào cửa trước.",
+                        "answer":  "观光的时候，最好提前准备好门票。"
+                    },
+                    {
+                        "chinese":  "这次观光路线包括小巷和名胜古迹。",
+                        "pinyin":  "Zhè cì guānguāng lùxiàn bāokuò xiǎoxiàng hé míngshèng gǔjì.",
+                        "vietnamese":  "Tuyến tham quan lần này bao gồm hẻm nhỏ và danh lam di tích.",
+                        "answer":  "这次观光路线包括小巷和名胜古迹。"
+                    },
+                    {
+                        "chinese":  "他不喜欢购物，只喜欢观光和拍照。",
+                        "pinyin":  "Tā bù xǐhuan gòuwù, zhǐ xǐhuan guānguāng hé pāizhào.",
+                        "vietnamese":  "Anh ấy không thích mua sắm, chỉ thích tham quan và chụp ảnh.",
+                        "answer":  "他不喜欢购物，只喜欢观光和拍照。"
+                    },
+                    {
+                        "chinese":  "观光不仅能放松心情，还能增长知识。",
+                        "pinyin":  "Guānguāng bùjǐn néng fàngsōng xīnqíng, hái néng zēngzhǎng zhīshi.",
+                        "vietnamese":  "Tham quan không chỉ có thể thư giãn tâm trạng mà còn tăng kiến thức.",
+                        "answer":  "观光不仅能放松心情，还能增长知识。"
+                    },
+                    {
+                        "chinese":  "如果天气太热，我们就取消下午的观光。",
+                        "pinyin":  "Rúguǒ tiānqì tài rè, wǒmen jiù qǔxiāo xiàwǔ de guānguāng.",
+                        "vietnamese":  "Nếu thời tiết quá nóng, chúng tôi sẽ hủy phần tham quan buổi chiều.",
+                        "answer":  "如果天气太热，我们就取消下午的观光。"
+                    },
+                    {
+                        "chinese":  "这家公司负责进出口业务。",
+                        "pinyin":  "Zhè jiā gōngsī fùzé jìnchūkǒu yèwù.",
+                        "vietnamese":  "Công ty này phụ trách nghiệp vụ xuất nhập khẩu.",
+                        "answer":  "这家公司负责进出口业务。"
+                    },
+                    {
+                        "chinese":  "进出口手续比较麻烦，需要准备很多证件。",
+                        "pinyin":  "Jìnchūkǒu shǒuxù bǐjiào máfan, xūyào zhǔnbèi hěn duō zhèngjiàn.",
+                        "vietnamese":  "Thủ tục xuất nhập khẩu khá phiền, cần chuẩn bị nhiều giấy tờ.",
+                        "answer":  "进出口手续比较麻烦，需要准备很多证件。"
+                    },
+                    {
+                        "chinese":  "他毕业以后在一家进出口公司工作。",
+                        "pinyin":  "Tā bìyè yǐhòu zài yì jiā jìnchūkǒu gōngsī gōngzuò.",
+                        "vietnamese":  "Sau khi tốt nghiệp, anh ấy làm việc ở một công ty xuất nhập khẩu.",
+                        "answer":  "他毕业以后在一家进出口公司工作。"
+                    },
+                    {
+                        "chinese":  "进出口数据能反映一个城市的经济情况。",
+                        "pinyin":  "Jìnchūkǒu shùjù néng fǎnyìng yí ge chéngshì de jīngjì qíngkuàng.",
+                        "vietnamese":  "Dữ liệu xuất nhập khẩu có thể phản ánh tình hình kinh tế của một thành phố.",
+                        "answer":  "进出口数据能反映一个城市的经济情况。"
+                    },
+                    {
+                        "chinese":  "香港的进出口贸易一直很发达。",
+                        "pinyin":  "Xiānggǎng de jìnchūkǒu màoyì yìzhí hěn fādá.",
+                        "vietnamese":  "Thương mại xuất nhập khẩu của Hồng Kông luôn rất phát triển.",
+                        "answer":  "香港的进出口贸易一直很发达。"
+                    },
+                    {
+                        "chinese":  "老师让我们谈论中国进出口的发展。",
+                        "pinyin":  "Lǎoshī ràng wǒmen tánlùn Zhōngguó jìnchūkǒu de fāzhǎn.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi bàn luận về sự phát triển xuất nhập khẩu của Trung Quốc.",
+                        "answer":  "老师让我们谈论中国进出口的发展。"
+                    },
+                    {
+                        "chinese":  "进出口商品要经过严格检查。",
+                        "pinyin":  "Jìnchūkǒu shāngpǐn yào jīngguò yángé jiǎnchá.",
+                        "vietnamese":  "Hàng hóa xuất nhập khẩu phải trải qua kiểm tra nghiêm ngặt.",
+                        "answer":  "进出口商品要经过严格检查。"
+                    },
+                    {
+                        "chinese":  "这份资料介绍了上海港的进出口情况。",
+                        "pinyin":  "Zhè fèn zīliào jièshào le Shànghǎi gǎng de jìnchūkǒu qíngkuàng.",
+                        "vietnamese":  "Tài liệu này giới thiệu tình hình xuất nhập khẩu của cảng Thượng Hải.",
+                        "answer":  "这份资料介绍了上海港的进出口情况。"
+                    },
+                    {
+                        "chinese":  "他对进出口贸易不太熟悉，所以经常请教别人。",
+                        "pinyin":  "Tā duì jìnchūkǒu màoyì bú tài shúxī, suǒyǐ jīngcháng qǐngjiào biérén.",
+                        "vietnamese":  "Anh ấy không quen thương mại xuất nhập khẩu lắm nên thường hỏi người khác.",
+                        "answer":  "他对进出口贸易不太熟悉，所以经常请教别人。"
+                    },
+                    {
+                        "chinese":  "如果进出口流程出错，费用可能会增加。",
+                        "pinyin":  "Rúguǒ jìnchūkǒu liúchéng chūcuò, fèiyòng kěnéng huì zēngjiā.",
+                        "vietnamese":  "Nếu quy trình xuất nhập khẩu sai, chi phí có thể sẽ tăng.",
+                        "answer":  "如果进出口流程出错，费用可能会增加。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "这次考试我算是通过了，不过成绩不太理想。",
+                          "pinyin":  "Zhè cì kǎoshì wǒ suànshì tōngguò le, búguò chéngjì bú tài lǐxiǎng.",
+                          "vietnamese":  "Kỳ thi lần này tôi xem như đã qua, nhưng thành tích không lý tưởng lắm.",
+                          "answer":  "这次考试我算是通过了，不过成绩不太理想。"
+                      },
+                      {
+                          "chinese":  "他在我们班算是很努力的学生，每天都复习。",
+                          "pinyin":  "Tā zài wǒmen bān suànshì hěn nǔlì de xuésheng, měitiān dōu fùxí.",
+                          "vietnamese":  "Anh ấy trong lớp chúng tôi được xem là học sinh rất cố gắng, ngày nào cũng ôn bài.",
+                          "answer":  "他在我们班算是很努力的学生，每天都复习。"
+                      },
+                      {
+                          "chinese":  "我的家乡不算大，但是算是一个很安静的地方。",
+                          "pinyin":  "Wǒ de jiāxiāng bú suàn dà, dànshì suànshì yí ge hěn ānjìng de dìfang.",
+                          "vietnamese":  "Quê tôi không tính là lớn, nhưng có thể xem là một nơi rất yên tĩnh.",
+                          "answer":  "我的家乡不算大，但是算是一个很安静的地方。"
+                      },
+                      {
+                          "chinese":  "这家饭店价格不贵，味道也算是不错。",
+                          "pinyin":  "Zhè jiā fàndiàn jiàgé bú guì, wèidào yě suànshì búcuò.",
+                          "vietnamese":  "Nhà hàng này giá không đắt, hương vị cũng xem như không tệ.",
+                          "answer":  "这家饭店价格不贵，味道也算是不错。"
+                      },
+                      {
+                          "chinese":  "他来中国半年，口语已经算是很自然了。",
+                          "pinyin":  "Tā lái Zhōngguó bàn nián, kǒuyǔ yǐjīng suànshì hěn zìrán le.",
+                          "vietnamese":  "Anh ấy đến Trung Quốc nửa năm, khẩu ngữ đã xem như rất tự nhiên rồi.",
+                          "answer":  "他来中国半年，口语已经算是很自然了。"
+                      },
+                      {
+                          "chinese":  "这次旅行虽然有点儿累，但算是很有意思。",
+                          "pinyin":  "Zhè cì lǚxíng suīrán yǒudiǎnr lèi, dàn suànshì hěn yǒu yìsi.",
+                          "vietnamese":  "Chuyến du lịch lần này tuy hơi mệt, nhưng xem như rất thú vị.",
+                          "answer":  "这次旅行虽然有点儿累，但算是很有意思。"
+                      },
+                      {
+                          "chinese":  "这个房间离学校十分钟，算是比较方便。",
+                          "pinyin":  "Zhège fángjiān lí xuéxiào shí fēnzhōng, suànshì bǐjiào fāngbiàn.",
+                          "vietnamese":  "Căn phòng này cách trường mười phút, xem như khá tiện.",
+                          "answer":  "这个房间离学校十分钟，算是比较方便。"
+                      },
+                      {
+                          "chinese":  "成功也好，失败也罢，我们都要总结经验。",
+                          "pinyin":  "Chénggōng yě hǎo, shībài yě bà, wǒmen dōu yào zǒngjié jīngyàn.",
+                          "vietnamese":  "Thành công cũng được, thất bại cũng vậy, chúng ta đều phải tổng kết kinh nghiệm.",
+                          "answer":  "成功也好，失败也罢，我们都要总结经验。"
+                      },
+                      {
+                          "chinese":  "留在家乡也好，去外地也罢，都要认真生活。",
+                          "pinyin":  "Liú zài jiāxiāng yě hǎo, qù wàidì yě bà, dōu yào rènzhēn shēnghuó.",
+                          "vietnamese":  "Ở lại quê cũng được, đi nơi khác cũng vậy, đều phải sống nghiêm túc.",
+                          "answer":  "留在家乡也好，去外地也罢，都要认真生活。"
+                      },
+                      {
+                          "chinese":  "学习也好，工作也罢，都不能只靠别人提醒。",
+                          "pinyin":  "Xuéxí yě hǎo, gōngzuò yě bà, dōu bù néng zhǐ kào biérén tíxǐng.",
+                          "vietnamese":  "Học tập cũng được, công việc cũng vậy, đều không thể chỉ dựa vào người khác nhắc nhở.",
+                          "answer":  "学习也好，工作也罢，都不能只靠别人提醒。"
+                      },
+                      {
+                          "chinese":  "天气好也好，下雨也罢，我都想回家看看。",
+                          "pinyin":  "Tiānqì hǎo yě hǎo, xià yǔ yě bà, wǒ dōu xiǎng huí jiā kànkan.",
+                          "vietnamese":  "Thời tiết đẹp cũng được, mưa cũng vậy, tôi đều muốn về nhà thăm.",
+                          "answer":  "天气好也好，下雨也罢，我都想回家看看。"
+                      },
+                      {
+                          "chinese":  "大城市也好，小城市也罢，只要适合自己就行。",
+                          "pinyin":  "Dà chéngshì yě hǎo, xiǎo chéngshì yě bà, zhǐyào shìhé zìjǐ jiù xíng.",
+                          "vietnamese":  "Thành phố lớn cũng được, thành phố nhỏ cũng vậy, chỉ cần phù hợp với bản thân là được.",
+                          "answer":  "大城市也好，小城市也罢，只要适合自己就行。"
+                      },
+                      {
+                          "chinese":  "考试也好，面试也罢，提前准备总是没错。",
+                          "pinyin":  "Kǎoshì yě hǎo, miànshì yě bà, tíqián zhǔnbèi zǒngshì méi cuò.",
+                          "vietnamese":  "Thi cũng được, phỏng vấn cũng vậy, chuẩn bị trước luôn không sai.",
+                          "answer":  "考试也好，面试也罢，提前准备总是没错。"
+                      },
+                      {
+                          "chinese":  "普通话也好，方言也罢，都是家乡文化的一部分。",
+                          "pinyin":  "Pǔtōnghuà yě hǎo, fāngyán yě bà, dōu shì jiāxiāng wénhuà de yí bùfen.",
+                          "vietnamese":  "Tiếng phổ thông cũng được, phương ngữ cũng vậy, đều là một phần văn hóa quê hương.",
+                          "answer":  "普通话也好，方言也罢，都是家乡文化的一部分。"
+                      },
+                      {
+                          "chinese":  "坐车也好，骑车也好，晚上都要注意安全。",
+                          "pinyin":  "Zuò chē yě hǎo, qí chē yě hǎo, wǎnshang dōu yào zhùyì ānquán.",
+                          "vietnamese":  "Đi xe cũng được, đi xe đạp cũng được, buổi tối đều phải chú ý an toàn.",
+                          "answer":  "坐车也好，骑车也好，晚上都要注意安全。"
+                      },
+                      {
+                          "chinese":  "在家学习也好，去图书馆也好，关键是坚持。",
+                          "pinyin":  "Zài jiā xuéxí yě hǎo, qù túshūguǎn yě hǎo, guānjiàn shì jiānchí.",
+                          "vietnamese":  "Học ở nhà cũng được, đến thư viện cũng được, quan trọng là kiên trì.",
+                          "answer":  "在家学习也好，去图书馆也好，关键是坚持。"
+                      },
+                      {
+                          "chinese":  "老师讲也好，同学解释也好，我都想听一遍。",
+                          "pinyin":  "Lǎoshī jiǎng yě hǎo, tóngxué jiěshì yě hǎo, wǒ dōu xiǎng tīng yí biàn.",
+                          "vietnamese":  "Thầy giảng cũng được, bạn học giải thích cũng được, tôi đều muốn nghe một lần.",
+                          "answer":  "老师讲也好，同学解释也好，我都想听一遍。"
+                      },
+                      {
+                          "chinese":  "早上复习也好，晚上复习也好，最好每天都练。",
+                          "pinyin":  "Zǎoshang fùxí yě hǎo, wǎnshang fùxí yě hǎo, zuìhǎo měitiān dōu liàn.",
+                          "vietnamese":  "Ôn buổi sáng cũng được, ôn buổi tối cũng được, tốt nhất ngày nào cũng luyện.",
+                          "answer":  "早上复习也好，晚上复习也好，最好每天都练。"
+                      },
+                      {
+                          "chinese":  "自己做饭也好，出去吃饭也好，都别浪费太多钱。",
+                          "pinyin":  "Zìjǐ zuòfàn yě hǎo, chūqù chīfàn yě hǎo, dōu bié làngfèi tài duō qián.",
+                          "vietnamese":  "Tự nấu cơm cũng được, ra ngoài ăn cũng được, đều đừng lãng phí quá nhiều tiền.",
+                          "answer":  "自己做饭也好，出去吃饭也好，都别浪费太多钱。"
+                      },
+                      {
+                          "chinese":  "住学校也好，租房子也好，都要考虑交通。",
+                          "pinyin":  "Zhù xuéxiào yě hǎo, zū fángzi yě hǎo, dōu yào kǎolǜ jiāotōng.",
+                          "vietnamese":  "Ở trường cũng được, thuê nhà cũng được, đều phải cân nhắc giao thông.",
+                          "answer":  "住学校也好，租房子也好，都要考虑交通。"
+                      },
+                      {
+                          "chinese":  "说实在的，我还是比较喜欢安静的小城市。",
+                          "pinyin":  "Shuō shízài de, wǒ háishi bǐjiào xǐhuan ānjìng de xiǎo chéngshì.",
+                          "vietnamese":  "Nói thật là tôi vẫn khá thích thành phố nhỏ yên tĩnh.",
+                          "answer":  "说实在的，我还是比较喜欢安静的小城市。"
+                      },
+                      {
+                          "chinese":  "说实在的，这个办法有用，就是有点儿麻烦。",
+                          "pinyin":  "Shuō shízài de, zhège bànfǎ yǒuyòng, jiùshì yǒudiǎnr máfan.",
+                          "vietnamese":  "Nói thật là cách này có ích, chỉ là hơi phiền.",
+                          "answer":  "说实在的，这个办法有用，就是有点儿麻烦。"
+                      },
+                      {
+                          "chinese":  "说实在的，我刚来这里的时候很不习惯。",
+                          "pinyin":  "Shuō shízài de, wǒ gāng lái zhèlǐ de shíhou hěn bù xíguàn.",
+                          "vietnamese":  "Nói thật là khi tôi mới đến đây, tôi rất không quen.",
+                          "answer":  "说实在的，我刚来这里的时候很不习惯。"
+                      },
+                      {
+                          "chinese":  "说实在的，他的家乡虽然不大，但是很漂亮。",
+                          "pinyin":  "Shuō shízài de, tā de jiāxiāng suīrán bú dà, dànshì hěn piàoliang.",
+                          "vietnamese":  "Nói thật là quê anh ấy tuy không lớn, nhưng rất đẹp.",
+                          "answer":  "说实在的，他的家乡虽然不大，但是很漂亮。"
+                      },
+                      {
+                          "chinese":  "说实在的，我不太愿意离开父母去外地工作。",
+                          "pinyin":  "Shuō shízài de, wǒ bú tài yuànyì líkāi fùmǔ qù wàidì gōngzuò.",
+                          "vietnamese":  "Nói thật là tôi không muốn rời bố mẹ đi nơi khác làm việc lắm.",
+                          "answer":  "说实在的，我不太愿意离开父母去外地工作。"
+                      },
+                      {
+                          "chinese":  "说实在的，这次活动安排得比我想的好。",
+                          "pinyin":  "Shuō shízài de, zhè cì huódòng ānpái de bǐ wǒ xiǎng de hǎo.",
+                          "vietnamese":  "Nói thật là hoạt động lần này được sắp xếp tốt hơn tôi nghĩ.",
+                          "answer":  "说实在的，这次活动安排得比我想的好。"
+                      },
+                      {
+                          "chinese":  "说实在的，学习汉语最难的是坚持练习。",
+                          "pinyin":  "Shuō shízài de, xuéxí Hànyǔ zuì nán de shì jiānchí liànxí.",
+                          "vietnamese":  "Nói thật là học tiếng Trung khó nhất là kiên trì luyện tập.",
+                          "answer":  "说实在的，学习汉语最难的是坚持练习。"
+                      },
+                      {
+                          "chinese":  "可以说，家乡的变化比以前大多了。",
+                          "pinyin":  "Kěyǐ shuō, jiāxiāng de biànhuà bǐ yǐqián dà duō le.",
+                          "vietnamese":  "Có thể nói rằng, sự thay đổi của quê hương lớn hơn trước rất nhiều.",
+                          "answer":  "可以说，家乡的变化比以前大多了。"
+                      },
+                      {
+                          "chinese":  "可以说，他是我们班口语进步最快的学生。",
+                          "pinyin":  "Kěyǐ shuō, tā shì wǒmen bān kǒuyǔ jìnbù zuì kuài de xuésheng.",
+                          "vietnamese":  "Có thể nói rằng, anh ấy là học sinh tiến bộ khẩu ngữ nhanh nhất lớp chúng tôi.",
+                          "answer":  "可以说，他是我们班口语进步最快的学生。"
+                      },
+                      {
+                          "chinese":  "可以说，这个城市的交通已经越来越方便。",
+                          "pinyin":  "Kěyǐ shuō, zhège chéngshì de jiāotōng yǐjīng yuè lái yuè fāngbiàn.",
+                          "vietnamese":  "Có thể nói rằng, giao thông của thành phố này đã ngày càng tiện.",
+                          "answer":  "可以说，这个城市的交通已经越来越方便。"
+                      },
+                      {
+                          "chinese":  "可以说，这次旅行让我更了解中国文化。",
+                          "pinyin":  "Kěyǐ shuō, zhè cì lǚxíng ràng wǒ gèng liǎojiě Zhōngguó wénhuà.",
+                          "vietnamese":  "Có thể nói rằng, chuyến du lịch lần này khiến tôi hiểu văn hóa Trung Quốc hơn.",
+                          "answer":  "可以说，这次旅行让我更了解中国文化。"
+                      },
+                      {
+                          "chinese":  "可以说，老师的方法对我们帮助很大。",
+                          "pinyin":  "Kěyǐ shuō, lǎoshī de fāngfǎ duì wǒmen bāngzhù hěn dà.",
+                          "vietnamese":  "Có thể nói rằng, phương pháp của thầy giúp chúng tôi rất nhiều.",
+                          "answer":  "可以说，老师的方法对我们帮助很大。"
+                      },
+                      {
+                          "chinese":  "可以说，我的家乡是一个很适合生活的地方。",
+                          "pinyin":  "Kěyǐ shuō, wǒ de jiāxiāng shì yí ge hěn shìhé shēnghuó de dìfang.",
+                          "vietnamese":  "Có thể nói rằng, quê tôi là một nơi rất phù hợp để sinh sống.",
+                          "answer":  "可以说，我的家乡是一个很适合生活的地方。"
+                      },
+                      {
+                          "chinese":  "可以说，环境好是这个城市最大的优点。",
+                          "pinyin":  "Kěyǐ shuō, huánjìng hǎo shì zhège chéngshì zuì dà de yōudiǎn.",
+                          "vietnamese":  "Có thể nói rằng, môi trường tốt là ưu điểm lớn nhất của thành phố này.",
+                          "answer":  "可以说，环境好是这个城市最大的优点。"
+                      }
+                  ]
+}

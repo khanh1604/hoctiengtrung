@@ -1,0 +1,2388 @@
+﻿{
+    "title":  "工作狂",
+    "vietnameseTitle":  "爱干活儿的鬼 / 你是什么狂",
+    "textTitles":  [
+                       "爱干活儿的鬼",
+                       "你是什么狂"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "靠近",
+                           "pinyin":  "kàojìn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "kháo cận",
+                           "vietnamese":  "đến gần, lại gần",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我们的宿舍靠近学校食堂。",
+                                                "pinyin":  "Wǒmen de sùshè kàojìn xuéxiào shítáng.",
+                                                "vietnamese":  "Ký túc xá của chúng tôi gần nhà ăn trường."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "整整",
+                           "pinyin":  "zhěngzhěng",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "chỉnh chỉnh",
+                           "vietnamese":  "trọn vẹn, đủ, nguyên",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他整整学习了三个小时。",
+                                                "pinyin":  "Tā zhěngzhěng xuéxí le sān ge xiǎoshí.",
+                                                "vietnamese":  "Anh ấy học trọn vẹn ba tiếng đồng hồ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "效率",
+                           "pinyin":  "xiàolǜ",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "hiệu suất",
+                           "vietnamese":  "hiệu quả, hiệu suất",
+                           "examples":  [
+                                            {
+                                                "chinese":  "找到好方法以后，学习效率提高了。",
+                                                "pinyin":  "Zhǎodào hǎo fāngfǎ yǐhòu, xuéxí xiàolǜ tígāo le.",
+                                                "vietnamese":  "Sau khi tìm được phương pháp tốt, hiệu quả học tập đã tăng lên."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "特",
+                           "pinyin":  "tè",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "đặc",
+                           "vietnamese":  "đặc biệt, rất",
+                           "examples":  [
+                                            {
+                                                "chinese":  "今天食堂的菜特好吃。",
+                                                "pinyin":  "Jīntiān shítáng de cài tè hǎochī.",
+                                                "vietnamese":  "Món ăn ở nhà ăn hôm nay đặc biệt ngon."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "难以",
+                           "pinyin":  "nányǐ",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "nan dĩ",
+                           "vietnamese":  "khó mà, khó có thể",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这次难忘的经历让我难以忘记。",
+                                                "pinyin":  "Zhè cì nánwàng de jīnglì ràng wǒ nányǐ wàngjì.",
+                                                "vietnamese":  "Trải nghiệm khó quên lần này khiến tôi khó mà quên được."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "容忍",
+                           "pinyin":  "róngrěn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "dung nhẫn",
+                           "vietnamese":  "chịu đựng, khoan dung",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我难以容忍他总是迟到。",
+                                                "pinyin":  "Wǒ nányǐ róngrěn tā zǒngshì chídào.",
+                                                "vietnamese":  "Tôi khó có thể chịu được việc anh ấy luôn đến muộn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "无论如何",
+                           "pinyin":  "wúlùn rúhé",
+                           "partOfSpeech":  "短语",
+                           "sinoVietnamese":  "vô luận như hà",
+                           "vietnamese":  "dù thế nào đi nữa",
+                           "examples":  [
+                                            {
+                                                "chinese":  "无论如何，你都要按时完成作业。",
+                                                "pinyin":  "Wúlùn rúhé, nǐ dōu yào ànshí wánchéng zuòyè.",
+                                                "vietnamese":  "Dù thế nào đi nữa, bạn cũng phải hoàn thành bài tập đúng hạn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "惹",
+                           "pinyin":  "rě",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "nhạ",
+                           "vietnamese":  "gây ra, chuốc lấy",
+                           "examples":  [
+                                            {
+                                                "chinese":  "别乱说话，免得惹别人不高兴。",
+                                                "pinyin":  "Bié luàn shuōhuà, miǎnde rě biérén bù gāoxìng.",
+                                                "vietnamese":  "Đừng nói lung tung, tránh làm người khác không vui."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "明明",
+                           "pinyin":  "míngmíng",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "minh minh",
+                           "vietnamese":  "rõ ràng, rõ là",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他明明知道答案，却不回答。",
+                                                "pinyin":  "Tā míngmíng zhīdào dá’àn, què bù huídá.",
+                                                "vietnamese":  "Anh ấy rõ ràng biết đáp án, nhưng lại không trả lời."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "任务",
+                           "pinyin":  "rènwu",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "nhiệm vụ",
+                           "vietnamese":  "nhiệm vụ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "今天老师给我们安排了一个任务。",
+                                                "pinyin":  "Jīntiān lǎoshī gěi wǒmen ānpái le yí ge rènwu.",
+                                                "vietnamese":  "Hôm nay thầy/cô giao cho chúng tôi một nhiệm vụ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "眼光",
+                           "pinyin":  "yǎnguāng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "nhãn quang",
+                           "vietnamese":  "tầm nhìn, con mắt nhìn nhận",
+                           "examples":  [
+                                            {
+                                                "chinese":  "经理很有眼光，选择了这个产品。",
+                                                "pinyin":  "Jīnglǐ hěn yǒu yǎnguāng, xuǎnzé le zhège chǎnpǐn.",
+                                                "vietnamese":  "Giám đốc rất có tầm nhìn, đã chọn sản phẩm này."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "发财",
+                           "pinyin":  "fācái",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "phát tài",
+                           "vietnamese":  "làm giàu, phát tài",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他希望以后能做生意发财。",
+                                                "pinyin":  "Tā xīwàng yǐhòu néng zuò shēngyì fācái.",
+                                                "vietnamese":  "Anh ấy hy vọng sau này có thể kinh doanh phát tài."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "工作狂",
+                           "pinyin":  "gōngzuòkuáng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "công tác cuồng",
+                           "vietnamese":  "người nghiện công việc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他每天工作到很晚，真是个工作狂。",
+                                                "pinyin":  "Tā měi tiān gōngzuò dào hěn wǎn, zhēn shì ge gōngzuòkuáng.",
+                                                "vietnamese":  "Ngày nào anh ấy cũng làm việc đến rất muộn, đúng là người nghiện công việc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "主妇",
+                           "pinyin":  "zhǔfù",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "chủ phụ",
+                           "vietnamese":  "người nội trợ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "妈妈以前是主妇，现在在公司工作。",
+                                                "pinyin":  "Māma yǐqián shì zhǔfù, xiànzài zài gōngsī gōngzuò.",
+                                                "vietnamese":  "Trước đây mẹ là người nội trợ, bây giờ làm việc ở công ty."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "乐趣",
+                           "pinyin":  "lèqù",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "lạc thú",
+                           "vietnamese":  "niềm vui, thú vui",
+                           "examples":  [
+                                            {
+                                                "chinese":  "学习中文给我带来了很多乐趣。",
+                                                "pinyin":  "Xuéxí Zhōngwén gěi wǒ dài lái le hěn duō lèqù.",
+                                                "vietnamese":  "Học tiếng Trung mang lại cho tôi rất nhiều niềm vui."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "几乎",
+                           "pinyin":  "jīhū",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "kỷ hồ",
+                           "vietnamese":  "hầu như, gần như",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他最近太忙了，几乎没有时间休息。",
+                                                "pinyin":  "Tā zuìjìn tài máng le, jīhū méiyǒu shíjiān xiūxi.",
+                                                "vietnamese":  "Gần đây anh ấy quá bận, hầu như không có thời gian nghỉ ngơi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "结束",
+                           "pinyin":  "jiéshù",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "kết thúc",
+                           "vietnamese":  "kết thúc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "会议结束以后，我们一起去吃饭。",
+                                                "pinyin":  "Huìyì jiéshù yǐhòu, wǒmen yìqǐ qù chīfàn.",
+                                                "vietnamese":  "Sau khi cuộc họp kết thúc, chúng tôi cùng đi ăn cơm."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "清洁",
+                           "pinyin":  "qīngjié",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "thanh khiết",
+                           "vietnamese":  "sạch sẽ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "保持教室清洁是每个学生的责任。",
+                                                "pinyin":  "Bǎochí jiàoshì qīngjié shì měi ge xuésheng de zérèn.",
+                                                "vietnamese":  "Giữ lớp học sạch sẽ là trách nhiệm của mỗi học sinh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "打扫",
+                           "pinyin":  "dǎsǎo",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "đả tảo",
+                           "vietnamese":  "quét dọn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "周末我在家打扫房间。",
+                                                "pinyin":  "Zhōumò wǒ zài jiā dǎsǎo fángjiān.",
+                                                "vietnamese":  "Cuối tuần tôi ở nhà dọn phòng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "卫生间",
+                           "pinyin":  "wèishēngjiān",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "vệ sinh gian",
+                           "vietnamese":  "nhà vệ sinh",
+                           "examples":  [
+                                            {
+                                                "chinese":  "卫生间在走廊的右边。",
+                                                "pinyin":  "Wèishēngjiān zài zǒuláng de yòubian.",
+                                                "vietnamese":  "Nhà vệ sinh ở bên phải hành lang."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "整洁",
+                           "pinyin":  "zhěngjié",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "chỉnh khiết",
+                           "vietnamese":  "gọn gàng, sạch sẽ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "她的办公室一直很整洁。",
+                                                "pinyin":  "Tā de bàngōngshì yìzhí hěn zhěngjié.",
+                                                "vietnamese":  "Văn phòng của cô ấy luôn rất gọn gàng sạch sẽ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "网络",
+                           "pinyin":  "wǎngluò",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "võng lạc",
+                           "vietnamese":  "mạng, Internet",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这里的网络速度很快。",
+                                                "pinyin":  "Zhèlǐ de wǎngluò sùdù hěn kuài.",
+                                                "vietnamese":  "Tốc độ mạng ở đây rất nhanh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "上网",
+                           "pinyin":  "shàngwǎng",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "thượng võng",
+                           "vietnamese":  "lên mạng, vào Internet",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我晚上常常上网查资料。",
+                                                "pinyin":  "Wǒ wǎnshang chángcháng shàngwǎng chá zīliào.",
+                                                "vietnamese":  "Buổi tối tôi thường lên mạng tra tài liệu."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "资料",
+                           "pinyin":  "zīliào",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tư liệu",
+                           "vietnamese":  "tài liệu, tư liệu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "请把这些资料发到我的邮箱。",
+                                                "pinyin":  "Qǐng bǎ zhèxiē zīliào fā dào wǒ de yóuxiāng.",
+                                                "vietnamese":  "Hãy gửi những tài liệu này vào email của tôi."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "有一个故事，说的是有人在市场卖兔。",
+                          "pinyin":  "Yǒu yí ge gùshi, shuō de shì yǒu rén zài shìchǎng mài tù.",
+                          "vietnamese":  "Có một câu chuyện kể về một người bán thỏ ở chợ."
+                      },
+                      {
+                          "chinese":  "什么，卖鬼？够吓人的。",
+                          "pinyin":  "Shénme, mài guǐ? Gòu xiàrén de.",
+                          "vietnamese":  "Gì cơ, bán ma à? Nghe đủ đáng sợ đấy."
+                      },
+                      {
+                          "chinese":  "人们听到鬼都特害怕，根本不敢靠近。",
+                          "pinyin":  "Rénmen tīngdào guǐ dōu tè hàipà, gēnběn bù gǎn kàojìn.",
+                          "vietnamese":  "Mọi người nghe đến ma đều rất sợ, căn bản không dám lại gần."
+                      },
+                      {
+                          "chinese":  "哪儿有不怕鬼的呀？",
+                          "pinyin":  "Nǎr yǒu bú pà guǐ de ya?",
+                          "vietnamese":  "Làm gì có ai không sợ ma chứ?"
+                      },
+                      {
+                          "chinese":  "这人说他的鬼跟普通的鬼不一样，光会干活儿，不会害人。",
+                          "pinyin":  "Zhè rén shuō tā de guǐ gēn pǔtōng de guǐ bù yíyàng, guāng huì gànhuór, bú huì hàirén.",
+                          "vietnamese":  "Người này nói con ma của anh ta không giống ma thường, chỉ biết làm việc, không hại người."
+                      },
+                      {
+                          "chinese":  "是吗？这个鬼卖多少钱？",
+                          "pinyin":  "Shì ma? Zhège guǐ mài duōshao qián?",
+                          "vietnamese":  "Vậy à? Con ma này bán bao nhiêu tiền?"
+                      },
+                      {
+                          "chinese":  "整整二百两金子。",
+                          "pinyin":  "Zhěngzhěng èr bǎi liǎng jīnzi.",
+                          "vietnamese":  "Đúng hai trăm lạng vàng."
+                      },
+                      {
+                          "chinese":  "天哪！真够贵的！",
+                          "pinyin":  "Tiān na! Zhēn gòu guì de!",
+                          "vietnamese":  "Trời ơi! Đắt thật đấy!"
+                      },
+                      {
+                          "chinese":  "这人说了，他这鬼特别能干，哪怕再难的任务，它都能顺利完成。",
+                          "pinyin":  "Zhè rén shuō le, tā zhè guǐ tèbié nénggàn, nǎpà zài nán de rènwu, tā dōu néng shùnlì wánchéng.",
+                          "vietnamese":  "Người này nói con ma này đặc biệt giỏi giang, dù nhiệm vụ khó đến đâu nó cũng có thể hoàn thành thuận lợi."
+                      },
+                      {
+                          "chinese":  "而且，它的工作效率特高，再多的人一起干，也没它干得快，谁买了它，谁就能发财。",
+                          "pinyin":  "Érqiě, tā de gōngzuò xiàolǜ tè gāo, zài duō de rén yìqǐ gàn, yě méi tā gàn de kuài, shéi mǎi le tā, shéi jiù néng fācái.",
+                          "vietnamese":  "Hơn nữa, hiệu suất làm việc của nó rất cao, dù nhiều người cùng làm cũng không nhanh bằng nó; ai mua nó thì người đó có thể phát tài."
+                      },
+                      {
+                          "chinese":  "不可能吧？要真有这么好，他能卖给别人吗？",
+                          "pinyin":  "Bù kěnéng ba? Yào zhēn yǒu zhème hǎo, tā néng mài gěi biérén ma?",
+                          "vietnamese":  "Không thể nào nhỉ? Nếu thật sự tốt như vậy, anh ta có thể bán cho người khác sao?"
+                      },
+                      {
+                          "chinese":  "这人说了，这鬼什么都好，就是有一个难以容忍的缺点。",
+                          "pinyin":  "Zhè rén shuō le, zhè guǐ shénme dōu hǎo, jiùshì yǒu yí ge nányǐ róngrěn de quēdiǎn.",
+                          "vietnamese":  "Người này nói con ma này cái gì cũng tốt, chỉ có một khuyết điểm khó mà chịu được."
+                      },
+                      {
+                          "chinese":  "什么缺点？",
+                          "pinyin":  "Shénme quēdiǎn?",
+                          "vietnamese":  "Khuyết điểm gì?"
+                      },
+                      {
+                          "chinese":  "主人再忙再累，也得给它找活儿，无论如何不能让它闲着。",
+                          "pinyin":  "Zhǔrén zài máng zài lèi, yě děi gěi tā zhǎo huór, wúlùn rúhé bù néng ràng tā xiánzhe.",
+                          "vietnamese":  "Chủ nhân dù bận dù mệt cũng phải tìm việc cho nó làm, dù thế nào cũng không được để nó rảnh rỗi."
+                      },
+                      {
+                          "chinese":  "这人活儿少，就想卖了它。",
+                          "pinyin":  "Zhè rén huór shǎo, jiù xiǎng mài le tā.",
+                          "vietnamese":  "Người này ít việc, nên muốn bán nó đi."
+                      },
+                      {
+                          "chinese":  "对呀，哪儿有那么多活儿给它呀？它要是没活儿干，肯定惹麻烦。",
+                          "pinyin":  "Duì ya, nǎr yǒu nàme duō huór gěi tā ya? Tā yàoshi méi huór gàn, kěndìng rě máfan.",
+                          "vietnamese":  "Đúng vậy, làm gì có nhiều việc như thế cho nó làm? Nếu nó không có việc làm, chắc chắn sẽ gây rắc rối."
+                      },
+                      {
+                          "chinese":  "什么呀，这明明是优点嘛，光干活，不吃草，哪怕再贵，也值得买。",
+                          "pinyin":  "Shénme ya, zhè míngmíng shì yōudiǎn ma, guāng gànhuó, bù chī cǎo, nǎpà zài guì, yě zhíde mǎi.",
+                          "vietnamese":  "Gì chứ, đây rõ ràng là ưu điểm mà, chỉ làm việc, không ăn cỏ, dù đắt đến đâu cũng đáng mua."
+                      },
+                      {
+                          "chinese":  "有人花了二百两金子，买了这个鬼，成了鬼的主人。",
+                          "pinyin":  "Yǒu rén huā le èr bǎi liǎng jīnzi, mǎi le zhège guǐ, chéng le guǐ de zhǔrén.",
+                          "vietnamese":  "Có người bỏ ra hai trăm lạng vàng mua con ma này, trở thành chủ nhân của nó."
+                      },
+                      {
+                          "chinese":  "后来呢？",
+                          "pinyin":  "Hòulái ne?",
+                          "vietnamese":  "Sau đó thì sao?"
+                      },
+                      {
+                          "chinese":  "给它的任务，它都会干，而且干得又快又好。",
+                          "pinyin":  "Gěi tā de rènwu, tā dōu huì gàn, érqiě gàn de yòu kuài yòu hǎo.",
+                          "vietnamese":  "Nhiệm vụ giao cho nó, nó đều biết làm, hơn nữa làm vừa nhanh vừa tốt."
+                      },
+                      {
+                          "chinese":  "这人真有眼光，敢做别人不敢做的事情，肯定能发财。",
+                          "pinyin":  "Zhè rén zhēn yǒu yǎnguāng, gǎn zuò biérén bù gǎn zuò de shìqing, kěndìng néng fācái.",
+                          "vietnamese":  "Người này thật có tầm nhìn, dám làm việc người khác không dám làm, chắc chắn có thể phát tài."
+                      },
+                      {
+                          "chinese":  "对，一年以后，鬼主人就发财了。",
+                          "pinyin":  "Duì, yì nián yǐhòu, guǐ zhǔrén jiù fācái le.",
+                          "vietnamese":  "Đúng, một năm sau, chủ nhân của con ma đã phát tài."
+                      },
+                      {
+                          "chinese":  "要是有钱，我也买一个，我不想干的，就让它干。",
+                          "pinyin":  "Yàoshi yǒu qián, wǒ yě mǎi yí ge, wǒ bù xiǎng gàn de, jiù ràng tā gàn.",
+                          "vietnamese":  "Nếu có tiền, tôi cũng mua một con, việc tôi không muốn làm thì để nó làm."
+                      },
+                      {
+                          "chinese":  "这事儿不好说，要是主人忘了布置任务了，那会怎么样？",
+                          "pinyin":  "Zhè shìr bù hǎo shuō, yàoshi zhǔrén wàng le bùzhì rènwu le, nà huì zěnmeyàng?",
+                          "vietnamese":  "Việc này khó nói lắm, nếu chủ nhân quên giao nhiệm vụ thì sẽ thế nào?"
+                      },
+                      {
+                          "chinese":  "爱干活儿有什么不好？我觉得这个鬼就是个工作狂，我就想当个工作狂，将来肯定能成功。",
+                          "pinyin":  "Ài gànhuór yǒu shénme bù hǎo? Wǒ juéde zhège guǐ jiùshì ge gōngzuòkuáng, wǒ jiù xiǎng dāng ge gōngzuòkuáng, jiānglái kěndìng néng chénggōng.",
+                          "vietnamese":  "Thích làm việc có gì không tốt? Tôi thấy con ma này chính là một kẻ cuồng công việc, tôi cũng muốn làm một người cuồng công việc, tương lai chắc chắn sẽ thành công."
+                      },
+                      {
+                          "chinese":  "我家有三口人，爸爸、妈妈和我。",
+                          "pinyin":  "Wǒ jiā yǒu sān kǒu rén, bàba, māma hé wǒ.",
+                          "vietnamese":  "Nhà tôi có ba người: bố, mẹ và tôi."
+                      },
+                      {
+                          "chinese":  "爸爸工作，妈妈是家庭主妇，我是学生。",
+                          "pinyin":  "Bàba gōngzuò, māma shì jiātíng zhǔfù, wǒ shì xuéshēng.",
+                          "vietnamese":  "Bố đi làm, mẹ là nội trợ, tôi là học sinh."
+                      },
+                      {
+                          "chinese":  "爸爸是个工作狂，他最大的乐趣就是工作。",
+                          "pinyin":  "Bàba shì ge gōngzuòkuáng, tā zuì dà de lèqù jiùshì gōngzuò.",
+                          "vietnamese":  "Bố là người cuồng công việc, niềm vui lớn nhất của ông ấy chính là làm việc."
+                      },
+                      {
+                          "chinese":  "他每天早上七点就到办公室，晚上很晚才回家。",
+                          "pinyin":  "Tā měi tiān zǎoshang qī diǎn jiù dào bàngōngshì, wǎnshang hěn wǎn cái huí jiā.",
+                          "vietnamese":  "Mỗi sáng ông ấy 7 giờ đã đến văn phòng, tối rất muộn mới về nhà."
+                      },
+                      {
+                          "chinese":  "每天都特忙，工作的时候，我们无论如何都找不到他。",
+                          "pinyin":  "Měi tiān dōu tè máng, gōngzuò de shíhou, wǒmen wúlùn rúhé dōu zhǎo bú dào tā.",
+                          "vietnamese":  "Ngày nào ông ấy cũng rất bận, lúc làm việc thì chúng tôi dù thế nào cũng không tìm được ông ấy."
+                      },
+                      {
+                          "chinese":  "爸爸很少和我们吃饭，也从来不和我们去旅游。",
+                          "pinyin":  "Bàba hěn shǎo hé wǒmen chīfàn, yě cónglái bù hé wǒmen qù lǚyóu.",
+                          "vietnamese":  "Bố rất ít khi ăn cơm cùng chúng tôi, cũng chưa bao giờ đi du lịch cùng chúng tôi."
+                      },
+                      {
+                          "chinese":  "哪怕是周末，他也几乎不在家。",
+                          "pinyin":  "Nǎpà shì zhōumò, tā yě jīhū bú zài jiā.",
+                          "vietnamese":  "Dù là cuối tuần, ông ấy cũng gần như không ở nhà."
+                      },
+                      {
+                          "chinese":  "如果有事给我们打电话，从来都是在一分钟之内结束通话。",
+                          "pinyin":  "Rúguǒ yǒu shì gěi wǒmen dǎ diànhuà, cónglái dōu shì zài yì fēnzhōng zhī nèi jiéshù tōnghuà.",
+                          "vietnamese":  "Nếu có việc gọi điện cho chúng tôi, lần nào cũng kết thúc cuộc gọi trong vòng một phút."
+                      },
+                      {
+                          "chinese":  "爸爸经常说：“活着，就是为了工作！”",
+                          "pinyin":  "Bàba jīngcháng shuō: “Huózhe, jiùshì wèile gōngzuò!”",
+                          "vietnamese":  "Bố thường nói: “Sống chính là để làm việc!”"
+                      },
+                      {
+                          "chinese":  "妈妈是个清洁狂，她最喜欢做的事情就是打扫卫生。",
+                          "pinyin":  "Māma shì ge qīngjiékuáng, tā zuì xǐhuan zuò de shìqing jiùshì dǎsǎo wèishēng.",
+                          "vietnamese":  "Mẹ là người cuồng sạch sẽ, việc mẹ thích làm nhất chính là dọn dẹp vệ sinh."
+                      },
+                      {
+                          "chinese":  "有时候，家里明明很干净，她还要再打扫。",
+                          "pinyin":  "Yǒu shíhou, jiā lǐ míngmíng hěn gānjìng, tā hái yào zài dǎsǎo.",
+                          "vietnamese":  "Có lúc trong nhà rõ ràng đã rất sạch, mẹ vẫn muốn dọn thêm lần nữa."
+                      },
+                      {
+                          "chinese":  "为了保持卫生间干净，她让我少用卫生间。",
+                          "pinyin":  "Wèile bǎochí wèishēngjiān gānjìng, tā ràng wǒ shǎo yòng wèishēngjiān.",
+                          "vietnamese":  "Để giữ nhà vệ sinh sạch sẽ, mẹ bảo tôi ít dùng nhà vệ sinh."
+                      },
+                      {
+                          "chinese":  "为了保持客厅整洁，我不能边看电视边吃东西。",
+                          "pinyin":  "Wèile bǎochí kètīng zhěngjié, wǒ bù néng biān kàn diànshì biān chī dōngxi.",
+                          "vietnamese":  "Để giữ phòng khách gọn gàng, tôi không được vừa xem tivi vừa ăn đồ."
+                      },
+                      {
+                          "chinese":  "要不是我晚上没地方睡觉，我就根本别想进自己的卧室。",
+                          "pinyin":  "Yàobúshì wǒ wǎnshang méi dìfang shuìjiào, wǒ jiù gēnběn bié xiǎng jìn zìjǐ de wòshì.",
+                          "vietnamese":  "Nếu không phải buổi tối tôi không có chỗ ngủ, thì tôi đừng hòng vào phòng ngủ của mình."
+                      },
+                      {
+                          "chinese":  "因为卧室也要保持清洁。",
+                          "pinyin":  "Yīnwèi wòshì yě yào bǎochí qīngjié.",
+                          "vietnamese":  "Bởi vì phòng ngủ cũng phải giữ sạch sẽ."
+                      },
+                      {
+                          "chinese":  "不过，我还是很爱她。",
+                          "pinyin":  "Búguò, wǒ háishi hěn ài tā.",
+                          "vietnamese":  "Tuy vậy, tôi vẫn rất yêu mẹ."
+                      },
+                      {
+                          "chinese":  "虽然我们俩在一起时，不是她觉得我不卫生，就是我觉得不自由。",
+                          "pinyin":  "Suīrán wǒmen liǎ zài yìqǐ shí, bú shì tā juéde wǒ bù wèishēng, jiùshì wǒ juéde bù zìyóu.",
+                          "vietnamese":  "Tuy khi hai mẹ con ở cùng nhau, không phải mẹ thấy tôi không vệ sinh thì là tôi thấy không tự do."
+                      },
+                      {
+                          "chinese":  "妈妈经常说：“活一天，就要过好一天！”",
+                          "pinyin":  "Māma jīngcháng shuō: “Huó yì tiān, jiù yào guò hǎo yì tiān!”",
+                          "vietnamese":  "Mẹ thường nói: “Sống một ngày thì phải sống cho tốt một ngày!”"
+                      },
+                      {
+                          "chinese":  "至于我嘛，我是个网络狂。",
+                          "pinyin":  "Zhìyú wǒ ma, wǒ shì ge wǎngluòkuáng.",
+                          "vietnamese":  "Còn về tôi ấy à, tôi là người nghiện mạng."
+                      },
+                      {
+                          "chinese":  "我最喜欢的事情就是上网。",
+                          "pinyin":  "Wǒ zuì xǐhuan de shìqing jiùshì shàngwǎng.",
+                          "vietnamese":  "Việc tôi thích nhất chính là lên mạng."
+                      },
+                      {
+                          "chinese":  "我在网上聊天儿，我在网上看电影，我在网上查资料、做作业。",
+                          "pinyin":  "Wǒ zài wǎngshàng liáotiānr, wǒ zài wǎngshàng kàn diànyǐng, wǒ zài wǎngshàng chá zīliào, zuò zuòyè.",
+                          "vietnamese":  "Tôi trò chuyện trên mạng, xem phim trên mạng, tra tài liệu và làm bài tập trên mạng."
+                      },
+                      {
+                          "chinese":  "哪怕一天不上网，我也会觉得受不了。",
+                          "pinyin":  "Nǎpà yì tiān bú shàngwǎng, wǒ yě huì juéde shòu bù liǎo.",
+                          "vietnamese":  "Dù chỉ một ngày không lên mạng, tôi cũng cảm thấy không chịu nổi."
+                      },
+                      {
+                          "chinese":  "我的东西都是在网上买的，我几乎不去真正的商店。",
+                          "pinyin":  "Wǒ de dōngxi dōu shì zài wǎngshàng mǎi de, wǒ jīhū bú qù zhēnzhèng de shāngdiàn.",
+                          "vietnamese":  "Đồ của tôi đều mua trên mạng, tôi hầu như không đến cửa hàng thật."
+                      },
+                      {
+                          "chinese":  "妈妈常说，难怪你找不到男朋友呢，一天到晚都上网。",
+                          "pinyin":  "Māma cháng shuō, nánguài nǐ zhǎo bú dào nánpéngyou ne, yì tiān dào wǎn dōu shàngwǎng.",
+                          "vietnamese":  "Mẹ thường nói, chẳng trách con không tìm được bạn trai, cả ngày chỉ lên mạng."
+                      },
+                      {
+                          "chinese":  "其实，她哪儿明白，男朋友嘛，网上有就行。",
+                          "pinyin":  "Qíshí, tā nǎr míngbai, nánpéngyou ma, wǎngshàng yǒu jiù xíng.",
+                          "vietnamese":  "Thật ra, mẹ đâu có hiểu, bạn trai ấy mà, trên mạng có là được rồi."
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "哪儿有……呀",
+                        "meaning":  "Làm gì có… chứ",
+                        "usage":  "Dùng để phủ định hoặc phản bác lời người khác",
+                        "note":  "Khẩu ngữ, sắc thái mạnh",
+                        "example":  "哪儿有这么容易的事呀？",
+                        "pinyin":  "Nǎr yǒu zhème róngyì de shì ya?",
+                        "vietnamese":  "Làm gì có chuyện dễ như vậy chứ?",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "光……，不……",
+                        "meaning":  "Chỉ…, mà không…",
+                        "usage":  "Dùng để phê bình việc chỉ làm một mặt, bỏ mặt khác",
+                        "note":  "光 = chỉ, chỉ biết",
+                        "example":  "你光看课文，不练口语，怎么能说好？",
+                        "pinyin":  "Nǐ guāng kàn kèwén, bú liàn kǒuyǔ, zěnme néng shuō hǎo?",
+                        "vietnamese":  "Bạn chỉ đọc bài khóa mà không luyện khẩu ngữ thì sao nói tốt được?",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "哪怕……，都/也……",
+                        "meaning":  "Dù cho…, cũng…",
+                        "usage":  "Dùng để nhấn mạnh điều kiện khó nhưng kết quả không đổi",
+                        "note":  "Mạnh hơn 即使 trong khẩu ngữ",
+                        "example":  "哪怕只有十分钟，我也要复习一下。",
+                        "pinyin":  "Nǎpà zhǐ yǒu shí fēnzhōng, wǒ yě yào fùxí yíxià.",
+                        "vietnamese":  "Dù chỉ có mười phút, tôi cũng phải ôn lại một chút.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "再……，也/都……",
+                        "meaning":  "Dù có… đến đâu, cũng…",
+                        "usage":  "Dùng để nhấn mạnh mức độ cao nhưng kết quả vẫn không đổi",
+                        "note":  "Sau 再 thường là tính từ hoặc cụm tính từ",
+                        "example":  "再忙，我也要每天练习汉语。",
+                        "pinyin":  "Zài máng, wǒ yě yào měitiān liànxí Hànyǔ.",
+                        "vietnamese":  "Dù bận đến đâu, tôi cũng phải luyện tiếng Trung mỗi ngày.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "无论如何，……",
+                        "meaning":  "Dù thế nào đi nữa…",
+                        "usage":  "Dùng để nhấn mạnh quyết tâm hoặc kết luận không thay đổi",
+                        "note":  "Có thể đứng đầu câu",
+                        "example":  "无论如何，我都不能放弃这次机会。",
+                        "pinyin":  "Wúlùn rúhé, wǒ dōu bù néng fàngqì zhè cì jīhuì.",
+                        "vietnamese":  "Dù thế nào đi nữa, tôi cũng không thể bỏ cơ hội lần này.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "要不是……，就……",
+                        "meaning":  "Nếu không phải vì…, thì đã…",
+                        "usage":  "Dùng để nói giả thiết trái với thực tế",
+                        "note":  "Thường nói chuyện đã xảy ra",
+                        "example":  "要不是你帮我，我就赶不上火车了。",
+                        "pinyin":  "Yàobúshì nǐ bāng wǒ, wǒ jiù gǎnbushàng huǒchē le.",
+                        "vietnamese":  "Nếu không nhờ bạn giúp, tôi đã không kịp tàu rồi.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "不是……，就是……",
+                        "meaning":  "Không phải… thì là…",
+                        "usage":  "Dùng để nói một trong hai khả năng thường xảy ra",
+                        "note":  "Khác 不但……而且……",
+                        "example":  "他周末不是在图书馆，就是在宿舍学习。",
+                        "pinyin":  "Tā zhōumò bú shì zài túshūguǎn, jiùshì zài sùshè xuéxí.",
+                        "vietnamese":  "Cuối tuần anh ấy không ở thư viện thì cũng ở ký túc xá học bài.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "至于……，……",
+                        "meaning":  "Còn về…, thì…",
+                        "usage":  "Dùng để chuyển sang nói một chủ đề khác",
+                        "note":  "Thường dùng khi phân loại nội dung",
+                        "example":  "至于住宿问题，学校会帮我们安排。",
+                        "pinyin":  "Zhìyú zhùsù wèntí, xuéxiào huì bāng wǒmen ānpái.",
+                        "vietnamese":  "Còn về vấn đề chỗ ở thì nhà trường sẽ giúp chúng tôi sắp xếp.",
+                        "level":  "⭐⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "这家饭店靠近学校，学生经常去吃饭。",
+                        "pinyin":  "Zhè jiā fàndiàn kàojìn xuéxiào, xuésheng jīngcháng qù chīfàn.",
+                        "vietnamese":  "Nhà hàng này gần trường, học sinh thường đến ăn cơm.",
+                        "answer":  "这家饭店靠近学校，学生经常去吃饭。"
+                    },
+                    {
+                        "chinese":  "房子如果靠近地铁站，费用一般会高一些。",
+                        "pinyin":  "Fángzi rúguǒ kàojìn dìtiězhàn, fèiyòng yìbān huì gāo yìxiē.",
+                        "vietnamese":  "Nếu nhà gần ga tàu điện, chi phí thường sẽ cao hơn một chút.",
+                        "answer":  "房子如果靠近地铁站，费用一般会高一些。"
+                    },
+                    {
+                        "chinese":  "他慢慢靠近门口，想听清楚里面在说什么。",
+                        "pinyin":  "Tā mànman kàojìn ménkǒu, xiǎng tīng qīngchu lǐmiàn zài shuō shénme.",
+                        "vietnamese":  "Anh ấy từ từ lại gần cửa, muốn nghe rõ bên trong đang nói gì.",
+                        "answer":  "他慢慢靠近门口，想听清楚里面在说什么。"
+                    },
+                    {
+                        "chinese":  "这个村庄靠近山冈，风光特别美。",
+                        "pinyin":  "Zhège cūnzhuāng kàojìn shāngāng, fēngguāng tèbié měi.",
+                        "vietnamese":  "Ngôi làng này gần gò núi, phong cảnh đặc biệt đẹp.",
+                        "answer":  "这个村庄靠近山冈，风光特别美。"
+                    },
+                    {
+                        "chinese":  "靠近海滨的城市，气候通常比较湿润。",
+                        "pinyin":  "Kàojìn hǎibīn de chéngshì, qìhòu tōngcháng bǐjiào shīrùn.",
+                        "vietnamese":  "Thành phố gần ven biển thường có khí hậu khá ẩm.",
+                        "answer":  "靠近海滨的城市，气候通常比较湿润。"
+                    },
+                    {
+                        "chinese":  "老师提醒新生不要靠近危险设施。",
+                        "pinyin":  "Lǎoshī tíxǐng xīnshēng búyào kàojìn wēixiǎn shèshī.",
+                        "vietnamese":  "Giáo viên nhắc sinh viên mới đừng lại gần thiết bị nguy hiểm.",
+                        "answer":  "老师提醒新生不要靠近危险设施。"
+                    },
+                    {
+                        "chinese":  "他靠近父母坐下，心里一下子踏实了。",
+                        "pinyin":  "Tā kàojìn fùmǔ zuò xià, xīn lǐ yíxiàzi tāshi le.",
+                        "vietnamese":  "Anh ấy ngồi gần cha mẹ, trong lòng lập tức thấy yên tâm.",
+                        "answer":  "他靠近父母坐下，心里一下子踏实了。"
+                    },
+                    {
+                        "chinese":  "这条小巷靠近市中心，却很安静。",
+                        "pinyin":  "Zhè tiáo xiǎoxiàng kàojìn shì zhōngxīn, què hěn ānjìng.",
+                        "vietnamese":  "Con hẻm này gần trung tâm thành phố nhưng rất yên tĩnh.",
+                        "answer":  "这条小巷靠近市中心，却很安静。"
+                    },
+                    {
+                        "chinese":  "靠近考试的时候，他反而越来越紧张。",
+                        "pinyin":  "Kàojìn kǎoshì de shíhou, tā fǎn\u0027ér yuèláiyuè jǐnzhāng.",
+                        "vietnamese":  "Gần đến kỳ thi, anh ấy ngược lại càng ngày càng căng thẳng.",
+                        "answer":  "靠近考试的时候，他反而越来越紧张。"
+                    },
+                    {
+                        "chinese":  "如果靠近窗户坐，下午会有点晒。",
+                        "pinyin":  "Rúguǒ kàojìn chuānghu zuò, xiàwǔ huì yǒudiǎn shài.",
+                        "vietnamese":  "Nếu ngồi gần cửa sổ, buổi chiều sẽ hơi nắng.",
+                        "answer":  "如果靠近窗户坐，下午会有点晒。"
+                    },
+                    {
+                        "chinese":  "他整整工作了一天，连饭都没好好吃。",
+                        "pinyin":  "Tā zhěngzhěng gōngzuò le yì tiān, lián fàn dōu méi hǎohāo chī.",
+                        "vietnamese":  "Anh ấy làm việc trọn cả ngày, đến cơm cũng không ăn tử tế.",
+                        "answer":  "他整整工作了一天，连饭都没好好吃。"
+                    },
+                    {
+                        "chinese":  "我们整整等了两个小时，主持人才出现。",
+                        "pinyin":  "Wǒmen zhěngzhěng děng le liǎng ge xiǎoshí, zhǔchírén cái chūxiàn.",
+                        "vietnamese":  "Chúng tôi đợi đủ hai tiếng, MC mới xuất hiện.",
+                        "answer":  "我们整整等了两个小时，主持人才出现。"
+                    },
+                    {
+                        "chinese":  "他为了完成任务，整整一周没有休息。",
+                        "pinyin":  "Tā wèile wánchéng rènwu, zhěngzhěng yì zhōu méiyǒu xiūxi.",
+                        "vietnamese":  "Anh ấy vì hoàn thành nhiệm vụ mà trọn một tuần không nghỉ.",
+                        "answer":  "他为了完成任务，整整一周没有休息。"
+                    },
+                    {
+                        "chinese":  "这场雨整整下了一夜，路上全湿了。",
+                        "pinyin":  "Zhè chǎng yǔ zhěngzhěng xià le yí yè, lùshang quán shī le.",
+                        "vietnamese":  "Trận mưa này rơi suốt cả đêm, đường ướt hết.",
+                        "answer":  "这场雨整整下了一夜，路上全湿了。"
+                    },
+                    {
+                        "chinese":  "她整整花了三个月准备这次考试。",
+                        "pinyin":  "Tā zhěngzhěng huā le sān ge yuè zhǔnbèi zhè cì kǎoshì.",
+                        "vietnamese":  "Cô ấy mất trọn ba tháng chuẩn bị cho kỳ thi này.",
+                        "answer":  "她整整花了三个月准备这次考试。"
+                    },
+                    {
+                        "chinese":  "他在国外整整生活了十年，仍然想念家乡。",
+                        "pinyin":  "Tā zài guówài zhěngzhěng shēnghuó le shí nián, réngrán xiǎngniàn jiāxiāng.",
+                        "vietnamese":  "Anh ấy sống ở nước ngoài trọn mười năm nhưng vẫn nhớ quê hương.",
+                        "answer":  "他在国外整整生活了十年，仍然想念家乡。"
+                    },
+                    {
+                        "chinese":  "我整整打扫了一个上午，房间终于整洁了。",
+                        "pinyin":  "Wǒ zhěngzhěng dǎsǎo le yí ge shàngwǔ, fángjiān zhōngyú zhěngjié le.",
+                        "vietnamese":  "Tôi dọn dẹp suốt cả buổi sáng, căn phòng cuối cùng gọn gàng rồi.",
+                        "answer":  "我整整打扫了一个上午，房间终于整洁了。"
+                    },
+                    {
+                        "chinese":  "这项工作整整用了五个人才完成。",
+                        "pinyin":  "Zhè xiàng gōngzuò zhěngzhěng yòng le wǔ ge rén cái wánchéng.",
+                        "vietnamese":  "Công việc này dùng đủ năm người mới hoàn thành.",
+                        "answer":  "这项工作整整用了五个人才完成。"
+                    },
+                    {
+                        "chinese":  "他整整讲了半小时，大家还是没听懂。",
+                        "pinyin":  "Tā zhěngzhěng jiǎng le bàn xiǎoshí, dàjiā háishi méi tīng dǒng.",
+                        "vietnamese":  "Anh ấy giảng suốt nửa tiếng, mọi người vẫn chưa hiểu.",
+                        "answer":  "他整整讲了半小时，大家还是没听懂。"
+                    },
+                    {
+                        "chinese":  "这份资料我整整看了三遍，才发现问题。",
+                        "pinyin":  "Zhè fèn zīliào wǒ zhěngzhěng kàn le sān biàn, cái fāxiàn wèntí.",
+                        "vietnamese":  "Tài liệu này tôi xem đủ ba lần mới phát hiện vấn đề.",
+                        "answer":  "这份资料我整整看了三遍，才发现问题。"
+                    },
+                    {
+                        "chinese":  "提高学习效率，不能只靠熬夜。",
+                        "pinyin":  "Tígāo xuéxí xiàolǜ, bù néng zhǐ kào áoyè.",
+                        "vietnamese":  "Nâng cao hiệu quả học tập không thể chỉ dựa vào thức khuya.",
+                        "answer":  "提高学习效率，不能只靠熬夜。"
+                    },
+                    {
+                        "chinese":  "他的工作效率很高，所以总能提前完成任务。",
+                        "pinyin":  "Tā de gōngzuò xiàolǜ hěn gāo, suǒyǐ zǒng néng tíqián wánchéng rènwu.",
+                        "vietnamese":  "Hiệu suất làm việc của anh ấy rất cao nên luôn có thể hoàn thành nhiệm vụ trước.",
+                        "answer":  "他的工作效率很高，所以总能提前完成任务。"
+                    },
+                    {
+                        "chinese":  "如果方式不对，努力再多效率也不高。",
+                        "pinyin":  "Rúguǒ fāngshì bú duì, nǔlì zài duō xiàolǜ yě bù gāo.",
+                        "vietnamese":  "Nếu cách thức không đúng, cố gắng nhiều đến đâu hiệu quả cũng không cao.",
+                        "answer":  "如果方式不对，努力再多效率也不高。"
+                    },
+                    {
+                        "chinese":  "网络速度慢，会严重影响办公效率。",
+                        "pinyin":  "Wǎngluò sùdù màn, huì yánzhòng yǐngxiǎng bàngōng xiàolǜ.",
+                        "vietnamese":  "Tốc độ mạng chậm sẽ ảnh hưởng nghiêm trọng hiệu suất làm việc.",
+                        "answer":  "网络速度慢，会严重影响办公效率。"
+                    },
+                    {
+                        "chinese":  "老师建议我们用表格整理资料，提高效率。",
+                        "pinyin":  "Lǎoshī jiànyì wǒmen yòng biǎogé zhěnglǐ zīliào, tígāo xiàolǜ.",
+                        "vietnamese":  "Giáo viên khuyên chúng tôi dùng bảng để sắp xếp tài liệu, nâng cao hiệu quả.",
+                        "answer":  "老师建议我们用表格整理资料，提高效率。"
+                    },
+                    {
+                        "chinese":  "工作狂不一定效率高，有时候只是休息太少。",
+                        "pinyin":  "Gōngzuòkuáng bù yídìng xiàolǜ gāo, yǒu shíhou zhǐshì xiūxi tài shǎo.",
+                        "vietnamese":  "Người nghiện công việc chưa chắc hiệu suất cao, đôi khi chỉ là nghỉ ngơi quá ít.",
+                        "answer":  "工作狂不一定效率高，有时候只是休息太少。"
+                    },
+                    {
+                        "chinese":  "合理安排时间，可以明显提高学习效率。",
+                        "pinyin":  "Hélǐ ānpái shíjiān, kěyǐ míngxiǎn tígāo xuéxí xiàolǜ.",
+                        "vietnamese":  "Sắp xếp thời gian hợp lý có thể nâng cao rõ rệt hiệu quả học tập.",
+                        "answer":  "合理安排时间，可以明显提高学习效率。"
+                    },
+                    {
+                        "chinese":  "这个软件能帮助主妇提高家务效率。",
+                        "pinyin":  "Zhège ruǎnjiàn néng bāngzhù zhǔfù tígāo jiāwù xiàolǜ.",
+                        "vietnamese":  "Phần mềm này có thể giúp người nội trợ nâng cao hiệu quả việc nhà.",
+                        "answer":  "这个软件能帮助主妇提高家务效率。"
+                    },
+                    {
+                        "chinese":  "他做事讲究效率，不喜欢白白浪费时间。",
+                        "pinyin":  "Tā zuòshì jiǎngjiū xiàolǜ, bù xǐhuan báibái làngfèi shíjiān.",
+                        "vietnamese":  "Anh ấy làm việc coi trọng hiệu quả, không thích lãng phí thời gian vô ích.",
+                        "answer":  "他做事讲究效率，不喜欢白白浪费时间。"
+                    },
+                    {
+                        "chinese":  "资料越清楚，讨论的效率就越高。",
+                        "pinyin":  "Zīliào yuè qīngchu, tǎolùn de xiàolǜ jiù yuè gāo.",
+                        "vietnamese":  "Tài liệu càng rõ, hiệu quả thảo luận càng cao.",
+                        "answer":  "资料越清楚，讨论的效率就越高。"
+                    },
+                    {
+                        "chinese":  "他今天特高兴，因为任务提前完成了。",
+                        "pinyin":  "Tā jīntiān tè gāoxìng, yīnwèi rènwu tíqián wánchéng le.",
+                        "vietnamese":  "Hôm nay anh ấy đặc biệt vui vì nhiệm vụ hoàn thành trước hạn.",
+                        "answer":  "他今天特高兴，因为任务提前完成了。"
+                    },
+                    {
+                        "chinese":  "这家小吃店特有名，游客都喜欢来。",
+                        "pinyin":  "Zhè jiā xiǎochī diàn tè yǒumíng, yóukè dōu xǐhuan lái.",
+                        "vietnamese":  "Quán ăn vặt này rất nổi tiếng, du khách đều thích đến.",
+                        "answer":  "这家小吃店特有名，游客都喜欢来。"
+                    },
+                    {
+                        "chinese":  "他工作特认真，几乎从不出错。",
+                        "pinyin":  "Tā gōngzuò tè rènzhēn, jīhū cóng bù chūcuò.",
+                        "vietnamese":  "Anh ấy làm việc rất nghiêm túc, hầu như chưa từng mắc lỗi.",
+                        "answer":  "他工作特认真，几乎从不出错。"
+                    },
+                    {
+                        "chinese":  "今天网络特慢，查资料很不方便。",
+                        "pinyin":  "Jīntiān wǎngluò tè màn, chá zīliào hěn bù fāngbiàn.",
+                        "vietnamese":  "Hôm nay mạng rất chậm, tra tài liệu rất bất tiện.",
+                        "answer":  "今天网络特慢，查资料很不方便。"
+                    },
+                    {
+                        "chinese":  "这件事特麻烦，最好大家一起处理。",
+                        "pinyin":  "Zhè jiàn shì tè máfan, zuìhǎo dàjiā yìqǐ chǔlǐ.",
+                        "vietnamese":  "Việc này rất phiền, tốt nhất mọi người cùng xử lý.",
+                        "answer":  "这件事特麻烦，最好大家一起处理。"
+                    },
+                    {
+                        "chinese":  "他特喜欢打扫房间，觉得这是一种乐趣。",
+                        "pinyin":  "Tā tè xǐhuan dǎsǎo fángjiān, juéde zhè shì yì zhǒng lèqù.",
+                        "vietnamese":  "Anh ấy rất thích dọn phòng, thấy đó là một niềm vui.",
+                        "answer":  "他特喜欢打扫房间，觉得这是一种乐趣。"
+                    },
+                    {
+                        "chinese":  "这套房子特靠近校园，费用也不算高。",
+                        "pinyin":  "Zhè tào fángzi tè kàojìn xiàoyuán, fèiyòng yě bú suàn gāo.",
+                        "vietnamese":  "Căn nhà này rất gần khuôn viên, chi phí cũng không cao.",
+                        "answer":  "这套房子特靠近校园，费用也不算高。"
+                    },
+                    {
+                        "chinese":  "她说话特直接，有时候让人难以接受。",
+                        "pinyin":  "Tā shuōhuà tè zhíjiē, yǒu shíhou ràng rén nányǐ jiēshòu.",
+                        "vietnamese":  "Cô ấy nói chuyện rất thẳng, đôi khi khiến người ta khó chấp nhận.",
+                        "answer":  "她说话特直接，有时候让人难以接受。"
+                    },
+                    {
+                        "chinese":  "这个卫生间打扫得特干净。",
+                        "pinyin":  "Zhège wèishēngjiān dǎsǎo de tè gānjìng.",
+                        "vietnamese":  "Nhà vệ sinh này được dọn rất sạch.",
+                        "answer":  "这个卫生间打扫得特干净。"
+                    },
+                    {
+                        "chinese":  "他眼光特好，总能发现有潜力的项目。",
+                        "pinyin":  "Tā yǎnguāng tè hǎo, zǒng néng fāxiàn yǒu qiánlì de xiàngmù.",
+                        "vietnamese":  "Anh ấy có tầm nhìn rất tốt, luôn có thể phát hiện dự án có tiềm năng.",
+                        "answer":  "他眼光特好，总能发现有潜力的项目。"
+                    },
+                    {
+                        "chinese":  "这种复杂的关系让人难以理解。",
+                        "pinyin":  "Zhè zhǒng fùzá de guānxi ràng rén nányǐ lǐjiě.",
+                        "vietnamese":  "Mối quan hệ phức tạp này khiến người ta khó hiểu.",
+                        "answer":  "这种复杂的关系让人难以理解。"
+                    },
+                    {
+                        "chinese":  "父母的辛苦常常难以用语言表达。",
+                        "pinyin":  "Fùmǔ de xīnkǔ chángcháng nányǐ yòng yǔyán biǎodá.",
+                        "vietnamese":  "Sự vất vả của cha mẹ thường khó diễn đạt bằng ngôn ngữ.",
+                        "answer":  "父母的辛苦常常难以用语言表达。"
+                    },
+                    {
+                        "chinese":  "这次失败让他难以接受。",
+                        "pinyin":  "Zhè cì shībài ràng tā nányǐ jiēshòu.",
+                        "vietnamese":  "Lần thất bại này khiến anh ấy khó chấp nhận.",
+                        "answer":  "这次失败让他难以接受。"
+                    },
+                    {
+                        "chinese":  "工作压力太大，他难以长期坚持。",
+                        "pinyin":  "Gōngzuò yālì tài dà, tā nányǐ chángqī jiānchí.",
+                        "vietnamese":  "Áp lực công việc quá lớn, anh ấy khó kiên trì lâu dài.",
+                        "answer":  "工作压力太大，他难以长期坚持。"
+                    },
+                    {
+                        "chinese":  "这样的效率难以满足公司的要求。",
+                        "pinyin":  "Zhèyàng de xiàolǜ nányǐ mǎnzú gōngsī de yāoqiú.",
+                        "vietnamese":  "Hiệu suất như vậy khó đáp ứng yêu cầu của công ty.",
+                        "answer":  "这样的效率难以满足公司的要求。"
+                    },
+                    {
+                        "chinese":  "他明明很努力，却难以得到别人的理解。",
+                        "pinyin":  "Tā míngmíng hěn nǔlì, què nányǐ dédào biérén de lǐjiě.",
+                        "vietnamese":  "Rõ ràng anh ấy rất cố gắng nhưng lại khó nhận được sự thấu hiểu của người khác.",
+                        "answer":  "他明明很努力，却难以得到别人的理解。"
+                    },
+                    {
+                        "chinese":  "这座村庄的风光美得难以忘记。",
+                        "pinyin":  "Zhè zuò cūnzhuāng de fēngguāng měi de nányǐ wàngjì.",
+                        "vietnamese":  "Phong cảnh của ngôi làng này đẹp đến khó quên.",
+                        "answer":  "这座村庄的风光美得难以忘记。"
+                    },
+                    {
+                        "chinese":  "如果资料不完整，任务就难以完成。",
+                        "pinyin":  "Rúguǒ zīliào bù wánzhěng, rènwu jiù nányǐ wánchéng.",
+                        "vietnamese":  "Nếu tài liệu không đầy đủ, nhiệm vụ sẽ khó hoàn thành.",
+                        "answer":  "如果资料不完整，任务就难以完成。"
+                    },
+                    {
+                        "chinese":  "他的决定让父母一时难以接受。",
+                        "pinyin":  "Tā de juédìng ràng fùmǔ yìshí nányǐ jiēshòu.",
+                        "vietnamese":  "Quyết định của anh ấy khiến cha mẹ nhất thời khó chấp nhận.",
+                        "answer":  "他的决定让父母一时难以接受。"
+                    },
+                    {
+                        "chinese":  "没有清楚的目标，学习效果难以提高。",
+                        "pinyin":  "Méiyǒu qīngchu de mùbiāo, xuéxí xiàoguǒ nányǐ tígāo.",
+                        "vietnamese":  "Không có mục tiêu rõ ràng thì hiệu quả học tập khó nâng cao.",
+                        "answer":  "没有清楚的目标，学习效果难以提高。"
+                    },
+                    {
+                        "chinese":  "我能容忍小错误，但不能容忍不负责任。",
+                        "pinyin":  "Wǒ néng róngrěn xiǎo cuòwù, dàn bù néng róngrěn bù fù zérèn.",
+                        "vietnamese":  "Tôi có thể chịu được lỗi nhỏ nhưng không thể chịu được sự vô trách nhiệm.",
+                        "answer":  "我能容忍小错误，但不能容忍不负责任。"
+                    },
+                    {
+                        "chinese":  "他难以容忍办公室一直这么乱。",
+                        "pinyin":  "Tā nányǐ róngrěn bàngōngshì yìzhí zhème luàn.",
+                        "vietnamese":  "Anh ấy khó chịu đựng việc văn phòng cứ bừa bộn như vậy.",
+                        "answer":  "他难以容忍办公室一直这么乱。"
+                    },
+                    {
+                        "chinese":  "父母有时候需要容忍孩子成长中的错误。",
+                        "pinyin":  "Fùmǔ yǒu shíhou xūyào róngrěn háizi chéngzhǎng zhōng de cuòwù.",
+                        "vietnamese":  "Cha mẹ đôi khi cần bao dung lỗi lầm trong quá trình trưởng thành của con.",
+                        "answer":  "父母有时候需要容忍孩子成长中的错误。"
+                    },
+                    {
+                        "chinese":  "她无法容忍别人白白浪费时间。",
+                        "pinyin":  "Tā wúfǎ róngrěn biérén báibái làngfèi shíjiān.",
+                        "vietnamese":  "Cô ấy không thể chịu được người khác lãng phí thời gian vô ích.",
+                        "answer":  "她无法容忍别人白白浪费时间。"
+                    },
+                    {
+                        "chinese":  "老板可以容忍慢一点，但不能容忍质量差。",
+                        "pinyin":  "Lǎobǎn kěyǐ róngrěn màn yìdiǎn, dàn bù néng róngrěn zhìliàng chà.",
+                        "vietnamese":  "Sếp có thể chịu được chậm một chút nhưng không thể chịu được chất lượng kém.",
+                        "answer":  "老板可以容忍慢一点，但不能容忍质量差。"
+                    },
+                    {
+                        "chinese":  "他对噪音特别敏感，几乎不能容忍。",
+                        "pinyin":  "Tā duì zàoyīn tèbié mǐngǎn, jīhū bù néng róngrěn.",
+                        "vietnamese":  "Anh ấy đặc biệt nhạy cảm với tiếng ồn, hầu như không thể chịu được.",
+                        "answer":  "他对噪音特别敏感，几乎不能容忍。"
+                    },
+                    {
+                        "chinese":  "无论如何，我都不能容忍这种工作态度。",
+                        "pinyin":  "Wúlùn rúhé, wǒ dōu bù néng róngrěn zhè zhǒng gōngzuò tàidu.",
+                        "vietnamese":  "Dù thế nào đi nữa, tôi cũng không thể chịu được thái độ làm việc này.",
+                        "answer":  "无论如何，我都不能容忍这种工作态度。"
+                    },
+                    {
+                        "chinese":  "夫妻之间需要沟通，也需要适当容忍。",
+                        "pinyin":  "Fūqī zhī jiān xūyào gōutōng, yě xūyào shìdàng róngrěn.",
+                        "vietnamese":  "Giữa vợ chồng cần giao tiếp và cũng cần bao dung phù hợp.",
+                        "answer":  "夫妻之间需要沟通，也需要适当容忍。"
+                    },
+                    {
+                        "chinese":  "这位主妇不能容忍卫生间不清洁。",
+                        "pinyin":  "Zhè wèi zhǔfù bù néng róngrěn wèishēngjiān bù qīngjié.",
+                        "vietnamese":  "Người nội trợ này không thể chịu được nhà vệ sinh không sạch.",
+                        "answer":  "这位主妇不能容忍卫生间不清洁。"
+                    },
+                    {
+                        "chinese":  "容忍不是无所谓，而是懂得控制情绪。",
+                        "pinyin":  "Róngrěn bú shì wúsuǒwèi, ér shì dǒngde kòngzhì qíngxù.",
+                        "vietnamese":  "Bao dung không phải là không quan tâm mà là biết kiểm soát cảm xúc.",
+                        "answer":  "容忍不是无所谓，而是懂得控制情绪。"
+                    },
+                    {
+                        "chinese":  "无论如何，你都要先把任务完成。",
+                        "pinyin":  "Wúlùn rúhé, nǐ dōu yào xiān bǎ rènwu wánchéng.",
+                        "vietnamese":  "Dù thế nào đi nữa, bạn cũng phải hoàn thành nhiệm vụ trước.",
+                        "answer":  "无论如何，你都要先把任务完成。"
+                    },
+                    {
+                        "chinese":  "无论如何，我不能白白放弃这个机会。",
+                        "pinyin":  "Wúlùn rúhé, wǒ bù néng báibái fàngqì zhège jīhuì.",
+                        "vietnamese":  "Dù thế nào đi nữa, tôi không thể bỏ cơ hội này vô ích.",
+                        "answer":  "无论如何，我不能白白放弃这个机会。"
+                    },
+                    {
+                        "chinese":  "父母说，无论如何都支持他的选择。",
+                        "pinyin":  "Fùmǔ shuō, wúlùn rúhé dōu zhīchí tā de xuǎnzé.",
+                        "vietnamese":  "Cha mẹ nói dù thế nào cũng ủng hộ lựa chọn của anh ấy.",
+                        "answer":  "父母说，无论如何都支持他的选择。"
+                    },
+                    {
+                        "chinese":  "无论如何，工作效率都不能只靠加班提高。",
+                        "pinyin":  "Wúlùn rúhé, gōngzuò xiàolǜ dōu bù néng zhǐ kào jiābān tígāo.",
+                        "vietnamese":  "Dù thế nào, hiệu suất công việc cũng không thể chỉ dựa vào tăng ca để nâng cao.",
+                        "answer":  "无论如何，工作效率都不能只靠加班提高。"
+                    },
+                    {
+                        "chinese":  "无论如何，这种错误以后不能再出现。",
+                        "pinyin":  "Wúlùn rúhé, zhè zhǒng cuòwù yǐhòu bù néng zài chūxiàn.",
+                        "vietnamese":  "Dù thế nào đi nữa, lỗi kiểu này sau này không được xuất hiện nữa.",
+                        "answer":  "无论如何，这种错误以后不能再出现。"
+                    },
+                    {
+                        "chinese":  "无论如何，我都无法容忍他这样说父母。",
+                        "pinyin":  "Wúlùn rúhé, wǒ dōu wúfǎ róngrěn tā zhèyàng shuō fùmǔ.",
+                        "vietnamese":  "Dù thế nào, tôi cũng không thể chịu được anh ấy nói về cha mẹ như vậy.",
+                        "answer":  "无论如何，我都无法容忍他这样说父母。"
+                    },
+                    {
+                        "chinese":  "他说无论如何都要回家看看家人。",
+                        "pinyin":  "Tā shuō wúlùn rúhé dōu yào huí jiā kànkan jiārén.",
+                        "vietnamese":  "Anh ấy nói dù thế nào cũng phải về nhà thăm người nhà.",
+                        "answer":  "他说无论如何都要回家看看家人。"
+                    },
+                    {
+                        "chinese":  "无论如何，卫生间必须保持清洁。",
+                        "pinyin":  "Wúlùn rúhé, wèishēngjiān bìxū bǎochí qīngjié.",
+                        "vietnamese":  "Dù thế nào, nhà vệ sinh cũng phải giữ sạch sẽ.",
+                        "answer":  "无论如何，卫生间必须保持清洁。"
+                    },
+                    {
+                        "chinese":  "无论如何，网络资料都要先检查来源。",
+                        "pinyin":  "Wúlùn rúhé, wǎngluò zīliào dōu yào xiān jiǎnchá láiyuán.",
+                        "vietnamese":  "Dù thế nào, tài liệu trên mạng đều phải kiểm tra nguồn trước.",
+                        "answer":  "无论如何，网络资料都要先检查来源。"
+                    },
+                    {
+                        "chinese":  "无论如何，他都不想变成只会工作的工作狂。",
+                        "pinyin":  "Wúlùn rúhé, tā dōu bù xiǎng biàn chéng zhǐ huì gōngzuò de gōngzuòkuáng.",
+                        "vietnamese":  "Dù thế nào, anh ấy cũng không muốn trở thành người nghiện công việc chỉ biết làm việc.",
+                        "answer":  "无论如何，他都不想变成只会工作的工作狂。"
+                    },
+                    {
+                        "chinese":  "他的玩笑话惹得大家都笑了。",
+                        "pinyin":  "Tā de wánxiào huà rě de dàjiā dōu xiào le.",
+                        "vietnamese":  "Câu đùa của anh ấy khiến mọi người đều cười.",
+                        "answer":  "他的玩笑话惹得大家都笑了。"
+                    },
+                    {
+                        "chinese":  "别总说这种话，容易惹人生气。",
+                        "pinyin":  "Bié zǒng shuō zhè zhǒng huà, róngyì rě rén shēngqì.",
+                        "vietnamese":  "Đừng cứ nói kiểu này, dễ làm người khác tức giận.",
+                        "answer":  "别总说这种话，容易惹人生气。"
+                    },
+                    {
+                        "chinese":  "他明明没有错，却惹来很多麻烦。",
+                        "pinyin":  "Tā míngmíng méiyǒu cuò, què rě lái hěn duō máfan.",
+                        "vietnamese":  "Rõ ràng anh ấy không sai nhưng lại chuốc lấy rất nhiều phiền phức.",
+                        "answer":  "他明明没有错，却惹来很多麻烦。"
+                    },
+                    {
+                        "chinese":  "工作方式不合适，会惹同事不满。",
+                        "pinyin":  "Gōngzuò fāngshì bù héshì, huì rě tóngshì bùmǎn.",
+                        "vietnamese":  "Cách làm việc không phù hợp sẽ khiến đồng nghiệp bất mãn.",
+                        "answer":  "工作方式不合适，会惹同事不满。"
+                    },
+                    {
+                        "chinese":  "这个孩子太调皮，经常惹父母担心。",
+                        "pinyin":  "Zhège háizi tài tiáopí, jīngcháng rě fùmǔ dānxīn.",
+                        "vietnamese":  "Đứa trẻ này quá nghịch, thường khiến cha mẹ lo lắng.",
+                        "answer":  "这个孩子太调皮，经常惹父母担心。"
+                    },
+                    {
+                        "chinese":  "他不想惹麻烦，所以选择保持沉默。",
+                        "pinyin":  "Tā bù xiǎng rě máfan, suǒyǐ xuǎnzé bǎochí chénmò.",
+                        "vietnamese":  "Anh ấy không muốn gây phiền phức nên chọn giữ im lặng.",
+                        "answer":  "他不想惹麻烦，所以选择保持沉默。"
+                    },
+                    {
+                        "chinese":  "这件小事惹出了一个大问题。",
+                        "pinyin":  "Zhè jiàn xiǎoshì rě chū le yí ge dà wèntí.",
+                        "vietnamese":  "Việc nhỏ này gây ra một vấn đề lớn.",
+                        "answer":  "这件小事惹出了一个大问题。"
+                    },
+                    {
+                        "chinese":  "她打扫不认真，惹得主妇很不高兴。",
+                        "pinyin":  "Tā dǎsǎo bù rènzhēn, rě de zhǔfù hěn bù gāoxìng.",
+                        "vietnamese":  "Cô ấy dọn dẹp không nghiêm túc, khiến người nội trợ rất không vui.",
+                        "answer":  "她打扫不认真，惹得主妇很不高兴。"
+                    },
+                    {
+                        "chinese":  "乱发网络资料，可能会惹出误会。",
+                        "pinyin":  "Luàn fā wǎngluò zīliào, kěnéng huì rě chū wùhuì.",
+                        "vietnamese":  "Gửi tài liệu mạng lung tung có thể gây ra hiểu lầm.",
+                        "answer":  "乱发网络资料，可能会惹出误会。"
+                    },
+                    {
+                        "chinese":  "如果想提高效率，就别惹无关的事情。",
+                        "pinyin":  "Rúguǒ xiǎng tígāo xiàolǜ, jiù bié rě wúguān de shìqing.",
+                        "vietnamese":  "Nếu muốn nâng cao hiệu quả thì đừng dây vào chuyện không liên quan.",
+                        "answer":  "如果想提高效率，就别惹无关的事情。"
+                    },
+                    {
+                        "chinese":  "他明明很累，却还说自己没事。",
+                        "pinyin":  "Tā míngmíng hěn lèi, què hái shuō zìjǐ méi shì.",
+                        "vietnamese":  "Rõ ràng anh ấy rất mệt nhưng vẫn nói mình không sao.",
+                        "answer":  "他明明很累，却还说自己没事。"
+                    },
+                    {
+                        "chinese":  "你明明知道答案，为什么不说？",
+                        "pinyin":  "Nǐ míngmíng zhīdào dá\u0027àn, wèishénme bù shuō?",
+                        "vietnamese":  "Rõ ràng bạn biết đáp án, vì sao không nói?",
+                        "answer":  "你明明知道答案，为什么不说？"
+                    },
+                    {
+                        "chinese":  "明明是网络出了问题，他却怪我效率低。",
+                        "pinyin":  "Míngmíng shì wǎngluò chū le wèntí, tā què guài wǒ xiàolǜ dī.",
+                        "vietnamese":  "Rõ ràng là mạng có vấn đề, anh ấy lại trách tôi hiệu suất thấp.",
+                        "answer":  "明明是网络出了问题，他却怪我效率低。"
+                    },
+                    {
+                        "chinese":  "她明明喜欢这个城市，却总说无所谓。",
+                        "pinyin":  "Tā míngmíng xǐhuan zhège chéngshì, què zǒng shuō wúsuǒwèi.",
+                        "vietnamese":  "Rõ ràng cô ấy thích thành phố này nhưng cứ nói không sao cả.",
+                        "answer":  "她明明喜欢这个城市，却总说无所谓。"
+                    },
+                    {
+                        "chinese":  "明明已经结束了，他还一直谈论这件事。",
+                        "pinyin":  "Míngmíng yǐjīng jiéshù le, tā hái yìzhí tánlùn zhè jiàn shì.",
+                        "vietnamese":  "Rõ ràng đã kết thúc rồi, anh ấy vẫn cứ bàn về việc này.",
+                        "answer":  "明明已经结束了，他还一直谈论这件事。"
+                    },
+                    {
+                        "chinese":  "父母明明很担心，却不想给他压力。",
+                        "pinyin":  "Fùmǔ míngmíng hěn dānxīn, què bù xiǎng gěi tā yālì.",
+                        "vietnamese":  "Cha mẹ rõ ràng rất lo nhưng không muốn tạo áp lực cho anh ấy.",
+                        "answer":  "父母明明很担心，却不想给他压力。"
+                    },
+                    {
+                        "chinese":  "你明明可以提前完成任务，为什么拖到现在？",
+                        "pinyin":  "Nǐ míngmíng kěyǐ tíqián wánchéng rènwu, wèishénme tuō dào xiànzài?",
+                        "vietnamese":  "Rõ ràng bạn có thể hoàn thành nhiệm vụ trước hạn, vì sao kéo đến bây giờ?",
+                        "answer":  "你明明可以提前完成任务，为什么拖到现在？"
+                    },
+                    {
+                        "chinese":  "他明明没有眼光，却总爱批评别人。",
+                        "pinyin":  "Tā míngmíng méiyǒu yǎnguāng, què zǒng ài pīpíng biérén.",
+                        "vietnamese":  "Rõ ràng anh ấy không có tầm nhìn nhưng cứ thích phê bình người khác.",
+                        "answer":  "他明明没有眼光，却总爱批评别人。"
+                    },
+                    {
+                        "chinese":  "明明只是小错误，他却觉得特别丢脸。",
+                        "pinyin":  "Míngmíng zhǐshì xiǎo cuòwù, tā què juéde tèbié diūliǎn.",
+                        "vietnamese":  "Rõ ràng chỉ là lỗi nhỏ nhưng anh ấy lại thấy đặc biệt mất mặt.",
+                        "answer":  "明明只是小错误，他却觉得特别丢脸。"
+                    },
+                    {
+                        "chinese":  "明明有更好的方式，他却偏偏不用。",
+                        "pinyin":  "Míngmíng yǒu gèng hǎo de fāngshì, tā què piānpiān bú yòng.",
+                        "vietnamese":  "Rõ ràng có cách tốt hơn nhưng anh ấy lại cứ không dùng.",
+                        "answer":  "明明有更好的方式，他却偏偏不用。"
+                    },
+                    {
+                        "chinese":  "今天的任务是整理所有学习资料。",
+                        "pinyin":  "Jīntiān de rènwu shì zhěnglǐ suǒyǒu xuéxí zīliào.",
+                        "vietnamese":  "Nhiệm vụ hôm nay là sắp xếp tất cả tài liệu học tập.",
+                        "answer":  "今天的任务是整理所有学习资料。"
+                    },
+                    {
+                        "chinese":  "任务越清楚，完成效率就越高。",
+                        "pinyin":  "Rènwu yuè qīngchu, wánchéng xiàolǜ jiù yuè gāo.",
+                        "vietnamese":  "Nhiệm vụ càng rõ, hiệu quả hoàn thành càng cao.",
+                        "answer":  "任务越清楚，完成效率就越高。"
+                    },
+                    {
+                        "chinese":  "老师把任务分给每个小组。",
+                        "pinyin":  "Lǎoshī bǎ rènwu fēn gěi měi ge xiǎozǔ.",
+                        "vietnamese":  "Giáo viên phân nhiệm vụ cho mỗi nhóm.",
+                        "answer":  "老师把任务分给每个小组。"
+                    },
+                    {
+                        "chinese":  "他为了完成任务，整整忙了一个周末。",
+                        "pinyin":  "Tā wèile wánchéng rènwu, zhěngzhěng máng le yí ge zhōumò.",
+                        "vietnamese":  "Anh ấy vì hoàn thành nhiệm vụ mà bận suốt cả cuối tuần.",
+                        "answer":  "他为了完成任务，整整忙了一个周末。"
+                    },
+                    {
+                        "chinese":  "如果没有网络，这个任务很难完成。",
+                        "pinyin":  "Rúguǒ méiyǒu wǎngluò, zhège rènwu hěn nán wánchéng.",
+                        "vietnamese":  "Nếu không có mạng, nhiệm vụ này rất khó hoàn thành.",
+                        "answer":  "如果没有网络，这个任务很难完成。"
+                    },
+                    {
+                        "chinese":  "这项任务虽然简单，但是不能出错。",
+                        "pinyin":  "Zhè xiàng rènwu suīrán jiǎndān, dànshì bù néng chūcuò.",
+                        "vietnamese":  "Nhiệm vụ này tuy đơn giản nhưng không được sai.",
+                        "answer":  "这项任务虽然简单，但是不能出错。"
+                    },
+                    {
+                        "chinese":  "工作狂总喜欢主动给自己加任务。",
+                        "pinyin":  "Gōngzuòkuáng zǒng xǐhuan zhǔdòng gěi zìjǐ jiā rènwu.",
+                        "vietnamese":  "Người nghiện công việc luôn thích chủ động thêm nhiệm vụ cho mình.",
+                        "answer":  "工作狂总喜欢主动给自己加任务。"
+                    },
+                    {
+                        "chinese":  "任务结束以后，他终于可以好好休息了。",
+                        "pinyin":  "Rènwu jiéshù yǐhòu, tā zhōngyú kěyǐ hǎohāo xiūxi le.",
+                        "vietnamese":  "Sau khi nhiệm vụ kết thúc, cuối cùng anh ấy có thể nghỉ ngơi tử tế.",
+                        "answer":  "任务结束以后，他终于可以好好休息了。"
+                    },
+                    {
+                        "chinese":  "他的主要任务是提高团队效率。",
+                        "pinyin":  "Tā de zhǔyào rènwu shì tígāo tuánduì xiàolǜ.",
+                        "vietnamese":  "Nhiệm vụ chính của anh ấy là nâng cao hiệu quả đội nhóm.",
+                        "answer":  "他的主要任务是提高团队效率。"
+                    },
+                    {
+                        "chinese":  "这个任务难以一个人完成，需要大家合作。",
+                        "pinyin":  "Zhège rènwu nányǐ yí ge rén wánchéng, xūyào dàjiā hézuò.",
+                        "vietnamese":  "Nhiệm vụ này khó hoàn thành một mình, cần mọi người hợp tác.",
+                        "answer":  "这个任务难以一个人完成，需要大家合作。"
+                    },
+                    {
+                        "chinese":  "有眼光的人能看到未来的机会。",
+                        "pinyin":  "Yǒu yǎnguāng de rén néng kàndào wèilái de jīhuì.",
+                        "vietnamese":  "Người có tầm nhìn có thể nhìn thấy cơ hội tương lai.",
+                        "answer":  "有眼光的人能看到未来的机会。"
+                    },
+                    {
+                        "chinese":  "他买房子的眼光不错，位置特别好。",
+                        "pinyin":  "Tā mǎi fángzi de yǎnguāng búcuò, wèizhi tèbié hǎo.",
+                        "vietnamese":  "Anh ấy có con mắt mua nhà khá tốt, vị trí đặc biệt đẹp.",
+                        "answer":  "他买房子的眼光不错，位置特别好。"
+                    },
+                    {
+                        "chinese":  "父母的眼光有时候比我们长远。",
+                        "pinyin":  "Fùmǔ de yǎnguāng yǒu shíhou bǐ wǒmen chángyuǎn.",
+                        "vietnamese":  "Tầm nhìn của cha mẹ đôi khi xa hơn chúng ta.",
+                        "answer":  "父母的眼光有时候比我们长远。"
+                    },
+                    {
+                        "chinese":  "她很有眼光，早就发现了这个市场。",
+                        "pinyin":  "Tā hěn yǒu yǎnguāng, zǎo jiù fāxiàn le zhège shìchǎng.",
+                        "vietnamese":  "Cô ấy rất có tầm nhìn, từ sớm đã phát hiện thị trường này.",
+                        "answer":  "她很有眼光，早就发现了这个市场。"
+                    },
+                    {
+                        "chinese":  "选择专业时，不能只看眼前，要有眼光。",
+                        "pinyin":  "Xuǎnzé zhuānyè shí, bù néng zhǐ kàn yǎnqián, yào yǒu yǎnguāng.",
+                        "vietnamese":  "Khi chọn ngành, không thể chỉ nhìn trước mắt, phải có tầm nhìn.",
+                        "answer":  "选择专业时，不能只看眼前，要有眼光。"
+                    },
+                    {
+                        "chinese":  "他看人的眼光很准，很少看错。",
+                        "pinyin":  "Tā kàn rén de yǎnguāng hěn zhǔn, hěn shǎo kàn cuò.",
+                        "vietnamese":  "Anh ấy nhìn người rất chuẩn, rất ít khi nhìn sai.",
+                        "answer":  "他看人的眼光很准，很少看错。"
+                    },
+                    {
+                        "chinese":  "没有眼光的人，很容易白白错过机会。",
+                        "pinyin":  "Méiyǒu yǎnguāng de rén, hěn róngyì báibái cuòguò jīhuì.",
+                        "vietnamese":  "Người không có tầm nhìn rất dễ bỏ lỡ cơ hội một cách vô ích.",
+                        "answer":  "没有眼光的人，很容易白白错过机会。"
+                    },
+                    {
+                        "chinese":  "老板的眼光决定了公司的发展方向。",
+                        "pinyin":  "Lǎobǎn de yǎnguāng juédìng le gōngsī de fāzhǎn fāngxiàng.",
+                        "vietnamese":  "Tầm nhìn của sếp quyết định hướng phát triển của công ty.",
+                        "answer":  "老板的眼光决定了公司的发展方向。"
+                    },
+                    {
+                        "chinese":  "他的眼光不只停留在赚钱上。",
+                        "pinyin":  "Tā de yǎnguāng bù zhǐ tíngliú zài zhuànqián shàng.",
+                        "vietnamese":  "Tầm nhìn của anh ấy không chỉ dừng lại ở việc kiếm tiền.",
+                        "answer":  "他的眼光不只停留在赚钱上。"
+                    },
+                    {
+                        "chinese":  "眼光越开阔，选择就越不会受限制。",
+                        "pinyin":  "Yǎnguāng yuè kāikuò, xuǎnzé jiù yuè bú huì shòu xiànzhì.",
+                        "vietnamese":  "Tầm nhìn càng rộng mở, lựa chọn càng ít bị hạn chế.",
+                        "answer":  "眼光越开阔，选择就越不会受限制。"
+                    },
+                    {
+                        "chinese":  "他希望有一天能发财。",
+                        "pinyin":  "Tā xīwàng yǒu yì tiān néng fācái.",
+                        "vietnamese":  "Anh ấy hy vọng một ngày nào đó có thể phát tài.",
+                        "answer":  "他希望有一天能发财。"
+                    },
+                    {
+                        "chinese":  "发财不应该是工作的唯一目标。",
+                        "pinyin":  "Fācái bù yīnggāi shì gōngzuò de wéiyī mùbiāo.",
+                        "vietnamese":  "Làm giàu không nên là mục tiêu duy nhất của công việc.",
+                        "answer":  "发财不应该是工作的唯一目标。"
+                    },
+                    {
+                        "chinese":  "他总想着发财，却不愿意认真学习。",
+                        "pinyin":  "Tā zǒng xiǎngzhe fācái, què bú yuànyì rènzhēn xuéxí.",
+                        "vietnamese":  "Anh ấy cứ nghĩ đến phát tài nhưng lại không muốn học nghiêm túc.",
+                        "answer":  "他总想着发财，却不愿意认真学习。"
+                    },
+                    {
+                        "chinese":  "有眼光的人靠长期努力发财，而不是靠运气。",
+                        "pinyin":  "Yǒu yǎnguāng de rén kào chángqī nǔlì fācái, ér bú shì kào yùnqi.",
+                        "vietnamese":  "Người có tầm nhìn làm giàu nhờ nỗ lực lâu dài, không phải nhờ may mắn.",
+                        "answer":  "有眼光的人靠长期努力发财，而不是靠运气。"
+                    },
+                    {
+                        "chinese":  "父母希望孩子生活稳定，不一定要发财。",
+                        "pinyin":  "Fùmǔ xīwàng háizi shēnghuó wěndìng, bù yídìng yào fācái.",
+                        "vietnamese":  "Cha mẹ mong con sống ổn định, không nhất định phải phát tài.",
+                        "answer":  "父母希望孩子生活稳定，不一定要发财。"
+                    },
+                    {
+                        "chinese":  "这个项目不见得能发财，但很有意义。",
+                        "pinyin":  "Zhège xiàngmù bú jiàn de néng fācái, dàn hěn yǒu yìyì.",
+                        "vietnamese":  "Dự án này chưa chắc có thể phát tài nhưng rất có ý nghĩa.",
+                        "answer":  "这个项目不见得能发财，但很有意义。"
+                    },
+                    {
+                        "chinese":  "他明明想发财，却装作对钱无所谓。",
+                        "pinyin":  "Tā míngmíng xiǎng fācái, què zhuāngzuò duì qián wúsuǒwèi.",
+                        "vietnamese":  "Rõ ràng anh ấy muốn phát tài nhưng giả vờ không quan tâm đến tiền.",
+                        "answer":  "他明明想发财，却装作对钱无所谓。"
+                    },
+                    {
+                        "chinese":  "如果只想快速发财，就容易惹麻烦。",
+                        "pinyin":  "Rúguǒ zhǐ xiǎng kuàisù fācái, jiù róngyì rě máfan.",
+                        "vietnamese":  "Nếu chỉ muốn phát tài nhanh thì dễ gây rắc rối.",
+                        "answer":  "如果只想快速发财，就容易惹麻烦。"
+                    },
+                    {
+                        "chinese":  "发财以后，他没有忘记帮助村里的老人。",
+                        "pinyin":  "Fācái yǐhòu, tā méiyǒu wàngjì bāngzhù cūn lǐ de lǎorén.",
+                        "vietnamese":  "Sau khi phát tài, anh ấy không quên giúp người già trong làng.",
+                        "answer":  "发财以后，他没有忘记帮助村里的老人。"
+                    },
+                    {
+                        "chinese":  "与其幻想发财，不如先提高自己的能力。",
+                        "pinyin":  "Yǔqí huànxiǎng fācái, bùrú xiān tígāo zìjǐ de nénglì.",
+                        "vietnamese":  "Thay vì mơ tưởng phát tài, chi bằng nâng cao năng lực của mình trước.",
+                        "answer":  "与其幻想发财，不如先提高自己的能力。"
+                    },
+                    {
+                        "chinese":  "他是个工作狂，周末也不愿意休息。",
+                        "pinyin":  "Tā shì ge gōngzuòkuáng, zhōumò yě bú yuànyì xiūxi.",
+                        "vietnamese":  "Anh ấy là người nghiện công việc, cuối tuần cũng không muốn nghỉ.",
+                        "answer":  "他是个工作狂，周末也不愿意休息。"
+                    },
+                    {
+                        "chinese":  "工作狂不见得效率高，有时候只是太焦虑。",
+                        "pinyin":  "Gōngzuòkuáng bú jiàn de xiàolǜ gāo, yǒu shíhou zhǐshì tài jiāolǜ.",
+                        "vietnamese":  "Người nghiện công việc chưa chắc hiệu suất cao, đôi khi chỉ là quá lo âu.",
+                        "answer":  "工作狂不见得效率高，有时候只是太焦虑。"
+                    },
+                    {
+                        "chinese":  "父母担心他变成工作狂，身体越来越差。",
+                        "pinyin":  "Fùmǔ dānxīn tā biàn chéng gōngzuòkuáng, shēntǐ yuèláiyuè chà.",
+                        "vietnamese":  "Cha mẹ lo anh ấy trở thành người nghiện công việc, sức khỏe ngày càng kém.",
+                        "answer":  "父母担心他变成工作狂，身体越来越差。"
+                    },
+                    {
+                        "chinese":  "她不是工作狂，只是最近任务特别多。",
+                        "pinyin":  "Tā bú shì gōngzuòkuáng, zhǐshì zuìjìn rènwu tèbié duō.",
+                        "vietnamese":  "Cô ấy không phải người nghiện công việc, chỉ là gần đây nhiệm vụ đặc biệt nhiều.",
+                        "answer":  "她不是工作狂，只是最近任务特别多。"
+                    },
+                    {
+                        "chinese":  "工作狂常常难以容忍别人效率低。",
+                        "pinyin":  "Gōngzuòkuáng chángcháng nányǐ róngrěn biérén xiàolǜ dī.",
+                        "vietnamese":  "Người nghiện công việc thường khó chịu đựng người khác hiệu suất thấp.",
+                        "answer":  "工作狂常常难以容忍别人效率低。"
+                    },
+                    {
+                        "chinese":  "他整整加班一个月，像个真正的工作狂。",
+                        "pinyin":  "Tā zhěngzhěng jiābān yí ge yuè, xiàng ge zhēnzhèng de gōngzuòkuáng.",
+                        "vietnamese":  "Anh ấy tăng ca suốt một tháng, giống một người nghiện công việc thật sự.",
+                        "answer":  "他整整加班一个月，像个真正的工作狂。"
+                    },
+                    {
+                        "chinese":  "工作狂也需要生活乐趣，不能只看任务。",
+                        "pinyin":  "Gōngzuòkuáng yě xūyào shēnghuó lèqù, bù néng zhǐ kàn rènwu.",
+                        "vietnamese":  "Người nghiện công việc cũng cần niềm vui cuộc sống, không thể chỉ nhìn nhiệm vụ.",
+                        "answer":  "工作狂也需要生活乐趣，不能只看任务。"
+                    },
+                    {
+                        "chinese":  "他当初想发财，后来却成了工作狂。",
+                        "pinyin":  "Tā dāngchū xiǎng fācái, hòulái què chéng le gōngzuòkuáng.",
+                        "vietnamese":  "Ban đầu anh ấy muốn phát tài, sau này lại trở thành người nghiện công việc.",
+                        "answer":  "他当初想发财，后来却成了工作狂。"
+                    },
+                    {
+                        "chinese":  "和工作狂合作时，要提前说清楚时间安排。",
+                        "pinyin":  "Hé gōngzuòkuáng hézuò shí, yào tíqián shuō qīngchu shíjiān ānpái.",
+                        "vietnamese":  "Khi hợp tác với người nghiện công việc, phải nói rõ lịch trình trước.",
+                        "answer":  "和工作狂合作时，要提前说清楚时间安排。"
+                    },
+                    {
+                        "chinese":  "无论如何，我都不想为了发财变成工作狂。",
+                        "pinyin":  "Wúlùn rúhé, wǒ dōu bù xiǎng wèile fācái biàn chéng gōngzuòkuáng.",
+                        "vietnamese":  "Dù thế nào, tôi cũng không muốn vì phát tài mà trở thành người nghiện công việc.",
+                        "answer":  "无论如何，我都不想为了发财变成工作狂。"
+                    },
+                    {
+                        "chinese":  "这位主妇每天都把家里收拾得很整洁。",
+                        "pinyin":  "Zhè wèi zhǔfù měitiān dōu bǎ jiā lǐ shōushi de hěn zhěngjié.",
+                        "vietnamese":  "Người nội trợ này mỗi ngày đều dọn nhà rất gọn gàng.",
+                        "answer":  "这位主妇每天都把家里收拾得很整洁。"
+                    },
+                    {
+                        "chinese":  "做主妇并不轻松，也需要很高的效率。",
+                        "pinyin":  "Zuò zhǔfù bìng bù qīngsōng, yě xūyào hěn gāo de xiàolǜ.",
+                        "vietnamese":  "Làm người nội trợ không hề nhẹ nhàng, cũng cần hiệu suất cao.",
+                        "answer":  "做主妇并不轻松，也需要很高的效率。"
+                    },
+                    {
+                        "chinese":  "她以前是主妇，后来开始在网上工作。",
+                        "pinyin":  "Tā yǐqián shì zhǔfù, hòulái kāishǐ zài wǎngshàng gōngzuò.",
+                        "vietnamese":  "Trước đây cô ấy là nội trợ, sau đó bắt đầu làm việc trên mạng.",
+                        "answer":  "她以前是主妇，后来开始在网上工作。"
+                    },
+                    {
+                        "chinese":  "主妇的任务不只是打扫和做饭。",
+                        "pinyin":  "Zhǔfù de rènwu bú zhǐshì dǎsǎo hé zuòfàn.",
+                        "vietnamese":  "Nhiệm vụ của người nội trợ không chỉ là dọn dẹp và nấu cơm.",
+                        "answer":  "主妇的任务不只是打扫和做饭。"
+                    },
+                    {
+                        "chinese":  "这位主妇不能容忍卫生间不清洁。",
+                        "pinyin":  "Zhè wèi zhǔfù bù néng róngrěn wèishēngjiān bù qīngjié.",
+                        "vietnamese":  "Người nội trợ này không thể chịu được nhà vệ sinh không sạch.",
+                        "answer":  "这位主妇不能容忍卫生间不清洁。"
+                    },
+                    {
+                        "chinese":  "很多人觉得主妇不工作，其实这是误会。",
+                        "pinyin":  "Hěn duō rén juéde zhǔfù bù gōngzuò, qíshí zhè shì wùhuì.",
+                        "vietnamese":  "Nhiều người cho rằng nội trợ không làm việc, thật ra đây là hiểu lầm.",
+                        "answer":  "很多人觉得主妇不工作，其实这是误会。"
+                    },
+                    {
+                        "chinese":  "主妇也可以通过网络学习新的知识。",
+                        "pinyin":  "Zhǔfù yě kěyǐ tōngguò wǎngluò xuéxí xīn de zhīshi.",
+                        "vietnamese":  "Người nội trợ cũng có thể học kiến thức mới qua mạng.",
+                        "answer":  "主妇也可以通过网络学习新的知识。"
+                    },
+                    {
+                        "chinese":  "她明明是主妇，却有很强的管理能力。",
+                        "pinyin":  "Tā míngmíng shì zhǔfù, què yǒu hěn qiáng de guǎnlǐ nénglì.",
+                        "vietnamese":  "Rõ ràng cô ấy là nội trợ nhưng lại có năng lực quản lý rất mạnh.",
+                        "answer":  "她明明是主妇，却有很强的管理能力。"
+                    },
+                    {
+                        "chinese":  "主妇每天做的事情，几乎没有真正结束的时候。",
+                        "pinyin":  "Zhǔfù měitiān zuò de shìqing, jīhū méiyǒu zhēnzhèng jiéshù de shíhou.",
+                        "vietnamese":  "Những việc người nội trợ làm mỗi ngày hầu như không có lúc thật sự kết thúc.",
+                        "answer":  "主妇每天做的事情，几乎没有真正结束的时候。"
+                    },
+                    {
+                        "chinese":  "尊重主妇的劳动，是一种基本的眼光。",
+                        "pinyin":  "Zūnzhòng zhǔfù de láodòng, shì yì zhǒng jīběn de yǎnguāng.",
+                        "vietnamese":  "Tôn trọng lao động của người nội trợ là một tầm nhìn cơ bản.",
+                        "answer":  "尊重主妇的劳动，是一种基本的眼光。"
+                    },
+                    {
+                        "chinese":  "学习语言的乐趣在于慢慢发现文化差别。",
+                        "pinyin":  "Xuéxí yǔyán de lèqù zài yú mànman fāxiàn wénhuà chābié.",
+                        "vietnamese":  "Niềm vui của học ngôn ngữ nằm ở việc dần phát hiện khác biệt văn hóa.",
+                        "answer":  "学习语言的乐趣在于慢慢发现文化差别。"
+                    },
+                    {
+                        "chinese":  "他把打扫房间当成一种生活乐趣。",
+                        "pinyin":  "Tā bǎ dǎsǎo fángjiān dàngchéng yì zhǒng shēnghuó lèqù.",
+                        "vietnamese":  "Anh ấy xem dọn dẹp phòng là một niềm vui cuộc sống.",
+                        "answer":  "他把打扫房间当成一种生活乐趣。"
+                    },
+                    {
+                        "chinese":  "如果生活没有乐趣，发财也不一定幸福。",
+                        "pinyin":  "Rúguǒ shēnghuó méiyǒu lèqù, fācái yě bù yídìng xìngfú.",
+                        "vietnamese":  "Nếu cuộc sống không có niềm vui, phát tài cũng không nhất định hạnh phúc.",
+                        "answer":  "如果生活没有乐趣，发财也不一定幸福。"
+                    },
+                    {
+                        "chinese":  "工作狂常常忽略生活中的小乐趣。",
+                        "pinyin":  "Gōngzuòkuáng chángcháng hūlüè shēnghuó zhōng de xiǎo lèqù.",
+                        "vietnamese":  "Người nghiện công việc thường bỏ qua những niềm vui nhỏ trong cuộc sống.",
+                        "answer":  "工作狂常常忽略生活中的小乐趣。"
+                    },
+                    {
+                        "chinese":  "做饭虽然麻烦，但也有自己的乐趣。",
+                        "pinyin":  "Zuòfàn suīrán máfan, dàn yě yǒu zìjǐ de lèqù.",
+                        "vietnamese":  "Nấu ăn tuy phiền nhưng cũng có niềm vui riêng.",
+                        "answer":  "做饭虽然麻烦，但也有自己的乐趣。"
+                    },
+                    {
+                        "chinese":  "旅游的乐趣不只在于拍照。",
+                        "pinyin":  "Lǚyóu de lèqù bù zhǐ zài yú pāizhào.",
+                        "vietnamese":  "Niềm vui của du lịch không chỉ nằm ở việc chụp ảnh.",
+                        "answer":  "旅游的乐趣不只在于拍照。"
+                    },
+                    {
+                        "chinese":  "他从网络资料中找到了学习的乐趣。",
+                        "pinyin":  "Tā cóng wǎngluò zīliào zhōng zhǎodào le xuéxí de lèqù.",
+                        "vietnamese":  "Anh ấy tìm thấy niềm vui học tập từ tài liệu trên mạng.",
+                        "answer":  "他从网络资料中找到了学习的乐趣。"
+                    },
+                    {
+                        "chinese":  "和家人一起打扫，也是周末的一种乐趣。",
+                        "pinyin":  "Hé jiārén yìqǐ dǎsǎo, yě shì zhōumò de yì zhǒng lèqù.",
+                        "vietnamese":  "Cùng người nhà dọn dẹp cũng là một niềm vui cuối tuần.",
+                        "answer":  "和家人一起打扫，也是周末的一种乐趣。"
+                    },
+                    {
+                        "chinese":  "乐趣越多，人就越不容易被压力打倒。",
+                        "pinyin":  "Lèqù yuè duō, rén jiù yuè bù róngyì bèi yālì dǎdǎo.",
+                        "vietnamese":  "Niềm vui càng nhiều, con người càng không dễ bị áp lực đánh gục.",
+                        "answer":  "乐趣越多，人就越不容易被压力打倒。"
+                    },
+                    {
+                        "chinese":  "他终于明白，工作之外也要寻找乐趣。",
+                        "pinyin":  "Tā zhōngyú míngbai, gōngzuò zhī wài yě yào xúnzhǎo lèqù.",
+                        "vietnamese":  "Cuối cùng anh ấy hiểu rằng ngoài công việc cũng phải tìm niềm vui.",
+                        "answer":  "他终于明白，工作之外也要寻找乐趣。"
+                    },
+                    {
+                        "chinese":  "他几乎每天都去公司加班。",
+                        "pinyin":  "Tā jīhū měitiān dōu qù gōngsī jiābān.",
+                        "vietnamese":  "Anh ấy hầu như ngày nào cũng đến công ty tăng ca.",
+                        "answer":  "他几乎每天都去公司加班。"
+                    },
+                    {
+                        "chinese":  "这个卫生间几乎每天都要打扫。",
+                        "pinyin":  "Zhège wèishēngjiān jīhū měitiān dōu yào dǎsǎo.",
+                        "vietnamese":  "Nhà vệ sinh này hầu như ngày nào cũng phải dọn.",
+                        "answer":  "这个卫生间几乎每天都要打扫。"
+                    },
+                    {
+                        "chinese":  "网络太差，我几乎查不到任何资料。",
+                        "pinyin":  "Wǎngluò tài chà, wǒ jīhū chá bù dào rènhé zīliào.",
+                        "vietnamese":  "Mạng quá kém, tôi hầu như không tra được tài liệu nào.",
+                        "answer":  "网络太差，我几乎查不到任何资料。"
+                    },
+                    {
+                        "chinese":  "他工作太忙，几乎没有时间健身。",
+                        "pinyin":  "Tā gōngzuò tài máng, jīhū méiyǒu shíjiān jiànshēn.",
+                        "vietnamese":  "Anh ấy quá bận công việc, hầu như không có thời gian tập thể dục.",
+                        "answer":  "他工作太忙，几乎没有时间健身。"
+                    },
+                    {
+                        "chinese":  "这项任务几乎不可能一个人完成。",
+                        "pinyin":  "Zhè xiàng rènwu jīhū bù kěnéng yí ge rén wánchéng.",
+                        "vietnamese":  "Nhiệm vụ này hầu như không thể hoàn thành một mình.",
+                        "answer":  "这项任务几乎不可能一个人完成。"
+                    },
+                    {
+                        "chinese":  "她几乎把所有费用都算清楚了。",
+                        "pinyin":  "Tā jīhū bǎ suǒyǒu fèiyòng dōu suàn qīngchu le.",
+                        "vietnamese":  "Cô ấy gần như đã tính rõ tất cả chi phí.",
+                        "answer":  "她几乎把所有费用都算清楚了。"
+                    },
+                    {
+                        "chinese":  "他几乎从不容忍低效率的工作方式。",
+                        "pinyin":  "Tā jīhū cóng bù róngrěn dī xiàolǜ de gōngzuò fāngshì.",
+                        "vietnamese":  "Anh ấy hầu như không bao giờ chịu được cách làm việc hiệu suất thấp.",
+                        "answer":  "他几乎从不容忍低效率的工作方式。"
+                    },
+                    {
+                        "chinese":  "主妇的工作几乎没有真正休息的时候。",
+                        "pinyin":  "Zhǔfù de gōngzuò jīhū méiyǒu zhēnzhèng xiūxi de shíhou.",
+                        "vietnamese":  "Công việc của người nội trợ hầu như không có lúc nghỉ thật sự.",
+                        "answer":  "主妇的工作几乎没有真正休息的时候。"
+                    },
+                    {
+                        "chinese":  "他几乎把所有时间都花在发财计划上。",
+                        "pinyin":  "Tā jīhū bǎ suǒyǒu shíjiān dōu huā zài fācái jìhuà shàng.",
+                        "vietnamese":  "Anh ấy gần như dành toàn bộ thời gian vào kế hoạch phát tài.",
+                        "answer":  "他几乎把所有时间都花在发财计划上。"
+                    },
+                    {
+                        "chinese":  "这家小吃店几乎成了游客必去的地方。",
+                        "pinyin":  "Zhè jiā xiǎochī diàn jīhū chéng le yóukè bì qù de dìfang.",
+                        "vietnamese":  "Quán ăn vặt này gần như trở thành nơi du khách nhất định phải đến.",
+                        "answer":  "这家小吃店几乎成了游客必去的地方。"
+                    },
+                    {
+                        "chinese":  "会议结束以后，大家才去吃饭。",
+                        "pinyin":  "Huìyì jiéshù yǐhòu, dàjiā cái qù chīfàn.",
+                        "vietnamese":  "Sau khi cuộc họp kết thúc, mọi người mới đi ăn.",
+                        "answer":  "会议结束以后，大家才去吃饭。"
+                    },
+                    {
+                        "chinese":  "任务还没结束，你最好别急着走。",
+                        "pinyin":  "Rènwu hái méi jiéshù, nǐ zuìhǎo bié jízhe zǒu.",
+                        "vietnamese":  "Nhiệm vụ vẫn chưa kết thúc, tốt nhất bạn đừng vội đi.",
+                        "answer":  "任务还没结束，你最好别急着走。"
+                    },
+                    {
+                        "chinese":  "旅行结束后，他写了一篇详细的日记。",
+                        "pinyin":  "Lǚxíng jiéshù hòu, tā xiě le yì piān xiángxì de rìjì.",
+                        "vietnamese":  "Sau khi chuyến đi kết thúc, anh ấy viết một bài nhật ký chi tiết.",
+                        "answer":  "旅行结束后，他写了一篇详细的日记。"
+                    },
+                    {
+                        "chinese":  "这段关系早就结束了，你别再提了。",
+                        "pinyin":  "Zhè duàn guānxi zǎo jiù jiéshù le, nǐ bié zài tí le.",
+                        "vietnamese":  "Mối quan hệ này đã kết thúc từ lâu rồi, bạn đừng nhắc nữa.",
+                        "answer":  "这段关系早就结束了，你别再提了。"
+                    },
+                    {
+                        "chinese":  "工作结束以后，他终于可以陪家人了。",
+                        "pinyin":  "Gōngzuò jiéshù yǐhòu, tā zhōngyú kěyǐ péi jiārén le.",
+                        "vietnamese":  "Sau khi công việc kết thúc, cuối cùng anh ấy có thể ở bên người nhà.",
+                        "answer":  "工作结束以后，他终于可以陪家人了。"
+                    },
+                    {
+                        "chinese":  "这场讲座结束得比我想象中早。",
+                        "pinyin":  "Zhè chǎng jiǎngzuò jiéshù de bǐ wǒ xiǎngxiàng zhōng zǎo.",
+                        "vietnamese":  "Buổi tọa đàm này kết thúc sớm hơn tôi tưởng.",
+                        "answer":  "这场讲座结束得比我想象中早。"
+                    },
+                    {
+                        "chinese":  "清洁工作结束后，卫生间看起来很整洁。",
+                        "pinyin":  "Qīngjié gōngzuò jiéshù hòu, wèishēngjiān kàn qǐlái hěn zhěngjié.",
+                        "vietnamese":  "Sau khi công việc vệ sinh kết thúc, nhà vệ sinh nhìn rất gọn sạch.",
+                        "answer":  "清洁工作结束后，卫生间看起来很整洁。"
+                    },
+                    {
+                        "chinese":  "他希望忙碌的生活快点结束。",
+                        "pinyin":  "Tā xīwàng mánglù de shēnghuó kuài diǎn jiéshù.",
+                        "vietnamese":  "Anh ấy hy vọng cuộc sống bận rộn nhanh chóng kết thúc.",
+                        "answer":  "他希望忙碌的生活快点结束。"
+                    },
+                    {
+                        "chinese":  "课程结束以后，老师把资料发给我们。",
+                        "pinyin":  "Kèchéng jiéshù yǐhòu, lǎoshī bǎ zīliào fā gěi wǒmen.",
+                        "vietnamese":  "Sau khi khóa học kết thúc, giáo viên gửi tài liệu cho chúng tôi.",
+                        "answer":  "课程结束以后，老师把资料发给我们。"
+                    },
+                    {
+                        "chinese":  "不好的习惯如果不结束，就会影响效率。",
+                        "pinyin":  "Bù hǎo de xíguàn rúguǒ bù jiéshù, jiù huì yǐngxiǎng xiàolǜ.",
+                        "vietnamese":  "Nếu thói quen xấu không kết thúc thì sẽ ảnh hưởng hiệu quả.",
+                        "answer":  "不好的习惯如果不结束，就会影响效率。"
+                    },
+                    {
+                        "chinese":  "保持厨房清洁，是每个家庭的基本要求。",
+                        "pinyin":  "Bǎochí chúfáng qīngjié, shì měi ge jiātíng de jīběn yāoqiú.",
+                        "vietnamese":  "Giữ nhà bếp sạch sẽ là yêu cầu cơ bản của mỗi gia đình.",
+                        "answer":  "保持厨房清洁，是每个家庭的基本要求。"
+                    },
+                    {
+                        "chinese":  "这个卫生间非常清洁，几乎没有异味。",
+                        "pinyin":  "Zhège wèishēngjiān fēicháng qīngjié, jīhū méiyǒu yìwèi.",
+                        "vietnamese":  "Nhà vệ sinh này rất sạch, hầu như không có mùi lạ.",
+                        "answer":  "这个卫生间非常清洁，几乎没有异味。"
+                    },
+                    {
+                        "chinese":  "清洁工作虽然普通，但不能忽视。",
+                        "pinyin":  "Qīngjié gōngzuò suīrán pǔtōng, dàn bù néng hūshì.",
+                        "vietnamese":  "Công việc vệ sinh tuy bình thường nhưng không thể xem nhẹ.",
+                        "answer":  "清洁工作虽然普通，但不能忽视。"
+                    },
+                    {
+                        "chinese":  "她对房间清洁程度要求特别高。",
+                        "pinyin":  "Tā duì fángjiān qīngjié chéngdù yāoqiú tèbié gāo.",
+                        "vietnamese":  "Cô ấy yêu cầu đặc biệt cao về mức độ sạch sẽ của phòng.",
+                        "answer":  "她对房间清洁程度要求特别高。"
+                    },
+                    {
+                        "chinese":  "主妇不能容忍家里不清洁。",
+                        "pinyin":  "Zhǔfù bù néng róngrěn jiā lǐ bù qīngjié.",
+                        "vietnamese":  "Người nội trợ không thể chịu được nhà không sạch.",
+                        "answer":  "主妇不能容忍家里不清洁。"
+                    },
+                    {
+                        "chinese":  "清洁的环境能让人心情更好。",
+                        "pinyin":  "Qīngjié de huánjìng néng ràng rén xīnqíng gèng hǎo.",
+                        "vietnamese":  "Môi trường sạch sẽ có thể khiến tâm trạng con người tốt hơn.",
+                        "answer":  "清洁的环境能让人心情更好。"
+                    },
+                    {
+                        "chinese":  "打扫卫生间时，要特别注意清洁细节。",
+                        "pinyin":  "Dǎsǎo wèishēngjiān shí, yào tèbié zhùyì qīngjié xìjié.",
+                        "vietnamese":  "Khi dọn nhà vệ sinh, phải đặc biệt chú ý chi tiết vệ sinh.",
+                        "answer":  "打扫卫生间时，要特别注意清洁细节。"
+                    },
+                    {
+                        "chinese":  "这家公司专门提供清洁服务。",
+                        "pinyin":  "Zhè jiā gōngsī zhuānmén tígōng qīngjié fúwù.",
+                        "vietnamese":  "Công ty này chuyên cung cấp dịch vụ vệ sinh.",
+                        "answer":  "这家公司专门提供清洁服务。"
+                    },
+                    {
+                        "chinese":  "如果不按时清洁，设施很快就会变旧。",
+                        "pinyin":  "Rúguǒ bú ànshí qīngjié, shèshī hěn kuài jiù huì biàn jiù.",
+                        "vietnamese":  "Nếu không vệ sinh đúng giờ, thiết bị sẽ nhanh cũ.",
+                        "answer":  "如果不按时清洁，设施很快就会变旧。"
+                    },
+                    {
+                        "chinese":  "清洁不是小事，它关系到健康。",
+                        "pinyin":  "Qīngjié bú shì xiǎoshì, tā guānxi dào jiànkāng.",
+                        "vietnamese":  "Sạch sẽ không phải chuyện nhỏ, nó liên quan đến sức khỏe.",
+                        "answer":  "清洁不是小事，它关系到健康。"
+                    },
+                    {
+                        "chinese":  "周末我打算把房间好好打扫一下。",
+                        "pinyin":  "Zhōumò wǒ dǎsuàn bǎ fángjiān hǎohāo dǎsǎo yíxià.",
+                        "vietnamese":  "Cuối tuần tôi dự định dọn phòng cho tử tế một chút.",
+                        "answer":  "周末我打算把房间好好打扫一下。"
+                    },
+                    {
+                        "chinese":  "他每天早上都打扫办公室。",
+                        "pinyin":  "Tā měitiān zǎoshang dōu dǎsǎo bàngōngshì.",
+                        "vietnamese":  "Anh ấy mỗi sáng đều dọn văn phòng.",
+                        "answer":  "他每天早上都打扫办公室。"
+                    },
+                    {
+                        "chinese":  "打扫卫生间虽然麻烦，但必须认真。",
+                        "pinyin":  "Dǎsǎo wèishēngjiān suīrán máfan, dàn bìxū rènzhēn.",
+                        "vietnamese":  "Dọn nhà vệ sinh tuy phiền nhưng phải nghiêm túc.",
+                        "answer":  "打扫卫生间虽然麻烦，但必须认真。"
+                    },
+                    {
+                        "chinese":  "她打扫得很快，效率特别高。",
+                        "pinyin":  "Tā dǎsǎo de hěn kuài, xiàolǜ tèbié gāo.",
+                        "vietnamese":  "Cô ấy dọn rất nhanh, hiệu quả đặc biệt cao.",
+                        "answer":  "她打扫得很快，效率特别高。"
+                    },
+                    {
+                        "chinese":  "主妇把厨房和卫生间通通打扫了一遍。",
+                        "pinyin":  "Zhǔfù bǎ chúfáng hé wèishēngjiān tōngtōng dǎsǎo le yí biàn.",
+                        "vietnamese":  "Người nội trợ dọn toàn bộ nhà bếp và nhà vệ sinh một lượt.",
+                        "answer":  "主妇把厨房和卫生间通通打扫了一遍。"
+                    },
+                    {
+                        "chinese":  "如果不经常打扫，房间很快就会乱。",
+                        "pinyin":  "Rúguǒ bù jīngcháng dǎsǎo, fángjiān hěn kuài jiù huì luàn.",
+                        "vietnamese":  "Nếu không thường xuyên dọn dẹp, phòng sẽ nhanh chóng bừa bộn.",
+                        "answer":  "如果不经常打扫，房间很快就会乱。"
+                    },
+                    {
+                        "chinese":  "他把打扫当成一种放松方式。",
+                        "pinyin":  "Tā bǎ dǎsǎo dàngchéng yì zhǒng fàngsōng fāngshì.",
+                        "vietnamese":  "Anh ấy xem dọn dẹp là một cách thư giãn.",
+                        "answer":  "他把打扫当成一种放松方式。"
+                    },
+                    {
+                        "chinese":  "打扫结束以后，家里看起来整洁多了。",
+                        "pinyin":  "Dǎsǎo jiéshù yǐhòu, jiā lǐ kàn qǐlái zhěngjié duō le.",
+                        "vietnamese":  "Sau khi dọn dẹp xong, nhà nhìn gọn gàng hơn nhiều.",
+                        "answer":  "打扫结束以后，家里看起来整洁多了。"
+                    },
+                    {
+                        "chinese":  "老师让学生们一起打扫教室。",
+                        "pinyin":  "Lǎoshī ràng xuéshengmen yìqǐ dǎsǎo jiàoshì.",
+                        "vietnamese":  "Giáo viên bảo học sinh cùng nhau dọn lớp.",
+                        "answer":  "老师让学生们一起打扫教室。"
+                    },
+                    {
+                        "chinese":  "明明是大家用的地方，不能只让一个人打扫。",
+                        "pinyin":  "Míngmíng shì dàjiā yòng de dìfang, bù néng zhǐ ràng yí ge rén dǎsǎo.",
+                        "vietnamese":  "Rõ ràng là nơi mọi người cùng dùng, không thể chỉ để một người dọn.",
+                        "answer":  "明明是大家用的地方，不能只让一个人打扫。"
+                    },
+                    {
+                        "chinese":  "学校的卫生间打扫得很干净。",
+                        "pinyin":  "Xuéxiào de wèishēngjiān dǎsǎo de hěn gānjìng.",
+                        "vietnamese":  "Nhà vệ sinh của trường được dọn rất sạch.",
+                        "answer":  "学校的卫生间打扫得很干净。"
+                    },
+                    {
+                        "chinese":  "卫生间如果不清洁，很容易影响健康。",
+                        "pinyin":  "Wèishēngjiān rúguǒ bù qīngjié, hěn róngyì yǐngxiǎng jiànkāng.",
+                        "vietnamese":  "Nếu nhà vệ sinh không sạch, rất dễ ảnh hưởng sức khỏe.",
+                        "answer":  "卫生间如果不清洁，很容易影响健康。"
+                    },
+                    {
+                        "chinese":  "这间房子有两个卫生间，住起来很方便。",
+                        "pinyin":  "Zhè jiān fángzi yǒu liǎng ge wèishēngjiān, zhù qǐlái hěn fāngbiàn.",
+                        "vietnamese":  "Căn nhà này có hai nhà vệ sinh, ở rất tiện.",
+                        "answer":  "这间房子有两个卫生间，住起来很方便。"
+                    },
+                    {
+                        "chinese":  "主妇每天都要检查卫生间是否干净。",
+                        "pinyin":  "Zhǔfù měitiān dōu yào jiǎnchá wèishēngjiān shìfǒu gānjìng.",
+                        "vietnamese":  "Người nội trợ mỗi ngày đều phải kiểm tra nhà vệ sinh có sạch không.",
+                        "answer":  "主妇每天都要检查卫生间是否干净。"
+                    },
+                    {
+                        "chinese":  "公共卫生间需要大家共同保持整洁。",
+                        "pinyin":  "Gōnggòng wèishēngjiān xūyào dàjiā gòngtóng bǎochí zhěngjié.",
+                        "vietnamese":  "Nhà vệ sinh công cộng cần mọi người cùng giữ gọn sạch.",
+                        "answer":  "公共卫生间需要大家共同保持整洁。"
+                    },
+                    {
+                        "chinese":  "卫生间的设施坏了，要马上联系管理员。",
+                        "pinyin":  "Wèishēngjiān de shèshī huài le, yào mǎshàng liánxì guǎnlǐyuán.",
+                        "vietnamese":  "Thiết bị trong nhà vệ sinh hỏng thì phải lập tức liên hệ quản lý.",
+                        "answer":  "卫生间的设施坏了，要马上联系管理员。"
+                    },
+                    {
+                        "chinese":  "他几乎不能容忍卫生间有一点异味。",
+                        "pinyin":  "Tā jīhū bù néng róngrěn wèishēngjiān yǒu yìdiǎn yìwèi.",
+                        "vietnamese":  "Anh ấy hầu như không thể chịu được nhà vệ sinh có chút mùi lạ.",
+                        "answer":  "他几乎不能容忍卫生间有一点异味。"
+                    },
+                    {
+                        "chinese":  "旅游景点的卫生间清洁情况很重要。",
+                        "pinyin":  "Lǚyóu jǐngdiǎn de wèishēngjiān qīngjié qíngkuàng hěn zhòngyào.",
+                        "vietnamese":  "Tình trạng vệ sinh nhà vệ sinh ở điểm du lịch rất quan trọng.",
+                        "answer":  "旅游景点的卫生间清洁情况很重要。"
+                    },
+                    {
+                        "chinese":  "如果卫生间离房间太远，生活会不方便。",
+                        "pinyin":  "Rúguǒ wèishēngjiān lí fángjiān tài yuǎn, shēnghuó huì bù fāngbiàn.",
+                        "vietnamese":  "Nếu nhà vệ sinh cách phòng quá xa, sinh hoạt sẽ bất tiện.",
+                        "answer":  "如果卫生间离房间太远，生活会不方便。"
+                    },
+                    {
+                        "chinese":  "打扫卫生间不是主妇一个人的责任。",
+                        "pinyin":  "Dǎsǎo wèishēngjiān bú shì zhǔfù yí ge rén de zérèn.",
+                        "vietnamese":  "Dọn nhà vệ sinh không phải trách nhiệm của một mình người nội trợ.",
+                        "answer":  "打扫卫生间不是主妇一个人的责任。"
+                    },
+                    {
+                        "chinese":  "房间虽然不大，但是特别整洁。",
+                        "pinyin":  "Fángjiān suīrán bú dà, dànshì tèbié zhěngjié.",
+                        "vietnamese":  "Phòng tuy không lớn nhưng đặc biệt gọn gàng sạch sẽ.",
+                        "answer":  "房间虽然不大，但是特别整洁。"
+                    },
+                    {
+                        "chinese":  "她喜欢整洁的环境，所以经常打扫。",
+                        "pinyin":  "Tā xǐhuan zhěngjié de huánjìng, suǒyǐ jīngcháng dǎsǎo.",
+                        "vietnamese":  "Cô ấy thích môi trường gọn sạch nên thường xuyên dọn dẹp.",
+                        "answer":  "她喜欢整洁的环境，所以经常打扫。"
+                    },
+                    {
+                        "chinese":  "桌子上资料太多，看起来不太整洁。",
+                        "pinyin":  "Zhuōzi shàng zīliào tài duō, kàn qǐlái bú tài zhěngjié.",
+                        "vietnamese":  "Trên bàn quá nhiều tài liệu, nhìn không gọn gàng lắm.",
+                        "answer":  "桌子上资料太多，看起来不太整洁。"
+                    },
+                    {
+                        "chinese":  "整洁的办公室能提高工作效率。",
+                        "pinyin":  "Zhěngjié de bàngōngshì néng tígāo gōngzuò xiàolǜ.",
+                        "vietnamese":  "Văn phòng gọn gàng có thể nâng cao hiệu suất làm việc.",
+                        "answer":  "整洁的办公室能提高工作效率。"
+                    },
+                    {
+                        "chinese":  "主妇把家里收拾得又清洁又整洁。",
+                        "pinyin":  "Zhǔfù bǎ jiā lǐ shōushi de yòu qīngjié yòu zhěngjié.",
+                        "vietnamese":  "Người nội trợ sắp xếp nhà vừa sạch vừa gọn.",
+                        "answer":  "主妇把家里收拾得又清洁又整洁。"
+                    },
+                    {
+                        "chinese":  "他不能容忍卫生间不整洁。",
+                        "pinyin":  "Tā bù néng róngrěn wèishēngjiān bù zhěngjié.",
+                        "vietnamese":  "Anh ấy không thể chịu được nhà vệ sinh không gọn sạch.",
+                        "answer":  "他不能容忍卫生间不整洁。"
+                    },
+                    {
+                        "chinese":  "整洁不是为了别人看，而是为了自己舒服。",
+                        "pinyin":  "Zhěngjié bú shì wèile biérén kàn, ér shì wèile zìjǐ shūfu.",
+                        "vietnamese":  "Gọn gàng không phải để người khác xem mà là để bản thân thoải mái.",
+                        "answer":  "整洁不是为了别人看，而是为了自己舒服。"
+                    },
+                    {
+                        "chinese":  "他的笔记非常整洁，复习起来效率很高。",
+                        "pinyin":  "Tā de bǐjì fēicháng zhěngjié, fùxí qǐlái xiàolǜ hěn gāo.",
+                        "vietnamese":  "Ghi chép của anh ấy rất gọn gàng, ôn tập hiệu quả rất cao.",
+                        "answer":  "他的笔记非常整洁，复习起来效率很高。"
+                    },
+                    {
+                        "chinese":  "房间越整洁，心情就越轻松。",
+                        "pinyin":  "Fángjiān yuè zhěngjié, xīnqíng jiù yuè qīngsōng.",
+                        "vietnamese":  "Phòng càng gọn gàng, tâm trạng càng nhẹ nhõm.",
+                        "answer":  "房间越整洁，心情就越轻松。"
+                    },
+                    {
+                        "chinese":  "打扫结束后，整个家都变得整洁多了。",
+                        "pinyin":  "Dǎsǎo jiéshù hòu, zhěngge jiā dōu biàn de zhěngjié duō le.",
+                        "vietnamese":  "Sau khi dọn dẹp xong, cả nhà trở nên gọn gàng hơn nhiều.",
+                        "answer":  "打扫结束后，整个家都变得整洁多了。"
+                    },
+                    {
+                        "chinese":  "网络改变了我们的学习方式。",
+                        "pinyin":  "Wǎngluò gǎibiàn le wǒmen de xuéxí fāngshì.",
+                        "vietnamese":  "Internet đã thay đổi cách học của chúng ta.",
+                        "answer":  "网络改变了我们的学习方式。"
+                    },
+                    {
+                        "chinese":  "通过网络查资料，效率会高很多。",
+                        "pinyin":  "Tōngguò wǎngluò chá zīliào, xiàolǜ huì gāo hěn duō.",
+                        "vietnamese":  "Tra tài liệu qua mạng thì hiệu quả sẽ cao hơn nhiều.",
+                        "answer":  "通过网络查资料，效率会高很多。"
+                    },
+                    {
+                        "chinese":  "网络信息很多，但不见得都准确。",
+                        "pinyin":  "Wǎngluò xìnxī hěn duō, dàn bú jiàn de dōu zhǔnquè.",
+                        "vietnamese":  "Thông tin trên mạng rất nhiều nhưng chưa chắc đều chính xác.",
+                        "answer":  "网络信息很多，但不见得都准确。"
+                    },
+                    {
+                        "chinese":  "今天网络不好，会议只好推迟。",
+                        "pinyin":  "Jīntiān wǎngluò bù hǎo, huìyì zhǐhǎo tuīchí.",
+                        "vietnamese":  "Hôm nay mạng không tốt, cuộc họp đành hoãn lại.",
+                        "answer":  "今天网络不好，会议只好推迟。"
+                    },
+                    {
+                        "chinese":  "他靠网络工作，几乎每天都要在线。",
+                        "pinyin":  "Tā kào wǎngluò gōngzuò, jīhū měitiān dōu yào zàixiàn.",
+                        "vietnamese":  "Anh ấy dựa vào mạng để làm việc, hầu như ngày nào cũng phải online.",
+                        "answer":  "他靠网络工作，几乎每天都要在线。"
+                    },
+                    {
+                        "chinese":  "网络购物很方便，但也容易惹出麻烦。",
+                        "pinyin":  "Wǎngluò gòuwù hěn fāngbiàn, dàn yě róngyì rě chū máfan.",
+                        "vietnamese":  "Mua sắm trên mạng rất tiện nhưng cũng dễ gây phiền phức.",
+                        "answer":  "网络购物很方便，但也容易惹出麻烦。"
+                    },
+                    {
+                        "chinese":  "如果网络资料来源不清楚，最好别直接使用。",
+                        "pinyin":  "Rúguǒ wǎngluò zīliào láiyuán bù qīngchu, zuìhǎo bié zhíjiē shǐyòng.",
+                        "vietnamese":  "Nếu nguồn tài liệu trên mạng không rõ, tốt nhất đừng dùng trực tiếp.",
+                        "answer":  "如果网络资料来源不清楚，最好别直接使用。"
+                    },
+                    {
+                        "chinese":  "网络让主妇也能在家学习和工作。",
+                        "pinyin":  "Wǎngluò ràng zhǔfù yě néng zài jiā xuéxí hé gōngzuò.",
+                        "vietnamese":  "Internet khiến người nội trợ cũng có thể học và làm việc ở nhà.",
+                        "answer":  "网络让主妇也能在家学习和工作。"
+                    },
+                    {
+                        "chinese":  "他在网络上找到很多关于发财的文章。",
+                        "pinyin":  "Tā zài wǎngluò shàng zhǎodào hěn duō guānyú fācái de wénzhāng.",
+                        "vietnamese":  "Anh ấy tìm thấy nhiều bài viết về làm giàu trên mạng.",
+                        "answer":  "他在网络上找到很多关于发财的文章。"
+                    },
+                    {
+                        "chinese":  "网络速度越快，整理资料就越方便。",
+                        "pinyin":  "Wǎngluò sùdù yuè kuài, zhěnglǐ zīliào jiù yuè fāngbiàn.",
+                        "vietnamese":  "Tốc độ mạng càng nhanh, sắp xếp tài liệu càng tiện.",
+                        "answer":  "网络速度越快，整理资料就越方便。"
+                    },
+                    {
+                        "chinese":  "我每天上网查中文资料。",
+                        "pinyin":  "Wǒ měitiān shàngwǎng chá Zhōngwén zīliào.",
+                        "vietnamese":  "Tôi mỗi ngày lên mạng tra tài liệu tiếng Trung.",
+                        "answer":  "我每天上网查中文资料。"
+                    },
+                    {
+                        "chinese":  "他上网时间太长，眼睛越来越累。",
+                        "pinyin":  "Tā shàngwǎng shíjiān tài cháng, yǎnjing yuèláiyuè lèi.",
+                        "vietnamese":  "Anh ấy lên mạng quá lâu, mắt ngày càng mệt.",
+                        "answer":  "他上网时间太长，眼睛越来越累。"
+                    },
+                    {
+                        "chinese":  "上网学习很方便，但要注意效率。",
+                        "pinyin":  "Shàngwǎng xuéxí hěn fāngbiàn, dàn yào zhùyì xiàolǜ.",
+                        "vietnamese":  "Học trên mạng rất tiện nhưng phải chú ý hiệu quả.",
+                        "answer":  "上网学习很方便，但要注意效率。"
+                    },
+                    {
+                        "chinese":  "主妇可以利用空闲时间上网学习。",
+                        "pinyin":  "Zhǔfù kěyǐ lìyòng kòngxián shíjiān shàngwǎng xuéxí.",
+                        "vietnamese":  "Người nội trợ có thể tận dụng thời gian rảnh để lên mạng học.",
+                        "answer":  "主妇可以利用空闲时间上网学习。"
+                    },
+                    {
+                        "chinese":  "他明明说要工作，却一直在上网购物。",
+                        "pinyin":  "Tā míngmíng shuō yào gōngzuò, què yìzhí zài shàngwǎng gòuwù.",
+                        "vietnamese":  "Rõ ràng anh ấy nói phải làm việc nhưng cứ mua sắm online.",
+                        "answer":  "他明明说要工作，却一直在上网购物。"
+                    },
+                    {
+                        "chinese":  "上网查资料以前，最好先明确任务。",
+                        "pinyin":  "Shàngwǎng chá zīliào yǐqián, zuìhǎo xiān míngquè rènwu.",
+                        "vietnamese":  "Trước khi lên mạng tra tài liệu, tốt nhất xác định rõ nhiệm vụ trước.",
+                        "answer":  "上网查资料以前，最好先明确任务。"
+                    },
+                    {
+                        "chinese":  "如果只是无目的上网，很容易浪费时间。",
+                        "pinyin":  "Rúguǒ zhǐshì wú mùdì shàngwǎng, hěn róngyì làngfèi shíjiān.",
+                        "vietnamese":  "Nếu chỉ lên mạng không mục đích thì rất dễ lãng phí thời gian.",
+                        "answer":  "如果只是无目的上网，很容易浪费时间。"
+                    },
+                    {
+                        "chinese":  "她几乎每天晚上都上网看新闻。",
+                        "pinyin":  "Tā jīhū měitiān wǎnshang dōu shàngwǎng kàn xīnwén.",
+                        "vietnamese":  "Cô ấy hầu như tối nào cũng lên mạng xem tin tức.",
+                        "answer":  "她几乎每天晚上都上网看新闻。"
+                    },
+                    {
+                        "chinese":  "老师提醒我们不要白白上网，要学会筛选资料。",
+                        "pinyin":  "Lǎoshī tíxǐng wǒmen búyào báibái shàngwǎng, yào xuéhuì shāixuǎn zīliào.",
+                        "vietnamese":  "Giáo viên nhắc chúng tôi đừng lên mạng vô ích, phải học cách chọn lọc tài liệu.",
+                        "answer":  "老师提醒我们不要白白上网，要学会筛选资料。"
+                    },
+                    {
+                        "chinese":  "他上网以后才发现，这个问题很难解决。",
+                        "pinyin":  "Tā shàngwǎng yǐhòu cái fāxiàn, zhège wèntí hěn nán jiějué.",
+                        "vietnamese":  "Sau khi lên mạng, anh ấy mới phát hiện vấn đề này rất khó giải quyết.",
+                        "answer":  "他上网以后才发现，这个问题很难解决。"
+                    },
+                    {
+                        "chinese":  "这些资料都是老师发给我们的。",
+                        "pinyin":  "Zhèxiē zīliào dōu shì lǎoshī fā gěi wǒmen de.",
+                        "vietnamese":  "Những tài liệu này đều là giáo viên gửi cho chúng tôi.",
+                        "answer":  "这些资料都是老师发给我们的。"
+                    },
+                    {
+                        "chinese":  "查资料时，不能只看网络上的第一条结果。",
+                        "pinyin":  "Chá zīliào shí, bù néng zhǐ kàn wǎngluò shàng de dì yī tiáo jiéguǒ.",
+                        "vietnamese":  "Khi tra tài liệu, không thể chỉ xem kết quả đầu tiên trên mạng.",
+                        "answer":  "查资料时，不能只看网络上的第一条结果。"
+                    },
+                    {
+                        "chinese":  "他把所有资料通通整理成一个表格。",
+                        "pinyin":  "Tā bǎ suǒyǒu zīliào tōngtōng zhěnglǐ chéng yí ge biǎogé.",
+                        "vietnamese":  "Anh ấy sắp xếp toàn bộ tài liệu thành một bảng.",
+                        "answer":  "他把所有资料通通整理成一个表格。"
+                    },
+                    {
+                        "chinese":  "如果资料出错，报告内容也会受影响。",
+                        "pinyin":  "Rúguǒ zīliào chūcuò, bàogào nèiróng yě huì shòu yǐngxiǎng.",
+                        "vietnamese":  "Nếu tài liệu sai, nội dung báo cáo cũng sẽ bị ảnh hưởng.",
+                        "answer":  "如果资料出错，报告内容也会受影响。"
+                    },
+                    {
+                        "chinese":  "老师要求我们引用可靠的资料。",
+                        "pinyin":  "Lǎoshī yāoqiú wǒmen yǐnyòng kěkào de zīliào.",
+                        "vietnamese":  "Giáo viên yêu cầu chúng tôi trích dẫn tài liệu đáng tin cậy.",
+                        "answer":  "老师要求我们引用可靠的资料。"
+                    },
+                    {
+                        "chinese":  "这份资料难以理解，需要老师解释。",
+                        "pinyin":  "Zhè fèn zīliào nányǐ lǐjiě, xūyào lǎoshī jiěshì.",
+                        "vietnamese":  "Tài liệu này khó hiểu, cần giáo viên giải thích.",
+                        "answer":  "这份资料难以理解，需要老师解释。"
+                    },
+                    {
+                        "chinese":  "网络资料虽然方便，但也要认真检查。",
+                        "pinyin":  "Wǎngluò zīliào suīrán fāngbiàn, dàn yě yào rènzhēn jiǎnchá.",
+                        "vietnamese":  "Tài liệu trên mạng tuy tiện nhưng cũng phải kiểm tra kỹ.",
+                        "answer":  "网络资料虽然方便，但也要认真检查。"
+                    },
+                    {
+                        "chinese":  "他几乎整整一天都在整理资料。",
+                        "pinyin":  "Tā jīhū zhěngzhěng yì tiān dōu zài zhěnglǐ zīliào.",
+                        "vietnamese":  "Anh ấy gần như suốt cả ngày đều sắp xếp tài liệu.",
+                        "answer":  "他几乎整整一天都在整理资料。"
+                    },
+                    {
+                        "chinese":  "没有足够资料，这项任务很难结束。",
+                        "pinyin":  "Méiyǒu zúgòu zīliào, zhè xiàng rènwu hěn nán jiéshù.",
+                        "vietnamese":  "Không có đủ tài liệu, nhiệm vụ này rất khó kết thúc.",
+                        "answer":  "没有足够资料，这项任务很难结束。"
+                    },
+                    {
+                        "chinese":  "好的资料能帮助我们提高学习效率。",
+                        "pinyin":  "Hǎo de zīliào néng bāngzhù wǒmen tígāo xuéxí xiàolǜ.",
+                        "vietnamese":  "Tài liệu tốt có thể giúp chúng ta nâng cao hiệu quả học tập.",
+                        "answer":  "好的资料能帮助我们提高学习效率。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "哪儿有这么容易的工作呀，你想得太简单了。",
+                          "pinyin":  "Nǎr yǒu zhème róngyì de gōngzuò ya, nǐ xiǎng de tài jiǎndān le.",
+                          "vietnamese":  "Làm gì có công việc dễ như vậy chứ, bạn nghĩ quá đơn giản rồi.",
+                          "answer":  "哪儿有这么容易的工作呀，你想得太简单了。"
+                      },
+                      {
+                          "chinese":  "哪儿有天天不复习还能考好的学生呀？",
+                          "pinyin":  "Nǎr yǒu tiāntiān bù fùxí hái néng kǎo hǎo de xuésheng ya?",
+                          "vietnamese":  "Làm gì có học sinh ngày nào cũng không ôn mà vẫn thi tốt chứ?",
+                          "answer":  "哪儿有天天不复习还能考好的学生呀？"
+                      },
+                      {
+                          "chinese":  "哪儿有不努力就能成功的事情呀？",
+                          "pinyin":  "Nǎr yǒu bù nǔlì jiù néng chénggōng de shìqing ya?",
+                          "vietnamese":  "Làm gì có chuyện không cố gắng mà có thể thành công chứ?",
+                          "answer":  "哪儿有不努力就能成功的事情呀？"
+                      },
+                      {
+                          "chinese":  "哪儿有这么便宜又这么好的房子呀？",
+                          "pinyin":  "Nǎr yǒu zhème piányi yòu zhème hǎo de fángzi ya?",
+                          "vietnamese":  "Làm gì có căn nhà vừa rẻ vừa tốt như vậy chứ?",
+                          "answer":  "哪儿有这么便宜又这么好的房子呀？"
+                      },
+                      {
+                          "chinese":  "哪儿有只听课不练习就能说流利的道理呀？",
+                          "pinyin":  "Nǎr yǒu zhǐ tīngkè bù liànxí jiù néng shuō liúlì de dàolǐ ya?",
+                          "vietnamese":  "Làm gì có lý nào chỉ nghe giảng không luyện mà nói lưu loát được chứ?",
+                          "answer":  "哪儿有只听课不练习就能说流利的道理呀？"
+                      },
+                      {
+                          "chinese":  "哪儿有刚开始学就什么都听懂的人呀？",
+                          "pinyin":  "Nǎr yǒu gāng kāishǐ xué jiù shénme dōu tīng dǒng de rén ya?",
+                          "vietnamese":  "Làm gì có người mới bắt đầu học đã nghe hiểu hết chứ?",
+                          "answer":  "哪儿有刚开始学就什么都听懂的人呀？"
+                      },
+                      {
+                          "chinese":  "你光看课文，不练口语，怎么能说得自然？",
+                          "pinyin":  "Nǐ guāng kàn kèwén, bù liàn kǒuyǔ, zěnme néng shuō de zìrán?",
+                          "vietnamese":  "Bạn chỉ đọc bài khóa mà không luyện khẩu ngữ thì sao nói tự nhiên được?",
+                          "answer":  "你光看课文，不练口语，怎么能说得自然？"
+                      },
+                      {
+                          "chinese":  "他光想换工作，不提高能力，问题还是一样。",
+                          "pinyin":  "Tā guāng xiǎng huàn gōngzuò, bù tígāo nénglì, wèntí háishi yíyàng.",
+                          "vietnamese":  "Anh ấy chỉ muốn đổi việc mà không nâng cao năng lực thì vấn đề vẫn như cũ.",
+                          "answer":  "他光想换工作，不提高能力，问题还是一样。"
+                      },
+                      {
+                          "chinese":  "你光抱怨房租贵，不去找房子也没有用。",
+                          "pinyin":  "Nǐ guāng bàoyuàn fángzū guì, bú qù zhǎo fángzi yě méiyǒu yòng.",
+                          "vietnamese":  "Bạn chỉ than tiền thuê đắt mà không đi tìm nhà thì cũng vô ích.",
+                          "answer":  "你光抱怨房租贵，不去找房子也没有用。"
+                      },
+                      {
+                          "chinese":  "学汉语不能光背单词，不理解用法。",
+                          "pinyin":  "Xué Hànyǔ bù néng guāng bèi dāncí, bù lǐjiě yòngfǎ.",
+                          "vietnamese":  "Học tiếng Trung không thể chỉ học thuộc từ mà không hiểu cách dùng.",
+                          "answer":  "学汉语不能光背单词，不理解用法。"
+                      },
+                      {
+                          "chinese":  "他光说自己很忙，不告诉我们具体原因。",
+                          "pinyin":  "Tā guāng shuō zìjǐ hěn máng, bù gàosu wǒmen jùtǐ yuányīn.",
+                          "vietnamese":  "Anh ấy chỉ nói mình bận, không nói với chúng tôi lý do cụ thể.",
+                          "answer":  "他光说自己很忙，不告诉我们具体原因。"
+                      },
+                      {
+                          "chinese":  "老板不喜欢员工光提问题，不提出办法。",
+                          "pinyin":  "Lǎobǎn bù xǐhuan yuángōng guāng tí wèntí, bù tíchū bànfǎ.",
+                          "vietnamese":  "Sếp không thích nhân viên chỉ nêu vấn đề mà không đưa ra cách giải quyết.",
+                          "answer":  "老板不喜欢员工光提问题，不提出办法。"
+                      },
+                      {
+                          "chinese":  "哪怕只有十分钟，我也要复习几个生词。",
+                          "pinyin":  "Nǎpà zhǐ yǒu shí fēnzhōng, wǒ yě yào fùxí jǐ ge shēngcí.",
+                          "vietnamese":  "Dù chỉ có mười phút, tôi cũng phải ôn vài từ mới.",
+                          "answer":  "哪怕只有十分钟，我也要复习几个生词。"
+                      },
+                      {
+                          "chinese":  "哪怕工作再忙，他也坚持每天练习听力。",
+                          "pinyin":  "Nǎpà gōngzuò zài máng, tā yě jiānchí měitiān liànxí tīnglì.",
+                          "vietnamese":  "Dù công việc bận đến đâu, anh ấy vẫn kiên trì luyện nghe mỗi ngày.",
+                          "answer":  "哪怕工作再忙，他也坚持每天练习听力。"
+                      },
+                      {
+                          "chinese":  "哪怕这次失败了，我们也不能轻易放弃。",
+                          "pinyin":  "Nǎpà zhè cì shībài le, wǒmen yě bù néng qīngyì fàngqì.",
+                          "vietnamese":  "Dù lần này thất bại, chúng ta cũng không thể dễ dàng bỏ cuộc.",
+                          "answer":  "哪怕这次失败了，我们也不能轻易放弃。"
+                      },
+                      {
+                          "chinese":  "哪怕别人不理解，我也想按自己的计划做。",
+                          "pinyin":  "Nǎpà biérén bù lǐjiě, wǒ yě xiǎng àn zìjǐ de jìhuà zuò.",
+                          "vietnamese":  "Dù người khác không hiểu, tôi vẫn muốn làm theo kế hoạch của mình.",
+                          "answer":  "哪怕别人不理解，我也想按自己的计划做。"
+                      },
+                      {
+                          "chinese":  "哪怕天气不好，学生们也准时参加活动。",
+                          "pinyin":  "Nǎpà tiānqì bù hǎo, xuéshengmen yě zhǔnshí cānjiā huódòng.",
+                          "vietnamese":  "Dù thời tiết không tốt, học sinh vẫn tham gia hoạt động đúng giờ.",
+                          "answer":  "哪怕天气不好，学生们也准时参加活动。"
+                      },
+                      {
+                          "chinese":  "哪怕只是兼职工作，也要认真对待。",
+                          "pinyin":  "Nǎpà zhǐshì jiānzhí gōngzuò, yě yào rènzhēn duìdài.",
+                          "vietnamese":  "Dù chỉ là công việc làm thêm, cũng phải đối đãi nghiêm túc.",
+                          "answer":  "哪怕只是兼职工作，也要认真对待。"
+                      },
+                      {
+                          "chinese":  "再忙，我也要每天抽时间学习汉语。",
+                          "pinyin":  "Zài máng, wǒ yě yào měitiān chōu shíjiān xuéxí Hànyǔ.",
+                          "vietnamese":  "Dù bận đến đâu, tôi cũng phải dành thời gian học tiếng Trung mỗi ngày.",
+                          "answer":  "再忙，我也要每天抽时间学习汉语。"
+                      },
+                      {
+                          "chinese":  "这个问题再难，我们也要想办法解决。",
+                          "pinyin":  "Zhège wèntí zài nán, wǒmen yě yào xiǎng bànfǎ jiějué.",
+                          "vietnamese":  "Vấn đề này dù khó đến đâu, chúng tôi cũng phải nghĩ cách giải quyết.",
+                          "answer":  "这个问题再难，我们也要想办法解决。"
+                      },
+                      {
+                          "chinese":  "房租再贵，也不能随便租不安全的房子。",
+                          "pinyin":  "Fángzū zài guì, yě bù néng suíbiàn zū bù ānquán de fángzi.",
+                          "vietnamese":  "Tiền thuê dù đắt đến đâu, cũng không thể tùy tiện thuê nhà không an toàn.",
+                          "answer":  "房租再贵，也不能随便租不安全的房子。"
+                      },
+                      {
+                          "chinese":  "工作再累，也要好好儿照顾自己的身体。",
+                          "pinyin":  "Gōngzuò zài lèi, yě yào hǎohāor zhàogù zìjǐ de shēntǐ.",
+                          "vietnamese":  "Công việc dù mệt đến đâu, cũng phải chăm sóc tốt sức khỏe của mình.",
+                          "answer":  "工作再累，也要好好儿照顾自己的身体。"
+                      },
+                      {
+                          "chinese":  "他再聪明，也不能不复习就参加考试。",
+                          "pinyin":  "Tā zài cōngming, yě bù néng bù fùxí jiù cānjiā kǎoshì.",
+                          "vietnamese":  "Anh ấy dù thông minh đến đâu, cũng không thể không ôn mà đi thi.",
+                          "answer":  "他再聪明，也不能不复习就参加考试。"
+                      },
+                      {
+                          "chinese":  "路再远，我也想回家看看父母。",
+                          "pinyin":  "Lù zài yuǎn, wǒ yě xiǎng huí jiā kànkan fùmǔ.",
+                          "vietnamese":  "Đường dù xa đến đâu, tôi vẫn muốn về nhà thăm bố mẹ.",
+                          "answer":  "路再远，我也想回家看看父母。"
+                      },
+                      {
+                          "chinese":  "无论如何，我都不能放弃这次面试机会。",
+                          "pinyin":  "Wúlùn rúhé, wǒ dōu bù néng fàngqì zhè cì miànshì jīhuì.",
+                          "vietnamese":  "Dù thế nào đi nữa, tôi cũng không thể bỏ cơ hội phỏng vấn lần này.",
+                          "answer":  "无论如何，我都不能放弃这次面试机会。"
+                      },
+                      {
+                          "chinese":  "无论如何，你都要先把身体照顾好。",
+                          "pinyin":  "Wúlùn rúhé, nǐ dōu yào xiān bǎ shēntǐ zhàogù hǎo.",
+                          "vietnamese":  "Dù thế nào đi nữa, bạn đều phải chăm sóc sức khỏe trước.",
+                          "answer":  "无论如何，你都要先把身体照顾好。"
+                      },
+                      {
+                          "chinese":  "无论如何，我们今天必须把方案完成。",
+                          "pinyin":  "Wúlùn rúhé, wǒmen jīntiān bìxū bǎ fāng’àn wánchéng.",
+                          "vietnamese":  "Dù thế nào đi nữa, hôm nay chúng tôi phải hoàn thành phương án.",
+                          "answer":  "无论如何，我们今天必须把方案完成。"
+                      },
+                      {
+                          "chinese":  "无论如何，考试以前不能一直玩手机。",
+                          "pinyin":  "Wúlùn rúhé, kǎoshì yǐqián bù néng yìzhí wán shǒujī.",
+                          "vietnamese":  "Dù thế nào đi nữa, trước kỳ thi không thể cứ chơi điện thoại.",
+                          "answer":  "无论如何，考试以前不能一直玩手机。"
+                      },
+                      {
+                          "chinese":  "无论如何，我都要亲自跟老师解释清楚。",
+                          "pinyin":  "Wúlùn rúhé, wǒ dōu yào qīnzì gēn lǎoshī jiěshì qīngchu.",
+                          "vietnamese":  "Dù thế nào đi nữa, tôi phải tự giải thích rõ với thầy.",
+                          "answer":  "无论如何，我都要亲自跟老师解释清楚。"
+                      },
+                      {
+                          "chinese":  "要不是你提醒我，我就忘了下午的会议。",
+                          "pinyin":  "Yàobúshì nǐ tíxǐng wǒ, wǒ jiù wàng le xiàwǔ de huìyì.",
+                          "vietnamese":  "Nếu không nhờ bạn nhắc, tôi đã quên cuộc họp chiều rồi.",
+                          "answer":  "要不是你提醒我，我就忘了下午的会议。"
+                      },
+                      {
+                          "chinese":  "要不是老师帮忙，我可能还听不懂这个语法。",
+                          "pinyin":  "Yàobúshì lǎoshī bāngmáng, wǒ kěnéng hái tīng bu dǒng zhège yǔfǎ.",
+                          "vietnamese":  "Nếu không nhờ thầy giúp, tôi có thể vẫn chưa hiểu ngữ pháp này.",
+                          "answer":  "要不是老师帮忙，我可能还听不懂这个语法。"
+                      },
+                      {
+                          "chinese":  "要不是今天下雨，我们就去公园练口语了。",
+                          "pinyin":  "Yàobúshì jīntiān xià yǔ, wǒmen jiù qù gōngyuán liàn kǒuyǔ le.",
+                          "vietnamese":  "Nếu hôm nay không mưa, chúng tôi đã đi công viên luyện khẩu ngữ rồi.",
+                          "answer":  "要不是今天下雨，我们就去公园练口语了。"
+                      },
+                      {
+                          "chinese":  "要不是朋友借钱给我，我就交不了房租了。",
+                          "pinyin":  "Yàobúshì péngyou jiè qián gěi wǒ, wǒ jiù jiāo bu liǎo fángzū le.",
+                          "vietnamese":  "Nếu không nhờ bạn cho tôi mượn tiền, tôi đã không nộp được tiền thuê nhà.",
+                          "answer":  "要不是朋友借钱给我，我就交不了房租了。"
+                      },
+                      {
+                          "chinese":  "要不是地铁停了，我肯定不会迟到这么久。",
+                          "pinyin":  "Yàobúshì dìtiě tíng le, wǒ kěndìng bú huì chídào zhème jiǔ.",
+                          "vietnamese":  "Nếu không phải tàu điện ngầm dừng, tôi chắc chắn sẽ không muộn lâu như vậy.",
+                          "answer":  "要不是地铁停了，我肯定不会迟到这么久。"
+                      },
+                      {
+                          "chinese":  "他周末不是在图书馆，就是在宿舍学习。",
+                          "pinyin":  "Tā zhōumò bú shì zài túshūguǎn, jiùshì zài sùshè xuéxí.",
+                          "vietnamese":  "Cuối tuần anh ấy không ở thư viện thì ở ký túc xá học.",
+                          "answer":  "他周末不是在图书馆，就是在宿舍学习。"
+                      },
+                      {
+                          "chinese":  "我晚上不是练听力，就是复习当天的课文。",
+                          "pinyin":  "Wǒ wǎnshang bú shì liàn tīnglì, jiùshì fùxí dāngtiān de kèwén.",
+                          "vietnamese":  "Buổi tối tôi không luyện nghe thì ôn bài khóa trong ngày.",
+                          "answer":  "我晚上不是练听力，就是复习当天的课文。"
+                      },
+                      {
+                          "chinese":  "他每天不是加班，就是陪客户吃饭。",
+                          "pinyin":  "Tā měitiān bú shì jiābān, jiùshì péi kèhù chīfàn.",
+                          "vietnamese":  "Ngày nào anh ấy không tăng ca thì đi ăn với khách hàng.",
+                          "answer":  "他每天不是加班，就是陪客户吃饭。"
+                      },
+                      {
+                          "chinese":  "最近我不是忙考试，就是忙找兼职工作。",
+                          "pinyin":  "Zuìjìn wǒ bú shì máng kǎoshì, jiùshì máng zhǎo jiānzhí gōngzuò.",
+                          "vietnamese":  "Gần đây tôi không bận thi thì bận tìm việc làm thêm.",
+                          "answer":  "最近我不是忙考试，就是忙找兼职工作。"
+                      },
+                      {
+                          "chinese":  "这段时间他不是感冒，就是头疼。",
+                          "pinyin":  "Zhè duàn shíjiān tā bú shì gǎnmào, jiùshì tóuténg.",
+                          "vietnamese":  "Thời gian này anh ấy không cảm thì đau đầu.",
+                          "answer":  "这段时间他不是感冒，就是头疼。"
+                      },
+                      {
+                          "chinese":  "至于住宿问题，学校会帮新生统一安排。",
+                          "pinyin":  "Zhìyú zhùsù wèntí, xuéxiào huì bāng xīnshēng tǒngyī ānpái.",
+                          "vietnamese":  "Còn về vấn đề chỗ ở, nhà trường sẽ sắp xếp thống nhất cho tân sinh viên.",
+                          "answer":  "至于住宿问题，学校会帮新生统一安排。"
+                      },
+                      {
+                          "chinese":  "至于明天的计划，我们晚上再讨论。",
+                          "pinyin":  "Zhìyú míngtiān de jìhuà, wǒmen wǎnshang zài tǎolùn.",
+                          "vietnamese":  "Còn về kế hoạch ngày mai, tối chúng ta thảo luận tiếp.",
+                          "answer":  "至于明天的计划，我们晚上再讨论。"
+                      },
+                      {
+                          "chinese":  "至于房租贵不贵，我还要再比较几家。",
+                          "pinyin":  "Zhìyú fángzū guì bu guì, wǒ hái yào zài bǐjiào jǐ jiā.",
+                          "vietnamese":  "Còn về tiền thuê đắt hay không, tôi còn phải so sánh thêm vài nơi.",
+                          "answer":  "至于房租贵不贵，我还要再比较几家。"
+                      },
+                      {
+                          "chinese":  "至于这份工作适不适合你，要看你的兴趣。",
+                          "pinyin":  "Zhìyú zhè fèn gōngzuò shì bu shìhé nǐ, yào kàn nǐ de xìngqù.",
+                          "vietnamese":  "Còn về công việc này có phù hợp với bạn không, phải xem hứng thú của bạn.",
+                          "answer":  "至于这份工作适不适合你，要看你的兴趣。"
+                      },
+                      {
+                          "chinese":  "至于考试结果，老师说明天上午会公布。",
+                          "pinyin":  "Zhìyú kǎoshì jiéguǒ, lǎoshī shuō míngtiān shàngwǔ huì gōngbù.",
+                          "vietnamese":  "Còn về kết quả thi, thầy nói sáng mai sẽ công bố.",
+                          "answer":  "至于考试结果，老师说明天上午会公布。"
+                      }
+                  ]
+}

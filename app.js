@@ -32,7 +32,7 @@
   const resetKey = `typingReset-${storagePrefix}${lesson}-${testNum}`;
   const practiceActivityContents = new Set(["paragraph", "structure", "example"]);
   const isReflexTyping =
-    (subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening" || subject === "listening3" || subject === "listening4") &&
+    (subject === "speaking" || subject === "speaking2" || subject === "speaking3" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6" || subject === "writing" || subject === "listening" || subject === "listening3" || subject === "listening4") &&
     practiceActivityContents.has(content);
   const reflexCurrentEl = document.querySelector(".reflex-current");
   const reflexDoneEl = document.querySelector(".reflex-done");
@@ -47,6 +47,27 @@
   const reflexWrongCount = document.querySelector(".reflex-wrong-count");
   const reflexLeftCount = document.querySelector(".reflex-left-count");
   const reflexSideAccuracy = document.querySelector(".reflex-side-accuracy");
+
+  function recordCorrectAnswerForStats(q, userAnswer) {
+    if (!q) return;
+    const safeSubject = subject || "hanyu3";
+    const safeLesson = String(lesson || "01").padStart(2, "0");
+    window.FTCStats?.awardCorrectAnswer?.({
+      subject: safeSubject,
+      lesson: safeLesson,
+      lessonId: `${safeSubject}_lesson_${safeLesson}`,
+      exerciseType: content || "typing",
+      question: q.vietnamese || q.prompt || q.chinese || JSON.stringify(q),
+      answer: userAnswer,
+      correctAnswer: q.chinese,
+      index: currentIndex,
+    }).catch((error) => console.warn("EXP app:", error.message));
+
+    window.FTCStats?.markLessonActivity?.({
+      subject: safeSubject,
+      lessonId: `${safeSubject}_lesson_${safeLesson}`,
+    }).catch(() => {});
+  }
 
   let questions = [];
   let currentIndex = parseInt(
@@ -595,7 +616,20 @@
   function getTestQuestions(allData) {
     if (subject === "writing" && content === "paragraph") {
       const lessonKey = String(Number(lesson));
-      const lessonItems = allData[lesson] || allData[lessonKey] || [];
+      const directItems = allData[lesson] || allData[lessonKey] || [];
+      const exampleGroups = allData.examples || allData.reference || allData.references || {};
+      const exampleItems = exampleGroups[lesson] || exampleGroups[lessonKey] || [];
+      const lessonItems =
+        Array.isArray(directItems) && directItems.length
+          ? directItems
+          : Array.isArray(exampleItems)
+            ? exampleItems.map((item, index) => ({
+                title: item.title || `Ôn tập bài khóa ${String(index + 1).padStart(2, "0")}`,
+                chinese: item.chinese || item.text || "",
+                pinyin: item.pinyin || "",
+                vietnamese: item.vietnamese || item.meaning || item.translation || "",
+              }))
+            : [];
       return lessonItems.map(normalizeQuestion);
     }
 
@@ -644,7 +678,7 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "example") {
+    if ((subject === "speaking" || subject === "speaking2" || subject === "speaking3" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "example") {
       const lessonNum = String(Number(lesson));
       const exampleGroupSize = (subject === "hanyu1" || subject === "hanyu2") ? 10 : 20;
       if (!allData.__rawText) {
@@ -666,7 +700,7 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && (content === "grammar" || content === "structure")) {
+    if ((subject === "speaking" || subject === "speaking2" || subject === "speaking3" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && (content === "grammar" || content === "structure")) {
       const lessonNum = String(Number(lesson));
       if (!allData.__rawText) {
         const grammarItems = content === "structure"
@@ -683,7 +717,7 @@
       return (groups[Number(testNum) - 1] || []).map(normalizeQuestion);
     }
 
-    if ((subject === "speaking" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "paragraph") {
+    if ((subject === "speaking" || subject === "speaking2" || subject === "speaking3" || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6") && content === "paragraph") {
       const lessonNum = String(Number(lesson));
       if (!allData.__rawText) {
         const paragraphGroups = getSpeakingParagraphGroups(allData);
@@ -793,8 +827,8 @@
               : "data/listening-example-tests.json"
         : (subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6")
           ? `data/${subject}-lessons.json?v=${Date.now()}`
-        : subject === "speaking"
-          ? `data/speaking-lesson-${Number(lesson)}.json?v=${Date.now()}`
+        : subject === "speaking" || subject === "speaking2" || subject === "speaking3"
+          ? `data/${subject === "speaking3" ? "speaking3" : subject === "speaking2" ? "speaking2" : "speaking"}-lesson-${Number(lesson)}.json?v=${Date.now()}`
           : "data/nghe1-tests.json";
     const res = await fetch(dataFile);
     if (!res.ok) throw new Error("Không tải được dữ liệu câu hỏi");
@@ -840,7 +874,7 @@
       return;
     }
 
-    if (subject === "speaking") {
+    if (subject === "speaking" || subject === "speaking2" || subject === "speaking3") {
       const lessonData = await res.json();
       if (content === "example") {
         speakingExampleTestCount = Math.max(
@@ -1128,6 +1162,7 @@
     if (answerInput) answerInput.disabled = true;
 
     if (isCorrect) {
+      recordCorrectAnswerForStats(q, userAnswer);
       if (isReflexTyping) {
         if (answerStates[currentIndex] !== "correct") exp += 1;
         answerStates[currentIndex] = "correct";

@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chọn Mục - Chinese Learning</title>
+    <script>
+      try {
+        if (localStorage.getItem("menuTheme") === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
@@ -48,25 +55,25 @@
             return;
           }
         }
-        if (subject === "speaking") {
+        if (subject === "speaking" || subject === "speaking2" || subject === "speaking3") {
           if (content === "vocabulary") {
-            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=paragraph`;
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=paragraph`;
             return;
           }
           if (content === "grammar") {
-            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=grammar`;
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=grammar`;
             return;
           }
           if (content === "words") {
-            window.location.href = `vocabulary.html?lesson=${lesson}&subject=speaking`;
+            window.location.href = `vocabulary.html?lesson=${lesson}&subject=${subject}`;
             return;
           }
           if (content === "structure") {
-            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=structure`;
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=structure`;
             return;
           }
           if (content === "example") {
-            window.location.href = `review.html?lesson=${lesson}&subject=speaking&content=example`;
+            window.location.href = `review.html?lesson=${lesson}&subject=${subject}&content=example`;
             return;
           }
         }
@@ -147,8 +154,8 @@
         window.location.href =
           subject === "writing"
             ? "lessons.html?subject=writing"
-            : subject === "speaking"
-              ? "lessons.html?subject=speaking"
+            : subject === "speaking" || subject === "speaking2" || subject === "speaking3"
+              ? `lessons.html?subject=${subject}`
               : subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6"
                 ? `lessons.html?subject=${subject}`
               : "lessons.html";
@@ -171,6 +178,40 @@
         "10": ["地铁比公共汽车快", "Tàu điện ngầm nhanh hơn xe buýt."],
         "11": ["去药店不如去医院", "Đi hiệu thuốc không bằng đi bệnh viện."],
         "12": ["家家都是新房子", "Nhà nào cũng là nhà mới."],
+      };
+      const speaking2LessonTitles = {
+        "1": ["第一天", "附近有吃饭的地方吗 / 你有什么打算"],
+        "2": ["入乡随俗", "叫错了也没什么 / 这样能行吗"],
+        "3": ["家乡", "你是哪儿的人呀 / 我的家乡"],
+        "4": ["去还是留", "你想过在这儿工作吗 / 故乡的歌"],
+        "5": ["工作狂", "爱干活儿的鬼 / 你是什么狂"],
+        "6": ["学校社团", "我想多认识一些中国学生 / 欢迎你加入"],
+        "7": ["请客", "今天我请客 / 你们有外卖吗"],
+        "8": ["我想退这条裤子", "我想退这条裤子 / 两位请慢用"],
+        "9": ["租房", "我想租房子 / 异性合租"],
+        "10": ["信与不信", "怎么办 / 天下还有这种好事儿"],
+        "11": ["学习与考试", "你怎么学习 / 我就喜欢考试"],
+        "12": ["勤工俭学", "你找到什么新工作了 / 我想找个工作"],
+        "13": ["旅游", "你们的西安游是怎么安排的 / 新疆好玩儿极了"],
+        "14": ["看什么书", "我一般看畅销书 / 我最喜欢的一本书"],
+        "15": ["最难忘的", "快回国了吧 / 最难忘的一课"],
+      };
+      const speaking3LessonTitles = {
+        "1": ["在家靠父母，出门靠朋友", "我想办张银行卡 / 附近有超市吗 / 我不吃香菜"],
+        "2": ["三口之家是理想的家庭吗", "三口之家是理想的家庭吗 / 无理由离婚时代 / 婚姻是爱情的坟墓吗"],
+        "3": ["刷卡消费，享受生活", "请填一下这张表 / 请问，您有会员卡吗 / 刷卡消费，享受生活"],
+        "4": ["啃老族：哀其不幸，怒其不争", "啃老族是世界性难题 / 这种说法站不住脚 / 戴着有色眼镜看问题"],
+        "5": ["的哥，辛苦了", "现在没心思聊天儿了 / 这样开车太危险了 / 酒后驾车是全球公敌"],
+        "6": ["月亮代表我的心", "生活中不能没有音乐 / 你喜欢听什么音乐 / 月亮代表我的心"],
+        "7": ["捡了芝麻，丢了西瓜", "笼子里的肉 / 捡了芝麻，丢了西瓜 / 因小失大及语言的雅与俗"],
+        "8": ["教育需要培养全面发展的人", "一个中学生的作息时间表 / 能谈谈您的看法吗 / 什么是教育"],
+        "9": ["需要的话，我们给你打电话", "需要的话，我们给你打电话 / 能不能占用您几分钟时间 / 我工作，所以我快乐"],
+        "10": ["旁观者清，当局者迷", "旁观者清，当局者迷 / 多挤点儿时间，多读点儿书 / 地域与文化"],
+        "11": ["城市让生活更美好", "如果我是一个城市的市长 / 算了，我还是当普通老百姓吧 / 城市化的利与弊"],
+        "12": ["低碳生活，从我做起", "当“慢”成为难得的奢侈 / 其实，我早就有这个愿望 / 低碳生活，从我做起"],
+        "13": ["虚拟时代，一切皆有可能", "你会选择无纸化阅读吗 / 我迷上了网上购物 / 虚拟时代，一切皆有可能"],
+        "14": ["知足者常乐", "知足者常乐 / 这山望着那山高 / 富翁的诡计"],
+        "15": ["己所不欲，勿施于人", "以后不要用红笔写作业 / 己所不欲，勿施于人 / 居必择邻，游必就士"],
       };
       const writingLessonTitles = {
         "1": ["我的朋友——李明", "Bạn của tôi — Lý Minh"],
@@ -304,7 +345,7 @@
         "24": ["第一次坐飞机", "Lần đầu tiên đi máy bay"],
       };
       document.getElementById("lessonTitle").textContent =
-        subject === "writing" || subject === "speaking"
+        subject === "writing" || subject === "speaking" || subject === "speaking2" || subject === "speaking3"
           || subject === "hanyu1" || subject === "hanyu2" || subject === "hanyu3" || subject === "hanyu4" || subject === "hanyu5" || subject === "hanyu6"
           ? `Bài ${lessonNumber}`
           : `Bài ${String(Number(lesson)).padStart(2, "0")} ${listeningLessonTitles[lessonNumber]?.[0] || ""}`;
@@ -350,8 +391,7 @@
         const listHref = subjectKey === "listening"
           ? "lessons.html?subject=listening"
           : `lessons.html?subject=${subjectKey}`;
-        const subjectHomeHref =
-          subjectKey === "hanyu1" || subjectKey === "hanyu2" || subjectKey === "hanyu3" || subjectKey === "hanyu4" || subjectKey === "hanyu5" || subjectKey === "hanyu6" ? "index.html" : listHref;
+        const subjectHomeHref = "index.html";
         const courseTitle = config.courseTitle || "初级口语（II）";
         const courseDesc = config.courseDesc || "luyện nói giao tiếp";
         const heroIcon = config.heroIcon || "🎙";
@@ -508,6 +548,26 @@
 
       if (subject === "speaking") {
         renderSpeakingLessonOptions();
+      } else if (subject === "speaking2") {
+        renderSpeakingLessonOptions({
+          subjectKey: "speaking2",
+          subjectLabel: "Khẩu ngữ",
+          courseTitle: "中级口语（I）",
+          courseDesc: "luyện nói trung cấp",
+          heroIcon: "💬",
+          lessonTotal: 15,
+          titlePair: speaking2LessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Luyện nói trung cấp"],
+        });
+      } else if (subject === "speaking3") {
+        renderSpeakingLessonOptions({
+          subjectKey: "speaking3",
+          subjectLabel: "Khẩu ngữ",
+          courseTitle: "中级口语（II）",
+          courseDesc: "luyện nói trung cấp",
+          heroIcon: "💬",
+          lessonTotal: 15,
+          titlePair: speaking3LessonTitles[lessonNumber] || [`Bài ${lessonNumber}`, "Luyện nói trung cấp"],
+        });
       } else if (subject === "writing") {
         renderSpeakingLessonOptions({
           subjectKey: "writing",
@@ -914,7 +974,8 @@
         });
       }
     </script>
-  </body>
+<script type="module" src="js/protected-route.js"></script>
+</body>
 </html>
 
 

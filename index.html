@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FTC - Học tiếng Trung</title>
+    <script>
+      try {
+        if (localStorage.getItem("menuTheme") === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <link rel="stylesheet" href="css/dashboard.css" />
   </head>
@@ -65,10 +72,10 @@
           </div>
 
           <div class="profile-chip">
-            <span class="avatar" aria-hidden="true">人</span>
+            <span class="avatar" aria-hidden="true" data-auth-avatar>人</span>
             <span>
-              <strong>Xin chào, Học viên</strong>
-              <small>Lv. 0 · 0 / 0 EXP</small>
+              <strong data-auth-name>Xin chào, Học viên</strong>
+              <small data-auth-email>Lv. 0 · 0 / 0 EXP</small>
               <span class="zero-bar"><span></span></span>
             </span>
             <button
@@ -82,6 +89,9 @@
               <span class="theme-switch-track" aria-hidden="true">
                 <span class="theme-switch-thumb"></span>
               </span>
+            </button>
+            <button class="auth-logout-btn" type="button" data-auth-logout>
+              Đăng xuất
             </button>
           </div>
         </header>
@@ -178,5 +188,6 @@
     </nav>
     <div class="dashboard-toast" id="dashboardToast" role="status" aria-live="polite"></div>
     <script src="js/dashboard.js" defer></script>
+    <script type="module" src="js/protected-route.js"></script>
   </body>
 </html>

@@ -1,0 +1,1677 @@
+﻿{
+    "title":  "第一天",
+    "vietnameseTitle":  "附近有吃饭的地方吗 / 你有什么打算",
+    "textTitles":  [
+                       "附近有吃饭的地方吗",
+                       "你有什么打算"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "新生",
+                           "pinyin":  "xīnshēng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tân sinh",
+                           "vietnamese":  "học sinh/sinh viên mới",
+                           "examples":  [
+                                            {
+                                                "chinese":  "很多新生今天来学校报到。",
+                                                "pinyin":  "Hěn duō xīnshēng jīntiān lái xuéxiào bàodào.",
+                                                "vietnamese":  "Rất nhiều sinh viên mới hôm nay đến trường làm thủ tục nhập học."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "特色",
+                           "pinyin":  "tèsè",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đặc sắc",
+                           "vietnamese":  "đặc sắc, nét riêng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个学校的汉语课很有特色。",
+                                                "pinyin":  "Zhège xuéxiào de Hànyǔ kè hěn yǒu tèsè.",
+                                                "vietnamese":  "Lớp tiếng Trung của trường này rất có nét đặc sắc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "小吃",
+                           "pinyin":  "xiǎochī",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tiểu cật",
+                           "vietnamese":  "món ăn vặt, đồ ăn nhẹ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "校园里有很多好吃的小吃。",
+                                                "pinyin":  "Xiàoyuán lǐ yǒu hěn duō hǎochī de xiǎochī.",
+                                                "vietnamese":  "Trong khuôn viên trường có rất nhiều món ăn vặt ngon."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "校园",
+                           "pinyin":  "xiàoyuán",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "hiệu viên",
+                           "vietnamese":  "khuôn viên trường",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我们的校园又安静又漂亮。",
+                                                "pinyin":  "Wǒmen de xiàoyuán yòu ānjìng yòu piàoliang.",
+                                                "vietnamese":  "Khuôn viên trường chúng tôi vừa yên tĩnh vừa đẹp."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "设施",
+                           "pinyin":  "shèshī",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thiết thi",
+                           "vietnamese":  "cơ sở vật chất, thiết bị",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这所学校的体育设施很齐全。",
+                                                "pinyin":  "Zhè suǒ xuéxiào de tǐyù shèshī hěn qíquán.",
+                                                "vietnamese":  "Cơ sở vật chất thể thao của trường này rất đầy đủ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "健身",
+                           "pinyin":  "jiànshēn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "kiện thân",
+                           "vietnamese":  "tập thể dục, rèn luyện sức khỏe",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我每天晚上去健身房健身。",
+                                                "pinyin":  "Wǒ měi tiān wǎnshang qù jiànshēnfáng jiànshēn.",
+                                                "vietnamese":  "Tối nào tôi cũng đến phòng gym tập thể dục."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "证",
+                           "pinyin":  "zhèng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "chứng",
+                           "vietnamese":  "giấy chứng nhận, thẻ, chứng chỉ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "进图书馆需要学生证。",
+                                                "pinyin":  "Jìn túshūguǎn xūyào xuéshengzhèng.",
+                                                "vietnamese":  "Vào thư viện cần có thẻ sinh viên."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "费用",
+                           "pinyin":  "fèiyòng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "phí dụng",
+                           "vietnamese":  "chi phí, phí",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个活动的费用不太高。",
+                                                "pinyin":  "Zhège huódòng de fèiyòng bú tài gāo.",
+                                                "vietnamese":  "Chi phí của hoạt động này không quá cao."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "哦",
+                           "pinyin":  "ò",
+                           "partOfSpeech":  "叹",
+                           "sinoVietnamese":  "nga",
+                           "vietnamese":  "ồ, à",
+                           "examples":  [
+                                            {
+                                                "chinese":  "哦，我明白你的意思了。",
+                                                "pinyin":  "Ò, wǒ míngbai nǐ de yìsi le.",
+                                                "vietnamese":  "Ồ, tôi hiểu ý của bạn rồi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "门票",
+                           "pinyin":  "ménpiào",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "môn phiếu",
+                           "vietnamese":  "vé vào cửa",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个景点的门票有点儿贵。",
+                                                "pinyin":  "Zhège jǐngdiǎn de ménpiào yǒu diǎnr guì.",
+                                                "vietnamese":  "Vé vào cửa của điểm tham quan này hơi đắt."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "辣",
+                           "pinyin":  "là",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "lạt",
+                           "vietnamese":  "cay",
+                           "examples":  [
+                                            {
+                                                "chinese":  "四川菜很辣，但是很多人喜欢吃。",
+                                                "pinyin":  "Sìchuān cài hěn là, dànshì hěn duō rén xǐhuān chī.",
+                                                "vietnamese":  "Món Tứ Xuyên rất cay, nhưng nhiều người thích ăn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "旅游",
+                           "pinyin":  "lǚyóu",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "lữ du",
+                           "vietnamese":  "du lịch",
+                           "examples":  [
+                                            {
+                                                "chinese":  "暑假我想和朋友一起去上海旅游。",
+                                                "pinyin":  "Shǔjià wǒ xiǎng hé péngyou yìqǐ qù Shànghǎi lǚyóu.",
+                                                "vietnamese":  "Kỳ nghỉ hè tôi muốn đi du lịch Thượng Hải cùng bạn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "此外",
+                           "pinyin":  "cǐwài",
+                           "partOfSpeech":  "连",
+                           "sinoVietnamese":  "thử ngoại",
+                           "vietnamese":  "ngoài ra, bên cạnh đó",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这里有很多小吃，此外还有美丽的景色。",
+                                                "pinyin":  "Zhèlǐ yǒu hěn duō xiǎochī, cǐwài hái yǒu měilì de jǐngsè.",
+                                                "vietnamese":  "Ở đây có nhiều món ăn vặt, ngoài ra còn có phong cảnh đẹp."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "上海",
+                           "pinyin":  "Shànghǎi",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Thượng Hải",
+                           "vietnamese":  "Thượng Hải",
+                           "examples":  [
+                                            {
+                                                "chinese":  "上海是一个非常现代化的大城市。",
+                                                "pinyin":  "Shànghǎi shì yí ge fēicháng xiàndàihuà de dà chéngshì.",
+                                                "vietnamese":  "Thượng Hải là một thành phố lớn rất hiện đại."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "香港",
+                           "pinyin":  "Xiānggǎng",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Hương Cảng",
+                           "vietnamese":  "Hồng Kông",
+                           "examples":  [
+                                            {
+                                                "chinese":  "香港有很多有特色的小吃和商店。",
+                                                "pinyin":  "Xiānggǎng yǒu hěn duō yǒu tèsè de xiǎochī hé shāngdiàn.",
+                                                "vietnamese":  "Hồng Kông có rất nhiều món ăn vặt và cửa hàng đặc sắc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "西安",
+                           "pinyin":  "Xī’ān",
+                           "partOfSpeech":  "专名",
+                           "sinoVietnamese":  "Tây An",
+                           "vietnamese":  "Tây An",
+                           "examples":  [
+                                            {
+                                                "chinese":  "西安的历史很长，值得去旅游。",
+                                                "pinyin":  "Xī’ān de lìshǐ hěn cháng, zhíde qù lǚyóu.",
+                                                "vietnamese":  "Tây An có lịch sử rất lâu đời, đáng để đi du lịch."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "你好，请问，附近有吃饭的地方吗？",
+                          "pinyin":  "Nǐ hǎo, qǐngwèn, fùjìn yǒu chīfàn de dìfang ma?",
+                          "vietnamese":  "Xin chào, cho hỏi gần đây có chỗ ăn cơm không?"
+                      },
+                      {
+                          "chinese":  "有啊，学校里有学生食堂、教师餐厅，还有饭馆，吃饭的地方很多。",
+                          "pinyin":  "Yǒu a, xuéxiào lǐ yǒu xuéshēng shítáng, jiàoshī cāntīng, hái yǒu fànguǎn, chīfàn de dìfang hěn duō.",
+                          "vietnamese":  "Có chứ, trong trường có nhà ăn sinh viên, nhà ăn giáo viên, còn có quán ăn, chỗ ăn rất nhiều."
+                      },
+                      {
+                          "chinese":  "学校里的食堂和餐厅，哪个好一点儿？",
+                          "pinyin":  "Xuéxiào lǐ de shítáng hé cāntīng, nǎge hǎo yìdiǎnr?",
+                          "vietnamese":  "Nhà ăn và nhà hàng trong trường, cái nào tốt hơn một chút?"
+                      },
+                      {
+                          "chinese":  "教师餐厅不错，不过有点儿贵。",
+                          "pinyin":  "Jiàoshī cāntīng búcuò, búguò yǒudiǎnr guì.",
+                          "vietnamese":  "Nhà ăn giáo viên khá tốt, nhưng hơi đắt."
+                      },
+                      {
+                          "chinese":  "学生也可以去教师餐厅吗？",
+                          "pinyin":  "Xuéshēng yě kěyǐ qù jiàoshī cāntīng ma?",
+                          "vietnamese":  "Sinh viên cũng có thể đến nhà ăn giáo viên không?"
+                      },
+                      {
+                          "chinese":  "当然可以。",
+                          "pinyin":  "Dāngrán kěyǐ.",
+                          "vietnamese":  "Tất nhiên là được."
+                      },
+                      {
+                          "chinese":  "学生食堂怎么样？",
+                          "pinyin":  "Xuéshēng shítáng zěnmeyàng?",
+                          "vietnamese":  "Nhà ăn sinh viên thế nào?"
+                      },
+                      {
+                          "chinese":  "学生食堂也不错，比较便宜，就是人太多。",
+                          "pinyin":  "Xuéshēng shítáng yě búcuò, bǐjiào piányi, jiùshì rén tài duō.",
+                          "vietnamese":  "Nhà ăn sinh viên cũng khá tốt, tương đối rẻ, chỉ là quá đông người."
+                      },
+                      {
+                          "chinese":  "谢谢你。",
+                          "pinyin":  "Xièxie nǐ.",
+                          "vietnamese":  "Cảm ơn bạn."
+                      },
+                      {
+                          "chinese":  "你是新生吧？",
+                          "pinyin":  "Nǐ shì xīnshēng ba?",
+                          "vietnamese":  "Bạn là sinh viên mới phải không?"
+                      },
+                      {
+                          "chinese":  "对，我是新生，对学校不熟悉，所以不知道去哪儿吃饭。",
+                          "pinyin":  "Duì, wǒ shì xīnshēng, duì xuéxiào bù shúxī, suǒyǐ bù zhīdào qù nǎr chīfàn.",
+                          "vietnamese":  "Đúng, tôi là sinh viên mới, không quen trường nên không biết đi đâu ăn cơm."
+                      },
+                      {
+                          "chinese":  "你是想吃中餐还是想吃西餐？",
+                          "pinyin":  "Nǐ shì xiǎng chī Zhōngcān háishi xiǎng chī Xīcān?",
+                          "vietnamese":  "Bạn muốn ăn món Trung hay món Tây?"
+                      },
+                      {
+                          "chinese":  "我刚来中国，想尝尝中餐。",
+                          "pinyin":  "Wǒ gāng lái Zhōngguó, xiǎng chángchang Zhōngcān.",
+                          "vietnamese":  "Tôi vừa đến Trung Quốc, muốn thử món Trung."
+                      },
+                      {
+                          "chinese":  "那你还是去教师餐厅吧，那儿的饭菜很有特色。",
+                          "pinyin":  "Nà nǐ háishi qù jiàoshī cāntīng ba, nàr de fàncài hěn yǒu tèsè.",
+                          "vietnamese":  "Vậy bạn vẫn nên đến nhà ăn giáo viên, đồ ăn ở đó rất có đặc sắc."
+                      },
+                      {
+                          "chinese":  "那儿什么东西好吃？",
+                          "pinyin":  "Nàr shénme dōngxi hǎochī?",
+                          "vietnamese":  "Ở đó món gì ngon?"
+                      },
+                      {
+                          "chinese":  "那儿的小吃最好，贵是贵了点儿，不过味道很不错。",
+                          "pinyin":  "Nàr de xiǎochī zuì hǎo, guì shì guì le diǎnr, búguò wèidào hěn búcuò.",
+                          "vietnamese":  "Đồ ăn nhẹ ở đó ngon nhất, đắt thì có đắt một chút, nhưng mùi vị rất ngon."
+                      },
+                      {
+                          "chinese":  "教师餐厅离这儿远吗？",
+                          "pinyin":  "Jiàoshī cāntīng lí zhèr yuǎn ma?",
+                          "vietnamese":  "Nhà ăn giáo viên cách đây xa không?"
+                      },
+                      {
+                          "chinese":  "走倒是不远，就是不太好找。这样吧，你跟我走，我也要去那儿。",
+                          "pinyin":  "Zǒu dào shì bù yuǎn, jiùshì bú tài hǎo zhǎo. Zhèyàng ba, nǐ gēn wǒ zǒu, wǒ yě yào qù nàr.",
+                          "vietnamese":  "Đi bộ thì không xa, chỉ là không dễ tìm lắm. Thế này nhé, bạn đi theo tôi, tôi cũng muốn đến đó."
+                      },
+                      {
+                          "chinese":  "太好了，谢谢你。我叫大卫，认识你很高兴。",
+                          "pinyin":  "Tài hǎo le, xièxie nǐ. Wǒ jiào Dàwèi, rènshi nǐ hěn gāoxìng.",
+                          "vietnamese":  "Tốt quá, cảm ơn bạn. Tôi tên là David, rất vui được quen bạn."
+                      },
+                      {
+                          "chinese":  "我叫王丽，认识你我也很高兴。",
+                          "pinyin":  "Wǒ jiào Wáng Lì, rènshi nǐ wǒ yě hěn gāoxìng.",
+                          "vietnamese":  "Tôi tên là Vương Lệ, tôi cũng rất vui được quen bạn."
+                      },
+                      {
+                          "chinese":  "学校里有体育馆吗？",
+                          "pinyin":  "Xuéxiào lǐ yǒu tǐyùguǎn ma?",
+                          "vietnamese":  "Trong trường có nhà thể thao không?"
+                      },
+                      {
+                          "chinese":  "有，新体育馆就在校园西边。",
+                          "pinyin":  "Yǒu, xīn tǐyùguǎn jiù zài xiàoyuán xībiān.",
+                          "vietnamese":  "Có, nhà thể thao mới ở ngay phía tây khuôn viên trường."
+                      },
+                      {
+                          "chinese":  "体育设施多吗？",
+                          "pinyin":  "Tǐyù shèshī duō ma?",
+                          "vietnamese":  "Cơ sở vật chất thể thao có nhiều không?"
+                      },
+                      {
+                          "chinese":  "体育设施很多，可以打球，可以健身，还可以游泳。",
+                          "pinyin":  "Tǐyù shèshī hěn duō, kěyǐ dǎqiú, kěyǐ jiànshēn, hái kěyǐ yóuyǒng.",
+                          "vietnamese":  "Cơ sở thể thao rất nhiều, có thể chơi bóng, tập thể hình, còn có thể bơi."
+                      },
+                      {
+                          "chinese":  "留学生也可以去吗？",
+                          "pinyin":  "Liúxuéshēng yě kěyǐ qù ma?",
+                          "vietnamese":  "Lưu học sinh cũng có thể đi không?"
+                      },
+                      {
+                          "chinese":  "可以去，只要你带着自己的学生证就行。",
+                          "pinyin":  "Kěyǐ qù, zhǐyào nǐ dàizhe zìjǐ de xuéshēngzhèng jiù xíng.",
+                          "vietnamese":  "Có thể đi, chỉ cần bạn mang theo thẻ sinh viên của mình là được."
+                      },
+                      {
+                          "chinese":  "费用怎么样？贵吗？",
+                          "pinyin":  "Fèiyòng zěnmeyàng? Guì ma?",
+                          "vietnamese":  "Chi phí thế nào? Có đắt không?"
+                      },
+                      {
+                          "chinese":  "贵倒是不贵，就是有的时候人比较多，特别是周末和下午。",
+                          "pinyin":  "Guì dào shì bú guì, jiùshì yǒu de shíhou rén bǐjiào duō, tèbié shì zhōumò hé xiàwǔ.",
+                          "vietnamese":  "Đắt thì không đắt, chỉ là có lúc khá đông người, đặc biệt là cuối tuần và buổi chiều."
+                      },
+                      {
+                          "chinese":  "什么时候人少？",
+                          "pinyin":  "Shénme shíhou rén shǎo?",
+                          "vietnamese":  "Khi nào ít người?"
+                      },
+                      {
+                          "chinese":  "你最好早上8点以前去，这个时间人少。",
+                          "pinyin":  "Nǐ zuì hǎo zǎoshang bā diǎn yǐqián qù, zhège shíjiān rén shǎo.",
+                          "vietnamese":  "Tốt nhất bạn nên đi trước 8 giờ sáng, thời gian này ít người."
+                      },
+                      {
+                          "chinese":  "哦。不过早上8点太早了。",
+                          "pinyin":  "Ò. Búguò zǎoshang bā diǎn tài zǎo le.",
+                          "vietnamese":  "Ồ. Nhưng 8 giờ sáng thì sớm quá."
+                      },
+                      {
+                          "chinese":  "那你还是晚上去吧，10点以后门票也便宜。",
+                          "pinyin":  "Nà nǐ háishi wǎnshang qù ba, shí diǎn yǐhòu ménpiào yě piányi.",
+                          "vietnamese":  "Vậy bạn nên đi buổi tối, sau 10 giờ vé cũng rẻ hơn."
+                      },
+                      {
+                          "chinese":  "好的。",
+                          "pinyin":  "Hǎo de.",
+                          "vietnamese":  "Được."
+                      },
+                      {
+                          "chinese":  "你看，这就是教师餐厅，我们到了。",
+                          "pinyin":  "Nǐ kàn, zhè jiù shì jiàoshī cāntīng, wǒmen dào le.",
+                          "vietnamese":  "Bạn xem, đây chính là nhà ăn giáo viên, chúng ta đến rồi."
+                      },
+                      {
+                          "chinese":  "怎么样，喜欢吃中餐吗？",
+                          "pinyin":  "Zěnmeyàng, xǐhuan chī Zhōngcān ma?",
+                          "vietnamese":  "Thế nào, bạn thích ăn món Trung không?"
+                      },
+                      {
+                          "chinese":  "很喜欢，就是这个菜有点儿辣。",
+                          "pinyin":  "Hěn xǐhuan, jiùshì zhège cài yǒudiǎnr là.",
+                          "vietnamese":  "Rất thích, chỉ là món này hơi cay."
+                      },
+                      {
+                          "chinese":  "那你要告诉服务员，你不吃辣的。",
+                          "pinyin":  "Nà nǐ yào gàosu fúwùyuán, nǐ bù chī là de.",
+                          "vietnamese":  "Vậy bạn phải nói với nhân viên phục vụ là bạn không ăn cay."
+                      },
+                      {
+                          "chinese":  "没关系，辣是辣了点儿，不过很好吃。",
+                          "pinyin":  "Méi guānxi, là shì là le diǎnr, búguò hěn hǎochī.",
+                          "vietnamese":  "Không sao, cay thì có cay một chút, nhưng rất ngon."
+                      },
+                      {
+                          "chinese":  "你打算在中国学习多长时间？",
+                          "pinyin":  "Nǐ dǎsuàn zài Zhōngguó xuéxí duō cháng shíjiān?",
+                          "vietnamese":  "Bạn dự định học ở Trung Quốc bao lâu?"
+                      },
+                      {
+                          "chinese":  "六个月。",
+                          "pinyin":  "Liù ge yuè.",
+                          "vietnamese":  "Sáu tháng."
+                      },
+                      {
+                          "chinese":  "你还有别的打算吗？",
+                          "pinyin":  "Nǐ hái yǒu bié de dǎsuàn ma?",
+                          "vietnamese":  "Bạn còn dự định nào khác không?"
+                      },
+                      {
+                          "chinese":  "我想去上海、香港和西安旅游。此外，还想学中国画。",
+                          "pinyin":  "Wǒ xiǎng qù Shànghǎi, Xiānggǎng hé Xī’ān lǚyóu. Cǐwài, hái xiǎng xué Zhōngguóhuà.",
+                          "vietnamese":  "Tôi muốn đi du lịch Thượng Hải, Hồng Kông và Tây An. Ngoài ra, còn muốn học tranh Trung Quốc."
+                      },
+                      {
+                          "chinese":  "哦，那你最好找个中国画老师。",
+                          "pinyin":  "Ò, nà nǐ zuì hǎo zhǎo ge Zhōngguóhuà lǎoshī.",
+                          "vietnamese":  "Ồ, vậy tốt nhất bạn nên tìm một giáo viên dạy tranh Trung Quốc."
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "……，不过……",
+                        "meaning":  "…, nhưng mà…",
+                        "usage":  "Dùng để chuyển ý nhẹ, phía sau nói điểm chưa tốt hoặc ý trái ngược",
+                        "note":  "Nhẹ hơn 但是, dùng nhiều trong khẩu ngữ",
+                        "example":  "这家饭店菜很好吃，不过价格有点儿贵。",
+                        "pinyin":  "Zhè jiā fàndiàn cài hěn hǎochī, búguò jiàgé yǒudiǎnr guì.",
+                        "vietnamese":  "Nhà hàng này món ăn rất ngon, nhưng giá hơi đắt.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……，就是……",
+                        "meaning":  "…, chỉ là…",
+                        "usage":  "Dùng để bổ sung một vấn đề nhỏ sau nhận xét chính",
+                        "note":  "Thường nói khuyết điểm nhỏ",
+                        "example":  "这个房子挺好，就是离学校有点儿远。",
+                        "pinyin":  "Zhège fángzi tǐng hǎo, jiùshì lí xuéxiào yǒudiǎnr yuǎn.",
+                        "vietnamese":  "Căn nhà này khá tốt, chỉ là hơi xa trường.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "A 是 A，不过……",
+                        "meaning":  "A thì đúng là A, nhưng…",
+                        "usage":  "Thừa nhận một điểm trước, sau đó nói ý trái ngược",
+                        "note":  "Hay dùng với tính từ: 好是好、贵是贵",
+                        "example":  "这件衣服好是好，不过不太适合我。",
+                        "pinyin":  "Zhè jiàn yīfu hǎo shì hǎo, búguò bú tài shìhé wǒ.",
+                        "vietnamese":  "Bộ quần áo này tốt thì đúng là tốt, nhưng không hợp với tôi lắm.",
+                        "level":  "⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "最好 + V",
+                        "meaning":  "Tốt nhất là nên…",
+                        "usage":  "Dùng để đưa ra lời khuyên",
+                        "note":  "Sau 最好 thường là động từ hoặc cụm động từ",
+                        "example":  "你明天最好早点儿去医院检查。",
+                        "pinyin":  "Nǐ míngtiān zuìhǎo zǎodiǎnr qù yīyuàn jiǎnchá.",
+                        "vietnamese":  "Ngày mai bạn tốt nhất nên đi bệnh viện kiểm tra sớm một chút.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "打算 + V / N",
+                        "meaning":  "Dự định…",
+                        "usage":  "Dùng để nói kế hoạch trong tương lai",
+                        "note":  "Có thể nói 打算去、打算买、有什么打算",
+                        "example":  "我打算下个月去北京学习汉语。",
+                        "pinyin":  "Wǒ dǎsuàn xià ge yuè qù Běijīng xuéxí Hànyǔ.",
+                        "vietnamese":  "Tôi dự định tháng sau đi Bắc Kinh học tiếng Trung.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "新生刚到学校时，最好先熟悉校园环境。",
+                        "pinyin":  "Xīnshēng gāng dào xuéxiào shí, zuìhǎo xiān shúxī xiàoyuán huánjìng.",
+                        "vietnamese":  "Khi sinh viên mới vừa đến trường, tốt nhất nên làm quen môi trường khuôn viên trước.",
+                        "answer":  "新生刚到学校时，最好先熟悉校园环境。"
+                    },
+                    {
+                        "chinese":  "学校为新生安排了一场校园介绍会。",
+                        "pinyin":  "Xuéxiào wèi xīnshēng ānpái le yì chǎng xiàoyuán jièshào huì.",
+                        "vietnamese":  "Trường đã sắp xếp một buổi giới thiệu khuôn viên cho sinh viên mới.",
+                        "answer":  "学校为新生安排了一场校园介绍会。"
+                    },
+                    {
+                        "chinese":  "这些新生来自不同城市，生活习惯也不一样。",
+                        "pinyin":  "Zhèxiē xīnshēng láizì bùtóng chéngshì, shēnghuó xíguàn yě bù yíyàng.",
+                        "vietnamese":  "Những sinh viên mới này đến từ các thành phố khác nhau, thói quen sống cũng không giống nhau.",
+                        "answer":  "这些新生来自不同城市，生活习惯也不一样。"
+                    },
+                    {
+                        "chinese":  "新生报名时需要带学生证和身份证。",
+                        "pinyin":  "Xīnshēng bàomíng shí xūyào dài xuéshēngzhèng hé shēnfènzhèng.",
+                        "vietnamese":  "Khi đăng ký, sinh viên mới cần mang thẻ sinh viên và chứng minh thư.",
+                        "answer":  "新生报名时需要带学生证和身份证。"
+                    },
+                    {
+                        "chinese":  "老师提醒新生注意安全，不要随便离开校园。",
+                        "pinyin":  "Lǎoshī tíxǐng xīnshēng zhùyì ānquán, búyào suíbiàn líkāi xiàoyuán.",
+                        "vietnamese":  "Giáo viên nhắc sinh viên mới chú ý an toàn, đừng tùy tiện rời khuôn viên.",
+                        "answer":  "老师提醒新生注意安全，不要随便离开校园。"
+                    },
+                    {
+                        "chinese":  "新生如果不熟悉路线，可以问志愿者。",
+                        "pinyin":  "Xīnshēng rúguǒ bù shúxī lùxiàn, kěyǐ wèn zhìyuànzhě.",
+                        "vietnamese":  "Nếu sinh viên mới không quen đường, có thể hỏi tình nguyện viên.",
+                        "answer":  "新生如果不熟悉路线，可以问志愿者。"
+                    },
+                    {
+                        "chinese":  "这次活动主要是为了帮助新生了解学校。",
+                        "pinyin":  "Zhè cì huódòng zhǔyào shì wèile bāngzhù xīnshēng liǎojiě xuéxiào.",
+                        "vietnamese":  "Hoạt động lần này chủ yếu nhằm giúp sinh viên mới hiểu về trường.",
+                        "answer":  "这次活动主要是为了帮助新生了解学校。"
+                    },
+                    {
+                        "chinese":  "新生宿舍离食堂不远，生活很方便。",
+                        "pinyin":  "Xīnshēng sùshè lí shítáng bù yuǎn, shēnghuó hěn fāngbiàn.",
+                        "vietnamese":  "Ký túc xá sinh viên mới cách nhà ăn không xa, sinh hoạt rất tiện.",
+                        "answer":  "新生宿舍离食堂不远，生活很方便。"
+                    },
+                    {
+                        "chinese":  "很多新生第一次离开父母，难免有点紧张。",
+                        "pinyin":  "Hěn duō xīnshēng dì yī cì líkāi fùmǔ, nánmiǎn yǒudiǎn jǐnzhāng.",
+                        "vietnamese":  "Nhiều sinh viên mới lần đầu rời bố mẹ, khó tránh hơi căng thẳng.",
+                        "answer":  "很多新生第一次离开父母，难免有点紧张。"
+                    },
+                    {
+                        "chinese":  "学长给新生介绍了选课方式和费用。",
+                        "pinyin":  "Xuézhǎng gěi xīnshēng jièshào le xuǎnkè fāngshì hé fèiyòng.",
+                        "vietnamese":  "Anh khóa trên giới thiệu cho sinh viên mới cách chọn môn và chi phí.",
+                        "answer":  "学长给新生介绍了选课方式和费用。"
+                    },
+                    {
+                        "chinese":  "这所学校最大的特色是外语课程很多。",
+                        "pinyin":  "Zhè suǒ xuéxiào zuì dà de tèsè shì wàiyǔ kèchéng hěn duō.",
+                        "vietnamese":  "Nét đặc sắc lớn nhất của trường này là có nhiều khóa ngoại ngữ.",
+                        "answer":  "这所学校最大的特色是外语课程很多。"
+                    },
+                    {
+                        "chinese":  "每个城市都有自己的文化特色和生活方式。",
+                        "pinyin":  "Měi ge chéngshì dōu yǒu zìjǐ de wénhuà tèsè hé shēnghuó fāngshì.",
+                        "vietnamese":  "Mỗi thành phố đều có nét văn hóa và cách sống riêng.",
+                        "answer":  "每个城市都有自己的文化特色和生活方式。"
+                    },
+                    {
+                        "chinese":  "这家饭店的特色小吃很受学生欢迎。",
+                        "pinyin":  "Zhè jiā fàndiàn de tèsè xiǎochī hěn shòu xuésheng huānyíng.",
+                        "vietnamese":  "Món ăn vặt đặc sản của nhà hàng này rất được học sinh yêu thích.",
+                        "answer":  "这家饭店的特色小吃很受学生欢迎。"
+                    },
+                    {
+                        "chinese":  "校园建筑很有特色，很多游客都会拍照。",
+                        "pinyin":  "Xiàoyuán jiànzhù hěn yǒu tèsè, hěn duō yóukè dōu huì pāizhào.",
+                        "vietnamese":  "Kiến trúc khuôn viên trường rất có nét riêng, nhiều du khách đều chụp ảnh.",
+                        "answer":  "校园建筑很有特色，很多游客都会拍照。"
+                    },
+                    {
+                        "chinese":  "老师让我们介绍自己家乡的特色。",
+                        "pinyin":  "Lǎoshī ràng wǒmen jièshào zìjǐ jiāxiāng de tèsè.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi giới thiệu nét đặc sắc của quê hương mình.",
+                        "answer":  "老师让我们介绍自己家乡的特色。"
+                    },
+                    {
+                        "chinese":  "这个旅游项目的特色是费用低、路线短。",
+                        "pinyin":  "Zhège lǚyóu xiàngmù de tèsè shì fèiyòng dī, lùxiàn duǎn.",
+                        "vietnamese":  "Đặc điểm của chương trình du lịch này là chi phí thấp, tuyến đường ngắn.",
+                        "answer":  "这个旅游项目的特色是费用低、路线短。"
+                    },
+                    {
+                        "chinese":  "上海的城市特色和西安完全不一样。",
+                        "pinyin":  "Shànghǎi de chéngshì tèsè hé Xī’ān wánquán bù yíyàng.",
+                        "vietnamese":  "Đặc sắc đô thị của Thượng Hải và Tây An hoàn toàn khác nhau.",
+                        "answer":  "上海的城市特色和西安完全不一样。"
+                    },
+                    {
+                        "chinese":  "这门课有自己的特色，不只是讲语法。",
+                        "pinyin":  "Zhè mén kè yǒu zìjǐ de tèsè, bú zhǐshì jiǎng yǔfǎ.",
+                        "vietnamese":  "Môn học này có nét riêng, không chỉ giảng ngữ pháp.",
+                        "answer":  "这门课有自己的特色，不只是讲语法。"
+                    },
+                    {
+                        "chinese":  "如果想吸引新生，学校要突出校园特色。",
+                        "pinyin":  "Rúguǒ xiǎng xīyǐn xīnshēng, xuéxiào yào tūchū xiàoyuán tèsè.",
+                        "vietnamese":  "Nếu muốn thu hút sinh viên mới, trường phải làm nổi bật nét riêng của khuôn viên.",
+                        "answer":  "如果想吸引新生，学校要突出校园特色。"
+                    },
+                    {
+                        "chinese":  "这个地方虽然不大，但是很有地方特色。",
+                        "pinyin":  "Zhège dìfang suīrán bú dà, dànshì hěn yǒu dìfāng tèsè.",
+                        "vietnamese":  "Nơi này tuy không lớn nhưng rất có nét địa phương.",
+                        "answer":  "这个地方虽然不大，但是很有地方特色。"
+                    },
+                    {
+                        "chinese":  "我最喜欢吃学校门口的小吃。",
+                        "pinyin":  "Wǒ zuì xǐhuan chī xuéxiào ménkǒu de xiǎochī.",
+                        "vietnamese":  "Tôi thích nhất ăn đồ ăn vặt ở cổng trường.",
+                        "answer":  "我最喜欢吃学校门口的小吃。"
+                    },
+                    {
+                        "chinese":  "西安的小吃种类很多，味道也很有特色。",
+                        "pinyin":  "Xī’ān de xiǎochī zhǒnglèi hěn duō, wèidào yě hěn yǒu tèsè.",
+                        "vietnamese":  "Đồ ăn vặt Tây An có rất nhiều loại, hương vị cũng rất đặc sắc.",
+                        "answer":  "西安的小吃种类很多，味道也很有特色。"
+                    },
+                    {
+                        "chinese":  "这种小吃有点辣，但是越吃越香。",
+                        "pinyin":  "Zhè zhǒng xiǎochī yǒudiǎn là, dànshì yuè chī yuè xiāng.",
+                        "vietnamese":  "Món ăn vặt này hơi cay, nhưng càng ăn càng thơm.",
+                        "answer":  "这种小吃有点辣，但是越吃越香。"
+                    },
+                    {
+                        "chinese":  "新生第一次来校园，常常会买当地小吃。",
+                        "pinyin":  "Xīnshēng dì yī cì lái xiàoyuán, chángcháng huì mǎi dāngdì xiǎochī.",
+                        "vietnamese":  "Sinh viên mới lần đầu đến khuôn viên thường mua đồ ăn vặt địa phương.",
+                        "answer":  "新生第一次来校园，常常会买当地小吃。"
+                    },
+                    {
+                        "chinese":  "旅游的时候，我喜欢尝尝不同城市的小吃。",
+                        "pinyin":  "Lǚyóu de shíhou, wǒ xǐhuan chángchang bùtóng chéngshì de xiǎochī.",
+                        "vietnamese":  "Khi đi du lịch, tôi thích nếm thử đồ ăn vặt của các thành phố khác nhau.",
+                        "answer":  "旅游的时候，我喜欢尝尝不同城市的小吃。"
+                    },
+                    {
+                        "chinese":  "香港小吃价格不低，但是味道不错。",
+                        "pinyin":  "Xiānggǎng xiǎochī jiàgé bù dī, dànshì wèidào búcuò.",
+                        "vietnamese":  "Đồ ăn vặt Hồng Kông giá không thấp nhưng hương vị khá tốt.",
+                        "answer":  "香港小吃价格不低，但是味道不错。"
+                    },
+                    {
+                        "chinese":  "这条街不仅有小吃，而且有很多纪念品。",
+                        "pinyin":  "Zhè tiáo jiē bùjǐn yǒu xiǎochī, érqiě yǒu hěn duō jìniànpǐn.",
+                        "vietnamese":  "Con phố này không chỉ có đồ ăn vặt mà còn có nhiều đồ lưu niệm.",
+                        "answer":  "这条街不仅有小吃，而且有很多纪念品。"
+                    },
+                    {
+                        "chinese":  "老师提醒我们别吃太辣的小吃。",
+                        "pinyin":  "Lǎoshī tíxǐng wǒmen bié chī tài là de xiǎochī.",
+                        "vietnamese":  "Giáo viên nhắc chúng tôi đừng ăn đồ ăn vặt quá cay.",
+                        "answer":  "老师提醒我们别吃太辣的小吃。"
+                    },
+                    {
+                        "chinese":  "校园里的小吃店晚上十点才关门。",
+                        "pinyin":  "Xiàoyuán lǐ de xiǎochī diàn wǎnshang shí diǎn cái guānmén.",
+                        "vietnamese":  "Quán ăn vặt trong khuôn viên đến 10 giờ tối mới đóng cửa.",
+                        "answer":  "校园里的小吃店晚上十点才关门。"
+                    },
+                    {
+                        "chinese":  "他一边逛校园，一边介绍附近的小吃。",
+                        "pinyin":  "Tā yìbiān guàng xiàoyuán, yìbiān jièshào fùjìn de xiǎochī.",
+                        "vietnamese":  "Anh ấy vừa dạo khuôn viên vừa giới thiệu đồ ăn vặt gần đó.",
+                        "answer":  "他一边逛校园，一边介绍附近的小吃。"
+                    },
+                    {
+                        "chinese":  "校园里有图书馆、食堂和健身房。",
+                        "pinyin":  "Xiàoyuán lǐ yǒu túshūguǎn, shítáng hé jiànshēnfáng.",
+                        "vietnamese":  "Trong khuôn viên trường có thư viện, nhà ăn và phòng tập.",
+                        "answer":  "校园里有图书馆、食堂和健身房。"
+                    },
+                    {
+                        "chinese":  "新生刚来校园时，很容易找不到路。",
+                        "pinyin":  "Xīnshēng gāng lái xiàoyuán shí, hěn róngyì zhǎo bú dào lù.",
+                        "vietnamese":  "Khi sinh viên mới vừa đến khuôn viên, rất dễ không tìm được đường.",
+                        "answer":  "新生刚来校园时，很容易找不到路。"
+                    },
+                    {
+                        "chinese":  "我们学校的校园环境非常安静。",
+                        "pinyin":  "Wǒmen xuéxiào de xiàoyuán huánjìng fēicháng ānjìng.",
+                        "vietnamese":  "Môi trường khuôn viên trường chúng tôi vô cùng yên tĩnh.",
+                        "answer":  "我们学校的校园环境非常安静。"
+                    },
+                    {
+                        "chinese":  "校园里有很多特色建筑和漂亮花园。",
+                        "pinyin":  "Xiàoyuán lǐ yǒu hěn duō tèsè jiànzhù hé piàoliang huāyuán.",
+                        "vietnamese":  "Trong khuôn viên có nhiều kiến trúc đặc sắc và vườn hoa đẹp.",
+                        "answer":  "校园里有很多特色建筑和漂亮花园。"
+                    },
+                    {
+                        "chinese":  "晚上不要一个人在校园里走太远。",
+                        "pinyin":  "Wǎnshang búyào yí ge rén zài xiàoyuán lǐ zǒu tài yuǎn.",
+                        "vietnamese":  "Buổi tối đừng đi quá xa một mình trong khuôn viên.",
+                        "answer":  "晚上不要一个人在校园里走太远。"
+                    },
+                    {
+                        "chinese":  "这个校园虽然不大，但是设施很齐全。",
+                        "pinyin":  "Zhège xiàoyuán suīrán bú dà, dànshì shèshī hěn qíquán.",
+                        "vietnamese":  "Khuôn viên này tuy không lớn nhưng cơ sở vật chất rất đầy đủ.",
+                        "answer":  "这个校园虽然不大，但是设施很齐全。"
+                    },
+                    {
+                        "chinese":  "我喜欢在校园里散步，空气比市中心好。",
+                        "pinyin":  "Wǒ xǐhuan zài xiàoyuán lǐ sànbù, kōngqì bǐ shì zhōngxīn hǎo.",
+                        "vietnamese":  "Tôi thích đi dạo trong khuôn viên, không khí tốt hơn trung tâm thành phố.",
+                        "answer":  "我喜欢在校园里散步，空气比市中心好。"
+                    },
+                    {
+                        "chinese":  "校园门口需要刷学生证才能进去。",
+                        "pinyin":  "Xiàoyuán ménkǒu xūyào shuā xuéshēngzhèng cái néng jìnqù.",
+                        "vietnamese":  "Cổng khuôn viên cần quẹt thẻ sinh viên mới có thể vào.",
+                        "answer":  "校园门口需要刷学生证才能进去。"
+                    },
+                    {
+                        "chinese":  "学校安排志愿者带新生参观校园。",
+                        "pinyin":  "Xuéxiào ānpái zhìyuànzhě dài xīnshēng cānguān xiàoyuán.",
+                        "vietnamese":  "Trường sắp xếp tình nguyện viên dẫn sinh viên mới tham quan khuôn viên.",
+                        "answer":  "学校安排志愿者带新生参观校园。"
+                    },
+                    {
+                        "chinese":  "这个校园的生活费用比外面低一些。",
+                        "pinyin":  "Zhège xiàoyuán de shēnghuó fèiyòng bǐ wàimiàn dī yìxiē.",
+                        "vietnamese":  "Chi phí sinh hoạt trong khuôn viên này thấp hơn bên ngoài một chút.",
+                        "answer":  "这个校园的生活费用比外面低一些。"
+                    },
+                    {
+                        "chinese":  "这所学校的体育设施很先进。",
+                        "pinyin":  "Zhè suǒ xuéxiào de tǐyù shèshī hěn xiānjìn.",
+                        "vietnamese":  "Cơ sở vật chất thể thao của trường này rất hiện đại.",
+                        "answer":  "这所学校的体育设施很先进。"
+                    },
+                    {
+                        "chinese":  "校园设施越完善，学生生活越方便。",
+                        "pinyin":  "Xiàoyuán shèshī yuè wánshàn, xuésheng shēnghuó yuè fāngbiàn.",
+                        "vietnamese":  "Cơ sở vật chất khuôn viên càng hoàn thiện, đời sống sinh viên càng tiện.",
+                        "answer":  "校园设施越完善，学生生活越方便。"
+                    },
+                    {
+                        "chinese":  "新生应该先了解宿舍和教室设施。",
+                        "pinyin":  "Xīnshēng yīnggāi xiān liǎojiě sùshè hé jiàoshì shèshī.",
+                        "vietnamese":  "Sinh viên mới nên tìm hiểu cơ sở vật chất ký túc xá và phòng học trước.",
+                        "answer":  "新生应该先了解宿舍和教室设施。"
+                    },
+                    {
+                        "chinese":  "这里的健身设施对学生免费开放。",
+                        "pinyin":  "Zhèlǐ de jiànshēn shèshī duì xuésheng miǎnfèi kāifàng.",
+                        "vietnamese":  "Thiết bị tập luyện ở đây mở cửa miễn phí cho sinh viên.",
+                        "answer":  "这里的健身设施对学生免费开放。"
+                    },
+                    {
+                        "chinese":  "如果设施坏了，可以联系校园管理处。",
+                        "pinyin":  "Rúguǒ shèshī huài le, kěyǐ liánxì xiàoyuán guǎnlǐ chù.",
+                        "vietnamese":  "Nếu thiết bị hỏng, có thể liên hệ bộ phận quản lý khuôn viên.",
+                        "answer":  "如果设施坏了，可以联系校园管理处。"
+                    },
+                    {
+                        "chinese":  "学校投入了很多费用改善教学设施。",
+                        "pinyin":  "Xuéxiào tóurù le hěn duō fèiyòng gǎishàn jiàoxué shèshī.",
+                        "vietnamese":  "Trường đầu tư nhiều chi phí để cải thiện cơ sở giảng dạy.",
+                        "answer":  "学校投入了很多费用改善教学设施。"
+                    },
+                    {
+                        "chinese":  "图书馆设施很好，学习起来很舒服。",
+                        "pinyin":  "Túshūguǎn shèshī hěn hǎo, xuéxí qǐlái hěn shūfu.",
+                        "vietnamese":  "Cơ sở vật chất thư viện rất tốt, học rất thoải mái.",
+                        "answer":  "图书馆设施很好，学习起来很舒服。"
+                    },
+                    {
+                        "chinese":  "这些设施不仅方便学生，而且很安全。",
+                        "pinyin":  "Zhèxiē shèshī bùjǐn fāngbiàn xuésheng, érqiě hěn ānquán.",
+                        "vietnamese":  "Những cơ sở này không chỉ tiện cho sinh viên mà còn rất an toàn.",
+                        "answer":  "这些设施不仅方便学生，而且很安全。"
+                    },
+                    {
+                        "chinese":  "旅游区的公共设施需要经常检查。",
+                        "pinyin":  "Lǚyóu qū de gōnggòng shèshī xūyào jīngcháng jiǎnchá.",
+                        "vietnamese":  "Cơ sở công cộng ở khu du lịch cần được kiểm tra thường xuyên.",
+                        "answer":  "旅游区的公共设施需要经常检查。"
+                    },
+                    {
+                        "chinese":  "校园里的设施虽然不新，但是很实用。",
+                        "pinyin":  "Xiàoyuán lǐ de shèshī suīrán bù xīn, dànshì hěn shíyòng.",
+                        "vietnamese":  "Cơ sở vật chất trong khuôn viên tuy không mới nhưng rất thực dụng.",
+                        "answer":  "校园里的设施虽然不新，但是很实用。"
+                    },
+                    {
+                        "chinese":  "我每天晚上都会去健身。",
+                        "pinyin":  "Wǒ měitiān wǎnshang dōu huì qù jiànshēn.",
+                        "vietnamese":  "Mỗi tối tôi đều đi tập thể dục.",
+                        "answer":  "我每天晚上都会去健身。"
+                    },
+                    {
+                        "chinese":  "健身不仅能减轻压力，而且对身体有好处。",
+                        "pinyin":  "Jiànshēn bùjǐn néng jiǎnqīng yālì, érqiě duì shēntǐ yǒu hǎochu.",
+                        "vietnamese":  "Tập thể dục không chỉ giảm áp lực mà còn có lợi cho sức khỏe.",
+                        "answer":  "健身不仅能减轻压力，而且对身体有好处。"
+                    },
+                    {
+                        "chinese":  "校园健身房的费用比外面便宜。",
+                        "pinyin":  "Xiàoyuán jiànshēnfáng de fèiyòng bǐ wàimiàn piányi.",
+                        "vietnamese":  "Chi phí phòng gym trong khuôn viên rẻ hơn bên ngoài.",
+                        "answer":  "校园健身房的费用比外面便宜。"
+                    },
+                    {
+                        "chinese":  "他办了健身证以后，每周去三次。",
+                        "pinyin":  "Tā bàn le jiànshēn zhèng yǐhòu, měi zhōu qù sān cì.",
+                        "vietnamese":  "Sau khi làm thẻ tập gym, anh ấy mỗi tuần đi ba lần.",
+                        "answer":  "他办了健身证以后，每周去三次。"
+                    },
+                    {
+                        "chinese":  "新生可以免费使用部分健身设施。",
+                        "pinyin":  "Xīnshēng kěyǐ miǎnfèi shǐyòng bùfen jiànshēn shèshī.",
+                        "vietnamese":  "Sinh viên mới có thể dùng miễn phí một phần thiết bị tập luyện.",
+                        "answer":  "新生可以免费使用部分健身设施。"
+                    },
+                    {
+                        "chinese":  "健身以前，最好先做一些简单热身。",
+                        "pinyin":  "Jiànshēn yǐqián, zuìhǎo xiān zuò yìxiē jiǎndān rèshēn.",
+                        "vietnamese":  "Trước khi tập thể dục, tốt nhất khởi động đơn giản trước.",
+                        "answer":  "健身以前，最好先做一些简单热身。"
+                    },
+                    {
+                        "chinese":  "她坚持健身半年以后，身体明显好多了。",
+                        "pinyin":  "Tā jiānchí jiànshēn bàn nián yǐhòu, shēntǐ míngxiǎn hǎo duō le.",
+                        "vietnamese":  "Sau khi kiên trì tập thể dục nửa năm, sức khỏe cô ấy tốt lên rõ rệt.",
+                        "answer":  "她坚持健身半年以后，身体明显好多了。"
+                    },
+                    {
+                        "chinese":  "如果只学习不健身，身体会越来越差。",
+                        "pinyin":  "Rúguǒ zhǐ xuéxí bù jiànshēn, shēntǐ huì yuèláiyuè chà.",
+                        "vietnamese":  "Nếu chỉ học mà không tập thể dục, sức khỏe sẽ ngày càng kém.",
+                        "answer":  "如果只学习不健身，身体会越来越差。"
+                    },
+                    {
+                        "chinese":  "校园健身中心晚上十点结束开放。",
+                        "pinyin":  "Xiàoyuán jiànshēn zhōngxīn wǎnshang shí diǎn jiéshù kāifàng.",
+                        "vietnamese":  "Trung tâm tập luyện trong khuôn viên kết thúc mở cửa lúc 10 giờ tối.",
+                        "answer":  "校园健身中心晚上十点结束开放。"
+                    },
+                    {
+                        "chinese":  "老师建议新生养成健身的习惯。",
+                        "pinyin":  "Lǎoshī jiànyì xīnshēng yǎngchéng jiànshēn de xíguàn.",
+                        "vietnamese":  "Giáo viên khuyên sinh viên mới hình thành thói quen tập thể dục.",
+                        "answer":  "老师建议新生养成健身的习惯。"
+                    },
+                    {
+                        "chinese":  "进校园需要出示学生证。",
+                        "pinyin":  "Jìn xiàoyuán xūyào chūshì xuéshēngzhèng.",
+                        "vietnamese":  "Vào khuôn viên cần xuất trình thẻ sinh viên.",
+                        "answer":  "进校园需要出示学生证。"
+                    },
+                    {
+                        "chinese":  "这个证是免费办的，不需要交费用。",
+                        "pinyin":  "Zhège zhèng shì miǎnfèi bàn de, bù xūyào jiāo fèiyòng.",
+                        "vietnamese":  "Thẻ này được làm miễn phí, không cần nộp phí.",
+                        "answer":  "这个证是免费办的，不需要交费用。"
+                    },
+                    {
+                        "chinese":  "如果没有身份证，就不能买这张门票。",
+                        "pinyin":  "Rúguǒ méiyǒu shēnfènzhèng, jiù bù néng mǎi zhè zhāng ménpiào.",
+                        "vietnamese":  "Nếu không có chứng minh thư thì không thể mua vé vào cửa này.",
+                        "answer":  "如果没有身份证，就不能买这张门票。"
+                    },
+                    {
+                        "chinese":  "健身证丢了以后，要马上去办公室补办。",
+                        "pinyin":  "Jiànshēn zhèng diū le yǐhòu, yào mǎshàng qù bàngōngshì bǔbàn.",
+                        "vietnamese":  "Sau khi mất thẻ tập gym, phải lập tức đến văn phòng làm lại.",
+                        "answer":  "健身证丢了以后，要马上去办公室补办。"
+                    },
+                    {
+                        "chinese":  "新生报名时要交照片和证件复印件。",
+                        "pinyin":  "Xīnshēng bàomíng shí yào jiāo zhàopiàn hé zhèngjiàn fùyìnjiàn.",
+                        "vietnamese":  "Khi đăng ký, sinh viên mới phải nộp ảnh và bản sao giấy tờ.",
+                        "answer":  "新生报名时要交照片和证件复印件。"
+                    },
+                    {
+                        "chinese":  "老师提醒我们考试前带好准考证。",
+                        "pinyin":  "Lǎoshī tíxǐng wǒmen kǎoshì qián dài hǎo zhǔnkǎozhèng.",
+                        "vietnamese":  "Giáo viên nhắc chúng tôi trước kỳ thi mang theo giấy dự thi.",
+                        "answer":  "老师提醒我们考试前带好准考证。"
+                    },
+                    {
+                        "chinese":  "有了这个证，就可以免费参观博物馆。",
+                        "pinyin":  "Yǒu le zhège zhèng, jiù kěyǐ miǎnfèi cānguān bówùguǎn.",
+                        "vietnamese":  "Có giấy/thẻ này thì có thể tham quan viện bảo tàng miễn phí.",
+                        "answer":  "有了这个证，就可以免费参观博物馆。"
+                    },
+                    {
+                        "chinese":  "他把学生证忘在宿舍了，所以进不了图书馆。",
+                        "pinyin":  "Tā bǎ xuéshēngzhèng wàng zài sùshè le, suǒyǐ jìn bù liǎo túshūguǎn.",
+                        "vietnamese":  "Anh ấy quên thẻ sinh viên ở ký túc xá nên không vào được thư viện.",
+                        "answer":  "他把学生证忘在宿舍了，所以进不了图书馆。"
+                    },
+                    {
+                        "chinese":  "旅游时最好把重要证件放在安全的地方。",
+                        "pinyin":  "Lǚyóu shí zuìhǎo bǎ zhòngyào zhèngjiàn fàng zài ānquán de dìfang.",
+                        "vietnamese":  "Khi du lịch tốt nhất để giấy tờ quan trọng ở nơi an toàn.",
+                        "answer":  "旅游时最好把重要证件放在安全的地方。"
+                    },
+                    {
+                        "chinese":  "如果证件信息出错，要及时联系工作人员。",
+                        "pinyin":  "Rúguǒ zhèngjiàn xìnxī chūcuò, yào jíshí liánxì gōngzuò rényuán.",
+                        "vietnamese":  "Nếu thông tin giấy tờ sai, phải kịp thời liên hệ nhân viên.",
+                        "answer":  "如果证件信息出错，要及时联系工作人员。"
+                    },
+                    {
+                        "chinese":  "这次旅游的费用大概一千块。",
+                        "pinyin":  "Zhè cì lǚyóu de fèiyòng dàgài yì qiān kuài.",
+                        "vietnamese":  "Chi phí chuyến du lịch lần này khoảng một nghìn tệ.",
+                        "answer":  "这次旅游的费用大概一千块。"
+                    },
+                    {
+                        "chinese":  "新生办证不需要交额外费用。",
+                        "pinyin":  "Xīnshēng bàn zhèng bù xūyào jiāo éwài fèiyòng.",
+                        "vietnamese":  "Sinh viên mới làm thẻ không cần nộp thêm chi phí.",
+                        "answer":  "新生办证不需要交额外费用。"
+                    },
+                    {
+                        "chinese":  "校园健身房的费用比较低。",
+                        "pinyin":  "Xiàoyuán jiànshēnfáng de fèiyòng bǐjiào dī.",
+                        "vietnamese":  "Chi phí phòng tập trong khuôn viên khá thấp.",
+                        "answer":  "校园健身房的费用比较低。"
+                    },
+                    {
+                        "chinese":  "门票费用已经包括在旅游团费里了。",
+                        "pinyin":  "Ménpiào fèiyòng yǐjīng bāokuò zài lǚyóu tuánfèi lǐ le.",
+                        "vietnamese":  "Chi phí vé vào cửa đã bao gồm trong phí tour du lịch rồi.",
+                        "answer":  "门票费用已经包括在旅游团费里了。"
+                    },
+                    {
+                        "chinese":  "如果费用太高，很多学生可能不会参加。",
+                        "pinyin":  "Rúguǒ fèiyòng tài gāo, hěn duō xuésheng kěnéng bú huì cānjiā.",
+                        "vietnamese":  "Nếu chi phí quá cao, nhiều sinh viên có thể sẽ không tham gia.",
+                        "answer":  "如果费用太高，很多学生可能不会参加。"
+                    },
+                    {
+                        "chinese":  "学校会提前公布住宿费用和报名方式。",
+                        "pinyin":  "Xuéxiào huì tíqián gōngbù zhùsù fèiyòng hé bàomíng fāngshì.",
+                        "vietnamese":  "Trường sẽ công bố trước chi phí ở và cách đăng ký.",
+                        "answer":  "学校会提前公布住宿费用和报名方式。"
+                    },
+                    {
+                        "chinese":  "这项费用虽然不多，但是必须按时交。",
+                        "pinyin":  "Zhè xiàng fèiyòng suīrán bù duō, dànshì bìxū ànshí jiāo.",
+                        "vietnamese":  "Khoản phí này tuy không nhiều nhưng phải nộp đúng hạn.",
+                        "answer":  "这项费用虽然不多，但是必须按时交。"
+                    },
+                    {
+                        "chinese":  "去香港旅游的费用比去西安高。",
+                        "pinyin":  "Qù Xiānggǎng lǚyóu de fèiyòng bǐ qù Xī’ān gāo.",
+                        "vietnamese":  "Chi phí du lịch Hồng Kông cao hơn đi Tây An.",
+                        "answer":  "去香港旅游的费用比去西安高。"
+                    },
+                    {
+                        "chinese":  "老师帮我们算了一下活动总费用。",
+                        "pinyin":  "Lǎoshī bāng wǒmen suàn le yíxià huódòng zǒng fèiyòng.",
+                        "vietnamese":  "Giáo viên giúp chúng tôi tính tổng chi phí hoạt động một chút.",
+                        "answer":  "老师帮我们算了一下活动总费用。"
+                    },
+                    {
+                        "chinese":  "此外，学生还要自己准备交通费用。",
+                        "pinyin":  "Cǐwài, xuésheng hái yào zìjǐ zhǔnbèi jiāotōng fèiyòng.",
+                        "vietnamese":  "Ngoài ra, sinh viên còn phải tự chuẩn bị chi phí đi lại.",
+                        "answer":  "此外，学生还要自己准备交通费用。"
+                    },
+                    {
+                        "chinese":  "哦，原来门票已经卖完了。",
+                        "pinyin":  "Ò, yuánlái ménpiào yǐjīng mài wán le.",
+                        "vietnamese":  "Ồ, hóa ra vé vào cửa đã bán hết rồi.",
+                        "answer":  "哦，原来门票已经卖完了。"
+                    },
+                    {
+                        "chinese":  "哦，我明白你的意思了。",
+                        "pinyin":  "Ò, wǒ míngbai nǐ de yìsi le.",
+                        "vietnamese":  "Ồ, tôi hiểu ý của bạn rồi.",
+                        "answer":  "哦，我明白你的意思了。"
+                    },
+                    {
+                        "chinese":  "哦，这个费用不是今天交吗？",
+                        "pinyin":  "Ò, zhège fèiyòng bú shì jīntiān jiāo ma?",
+                        "vietnamese":  "Ồ, khoản phí này không phải nộp hôm nay sao?",
+                        "answer":  "哦，这个费用不是今天交吗？"
+                    },
+                    {
+                        "chinese":  "哦，校园里也有这么多特色小吃。",
+                        "pinyin":  "Ò, xiàoyuán lǐ yě yǒu zhème duō tèsè xiǎochī.",
+                        "vietnamese":  "Ồ, trong khuôn viên cũng có nhiều món ăn vặt đặc sắc như vậy.",
+                        "answer":  "哦，校园里也有这么多特色小吃。"
+                    },
+                    {
+                        "chinese":  "哦，去上海旅游比我想的贵多了。",
+                        "pinyin":  "Ò, qù Shànghǎi lǚyóu bǐ wǒ xiǎng de guì duō le.",
+                        "vietnamese":  "Ồ, đi Thượng Hải du lịch đắt hơn tôi nghĩ nhiều.",
+                        "answer":  "哦，去上海旅游比我想的贵多了。"
+                    },
+                    {
+                        "chinese":  "哦，新生证原来可以免费办理。",
+                        "pinyin":  "Ò, xīnshēng zhèng yuánlái kěyǐ miǎnfèi bànlǐ.",
+                        "vietnamese":  "Ồ, hóa ra thẻ sinh viên mới có thể làm miễn phí.",
+                        "answer":  "哦，新生证原来可以免费办理。"
+                    },
+                    {
+                        "chinese":  "哦，香港的小吃真的有点辣。",
+                        "pinyin":  "Ò, Xiānggǎng de xiǎochī zhēn de yǒudiǎn là.",
+                        "vietnamese":  "Ồ, đồ ăn vặt Hồng Kông thật sự hơi cay.",
+                        "answer":  "哦，香港的小吃真的有点辣。"
+                    },
+                    {
+                        "chinese":  "哦，健身设施在图书馆后面。",
+                        "pinyin":  "Ò, jiànshēn shèshī zài túshūguǎn hòumiàn.",
+                        "vietnamese":  "Ồ, thiết bị tập luyện ở phía sau thư viện.",
+                        "answer":  "哦，健身设施在图书馆后面。"
+                    },
+                    {
+                        "chinese":  "哦，西安不仅有古迹，还有很多小吃。",
+                        "pinyin":  "Ò, Xī’ān bùjǐn yǒu gǔjì, hái yǒu hěn duō xiǎochī.",
+                        "vietnamese":  "Ồ, Tây An không chỉ có di tích cổ mà còn có nhiều đồ ăn vặt.",
+                        "answer":  "哦，西安不仅有古迹，还有很多小吃。"
+                    },
+                    {
+                        "chinese":  "哦，此外还要准备学生证。",
+                        "pinyin":  "Ò, cǐwài hái yào zhǔnbèi xuéshēngzhèng.",
+                        "vietnamese":  "Ồ, ngoài ra còn phải chuẩn bị thẻ sinh viên.",
+                        "answer":  "哦，此外还要准备学生证。"
+                    },
+                    {
+                        "chinese":  "这张门票可以在网上买。",
+                        "pinyin":  "Zhè zhāng ménpiào kěyǐ zài wǎngshàng mǎi.",
+                        "vietnamese":  "Vé vào cửa này có thể mua trên mạng.",
+                        "answer":  "这张门票可以在网上买。"
+                    },
+                    {
+                        "chinese":  "博物馆门票对新生免费。",
+                        "pinyin":  "Bówùguǎn ménpiào duì xīnshēng miǎnfèi.",
+                        "vietnamese":  "Vé vào cửa viện bảo tàng miễn phí cho sinh viên mới.",
+                        "answer":  "博物馆门票对新生免费。"
+                    },
+                    {
+                        "chinese":  "去上海旅游时，很多景点都需要门票。",
+                        "pinyin":  "Qù Shànghǎi lǚyóu shí, hěn duō jǐngdiǎn dōu xūyào ménpiào.",
+                        "vietnamese":  "Khi đi du lịch Thượng Hải, nhiều điểm tham quan đều cần vé vào cửa.",
+                        "answer":  "去上海旅游时，很多景点都需要门票。"
+                    },
+                    {
+                        "chinese":  "如果忘带学生证，门票费用会高一些。",
+                        "pinyin":  "Rúguǒ wàng dài xuéshēngzhèng, ménpiào fèiyòng huì gāo yìxiē.",
+                        "vietnamese":  "Nếu quên mang thẻ sinh viên, phí vé vào cửa sẽ cao hơn một chút.",
+                        "answer":  "如果忘带学生证，门票费用会高一些。"
+                    },
+                    {
+                        "chinese":  "门票上写着入场时间和座位号码。",
+                        "pinyin":  "Ménpiào shàng xiězhe rùchǎng shíjiān hé zuòwèi hàomǎ.",
+                        "vietnamese":  "Trên vé vào cửa ghi thời gian vào cửa và số ghế.",
+                        "answer":  "门票上写着入场时间和座位号码。"
+                    },
+                    {
+                        "chinese":  "我们最好提前买门票，免得排队。",
+                        "pinyin":  "Wǒmen zuìhǎo tíqián mǎi ménpiào, miǎnde páiduì.",
+                        "vietnamese":  "Chúng ta tốt nhất mua vé trước, tránh phải xếp hàng.",
+                        "answer":  "我们最好提前买门票，免得排队。"
+                    },
+                    {
+                        "chinese":  "香港有些展览门票比较贵。",
+                        "pinyin":  "Xiānggǎng yǒuxiē zhǎnlǎn ménpiào bǐjiào guì.",
+                        "vietnamese":  "Một số triển lãm ở Hồng Kông vé vào cửa khá đắt.",
+                        "answer":  "香港有些展览门票比较贵。"
+                    },
+                    {
+                        "chinese":  "老师把门票发给每个学生。",
+                        "pinyin":  "Lǎoshī bǎ ménpiào fā gěi měi ge xuésheng.",
+                        "vietnamese":  "Giáo viên phát vé vào cửa cho từng học sinh.",
+                        "answer":  "老师把门票发给每个学生。"
+                    },
+                    {
+                        "chinese":  "这次活动不收门票，只需要报名。",
+                        "pinyin":  "Zhè cì huódòng bù shōu ménpiào, zhǐ xūyào bàomíng.",
+                        "vietnamese":  "Hoạt động lần này không thu vé vào cửa, chỉ cần đăng ký.",
+                        "answer":  "这次活动不收门票，只需要报名。"
+                    },
+                    {
+                        "chinese":  "门票丢了以后，他只好重新买一张。",
+                        "pinyin":  "Ménpiào diū le yǐhòu, tā zhǐhǎo chóngxīn mǎi yì zhāng.",
+                        "vietnamese":  "Sau khi mất vé vào cửa, anh ấy đành mua lại một vé.",
+                        "answer":  "门票丢了以后，他只好重新买一张。"
+                    },
+                    {
+                        "chinese":  "这个菜有点辣，你能吃吗？",
+                        "pinyin":  "Zhège cài yǒudiǎn là, nǐ néng chī ma?",
+                        "vietnamese":  "Món này hơi cay, bạn ăn được không?",
+                        "answer":  "这个菜有点辣，你能吃吗？"
+                    },
+                    {
+                        "chinese":  "西安的小吃有些很辣，但是非常香。",
+                        "pinyin":  "Xī’ān de xiǎochī yǒuxiē hěn là, dànshì fēicháng xiāng.",
+                        "vietnamese":  "Một số món ăn vặt Tây An rất cay nhưng vô cùng thơm.",
+                        "answer":  "西安的小吃有些很辣，但是非常香。"
+                    },
+                    {
+                        "chinese":  "我不太能吃辣，所以点了清淡一点的菜。",
+                        "pinyin":  "Wǒ bú tài néng chī là, suǒyǐ diǎn le qīngdàn yìdiǎn de cài.",
+                        "vietnamese":  "Tôi không ăn cay giỏi lắm nên gọi món thanh đạm hơn chút.",
+                        "answer":  "我不太能吃辣，所以点了清淡一点的菜。"
+                    },
+                    {
+                        "chinese":  "这个辣味小吃是当地的特色。",
+                        "pinyin":  "Zhège làwèi xiǎochī shì dāngdì de tèsè.",
+                        "vietnamese":  "Món ăn vặt vị cay này là đặc sản địa phương.",
+                        "answer":  "这个辣味小吃是当地的特色。"
+                    },
+                    {
+                        "chinese":  "他越吃辣，越觉得这种味道有意思。",
+                        "pinyin":  "Tā yuè chī là, yuè juéde zhè zhǒng wèidào yǒu yìsi.",
+                        "vietnamese":  "Anh ấy càng ăn cay càng thấy hương vị này thú vị.",
+                        "answer":  "他越吃辣，越觉得这种味道有意思。"
+                    },
+                    {
+                        "chinese":  "香港也有不少辣的街头小吃。",
+                        "pinyin":  "Xiānggǎng yě yǒu bù shǎo là de jiētóu xiǎochī.",
+                        "vietnamese":  "Hồng Kông cũng có không ít món ăn vặt đường phố cay.",
+                        "answer":  "香港也有不少辣的街头小吃。"
+                    },
+                    {
+                        "chinese":  "新生第一次吃这么辣的菜，脸都红了。",
+                        "pinyin":  "Xīnshēng dì yī cì chī zhème là de cài, liǎn dōu hóng le.",
+                        "vietnamese":  "Sinh viên mới lần đầu ăn món cay như vậy, mặt đỏ cả lên.",
+                        "answer":  "新生第一次吃这么辣的菜，脸都红了。"
+                    },
+                    {
+                        "chinese":  "如果你怕辣，可以让服务员少放辣椒。",
+                        "pinyin":  "Rúguǒ nǐ pà là, kěyǐ ràng fúwùyuán shǎo fàng làjiāo.",
+                        "vietnamese":  "Nếu bạn sợ cay, có thể bảo phục vụ cho ít ớt.",
+                        "answer":  "如果你怕辣，可以让服务员少放辣椒。"
+                    },
+                    {
+                        "chinese":  "这家店的辣菜很出名，游客都想尝尝。",
+                        "pinyin":  "Zhè jiā diàn de là cài hěn chūmíng, yóukè dōu xiǎng chángchang.",
+                        "vietnamese":  "Món cay của quán này rất nổi tiếng, du khách đều muốn nếm thử.",
+                        "answer":  "这家店的辣菜很出名，游客都想尝尝。"
+                    },
+                    {
+                        "chinese":  "虽然这碗面很辣，但是我还是吃完了。",
+                        "pinyin":  "Suīrán zhè wǎn miàn hěn là, dànshì wǒ háishi chī wán le.",
+                        "vietnamese":  "Tuy bát mì này rất cay nhưng tôi vẫn ăn hết.",
+                        "answer":  "虽然这碗面很辣，但是我还是吃完了。"
+                    },
+                    {
+                        "chinese":  "我打算暑假去上海旅游。",
+                        "pinyin":  "Wǒ dǎsuàn shǔjià qù Shànghǎi lǚyóu.",
+                        "vietnamese":  "Tôi dự định kỳ nghỉ hè đi du lịch Thượng Hải.",
+                        "answer":  "我打算暑假去上海旅游。"
+                    },
+                    {
+                        "chinese":  "旅游以前，最好先了解门票和费用。",
+                        "pinyin":  "Lǚyóu yǐqián, zuìhǎo xiān liǎojiě ménpiào hé fèiyòng.",
+                        "vietnamese":  "Trước khi du lịch, tốt nhất tìm hiểu vé vào cửa và chi phí trước.",
+                        "answer":  "旅游以前，最好先了解门票和费用。"
+                    },
+                    {
+                        "chinese":  "西安很适合喜欢历史的人去旅游。",
+                        "pinyin":  "Xī’ān hěn shìhé xǐhuan lìshǐ de rén qù lǚyóu.",
+                        "vietnamese":  "Tây An rất phù hợp cho người thích lịch sử đi du lịch.",
+                        "answer":  "西安很适合喜欢历史的人去旅游。"
+                    },
+                    {
+                        "chinese":  "香港旅游费用比较高，所以要提前计划。",
+                        "pinyin":  "Xiānggǎng lǚyóu fèiyòng bǐjiào gāo, suǒyǐ yào tíqián jìhuà.",
+                        "vietnamese":  "Chi phí du lịch Hồng Kông khá cao nên phải lên kế hoạch trước.",
+                        "answer":  "香港旅游费用比较高，所以要提前计划。"
+                    },
+                    {
+                        "chinese":  "这次旅游不仅能看风景，而且能尝小吃。",
+                        "pinyin":  "Zhè cì lǚyóu bùjǐn néng kàn fēngjǐng, érqiě néng cháng xiǎochī.",
+                        "vietnamese":  "Chuyến du lịch này không chỉ ngắm cảnh mà còn nếm đồ ăn vặt.",
+                        "answer":  "这次旅游不仅能看风景，而且能尝小吃。"
+                    },
+                    {
+                        "chinese":  "新生可以参加学校组织的城市旅游。",
+                        "pinyin":  "Xīnshēng kěyǐ cānjiā xuéxiào zǔzhī de chéngshì lǚyóu.",
+                        "vietnamese":  "Sinh viên mới có thể tham gia chuyến du lịch thành phố do trường tổ chức.",
+                        "answer":  "新生可以参加学校组织的城市旅游。"
+                    },
+                    {
+                        "chinese":  "旅游的时候要带好证件和手机。",
+                        "pinyin":  "Lǚyóu de shíhou yào dài hǎo zhèngjiàn hé shǒujī.",
+                        "vietnamese":  "Khi du lịch phải mang đầy đủ giấy tờ và điện thoại.",
+                        "answer":  "旅游的时候要带好证件和手机。"
+                    },
+                    {
+                        "chinese":  "我喜欢一边旅游一边了解当地文化。",
+                        "pinyin":  "Wǒ xǐhuan yìbiān lǚyóu yìbiān liǎojiě dāngdì wénhuà.",
+                        "vietnamese":  "Tôi thích vừa du lịch vừa tìm hiểu văn hóa địa phương.",
+                        "answer":  "我喜欢一边旅游一边了解当地文化。"
+                    },
+                    {
+                        "chinese":  "这个旅游路线经过校园和博物馆。",
+                        "pinyin":  "Zhège lǚyóu lùxiàn jīngguò xiàoyuán hé bówùguǎn.",
+                        "vietnamese":  "Tuyến du lịch này đi qua khuôn viên trường và viện bảo tàng.",
+                        "answer":  "这个旅游路线经过校园和博物馆。"
+                    },
+                    {
+                        "chinese":  "如果费用太高，我们就换一个旅游计划。",
+                        "pinyin":  "Rúguǒ fèiyòng tài gāo, wǒmen jiù huàn yí ge lǚyóu jìhuà.",
+                        "vietnamese":  "Nếu chi phí quá cao, chúng ta sẽ đổi một kế hoạch du lịch khác.",
+                        "answer":  "如果费用太高，我们就换一个旅游计划。"
+                    },
+                    {
+                        "chinese":  "此外，学校还提供免费的健身设施。",
+                        "pinyin":  "Cǐwài, xuéxiào hái tígōng miǎnfèi de jiànshēn shèshī.",
+                        "vietnamese":  "Ngoài ra, trường còn cung cấp thiết bị tập luyện miễn phí.",
+                        "answer":  "此外，学校还提供免费的健身设施。"
+                    },
+                    {
+                        "chinese":  "这次旅游包括门票，此外还包括交通费用。",
+                        "pinyin":  "Zhè cì lǚyóu bāokuò ménpiào, cǐwài hái bāokuò jiāotōng fèiyòng.",
+                        "vietnamese":  "Chuyến du lịch này bao gồm vé vào cửa, ngoài ra còn bao gồm chi phí đi lại.",
+                        "answer":  "这次旅游包括门票，此外还包括交通费用。"
+                    },
+                    {
+                        "chinese":  "新生要参加介绍会，此外还要办理学生证。",
+                        "pinyin":  "Xīnshēng yào cānjiā jièshào huì, cǐwài hái yào bànlǐ xuéshēngzhèng.",
+                        "vietnamese":  "Sinh viên mới phải tham gia buổi giới thiệu, ngoài ra còn phải làm thẻ sinh viên.",
+                        "answer":  "新生要参加介绍会，此外还要办理学生证。"
+                    },
+                    {
+                        "chinese":  "校园里有图书馆，此外还有很多运动设施。",
+                        "pinyin":  "Xiàoyuán lǐ yǒu túshūguǎn, cǐwài hái yǒu hěn duō yùndòng shèshī.",
+                        "vietnamese":  "Trong khuôn viên có thư viện, ngoài ra còn có nhiều cơ sở thể thao.",
+                        "answer":  "校园里有图书馆，此外还有很多运动设施。"
+                    },
+                    {
+                        "chinese":  "上海有现代建筑，此外也有很多特色小吃。",
+                        "pinyin":  "Shànghǎi yǒu xiàndài jiànzhù, cǐwài yě yǒu hěn duō tèsè xiǎochī.",
+                        "vietnamese":  "Thượng Hải có kiến trúc hiện đại, ngoài ra cũng có nhiều món ăn vặt đặc sắc.",
+                        "answer":  "上海有现代建筑，此外也有很多特色小吃。"
+                    },
+                    {
+                        "chinese":  "费用不包括门票，此外还要自己买饭。",
+                        "pinyin":  "Fèiyòng bù bāokuò ménpiào, cǐwài hái yào zìjǐ mǎi fàn.",
+                        "vietnamese":  "Chi phí không bao gồm vé vào cửa, ngoài ra còn phải tự mua cơm.",
+                        "answer":  "费用不包括门票，此外还要自己买饭。"
+                    },
+                    {
+                        "chinese":  "此外，老师提醒大家不要吃太辣。",
+                        "pinyin":  "Cǐwài, lǎoshī tíxǐng dàjiā búyào chī tài là.",
+                        "vietnamese":  "Ngoài ra, giáo viên nhắc mọi người đừng ăn quá cay.",
+                        "answer":  "此外，老师提醒大家不要吃太辣。"
+                    },
+                    {
+                        "chinese":  "香港购物很方便，此外交通也很发达。",
+                        "pinyin":  "Xiānggǎng gòuwù hěn fāngbiàn, cǐwài jiāotōng yě hěn fādá.",
+                        "vietnamese":  "Hồng Kông mua sắm rất tiện, ngoài ra giao thông cũng phát triển.",
+                        "answer":  "香港购物很方便，此外交通也很发达。"
+                    },
+                    {
+                        "chinese":  "这个项目适合新生，此外费用也不高。",
+                        "pinyin":  "Zhège xiàngmù shìhé xīnshēng, cǐwài fèiyòng yě bù gāo.",
+                        "vietnamese":  "Dự án này phù hợp với sinh viên mới, ngoài ra chi phí cũng không cao.",
+                        "answer":  "这个项目适合新生，此外费用也不高。"
+                    },
+                    {
+                        "chinese":  "此外，如果证件丢了，要马上联系老师。",
+                        "pinyin":  "Cǐwài, rúguǒ zhèngjiàn diū le, yào mǎshàng liánxì lǎoshī.",
+                        "vietnamese":  "Ngoài ra, nếu giấy tờ mất, phải lập tức liên hệ giáo viên.",
+                        "answer":  "此外，如果证件丢了，要马上联系老师。"
+                    },
+                    {
+                        "chinese":  "上海是中国很有名的大城市。",
+                        "pinyin":  "Shànghǎi shì Zhōngguó hěn yǒumíng de dà chéngshì.",
+                        "vietnamese":  "Thượng Hải là thành phố lớn rất nổi tiếng của Trung Quốc.",
+                        "answer":  "上海是中国很有名的大城市。"
+                    },
+                    {
+                        "chinese":  "我们计划下个月去上海旅游。",
+                        "pinyin":  "Wǒmen jìhuà xià ge yuè qù Shànghǎi lǚyóu.",
+                        "vietnamese":  "Chúng tôi dự định tháng sau đi du lịch Thượng Hải.",
+                        "answer":  "我们计划下个月去上海旅游。"
+                    },
+                    {
+                        "chinese":  "上海的生活费用比西安高一些。",
+                        "pinyin":  "Shànghǎi de shēnghuó fèiyòng bǐ Xī’ān gāo yìxiē.",
+                        "vietnamese":  "Chi phí sinh hoạt ở Thượng Hải cao hơn Tây An một chút.",
+                        "answer":  "上海的生活费用比西安高一些。"
+                    },
+                    {
+                        "chinese":  "新生中有几个人来自上海。",
+                        "pinyin":  "Xīnshēng zhōng yǒu jǐ ge rén láizì Shànghǎi.",
+                        "vietnamese":  "Trong sinh viên mới có vài người đến từ Thượng Hải.",
+                        "answer":  "新生中有几个人来自上海。"
+                    },
+                    {
+                        "chinese":  "上海不仅有高楼，而且有很多博物馆。",
+                        "pinyin":  "Shànghǎi bùjǐn yǒu gāolóu, érqiě yǒu hěn duō bówùguǎn.",
+                        "vietnamese":  "Thượng Hải không chỉ có nhà cao tầng mà còn có nhiều viện bảo tàng.",
+                        "answer":  "上海不仅有高楼，而且有很多博物馆。"
+                    },
+                    {
+                        "chinese":  "他在上海学习了两年外语。",
+                        "pinyin":  "Tā zài Shànghǎi xuéxí le liǎng nián wàiyǔ.",
+                        "vietnamese":  "Anh ấy học ngoại ngữ ở Thượng Hải hai năm.",
+                        "answer":  "他在上海学习了两年外语。"
+                    },
+                    {
+                        "chinese":  "上海的小吃和香港的小吃不太一样。",
+                        "pinyin":  "Shànghǎi de xiǎochī hé Xiānggǎng de xiǎochī bú tài yíyàng.",
+                        "vietnamese":  "Đồ ăn vặt Thượng Hải và Hồng Kông không giống nhau lắm.",
+                        "answer":  "上海的小吃和香港的小吃不太一样。"
+                    },
+                    {
+                        "chinese":  "如果去上海，最好提前预订门票。",
+                        "pinyin":  "Rúguǒ qù Shànghǎi, zuìhǎo tíqián yùdìng ménpiào.",
+                        "vietnamese":  "Nếu đi Thượng Hải, tốt nhất đặt vé vào cửa trước.",
+                        "answer":  "如果去上海，最好提前预订门票。"
+                    },
+                    {
+                        "chinese":  "上海校园的设施一般都比较现代。",
+                        "pinyin":  "Shànghǎi xiàoyuán de shèshī yìbān dōu bǐjiào xiàndài.",
+                        "vietnamese":  "Cơ sở vật chất khuôn viên trường ở Thượng Hải thường khá hiện đại.",
+                        "answer":  "上海校园的设施一般都比较现代。"
+                    },
+                    {
+                        "chinese":  "我对上海的城市特色很感兴趣。",
+                        "pinyin":  "Wǒ duì Shànghǎi de chéngshì tèsè hěn gǎn xìngqù.",
+                        "vietnamese":  "Tôi rất hứng thú với nét đặc sắc đô thị của Thượng Hải.",
+                        "answer":  "我对上海的城市特色很感兴趣。"
+                    },
+                    {
+                        "chinese":  "香港的旅游费用比我想的高。",
+                        "pinyin":  "Xiānggǎng de lǚyóu fèiyòng bǐ wǒ xiǎng de gāo.",
+                        "vietnamese":  "Chi phí du lịch Hồng Kông cao hơn tôi nghĩ.",
+                        "answer":  "香港的旅游费用比我想的高。"
+                    },
+                    {
+                        "chinese":  "他暑假想去香港看朋友。",
+                        "pinyin":  "Tā shǔjià xiǎng qù Xiānggǎng kàn péngyou.",
+                        "vietnamese":  "Anh ấy muốn kỳ nghỉ hè đến Hồng Kông thăm bạn.",
+                        "answer":  "他暑假想去香港看朋友。"
+                    },
+                    {
+                        "chinese":  "香港不仅适合购物，也适合旅游。",
+                        "pinyin":  "Xiānggǎng bùjǐn shìhé gòuwù, yě shìhé lǚyóu.",
+                        "vietnamese":  "Hồng Kông không chỉ phù hợp mua sắm mà cũng phù hợp du lịch.",
+                        "answer":  "香港不仅适合购物，也适合旅游。"
+                    },
+                    {
+                        "chinese":  "香港的小吃很有特色，不过价格不低。",
+                        "pinyin":  "Xiānggǎng de xiǎochī hěn yǒu tèsè, búguò jiàgé bù dī.",
+                        "vietnamese":  "Đồ ăn vặt Hồng Kông rất có nét riêng, nhưng giá không thấp.",
+                        "answer":  "香港的小吃很有特色，不过价格不低。"
+                    },
+                    {
+                        "chinese":  "我第一次去香港时，觉得交通很方便。",
+                        "pinyin":  "Wǒ dì yī cì qù Xiānggǎng shí, juéde jiāotōng hěn fāngbiàn.",
+                        "vietnamese":  "Lần đầu tôi đến Hồng Kông, tôi thấy giao thông rất tiện.",
+                        "answer":  "我第一次去香港时，觉得交通很方便。"
+                    },
+                    {
+                        "chinese":  "去香港以前，要先准备好证件。",
+                        "pinyin":  "Qù Xiānggǎng yǐqián, yào xiān zhǔnbèi hǎo zhèngjiàn.",
+                        "vietnamese":  "Trước khi đi Hồng Kông, phải chuẩn bị giấy tờ trước.",
+                        "answer":  "去香港以前，要先准备好证件。"
+                    },
+                    {
+                        "chinese":  "香港的校园设施也很先进。",
+                        "pinyin":  "Xiānggǎng de xiàoyuán shèshī yě hěn xiānjìn.",
+                        "vietnamese":  "Cơ sở vật chất khuôn viên trường ở Hồng Kông cũng rất hiện đại.",
+                        "answer":  "香港的校园设施也很先进。"
+                    },
+                    {
+                        "chinese":  "老师让我们比较上海和香港的特色。",
+                        "pinyin":  "Lǎoshī ràng wǒmen bǐjiào Shànghǎi hé Xiānggǎng de tèsè.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi so sánh nét đặc sắc của Thượng Hải và Hồng Kông.",
+                        "answer":  "老师让我们比较上海和香港的特色。"
+                    },
+                    {
+                        "chinese":  "香港门票有时候需要提前在网上买。",
+                        "pinyin":  "Xiānggǎng ménpiào yǒu shíhou xūyào tíqián zài wǎngshàng mǎi.",
+                        "vietnamese":  "Vé vào cửa ở Hồng Kông đôi khi cần mua trước trên mạng.",
+                        "answer":  "香港门票有时候需要提前在网上买。"
+                    },
+                    {
+                        "chinese":  "他从香港回来以后，给我带了小吃。",
+                        "pinyin":  "Tā cóng Xiānggǎng huílái yǐhòu, gěi wǒ dài le xiǎochī.",
+                        "vietnamese":  "Sau khi từ Hồng Kông về, anh ấy mang đồ ăn vặt cho tôi.",
+                        "answer":  "他从香港回来以后，给我带了小吃。"
+                    },
+                    {
+                        "chinese":  "西安有很多名胜古迹。",
+                        "pinyin":  "Xī’ān yǒu hěn duō míngshèng gǔjì.",
+                        "vietnamese":  "Tây An có rất nhiều danh lam thắng cảnh và di tích lịch sử.",
+                        "answer":  "西安有很多名胜古迹。"
+                    },
+                    {
+                        "chinese":  "我想去西安旅游，尝尝当地小吃。",
+                        "pinyin":  "Wǒ xiǎng qù Xī’ān lǚyóu, chángchang dāngdì xiǎochī.",
+                        "vietnamese":  "Tôi muốn đi du lịch Tây An, nếm thử đồ ăn vặt địa phương.",
+                        "answer":  "我想去西安旅游，尝尝当地小吃。"
+                    },
+                    {
+                        "chinese":  "西安的小吃有些比较辣。",
+                        "pinyin":  "Xī’ān de xiǎochī yǒuxiē bǐjiào là.",
+                        "vietnamese":  "Một số món ăn vặt Tây An khá cay.",
+                        "answer":  "西安的小吃有些比较辣。"
+                    },
+                    {
+                        "chinese":  "去西安旅游的费用比去香港低。",
+                        "pinyin":  "Qù Xī’ān lǚyóu de fèiyòng bǐ qù Xiānggǎng dī.",
+                        "vietnamese":  "Chi phí đi du lịch Tây An thấp hơn đi Hồng Kông.",
+                        "answer":  "去西安旅游的费用比去香港低。"
+                    },
+                    {
+                        "chinese":  "西安不仅有历史特色，而且生活节奏不快。",
+                        "pinyin":  "Xī’ān bùjǐn yǒu lìshǐ tèsè, érqiě shēnghuó jiézòu bú kuài.",
+                        "vietnamese":  "Tây An không chỉ có nét lịch sử mà nhịp sống cũng không nhanh.",
+                        "answer":  "西安不仅有历史特色，而且生活节奏不快。"
+                    },
+                    {
+                        "chinese":  "这个新生来自西安，对历史很感兴趣。",
+                        "pinyin":  "Zhège xīnshēng láizì Xī’ān, duì lìshǐ hěn gǎn xìngqù.",
+                        "vietnamese":  "Sinh viên mới này đến từ Tây An, rất hứng thú với lịch sử.",
+                        "answer":  "这个新生来自西安，对历史很感兴趣。"
+                    },
+                    {
+                        "chinese":  "西安的门票价格一般没有上海高。",
+                        "pinyin":  "Xī’ān de ménpiào jiàgé yìbān méiyǒu Shànghǎi gāo.",
+                        "vietnamese":  "Giá vé vào cửa ở Tây An thường không cao bằng Thượng Hải.",
+                        "answer":  "西安的门票价格一般没有上海高。"
+                    },
+                    {
+                        "chinese":  "如果去西安，最好多安排几天。",
+                        "pinyin":  "Rúguǒ qù Xī’ān, zuìhǎo duō ānpái jǐ tiān.",
+                        "vietnamese":  "Nếu đi Tây An, tốt nhất sắp xếp thêm vài ngày.",
+                        "answer":  "如果去西安，最好多安排几天。"
+                    },
+                    {
+                        "chinese":  "老师介绍了西安的城市文化和校园生活。",
+                        "pinyin":  "Lǎoshī jièshào le Xī’ān de chéngshì wénhuà hé xiàoyuán shēnghuó.",
+                        "vietnamese":  "Giáo viên giới thiệu văn hóa thành phố Tây An và đời sống khuôn viên.",
+                        "answer":  "老师介绍了西安的城市文化和校园生活。"
+                    },
+                    {
+                        "chinese":  "我觉得西安比上海更有历史味道。",
+                        "pinyin":  "Wǒ juéde Xī’ān bǐ Shànghǎi gèng yǒu lìshǐ wèidào.",
+                        "vietnamese":  "Tôi thấy Tây An có không khí lịch sử hơn Thượng Hải.",
+                        "answer":  "我觉得西安比上海更有历史味道。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "这个宿舍离教室很近，不过晚上有点儿吵。",
+                          "pinyin":  "Zhège sùshè lí jiàoshì hěn jìn, búguò wǎnshang yǒudiǎnr chǎo.",
+                          "vietnamese":  "Ký túc xá này rất gần lớp học, nhưng buổi tối hơi ồn.",
+                          "answer":  "这个宿舍离教室很近，不过晚上有点儿吵。"
+                      },
+                      {
+                          "chinese":  "这家食堂的饭菜不错，不过价格比以前贵了。",
+                          "pinyin":  "Zhè jiā shítáng de fàncài búcuò, búguò jiàgé bǐ yǐqián guì le.",
+                          "vietnamese":  "Đồ ăn nhà ăn này không tệ, nhưng giá đắt hơn trước rồi.",
+                          "answer":  "这家食堂的饭菜不错，不过价格比以前贵了。"
+                      },
+                      {
+                          "chinese":  "我很想参加这次活动，不过周末可能没时间。",
+                          "pinyin":  "Wǒ hěn xiǎng cānjiā zhè cì huódòng, búguò zhōumò kěnéng méi shíjiān.",
+                          "vietnamese":  "Tôi rất muốn tham gia hoạt động lần này, nhưng cuối tuần có thể không có thời gian.",
+                          "answer":  "我很想参加这次活动，不过周末可能没时间。"
+                      },
+                      {
+                          "chinese":  "他汉语说得越来越好，不过写汉字还比较慢。",
+                          "pinyin":  "Tā Hànyǔ shuō de yuè lái yuè hǎo, búguò xiě Hànzì hái bǐjiào màn.",
+                          "vietnamese":  "Tiếng Trung của anh ấy nói ngày càng tốt, nhưng viết chữ Hán vẫn khá chậm.",
+                          "answer":  "他汉语说得越来越好，不过写汉字还比较慢。"
+                      },
+                      {
+                          "chinese":  "这个老师讲课很清楚，不过作业有点儿多。",
+                          "pinyin":  "Zhège lǎoshī jiǎngkè hěn qīngchu, búguò zuòyè yǒudiǎnr duō.",
+                          "vietnamese":  "Thầy giáo này giảng rất rõ, nhưng bài tập hơi nhiều.",
+                          "answer":  "这个老师讲课很清楚，不过作业有点儿多。"
+                      },
+                      {
+                          "chinese":  "这本书内容挺有意思，不过生词太多了。",
+                          "pinyin":  "Zhè běn shū nèiróng tǐng yǒu yìsi, búguò shēngcí tài duō le.",
+                          "vietnamese":  "Nội dung quyển sách này khá thú vị, nhưng từ mới quá nhiều.",
+                          "answer":  "这本书内容挺有意思，不过生词太多了。"
+                      },
+                      {
+                          "chinese":  "我已经准备好材料了，不过还没联系老师。",
+                          "pinyin":  "Wǒ yǐjīng zhǔnbèi hǎo cáiliào le, búguò hái méi liánxì lǎoshī.",
+                          "vietnamese":  "Tôi đã chuẩn bị xong tài liệu rồi, nhưng vẫn chưa liên lạc với thầy.",
+                          "answer":  "我已经准备好材料了，不过还没联系老师。"
+                      },
+                      {
+                          "chinese":  "这个房间挺干净，就是离学校有点儿远。",
+                          "pinyin":  "Zhège fángjiān tǐng gānjìng, jiùshì lí xuéxiào yǒudiǎnr yuǎn.",
+                          "vietnamese":  "Căn phòng này khá sạch, chỉ là hơi xa trường.",
+                          "answer":  "这个房间挺干净，就是离学校有点儿远。"
+                      },
+                      {
+                          "chinese":  "这次考试不算太难，就是时间有点儿不够。",
+                          "pinyin":  "Zhè cì kǎoshì bú suàn tài nán, jiùshì shíjiān yǒudiǎnr bú gòu.",
+                          "vietnamese":  "Kỳ thi lần này không tính là quá khó, chỉ là thời gian hơi không đủ.",
+                          "answer":  "这次考试不算太难，就是时间有点儿不够。"
+                      },
+                      {
+                          "chinese":  "他人很好，就是说话有时候太直接。",
+                          "pinyin":  "Tā rén hěn hǎo, jiùshì shuōhuà yǒu shíhou tài zhíjiē.",
+                          "vietnamese":  "Anh ấy là người rất tốt, chỉ là đôi khi nói chuyện quá thẳng.",
+                          "answer":  "他人很好，就是说话有时候太直接。"
+                      },
+                      {
+                          "chinese":  "这家饭店菜很好吃，就是周末总要排队。",
+                          "pinyin":  "Zhè jiā fàndiàn cài hěn hǎochī, jiùshì zhōumò zǒng yào páiduì.",
+                          "vietnamese":  "Món ăn nhà hàng này rất ngon, chỉ là cuối tuần lúc nào cũng phải xếp hàng.",
+                          "answer":  "这家饭店菜很好吃，就是周末总要排队。"
+                      },
+                      {
+                          "chinese":  "这个软件功能挺多，就是手机上用起来有点儿慢。",
+                          "pinyin":  "Zhège ruǎnjiàn gōngnéng tǐng duō, jiùshì shǒujī shàng yòng qǐlái yǒudiǎnr màn.",
+                          "vietnamese":  "Phần mềm này khá nhiều chức năng, chỉ là dùng trên điện thoại hơi chậm.",
+                          "answer":  "这个软件功能挺多，就是手机上用起来有点儿慢。"
+                      },
+                      {
+                          "chinese":  "今天的课内容很实用，就是例句还不够多。",
+                          "pinyin":  "Jīntiān de kè nèiróng hěn shíyòng, jiùshì lìjù hái bú gòu duō.",
+                          "vietnamese":  "Nội dung bài học hôm nay rất thực dụng, chỉ là câu ví dụ vẫn chưa đủ nhiều.",
+                          "answer":  "今天的课内容很实用，就是例句还不够多。"
+                      },
+                      {
+                          "chinese":  "学校附近生活很方便，就是房租越来越贵。",
+                          "pinyin":  "Xuéxiào fùjìn shēnghuó hěn fāngbiàn, jiùshì fángzū yuè lái yuè guì.",
+                          "vietnamese":  "Gần trường sống rất tiện, chỉ là tiền thuê nhà ngày càng đắt.",
+                          "answer":  "学校附近生活很方便，就是房租越来越贵。"
+                      },
+                      {
+                          "chinese":  "好是好，不过这个办法需要花很多时间。",
+                          "pinyin":  "Hǎo shì hǎo, búguò zhège bànfǎ xūyào huā hěn duō shíjiān.",
+                          "vietnamese":  "Tốt thì đúng là tốt, nhưng cách này cần tốn rất nhiều thời gian.",
+                          "answer":  "好是好，不过这个办法需要花很多时间。"
+                      },
+                      {
+                          "chinese":  "近是近，不过这个房间晚上实在太吵了。",
+                          "pinyin":  "Jìn shì jìn, búguò zhège fángjiān wǎnshang shízài tài chǎo le.",
+                          "vietnamese":  "Gần thì đúng là gần, nhưng căn phòng này buổi tối thật sự quá ồn.",
+                          "answer":  "近是近，不过这个房间晚上实在太吵了。"
+                      },
+                      {
+                          "chinese":  "便宜是便宜，不过质量看起来不太好。",
+                          "pinyin":  "Piányi shì piányi, búguò zhìliàng kàn qǐlái bú tài hǎo.",
+                          "vietnamese":  "Rẻ thì đúng là rẻ, nhưng chất lượng nhìn có vẻ không tốt lắm.",
+                          "answer":  "便宜是便宜，不过质量看起来不太好。"
+                      },
+                      {
+                          "chinese":  "方便是方便，不过每天人太多，要排很久。",
+                          "pinyin":  "Fāngbiàn shì fāngbiàn, búguò měitiān rén tài duō, yào pái hěn jiǔ.",
+                          "vietnamese":  "Tiện thì đúng là tiện, nhưng mỗi ngày người quá đông, phải xếp hàng rất lâu.",
+                          "answer":  "方便是方便，不过每天人太多，要排很久。"
+                      },
+                      {
+                          "chinese":  "难是难，不过只要多练习，还是能学会。",
+                          "pinyin":  "Nán shì nán, búguò zhǐyào duō liànxí, háishi néng xuéhuì.",
+                          "vietnamese":  "Khó thì đúng là khó, nhưng chỉ cần luyện nhiều, vẫn có thể học được.",
+                          "answer":  "难是难，不过只要多练习，还是能学会。"
+                      },
+                      {
+                          "chinese":  "忙是忙，不过我每天晚上还会复习汉语。",
+                          "pinyin":  "Máng shì máng, búguò wǒ měitiān wǎnshang hái huì fùxí Hànyǔ.",
+                          "vietnamese":  "Bận thì đúng là bận, nhưng tối nào tôi vẫn sẽ ôn tiếng Trung.",
+                          "answer":  "忙是忙，不过我每天晚上还会复习汉语。"
+                      },
+                      {
+                          "chinese":  "这本书厚是厚，不过内容非常有意思。",
+                          "pinyin":  "Zhè běn shū hòu shì hòu, búguò nèiróng fēicháng yǒu yìsi.",
+                          "vietnamese":  "Quyển sách này dày thì đúng là dày, nhưng nội dung rất thú vị.",
+                          "answer":  "这本书厚是厚，不过内容非常有意思。"
+                      },
+                      {
+                          "chinese":  "明天有考试，你最好今晚早点儿休息。",
+                          "pinyin":  "Míngtiān yǒu kǎoshì, nǐ zuìhǎo jīnwǎn zǎodiǎnr xiūxi.",
+                          "vietnamese":  "Ngày mai có kiểm tra, tối nay bạn tốt nhất nghỉ sớm hơn.",
+                          "answer":  "明天有考试，你最好今晚早点儿休息。"
+                      },
+                      {
+                          "chinese":  "如果你听不懂，最好马上问老师。",
+                          "pinyin":  "Rúguǒ nǐ tīng bu dǒng, zuìhǎo mǎshàng wèn lǎoshī.",
+                          "vietnamese":  "Nếu bạn nghe không hiểu, tốt nhất hỏi thầy ngay.",
+                          "answer":  "如果你听不懂，最好马上问老师。"
+                      },
+                      {
+                          "chinese":  "你身体不舒服，最好明天去医院检查。",
+                          "pinyin":  "Nǐ shēntǐ bù shūfu, zuìhǎo míngtiān qù yīyuàn jiǎnchá.",
+                          "vietnamese":  "Bạn không khỏe, tốt nhất ngày mai đi bệnh viện kiểm tra.",
+                          "answer":  "你身体不舒服，最好明天去医院检查。"
+                      },
+                      {
+                          "chinese":  "这条路晚上不安全，你最好打车回去。",
+                          "pinyin":  "Zhè tiáo lù wǎnshang bù ānquán, nǐ zuìhǎo dǎchē huíqù.",
+                          "vietnamese":  "Con đường này buổi tối không an toàn, bạn tốt nhất đi taxi về.",
+                          "answer":  "这条路晚上不安全，你最好打车回去。"
+                      },
+                      {
+                          "chinese":  "老师明天要检查作业，你最好今天写完。",
+                          "pinyin":  "Lǎoshī míngtiān yào jiǎnchá zuòyè, nǐ zuìhǎo jīntiān xiě wán.",
+                          "vietnamese":  "Ngày mai thầy kiểm tra bài tập, bạn tốt nhất hôm nay viết xong.",
+                          "answer":  "老师明天要检查作业，你最好今天写完。"
+                      },
+                      {
+                          "chinese":  "第一次去客户公司，你最好提前十分钟到。",
+                          "pinyin":  "Dì yī cì qù kèhù gōngsī, nǐ zuìhǎo tíqián shí fēnzhōng dào.",
+                          "vietnamese":  "Lần đầu đến công ty khách hàng, bạn tốt nhất đến sớm 10 phút.",
+                          "answer":  "第一次去客户公司，你最好提前十分钟到。"
+                      },
+                      {
+                          "chinese":  "如果房租太贵，你最好再看看别的房子。",
+                          "pinyin":  "Rúguǒ fángzū tài guì, nǐ zuìhǎo zài kànkan bié de fángzi.",
+                          "vietnamese":  "Nếu tiền thuê nhà quá đắt, bạn tốt nhất xem thêm căn khác.",
+                          "answer":  "如果房租太贵，你最好再看看别的房子。"
+                      },
+                      {
+                          "chinese":  "我打算下个月报名参加汉语口语班。",
+                          "pinyin":  "Wǒ dǎsuàn xià ge yuè bàomíng cānjiā Hànyǔ kǒuyǔ bān.",
+                          "vietnamese":  "Tôi dự định tháng sau đăng ký tham gia lớp khẩu ngữ tiếng Trung.",
+                          "answer":  "我打算下个月报名参加汉语口语班。"
+                      },
+                      {
+                          "chinese":  "他打算毕业以后留在北京工作两年。",
+                          "pinyin":  "Tā dǎsuàn bìyè yǐhòu liú zài Běijīng gōngzuò liǎng nián.",
+                          "vietnamese":  "Anh ấy dự định sau khi tốt nghiệp ở lại Bắc Kinh làm việc hai năm.",
+                          "answer":  "他打算毕业以后留在北京工作两年。"
+                      },
+                      {
+                          "chinese":  "我们打算周末去图书馆准备考试。",
+                          "pinyin":  "Wǒmen dǎsuàn zhōumò qù túshūguǎn zhǔnbèi kǎoshì.",
+                          "vietnamese":  "Chúng tôi dự định cuối tuần đến thư viện chuẩn bị thi.",
+                          "answer":  "我们打算周末去图书馆准备考试。"
+                      },
+                      {
+                          "chinese":  "她打算买一辆自行车，每天骑车上学。",
+                          "pinyin":  "Tā dǎsuàn mǎi yí liàng zìxíngchē, měitiān qí chē shàngxué.",
+                          "vietnamese":  "Cô ấy dự định mua một chiếc xe đạp, mỗi ngày đạp xe đi học.",
+                          "answer":  "她打算买一辆自行车，每天骑车上学。"
+                      },
+                      {
+                          "chinese":  "这个假期你有什么打算，要不要出去旅行？",
+                          "pinyin":  "Zhège jiàqī nǐ yǒu shénme dǎsuàn, yào bú yào chūqù lǚxíng?",
+                          "vietnamese":  "Kỳ nghỉ này bạn có dự định gì, có muốn đi du lịch không?",
+                          "answer":  "这个假期你有什么打算，要不要出去旅行？"
+                      },
+                      {
+                          "chinese":  "我打算先找一份兼职，积累一些工作经验。",
+                          "pinyin":  "Wǒ dǎsuàn xiān zhǎo yí fèn jiānzhí, jīlěi yìxiē gōngzuò jīngyàn.",
+                          "vietnamese":  "Tôi dự định trước tiên tìm một việc làm thêm, tích lũy một số kinh nghiệm làm việc.",
+                          "answer":  "我打算先找一份兼职，积累一些工作经验。"
+                      },
+                      {
+                          "chinese":  "父母希望我回国发展，不过我还没有打算。",
+                          "pinyin":  "Fùmǔ xīwàng wǒ huíguó fāzhǎn, búguò wǒ hái méiyǒu dǎsuàn.",
+                          "vietnamese":  "Bố mẹ mong tôi về nước phát triển, nhưng tôi vẫn chưa có dự định.",
+                          "answer":  "父母希望我回国发展，不过我还没有打算。"
+                      }
+                  ]
+}

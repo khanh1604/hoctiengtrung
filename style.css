@@ -2529,9 +2529,9 @@ body.modal-open {
 .structure-list-title {
   display: block;
   color: #225bd6;
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1.2;
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 1.1;
   margin-bottom: 8px;
 }
 
@@ -2893,13 +2893,14 @@ body.modal-open {
 
 .structure-popover-example span {
   color: #cbd5e1;
-  font-size: 14px;
+  font-size: 28px;
+  font-weight: 100 !important;
 }
 
 .structure-popover-example small {
   color: #eaf2ff;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .reading-detail-wrap {
@@ -3781,12 +3782,12 @@ body.modal-open {
 
 .vocab-detail-example span {
   color: #cbd5e1;
-  font-size: 14px;
+  font-size: 32px;
 }
 
 .vocab-detail-example small {
   color: #eaf2ff;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -4185,8 +4186,8 @@ body.modal-open {
 }
 
 .listen-question-title {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 100;
   margin-bottom: 12px;
   color: #f4f7fb;
 }
@@ -5230,7 +5231,7 @@ body.light-theme .page-indicator.active-page {
 
 .speaking-lesson-row em,
 .speaking-lesson-row b {
-  color: #93a4bd;
+  color: #000000;
   font-style: normal;
   font-weight: 500;
 }
@@ -5730,7 +5731,7 @@ body.light-theme .page-indicator.active-page {
 
 .reflex-test-body strong {
   overflow: hidden;
-  font-size: 30px;
+  font-size: 22px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -5999,6 +6000,11 @@ body.light-theme .page-indicator.active-page {
   height: 38px;
 }
 
+.writing-reference-play.is-playing {
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  border-color: rgba(125, 211, 252, 0.55);
+}
+
 .writing-reference-mark {
   min-height: 38px;
   padding: 0 14px;
@@ -6026,7 +6032,12 @@ body.light-theme .page-indicator.active-page {
 .writing-reference-chinese {
   color: #f8fafc;
   font-size: 18px;
-  line-height: 1.8;
+  font-weight: 100 !important;
+  line-height: 1.2;
+}
+
+.writing-reference-chinese * {
+  font-weight: 100 !important;
 }
 
 .writing-reference-pinyin,
@@ -7025,9 +7036,9 @@ body.listening-test-page.light-theme {
 
 .listen-passage-zh {
   color: #ffffff;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.45;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.1;
 }
 
 .listen-passage-vi {
@@ -7471,7 +7482,7 @@ body.listening-test-page.light-theme .listen-result.neutral {
 
   .listen-passage-zh {
     font-size: 13px;
-    line-height: 1.45;
+    line-height: 1.1;
     word-break: break-word;
   }
 
@@ -9266,7 +9277,7 @@ body.listening-test-page.light-theme .listen-flag-btn {
 .error-breadcrumb span:last-child,
 .reflex-typing-breadcrumb span:last-child {
   color: #ffffff !important;
-  font-weight: 900 !important;
+  font-weight: 100 !important;
 }
 
 .speaking-sidebar {
@@ -9409,7 +9420,7 @@ body.listening-test-page #explanationBody {
   padding-right: 0 !important;
   font-size: 13px !important;
   line-height: 1.28 !important;
-  font-weight: 500 !important;
+  font-weight: 100 !important;
 }
 
 body.listening-test-page .listen-answer-section {
@@ -9662,7 +9673,7 @@ body.listening-test-page .listen-answer-section-title {
 }
 
 body.listening-test-page .listen-explain-text {
-  font-size: 14px !important;
+  font-size: 15px !important;
   line-height: 1.38 !important;
 }
 
@@ -10773,7 +10784,7 @@ body.vocabulary-page .vocab-detail-info span,
 body.vocabulary-page .vocab-detail-example span,
 body.vocabulary-page .vocab-detail-example small {
   color: #415572 !important;
-  font-weight: 650 !important;
+  font-weight: 100 !important;
 }
 
 body.vocabulary-page .vocab-lesson-pill,
@@ -13021,7 +13032,7 @@ body.vocabulary-page.light-theme .vocab-breadcrumb span:last-child {
   body.speaking-course-page .speaking-lesson-row b,
   body.speaking-course-page .lesson-progress,
   body.speaking-course-page .lesson-row .lesson-percent {
-    color: #e9d5ff !important;
+    color: #000000 !important;
     font-weight: 600 !important;
     text-shadow:
       0 0 8px rgba(192, 132, 252, 0.5),
@@ -13098,7 +13109,7 @@ body.vocabulary-page.light-theme .vocab-breadcrumb span:last-child {
   body.speaking-course-page .speaking-lesson-row b,
   body.speaking-course-page .lesson-progress,
   body.speaking-course-page .lesson-row .lesson-percent {
-    color: #e9d5ff !important;
+    color: #000000 !important;
     font-weight: 600 !important;
     text-shadow:
       0 0 8px rgba(192, 132, 252, 0.5),
@@ -13139,7 +13150,7 @@ body.vocabulary-page.light-theme .vocab-breadcrumb span:last-child {
   body.speaking-course-page .speaking-lesson-row b,
   body.speaking-course-page .lesson-progress,
   body.speaking-course-page .lesson-row .lesson-percent {
-    color: #e9d5ff !important;
+    color: #000000 !important;
     font-weight: 600 !important;
     text-shadow:
       0 0 8px rgba(192, 132, 252, 0.5),
@@ -13968,7 +13979,7 @@ body.vocabulary-page.light-theme .vocab-detail-example span,
 body.vocabulary-page.light-theme .vocab-detail-example small,
 body.vocabulary-page.light-theme .vocab-page-status {
   color: #cbd5e1 !important;
-  font-weight: 650 !important;
+  font-weight: 100 !important;
 }
 
 body.vocabulary-page .vocab-pinyin,
@@ -14127,6 +14138,164 @@ body.vocabulary-page.light-theme .vocab-card:hover .vocab-pinyin span {
 body.vocabulary-page .vocab-card:hover .vocab-meaning,
 body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning {
   color: #dbeafe !important;
+}
+
+/* Light mode vocabulary page: undo the dark-only vocabulary overrides above. */
+body.vocabulary-page.light-theme {
+  color: #102038 !important;
+  background:
+    radial-gradient(
+      circle at 10% 4%,
+      rgba(96, 165, 250, 0.28),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 88% 8%,
+      rgba(167, 139, 250, 0.18),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #eef6ff 0%, #f8fbff 48%, #dbeafe 100%) !important;
+}
+
+body.vocabulary-page.light-theme .vocab-sidebar {
+  border-right-color: rgba(37, 99, 235, 0.18) !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(239, 246, 255, 0.96),
+      rgba(219, 234, 254, 0.94)
+    ),
+    #eff6ff !important;
+}
+
+body.vocabulary-page.light-theme .vocabulary-shell,
+body.vocabulary-page.light-theme .vocab-side-panel {
+  color: #102038 !important;
+}
+
+body.vocabulary-page.light-theme .vocab-breadcrumb,
+body.vocabulary-page.light-theme .vocabulary-hero,
+body.vocabulary-page.light-theme .vocab-card,
+body.vocabulary-page.light-theme .vocab-side-card,
+body.vocabulary-page.light-theme .vocab-detail-panel,
+body.vocabulary-page.light-theme .vocab-back-btn,
+body.vocabulary-page.light-theme .vocab-search,
+body.vocabulary-page.light-theme .vocab-filter,
+body.vocabulary-page.light-theme .vocab-page-btn,
+body.vocabulary-page.light-theme .vocab-page-status,
+body.vocabulary-page.light-theme .vocab-empty {
+  border-color: rgba(37, 99, 235, 0.2) !important;
+  color: #102038 !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(219, 234, 254, 0.78)
+    ),
+    #f8fbff !important;
+  box-shadow: 0 18px 46px rgba(37, 99, 235, 0.12) !important;
+}
+
+body.vocabulary-page.light-theme .vocabulary-hero h1,
+body.vocabulary-page.light-theme .vocab-word-row h2,
+body.vocabulary-page.light-theme .vocab-side-card h2,
+body.vocabulary-page.light-theme .vocab-side-card h3,
+body.vocabulary-page.light-theme .vocab-detail-heading h2,
+body.vocabulary-page.light-theme .vocab-detail-info strong,
+body.vocabulary-page.light-theme .vocab-detail-example strong,
+body.vocabulary-page.light-theme .vocab-breadcrumb strong,
+body.vocabulary-page.light-theme .vocab-breadcrumb span:last-child {
+  color: #0f172a !important;
+}
+
+body.vocabulary-page.light-theme .vocabulary-hero p,
+body.vocabulary-page.light-theme .vocab-hero-meta,
+body.vocabulary-page.light-theme .vocab-meaning,
+body.vocabulary-page.light-theme .vocab-side-card p,
+body.vocabulary-page.light-theme .vocab-side-card li,
+body.vocabulary-page.light-theme .vocab-detail-info span,
+body.vocabulary-page.light-theme .vocab-detail-example span,
+body.vocabulary-page.light-theme .vocab-detail-example small,
+body.vocabulary-page.light-theme .vocab-page-status,
+body.vocabulary-page.light-theme .vocab-percent-card span {
+  color: #475569 !important;
+  font-weight: 500 !important;
+}
+
+body.vocabulary-page.light-theme .vocab-pinyin,
+body.vocabulary-page.light-theme .vocab-detail-kicker,
+body.vocabulary-page.light-theme .vocab-detail-heading p,
+body.vocabulary-page.light-theme .vocab-detail-panel h3,
+body.vocabulary-page.light-theme .vocab-breadcrumb a,
+body.vocabulary-page.light-theme .vocab-breadcrumb span {
+  color: #2563eb !important;
+}
+
+body.vocabulary-page.light-theme .vocab-detail-info div,
+body.vocabulary-page.light-theme .vocab-detail-example {
+  border-color: rgba(37, 99, 235, 0.18) !important;
+  color: #102038 !important;
+  background: rgba(239, 246, 255, 0.92) !important;
+}
+
+body.vocabulary-page.light-theme .vocab-search input,
+body.vocabulary-page.light-theme .vocab-filter {
+  color: #0f172a !important;
+  background: transparent !important;
+}
+
+body.vocabulary-page.light-theme .vocab-search input::placeholder {
+  color: #64748b !important;
+}
+
+body.vocabulary-page.light-theme .vocab-percent-card,
+body.vocabulary-page.light-theme .vocab-progress-donut {
+  color: #ffffff !important;
+  border-color: rgba(37, 99, 235, 0.2) !important;
+  background: linear-gradient(135deg, #1d4ed8, #0f2a5f) !important;
+}
+
+body.vocabulary-page.light-theme .vocab-percent-card strong,
+body.vocabulary-page.light-theme .vocab-progress-donut span,
+body.vocabulary-page.light-theme .vocab-side-card b {
+  color: #ffffff !important;
+}
+
+body.vocabulary-page.light-theme .vocab-card:hover {
+  border-color: rgba(37, 99, 235, 0.42) !important;
+  color: #0f172a !important;
+  background:
+    radial-gradient(
+      circle at 12% 0%,
+      rgba(96, 165, 250, 0.22),
+      transparent 13rem
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(219, 234, 254, 0.92)
+    ),
+    #f8fbff !important;
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.12),
+    0 18px 42px rgba(37, 99, 235, 0.18) !important;
+}
+
+body.vocabulary-page.light-theme .vocab-card:hover .vocab-word-row h2,
+body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning,
+body.vocabulary-page.light-theme .vocab-card:hover .zh-auto {
+  color: #0f172a !important;
+}
+
+body.vocabulary-page.light-theme .vocab-card:hover .vocab-pinyin,
+body.vocabulary-page.light-theme .vocab-card:hover .vocab-pinyin span {
+  color: #2563eb !important;
+}
+
+@media (max-width: 700px) {
+  body.vocabulary-page.light-theme .vocab-search input {
+    font-size: 13px !important;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -14916,7 +15085,7 @@ body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning {
   body.speaking-course-page .speaking-lesson-row b,
   body.speaking-course-page .lesson-progress,
   body.speaking-course-page .lesson-row .lesson-percent {
-    color: #e9d5ff !important;
+    color: #000000 !important;
     font-weight: 600 !important;
     text-shadow:
       0 0 8px rgba(192, 132, 252, 0.5),
@@ -15118,7 +15287,7 @@ body.vocabulary-page.light-theme .vocab-card:hover .vocab-meaning {
   body.vocabulary-page.light-theme .vocab-detail-example span {
     color: #c4d7f2 !important;
     font-size: 22px !important;
-    font-weight: 500 !important;
+    font-weight: 100 !important;
     line-height: 1.35 !important;
   }
 
@@ -15777,6 +15946,348 @@ body.review-page.structure-review-page .reflex-test-body strong .zh-auto {
   font-weight: 300 !important;
 }
 
+/* Final listening explanation contrast: keep text readable on blue panels. */
+body.listening-test-page .listen-answer-explanation-panel,
+body.listening-test-page.light-theme .listen-answer-explanation-panel {
+  color: #eff6ff !important;
+}
+
+body.listening-test-page .listen-answer-explanation-panel .listen-panel-title,
+body.listening-test-page .listen-answer-section-title,
+body.listening-test-page .listen-answer-row-title,
+body.listening-test-page.light-theme .listen-answer-explanation-panel .listen-panel-title,
+body.listening-test-page.light-theme .listen-answer-section-title,
+body.listening-test-page.light-theme .listen-answer-row-title {
+  color: #bfdbfe !important;
+  -webkit-text-fill-color: #bfdbfe !important;
+  opacity: 1 !important;
+}
+
+body.listening-test-page .listen-source-card,
+body.listening-test-page .listen-answer-row,
+body.listening-test-page .listen-explain-text,
+body.listening-test-page.light-theme .listen-source-card,
+body.listening-test-page.light-theme .listen-answer-row,
+body.listening-test-page.light-theme .listen-explain-text {
+  color: #f8fbff !important;
+  background: rgba(15, 35, 76, 0.78) !important;
+  border-color: rgba(147, 197, 253, 0.34) !important;
+}
+
+body.listening-test-page .listen-answer-explanation-panel .listen-transcript-zh,
+body.listening-test-page .listen-answer-explanation-panel .listen-transcript-zh *,
+body.listening-test-page .listen-answer-explanation-panel .zh-auto,
+body.listening-test-page.light-theme .listen-answer-explanation-panel .listen-transcript-zh,
+body.listening-test-page.light-theme .listen-answer-explanation-panel .listen-transcript-zh *,
+body.listening-test-page.light-theme .listen-answer-explanation-panel .zh-auto {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+body.listening-test-page .listen-answer-explanation-panel .listen-transcript-vi,
+body.listening-test-page .listen-explain-text,
+body.listening-test-page .listen-explain-text *,
+body.listening-test-page.light-theme .listen-answer-explanation-panel .listen-transcript-vi,
+body.listening-test-page.light-theme .listen-explain-text,
+body.listening-test-page.light-theme .listen-explain-text * {
+  color: #eaf2ff !important;
+  -webkit-text-fill-color: #eaf2ff !important;
+  opacity: 1 !important;
+}
+
+/* Final vocab detail POS readability. */
+body.vocabulary-page #vocabDetailPos,
+body.vocabulary-page.light-theme #vocabDetailPos,
+.vocab-detail-info #vocabDetailPos,
+.vocab-detail-info #vocabDetailPos.zh-auto {
+  font-size: 18px !important;
+  line-height: 1.45 !important;
+  font-weight: 650 !important;
+  letter-spacing: 0.01em !important;
+}
+
+@media (max-width: 700px) {
+  body.vocabulary-page #vocabDetailPos,
+  body.vocabulary-page.light-theme #vocabDetailPos,
+  .vocab-detail-info #vocabDetailPos,
+  .vocab-detail-info #vocabDetailPos.zh-auto {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* Compact structure examples on mobile so the detail panel fits the viewport. */
+@media (max-width: 700px) {
+  body.review-page .structure-popover-examples {
+    gap: 6px !important;
+  }
+
+  body.review-page .structure-popover-example,
+  body.light-theme.review-page .structure-popover-example {
+    padding: 9px 10px !important;
+    border-radius: 11px !important;
+  }
+
+  body.review-page .structure-popover-example strong,
+  body.light-theme.review-page .structure-popover-example strong {
+    font-size: 18px !important;
+    line-height: 1.25 !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.015em !important;
+  }
+
+  body.review-page .structure-popover-example span,
+  body.light-theme.review-page .structure-popover-example span {
+    font-size: 16px !important;
+    line-height: 1.25 !important;
+    font-weight: 500 !important;
+  }
+
+  body.review-page .structure-popover-example small,
+  body.light-theme.review-page .structure-popover-example small {
+    font-size: 14px !important;
+    line-height: 1.28 !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* Final action color split: Start, Continue, Retry must be visually distinct. */
+body.review-page
+  .reflex-test-card:not(.is-active):not(.is-done)
+  .reflex-test-action,
+body.review-page
+  .practice-activity-list-card:not(.is-active):not(.is-done)
+  .reflex-test-action {
+  border-color: rgba(37, 99, 235, 0.48) !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.18) !important;
+}
+
+body.review-page .reflex-test-card.is-active .reflex-test-action,
+body.review-page .practice-activity-list-card.is-active .reflex-test-action {
+  border-color: rgba(245, 158, 11, 0.62) !important;
+  color: #111827 !important;
+  background: linear-gradient(135deg, #fbbf24, #f97316) !important;
+  box-shadow: 0 10px 22px rgba(249, 115, 22, 0.22) !important;
+}
+
+body.review-page .reflex-test-card.is-done .reflex-test-action,
+body.review-page .practice-activity-list-card.is-done .reflex-test-action {
+  border-color: rgba(34, 197, 94, 0.58) !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #16a34a, #059669) !important;
+  box-shadow: 0 10px 22px rgba(22, 163, 74, 0.18) !important;
+}
+
+body.review-page
+  .reflex-test-card:not(.is-active):not(.is-done):hover
+  .reflex-test-action,
+body.review-page
+  .practice-activity-list-card:not(.is-active):not(.is-done):hover
+  .reflex-test-action {
+  border-color: rgba(59, 130, 246, 0.7) !important;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb) !important;
+  transform: translateY(-1px) scale(1.02) !important;
+}
+
+body.review-page .reflex-test-card.is-active:hover .reflex-test-action,
+body.review-page
+  .practice-activity-list-card.is-active:hover
+  .reflex-test-action {
+  border-color: rgba(251, 191, 36, 0.82) !important;
+  background: linear-gradient(135deg, #f59e0b, #ea580c) !important;
+  transform: translateY(-1px) scale(1.02) !important;
+}
+
+body.review-page .reflex-test-card.is-done:hover .reflex-test-action,
+body.review-page
+  .practice-activity-list-card.is-done:hover
+  .reflex-test-action {
+  border-color: rgba(74, 222, 128, 0.72) !important;
+  background: linear-gradient(135deg, #15803d, #047857) !important;
+  transform: translateY(-1px) scale(1.02) !important;
+}
+
+/* Absolute final light-theme vocabulary correction. Keep the word page bright when light mode is active. */
+body.vocabulary-page.light-theme {
+  color: #102038 !important;
+  background:
+    radial-gradient(circle at 10% 4%, rgba(96, 165, 250, 0.3), transparent 34%),
+    radial-gradient(
+      circle at 88% 8%,
+      rgba(167, 139, 250, 0.18),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #eef6ff 0%, #f8fbff 48%, #dbeafe 100%) !important;
+}
+
+body.vocabulary-page.light-theme .vocabulary-shell,
+body.vocabulary-page.light-theme .vocab-side-panel {
+  color: #102038 !important;
+  background: transparent !important;
+}
+
+body.vocabulary-page.light-theme .vocabulary-hero,
+body.vocabulary-page.light-theme .vocab-card,
+body.vocabulary-page.light-theme .vocab-side-card,
+body.vocabulary-page.light-theme .vocab-detail-panel,
+body.vocabulary-page.light-theme .vocab-back-btn,
+body.vocabulary-page.light-theme .vocab-search,
+body.vocabulary-page.light-theme .vocab-filter,
+body.vocabulary-page.light-theme .vocab-page-btn,
+body.vocabulary-page.light-theme .vocab-page-status,
+body.vocabulary-page.light-theme .vocab-empty,
+body.vocabulary-page.light-theme .vocab-detail-info div,
+body.vocabulary-page.light-theme .vocab-detail-example {
+  color: #102038 !important;
+  border-color: rgba(37, 99, 235, 0.2) !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(219, 234, 254, 0.8)
+    ),
+    #f8fbff !important;
+  box-shadow: 0 18px 46px rgba(37, 99, 235, 0.12) !important;
+}
+
+body.vocabulary-page.light-theme .vocabulary-hero h1,
+body.vocabulary-page.light-theme .vocab-word-row h2,
+body.vocabulary-page.light-theme .vocab-side-card h2,
+body.vocabulary-page.light-theme .vocab-side-card h3,
+body.vocabulary-page.light-theme .vocab-detail-heading h2,
+body.vocabulary-page.light-theme .vocab-detail-info strong,
+body.vocabulary-page.light-theme .vocab-detail-example strong,
+body.vocabulary-page.light-theme .vocab-breadcrumb strong,
+body.vocabulary-page.light-theme .vocab-breadcrumb span:last-child {
+  color: #0f172a !important;
+  -webkit-text-fill-color: #0f172a !important;
+}
+
+body.vocabulary-page.light-theme .vocab-meaning,
+body.vocabulary-page.light-theme .vocab-side-card p,
+body.vocabulary-page.light-theme .vocab-side-card li,
+body.vocabulary-page.light-theme .vocab-detail-info span,
+body.vocabulary-page.light-theme .vocab-detail-example span,
+body.vocabulary-page.light-theme .vocab-detail-example small,
+body.vocabulary-page.light-theme .vocab-page-status,
+body.vocabulary-page.light-theme .vocab-percent-card span {
+  color: #475569 !important;
+  -webkit-text-fill-color: #475569 !important;
+}
+
+body.vocabulary-page.light-theme .vocab-pinyin,
+body.vocabulary-page.light-theme .vocab-detail-kicker,
+body.vocabulary-page.light-theme .vocab-detail-heading p,
+body.vocabulary-page.light-theme .vocab-detail-panel h3 {
+  color: #2563eb !important;
+  -webkit-text-fill-color: #2563eb !important;
+}
+
+body.vocabulary-page.light-theme .vocab-search input,
+body.vocabulary-page.light-theme .vocab-filter {
+  color: #0f172a !important;
+  caret-color: #2563eb !important;
+  background: transparent !important;
+  -webkit-text-fill-color: #0f172a !important;
+}
+
+body.vocabulary-page.light-theme .vocab-search input::placeholder {
+  color: #64748b !important;
+  -webkit-text-fill-color: #64748b !important;
+}
+
+body.vocabulary-page.light-theme .vocab-card:hover {
+  color: #0f172a !important;
+  background:
+    radial-gradient(
+      circle at 12% 0%,
+      rgba(96, 165, 250, 0.22),
+      transparent 13rem
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(219, 234, 254, 0.94)
+    ),
+    #f8fbff !important;
+}
+
+html.light-theme {
+  background:
+    radial-gradient(circle at top, rgba(96, 165, 250, 0.22), transparent 28rem),
+    linear-gradient(135deg, #eef6ff 0%, #f8fbff 48%, #dbeafe 100%) !important;
+  color: #102038 !important;
+}
+
+html.light-theme body {
+  background:
+    radial-gradient(circle at top, rgba(96, 165, 250, 0.22), transparent 28rem),
+    linear-gradient(135deg, #eef6ff 0%, #f8fbff 48%, #dbeafe 100%) !important;
+  color: #102038 !important;
+}
+
+/* Absolute final light sidebar sync across learning pages. */
+body.light-theme .vocab-sidebar,
+body.light-theme .speaking-sidebar,
+body.light-theme .listening-course-sidebar {
+  color: #102038 !important;
+  border-right-color: rgba(37, 99, 235, 0.18) !important;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(96, 165, 250, 0.2),
+      transparent 16rem
+    ),
+    linear-gradient(180deg, #eef6ff 0%, #dbeafe 100%) !important;
+  box-shadow: 10px 0 30px rgba(37, 99, 235, 0.08) !important;
+}
+
+body.light-theme .vocab-logo,
+body.light-theme .speaking-logo,
+body.light-theme .listening-course-logo {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #7c3aed, #2563eb) !important;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.22) !important;
+}
+
+body.light-theme .vocab-nav a,
+body.light-theme .vocab-nav button,
+body.light-theme .speaking-nav a,
+body.light-theme .speaking-nav button,
+body.light-theme .listening-course-nav a,
+body.light-theme .listening-course-nav button {
+  color: #1e3a5f !important;
+  -webkit-text-fill-color: #1e3a5f !important;
+  background: transparent !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+body.light-theme .vocab-nav a:hover,
+body.light-theme .vocab-nav button:hover,
+body.light-theme .speaking-nav a:hover,
+body.light-theme .speaking-nav button:hover,
+body.light-theme .listening-course-nav a:hover,
+body.light-theme .listening-course-nav button:hover {
+  color: #0f172a !important;
+  -webkit-text-fill-color: #0f172a !important;
+  background: rgba(37, 99, 235, 0.1) !important;
+}
+
+body.light-theme .vocab-nav a.is-active,
+body.light-theme .speaking-nav a.is-active,
+body.light-theme .listening-course-nav a.is-active {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  border-color: rgba(37, 99, 235, 0.42) !important;
+  background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.2) !important;
+}
+
 /* Reading lesson detail layout: mobile-first refinements for Hanyu reading passages. */
 body.review-page.reading-detail-page .reading-lesson-detail {
   display: grid;
@@ -15921,7 +16432,9 @@ body.review-page.reading-detail-page .reading-word-list {
 
 body.review-page.reading-detail-page .reading-word-row {
   display: grid;
-  grid-template-columns: minmax(44px, 0.8fr) minmax(70px, 1fr) minmax(80px, 1fr) auto;
+  grid-template-columns:
+    minmax(44px, 0.8fr) minmax(70px, 1fr) minmax(80px, 1fr)
+    auto;
   gap: 8px;
   align-items: center;
   width: 100%;
@@ -15977,7 +16490,11 @@ body.review-page.reading-detail-page .reading-word-sheet-panel {
   border-radius: 22px;
   padding: 18px;
   color: #e5edff;
-  background: linear-gradient(160deg, rgba(15, 23, 42, 0.98), rgba(30, 27, 75, 0.98));
+  background: linear-gradient(
+    160deg,
+    rgba(15, 23, 42, 0.98),
+    rgba(30, 27, 75, 0.98)
+  );
   box-shadow: 0 -16px 46px rgba(2, 6, 23, 0.48);
 }
 
@@ -16182,7 +16699,9 @@ body.review-page.reading-detail-page .reading-word-sheet-meaning {
   }
 
   body.review-page.reading-detail-page .reading-word-row {
-    grid-template-columns: minmax(56px, 0.8fr) minmax(76px, 1fr) minmax(84px, 1fr) 18px !important;
+    grid-template-columns:
+      minmax(56px, 0.8fr) minmax(76px, 1fr) minmax(84px, 1fr)
+      18px !important;
     gap: 6px !important;
     padding: 7px 4px !important;
     font-size: 12px !important;
@@ -16221,13 +16740,17 @@ body.review-page.reading-detail-page .reading-word-sheet-meaning {
     white-space: nowrap !important;
   }
 
-  body.review-page.reading-detail-page .reading-mobile-actions .reading-mobile-quiz {
+  body.review-page.reading-detail-page
+    .reading-mobile-actions
+    .reading-mobile-quiz {
     flex: 1.45 1 0 !important;
     border-color: rgba(196, 181, 253, 0.62) !important;
     background: linear-gradient(135deg, #7c3aed, #4f46e5) !important;
   }
 
-  body.review-page.reading-detail-page .reading-mobile-actions .reading-mobile-quiz.is-done {
+  body.review-page.reading-detail-page
+    .reading-mobile-actions
+    .reading-mobile-quiz.is-done {
     background: linear-gradient(135deg, #059669, #2563eb) !important;
   }
 

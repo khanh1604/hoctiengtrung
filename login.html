@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập - FTC</title>
+    <link rel="stylesheet" href="css/auth.css?v=ftc-auth-20260629" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <section class="auth-card" aria-labelledby="loginTitle">
+        <div class="auth-head">
+          <a class="auth-logo" href="index.html" aria-label="FTC">FTC</a>
+          <h1 id="loginTitle">Đăng nhập</h1>
+          <p>Chào mừng bạn trở lại. Tiếp tục hành trình học tiếng Trung của bạn.</p>
+        </div>
+
+        <div class="auth-status" id="authStatus" hidden></div>
+
+        <form class="auth-form" id="loginForm" novalidate>
+          <label class="auth-field">
+            <span>Email</span>
+            <input
+              class="auth-input"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Nhập email của bạn"
+              required
+            />
+          </label>
+
+          <label class="auth-field">
+            <span>Mật khẩu</span>
+            <input
+              class="auth-input"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+          </label>
+
+          <div class="auth-actions-row">
+            <label class="auth-check">
+              <input type="checkbox" name="remember" checked />
+              <span>Ghi nhớ đăng nhập</span>
+            </label>
+            <a class="auth-link" href="register.html">Quên mật khẩu?</a>
+          </div>
+
+          <button
+            class="auth-submit"
+            type="submit"
+            data-auth-submit
+            data-label="Đăng nhập"
+          >
+            Đăng nhập
+          </button>
+        </form>
+
+        <div class="auth-divider">Hoặc đăng nhập với</div>
+        <button class="auth-social" type="button" data-google-login>
+          <span>G</span>Google
+        </button>
+
+        <p class="auth-foot">
+          Chưa có tài khoản?
+          <a href="register.html">Đăng ký ngay</a>
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="js/auth-pages.js"></script>
+  </body>
+</html>

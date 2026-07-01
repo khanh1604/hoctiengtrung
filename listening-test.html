@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ôn tập đoạn nghe - Chinese Learning</title>
+    <script>
+      try {
+        if (localStorage.getItem("menuTheme") === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
@@ -23,7 +30,7 @@
 
     <main class="listening-shell">
       <nav class="listening-breadcrumb" aria-label="Đường dẫn">
-        <a href="lessons.html?subject=listening">Nghe hiểu</a>
+        <a href="index.html">Nghe hiểu</a>
         <span aria-hidden="true">›</span>
         <a id="breadcrumbLesson" href="lesson-options.html?lesson=01&subject=listening">Bài 01</a>
         <span aria-hidden="true">›</span>
@@ -166,6 +173,7 @@
       const params = new URLSearchParams(window.location.search);
       const lesson = params.get("lesson") || "01";
       const section = params.get("section") || "1-4";
+      const subject = params.get("subject") || "listening";
 
       const audioPlayer = document.getElementById("audioPlayer");
       const optionsWrap = document.getElementById("optionsWrap");
@@ -384,6 +392,24 @@
           return answer === current.correct;
         }
         return answer === current.correct;
+      }
+
+      function recordListeningAnswer(current, answer) {
+        if (!current || !answer || !isAnswerCorrect(current, answer)) return;
+        window.FTCStats?.awardCorrectAnswer?.({
+          subject,
+          lesson,
+          lessonId: `${subject}_lesson_${String(lesson).padStart(2, "0")}`,
+          exerciseType: `listening_${section}`,
+          question: current.prompt || current.transcript || current.question || current.completeSentence || JSON.stringify(current),
+          answer,
+          correctAnswer: current.correct,
+        }).catch((error) => console.warn("EXP listening:", error.message));
+
+        window.FTCStats?.markLessonActivity?.({
+          subject,
+          lessonId: `${subject}_lesson_${String(lesson).padStart(2, "0")}`,
+        }).catch(() => {});
       }
 
       function getAnswerLabel(current, answer) {
@@ -614,6 +640,7 @@
           btn.addEventListener("click", () => {
             if (answers[currentIndex]) return;
             answers[currentIndex] = letter;
+            recordListeningAnswer(current, letter);
             renderQuestion();
             renderResult();
             updateProgress();
@@ -648,6 +675,7 @@
           btn.addEventListener("click", () => {
             if (answers[currentIndex]) return;
             answers[currentIndex] = value;
+            recordListeningAnswer(current, value);
             renderQuestion();
             renderResult();
             updateProgress();
@@ -682,6 +710,7 @@
           const value = input.value.trim();
           if (!value || answers[currentIndex]) return;
           answers[currentIndex] = value;
+          recordListeningAnswer(current, value);
           renderQuestion();
           renderResult();
           updateProgress();
@@ -864,5 +893,6 @@
           `<p class="listen-error">Lỗi: ${escapeHtml(err.message)}</p>`;
       });
     </script>
-  </body>
+<script type="module" src="js/protected-route.js"></script>
+</body>
 </html>

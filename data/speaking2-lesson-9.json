@@ -1,0 +1,2012 @@
+﻿{
+    "title":  "租房",
+    "vietnameseTitle":  "我想租房子 / 异性合租",
+    "textTitles":  [
+                       "我想租房子",
+                       "异性合租"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "租",
+                           "pinyin":  "zū",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "tô",
+                           "vietnamese":  "thuê",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我想在学校附近租一套房子。",
+                                                "pinyin":  "Wǒ xiǎng zài xuéxiào fùjìn zū yí tào fángzi.",
+                                                "vietnamese":  "Tôi muốn thuê một căn nhà gần trường."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "中介",
+                           "pinyin":  "zhōngjiè",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "trung giới",
+                           "vietnamese":  "môi giới, trung gian",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个房子是中介介绍给我的。",
+                                                "pinyin":  "Zhège fángzi shì zhōngjiè jièshào gěi wǒ de.",
+                                                "vietnamese":  "Căn nhà này là do môi giới giới thiệu cho tôi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "业务员",
+                           "pinyin":  "yèwùyuán",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "nghiệp vụ viên",
+                           "vietnamese":  "nhân viên kinh doanh",
+                           "examples":  [
+                                            {
+                                                "chinese":  "业务员带我们看了几套房子。",
+                                                "pinyin":  "Yèwùyuán dài wǒmen kàn le jǐ tào fángzi.",
+                                                "vietnamese":  "Nhân viên kinh doanh dẫn chúng tôi đi xem vài căn nhà."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "居室",
+                           "pinyin":  "jūshì",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "cư thất",
+                           "vietnamese":  "phòng ở, phòng ngủ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这套房子有两个居室和一个客厅。",
+                                                "pinyin":  "Zhè tào fángzi yǒu liǎng ge jūshì hé yí ge kètīng.",
+                                                "vietnamese":  "Căn nhà này có hai phòng ngủ và một phòng khách."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "步行",
+                           "pinyin":  "bùxíng",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "bộ hành",
+                           "vietnamese":  "đi bộ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "从这里到地铁站步行十分钟。",
+                                                "pinyin":  "Cóng zhèlǐ dào dìtiězhàn bùxíng shí fēnzhōng.",
+                                                "vietnamese":  "Từ đây đến ga tàu điện ngầm đi bộ mười phút."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "小区",
+                           "pinyin":  "xiǎoqū",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "tiểu khu",
+                           "vietnamese":  "khu dân cư",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个小区环境很好，也很安静。",
+                                                "pinyin":  "Zhège xiǎoqū huánjìng hěn hǎo, yě hěn ānjìng.",
+                                                "vietnamese":  "Khu dân cư này môi trường rất tốt, cũng rất yên tĩnh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "恰好",
+                           "pinyin":  "qiàhǎo",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "kháp hảo",
+                           "vietnamese":  "vừa hay, đúng lúc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我恰好也想找人合租。",
+                                                "pinyin":  "Wǒ qiàhǎo yě xiǎng zhǎo rén hézū.",
+                                                "vietnamese":  "Tôi vừa hay cũng muốn tìm người thuê chung."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "房租",
+                           "pinyin":  "fángzū",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "phòng tô",
+                           "vietnamese":  "tiền thuê nhà",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这里的房租比市中心便宜一些。",
+                                                "pinyin":  "Zhèlǐ de fángzū bǐ shì zhōngxīn piányi yìxiē.",
+                                                "vietnamese":  "Tiền thuê nhà ở đây rẻ hơn trung tâm thành phố một chút."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "季",
+                           "pinyin":  "jì",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "quý, mùa",
+                           "vietnamese":  "quý, ba tháng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "房租要按季付，一次付三个月。",
+                                                "pinyin":  "Fángzū yào àn jì fù, yí cì fù sān ge yuè.",
+                                                "vietnamese":  "Tiền thuê nhà phải trả theo quý, mỗi lần trả ba tháng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "押",
+                           "pinyin":  "yā",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "áp",
+                           "vietnamese":  "đặt cọc, thế chấp",
+                           "examples":  [
+                                            {
+                                                "chinese":  "租房时一般要押一个月房租。",
+                                                "pinyin":  "Zūfáng shí yìbān yào yā yí ge yuè fángzū.",
+                                                "vietnamese":  "Khi thuê nhà thường phải đặt cọc một tháng tiền thuê."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "承受",
+                           "pinyin":  "chéngshòu",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "thừa thụ",
+                           "vietnamese":  "chịu đựng, gánh chịu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个价格太高了，我承受不了。",
+                                                "pinyin":  "Zhège jiàgé tài gāo le, wǒ chéngshòu bùliǎo.",
+                                                "vietnamese":  "Giá này quá cao, tôi không chịu nổi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "要不然",
+                           "pinyin":  "yàobùrán",
+                           "partOfSpeech":  "连",
+                           "sinoVietnamese":  "yếu bất nhiên",
+                           "vietnamese":  "nếu không thì",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我们快点儿决定，要不然房子就租出去了。",
+                                                "pinyin":  "Wǒmen kuài diǎnr juédìng, yàobùrán fángzi jiù zū chūqù le.",
+                                                "vietnamese":  "Chúng ta quyết định nhanh đi, nếu không căn nhà sẽ bị thuê mất."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "家电",
+                           "pinyin":  "jiādiàn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "gia điện",
+                           "vietnamese":  "đồ điện gia dụng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这套房子的家具和家电都很齐全。",
+                                                "pinyin":  "Zhè tào fángzi de jiājù hé jiādiàn dōu hěn qíquán.",
+                                                "vietnamese":  "Đồ nội thất và đồ điện gia dụng của căn nhà này đều rất đầy đủ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "直达",
+                           "pinyin":  "zhídá",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "trực đạt",
+                           "vietnamese":  "đi thẳng, đến thẳng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这路公交车可以直达学校门口。",
+                                                "pinyin":  "Zhè lù gōngjiāochē kěyǐ zhídá xuéxiào ménkǒu.",
+                                                "vietnamese":  "Tuyến xe buýt này có thể đi thẳng đến cổng trường."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "押金",
+                           "pinyin":  "yājīn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "áp kim",
+                           "vietnamese":  "tiền đặt cọc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "搬进去以前需要先交押金。",
+                                                "pinyin":  "Bān jìnqù yǐqián xūyào xiān jiāo yājīn.",
+                                                "vietnamese":  "Trước khi chuyển vào cần nộp tiền đặt cọc trước."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "合租",
+                           "pinyin":  "hézū",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "hợp tô",
+                           "vietnamese":  "thuê chung",
+                           "examples":  [
+                                            {
+                                                "chinese":  "为了节约房租，我想和同学合租。",
+                                                "pinyin":  "Wèile jiéyuē fángzū, wǒ xiǎng hé tóngxué hézū.",
+                                                "vietnamese":  "Để tiết kiệm tiền thuê nhà, tôi muốn thuê chung với bạn học."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "女生",
+                           "pinyin":  "nǚshēng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "nữ sinh",
+                           "vietnamese":  "nữ sinh, bạn nữ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个房间只想租给女生。",
+                                                "pinyin":  "Zhège fángjiān zhǐ xiǎng zū gěi nǚshēng.",
+                                                "vietnamese":  "Phòng này chỉ muốn cho bạn nữ thuê."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "异性",
+                           "pinyin":  "yìxìng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "dị tính",
+                           "vietnamese":  "người khác giới",
+                           "examples":  [
+                                            {
+                                                "chinese":  "有些人不愿意和异性合租。",
+                                                "pinyin":  "Yǒuxiē rén bú yuànyì hé yìxìng hézū.",
+                                                "vietnamese":  "Có một số người không muốn thuê chung với người khác giới."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "分摊",
+                           "pinyin":  "fēntān",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "phân than",
+                           "vietnamese":  "chia sẻ, chia đều chi phí",
+                           "examples":  [
+                                            {
+                                                "chinese":  "水电费可以由两个人一起分摊。",
+                                                "pinyin":  "Shuǐdiànfèi kěyǐ yóu liǎng ge rén yìqǐ fēntān.",
+                                                "vietnamese":  "Tiền điện nước có thể do hai người cùng chia."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "万一",
+                           "pinyin":  "wànyī",
+                           "partOfSpeech":  "连",
+                           "sinoVietnamese":  "vạn nhất",
+                           "vietnamese":  "lỡ như, nếu chẳng may",
+                           "examples":  [
+                                            {
+                                                "chinese":  "万一房租太贵，我们就再找别的房子。",
+                                                "pinyin":  "Wànyī fángzū tài guì, wǒmen jiù zài zhǎo bié de fángzi.",
+                                                "vietnamese":  "Lỡ như tiền thuê nhà quá đắt, chúng ta sẽ tìm căn khác."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "让",
+                           "pinyin":  "ràng",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "nhượng",
+                           "vietnamese":  "nhường, giảm bớt, để",
+                           "examples":  [
+                                            {
+                                                "chinese":  "你能不能再让一点儿房租？",
+                                                "pinyin":  "Nǐ néng bu néng zài ràng yìdiǎnr fángzū?",
+                                                "vietnamese":  "Bạn có thể giảm tiền thuê nhà thêm một chút không?"
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "你好，想看看房子吗？你打算买房、卖房，还是租房？",
+                          "pinyin":  "Nǐ hǎo, xiǎng kànkan fángzi ma? Nǐ dǎsuàn mǎi fáng, mài fáng, háishi zū fáng?",
+                          "vietnamese":  "Xin chào, bạn muốn xem nhà không? Bạn định mua nhà, bán nhà hay thuê nhà?"
+                      },
+                      {
+                          "chinese":  "我想租房子。",
+                          "pinyin":  "Wǒ xiǎng zū fángzi.",
+                          "vietnamese":  "Tôi muốn thuê nhà."
+                      },
+                      {
+                          "chinese":  "你想租多大的房子？是自己住还是办公用？",
+                          "pinyin":  "Nǐ xiǎng zū duō dà de fángzi? Shì zìjǐ zhù háishi bàngōng yòng?",
+                          "vietnamese":  "Bạn muốn thuê căn nhà rộng bao nhiêu? Tự ở hay dùng làm văn phòng?"
+                      },
+                      {
+                          "chinese":  "自己住，不用太大，一居室就够了。",
+                          "pinyin":  "Zìjǐ zhù, bú yòng tài dà, yì jūshì jiù gòu le.",
+                          "vietnamese":  "Tự ở, không cần quá rộng, căn một phòng là đủ rồi."
+                      },
+                      {
+                          "chinese":  "你想租哪儿的房子？",
+                          "pinyin":  "Nǐ xiǎng zū nǎr de fángzi?",
+                          "vietnamese":  "Bạn muốn thuê nhà ở đâu?"
+                      },
+                      {
+                          "chinese":  "最好在学校周围，距离不要太远，步行到学校二十分钟之内。",
+                          "pinyin":  "Zuì hǎo zài xuéxiào zhōuwéi, jùlí bú yào tài yuǎn, bùxíng dào xuéxiào èrshí fēnzhōng zhī nèi.",
+                          "vietnamese":  "Tốt nhất là quanh trường, khoảng cách không quá xa, đi bộ đến trường trong vòng 20 phút."
+                      },
+                      {
+                          "chinese":  "蓝天小区恰好有个一居室，这个小区到你们学校才十分钟。",
+                          "pinyin":  "Lántiān xiǎoqū qiàhǎo yǒu ge yì jūshì, zhège xiǎoqū dào nǐmen xuéxiào cái shí fēnzhōng.",
+                          "vietnamese":  "Khu Lam Thiên vừa hay có một căn một phòng, từ khu này đến trường các bạn chỉ 10 phút."
+                      },
+                      {
+                          "chinese":  "房租每个月多少钱？是月付、季付还是年付？",
+                          "pinyin":  "Fángzū měi ge yuè duōshao qián? Shì yuèfù, jìfù háishi niánfù?",
+                          "vietnamese":  "Tiền thuê mỗi tháng bao nhiêu? Trả theo tháng, theo quý hay theo năm?"
+                      },
+                      {
+                          "chinese":  "季付，每个月三千，押一付三。",
+                          "pinyin":  "Jìfù, měi ge yuè sān qiān, yā yī fù sān.",
+                          "vietnamese":  "Trả theo quý, mỗi tháng 3.000 tệ, đặt cọc một tháng và trả trước ba tháng."
+                      },
+                      {
+                          "chinese":  "真够贵的。",
+                          "pinyin":  "Zhēn gòu guì de.",
+                          "vietnamese":  "Thật là đắt."
+                      },
+                      {
+                          "chinese":  "这个小区的房子都是新房子，周围环境很好。",
+                          "pinyin":  "Zhège xiǎoqū de fángzi dōu shì xīn fángzi, zhōuwéi huánjìng hěn hǎo.",
+                          "vietnamese":  "Nhà trong khu này đều là nhà mới, môi trường xung quanh rất tốt."
+                      },
+                      {
+                          "chinese":  "还是找个便宜点儿的吧，这个价格我承受不了。",
+                          "pinyin":  "Háishi zhǎo ge piányi diǎnr de ba, zhège jiàgé wǒ chéngshòu bù liǎo.",
+                          "vietnamese":  "Vẫn nên tìm căn rẻ hơn một chút, mức giá này tôi không chịu nổi."
+                      },
+                      {
+                          "chinese":  "要不然这样，学院小区也有个一居室，去看看吗？",
+                          "pinyin":  "Yàoburán zhèyàng, Xuéyuàn xiǎoqū yě yǒu ge yì jūshì, qù kànkan ma?",
+                          "vietnamese":  "Hay là thế này, khu Học Viện cũng có một căn một phòng, đi xem thử không?"
+                      },
+                      {
+                          "chinese":  "房子怎么样？",
+                          "pinyin":  "Fángzi zěnmeyàng?",
+                          "vietnamese":  "Căn nhà thế nào?"
+                      },
+                      {
+                          "chinese":  "是老房子，没电梯。",
+                          "pinyin":  "Shì lǎo fángzi, méi diàntī.",
+                          "vietnamese":  "Là nhà cũ, không có thang máy."
+                      },
+                      {
+                          "chinese":  "里边能洗澡、做饭吗？",
+                          "pinyin":  "Lǐbian néng xǐzǎo, zuò fàn ma?",
+                          "vietnamese":  "Bên trong có thể tắm và nấu ăn không?"
+                      },
+                      {
+                          "chinese":  "能，还能上网，厨房和卫生间很小，但家具、家电通通都有。",
+                          "pinyin":  "Néng, hái néng shàngwǎng, chúfáng hé wèishēngjiān hěn xiǎo, dàn jiājù, jiādiàn tōngtōng dōu yǒu.",
+                          "vietnamese":  "Có, còn có thể lên mạng, bếp và nhà vệ sinh rất nhỏ, nhưng đồ nội thất và đồ điện gia dụng đều có đủ."
+                      },
+                      {
+                          "chinese":  "离学校有多远？",
+                          "pinyin":  "Lí xuéxiào yǒu duō yuǎn?",
+                          "vietnamese":  "Cách trường bao xa?"
+                      },
+                      {
+                          "chinese":  "步行有点儿远，恐怕得半个小时。",
+                          "pinyin":  "Bùxíng yǒudiǎnr yuǎn, kǒngpà děi bàn ge xiǎoshí.",
+                          "vietnamese":  "Đi bộ hơi xa, e là phải mất nửa tiếng."
+                      },
+                      {
+                          "chinese":  "那儿交通方便吗？旁边有公共汽车站、地铁站吗？",
+                          "pinyin":  "Nàr jiāotōng fāngbiàn ma? Pángbiān yǒu gōnggòng qìchē zhàn, dìtiě zhàn ma?",
+                          "vietnamese":  "Giao thông ở đó có tiện không? Bên cạnh có trạm xe buýt, ga tàu điện ngầm không?"
+                      },
+                      {
+                          "chinese":  "特方便，小区门口有公共汽车直达学校，到地铁站才十分钟。",
+                          "pinyin":  "Tè fāngbiàn, xiǎoqū ménkǒu yǒu gōnggòng qìchē zhídá xuéxiào, dào dìtiě zhàn cái shí fēnzhōng.",
+                          "vietnamese":  "Rất tiện, trước cổng khu có xe buýt đi thẳng đến trường, đến ga tàu điện ngầm chỉ 10 phút."
+                      },
+                      {
+                          "chinese":  "生活方便吗？附近有没有超市？",
+                          "pinyin":  "Shēnghuó fāngbiàn ma? Fùjìn yǒu méiyǒu chāoshì?",
+                          "vietnamese":  "Sinh hoạt có tiện không? Gần đó có siêu thị không?"
+                      },
+                      {
+                          "chinese":  "超市就在地铁站的旁边，购物特方便。",
+                          "pinyin":  "Chāoshì jiù zài dìtiě zhàn de pángbiān, gòuwù tè fāngbiàn.",
+                          "vietnamese":  "Siêu thị ở ngay bên cạnh ga tàu điện ngầm, mua sắm rất tiện."
+                      },
+                      {
+                          "chinese":  "太好了，房租一个月多少钱？",
+                          "pinyin":  "Tài hǎo le, fángzū yí ge yuè duōshao qián?",
+                          "vietnamese":  "Tốt quá, tiền thuê một tháng bao nhiêu?"
+                      },
+                      {
+                          "chinese":  "每个月两千五，要年付，另外，要付一个月的押金。",
+                          "pinyin":  "Měi ge yuè liǎng qiān wǔ, yào niánfù, lìngwài, yào fù yí ge yuè de yājīn.",
+                          "vietnamese":  "Mỗi tháng 2.500 tệ, phải trả theo năm, ngoài ra phải trả một tháng tiền cọc."
+                      },
+                      {
+                          "chinese":  "还是太贵了。有两千元以下的吗？",
+                          "pinyin":  "Háishi tài guì le. Yǒu liǎng qiān yuán yǐxià de ma?",
+                          "vietnamese":  "Vẫn đắt quá. Có căn nào dưới 2.000 tệ không?"
+                      },
+                      {
+                          "chinese":  "没有。要不然这样，你跟人合租。",
+                          "pinyin":  "Méiyǒu. Yàoburán zhèyàng, nǐ gēn rén hézū.",
+                          "vietnamese":  "Không có. Hay là thế này, bạn thuê chung với người khác."
+                      },
+                      {
+                          "chinese":  "合租？跟什么人？",
+                          "pinyin":  "Hézū? Gēn shénme rén?",
+                          "vietnamese":  "Thuê chung? Với người như thế nào?"
+                      },
+                      {
+                          "chinese":  "就是你们学校的女生。",
+                          "pinyin":  "Jiùshì nǐmen xuéxiào de nǚshēng.",
+                          "vietnamese":  "Là nữ sinh của trường các bạn."
+                      },
+                      {
+                          "chinese":  "这样吧，我想一想，然后再给你打电话。",
+                          "pinyin":  "Zhèyàng ba, wǒ xiǎng yi xiǎng, ránhòu zài gěi nǐ dǎ diànhuà.",
+                          "vietnamese":  "Thế này nhé, tôi suy nghĩ một chút, rồi sau đó gọi điện lại cho bạn."
+                      },
+                      {
+                          "chinese":  "好的，方便的话，留一下联系方式，有合适的房子我跟你联系。",
+                          "pinyin":  "Hǎo de, fāngbiàn de huà, liú yíxià liánxì fāngshì, yǒu héshì de fángzi wǒ gēn nǐ liánxì.",
+                          "vietnamese":  "Được, nếu tiện thì để lại cách liên lạc, có căn nhà phù hợp tôi sẽ liên hệ với bạn."
+                      },
+                      {
+                          "chinese":  "王丽，你说，我跟人合租怎么样？",
+                          "pinyin":  "Wáng Lì, nǐ shuō, wǒ gēn rén hézū zěnmeyàng?",
+                          "vietnamese":  "Vương Lệ, bạn nói xem, tôi thuê chung với người khác thì thế nào?"
+                      },
+                      {
+                          "chinese":  "合租挺好呀，可以节约钱。",
+                          "pinyin":  "Hézū tǐng hǎo ya, kěyǐ jiéyuē qián.",
+                          "vietnamese":  "Thuê chung khá tốt mà, có thể tiết kiệm tiền."
+                      },
+                      {
+                          "chinese":  "异性合租呢？中介公司建议我跟一个女生合租。",
+                          "pinyin":  "Yìxìng hézū ne? Zhōngjiè gōngsī jiànyì wǒ gēn yí ge nǚshēng hézū.",
+                          "vietnamese":  "Còn thuê chung với người khác giới thì sao? Công ty môi giới khuyên tôi thuê chung với một bạn nữ."
+                      },
+                      {
+                          "chinese":  "我觉得无所谓，人家女孩儿都不担心，你担心什么呀？",
+                          "pinyin":  "Wǒ juéde wúsuǒwèi, rénjiā nǚháir dōu bù dānxīn, nǐ dānxīn shénme ya?",
+                          "vietnamese":  "Tôi thấy không sao, cô gái người ta còn không lo, bạn lo gì chứ?"
+                      },
+                      {
+                          "chinese":  "异性合租？这也太开放了吧？",
+                          "pinyin":  "Yìxìng hézū? Zhè yě tài kāifàng le ba?",
+                          "vietnamese":  "Thuê chung khác giới à? Như vậy cũng quá cởi mở rồi nhỉ?"
+                      },
+                      {
+                          "chinese":  "有什么呀？女的会做饭、爱打扫，男的力气大、能干重活儿，这样挺好的。",
+                          "pinyin":  "Yǒu shénme ya? Nǚ de huì zuò fàn, ài dǎsǎo, nán de lìqi dà, néng gàn zhòng huór, zhèyàng tǐng hǎo de.",
+                          "vietnamese":  "Có gì đâu? Nữ thì biết nấu ăn, thích dọn dẹp; nam thì khỏe, làm được việc nặng, như vậy khá tốt mà."
+                      },
+                      {
+                          "chinese":  "你就别开玩笑了。",
+                          "pinyin":  "Nǐ jiù bié kāi wánxiào le.",
+                          "vietnamese":  "Bạn đừng đùa nữa."
+                      },
+                      {
+                          "chinese":  "别急，我是说男女搭配，干活儿不累，这样挺好。",
+                          "pinyin":  "Bié jí, wǒ shì shuō nán nǚ dāpèi, gànhuór bú lèi, zhèyàng tǐng hǎo.",
+                          "vietnamese":  "Đừng vội, ý tôi là nam nữ phối hợp thì làm việc không mệt, như vậy khá tốt."
+                      },
+                      {
+                          "chinese":  "这样生活上会不会不方便？",
+                          "pinyin":  "Zhèyàng shēnghuó shang huì bú huì bù fāngbiàn?",
+                          "vietnamese":  "Như vậy trong sinh hoạt có bất tiện không?"
+                      },
+                      {
+                          "chinese":  "有什么不方便呀？事先约好就行了。",
+                          "pinyin":  "Yǒu shénme bù fāngbiàn ya? Shìxiān yuē hǎo jiù xíng le.",
+                          "vietnamese":  "Có gì bất tiện đâu? Chỉ cần thỏa thuận trước là được."
+                      },
+                      {
+                          "chinese":  "约好什么？",
+                          "pinyin":  "Yuē hǎo shénme?",
+                          "vietnamese":  "Thỏa thuận gì?"
+                      },
+                      {
+                          "chinese":  "约好什么事不能做，谁打扫卫生，费用怎么分摊，等等。",
+                          "pinyin":  "Yuē hǎo shénme shì bù néng zuò, shéi dǎsǎo wèishēng, fèiyòng zěnme fēntān, děngděng.",
+                          "vietnamese":  "Thỏa thuận việc gì không được làm, ai dọn vệ sinh, chi phí chia thế nào, vân vân."
+                      },
+                      {
+                          "chinese":  "他们俩根本不认识，合适吗？",
+                          "pinyin":  "Tāmen liǎ gēnběn bú rènshi, héshì ma?",
+                          "vietnamese":  "Hai người họ vốn không quen nhau, có phù hợp không?"
+                      },
+                      {
+                          "chinese":  "看你说的，他们俩是合租，而不是结婚，有什么合适不合适的？",
+                          "pinyin":  "Kàn nǐ shuō de, tāmen liǎ shì hézū, ér bú shì jiéhūn, yǒu shénme héshì bù héshì de?",
+                          "vietnamese":  "Nghe bạn nói kìa, họ là thuê chung chứ đâu phải kết hôn, có gì mà phù hợp hay không phù hợp?"
+                      },
+                      {
+                          "chinese":  "万一出问题呢？",
+                          "pinyin":  "Wànyī chū wèntí ne?",
+                          "vietnamese":  "Lỡ xảy ra vấn đề thì sao?"
+                      },
+                      {
+                          "chinese":  "怎么会呢？人们对异性都特宽容，东民肯定会让着女生的。",
+                          "pinyin":  "Zěnme huì ne? Rénmen duì yìxìng dōu tè kuānróng, Dōngmín kěndìng huì ràngzhe nǚshēng de.",
+                          "vietnamese":  "Sao có thể chứ? Mọi người thường rất khoan dung với người khác giới, Đông Dân chắc chắn sẽ nhường bạn nữ."
+                      },
+                      {
+                          "chinese":  "东民，要不然你问问你女朋友吧。",
+                          "pinyin":  "Dōngmín, yàoburán nǐ wènwen nǐ nǚpéngyou ba.",
+                          "vietnamese":  "Đông Dân, hay là bạn hỏi thử bạn gái của bạn đi."
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "还是……吧",
+                        "meaning":  "Vẫn nên… thì hơn",
+                        "usage":  "Dùng để đưa ra lựa chọn hoặc lời khuyên sau khi cân nhắc",
+                        "note":  "还是 thường mang nghĩa chọn phương án tốt hơn",
+                        "example":  "天快黑了，我们还是早点儿回去吧。",
+                        "pinyin":  "Tiān kuài hēi le, wǒmen háishi zǎodiǎnr huíqù ba.",
+                        "vietnamese":  "Trời sắp tối rồi, chúng ta vẫn nên về sớm thì hơn.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "要不然……",
+                        "meaning":  "Nếu không thì…",
+                        "usage":  "Dùng để nói hậu quả nếu không làm theo đề nghị trước",
+                        "note":  "Thường đứng sau một câu khuyên",
+                        "example":  "你快点儿走，要不然就赶不上车了。",
+                        "pinyin":  "Nǐ kuàidiǎnr zǒu, yàobùrán jiù gǎnbushàng chē le.",
+                        "vietnamese":  "Bạn đi nhanh lên, nếu không thì sẽ không kịp xe.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……都不……，你……什么呀",
+                        "meaning":  "… còn không…, bạn … cái gì chứ",
+                        "usage":  "Dùng để trách móc hoặc phản bác",
+                        "note":  "Khẩu ngữ, sắc thái mạnh",
+                        "example":  "课文都不看，你复习什么呀？",
+                        "pinyin":  "Kèwén dōu bú kàn, nǐ fùxí shénme ya?",
+                        "vietnamese":  "Bài khóa còn không đọc, bạn ôn cái gì chứ?",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "是……，而不是……",
+                        "meaning":  "Là…, chứ không phải…",
+                        "usage":  "Dùng để sửa lại nhận thức hoặc nhấn mạnh điều đúng",
+                        "note":  "Hay dùng trong giải thích",
+                        "example":  "学习语言是为了交流，而不是为了考试。",
+                        "pinyin":  "Xuéxí yǔyán shì wèile jiāoliú, ér bú shì wèile kǎoshì.",
+                        "vietnamese":  "Học ngôn ngữ là để giao tiếp, chứ không phải để thi.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "有什么 A 不 A 的",
+                        "meaning":  "Có gì mà A hay không A",
+                        "usage":  "Dùng để nói việc gì không đáng tranh luận hoặc không quan trọng",
+                        "note":  "Khẩu ngữ, thường mang sắc thái không đồng ý",
+                        "example":  "有什么贵不贵的，喜欢就买吧。",
+                        "pinyin":  "Yǒu shénme guì bù guì de, xǐhuan jiù mǎi ba.",
+                        "vietnamese":  "Có gì mà đắt hay không đắt, thích thì mua đi.",
+                        "level":  "⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "我打算下个月在学校附近租一套房子。",
+                        "pinyin":  "Wǒ dǎsuàn xià ge yuè zài xuéxiào fùjìn zū yí tào fángzi.",
+                        "vietnamese":  "Tôi dự định tháng sau thuê một căn nhà gần trường.",
+                        "answer":  "我打算下个月在学校附近租一套房子。"
+                    },
+                    {
+                        "chinese":  "租房以前，最好先了解小区环境和交通。",
+                        "pinyin":  "Zūfáng yǐqián, zuìhǎo xiān liǎojiě xiǎoqū huánjìng hé jiāotōng.",
+                        "vietnamese":  "Trước khi thuê nhà, tốt nhất tìm hiểu môi trường khu dân cư và giao thông.",
+                        "answer":  "租房以前，最好先了解小区环境和交通。"
+                    },
+                    {
+                        "chinese":  "他想租一个离地铁站近的居室。",
+                        "pinyin":  "Tā xiǎng zū yí ge lí dìtiězhàn jìn de jūshì.",
+                        "vietnamese":  "Anh ấy muốn thuê một phòng ở gần ga tàu điện.",
+                        "answer":  "他想租一个离地铁站近的居室。"
+                    },
+                    {
+                        "chinese":  "如果房租太高，学生很难承受。",
+                        "pinyin":  "Rúguǒ fángzū tài gāo, xuésheng hěn nán chéngshòu.",
+                        "vietnamese":  "Nếu tiền thuê nhà quá cao, sinh viên rất khó gánh chịu.",
+                        "answer":  "如果房租太高，学生很难承受。"
+                    },
+                    {
+                        "chinese":  "这套房子可以合租，也可以整套租。",
+                        "pinyin":  "Zhè tào fángzi kěyǐ hézū, yě kěyǐ zhěng tào zū.",
+                        "vietnamese":  "Căn nhà này có thể thuê chung, cũng có thể thuê nguyên căn.",
+                        "answer":  "这套房子可以合租，也可以整套租。"
+                    },
+                    {
+                        "chinese":  "租房时一定要看清楚押金和合同。",
+                        "pinyin":  "Zūfáng shí yídìng yào kàn qīngchu yājīn hé hétong.",
+                        "vietnamese":  "Khi thuê nhà nhất định phải xem rõ tiền cọc và hợp đồng.",
+                        "answer":  "租房时一定要看清楚押金和合同。"
+                    },
+                    {
+                        "chinese":  "他通过中介租房，虽然方便，但费用不低。",
+                        "pinyin":  "Tā tōngguò zhōngjiè zūfáng, suīrán fāngbiàn, dàn fèiyòng bù dī.",
+                        "vietnamese":  "Anh ấy thuê nhà qua môi giới, tuy tiện nhưng chi phí không thấp.",
+                        "answer":  "他通过中介租房，虽然方便，但费用不低。"
+                    },
+                    {
+                        "chinese":  "这个小区很安静，很多人愿意在这里租房。",
+                        "pinyin":  "Zhège xiǎoqū hěn ānjìng, hěn duō rén yuànyì zài zhèlǐ zūfáng.",
+                        "vietnamese":  "Khu dân cư này rất yên tĩnh, nhiều người muốn thuê nhà ở đây.",
+                        "answer":  "这个小区很安静，很多人愿意在这里租房。"
+                    },
+                    {
+                        "chinese":  "租房信息写得不够具体，我还要再确认。",
+                        "pinyin":  "Zūfáng xìnxī xiě de bú gòu jùtǐ, wǒ hái yào zài quèrèn.",
+                        "vietnamese":  "Thông tin thuê nhà viết chưa đủ cụ thể, tôi còn phải xác nhận lại.",
+                        "answer":  "租房信息写得不够具体，我还要再确认。"
+                    },
+                    {
+                        "chinese":  "万一租到不合适的房子，搬家会很麻烦。",
+                        "pinyin":  "Wànyī zū dào bù héshì de fángzi, bānjiā huì hěn máfan.",
+                        "vietnamese":  "Lỡ như thuê phải nhà không phù hợp, chuyển nhà sẽ rất phiền.",
+                        "answer":  "万一租到不合适的房子，搬家会很麻烦。"
+                    },
+                    {
+                        "chinese":  "这个中介给我推荐了三套房子。",
+                        "pinyin":  "Zhège zhōngjiè gěi wǒ tuījiàn le sān tào fángzi.",
+                        "vietnamese":  "Môi giới này giới thiệu cho tôi ba căn nhà.",
+                        "answer":  "这个中介给我推荐了三套房子。"
+                    },
+                    {
+                        "chinese":  "找中介租房时，要先问清楚服务费。",
+                        "pinyin":  "Zhǎo zhōngjiè zūfáng shí, yào xiān wèn qīngchu fúwùfèi.",
+                        "vietnamese":  "Khi tìm môi giới thuê nhà, phải hỏi rõ phí dịch vụ trước.",
+                        "answer":  "找中介租房时，要先问清楚服务费。"
+                    },
+                    {
+                        "chinese":  "中介说这套房子步行十分钟到学校。",
+                        "pinyin":  "Zhōngjiè shuō zhè tào fángzi bùxíng shí fēnzhōng dào xuéxiào.",
+                        "vietnamese":  "Môi giới nói căn nhà này đi bộ 10 phút đến trường.",
+                        "answer":  "中介说这套房子步行十分钟到学校。"
+                    },
+                    {
+                        "chinese":  "有些中介只想赚钱，不一定真正负责。",
+                        "pinyin":  "Yǒuxiē zhōngjiè zhǐ xiǎng zhuànqián, bù yídìng zhēnzhèng fùzé.",
+                        "vietnamese":  "Một số môi giới chỉ muốn kiếm tiền, chưa chắc thật sự có trách nhiệm.",
+                        "answer":  "有些中介只想赚钱，不一定真正负责。"
+                    },
+                    {
+                        "chinese":  "通过中介找房，信息通常比较多。",
+                        "pinyin":  "Tōngguò zhōngjiè zhǎo fáng, xìnxī tōngcháng bǐjiào duō.",
+                        "vietnamese":  "Tìm nhà qua môi giới thì thông tin thường khá nhiều.",
+                        "answer":  "通过中介找房，信息通常比较多。"
+                    },
+                    {
+                        "chinese":  "中介带我们看了一个两居室。",
+                        "pinyin":  "Zhōngjiè dài wǒmen kàn le yí ge liǎng jūshì.",
+                        "vietnamese":  "Môi giới dẫn chúng tôi xem một căn hai phòng ngủ.",
+                        "answer":  "中介带我们看了一个两居室。"
+                    },
+                    {
+                        "chinese":  "如果中介要求先交押金，一定要小心。",
+                        "pinyin":  "Rúguǒ zhōngjiè yāoqiú xiān jiāo yājīn, yídìng yào xiǎoxīn.",
+                        "vietnamese":  "Nếu môi giới yêu cầu nộp tiền cọc trước thì nhất định phải cẩn thận.",
+                        "answer":  "如果中介要求先交押金，一定要小心。"
+                    },
+                    {
+                        "chinese":  "这个中介态度不错，介绍得也很具体。",
+                        "pinyin":  "Zhège zhōngjiè tàidu búcuò, jièshào de yě hěn jùtǐ.",
+                        "vietnamese":  "Môi giới này thái độ khá tốt, giới thiệu cũng rất cụ thể.",
+                        "answer":  "这个中介态度不错，介绍得也很具体。"
+                    },
+                    {
+                        "chinese":  "中介帮我们和房东商量房租。",
+                        "pinyin":  "Zhōngjiè bāng wǒmen hé fángdōng shāngliang fángzū.",
+                        "vietnamese":  "Môi giới giúp chúng tôi bàn với chủ nhà về tiền thuê.",
+                        "answer":  "中介帮我们和房东商量房租。"
+                    },
+                    {
+                        "chinese":  "不通过中介租房，可能会省一些费用。",
+                        "pinyin":  "Bù tōngguò zhōngjiè zūfáng, kěnéng huì shěng yìxiē fèiyòng.",
+                        "vietnamese":  "Không thuê nhà qua môi giới có thể tiết kiệm một ít chi phí.",
+                        "answer":  "不通过中介租房，可能会省一些费用。"
+                    },
+                    {
+                        "chinese":  "这个业务员每天都要带客户看房。",
+                        "pinyin":  "Zhège yèwùyuán měitiān dōu yào dài kèhù kàn fáng.",
+                        "vietnamese":  "Nhân viên kinh doanh này mỗi ngày đều phải dẫn khách xem nhà.",
+                        "answer":  "这个业务员每天都要带客户看房。"
+                    },
+                    {
+                        "chinese":  "业务员给我发来了具体的租房信息。",
+                        "pinyin":  "Yèwùyuán gěi wǒ fā lái le jùtǐ de zūfáng xìnxī.",
+                        "vietnamese":  "Nhân viên kinh doanh gửi cho tôi thông tin thuê nhà cụ thể.",
+                        "answer":  "业务员给我发来了具体的租房信息。"
+                    },
+                    {
+                        "chinese":  "他刚做业务员不久，还不太熟悉小区。",
+                        "pinyin":  "Tā gāng zuò yèwùyuán bù jiǔ, hái bú tài shúxī xiǎoqū.",
+                        "vietnamese":  "Anh ấy mới làm nhân viên kinh doanh chưa lâu, vẫn chưa quen khu dân cư lắm.",
+                        "answer":  "他刚做业务员不久，还不太熟悉小区。"
+                    },
+                    {
+                        "chinese":  "好的业务员会主动确认客户需求。",
+                        "pinyin":  "Hǎo de yèwùyuán huì zhǔdòng quèrèn kèhù xūqiú.",
+                        "vietnamese":  "Nhân viên kinh doanh tốt sẽ chủ động xác nhận nhu cầu khách hàng.",
+                        "answer":  "好的业务员会主动确认客户需求。"
+                    },
+                    {
+                        "chinese":  "业务员说这套房子的家电都很新。",
+                        "pinyin":  "Yèwùyuán shuō zhè tào fángzi de jiādiàn dōu hěn xīn.",
+                        "vietnamese":  "Nhân viên kinh doanh nói đồ điện gia dụng của căn nhà này đều rất mới.",
+                        "answer":  "业务员说这套房子的家电都很新。"
+                    },
+                    {
+                        "chinese":  "如果业务员介绍不清楚，我们就再问中介。",
+                        "pinyin":  "Rúguǒ yèwùyuán jièshào bù qīngchu, wǒmen jiù zài wèn zhōngjiè.",
+                        "vietnamese":  "Nếu nhân viên kinh doanh giới thiệu không rõ, chúng tôi sẽ hỏi lại môi giới.",
+                        "answer":  "如果业务员介绍不清楚，我们就再问中介。"
+                    },
+                    {
+                        "chinese":  "这个业务员很会沟通，成交率也很高。",
+                        "pinyin":  "Zhège yèwùyuán hěn huì gōutōng, chéngjiāo lǜ yě hěn gāo.",
+                        "vietnamese":  "Nhân viên kinh doanh này rất biết giao tiếp, tỷ lệ chốt giao dịch cũng cao.",
+                        "answer":  "这个业务员很会沟通，成交率也很高。"
+                    },
+                    {
+                        "chinese":  "业务员提醒我，合租最好提前了解室友。",
+                        "pinyin":  "Yèwùyuán tíxǐng wǒ, hézū zuìhǎo tíqián liǎojiě shìyǒu.",
+                        "vietnamese":  "Nhân viên kinh doanh nhắc tôi rằng thuê chung tốt nhất tìm hiểu bạn cùng phòng trước.",
+                        "answer":  "业务员提醒我，合租最好提前了解室友。"
+                    },
+                    {
+                        "chinese":  "他不只是业务员，也是附近小区的老住户。",
+                        "pinyin":  "Tā bú zhǐshì yèwùyuán, yě shì fùjìn xiǎoqū de lǎo zhùhù.",
+                        "vietnamese":  "Anh ấy không chỉ là nhân viên kinh doanh mà còn là cư dân lâu năm của khu gần đó.",
+                        "answer":  "他不只是业务员，也是附近小区的老住户。"
+                    },
+                    {
+                        "chinese":  "业务员说押金可以分两次交。",
+                        "pinyin":  "Yèwùyuán shuō yājīn kěyǐ fēn liǎng cì jiāo.",
+                        "vietnamese":  "Nhân viên kinh doanh nói tiền cọc có thể nộp làm hai lần.",
+                        "answer":  "业务员说押金可以分两次交。"
+                    },
+                    {
+                        "chinese":  "这套房子是两居室，适合两个人合租。",
+                        "pinyin":  "Zhè tào fángzi shì liǎng jūshì, shìhé liǎng ge rén hézū.",
+                        "vietnamese":  "Căn nhà này là hai phòng ngủ, phù hợp hai người thuê chung.",
+                        "answer":  "这套房子是两居室，适合两个人合租。"
+                    },
+                    {
+                        "chinese":  "我想租一个安静的一居室。",
+                        "pinyin":  "Wǒ xiǎng zū yí ge ānjìng de yì jūshì.",
+                        "vietnamese":  "Tôi muốn thuê một căn một phòng ngủ yên tĩnh.",
+                        "answer":  "我想租一个安静的一居室。"
+                    },
+                    {
+                        "chinese":  "三居室房租比较高，但是空间更大。",
+                        "pinyin":  "Sān jūshì fángzū bǐjiào gāo, dànshì kōngjiān gèng dà.",
+                        "vietnamese":  "Căn ba phòng ngủ tiền thuê khá cao nhưng không gian lớn hơn.",
+                        "answer":  "三居室房租比较高，但是空间更大。"
+                    },
+                    {
+                        "chinese":  "这个居室虽然不大，但采光很好。",
+                        "pinyin":  "Zhège jūshì suīrán bú dà, dàn cǎiguāng hěn hǎo.",
+                        "vietnamese":  "Phòng ở này tuy không lớn nhưng ánh sáng rất tốt.",
+                        "answer":  "这个居室虽然不大，但采光很好。"
+                    },
+                    {
+                        "chinese":  "中介介绍的居室离地铁站很近。",
+                        "pinyin":  "Zhōngjiè jièshào de jūshì lí dìtiězhàn hěn jìn.",
+                        "vietnamese":  "Phòng ở môi giới giới thiệu rất gần ga tàu điện.",
+                        "answer":  "中介介绍的居室离地铁站很近。"
+                    },
+                    {
+                        "chinese":  "如果只住一个人，一居室就够了。",
+                        "pinyin":  "Rúguǒ zhǐ zhù yí ge rén, yì jūshì jiù gòu le.",
+                        "vietnamese":  "Nếu chỉ ở một người thì một phòng ngủ là đủ rồi.",
+                        "answer":  "如果只住一个人，一居室就够了。"
+                    },
+                    {
+                        "chinese":  "这个小区的两居室非常抢手。",
+                        "pinyin":  "Zhège xiǎoqū de liǎng jūshì fēicháng qiǎngshǒu.",
+                        "vietnamese":  "Căn hai phòng ngủ ở khu này rất được săn đón.",
+                        "answer":  "这个小区的两居室非常抢手。"
+                    },
+                    {
+                        "chinese":  "居室里的家电齐全，可以直接入住。",
+                        "pinyin":  "Jūshì lǐ de jiādiàn qíquán, kěyǐ zhíjiē rùzhù.",
+                        "vietnamese":  "Đồ điện trong phòng ở đầy đủ, có thể vào ở ngay.",
+                        "answer":  "居室里的家电齐全，可以直接入住。"
+                    },
+                    {
+                        "chinese":  "业务员让我们先看居室，再谈房租。",
+                        "pinyin":  "Yèwùyuán ràng wǒmen xiān kàn jūshì, zài tán fángzū.",
+                        "vietnamese":  "Nhân viên kinh doanh bảo chúng tôi xem phòng trước rồi bàn tiền thuê.",
+                        "answer":  "业务员让我们先看居室，再谈房租。"
+                    },
+                    {
+                        "chinese":  "这套居室押金太高，我有点承受不了。",
+                        "pinyin":  "Zhè tào jūshì yājīn tài gāo, wǒ yǒudiǎn chéngshòu bù liǎo.",
+                        "vietnamese":  "Căn phòng này tiền cọc quá cao, tôi hơi không gánh nổi.",
+                        "answer":  "这套居室押金太高，我有点承受不了。"
+                    },
+                    {
+                        "chinese":  "从这里步行到学校只要十分钟。",
+                        "pinyin":  "Cóng zhèlǐ bùxíng dào xuéxiào zhǐ yào shí fēnzhōng.",
+                        "vietnamese":  "Từ đây đi bộ đến trường chỉ cần 10 phút.",
+                        "answer":  "从这里步行到学校只要十分钟。"
+                    },
+                    {
+                        "chinese":  "这个小区步行五分钟就能到地铁站。",
+                        "pinyin":  "Zhège xiǎoqū bùxíng wǔ fēnzhōng jiù néng dào dìtiězhàn.",
+                        "vietnamese":  "Khu dân cư này đi bộ 5 phút là đến ga tàu điện.",
+                        "answer":  "这个小区步行五分钟就能到地铁站。"
+                    },
+                    {
+                        "chinese":  "如果步行太远，我就不考虑这套房子。",
+                        "pinyin":  "Rúguǒ bùxíng tài yuǎn, wǒ jiù bù kǎolǜ zhè tào fángzi.",
+                        "vietnamese":  "Nếu đi bộ quá xa, tôi sẽ không cân nhắc căn nhà này.",
+                        "answer":  "如果步行太远，我就不考虑这套房子。"
+                    },
+                    {
+                        "chinese":  "中介说从小区到超市可以步行直达。",
+                        "pinyin":  "Zhōngjiè shuō cóng xiǎoqū dào chāoshì kěyǐ bùxíng zhídá.",
+                        "vietnamese":  "Môi giới nói từ khu dân cư đến siêu thị có thể đi bộ thẳng tới.",
+                        "answer":  "中介说从小区到超市可以步行直达。"
+                    },
+                    {
+                        "chinese":  "他习惯每天步行上班，顺便锻炼身体。",
+                        "pinyin":  "Tā xíguàn měitiān bùxíng shàngbān, shùnbiàn duànliàn shēntǐ.",
+                        "vietnamese":  "Anh ấy quen mỗi ngày đi bộ đi làm, tiện thể rèn luyện sức khỏe.",
+                        "answer":  "他习惯每天步行上班，顺便锻炼身体。"
+                    },
+                    {
+                        "chinese":  "步行虽然慢一点，但是不用担心堵车。",
+                        "pinyin":  "Bùxíng suīrán màn yìdiǎn, dànshì búyòng dānxīn dǔchē.",
+                        "vietnamese":  "Đi bộ tuy chậm hơn chút nhưng không cần lo tắc đường.",
+                        "answer":  "步行虽然慢一点，但是不用担心堵车。"
+                    },
+                    {
+                        "chinese":  "看房那天，我们步行参观了整个小区。",
+                        "pinyin":  "Kàn fáng nà tiān, wǒmen bùxíng cānguān le zhěngge xiǎoqū.",
+                        "vietnamese":  "Ngày xem nhà, chúng tôi đi bộ tham quan toàn bộ khu dân cư.",
+                        "answer":  "看房那天，我们步行参观了整个小区。"
+                    },
+                    {
+                        "chinese":  "这个地方交通方便，步行也很安全。",
+                        "pinyin":  "Zhège dìfang jiāotōng fāngbiàn, bùxíng yě hěn ānquán.",
+                        "vietnamese":  "Nơi này giao thông tiện, đi bộ cũng rất an toàn.",
+                        "answer":  "这个地方交通方便，步行也很安全。"
+                    },
+                    {
+                        "chinese":  "步行到公司需要半小时，我觉得太远。",
+                        "pinyin":  "Bùxíng dào gōngsī xūyào bàn xiǎoshí, wǒ juéde tài yuǎn.",
+                        "vietnamese":  "Đi bộ đến công ty cần nửa tiếng, tôi thấy quá xa.",
+                        "answer":  "步行到公司需要半小时，我觉得太远。"
+                    },
+                    {
+                        "chinese":  "如果房租便宜一点，步行十五分钟也可以接受。",
+                        "pinyin":  "Rúguǒ fángzū piányi yìdiǎn, bùxíng shíwǔ fēnzhōng yě kěyǐ jiēshòu.",
+                        "vietnamese":  "Nếu tiền thuê rẻ hơn chút, đi bộ 15 phút cũng có thể chấp nhận.",
+                        "answer":  "如果房租便宜一点，步行十五分钟也可以接受。"
+                    },
+                    {
+                        "chinese":  "这个小区环境很好，晚上也很安静。",
+                        "pinyin":  "Zhège xiǎoqū huánjìng hěn hǎo, wǎnshang yě hěn ānjìng.",
+                        "vietnamese":  "Khu dân cư này môi trường rất tốt, buổi tối cũng rất yên tĩnh.",
+                        "answer":  "这个小区环境很好，晚上也很安静。"
+                    },
+                    {
+                        "chinese":  "我们正在找一个离学校近的小区。",
+                        "pinyin":  "Wǒmen zhèngzài zhǎo yí ge lí xuéxiào jìn de xiǎoqū.",
+                        "vietnamese":  "Chúng tôi đang tìm một khu dân cư gần trường.",
+                        "answer":  "我们正在找一个离学校近的小区。"
+                    },
+                    {
+                        "chinese":  "中介说这个小区有很多学生合租。",
+                        "pinyin":  "Zhōngjiè shuō zhège xiǎoqū yǒu hěn duō xuésheng hézū.",
+                        "vietnamese":  "Môi giới nói khu này có nhiều sinh viên thuê chung.",
+                        "answer":  "中介说这个小区有很多学生合租。"
+                    },
+                    {
+                        "chinese":  "小区门口有公交车，可以直达市中心。",
+                        "pinyin":  "Xiǎoqū ménkǒu yǒu gōngjiāochē, kěyǐ zhídá shì zhōngxīn.",
+                        "vietnamese":  "Cổng khu dân cư có xe buýt, có thể đi thẳng đến trung tâm thành phố.",
+                        "answer":  "小区门口有公交车，可以直达市中心。"
+                    },
+                    {
+                        "chinese":  "这个小区家电维修服务很方便。",
+                        "pinyin":  "Zhège xiǎoqū jiādiàn wéixiū fúwù hěn fāngbiàn.",
+                        "vietnamese":  "Dịch vụ sửa đồ điện gia dụng ở khu dân cư này rất tiện.",
+                        "answer":  "这个小区家电维修服务很方便。"
+                    },
+                    {
+                        "chinese":  "小区虽然有点旧，但是管理不错。",
+                        "pinyin":  "Xiǎoqū suīrán yǒudiǎn jiù, dànshì guǎnlǐ búcuò.",
+                        "vietnamese":  "Khu dân cư tuy hơi cũ nhưng quản lý khá tốt.",
+                        "answer":  "小区虽然有点旧，但是管理不错。"
+                    },
+                    {
+                        "chinese":  "如果小区太吵，我就不想租。",
+                        "pinyin":  "Rúguǒ xiǎoqū tài chǎo, wǒ jiù bù xiǎng zū.",
+                        "vietnamese":  "Nếu khu dân cư quá ồn, tôi sẽ không muốn thuê.",
+                        "answer":  "如果小区太吵，我就不想租。"
+                    },
+                    {
+                        "chinese":  "这个小区的房租一个季交一次。",
+                        "pinyin":  "Zhège xiǎoqū de fángzū yí ge jì jiāo yí cì.",
+                        "vietnamese":  "Tiền thuê nhà khu dân cư này mỗi quý nộp một lần.",
+                        "answer":  "这个小区的房租一个季交一次。"
+                    },
+                    {
+                        "chinese":  "小区附近有超市、药店和很多小吃店。",
+                        "pinyin":  "Xiǎoqū fùjìn yǒu chāoshì, yàodiàn hé hěn duō xiǎochī diàn.",
+                        "vietnamese":  "Gần khu dân cư có siêu thị, hiệu thuốc và nhiều quán ăn vặt.",
+                        "answer":  "小区附近有超市、药店和很多小吃店。"
+                    },
+                    {
+                        "chinese":  "万一小区安全不好，房租再低也不能租。",
+                        "pinyin":  "Wànyī xiǎoqū ānquán bù hǎo, fángzū zài dī yě bù néng zū.",
+                        "vietnamese":  "Lỡ như an ninh khu dân cư không tốt, tiền thuê thấp cũng không thể thuê.",
+                        "answer":  "万一小区安全不好，房租再低也不能租。"
+                    },
+                    {
+                        "chinese":  "我恰好也在找合租的房子。",
+                        "pinyin":  "Wǒ qiàhǎo yě zài zhǎo hézū de fángzi.",
+                        "vietnamese":  "Tôi vừa hay cũng đang tìm nhà thuê chung.",
+                        "answer":  "我恰好也在找合租的房子。"
+                    },
+                    {
+                        "chinese":  "他到中介公司时，业务员恰好有空。",
+                        "pinyin":  "Tā dào zhōngjiè gōngsī shí, yèwùyuán qiàhǎo yǒu kòng.",
+                        "vietnamese":  "Khi anh ấy đến công ty môi giới, nhân viên kinh doanh vừa hay rảnh.",
+                        "answer":  "他到中介公司时，业务员恰好有空。"
+                    },
+                    {
+                        "chinese":  "这套房子恰好离我公司不远。",
+                        "pinyin":  "Zhè tào fángzi qiàhǎo lí wǒ gōngsī bù yuǎn.",
+                        "vietnamese":  "Căn nhà này vừa hay cách công ty tôi không xa.",
+                        "answer":  "这套房子恰好离我公司不远。"
+                    },
+                    {
+                        "chinese":  "我想租两居室，恰好朋友也想搬家。",
+                        "pinyin":  "Wǒ xiǎng zū liǎng jūshì, qiàhǎo péngyou yě xiǎng bānjiā.",
+                        "vietnamese":  "Tôi muốn thuê căn hai phòng ngủ, vừa hay bạn tôi cũng muốn chuyển nhà.",
+                        "answer":  "我想租两居室，恰好朋友也想搬家。"
+                    },
+                    {
+                        "chinese":  "业务员发来的信息恰好解决了我的问题。",
+                        "pinyin":  "Yèwùyuán fā lái de xìnxī qiàhǎo jiějué le wǒ de wèntí.",
+                        "vietnamese":  "Thông tin nhân viên kinh doanh gửi vừa hay giải quyết vấn đề của tôi.",
+                        "answer":  "业务员发来的信息恰好解决了我的问题。"
+                    },
+                    {
+                        "chinese":  "我们到小区门口时，房东恰好也到了。",
+                        "pinyin":  "Wǒmen dào xiǎoqū ménkǒu shí, fángdōng qiàhǎo yě dào le.",
+                        "vietnamese":  "Khi chúng tôi đến cổng khu dân cư, chủ nhà vừa hay cũng đến.",
+                        "answer":  "我们到小区门口时，房东恰好也到了。"
+                    },
+                    {
+                        "chinese":  "这间居室的大小恰好适合一个人住。",
+                        "pinyin":  "Zhè jiān jūshì de dàxiǎo qiàhǎo shìhé yí ge rén zhù.",
+                        "vietnamese":  "Kích thước phòng này vừa hay phù hợp cho một người ở.",
+                        "answer":  "这间居室的大小恰好适合一个人住。"
+                    },
+                    {
+                        "chinese":  "他想少交一点押金，房东恰好同意了。",
+                        "pinyin":  "Tā xiǎng shǎo jiāo yìdiǎn yājīn, fángdōng qiàhǎo tóngyì le.",
+                        "vietnamese":  "Anh ấy muốn nộp ít tiền cọc hơn một chút, chủ nhà vừa hay đồng ý.",
+                        "answer":  "他想少交一点押金，房东恰好同意了。"
+                    },
+                    {
+                        "chinese":  "恰好今天下雨，我们就不去看房了。",
+                        "pinyin":  "Qiàhǎo jīntiān xiàyǔ, wǒmen jiù bú qù kàn fáng le.",
+                        "vietnamese":  "Vừa hay hôm nay mưa, chúng tôi không đi xem nhà nữa.",
+                        "answer":  "恰好今天下雨，我们就不去看房了。"
+                    },
+                    {
+                        "chinese":  "这套房子恰好可以直达学校，非常方便。",
+                        "pinyin":  "Zhè tào fángzi qiàhǎo kěyǐ zhídá xuéxiào, fēicháng fāngbiàn.",
+                        "vietnamese":  "Căn nhà này vừa hay có thể đi thẳng đến trường, rất tiện.",
+                        "answer":  "这套房子恰好可以直达学校，非常方便。"
+                    },
+                    {
+                        "chinese":  "这套房子的房租比我预想的高。",
+                        "pinyin":  "Zhè tào fángzi de fángzū bǐ wǒ yùxiǎng de gāo.",
+                        "vietnamese":  "Tiền thuê căn nhà này cao hơn tôi dự đoán.",
+                        "answer":  "这套房子的房租比我预想的高。"
+                    },
+                    {
+                        "chinese":  "房租一个月三千块，押金另算。",
+                        "pinyin":  "Fángzū yí ge yuè sān qiān kuài, yājīn lìng suàn.",
+                        "vietnamese":  "Tiền thuê nhà một tháng 3000 tệ, tiền cọc tính riêng.",
+                        "answer":  "房租一个月三千块，押金另算。"
+                    },
+                    {
+                        "chinese":  "如果房租太贵，我们可以选择合租。",
+                        "pinyin":  "Rúguǒ fángzū tài guì, wǒmen kěyǐ xuǎnzé hézū.",
+                        "vietnamese":  "Nếu tiền thuê nhà quá đắt, chúng ta có thể chọn thuê chung.",
+                        "answer":  "如果房租太贵，我们可以选择合租。"
+                    },
+                    {
+                        "chinese":  "房东要求房租按季支付。",
+                        "pinyin":  "Fángdōng yāoqiú fángzū àn jì zhīfù.",
+                        "vietnamese":  "Chủ nhà yêu cầu tiền thuê nhà trả theo quý.",
+                        "answer":  "房东要求房租按季支付。"
+                    },
+                    {
+                        "chinese":  "小区环境不错，但是房租不便宜。",
+                        "pinyin":  "Xiǎoqū huánjìng búcuò, dànshì fángzū bù piányi.",
+                        "vietnamese":  "Môi trường khu dân cư khá tốt nhưng tiền thuê không rẻ.",
+                        "answer":  "小区环境不错，但是房租不便宜。"
+                    },
+                    {
+                        "chinese":  "中介说附近房租最近涨了不少。",
+                        "pinyin":  "Zhōngjiè shuō fùjìn fángzū zuìjìn zhǎng le bù shǎo.",
+                        "vietnamese":  "Môi giới nói tiền thuê nhà gần đây khu vực này tăng không ít.",
+                        "answer":  "中介说附近房租最近涨了不少。"
+                    },
+                    {
+                        "chinese":  "我们商量以后，决定分摊房租。",
+                        "pinyin":  "Wǒmen shāngliang yǐhòu, juédìng fēntān fángzū.",
+                        "vietnamese":  "Sau khi bàn bạc, chúng tôi quyết định chia tiền thuê nhà.",
+                        "answer":  "我们商量以后，决定分摊房租。"
+                    },
+                    {
+                        "chinese":  "房租低不代表房子一定合适。",
+                        "pinyin":  "Fángzū dī bù dàibiǎo fángzi yídìng héshì.",
+                        "vietnamese":  "Tiền thuê thấp không có nghĩa là căn nhà nhất định phù hợp.",
+                        "answer":  "房租低不代表房子一定合适。"
+                    },
+                    {
+                        "chinese":  "他承受不了这么高的房租，只好搬走。",
+                        "pinyin":  "Tā chéngshòu bù liǎo zhème gāo de fángzū, zhǐhǎo bān zǒu.",
+                        "vietnamese":  "Anh ấy không chịu nổi tiền thuê cao như vậy, đành chuyển đi.",
+                        "answer":  "他承受不了这么高的房租，只好搬走。"
+                    },
+                    {
+                        "chinese":  "万一房租突然上涨，我们要提前商量。",
+                        "pinyin":  "Wànyī fángzū tūrán shàngzhǎng, wǒmen yào tíqián shāngliang.",
+                        "vietnamese":  "Lỡ như tiền thuê nhà đột nhiên tăng, chúng ta phải bàn trước.",
+                        "answer":  "万一房租突然上涨，我们要提前商量。"
+                    },
+                    {
+                        "chinese":  "春季租房的人比较多，房源很抢手。",
+                        "pinyin":  "Chūnjì zūfáng de rén bǐjiào duō, fángyuán hěn qiǎngshǒu.",
+                        "vietnamese":  "Mùa xuân người thuê nhà khá nhiều, nguồn nhà rất được săn đón.",
+                        "answer":  "春季租房的人比较多，房源很抢手。"
+                    },
+                    {
+                        "chinese":  "房租按季交，比按月交压力大一些。",
+                        "pinyin":  "Fángzū àn jì jiāo, bǐ àn yuè jiāo yālì dà yìxiē.",
+                        "vietnamese":  "Tiền thuê trả theo quý áp lực lớn hơn trả theo tháng một chút.",
+                        "answer":  "房租按季交，比按月交压力大一些。"
+                    },
+                    {
+                        "chinese":  "这个季度我的生活费用明显增加了。",
+                        "pinyin":  "Zhège jìdù wǒ de shēnghuó fèiyòng míngxiǎn zēngjiā le.",
+                        "vietnamese":  "Quý này chi phí sinh hoạt của tôi tăng rõ rệt.",
+                        "answer":  "这个季度我的生活费用明显增加了。"
+                    },
+                    {
+                        "chinese":  "每到毕业季，附近的房子都会很难租。",
+                        "pinyin":  "Měi dào bìyè jì, fùjìn de fángzi dōu huì hěn nán zū.",
+                        "vietnamese":  "Mỗi khi đến mùa tốt nghiệp, nhà gần đây đều rất khó thuê.",
+                        "answer":  "每到毕业季，附近的房子都会很难租。"
+                    },
+                    {
+                        "chinese":  "一个季要交三个月房租，我现在承受不了。",
+                        "pinyin":  "Yí ge jì yào jiāo sān ge yuè fángzū, wǒ xiànzài chéngshòu bù liǎo.",
+                        "vietnamese":  "Một quý phải nộp ba tháng tiền thuê, hiện tôi không gánh nổi.",
+                        "answer":  "一个季要交三个月房租，我现在承受不了。"
+                    },
+                    {
+                        "chinese":  "这个小区每年雨季容易积水。",
+                        "pinyin":  "Zhège xiǎoqū měi nián yǔjì róngyì jīshuǐ.",
+                        "vietnamese":  "Khu dân cư này mỗi mùa mưa hằng năm dễ bị đọng nước.",
+                        "answer":  "这个小区每年雨季容易积水。"
+                    },
+                    {
+                        "chinese":  "租房合同写着房租一季一付。",
+                        "pinyin":  "Zūfáng hétong xiězhe fángzū yí jì yí fù.",
+                        "vietnamese":  "Hợp đồng thuê nhà ghi tiền thuê trả mỗi quý một lần.",
+                        "answer":  "租房合同写着房租一季一付。"
+                    },
+                    {
+                        "chinese":  "这个季节天气不错，适合步行看房。",
+                        "pinyin":  "Zhège jìjié tiānqì búcuò, shìhé bùxíng kàn fáng.",
+                        "vietnamese":  "Mùa này thời tiết khá tốt, phù hợp đi bộ xem nhà.",
+                        "answer":  "这个季节天气不错，适合步行看房。"
+                    },
+                    {
+                        "chinese":  "旺季租房不容易，要早点联系中介。",
+                        "pinyin":  "Wàngjì zūfáng bù róngyì, yào zǎodiǎn liánxì zhōngjiè.",
+                        "vietnamese":  "Mùa cao điểm thuê nhà không dễ, phải liên hệ môi giới sớm hơn.",
+                        "answer":  "旺季租房不容易，要早点联系中介。"
+                    },
+                    {
+                        "chinese":  "房东要求押一个月房租。",
+                        "pinyin":  "Fángdōng yāoqiú yā yí ge yuè fángzū.",
+                        "vietnamese":  "Chủ nhà yêu cầu đặt cọc một tháng tiền thuê.",
+                        "answer":  "房东要求押一个月房租。"
+                    },
+                    {
+                        "chinese":  "这套房子要押一付三，压力有点大。",
+                        "pinyin":  "Zhè tào fángzi yào yā yī fù sān, yālì yǒudiǎn dà.",
+                        "vietnamese":  "Căn nhà này phải cọc một trả ba, áp lực hơi lớn.",
+                        "answer":  "这套房子要押一付三，压力有点大。"
+                    },
+                    {
+                        "chinese":  "如果押太多钱，我就不租了。",
+                        "pinyin":  "Rúguǒ yā tài duō qián, wǒ jiù bù zū le.",
+                        "vietnamese":  "Nếu đặt cọc quá nhiều tiền, tôi sẽ không thuê nữa.",
+                        "answer":  "如果押太多钱，我就不租了。"
+                    },
+                    {
+                        "chinese":  "中介说可以少押一点，但房租不能再低。",
+                        "pinyin":  "Zhōngjiè shuō kěyǐ shǎo yā yìdiǎn, dàn fángzū bù néng zài dī.",
+                        "vietnamese":  "Môi giới nói có thể cọc ít hơn một chút, nhưng tiền thuê không thể giảm nữa.",
+                        "answer":  "中介说可以少押一点，但房租不能再低。"
+                    },
+                    {
+                        "chinese":  "他押了两千块，才拿到房门钥匙。",
+                        "pinyin":  "Tā yā le liǎng qiān kuài, cái ná dào fángmén yàoshi.",
+                        "vietnamese":  "Anh ấy cọc 2000 tệ rồi mới lấy được chìa khóa nhà.",
+                        "answer":  "他押了两千块，才拿到房门钥匙。"
+                    },
+                    {
+                        "chinese":  "合租时押金最好写清楚由谁负责。",
+                        "pinyin":  "Hézū shí yājīn zuìhǎo xiě qīngchu yóu shéi fùzé.",
+                        "vietnamese":  "Khi thuê chung, tiền cọc tốt nhất ghi rõ do ai phụ trách.",
+                        "answer":  "合租时押金最好写清楚由谁负责。"
+                    },
+                    {
+                        "chinese":  "房东让我们先押金，再签合同。",
+                        "pinyin":  "Fángdōng ràng wǒmen xiān yā jīn, zài qiān hétong.",
+                        "vietnamese":  "Chủ nhà bảo chúng tôi cọc tiền trước rồi ký hợp đồng.",
+                        "answer":  "房东让我们先押金，再签合同。"
+                    },
+                    {
+                        "chinese":  "万一不租了，已经押的钱能退吗？",
+                        "pinyin":  "Wànyī bù zū le, yǐjīng yā de qián néng tuì ma?",
+                        "vietnamese":  "Lỡ như không thuê nữa, tiền đã cọc có thể trả không?",
+                        "answer":  "万一不租了，已经押的钱能退吗？"
+                    },
+                    {
+                        "chinese":  "业务员提醒我，押钱之前一定要看合同。",
+                        "pinyin":  "Yèwùyuán tíxǐng wǒ, yā qián zhīqián yídìng yào kàn hétong.",
+                        "vietnamese":  "Nhân viên kinh doanh nhắc tôi trước khi cọc tiền nhất định phải xem hợp đồng.",
+                        "answer":  "业务员提醒我，押钱之前一定要看合同。"
+                    },
+                    {
+                        "chinese":  "他不愿意押太多现金，所以继续找别的房子。",
+                        "pinyin":  "Tā bú yuànyì yā tài duō xiànjīn, suǒyǐ jìxù zhǎo bié de fángzi.",
+                        "vietnamese":  "Anh ấy không muốn cọc quá nhiều tiền mặt nên tiếp tục tìm nhà khác.",
+                        "answer":  "他不愿意押太多现金，所以继续找别的房子。"
+                    },
+                    {
+                        "chinese":  "我承受不了这么高的房租。",
+                        "pinyin":  "Wǒ chéngshòu bù liǎo zhème gāo de fángzū.",
+                        "vietnamese":  "Tôi không chịu nổi tiền thuê nhà cao như vậy.",
+                        "answer":  "我承受不了这么高的房租。"
+                    },
+                    {
+                        "chinese":  "一次交三个月房租，很多学生都难以承受。",
+                        "pinyin":  "Yí cì jiāo sān ge yuè fángzū, hěn duō xuésheng dōu nányǐ chéngshòu.",
+                        "vietnamese":  "Một lần nộp ba tháng tiền thuê, nhiều sinh viên đều khó chịu nổi.",
+                        "answer":  "一次交三个月房租，很多学生都难以承受。"
+                    },
+                    {
+                        "chinese":  "这个小区虽然方便，但价格超出了我的承受范围。",
+                        "pinyin":  "Zhège xiǎoqū suīrán fāngbiàn, dàn jiàgé chāochū le wǒ de chéngshòu fànwéi.",
+                        "vietnamese":  "Khu dân cư này tuy tiện nhưng giá vượt quá phạm vi tôi chịu được.",
+                        "answer":  "这个小区虽然方便，但价格超出了我的承受范围。"
+                    },
+                    {
+                        "chinese":  "他工作压力很大，已经快承受不了了。",
+                        "pinyin":  "Tā gōngzuò yālì hěn dà, yǐjīng kuài chéngshòu bù liǎo le.",
+                        "vietnamese":  "Áp lực công việc của anh ấy rất lớn, đã sắp không chịu nổi nữa.",
+                        "answer":  "他工作压力很大，已经快承受不了了。"
+                    },
+                    {
+                        "chinese":  "合租可以减轻每个人承受的经济压力。",
+                        "pinyin":  "Hézū kěyǐ jiǎnqīng měi ge rén chéngshòu de jīngjì yālì.",
+                        "vietnamese":  "Thuê chung có thể giảm áp lực kinh tế mà mỗi người gánh chịu.",
+                        "answer":  "合租可以减轻每个人承受的经济压力。"
+                    },
+                    {
+                        "chinese":  "房东突然涨价，租客很难承受。",
+                        "pinyin":  "Fángdōng tūrán zhǎngjià, zūkè hěn nán chéngshòu.",
+                        "vietnamese":  "Chủ nhà đột nhiên tăng giá, người thuê rất khó chịu nổi.",
+                        "answer":  "房东突然涨价，租客很难承受。"
+                    },
+                    {
+                        "chinese":  "如果押金太高，我现在真的承受不起。",
+                        "pinyin":  "Rúguǒ yājīn tài gāo, wǒ xiànzài zhēn de chéngshòu bù qǐ.",
+                        "vietnamese":  "Nếu tiền cọc quá cao, hiện tôi thật sự không chịu nổi.",
+                        "answer":  "如果押金太高，我现在真的承受不起。"
+                    },
+                    {
+                        "chinese":  "生活费用越来越高，年轻人压力很难承受。",
+                        "pinyin":  "Shēnghuó fèiyòng yuèláiyuè gāo, niánqīng rén yālì hěn nán chéngshòu.",
+                        "vietnamese":  "Chi phí sinh hoạt ngày càng cao, áp lực của người trẻ rất khó gánh.",
+                        "answer":  "生活费用越来越高，年轻人压力很难承受。"
+                    },
+                    {
+                        "chinese":  "万一室友搬走，剩下的房租我承受不了。",
+                        "pinyin":  "Wànyī shìyǒu bān zǒu, shèng xià de fángzū wǒ chéngshòu bù liǎo.",
+                        "vietnamese":  "Lỡ như bạn cùng phòng chuyển đi, phần tiền thuê còn lại tôi không gánh nổi.",
+                        "answer":  "万一室友搬走，剩下的房租我承受不了。"
+                    },
+                    {
+                        "chinese":  "他承受了很多困难，最后还是租到了合适的房子。",
+                        "pinyin":  "Tā chéngshòu le hěn duō kùnnan, zuìhòu háishi zū dào le héshì de fángzi.",
+                        "vietnamese":  "Anh ấy chịu đựng nhiều khó khăn, cuối cùng vẫn thuê được căn nhà phù hợp.",
+                        "answer":  "他承受了很多困难，最后还是租到了合适的房子。"
+                    },
+                    {
+                        "chinese":  "你要早点决定，要不然房子就被别人租走了。",
+                        "pinyin":  "Nǐ yào zǎodiǎn juédìng, yàobùrán fángzi jiù bèi biérén zū zǒu le.",
+                        "vietnamese":  "Bạn phải quyết định sớm, nếu không căn nhà sẽ bị người khác thuê mất.",
+                        "answer":  "你要早点决定，要不然房子就被别人租走了。"
+                    },
+                    {
+                        "chinese":  "快把押金交了，要不然中介不会保留房源。",
+                        "pinyin":  "Kuài bǎ yājīn jiāo le, yàobùrán zhōngjiè bú huì bǎoliú fángyuán.",
+                        "vietnamese":  "Mau nộp tiền cọc đi, nếu không môi giới sẽ không giữ nguồn nhà.",
+                        "answer":  "快把押金交了，要不然中介不会保留房源。"
+                    },
+                    {
+                        "chinese":  "合同一定要看清楚，要不然以后容易出问题。",
+                        "pinyin":  "Hétong yídìng yào kàn qīngchu, yàobùrán yǐhòu róngyì chū wèntí.",
+                        "vietnamese":  "Hợp đồng nhất định phải xem rõ, nếu không sau này dễ xảy ra vấn đề.",
+                        "answer":  "合同一定要看清楚，要不然以后容易出问题。"
+                    },
+                    {
+                        "chinese":  "我们最好选择合租，要不然费用太高。",
+                        "pinyin":  "Wǒmen zuìhǎo xuǎnzé hézū, yàobùrán fèiyòng tài gāo.",
+                        "vietnamese":  "Chúng ta tốt nhất chọn thuê chung, nếu không chi phí quá cao.",
+                        "answer":  "我们最好选择合租，要不然费用太高。"
+                    },
+                    {
+                        "chinese":  "你先确认家电情况，要不然入住后很麻烦。",
+                        "pinyin":  "Nǐ xiān quèrèn jiādiàn qíngkuàng, yàobùrán rùzhù hòu hěn máfan.",
+                        "vietnamese":  "Bạn xác nhận tình trạng đồ điện trước, nếu không sau khi vào ở rất phiền.",
+                        "answer":  "你先确认家电情况，要不然入住后很麻烦。"
+                    },
+                    {
+                        "chinese":  "房租要按时交，要不然房东会不高兴。",
+                        "pinyin":  "Fángzū yào ànshí jiāo, yàobùrán fángdōng huì bù gāoxìng.",
+                        "vietnamese":  "Tiền thuê phải nộp đúng hạn, nếu không chủ nhà sẽ không vui.",
+                        "answer":  "房租要按时交，要不然房东会不高兴。"
+                    },
+                    {
+                        "chinese":  "步行太远就别租了，要不然每天都会累。",
+                        "pinyin":  "Bùxíng tài yuǎn jiù bié zū le, yàobùrán měitiān dōu huì lèi.",
+                        "vietnamese":  "Nếu đi bộ quá xa thì đừng thuê, nếu không ngày nào cũng mệt.",
+                        "answer":  "步行太远就别租了，要不然每天都会累。"
+                    },
+                    {
+                        "chinese":  "你要和女生室友提前商量，要不然容易误会。",
+                        "pinyin":  "Nǐ yào hé nǚshēng shìyǒu tíqián shāngliang, yàobùrán róngyì wùhuì.",
+                        "vietnamese":  "Bạn phải bàn trước với bạn nữ cùng phòng, nếu không dễ hiểu lầm.",
+                        "answer":  "你要和女生室友提前商量，要不然容易误会。"
+                    },
+                    {
+                        "chinese":  "要保留中介发来的信息，要不然不好维权。",
+                        "pinyin":  "Yào bǎoliú zhōngjiè fā lái de xìnxī, yàobùrán bù hǎo wéiquán.",
+                        "vietnamese":  "Phải giữ thông tin môi giới gửi, nếu không khó bảo vệ quyền lợi.",
+                        "answer":  "要保留中介发来的信息，要不然不好维权。"
+                    },
+                    {
+                        "chinese":  "万一押金不能退，要不然损失就太大了。",
+                        "pinyin":  "Wànyī yājīn bù néng tuì, yàobùrán sǔnshī jiù tài dà le.",
+                        "vietnamese":  "Lỡ như tiền cọc không thể trả, nếu không thì tổn thất quá lớn rồi.",
+                        "answer":  "万一押金不能退，要不然损失就太大了。"
+                    },
+                    {
+                        "chinese":  "这套房子的家电都很齐全。",
+                        "pinyin":  "Zhè tào fángzi de jiādiàn dōu hěn qíquán.",
+                        "vietnamese":  "Đồ điện gia dụng của căn nhà này đều rất đầy đủ.",
+                        "answer":  "这套房子的家电都很齐全。"
+                    },
+                    {
+                        "chinese":  "租房时一定要检查家电能不能正常使用。",
+                        "pinyin":  "Zūfáng shí yídìng yào jiǎnchá jiādiàn néng bù néng zhèngcháng shǐyòng.",
+                        "vietnamese":  "Khi thuê nhà nhất định phải kiểm tra đồ điện gia dụng có dùng bình thường không.",
+                        "answer":  "租房时一定要检查家电能不能正常使用。"
+                    },
+                    {
+                        "chinese":  "如果家电坏了，维修费用由谁承担？",
+                        "pinyin":  "Rúguǒ jiādiàn huài le, wéixiū fèiyòng yóu shéi chéngdān?",
+                        "vietnamese":  "Nếu đồ điện gia dụng hỏng thì chi phí sửa do ai chịu?",
+                        "answer":  "如果家电坏了，维修费用由谁承担？"
+                    },
+                    {
+                        "chinese":  "中介说房租已经包括部分家电费用。",
+                        "pinyin":  "Zhōngjiè shuō fángzū yǐjīng bāokuò bùfen jiādiàn fèiyòng.",
+                        "vietnamese":  "Môi giới nói tiền thuê đã bao gồm một phần phí đồ điện gia dụng.",
+                        "answer":  "中介说房租已经包括部分家电费用。"
+                    },
+                    {
+                        "chinese":  "这间居室虽然小，但是家电很新。",
+                        "pinyin":  "Zhè jiān jūshì suīrán xiǎo, dànshì jiādiàn hěn xīn.",
+                        "vietnamese":  "Phòng này tuy nhỏ nhưng đồ điện gia dụng rất mới.",
+                        "answer":  "这间居室虽然小，但是家电很新。"
+                    },
+                    {
+                        "chinese":  "家电清单最好写进合同里。",
+                        "pinyin":  "Jiādiàn qīngdān zuìhǎo xiě jìn hétong lǐ.",
+                        "vietnamese":  "Danh sách đồ điện gia dụng tốt nhất ghi vào hợp đồng.",
+                        "answer":  "家电清单最好写进合同里。"
+                    },
+                    {
+                        "chinese":  "房东答应免费更换坏掉的家电。",
+                        "pinyin":  "Fángdōng dāying miǎnfèi gēnghuàn huài diào de jiādiàn.",
+                        "vietnamese":  "Chủ nhà đồng ý thay miễn phí đồ điện gia dụng bị hỏng.",
+                        "answer":  "房东答应免费更换坏掉的家电。"
+                    },
+                    {
+                        "chinese":  "合租时，大家要一起爱护公共家电。",
+                        "pinyin":  "Hézū shí, dàjiā yào yìqǐ àihù gōnggòng jiādiàn.",
+                        "vietnamese":  "Khi thuê chung, mọi người phải cùng giữ gìn đồ điện dùng chung.",
+                        "answer":  "合租时，大家要一起爱护公共家电。"
+                    },
+                    {
+                        "chinese":  "业务员没有介绍家电情况，我觉得不放心。",
+                        "pinyin":  "Yèwùyuán méiyǒu jièshào jiādiàn qíngkuàng, wǒ juéde bù fàngxīn.",
+                        "vietnamese":  "Nhân viên kinh doanh không giới thiệu tình trạng đồ điện, tôi thấy không yên tâm.",
+                        "answer":  "业务员没有介绍家电情况，我觉得不放心。"
+                    },
+                    {
+                        "chinese":  "万一家电坏了，又没有写清楚责任，就会很麻烦。",
+                        "pinyin":  "Wànyī jiādiàn huài le, yòu méiyǒu xiě qīngchu zérèn, jiù huì hěn máfan.",
+                        "vietnamese":  "Lỡ như đồ điện hỏng mà lại không ghi rõ trách nhiệm thì sẽ rất phiền.",
+                        "answer":  "万一家电坏了，又没有写清楚责任，就会很麻烦。"
+                    },
+                    {
+                        "chinese":  "从这里坐公交可以直达学校。",
+                        "pinyin":  "Cóng zhèlǐ zuò gōngjiāo kěyǐ zhídá xuéxiào.",
+                        "vietnamese":  "Từ đây đi xe buýt có thể đến thẳng trường.",
+                        "answer":  "从这里坐公交可以直达学校。"
+                    },
+                    {
+                        "chinese":  "这个小区有地铁直达市中心。",
+                        "pinyin":  "Zhège xiǎoqū yǒu dìtiě zhídá shì zhōngxīn.",
+                        "vietnamese":  "Khu dân cư này có tàu điện đi thẳng đến trung tâm thành phố.",
+                        "answer":  "这个小区有地铁直达市中心。"
+                    },
+                    {
+                        "chinese":  "中介说从房子到公司可以直达，不用换车。",
+                        "pinyin":  "Zhōngjiè shuō cóng fángzi dào gōngsī kěyǐ zhídá, búyòng huàn chē.",
+                        "vietnamese":  "Môi giới nói từ nhà đến công ty có thể đi thẳng, không cần đổi xe.",
+                        "answer":  "中介说从房子到公司可以直达，不用换车。"
+                    },
+                    {
+                        "chinese":  "如果不能直达，我每天上班会很累。",
+                        "pinyin":  "Rúguǒ bù néng zhídá, wǒ měitiān shàngbān huì hěn lèi.",
+                        "vietnamese":  "Nếu không thể đi thẳng, mỗi ngày đi làm tôi sẽ rất mệt.",
+                        "answer":  "如果不能直达，我每天上班会很累。"
+                    },
+                    {
+                        "chinese":  "这条线路虽然慢一点，但是可以直达。",
+                        "pinyin":  "Zhè tiáo xiànlù suīrán màn yìdiǎn, dànshì kěyǐ zhídá.",
+                        "vietnamese":  "Tuyến này tuy chậm hơn chút nhưng có thể đến thẳng.",
+                        "answer":  "这条线路虽然慢一点，但是可以直达。"
+                    },
+                    {
+                        "chinese":  "他选择这套房子，是因为公交能直达校园。",
+                        "pinyin":  "Tā xuǎnzé zhè tào fángzi, shì yīnwèi gōngjiāo néng zhídá xiàoyuán.",
+                        "vietnamese":  "Anh ấy chọn căn nhà này vì xe buýt có thể đến thẳng khuôn viên.",
+                        "answer":  "他选择这套房子，是因为公交能直达校园。"
+                    },
+                    {
+                        "chinese":  "直达车票价不贵，时间也比较稳定。",
+                        "pinyin":  "Zhídá chē piàojià bú guì, shíjiān yě bǐjiào wěndìng.",
+                        "vietnamese":  "Vé xe đi thẳng không đắt, thời gian cũng khá ổn định.",
+                        "answer":  "直达车票价不贵，时间也比较稳定。"
+                    },
+                    {
+                        "chinese":  "从小区步行到直达车站只要三分钟。",
+                        "pinyin":  "Cóng xiǎoqū bùxíng dào zhídá chēzhàn zhǐ yào sān fēnzhōng.",
+                        "vietnamese":  "Từ khu dân cư đi bộ đến trạm xe đi thẳng chỉ cần 3 phút.",
+                        "answer":  "从小区步行到直达车站只要三分钟。"
+                    },
+                    {
+                        "chinese":  "如果有直达地铁，房租高一点也能接受。",
+                        "pinyin":  "Rúguǒ yǒu zhídá dìtiě, fángzū gāo yìdiǎn yě néng jiēshòu.",
+                        "vietnamese":  "Nếu có tàu điện đi thẳng, tiền thuê cao hơn chút cũng có thể chấp nhận.",
+                        "answer":  "如果有直达地铁，房租高一点也能接受。"
+                    },
+                    {
+                        "chinese":  "这套房子交通优越，既能步行又能直达。",
+                        "pinyin":  "Zhè tào fángzi jiāotōng yōuyuè, jì néng bùxíng yòu néng zhídá.",
+                        "vietnamese":  "Căn nhà này giao thông thuận lợi, vừa có thể đi bộ vừa có thể đi thẳng.",
+                        "answer":  "这套房子交通优越，既能步行又能直达。"
+                    },
+                    {
+                        "chinese":  "房东要求先交押金，再签租房合同。",
+                        "pinyin":  "Fángdōng yāoqiú xiān jiāo yājīn, zài qiān zūfáng hétong.",
+                        "vietnamese":  "Chủ nhà yêu cầu nộp tiền cọc trước rồi ký hợp đồng thuê nhà.",
+                        "answer":  "房东要求先交押金，再签租房合同。"
+                    },
+                    {
+                        "chinese":  "这套房子的押金是两个月房租。",
+                        "pinyin":  "Zhè tào fángzi de yājīn shì liǎng ge yuè fángzū.",
+                        "vietnamese":  "Tiền đặt cọc của căn nhà này là hai tháng tiền thuê.",
+                        "answer":  "这套房子的押金是两个月房租。"
+                    },
+                    {
+                        "chinese":  "如果押金太高，我就承受不了。",
+                        "pinyin":  "Rúguǒ yājīn tài gāo, wǒ jiù chéngshòu bù liǎo.",
+                        "vietnamese":  "Nếu tiền đặt cọc quá cao, tôi sẽ không chịu nổi.",
+                        "answer":  "如果押金太高，我就承受不了。"
+                    },
+                    {
+                        "chinese":  "中介说退房时押金可以全部退还。",
+                        "pinyin":  "Zhōngjiè shuō tuìfáng shí yājīn kěyǐ quánbù tuìhuán.",
+                        "vietnamese":  "Môi giới nói khi trả nhà tiền cọc có thể hoàn lại toàn bộ.",
+                        "answer":  "中介说退房时押金可以全部退还。"
+                    },
+                    {
+                        "chinese":  "合租以前，押金分摊方式要写清楚。",
+                        "pinyin":  "Hézū yǐqián, yājīn fēntān fāngshì yào xiě qīngchu.",
+                        "vietnamese":  "Trước khi thuê chung, cách chia tiền cọc phải viết rõ.",
+                        "answer":  "合租以前，押金分摊方式要写清楚。"
+                    },
+                    {
+                        "chinese":  "万一房东不退押金，我们该怎么办？",
+                        "pinyin":  "Wànyī fángdōng bú tuì yājīn, wǒmen gāi zěnme bàn?",
+                        "vietnamese":  "Lỡ như chủ nhà không trả tiền cọc thì chúng ta nên làm sao?",
+                        "answer":  "万一房东不退押金，我们该怎么办？"
+                    },
+                    {
+                        "chinese":  "业务员提醒我，不要随便用现金交押金。",
+                        "pinyin":  "Yèwùyuán tíxǐng wǒ, búyào suíbiàn yòng xiànjīn jiāo yājīn.",
+                        "vietnamese":  "Nhân viên kinh doanh nhắc tôi đừng tùy tiện dùng tiền mặt nộp cọc.",
+                        "answer":  "业务员提醒我，不要随便用现金交押金。"
+                    },
+                    {
+                        "chinese":  "押金收据一定要保存好。",
+                        "pinyin":  "Yājīn shōujù yídìng yào bǎocún hǎo.",
+                        "vietnamese":  "Biên lai tiền cọc nhất định phải giữ cẩn thận.",
+                        "answer":  "押金收据一定要保存好。"
+                    },
+                    {
+                        "chinese":  "房租可以按季交，但押金必须一次付清。",
+                        "pinyin":  "Fángzū kěyǐ àn jì jiāo, dàn yājīn bìxū yí cì fù qīng.",
+                        "vietnamese":  "Tiền thuê có thể trả theo quý, nhưng tiền cọc phải trả một lần đủ.",
+                        "answer":  "房租可以按季交，但押金必须一次付清。"
+                    },
+                    {
+                        "chinese":  "他和室友商量以后，一起分摊押金。",
+                        "pinyin":  "Tā hé shìyǒu shāngliang yǐhòu, yìqǐ fēntān yājīn.",
+                        "vietnamese":  "Sau khi bàn với bạn cùng phòng, anh ấy cùng chia tiền cọc.",
+                        "answer":  "他和室友商量以后，一起分摊押金。"
+                    },
+                    {
+                        "chinese":  "合租可以减轻房租压力。",
+                        "pinyin":  "Hézū kěyǐ jiǎnqīng fángzū yālì.",
+                        "vietnamese":  "Thuê chung có thể giảm áp lực tiền thuê nhà.",
+                        "answer":  "合租可以减轻房租压力。"
+                    },
+                    {
+                        "chinese":  "我和两个同学打算在学校附近合租。",
+                        "pinyin":  "Wǒ hé liǎng ge tóngxué dǎsuàn zài xuéxiào fùjìn hézū.",
+                        "vietnamese":  "Tôi và hai bạn học dự định thuê chung gần trường.",
+                        "answer":  "我和两个同学打算在学校附近合租。"
+                    },
+                    {
+                        "chinese":  "合租以前，最好先了解室友的生活习惯。",
+                        "pinyin":  "Hézū yǐqián, zuìhǎo xiān liǎojiě shìyǒu de shēnghuó xíguàn.",
+                        "vietnamese":  "Trước khi thuê chung, tốt nhất tìm hiểu thói quen sống của bạn cùng phòng.",
+                        "answer":  "合租以前，最好先了解室友的生活习惯。"
+                    },
+                    {
+                        "chinese":  "如果合租对象不合适，每天都会很麻烦。",
+                        "pinyin":  "Rúguǒ hézū duìxiàng bù héshì, měitiān dōu huì hěn máfan.",
+                        "vietnamese":  "Nếu người thuê chung không phù hợp, mỗi ngày đều sẽ rất phiền.",
+                        "answer":  "如果合租对象不合适，每天都会很麻烦。"
+                    },
+                    {
+                        "chinese":  "合租时家电和水电费都要提前分摊清楚。",
+                        "pinyin":  "Hézū shí jiādiàn hé shuǐdiàn fèi dōu yào tíqián fēntān qīngchu.",
+                        "vietnamese":  "Khi thuê chung, đồ điện gia dụng và tiền điện nước đều phải chia rõ trước.",
+                        "answer":  "合租时家电和水电费都要提前分摊清楚。"
+                    },
+                    {
+                        "chinese":  "这个两居室很适合女生合租。",
+                        "pinyin":  "Zhège liǎng jūshì hěn shìhé nǚshēng hézū.",
+                        "vietnamese":  "Căn hai phòng ngủ này rất phù hợp cho nữ sinh thuê chung.",
+                        "answer":  "这个两居室很适合女生合租。"
+                    },
+                    {
+                        "chinese":  "他不愿意和异性合租，觉得不太方便。",
+                        "pinyin":  "Tā bú yuànyì hé yìxìng hézū, juéde bú tài fāngbiàn.",
+                        "vietnamese":  "Anh ấy không muốn thuê chung với người khác giới, thấy không tiện lắm.",
+                        "answer":  "他不愿意和异性合租，觉得不太方便。"
+                    },
+                    {
+                        "chinese":  "合租合同上要写清楚每个人的责任。",
+                        "pinyin":  "Hézū hétong shàng yào xiě qīngchu měi ge rén de zérèn.",
+                        "vietnamese":  "Trên hợp đồng thuê chung phải viết rõ trách nhiệm của mỗi người.",
+                        "answer":  "合租合同上要写清楚每个人的责任。"
+                    },
+                    {
+                        "chinese":  "中介说这套房子只接受学生合租。",
+                        "pinyin":  "Zhōngjiè shuō zhè tào fángzi zhǐ jiēshòu xuésheng hézū.",
+                        "vietnamese":  "Môi giới nói căn nhà này chỉ nhận sinh viên thuê chung.",
+                        "answer":  "中介说这套房子只接受学生合租。"
+                    },
+                    {
+                        "chinese":  "合租虽然便宜，但是需要互相尊重。",
+                        "pinyin":  "Hézū suīrán piányi, dànshì xūyào hùxiāng zūnzhòng.",
+                        "vietnamese":  "Thuê chung tuy rẻ nhưng cần tôn trọng lẫn nhau.",
+                        "answer":  "合租虽然便宜，但是需要互相尊重。"
+                    },
+                    {
+                        "chinese":  "这个女生想找一个安静的室友合租。",
+                        "pinyin":  "Zhège nǚshēng xiǎng zhǎo yí ge ānjìng de shìyǒu hézū.",
+                        "vietnamese":  "Bạn nữ này muốn tìm một bạn cùng phòng yên tĩnh để thuê chung.",
+                        "answer":  "这个女生想找一个安静的室友合租。"
+                    },
+                    {
+                        "chinese":  "女生宿舍附近的房租比较高。",
+                        "pinyin":  "Nǚshēng sùshè fùjìn de fángzū bǐjiào gāo.",
+                        "vietnamese":  "Tiền thuê nhà gần ký túc xá nữ khá cao.",
+                        "answer":  "女生宿舍附近的房租比较高。"
+                    },
+                    {
+                        "chinese":  "中介说这套两居室只租给女生。",
+                        "pinyin":  "Zhōngjiè shuō zhè tào liǎng jūshì zhǐ zū gěi nǚshēng.",
+                        "vietnamese":  "Môi giới nói căn hai phòng ngủ này chỉ cho nữ sinh thuê.",
+                        "answer":  "中介说这套两居室只租给女生。"
+                    },
+                    {
+                        "chinese":  "女生合租时，安全问题一定要重视。",
+                        "pinyin":  "Nǚshēng hézū shí, ānquán wèntí yídìng yào zhòngshì.",
+                        "vietnamese":  "Khi nữ sinh thuê chung, vấn đề an toàn nhất định phải coi trọng.",
+                        "answer":  "女生合租时，安全问题一定要重视。"
+                    },
+                    {
+                        "chinese":  "这个小区离学校近，很受女生欢迎。",
+                        "pinyin":  "Zhège xiǎoqū lí xuéxiào jìn, hěn shòu nǚshēng huānyíng.",
+                        "vietnamese":  "Khu này gần trường, rất được nữ sinh yêu thích.",
+                        "answer":  "这个小区离学校近，很受女生欢迎。"
+                    },
+                    {
+                        "chinese":  "她是女生，所以更希望住在安全的小区。",
+                        "pinyin":  "Tā shì nǚshēng, suǒyǐ gèng xīwàng zhù zài ānquán de xiǎoqū.",
+                        "vietnamese":  "Cô ấy là nữ sinh nên càng hy vọng sống ở khu dân cư an toàn.",
+                        "answer":  "她是女生，所以更希望住在安全的小区。"
+                    },
+                    {
+                        "chinese":  "女生看房时最好不要一个人去。",
+                        "pinyin":  "Nǚshēng kàn fáng shí zuìhǎo búyào yí ge rén qù.",
+                        "vietnamese":  "Khi nữ sinh xem nhà, tốt nhất đừng đi một mình.",
+                        "answer":  "女生看房时最好不要一个人去。"
+                    },
+                    {
+                        "chinese":  "业务员提醒女生注意合同和押金问题。",
+                        "pinyin":  "Yèwùyuán tíxǐng nǚshēng zhùyì hétong hé yājīn wèntí.",
+                        "vietnamese":  "Nhân viên kinh doanh nhắc nữ sinh chú ý vấn đề hợp đồng và tiền cọc.",
+                        "answer":  "业务员提醒女生注意合同和押金问题。"
+                    },
+                    {
+                        "chinese":  "这个女生很细心，把家电清单都拍了照片。",
+                        "pinyin":  "Zhège nǚshēng hěn xìxīn, bǎ jiādiàn qīngdān dōu pāi le zhàopiàn.",
+                        "vietnamese":  "Bạn nữ này rất cẩn thận, chụp ảnh cả danh sách đồ điện gia dụng.",
+                        "answer":  "这个女生很细心，把家电清单都拍了照片。"
+                    },
+                    {
+                        "chinese":  "万一遇到不靠谱的中介，女生要及时求助。",
+                        "pinyin":  "Wànyī yùdào bù kàopǔ de zhōngjiè, nǚshēng yào jíshí qiúzhù.",
+                        "vietnamese":  "Lỡ gặp môi giới không đáng tin, nữ sinh phải kịp thời tìm sự giúp đỡ.",
+                        "answer":  "万一遇到不靠谱的中介，女生要及时求助。"
+                    },
+                    {
+                        "chinese":  "他觉得和异性合租不太方便。",
+                        "pinyin":  "Tā juéde hé yìxìng hézū bú tài fāngbiàn.",
+                        "vietnamese":  "Anh ấy thấy thuê chung với người khác giới không tiện lắm.",
+                        "answer":  "他觉得和异性合租不太方便。"
+                    },
+                    {
+                        "chinese":  "合租广告上写着“不接受异性合租”。",
+                        "pinyin":  "Hézū guǎnggào shàng xiězhe “bù jiēshòu yìxìng hézū”.",
+                        "vietnamese":  "Trên quảng cáo thuê chung ghi “không nhận thuê chung khác giới”.",
+                        "answer":  "合租广告上写着“不接受异性合租”。"
+                    },
+                    {
+                        "chinese":  "有些人不介意和异性一起分摊房租。",
+                        "pinyin":  "Yǒuxiē rén bú jièyì hé yìxìng yìqǐ fēntān fángzū.",
+                        "vietnamese":  "Có người không ngại chia tiền thuê nhà với người khác giới.",
+                        "answer":  "有些人不介意和异性一起分摊房租。"
+                    },
+                    {
+                        "chinese":  "如果和异性合租，生活规则要提前说清楚。",
+                        "pinyin":  "Rúguǒ hé yìxìng hézū, shēnghuó guīzé yào tíqián shuō qīngchu.",
+                        "vietnamese":  "Nếu thuê chung với người khác giới, quy tắc sinh hoạt phải nói rõ trước.",
+                        "answer":  "如果和异性合租，生活规则要提前说清楚。"
+                    },
+                    {
+                        "chinese":  "女生找房时，通常会比较在意异性室友问题。",
+                        "pinyin":  "Nǚshēng zhǎo fáng shí, tōngcháng huì bǐjiào zàiyì yìxìng shìyǒu wèntí.",
+                        "vietnamese":  "Khi nữ sinh tìm nhà, thường sẽ khá để ý vấn đề bạn cùng phòng khác giới.",
+                        "answer":  "女生找房时，通常会比较在意异性室友问题。"
+                    },
+                    {
+                        "chinese":  "中介没有提前说明有异性合租，导致我很不满意。",
+                        "pinyin":  "Zhōngjiè méiyǒu tíqián shuōmíng yǒu yìxìng hézū, dǎozhì wǒ hěn bù mǎnyì.",
+                        "vietnamese":  "Môi giới không nói trước có thuê chung khác giới, khiến tôi rất không hài lòng.",
+                        "answer":  "中介没有提前说明有异性合租，导致我很不满意。"
+                    },
+                    {
+                        "chinese":  "和异性合租不一定有问题，关键是互相尊重。",
+                        "pinyin":  "Hé yìxìng hézū bù yídìng yǒu wèntí, guānjiàn shì hùxiāng zūnzhòng.",
+                        "vietnamese":  "Thuê chung với người khác giới không nhất định có vấn đề, quan trọng là tôn trọng lẫn nhau.",
+                        "answer":  "和异性合租不一定有问题，关键是互相尊重。"
+                    },
+                    {
+                        "chinese":  "他不想和异性合租，所以继续找单间。",
+                        "pinyin":  "Tā bù xiǎng hé yìxìng hézū, suǒyǐ jìxù zhǎo dānjiān.",
+                        "vietnamese":  "Anh ấy không muốn thuê chung với người khác giới nên tiếp tục tìm phòng đơn.",
+                        "answer":  "他不想和异性合租，所以继续找单间。"
+                    },
+                    {
+                        "chinese":  "万一异性室友生活习惯不同，矛盾会增加。",
+                        "pinyin":  "Wànyī yìxìng shìyǒu shēnghuó xíguàn bùtóng, máodùn huì zēngjiā.",
+                        "vietnamese":  "Lỡ như bạn cùng phòng khác giới có thói quen sống khác nhau, mâu thuẫn sẽ tăng.",
+                        "answer":  "万一异性室友生活习惯不同，矛盾会增加。"
+                    },
+                    {
+                        "chinese":  "业务员说，这套房子现在只有异性合租名额。",
+                        "pinyin":  "Yèwùyuán shuō, zhè tào fángzi xiànzài zhǐ yǒu yìxìng hézū míng\u0027é.",
+                        "vietnamese":  "Nhân viên kinh doanh nói căn nhà này hiện chỉ còn suất thuê chung khác giới.",
+                        "answer":  "业务员说，这套房子现在只有异性合租名额。"
+                    },
+                    {
+                        "chinese":  "合租时水电费通常由大家分摊。",
+                        "pinyin":  "Hézū shí shuǐdiàn fèi tōngcháng yóu dàjiā fēntān.",
+                        "vietnamese":  "Khi thuê chung, tiền điện nước thường do mọi người chia nhau.",
+                        "answer":  "合租时水电费通常由大家分摊。"
+                    },
+                    {
+                        "chinese":  "房租太高，我们决定三个人一起分摊。",
+                        "pinyin":  "Fángzū tài gāo, wǒmen juédìng sān ge rén yìqǐ fēntān.",
+                        "vietnamese":  "Tiền thuê quá cao, chúng tôi quyết định ba người cùng chia.",
+                        "answer":  "房租太高，我们决定三个人一起分摊。"
+                    },
+                    {
+                        "chinese":  "押金怎么分摊，合同里应该写清楚。",
+                        "pinyin":  "Yājīn zěnme fēntān, hétong lǐ yīnggāi xiě qīngchu.",
+                        "vietnamese":  "Tiền cọc chia thế nào, trong hợp đồng nên viết rõ.",
+                        "answer":  "押金怎么分摊，合同里应该写清楚。"
+                    },
+                    {
+                        "chinese":  "如果室友突然搬走，剩下的人要分摊更多费用。",
+                        "pinyin":  "Rúguǒ shìyǒu tūrán bān zǒu, shèngxià de rén yào fēntān gèng duō fèiyòng.",
+                        "vietnamese":  "Nếu bạn cùng phòng đột nhiên chuyển đi, người còn lại phải chia nhiều chi phí hơn.",
+                        "answer":  "如果室友突然搬走，剩下的人要分摊更多费用。"
+                    },
+                    {
+                        "chinese":  "家电维修费也要提前商量怎么分摊。",
+                        "pinyin":  "Jiādiàn wéixiū fèi yě yào tíqián shāngliang zěnme fēntān.",
+                        "vietnamese":  "Phí sửa đồ điện cũng phải bàn trước chia thế nào.",
+                        "answer":  "家电维修费也要提前商量怎么分摊。"
+                    },
+                    {
+                        "chinese":  "分摊费用虽然麻烦，但能减轻个人压力。",
+                        "pinyin":  "Fēntān fèiyòng suīrán máfan, dàn néng jiǎnqīng gèrén yālì.",
+                        "vietnamese":  "Chia sẻ chi phí tuy phiền nhưng có thể giảm áp lực cá nhân.",
+                        "answer":  "分摊费用虽然麻烦，但能减轻个人压力。"
+                    },
+                    {
+                        "chinese":  "我们每个月月底统一分摊房租和网费。",
+                        "pinyin":  "Wǒmen měi ge yuè yuèdǐ tǒngyī fēntān fángzū hé wǎngfèi.",
+                        "vietnamese":  "Cuối mỗi tháng chúng tôi thống nhất chia tiền thuê nhà và tiền mạng.",
+                        "answer":  "我们每个月月底统一分摊房租和网费。"
+                    },
+                    {
+                        "chinese":  "业务员建议我们把分摊方式写进合同。",
+                        "pinyin":  "Yèwùyuán jiànyì wǒmen bǎ fēntān fāngshì xiě jìn hétong.",
+                        "vietnamese":  "Nhân viên kinh doanh khuyên chúng tôi ghi cách chia chi phí vào hợp đồng.",
+                        "answer":  "业务员建议我们把分摊方式写进合同。"
+                    },
+                    {
+                        "chinese":  "如果大家收入不同，可以商量合理分摊。",
+                        "pinyin":  "Rúguǒ dàjiā shōurù bùtóng, kěyǐ shāngliang hélǐ fēntān.",
+                        "vietnamese":  "Nếu thu nhập mọi người khác nhau, có thể bàn cách chia hợp lý.",
+                        "answer":  "如果大家收入不同，可以商量合理分摊。"
+                    },
+                    {
+                        "chinese":  "合租成功的关键之一，就是分摊规则清楚。",
+                        "pinyin":  "Hézū chénggōng de guānjiàn zhī yī, jiù shì fēntān guīzé qīngchu.",
+                        "vietnamese":  "Một trong những mấu chốt thuê chung thành công là quy tắc chia chi phí rõ ràng.",
+                        "answer":  "合租成功的关键之一，就是分摊规则清楚。"
+                    },
+                    {
+                        "chinese":  "万一房东突然涨房租，我们怎么办？",
+                        "pinyin":  "Wànyī fángdōng tūrán zhǎng fángzū, wǒmen zěnme bàn?",
+                        "vietnamese":  "Lỡ như chủ nhà đột nhiên tăng tiền thuê thì chúng ta làm sao?",
+                        "answer":  "万一房东突然涨房租，我们怎么办？"
+                    },
+                    {
+                        "chinese":  "万一中介信息不真实，损失可能很大。",
+                        "pinyin":  "Wànyī zhōngjiè xìnxī bù zhēnshí, sǔnshī kěnéng hěn dà.",
+                        "vietnamese":  "Lỡ như thông tin môi giới không thật, tổn thất có thể rất lớn.",
+                        "answer":  "万一中介信息不真实，损失可能很大。"
+                    },
+                    {
+                        "chinese":  "万一押金退不回来，一定要保留证据。",
+                        "pinyin":  "Wànyī yājīn tuì bù huílái, yídìng yào bǎoliú zhèngjù.",
+                        "vietnamese":  "Lỡ như tiền cọc không được trả lại, nhất định phải giữ chứng cứ.",
+                        "answer":  "万一押金退不回来，一定要保留证据。"
+                    },
+                    {
+                        "chinese":  "万一室友不按时交房租，其他人会很麻烦。",
+                        "pinyin":  "Wànyī shìyǒu bú ànshí jiāo fángzū, qítā rén huì hěn máfan.",
+                        "vietnamese":  "Lỡ bạn cùng phòng không nộp tiền thuê đúng hạn, người khác sẽ rất phiền.",
+                        "answer":  "万一室友不按时交房租，其他人会很麻烦。"
+                    },
+                    {
+                        "chinese":  "万一家电坏了，我们要先联系房东。",
+                        "pinyin":  "Wànyī jiādiàn huài le, wǒmen yào xiān liánxì fángdōng.",
+                        "vietnamese":  "Lỡ như đồ điện hỏng, chúng ta phải liên hệ chủ nhà trước.",
+                        "answer":  "万一家电坏了，我们要先联系房东。"
+                    },
+                    {
+                        "chinese":  "万一女生一个人看房，最好告诉朋友地址。",
+                        "pinyin":  "Wànyī nǚshēng yí ge rén kàn fáng, zuìhǎo gàosu péngyou dìzhǐ.",
+                        "vietnamese":  "Lỡ nữ sinh đi xem nhà một mình, tốt nhất nói địa chỉ cho bạn bè.",
+                        "answer":  "万一女生一个人看房，最好告诉朋友地址。"
+                    },
+                    {
+                        "chinese":  "万一合租后发现不合适，合同怎么处理？",
+                        "pinyin":  "Wànyī hézū hòu fāxiàn bù héshì, hétong zěnme chǔlǐ?",
+                        "vietnamese":  "Lỡ như sau khi thuê chung phát hiện không phù hợp, hợp đồng xử lý thế nào?",
+                        "answer":  "万一合租后发现不合适，合同怎么处理？"
+                    },
+                    {
+                        "chinese":  "万一不能直达公司，我每天通勤会很累。",
+                        "pinyin":  "Wànyī bù néng zhídá gōngsī, wǒ měitiān tōngqín huì hěn lèi.",
+                        "vietnamese":  "Lỡ không thể đi thẳng đến công ty, mỗi ngày đi làm tôi sẽ rất mệt.",
+                        "answer":  "万一不能直达公司，我每天通勤会很累。"
+                    },
+                    {
+                        "chinese":  "万一房子已经租出去了，我们再看下一套。",
+                        "pinyin":  "Wànyī fángzi yǐjīng zū chūqù le, wǒmen zài kàn xià yí tào.",
+                        "vietnamese":  "Lỡ căn nhà đã cho thuê rồi, chúng ta xem căn tiếp theo.",
+                        "answer":  "万一房子已经租出去了，我们再看下一套。"
+                    },
+                    {
+                        "chinese":  "万一承受不了压力，就不要勉强租太贵的房子。",
+                        "pinyin":  "Wànyī chéngshòu bù liǎo yālì, jiù búyào miǎnqiǎng zū tài guì de fángzi.",
+                        "vietnamese":  "Lỡ không chịu nổi áp lực thì đừng miễn cưỡng thuê nhà quá đắt.",
+                        "answer":  "万一承受不了压力，就不要勉强租太贵的房子。"
+                    },
+                    {
+                        "chinese":  "房东说可以让一点房租。",
+                        "pinyin":  "Fángdōng shuō kěyǐ ràng yìdiǎn fángzū.",
+                        "vietnamese":  "Chủ nhà nói có thể giảm một chút tiền thuê.",
+                        "answer":  "房东说可以让一点房租。"
+                    },
+                    {
+                        "chinese":  "这套房子房租太高，能不能再让一点？",
+                        "pinyin":  "Zhè tào fángzi fángzū tài gāo, néng bu néng zài ràng yìdiǎn?",
+                        "vietnamese":  "Căn nhà này tiền thuê quá cao, có thể giảm thêm chút không?",
+                        "answer":  "这套房子房租太高，能不能再让一点？"
+                    },
+                    {
+                        "chinese":  "中介帮我们商量，最后房东让了两百块。",
+                        "pinyin":  "Zhōngjiè bāng wǒmen shāngliang, zuìhòu fángdōng ràng le liǎng bǎi kuài.",
+                        "vietnamese":  "Môi giới giúp chúng tôi bàn, cuối cùng chủ nhà giảm 200 tệ.",
+                        "answer":  "中介帮我们商量，最后房东让了两百块。"
+                    },
+                    {
+                        "chinese":  "如果一次交一季房租，房东愿意让价。",
+                        "pinyin":  "Rúguǒ yí cì jiāo yí jì fángzū, fángdōng yuànyì ràngjià.",
+                        "vietnamese":  "Nếu nộp một lần tiền thuê một quý, chủ nhà sẵn lòng giảm giá.",
+                        "answer":  "如果一次交一季房租，房东愿意让价。"
+                    },
+                    {
+                        "chinese":  "他觉得押金不能让，房租可以商量。",
+                        "pinyin":  "Tā juéde yājīn bù néng ràng, fángzū kěyǐ shāngliang.",
+                        "vietnamese":  "Anh ấy thấy tiền cọc không thể giảm, tiền thuê có thể bàn.",
+                        "answer":  "他觉得押金不能让，房租可以商量。"
+                    },
+                    {
+                        "chinese":  "业务员说这套房子很抢手，价格让不了太多。",
+                        "pinyin":  "Yèwùyuán shuō zhè tào fángzi hěn qiǎngshǒu, jiàgé ràng bù liǎo tài duō.",
+                        "vietnamese":  "Nhân viên nói căn này rất hot, giá không thể giảm nhiều.",
+                        "answer":  "业务员说这套房子很抢手，价格让不了太多。"
+                    },
+                    {
+                        "chinese":  "如果你诚心租，房东可能会让一步。",
+                        "pinyin":  "Rúguǒ nǐ chéngxīn zū, fángdōng kěnéng huì ràng yí bù.",
+                        "vietnamese":  "Nếu bạn thật lòng thuê, chủ nhà có thể nhường một bước.",
+                        "answer":  "如果你诚心租，房东可能会让一步。"
+                    },
+                    {
+                        "chinese":  "合租时大家都要互相让一点，生活才舒服。",
+                        "pinyin":  "Hézū shí dàjiā dōu yào hùxiāng ràng yìdiǎn, shēnghuó cái shūfu.",
+                        "vietnamese":  "Khi thuê chung mọi người đều phải nhường nhau một chút thì cuộc sống mới dễ chịu.",
+                        "answer":  "合租时大家都要互相让一点，生活才舒服。"
+                    },
+                    {
+                        "chinese":  "他不愿意让出主卧，所以合租没谈成。",
+                        "pinyin":  "Tā bú yuànyì ràng chū zhǔwò, suǒyǐ hézū méi tánchéng.",
+                        "vietnamese":  "Anh ấy không muốn nhường phòng ngủ chính nên việc thuê chung không bàn xong.",
+                        "answer":  "他不愿意让出主卧，所以合租没谈成。"
+                    },
+                    {
+                        "chinese":  "房东让我们先住进去，下周再补签合同。",
+                        "pinyin":  "Fángdōng ràng wǒmen xiān zhù jìnqù, xià zhōu zài bǔ qiān hétong.",
+                        "vietnamese":  "Chủ nhà cho chúng tôi vào ở trước, tuần sau mới ký bổ sung hợp đồng.",
+                        "answer":  "房东让我们先住进去，下周再补签合同。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "天快黑了，我们还是早点儿回宿舍吧。",
+                          "pinyin":  "Tiān kuài hēi le, wǒmen háishi zǎodiǎnr huí sùshè ba.",
+                          "vietnamese":  "Trời sắp tối rồi, chúng ta vẫn nên về ký túc xá sớm thì hơn.",
+                          "answer":  "天快黑了，我们还是早点儿回宿舍吧。"
+                      },
+                      {
+                          "chinese":  "这个房间虽然有点儿远，我们还是先看看吧。",
+                          "pinyin":  "Zhège fángjiān suīrán yǒudiǎnr yuǎn, wǒmen háishi xiān kànkan ba.",
+                          "vietnamese":  "Căn phòng này tuy hơi xa, chúng ta vẫn nên xem trước đã.",
+                          "answer":  "这个房间虽然有点儿远，我们还是先看看吧。"
+                      },
+                      {
+                          "chinese":  "房租太贵了，我们还是再比较几家吧。",
+                          "pinyin":  "Fángzū tài guì le, wǒmen háishi zài bǐjiào jǐ jiā ba.",
+                          "vietnamese":  "Tiền thuê nhà quá đắt rồi, chúng ta vẫn nên so sánh thêm vài nơi.",
+                          "answer":  "房租太贵了，我们还是再比较几家吧。"
+                      },
+                      {
+                          "chinese":  "外面雨下得很大，你还是打车回去吧。",
+                          "pinyin":  "Wàimiàn yǔ xià de hěn dà, nǐ háishi dǎchē huíqù ba.",
+                          "vietnamese":  "Bên ngoài mưa rất to, bạn vẫn nên đi taxi về thì hơn.",
+                          "answer":  "外面雨下得很大，你还是打车回去吧。"
+                      },
+                      {
+                          "chinese":  "这份合同我看不太懂，还是问问老师吧。",
+                          "pinyin":  "Zhè fèn hétong wǒ kàn bú tài dǒng, háishi wènwen lǎoshī ba.",
+                          "vietnamese":  "Bản hợp đồng này tôi đọc không hiểu lắm, vẫn nên hỏi thầy xem.",
+                          "answer":  "这份合同我看不太懂，还是问问老师吧。"
+                      },
+                      {
+                          "chinese":  "如果你不放心，还是先跟房东确认一下吧。",
+                          "pinyin":  "Rúguǒ nǐ bù fàngxīn, háishi xiān gēn fángdōng quèrèn yíxià ba.",
+                          "vietnamese":  "Nếu bạn không yên tâm, vẫn nên xác nhận với chủ nhà trước.",
+                          "answer":  "如果你不放心，还是先跟房东确认一下吧。"
+                      },
+                      {
+                          "chinese":  "你快点儿出门，要不然就赶不上地铁了。",
+                          "pinyin":  "Nǐ kuàidiǎnr chūmén, yàobùrán jiù gǎn bu shàng dìtiě le.",
+                          "vietnamese":  "Bạn nhanh ra khỏi nhà đi, nếu không thì sẽ không kịp tàu điện ngầm.",
+                          "answer":  "你快点儿出门，要不然就赶不上地铁了。"
+                      },
+                      {
+                          "chinese":  "先把合同内容看清楚，要不然以后容易出问题。",
+                          "pinyin":  "Xiān bǎ hétong nèiróng kàn qīngchu, yàobùrán yǐhòu róngyì chū wèntí.",
+                          "vietnamese":  "Hãy xem rõ nội dung hợp đồng trước, nếu không sau này dễ xảy ra vấn đề.",
+                          "answer":  "先把合同内容看清楚，要不然以后容易出问题。"
+                      },
+                      {
+                          "chinese":  "你最好提前联系房东，要不然房间可能被租走。",
+                          "pinyin":  "Nǐ zuìhǎo tíqián liánxì fángdōng, yàobùrán fángjiān kěnéng bèi zū zǒu.",
+                          "vietnamese":  "Bạn tốt nhất liên lạc với chủ nhà trước, nếu không phòng có thể bị thuê mất.",
+                          "answer":  "你最好提前联系房东，要不然房间可能被租走。"
+                      },
+                      {
+                          "chinese":  "今天晚上早点儿睡，要不然明天上课会很困。",
+                          "pinyin":  "Jīntiān wǎnshang zǎodiǎnr shuì, yàobùrán míngtiān shàngkè huì hěn kùn.",
+                          "vietnamese":  "Tối nay ngủ sớm hơn, nếu không mai lên lớp sẽ rất buồn ngủ.",
+                          "answer":  "今天晚上早点儿睡，要不然明天上课会很困。"
+                      },
+                      {
+                          "chinese":  "快把押金收据保存好，要不然以后不好证明。",
+                          "pinyin":  "Kuài bǎ yājīn shōujù bǎocún hǎo, yàobùrán yǐhòu bù hǎo zhèngmíng.",
+                          "vietnamese":  "Mau giữ kỹ biên nhận tiền cọc, nếu không sau này khó chứng minh.",
+                          "answer":  "快把押金收据保存好，要不然以后不好证明。"
+                      },
+                      {
+                          "chinese":  "你连合同都不看，租什么房子呀？",
+                          "pinyin":  "Nǐ lián hétong dōu bú kàn, zū shénme fángzi ya?",
+                          "vietnamese":  "Bạn còn không xem hợp đồng, thuê nhà cái gì chứ?",
+                          "answer":  "你连合同都不看，租什么房子呀？"
+                      },
+                      {
+                          "chinese":  "房租都没问清楚，你决定什么呀？",
+                          "pinyin":  "Fángzū dōu méi wèn qīngchu, nǐ juédìng shénme ya?",
+                          "vietnamese":  "Tiền thuê còn chưa hỏi rõ, bạn quyết định cái gì chứ?",
+                          "answer":  "房租都没问清楚，你决定什么呀？"
+                      },
+                      {
+                          "chinese":  "地址都不知道，你去看什么房呀？",
+                          "pinyin":  "Dìzhǐ dōu bù zhīdào, nǐ qù kàn shénme fáng ya?",
+                          "vietnamese":  "Địa chỉ còn không biết, bạn đi xem nhà gì chứ?",
+                          "answer":  "地址都不知道，你去看什么房呀？"
+                      },
+                      {
+                          "chinese":  "押金怎么退都没说清楚，你签什么合同呀？",
+                          "pinyin":  "Yājīn zěnme tuì dōu méi shuō qīngchu, nǐ qiān shénme hétong ya?",
+                          "vietnamese":  "Tiền cọc trả thế nào còn chưa nói rõ, bạn ký hợp đồng gì chứ?",
+                          "answer":  "押金怎么退都没说清楚，你签什么合同呀？"
+                      },
+                      {
+                          "chinese":  "房东是谁都不知道，你交什么钱呀？",
+                          "pinyin":  "Fángdōng shì shéi dōu bù zhīdào, nǐ jiāo shénme qián ya?",
+                          "vietnamese":  "Chủ nhà là ai còn không biết, bạn nộp tiền gì chứ?",
+                          "answer":  "房东是谁都不知道，你交什么钱呀？"
+                      },
+                      {
+                          "chinese":  "学习语言是为了交流，而不是只为了考试。",
+                          "pinyin":  "Xuéxí yǔyán shì wèile jiāoliú, ér bú shì zhǐ wèile kǎoshì.",
+                          "vietnamese":  "Học ngôn ngữ là để giao tiếp, chứ không phải chỉ để thi.",
+                          "answer":  "学习语言是为了交流，而不是只为了考试。"
+                      },
+                      {
+                          "chinese":  "租房最重要的是安全，而不是只看价格。",
+                          "pinyin":  "Zūfáng zuì zhòngyào de shì ānquán, ér bú shì zhǐ kàn jiàgé.",
+                          "vietnamese":  "Thuê nhà quan trọng nhất là an toàn, chứ không phải chỉ nhìn giá.",
+                          "answer":  "租房最重要的是安全，而不是只看价格。"
+                      },
+                      {
+                          "chinese":  "这个问题是合同问题，而不是简单的误会。",
+                          "pinyin":  "Zhège wèntí shì hétong wèntí, ér bú shì jiǎndān de wùhuì.",
+                          "vietnamese":  "Vấn đề này là vấn đề hợp đồng, chứ không phải hiểu lầm đơn giản.",
+                          "answer":  "这个问题是合同问题，而不是简单的误会。"
+                      },
+                      {
+                          "chinese":  "我想要的是安静的房间，而不是离商场近。",
+                          "pinyin":  "Wǒ xiǎng yào de shì ānjìng de fángjiān, ér bú shì lí shāngchǎng jìn.",
+                          "vietnamese":  "Thứ tôi muốn là phòng yên tĩnh, chứ không phải gần trung tâm thương mại.",
+                          "answer":  "我想要的是安静的房间，而不是离商场近。"
+                      },
+                      {
+                          "chinese":  "老师强调的是学习方法，而不是学习时间长短。",
+                          "pinyin":  "Lǎoshī qiángdiào de shì xuéxí fāngfǎ, ér bú shì xuéxí shíjiān chángduǎn.",
+                          "vietnamese":  "Thầy nhấn mạnh là phương pháp học, chứ không phải thời gian học dài hay ngắn.",
+                          "answer":  "老师强调的是学习方法，而不是学习时间长短。"
+                      },
+                      {
+                          "chinese":  "有什么远不远的，只要交通方便就可以。",
+                          "pinyin":  "Yǒu shénme yuǎn bu yuǎn de, zhǐyào jiāotōng fāngbiàn jiù kěyǐ.",
+                          "vietnamese":  "Có gì mà xa hay không xa, chỉ cần giao thông tiện là được.",
+                          "answer":  "有什么远不远的，只要交通方便就可以。"
+                      },
+                      {
+                          "chinese":  "有什么贵不贵的，质量好就值得买。",
+                          "pinyin":  "Yǒu shénme guì bu guì de, zhìliàng hǎo jiù zhídé mǎi.",
+                          "vietnamese":  "Có gì mà đắt hay không đắt, chất lượng tốt thì đáng mua.",
+                          "answer":  "有什么贵不贵的，质量好就值得买。"
+                      },
+                      {
+                          "chinese":  "有什么麻烦不麻烦的，先把问题解决再说。",
+                          "pinyin":  "Yǒu shénme máfan bù máfan de, xiān bǎ wèntí jiějué zài shuō.",
+                          "vietnamese":  "Có gì mà phiền hay không phiền, cứ giải quyết vấn đề trước rồi nói.",
+                          "answer":  "有什么麻烦不麻烦的，先把问题解决再说。"
+                      },
+                      {
+                          "chinese":  "有什么合适不合适的，你喜欢就先试试。",
+                          "pinyin":  "Yǒu shénme héshì bù héshì de, nǐ xǐhuan jiù xiān shìshi.",
+                          "vietnamese":  "Có gì mà phù hợp hay không phù hợp, bạn thích thì thử trước đi.",
+                          "answer":  "有什么合适不合适的，你喜欢就先试试。"
+                      },
+                      {
+                          "chinese":  "有什么好不好意思的，遇到问题就应该问。",
+                          "pinyin":  "Yǒu shénme hǎo bù hǎoyìsi de, yù dào wèntí jiù yīnggāi wèn.",
+                          "vietnamese":  "Có gì mà ngại hay không ngại, gặp vấn đề thì nên hỏi.",
+                          "answer":  "有什么好不好意思的，遇到问题就应该问。"
+                      }
+                  ]
+}

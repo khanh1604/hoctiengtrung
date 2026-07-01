@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh Sách Bài Học - Chinese Learning</title>
+    <script>
+      try {
+        if (localStorage.getItem("menuTheme") === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css?v=ftc-new-ui-20260620" />
     <script src="theme.js" defer></script>
   </head>
@@ -63,6 +70,8 @@
       const subject = params.get("subject") || "listening";
       const isWriting = subject === "writing";
       const isSpeaking = subject === "speaking";
+      const isSpeaking2 = subject === "speaking2";
+      const isSpeaking3 = subject === "speaking3";
       const isListening3 = subject === "listening3";
       const isListening4 = subject === "listening4";
       const isHanyu1 = subject === "hanyu1";
@@ -83,11 +92,13 @@
                 ? 10
                 : isHanyu5 || isHanyu6
                   ? 13
-                  : isListening3 || isListening4
-                    ? 30
-                  : isSpeaking
-                    ? 12
-                    : 24;
+                  : isSpeaking2 || isSpeaking3
+                    ? 15
+                    : isListening3 || isListening4
+                      ? 30
+                      : isSpeaking
+                        ? 12
+                        : 24;
       const itemsPerPage = 12;
       const availableListeningLessons = new Set(
         Array.from({ length: 24 }, (_, idx) => idx + 1),
@@ -100,6 +111,12 @@
       );
       const availableSpeakingLessons = new Set(
         Array.from({ length: 12 }, (_, idx) => idx + 1),
+      );
+      const availableSpeaking2Lessons = new Set(
+        Array.from({ length: 15 }, (_, idx) => idx + 1),
+      );
+      const availableSpeaking3Lessons = new Set(
+        Array.from({ length: 15 }, (_, idx) => idx + 1),
       );
       const availableWritingLessons = new Set(
         Array.from({ length: 15 }, (_, idx) => idx + 1),
@@ -239,16 +256,97 @@
         ["请客的经济学", "Kinh tế học của việc mời khách"],
         ["孔雀的悲哀", "Nỗi buồn của con công"],
         ["科学的睡眠", "Giấc ngủ khoa học"],
-        ["商店太热闹，顾客难接受", "Cửa hàng quá đông đúc, khách hàng khó chấp nhận"],
+        [
+          "商店太热闹，顾客难接受",
+          "Cửa hàng quá đông đúc, khách hàng khó chấp nhận",
+        ],
         ["办件好事可真难", "Làm một việc tốt thật không dễ"],
         ["办什么样的婚礼", "Nên tổ chức đám cưới như thế nào"],
         ["导盲犬和他的主人", "Chó dẫn đường và người chủ của nó"],
+      ];
+      const speaking2LessonNames = [
+        ["第一天", "附近有吃饭的地方吗 / 你有什么打算"],
+        ["入乡随俗", "叫错了也没什么 / 这样能行吗"],
+        ["家乡", "你是哪儿的人呀 / 我的家乡"],
+        ["去还是留", "你想过在这儿工作吗 / 故乡的歌"],
+        ["工作狂", "爱干活儿的鬼 / 你是什么狂"],
+        ["学校社团", "我想多认识一些中国学生 / 欢迎你加入"],
+        ["请客", "今天我请客 / 你们有外卖吗"],
+        ["我想退这条裤子", "我想退这条裤子 / 两位请慢用"],
+        ["租房", "我想租房子 / 异性合租"],
+        ["信与不信", "怎么办 / 天下还有这种好事儿"],
+        ["学习与考试", "你怎么学习 / 我就喜欢考试"],
+        ["勤工俭学", "你找到什么新工作了 / 我想找个工作"],
+        ["旅游", "你们的西安游是怎么安排的 / 新疆好玩儿极了"],
+        ["看什么书", "我一般看畅销书 / 我最喜欢的一本书"],
+        ["最难忘的", "快回国了吧 / 最难忘的一课"],
+      ];
+      const speaking3LessonNames = [
+        [
+          "在家靠父母，出门靠朋友",
+          "我想办张银行卡 / 附近有超市吗 / 我不吃香菜",
+        ],
+        [
+          "三口之家是理想的家庭吗",
+          "三口之家是理想的家庭吗 / 无理由离婚时代 / 婚姻是爱情的坟墓吗",
+        ],
+        [
+          "刷卡消费，享受生活",
+          "请填一下这张表 / 请问，您有会员卡吗 / 刷卡消费，享受生活",
+        ],
+        [
+          "啃老族：哀其不幸，怒其不争",
+          "啃老族是世界性难题 / 这种说法站不住脚 / 戴着有色眼镜看问题",
+        ],
+        [
+          "的哥，辛苦了",
+          "现在没心思聊天儿了 / 这样开车太危险了 / 酒后驾车是全球公敌",
+        ],
+        [
+          "月亮代表我的心",
+          "生活中不能没有音乐 / 你喜欢听什么音乐 / 月亮代表我的心",
+        ],
+        [
+          "捡了芝麻，丢了西瓜",
+          "笼子里的肉 / 捡了芝麻，丢了西瓜 / 因小失大及语言的雅与俗",
+        ],
+        [
+          "教育需要培养全面发展的人",
+          "一个中学生的作息时间表 / 能谈谈您的看法吗 / 什么是教育",
+        ],
+        [
+          "需要的话，我们给你打电话",
+          "需要的话，我们给你打电话 / 能不能占用您几分钟时间 / 我工作，所以我快乐",
+        ],
+        [
+          "旁观者清，当局者迷",
+          "旁观者清，当局者迷 / 多挤点儿时间，多读点儿书 / 地域与文化",
+        ],
+        [
+          "城市让生活更美好",
+          "如果我是一个城市的市长 / 算了，我还是当普通老百姓吧 / 城市化的利与弊",
+        ],
+        [
+          "低碳生活，从我做起",
+          "当“慢”成为难得的奢侈 / 其实，我早就有这个愿望 / 低碳生活，从我做起",
+        ],
+        [
+          "虚拟时代，一切皆有可能",
+          "你会选择无纸化阅读吗 / 我迷上了网上购物 / 虚拟时代，一切皆有可能",
+        ],
+        ["知足者常乐", "知足者常乐 / 这山望着那山高 / 富翁的诡计"],
+        [
+          "己所不欲，勿施于人",
+          "以后不要用红笔写作业 / 己所不欲，勿施于人 / 居必择邻，游必就士",
+        ],
       ];
       var currentPage = 1;
 
       function hasLessonData(lessonNumber) {
         if (isWriting) return availableWritingLessons.has(lessonNumber);
         if (isSpeaking) return availableSpeakingLessons.has(lessonNumber);
+        if (isSpeaking2) return availableSpeaking2Lessons.has(lessonNumber);
+        if (isSpeaking3) return availableSpeaking3Lessons.has(lessonNumber);
         if (isHanyu1) return availableHanyu1Lessons.has(lessonNumber);
         if (isHanyu2) return availableHanyu2Lessons.has(lessonNumber);
         if (isHanyu3) return availableHanyu3Lessons.has(lessonNumber);
@@ -264,6 +362,10 @@
         document.getElementById("lessonsTitle").textContent = "中级写作（I）";
       } else if (isSpeaking) {
         document.getElementById("lessonsTitle").textContent = "口语";
+      } else if (isSpeaking2) {
+        document.getElementById("lessonsTitle").textContent = "中级口语（I）";
+      } else if (isSpeaking3) {
+        document.getElementById("lessonsTitle").textContent = "中级口语（II）";
       } else if (isListening3) {
         document.getElementById("lessonsTitle").textContent = "中级听力（I）";
       } else if (isListening4) {
@@ -309,11 +411,18 @@
           };
         }
 
-        if (isSpeaking) {
+        if (isSpeaking || isSpeaking2 || isSpeaking3) {
           const speakingLesson = idx + 1;
           const unlocked = hasLessonData(speakingLesson);
+          const lessonName = isSpeaking3
+            ? speaking3LessonNames[idx]
+            : isSpeaking2
+              ? speaking2LessonNames[idx]
+              : null;
           return {
-            title: `Bài ${pad(speakingLesson)}`,
+            title: lessonName
+              ? `Bài ${pad(speakingLesson)} - ${lessonName[0]}`
+              : `Bài ${pad(speakingLesson)}`,
             unlocked,
             href: unlocked
               ? `lesson-options.html?lesson=${pad(speakingLesson)}&subject=${subject}`
@@ -511,7 +620,7 @@
 
           <main class="speaking-main">
             <div class="speaking-breadcrumb">
-              <a href="lessons.html?subject=speaking">Khẩu ngữ</a>
+              <a href="index.html">Khẩu ngữ</a>
               <span>›</span>
               <a href="lessons.html?subject=speaking">初级口语（II）</a>
             </div>
@@ -606,6 +715,24 @@
               ["家家都是新房子", "Nhà nào cũng là nhà mới."],
             ],
           },
+          speaking2: {
+            label: "Khẩu ngữ",
+            title: "中级口语（I）",
+            subtitle: "Luyện nói trung cấp - phần 1",
+            icon: "💬",
+            listHref: "lessons.html?subject=speaking2",
+            actionLabel: "Luyện nói",
+            lessons: speaking2LessonNames,
+          },
+          speaking3: {
+            label: "Khẩu ngữ",
+            title: "中级口语（II）",
+            subtitle: "Luyện nói trung cấp - phần 2",
+            icon: "💬",
+            listHref: "lessons.html?subject=speaking3",
+            actionLabel: "Luyện nói",
+            lessons: speaking3LessonNames,
+          },
           listening: {
             label: "Nghe hiểu",
             title: "初级听力（II）",
@@ -679,7 +806,10 @@
               ["我去邮局寄包裹", "Tôi đi bưu điện gửi bưu kiện"],
               ["可以试试吗", "Có thể thử không?"],
               ["祝你生日快乐", "Chúc bạn sinh nhật vui vẻ"],
-              ["我们明天七点一刻出发", "Ngày mai chúng tôi xuất phát lúc 7 giờ 15"],
+              [
+                "我们明天七点一刻出发",
+                "Ngày mai chúng tôi xuất phát lúc 7 giờ 15",
+              ],
               ["我打算请老师教我京剧", "Tôi định mời thầy dạy tôi Kinh kịch"],
               ["学校里边有邮局吗", "Trong trường có bưu điện không?"],
               ["我想学太极拳", "Tôi muốn học Thái Cực Quyền"],
@@ -750,12 +880,24 @@
             icon: "📗",
             listHref: "lessons.html?subject=hanyu4",
             lessons: [
-              ["前边开过来一辆空车", "Phía trước có một chiếc xe trống chạy tới"],
-              ["为什么把“福”字倒贴在门上", "Vì sao dán ngược chữ Phúc trên cửa?"],
+              [
+                "前边开过来一辆空车",
+                "Phía trước có một chiếc xe trống chạy tới",
+              ],
+              [
+                "为什么把“福”字倒贴在门上",
+                "Vì sao dán ngược chữ Phúc trên cửa?",
+              ],
               ["请把护照和机票给我", "Hãy đưa hộ chiếu và vé máy bay cho tôi"],
               ["我的腿被自行车撞伤了", "Chân tôi bị xe đạp đâm bị thương"],
-              ["京剧我看得懂，但是听不懂", "Kinh kịch tôi xem hiểu, nhưng nghe không hiểu"],
-              ["山这么高，你爬得上去吗", "Núi cao như vậy, bạn leo lên được không?"],
+              [
+                "京剧我看得懂，但是听不懂",
+                "Kinh kịch tôi xem hiểu, nhưng nghe không hiểu",
+              ],
+              [
+                "山这么高，你爬得上去吗",
+                "Núi cao như vậy, bạn leo lên được không?",
+              ],
               ["我想起来了", "Tôi nhớ ra rồi"],
               ["寒假你打算去哪儿旅行", "Nghỉ đông bạn định đi đâu du lịch?"],
               ["有困难找警察", "Có khó khăn thì tìm cảnh sát"],
@@ -882,7 +1024,13 @@
 
         const list = document.getElementById("speakingLessonList");
         lessonItems.forEach((item, index) => {
-          const displayLessonNumber = isHanyu2 ? index + 16 : isHanyu4 ? index + 11 : isHanyu6 ? index + 14 : index + 1;
+          const displayLessonNumber = isHanyu2
+            ? index + 16
+            : isHanyu4
+              ? index + 11
+              : isHanyu6
+                ? index + 14
+                : index + 1;
           const padLesson = String(displayLessonNumber).padStart(2, "0");
           const preset = courseInfo.lessons?.[index];
           const row = document.createElement("button");
@@ -906,7 +1054,6 @@
 
       renderUnifiedCoursePage();
     </script>
+    <script type="module" src="js/protected-route.js"></script>
   </body>
 </html>
-
-

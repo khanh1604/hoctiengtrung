@@ -1,0 +1,2394 @@
+﻿{
+    "title":  "去还是留",
+    "vietnameseTitle":  "你想过在这儿工作吗 / 故乡的歌",
+    "textTitles":  [
+                       "你想过在这儿工作吗",
+                       "故乡的歌"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "父母",
+                           "pinyin":  "fùmǔ",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "phụ mẫu",
+                           "vietnamese":  "cha mẹ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "父母总是希望孩子生活得更好。",
+                                                "pinyin":  "Fùmǔ zǒngshì xīwàng háizi shēnghuó de gèng hǎo.",
+                                                "vietnamese":  "Cha mẹ luôn hy vọng con cái sống tốt hơn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "无所谓",
+                           "pinyin":  "wúsuǒwèi",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "vô sở vị",
+                           "vietnamese":  "không sao cả, không quan tâm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "去哪儿吃饭我都无所谓。",
+                                                "pinyin":  "Qù nǎr chīfàn wǒ dōu wúsuǒwèi.",
+                                                "vietnamese":  "Đi đâu ăn cơm tôi đều không sao cả."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "当初",
+                           "pinyin":  "dāngchū",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đương sơ",
+                           "vietnamese":  "lúc đầu, ban đầu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "当初我来中国的时候，汉语说得不好。",
+                                                "pinyin":  "Dāngchū wǒ lái Zhōngguó de shíhou, Hànyǔ shuō de bù hǎo.",
+                                                "vietnamese":  "Lúc đầu khi tôi đến Trung Quốc, tiếng Trung nói chưa tốt."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "白白",
+                           "pinyin":  "báibái",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "bạch bạch",
+                           "vietnamese":  "vô ích, uổng công",
+                           "examples":  [
+                                            {
+                                                "chinese":  "别白白浪费时间，快点儿复习吧。",
+                                                "pinyin":  "Bié báibái làngfèi shíjiān, kuài diǎnr fùxí ba.",
+                                                "vietnamese":  "Đừng lãng phí thời gian vô ích, mau ôn bài đi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "定居",
+                           "pinyin":  "dìngjū",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "định cư",
+                           "vietnamese":  "định cư, sống ổn định",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他毕业以后想在上海定居。",
+                                                "pinyin":  "Tā bìyè yǐhòu xiǎng zài Shànghǎi dìngjū.",
+                                                "vietnamese":  "Sau khi tốt nghiệp, anh ấy muốn định cư ở Thượng Hải."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "归属",
+                           "pinyin":  "guīshǔ",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "quy thuộc",
+                           "vietnamese":  "thuộc về",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这里给我一种家的归属感。",
+                                                "pinyin":  "Zhèlǐ gěi wǒ yì zhǒng jiā de guīshǔgǎn.",
+                                                "vietnamese":  "Nơi này cho tôi một cảm giác thuộc về như nhà."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "感",
+                           "pinyin":  "gǎn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "cảm",
+                           "vietnamese":  "cảm giác",
+                           "examples":  [
+                                            {
+                                                "chinese":  "第一次见面时，他给我亲切感。",
+                                                "pinyin":  "Dì yī cì jiànmiàn shí, tā gěi wǒ qīnqiègǎn.",
+                                                "vietnamese":  "Lần đầu gặp mặt, anh ấy cho tôi cảm giác thân thiện."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "家人",
+                           "pinyin":  "jiārén",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "gia nhân",
+                           "vietnamese":  "người nhà, thành viên gia đình",
+                           "examples":  [
+                                            {
+                                                "chinese":  "春节的时候，我想和家人在一起。",
+                                                "pinyin":  "Chūnjié de shíhou, wǒ xiǎng hé jiārén zài yìqǐ.",
+                                                "vietnamese":  "Dịp Tết, tôi muốn ở bên người nhà."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "通通",
+                           "pinyin":  "tōngtōng",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "thông thông",
+                           "vietnamese":  "tất cả, hoàn toàn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这些旧家具通通都要搬走。",
+                                                "pinyin":  "Zhèxiē jiù jiājù tōngtōng dōu yào bān zǒu.",
+                                                "vietnamese":  "Những đồ nội thất cũ này tất cả đều phải chuyển đi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "方式",
+                           "pinyin":  "fāngshì",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "phương thức",
+                           "vietnamese":  "cách thức, phương thức",
+                           "examples":  [
+                                            {
+                                                "chinese":  "每个人都有自己的学习方式。",
+                                                "pinyin":  "Měi ge rén dōu yǒu zìjǐ de xuéxí fāngshì.",
+                                                "vietnamese":  "Mỗi người đều có cách học riêng của mình."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "村",
+                           "pinyin":  "cūn",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thôn",
+                           "vietnamese":  "làng, thôn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我爷爷住在一个安静的小村里。",
+                                                "pinyin":  "Wǒ yéye zhù zài yí ge ānjìng de xiǎo cūn lǐ.",
+                                                "vietnamese":  "Ông tôi sống trong một ngôi làng nhỏ yên tĩnh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "之",
+                           "pinyin":  "zhī",
+                           "partOfSpeech":  "助",
+                           "sinoVietnamese":  "chi",
+                           "vietnamese":  "của, trợ từ nối định ngữ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "桂林山水有天下第一之美。",
+                                                "pinyin":  "Guìlín shānshuǐ yǒu tiānxià dì yī zhī měi.",
+                                                "vietnamese":  "Phong cảnh Quế Lâm có vẻ đẹp hàng đầu thiên hạ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "恋",
+                           "pinyin":  "liàn",
+                           "partOfSpeech":  "名/动",
+                           "sinoVietnamese":  "luyến",
+                           "vietnamese":  "yêu, lưu luyến, nhớ nhung",
+                           "examples":  [
+                                            {
+                                                "chinese":  "离开家乡以后，他常常恋着那片山水。",
+                                                "pinyin":  "Líkāi jiāxiāng yǐhòu, tā chángcháng liàn zhe nà piàn shānshuǐ.",
+                                                "vietnamese":  "Sau khi rời quê, anh ấy thường lưu luyến vùng núi sông ấy."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "青",
+                           "pinyin":  "qīng",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "thanh",
+                           "vietnamese":  "xanh, xanh biếc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "远处的山冈青青的，非常美。",
+                                                "pinyin":  "Yuǎnchù de shāngāng qīngqīng de, fēicháng měi.",
+                                                "vietnamese":  "Những ngọn đồi xa xa xanh biếc, rất đẹp."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "山冈",
+                           "pinyin":  "shāngāng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "sơn cương",
+                           "vietnamese":  "gò núi, đồi thấp",
+                           "examples":  [
+                                            {
+                                                "chinese":  "村庄后面有一座小山冈。",
+                                                "pinyin":  "Cūnzhuāng hòumiàn yǒu yí zuò xiǎo shāngāng.",
+                                                "vietnamese":  "Phía sau ngôi làng có một ngọn đồi nhỏ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "依偎",
+                           "pinyin":  "yīwēi",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "y ôi",
+                           "vietnamese":  "tựa vào, nép vào",
+                           "examples":  [
+                                            {
+                                                "chinese":  "小孩儿依偎在妈妈身边睡着了。",
+                                                "pinyin":  "Xiǎoháir yīwēi zài māma shēnbiān shuìzháo le.",
+                                                "vietnamese":  "Đứa trẻ nép bên mẹ rồi ngủ thiếp đi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "村庄",
+                           "pinyin":  "cūnzhuāng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thôn trang",
+                           "vietnamese":  "làng xóm, thôn làng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个村庄的风光让人难忘。",
+                                                "pinyin":  "Zhège cūnzhuāng de fēngguāng ràng rén nánwàng.",
+                                                "vietnamese":  "Phong cảnh của ngôi làng này khiến người ta khó quên."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "天空",
+                           "pinyin":  "tiānkōng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thiên không",
+                           "vietnamese":  "bầu trời",
+                           "examples":  [
+                                            {
+                                                "chinese":  "晚上的天空有很多星星。",
+                                                "pinyin":  "Wǎnshang de tiānkōng yǒu hěn duō xīngxing.",
+                                                "vietnamese":  "Bầu trời buổi tối có rất nhiều sao."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "怎",
+                           "pinyin":  "zěn",
+                           "partOfSpeech":  "代",
+                           "sinoVietnamese":  "chẩm",
+                           "vietnamese":  "sao, thế nào",
+                           "examples":  [
+                                            {
+                                                "chinese":  "没有你的帮助，我怎能成功呢？",
+                                                "pinyin":  "Méiyǒu nǐ de bāngzhù, wǒ zěn néng chénggōng ne?",
+                                                "vietnamese":  "Không có sự giúp đỡ của bạn, sao tôi có thể thành công được?"
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "叫",
+                           "pinyin":  "jiào",
+                           "partOfSpeech":  "介",
+                           "sinoVietnamese":  "khiếu",
+                           "vietnamese":  "khiến, làm cho",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这首歌叫我想起了家乡。",
+                                                "pinyin":  "Zhè shǒu gē jiào wǒ xiǎngqǐ le jiāxiāng.",
+                                                "vietnamese":  "Bài hát này khiến tôi nhớ đến quê hương."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "向往",
+                           "pinyin":  "xiàngwǎng",
+                           "partOfSpeech":  "动/形",
+                           "sinoVietnamese":  "hướng vãng",
+                           "vietnamese":  "hướng tới, mong mỏi",
+                           "examples":  [
+                                            {
+                                                "chinese":  "很多学生都向往大学生活。",
+                                                "pinyin":  "Hěn duō xuésheng dōu xiàngwǎng dàxué shēnghuó.",
+                                                "vietnamese":  "Rất nhiều học sinh đều mong mỏi cuộc sống đại học."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "是否",
+                           "pinyin":  "shìfǒu",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "thị phủ",
+                           "vietnamese":  "có hay không, liệu có",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我不知道他是否已经回国了。",
+                                                "pinyin":  "Wǒ bù zhīdào tā shìfǒu yǐjīng huíguó le.",
+                                                "vietnamese":  "Tôi không biết liệu anh ấy đã về nước hay chưa."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "无恙",
+                           "pinyin":  "wúyàng",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "vô dạng",
+                           "vietnamese":  "bình an, khỏe mạnh",
+                           "examples":  [
+                                            {
+                                                "chinese":  "多年不见，朋友，别来无恙？",
+                                                "pinyin":  "Duō nián bú jiàn, péngyou, bié lái wúyàng?",
+                                                "vietnamese":  "Nhiều năm không gặp, bạn vẫn khỏe chứ?"
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "时常",
+                           "pinyin":  "shícháng",
+                           "partOfSpeech":  "副",
+                           "sinoVietnamese":  "thời thường",
+                           "vietnamese":  "thường xuyên",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他时常想起小时候的生活。",
+                                                "pinyin":  "Tā shícháng xiǎngqǐ xiǎoshíhou de shēnghuó.",
+                                                "vietnamese":  "Anh ấy thường nhớ về cuộc sống hồi nhỏ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "风光",
+                           "pinyin":  "fēngguāng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "phong quang",
+                           "vietnamese":  "phong cảnh, cảnh sắc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "南方的山水风光特别美。",
+                                                "pinyin":  "Nánfāng de shānshuǐ fēngguāng tèbié měi.",
+                                                "vietnamese":  "Phong cảnh núi sông miền Nam đặc biệt đẹp."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "梦乡",
+                           "pinyin":  "mèngxiāng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "mộng hương",
+                           "vietnamese":  "giấc mộng, cõi mộng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "听着安静的音乐，他进入了梦乡。",
+                                                "pinyin":  "Tīng zhe ānjìng de yīnyuè, tā jìnrù le mèngxiāng.",
+                                                "vietnamese":  "Nghe nhạc yên tĩnh, anh ấy đi vào giấc mộng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "难忘",
+                           "pinyin":  "nánwàng",
+                           "partOfSpeech":  "形",
+                           "sinoVietnamese":  "nan vong",
+                           "vietnamese":  "khó quên",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这次旅行是一次难忘的经历。",
+                                                "pinyin":  "Zhè cì lǚxíng shì yí cì nánwàng de jīnglì.",
+                                                "vietnamese":  "Chuyến du lịch lần này là một trải nghiệm khó quên."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "歌唱",
+                           "pinyin":  "gēchàng",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "ca xướng",
+                           "vietnamese":  "ca hát, hát",
+                           "examples":  [
+                                            {
+                                                "chinese":  "孩子们在校园里快乐地歌唱。",
+                                                "pinyin":  "Háizimen zài xiàoyuán lǐ kuàilè de gēchàng.",
+                                                "vietnamese":  "Bọn trẻ vui vẻ ca hát trong khuôn viên trường."
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "东民，你想过在这儿工作吗？",
+                          "pinyin":  "Dōngmín, nǐ xiǎng guò zài zhèr gōngzuò ma?",
+                          "vietnamese":  "Đông Dân, bạn đã từng nghĩ đến việc làm việc ở đây chưa?"
+                      },
+                      {
+                          "chinese":  "想是想过，不过拿不定主意。",
+                          "pinyin":  "Xiǎng shì xiǎng guò, búguò ná bù dìng zhǔyi.",
+                          "vietnamese":  "Nghĩ thì có nghĩ rồi, nhưng vẫn chưa quyết định được."
+                      },
+                      {
+                          "chinese":  "为什么呀？",
+                          "pinyin":  "Wèishénme ya?",
+                          "vietnamese":  "Vì sao vậy?"
+                      },
+                      {
+                          "chinese":  "回国吧，我已经习惯这儿的生活了；不回吧，估计不好找工作。",
+                          "pinyin":  "Huí guó ba, wǒ yǐjīng xíguàn zhèr de shēnghuó le; bù huí ba, gūjì bù hǎo zhǎo gōngzuò.",
+                          "vietnamese":  "Về nước thì tôi đã quen cuộc sống ở đây rồi; không về thì e là khó tìm việc."
+                      },
+                      {
+                          "chinese":  "在父母身边多好呀，要是我，说什么也要回去。",
+                          "pinyin":  "Zài fùmǔ shēnbiān duō hǎo ya, yàoshi wǒ, shuō shénme yě yào huíqù.",
+                          "vietnamese":  "Ở bên cạnh bố mẹ tốt biết bao, nếu là tôi thì thế nào cũng phải về."
+                      },
+                      {
+                          "chinese":  "要是你回国，你女朋友能愿意吗？",
+                          "pinyin":  "Yàoshi nǐ huí guó, nǐ nǚpéngyou néng yuànyì ma?",
+                          "vietnamese":  "Nếu bạn về nước, bạn gái bạn có đồng ý không?"
+                      },
+                      {
+                          "chinese":  "是啊，我现在走也不是，留也不是。小林将来肯定回家乡吧？",
+                          "pinyin":  "Shì a, wǒ xiànzài zǒu yě bú shì, liú yě bú shì. Xiǎo Lín jiānglái kěndìng huí jiāxiāng ba?",
+                          "vietnamese":  "Đúng vậy, bây giờ tôi đi cũng không được, ở lại cũng không xong. Tiểu Lâm sau này chắc chắn về quê chứ?"
+                      },
+                      {
+                          "chinese":  "我也拿不定主意呢。",
+                          "pinyin":  "Wǒ yě ná bù dìng zhǔyi ne.",
+                          "vietnamese":  "Tôi cũng chưa quyết định được."
+                      },
+                      {
+                          "chinese":  "你们扬州不是挺好的地方吗？",
+                          "pinyin":  "Nǐmen Yángzhōu bú shì tǐng hǎo de dìfang ma?",
+                          "vietnamese":  "Dương Châu của các bạn không phải là nơi khá tốt sao?"
+                      },
+                      {
+                          "chinese":  "我无所谓，可我妈说，当初好不容易才来了大城市，回去不是白白辛苦了吗？",
+                          "pinyin":  "Wǒ wúsuǒwèi, kě wǒ mā shuō, dāngchū hǎo bù róngyì cái lái le dà chéngshì, huíqù bú shì báibái xīnkǔ le ma?",
+                          "vietnamese":  "Tôi thì sao cũng được, nhưng mẹ tôi nói ban đầu khó khăn lắm mới đến được thành phố lớn, nếu về chẳng phải uổng công vất vả sao?"
+                      },
+                      {
+                          "chinese":  "这么说，你妈想让你在大城市？",
+                          "pinyin":  "Zhème shuō, nǐ mā xiǎng ràng nǐ zài dà chéngshì?",
+                          "vietnamese":  "Nói vậy là mẹ bạn muốn bạn ở thành phố lớn à?"
+                      },
+                      {
+                          "chinese":  "对，她想让我以后就在这儿定居。",
+                          "pinyin":  "Duì, tā xiǎng ràng wǒ yǐhòu jiù zài zhèr dìngjū.",
+                          "vietnamese":  "Đúng, bà ấy muốn sau này tôi định cư ở đây."
+                      },
+                      {
+                          "chinese":  "我有个中国朋友，他有句话经常挂嘴边：买卖做到哪儿，就是哪儿人。",
+                          "pinyin":  "Wǒ yǒu ge Zhōngguó péngyou, tā yǒu jù huà jīngcháng guà zuǐbiān: mǎimai zuò dào nǎr, jiù shì nǎr rén.",
+                          "vietnamese":  "Tôi có một người bạn Trung Quốc, anh ấy có một câu thường nói: buôn bán làm ở đâu thì là người ở đó."
+                      },
+                      {
+                          "chinese":  "说实在的，留在家乡也有留在家乡的好处。",
+                          "pinyin":  "Shuō shízài de, liú zài jiāxiāng yě yǒu liú zài jiāxiāng de hǎochu.",
+                          "vietnamese":  "Nói thật, ở lại quê nhà cũng có cái tốt của ở lại quê nhà."
+                      },
+                      {
+                          "chinese":  "有什么好处？",
+                          "pinyin":  "Yǒu shénme hǎochu?",
+                          "vietnamese":  "Có lợi ích gì?"
+                      },
+                      {
+                          "chinese":  "有归属感，家人、朋友通通在身边，在别的地方就没这么容易了。",
+                          "pinyin":  "Yǒu guīshǔgǎn, jiārén, péngyou tōngtōng zài shēnbiān, zài bié de dìfang jiù méi zhème róngyì le.",
+                          "vietnamese":  "Có cảm giác thuộc về, người thân và bạn bè đều ở bên cạnh, ở nơi khác thì không dễ được như vậy."
+                      },
+                      {
+                          "chinese":  "家人是没办法了，朋友嘛，旧的不去，新的不来。",
+                          "pinyin":  "Jiārén shì méi bànfǎ le, péngyou ma, jiù de bú qù, xīn de bù lái.",
+                          "vietnamese":  "Người nhà thì không có cách nào, còn bạn bè thì cũ không đi, mới không đến."
+                      },
+                      {
+                          "chinese":  "要是老打一枪换一个地方，你受得了吗？",
+                          "pinyin":  "Yàoshi lǎo dǎ yì qiāng huàn yí ge dìfang, nǐ shòu de liǎo ma?",
+                          "vietnamese":  "Nếu cứ nay đây mai đó, đổi chỗ liên tục, bạn chịu nổi không?"
+                      },
+                      {
+                          "chinese":  "我觉得没什么，我就喜欢过不同的生活，和不同的人打交道，最好天天不重样儿。",
+                          "pinyin":  "Wǒ juéde méi shénme, wǒ jiù xǐhuan guò bù tóng de shēnghuó, hé bù tóng de rén dǎ jiāodào, zuì hǎo tiāntiān bù chóngyàngr.",
+                          "vietnamese":  "Tôi thấy không sao, tôi thích sống những cuộc sống khác nhau, giao tiếp với những người khác nhau, tốt nhất là ngày nào cũng không giống nhau."
+                      },
+                      {
+                          "chinese":  "要是你未来太太的风俗和生活方式跟你完全不同呢？",
+                          "pinyin":  "Yàoshi nǐ wèilái tàitai de fēngsú hé shēnghuó fāngshì gēn nǐ wánquán bù tóng ne?",
+                          "vietnamese":  "Nếu phong tục và cách sống của vợ tương lai bạn hoàn toàn khác bạn thì sao?"
+                      },
+                      {
+                          "chinese":  "弯弯的小河，青青的山冈，依偎着小村庄，",
+                          "pinyin":  "Wānwān de xiǎohé, qīngqīng de shāngāng, yīwēizhe xiǎo cūnzhuāng,",
+                          "vietnamese":  "Con sông nhỏ cong cong, sườn núi xanh xanh, ôm lấy ngôi làng nhỏ."
+                      },
+                      {
+                          "chinese":  "蓝蓝的天空，阵阵的花香，怎不叫人为你向往！",
+                          "pinyin":  "Lánlán de tiānkōng, zhènzhèn de huāxiāng, zěn bù jiào rén wèi nǐ xiàngwǎng!",
+                          "vietnamese":  "Bầu trời xanh thẳm, hương hoa từng làn, sao không khiến người ta hướng về bạn!"
+                      },
+                      {
+                          "chinese":  "啊，问故乡，问故乡是否别来无恙？",
+                          "pinyin":  "A, wèn gùxiāng, wèn gùxiāng shìfǒu biélái wúyàng?",
+                          "vietnamese":  "À, hỏi quê hương, hỏi quê hương từ ngày xa cách có vẫn bình yên không?"
+                      },
+                      {
+                          "chinese":  "我时常常地想念你，",
+                          "pinyin":  "Wǒ shícháng cháng de xiǎngniàn nǐ,",
+                          "vietnamese":  "Tôi thường xuyên nhớ bạn."
+                      },
+                      {
+                          "chinese":  "我愿意，我愿意回到你身旁。",
+                          "pinyin":  "Wǒ yuànyì, wǒ yuànyì huí dào nǐ shēnpáng.",
+                          "vietnamese":  "Tôi bằng lòng, tôi bằng lòng trở về bên bạn."
+                      },
+                      {
+                          "chinese":  "回到你身旁，美丽的村庄，美丽的风光，",
+                          "pinyin":  "Huí dào nǐ shēnpáng, měilì de cūnzhuāng, měilì de fēngguāng,",
+                          "vietnamese":  "Trở về bên bạn, ngôi làng xinh đẹp, phong cảnh xinh đẹp."
+                      },
+                      {
+                          "chinese":  "你常出现我的梦乡。",
+                          "pinyin":  "Nǐ cháng chūxiàn wǒ de mèngxiāng.",
+                          "vietnamese":  "Bạn thường xuất hiện trong giấc mơ của tôi."
+                      },
+                      {
+                          "chinese":  "在梦里，我又回到难忘的故乡，那弯弯的小河，阵阵的花香，使我向往，使我难忘。",
+                          "pinyin":  "Zài mèng lǐ, wǒ yòu huí dào nánwàng de gùxiāng, nà wānwān de xiǎohé, zhènzhèn de huāxiāng, shǐ wǒ xiàngwǎng, shǐ wǒ nánwàng.",
+                          "vietnamese":  "Trong mơ, tôi lại trở về quê hương khó quên, con sông nhỏ cong cong ấy, hương hoa từng làn ấy khiến tôi hướng về, khiến tôi khó quên."
+                      },
+                      {
+                          "chinese":  "难忘的小河，难忘的山冈，难忘的小村庄，",
+                          "pinyin":  "Nánwàng de xiǎohé, nánwàng de shāngāng, nánwàng de xiǎo cūnzhuāng,",
+                          "vietnamese":  "Con sông nhỏ khó quên, sườn núi khó quên, ngôi làng nhỏ khó quên."
+                      },
+                      {
+                          "chinese":  "在那里歌唱，在那里成长，怎不叫人为你向往！",
+                          "pinyin":  "Zài nàlǐ gēchàng, zài nàlǐ chéngzhǎng, zěn bù jiào rén wèi nǐ xiàngwǎng!",
+                          "vietnamese":  "Ở nơi đó ca hát, ở nơi đó trưởng thành, sao không khiến người ta hướng về bạn!"
+                      },
+                      {
+                          "chinese":  "啊，问故乡，问故乡是否别来无恙？",
+                          "pinyin":  "A, wèn gùxiāng, wèn gùxiāng shìfǒu biélái wúyàng?",
+                          "vietnamese":  "À, hỏi quê hương, hỏi quê hương từ ngày xa cách có vẫn bình yên không?"
+                      },
+                      {
+                          "chinese":  "我时常常地想念你，",
+                          "pinyin":  "Wǒ shícháng cháng de xiǎngniàn nǐ,",
+                          "vietnamese":  "Tôi thường xuyên nhớ bạn."
+                      },
+                      {
+                          "chinese":  "我愿意，我愿意回到你身旁。",
+                          "pinyin":  "Wǒ yuànyì, wǒ yuànyì huí dào nǐ shēnpáng.",
+                          "vietnamese":  "Tôi bằng lòng, tôi bằng lòng trở về bên bạn."
+                      },
+                      {
+                          "chinese":  "回到你身旁，美丽的村庄，美丽的风光，",
+                          "pinyin":  "Huí dào nǐ shēnpáng, měilì de cūnzhuāng, měilì de fēngguāng,",
+                          "vietnamese":  "Trở về bên bạn, ngôi làng xinh đẹp, phong cảnh xinh đẹp."
+                      },
+                      {
+                          "chinese":  "你常出现我的梦乡。",
+                          "pinyin":  "Nǐ cháng chūxiàn wǒ de mèngxiāng.",
+                          "vietnamese":  "Bạn thường xuất hiện trong giấc mơ của tôi."
+                      },
+                      {
+                          "chinese":  "啊，问故乡，问故乡是否别来无恙？",
+                          "pinyin":  "A, wèn gùxiāng, wèn gùxiāng shìfǒu biélái wúyàng?",
+                          "vietnamese":  "À, hỏi quê hương, hỏi quê hương từ ngày xa cách có vẫn bình yên không?"
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "……吧，……；……吧，……",
+                        "meaning":  "Nói là… thì…; nói là… thì…",
+                        "usage":  "Dùng khi do dự, chưa chắc chắn giữa hai lựa chọn",
+                        "note":  "Thường diễn tả sự lưỡng lự",
+                        "example":  "去吧，时间太晚；不去吧，又怕老师生气。",
+                        "pinyin":  "Qù ba, shíjiān tài wǎn; bú qù ba, yòu pà lǎoshī shēngqì.",
+                        "vietnamese":  "Đi thì muộn quá; không đi thì lại sợ thầy giận.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……也不是，……也不是",
+                        "meaning":  "… cũng không phải, … cũng không phải",
+                        "usage":  "Dùng để phủ định cả hai khả năng",
+                        "note":  "Thường dùng khi giải thích tình huống khó nói",
+                        "example":  "说他懒也不是，说他笨也不是，只是方法不对。",
+                        "pinyin":  "Shuō tā lǎn yě bú shì, shuō tā bèn yě bú shì, zhǐshì fāngfǎ bú duì.",
+                        "vietnamese":  "Nói anh ấy lười cũng không phải, nói anh ấy ngốc cũng không phải, chỉ là phương pháp không đúng.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "叫 + 人 + V",
+                        "meaning":  "Bảo / gọi / yêu cầu ai làm gì",
+                        "usage":  "Dùng khi sai khiến hoặc nhờ người khác làm việc",
+                        "note":  "叫 trong khẩu ngữ gần với 让",
+                        "example":  "妈妈叫我早点儿回家吃饭。",
+                        "pinyin":  "Māma jiào wǒ zǎodiǎnr huí jiā chī fàn.",
+                        "vietnamese":  "Mẹ bảo tôi về nhà ăn cơm sớm một chút.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "时常 + V",
+                        "meaning":  "Thường xuyên…",
+                        "usage":  "Dùng để nói hành động xảy ra nhiều lần",
+                        "note":  "Trang trọng hơn 常常 một chút",
+                        "example":  "他毕业以后，时常给老师打电话。",
+                        "pinyin":  "Tā bìyè yǐhòu, shícháng gěi lǎoshī dǎ diànhuà.",
+                        "vietnamese":  "Sau khi tốt nghiệp, anh ấy thường xuyên gọi điện cho thầy giáo.",
+                        "level":  "⭐⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "父母总是希望孩子能过得更好。",
+                        "pinyin":  "Fùmǔ zǒngshì xīwàng háizi néng guò de gèng hǎo.",
+                        "vietnamese":  "Cha mẹ luôn hy vọng con cái có thể sống tốt hơn.",
+                        "answer":  "父母总是希望孩子能过得更好。"
+                    },
+                    {
+                        "chinese":  "离开父母以后，他才真正学会照顾自己。",
+                        "pinyin":  "Líkāi fùmǔ yǐhòu, tā cái zhēnzhèng xuéhuì zhàogu zìjǐ.",
+                        "vietnamese":  "Sau khi rời cha mẹ, anh ấy mới thật sự học được cách chăm sóc bản thân.",
+                        "answer":  "离开父母以后，他才真正学会照顾自己。"
+                    },
+                    {
+                        "chinese":  "父母的意见很重要，但不能替我们决定一切。",
+                        "pinyin":  "Fùmǔ de yìjiàn hěn zhòngyào, dàn bù néng tì wǒmen juédìng yíqiè.",
+                        "vietnamese":  "Ý kiến của cha mẹ rất quan trọng nhưng không thể quyết định thay chúng ta mọi thứ.",
+                        "answer":  "父母的意见很重要，但不能替我们决定一切。"
+                    },
+                    {
+                        "chinese":  "他想去外地工作，父母一开始并不同意。",
+                        "pinyin":  "Tā xiǎng qù wàidì gōngzuò, fùmǔ yì kāishǐ bìng bù tóngyì.",
+                        "vietnamese":  "Anh ấy muốn đi nơi khác làm việc, lúc đầu cha mẹ không đồng ý.",
+                        "answer":  "他想去外地工作，父母一开始并不同意。"
+                    },
+                    {
+                        "chinese":  "父母虽然嘴上不说，但心里一直担心孩子。",
+                        "pinyin":  "Fùmǔ suīrán zuǐ shàng bù shuō, dàn xīn lǐ yìzhí dānxīn háizi.",
+                        "vietnamese":  "Cha mẹ tuy miệng không nói nhưng trong lòng luôn lo cho con.",
+                        "answer":  "父母虽然嘴上不说，但心里一直担心孩子。"
+                    },
+                    {
+                        "chinese":  "很多年轻人长大以后，才理解父母的辛苦。",
+                        "pinyin":  "Hěn duō niánqīng rén zhǎngdà yǐhòu, cái lǐjiě fùmǔ de xīnkǔ.",
+                        "vietnamese":  "Nhiều người trẻ sau khi lớn lên mới hiểu sự vất vả của cha mẹ.",
+                        "answer":  "很多年轻人长大以后，才理解父母的辛苦。"
+                    },
+                    {
+                        "chinese":  "父母支持他出国定居，但希望他常回家看看。",
+                        "pinyin":  "Fùmǔ zhīchí tā chūguó dìngjū, dàn xīwàng tā cháng huí jiā kànkan.",
+                        "vietnamese":  "Cha mẹ ủng hộ anh ấy ra nước ngoài định cư nhưng mong anh ấy thường về nhà thăm.",
+                        "answer":  "父母支持他出国定居，但希望他常回家看看。"
+                    },
+                    {
+                        "chinese":  "他把父母的话记在心里，工作时更加努力。",
+                        "pinyin":  "Tā bǎ fùmǔ de huà jì zài xīn lǐ, gōngzuò shí gèngjiā nǔlì.",
+                        "vietnamese":  "Anh ấy ghi lời cha mẹ trong lòng, khi làm việc càng cố gắng hơn.",
+                        "answer":  "他把父母的话记在心里，工作时更加努力。"
+                    },
+                    {
+                        "chinese":  "父母给他的不是压力，而是一种温暖的力量。",
+                        "pinyin":  "Fùmǔ gěi tā de bú shì yālì, ér shì yì zhǒng wēnnuǎn de lìliàng.",
+                        "vietnamese":  "Điều cha mẹ cho anh ấy không phải áp lực mà là một sức mạnh ấm áp.",
+                        "answer":  "父母给他的不是压力，而是一种温暖的力量。"
+                    },
+                    {
+                        "chinese":  "如果有机会，我想带父母去看看我的校园。",
+                        "pinyin":  "Rúguǒ yǒu jīhuì, wǒ xiǎng dài fùmǔ qù kànkan wǒ de xiàoyuán.",
+                        "vietnamese":  "Nếu có cơ hội, tôi muốn đưa cha mẹ đi xem khuôn viên trường của tôi.",
+                        "answer":  "如果有机会，我想带父母去看看我的校园。"
+                    },
+                    {
+                        "chinese":  "对我来说，住在哪里其实无所谓。",
+                        "pinyin":  "Duì wǒ lái shuō, zhù zài nǎlǐ qíshí wúsuǒwèi.",
+                        "vietnamese":  "Đối với tôi, sống ở đâu thật ra không sao cả.",
+                        "answer":  "对我来说，住在哪里其实无所谓。"
+                    },
+                    {
+                        "chinese":  "他嘴上说无所谓，其实心里很在意。",
+                        "pinyin":  "Tā zuǐ shàng shuō wúsuǒwèi, qíshí xīn lǐ hěn zàiyì.",
+                        "vietnamese":  "Miệng anh ấy nói không sao nhưng thật ra trong lòng rất để ý.",
+                        "answer":  "他嘴上说无所谓，其实心里很在意。"
+                    },
+                    {
+                        "chinese":  "父母觉得远近无所谓，只要孩子安全就好。",
+                        "pinyin":  "Fùmǔ juéde yuǎn jìn wúsuǒwèi, zhǐyào háizi ānquán jiù hǎo.",
+                        "vietnamese":  "Cha mẹ thấy xa gần không quan trọng, chỉ cần con an toàn là được.",
+                        "answer":  "父母觉得远近无所谓，只要孩子安全就好。"
+                    },
+                    {
+                        "chinese":  "你喜欢城市还是农村，我都无所谓。",
+                        "pinyin":  "Nǐ xǐhuan chéngshì háishi nóngcūn, wǒ dōu wúsuǒwèi.",
+                        "vietnamese":  "Bạn thích thành phố hay nông thôn, với tôi đều không sao.",
+                        "answer":  "你喜欢城市还是农村，我都无所谓。"
+                    },
+                    {
+                        "chinese":  "他对别人的评价表现得很无所谓。",
+                        "pinyin":  "Tā duì biérén de píngjià biǎoxiàn de hěn wúsuǒwèi.",
+                        "vietnamese":  "Anh ấy tỏ ra rất không quan tâm đến đánh giá của người khác.",
+                        "answer":  "他对别人的评价表现得很无所谓。"
+                    },
+                    {
+                        "chinese":  "这件事并不是无所谓，它关系到你的将来。",
+                        "pinyin":  "Zhè jiàn shì bìng bú shì wúsuǒwèi, tā guānxi dào nǐ de jiānglái.",
+                        "vietnamese":  "Việc này không phải là không quan trọng, nó liên quan đến tương lai của bạn.",
+                        "answer":  "这件事并不是无所谓，它关系到你的将来。"
+                    },
+                    {
+                        "chinese":  "如果只是小误会，我觉得无所谓。",
+                        "pinyin":  "Rúguǒ zhǐshì xiǎo wùhuì, wǒ juéde wúsuǒwèi.",
+                        "vietnamese":  "Nếu chỉ là hiểu lầm nhỏ thì tôi thấy không sao.",
+                        "answer":  "如果只是小误会，我觉得无所谓。"
+                    },
+                    {
+                        "chinese":  "他选择什么方式学习，我都无所谓。",
+                        "pinyin":  "Tā xuǎnzé shénme fāngshì xuéxí, wǒ dōu wúsuǒwèi.",
+                        "vietnamese":  "Anh ấy chọn cách học nào, với tôi đều không sao.",
+                        "answer":  "他选择什么方式学习，我都无所谓。"
+                    },
+                    {
+                        "chinese":  "看起来无所谓的人，不一定真的没有感情。",
+                        "pinyin":  "Kàn qǐlái wúsuǒwèi de rén, bù yídìng zhēn de méiyǒu gǎnqíng.",
+                        "vietnamese":  "Người nhìn có vẻ không quan tâm chưa chắc thật sự không có tình cảm.",
+                        "answer":  "看起来无所谓的人，不一定真的没有感情。"
+                    },
+                    {
+                        "chinese":  "她说费用高一点儿也无所谓，重要的是安全。",
+                        "pinyin":  "Tā shuō fèiyòng gāo yìdiǎnr yě wúsuǒwèi, zhòngyào de shì ānquán.",
+                        "vietnamese":  "Cô ấy nói chi phí cao hơn một chút cũng không sao, quan trọng là an toàn.",
+                        "answer":  "她说费用高一点儿也无所谓，重要的是安全。"
+                    },
+                    {
+                        "chinese":  "当初我选择这个专业，是因为父母的建议。",
+                        "pinyin":  "Dāngchū wǒ xuǎnzé zhège zhuānyè, shì yīnwèi fùmǔ de jiànyì.",
+                        "vietnamese":  "Lúc đầu tôi chọn ngành này là vì lời khuyên của cha mẹ.",
+                        "answer":  "当初我选择这个专业，是因为父母的建议。"
+                    },
+                    {
+                        "chinese":  "他当初并不想离开家乡。",
+                        "pinyin":  "Tā dāngchū bìng bù xiǎng líkāi jiāxiāng.",
+                        "vietnamese":  "Ban đầu anh ấy không muốn rời quê hương.",
+                        "answer":  "他当初并不想离开家乡。"
+                    },
+                    {
+                        "chinese":  "当初如果更努力一点，现在结果可能不同。",
+                        "pinyin":  "Dāngchū rúguǒ gèng nǔlì yìdiǎn, xiànzài jiéguǒ kěnéng bùtóng.",
+                        "vietnamese":  "Nếu ban đầu cố gắng hơn một chút, bây giờ kết quả có thể khác.",
+                        "answer":  "当初如果更努力一点，现在结果可能不同。"
+                    },
+                    {
+                        "chinese":  "她当初来上海时，一个朋友也没有。",
+                        "pinyin":  "Tā dāngchū lái Shànghǎi shí, yí ge péngyou yě méiyǒu.",
+                        "vietnamese":  "Khi cô ấy mới đến Thượng Hải, một người bạn cũng không có.",
+                        "answer":  "她当初来上海时，一个朋友也没有。"
+                    },
+                    {
+                        "chinese":  "当初觉得无所谓的事，现在反而成了问题。",
+                        "pinyin":  "Dāngchū juéde wúsuǒwèi de shì, xiànzài fǎn\u0027ér chéng le wèntí.",
+                        "vietnamese":  "Việc ban đầu thấy không sao, bây giờ ngược lại thành vấn đề.",
+                        "answer":  "当初觉得无所谓的事，现在反而成了问题。"
+                    },
+                    {
+                        "chinese":  "父母当初反对他去国外定居。",
+                        "pinyin":  "Fùmǔ dāngchū fǎnduì tā qù guówài dìngjū.",
+                        "vietnamese":  "Cha mẹ ban đầu phản đối anh ấy ra nước ngoài định cư.",
+                        "answer":  "父母当初反对他去国外定居。"
+                    },
+                    {
+                        "chinese":  "当初的决定虽然很难，但他从没后悔。",
+                        "pinyin":  "Dāngchū de juédìng suīrán hěn nán, dàn tā cóng méi hòuhuǐ.",
+                        "vietnamese":  "Quyết định ban đầu tuy rất khó nhưng anh ấy chưa từng hối hận.",
+                        "answer":  "当初的决定虽然很难，但他从没后悔。"
+                    },
+                    {
+                        "chinese":  "我现在才明白老师当初为什么这样说。",
+                        "pinyin":  "Wǒ xiànzài cái míngbai lǎoshī dāngchū wèishénme zhèyàng shuō.",
+                        "vietnamese":  "Bây giờ tôi mới hiểu vì sao lúc đầu giáo viên nói như vậy.",
+                        "answer":  "我现在才明白老师当初为什么这样说。"
+                    },
+                    {
+                        "chinese":  "当初离开村庄的时候，他心里很难受。",
+                        "pinyin":  "Dāngchū líkāi cūnzhuāng de shíhou, tā xīn lǐ hěn nánshòu.",
+                        "vietnamese":  "Khi ban đầu rời làng, trong lòng anh ấy rất buồn.",
+                        "answer":  "当初离开村庄的时候，他心里很难受。"
+                    },
+                    {
+                        "chinese":  "这张照片让我想起当初的校园生活。",
+                        "pinyin":  "Zhè zhāng zhàopiàn ràng wǒ xiǎngqǐ dāngchū de xiàoyuán shēnghuó.",
+                        "vietnamese":  "Tấm ảnh này khiến tôi nhớ lại đời sống khuôn viên ban đầu.",
+                        "answer":  "这张照片让我想起当初的校园生活。"
+                    },
+                    {
+                        "chinese":  "不要把时间白白浪费在抱怨上。",
+                        "pinyin":  "Búyào bǎ shíjiān báibái làngfèi zài bàoyuàn shàng.",
+                        "vietnamese":  "Đừng lãng phí thời gian một cách vô ích vào việc than phiền.",
+                        "answer":  "不要把时间白白浪费在抱怨上。"
+                    },
+                    {
+                        "chinese":  "他努力了三年，不想让机会白白失去。",
+                        "pinyin":  "Tā nǔlì le sān nián, bù xiǎng ràng jīhuì báibái shīqù.",
+                        "vietnamese":  "Anh ấy cố gắng ba năm, không muốn để cơ hội mất đi vô ích.",
+                        "answer":  "他努力了三年，不想让机会白白失去。"
+                    },
+                    {
+                        "chinese":  "如果不提前准备，门票可能就白白买了。",
+                        "pinyin":  "Rúguǒ bù tíqián zhǔnbèi, ménpiào kěnéng jiù báibái mǎi le.",
+                        "vietnamese":  "Nếu không chuẩn bị trước, vé vào cửa có thể mua vô ích.",
+                        "answer":  "如果不提前准备，门票可能就白白买了。"
+                    },
+                    {
+                        "chinese":  "父母辛苦赚钱，我们不能白白花掉。",
+                        "pinyin":  "Fùmǔ xīnkǔ zhuànqián, wǒmen bù néng báibái huā diào.",
+                        "vietnamese":  "Cha mẹ vất vả kiếm tiền, chúng ta không thể tiêu uổng phí.",
+                        "answer":  "父母辛苦赚钱，我们不能白白花掉。"
+                    },
+                    {
+                        "chinese":  "这次旅行取消了，费用差点白白浪费。",
+                        "pinyin":  "Zhè cì lǚxíng qǔxiāo le, fèiyòng chàdiǎn báibái làngfèi.",
+                        "vietnamese":  "Chuyến đi lần này bị hủy, chi phí suýt bị lãng phí vô ích.",
+                        "answer":  "这次旅行取消了，费用差点白白浪费。"
+                    },
+                    {
+                        "chinese":  "他不想白白等一天，所以决定先回家。",
+                        "pinyin":  "Tā bù xiǎng báibái děng yì tiān, suǒyǐ juédìng xiān huí jiā.",
+                        "vietnamese":  "Anh ấy không muốn chờ cả ngày vô ích nên quyết định về nhà trước.",
+                        "answer":  "他不想白白等一天，所以决定先回家。"
+                    },
+                    {
+                        "chinese":  "这么好的学习机会，不能白白错过。",
+                        "pinyin":  "Zhème hǎo de xuéxí jīhuì, bù néng báibái cuòguò.",
+                        "vietnamese":  "Cơ hội học tập tốt như vậy không thể bỏ lỡ vô ích.",
+                        "answer":  "这么好的学习机会，不能白白错过。"
+                    },
+                    {
+                        "chinese":  "他说的话你都没听进去，真是白白解释了。",
+                        "pinyin":  "Tā shuō de huà nǐ dōu méi tīng jìnqù, zhēn shì báibái jiěshì le.",
+                        "vietnamese":  "Lời anh ấy nói bạn đều không nghe vào, thật là giải thích vô ích.",
+                        "answer":  "他说的话你都没听进去，真是白白解释了。"
+                    },
+                    {
+                        "chinese":  "当初如果不努力，现在的成绩就白白没了。",
+                        "pinyin":  "Dāngchū rúguǒ bù nǔlì, xiànzài de chéngjì jiù báibái méi le.",
+                        "vietnamese":  "Nếu ban đầu không cố gắng, thành tích hiện tại đã mất vô ích rồi.",
+                        "answer":  "当初如果不努力，现在的成绩就白白没了。"
+                    },
+                    {
+                        "chinese":  "他不愿意让父母的希望白白落空。",
+                        "pinyin":  "Tā bú yuànyì ràng fùmǔ de xīwàng báibái luòkōng.",
+                        "vietnamese":  "Anh ấy không muốn để hy vọng của cha mẹ tan biến vô ích.",
+                        "answer":  "他不愿意让父母的希望白白落空。"
+                    },
+                    {
+                        "chinese":  "他毕业以后决定在上海定居。",
+                        "pinyin":  "Tā bìyè yǐhòu juédìng zài Shànghǎi dìngjū.",
+                        "vietnamese":  "Sau khi tốt nghiệp, anh ấy quyết định định cư ở Thượng Hải.",
+                        "answer":  "他毕业以后决定在上海定居。"
+                    },
+                    {
+                        "chinese":  "父母希望他回家乡定居。",
+                        "pinyin":  "Fùmǔ xīwàng tā huí jiāxiāng dìngjū.",
+                        "vietnamese":  "Cha mẹ hy vọng anh ấy về quê định cư.",
+                        "answer":  "父母希望他回家乡定居。"
+                    },
+                    {
+                        "chinese":  "在一个城市定居，不只是找一套房子。",
+                        "pinyin":  "Zài yí ge chéngshì dìngjū, bú zhǐshì zhǎo yí tào fángzi.",
+                        "vietnamese":  "Định cư ở một thành phố không chỉ là tìm một căn nhà.",
+                        "answer":  "在一个城市定居，不只是找一套房子。"
+                    },
+                    {
+                        "chinese":  "她在国外定居多年，仍然常常想家。",
+                        "pinyin":  "Tā zài guówài dìngjū duō nián, réngrán chángcháng xiǎng jiā.",
+                        "vietnamese":  "Cô ấy định cư ở nước ngoài nhiều năm, vẫn thường nhớ nhà.",
+                        "answer":  "她在国外定居多年，仍然常常想家。"
+                    },
+                    {
+                        "chinese":  "定居以前，他想先了解当地生活费用。",
+                        "pinyin":  "Dìngjū yǐqián, tā xiǎng xiān liǎojiě dāngdì shēnghuó fèiyòng.",
+                        "vietnamese":  "Trước khi định cư, anh ấy muốn tìm hiểu chi phí sinh hoạt địa phương trước.",
+                        "answer":  "定居以前，他想先了解当地生活费用。"
+                    },
+                    {
+                        "chinese":  "这个海滨城市气候温暖，很适合定居。",
+                        "pinyin":  "Zhège hǎibīn chéngshì qìhòu wēnnuǎn, hěn shìhé dìngjū.",
+                        "vietnamese":  "Thành phố ven biển này khí hậu ấm áp, rất thích hợp định cư.",
+                        "answer":  "这个海滨城市气候温暖，很适合定居。"
+                    },
+                    {
+                        "chinese":  "他虽然在城市定居，却一直忘不了村庄。",
+                        "pinyin":  "Tā suīrán zài chéngshì dìngjū, què yìzhí wàng bù liǎo cūnzhuāng.",
+                        "vietnamese":  "Tuy anh ấy định cư ở thành phố nhưng vẫn không quên được làng quê.",
+                        "answer":  "他虽然在城市定居，却一直忘不了村庄。"
+                    },
+                    {
+                        "chinese":  "年轻人选择定居地点时，常常考虑工作机会。",
+                        "pinyin":  "Niánqīng rén xuǎnzé dìngjū dìdiǎn shí, chángcháng kǎolǜ gōngzuò jīhuì.",
+                        "vietnamese":  "Người trẻ khi chọn nơi định cư thường cân nhắc cơ hội việc làm.",
+                        "answer":  "年轻人选择定居地点时，常常考虑工作机会。"
+                    },
+                    {
+                        "chinese":  "如果没有归属感，在哪里定居都不安心。",
+                        "pinyin":  "Rúguǒ méiyǒu guīshǔgǎn, zài nǎlǐ dìngjū dōu bù ānxīn.",
+                        "vietnamese":  "Nếu không có cảm giác thuộc về, định cư ở đâu cũng không yên tâm.",
+                        "answer":  "如果没有归属感，在哪里定居都不安心。"
+                    },
+                    {
+                        "chinese":  "他定居以后，把父母也接到了身边。",
+                        "pinyin":  "Tā dìngjū yǐhòu, bǎ fùmǔ yě jiē dào le shēnbiān.",
+                        "vietnamese":  "Sau khi định cư, anh ấy cũng đón cha mẹ đến bên mình.",
+                        "answer":  "他定居以后，把父母也接到了身边。"
+                    },
+                    {
+                        "chinese":  "这个问题到底归属哪个部门负责？",
+                        "pinyin":  "Zhège wèntí dàodǐ guīshǔ nǎ ge bùmén fùzé?",
+                        "vietnamese":  "Vấn đề này rốt cuộc thuộc bộ phận nào phụ trách?",
+                        "answer":  "这个问题到底归属哪个部门负责？"
+                    },
+                    {
+                        "chinese":  "离开家乡多年以后，他仍然有很强的归属感。",
+                        "pinyin":  "Líkāi jiāxiāng duō nián yǐhòu, tā réngrán yǒu hěn qiáng de guīshǔgǎn.",
+                        "vietnamese":  "Sau nhiều năm rời quê, anh ấy vẫn có cảm giác thuộc về rất mạnh.",
+                        "answer":  "离开家乡多年以后，他仍然有很强的归属感。"
+                    },
+                    {
+                        "chinese":  "这片土地在法律上归属村集体。",
+                        "pinyin":  "Zhè piàn tǔdì zài fǎlǜ shàng guīshǔ cūn jítǐ.",
+                        "vietnamese":  "Mảnh đất này về pháp lý thuộc tập thể thôn.",
+                        "answer":  "这片土地在法律上归属村集体。"
+                    },
+                    {
+                        "chinese":  "他不知道自己的真正归属在哪里。",
+                        "pinyin":  "Tā bù zhīdào zìjǐ de zhēnzhèng guīshǔ zài nǎlǐ.",
+                        "vietnamese":  "Anh ấy không biết sự thuộc về thật sự của mình ở đâu.",
+                        "answer":  "他不知道自己的真正归属在哪里。"
+                    },
+                    {
+                        "chinese":  "学校希望新生能尽快产生归属感。",
+                        "pinyin":  "Xuéxiào xīwàng xīnshēng néng jǐnkuài chǎnshēng guīshǔgǎn.",
+                        "vietnamese":  "Nhà trường hy vọng sinh viên mới có thể nhanh chóng sinh ra cảm giác thuộc về.",
+                        "answer":  "学校希望新生能尽快产生归属感。"
+                    },
+                    {
+                        "chinese":  "归属感不是一天就能建立起来的。",
+                        "pinyin":  "Guīshǔgǎn bú shì yì tiān jiù néng jiànlì qǐlái de.",
+                        "vietnamese":  "Cảm giác thuộc về không thể xây dựng trong một ngày.",
+                        "answer":  "归属感不是一天就能建立起来的。"
+                    },
+                    {
+                        "chinese":  "家人在哪儿，他就觉得自己的归属在哪儿。",
+                        "pinyin":  "Jiārén zài nǎr, tā jiù juéde zìjǐ de guīshǔ zài nǎr.",
+                        "vietnamese":  "Người nhà ở đâu, anh ấy liền thấy sự thuộc về của mình ở đó.",
+                        "answer":  "家人在哪儿，他就觉得自己的归属在哪儿。"
+                    },
+                    {
+                        "chinese":  "这套房子的产权归属还没有弄清楚。",
+                        "pinyin":  "Zhè tào fángzi de chǎnquán guīshǔ hái méiyǒu nòng qīngchu.",
+                        "vietnamese":  "Quyền sở hữu căn nhà này vẫn chưa được làm rõ.",
+                        "answer":  "这套房子的产权归属还没有弄清楚。"
+                    },
+                    {
+                        "chinese":  "他在城市生活很久，却没有真正的归属感。",
+                        "pinyin":  "Tā zài chéngshì shēnghuó hěn jiǔ, què méiyǒu zhēnzhèng de guīshǔgǎn.",
+                        "vietnamese":  "Anh ấy sống ở thành phố rất lâu nhưng không có cảm giác thuộc về thật sự.",
+                        "answer":  "他在城市生活很久，却没有真正的归属感。"
+                    },
+                    {
+                        "chinese":  "对很多人来说，故乡就是心灵的归属。",
+                        "pinyin":  "Duì hěn duō rén lái shuō, gùxiāng jiù shì xīnlíng de guīshǔ.",
+                        "vietnamese":  "Đối với nhiều người, quê hương chính là nơi thuộc về của tâm hồn.",
+                        "answer":  "对很多人来说，故乡就是心灵的归属。"
+                    },
+                    {
+                        "chinese":  "第一次离家时，我有一种说不出的感觉。",
+                        "pinyin":  "Dì yī cì lí jiā shí, wǒ yǒu yì zhǒng shuō bù chū de gǎnjué.",
+                        "vietnamese":  "Lần đầu rời nhà, tôi có một cảm giác khó nói thành lời.",
+                        "answer":  "第一次离家时，我有一种说不出的感觉。"
+                    },
+                    {
+                        "chinese":  "这个城市给人的感觉很温暖。",
+                        "pinyin":  "Zhège chéngshì gěi rén de gǎnjué hěn wēnnuǎn.",
+                        "vietnamese":  "Thành phố này cho người ta cảm giác rất ấm áp.",
+                        "answer":  "这个城市给人的感觉很温暖。"
+                    },
+                    {
+                        "chinese":  "他虽然在国外定居，却没有归属感。",
+                        "pinyin":  "Tā suīrán zài guówài dìngjū, què méiyǒu guīshǔgǎn.",
+                        "vietnamese":  "Tuy anh ấy định cư ở nước ngoài nhưng không có cảm giác thuộc về.",
+                        "answer":  "他虽然在国外定居，却没有归属感。"
+                    },
+                    {
+                        "chinese":  "站在山冈上，我突然有了回家的感觉。",
+                        "pinyin":  "Zhàn zài shāngāng shàng, wǒ tūrán yǒu le huí jiā de gǎnjué.",
+                        "vietnamese":  "Đứng trên gò núi, tôi đột nhiên có cảm giác trở về nhà.",
+                        "answer":  "站在山冈上，我突然有了回家的感觉。"
+                    },
+                    {
+                        "chinese":  "家人的一句问候，让他感到很温暖。",
+                        "pinyin":  "Jiārén de yí jù wènhòu, ràng tā gǎndào hěn wēnnuǎn.",
+                        "vietnamese":  "Một câu hỏi thăm của người nhà khiến anh ấy cảm thấy rất ấm áp.",
+                        "answer":  "家人的一句问候，让他感到很温暖。"
+                    },
+                    {
+                        "chinese":  "这种方式让我感觉更自然，也更安心。",
+                        "pinyin":  "Zhè zhǒng fāngshì ràng wǒ gǎnjué gèng zìrán, yě gèng ānxīn.",
+                        "vietnamese":  "Cách này khiến tôi cảm thấy tự nhiên hơn và yên tâm hơn.",
+                        "answer":  "这种方式让我感觉更自然，也更安心。"
+                    },
+                    {
+                        "chinese":  "村庄的天空总让我产生难忘的感觉。",
+                        "pinyin":  "Cūnzhuāng de tiānkōng zǒng ràng wǒ chǎnshēng nánwàng de gǎnjué.",
+                        "vietnamese":  "Bầu trời của làng quê luôn khiến tôi sinh ra cảm giác khó quên.",
+                        "answer":  "村庄的天空总让我产生难忘的感觉。"
+                    },
+                    {
+                        "chinese":  "他听到这首歌时，心里有一种乡愁感。",
+                        "pinyin":  "Tā tīng dào zhè shǒu gē shí, xīn lǐ yǒu yì zhǒng xiāngchóu gǎn.",
+                        "vietnamese":  "Khi nghe bài hát này, trong lòng anh ấy có một cảm giác nhớ quê.",
+                        "answer":  "他听到这首歌时，心里有一种乡愁感。"
+                    },
+                    {
+                        "chinese":  "旅行结束后，我对这座城市有了新的感觉。",
+                        "pinyin":  "Lǚxíng jiéshù hòu, wǒ duì zhè zuò chéngshì yǒu le xīn de gǎnjué.",
+                        "vietnamese":  "Sau khi chuyến đi kết thúc, tôi có cảm nhận mới về thành phố này.",
+                        "answer":  "旅行结束后，我对这座城市有了新的感觉。"
+                    },
+                    {
+                        "chinese":  "如果没有家人陪伴，再美的风光也少了感觉。",
+                        "pinyin":  "Rúguǒ méiyǒu jiārén péibàn, zài měi de fēngguāng yě shǎo le gǎnjué.",
+                        "vietnamese":  "Nếu không có người nhà bên cạnh, phong cảnh đẹp đến đâu cũng thiếu cảm giác.",
+                        "answer":  "如果没有家人陪伴，再美的风光也少了感觉。"
+                    },
+                    {
+                        "chinese":  "过年的时候，家人都会回到村庄团聚。",
+                        "pinyin":  "Guònián de shíhou, jiārén dōu huì huí dào cūnzhuāng tuánjù.",
+                        "vietnamese":  "Khi Tết đến, người nhà đều sẽ về làng đoàn tụ.",
+                        "answer":  "过年的时候，家人都会回到村庄团聚。"
+                    },
+                    {
+                        "chinese":  "家人支持他去上海工作。",
+                        "pinyin":  "Jiārén zhīchí tā qù Shànghǎi gōngzuò.",
+                        "vietnamese":  "Người nhà ủng hộ anh ấy đi Thượng Hải làm việc.",
+                        "answer":  "家人支持他去上海工作。"
+                    },
+                    {
+                        "chinese":  "离开家人以后，他才明白亲情的重要。",
+                        "pinyin":  "Líkāi jiārén yǐhòu, tā cái míngbai qīnqíng de zhòngyào.",
+                        "vietnamese":  "Sau khi rời người nhà, anh ấy mới hiểu tầm quan trọng của tình thân.",
+                        "answer":  "离开家人以后，他才明白亲情的重要。"
+                    },
+                    {
+                        "chinese":  "家人在哪儿，哪里就像真正的家。",
+                        "pinyin":  "Jiārén zài nǎr, nǎlǐ jiù xiàng zhēnzhèng de jiā.",
+                        "vietnamese":  "Người nhà ở đâu, nơi đó giống như nhà thật sự.",
+                        "answer":  "家人在哪儿，哪里就像真正的家。"
+                    },
+                    {
+                        "chinese":  "他定居国外多年，但每周都给家人打电话。",
+                        "pinyin":  "Tā dìngjū guówài duō nián, dàn měi zhōu dōu gěi jiārén dǎ diànhuà.",
+                        "vietnamese":  "Anh ấy định cư ở nước ngoài nhiều năm nhưng mỗi tuần đều gọi điện cho người nhà.",
+                        "answer":  "他定居国外多年，但每周都给家人打电话。"
+                    },
+                    {
+                        "chinese":  "家人的理解让她不再觉得孤单。",
+                        "pinyin":  "Jiārén de lǐjiě ràng tā bú zài juéde gūdān.",
+                        "vietnamese":  "Sự thấu hiểu của người nhà khiến cô ấy không còn thấy cô đơn.",
+                        "answer":  "家人的理解让她不再觉得孤单。"
+                    },
+                    {
+                        "chinese":  "父母和兄弟姐妹都是最亲近的家人。",
+                        "pinyin":  "Fùmǔ hé xiōngdì jiěmèi dōu shì zuì qīnjìn de jiārén.",
+                        "vietnamese":  "Cha mẹ và anh chị em đều là người nhà thân thiết nhất.",
+                        "answer":  "父母和兄弟姐妹都是最亲近的家人。"
+                    },
+                    {
+                        "chinese":  "他不想让家人白白为自己担心。",
+                        "pinyin":  "Tā bù xiǎng ràng jiārén báibái wèi zìjǐ dānxīn.",
+                        "vietnamese":  "Anh ấy không muốn để người nhà lo lắng vô ích vì mình.",
+                        "answer":  "他不想让家人白白为自己担心。"
+                    },
+                    {
+                        "chinese":  "家人之间有时候不必说太多，也能明白彼此。",
+                        "pinyin":  "Jiārén zhījiān yǒu shíhou bùbì shuō tài duō, yě néng míngbai bǐcǐ.",
+                        "vietnamese":  "Giữa người nhà đôi khi không cần nói quá nhiều cũng có thể hiểu nhau.",
+                        "answer":  "家人之间有时候不必说太多，也能明白彼此。"
+                    },
+                    {
+                        "chinese":  "无论走到哪里，家人永远是他的依靠。",
+                        "pinyin":  "Wúlùn zǒu dào nǎlǐ, jiārén yǒngyuǎn shì tā de yīkào.",
+                        "vietnamese":  "Dù đi đến đâu, người nhà mãi là chỗ dựa của anh ấy.",
+                        "answer":  "无论走到哪里，家人永远是他的依靠。"
+                    },
+                    {
+                        "chinese":  "这些问题通通交给我处理吧。",
+                        "pinyin":  "Zhèxiē wèntí tōngtōng jiāo gěi wǒ chǔlǐ ba.",
+                        "vietnamese":  "Những vấn đề này cứ giao hết cho tôi xử lý đi.",
+                        "answer":  "这些问题通通交给我处理吧。"
+                    },
+                    {
+                        "chinese":  "他把旧照片通通放进一个箱子里。",
+                        "pinyin":  "Tā bǎ jiù zhàopiàn tōngtōng fàng jìn yí ge xiāngzi lǐ.",
+                        "vietnamese":  "Anh ấy bỏ tất cả ảnh cũ vào một cái hộp.",
+                        "answer":  "他把旧照片通通放进一个箱子里。"
+                    },
+                    {
+                        "chinese":  "父母的建议，他以前通通听不进去。",
+                        "pinyin":  "Fùmǔ de jiànyì, tā yǐqián tōngtōng tīng bù jìnqù.",
+                        "vietnamese":  "Lời khuyên của cha mẹ, trước đây anh ấy hoàn toàn không nghe vào.",
+                        "answer":  "父母的建议，他以前通通听不进去。"
+                    },
+                    {
+                        "chinese":  "这些费用通通由学校负责。",
+                        "pinyin":  "Zhèxiē fèiyòng tōngtōng yóu xuéxiào fùzé.",
+                        "vietnamese":  "Những chi phí này tất cả do nhà trường phụ trách.",
+                        "answer":  "这些费用通通由学校负责。"
+                    },
+                    {
+                        "chinese":  "他一生气，就把消息通通删掉了。",
+                        "pinyin":  "Tā yì shēngqì, jiù bǎ xiāoxi tōngtōng shān diào le.",
+                        "vietnamese":  "Anh ấy vừa tức giận liền xóa sạch tất cả tin nhắn.",
+                        "answer":  "他一生气，就把消息通通删掉了。"
+                    },
+                    {
+                        "chinese":  "旅游计划、门票和住宿，我已经通通安排好了。",
+                        "pinyin":  "Lǚyóu jìhuà, ménpiào hé zhùsù, wǒ yǐjīng tōngtōng ānpái hǎo le.",
+                        "vietnamese":  "Kế hoạch du lịch, vé và chỗ ở, tôi đã sắp xếp hết rồi.",
+                        "answer":  "旅游计划、门票和住宿，我已经通通安排好了。"
+                    },
+                    {
+                        "chinese":  "他把村里的变化通通写进了文章。",
+                        "pinyin":  "Tā bǎ cūn lǐ de biànhuà tōngtōng xiě jìn le wénzhāng.",
+                        "vietnamese":  "Anh ấy viết toàn bộ thay đổi trong làng vào bài văn.",
+                        "answer":  "他把村里的变化通通写进了文章。"
+                    },
+                    {
+                        "chinese":  "老师说这些生词通通要会读会用。",
+                        "pinyin":  "Lǎoshī shuō zhèxiē shēngcí tōngtōng yào huì dú huì yòng.",
+                        "vietnamese":  "Giáo viên nói những từ mới này tất cả phải biết đọc biết dùng.",
+                        "answer":  "老师说这些生词通通要会读会用。"
+                    },
+                    {
+                        "chinese":  "离开家乡前，他把家人的话通通记住了。",
+                        "pinyin":  "Líkāi jiāxiāng qián, tā bǎ jiārén de huà tōngtōng jìzhù le.",
+                        "vietnamese":  "Trước khi rời quê, anh ấy ghi nhớ hết lời của người nhà.",
+                        "answer":  "离开家乡前，他把家人的话通通记住了。"
+                    },
+                    {
+                        "chinese":  "不合适的方式通通要改掉。",
+                        "pinyin":  "Bù héshì de fāngshì tōngtōng yào gǎi diào.",
+                        "vietnamese":  "Những cách không phù hợp đều phải sửa bỏ.",
+                        "answer":  "不合适的方式通通要改掉。"
+                    },
+                    {
+                        "chinese":  "这种学习方式更适合成年人。",
+                        "pinyin":  "Zhè zhǒng xuéxí fāngshì gèng shìhé chéngnián rén.",
+                        "vietnamese":  "Cách học này phù hợp với người trưởng thành hơn.",
+                        "answer":  "这种学习方式更适合成年人。"
+                    },
+                    {
+                        "chinese":  "他用自己的方式表达对家人的爱。",
+                        "pinyin":  "Tā yòng zìjǐ de fāngshì biǎodá duì jiārén de ài.",
+                        "vietnamese":  "Anh ấy dùng cách riêng của mình để bày tỏ tình yêu với người nhà.",
+                        "answer":  "他用自己的方式表达对家人的爱。"
+                    },
+                    {
+                        "chinese":  "不同的城市，有不同的生活方式。",
+                        "pinyin":  "Bùtóng de chéngshì, yǒu bùtóng de shēnghuó fāngshì.",
+                        "vietnamese":  "Những thành phố khác nhau có cách sống khác nhau.",
+                        "answer":  "不同的城市，有不同的生活方式。"
+                    },
+                    {
+                        "chinese":  "父母不一定理解年轻人的交流方式。",
+                        "pinyin":  "Fùmǔ bù yídìng lǐjiě niánqīng rén de jiāoliú fāngshì.",
+                        "vietnamese":  "Cha mẹ không nhất định hiểu cách giao tiếp của người trẻ.",
+                        "answer":  "父母不一定理解年轻人的交流方式。"
+                    },
+                    {
+                        "chinese":  "如果方式不对，再努力也可能没有效果。",
+                        "pinyin":  "Rúguǒ fāngshì bú duì, zài nǔlì yě kěnéng méiyǒu xiàoguǒ.",
+                        "vietnamese":  "Nếu cách thức không đúng, cố gắng đến đâu cũng có thể không có hiệu quả.",
+                        "answer":  "如果方式不对，再努力也可能没有效果。"
+                    },
+                    {
+                        "chinese":  "他选择定居海外，是为了换一种生活方式。",
+                        "pinyin":  "Tā xuǎnzé dìngjū hǎiwài, shì wèile huàn yì zhǒng shēnghuó fāngshì.",
+                        "vietnamese":  "Anh ấy chọn định cư ở nước ngoài là để đổi một cách sống.",
+                        "answer":  "他选择定居海外，是为了换一种生活方式。"
+                    },
+                    {
+                        "chinese":  "这种表达方式听起来很自然。",
+                        "pinyin":  "Zhè zhǒng biǎodá fāngshì tīng qǐlái hěn zìrán.",
+                        "vietnamese":  "Cách biểu đạt này nghe rất tự nhiên.",
+                        "answer":  "这种表达方式听起来很自然。"
+                    },
+                    {
+                        "chinese":  "老师鼓励我们用多种方式练习口语。",
+                        "pinyin":  "Lǎoshī gǔlì wǒmen yòng duō zhǒng fāngshì liànxí kǒuyǔ.",
+                        "vietnamese":  "Giáo viên khuyến khích chúng tôi dùng nhiều cách để luyện khẩu ngữ.",
+                        "answer":  "老师鼓励我们用多种方式练习口语。"
+                    },
+                    {
+                        "chinese":  "与家人沟通时，方式比内容有时候更重要。",
+                        "pinyin":  "Yǔ jiārén gōutōng shí, fāngshì bǐ nèiróng yǒu shíhou gèng zhòngyào.",
+                        "vietnamese":  "Khi giao tiếp với người nhà, cách thức đôi khi còn quan trọng hơn nội dung.",
+                        "answer":  "与家人沟通时，方式比内容有时候更重要。"
+                    },
+                    {
+                        "chinese":  "他用歌唱的方式表达对故乡的思念。",
+                        "pinyin":  "Tā yòng gēchàng de fāngshì biǎodá duì gùxiāng de sīniàn.",
+                        "vietnamese":  "Anh ấy dùng cách ca hát để bày tỏ nỗi nhớ quê hương.",
+                        "answer":  "他用歌唱的方式表达对故乡的思念。"
+                    },
+                    {
+                        "chinese":  "这个村以前只有几十户人家。",
+                        "pinyin":  "Zhège cūn yǐqián zhǐ yǒu jǐshí hù rénjiā.",
+                        "vietnamese":  "Ngôi làng này trước đây chỉ có vài chục hộ gia đình.",
+                        "answer":  "这个村以前只有几十户人家。"
+                    },
+                    {
+                        "chinese":  "他出生在一个靠近山冈的小村。",
+                        "pinyin":  "Tā chūshēng zài yí ge kàojìn shāngāng de xiǎo cūn.",
+                        "vietnamese":  "Anh ấy sinh ra ở một ngôi làng nhỏ gần gò núi.",
+                        "answer":  "他出生在一个靠近山冈的小村。"
+                    },
+                    {
+                        "chinese":  "村里的年轻人大多去了城市工作。",
+                        "pinyin":  "Cūn lǐ de niánqīng rén dàduō qù le chéngshì gōngzuò.",
+                        "vietnamese":  "Người trẻ trong làng phần lớn đã đi thành phố làm việc.",
+                        "answer":  "村里的年轻人大多去了城市工作。"
+                    },
+                    {
+                        "chinese":  "这个村虽然不大，却有很美的风光。",
+                        "pinyin":  "Zhège cūn suīrán bú dà, què yǒu hěn měi de fēngguāng.",
+                        "vietnamese":  "Ngôi làng này tuy không lớn nhưng có phong cảnh rất đẹp.",
+                        "answer":  "这个村虽然不大，却有很美的风光。"
+                    },
+                    {
+                        "chinese":  "村口有一条小河，孩子们常在那里玩。",
+                        "pinyin":  "Cūnkǒu yǒu yì tiáo xiǎo hé, háizimen cháng zài nàlǐ wán.",
+                        "vietnamese":  "Đầu làng có một con sông nhỏ, bọn trẻ thường chơi ở đó.",
+                        "answer":  "村口有一条小河，孩子们常在那里玩。"
+                    },
+                    {
+                        "chinese":  "离开村多年以后，他仍然常常梦到那里。",
+                        "pinyin":  "Líkāi cūn duō nián yǐhòu, tā réngrán chángcháng mèng dào nàlǐ.",
+                        "vietnamese":  "Sau nhiều năm rời làng, anh ấy vẫn thường mơ thấy nơi đó.",
+                        "answer":  "离开村多年以后，他仍然常常梦到那里。"
+                    },
+                    {
+                        "chinese":  "村里的老人对外来的客人很亲热。",
+                        "pinyin":  "Cūn lǐ de lǎorén duì wài lái de kèrén hěn qīnrè.",
+                        "vietnamese":  "Người già trong làng rất thân mật với khách từ nơi khác đến.",
+                        "answer":  "村里的老人对外来的客人很亲热。"
+                    },
+                    {
+                        "chinese":  "这个村的名字来历很特别。",
+                        "pinyin":  "Zhège cūn de míngzi láilì hěn tèbié.",
+                        "vietnamese":  "Nguồn gốc tên của làng này rất đặc biệt.",
+                        "answer":  "这个村的名字来历很特别。"
+                    },
+                    {
+                        "chinese":  "如果能回村定居，他会觉得更安心。",
+                        "pinyin":  "Rúguǒ néng huí cūn dìngjū, tā huì juéde gèng ānxīn.",
+                        "vietnamese":  "Nếu có thể về làng định cư, anh ấy sẽ thấy yên tâm hơn.",
+                        "answer":  "如果能回村定居，他会觉得更安心。"
+                    },
+                    {
+                        "chinese":  "村里的天空很蓝，空气也很新鲜。",
+                        "pinyin":  "Cūn lǐ de tiānkōng hěn lán, kōngqì yě hěn xīnxiān.",
+                        "vietnamese":  "Bầu trời trong làng rất xanh, không khí cũng trong lành.",
+                        "answer":  "村里的天空很蓝，空气也很新鲜。"
+                    },
+                    {
+                        "chinese":  "生命之美，不只在于成功。",
+                        "pinyin":  "Shēngmìng zhī měi, bù zhǐ zài yú chénggōng.",
+                        "vietnamese":  "Vẻ đẹp của cuộc sống không chỉ nằm ở thành công.",
+                        "answer":  "生命之美，不只在于成功。"
+                    },
+                    {
+                        "chinese":  "故乡之恋常常藏在一个人的歌声里。",
+                        "pinyin":  "Gùxiāng zhī liàn chángcháng cáng zài yí ge rén de gēshēng lǐ.",
+                        "vietnamese":  "Tình yêu quê hương thường ẩn trong tiếng hát của một người.",
+                        "answer":  "故乡之恋常常藏在一个人的歌声里。"
+                    },
+                    {
+                        "chinese":  "山冈之上，有一片安静的村庄。",
+                        "pinyin":  "Shāngāng zhī shàng, yǒu yí piàn ānjìng de cūnzhuāng.",
+                        "vietnamese":  "Trên gò núi có một vùng làng quê yên tĩnh.",
+                        "answer":  "山冈之上，有一片安静的村庄。"
+                    },
+                    {
+                        "chinese":  "父母之爱，是他最难忘的力量。",
+                        "pinyin":  "Fùmǔ zhī ài, shì tā zuì nánwàng de lìliàng.",
+                        "vietnamese":  "Tình yêu của cha mẹ là sức mạnh khó quên nhất của anh ấy.",
+                        "answer":  "父母之爱，是他最难忘的力量。"
+                    },
+                    {
+                        "chinese":  "城市之中，也有人一直向往乡村生活。",
+                        "pinyin":  "Chéngshì zhī zhōng, yě yǒu rén yìzhí xiàngwǎng xiāngcūn shēnghuó.",
+                        "vietnamese":  "Giữa thành phố cũng có người luôn hướng tới cuộc sống nông thôn.",
+                        "answer":  "城市之中，也有人一直向往乡村生活。"
+                    },
+                    {
+                        "chinese":  "这首歌表达了游子之思。",
+                        "pinyin":  "Zhè shǒu gē biǎodá le yóuzǐ zhī sī.",
+                        "vietnamese":  "Bài hát này thể hiện nỗi nhớ của người xa quê.",
+                        "answer":  "这首歌表达了游子之思。"
+                    },
+                    {
+                        "chinese":  "成功之路从来不是一帆风顺的。",
+                        "pinyin":  "Chénggōng zhī lù cónglái bú shì yìfān fēngshùn de.",
+                        "vietnamese":  "Con đường thành công chưa bao giờ thuận buồm xuôi gió.",
+                        "answer":  "成功之路从来不是一帆风顺的。"
+                    },
+                    {
+                        "chinese":  "家人之情，让他在陌生城市有了归属感。",
+                        "pinyin":  "Jiārén zhī qíng, ràng tā zài mòshēng chéngshì yǒu le guīshǔgǎn.",
+                        "vietnamese":  "Tình cảm gia đình khiến anh ấy có cảm giác thuộc về ở thành phố xa lạ.",
+                        "answer":  "家人之情，让他在陌生城市有了归属感。"
+                    },
+                    {
+                        "chinese":  "天空之下，村庄显得格外安静。",
+                        "pinyin":  "Tiānkōng zhī xià, cūnzhuāng xiǎnde géwài ānjìng.",
+                        "vietnamese":  "Dưới bầu trời, làng quê hiện lên đặc biệt yên tĩnh.",
+                        "answer":  "天空之下，村庄显得格外安静。"
+                    },
+                    {
+                        "chinese":  "这种表达方式在书面语之中比较常见。",
+                        "pinyin":  "Zhè zhǒng biǎodá fāngshì zài shūmiànyǔ zhī zhōng bǐjiào chángjiàn.",
+                        "vietnamese":  "Cách biểu đạt này khá thường gặp trong văn viết.",
+                        "answer":  "这种表达方式在书面语之中比较常见。"
+                    },
+                    {
+                        "chinese":  "雨后的山特别青，看起来很舒服。",
+                        "pinyin":  "Yǔ hòu de shān tèbié qīng, kàn qǐlái hěn shūfu.",
+                        "vietnamese":  "Núi sau mưa rất xanh, nhìn rất dễ chịu.",
+                        "answer":  "雨后的山特别青，看起来很舒服。"
+                    },
+                    {
+                        "chinese":  "青山绿水是他最向往的风光。",
+                        "pinyin":  "Qīngshān lǜshuǐ shì tā zuì xiàngwǎng de fēngguāng.",
+                        "vietnamese":  "Núi xanh nước biếc là phong cảnh anh ấy mong mỏi nhất.",
+                        "answer":  "青山绿水是他最向往的风光。"
+                    },
+                    {
+                        "chinese":  "村庄四周都是青色的山冈。",
+                        "pinyin":  "Cūnzhuāng sìzhōu dōu shì qīngsè de shāngāng.",
+                        "vietnamese":  "Xung quanh làng đều là những gò núi màu xanh.",
+                        "answer":  "村庄四周都是青色的山冈。"
+                    },
+                    {
+                        "chinese":  "她喜欢青色的天空和温暖的阳光。",
+                        "pinyin":  "Tā xǐhuan qīngsè de tiānkōng hé wēnnuǎn de yángguāng.",
+                        "vietnamese":  "Cô ấy thích bầu trời xanh và ánh nắng ấm áp.",
+                        "answer":  "她喜欢青色的天空和温暖的阳光。"
+                    },
+                    {
+                        "chinese":  "青年人离开家乡，也会产生故乡之恋。",
+                        "pinyin":  "Qīngnián rén líkāi jiāxiāng, yě huì chǎnshēng gùxiāng zhī liàn.",
+                        "vietnamese":  "Người trẻ rời quê cũng sẽ sinh ra tình yêu quê hương.",
+                        "answer":  "青年人离开家乡，也会产生故乡之恋。"
+                    },
+                    {
+                        "chinese":  "青山之下，有他难忘的童年。",
+                        "pinyin":  "Qīngshān zhī xià, yǒu tā nánwàng de tóngnián.",
+                        "vietnamese":  "Dưới núi xanh có tuổi thơ khó quên của anh ấy.",
+                        "answer":  "青山之下，有他难忘的童年。"
+                    },
+                    {
+                        "chinese":  "村口那片青青的草地，时常出现在梦里。",
+                        "pinyin":  "Cūnkǒu nà piàn qīngqīng de cǎodì, shícháng chūxiàn zài mèng lǐ.",
+                        "vietnamese":  "Bãi cỏ xanh ở đầu làng ấy thường xuất hiện trong mơ.",
+                        "answer":  "村口那片青青的草地，时常出现在梦里。"
+                    },
+                    {
+                        "chinese":  "他站在青山前，想起远方的家人。",
+                        "pinyin":  "Tā zhàn zài qīngshān qián, xiǎngqǐ yuǎnfāng de jiārén.",
+                        "vietnamese":  "Anh ấy đứng trước núi xanh, nhớ đến người nhà phương xa.",
+                        "answer":  "他站在青山前，想起远方的家人。"
+                    },
+                    {
+                        "chinese":  "青色并不冷淡，反而给人安静的感觉。",
+                        "pinyin":  "Qīngsè bìng bù lěngdàn, fǎn\u0027ér gěi rén ānjìng de gǎnjué.",
+                        "vietnamese":  "Màu xanh không lạnh lùng, ngược lại cho người ta cảm giác yên tĩnh.",
+                        "answer":  "青色并不冷淡，反而给人安静的感觉。"
+                    },
+                    {
+                        "chinese":  "他用青山和天空写出了对故乡的爱。",
+                        "pinyin":  "Tā yòng qīngshān hé tiānkōng xiě chū le duì gùxiāng de ài.",
+                        "vietnamese":  "Anh ấy dùng núi xanh và bầu trời viết ra tình yêu quê hương.",
+                        "answer":  "他用青山和天空写出了对故乡的爱。"
+                    },
+                    {
+                        "chinese":  "村子后面有一座不高的山冈。",
+                        "pinyin":  "Cūnzi hòumiàn yǒu yí zuò bù gāo de shāngāng.",
+                        "vietnamese":  "Phía sau làng có một gò núi không cao.",
+                        "answer":  "村子后面有一座不高的山冈。"
+                    },
+                    {
+                        "chinese":  "夕阳落在山冈上，风光美得难忘。",
+                        "pinyin":  "Xīyáng luò zài shāngāng shàng, fēngguāng měi de nánwàng.",
+                        "vietnamese":  "Hoàng hôn rơi trên gò núi, phong cảnh đẹp đến khó quên.",
+                        "answer":  "夕阳落在山冈上，风光美得难忘。"
+                    },
+                    {
+                        "chinese":  "孩子们常常跑到山冈上歌唱。",
+                        "pinyin":  "Háizimen chángcháng pǎo dào shāngāng shàng gēchàng.",
+                        "vietnamese":  "Bọn trẻ thường chạy lên gò núi hát ca.",
+                        "answer":  "孩子们常常跑到山冈上歌唱。"
+                    },
+                    {
+                        "chinese":  "山冈虽然不高，却是村里最美的地方。",
+                        "pinyin":  "Shāngāng suīrán bù gāo, què shì cūn lǐ zuì měi de dìfang.",
+                        "vietnamese":  "Gò núi tuy không cao nhưng là nơi đẹp nhất trong làng.",
+                        "answer":  "山冈虽然不高，却是村里最美的地方。"
+                    },
+                    {
+                        "chinese":  "他站在山冈上，看着远处的天空。",
+                        "pinyin":  "Tā zhàn zài shāngāng shàng, kànzhe yuǎnchù de tiānkōng.",
+                        "vietnamese":  "Anh ấy đứng trên gò núi, nhìn bầu trời phía xa.",
+                        "answer":  "他站在山冈上，看着远处的天空。"
+                    },
+                    {
+                        "chinese":  "山冈之下，就是他出生的村庄。",
+                        "pinyin":  "Shāngāng zhī xià, jiù shì tā chūshēng de cūnzhuāng.",
+                        "vietnamese":  "Dưới gò núi chính là ngôi làng nơi anh ấy sinh ra.",
+                        "answer":  "山冈之下，就是他出生的村庄。"
+                    },
+                    {
+                        "chinese":  "每次梦到山冈，他都会想起家人。",
+                        "pinyin":  "Měi cì mèng dào shāngāng, tā dōu huì xiǎngqǐ jiārén.",
+                        "vietnamese":  "Mỗi lần mơ thấy gò núi, anh ấy đều nhớ đến người nhà.",
+                        "answer":  "每次梦到山冈，他都会想起家人。"
+                    },
+                    {
+                        "chinese":  "山冈上的树越来越青，像一幅画。",
+                        "pinyin":  "Shāngāng shàng de shù yuèláiyuè qīng, xiàng yì fú huà.",
+                        "vietnamese":  "Cây trên gò núi ngày càng xanh, giống như một bức tranh.",
+                        "answer":  "山冈上的树越来越青，像一幅画。"
+                    },
+                    {
+                        "chinese":  "这座山冈不算名胜古迹，却很有感情。",
+                        "pinyin":  "Zhè zuò shāngāng bú suàn míngshèng gǔjì, què hěn yǒu gǎnqíng.",
+                        "vietnamese":  "Gò núi này không tính là danh lam di tích nhưng rất có tình cảm.",
+                        "answer":  "这座山冈不算名胜古迹，却很有感情。"
+                    },
+                    {
+                        "chinese":  "离开以后，他才明白山冈对自己的意义。",
+                        "pinyin":  "Líkāi yǐhòu, tā cái míngbai shāngāng duì zìjǐ de yìyì.",
+                        "vietnamese":  "Sau khi rời đi, anh ấy mới hiểu ý nghĩa của gò núi đối với mình.",
+                        "answer":  "离开以后，他才明白山冈对自己的意义。"
+                    },
+                    {
+                        "chinese":  "小女孩依偎在母亲身边，安静地听故事。",
+                        "pinyin":  "Xiǎo nǚhái yīwēi zài mǔqīn shēnbiān, ānjìng de tīng gùshi.",
+                        "vietnamese":  "Cô bé tựa vào bên mẹ, yên lặng nghe kể chuyện.",
+                        "answer":  "小女孩依偎在母亲身边，安静地听故事。"
+                    },
+                    {
+                        "chinese":  "老人依偎着门口的树，望着远处的山冈。",
+                        "pinyin":  "Lǎorén yīwēi zhe ménkǒu de shù, wàngzhe yuǎnchù de shāngāng.",
+                        "vietnamese":  "Người già tựa vào cây ở cổng, nhìn gò núi phía xa.",
+                        "answer":  "老人依偎着门口的树，望着远处的山冈。"
+                    },
+                    {
+                        "chinese":  "孩子依偎在父母怀里，感觉特别安全。",
+                        "pinyin":  "Háizi yīwēi zài fùmǔ huái lǐ, gǎnjué tèbié ānquán.",
+                        "vietnamese":  "Đứa trẻ nép vào lòng cha mẹ, cảm thấy đặc biệt an toàn.",
+                        "answer":  "孩子依偎在父母怀里，感觉特别安全。"
+                    },
+                    {
+                        "chinese":  "村庄依偎在青山旁边，风光很美。",
+                        "pinyin":  "Cūnzhuāng yīwēi zài qīngshān pángbiān, fēngguāng hěn měi.",
+                        "vietnamese":  "Làng quê nép bên núi xanh, phong cảnh rất đẹp.",
+                        "answer":  "村庄依偎在青山旁边，风光很美。"
+                    },
+                    {
+                        "chinese":  "她依偎着窗边，看着天空发呆。",
+                        "pinyin":  "Tā yīwēi zhe chuāngbiān, kànzhe tiānkōng fādāi.",
+                        "vietnamese":  "Cô ấy tựa bên cửa sổ, nhìn bầu trời ngẩn ngơ.",
+                        "answer":  "她依偎着窗边，看着天空发呆。"
+                    },
+                    {
+                        "chinese":  "他想起小时候依偎在家人身边的日子。",
+                        "pinyin":  "Tā xiǎngqǐ xiǎoshíhou yīwēi zài jiārén shēnbiān de rìzi.",
+                        "vietnamese":  "Anh ấy nhớ lại những ngày hồi nhỏ nép bên người nhà.",
+                        "answer":  "他想起小时候依偎在家人身边的日子。"
+                    },
+                    {
+                        "chinese":  "海滨小城依偎着大海，气候温暖湿润。",
+                        "pinyin":  "Hǎibīn xiǎo chéng yīwēi zhe dàhǎi, qìhòu wēnnuǎn shīrùn.",
+                        "vietnamese":  "Thành phố nhỏ ven biển nép bên biển lớn, khí hậu ấm áp ẩm ướt.",
+                        "answer":  "海滨小城依偎着大海，气候温暖湿润。"
+                    },
+                    {
+                        "chinese":  "她没有说话，只是静静地依偎着父亲。",
+                        "pinyin":  "Tā méiyǒu shuōhuà, zhǐshì jìngjìng de yīwēi zhe fùqīn.",
+                        "vietnamese":  "Cô ấy không nói gì, chỉ lặng lẽ tựa vào cha.",
+                        "answer":  "她没有说话，只是静静地依偎着父亲。"
+                    },
+                    {
+                        "chinese":  "这种依偎的感觉，让他想起了故乡。",
+                        "pinyin":  "Zhè zhǒng yīwēi de gǎnjué, ràng tā xiǎngqǐ le gùxiāng.",
+                        "vietnamese":  "Cảm giác tựa nép này khiến anh ấy nhớ về quê hương.",
+                        "answer":  "这种依偎的感觉，让他想起了故乡。"
+                    },
+                    {
+                        "chinese":  "在他心里，村庄一直依偎在青山怀里。",
+                        "pinyin":  "Zài tā xīn lǐ, cūnzhuāng yìzhí yīwēi zài qīngshān huái lǐ.",
+                        "vietnamese":  "Trong lòng anh ấy, ngôi làng luôn nép trong lòng núi xanh.",
+                        "answer":  "在他心里，村庄一直依偎在青山怀里。"
+                    },
+                    {
+                        "chinese":  "这个村庄有几百年的历史。",
+                        "pinyin":  "Zhège cūnzhuāng yǒu jǐ bǎi nián de lìshǐ.",
+                        "vietnamese":  "Ngôi làng này có lịch sử vài trăm năm.",
+                        "answer":  "这个村庄有几百年的历史。"
+                    },
+                    {
+                        "chinese":  "村庄虽然不大，却让他一生难忘。",
+                        "pinyin":  "Cūnzhuāng suīrán bú dà, què ràng tā yìshēng nánwàng.",
+                        "vietnamese":  "Ngôi làng tuy không lớn nhưng khiến anh ấy cả đời khó quên.",
+                        "answer":  "村庄虽然不大，却让他一生难忘。"
+                    },
+                    {
+                        "chinese":  "春天的村庄到处都是青青的草。",
+                        "pinyin":  "Chūntiān de cūnzhuāng dàochù dōu shì qīngqīng de cǎo.",
+                        "vietnamese":  "Làng quê mùa xuân khắp nơi đều là cỏ xanh.",
+                        "answer":  "春天的村庄到处都是青青的草。"
+                    },
+                    {
+                        "chinese":  "他离开村庄以后，时常梦见家乡。",
+                        "pinyin":  "Tā líkāi cūnzhuāng yǐhòu, shícháng mèngjiàn jiāxiāng.",
+                        "vietnamese":  "Sau khi rời làng, anh ấy thường mơ thấy quê hương.",
+                        "answer":  "他离开村庄以后，时常梦见家乡。"
+                    },
+                    {
+                        "chinese":  "村庄依偎在山冈旁边，安静又温暖。",
+                        "pinyin":  "Cūnzhuāng yīwēi zài shāngāng pángbiān, ānjìng yòu wēnnuǎn.",
+                        "vietnamese":  "Làng quê nép bên gò núi, yên tĩnh và ấm áp.",
+                        "answer":  "村庄依偎在山冈旁边，安静又温暖。"
+                    },
+                    {
+                        "chinese":  "这个村庄的风光吸引了很多游客。",
+                        "pinyin":  "Zhège cūnzhuāng de fēngguāng xīyǐn le hěn duō yóukè.",
+                        "vietnamese":  "Phong cảnh của ngôi làng này thu hút nhiều du khách.",
+                        "answer":  "这个村庄的风光吸引了很多游客。"
+                    },
+                    {
+                        "chinese":  "老人们依然住在村庄里，守着自己的土地。",
+                        "pinyin":  "Lǎorénmen yīrán zhù zài cūnzhuāng lǐ, shǒuzhe zìjǐ de tǔdì.",
+                        "vietnamese":  "Những người già vẫn sống trong làng, giữ mảnh đất của mình.",
+                        "answer":  "老人们依然住在村庄里，守着自己的土地。"
+                    },
+                    {
+                        "chinese":  "村庄的天空比城市更蓝。",
+                        "pinyin":  "Cūnzhuāng de tiānkōng bǐ chéngshì gèng lán.",
+                        "vietnamese":  "Bầu trời của làng xanh hơn thành phố.",
+                        "answer":  "村庄的天空比城市更蓝。"
+                    },
+                    {
+                        "chinese":  "他把村庄的故事写成了一首歌。",
+                        "pinyin":  "Tā bǎ cūnzhuāng de gùshi xiě chéng le yì shǒu gē.",
+                        "vietnamese":  "Anh ấy viết câu chuyện của làng thành một bài hát.",
+                        "answer":  "他把村庄的故事写成了一首歌。"
+                    },
+                    {
+                        "chinese":  "无论走多远，那个村庄都是他的精神归属。",
+                        "pinyin":  "Wúlùn zǒu duō yuǎn, nà ge cūnzhuāng dōu shì tā de jīngshén guīshǔ.",
+                        "vietnamese":  "Dù đi xa đến đâu, ngôi làng ấy vẫn là nơi thuộc về tinh thần của anh ấy.",
+                        "answer":  "无论走多远，那个村庄都是他的精神归属。"
+                    },
+                    {
+                        "chinese":  "今天的天空特别蓝。",
+                        "pinyin":  "Jīntiān de tiānkōng tèbié lán.",
+                        "vietnamese":  "Bầu trời hôm nay đặc biệt xanh.",
+                        "answer":  "今天的天空特别蓝。"
+                    },
+                    {
+                        "chinese":  "村庄上空的天空总让他感到自由。",
+                        "pinyin":  "Cūnzhuāng shàngkōng de tiānkōng zǒng ràng tā gǎndào zìyóu.",
+                        "vietnamese":  "Bầu trời trên làng luôn khiến anh ấy cảm thấy tự do.",
+                        "answer":  "村庄上空的天空总让他感到自由。"
+                    },
+                    {
+                        "chinese":  "夜晚的天空挂满了星星。",
+                        "pinyin":  "Yèwǎn de tiānkōng guàmǎn le xīngxing.",
+                        "vietnamese":  "Bầu trời ban đêm đầy sao.",
+                        "answer":  "夜晚的天空挂满了星星。"
+                    },
+                    {
+                        "chinese":  "他站在山冈上，望着远方的天空。",
+                        "pinyin":  "Tā zhàn zài shāngāng shàng, wàngzhe yuǎnfāng de tiānkōng.",
+                        "vietnamese":  "Anh ấy đứng trên gò núi, nhìn bầu trời phương xa.",
+                        "answer":  "他站在山冈上，望着远方的天空。"
+                    },
+                    {
+                        "chinese":  "城市的天空没有家乡那么清澈。",
+                        "pinyin":  "Chéngshì de tiānkōng méiyǒu jiāxiāng nàme qīngchè.",
+                        "vietnamese":  "Bầu trời thành phố không trong như quê nhà.",
+                        "answer":  "城市的天空没有家乡那么清澈。"
+                    },
+                    {
+                        "chinese":  "天空之下，父母正在村口等他回家。",
+                        "pinyin":  "Tiānkōng zhī xià, fùmǔ zhèngzài cūnkǒu děng tā huí jiā.",
+                        "vietnamese":  "Dưới bầu trời, cha mẹ đang ở đầu làng chờ anh ấy về nhà.",
+                        "answer":  "天空之下，父母正在村口等他回家。"
+                    },
+                    {
+                        "chinese":  "看着这片天空，他突然想起童年。",
+                        "pinyin":  "Kànzhe zhè piàn tiānkōng, tā tūrán xiǎngqǐ tóngnián.",
+                        "vietnamese":  "Nhìn bầu trời này, anh ấy đột nhiên nhớ tuổi thơ.",
+                        "answer":  "看着这片天空，他突然想起童年。"
+                    },
+                    {
+                        "chinese":  "天空慢慢暗下来，村庄也安静了。",
+                        "pinyin":  "Tiānkōng mànman àn xiàlái, cūnzhuāng yě ānjìng le.",
+                        "vietnamese":  "Bầu trời dần tối xuống, làng cũng yên tĩnh lại.",
+                        "answer":  "天空慢慢暗下来，村庄也安静了。"
+                    },
+                    {
+                        "chinese":  "她喜欢在海滨看天空和大海连在一起。",
+                        "pinyin":  "Tā xǐhuan zài hǎibīn kàn tiānkōng hé dàhǎi lián zài yìqǐ.",
+                        "vietnamese":  "Cô ấy thích nhìn bầu trời và biển cả nối liền nhau ở ven biển.",
+                        "answer":  "她喜欢在海滨看天空和大海连在一起。"
+                    },
+                    {
+                        "chinese":  "天空虽然很远，却像家一样让人安心。",
+                        "pinyin":  "Tiānkōng suīrán hěn yuǎn, què xiàng jiā yíyàng ràng rén ānxīn.",
+                        "vietnamese":  "Bầu trời tuy rất xa nhưng giống như nhà, khiến người ta yên tâm.",
+                        "answer":  "天空虽然很远，却像家一样让人安心。"
+                    },
+                    {
+                        "chinese":  "他怎能忘记父母的辛苦呢？",
+                        "pinyin":  "Tā zěn néng wàngjì fùmǔ de xīnkǔ ne?",
+                        "vietnamese":  "Anh ấy sao có thể quên sự vất vả của cha mẹ chứ?",
+                        "answer":  "他怎能忘记父母的辛苦呢？"
+                    },
+                    {
+                        "chinese":  "离开村庄多年，我怎会不想家？",
+                        "pinyin":  "Líkāi cūnzhuāng duō nián, wǒ zěn huì bù xiǎng jiā?",
+                        "vietnamese":  "Rời làng nhiều năm, sao tôi có thể không nhớ nhà?",
+                        "answer":  "离开村庄多年，我怎会不想家？"
+                    },
+                    {
+                        "chinese":  "这么美的风光，怎能不让人向往？",
+                        "pinyin":  "Zhème měi de fēngguāng, zěn néng bù ràng rén xiàngwǎng?",
+                        "vietnamese":  "Phong cảnh đẹp như vậy sao có thể không khiến người ta hướng tới?",
+                        "answer":  "这么美的风光，怎能不让人向往？"
+                    },
+                    {
+                        "chinese":  "没有家人的支持，他怎能坚持到现在？",
+                        "pinyin":  "Méiyǒu jiārén de zhīchí, tā zěn néng jiānchí dào xiànzài?",
+                        "vietnamese":  "Không có sự ủng hộ của người nhà, anh ấy sao có thể kiên trì đến bây giờ?",
+                        "answer":  "没有家人的支持，他怎能坚持到现在？"
+                    },
+                    {
+                        "chinese":  "当初的选择已经过去，怎能一直后悔？",
+                        "pinyin":  "Dāngchū de xuǎnzé yǐjīng guòqù, zěn néng yìzhí hòuhuǐ?",
+                        "vietnamese":  "Lựa chọn ban đầu đã qua rồi, sao có thể cứ hối hận mãi?",
+                        "answer":  "当初的选择已经过去，怎能一直后悔？"
+                    },
+                    {
+                        "chinese":  "这种归属感，外人怎会完全明白？",
+                        "pinyin":  "Zhè zhǒng guīshǔgǎn, wàirén zěn huì wánquán míngbai?",
+                        "vietnamese":  "Cảm giác thuộc về này, người ngoài sao có thể hiểu hoàn toàn?",
+                        "answer":  "这种归属感，外人怎会完全明白？"
+                    },
+                    {
+                        "chinese":  "父母还在家乡等你，你怎能说无所谓？",
+                        "pinyin":  "Fùmǔ hái zài jiāxiāng děng nǐ, nǐ zěn néng shuō wúsuǒwèi?",
+                        "vietnamese":  "Cha mẹ vẫn đang đợi bạn ở quê, bạn sao có thể nói không quan tâm?",
+                        "answer":  "父母还在家乡等你，你怎能说无所谓？"
+                    },
+                    {
+                        "chinese":  "山冈和天空都在梦里，他怎会忘记？",
+                        "pinyin":  "Shāngāng hé tiānkōng dōu zài mèng lǐ, tā zěn huì wàngjì?",
+                        "vietnamese":  "Gò núi và bầu trời đều ở trong mơ, anh ấy sao có thể quên?",
+                        "answer":  "山冈和天空都在梦里，他怎会忘记？"
+                    },
+                    {
+                        "chinese":  "家乡之恋如此深，怎能轻易放下？",
+                        "pinyin":  "Jiāxiāng zhī liàn rúcǐ shēn, zěn néng qīngyì fàngxià?",
+                        "vietnamese":  "Tình yêu quê hương sâu như vậy, sao có thể dễ dàng buông xuống?",
+                        "answer":  "家乡之恋如此深，怎能轻易放下？"
+                    },
+                    {
+                        "chinese":  "如果没有努力，梦想怎会自己实现？",
+                        "pinyin":  "Rúguǒ méiyǒu nǔlì, mèngxiǎng zěn huì zìjǐ shíxiàn?",
+                        "vietnamese":  "Nếu không nỗ lực, ước mơ sao có thể tự thành hiện thực?",
+                        "answer":  "如果没有努力，梦想怎会自己实现？"
+                    },
+                    {
+                        "chinese":  "这首歌叫我想起了远方的家乡。",
+                        "pinyin":  "Zhè shǒu gē jiào wǒ xiǎngqǐ le yuǎnfāng de jiāxiāng.",
+                        "vietnamese":  "Bài hát này khiến tôi nhớ đến quê hương phương xa.",
+                        "answer":  "这首歌叫我想起了远方的家乡。"
+                    },
+                    {
+                        "chinese":  "父母的信叫他心里感到很温暖。",
+                        "pinyin":  "Fùmǔ de xìn jiào tā xīn lǐ gǎndào hěn wēnnuǎn.",
+                        "vietnamese":  "Lá thư của cha mẹ khiến trong lòng anh ấy cảm thấy rất ấm áp.",
+                        "answer":  "父母的信叫他心里感到很温暖。"
+                    },
+                    {
+                        "chinese":  "这片风光叫游客一看就难忘。",
+                        "pinyin":  "Zhè piàn fēngguāng jiào yóukè yí kàn jiù nánwàng.",
+                        "vietnamese":  "Phong cảnh này khiến du khách vừa nhìn là khó quên.",
+                        "answer":  "这片风光叫游客一看就难忘。"
+                    },
+                    {
+                        "chinese":  "城市生活叫他感到压力很大。",
+                        "pinyin":  "Chéngshì shēnghuó jiào tā gǎndào yālì hěn dà.",
+                        "vietnamese":  "Cuộc sống thành phố khiến anh ấy cảm thấy áp lực rất lớn.",
+                        "answer":  "城市生活叫他感到压力很大。"
+                    },
+                    {
+                        "chinese":  "那个村庄叫我产生了强烈的归属感。",
+                        "pinyin":  "Nà ge cūnzhuāng jiào wǒ chǎnshēng le qiángliè de guīshǔgǎn.",
+                        "vietnamese":  "Ngôi làng đó khiến tôi sinh ra cảm giác thuộc về mạnh mẽ.",
+                        "answer":  "那个村庄叫我产生了强烈的归属感。"
+                    },
+                    {
+                        "chinese":  "老师的话叫新生不再害怕出错。",
+                        "pinyin":  "Lǎoshī de huà jiào xīnshēng bú zài hàipà chūcuò.",
+                        "vietnamese":  "Lời của giáo viên khiến sinh viên mới không còn sợ mắc lỗi.",
+                        "answer":  "老师的话叫新生不再害怕出错。"
+                    },
+                    {
+                        "chinese":  "这座山冈叫他想起当初离家的那天。",
+                        "pinyin":  "Zhè zuò shāngāng jiào tā xiǎngqǐ dāngchū lí jiā de nà tiān.",
+                        "vietnamese":  "Gò núi này khiến anh ấy nhớ đến ngày ban đầu rời nhà.",
+                        "answer":  "这座山冈叫他想起当初离家的那天。"
+                    },
+                    {
+                        "chinese":  "家人的理解叫她终于安心下来。",
+                        "pinyin":  "Jiārén de lǐjiě jiào tā zhōngyú ānxīn xiàlái.",
+                        "vietnamese":  "Sự thấu hiểu của người nhà khiến cô ấy cuối cùng yên tâm lại.",
+                        "answer":  "家人的理解叫她终于安心下来。"
+                    },
+                    {
+                        "chinese":  "这种表达方式叫人感觉很自然。",
+                        "pinyin":  "Zhè zhǒng biǎodá fāngshì jiào rén gǎnjué hěn zìrán.",
+                        "vietnamese":  "Cách biểu đạt này khiến người ta cảm thấy rất tự nhiên.",
+                        "answer":  "这种表达方式叫人感觉很自然。"
+                    },
+                    {
+                        "chinese":  "海滨温暖的风叫他慢慢放松下来。",
+                        "pinyin":  "Hǎibīn wēnnuǎn de fēng jiào tā mànman fàngsōng xiàlái.",
+                        "vietnamese":  "Gió ấm ven biển khiến anh ấy dần thư giãn lại.",
+                        "answer":  "海滨温暖的风叫他慢慢放松下来。"
+                    },
+                    {
+                        "chinese":  "他一直向往安静的农村生活。",
+                        "pinyin":  "Tā yìzhí xiàngwǎng ānjìng de nóngcūn shēnghuó.",
+                        "vietnamese":  "Anh ấy luôn hướng tới cuộc sống nông thôn yên tĩnh.",
+                        "answer":  "他一直向往安静的农村生活。"
+                    },
+                    {
+                        "chinese":  "很多年轻人向往大城市的机会。",
+                        "pinyin":  "Hěn duō niánqīng rén xiàngwǎng dà chéngshì de jīhuì.",
+                        "vietnamese":  "Nhiều người trẻ hướng tới cơ hội ở thành phố lớn.",
+                        "answer":  "很多年轻人向往大城市的机会。"
+                    },
+                    {
+                        "chinese":  "这片青山绿水是我向往已久的风光。",
+                        "pinyin":  "Zhè piàn qīngshān lǜshuǐ shì wǒ xiàngwǎng yǐjiǔ de fēngguāng.",
+                        "vietnamese":  "Núi xanh nước biếc này là phong cảnh tôi đã mong mỏi từ lâu.",
+                        "answer":  "这片青山绿水是我向往已久的风光。"
+                    },
+                    {
+                        "chinese":  "他向往自由，却也害怕离开父母。",
+                        "pinyin":  "Tā xiàngwǎng zìyóu, què yě hàipà líkāi fùmǔ.",
+                        "vietnamese":  "Anh ấy hướng tới tự do nhưng cũng sợ rời xa cha mẹ.",
+                        "answer":  "他向往自由，却也害怕离开父母。"
+                    },
+                    {
+                        "chinese":  "西安的历史文化让很多游客向往。",
+                        "pinyin":  "Xī’ān de lìshǐ wénhuà ràng hěn duō yóukè xiàngwǎng.",
+                        "vietnamese":  "Văn hóa lịch sử Tây An khiến nhiều du khách mong muốn đến.",
+                        "answer":  "西安的历史文化让很多游客向往。"
+                    },
+                    {
+                        "chinese":  "她向往海滨城市温暖湿润的气候。",
+                        "pinyin":  "Tā xiàngwǎng hǎibīn chéngshì wēnnuǎn shīrùn de qìhòu.",
+                        "vietnamese":  "Cô ấy hướng tới khí hậu ấm áp ẩm ướt của thành phố ven biển.",
+                        "answer":  "她向往海滨城市温暖湿润的气候。"
+                    },
+                    {
+                        "chinese":  "向往并不等于一定适合长期居住。",
+                        "pinyin":  "Xiàngwǎng bìng bù děngyú yídìng shìhé chángqī jūzhù.",
+                        "vietnamese":  "Mong mỏi không có nghĩa là nhất định phù hợp để cư trú lâu dài.",
+                        "answer":  "向往并不等于一定适合长期居住。"
+                    },
+                    {
+                        "chinese":  "他越了解家乡，越向往回去定居。",
+                        "pinyin":  "Tā yuè liǎojiě jiāxiāng, yuè xiàngwǎng huíqù dìngjū.",
+                        "vietnamese":  "Anh ấy càng hiểu quê hương, càng mong muốn quay về định cư.",
+                        "answer":  "他越了解家乡，越向往回去定居。"
+                    },
+                    {
+                        "chinese":  "城市的优越条件，曾经让他非常向往。",
+                        "pinyin":  "Chéngshì de yōuyuè tiáojiàn, céngjīng ràng tā fēicháng xiàngwǎng.",
+                        "vietnamese":  "Điều kiện ưu việt của thành phố từng khiến anh ấy vô cùng hướng tới.",
+                        "answer":  "城市的优越条件，曾经让他非常向往。"
+                    },
+                    {
+                        "chinese":  "真正向往的地方，往往和归属感有关。",
+                        "pinyin":  "Zhēnzhèng xiàngwǎng de dìfang, wǎngwǎng hé guīshǔgǎn yǒuguān.",
+                        "vietnamese":  "Nơi thật sự mong muốn thường liên quan đến cảm giác thuộc về.",
+                        "answer":  "真正向往的地方，往往和归属感有关。"
+                    },
+                    {
+                        "chinese":  "他一直在想，自己是否应该回家乡定居。",
+                        "pinyin":  "Tā yìzhí zài xiǎng, zìjǐ shìfǒu yīnggāi huí jiāxiāng dìngjū.",
+                        "vietnamese":  "Anh ấy luôn nghĩ liệu mình có nên về quê định cư hay không.",
+                        "answer":  "他一直在想，自己是否应该回家乡定居。"
+                    },
+                    {
+                        "chinese":  "父母是否同意，对他来说非常重要。",
+                        "pinyin":  "Fùmǔ shìfǒu tóngyì, duì tā lái shuō fēicháng zhòngyào.",
+                        "vietnamese":  "Cha mẹ có đồng ý hay không rất quan trọng đối với anh ấy.",
+                        "answer":  "父母是否同意，对他来说非常重要。"
+                    },
+                    {
+                        "chinese":  "你是否还记得当初离开村庄的那一天？",
+                        "pinyin":  "Nǐ shìfǒu hái jìde dāngchū líkāi cūnzhuāng de nà yì tiān?",
+                        "vietnamese":  "Bạn có còn nhớ ngày ban đầu rời làng không?",
+                        "answer":  "你是否还记得当初离开村庄的那一天？"
+                    },
+                    {
+                        "chinese":  "是否有归属感，决定了他能不能安心生活。",
+                        "pinyin":  "Shìfǒu yǒu guīshǔgǎn, juédìng le tā néng bù néng ānxīn shēnghuó.",
+                        "vietnamese":  "Có cảm giác thuộc về hay không quyết định anh ấy có thể sống yên tâm hay không.",
+                        "answer":  "是否有归属感，决定了他能不能安心生活。"
+                    },
+                    {
+                        "chinese":  "老师问我们是否愿意谈论家乡。",
+                        "pinyin":  "Lǎoshī wèn wǒmen shìfǒu yuànyì tánlùn jiāxiāng.",
+                        "vietnamese":  "Giáo viên hỏi chúng tôi có muốn bàn về quê hương hay không.",
+                        "answer":  "老师问我们是否愿意谈论家乡。"
+                    },
+                    {
+                        "chinese":  "他还没有决定是否接受这份工作。",
+                        "pinyin":  "Tā hái méiyǒu juédìng shìfǒu jiēshòu zhè fèn gōngzuò.",
+                        "vietnamese":  "Anh ấy vẫn chưa quyết định có nhận công việc này hay không.",
+                        "answer":  "他还没有决定是否接受这份工作。"
+                    },
+                    {
+                        "chinese":  "你是否觉得城市生活比农村生活更自由？",
+                        "pinyin":  "Nǐ shìfǒu juéde chéngshì shēnghuó bǐ nóngcūn shēnghuó gèng zìyóu?",
+                        "vietnamese":  "Bạn có thấy cuộc sống thành phố tự do hơn cuộc sống nông thôn không?",
+                        "answer":  "你是否觉得城市生活比农村生活更自由？"
+                    },
+                    {
+                        "chinese":  "是否回去并不重要，重要的是别忘了家人。",
+                        "pinyin":  "Shìfǒu huíqù bìng bù zhòngyào, zhòngyào de shì bié wàng le jiārén.",
+                        "vietnamese":  "Có quay về hay không không quan trọng, quan trọng là đừng quên người nhà.",
+                        "answer":  "是否回去并不重要，重要的是别忘了家人。"
+                    },
+                    {
+                        "chinese":  "他想知道那片山冈是否还像以前一样青。",
+                        "pinyin":  "Tā xiǎng zhīdào nà piàn shāngāng shìfǒu hái xiàng yǐqián yíyàng qīng.",
+                        "vietnamese":  "Anh ấy muốn biết gò núi ấy có còn xanh như trước không.",
+                        "answer":  "他想知道那片山冈是否还像以前一样青。"
+                    },
+                    {
+                        "chinese":  "这座城市是否适宜居住，需要亲自体验。",
+                        "pinyin":  "Zhè zuò chéngshì shìfǒu shìyí jūzhù, xūyào qīnzì tǐyàn.",
+                        "vietnamese":  "Thành phố này có thích hợp sinh sống hay không cần tự mình trải nghiệm.",
+                        "answer":  "这座城市是否适宜居住，需要亲自体验。"
+                    },
+                    {
+                        "chinese":  "父母身体无恙，他才放心去外地工作。",
+                        "pinyin":  "Fùmǔ shēntǐ wúyàng, tā cái fàngxīn qù wàidì gōngzuò.",
+                        "vietnamese":  "Cha mẹ bình an khỏe mạnh, anh ấy mới yên tâm đi nơi khác làm việc.",
+                        "answer":  "父母身体无恙，他才放心去外地工作。"
+                    },
+                    {
+                        "chinese":  "听说家人无恙，他心里一下子轻松了。",
+                        "pinyin":  "Tīngshuō jiārén wúyàng, tā xīn lǐ yíxiàzi qīngsōng le.",
+                        "vietnamese":  "Nghe nói người nhà bình an, trong lòng anh ấy lập tức nhẹ nhõm.",
+                        "answer":  "听说家人无恙，他心里一下子轻松了。"
+                    },
+                    {
+                        "chinese":  "多年过去，那个村庄依然无恙。",
+                        "pinyin":  "Duō nián guòqù, nà ge cūnzhuāng yīrán wúyàng.",
+                        "vietnamese":  "Nhiều năm trôi qua, ngôi làng ấy vẫn bình yên.",
+                        "answer":  "多年过去，那个村庄依然无恙。"
+                    },
+                    {
+                        "chinese":  "地震以后，朋友发来消息说自己无恙。",
+                        "pinyin":  "Dìzhèn yǐhòu, péngyou fā lái xiāoxi shuō zìjǐ wúyàng.",
+                        "vietnamese":  "Sau động đất, bạn gửi tin nhắn nói mình bình an.",
+                        "answer":  "地震以后，朋友发来消息说自己无恙。"
+                    },
+                    {
+                        "chinese":  "他最关心的不是房子，而是父母是否无恙。",
+                        "pinyin":  "Tā zuì guānxīn de bú shì fángzi, ér shì fùmǔ shìfǒu wúyàng.",
+                        "vietnamese":  "Điều anh ấy quan tâm nhất không phải căn nhà mà là cha mẹ có bình an hay không.",
+                        "answer":  "他最关心的不是房子，而是父母是否无恙。"
+                    },
+                    {
+                        "chinese":  "离家在外的人，最希望听到家人无恙。",
+                        "pinyin":  "Lí jiā zài wài de rén, zuì xīwàng tīng dào jiārén wúyàng.",
+                        "vietnamese":  "Người xa nhà hy vọng nhất là nghe thấy người nhà bình an.",
+                        "answer":  "离家在外的人，最希望听到家人无恙。"
+                    },
+                    {
+                        "chinese":  "虽然村庄经历了大雨，但大家都无恙。",
+                        "pinyin":  "Suīrán cūnzhuāng jīnglì le dàyǔ, dàn dàjiā dōu wúyàng.",
+                        "vietnamese":  "Tuy làng trải qua mưa lớn nhưng mọi người đều bình an.",
+                        "answer":  "虽然村庄经历了大雨，但大家都无恙。"
+                    },
+                    {
+                        "chinese":  "他写信问父母近来是否无恙。",
+                        "pinyin":  "Tā xiě xìn wèn fùmǔ jìnlái shìfǒu wúyàng.",
+                        "vietnamese":  "Anh ấy viết thư hỏi cha mẹ gần đây có bình an không.",
+                        "answer":  "他写信问父母近来是否无恙。"
+                    },
+                    {
+                        "chinese":  "得知孩子无恙以后，父母终于安心了。",
+                        "pinyin":  "Dézhī háizi wúyàng yǐhòu, fùmǔ zhōngyú ānxīn le.",
+                        "vietnamese":  "Sau khi biết con bình an, cha mẹ cuối cùng yên tâm.",
+                        "answer":  "得知孩子无恙以后，父母终于安心了。"
+                    },
+                    {
+                        "chinese":  "只要家人无恙，再辛苦也值得。",
+                        "pinyin":  "Zhǐyào jiārén wúyàng, zài xīnkǔ yě zhíde.",
+                        "vietnamese":  "Chỉ cần người nhà bình an, vất vả đến đâu cũng đáng.",
+                        "answer":  "只要家人无恙，再辛苦也值得。"
+                    },
+                    {
+                        "chinese":  "他时常想起小时候的村庄。",
+                        "pinyin":  "Tā shícháng xiǎngqǐ xiǎoshíhou de cūnzhuāng.",
+                        "vietnamese":  "Anh ấy thường nhớ đến ngôi làng thời nhỏ.",
+                        "answer":  "他时常想起小时候的村庄。"
+                    },
+                    {
+                        "chinese":  "父母时常提醒他注意身体。",
+                        "pinyin":  "Fùmǔ shícháng tíxǐng tā zhùyì shēntǐ.",
+                        "vietnamese":  "Cha mẹ thường nhắc anh ấy chú ý sức khỏe.",
+                        "answer":  "父母时常提醒他注意身体。"
+                    },
+                    {
+                        "chinese":  "她定居国外以后，时常给家人打电话。",
+                        "pinyin":  "Tā dìngjū guówài yǐhòu, shícháng gěi jiārén dǎ diànhuà.",
+                        "vietnamese":  "Sau khi định cư ở nước ngoài, cô ấy thường gọi điện cho người nhà.",
+                        "answer":  "她定居国外以后，时常给家人打电话。"
+                    },
+                    {
+                        "chinese":  "这个问题时常出现在我们的讨论中。",
+                        "pinyin":  "Zhège wèntí shícháng chūxiàn zài wǒmen de tǎolùn zhōng.",
+                        "vietnamese":  "Vấn đề này thường xuất hiện trong thảo luận của chúng tôi.",
+                        "answer":  "这个问题时常出现在我们的讨论中。"
+                    },
+                    {
+                        "chinese":  "他时常梦见那片青色的山冈。",
+                        "pinyin":  "Tā shícháng mèngjiàn nà piàn qīngsè de shāngāng.",
+                        "vietnamese":  "Anh ấy thường mơ thấy gò núi màu xanh ấy.",
+                        "answer":  "他时常梦见那片青色的山冈。"
+                    },
+                    {
+                        "chinese":  "老人时常坐在门口，看着天空发呆。",
+                        "pinyin":  "Lǎorén shícháng zuò zài ménkǒu, kànzhe tiānkōng fādāi.",
+                        "vietnamese":  "Người già thường ngồi ở cổng, nhìn bầu trời ngẩn ngơ.",
+                        "answer":  "老人时常坐在门口，看着天空发呆。"
+                    },
+                    {
+                        "chinese":  "我时常觉得，家乡才是最温暖的地方。",
+                        "pinyin":  "Wǒ shícháng juéde, jiāxiāng cái shì zuì wēnnuǎn de dìfang.",
+                        "vietnamese":  "Tôi thường thấy quê hương mới là nơi ấm áp nhất.",
+                        "answer":  "我时常觉得，家乡才是最温暖的地方。"
+                    },
+                    {
+                        "chinese":  "这首歌时常让游客想起自己的故乡。",
+                        "pinyin":  "Zhè shǒu gē shícháng ràng yóukè xiǎngqǐ zìjǐ de gùxiāng.",
+                        "vietnamese":  "Bài hát này thường khiến du khách nhớ đến quê hương của mình.",
+                        "answer":  "这首歌时常让游客想起自己的故乡。"
+                    },
+                    {
+                        "chinese":  "他时常问自己，是否真的有归属感。",
+                        "pinyin":  "Tā shícháng wèn zìjǐ, shìfǒu zhēn de yǒu guīshǔgǎn.",
+                        "vietnamese":  "Anh ấy thường hỏi bản thân liệu có thật sự có cảm giác thuộc về không.",
+                        "answer":  "他时常问自己，是否真的有归属感。"
+                    },
+                    {
+                        "chinese":  "时常联系父母，是他离家后的习惯。",
+                        "pinyin":  "Shícháng liánxì fùmǔ, shì tā lí jiā hòu de xíguàn.",
+                        "vietnamese":  "Thường xuyên liên lạc với cha mẹ là thói quen sau khi anh ấy rời nhà.",
+                        "answer":  "时常联系父母，是他离家后的习惯。"
+                    },
+                    {
+                        "chinese":  "这里的风光让人一看难忘。",
+                        "pinyin":  "Zhèlǐ de fēngguāng ràng rén yí kàn nánwàng.",
+                        "vietnamese":  "Phong cảnh nơi đây khiến người ta vừa nhìn là khó quên.",
+                        "answer":  "这里的风光让人一看难忘。"
+                    },
+                    {
+                        "chinese":  "青山绿水是这个村庄最美的风光。",
+                        "pinyin":  "Qīngshān lǜshuǐ shì zhège cūnzhuāng zuì měi de fēngguāng.",
+                        "vietnamese":  "Núi xanh nước biếc là phong cảnh đẹp nhất của ngôi làng này.",
+                        "answer":  "青山绿水是这个村庄最美的风光。"
+                    },
+                    {
+                        "chinese":  "海滨风光和山村风光完全不同。",
+                        "pinyin":  "Hǎibīn fēngguāng hé shāncūn fēngguāng wánquán bùtóng.",
+                        "vietnamese":  "Phong cảnh ven biển và phong cảnh làng núi hoàn toàn khác nhau.",
+                        "answer":  "海滨风光和山村风光完全不同。"
+                    },
+                    {
+                        "chinese":  "站在山冈上，可以看到整个村庄的风光。",
+                        "pinyin":  "Zhàn zài shāngāng shàng, kěyǐ kàndào zhěngge cūnzhuāng de fēngguāng.",
+                        "vietnamese":  "Đứng trên gò núi có thể nhìn thấy phong cảnh toàn bộ làng.",
+                        "answer":  "站在山冈上，可以看到整个村庄的风光。"
+                    },
+                    {
+                        "chinese":  "他用照片记录了家乡四季的风光。",
+                        "pinyin":  "Tā yòng zhàopiàn jìlù le jiāxiāng sìjì de fēngguāng.",
+                        "vietnamese":  "Anh ấy dùng ảnh ghi lại phong cảnh bốn mùa của quê hương.",
+                        "answer":  "他用照片记录了家乡四季的风光。"
+                    },
+                    {
+                        "chinese":  "城市风光虽然现代，却少了一点温暖。",
+                        "pinyin":  "Chéngshì fēngguāng suīrán xiàndài, què shǎo le yìdiǎn wēnnuǎn.",
+                        "vietnamese":  "Phong cảnh thành phố tuy hiện đại nhưng thiếu một chút ấm áp.",
+                        "answer":  "城市风光虽然现代，却少了一点温暖。"
+                    },
+                    {
+                        "chinese":  "这片风光曾经让很多游客向往。",
+                        "pinyin":  "Zhè piàn fēngguāng céngjīng ràng hěn duō yóukè xiàngwǎng.",
+                        "vietnamese":  "Phong cảnh này từng khiến nhiều du khách mong muốn đến.",
+                        "answer":  "这片风光曾经让很多游客向往。"
+                    },
+                    {
+                        "chinese":  "风光再美，如果没有家人陪伴，也会觉得孤单。",
+                        "pinyin":  "Fēngguāng zài měi, rúguǒ méiyǒu jiārén péibàn, yě huì juéde gūdān.",
+                        "vietnamese":  "Phong cảnh dù đẹp đến đâu, nếu không có người nhà bên cạnh cũng sẽ thấy cô đơn.",
+                        "answer":  "风光再美，如果没有家人陪伴，也会觉得孤单。"
+                    },
+                    {
+                        "chinese":  "他时常在梦里回到那片风光之中。",
+                        "pinyin":  "Tā shícháng zài mèng lǐ huí dào nà piàn fēngguāng zhī zhōng.",
+                        "vietnamese":  "Anh ấy thường trong mơ quay về trong phong cảnh ấy.",
+                        "answer":  "他时常在梦里回到那片风光之中。"
+                    },
+                    {
+                        "chinese":  "这里的自然风光和人文特色都很吸引人。",
+                        "pinyin":  "Zhèlǐ de zìrán fēngguāng hé rénwén tèsè dōu hěn xīyǐn rén.",
+                        "vietnamese":  "Phong cảnh tự nhiên và nét nhân văn ở đây đều rất thu hút.",
+                        "answer":  "这里的自然风光和人文特色都很吸引人。"
+                    },
+                    {
+                        "chinese":  "昨晚我在梦乡里回到了家乡。",
+                        "pinyin":  "Zuówǎn wǒ zài mèngxiāng lǐ huí dào le jiāxiāng.",
+                        "vietnamese":  "Tối qua trong giấc mơ tôi đã quay về quê hương.",
+                        "answer":  "昨晚我在梦乡里回到了家乡。"
+                    },
+                    {
+                        "chinese":  "孩子依偎在母亲身边，很快进入梦乡。",
+                        "pinyin":  "Háizi yīwēi zài mǔqīn shēnbiān, hěn kuài jìnrù mèngxiāng.",
+                        "vietnamese":  "Đứa trẻ nép bên mẹ, nhanh chóng đi vào giấc mộng.",
+                        "answer":  "孩子依偎在母亲身边，很快进入梦乡。"
+                    },
+                    {
+                        "chinese":  "那片青山时常出现在他的梦乡里。",
+                        "pinyin":  "Nà piàn qīngshān shícháng chūxiàn zài tā de mèngxiāng lǐ.",
+                        "vietnamese":  "Núi xanh ấy thường xuất hiện trong giấc mơ của anh ấy.",
+                        "answer":  "那片青山时常出现在他的梦乡里。"
+                    },
+                    {
+                        "chinese":  "忙了一天以后，他终于安静地进入梦乡。",
+                        "pinyin":  "Máng le yì tiān yǐhòu, tā zhōngyú ānjìng de jìnrù mèngxiāng.",
+                        "vietnamese":  "Sau một ngày bận rộn, cuối cùng anh ấy yên lặng đi vào giấc ngủ.",
+                        "answer":  "忙了一天以后，他终于安静地进入梦乡。"
+                    },
+                    {
+                        "chinese":  "梦乡里的村庄，永远温暖又安静。",
+                        "pinyin":  "Mèngxiāng lǐ de cūnzhuāng, yǒngyuǎn wēnnuǎn yòu ānjìng.",
+                        "vietnamese":  "Ngôi làng trong giấc mơ mãi ấm áp và yên tĩnh.",
+                        "answer":  "梦乡里的村庄，永远温暖又安静。"
+                    },
+                    {
+                        "chinese":  "他在梦乡中听见父母叫他的名字。",
+                        "pinyin":  "Tā zài mèngxiāng zhōng tīngjiàn fùmǔ jiào tā de míngzi.",
+                        "vietnamese":  "Anh ấy trong giấc mơ nghe thấy cha mẹ gọi tên mình.",
+                        "answer":  "他在梦乡中听见父母叫他的名字。"
+                    },
+                    {
+                        "chinese":  "海风轻轻吹来，她慢慢进入梦乡。",
+                        "pinyin":  "Hǎifēng qīngqīng chuī lái, tā mànman jìnrù mèngxiāng.",
+                        "vietnamese":  "Gió biển nhẹ thổi đến, cô ấy dần đi vào giấc ngủ.",
+                        "answer":  "海风轻轻吹来，她慢慢进入梦乡。"
+                    },
+                    {
+                        "chinese":  "离开家乡以后，他的梦乡里总有那片天空。",
+                        "pinyin":  "Líkāi jiāxiāng yǐhòu, tā de mèngxiāng lǐ zǒng yǒu nà piàn tiānkōng.",
+                        "vietnamese":  "Sau khi rời quê, trong giấc mơ của anh ấy luôn có bầu trời ấy.",
+                        "answer":  "离开家乡以后，他的梦乡里总有那片天空。"
+                    },
+                    {
+                        "chinese":  "梦乡不是真实生活，却反映了心里的向往。",
+                        "pinyin":  "Mèngxiāng bú shì zhēnshí shēnghuó, què fǎnyìng le xīn lǐ de xiàngwǎng.",
+                        "vietnamese":  "Giấc mộng không phải cuộc sống thật nhưng phản ánh sự mong mỏi trong lòng.",
+                        "answer":  "梦乡不是真实生活，却反映了心里的向往。"
+                    },
+                    {
+                        "chinese":  "他希望在梦乡之外，也能找到真正的归属。",
+                        "pinyin":  "Tā xīwàng zài mèngxiāng zhī wài, yě néng zhǎodào zhēnzhèng de guīshǔ.",
+                        "vietnamese":  "Anh ấy hy vọng ngoài giấc mơ cũng có thể tìm được nơi thuộc về thật sự.",
+                        "answer":  "他希望在梦乡之外，也能找到真正的归属。"
+                    },
+                    {
+                        "chinese":  "那次旅行让我一生难忘。",
+                        "pinyin":  "Nà cì lǚxíng ràng wǒ yìshēng nánwàng.",
+                        "vietnamese":  "Chuyến đi đó khiến tôi cả đời khó quên.",
+                        "answer":  "那次旅行让我一生难忘。"
+                    },
+                    {
+                        "chinese":  "父母送我离家那天，是最难忘的一天。",
+                        "pinyin":  "Fùmǔ sòng wǒ lí jiā nà tiān, shì zuì nánwàng de yì tiān.",
+                        "vietnamese":  "Ngày cha mẹ tiễn tôi rời nhà là ngày khó quên nhất.",
+                        "answer":  "父母送我离家那天，是最难忘的一天。"
+                    },
+                    {
+                        "chinese":  "村庄的天空和山冈让我难忘。",
+                        "pinyin":  "Cūnzhuāng de tiānkōng hé shāngāng ràng wǒ nánwàng.",
+                        "vietnamese":  "Bầu trời và gò núi của làng quê khiến tôi khó quên.",
+                        "answer":  "村庄的天空和山冈让我难忘。"
+                    },
+                    {
+                        "chinese":  "这首歌表达了难忘的故乡之恋。",
+                        "pinyin":  "Zhè shǒu gē biǎodá le nánwàng de gùxiāng zhī liàn.",
+                        "vietnamese":  "Bài hát này thể hiện tình yêu quê hương khó quên.",
+                        "answer":  "这首歌表达了难忘的故乡之恋。"
+                    },
+                    {
+                        "chinese":  "他在上海的第一年，有很多难忘经历。",
+                        "pinyin":  "Tā zài Shànghǎi de dì yī nián, yǒu hěn duō nánwàng jīnglì.",
+                        "vietnamese":  "Năm đầu tiên anh ấy ở Thượng Hải có nhiều trải nghiệm khó quên.",
+                        "answer":  "他在上海的第一年，有很多难忘经历。"
+                    },
+                    {
+                        "chinese":  "难忘的不只是风光，还有家人的陪伴。",
+                        "pinyin":  "Nánwàng de bú zhǐshì fēngguāng, hái yǒu jiārén de péibàn.",
+                        "vietnamese":  "Điều khó quên không chỉ là phong cảnh mà còn có sự đồng hành của người nhà.",
+                        "answer":  "难忘的不只是风光，还有家人的陪伴。"
+                    },
+                    {
+                        "chinese":  "这个小村庄虽然普通，却特别难忘。",
+                        "pinyin":  "Zhège xiǎo cūnzhuāng suīrán pǔtōng, què tèbié nánwàng.",
+                        "vietnamese":  "Ngôi làng nhỏ này tuy bình thường nhưng đặc biệt khó quên.",
+                        "answer":  "这个小村庄虽然普通，却特别难忘。"
+                    },
+                    {
+                        "chinese":  "老师的话让我到现在都难忘。",
+                        "pinyin":  "Lǎoshī de huà ràng wǒ dào xiànzài dōu nánwàng.",
+                        "vietnamese":  "Lời của giáo viên khiến tôi đến bây giờ vẫn khó quên.",
+                        "answer":  "老师的话让我到现在都难忘。"
+                    },
+                    {
+                        "chinese":  "每个人心里都有一段难忘的过去。",
+                        "pinyin":  "Měi ge rén xīn lǐ dōu yǒu yí duàn nánwàng de guòqù.",
+                        "vietnamese":  "Trong lòng mỗi người đều có một đoạn quá khứ khó quên.",
+                        "answer":  "每个人心里都有一段难忘的过去。"
+                    },
+                    {
+                        "chinese":  "最难忘的地方，往往就是最有归属感的地方。",
+                        "pinyin":  "Zuì nánwàng de dìfang, wǎngwǎng jiù shì zuì yǒu guīshǔgǎn de dìfang.",
+                        "vietnamese":  "Nơi khó quên nhất thường chính là nơi có cảm giác thuộc về nhất.",
+                        "answer":  "最难忘的地方，往往就是最有归属感的地方。"
+                    },
+                    {
+                        "chinese":  "孩子们在山冈上快乐地歌唱。",
+                        "pinyin":  "Háizimen zài shāngāng shàng kuàilè de gēchàng.",
+                        "vietnamese":  "Bọn trẻ vui vẻ ca hát trên gò núi.",
+                        "answer":  "孩子们在山冈上快乐地歌唱。"
+                    },
+                    {
+                        "chinese":  "他喜欢用歌唱表达对家乡的思念。",
+                        "pinyin":  "Tā xǐhuan yòng gēchàng biǎodá duì jiāxiāng de sīniàn.",
+                        "vietnamese":  "Anh ấy thích dùng ca hát để bày tỏ nỗi nhớ quê hương.",
+                        "answer":  "他喜欢用歌唱表达对家乡的思念。"
+                    },
+                    {
+                        "chinese":  "每到节日，村里的人都会一起歌唱。",
+                        "pinyin":  "Měi dào jiérì, cūn lǐ de rén dōu huì yìqǐ gēchàng.",
+                        "vietnamese":  "Mỗi khi đến lễ hội, người trong làng đều cùng nhau ca hát.",
+                        "answer":  "每到节日，村里的人都会一起歌唱。"
+                    },
+                    {
+                        "chinese":  "她一边看着天空，一边轻轻歌唱。",
+                        "pinyin":  "Tā yìbiān kànzhe tiānkōng, yìbiān qīngqīng gēchàng.",
+                        "vietnamese":  "Cô ấy vừa nhìn bầu trời vừa khẽ hát.",
+                        "answer":  "她一边看着天空，一边轻轻歌唱。"
+                    },
+                    {
+                        "chinese":  "歌唱让他暂时忘记了城市生活的压力。",
+                        "pinyin":  "Gēchàng ràng tā zànshí wàngjì le chéngshì shēnghuó de yālì.",
+                        "vietnamese":  "Ca hát khiến anh ấy tạm quên áp lực cuộc sống thành phố.",
+                        "answer":  "歌唱让他暂时忘记了城市生活的压力。"
+                    },
+                    {
+                        "chinese":  "这首歌唱出了游子对父母的想念。",
+                        "pinyin":  "Zhè shǒu gē chàng chū le yóuzǐ duì fùmǔ de xiǎngniàn.",
+                        "vietnamese":  "Bài hát này hát lên nỗi nhớ cha mẹ của người xa quê.",
+                        "answer":  "这首歌唱出了游子对父母的想念。"
+                    },
+                    {
+                        "chinese":  "老人们的歌唱声在村庄上空回响。",
+                        "pinyin":  "Lǎorénmen de gēchàng shēng zài cūnzhuāng shàngkōng huíxiǎng.",
+                        "vietnamese":  "Tiếng hát của những người già vang vọng trên bầu trời làng.",
+                        "answer":  "老人们的歌唱声在村庄上空回响。"
+                    },
+                    {
+                        "chinese":  "他不是专业演员，但歌唱得很有感情。",
+                        "pinyin":  "Tā bú shì zhuānyè yǎnyuán, dàn gē chàng de hěn yǒu gǎnqíng.",
+                        "vietnamese":  "Anh ấy không phải diễn viên chuyên nghiệp nhưng hát rất có tình cảm.",
+                        "answer":  "他不是专业演员，但歌唱得很有感情。"
+                    },
+                    {
+                        "chinese":  "歌唱不只是娱乐，也是文化的一部分。",
+                        "pinyin":  "Gēchàng bú zhǐshì yúlè, yě shì wénhuà de yí bùfen.",
+                        "vietnamese":  "Ca hát không chỉ là giải trí mà cũng là một phần của văn hóa.",
+                        "answer":  "歌唱不只是娱乐，也是文化的一部分。"
+                    },
+                    {
+                        "chinese":  "如果心里有话说不出来，就用歌唱表达吧。",
+                        "pinyin":  "Rúguǒ xīn lǐ yǒu huà shuō bù chūlái, jiù yòng gēchàng biǎodá ba.",
+                        "vietnamese":  "Nếu trong lòng có lời không nói ra được thì hãy dùng ca hát để bày tỏ.",
+                        "answer":  "如果心里有话说不出来，就用歌唱表达吧。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "去吧，时间太晚；不去吧，又怕老师不高兴。",
+                          "pinyin":  "Qù ba, shíjiān tài wǎn; bú qù ba, yòu pà lǎoshī bù gāoxìng.",
+                          "vietnamese":  "Đi thì thời gian quá muộn; không đi thì lại sợ thầy không vui.",
+                          "answer":  "去吧，时间太晚；不去吧，又怕老师不高兴。"
+                      },
+                      {
+                          "chinese":  "买吧，价格有点儿贵；不买吧，又真的很需要。",
+                          "pinyin":  "Mǎi ba, jiàgé yǒudiǎnr guì; bù mǎi ba, yòu zhēn de hěn xūyào.",
+                          "vietnamese":  "Mua thì giá hơi đắt; không mua thì lại thật sự rất cần.",
+                          "answer":  "买吧，价格有点儿贵；不买吧，又真的很需要。"
+                      },
+                      {
+                          "chinese":  "搬吧，离学校近；不搬吧，现在的房租比较便宜。",
+                          "pinyin":  "Bān ba, lí xuéxiào jìn; bù bān ba, xiànzài de fángzū bǐjiào piányi.",
+                          "vietnamese":  "Chuyển thì gần trường; không chuyển thì tiền thuê hiện tại khá rẻ.",
+                          "answer":  "搬吧，离学校近；不搬吧，现在的房租比较便宜。"
+                      },
+                      {
+                          "chinese":  "说吧，怕朋友难过；不说吧，问题会越来越严重。",
+                          "pinyin":  "Shuō ba, pà péngyou nánguò; bù shuō ba, wèntí huì yuè lái yuè yánzhòng.",
+                          "vietnamese":  "Nói thì sợ bạn buồn; không nói thì vấn đề sẽ ngày càng nghiêm trọng.",
+                          "answer":  "说吧，怕朋友难过；不说吧，问题会越来越严重。"
+                      },
+                      {
+                          "chinese":  "回家吧，工作太忙；不回吧，又很想念父母。",
+                          "pinyin":  "Huí jiā ba, gōngzuò tài máng; bù huí ba, yòu hěn xiǎngniàn fùmǔ.",
+                          "vietnamese":  "Về nhà thì công việc quá bận; không về thì lại rất nhớ bố mẹ.",
+                          "answer":  "回家吧，工作太忙；不回吧，又很想念父母。"
+                      },
+                      {
+                          "chinese":  "参加吧，时间不方便；不参加吧，又怕错过机会。",
+                          "pinyin":  "Cānjiā ba, shíjiān bù fāngbiàn; bù cānjiā ba, yòu pà cuòguò jīhuì.",
+                          "vietnamese":  "Tham gia thì thời gian không tiện; không tham gia thì lại sợ bỏ lỡ cơ hội.",
+                          "answer":  "参加吧，时间不方便；不参加吧，又怕错过机会。"
+                      },
+                      {
+                          "chinese":  "说他懒也不是，说他笨也不是，只是方法不对。",
+                          "pinyin":  "Shuō tā lǎn yě bú shì, shuō tā bèn yě bú shì, zhǐshì fāngfǎ bú duì.",
+                          "vietnamese":  "Nói anh ấy lười cũng không phải, nói anh ấy ngốc cũng không phải, chỉ là phương pháp không đúng.",
+                          "answer":  "说他懒也不是，说他笨也不是，只是方法不对。"
+                      },
+                      {
+                          "chinese":  "说这个房子不好也不是，说它好也不是，主要是太远。",
+                          "pinyin":  "Shuō zhège fángzi bù hǎo yě bú shì, shuō tā hǎo yě bú shì, zhǔyào shì tài yuǎn.",
+                          "vietnamese":  "Nói căn nhà này không tốt cũng không phải, nói tốt cũng không phải, chủ yếu là quá xa.",
+                          "answer":  "说这个房子不好也不是，说它好也不是，主要是太远。"
+                      },
+                      {
+                          "chinese":  "说他不努力也不是，说他没能力也不是，只是太紧张。",
+                          "pinyin":  "Shuō tā bù nǔlì yě bú shì, shuō tā méi nénglì yě bú shì, zhǐshì tài jǐnzhāng.",
+                          "vietnamese":  "Nói anh ấy không cố gắng cũng không phải, nói không có năng lực cũng không phải, chỉ là quá căng thẳng.",
+                          "answer":  "说他不努力也不是，说他没能力也不是，只是太紧张。"
+                      },
+                      {
+                          "chinese":  "说我不想家也不是，说我想回去也不是，心情很复杂。",
+                          "pinyin":  "Shuō wǒ bù xiǎng jiā yě bú shì, shuō wǒ xiǎng huíqù yě bú shì, xīnqíng hěn fùzá.",
+                          "vietnamese":  "Nói tôi không nhớ nhà cũng không phải, nói muốn về cũng không phải, tâm trạng rất phức tạp.",
+                          "answer":  "说我不想家也不是，说我想回去也不是，心情很复杂。"
+                      },
+                      {
+                          "chinese":  "说这份工作差也不是，说特别好也不是，还得再看看。",
+                          "pinyin":  "Shuō zhè fèn gōngzuò chà yě bú shì, shuō tèbié hǎo yě bú shì, hái děi zài kànkan.",
+                          "vietnamese":  "Nói công việc này tệ cũng không phải, nói rất tốt cũng không phải, vẫn phải xem thêm.",
+                          "answer":  "说这份工作差也不是，说特别好也不是，还得再看看。"
+                      },
+                      {
+                          "chinese":  "说他生气也不是，说他高兴也不是，可能只是太累了。",
+                          "pinyin":  "Shuō tā shēngqì yě bú shì, shuō tā gāoxìng yě bú shì, kěnéng zhǐshì tài lèi le.",
+                          "vietnamese":  "Nói anh ấy giận cũng không phải, nói vui cũng không phải, có lẽ chỉ là quá mệt.",
+                          "answer":  "说他生气也不是，说他高兴也不是，可能只是太累了。"
+                      },
+                      {
+                          "chinese":  "妈妈叫我晚上早点儿回家，别让她担心。",
+                          "pinyin":  "Māma jiào wǒ wǎnshang zǎodiǎnr huí jiā, bié ràng tā dānxīn.",
+                          "vietnamese":  "Mẹ bảo tôi tối về nhà sớm hơn, đừng để mẹ lo.",
+                          "answer":  "妈妈叫我晚上早点儿回家，别让她担心。"
+                      },
+                      {
+                          "chinese":  "老师叫我们下课以后去办公室拿资料。",
+                          "pinyin":  "Lǎoshī jiào wǒmen xiàkè yǐhòu qù bàngōngshì ná zīliào.",
+                          "vietnamese":  "Thầy bảo chúng tôi sau giờ học đến văn phòng lấy tài liệu.",
+                          "answer":  "老师叫我们下课以后去办公室拿资料。"
+                      },
+                      {
+                          "chinese":  "经理叫新同事先熟悉公司的工作流程。",
+                          "pinyin":  "Jīnglǐ jiào xīn tóngshì xiān shúxī gōngsī de gōngzuò liúchéng.",
+                          "vietnamese":  "Quản lý bảo đồng nghiệp mới làm quen quy trình làm việc của công ty trước.",
+                          "answer":  "经理叫新同事先熟悉公司的工作流程。"
+                      },
+                      {
+                          "chinese":  "房东叫我们月底以前把房租交清楚。",
+                          "pinyin":  "Fángdōng jiào wǒmen yuèdǐ yǐqián bǎ fángzū jiāo qīngchu.",
+                          "vietnamese":  "Chủ nhà bảo chúng tôi trước cuối tháng nộp rõ tiền thuê nhà.",
+                          "answer":  "房东叫我们月底以前把房租交清楚。"
+                      },
+                      {
+                          "chinese":  "医生叫他最近不要熬夜，也不要喝冷水。",
+                          "pinyin":  "Yīshēng jiào tā zuìjìn bú yào áoyè, yě bú yào hē lěng shuǐ.",
+                          "vietnamese":  "Bác sĩ bảo anh ấy gần đây đừng thức khuya, cũng đừng uống nước lạnh.",
+                          "answer":  "医生叫他最近不要熬夜，也不要喝冷水。"
+                      },
+                      {
+                          "chinese":  "朋友叫我周末一起去图书馆复习考试。",
+                          "pinyin":  "Péngyou jiào wǒ zhōumò yìqǐ qù túshūguǎn fùxí kǎoshì.",
+                          "vietnamese":  "Bạn bảo tôi cuối tuần cùng đến thư viện ôn thi.",
+                          "answer":  "朋友叫我周末一起去图书馆复习考试。"
+                      },
+                      {
+                          "chinese":  "他毕业以后，时常给以前的老师打电话。",
+                          "pinyin":  "Tā bìyè yǐhòu, shícháng gěi yǐqián de lǎoshī dǎ diànhuà.",
+                          "vietnamese":  "Sau khi tốt nghiệp, anh ấy thường xuyên gọi điện cho thầy cũ.",
+                          "answer":  "他毕业以后，时常给以前的老师打电话。"
+                      },
+                      {
+                          "chinese":  "我在外地工作以后，时常想起家乡的生活。",
+                          "pinyin":  "Wǒ zài wàidì gōngzuò yǐhòu, shícháng xiǎng qǐ jiāxiāng de shēnghuó.",
+                          "vietnamese":  "Sau khi làm việc xa quê, tôi thường nhớ đến cuộc sống ở quê.",
+                          "answer":  "我在外地工作以后，时常想起家乡的生活。"
+                      },
+                      {
+                          "chinese":  "她一个人住在北京，时常觉得有点儿孤单。",
+                          "pinyin":  "Tā yí ge rén zhù zài Běijīng, shícháng juéde yǒudiǎnr gūdān.",
+                          "vietnamese":  "Cô ấy sống một mình ở Bắc Kinh, thường cảm thấy hơi cô đơn.",
+                          "answer":  "她一个人住在北京，时常觉得有点儿孤单。"
+                      },
+                      {
+                          "chinese":  "老师时常提醒我们，学习语言一定要开口说。",
+                          "pinyin":  "Lǎoshī shícháng tíxǐng wǒmen, xuéxí yǔyán yídìng yào kāikǒu shuō.",
+                          "vietnamese":  "Thầy thường nhắc chúng tôi học ngôn ngữ nhất định phải mở miệng nói.",
+                          "answer":  "老师时常提醒我们，学习语言一定要开口说。"
+                      },
+                      {
+                          "chinese":  "他工作很忙，但还是时常回家看看父母。",
+                          "pinyin":  "Tā gōngzuò hěn máng, dàn háishi shícháng huí jiā kànkan fùmǔ.",
+                          "vietnamese":  "Anh ấy công việc rất bận, nhưng vẫn thường về nhà thăm bố mẹ.",
+                          "answer":  "他工作很忙，但还是时常回家看看父母。"
+                      },
+                      {
+                          "chinese":  "我时常看中文新闻，希望提高自己的阅读能力。",
+                          "pinyin":  "Wǒ shícháng kàn Zhōngwén xīnwén, xīwàng tígāo zìjǐ de yuèdú nénglì.",
+                          "vietnamese":  "Tôi thường xem tin tức tiếng Trung, hy vọng nâng cao khả năng đọc của mình.",
+                          "answer":  "我时常看中文新闻，希望提高自己的阅读能力。"
+                      }
+                  ]
+}

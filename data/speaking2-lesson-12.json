@@ -1,0 +1,2203 @@
+﻿{
+    "title":  "勤工俭学",
+    "vietnameseTitle":  "你找到什么新工作了 / 我想找个工作",
+    "textTitles":  [
+                       "你找到什么新工作了",
+                       "我想找个工作"
+                   ],
+    "vocabulary":  [
+                       {
+                           "chinese":  "勤工俭学",
+                           "pinyin":  "qín gōng jiǎn xué",
+                           "partOfSpeech":  "短语",
+                           "sinoVietnamese":  "cần công kiệm học",
+                           "vietnamese":  "vừa học vừa làm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "很多大学生通过勤工俭学减轻父母负担。",
+                                                "pinyin":  "Hěn duō dàxuéshēng tōngguò qín gōng jiǎn xué jiǎnqīng fùmǔ fùdān.",
+                                                "vietnamese":  "Rất nhiều sinh viên vừa học vừa làm để giảm gánh nặng cho cha mẹ."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "兼职",
+                           "pinyin":  "jiānzhí",
+                           "partOfSpeech":  "名/动",
+                           "sinoVietnamese":  "kiêm chức",
+                           "vietnamese":  "công việc làm thêm, làm thêm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他周末在一家饭馆兼职。",
+                                                "pinyin":  "Tā zhōumò zài yì jiā fànguǎn jiānzhí.",
+                                                "vietnamese":  "Cuối tuần anh ấy làm thêm ở một quán ăn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "家教",
+                           "pinyin":  "jiājiào",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "gia giáo",
+                           "vietnamese":  "gia sư",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我想找一份教中文的家教工作。",
+                                                "pinyin":  "Wǒ xiǎng zhǎo yí fèn jiāo Zhōngwén de jiājiào gōngzuò.",
+                                                "vietnamese":  "Tôi muốn tìm một công việc gia sư dạy tiếng Trung."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "家长",
+                           "pinyin":  "jiāzhǎng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "gia trưởng",
+                           "vietnamese":  "phụ huynh",
+                           "examples":  [
+                                            {
+                                                "chinese":  "家长都希望孩子找到好的学习方法。",
+                                                "pinyin":  "Jiāzhǎng dōu xīwàng háizi zhǎodào hǎo de xuéxí fāngfǎ.",
+                                                "vietnamese":  "Phụ huynh đều hy vọng con tìm được phương pháp học tốt."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "收入",
+                           "pinyin":  "shōurù",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "thu nhập",
+                           "vietnamese":  "thu nhập",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这份兼职的收入虽然不高，但是很稳定。",
+                                                "pinyin":  "Zhè fèn jiānzhí de shōurù suīrán bù gāo, dànshì hěn wěndìng.",
+                                                "vietnamese":  "Thu nhập của công việc làm thêm này tuy không cao nhưng rất ổn định."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "跳槽",
+                           "pinyin":  "tiàocáo",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "khiêu tào",
+                           "vietnamese":  "nhảy việc, đổi việc",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他觉得现在的工作太累，想跳槽。",
+                                                "pinyin":  "Tā juéde xiànzài de gōngzuò tài lèi, xiǎng tiàocáo.",
+                                                "vietnamese":  "Anh ấy thấy công việc hiện tại quá mệt nên muốn nhảy việc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "招聘",
+                           "pinyin":  "zhāopìn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "chiêu sính",
+                           "vietnamese":  "tuyển dụng",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这家公司正在招聘销售人员。",
+                                                "pinyin":  "Zhè jiā gōngsī zhèngzài zhāopìn xiāoshòu rényuán.",
+                                                "vietnamese":  "Công ty này đang tuyển nhân viên bán hàng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "图书",
+                           "pinyin":  "túshū",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đồ thư",
+                           "vietnamese":  "sách vở",
+                           "examples":  [
+                                            {
+                                                "chinese":  "图书管理员每天都要整理很多图书。",
+                                                "pinyin":  "Túshū guǎnlǐyuán měi tiān dōu yào zhěnglǐ hěn duō túshū.",
+                                                "vietnamese":  "Quản lý thư viện mỗi ngày đều phải sắp xếp rất nhiều sách."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "管理员",
+                           "pinyin":  "guǎnlǐyuán",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "quản lý viên",
+                           "vietnamese":  "nhân viên quản lý",
+                           "examples":  [
+                                            {
+                                                "chinese":  "图书馆管理员对学生很热情。",
+                                                "pinyin":  "Túshūguǎn guǎnlǐyuán duì xuésheng hěn rèqíng.",
+                                                "vietnamese":  "Nhân viên quản lý thư viện rất nhiệt tình với học sinh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "应聘",
+                           "pinyin":  "yìngpìn",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "ứng sính",
+                           "vietnamese":  "ứng tuyển",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我想去这家公司应聘秘书。",
+                                                "pinyin":  "Wǒ xiǎng qù zhè jiā gōngsī yìngpìn mìshū.",
+                                                "vietnamese":  "Tôi muốn đến công ty này ứng tuyển vị trí thư ký."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "整理",
+                           "pinyin":  "zhěnglǐ",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "chỉnh lý",
+                           "vietnamese":  "sắp xếp, chỉnh lý",
+                           "examples":  [
+                                            {
+                                                "chinese":  "面试以前，我要先整理一下简历。",
+                                                "pinyin":  "Miànshì yǐqián, wǒ yào xiān zhěnglǐ yíxià jiǎnlì.",
+                                                "vietnamese":  "Trước khi phỏng vấn, tôi phải sắp xếp lại CV trước."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "分类",
+                           "pinyin":  "fēnlèi",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "phân loại",
+                           "vietnamese":  "phân loại",
+                           "examples":  [
+                                            {
+                                                "chinese":  "请把这些资料按照内容分类。",
+                                                "pinyin":  "Qǐng bǎ zhèxiē zīliào ànzhào nèiróng fēnlèi.",
+                                                "vietnamese":  "Hãy phân loại những tài liệu này theo nội dung."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "韩文",
+                           "pinyin":  "Hánwén",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "Hàn văn",
+                           "vietnamese":  "chữ Hàn, tiếng Hàn viết",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他的简历里有中文、英文和韩文。",
+                                                "pinyin":  "Tā de jiǎnlì lǐ yǒu Zhōngwén, Yīngwén hé Hánwén.",
+                                                "vietnamese":  "Trong CV của anh ấy có tiếng Trung, tiếng Anh và chữ Hàn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "职位",
+                           "pinyin":  "zhíwèi",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "chức vị",
+                           "vietnamese":  "vị trí công việc, chức vụ",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个职位需要三年以上工作经验。",
+                                                "pinyin":  "Zhège zhíwèi xūyào sān nián yǐshàng gōngzuò jīngyàn.",
+                                                "vietnamese":  "Vị trí này cần trên ba năm kinh nghiệm làm việc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "相关",
+                           "pinyin":  "xiāngguān",
+                           "partOfSpeech":  "动/形",
+                           "sinoVietnamese":  "tương quan",
+                           "vietnamese":  "có liên quan",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我有一些销售方面的相关经验。",
+                                                "pinyin":  "Wǒ yǒu yìxiē xiāoshòu fāngmiàn de xiāngguān jīngyàn.",
+                                                "vietnamese":  "Tôi có một ít kinh nghiệm liên quan đến bán hàng."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "行业",
+                           "pinyin":  "hángyè",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "hành nghiệp",
+                           "vietnamese":  "ngành nghề, lĩnh vực",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他想进入互联网行业工作。",
+                                                "pinyin":  "Tā xiǎng jìnrù hùliánwǎng hángyè gōngzuò.",
+                                                "vietnamese":  "Anh ấy muốn vào làm trong ngành Internet."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "代表团",
+                           "pinyin":  "dàibiǎotuán",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đại biểu đoàn",
+                           "vietnamese":  "đoàn đại biểu",
+                           "examples":  [
+                                            {
+                                                "chinese":  "这个代表团明天要参观我们学校。",
+                                                "pinyin":  "Zhège dàibiǎotuán míngtiān yào cānguān wǒmen xuéxiào.",
+                                                "vietnamese":  "Đoàn đại biểu này ngày mai sẽ tham quan trường chúng tôi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "特长",
+                           "pinyin":  "tècháng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "đặc trường",
+                           "vietnamese":  "sở trường",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我的特长是画画和摄影。",
+                                                "pinyin":  "Wǒ de tècháng shì huàhuà hé shèyǐng.",
+                                                "vietnamese":  "Sở trường của tôi là vẽ tranh và nhiếp ảnh."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "韩语",
+                           "pinyin":  "Hányǔ",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "Hàn ngữ",
+                           "vietnamese":  "tiếng Hàn",
+                           "examples":  [
+                                            {
+                                                "chinese":  "他不光会说汉语，还会说韩语。",
+                                                "pinyin":  "Tā bùguāng huì shuō Hànyǔ, hái huì shuō Hányǔ.",
+                                                "vietnamese":  "Anh ấy không chỉ biết nói tiếng Trung mà còn biết nói tiếng Hàn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "其次",
+                           "pinyin":  "qícì",
+                           "partOfSpeech":  "连",
+                           "sinoVietnamese":  "kỳ thứ",
+                           "vietnamese":  "thứ hai, tiếp theo",
+                           "examples":  [
+                                            {
+                                                "chinese":  "首先要整理简历，其次要准备面试。",
+                                                "pinyin":  "Shǒuxiān yào zhěnglǐ jiǎnlì, qícì yào zhǔnbèi miànshì.",
+                                                "vietnamese":  "Trước hết phải chuẩn bị CV, tiếp theo phải chuẩn bị phỏng vấn."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "积累",
+                           "pinyin":  "jīlěi",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "tích lũy",
+                           "vietnamese":  "tích lũy",
+                           "examples":  [
+                                            {
+                                                "chinese":  "兼职可以帮助大学生积累工作经验。",
+                                                "pinyin":  "Jiānzhí kěyǐ bāngzhù dàxuéshēng jīlěi gōngzuò jīngyàn.",
+                                                "vietnamese":  "Làm thêm có thể giúp sinh viên tích lũy kinh nghiệm làm việc."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "录用",
+                           "pinyin":  "lùyòng",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "lục dụng",
+                           "vietnamese":  "tuyển dụng, nhận vào làm",
+                           "examples":  [
+                                            {
+                                                "chinese":  "如果面试成功，公司就会录用你。",
+                                                "pinyin":  "Rúguǒ miànshì chénggōng, gōngsī jiù huì lùyòng nǐ.",
+                                                "vietnamese":  "Nếu phỏng vấn thành công, công ty sẽ nhận bạn vào làm."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "简历",
+                           "pinyin":  "jiǎnlì",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "giản lịch",
+                           "vietnamese":  "sơ yếu lý lịch, CV",
+                           "examples":  [
+                                            {
+                                                "chinese":  "请把你的简历发到我的邮箱。",
+                                                "pinyin":  "Qǐng bǎ nǐ de jiǎnlì fā dào wǒ de yóuxiāng.",
+                                                "vietnamese":  "Hãy gửi CV của bạn vào email của tôi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "发",
+                           "pinyin":  "fā",
+                           "partOfSpeech":  "动",
+                           "sinoVietnamese":  "phát",
+                           "vietnamese":  "gửi, phát ra",
+                           "examples":  [
+                                            {
+                                                "chinese":  "我已经把资料发给经理了。",
+                                                "pinyin":  "Wǒ yǐjīng bǎ zīliào fā gěi jīnglǐ le.",
+                                                "vietnamese":  "Tôi đã gửi tài liệu cho giám đốc rồi."
+                                            }
+                                        ]
+                       },
+                       {
+                           "chinese":  "邮箱",
+                           "pinyin":  "yóuxiāng",
+                           "partOfSpeech":  "名",
+                           "sinoVietnamese":  "bưu tương",
+                           "vietnamese":  "hộp thư điện tử, email",
+                           "examples":  [
+                                            {
+                                                "chinese":  "你能把邮箱地址写清楚吗？",
+                                                "pinyin":  "Nǐ néng bǎ yóuxiāng dìzhǐ xiě qīngchu ma?",
+                                                "vietnamese":  "Bạn có thể viết rõ địa chỉ email không?"
+                                            }
+                                        ]
+                       }
+                   ],
+    "paragraph":  [
+                      {
+                          "chinese":  "中国学生勤工俭学的肯定不少吧？",
+                          "pinyin":  "Zhōngguó xuéshēng qíngōng jiǎnxué de kěndìng bù shǎo ba?",
+                          "vietnamese":  "Sinh viên Trung Quốc vừa học vừa làm chắc chắn không ít nhỉ?"
+                      },
+                      {
+                          "chinese":  "以前少，经济主要靠父母，现在学生做兼职的比以前多了。",
+                          "pinyin":  "Yǐqián shǎo, jīngjì zhǔyào kào fùmǔ, xiànzài xuéshēng zuò jiānzhí de bǐ yǐqián duō le.",
+                          "vietnamese":  "Trước đây thì ít, kinh tế chủ yếu dựa vào bố mẹ; bây giờ sinh viên làm thêm nhiều hơn trước."
+                      },
+                      {
+                          "chinese":  "中国父母够辛苦的。哎，你们一般干哪些工作？",
+                          "pinyin":  "Zhōngguó fùmǔ gòu xīnkǔ de. Āi, nǐmen yìbān gàn nǎxiē gōngzuò?",
+                          "vietnamese":  "Bố mẹ Trung Quốc thật vất vả. À, các bạn thường làm những công việc gì?"
+                      },
+                      {
+                          "chinese":  "干什么的都有，当家教的当家教，做翻译的做翻译，各有各的赚钱方法。",
+                          "pinyin":  "Gàn shénme de dōu yǒu, dāng jiājiào de dāng jiājiào, zuò fānyì de zuò fānyì, gè yǒu gè de zhuànqián fāngfǎ.",
+                          "vietnamese":  "Làm đủ thứ việc, người làm gia sư thì làm gia sư, người làm phiên dịch thì làm phiên dịch, mỗi người có cách kiếm tiền riêng."
+                      },
+                      {
+                          "chinese":  "那你呢？",
+                          "pinyin":  "Nà nǐ ne?",
+                          "vietnamese":  "Còn bạn thì sao?"
+                      },
+                      {
+                          "chinese":  "我主要是做家教，教教英语、数学什么的。",
+                          "pinyin":  "Wǒ zhǔyào shì zuò jiājiào, jiāo jiāo Yīngyǔ, shùxué shénme de.",
+                          "vietnamese":  "Tôi chủ yếu làm gia sư, dạy tiếng Anh, toán học gì đó."
+                      },
+                      {
+                          "chinese":  "这种工作难找吗？",
+                          "pinyin":  "Zhè zhǒng gōngzuò nán zhǎo ma?",
+                          "vietnamese":  "Công việc kiểu này có khó tìm không?"
+                      },
+                      {
+                          "chinese":  "难找倒是不难找，就是特辛苦。",
+                          "pinyin":  "Nán zhǎo dào shì bù nán zhǎo, jiùshì tè xīnkǔ.",
+                          "vietnamese":  "Khó tìm thì không khó, chỉ là rất vất vả."
+                      },
+                      {
+                          "chinese":  "为什么？",
+                          "pinyin":  "Wèishénme?",
+                          "vietnamese":  "Tại sao?"
+                      },
+                      {
+                          "chinese":  "一是学生家长要求高，二是平时得花很多时间准备，还有就是收入不太高。",
+                          "pinyin":  "Yī shì xuéshēng jiāzhǎng yāoqiú gāo, èr shì píngshí děi huā hěn duō shíjiān zhǔnbèi, hái yǒu jiùshì shōurù bú tài gāo.",
+                          "vietnamese":  "Một là phụ huynh yêu cầu cao, hai là bình thường phải tốn nhiều thời gian chuẩn bị, hơn nữa thu nhập không cao lắm."
+                      },
+                      {
+                          "chinese":  "所以这几天我打算跳槽呢。",
+                          "pinyin":  "Suǒyǐ zhè jǐ tiān wǒ dǎsuàn tiàocáo ne.",
+                          "vietnamese":  "Vì vậy mấy ngày này tôi định đổi việc."
+                      },
+                      {
+                          "chinese":  "你打算往哪儿跳？",
+                          "pinyin":  "Nǐ dǎsuàn wǎng nǎr tiào?",
+                          "vietnamese":  "Bạn định chuyển sang đâu?"
+                      },
+                      {
+                          "chinese":  "学校在招聘图书管理员呢，我想应聘。",
+                          "pinyin":  "Xuéxiào zài zhāopìn túshū guǎnlǐyuán ne, wǒ xiǎng yìngpìn.",
+                          "vietnamese":  "Trường đang tuyển nhân viên quản lý thư viện, tôi muốn ứng tuyển."
+                      },
+                      {
+                          "chinese":  "这个工作主要做什么？",
+                          "pinyin":  "Zhège gōngzuò zhǔyào zuò shénme?",
+                          "vietnamese":  "Công việc này chủ yếu làm gì?"
+                      },
+                      {
+                          "chinese":  "一是整理图书、进行分类，再就是帮读者找书。",
+                          "pinyin":  "Yī shì zhěnglǐ túshū, jìnxíng fēnlèi, zài jiùshì bāng dúzhě zhǎo shū.",
+                          "vietnamese":  "Một là sắp xếp sách và phân loại, hai là giúp độc giả tìm sách."
+                      },
+                      {
+                          "chinese":  "你们赚的钱够上学用吗？",
+                          "pinyin":  "Nǐmen zhuàn de qián gòu shàngxué yòng ma?",
+                          "vietnamese":  "Tiền các bạn kiếm được có đủ dùng cho việc học không?"
+                      },
+                      {
+                          "chinese":  "不好说，收入高的高，低的低。",
+                          "pinyin":  "Bù hǎo shuō, shōurù gāo de gāo, dī de dī.",
+                          "vietnamese":  "Khó nói lắm, người thu nhập cao thì cao, người thấp thì thấp."
+                      },
+                      {
+                          "chinese":  "听你这么说，我也想试试了，你能帮我找个工作吗？",
+                          "pinyin":  "Tīng nǐ zhème shuō, wǒ yě xiǎng shìshi le, nǐ néng bāng wǒ zhǎo ge gōngzuò ma?",
+                          "vietnamese":  "Nghe bạn nói vậy, tôi cũng muốn thử rồi, bạn có thể giúp tôi tìm một công việc không?"
+                      },
+                      {
+                          "chinese":  "没问题，包在我身上了，你想找什么样儿的工作？",
+                          "pinyin":  "Méi wèntí, bāo zài wǒ shēnshang le, nǐ xiǎng zhǎo shénme yàngr de gōngzuò?",
+                          "vietnamese":  "Không vấn đề gì, cứ để tôi lo, bạn muốn tìm công việc kiểu gì?"
+                      },
+                      {
+                          "chinese":  "一是要跟中国人一起工作，能练习练习汉语；二是工作时间别太长，不然我没时间学习了；另外就是能多赚钱。",
+                          "pinyin":  "Yī shì yào gēn Zhōngguórén yìqǐ gōngzuò, néng liànxí liànxí Hànyǔ; èr shì gōngzuò shíjiān bié tài cháng, bùrán wǒ méi shíjiān xuéxí le; lìngwài jiùshì néng duō zhuànqián.",
+                          "vietnamese":  "Một là phải làm cùng người Trung Quốc để có thể luyện tiếng Trung; hai là thời gian làm việc đừng quá dài, nếu không tôi không có thời gian học; ngoài ra là có thể kiếm nhiều tiền."
+                      },
+                      {
+                          "chinese":  "您好，请问是新华新闻网的李先生吗？",
+                          "pinyin":  "Nín hǎo, qǐngwèn shì Xīnhuá Xīnwénwǎng de Lǐ xiānsheng ma?",
+                          "vietnamese":  "Xin chào, xin hỏi có phải anh Lý của mạng tin tức Tân Hoa không?"
+                      },
+                      {
+                          "chinese":  "对，您哪位？",
+                          "pinyin":  "Duì, nín nǎ wèi?",
+                          "vietnamese":  "Đúng, anh/chị là ai ạ?"
+                      },
+                      {
+                          "chinese":  "我叫朴东民，想申请兼职翻译这个职位。请问，你们还要人吗？",
+                          "pinyin":  "Wǒ jiào Piáo Dōngmín, xiǎng shēnqǐng jiānzhí fānyì zhège zhíwèi. Qǐngwèn, nǐmen hái yào rén ma?",
+                          "vietnamese":  "Tôi tên là Park Dongmin, muốn ứng tuyển vị trí phiên dịch bán thời gian này. Xin hỏi, các anh còn tuyển người không?"
+                      },
+                      {
+                          "chinese":  "要，请问你是哪个学校毕业的？",
+                          "pinyin":  "Yào, qǐngwèn nǐ shì nǎ ge xuéxiào bìyè de?",
+                          "vietnamese":  "Có tuyển, xin hỏi bạn tốt nghiệp trường nào?"
+                      },
+                      {
+                          "chinese":  "我是汉语学院的留学生，专业是汉语，我还没有毕业。",
+                          "pinyin":  "Wǒ shì Hànyǔ Xuéyuàn de liúxuéshēng, zhuānyè shì Hànyǔ, wǒ hái méiyǒu bìyè.",
+                          "vietnamese":  "Tôi là lưu học sinh của Học viện Hán ngữ, chuyên ngành tiếng Trung, tôi vẫn chưa tốt nghiệp."
+                      },
+                      {
+                          "chinese":  "你的汉语达到什么水平了？",
+                          "pinyin":  "Nǐ de Hànyǔ dádào shénme shuǐpíng le?",
+                          "vietnamese":  "Tiếng Trung của bạn đạt trình độ nào rồi?"
+                      },
+                      {
+                          "chinese":  "我过了HSK高级，能看中文报纸，日常的听、说基本没什么问题。",
+                          "pinyin":  "Wǒ guò le HSK gāojí, néng kàn Zhōngwén bàozhǐ, rìcháng de tīng, shuō jīběn méi shénme wèntí.",
+                          "vietnamese":  "Tôi đã thi qua HSK cao cấp, có thể đọc báo tiếng Trung, nghe nói hằng ngày cơ bản không có vấn đề gì."
+                      },
+                      {
+                          "chinese":  "你有过相关行业的工作经验吗？",
+                          "pinyin":  "Nǐ yǒu guò xiāngguān hángyè de gōngzuò jīngyàn ma?",
+                          "vietnamese":  "Bạn đã từng có kinh nghiệm làm việc trong ngành liên quan chưa?"
+                      },
+                      {
+                          "chinese":  "我一直上学，没什么经验，不过，我给韩国的体育代表团当过翻译。",
+                          "pinyin":  "Wǒ yìzhí shàngxué, méi shénme jīngyàn, búguò, wǒ gěi Hánguó de tǐyù dàibiǎotuán dāng guò fānyì.",
+                          "vietnamese":  "Tôi vẫn luôn đi học, không có nhiều kinh nghiệm, nhưng tôi từng làm phiên dịch cho đoàn đại biểu thể thao Hàn Quốc."
+                      },
+                      {
+                          "chinese":  "你有什么特长？",
+                          "pinyin":  "Nǐ yǒu shénme tècháng?",
+                          "vietnamese":  "Bạn có sở trường gì?"
+                      },
+                      {
+                          "chinese":  "我对网络很熟悉，能熟练使用计算机。",
+                          "pinyin":  "Wǒ duì wǎngluò hěn shúxī, néng shúliàn shǐyòng jìsuànjī.",
+                          "vietnamese":  "Tôi rất quen thuộc với mạng internet, có thể sử dụng máy tính thành thạo."
+                      },
+                      {
+                          "chinese":  "你能介绍一下自己的优点和缺点吗？",
+                          "pinyin":  "Nǐ néng jièshào yíxià zìjǐ de yōudiǎn hé quēdiǎn ma?",
+                          "vietnamese":  "Bạn có thể giới thiệu một chút về ưu điểm và khuyết điểm của mình không?"
+                      },
+                      {
+                          "chinese":  "我的优点就是认真，干什么都很努力，我得过三次汉语学院的奖学金。",
+                          "pinyin":  "Wǒ de yōudiǎn jiùshì rènzhēn, gàn shénme dōu hěn nǔlì, wǒ dé guò sān cì Hànyǔ Xuéyuàn de jiǎngxuéjīn.",
+                          "vietnamese":  "Ưu điểm của tôi là nghiêm túc, làm gì cũng rất cố gắng, tôi từng nhận học bổng của Học viện Hán ngữ ba lần."
+                      },
+                      {
+                          "chinese":  "那你的缺点呢？",
+                          "pinyin":  "Nà nǐ de quēdiǎn ne?",
+                          "vietnamese":  "Vậy khuyết điểm của bạn thì sao?"
+                      },
+                      {
+                          "chinese":  "我有个很大的缺点，不说你也知道，我的汉语赶不上韩语。",
+                          "pinyin":  "Wǒ yǒu ge hěn dà de quēdiǎn, bù shuō nǐ yě zhīdào, wǒ de Hànyǔ gǎn bù shàng Hányǔ.",
+                          "vietnamese":  "Tôi có một khuyết điểm lớn, không nói anh cũng biết, tiếng Trung của tôi không bằng tiếng Hàn."
+                      },
+                      {
+                          "chinese":  "能说一说你为什么应聘这份工作吗？",
+                          "pinyin":  "Néng shuō yi shuō nǐ wèishénme yìngpìn zhè fèn gōngzuò ma?",
+                          "vietnamese":  "Bạn có thể nói một chút vì sao bạn ứng tuyển công việc này không?"
+                      },
+                      {
+                          "chinese":  "主要是希望能用汉语工作，其次是想积累点儿工作经验，还有就是能更加了解中国。",
+                          "pinyin":  "Zhǔyào shì xīwàng néng yòng Hànyǔ gōngzuò, qícì shì xiǎng jīlěi diǎnr gōngzuò jīngyàn, hái yǒu jiùshì néng gèngjiā liǎojiě Zhōngguó.",
+                          "vietnamese":  "Chủ yếu là tôi hy vọng có thể dùng tiếng Trung để làm việc, thứ hai là muốn tích lũy một chút kinh nghiệm làm việc, ngoài ra còn có thể hiểu Trung Quốc hơn."
+                      },
+                      {
+                          "chinese":  "你有什么问题要问我们吗？",
+                          "pinyin":  "Nǐ yǒu shénme wèntí yào wèn wǒmen ma?",
+                          "vietnamese":  "Bạn có câu hỏi gì muốn hỏi chúng tôi không?"
+                      },
+                      {
+                          "chinese":  "我想知道一周工作几个小时，还有工作地点在哪里。",
+                          "pinyin":  "Wǒ xiǎng zhīdào yì zhōu gōngzuò jǐ ge xiǎoshí, hái yǒu gōngzuò dìdiǎn zài nǎlǐ.",
+                          "vietnamese":  "Tôi muốn biết một tuần làm mấy tiếng, và địa điểm làm việc ở đâu."
+                      },
+                      {
+                          "chinese":  "那就看你自己了，你只要在规定的时间内完成任务就行。",
+                          "pinyin":  "Nà jiù kàn nǐ zìjǐ le, nǐ zhǐyào zài guīdìng de shíjiān nèi wánchéng rènwu jiù xíng.",
+                          "vietnamese":  "Cái đó tùy bạn, chỉ cần bạn hoàn thành nhiệm vụ trong thời gian quy định là được."
+                      },
+                      {
+                          "chinese":  "你们能录用我吗？",
+                          "pinyin":  "Nǐmen néng lùyòng wǒ ma?",
+                          "vietnamese":  "Các anh có thể tuyển tôi không?"
+                      },
+                      {
+                          "chinese":  "一星期以后才能有结果，一旦录用我们会通知你的。你能把简历发给我吗？我的邮箱是xinhua.hr@sohu.com。",
+                          "pinyin":  "Yì xīngqī yǐhòu cái néng yǒu jiéguǒ, yídàn lùyòng wǒmen huì tōngzhī nǐ de. Nǐ néng bǎ jiǎnlì fā gěi wǒ ma? Wǒ de yóuxiāng shì xinhua.hr@sohu.com.",
+                          "vietnamese":  "Một tuần sau mới có kết quả, một khi được tuyển chúng tôi sẽ thông báo cho bạn. Bạn có thể gửi sơ yếu lý lịch cho tôi không? Email của tôi là xinhua.hr@sohu.com."
+                      },
+                      {
+                          "chinese":  "好的，我马上就发。",
+                          "pinyin":  "Hǎo de, wǒ mǎshàng jiù fā.",
+                          "vietnamese":  "Được, tôi sẽ gửi ngay."
+                      }
+                  ],
+    "grammar":  [
+                    {
+                        "pattern":  "A 的 A，B 的 B",
+                        "meaning":  "Ai làm việc nấy / cái nào ra cái đó",
+                        "usage":  "Dùng để nói hai nhóm hoặc hai việc được phân chia rõ ràng",
+                        "note":  "Thường dùng khi miêu tả trật tự, phân công",
+                        "example":  "下课以后，学习的学习，聊天的聊天。",
+                        "pinyin":  "Xiàkè yǐhòu, xuéxí de xuéxí, liáotiān de liáotiān.",
+                        "vietnamese":  "Sau giờ học, người học thì học, người nói chuyện thì nói chuyện.",
+                        "level":  "⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "……，不然……就……",
+                        "meaning":  "…, nếu không thì sẽ…",
+                        "usage":  "Dùng để nêu hậu quả nếu không làm việc trước",
+                        "note":  "不然 gần với 要不然",
+                        "example":  "你快点儿准备，不然我们就迟到了。",
+                        "pinyin":  "Nǐ kuàidiǎnr zhǔnbèi, bùrán wǒmen jiù chídào le.",
+                        "vietnamese":  "Bạn chuẩn bị nhanh lên, nếu không chúng ta sẽ muộn.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    },
+                    {
+                        "pattern":  "赶不上……",
+                        "meaning":  "Không kịp / không theo kịp…",
+                        "usage":  "Dùng khi không kịp thời gian hoặc không bằng tốc độ của người khác",
+                        "note":  "Có thể dùng với xe, thời gian, tiến độ",
+                        "example":  "我起晚了，差点儿赶不上飞机。",
+                        "pinyin":  "Wǒ qǐ wǎn le, chàdiǎnr gǎnbushàng fēijī.",
+                        "vietnamese":  "Tôi dậy muộn, suýt nữa không kịp máy bay.",
+                        "level":  "⭐⭐⭐⭐⭐"
+                    }
+                ],
+    "example":  [
+                    {
+                        "chinese":  "他靠勤工俭学完成了大学四年的学习。",
+                        "pinyin":  "Tā kào qín gōng jiǎn xué wánchéng le dàxué sì nián de xuéxí.",
+                        "vietnamese":  "Anh ấy dựa vào vừa học vừa làm để hoàn thành bốn năm đại học.",
+                        "answer":  "他靠勤工俭学完成了大学四年的学习。"
+                    },
+                    {
+                        "chinese":  "勤工俭学不光能增加收入，还能积累经验。",
+                        "pinyin":  "Qín gōng jiǎn xué bùguāng néng zēngjiā shōurù, hái néng jīlěi jīngyàn.",
+                        "vietnamese":  "Vừa học vừa làm không chỉ tăng thu nhập mà còn tích lũy kinh nghiệm.",
+                        "answer":  "勤工俭学不光能增加收入，还能积累经验。"
+                    },
+                    {
+                        "chinese":  "很多学生通过勤工俭学减轻家长的压力。",
+                        "pinyin":  "Hěn duō xuésheng tōngguò qín gōng jiǎn xué jiǎnqīng jiāzhǎng de yālì.",
+                        "vietnamese":  "Nhiều học sinh thông qua vừa học vừa làm để giảm áp lực cho phụ huynh.",
+                        "answer":  "很多学生通过勤工俭学减轻家长的压力。"
+                    },
+                    {
+                        "chinese":  "勤工俭学虽然辛苦，但对成长很有帮助。",
+                        "pinyin":  "Qín gōng jiǎn xué suīrán xīnkǔ, dàn duì chéngzhǎng hěn yǒu bāngzhù.",
+                        "vietnamese":  "Vừa học vừa làm tuy vất vả nhưng rất có ích cho sự trưởng thành.",
+                        "answer":  "勤工俭学虽然辛苦，但对成长很有帮助。"
+                    },
+                    {
+                        "chinese":  "如果时间安排不好，勤工俭学会影响学习效率。",
+                        "pinyin":  "Rúguǒ shíjiān ānpái bù hǎo, qín gōng jiǎn xué huì yǐngxiǎng xuéxí xiàolǜ.",
+                        "vietnamese":  "Nếu sắp xếp thời gian không tốt, vừa học vừa làm sẽ ảnh hưởng hiệu quả học tập.",
+                        "answer":  "如果时间安排不好，勤工俭学会影响学习效率。"
+                    },
+                    {
+                        "chinese":  "他参加勤工俭学以后，变得更独立了。",
+                        "pinyin":  "Tā cānjiā qín gōng jiǎn xué yǐhòu, biàn de gèng dúlì le.",
+                        "vietnamese":  "Sau khi tham gia vừa học vừa làm, anh ấy trở nên độc lập hơn.",
+                        "answer":  "他参加勤工俭学以后，变得更独立了。"
+                    },
+                    {
+                        "chinese":  "学校为贫困学生提供勤工俭学的职位。",
+                        "pinyin":  "Xuéxiào wèi pínkùn xuésheng tígōng qín gōng jiǎn xué de zhíwèi.",
+                        "vietnamese":  "Trường cung cấp vị trí vừa học vừa làm cho sinh viên khó khăn.",
+                        "answer":  "学校为贫困学生提供勤工俭学的职位。"
+                    },
+                    {
+                        "chinese":  "勤工俭学的关键是不能耽误正常课程。",
+                        "pinyin":  "Qín gōng jiǎn xué de guānjiàn shì bù néng dānwù zhèngcháng kèchéng.",
+                        "vietnamese":  "Mấu chốt của vừa học vừa làm là không được làm lỡ các môn học bình thường.",
+                        "answer":  "勤工俭学的关键是不能耽误正常课程。"
+                    },
+                    {
+                        "chinese":  "他把勤工俭学的经历写进了简历。",
+                        "pinyin":  "Tā bǎ qín gōng jiǎn xué de jīnglì xiě jìn le jiǎnlì.",
+                        "vietnamese":  "Anh ấy viết kinh nghiệm vừa học vừa làm vào CV.",
+                        "answer":  "他把勤工俭学的经历写进了简历。"
+                    },
+                    {
+                        "chinese":  "勤工俭学让他明白了收入来得并不容易。",
+                        "pinyin":  "Qín gōng jiǎn xué ràng tā míngbai le shōurù lái de bìng bù róngyì.",
+                        "vietnamese":  "Vừa học vừa làm khiến anh ấy hiểu thu nhập đến không hề dễ.",
+                        "answer":  "勤工俭学让他明白了收入来得并不容易。"
+                    },
+                    {
+                        "chinese":  "我想找一份周末兼职。",
+                        "pinyin":  "Wǒ xiǎng zhǎo yí fèn zhōumò jiānzhí.",
+                        "vietnamese":  "Tôi muốn tìm một công việc làm thêm cuối tuần.",
+                        "answer":  "我想找一份周末兼职。"
+                    },
+                    {
+                        "chinese":  "兼职虽然收入不高，但能积累社会经验。",
+                        "pinyin":  "Jiānzhí suīrán shōurù bù gāo, dàn néng jīlěi shèhuì jīngyàn.",
+                        "vietnamese":  "Làm thêm tuy thu nhập không cao nhưng có thể tích lũy kinh nghiệm xã hội.",
+                        "answer":  "兼职虽然收入不高，但能积累社会经验。"
+                    },
+                    {
+                        "chinese":  "他白天上课，晚上做兼职。",
+                        "pinyin":  "Tā báitiān shàngkè, wǎnshang zuò jiānzhí.",
+                        "vietnamese":  "Anh ấy ban ngày đi học, buổi tối làm thêm.",
+                        "answer":  "他白天上课，晚上做兼职。"
+                    },
+                    {
+                        "chinese":  "找兼职时，不能轻易相信网上的招聘信息。",
+                        "pinyin":  "Zhǎo jiānzhí shí, bù néng qīngyì xiāngxìn wǎngshàng de zhāopìn xìnxī.",
+                        "vietnamese":  "Khi tìm việc làm thêm, không thể dễ tin thông tin tuyển dụng trên mạng.",
+                        "answer":  "找兼职时，不能轻易相信网上的招聘信息。"
+                    },
+                    {
+                        "chinese":  "这份兼职和韩语相关，很适合他。",
+                        "pinyin":  "Zhè fèn jiānzhí hé Hányǔ xiāngguān, hěn shìhé tā.",
+                        "vietnamese":  "Công việc làm thêm này liên quan đến tiếng Hàn, rất phù hợp với anh ấy.",
+                        "answer":  "这份兼职和韩语相关，很适合他。"
+                    },
+                    {
+                        "chinese":  "家长不反对孩子兼职，但希望他注意安全。",
+                        "pinyin":  "Jiāzhǎng bù fǎnduì háizi jiānzhí, dàn xīwàng tā zhùyì ānquán.",
+                        "vietnamese":  "Phụ huynh không phản đối con làm thêm nhưng mong con chú ý an toàn.",
+                        "answer":  "家长不反对孩子兼职，但希望他注意安全。"
+                    },
+                    {
+                        "chinese":  "兼职工作不光看工资，也要看是否能学到东西。",
+                        "pinyin":  "Jiānzhí gōngzuò bùguāng kàn gōngzī, yě yào kàn shìfǒu néng xué dào dōngxi.",
+                        "vietnamese":  "Công việc làm thêm không chỉ nhìn lương mà còn phải xem có học được gì không.",
+                        "answer":  "兼职工作不光看工资，也要看是否能学到东西。"
+                    },
+                    {
+                        "chinese":  "他通过兼职认识了很多不同行业的人。",
+                        "pinyin":  "Tā tōngguò jiānzhí rènshi le hěn duō bùtóng hángyè de rén.",
+                        "vietnamese":  "Anh ấy thông qua làm thêm quen biết nhiều người ở các ngành khác nhau.",
+                        "answer":  "他通过兼职认识了很多不同行业的人。"
+                    },
+                    {
+                        "chinese":  "如果兼职太多，学习成绩或多或少会受影响。",
+                        "pinyin":  "Rúguǒ jiānzhí tài duō, xuéxí chéngjì huò duō huò shǎo huì shòu yǐngxiǎng.",
+                        "vietnamese":  "Nếu làm thêm quá nhiều, thành tích học tập ít nhiều sẽ bị ảnh hưởng.",
+                        "answer":  "如果兼职太多，学习成绩或多或少会受影响。"
+                    },
+                    {
+                        "chinese":  "这份兼职要求会整理图书和分类资料。",
+                        "pinyin":  "Zhè fèn jiānzhí yāoqiú huì zhěnglǐ túshū hé fēnlèi zīliào.",
+                        "vietnamese":  "Công việc làm thêm này yêu cầu biết sắp xếp sách và phân loại tài liệu.",
+                        "answer":  "这份兼职要求会整理图书和分类资料。"
+                    },
+                    {
+                        "chinese":  "他周末给小学生做家教。",
+                        "pinyin":  "Tā zhōumò gěi xiǎoxuéshēng zuò jiājiào.",
+                        "vietnamese":  "Cuối tuần anh ấy làm gia sư cho học sinh tiểu học.",
+                        "answer":  "他周末给小学生做家教。"
+                    },
+                    {
+                        "chinese":  "做家教需要耐心，也需要清楚的表达能力。",
+                        "pinyin":  "Zuò jiājiào xūyào nàixīn, yě xūyào qīngchu de biǎodá nénglì.",
+                        "vietnamese":  "Làm gia sư cần kiên nhẫn và cũng cần năng lực diễn đạt rõ ràng.",
+                        "answer":  "做家教需要耐心，也需要清楚的表达能力。"
+                    },
+                    {
+                        "chinese":  "她通过做家教增加了一部分收入。",
+                        "pinyin":  "Tā tōngguò zuò jiājiào zēngjiā le yí bùfen shōurù.",
+                        "vietnamese":  "Cô ấy thông qua làm gia sư tăng thêm một phần thu nhập.",
+                        "answer":  "她通过做家教增加了一部分收入。"
+                    },
+                    {
+                        "chinese":  "家教工作看起来轻松，其实很有挑战。",
+                        "pinyin":  "Jiājiào gōngzuò kàn qǐlái qīngsōng, qíshí hěn yǒu tiǎozhàn.",
+                        "vietnamese":  "Công việc gia sư nhìn có vẻ nhẹ nhàng, thật ra rất có thử thách.",
+                        "answer":  "家教工作看起来轻松，其实很有挑战。"
+                    },
+                    {
+                        "chinese":  "家长选择家教时，最关心老师是否负责。",
+                        "pinyin":  "Jiāzhǎng xuǎnzé jiājiào shí, zuì guānxīn lǎoshī shìfǒu fùzé.",
+                        "vietnamese":  "Khi phụ huynh chọn gia sư, quan tâm nhất là giáo viên có trách nhiệm không.",
+                        "answer":  "家长选择家教时，最关心老师是否负责。"
+                    },
+                    {
+                        "chinese":  "这份家教兼职每周两次，时间比较稳定。",
+                        "pinyin":  "Zhè fèn jiājiào jiānzhí měi zhōu liǎng cì, shíjiān bǐjiào wěndìng.",
+                        "vietnamese":  "Công việc gia sư làm thêm này mỗi tuần hai lần, thời gian khá ổn định.",
+                        "answer":  "这份家教兼职每周两次，时间比较稳定。"
+                    },
+                    {
+                        "chinese":  "他把家教经历写在简历的工作经验里。",
+                        "pinyin":  "Tā bǎ jiājiào jīnglì xiě zài jiǎnlì de gōngzuò jīngyàn lǐ.",
+                        "vietnamese":  "Anh ấy viết kinh nghiệm gia sư vào phần kinh nghiệm làm việc trong CV.",
+                        "answer":  "他把家教经历写在简历的工作经验里。"
+                    },
+                    {
+                        "chinese":  "做家教不光要会知识，还要懂学生心理。",
+                        "pinyin":  "Zuò jiājiào bùguāng yào huì zhīshi, hái yào dǒng xuésheng xīnlǐ.",
+                        "vietnamese":  "Làm gia sư không chỉ phải biết kiến thức mà còn phải hiểu tâm lý học sinh.",
+                        "answer":  "做家教不光要会知识，还要懂学生心理。"
+                    },
+                    {
+                        "chinese":  "他第一次做家教时，紧张得说话都不自然。",
+                        "pinyin":  "Tā dì yī cì zuò jiājiào shí, jǐnzhāng de shuōhuà dōu bù zìrán.",
+                        "vietnamese":  "Lần đầu làm gia sư, anh ấy căng thẳng đến mức nói chuyện cũng không tự nhiên.",
+                        "answer":  "他第一次做家教时，紧张得说话都不自然。"
+                    },
+                    {
+                        "chinese":  "如果家教效果好，家长一般会继续请你。",
+                        "pinyin":  "Rúguǒ jiājiào xiàoguǒ hǎo, jiāzhǎng yìbān huì jìxù qǐng nǐ.",
+                        "vietnamese":  "Nếu hiệu quả gia sư tốt, phụ huynh thường sẽ tiếp tục mời bạn.",
+                        "answer":  "如果家教效果好，家长一般会继续请你。"
+                    },
+                    {
+                        "chinese":  "家长希望孩子能找到合适的学习方法。",
+                        "pinyin":  "Jiāzhǎng xīwàng háizi néng zhǎodào héshì de xuéxí fāngfǎ.",
+                        "vietnamese":  "Phụ huynh hy vọng con có thể tìm được phương pháp học phù hợp.",
+                        "answer":  "家长希望孩子能找到合适的学习方法。"
+                    },
+                    {
+                        "chinese":  "面试家教时，家长问了很多具体问题。",
+                        "pinyin":  "Miànshì jiājiào shí, jiāzhǎng wèn le hěn duō jùtǐ wèntí.",
+                        "vietnamese":  "Khi phỏng vấn gia sư, phụ huynh hỏi rất nhiều vấn đề cụ thể.",
+                        "answer":  "面试家教时，家长问了很多具体问题。"
+                    },
+                    {
+                        "chinese":  "家长不光看成绩，也看老师的责任心。",
+                        "pinyin":  "Jiāzhǎng bùguāng kàn chéngjì, yě kàn lǎoshī de zérènxīn.",
+                        "vietnamese":  "Phụ huynh không chỉ xem thành tích mà cũng xem tinh thần trách nhiệm của giáo viên.",
+                        "answer":  "家长不光看成绩，也看老师的责任心。"
+                    },
+                    {
+                        "chinese":  "有些家长过分着急，反而给孩子很大压力。",
+                        "pinyin":  "Yǒuxiē jiāzhǎng guòfèn zháojí, fǎn\u0027ér gěi háizi hěn dà yālì.",
+                        "vietnamese":  "Một số phụ huynh quá sốt ruột, ngược lại tạo áp lực lớn cho con.",
+                        "answer":  "有些家长过分着急，反而给孩子很大压力。"
+                    },
+                    {
+                        "chinese":  "做家教要学会和家长沟通。",
+                        "pinyin":  "Zuò jiājiào yào xuéhuì hé jiāzhǎng gōutōng.",
+                        "vietnamese":  "Làm gia sư phải học cách giao tiếp với phụ huynh.",
+                        "answer":  "做家教要学会和家长沟通。"
+                    },
+                    {
+                        "chinese":  "家长提出的要求不一定都合理。",
+                        "pinyin":  "Jiāzhǎng tíchū de yāoqiú bù yídìng dōu hélǐ.",
+                        "vietnamese":  "Yêu cầu phụ huynh đưa ra không nhất định đều hợp lý.",
+                        "answer":  "家长提出的要求不一定都合理。"
+                    },
+                    {
+                        "chinese":  "如果家长不信任你，家教工作很难继续。",
+                        "pinyin":  "Rúguǒ jiāzhǎng bú xìnrèn nǐ, jiājiào gōngzuò hěn nán jìxù.",
+                        "vietnamese":  "Nếu phụ huynh không tin tưởng bạn, công việc gia sư rất khó tiếp tục.",
+                        "answer":  "如果家长不信任你，家教工作很难继续。"
+                    },
+                    {
+                        "chinese":  "这位家长对孩子很严格，但态度很公平。",
+                        "pinyin":  "Zhè wèi jiāzhǎng duì háizi hěn yángé, dàn tàidu hěn gōngpíng.",
+                        "vietnamese":  "Vị phụ huynh này rất nghiêm với con nhưng thái độ rất công bằng.",
+                        "answer":  "这位家长对孩子很严格，但态度很公平。"
+                    },
+                    {
+                        "chinese":  "家长的支持对孩子建立自信很重要。",
+                        "pinyin":  "Jiāzhǎng de zhīchí duì háizi jiànlì zìxìn hěn zhòngyào.",
+                        "vietnamese":  "Sự ủng hộ của phụ huynh rất quan trọng đối với việc xây dựng tự tin của con.",
+                        "answer":  "家长的支持对孩子建立自信很重要。"
+                    },
+                    {
+                        "chinese":  "家长和老师合作，孩子的进步会更明显。",
+                        "pinyin":  "Jiāzhǎng hé lǎoshī hézuò, háizi de jìnbù huì gèng míngxiǎn.",
+                        "vietnamese":  "Phụ huynh và giáo viên hợp tác, tiến bộ của con sẽ rõ hơn.",
+                        "answer":  "家长和老师合作，孩子的进步会更明显。"
+                    },
+                    {
+                        "chinese":  "他的兼职收入虽然不高，但够生活费。",
+                        "pinyin":  "Tā de jiānzhí shōurù suīrán bù gāo, dàn gòu shēnghuófèi.",
+                        "vietnamese":  "Thu nhập làm thêm của anh ấy tuy không cao nhưng đủ chi phí sinh hoạt.",
+                        "answer":  "他的兼职收入虽然不高，但够生活费。"
+                    },
+                    {
+                        "chinese":  "做家教的收入比在餐厅打工高一些。",
+                        "pinyin":  "Zuò jiājiào de shōurù bǐ zài cāntīng dǎgōng gāo yìxiē.",
+                        "vietnamese":  "Thu nhập làm gia sư cao hơn làm thêm ở nhà hàng một chút.",
+                        "answer":  "做家教的收入比在餐厅打工高一些。"
+                    },
+                    {
+                        "chinese":  "收入稳定以后，他终于不用向家里要钱了。",
+                        "pinyin":  "Shōurù wěndìng yǐhòu, tā zhōngyú búyòng xiàng jiā lǐ yào qián le.",
+                        "vietnamese":  "Sau khi thu nhập ổn định, cuối cùng anh ấy không cần xin tiền nhà nữa.",
+                        "answer":  "收入稳定以后，他终于不用向家里要钱了。"
+                    },
+                    {
+                        "chinese":  "这份职位的收入不错，但工作时间很长。",
+                        "pinyin":  "Zhè fèn zhíwèi de shōurù búcuò, dàn gōngzuò shíjiān hěn cháng.",
+                        "vietnamese":  "Thu nhập của vị trí này khá tốt nhưng thời gian làm việc rất dài.",
+                        "answer":  "这份职位的收入不错，但工作时间很长。"
+                    },
+                    {
+                        "chinese":  "他跳槽以后，收入提高了不少。",
+                        "pinyin":  "Tā tiàocáo yǐhòu, shōurù tígāo le bù shǎo.",
+                        "vietnamese":  "Sau khi nhảy việc, thu nhập của anh ấy tăng lên khá nhiều.",
+                        "answer":  "他跳槽以后，收入提高了不少。"
+                    },
+                    {
+                        "chinese":  "高收入不一定等于高幸福感。",
+                        "pinyin":  "Gāo shōurù bù yídìng děngyú gāo xìngfúgǎn.",
+                        "vietnamese":  "Thu nhập cao không nhất định tương đương cảm giác hạnh phúc cao.",
+                        "answer":  "高收入不一定等于高幸福感。"
+                    },
+                    {
+                        "chinese":  "家长关心家教的收入，也关心教学质量。",
+                        "pinyin":  "Jiāzhǎng guānxīn jiājiào de shōurù, yě guānxīn jiàoxué zhìliàng.",
+                        "vietnamese":  "Phụ huynh quan tâm thu nhập của gia sư và cũng quan tâm chất lượng dạy học.",
+                        "answer":  "家长关心家教的收入，也关心教学质量。"
+                    },
+                    {
+                        "chinese":  "这家公司招聘助手，收入和能力有关。",
+                        "pinyin":  "Zhè jiā gōngsī zhāopìn zhùshǒu, shōurù hé nénglì yǒuguān.",
+                        "vietnamese":  "Công ty này tuyển trợ lý, thu nhập liên quan đến năng lực.",
+                        "answer":  "这家公司招聘助手，收入和能力有关。"
+                    },
+                    {
+                        "chinese":  "兼职收入或多或少能减轻学生压力。",
+                        "pinyin":  "Jiānzhí shōurù huò duō huò shǎo néng jiǎnqīng xuésheng yālì.",
+                        "vietnamese":  "Thu nhập làm thêm ít nhiều có thể giảm áp lực cho sinh viên.",
+                        "answer":  "兼职收入或多或少能减轻学生压力。"
+                    },
+                    {
+                        "chinese":  "如果收入太低，他没准儿会再次跳槽。",
+                        "pinyin":  "Rúguǒ shōurù tài dī, tā méizhǔnr huì zàicì tiàocáo.",
+                        "vietnamese":  "Nếu thu nhập quá thấp, biết đâu anh ấy sẽ nhảy việc lần nữa.",
+                        "answer":  "如果收入太低，他没准儿会再次跳槽。"
+                    },
+                    {
+                        "chinese":  "他跳槽不是因为收入，而是因为发展空间。",
+                        "pinyin":  "Tā tiàocáo bú shì yīnwèi shōurù, ér shì yīnwèi fāzhǎn kōngjiān.",
+                        "vietnamese":  "Anh ấy nhảy việc không phải vì thu nhập mà vì không gian phát triển.",
+                        "answer":  "他跳槽不是因为收入，而是因为发展空间。"
+                    },
+                    {
+                        "chinese":  "跳槽以前，一定要认真了解新行业。",
+                        "pinyin":  "Tiàocáo yǐqián, yídìng yào rènzhēn liǎojiě xīn hángyè.",
+                        "vietnamese":  "Trước khi nhảy việc, nhất định phải tìm hiểu nghiêm túc ngành mới.",
+                        "answer":  "跳槽以前，一定要认真了解新行业。"
+                    },
+                    {
+                        "chinese":  "他刚工作一年，就已经跳槽两次了。",
+                        "pinyin":  "Tā gāng gōngzuò yì nián, jiù yǐjīng tiàocáo liǎng cì le.",
+                        "vietnamese":  "Anh ấy mới làm việc một năm mà đã nhảy việc hai lần rồi.",
+                        "answer":  "他刚工作一年，就已经跳槽两次了。"
+                    },
+                    {
+                        "chinese":  "频繁跳槽可能会影响简历的稳定性。",
+                        "pinyin":  "Pínfán tiàocáo kěnéng huì yǐngxiǎng jiǎnlì de wěndìngxìng.",
+                        "vietnamese":  "Nhảy việc thường xuyên có thể ảnh hưởng tính ổn định của CV.",
+                        "answer":  "频繁跳槽可能会影响简历的稳定性。"
+                    },
+                    {
+                        "chinese":  "就算工作有挑战，也不要轻易跳槽。",
+                        "pinyin":  "Jiùsuàn gōngzuò yǒu tiǎozhàn, yě búyào qīngyì tiàocáo.",
+                        "vietnamese":  "Cho dù công việc có thử thách, cũng đừng dễ dàng nhảy việc.",
+                        "answer":  "就算工作有挑战，也不要轻易跳槽。"
+                    },
+                    {
+                        "chinese":  "跳槽以后，他积累了更多行业经验。",
+                        "pinyin":  "Tiàocáo yǐhòu, tā jīlěi le gèng duō hángyè jīngyàn.",
+                        "vietnamese":  "Sau khi nhảy việc, anh ấy tích lũy thêm nhiều kinh nghiệm ngành nghề.",
+                        "answer":  "跳槽以后，他积累了更多行业经验。"
+                    },
+                    {
+                        "chinese":  "家长不理解年轻人为什么总想跳槽。",
+                        "pinyin":  "Jiāzhǎng bù lǐjiě niánqīng rén wèishénme zǒng xiǎng tiàocáo.",
+                        "vietnamese":  "Phụ huynh không hiểu vì sao người trẻ cứ muốn nhảy việc.",
+                        "answer":  "家长不理解年轻人为什么总想跳槽。"
+                    },
+                    {
+                        "chinese":  "跳槽不光看工资，还要看职位是否合适。",
+                        "pinyin":  "Tiàocáo bùguāng kàn gōngzī, hái yào kàn zhíwèi shìfǒu héshì.",
+                        "vietnamese":  "Nhảy việc không chỉ xem lương mà còn phải xem vị trí có phù hợp không.",
+                        "answer":  "跳槽不光看工资，还要看职位是否合适。"
+                    },
+                    {
+                        "chinese":  "他跳槽以后，终于找到了相关行业的工作。",
+                        "pinyin":  "Tā tiàocáo yǐhòu, zhōngyú zhǎodào le xiāngguān hángyè de gōngzuò.",
+                        "vietnamese":  "Sau khi nhảy việc, cuối cùng anh ấy tìm được công việc trong ngành liên quan.",
+                        "answer":  "他跳槽以后，终于找到了相关行业的工作。"
+                    },
+                    {
+                        "chinese":  "如果只是因为无聊就跳槽，没准儿会后悔。",
+                        "pinyin":  "Rúguǒ zhǐshì yīnwèi wúliáo jiù tiàocáo, méizhǔnr huì hòuhuǐ.",
+                        "vietnamese":  "Nếu chỉ vì buồn chán mà nhảy việc, biết đâu sẽ hối hận.",
+                        "answer":  "如果只是因为无聊就跳槽，没准儿会后悔。"
+                    },
+                    {
+                        "chinese":  "这家公司正在招聘图书管理员。",
+                        "pinyin":  "Zhè jiā gōngsī zhèngzài zhāopìn túshū guǎnlǐyuán.",
+                        "vietnamese":  "Công ty này đang tuyển nhân viên quản lý thư viện/sách.",
+                        "answer":  "这家公司正在招聘图书管理员。"
+                    },
+                    {
+                        "chinese":  "学校网站上发布了新的招聘信息。",
+                        "pinyin":  "Xuéxiào wǎngzhàn shàng fābù le xīn de zhāopìn xìnxī.",
+                        "vietnamese":  "Trên website trường đã đăng thông tin tuyển dụng mới.",
+                        "answer":  "学校网站上发布了新的招聘信息。"
+                    },
+                    {
+                        "chinese":  "招聘广告写得很吸引人，但要小心骗子。",
+                        "pinyin":  "Zhāopìn guǎnggào xiě de hěn xīyǐn rén, dàn yào xiǎoxīn piànzi.",
+                        "vietnamese":  "Quảng cáo tuyển dụng viết rất thu hút nhưng phải cẩn thận kẻ lừa đảo.",
+                        "answer":  "招聘广告写得很吸引人，但要小心骗子。"
+                    },
+                    {
+                        "chinese":  "这次招聘不光看学历，也看实际能力。",
+                        "pinyin":  "Zhè cì zhāopìn bùguāng kàn xuélì, yě kàn shíjì nénglì.",
+                        "vietnamese":  "Lần tuyển dụng này không chỉ xem bằng cấp mà còn xem năng lực thực tế.",
+                        "answer":  "这次招聘不光看学历，也看实际能力。"
+                    },
+                    {
+                        "chinese":  "据招聘要求，应聘者需要会韩语。",
+                        "pinyin":  "Jù zhāopìn yāoqiú, yìngpìnzhě xūyào huì Hányǔ.",
+                        "vietnamese":  "Theo yêu cầu tuyển dụng, ứng viên cần biết tiếng Hàn.",
+                        "answer":  "据招聘要求，应聘者需要会韩语。"
+                    },
+                    {
+                        "chinese":  "招聘单位要求先把简历发到邮箱。",
+                        "pinyin":  "Zhāopìn dānwèi yāoqiú xiān bǎ jiǎnlì fā dào yóuxiāng.",
+                        "vietnamese":  "Đơn vị tuyển dụng yêu cầu gửi CV vào email trước.",
+                        "answer":  "招聘单位要求先把简历发到邮箱。"
+                    },
+                    {
+                        "chinese":  "他看到招聘信息以后，马上准备应聘。",
+                        "pinyin":  "Tā kàndào zhāopìn xìnxī yǐhòu, mǎshàng zhǔnbèi yìngpìn.",
+                        "vietnamese":  "Sau khi thấy thông tin tuyển dụng, anh ấy lập tức chuẩn bị ứng tuyển.",
+                        "answer":  "他看到招聘信息以后，马上准备应聘。"
+                    },
+                    {
+                        "chinese":  "招聘职位很多，但真正适合他的不多。",
+                        "pinyin":  "Zhāopìn zhíwèi hěn duō, dàn zhēnzhèng shìhé tā de bù duō.",
+                        "vietnamese":  "Vị trí tuyển dụng rất nhiều nhưng thật sự phù hợp với anh ấy không nhiều.",
+                        "answer":  "招聘职位很多，但真正适合他的不多。"
+                    },
+                    {
+                        "chinese":  "这次招聘给学生提供了勤工俭学机会。",
+                        "pinyin":  "Zhè cì zhāopìn gěi xuésheng tígōng le qín gōng jiǎn xué jīhuì.",
+                        "vietnamese":  "Lần tuyển dụng này cung cấp cơ hội vừa học vừa làm cho sinh viên.",
+                        "answer":  "这次招聘给学生提供了勤工俭学机会。"
+                    },
+                    {
+                        "chinese":  "招聘过程应该公平，不能只看关系。",
+                        "pinyin":  "Zhāopìn guòchéng yīnggāi gōngpíng, bù néng zhǐ kàn guānxi.",
+                        "vietnamese":  "Quá trình tuyển dụng nên công bằng, không thể chỉ xem quan hệ.",
+                        "answer":  "招聘过程应该公平，不能只看关系。"
+                    },
+                    {
+                        "chinese":  "图书馆里有很多中文图书。",
+                        "pinyin":  "Túshūguǎn lǐ yǒu hěn duō Zhōngwén túshū.",
+                        "vietnamese":  "Trong thư viện có rất nhiều sách tiếng Trung.",
+                        "answer":  "图书馆里有很多中文图书。"
+                    },
+                    {
+                        "chinese":  "图书管理员负责整理和分类图书。",
+                        "pinyin":  "Túshū guǎnlǐyuán fùzé zhěnglǐ hé fēnlèi túshū.",
+                        "vietnamese":  "Nhân viên quản lý sách phụ trách sắp xếp và phân loại sách.",
+                        "answer":  "图书管理员负责整理和分类图书。"
+                    },
+                    {
+                        "chinese":  "这些图书和历史文化相关。",
+                        "pinyin":  "Zhèxiē túshū hé lìshǐ wénhuà xiāngguān.",
+                        "vietnamese":  "Những sách này liên quan đến văn hóa lịch sử.",
+                        "answer":  "这些图书和历史文化相关。"
+                    },
+                    {
+                        "chinese":  "他利用兼职时间整理旧图书。",
+                        "pinyin":  "Tā lìyòng jiānzhí shíjiān zhěnglǐ jiù túshū.",
+                        "vietnamese":  "Anh ấy tận dụng thời gian làm thêm để sắp xếp sách cũ.",
+                        "answer":  "他利用兼职时间整理旧图书。"
+                    },
+                    {
+                        "chinese":  "学校准备购买一批韩文图书。",
+                        "pinyin":  "Xuéxiào zhǔnbèi gòumǎi yì pī Hánwén túshū.",
+                        "vietnamese":  "Trường chuẩn bị mua một lô sách chữ Hàn.",
+                        "answer":  "学校准备购买一批韩文图书。"
+                    },
+                    {
+                        "chinese":  "图书分类清楚以后，学生查找会更方便。",
+                        "pinyin":  "Túshū fēnlèi qīngchu yǐhòu, xuésheng cházhǎo huì gèng fāngbiàn.",
+                        "vietnamese":  "Sau khi sách được phân loại rõ ràng, học sinh tra tìm sẽ tiện hơn.",
+                        "answer":  "图书分类清楚以后，学生查找会更方便。"
+                    },
+                    {
+                        "chinese":  "他应聘的职位需要管理图书和资料。",
+                        "pinyin":  "Tā yìngpìn de zhíwèi xūyào guǎnlǐ túshū hé zīliào.",
+                        "vietnamese":  "Vị trí anh ấy ứng tuyển cần quản lý sách và tài liệu.",
+                        "answer":  "他应聘的职位需要管理图书和资料。"
+                    },
+                    {
+                        "chinese":  "这些图书不光适合学生，也适合老师参考。",
+                        "pinyin":  "Zhèxiē túshū bùguāng shìhé xuésheng, yě shìhé lǎoshī cānkǎo.",
+                        "vietnamese":  "Những sách này không chỉ phù hợp học sinh mà cũng phù hợp giáo viên tham khảo.",
+                        "answer":  "这些图书不光适合学生，也适合老师参考。"
+                    },
+                    {
+                        "chinese":  "图书行业正在受到网络阅读的挑战。",
+                        "pinyin":  "Túshū hángyè zhèngzài shòudào wǎngluò yuèdú de tiǎozhàn.",
+                        "vietnamese":  "Ngành sách đang chịu thử thách từ đọc online.",
+                        "answer":  "图书行业正在受到网络阅读的挑战。"
+                    },
+                    {
+                        "chinese":  "如果图书摆放胡乱，管理员会很难工作。",
+                        "pinyin":  "Rúguǒ túshū bǎifàng húluàn, guǎnlǐyuán huì hěn nán gōngzuò.",
+                        "vietnamese":  "Nếu sách được đặt lung tung, nhân viên quản lý sẽ rất khó làm việc.",
+                        "answer":  "如果图书摆放胡乱，管理员会很难工作。"
+                    },
+                    {
+                        "chinese":  "这个管理员每天负责检查图书馆秩序。",
+                        "pinyin":  "Zhège guǎnlǐyuán měitiān fùzé jiǎnchá túshūguǎn zhìxù.",
+                        "vietnamese":  "Nhân viên quản lý này mỗi ngày phụ trách kiểm tra trật tự thư viện.",
+                        "answer":  "这个管理员每天负责检查图书馆秩序。"
+                    },
+                    {
+                        "chinese":  "管理员提醒我们不要胡乱移动图书。",
+                        "pinyin":  "Guǎnlǐyuán tíxǐng wǒmen búyào húluàn yídòng túshū.",
+                        "vietnamese":  "Nhân viên quản lý nhắc chúng tôi đừng di chuyển sách lung tung.",
+                        "answer":  "管理员提醒我们不要胡乱移动图书。"
+                    },
+                    {
+                        "chinese":  "学校招聘了一名新的宿舍管理员。",
+                        "pinyin":  "Xuéxiào zhāopìn le yì míng xīn de sùshè guǎnlǐyuán.",
+                        "vietnamese":  "Trường tuyển một nhân viên quản lý ký túc xá mới.",
+                        "answer":  "学校招聘了一名新的宿舍管理员。"
+                    },
+                    {
+                        "chinese":  "图书管理员不光要整理书，还要帮助读者。",
+                        "pinyin":  "Túshū guǎnlǐyuán bùguāng yào zhěnglǐ shū, hái yào bāngzhù dúzhě.",
+                        "vietnamese":  "Nhân viên quản lý sách không chỉ phải sắp xếp sách mà còn phải giúp độc giả.",
+                        "answer":  "图书管理员不光要整理书，还要帮助读者。"
+                    },
+                    {
+                        "chinese":  "当管理员需要耐心和责任心。",
+                        "pinyin":  "Dāng guǎnlǐyuán xūyào nàixīn hé zérènxīn.",
+                        "vietnamese":  "Làm nhân viên quản lý cần kiên nhẫn và tinh thần trách nhiệm.",
+                        "answer":  "当管理员需要耐心和责任心。"
+                    },
+                    {
+                        "chinese":  "管理员把新书按语言分类。",
+                        "pinyin":  "Guǎnlǐyuán bǎ xīnshū àn yǔyán fēnlèi.",
+                        "vietnamese":  "Nhân viên quản lý phân loại sách mới theo ngôn ngữ.",
+                        "answer":  "管理员把新书按语言分类。"
+                    },
+                    {
+                        "chinese":  "他想应聘图书管理员的兼职职位。",
+                        "pinyin":  "Tā xiǎng yìngpìn túshū guǎnlǐyuán de jiānzhí zhíwèi.",
+                        "vietnamese":  "Anh ấy muốn ứng tuyển vị trí làm thêm nhân viên quản lý sách.",
+                        "answer":  "他想应聘图书管理员的兼职职位。"
+                    },
+                    {
+                        "chinese":  "管理员说，这批韩文图书还没有整理好。",
+                        "pinyin":  "Guǎnlǐyuán shuō, zhè pī Hánwén túshū hái méiyǒu zhěnglǐ hǎo.",
+                        "vietnamese":  "Nhân viên quản lý nói lô sách chữ Hàn này vẫn chưa được sắp xếp xong.",
+                        "answer":  "管理员说，这批韩文图书还没有整理好。"
+                    },
+                    {
+                        "chinese":  "如果设施出问题，可以联系管理员。",
+                        "pinyin":  "Rúguǒ shèshī chū wèntí, kěyǐ liánxì guǎnlǐyuán.",
+                        "vietnamese":  "Nếu cơ sở vật chất có vấn đề, có thể liên hệ nhân viên quản lý.",
+                        "answer":  "如果设施出问题，可以联系管理员。"
+                    },
+                    {
+                        "chinese":  "管理员的收入不高，但工作比较稳定。",
+                        "pinyin":  "Guǎnlǐyuán de shōurù bù gāo, dàn gōngzuò bǐjiào wěndìng.",
+                        "vietnamese":  "Thu nhập của nhân viên quản lý không cao nhưng công việc khá ổn định.",
+                        "answer":  "管理员的收入不高，但工作比较稳定。"
+                    },
+                    {
+                        "chinese":  "他准备明天去应聘这个职位。",
+                        "pinyin":  "Tā zhǔnbèi míngtiān qù yìngpìn zhège zhíwèi.",
+                        "vietnamese":  "Anh ấy chuẩn bị ngày mai đi ứng tuyển vị trí này.",
+                        "answer":  "他准备明天去应聘这个职位。"
+                    },
+                    {
+                        "chinese":  "应聘以前，最好先修改好简历。",
+                        "pinyin":  "Yìngpìn yǐqián, zuìhǎo xiān xiūgǎi hǎo jiǎnlì.",
+                        "vietnamese":  "Trước khi ứng tuyển, tốt nhất chỉnh sửa CV trước.",
+                        "answer":  "应聘以前，最好先修改好简历。"
+                    },
+                    {
+                        "chinese":  "她应聘的是图书管理员，不是家教。",
+                        "pinyin":  "Tā yìngpìn de shì túshū guǎnlǐyuán, bú shì jiājiào.",
+                        "vietnamese":  "Cô ấy ứng tuyển nhân viên quản lý sách, không phải gia sư.",
+                        "answer":  "她应聘的是图书管理员，不是家教。"
+                    },
+                    {
+                        "chinese":  "应聘兼职时，也要认真准备面试。",
+                        "pinyin":  "Yìngpìn jiānzhí shí, yě yào rènzhēn zhǔnbèi miànshì.",
+                        "vietnamese":  "Khi ứng tuyển việc làm thêm cũng phải chuẩn bị phỏng vấn nghiêm túc.",
+                        "answer":  "应聘兼职时，也要认真准备面试。"
+                    },
+                    {
+                        "chinese":  "他应聘成功以后，开始在图书馆工作。",
+                        "pinyin":  "Tā yìngpìn chénggōng yǐhòu, kāishǐ zài túshūguǎn gōngzuò.",
+                        "vietnamese":  "Sau khi ứng tuyển thành công, anh ấy bắt đầu làm việc ở thư viện.",
+                        "answer":  "他应聘成功以后，开始在图书馆工作。"
+                    },
+                    {
+                        "chinese":  "据招聘信息，应聘者需要会整理资料。",
+                        "pinyin":  "Jù zhāopìn xìnxī, yìngpìnzhě xūyào huì zhěnglǐ zīliào.",
+                        "vietnamese":  "Theo thông tin tuyển dụng, ứng viên cần biết sắp xếp tài liệu.",
+                        "answer":  "据招聘信息，应聘者需要会整理资料。"
+                    },
+                    {
+                        "chinese":  "应聘这个职位的人很多，竞争相当激烈。",
+                        "pinyin":  "Yìngpìn zhège zhíwèi de rén hěn duō, jìngzhēng xiāngdāng jīliè.",
+                        "vietnamese":  "Người ứng tuyển vị trí này rất nhiều, cạnh tranh khá khốc liệt.",
+                        "answer":  "应聘这个职位的人很多，竞争相当激烈。"
+                    },
+                    {
+                        "chinese":  "如果你有韩语特长，可以应聘代表团助手。",
+                        "pinyin":  "Rúguǒ nǐ yǒu Hányǔ tècháng, kěyǐ yìngpìn dàibiǎotuán zhùshǒu.",
+                        "vietnamese":  "Nếu bạn có sở trường tiếng Hàn, có thể ứng tuyển trợ lý đoàn đại biểu.",
+                        "answer":  "如果你有韩语特长，可以应聘代表团助手。"
+                    },
+                    {
+                        "chinese":  "他把简历发到邮箱以后，等着面试通知。",
+                        "pinyin":  "Tā bǎ jiǎnlì fā dào yóuxiāng yǐhòu, děngzhe miànshì tōngzhī.",
+                        "vietnamese":  "Sau khi gửi CV vào email, anh ấy chờ thông báo phỏng vấn.",
+                        "answer":  "他把简历发到邮箱以后，等着面试通知。"
+                    },
+                    {
+                        "chinese":  "应聘不是只看学历，还要看相关经验。",
+                        "pinyin":  "Yìngpìn bú shì zhǐ kàn xuélì, hái yào kàn xiāngguān jīngyàn.",
+                        "vietnamese":  "Ứng tuyển không phải chỉ xem bằng cấp mà còn xem kinh nghiệm liên quan.",
+                        "answer":  "应聘不是只看学历，还要看相关经验。"
+                    },
+                    {
+                        "chinese":  "我周末要整理房间和学习资料。",
+                        "pinyin":  "Wǒ zhōumò yào zhěnglǐ fángjiān hé xuéxí zīliào.",
+                        "vietnamese":  "Cuối tuần tôi phải sắp xếp phòng và tài liệu học.",
+                        "answer":  "我周末要整理房间和学习资料。"
+                    },
+                    {
+                        "chinese":  "图书管理员正在整理新到的图书。",
+                        "pinyin":  "Túshū guǎnlǐyuán zhèngzài zhěnglǐ xīn dào de túshū.",
+                        "vietnamese":  "Nhân viên quản lý sách đang sắp xếp sách mới đến.",
+                        "answer":  "图书管理员正在整理新到的图书。"
+                    },
+                    {
+                        "chinese":  "整理简历时，要突出自己的特长。",
+                        "pinyin":  "Zhěnglǐ jiǎnlì shí, yào tūchū zìjǐ de tècháng.",
+                        "vietnamese":  "Khi chỉnh lý CV, phải làm nổi bật sở trường của mình.",
+                        "answer":  "整理简历时，要突出自己的特长。"
+                    },
+                    {
+                        "chinese":  "如果资料不整理好，面试前会很紧张。",
+                        "pinyin":  "Rúguǒ zīliào bù zhěnglǐ hǎo, miànshì qián huì hěn jǐnzhāng.",
+                        "vietnamese":  "Nếu tài liệu không sắp xếp tốt, trước phỏng vấn sẽ rất căng thẳng.",
+                        "answer":  "如果资料不整理好，面试前会很紧张。"
+                    },
+                    {
+                        "chinese":  "他花了整整一天整理图书分类表。",
+                        "pinyin":  "Tā huā le zhěngzhěng yì tiān zhěnglǐ túshū fēnlèi biǎo.",
+                        "vietnamese":  "Anh ấy mất trọn một ngày sắp xếp bảng phân loại sách.",
+                        "answer":  "他花了整整一天整理图书分类表。"
+                    },
+                    {
+                        "chinese":  "整理工作看起来无聊，其实很考验耐心。",
+                        "pinyin":  "Zhěnglǐ gōngzuò kàn qǐlái wúliáo, qíshí hěn kǎoyàn nàixīn.",
+                        "vietnamese":  "Công việc sắp xếp nhìn có vẻ nhàm chán, thật ra rất thử thách sự kiên nhẫn.",
+                        "answer":  "整理工作看起来无聊，其实很考验耐心。"
+                    },
+                    {
+                        "chinese":  "她把韩文资料和中文资料分开整理。",
+                        "pinyin":  "Tā bǎ Hánwén zīliào hé Zhōngwén zīliào fēnkāi zhěnglǐ.",
+                        "vietnamese":  "Cô ấy tách tài liệu tiếng Hàn viết và tiếng Trung ra để sắp xếp.",
+                        "answer":  "她把韩文资料和中文资料分开整理。"
+                    },
+                    {
+                        "chinese":  "整理资料的关键是先确定分类标准。",
+                        "pinyin":  "Zhěnglǐ zīliào de guānjiàn shì xiān quèdìng fēnlèi biāozhǔn.",
+                        "vietnamese":  "Mấu chốt của sắp xếp tài liệu là xác định tiêu chuẩn phân loại trước.",
+                        "answer":  "整理资料的关键是先确定分类标准。"
+                    },
+                    {
+                        "chinese":  "他不光会整理图书，还会管理邮箱。",
+                        "pinyin":  "Tā bùguāng huì zhěnglǐ túshū, hái huì guǎnlǐ yóuxiāng.",
+                        "vietnamese":  "Anh ấy không chỉ biết sắp xếp sách mà còn biết quản lý email.",
+                        "answer":  "他不光会整理图书，还会管理邮箱。"
+                    },
+                    {
+                        "chinese":  "整理好以后，工作效率明显提高了。",
+                        "pinyin":  "Zhěnglǐ hǎo yǐhòu, gōngzuò xiàolǜ míngxiǎn tígāo le.",
+                        "vietnamese":  "Sau khi sắp xếp xong, hiệu suất làm việc nâng cao rõ rệt.",
+                        "answer":  "整理好以后，工作效率明显提高了。"
+                    },
+                    {
+                        "chinese":  "图书要按内容和语言进行分类。",
+                        "pinyin":  "Túshū yào àn nèiróng hé yǔyán jìnxíng fēnlèi.",
+                        "vietnamese":  "Sách phải được phân loại theo nội dung và ngôn ngữ.",
+                        "answer":  "图书要按内容和语言进行分类。"
+                    },
+                    {
+                        "chinese":  "管理员正在给新书分类。",
+                        "pinyin":  "Guǎnlǐyuán zhèngzài gěi xīnshū fēnlèi.",
+                        "vietnamese":  "Nhân viên quản lý đang phân loại sách mới.",
+                        "answer":  "管理员正在给新书分类。"
+                    },
+                    {
+                        "chinese":  "如果分类不清楚，学生找书会很麻烦。",
+                        "pinyin":  "Rúguǒ fēnlèi bù qīngchu, xuésheng zhǎo shū huì hěn máfan.",
+                        "vietnamese":  "Nếu phân loại không rõ, học sinh tìm sách sẽ rất phiền.",
+                        "answer":  "如果分类不清楚，学生找书会很麻烦。"
+                    },
+                    {
+                        "chinese":  "这些资料已经按照行业分类整理好了。",
+                        "pinyin":  "Zhèxiē zīliào yǐjīng ànzhào hángyè fēnlèi zhěnglǐ hǎo le.",
+                        "vietnamese":  "Những tài liệu này đã được sắp xếp theo phân loại ngành nghề rồi.",
+                        "answer":  "这些资料已经按照行业分类整理好了。"
+                    },
+                    {
+                        "chinese":  "韩文图书和韩语教材应该分开分类。",
+                        "pinyin":  "Hánwén túshū hé Hányǔ jiàocái yīnggāi fēnkāi fēnlèi.",
+                        "vietnamese":  "Sách chữ Hàn và giáo trình tiếng Hàn nên được phân loại riêng.",
+                        "answer":  "韩文图书和韩语教材应该分开分类。"
+                    },
+                    {
+                        "chinese":  "分类工作虽然无聊，但非常关键。",
+                        "pinyin":  "Fēnlèi gōngzuò suīrán wúliáo, dàn fēicháng guānjiàn.",
+                        "vietnamese":  "Công việc phân loại tuy nhàm chán nhưng vô cùng then chốt.",
+                        "answer":  "分类工作虽然无聊，但非常关键。"
+                    },
+                    {
+                        "chinese":  "他应聘的职位要求会分类和整理图书。",
+                        "pinyin":  "Tā yìngpìn de zhíwèi yāoqiú huì fēnlèi hé zhěnglǐ túshū.",
+                        "vietnamese":  "Vị trí anh ấy ứng tuyển yêu cầu biết phân loại và sắp xếp sách.",
+                        "answer":  "他应聘的职位要求会分类和整理图书。"
+                    },
+                    {
+                        "chinese":  "老师让我们把生词按词性分类。",
+                        "pinyin":  "Lǎoshī ràng wǒmen bǎ shēngcí àn cíxìng fēnlèi.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi phân loại từ mới theo từ loại.",
+                        "answer":  "老师让我们把生词按词性分类。"
+                    },
+                    {
+                        "chinese":  "分类以后，复习效率提高了很多。",
+                        "pinyin":  "Fēnlèi yǐhòu, fùxí xiàolǜ tígāo le hěn duō.",
+                        "vietnamese":  "Sau khi phân loại, hiệu quả ôn tập tăng lên rất nhiều.",
+                        "answer":  "分类以后，复习效率提高了很多。"
+                    },
+                    {
+                        "chinese":  "不同分类方式会影响资料使用效果。",
+                        "pinyin":  "Bùtóng fēnlèi fāngshì huì yǐngxiǎng zīliào shǐyòng xiàoguǒ.",
+                        "vietnamese":  "Cách phân loại khác nhau sẽ ảnh hưởng hiệu quả sử dụng tài liệu.",
+                        "answer":  "不同分类方式会影响资料使用效果。"
+                    },
+                    {
+                        "chinese":  "这本书是韩文版的旅游介绍。",
+                        "pinyin":  "Zhè běn shū shì Hánwén bǎn de lǚyóu jièshào.",
+                        "vietnamese":  "Cuốn sách này là bản chữ Hàn giới thiệu du lịch.",
+                        "answer":  "这本书是韩文版的旅游介绍。"
+                    },
+                    {
+                        "chinese":  "图书馆新买了一批韩文图书。",
+                        "pinyin":  "Túshūguǎn xīn mǎi le yì pī Hánwén túshū.",
+                        "vietnamese":  "Thư viện mới mua một lô sách chữ Hàn.",
+                        "answer":  "图书馆新买了一批韩文图书。"
+                    },
+                    {
+                        "chinese":  "他虽然会说韩语，但不太会看韩文。",
+                        "pinyin":  "Tā suīrán huì shuō Hányǔ, dàn bú tài huì kàn Hánwén.",
+                        "vietnamese":  "Tuy anh ấy biết nói tiếng Hàn nhưng không biết đọc chữ Hàn lắm.",
+                        "answer":  "他虽然会说韩语，但不太会看韩文。"
+                    },
+                    {
+                        "chinese":  "管理员把韩文资料放在二楼。",
+                        "pinyin":  "Guǎnlǐyuán bǎ Hánwén zīliào fàng zài èr lóu.",
+                        "vietnamese":  "Nhân viên quản lý đặt tài liệu chữ Hàn ở tầng hai.",
+                        "answer":  "管理员把韩文资料放在二楼。"
+                    },
+                    {
+                        "chinese":  "应聘这个职位，需要能看懂基本韩文。",
+                        "pinyin":  "Yìngpìn zhège zhíwèi, xūyào néng kàn dǒng jīběn Hánwén.",
+                        "vietnamese":  "Ứng tuyển vị trí này cần có thể đọc hiểu chữ Hàn cơ bản.",
+                        "answer":  "应聘这个职位，需要能看懂基本韩文。"
+                    },
+                    {
+                        "chinese":  "他把韩文邮件转发到了我的邮箱。",
+                        "pinyin":  "Tā bǎ Hánwén yóujiàn zhuǎnfā dào le wǒ de yóuxiāng.",
+                        "vietnamese":  "Anh ấy chuyển tiếp email tiếng Hàn viết đến hộp thư của tôi.",
+                        "answer":  "他把韩文邮件转发到了我的邮箱。"
+                    },
+                    {
+                        "chinese":  "这些韩文图书和韩国文化相关。",
+                        "pinyin":  "Zhèxiē Hánwén túshū hé Hánguó wénhuà xiāngguān.",
+                        "vietnamese":  "Những sách chữ Hàn này liên quan đến văn hóa Hàn Quốc.",
+                        "answer":  "这些韩文图书和韩国文化相关。"
+                    },
+                    {
+                        "chinese":  "韩文分类表需要重新整理一遍。",
+                        "pinyin":  "Hánwén fēnlèi biǎo xūyào chóngxīn zhěnglǐ yí biàn.",
+                        "vietnamese":  "Bảng phân loại chữ Hàn cần được sắp xếp lại một lượt.",
+                        "answer":  "韩文分类表需要重新整理一遍。"
+                    },
+                    {
+                        "chinese":  "代表团带来了几份韩文资料。",
+                        "pinyin":  "Dàibiǎotuán dài lái le jǐ fèn Hánwén zīliào.",
+                        "vietnamese":  "Đoàn đại biểu mang đến vài tài liệu chữ Hàn.",
+                        "answer":  "代表团带来了几份韩文资料。"
+                    },
+                    {
+                        "chinese":  "如果你会韩文，这份兼职会比较适合你。",
+                        "pinyin":  "Rúguǒ nǐ huì Hánwén, zhè fèn jiānzhí huì bǐjiào shìhé nǐ.",
+                        "vietnamese":  "Nếu bạn biết chữ Hàn, công việc làm thêm này sẽ khá phù hợp với bạn.",
+                        "answer":  "如果你会韩文，这份兼职会比较适合你。"
+                    },
+                    {
+                        "chinese":  "这个职位要求有相关工作经验。",
+                        "pinyin":  "Zhège zhíwèi yāoqiú yǒu xiāngguān gōngzuò jīngyàn.",
+                        "vietnamese":  "Vị trí này yêu cầu có kinh nghiệm làm việc liên quan.",
+                        "answer":  "这个职位要求有相关工作经验。"
+                    },
+                    {
+                        "chinese":  "他应聘的是图书管理员职位。",
+                        "pinyin":  "Tā yìngpìn de shì túshū guǎnlǐyuán zhíwèi.",
+                        "vietnamese":  "Anh ấy ứng tuyển vị trí nhân viên quản lý sách.",
+                        "answer":  "他应聘的是图书管理员职位。"
+                    },
+                    {
+                        "chinese":  "这个职位收入不高，但工作稳定。",
+                        "pinyin":  "Zhège zhíwèi shōurù bù gāo, dàn gōngzuò wěndìng.",
+                        "vietnamese":  "Vị trí này thu nhập không cao nhưng công việc ổn định.",
+                        "answer":  "这个职位收入不高，但工作稳定。"
+                    },
+                    {
+                        "chinese":  "招聘网站上有很多兼职职位。",
+                        "pinyin":  "Zhāopìn wǎngzhàn shàng yǒu hěn duō jiānzhí zhíwèi.",
+                        "vietnamese":  "Trên website tuyển dụng có nhiều vị trí làm thêm.",
+                        "answer":  "招聘网站上有很多兼职职位。"
+                    },
+                    {
+                        "chinese":  "她跳槽以后，得到了更高的职位。",
+                        "pinyin":  "Tā tiàocáo yǐhòu, dédào le gèng gāo de zhíwèi.",
+                        "vietnamese":  "Sau khi nhảy việc, cô ấy có được vị trí cao hơn.",
+                        "answer":  "她跳槽以后，得到了更高的职位。"
+                    },
+                    {
+                        "chinese":  "这个职位和韩语翻译相关。",
+                        "pinyin":  "Zhège zhíwèi hé Hányǔ fānyì xiāngguān.",
+                        "vietnamese":  "Vị trí này liên quan đến phiên dịch tiếng Hàn.",
+                        "answer":  "这个职位和韩语翻译相关。"
+                    },
+                    {
+                        "chinese":  "面试官问他为什么适合这个职位。",
+                        "pinyin":  "Miànshìguān wèn tā wèishénme shìhé zhège zhíwèi.",
+                        "vietnamese":  "Người phỏng vấn hỏi anh ấy vì sao phù hợp với vị trí này.",
+                        "answer":  "面试官问他为什么适合这个职位。"
+                    },
+                    {
+                        "chinese":  "申请职位以前，最好先了解行业情况。",
+                        "pinyin":  "Shēnqǐng zhíwèi yǐqián, zuìhǎo xiān liǎojiě hángyè qíngkuàng.",
+                        "vietnamese":  "Trước khi xin vị trí, tốt nhất tìm hiểu tình hình ngành nghề trước.",
+                        "answer":  "申请职位以前，最好先了解行业情况。"
+                    },
+                    {
+                        "chinese":  "这个职位不光需要能力，还需要责任心。",
+                        "pinyin":  "Zhège zhíwèi bùguāng xūyào nénglì, hái xūyào zérènxīn.",
+                        "vietnamese":  "Vị trí này không chỉ cần năng lực mà còn cần tinh thần trách nhiệm.",
+                        "answer":  "这个职位不光需要能力，还需要责任心。"
+                    },
+                    {
+                        "chinese":  "如果这个职位不合适，他没准儿会继续找。",
+                        "pinyin":  "Rúguǒ zhège zhíwèi bù héshì, tā méizhǔnr huì jìxù zhǎo.",
+                        "vietnamese":  "Nếu vị trí này không phù hợp, biết đâu anh ấy sẽ tiếp tục tìm.",
+                        "answer":  "如果这个职位不合适，他没准儿会继续找。"
+                    },
+                    {
+                        "chinese":  "请把相关资料发到我的邮箱。",
+                        "pinyin":  "Qǐng bǎ xiāngguān zīliào fā dào wǒ de yóuxiāng.",
+                        "vietnamese":  "Vui lòng gửi tài liệu liên quan vào email của tôi.",
+                        "answer":  "请把相关资料发到我的邮箱。"
+                    },
+                    {
+                        "chinese":  "这个职位需要相关行业经验。",
+                        "pinyin":  "Zhège zhíwèi xūyào xiāngguān hángyè jīngyàn.",
+                        "vietnamese":  "Vị trí này cần kinh nghiệm ngành liên quan.",
+                        "answer":  "这个职位需要相关行业经验。"
+                    },
+                    {
+                        "chinese":  "老师让我们查找和课文相关的图书。",
+                        "pinyin":  "Lǎoshī ràng wǒmen cházhǎo hé kèwén xiāngguān de túshū.",
+                        "vietnamese":  "Giáo viên bảo chúng tôi tìm sách liên quan đến bài khóa.",
+                        "answer":  "老师让我们查找和课文相关的图书。"
+                    },
+                    {
+                        "chinese":  "应聘以前，要准备好相关证件和简历。",
+                        "pinyin":  "Yìngpìn yǐqián, yào zhǔnbèi hǎo xiāngguān zhèngjiàn hé jiǎnlì.",
+                        "vietnamese":  "Trước khi ứng tuyển, phải chuẩn bị giấy tờ liên quan và CV.",
+                        "answer":  "应聘以前，要准备好相关证件和简历。"
+                    },
+                    {
+                        "chinese":  "这些问题都和收入相关。",
+                        "pinyin":  "Zhèxiē wèntí dōu hé shōurù xiāngguān.",
+                        "vietnamese":  "Những vấn đề này đều liên quan đến thu nhập.",
+                        "answer":  "这些问题都和收入相关。"
+                    },
+                    {
+                        "chinese":  "如果没有相关经验，可以先从兼职开始。",
+                        "pinyin":  "Rúguǒ méiyǒu xiāngguān jīngyàn, kěyǐ xiān cóng jiānzhí kāishǐ.",
+                        "vietnamese":  "Nếu không có kinh nghiệm liên quan, có thể bắt đầu từ làm thêm trước.",
+                        "answer":  "如果没有相关经验，可以先从兼职开始。"
+                    },
+                    {
+                        "chinese":  "这份招聘信息和图书管理相关。",
+                        "pinyin":  "Zhè fèn zhāopìn xìnxī hé túshū guǎnlǐ xiāngguān.",
+                        "vietnamese":  "Thông tin tuyển dụng này liên quan đến quản lý sách.",
+                        "answer":  "这份招聘信息和图书管理相关。"
+                    },
+                    {
+                        "chinese":  "相关资料已经整理好，随时可以发送。",
+                        "pinyin":  "Xiāngguān zīliào yǐjīng zhěnglǐ hǎo, suíshí kěyǐ fāsòng.",
+                        "vietnamese":  "Tài liệu liên quan đã được sắp xếp xong, có thể gửi bất cứ lúc nào.",
+                        "answer":  "相关资料已经整理好，随时可以发送。"
+                    },
+                    {
+                        "chinese":  "他对韩语相关行业很感兴趣。",
+                        "pinyin":  "Tā duì Hányǔ xiāngguān hángyè hěn gǎn xìngqù.",
+                        "vietnamese":  "Anh ấy rất hứng thú với ngành liên quan tiếng Hàn.",
+                        "answer":  "他对韩语相关行业很感兴趣。"
+                    },
+                    {
+                        "chinese":  "面试时，别胡乱回答和职位无关的问题。",
+                        "pinyin":  "Miànshì shí, bié húluàn huídá hé zhíwèi wúguān de wèntí.",
+                        "vietnamese":  "Khi phỏng vấn, đừng trả lời lung tung những vấn đề không liên quan đến vị trí.",
+                        "answer":  "面试时，别胡乱回答和职位无关的问题。"
+                    },
+                    {
+                        "chinese":  "旅游行业需要会外语的人才。",
+                        "pinyin":  "Lǚyóu hángyè xūyào huì wàiyǔ de réncái.",
+                        "vietnamese":  "Ngành du lịch cần nhân tài biết ngoại ngữ.",
+                        "answer":  "旅游行业需要会外语的人才。"
+                    },
+                    {
+                        "chinese":  "他跳槽以后进入了图书出版行业。",
+                        "pinyin":  "Tā tiàocáo yǐhòu jìnrù le túshū chūbǎn hángyè.",
+                        "vietnamese":  "Sau khi nhảy việc, anh ấy bước vào ngành xuất bản sách.",
+                        "answer":  "他跳槽以后进入了图书出版行业。"
+                    },
+                    {
+                        "chinese":  "不同行业对简历的要求不一样。",
+                        "pinyin":  "Bùtóng hángyè duì jiǎnlì de yāoqiú bù yíyàng.",
+                        "vietnamese":  "Các ngành khác nhau có yêu cầu đối với CV không giống nhau.",
+                        "answer":  "不同行业对简历的要求不一样。"
+                    },
+                    {
+                        "chinese":  "这个行业竞争激烈，但发展机会很多。",
+                        "pinyin":  "Zhège hángyè jìngzhēng jīliè, dàn fāzhǎn jīhuì hěn duō.",
+                        "vietnamese":  "Ngành này cạnh tranh khốc liệt nhưng cơ hội phát triển rất nhiều.",
+                        "answer":  "这个行业竞争激烈，但发展机会很多。"
+                    },
+                    {
+                        "chinese":  "据招聘信息，这个行业收入相当稳定。",
+                        "pinyin":  "Jù zhāopìn xìnxī, zhège hángyè shōurù xiāngdāng wěndìng.",
+                        "vietnamese":  "Theo thông tin tuyển dụng, thu nhập ngành này khá ổn định.",
+                        "answer":  "据招聘信息，这个行业收入相当稳定。"
+                    },
+                    {
+                        "chinese":  "想了解一个行业，不能只看工资。",
+                        "pinyin":  "Xiǎng liǎojiě yí ge hángyè, bù néng zhǐ kàn gōngzī.",
+                        "vietnamese":  "Muốn hiểu một ngành nghề, không thể chỉ nhìn lương.",
+                        "answer":  "想了解一个行业，不能只看工资。"
+                    },
+                    {
+                        "chinese":  "他在相关行业积累了三年经验。",
+                        "pinyin":  "Tā zài xiāngguān hángyè jīlěi le sān nián jīngyàn.",
+                        "vietnamese":  "Anh ấy đã tích lũy ba năm kinh nghiệm trong ngành liên quan.",
+                        "answer":  "他在相关行业积累了三年经验。"
+                    },
+                    {
+                        "chinese":  "这个行业不光需要专业能力，也需要沟通能力。",
+                        "pinyin":  "Zhège hángyè bùguāng xūyào zhuānyè nénglì, yě xūyào gōutōng nénglì.",
+                        "vietnamese":  "Ngành này không chỉ cần năng lực chuyên môn mà cũng cần năng lực giao tiếp.",
+                        "answer":  "这个行业不光需要专业能力，也需要沟通能力。"
+                    },
+                    {
+                        "chinese":  "选择行业时，要考虑自己的特长和兴趣。",
+                        "pinyin":  "Xuǎnzé hángyè shí, yào kǎolǜ zìjǐ de tècháng hé xìngqù.",
+                        "vietnamese":  "Khi chọn ngành nghề, phải cân nhắc sở trường và hứng thú của mình.",
+                        "answer":  "选择行业时，要考虑自己的特长和兴趣。"
+                    },
+                    {
+                        "chinese":  "如果行业方向不清楚，跳槽可能会走冤枉路。",
+                        "pinyin":  "Rúguǒ hángyè fāngxiàng bù qīngchu, tiàocáo kěnéng huì zǒu yuānwang lù.",
+                        "vietnamese":  "Nếu hướng ngành không rõ, nhảy việc có thể sẽ đi đường vòng oan.",
+                        "answer":  "如果行业方向不清楚，跳槽可能会走冤枉路。"
+                    },
+                    {
+                        "chinese":  "代表团明天上午到达学校。",
+                        "pinyin":  "Dàibiǎotuán míngtiān shàngwǔ dàodá xuéxiào.",
+                        "vietnamese":  "Đoàn đại biểu sáng mai đến trường.",
+                        "answer":  "代表团明天上午到达学校。"
+                    },
+                    {
+                        "chinese":  "学校需要招聘一名代表团助手。",
+                        "pinyin":  "Xuéxiào xūyào zhāopìn yì míng dàibiǎotuán zhùshǒu.",
+                        "vietnamese":  "Trường cần tuyển một trợ lý đoàn đại biểu.",
+                        "answer":  "学校需要招聘一名代表团助手。"
+                    },
+                    {
+                        "chinese":  "他会韩语，所以被安排接待韩国代表团。",
+                        "pinyin":  "Tā huì Hányǔ, suǒyǐ bèi ānpái jiēdài Hánguó dàibiǎotuán.",
+                        "vietnamese":  "Anh ấy biết tiếng Hàn nên được sắp xếp tiếp đón đoàn đại biểu Hàn Quốc.",
+                        "answer":  "他会韩语，所以被安排接待韩国代表团。"
+                    },
+                    {
+                        "chinese":  "代表团带来了很多韩文资料。",
+                        "pinyin":  "Dàibiǎotuán dài lái le hěn duō Hánwén zīliào.",
+                        "vietnamese":  "Đoàn đại biểu mang đến nhiều tài liệu chữ Hàn.",
+                        "answer":  "代表团带来了很多韩文资料。"
+                    },
+                    {
+                        "chinese":  "接待代表团不光要礼貌，还要反应快。",
+                        "pinyin":  "Jiēdài dàibiǎotuán bùguāng yào lǐmào, hái yào fǎnyìng kuài.",
+                        "vietnamese":  "Tiếp đón đoàn đại biểu không chỉ phải lịch sự mà còn phải phản ứng nhanh.",
+                        "answer":  "接待代表团不光要礼貌，还要反应快。"
+                    },
+                    {
+                        "chinese":  "这次代表团访问和教育行业相关。",
+                        "pinyin":  "Zhè cì dàibiǎotuán fǎngwèn hé jiàoyù hángyè xiāngguān.",
+                        "vietnamese":  "Chuyến thăm của đoàn đại biểu lần này liên quan đến ngành giáo dục.",
+                        "answer":  "这次代表团访问和教育行业相关。"
+                    },
+                    {
+                        "chinese":  "他把代表团的日程整理成表格。",
+                        "pinyin":  "Tā bǎ dàibiǎotuán de rìchéng zhěnglǐ chéng biǎogé.",
+                        "vietnamese":  "Anh ấy sắp xếp lịch trình của đoàn đại biểu thành bảng.",
+                        "answer":  "他把代表团的日程整理成表格。"
+                    },
+                    {
+                        "chinese":  "代表团成员对校园图书馆很感兴趣。",
+                        "pinyin":  "Dàibiǎotuán chéngyuán duì xiàoyuán túshūguǎn hěn gǎn xìngqù.",
+                        "vietnamese":  "Thành viên đoàn đại biểu rất hứng thú với thư viện khuôn viên.",
+                        "answer":  "代表团成员对校园图书馆很感兴趣。"
+                    },
+                    {
+                        "chinese":  "如果能参加接待代表团，他可以积累经验。",
+                        "pinyin":  "Rúguǒ néng cānjiā jiēdài dàibiǎotuán, tā kěyǐ jīlěi jīngyàn.",
+                        "vietnamese":  "Nếu có thể tham gia tiếp đón đoàn đại biểu, anh ấy có thể tích lũy kinh nghiệm.",
+                        "answer":  "如果能参加接待代表团，他可以积累经验。"
+                    },
+                    {
+                        "chinese":  "代表团离开以后，管理员继续整理资料。",
+                        "pinyin":  "Dàibiǎotuán líkāi yǐhòu, guǎnlǐyuán jìxù zhěnglǐ zīliào.",
+                        "vietnamese":  "Sau khi đoàn đại biểu rời đi, nhân viên quản lý tiếp tục sắp xếp tài liệu.",
+                        "answer":  "代表团离开以后，管理员继续整理资料。"
+                    },
+                    {
+                        "chinese":  "他的特长是韩语口语。",
+                        "pinyin":  "Tā de tècháng shì Hányǔ kǒuyǔ.",
+                        "vietnamese":  "Sở trường của anh ấy là khẩu ngữ tiếng Hàn.",
+                        "answer":  "他的特长是韩语口语。"
+                    },
+                    {
+                        "chinese":  "写简历时，要把自己的特长写清楚。",
+                        "pinyin":  "Xiě jiǎnlì shí, yào bǎ zìjǐ de tècháng xiě qīngchu.",
+                        "vietnamese":  "Khi viết CV, phải viết rõ sở trường của mình.",
+                        "answer":  "写简历时，要把自己的特长写清楚。"
+                    },
+                    {
+                        "chinese":  "每个人都有自己的特长，不要轻易否定自己。",
+                        "pinyin":  "Měi ge rén dōu yǒu zìjǐ de tècháng, búyào qīngyì fǒudìng zìjǐ.",
+                        "vietnamese":  "Mỗi người đều có sở trường riêng, đừng dễ dàng phủ nhận bản thân.",
+                        "answer":  "每个人都有自己的特长，不要轻易否定自己。"
+                    },
+                    {
+                        "chinese":  "这个职位要求应聘者有语言特长。",
+                        "pinyin":  "Zhège zhíwèi yāoqiú yìngpìnzhě yǒu yǔyán tècháng.",
+                        "vietnamese":  "Vị trí này yêu cầu ứng viên có sở trường ngôn ngữ.",
+                        "answer":  "这个职位要求应聘者有语言特长。"
+                    },
+                    {
+                        "chinese":  "她的特长不光是整理资料，还会分类图书。",
+                        "pinyin":  "Tā de tècháng bùguāng shì zhěnglǐ zīliào, hái huì fēnlèi túshū.",
+                        "vietnamese":  "Sở trường của cô ấy không chỉ là sắp xếp tài liệu mà còn biết phân loại sách.",
+                        "answer":  "她的特长不光是整理资料，还会分类图书。"
+                    },
+                    {
+                        "chinese":  "面试时，他自信地介绍了自己的特长。",
+                        "pinyin":  "Miànshì shí, tā zìxìn de jièshào le zìjǐ de tècháng.",
+                        "vietnamese":  "Khi phỏng vấn, anh ấy tự tin giới thiệu sở trường của mình.",
+                        "answer":  "面试时，他自信地介绍了自己的特长。"
+                    },
+                    {
+                        "chinese":  "如果特长和职位相关，录用机会会更大。",
+                        "pinyin":  "Rúguǒ tècháng hé zhíwèi xiāngguān, lùyòng jīhuì huì gèng dà.",
+                        "vietnamese":  "Nếu sở trường liên quan đến vị trí, cơ hội được tuyển sẽ lớn hơn.",
+                        "answer":  "如果特长和职位相关，录用机会会更大。"
+                    },
+                    {
+                        "chinese":  "做兼职也可以发现自己的特长。",
+                        "pinyin":  "Zuò jiānzhí yě kěyǐ fāxiàn zìjǐ de tècháng.",
+                        "vietnamese":  "Làm thêm cũng có thể phát hiện sở trường của bản thân.",
+                        "answer":  "做兼职也可以发现自己的特长。"
+                    },
+                    {
+                        "chinese":  "他的特长是和家长沟通，所以很适合做家教。",
+                        "pinyin":  "Tā de tècháng shì hé jiāzhǎng gōutōng, suǒyǐ hěn shìhé zuò jiājiào.",
+                        "vietnamese":  "Sở trường của anh ấy là giao tiếp với phụ huynh nên rất phù hợp làm gia sư.",
+                        "answer":  "他的特长是和家长沟通，所以很适合做家教。"
+                    },
+                    {
+                        "chinese":  "没有明显特长也没关系，可以慢慢积累。",
+                        "pinyin":  "Méiyǒu míngxiǎn tècháng yě méi guānxi, kěyǐ mànman jīlěi.",
+                        "vietnamese":  "Không có sở trường rõ ràng cũng không sao, có thể dần tích lũy.",
+                        "answer":  "没有明显特长也没关系，可以慢慢积累。"
+                    },
+                    {
+                        "chinese":  "他学了两年韩语，已经能简单交流。",
+                        "pinyin":  "Tā xué le liǎng nián Hányǔ, yǐjīng néng jiǎndān jiāoliú.",
+                        "vietnamese":  "Anh ấy học tiếng Hàn hai năm, đã có thể giao tiếp đơn giản.",
+                        "answer":  "他学了两年韩语，已经能简单交流。"
+                    },
+                    {
+                        "chinese":  "这个职位需要会韩语和中文。",
+                        "pinyin":  "Zhège zhíwèi xūyào huì Hányǔ hé Zhōngwén.",
+                        "vietnamese":  "Vị trí này cần biết tiếng Hàn và tiếng Trung.",
+                        "answer":  "这个职位需要会韩语和中文。"
+                    },
+                    {
+                        "chinese":  "她的韩语发音很好，面试时很有优势。",
+                        "pinyin":  "Tā de Hányǔ fāyīn hěn hǎo, miànshì shí hěn yǒu yōushì.",
+                        "vietnamese":  "Phát âm tiếng Hàn của cô ấy rất tốt, khi phỏng vấn rất có lợi thế.",
+                        "answer":  "她的韩语发音很好，面试时很有优势。"
+                    },
+                    {
+                        "chinese":  "会韩语的人可以应聘代表团助手。",
+                        "pinyin":  "Huì Hányǔ de rén kěyǐ yìngpìn dàibiǎotuán zhùshǒu.",
+                        "vietnamese":  "Người biết tiếng Hàn có thể ứng tuyển trợ lý đoàn đại biểu.",
+                        "answer":  "会韩语的人可以应聘代表团助手。"
+                    },
+                    {
+                        "chinese":  "他不光会韩语，还能看懂韩文资料。",
+                        "pinyin":  "Tā bùguāng huì Hányǔ, hái néng kàn dǒng Hánwén zīliào.",
+                        "vietnamese":  "Anh ấy không chỉ biết tiếng Hàn mà còn có thể đọc hiểu tài liệu chữ Hàn.",
+                        "answer":  "他不光会韩语，还能看懂韩文资料。"
+                    },
+                    {
+                        "chinese":  "学韩语需要长期积累词汇和语法。",
+                        "pinyin":  "Xué Hányǔ xūyào chángqī jīlěi cíhuì hé yǔfǎ.",
+                        "vietnamese":  "Học tiếng Hàn cần tích lũy từ vựng và ngữ pháp lâu dài.",
+                        "answer":  "学韩语需要长期积累词汇和语法。"
+                    },
+                    {
+                        "chinese":  "如果韩语是你的特长，就应该写进简历。",
+                        "pinyin":  "Rúguǒ Hányǔ shì nǐ de tècháng, jiù yīnggāi xiě jìn jiǎnlì.",
+                        "vietnamese":  "Nếu tiếng Hàn là sở trường của bạn thì nên viết vào CV.",
+                        "answer":  "如果韩语是你的特长，就应该写进简历。"
+                    },
+                    {
+                        "chinese":  "韩语相关行业的就业机会越来越多。",
+                        "pinyin":  "Hányǔ xiāngguān hángyè de jiùyè jīhuì yuèláiyuè duō.",
+                        "vietnamese":  "Cơ hội việc làm trong ngành liên quan tiếng Hàn ngày càng nhiều.",
+                        "answer":  "韩语相关行业的就业机会越来越多。"
+                    },
+                    {
+                        "chinese":  "他通过兼职练习韩语，也增加了收入。",
+                        "pinyin":  "Tā tōngguò jiānzhí liànxí Hányǔ, yě zēngjiā le shōurù.",
+                        "vietnamese":  "Anh ấy thông qua làm thêm luyện tiếng Hàn và cũng tăng thu nhập.",
+                        "answer":  "他通过兼职练习韩语，也增加了收入。"
+                    },
+                    {
+                        "chinese":  "面试官问他为什么选择学习韩语。",
+                        "pinyin":  "Miànshìguān wèn tā wèishénme xuǎnzé xuéxí Hányǔ.",
+                        "vietnamese":  "Người phỏng vấn hỏi anh ấy vì sao chọn học tiếng Hàn.",
+                        "answer":  "面试官问他为什么选择学习韩语。"
+                    },
+                    {
+                        "chinese":  "首先要整理图书，其次要更新分类表。",
+                        "pinyin":  "Shǒuxiān yào zhěnglǐ túshū, qícì yào gēngxīn fēnlèi biǎo.",
+                        "vietnamese":  "Trước tiên phải sắp xếp sách, tiếp theo phải cập nhật bảng phân loại.",
+                        "answer":  "首先要整理图书，其次要更新分类表。"
+                    },
+                    {
+                        "chinese":  "选择兼职时，首先看时间，其次看收入。",
+                        "pinyin":  "Xuǎnzé jiānzhí shí, shǒuxiān kàn shíjiān, qícì kàn shōurù.",
+                        "vietnamese":  "Khi chọn việc làm thêm, trước tiên xem thời gian, tiếp theo xem thu nhập.",
+                        "answer":  "选择兼职时，首先看时间，其次看收入。"
+                    },
+                    {
+                        "chinese":  "面试时，表达能力很重要，其次是相关经验。",
+                        "pinyin":  "Miànshì shí, biǎodá nénglì hěn zhòngyào, qícì shì xiāngguān jīngyàn.",
+                        "vietnamese":  "Khi phỏng vấn, năng lực diễn đạt rất quan trọng, tiếp theo là kinh nghiệm liên quan.",
+                        "answer":  "面试时，表达能力很重要，其次是相关经验。"
+                    },
+                    {
+                        "chinese":  "他喜欢图书行业，其次也对教育行业感兴趣。",
+                        "pinyin":  "Tā xǐhuan túshū hángyè, qícì yě duì jiàoyù hángyè gǎn xìngqù.",
+                        "vietnamese":  "Anh ấy thích ngành sách, tiếp theo cũng hứng thú với ngành giáo dục.",
+                        "answer":  "他喜欢图书行业，其次也对教育行业感兴趣。"
+                    },
+                    {
+                        "chinese":  "写简历要突出特长，其次要写清楚经历。",
+                        "pinyin":  "Xiě jiǎnlì yào tūchū tècháng, qícì yào xiě qīngchu jīnglì.",
+                        "vietnamese":  "Viết CV phải làm nổi bật sở trường, tiếp theo phải viết rõ kinh nghiệm.",
+                        "answer":  "写简历要突出特长，其次要写清楚经历。"
+                    },
+                    {
+                        "chinese":  "学韩语先练发音，其次再积累词汇。",
+                        "pinyin":  "Xué Hányǔ xiān liàn fāyīn, qícì zài jīlěi cíhuì.",
+                        "vietnamese":  "Học tiếng Hàn trước luyện phát âm, tiếp theo tích lũy từ vựng.",
+                        "answer":  "学韩语先练发音，其次再积累词汇。"
+                    },
+                    {
+                        "chinese":  "家长关心教学效果，其次才关心价格。",
+                        "pinyin":  "Jiāzhǎng guānxīn jiàoxué xiàoguǒ, qícì cái guānxīn jiàgé.",
+                        "vietnamese":  "Phụ huynh quan tâm hiệu quả dạy học, sau đó mới quan tâm giá.",
+                        "answer":  "家长关心教学效果，其次才关心价格。"
+                    },
+                    {
+                        "chinese":  "应聘这个职位，首先要会韩语，其次要会整理资料。",
+                        "pinyin":  "Yìngpìn zhège zhíwèi, shǒuxiān yào huì Hányǔ, qícì yào huì zhěnglǐ zīliào.",
+                        "vietnamese":  "Ứng tuyển vị trí này, trước hết phải biết tiếng Hàn, tiếp theo phải biết sắp xếp tài liệu.",
+                        "answer":  "应聘这个职位，首先要会韩语，其次要会整理资料。"
+                    },
+                    {
+                        "chinese":  "勤工俭学要注意学习，其次才是收入。",
+                        "pinyin":  "Qín gōng jiǎn xué yào zhùyì xuéxí, qícì cái shì shōurù.",
+                        "vietnamese":  "Vừa học vừa làm phải chú ý học tập, tiếp theo mới là thu nhập.",
+                        "answer":  "勤工俭学要注意学习，其次才是收入。"
+                    },
+                    {
+                        "chinese":  "这次招聘看重责任心，其次才看学历。",
+                        "pinyin":  "Zhè cì zhāopìn kànzhòng zérènxīn, qícì cái kàn xuélì.",
+                        "vietnamese":  "Lần tuyển dụng này coi trọng tinh thần trách nhiệm, tiếp theo mới xem bằng cấp.",
+                        "answer":  "这次招聘看重责任心，其次才看学历。"
+                    },
+                    {
+                        "chinese":  "经验需要慢慢积累，不能急。",
+                        "pinyin":  "Jīngyàn xūyào mànman jīlěi, bù néng jí.",
+                        "vietnamese":  "Kinh nghiệm cần tích lũy dần, không thể vội.",
+                        "answer":  "经验需要慢慢积累，不能急。"
+                    },
+                    {
+                        "chinese":  "兼职能帮助学生积累社会经验。",
+                        "pinyin":  "Jiānzhí néng bāngzhù xuésheng jīlěi shèhuì jīngyàn.",
+                        "vietnamese":  "Làm thêm có thể giúp sinh viên tích lũy kinh nghiệm xã hội.",
+                        "answer":  "兼职能帮助学生积累社会经验。"
+                    },
+                    {
+                        "chinese":  "他在图书行业积累了很多相关资料。",
+                        "pinyin":  "Tā zài túshū hángyè jīlěi le hěn duō xiāngguān zīliào.",
+                        "vietnamese":  "Anh ấy đã tích lũy nhiều tài liệu liên quan trong ngành sách.",
+                        "answer":  "他在图书行业积累了很多相关资料。"
+                    },
+                    {
+                        "chinese":  "学语言要长期积累，不能只靠考试前复习。",
+                        "pinyin":  "Xué yǔyán yào chángqī jīlěi, bù néng zhǐ kào kǎoshì qián fùxí.",
+                        "vietnamese":  "Học ngôn ngữ phải tích lũy lâu dài, không thể chỉ dựa vào ôn trước kỳ thi.",
+                        "answer":  "学语言要长期积累，不能只靠考试前复习。"
+                    },
+                    {
+                        "chinese":  "做家教的过程让她积累了教学经验。",
+                        "pinyin":  "Zuò jiājiào de guòchéng ràng tā jīlěi le jiàoxué jīngyàn.",
+                        "vietnamese":  "Quá trình làm gia sư khiến cô ấy tích lũy kinh nghiệm giảng dạy.",
+                        "answer":  "做家教的过程让她积累了教学经验。"
+                    },
+                    {
+                        "chinese":  "如果想跳槽，最好先积累足够能力。",
+                        "pinyin":  "Rúguǒ xiǎng tiàocáo, zuìhǎo xiān jīlěi zúgòu nénglì.",
+                        "vietnamese":  "Nếu muốn nhảy việc, tốt nhất tích lũy đủ năng lực trước.",
+                        "answer":  "如果想跳槽，最好先积累足够能力。"
+                    },
+                    {
+                        "chinese":  "韩语词汇积累越多，阅读韩文越轻松。",
+                        "pinyin":  "Hányǔ cíhuì jīlěi yuè duō, yuèdú Hánwén yuè qīngsōng.",
+                        "vietnamese":  "Từ vựng tiếng Hàn tích lũy càng nhiều, đọc chữ Hàn càng nhẹ nhàng.",
+                        "answer":  "韩语词汇积累越多，阅读韩文越轻松。"
+                    },
+                    {
+                        "chinese":  "这份工作不光有收入，也能积累人脉。",
+                        "pinyin":  "Zhè fèn gōngzuò bùguāng yǒu shōurù, yě néng jīlěi rénmài.",
+                        "vietnamese":  "Công việc này không chỉ có thu nhập mà còn có thể tích lũy quan hệ.",
+                        "answer":  "这份工作不光有收入，也能积累人脉。"
+                    },
+                    {
+                        "chinese":  "他通过接待代表团积累了口译经验。",
+                        "pinyin":  "Tā tōngguò jiēdài dàibiǎotuán jīlěi le kǒuyì jīngyàn.",
+                        "vietnamese":  "Anh ấy thông qua tiếp đón đoàn đại biểu tích lũy kinh nghiệm phiên dịch.",
+                        "answer":  "他通过接待代表团积累了口译经验。"
+                    },
+                    {
+                        "chinese":  "所有小小的付出，最后都会积累成能力。",
+                        "pinyin":  "Suǒyǒu xiǎo xiǎo de fùchū, zuìhòu dōu huì jīlěi chéng nénglì.",
+                        "vietnamese":  "Tất cả những nỗ lực nhỏ cuối cùng đều sẽ tích lũy thành năng lực.",
+                        "answer":  "所有小小的付出，最后都会积累成能力。"
+                    },
+                    {
+                        "chinese":  "他已经被那家公司录用了。",
+                        "pinyin":  "Tā yǐjīng bèi nà jiā gōngsī lùyòng le.",
+                        "vietnamese":  "Anh ấy đã được công ty đó nhận vào làm rồi.",
+                        "answer":  "他已经被那家公司录用了。"
+                    },
+                    {
+                        "chinese":  "如果面试表现好，录用机会会更大。",
+                        "pinyin":  "Rúguǒ miànshì biǎoxiàn hǎo, lùyòng jīhuì huì gèng dà.",
+                        "vietnamese":  "Nếu biểu hiện phỏng vấn tốt, cơ hội được tuyển sẽ lớn hơn.",
+                        "answer":  "如果面试表现好，录用机会会更大。"
+                    },
+                    {
+                        "chinese":  "学校录用了几名兼职图书管理员。",
+                        "pinyin":  "Xuéxiào lùyòng le jǐ míng jiānzhí túshū guǎnlǐyuán.",
+                        "vietnamese":  "Trường đã tuyển vài nhân viên quản lý sách làm thêm.",
+                        "answer":  "学校录用了几名兼职图书管理员。"
+                    },
+                    {
+                        "chinese":  "公司录用他，是因为他的韩语特长。",
+                        "pinyin":  "Gōngsī lùyòng tā, shì yīnwèi tā de Hányǔ tècháng.",
+                        "vietnamese":  "Công ty tuyển anh ấy vì sở trường tiếng Hàn của anh ấy.",
+                        "answer":  "公司录用他，是因为他的韩语特长。"
+                    },
+                    {
+                        "chinese":  "录用结果会通过邮箱通知。",
+                        "pinyin":  "Lùyòng jiéguǒ huì tōngguò yóuxiāng tōngzhī.",
+                        "vietnamese":  "Kết quả tuyển dụng sẽ thông báo qua email.",
+                        "answer":  "录用结果会通过邮箱通知。"
+                    },
+                    {
+                        "chinese":  "他虽然没有被录用，但积累了一次面试经验。",
+                        "pinyin":  "Tā suīrán méiyǒu bèi lùyòng, dàn jīlěi le yí cì miànshì jīngyàn.",
+                        "vietnamese":  "Tuy anh ấy không được nhận nhưng tích lũy một lần kinh nghiệm phỏng vấn.",
+                        "answer":  "他虽然没有被录用，但积累了一次面试经验。"
+                    },
+                    {
+                        "chinese":  "招聘单位最终录用了三名应聘者。",
+                        "pinyin":  "Zhāopìn dānwèi zuìzhōng lùyòng le sān míng yìngpìnzhě.",
+                        "vietnamese":  "Đơn vị tuyển dụng cuối cùng đã nhận ba ứng viên.",
+                        "answer":  "招聘单位最终录用了三名应聘者。"
+                    },
+                    {
+                        "chinese":  "如果你被录用，下周就可以开始工作。",
+                        "pinyin":  "Rúguǒ nǐ bèi lùyòng, xià zhōu jiù kěyǐ kāishǐ gōngzuò.",
+                        "vietnamese":  "Nếu bạn được tuyển, tuần sau có thể bắt đầu làm việc.",
+                        "answer":  "如果你被录用，下周就可以开始工作。"
+                    },
+                    {
+                        "chinese":  "这个职位录用要求很高，不容易通过。",
+                        "pinyin":  "Zhège zhíwèi lùyòng yāoqiú hěn gāo, bù róngyì tōngguò.",
+                        "vietnamese":  "Yêu cầu tuyển dụng của vị trí này rất cao, không dễ vượt qua.",
+                        "answer":  "这个职位录用要求很高，不容易通过。"
+                    },
+                    {
+                        "chinese":  "幸亏他提前发了简历，才有机会被录用。",
+                        "pinyin":  "Xìngkuī tā tíqián fā le jiǎnlì, cái yǒu jīhuì bèi lùyòng.",
+                        "vietnamese":  "May mà anh ấy gửi CV trước, mới có cơ hội được tuyển.",
+                        "answer":  "幸亏他提前发了简历，才有机会被录用。"
+                    },
+                    {
+                        "chinese":  "简历要写得清楚，不能太乱。",
+                        "pinyin":  "Jiǎnlì yào xiě de qīngchu, bù néng tài luàn.",
+                        "vietnamese":  "CV phải viết rõ ràng, không được quá lộn xộn.",
+                        "answer":  "简历要写得清楚，不能太乱。"
+                    },
+                    {
+                        "chinese":  "他把兼职经历写进了简历。",
+                        "pinyin":  "Tā bǎ jiānzhí jīnglì xiě jìn le jiǎnlì.",
+                        "vietnamese":  "Anh ấy viết kinh nghiệm làm thêm vào CV.",
+                        "answer":  "他把兼职经历写进了简历。"
+                    },
+                    {
+                        "chinese":  "面试前，我把简历重新整理了一遍。",
+                        "pinyin":  "Miànshì qián, wǒ bǎ jiǎnlì chóngxīn zhěnglǐ le yí biàn.",
+                        "vietnamese":  "Trước phỏng vấn, tôi đã sắp xếp lại CV một lượt.",
+                        "answer":  "面试前，我把简历重新整理了一遍。"
+                    },
+                    {
+                        "chinese":  "简历里最好突出和职位相关的经验。",
+                        "pinyin":  "Jiǎnlì lǐ zuìhǎo tūchū hé zhíwèi xiāngguān de jīngyàn.",
+                        "vietnamese":  "Trong CV tốt nhất làm nổi bật kinh nghiệm liên quan đến vị trí.",
+                        "answer":  "简历里最好突出和职位相关的经验。"
+                    },
+                    {
+                        "chinese":  "他把简历发到邮箱以后，马上收到回复。",
+                        "pinyin":  "Tā bǎ jiǎnlì fā dào yóuxiāng yǐhòu, mǎshàng shōu dào huífù.",
+                        "vietnamese":  "Sau khi anh ấy gửi CV vào email, lập tức nhận được phản hồi.",
+                        "answer":  "他把简历发到邮箱以后，马上收到回复。"
+                    },
+                    {
+                        "chinese":  "这份简历不光格式整洁，内容也很具体。",
+                        "pinyin":  "Zhè fèn jiǎnlì bùguāng géshì zhěngjié, nèiróng yě hěn jùtǐ.",
+                        "vietnamese":  "CV này không chỉ định dạng gọn gàng, nội dung cũng rất cụ thể.",
+                        "answer":  "这份简历不光格式整洁，内容也很具体。"
+                    },
+                    {
+                        "chinese":  "如果简历没有特长，录用机会可能会减少。",
+                        "pinyin":  "Rúguǒ jiǎnlì méiyǒu tècháng, lùyòng jīhuì kěnéng huì jiǎnshǎo.",
+                        "vietnamese":  "Nếu CV không có sở trường, cơ hội được tuyển có thể giảm.",
+                        "answer":  "如果简历没有特长，录用机会可能会减少。"
+                    },
+                    {
+                        "chinese":  "写简历时不要胡乱夸大自己的能力。",
+                        "pinyin":  "Xiě jiǎnlì shí búyào húluàn kuādà zìjǐ de nénglì.",
+                        "vietnamese":  "Khi viết CV đừng phóng đại năng lực của mình lung tung.",
+                        "answer":  "写简历时不要胡乱夸大自己的能力。"
+                    },
+                    {
+                        "chinese":  "他的简历显示，他会韩语和韩文。",
+                        "pinyin":  "Tā de jiǎnlì xiǎnshì, tā huì Hányǔ hé Hánwén.",
+                        "vietnamese":  "CV của anh ấy cho thấy anh ấy biết tiếng Hàn và chữ Hàn.",
+                        "answer":  "他的简历显示，他会韩语和韩文。"
+                    },
+                    {
+                        "chinese":  "一份好的简历相当于一次简单的自我介绍。",
+                        "pinyin":  "Yí fèn hǎo de jiǎnlì xiāngdāng yú yí cì jiǎndān de zìwǒ jièshào.",
+                        "vietnamese":  "Một CV tốt tương đương một lần tự giới thiệu đơn giản.",
+                        "answer":  "一份好的简历相当于一次简单的自我介绍。"
+                    },
+                    {
+                        "chinese":  "请把通知发给每个学生。",
+                        "pinyin":  "Qǐng bǎ tōngzhī fā gěi měi ge xuésheng.",
+                        "vietnamese":  "Vui lòng gửi thông báo cho mỗi học sinh.",
+                        "answer":  "请把通知发给每个学生。"
+                    },
+                    {
+                        "chinese":  "他已经把简历发到公司邮箱了。",
+                        "pinyin":  "Tā yǐjīng bǎ jiǎnlì fā dào gōngsī yóuxiāng le.",
+                        "vietnamese":  "Anh ấy đã gửi CV vào email công ty rồi.",
+                        "answer":  "他已经把简历发到公司邮箱了。"
+                    },
+                    {
+                        "chinese":  "老师把相关资料发给了我们。",
+                        "pinyin":  "Lǎoshī bǎ xiāngguān zīliào fā gěi le wǒmen.",
+                        "vietnamese":  "Giáo viên đã gửi tài liệu liên quan cho chúng tôi.",
+                        "answer":  "老师把相关资料发给了我们。"
+                    },
+                    {
+                        "chinese":  "招聘单位要求今天下午五点前发简历。",
+                        "pinyin":  "Zhāopìn dānwèi yāoqiú jīntiān xiàwǔ wǔ diǎn qián fā jiǎnlì.",
+                        "vietnamese":  "Đơn vị tuyển dụng yêu cầu gửi CV trước 5 giờ chiều hôm nay.",
+                        "answer":  "招聘单位要求今天下午五点前发简历。"
+                    },
+                    {
+                        "chinese":  "不要把证件照片胡乱发给陌生人。",
+                        "pinyin":  "Búyào bǎ zhèngjiàn zhàopiàn húluàn fā gěi mòshēng rén.",
+                        "vietnamese":  "Đừng gửi ảnh giấy tờ lung tung cho người lạ.",
+                        "answer":  "不要把证件照片胡乱发给陌生人。"
+                    },
+                    {
+                        "chinese":  "这封邮件是谁发的？",
+                        "pinyin":  "Zhè fēng yóujiàn shì shéi fā de?",
+                        "vietnamese":  "Email này là ai gửi?",
+                        "answer":  "这封邮件是谁发的？"
+                    },
+                    {
+                        "chinese":  "管理员把图书分类表发到了群里。",
+                        "pinyin":  "Guǎnlǐyuán bǎ túshū fēnlèi biǎo fā dào le qún lǐ.",
+                        "vietnamese":  "Nhân viên quản lý đã gửi bảng phân loại sách vào nhóm.",
+                        "answer":  "管理员把图书分类表发到了群里。"
+                    },
+                    {
+                        "chinese":  "他发错了邮箱，差点错过应聘机会。",
+                        "pinyin":  "Tā fā cuò le yóuxiāng, chàdiǎn cuòguò yìngpìn jīhuì.",
+                        "vietnamese":  "Anh ấy gửi sai email, suýt bỏ lỡ cơ hội ứng tuyển.",
+                        "answer":  "他发错了邮箱，差点错过应聘机会。"
+                    },
+                    {
+                        "chinese":  "代表团的日程已经发给相关人员。",
+                        "pinyin":  "Dàibiǎotuán de rìchéng yǐjīng fā gěi xiāngguān rényuán.",
+                        "vietnamese":  "Lịch trình của đoàn đại biểu đã được gửi cho nhân sự liên quan.",
+                        "answer":  "代表团的日程已经发给相关人员。"
+                    },
+                    {
+                        "chinese":  "如果你想应聘，就先把简历发过来。",
+                        "pinyin":  "Rúguǒ nǐ xiǎng yìngpìn, jiù xiān bǎ jiǎnlì fā guòlái.",
+                        "vietnamese":  "Nếu bạn muốn ứng tuyển thì gửi CV qua trước.",
+                        "answer":  "如果你想应聘，就先把简历发过来。"
+                    },
+                    {
+                        "chinese":  "我的邮箱今天一直收不到邮件。",
+                        "pinyin":  "Wǒ de yóuxiāng jīntiān yìzhí shōu bú dào yóujiàn.",
+                        "vietnamese":  "Hộp thư của tôi hôm nay cứ không nhận được email.",
+                        "answer":  "我的邮箱今天一直收不到邮件。"
+                    },
+                    {
+                        "chinese":  "请把简历发到招聘信息里的邮箱。",
+                        "pinyin":  "Qǐng bǎ jiǎnlì fā dào zhāopìn xìnxī lǐ de yóuxiāng.",
+                        "vietnamese":  "Vui lòng gửi CV đến email trong thông tin tuyển dụng.",
+                        "answer":  "请把简历发到招聘信息里的邮箱。"
+                    },
+                    {
+                        "chinese":  "他忘了写邮箱地址，所以公司没法联系他。",
+                        "pinyin":  "Tā wàng le xiě yóuxiāng dìzhǐ, suǒyǐ gōngsī méi fǎ liánxì tā.",
+                        "vietnamese":  "Anh ấy quên viết địa chỉ email nên công ty không thể liên hệ anh ấy.",
+                        "answer":  "他忘了写邮箱地址，所以公司没法联系他。"
+                    },
+                    {
+                        "chinese":  "面试通知会发到你的邮箱。",
+                        "pinyin":  "Miànshì tōngzhī huì fā dào nǐ de yóuxiāng.",
+                        "vietnamese":  "Thông báo phỏng vấn sẽ được gửi đến email của bạn.",
+                        "answer":  "面试通知会发到你的邮箱。"
+                    },
+                    {
+                        "chinese":  "这个邮箱专门用来接收应聘简历。",
+                        "pinyin":  "Zhège yóuxiāng zhuānmén yòng lái jiēshōu yìngpìn jiǎnlì.",
+                        "vietnamese":  "Hộp thư này chuyên dùng để nhận CV ứng tuyển.",
+                        "answer":  "这个邮箱专门用来接收应聘简历。"
+                    },
+                    {
+                        "chinese":  "如果邮箱写错，录用通知可能收不到。",
+                        "pinyin":  "Rúguǒ yóuxiāng xiě cuò, lùyòng tōngzhī kěnéng shōu bú dào.",
+                        "vietnamese":  "Nếu email viết sai, thông báo tuyển dụng có thể không nhận được.",
+                        "answer":  "如果邮箱写错，录用通知可能收不到。"
+                    },
+                    {
+                        "chinese":  "他把韩文资料从邮箱下载下来。",
+                        "pinyin":  "Tā bǎ Hánwén zīliào cóng yóuxiāng xiàzài xiàlái.",
+                        "vietnamese":  "Anh ấy tải tài liệu chữ Hàn từ email xuống.",
+                        "answer":  "他把韩文资料从邮箱下载下来。"
+                    },
+                    {
+                        "chinese":  "招聘单位通过邮箱回复了他的申请。",
+                        "pinyin":  "Zhāopìn dānwèi tōngguò yóuxiāng huífù le tā de shēnqǐng.",
+                        "vietnamese":  "Đơn vị tuyển dụng phản hồi đơn của anh ấy qua email.",
+                        "answer":  "招聘单位通过邮箱回复了他的申请。"
+                    },
+                    {
+                        "chinese":  "不要轻易打开陌生邮箱发来的文件。",
+                        "pinyin":  "Búyào qīngyì dǎkāi mòshēng yóuxiāng fā lái de wénjiàn.",
+                        "vietnamese":  "Đừng dễ dàng mở tài liệu do email lạ gửi đến.",
+                        "answer":  "不要轻易打开陌生邮箱发来的文件。"
+                    },
+                    {
+                        "chinese":  "他每天早上都会检查邮箱，看有没有面试消息。",
+                        "pinyin":  "Tā měitiān zǎoshang dōu huì jiǎnchá yóuxiāng, kàn yǒu méi yǒu miànshì xiāoxi.",
+                        "vietnamese":  "Mỗi sáng anh ấy đều kiểm tra email xem có tin phỏng vấn không.",
+                        "answer":  "他每天早上都会检查邮箱，看有没有面试消息。"
+                    }
+                ],
+    "structure":  [
+                      {
+                          "chinese":  "下课以后，学习的学习，聊天的聊天。",
+                          "pinyin":  "Xiàkè yǐhòu, xuéxí de xuéxí, liáotiān de liáotiān.",
+                          "vietnamese":  "Sau giờ học, người học thì học, người nói chuyện thì nói chuyện.",
+                          "answer":  "下课以后，学习的学习，聊天的聊天。"
+                      },
+                      {
+                          "chinese":  "活动结束后，收拾的收拾，拍照的拍照。",
+                          "pinyin":  "Huódòng jiéshù hòu, shōushi de shōushi, pāizhào de pāizhào.",
+                          "vietnamese":  "Sau khi hoạt động kết thúc, người dọn dẹp thì dọn, người chụp ảnh thì chụp.",
+                          "answer":  "活动结束后，收拾的收拾，拍照的拍照。"
+                      },
+                      {
+                          "chinese":  "到了办公室以后，开会的开会，写报告的写报告。",
+                          "pinyin":  "Dào le bàngōngshì yǐhòu, kāihuì de kāihuì, xiě bàogào de xiě bàogào.",
+                          "vietnamese":  "Sau khi đến văn phòng, người họp thì họp, người viết báo cáo thì viết báo cáo.",
+                          "answer":  "到了办公室以后，开会的开会，写报告的写报告。"
+                      },
+                      {
+                          "chinese":  "周末宿舍里，休息的休息，准备考试的准备考试。",
+                          "pinyin":  "Zhōumò sùshè lǐ, xiūxi de xiūxi, zhǔnbèi kǎoshì de zhǔnbèi kǎoshì.",
+                          "vietnamese":  "Cuối tuần trong ký túc xá, người nghỉ thì nghỉ, người chuẩn bị thi thì chuẩn bị thi.",
+                          "answer":  "周末宿舍里，休息的休息，准备考试的准备考试。"
+                      },
+                      {
+                          "chinese":  "客人来了以后，点菜的点菜，聊天的聊天。",
+                          "pinyin":  "Kèrén lái le yǐhòu, diǎn cài de diǎn cài, liáotiān de liáotiān.",
+                          "vietnamese":  "Sau khi khách đến, người gọi món thì gọi món, người nói chuyện thì nói chuyện.",
+                          "answer":  "客人来了以后，点菜的点菜，聊天的聊天。"
+                      },
+                      {
+                          "chinese":  "你快点儿准备，不然我们就赶不上车了。",
+                          "pinyin":  "Nǐ kuàidiǎnr zhǔnbèi, bùrán wǒmen jiù gǎn bu shàng chē le.",
+                          "vietnamese":  "Bạn chuẩn bị nhanh lên, nếu không chúng ta sẽ không kịp xe.",
+                          "answer":  "你快点儿准备，不然我们就赶不上车了。"
+                      },
+                      {
+                          "chinese":  "今天早点儿睡，不然明天面试就没精神了。",
+                          "pinyin":  "Jīntiān zǎodiǎnr shuì, bùrán míngtiān miànshì jiù méi jīngshén le.",
+                          "vietnamese":  "Hôm nay ngủ sớm hơn, nếu không mai phỏng vấn sẽ không có tinh thần.",
+                          "answer":  "今天早点儿睡，不然明天面试就没精神了。"
+                      },
+                      {
+                          "chinese":  "你要先看清楚合同，不然以后就很麻烦了。",
+                          "pinyin":  "Nǐ yào xiān kàn qīngchu hétong, bùrán yǐhòu jiù hěn máfan le.",
+                          "vietnamese":  "Bạn phải xem rõ hợp đồng trước, nếu không sau này sẽ rất phiền.",
+                          "answer":  "你要先看清楚合同，不然以后就很麻烦了。"
+                      },
+                      {
+                          "chinese":  "面试以前要准备好自我介绍，不然会很紧张。",
+                          "pinyin":  "Miànshì yǐqián yào zhǔnbèi hǎo zìwǒ jièshào, bùrán huì hěn jǐnzhāng.",
+                          "vietnamese":  "Trước phỏng vấn phải chuẩn bị tốt phần tự giới thiệu, nếu không sẽ rất căng thẳng.",
+                          "answer":  "面试以前要准备好自我介绍，不然会很紧张。"
+                      },
+                      {
+                          "chinese":  "你最好提前出门，不然就赶不上下午的面试了。",
+                          "pinyin":  "Nǐ zuìhǎo tíqián chūmén, bùrán jiù gǎn bu shàng xiàwǔ de miànshì le.",
+                          "vietnamese":  "Bạn tốt nhất ra khỏi nhà sớm, nếu không sẽ không kịp buổi phỏng vấn chiều.",
+                          "answer":  "你最好提前出门，不然就赶不上下午的面试了。"
+                      },
+                      {
+                          "chinese":  "我起晚了，差点儿赶不上早上的火车。",
+                          "pinyin":  "Wǒ qǐ wǎn le, chàdiǎnr gǎn bu shàng zǎoshang de huǒchē.",
+                          "vietnamese":  "Tôi dậy muộn, suýt nữa không kịp chuyến tàu sáng.",
+                          "answer":  "我起晚了，差点儿赶不上早上的火车。"
+                      },
+                      {
+                          "chinese":  "他走得太快，我在后面完全赶不上。",
+                          "pinyin":  "Tā zǒu de tài kuài, wǒ zài hòumiàn wánquán gǎn bu shàng.",
+                          "vietnamese":  "Anh ấy đi quá nhanh, tôi ở phía sau hoàn toàn không theo kịp.",
+                          "answer":  "他走得太快，我在后面完全赶不上。"
+                      },
+                      {
+                          "chinese":  "最近课程进度太快，很多学生都有点儿赶不上。",
+                          "pinyin":  "Zuìjìn kèchéng jìndù tài kuài, hěn duō xuésheng dōu yǒudiǎnr gǎn bu shàng.",
+                          "vietnamese":  "Gần đây tiến độ khóa học quá nhanh, nhiều học sinh hơi theo không kịp.",
+                          "answer":  "最近课程进度太快，很多学生都有点儿赶不上。"
+                      },
+                      {
+                          "chinese":  "如果现在不出门，我们肯定赶不上飞机。",
+                          "pinyin":  "Rúguǒ xiànzài bù chūmén, wǒmen kěndìng gǎn bu shàng fēijī.",
+                          "vietnamese":  "Nếu bây giờ không ra khỏi nhà, chúng ta chắc chắn không kịp máy bay.",
+                          "answer":  "如果现在不出门，我们肯定赶不上飞机。"
+                      },
+                      {
+                          "chinese":  "老师讲得太快，我记笔记有点儿赶不上。",
+                          "pinyin":  "Lǎoshī jiǎng de tài kuài, wǒ jì bǐjì yǒudiǎnr gǎn bu shàng.",
+                          "vietnamese":  "Thầy giảng quá nhanh, tôi ghi chép hơi không theo kịp.",
+                          "answer":  "老师讲得太快，我记笔记有点儿赶不上。"
+                      }
+                  ]
+}
