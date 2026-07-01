@@ -65,6 +65,49 @@ async function fetchProfile(userId) {
   return data;
 }
 
+function profileFromUser(user) {
+  const metadata = user?.user_metadata || {};
+  const email = user?.email || "";
+  return {
+    id: user?.id,
+    email,
+    full_name:
+      metadata.full_name ||
+      metadata.name ||
+      metadata.user_name ||
+      metadata.preferred_username ||
+      (email ? email.split("@")[0] : null),
+    username: metadata.user_name || metadata.preferred_username || null,
+    avatar_url: metadata.avatar_url || metadata.picture || null,
+  };
+}
+
+async function ensureProfile(user) {
+  if (!supabase || !user?.id) return null;
+
+  const fallbackProfile = profileFromUser(user);
+  let profile = await fetchProfile(user.id);
+  const needsUpsert =
+    !profile ||
+    !profile.full_name ||
+    (!profile.avatar_url && fallbackProfile.avatar_url);
+
+  if (!needsUpsert) return profile;
+
+  const { data, error } = await supabase
+    .from("profiles")
+    .upsert(fallbackProfile, { onConflict: "id" })
+    .select("*")
+    .maybeSingle();
+
+  if (error) {
+    console.warn("Khong dong bo duoc profile:", error.message);
+    return profile || fallbackProfile;
+  }
+
+  return data || profile || fallbackProfile;
+}
+
 function normalizeStatRow(row = {}) {
   return {
     streakDays: Number(row.streak_days || 0),
@@ -145,7 +188,7 @@ export const AuthContext = {
 
     this.session = data?.session || null;
     this.user = this.session?.user || null;
-    this.profile = this.user ? await fetchProfile(this.user.id) : null;
+    this.profile = this.user ? await ensureProfile(this.user) : null;
     this.loading = false;
 
     window.dispatchEvent(new CustomEvent(authEventName(), { detail: this }));
@@ -153,7 +196,7 @@ export const AuthContext = {
     supabase.auth.onAuthStateChange(async (_event, session) => {
       this.session = session || null;
       this.user = session?.user || null;
-      this.profile = this.user ? await fetchProfile(this.user.id) : null;
+      this.profile = this.user ? await ensureProfile(this.user) : null;
       this.loading = false;
       window.dispatchEvent(new CustomEvent(authEventName(), { detail: this }));
     });

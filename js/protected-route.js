@@ -11,20 +11,31 @@ function redirectToLogin() {
   window.location.replace(`login.html?redirect=${redirect}`);
 }
 
+function getUserDisplayName(profile = {}, user = {}) {
+  const metadata = user.user_metadata || {};
+  return (
+    profile.full_name ||
+    metadata.full_name ||
+    metadata.name ||
+    metadata.user_name ||
+    metadata.preferred_username ||
+    (user.email ? user.email.split("@")[0] : "") ||
+    "Học viên"
+  );
+}
+
+function getUserAvatar(profile = {}, user = {}) {
+  const metadata = user.user_metadata || {};
+  return profile.avatar_url || metadata.avatar_url || metadata.picture || "";
+}
+
 function fillAuthUi(ctx) {
   const profile = ctx.profile || {};
   const user = ctx.user || {};
-  const fullName =
-    profile.full_name ||
-    user.user_metadata?.full_name ||
-    user.user_metadata?.name ||
-    "Học viên";
+  const isLoggedIn = Boolean(ctx.session || ctx.user);
+  const fullName = getUserDisplayName(profile, user);
   const email = user.email || "";
-  const avatar =
-    profile.avatar_url ||
-    user.user_metadata?.avatar_url ||
-    user.user_metadata?.picture ||
-    "";
+  const avatar = getUserAvatar(profile, user);
 
   document.querySelectorAll("[data-auth-name]").forEach((node) => {
     node.textContent = `Xin chào, ${fullName}`;
@@ -40,20 +51,22 @@ function fillAuthUi(ctx) {
       node.style.backgroundImage = `url("${avatar}")`;
       node.style.backgroundSize = "cover";
       node.style.backgroundPosition = "center";
-    } else {
-      node.textContent = fullName.trim().charAt(0).toUpperCase() || "人";
+      return;
     }
+
+    node.style.backgroundImage = "";
+    node.textContent = fullName.trim().charAt(0).toUpperCase() || "人";
   });
 
   document.querySelectorAll("[data-auth-logout]").forEach((button) => {
-    button.textContent = ctx.session ? "Đăng xuất" : "Đăng nhập";
-    button.addEventListener("click", () => {
-      if (ctx.session) {
+    button.textContent = isLoggedIn ? "Đăng xuất" : "Đăng nhập";
+    button.onclick = () => {
+      if (isLoggedIn) {
         AuthContext.signOut();
         return;
       }
       window.location.href = "login.html";
-    });
+    };
   });
 }
 
@@ -61,7 +74,8 @@ function getCurrentRouteParts() {
   const params = new URLSearchParams(window.location.search);
   const subject = params.get("subject") || "hanyu3";
   const lesson = params.get("lesson") || "";
-  const content = params.get("content") || params.get("section") || params.get("test") || "lesson";
+  const content =
+    params.get("content") || params.get("section") || params.get("test") || "lesson";
   return { subject, lesson, content };
 }
 
