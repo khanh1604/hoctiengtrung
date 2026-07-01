@@ -15997,6 +15997,23 @@ body.listening-test-page.light-theme .listen-explain-text * {
   opacity: 1 !important;
 }
 
+/* Keep reflex feedback text readable on the pale result background. */
+body.typing-page.reflex-typing-page .reflex-question-card .answer-feedback,
+body.typing-page.reflex-typing-page .reflex-question-card .answer-feedback *,
+body.typing-page.reflex-typing-page .reflex-question-card .reflex-result-answer,
+body.typing-page.reflex-typing-page .reflex-question-card .answer-user,
+body.typing-page.reflex-typing-page .reflex-question-card .answer-label {
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+body.typing-page.reflex-typing-page .reflex-question-card .answer-feedback.wrong strong {
+  color: #7f1d1d !important;
+  -webkit-text-fill-color: #7f1d1d !important;
+}
+
 /* Final vocab detail POS readability. */
 body.vocabulary-page #vocabDetailPos,
 body.vocabulary-page.light-theme #vocabDetailPos,
